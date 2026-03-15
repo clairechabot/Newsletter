@@ -1,0 +1,90 @@
+name: Daily Newsletter Digest
+
+on:
+  schedule:
+    # Runs at 08:00 and 20:00 UTC every day
+    - cron: "0 8,20 * * *"
+  # Allow manual trigger from the Actions tab
+  workflow_dispatch:
+
+jobs:
+  digest:
+    name: Fetch · Curate · Render · Send
+    runs-on: ubuntu-latest
+
+    # Required so the memory step can push history.json back
+    permissions:
+      contents: write
+
+    steps:
+      # ── 1. Checkout ──────────────────────────────────────────────────────
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          # Full history lets us push back without a shallow-clone conflict
+          fetch-depth: 0
+
+      # ── 2. Python setup ──────────────────────────────────────────────────
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      # ── 3. Dependency cache ──────────────────────────────────────────────
+      - name: Cache pip dependencies
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('requirements.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-pip-
+
+      # ── 4. Install dependencies ──────────────────────────────────────────
+      - name: Install dependencies
+        run: pip install --quiet -r requirements.txt
+
+      # ── 5. Fetch & Curate ────────────────────────────────────────────────
+      - name: Fetch Reddit + YouTube and curate with Claude
+        env:
+          REDDIT_CLIENT_ID:     ${{ secrets.REDDIT_CLIENT_ID }}
+          REDDIT_CLIENT_SECRET: ${{ secrets.REDDIT_CLIENT_SECRET }}
+          REDDIT_USER_AGENT:    ${{ secrets.REDDIT_USER_AGENT }}
+          YOUTUBE_API_KEY:      ${{ secrets.YOUTUBE_API_KEY }}
+          ANTHROPIC_API_KEY:    ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python fetcher.py
+
+      # ── 6. Render HTML + Send email ──────────────────────────────────────
+      - name: Render newsletter and send
+        env:
+          SMTP_USER:               ${{ secrets.SMTP_USER }}
+          SMTP_PASS:               ${{ secrets.SMTP_PASS }}
+          SMTP_HOST:               ${{ secrets.SMTP_HOST }}
+          SMTP_PORT:               ${{ secrets.SMTP_PORT }}
+          NEWSLETTER_RECIPIENTS:   ${{ secrets.NEWSLETTER_RECIPIENTS }}
+        run: python renderer.py
+
+      # ── 7. Upload HTML artifact (optional debug artifact) ────────────────
+      - name: Upload newsletter HTML
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: newsletter-${{ github.run_id }}
+          path: newsletter.html
+          retention-days: 7
+
+      # ── 8. Memory — commit updated history.json back to repo ─────────────
+      # This is the persistence step: on the next run the script will read
+      # this file and skip any video IDs it already sent.
+      - name: Commit updated history.json
+        if: always()   # run even if send failed so history is still saved
+        run: |
+          git config user.name  "newsletter-bot"
+          git config user.email "newsletter-bot@users.noreply.github.com"
+          git add history.json
+          # Only commit if something actually changed (avoids empty commits)
+          if git diff --staged --quiet; then
+            echo "history.json unchanged — nothing to commit."
+          else
+            git commit -m "chore: update history.json [skip ci]"
+            git push
+          fi
