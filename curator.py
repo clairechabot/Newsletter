@@ -7,7 +7,7 @@ Uses Claude (claude-3-5-sonnet) to:
   3. Cluster all accepted content into 3-4 cross-platform creative themes.
 
 Required environment variable:
-    ANTHROPIC_API_KEY
+    CLAUDE_API_KEY
 """
 
 import json
@@ -32,7 +32,7 @@ THEME_COUNT_MIN, THEME_COUNT_MAX = 3, 4
 # ---------------------------------------------------------------------------
 
 def build_claude_client() -> anthropic.Anthropic:
-    return anthropic.Anthropic(api_key=os.environ["ANTHROPIC_API_KEY"])
+    return anthropic.Anthropic(api_key=os.environ["CLAUDE_API_KEY"])
 
 
 # ---------------------------------------------------------------------------
@@ -471,6 +471,76 @@ def audit_music_articles(client: anthropic.Anthropic, articles: list[dict]) -> l
 
 
 # ---------------------------------------------------------------------------
+# Good News Audit — Reason to be Hopeful
+# ---------------------------------------------------------------------------
+
+_GOOD_NEWS_SYSTEM = textwrap.dedent("""
+You are an optimistic editor writing for a newsletter whose readers appreciate
+uplifting, meaningful stories. Your tone is warm, grounded, and never saccharine.
+
+For each news article headline provided, write a "Reason to be Hopeful" summary
+of 1-2 tight sentences that explains why this story matters and why it is
+genuinely encouraging.
+
+Prioritise the nature/science/animal rescue angle when it exists in the headline —
+these resonate most with readers who care about gardening and wholesome content.
+Avoid corporate-speak, hype, or empty positivity.
+
+Return ONLY a valid JSON array, one element per article in input order:
+[
+  {
+    "index": <integer, 0-based>,
+    "reason": "<1-2 sentence Reason to be Hopeful>"
+  },
+  ...
+]
+
+Do not include any text outside the JSON array.
+""").strip()
+
+
+def audit_good_news_articles(
+    client: anthropic.Anthropic, articles: list[dict]
+) -> list[dict]:
+    """
+    Generate a 'Reason to be Hopeful' summary for each good news article.
+    Returns each article enriched with a 'reason' field.
+    """
+    if not articles:
+        return []
+
+    print(f"[Audit/GoodNews] Generating summaries for {len(articles)} article(s) …")
+
+    items_text = "\n\n".join(
+        f"--- Article {i} ---\nSource: {a.get('source_name', '')}\nHeadline: {a['title']}"
+        for i, a in enumerate(articles)
+    )
+
+    message = client.messages.create(
+        model=CLAUDE_MODEL,
+        max_tokens=512,
+        system=_GOOD_NEWS_SYSTEM,
+        messages=[{"role": "user", "content": items_text}],
+    )
+
+    raw = message.content[0].text.strip()
+    if raw.startswith("```"):
+        raw = raw.split("```")[1]
+        if raw.startswith("json"):
+            raw = raw[4:]
+        raw = raw.strip()
+
+    try:
+        results: list[dict] = json.loads(raw)
+    except json.JSONDecodeError as exc:
+        print(f"  [warn] JSON parse error in Good News audit: {exc}. Returning as-is.")
+        return articles
+
+    index_to_reason = {r["index"]: r.get("reason", "") for r in results}
+    return [{**a, "reason": index_to_reason.get(i, "")} for i, a in enumerate(articles)]
+
+
+# ---------------------------------------------------------------------------
 # Orchestrator
 # ---------------------------------------------------------------------------
 
@@ -500,6 +570,10 @@ def run_curation(raw_data: dict) -> dict:
     if music_articles:
         morning_soundtrack = audit_music_articles(client, music_articles)
 
+    # 5. Good News — Reason to be Hopeful (every run)
+    good_news_raw = raw_data.get("good_news_articles", [])
+    global_silver_linings = audit_good_news_articles(client, good_news_raw)
+
     return {
         "fetched_at": raw_data.get("fetched_at"),
         "is_am_email": raw_data.get("is_am_email", False),
@@ -510,7 +584,9 @@ def run_curation(raw_data: dict) -> dict:
             "youtube_videos": len(enriched_youtube),
             "themes": len(themes),
             "music_articles": len(morning_soundtrack),
+            "good_news_articles": len(global_silver_linings),
         },
         "themes": themes,
         "morning_soundtrack": morning_soundtrack,
+        "global_silver_linings": global_silver_linings,
     }

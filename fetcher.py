@@ -1,17 +1,22 @@
 """
 Newsletter Data Fetcher
 -----------------------
-Fetches Reddit posts, YouTube videos, and music articles with deduplication
-and OP context extraction, then runs the AI audit + curation layer (curator.py).
+Fetches Reddit posts (via public .json endpoints — no API key required),
+YouTube videos, and music articles with deduplication and OP context extraction,
+then runs the AI audit + curation layer (curator.py).
 
 Required environment variables:
-    REDDIT_CLIENT_ID, REDDIT_CLIENT_SECRET, REDDIT_USER_AGENT
     YOUTUBE_API_KEY
-    ANTHROPIC_API_KEY
-    SMTP_USER, SMTP_PASS (reserved for downstream use)
+    CLAUDE_API_KEY
+    EMAIL_USER, SMTP_PASS (reserved for downstream use)
+
+Optional environment variables:
+    REDDIT_USER_AGENT  — default: "newsletter-fetcher/1.0 (personal digest bot)"
+                         Reddit's ToS requires a descriptive UA; add your username
+                         e.g. "newsletter-fetcher/1.0 by u/YourUsername"
 
 Install dependencies:
-    pip install praw google-api-python-client python-dateutil anthropic requests beautifulsoup4
+    pip install google-api-python-client python-dateutil anthropic requests beautifulsoup4
 """
 
 import os
@@ -21,7 +26,6 @@ import datetime
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
-import praw
 import requests
 from bs4 import BeautifulSoup
 from googleapiclient.discovery import build
@@ -43,9 +47,16 @@ YOUTUBE_CHANNEL_IDS: list[str] = [
 
 HISTORY_FILE = Path(__file__).parent / "history.json"
 REDDIT_WINDOW_HOURS = 12
+REDDIT_REQUEST_DELAY = 2.0   # seconds between public API calls — stay well under rate limit
 YOUTUBE_VIDEOS_PER_CHANNEL = 2
 YOUTUBE_MIN_DURATION_SECONDS = 60
 YOUTUBE_DOUBLE_CHECK_SLEEP = 300  # 5 minutes
+
+# Reddit public API — no OAuth needed
+REDDIT_USER_AGENT = os.environ.get(
+    "REDDIT_USER_AGENT",
+    "newsletter-fetcher/1.0 (personal digest bot)",
+)
 
 # Music scraper — 3 articles per source, AM email only
 MUSIC_SOURCES: list[dict] = [
@@ -94,15 +105,33 @@ def save_history(seen_ids: set[str]) -> None:
 
 
 # ---------------------------------------------------------------------------
-# Reddit
+# Reddit  (public .json endpoints — no API key required)
 # ---------------------------------------------------------------------------
 
-def build_reddit_client() -> praw.Reddit:
-    return praw.Reddit(
-        client_id=os.environ["REDDIT_CLIENT_ID"],
-        client_secret=os.environ["REDDIT_CLIENT_SECRET"],
-        user_agent=os.environ.get("REDDIT_USER_AGENT", "newsletter-fetcher/1.0"),
-    )
+def _reddit_session() -> requests.Session:
+    """Return a requests Session pre-configured with the required User-Agent."""
+    session = requests.Session()
+    session.headers.update({"User-Agent": REDDIT_USER_AGENT})
+    return session
+
+
+def _reddit_get(session: requests.Session, url: str) -> dict | None:
+    """
+    GET a Reddit .json URL, retrying once on 429.
+    Returns the parsed JSON dict or None on failure.
+    """
+    try:
+        resp = session.get(url, timeout=15)
+        if resp.status_code == 429:
+            retry_after = int(resp.headers.get("Retry-After", 60))
+            print(f"  [warn] Reddit rate-limited — sleeping {retry_after}s …")
+            time.sleep(retry_after)
+            resp = session.get(url, timeout=15)
+        resp.raise_for_status()
+        return resp.json()
+    except Exception as exc:  # noqa: BLE001
+        print(f"  [warn] Reddit request failed ({url}): {exc}")
+        return None
 
 
 def _within_window(utc_timestamp: float, hours: int = REDDIT_WINDOW_HOURS) -> bool:
@@ -111,56 +140,71 @@ def _within_window(utc_timestamp: float, hours: int = REDDIT_WINDOW_HOURS) -> bo
     return post_time >= cutoff
 
 
-def fetch_op_context(submission: praw.models.Submission) -> str | None:
+def _fetch_op_context(
+    session: requests.Session, sub_name: str, post_id: str, op_author: str
+) -> str | None:
     """
-    Walk top-level comments; return the first one written by OP, or None.
-    The text is flagged as OP_Context for recipe/link analysis downstream.
+    Fetch the comments listing for a post and return the first top-level comment
+    written by the OP, or None.  Uses depth=1 to limit payload size.
     """
-    try:
-        submission.comments.replace_more(limit=0)
-        for comment in submission.comments:
-            if (
-                comment.author is not None
-                and submission.author is not None
-                and comment.author.name == submission.author.name
-            ):
-                return comment.body
-    except Exception as exc:  # noqa: BLE001
-        print(f"  [warn] Could not fetch comments for '{submission.title}': {exc}")
+    url = (
+        f"https://www.reddit.com/r/{sub_name}/comments/{post_id}.json"
+        f"?limit=50&depth=1&sort=top"
+    )
+    time.sleep(REDDIT_REQUEST_DELAY)
+    data = _reddit_get(session, url)
+    if not data or len(data) < 2:
+        return None
+
+    for child in data[1].get("data", {}).get("children", []):
+        c = child.get("data", {})
+        if c.get("author") == op_author and c.get("body"):
+            return c["body"]
     return None
 
 
-def fetch_reddit_posts(reddit: praw.Reddit) -> list[dict]:
+def fetch_reddit_posts(session: requests.Session) -> list[dict]:
     """
     Fetch top posts from the last REDDIT_WINDOW_HOURS hours across all configured
-    subreddits using the 'day' time filter, then apply exact datetime filtering.
+    subreddits via Reddit's public /top.json endpoint (no auth required).
+    Uses the 'day' time filter then trims to exactly 12 hours via datetime comparison.
     """
     results: list[dict] = []
 
     for sub_name in SUBREDDITS:
         print(f"[Reddit] Fetching r/{sub_name} …")
-        subreddit = reddit.subreddit(sub_name)
+        url = f"https://www.reddit.com/r/{sub_name}/top.json?t=day&limit=100"
 
         try:
-            # 'top' with time_filter='day' is the closest Reddit API window;
-            # we then trim to exactly 12 hours via datetime comparison.
-            for submission in subreddit.top(time_filter="day", limit=100):
-                if not _within_window(submission.created_utc):
-                    continue  # older than our window
+            data = _reddit_get(session, url)
+            time.sleep(REDDIT_REQUEST_DELAY)
+            if not data:
+                continue
 
-                op_context = fetch_op_context(submission)
+            for child in data.get("data", {}).get("children", []):
+                post = child.get("data", {})
+
+                if not _within_window(post.get("created_utc", 0)):
+                    continue
+
+                post_id = post.get("id", "")
+                author  = post.get("author") or "[deleted]"
+
+                op_context: str | None = None
+                if author not in ("[deleted]", "AutoModerator"):
+                    op_context = _fetch_op_context(session, sub_name, post_id, author)
 
                 results.append(
                     {
                         "source": "reddit",
                         "subreddit": sub_name,
-                        "id": submission.id,
-                        "title": submission.title,
-                        "url": submission.url,
-                        "score": submission.score,
-                        "author": str(submission.author) if submission.author else "[deleted]",
-                        "created_utc": submission.created_utc,
-                        "selftext": submission.selftext or None,
+                        "id": post_id,
+                        "title": post.get("title", ""),
+                        "url": post.get("url", ""),
+                        "score": post.get("score", 0),
+                        "author": author,
+                        "created_utc": post.get("created_utc", 0),
+                        "selftext": post.get("selftext") or None,
                         "op_context": op_context,
                     }
                 )
@@ -358,10 +402,65 @@ def fetch_trending_video(youtube, subreddits: list[str], seen_ids: set[str]) -> 
 # Music Scraper
 # ---------------------------------------------------------------------------
 
+def _find_music_embed(article_url: str) -> str | None:
+    """
+    Fetch an article page and return the first distraction-free embed URL found.
+
+    Priority order:
+      1. Bandcamp EmbeddedPlayer iframe  → bandcamp.com/EmbeddedPlayer/...
+      2. YouTube iframe                  → youtube.com/embed/VIDEO_ID
+      3. Bare YouTube watch link         → converted to youtube.com/embed/VIDEO_ID
+      4. Bare Bandcamp album/track link  → converted to EmbeddedPlayer URL
+
+    Returns None if nothing playable is found or the page fetch fails.
+    """
+    if not article_url or article_url == "#":
+        return None
+    try:
+        resp = requests.get(article_url, headers=SCRAPER_HEADERS, timeout=15)
+        resp.raise_for_status()
+    except requests.RequestException:
+        return None
+
+    soup = BeautifulSoup(resp.text, "html.parser")
+
+    for iframe in soup.find_all("iframe", src=True):
+        src: str = iframe["src"]
+        if "bandcamp.com/EmbeddedPlayer" in src:
+            # Ensure it's https and strip any extra query cruft
+            return src if src.startswith("http") else "https:" + src
+        if "youtube.com/embed/" in src or "youtube-nocookie.com/embed/" in src:
+            # Normalise to plain embed URL (strip autoplay etc.)
+            vid_id = src.split("/embed/")[1].split("?")[0].split("&")[0]
+            return f"https://www.youtube.com/embed/{vid_id}"
+
+    # Fallback: bare YouTube watch links in the page body
+    import re
+    yt_match = re.search(
+        r'https?://(?:www\.)?youtube\.com/watch\?v=([\w-]{11})', resp.text
+    )
+    if yt_match:
+        return f"https://www.youtube.com/embed/{yt_match.group(1)}"
+
+    # Fallback: Bandcamp album/track page link → convert to EmbeddedPlayer
+    for a in soup.find_all("a", href=True):
+        href: str = a["href"]
+        if re.search(r'bandcamp\.com/(album|track)/', href):
+            # Build a minimal EmbeddedPlayer URL from the album/track path
+            clean = href.split("?")[0].rstrip("/")
+            kind = "album" if "/album/" in clean else "track"
+            slug = clean.split(f"/{kind}/")[-1]
+            # We don't have the numeric ID here, so link to the page itself;
+            # the rendered card will still show a "Listen" button.
+            return clean  # direct Bandcamp page is still distraction-light
+
+    return None
+
+
 def _scrape_sofar_sounds(limit: int) -> list[dict]:
     """
     Scrape latest articles from sofarsounds.com/blog.
-    Returns a list of {title, url, snippet, source_name} dicts.
+    Returns a list of {title, url, snippet, embed_url, source_name} dicts.
     """
     url = MUSIC_SOURCES[0]["url"]
     try:
@@ -374,7 +473,6 @@ def _scrape_sofar_sounds(limit: int) -> list[dict]:
     soup = BeautifulSoup(resp.text, "html.parser")
     articles: list[dict] = []
 
-    # Try multiple common blog card patterns in priority order
     candidates = (
         soup.select("article")
         or soup.select(".post")
@@ -383,8 +481,7 @@ def _scrape_sofar_sounds(limit: int) -> list[dict]:
         or soup.select("[class*='blog-card']")
     )
 
-    for el in candidates[:limit * 2]:  # fetch extra; filter empties below
-        # Title
+    for el in candidates[:limit * 2]:
         title_el = (
             el.select_one("h2 a")
             or el.select_one("h3 a")
@@ -395,13 +492,11 @@ def _scrape_sofar_sounds(limit: int) -> list[dict]:
             continue
         title = title_el.get_text(strip=True)
 
-        # URL
         link_el = title_el if title_el.name == "a" else title_el.find("a")
         href = link_el["href"] if link_el and link_el.get("href") else ""
         if href and href.startswith("/"):
             href = "https://www.sofarsounds.com" + href
 
-        # Snippet
         snippet_el = (
             el.select_one("p")
             or el.select_one("[class*='excerpt']")
@@ -409,16 +504,25 @@ def _scrape_sofar_sounds(limit: int) -> list[dict]:
         )
         snippet = snippet_el.get_text(strip=True)[:300] if snippet_el else ""
 
-        if title:
-            articles.append(
-                {
-                    "source": "music",
-                    "source_name": "Sofar Sounds",
-                    "title": title,
-                    "url": href or url,
-                    "snippet": snippet,
-                }
-            )
+        if not title:
+            continue
+
+        article_url = href or url
+        time.sleep(1)  # polite delay before fetching article page
+        embed_url = _find_music_embed(article_url)
+        if embed_url:
+            print(f"    [embed] found for '{title[:50]}'")
+
+        articles.append(
+            {
+                "source": "music",
+                "source_name": "Sofar Sounds",
+                "title": title,
+                "url": article_url,
+                "snippet": snippet,
+                "embed_url": embed_url,
+            }
+        )
         if len(articles) >= limit:
             break
 
@@ -429,7 +533,7 @@ def _scrape_sofar_sounds(limit: int) -> list[dict]:
 def _scrape_bandcamp_daily(limit: int) -> list[dict]:
     """
     Scrape latest articles from daily.bandcamp.com.
-    Returns a list of {title, url, snippet, source_name} dicts.
+    Returns a list of {title, url, snippet, embed_url, source_name} dicts.
     """
     url = MUSIC_SOURCES[1]["url"]
     try:
@@ -474,16 +578,25 @@ def _scrape_bandcamp_daily(limit: int) -> list[dict]:
         )
         snippet = snippet_el.get_text(strip=True)[:300] if snippet_el else ""
 
-        if title:
-            articles.append(
-                {
-                    "source": "music",
-                    "source_name": "Bandcamp Daily",
-                    "title": title,
-                    "url": href or url,
-                    "snippet": snippet,
-                }
-            )
+        if not title:
+            continue
+
+        article_url = href or url
+        time.sleep(1)
+        embed_url = _find_music_embed(article_url)
+        if embed_url:
+            print(f"    [embed] found for '{title[:50]}'")
+
+        articles.append(
+            {
+                "source": "music",
+                "source_name": "Bandcamp Daily",
+                "title": title,
+                "url": article_url,
+                "snippet": snippet,
+                "embed_url": embed_url,
+            }
+        )
         if len(articles) >= limit:
             break
 
@@ -501,6 +614,92 @@ def fetch_music_articles() -> list[dict]:
 
 
 # ---------------------------------------------------------------------------
+# Good News Scraper
+# ---------------------------------------------------------------------------
+
+GOOD_NEWS_TOTAL = 2   # articles to collect across both sources
+
+def _scrape_source(base_url: str, source_label: str, limit: int) -> list[dict]:
+    """
+    Generic scraper for news listing pages.
+    Tries common article-card patterns; returns up to `limit` items.
+    """
+    try:
+        resp = requests.get(base_url, headers=SCRAPER_HEADERS, timeout=15)
+        resp.raise_for_status()
+    except requests.RequestException as exc:
+        print(f"  [warn] {source_label} fetch failed: {exc}")
+        return []
+
+    soup = BeautifulSoup(resp.text, "html.parser")
+
+    candidates = (
+        soup.select("article")
+        or soup.select(".entry-title")
+        or soup.select(".post")
+        or soup.select("[class*='card']")
+        or soup.select("[class*='story']")
+    )
+
+    articles: list[dict] = []
+    for el in candidates[:limit * 3]:
+        title_el = (
+            el.select_one("h2 a") or el.select_one("h3 a")
+            or el.select_one("h2")  or el.select_one("h3")
+            or (el if el.name == "a" else None)
+        )
+        if not title_el:
+            continue
+        title = title_el.get_text(strip=True)
+        if not title:
+            continue
+
+        link_el = title_el if title_el.name == "a" else title_el.find("a")
+        href = (link_el.get("href") or "") if link_el else ""
+        if href.startswith("/"):
+            from urllib.parse import urlparse
+            parsed = urlparse(base_url)
+            href = f"{parsed.scheme}://{parsed.netloc}{href}"
+
+        articles.append(
+            {
+                "source": "good_news",
+                "source_name": source_label,
+                "title": title,
+                "url": href or base_url,
+            }
+        )
+        if len(articles) >= limit:
+            break
+
+    return articles
+
+
+def fetch_good_news_articles() -> list[dict]:
+    """
+    Fetch GOOD_NEWS_TOTAL articles from Good News Network, falling back to
+    Positive News if the first source yields fewer than needed.
+    Runs on both AM and PM emails.
+    """
+    print("[GoodNews] Scraping good news sources …")
+
+    results = _scrape_source(
+        "https://www.goodnewsnetwork.org/", "Good News Network", GOOD_NEWS_TOTAL
+    )
+
+    if len(results) < GOOD_NEWS_TOTAL:
+        needed = GOOD_NEWS_TOTAL - len(results)
+        fallback = _scrape_source(
+            "https://www.positive.news/", "Positive News", needed
+        )
+        results.extend(fallback)
+
+    results = results[:GOOD_NEWS_TOTAL]
+    print(f"[GoodNews] Collected {len(results)} article(s).")
+    return results
+
+
+# ---------------------------------------------------------------------------
 # Main
 # ---------------------------------------------------------------------------
 
@@ -508,12 +707,7 @@ def main() -> dict:
     # Validate required env vars early
     missing = [
         var
-        for var in (
-            "REDDIT_CLIENT_ID",
-            "REDDIT_CLIENT_SECRET",
-            "YOUTUBE_API_KEY",
-            "ANTHROPIC_API_KEY",
-        )
+        for var in ("YOUTUBE_API_KEY", "CLAUDE_API_KEY")
         if not os.environ.get(var)
     ]
     if missing:
@@ -532,8 +726,8 @@ def main() -> dict:
     seen_ids = load_history()
 
     # --- Reddit ---
-    reddit = build_reddit_client()
-    reddit_posts = fetch_reddit_posts(reddit)
+    reddit_session = _reddit_session()
+    reddit_posts = fetch_reddit_posts(reddit_session)
 
     # --- YouTube ---
     youtube = build_youtube_client()
@@ -549,6 +743,9 @@ def main() -> dict:
     else:
         print("[Music] PM email — skipping music section.")
 
+    # --- Good News (every run) ---
+    good_news_articles = fetch_good_news_articles()
+
     # --- Persist history ---
     save_history(seen_ids)
 
@@ -558,6 +755,7 @@ def main() -> dict:
         "reddit_posts": reddit_posts,
         "youtube_videos": youtube_results,
         "music_articles": music_articles,
+        "good_news_articles": good_news_articles,
     }
 
     # Write raw fetch snapshot (useful for debugging / re-running curation without re-fetching)
@@ -568,7 +766,8 @@ def main() -> dict:
         f"({len(reddit_posts)} Reddit posts | "
         f"{len(channel_videos)} channel videos | "
         f"{'1 trending video' if trending_video else 'no trending video'} | "
-        f"{len(music_articles)} music articles)"
+        f"{len(music_articles)} music articles | "
+        f"{len(good_news_articles)} good news articles)"
     )
 
     # --- Audit & Curation ---
@@ -590,7 +789,8 @@ def main() -> dict:
         f"       Reddit: {summary['reddit_accepted']}/{summary['reddit_raw']} accepted "
         f"({summary['reddit_discarded']} discarded) | "
         f"YouTube: {summary['youtube_videos']} videos | "
-        f"Themes: {summary['themes']}{music_line}"
+        f"Themes: {summary['themes']}{music_line} | "
+        f"Good News: {summary.get('good_news_articles', 0)} articles"
     )
     return curated
 

@@ -4,7 +4,7 @@ Newsletter Renderer & Sender
 Reads curated_data.json → generates newsletter.html → sends via SMTP.
 
 Required environment variables:
-    SMTP_USER              — sender address (also used as SMTP login)
+    EMAIL_USER              — sender address (also used as SMTP login)
     SMTP_PASS              — SMTP password / app password
     NEWSLETTER_RECIPIENTS  — comma-separated recipient addresses
     SMTP_HOST              — optional, default: smtp.gmail.com
@@ -327,6 +327,46 @@ details[open] > summary::before {
   margin-top: 6px;
   font-style: italic;
 }
+.music-listen-btn {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 7px 16px;
+  background: rgba(244,114,182,0.12);
+  border: 1px solid #f472b633;
+  border-radius: 999px;
+  color: #f472b6;
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+}
+.music-listen-btn:hover { background: rgba(244,114,182,0.22); }
+
+/* ── Global Silver Linings Section ───────────────────────── */
+.goodnews-section {
+  margin-bottom: 36px;
+}
+.goodnews-header {
+  border-left: 4px solid #34d399;
+  padding: 10px 16px;
+  margin-bottom: 12px;
+  background: rgba(52, 211, 153, 0.08);
+  border-radius: 0 10px 10px 0;
+}
+.goodnews-header h2 {
+  font-size: 19px;
+  font-weight: 700;
+  color: #fff;
+}
+.goodnews-header .tagline {
+  font-size: 13px;
+  color: #a1a1aa;
+  margin-top: 2px;
+}
+.badge-goodnews {
+  background: #34d39922;
+  color: #34d399;
+  border: 1px solid #34d39933;
+}
 
 /* ── Footer ──────────────────────────────────────────────── */
 .footer {
@@ -432,12 +472,52 @@ def _render_youtube_card(video: dict) -> str:
 </div>"""
 
 
+def _render_music_embed(embed_url: str, title: str) -> str:
+    """
+    Return an embed block for the given URL.
+    - YouTube embed  → thumbnail + play overlay (same pattern as YouTube cards)
+    - Bandcamp embed → inline iframe player
+    - Bandcamp page  → styled listen button (fallback when we only have the page URL)
+    """
+    if not embed_url:
+        return ""
+
+    if "youtube.com/embed/" in embed_url:
+        vid_id = embed_url.split("/embed/")[1].split("?")[0].split("&")[0]
+        thumb  = f"https://img.youtube.com/vi/{vid_id}/hqdefault.jpg"
+        return (
+            f'<a class="yt-container" href="{embed_url}" target="_blank" '
+            f'title="Watch: {title}">'
+            f'<img src="{thumb}" alt="{title}" loading="lazy">'
+            f'<span class="yt-play-overlay"><span class="yt-play-btn"></span></span>'
+            f'</a>'
+        )
+
+    if "bandcamp.com/EmbeddedPlayer" in embed_url:
+        return (
+            f'<iframe class="bc-player" src="{embed_url}" '
+            f'seamless title="{title}" loading="lazy" '
+            f'style="border:0;width:100%;height:120px;border-radius:8px;'
+            f'margin-top:12px;"></iframe>'
+        )
+
+    # Bare Bandcamp page link — render as a button
+    if "bandcamp.com" in embed_url:
+        return (
+            f'<a class="music-listen-btn" href="{embed_url}" target="_blank">'
+            f'♫ Listen on Bandcamp</a>'
+        )
+
+    return ""
+
+
 def _render_music_card(article: dict) -> str:
     title       = article.get("title", "(no title)")
     source_name = article.get("source_name", "Music")
     url         = article.get("url", "#")
     snippet     = (article.get("snippet") or "").strip()
     vibe_check  = article.get("vibe_check", "")
+    embed_url   = article.get("embed_url") or ""
 
     source_badge = f'<span class="badge badge-music">♪ {source_name}</span>'
 
@@ -446,10 +526,7 @@ def _render_music_card(article: dict) -> str:
         escaped = snippet.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
         snippet_html = f'<div class="post-text">{escaped}</div>'
 
-    vibe_html = ""
-    if vibe_check:
-        escaped_vibe = vibe_check.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
-        vibe_html = f'<div class="vibe-check">✦ {escaped_vibe}</div>'
+    embed_html = _render_music_embed(embed_url, title)
 
     return f"""
 <div class="card">
@@ -462,6 +539,7 @@ def _render_music_card(article: dict) -> str:
       {source_badge}
     </summary>
     <div class="card-body">
+      {embed_html}
       {snippet_html}
       <a class="post-link" href="{url}" target="_blank">↗ Read on {source_name}</a>
     </div>
@@ -480,6 +558,49 @@ def _render_morning_soundtrack(articles: list[dict]) -> str:
   <div class="soundtrack-header">
     <h2>The Morning Soundtrack</h2>
     <div class="tagline">Fresh picks from the music world to set the tone for your day.</div>
+  </div>
+  {cards}
+</section>"""
+
+
+def _render_good_news_card(article: dict) -> str:
+    title       = article.get("title", "(no title)")
+    source_name = article.get("source_name", "Good News")
+    url         = article.get("url", "#")
+    reason      = article.get("reason", "")
+
+    source_badge = '<span class="badge badge-goodnews">🌿 Good News</span>'
+
+    return f"""
+<div class="card">
+  <details>
+    <summary>
+      <div class="summary-body">
+        <div class="summary-title">{title}</div>
+        <div class="summary-desc">{reason}</div>
+      </div>
+      {source_badge}
+    </summary>
+    <div class="card-body">
+      <p style="font-size:13px;color:#d4d4d8;margin-top:14px;line-height:1.6;">{reason}</p>
+      <a class="post-link" href="{url}" target="_blank"
+         style="margin-top:10px;display:inline-block;">
+        ↗ Read Full Story on {source_name}
+      </a>
+    </div>
+  </details>
+</div>"""
+
+
+def _render_global_silver_linings(articles: list[dict]) -> str:
+    if not articles:
+        return ""
+    cards = "".join(_render_good_news_card(a) for a in articles)
+    return f"""
+<section class="goodnews-section">
+  <div class="goodnews-header">
+    <h2>Global Silver Linings</h2>
+    <div class="tagline">Two stories that remind you the world is still full of good.</div>
   </div>
   {cards}
 </section>"""
@@ -509,10 +630,11 @@ def _render_theme(theme: dict, accent: str) -> str:
 
 
 def build_html(curated: dict) -> str:
-    themes              = curated.get("themes", [])
-    summary             = curated.get("audit_summary", {})
-    fetched_at          = curated.get("fetched_at", "")
-    morning_soundtrack  = curated.get("morning_soundtrack", [])
+    themes                 = curated.get("themes", [])
+    summary                = curated.get("audit_summary", {})
+    fetched_at             = curated.get("fetched_at", "")
+    morning_soundtrack     = curated.get("morning_soundtrack", [])
+    global_silver_linings  = curated.get("global_silver_linings", [])
 
     try:
         dt = datetime.datetime.fromisoformat(fetched_at)
@@ -524,12 +646,17 @@ def build_html(curated: dict) -> str:
         f'<span class="stat-pill">♪ {len(morning_soundtrack)} Music</span>'
         if morning_soundtrack else ""
     )
+    goodnews_pill = (
+        f'<span class="stat-pill">🌿 {len(global_silver_linings)} Good News</span>'
+        if global_silver_linings else ""
+    )
     stats_html = "".join([
         f'<span class="stat-pill">✓ {summary.get("reddit_accepted", 0)} Reddit posts</span>',
         f'<span class="stat-pill">▶ {summary.get("youtube_videos", 0)} Videos</span>',
         f'<span class="stat-pill">🗂 {summary.get("themes", len(themes))} Themes</span>',
         f'<span class="stat-pill">🚫 {summary.get("reddit_discarded", 0)} filtered</span>',
         music_pill,
+        goodnews_pill,
     ])
 
     theme_html = "".join(
@@ -537,7 +664,8 @@ def build_html(curated: dict) -> str:
         for i, theme in enumerate(themes)
     )
 
-    soundtrack_html = _render_morning_soundtrack(morning_soundtrack)
+    soundtrack_html       = _render_morning_soundtrack(morning_soundtrack)
+    silver_linings_html   = _render_global_silver_linings(global_silver_linings)
 
     return f"""<!DOCTYPE html>
 <html lang="en">
@@ -560,6 +688,8 @@ def build_html(curated: dict) -> str:
 
   {theme_html}
 
+  {silver_linings_html}
+
   <div class="footer">
     Generated automatically · AI audit threshold 75% · Curated by Claude
   </div>
@@ -574,7 +704,7 @@ def build_html(curated: dict) -> str:
 # ---------------------------------------------------------------------------
 
 def send_email(html_body: str, subject: str) -> None:
-    smtp_user   = os.environ["SMTP_USER"]
+    smtp_user   = os.environ["EMAIL_USER"]
     smtp_pass   = os.environ["SMTP_PASS"]
     smtp_host   = os.environ.get("SMTP_HOST", "smtp.gmail.com")
     smtp_port   = int(os.environ.get("SMTP_PORT", "587"))
@@ -613,7 +743,7 @@ def main() -> None:
     print(f"[render] HTML written → {OUTPUT_HTML}")
 
     # Send only when SMTP credentials are present
-    if os.environ.get("SMTP_USER") and os.environ.get("SMTP_PASS"):
+    if os.environ.get("EMAIL_USER") and os.environ.get("SMTP_PASS"):
         fetched_at = curated.get("fetched_at", "")
         try:
             dt = datetime.datetime.fromisoformat(fetched_at)
@@ -622,7 +752,7 @@ def main() -> None:
             label = "Today"
         send_email(html, subject=f"Daily Digest · {label}")
     else:
-        print("[render] SMTP_USER / SMTP_PASS not set — skipping send.")
+        print("[render] EMAIL_USER / SMTP_PASS not set — skipping send.")
 
 
 if __name__ == "__main__":
