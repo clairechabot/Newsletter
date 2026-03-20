@@ -392,6 +392,85 @@ def cluster_content(
 
 
 # ---------------------------------------------------------------------------
+# Music Audit — Vibe Check
+# ---------------------------------------------------------------------------
+
+_MUSIC_AUDIT_SYSTEM = textwrap.dedent("""
+You are a music journalist with an ear for mood and atmosphere.
+For each music article provided, write a single-sentence "Vibe Check" that captures
+the emotional energy of the piece — something evocative and specific, not generic.
+
+Good examples:
+  "Perfect for a rainy Sunday morning with something warm in your hands."
+  "High-energy indie-pop that makes the commute feel like a montage."
+  "The sonic equivalent of golden-hour light through dusty blinds."
+
+Bad examples (too vague):
+  "Great music for any occasion."
+  "An interesting read about music."
+
+Return ONLY a valid JSON array, one element per article in input order:
+[
+  {
+    "index": <integer, 0-based>,
+    "vibe_check": "<one evocative sentence>"
+  },
+  ...
+]
+
+Do not include any text outside the JSON array.
+""").strip()
+
+
+def audit_music_articles(client: anthropic.Anthropic, articles: list[dict]) -> list[dict]:
+    """
+    Generate a one-sentence Vibe Check for each music article.
+    Returns each article enriched with a 'vibe_check' field.
+    """
+    if not articles:
+        return []
+
+    print(f"[Audit/Music] Generating Vibe Checks for {len(articles)} article(s) …")
+
+    items_text = []
+    for i, art in enumerate(articles):
+        items_text.append(
+            f"--- Article {i} ---\n"
+            f"Source: {art.get('source_name', 'Unknown')}\n"
+            f"Title: {art['title']}\n"
+            f"Snippet: {art.get('snippet', '(no snippet)')}"
+        )
+    user_message = "\n\n".join(items_text)
+
+    message = client.messages.create(
+        model=CLAUDE_MODEL,
+        max_tokens=512,
+        system=_MUSIC_AUDIT_SYSTEM,
+        messages=[{"role": "user", "content": user_message}],
+    )
+
+    raw = message.content[0].text.strip()
+    if raw.startswith("```"):
+        raw = raw.split("```")[1]
+        if raw.startswith("json"):
+            raw = raw[4:]
+        raw = raw.strip()
+
+    try:
+        results: list[dict] = json.loads(raw)
+    except json.JSONDecodeError as exc:
+        print(f"  [warn] JSON parse error in Music audit: {exc}. Returning articles as-is.")
+        return articles
+
+    index_to_vibe = {r["index"]: r.get("vibe_check", "") for r in results}
+    enriched = []
+    for i, art in enumerate(articles):
+        enriched.append({**art, "vibe_check": index_to_vibe.get(i, "")})
+
+    return enriched
+
+
+# ---------------------------------------------------------------------------
 # Orchestrator
 # ---------------------------------------------------------------------------
 
@@ -400,7 +479,7 @@ def run_curation(raw_data: dict) -> dict:
     Full audit + curation pipeline.
 
     Input:  the dict produced by fetcher.main()
-    Output: enriched dict with 'themes' replacing raw platform lists
+    Output: enriched dict with 'themes' and optional 'morning_soundtrack' section
     """
     client = build_claude_client()
 
@@ -415,14 +494,23 @@ def run_curation(raw_data: dict) -> dict:
     # 3. Cross-platform clustering
     themes = cluster_content(client, accepted_reddit, enriched_youtube)
 
+    # 4. Music Vibe Check (AM only — presence of articles signals AM run)
+    music_articles = raw_data.get("music_articles", [])
+    morning_soundtrack: list[dict] = []
+    if music_articles:
+        morning_soundtrack = audit_music_articles(client, music_articles)
+
     return {
         "fetched_at": raw_data.get("fetched_at"),
+        "is_am_email": raw_data.get("is_am_email", False),
         "audit_summary": {
             "reddit_raw": len(reddit_posts),
             "reddit_accepted": len(accepted_reddit),
             "reddit_discarded": len(reddit_posts) - len(accepted_reddit),
             "youtube_videos": len(enriched_youtube),
             "themes": len(themes),
+            "music_articles": len(morning_soundtrack),
         },
         "themes": themes,
+        "morning_soundtrack": morning_soundtrack,
     }

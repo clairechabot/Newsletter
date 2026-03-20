@@ -295,6 +295,39 @@ details[open] > summary::before {
   margin-left: 4px;
 }
 
+/* ── Morning Soundtrack Section ──────────────────────────── */
+.soundtrack-section {
+  margin-bottom: 36px;
+}
+.soundtrack-header {
+  border-left: 4px solid #f472b6;
+  padding: 10px 16px;
+  margin-bottom: 12px;
+  background: rgba(244, 114, 182, 0.08);
+  border-radius: 0 10px 10px 0;
+}
+.soundtrack-header h2 {
+  font-size: 19px;
+  font-weight: 700;
+  color: #fff;
+}
+.soundtrack-header .tagline {
+  font-size: 13px;
+  color: #a1a1aa;
+  margin-top: 2px;
+}
+.badge-music {
+  background: #f472b61a;
+  color: #f472b6;
+  border: 1px solid #f472b633;
+}
+.vibe-check {
+  font-size: 12px;
+  color: #f472b6;
+  margin-top: 6px;
+  font-style: italic;
+}
+
 /* ── Footer ──────────────────────────────────────────────── */
 .footer {
   text-align: center;
@@ -399,6 +432,59 @@ def _render_youtube_card(video: dict) -> str:
 </div>"""
 
 
+def _render_music_card(article: dict) -> str:
+    title       = article.get("title", "(no title)")
+    source_name = article.get("source_name", "Music")
+    url         = article.get("url", "#")
+    snippet     = (article.get("snippet") or "").strip()
+    vibe_check  = article.get("vibe_check", "")
+
+    source_badge = f'<span class="badge badge-music">♪ {source_name}</span>'
+
+    snippet_html = ""
+    if snippet:
+        escaped = snippet.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
+        snippet_html = f'<div class="post-text">{escaped}</div>'
+
+    vibe_html = ""
+    if vibe_check:
+        escaped_vibe = vibe_check.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
+        vibe_html = f'<div class="vibe-check">✦ {escaped_vibe}</div>'
+
+    return f"""
+<div class="card">
+  <details>
+    <summary>
+      <div class="summary-body">
+        <div class="summary-title">{title}</div>
+        <div class="summary-desc">{vibe_check}</div>
+      </div>
+      {source_badge}
+    </summary>
+    <div class="card-body">
+      {snippet_html}
+      <a class="post-link" href="{url}" target="_blank">↗ Read on {source_name}</a>
+    </div>
+  </details>
+</div>"""
+
+
+def _render_morning_soundtrack(articles: list[dict]) -> str:
+    if not articles:
+        return ""
+
+    cards = "".join(_render_music_card(a) for a in articles)
+
+    return f"""
+<section class="soundtrack-section">
+  <div class="soundtrack-header">
+    <h2>The Morning Soundtrack</h2>
+    <div class="tagline">Fresh picks from the music world to set the tone for your day.</div>
+  </div>
+  {cards}
+</section>"""
+
+
 def _render_theme(theme: dict, accent: str) -> str:
     name    = theme.get("name", "Untitled")
     tagline = theme.get("tagline", "")
@@ -423,9 +509,10 @@ def _render_theme(theme: dict, accent: str) -> str:
 
 
 def build_html(curated: dict) -> str:
-    themes     = curated.get("themes", [])
-    summary    = curated.get("audit_summary", {})
-    fetched_at = curated.get("fetched_at", "")
+    themes              = curated.get("themes", [])
+    summary             = curated.get("audit_summary", {})
+    fetched_at          = curated.get("fetched_at", "")
+    morning_soundtrack  = curated.get("morning_soundtrack", [])
 
     try:
         dt = datetime.datetime.fromisoformat(fetched_at)
@@ -433,17 +520,24 @@ def build_html(curated: dict) -> str:
     except Exception:
         date_str = fetched_at
 
+    music_pill = (
+        f'<span class="stat-pill">♪ {len(morning_soundtrack)} Music</span>'
+        if morning_soundtrack else ""
+    )
     stats_html = "".join([
         f'<span class="stat-pill">✓ {summary.get("reddit_accepted", 0)} Reddit posts</span>',
         f'<span class="stat-pill">▶ {summary.get("youtube_videos", 0)} Videos</span>',
         f'<span class="stat-pill">🗂 {summary.get("themes", len(themes))} Themes</span>',
         f'<span class="stat-pill">🚫 {summary.get("reddit_discarded", 0)} filtered</span>',
+        music_pill,
     ])
 
     theme_html = "".join(
         _render_theme(theme, _ACCENTS[i % len(_ACCENTS)])
         for i, theme in enumerate(themes)
     )
+
+    soundtrack_html = _render_morning_soundtrack(morning_soundtrack)
 
     return f"""<!DOCTYPE html>
 <html lang="en">
@@ -461,6 +555,8 @@ def build_html(curated: dict) -> str:
     <div class="date">{date_str}</div>
     <div class="stats">{stats_html}</div>
   </div>
+
+  {soundtrack_html}
 
   {theme_html}
 

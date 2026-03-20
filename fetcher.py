@@ -1,8 +1,8 @@
 """
 Newsletter Data Fetcher
 -----------------------
-Fetches Reddit posts and YouTube videos with deduplication and OP context extraction,
-then runs the AI audit + curation layer (curator.py).
+Fetches Reddit posts, YouTube videos, and music articles with deduplication
+and OP context extraction, then runs the AI audit + curation layer (curator.py).
 
 Required environment variables:
     REDDIT_CLIENT_ID, REDDIT_CLIENT_SECRET, REDDIT_USER_AGENT
@@ -11,7 +11,7 @@ Required environment variables:
     SMTP_USER, SMTP_PASS (reserved for downstream use)
 
 Install dependencies:
-    pip install praw google-api-python-client python-dateutil anthropic
+    pip install praw google-api-python-client python-dateutil anthropic requests beautifulsoup4
 """
 
 import os
@@ -22,6 +22,8 @@ from pathlib import Path
 from zoneinfo import ZoneInfo
 
 import praw
+import requests
+from bs4 import BeautifulSoup
 from googleapiclient.discovery import build
 from dateutil import parser as dateutil_parser
 
@@ -44,6 +46,26 @@ REDDIT_WINDOW_HOURS = 12
 YOUTUBE_VIDEOS_PER_CHANNEL = 2
 YOUTUBE_MIN_DURATION_SECONDS = 60
 YOUTUBE_DOUBLE_CHECK_SLEEP = 300  # 5 minutes
+
+# Music scraper — 3 articles per source, AM email only
+MUSIC_SOURCES: list[dict] = [
+    {
+        "name": "Sofar Sounds",
+        "url": "https://www.sofarsounds.com/blog",
+    },
+    {
+        "name": "Bandcamp Daily",
+        "url": "https://daily.bandcamp.com/",
+    },
+]
+MUSIC_ARTICLES_PER_SOURCE = 3
+SCRAPER_HEADERS = {
+    "User-Agent": (
+        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+        "AppleWebKit/537.36 (KHTML, like Gecko) "
+        "Chrome/124.0 Safari/537.36"
+    )
+}
 
 UTC = ZoneInfo("UTC")
 
@@ -333,6 +355,152 @@ def fetch_trending_video(youtube, subreddits: list[str], seen_ids: set[str]) -> 
 
 
 # ---------------------------------------------------------------------------
+# Music Scraper
+# ---------------------------------------------------------------------------
+
+def _scrape_sofar_sounds(limit: int) -> list[dict]:
+    """
+    Scrape latest articles from sofarsounds.com/blog.
+    Returns a list of {title, url, snippet, source_name} dicts.
+    """
+    url = MUSIC_SOURCES[0]["url"]
+    try:
+        resp = requests.get(url, headers=SCRAPER_HEADERS, timeout=15)
+        resp.raise_for_status()
+    except requests.RequestException as exc:
+        print(f"  [warn] Sofar Sounds fetch failed: {exc}")
+        return []
+
+    soup = BeautifulSoup(resp.text, "html.parser")
+    articles: list[dict] = []
+
+    # Try multiple common blog card patterns in priority order
+    candidates = (
+        soup.select("article")
+        or soup.select(".post")
+        or soup.select(".blog-post")
+        or soup.select("[class*='post-card']")
+        or soup.select("[class*='blog-card']")
+    )
+
+    for el in candidates[:limit * 2]:  # fetch extra; filter empties below
+        # Title
+        title_el = (
+            el.select_one("h2 a")
+            or el.select_one("h3 a")
+            or el.select_one("h2")
+            or el.select_one("h3")
+        )
+        if not title_el:
+            continue
+        title = title_el.get_text(strip=True)
+
+        # URL
+        link_el = title_el if title_el.name == "a" else title_el.find("a")
+        href = link_el["href"] if link_el and link_el.get("href") else ""
+        if href and href.startswith("/"):
+            href = "https://www.sofarsounds.com" + href
+
+        # Snippet
+        snippet_el = (
+            el.select_one("p")
+            or el.select_one("[class*='excerpt']")
+            or el.select_one("[class*='summary']")
+        )
+        snippet = snippet_el.get_text(strip=True)[:300] if snippet_el else ""
+
+        if title:
+            articles.append(
+                {
+                    "source": "music",
+                    "source_name": "Sofar Sounds",
+                    "title": title,
+                    "url": href or url,
+                    "snippet": snippet,
+                }
+            )
+        if len(articles) >= limit:
+            break
+
+    print(f"[Music] Sofar Sounds → {len(articles)} article(s)")
+    return articles
+
+
+def _scrape_bandcamp_daily(limit: int) -> list[dict]:
+    """
+    Scrape latest articles from daily.bandcamp.com.
+    Returns a list of {title, url, snippet, source_name} dicts.
+    """
+    url = MUSIC_SOURCES[1]["url"]
+    try:
+        resp = requests.get(url, headers=SCRAPER_HEADERS, timeout=15)
+        resp.raise_for_status()
+    except requests.RequestException as exc:
+        print(f"  [warn] Bandcamp Daily fetch failed: {exc}")
+        return []
+
+    soup = BeautifulSoup(resp.text, "html.parser")
+    articles: list[dict] = []
+
+    candidates = (
+        soup.select(".story")
+        or soup.select("article")
+        or soup.select(".daily-story")
+        or soup.select("[class*='story']")
+        or soup.select("[class*='post']")
+    )
+
+    for el in candidates[:limit * 2]:
+        title_el = (
+            el.select_one("h2 a")
+            or el.select_one("h3 a")
+            or el.select_one(".story-title a")
+            or el.select_one("h2")
+            or el.select_one("h3")
+        )
+        if not title_el:
+            continue
+        title = title_el.get_text(strip=True)
+
+        link_el = title_el if title_el.name == "a" else title_el.find("a")
+        href = link_el["href"] if link_el and link_el.get("href") else ""
+        if href and href.startswith("/"):
+            href = "https://daily.bandcamp.com" + href
+
+        snippet_el = (
+            el.select_one(".story-excerpt")
+            or el.select_one("[class*='excerpt']")
+            or el.select_one("p")
+        )
+        snippet = snippet_el.get_text(strip=True)[:300] if snippet_el else ""
+
+        if title:
+            articles.append(
+                {
+                    "source": "music",
+                    "source_name": "Bandcamp Daily",
+                    "title": title,
+                    "url": href or url,
+                    "snippet": snippet,
+                }
+            )
+        if len(articles) >= limit:
+            break
+
+    print(f"[Music] Bandcamp Daily → {len(articles)} article(s)")
+    return articles
+
+
+def fetch_music_articles() -> list[dict]:
+    """Fetch MUSIC_ARTICLES_PER_SOURCE articles from each music source."""
+    print("[Music] Scraping music sources …")
+    results = _scrape_sofar_sounds(MUSIC_ARTICLES_PER_SOURCE)
+    results += _scrape_bandcamp_daily(MUSIC_ARTICLES_PER_SOURCE)
+    print(f"[Music] Total articles collected: {len(results)}")
+    return results
+
+
+# ---------------------------------------------------------------------------
 # Main
 # ---------------------------------------------------------------------------
 
@@ -356,6 +524,11 @@ def main() -> dict:
     if not YOUTUBE_CHANNEL_IDS:
         raise ValueError("YOUTUBE_CHANNEL_IDS list is empty. Add channel IDs before running.")
 
+    # Determine AM/PM — based on UTC hour; AM runs at 08:00, PM runs at 20:00
+    now_utc = datetime.datetime.now(UTC)
+    is_am_email: bool = now_utc.hour < 12
+    print(f"[fetch] Run type: {'AM' if is_am_email else 'PM'} (UTC hour {now_utc.hour})")
+
     seen_ids = load_history()
 
     # --- Reddit ---
@@ -369,13 +542,22 @@ def main() -> dict:
 
     youtube_results = channel_videos + ([trending_video] if trending_video else [])
 
+    # --- Music (AM only) ---
+    music_articles: list[dict] = []
+    if is_am_email:
+        music_articles = fetch_music_articles()
+    else:
+        print("[Music] PM email — skipping music section.")
+
     # --- Persist history ---
     save_history(seen_ids)
 
     raw_payload = {
-        "fetched_at": datetime.datetime.now(UTC).isoformat(),
+        "fetched_at": now_utc.isoformat(),
+        "is_am_email": is_am_email,
         "reddit_posts": reddit_posts,
         "youtube_videos": youtube_results,
+        "music_articles": music_articles,
     }
 
     # Write raw fetch snapshot (useful for debugging / re-running curation without re-fetching)
@@ -385,7 +567,8 @@ def main() -> dict:
         f"\n[fetch] Raw data → {raw_file} "
         f"({len(reddit_posts)} Reddit posts | "
         f"{len(channel_videos)} channel videos | "
-        f"{'1 trending video' if trending_video else 'no trending video'})"
+        f"{'1 trending video' if trending_video else 'no trending video'} | "
+        f"{len(music_articles)} music articles)"
     )
 
     # --- Audit & Curation ---
@@ -398,12 +581,16 @@ def main() -> dict:
     curated_file.write_text(json.dumps(curated, indent=2, ensure_ascii=False), encoding="utf-8")
 
     summary = curated["audit_summary"]
+    music_line = (
+        f" | Music: {summary.get('music_articles', 0)} articles"
+        if is_am_email else ""
+    )
     print(
         f"\n[done] Curated data → {curated_file}\n"
         f"       Reddit: {summary['reddit_accepted']}/{summary['reddit_raw']} accepted "
         f"({summary['reddit_discarded']} discarded) | "
         f"YouTube: {summary['youtube_videos']} videos | "
-        f"Themes: {summary['themes']}"
+        f"Themes: {summary['themes']}{music_line}"
     )
     return curated
 
