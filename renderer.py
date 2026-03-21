@@ -93,38 +93,61 @@ a:hover { text-decoration: underline; }
   padding: 24px 16px 48px;
 }
 
-/* ── Masthead ────────────────────────────────────────────── */
+/* ── Masthead / Brand Header ─────────────────────────────── */
 .masthead {
-  background: linear-gradient(135deg, #5D6D7E 0%, #4a5968 100%);
+  background: #FFFFFF;
   border-radius: 16px;
-  padding: 36px 32px;
+  padding: 32px 32px 0;
   margin-bottom: 32px;
   text-align: center;
+  border: 1px solid #E0E0E0;
+  overflow: hidden;
 }
-.masthead h1 {
+.brand-logo {
+  font-size: 38px;
+  line-height: 1;
+  margin-bottom: 10px;
+}
+.brand-title {
+  font-family: 'Playfair Display', Georgia, serif;
   font-size: 28px;
-  font-weight: 800;
-  letter-spacing: -0.5px;
-  color: #fff;
+  font-weight: bold;
+  color: #5D6D7E;
+  letter-spacing: 0.3px;
+  margin: 0;
 }
-.masthead .date {
-  color: rgba(255,255,255,0.75);
-  font-size: 13px;
-  margin-top: 6px;
+.brand-tagline {
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #666666;
+  margin: 6px 0 0;
+}
+.brand-date {
+  font-size: 12px;
+  color: #9CA3AF;
+  margin-top: 4px;
+}
+.brand-separator {
+  height: 2px;
+  background: #82954B;
+  margin: 20px -32px 0;
 }
 .masthead .stats {
-  margin-top: 14px;
   display: flex;
   justify-content: center;
-  gap: 12px;
+  gap: 10px;
   flex-wrap: wrap;
+  background: #F9F7F2;
+  margin: 0 -32px;
+  padding: 12px 32px;
 }
 .masthead .stat-pill {
-  background: rgba(255,255,255,0.18);
+  background: rgba(93, 109, 126, 0.10);
+  border: 1px solid rgba(93, 109, 126, 0.18);
   border-radius: 999px;
-  padding: 4px 14px;
+  padding: 3px 12px;
   font-size: 12px;
-  color: #fff;
+  color: #5D6D7E;
 }
 
 /* ── Theme Section ───────────────────────────────────────── */
@@ -681,15 +704,19 @@ def build_html(curated: dict) -> str:
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Daily Digest</title>
+  <title>The Curated Canopy</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
   <style>{_CSS}</style>
 </head>
 <body>
 <div class="wrapper">
 
   <div class="masthead">
-    <h1>Daily Digest</h1>
-    <div class="date">{date_str}</div>
+    <div class="brand-logo">🍞🌿🐚</div>
+    <h1 class="brand-title">The Curated Canopy</h1>
+    <p class="brand-tagline">Your 12-hour curation of Human Stories, Good News, and Nature.</p>
+    <div class="brand-date">{date_str}</div>
+    <div class="brand-separator"></div>
     <div class="stats">{stats_html}</div>
   </div>
 
@@ -759,7 +786,7 @@ def main() -> None:
             label = f"{dt.strftime('%b')} {dt.day}"
         except Exception:
             label = "Today"
-        send_email(html, subject=f"Daily Digest · {label}")
+        send_email(html, subject=f"The Curated Canopy · {label}")
     else:
         print("[render] EMAIL_USER / SMTP_PASS not set — skipping send.")
 
