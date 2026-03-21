@@ -869,8 +869,18 @@ def send_email(html_body: str, subject: str) -> None:
         print("ERROR: SMTP_USER / EMAIL_USER environment variable is empty. Check GitHub Secrets!")
         return
 
-    recipients_raw = os.environ.get("NEWSLETTER_RECIPIENTS", smtp_user)
-    recipients = [r.strip() for r in recipients_raw.split(",") if r.strip()]
+    # Try every common naming convention for the recipient list
+    raw_to = (
+        os.environ.get("EMAIL_TO")
+        or os.environ.get("NEWSLETTER_RECIPIENTS")
+        or os.environ.get("RECIPIENTS")
+        or smtp_user  # last resort: send to the sender address
+    )
+    if not raw_to or raw_to.strip() == "":
+        print("❌ ERROR: Fern cannot find a recipient email. Ensure 'EMAIL_TO' is in your .yml 'env' section.")
+        return
+    recipients = [r.strip() for r in raw_to.split(",") if r.strip()]
+    print(f"✅ Fern is delivering to: {recipients}")
 
     msg = MIMEMultipart("alternative")
     msg["Subject"] = subject

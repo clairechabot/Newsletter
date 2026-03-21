@@ -12,7 +12,7 @@ jobs:
     name: Fetch · Curate · Render · Send
     runs-on: ubuntu-latest
 
-    # Silence Node.js 16 deprecation warnings from older action wrappers
+    # Silence Node.js deprecation warnings from action wrappers
     env:
       FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
@@ -25,7 +25,6 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          # Full history lets us push back without a shallow-clone conflict
           fetch-depth: 0
 
       # ── 2. Python setup ──────────────────────────────────────────────────
@@ -47,7 +46,6 @@ jobs:
       - name: Install dependencies
         run: |
           pip install --quiet -r requirements.txt
-          # Explicit fallback — guards against a stale or missing requirements.txt
           pip install --quiet anthropic google-api-python-client python-dateutil requests beautifulsoup4
 
       # ── 5. Fetch & Curate ────────────────────────────────────────────────
@@ -61,16 +59,21 @@ jobs:
       # ── 6. Render HTML + Send email ──────────────────────────────────────
       - name: Render newsletter and send
         env:
-          EMAIL_USER:              ${{ secrets.EMAIL_USER }}
-          SMTP_USER:               ${{ secrets.SMTP_USER }}
-          SMTP_PASS:               ${{ secrets.SMTP_PASS }}
-          SMTP_HOST:               ${{ secrets.SMTP_HOST }}
-          SMTP_SERVER:             ${{ secrets.SMTP_SERVER }}
-          SMTP_PORT:               ${{ secrets.SMTP_PORT }}
-          NEWSLETTER_RECIPIENTS:   ${{ secrets.NEWSLETTER_RECIPIENTS }}
+          # Sender credentials — support both naming conventions
+          EMAIL_USER:            ${{ secrets.EMAIL_USER }}
+          SMTP_USER:             ${{ secrets.SMTP_USER }}
+          SMTP_PASS:             ${{ secrets.SMTP_PASS }}
+          # Server — support both naming conventions
+          SMTP_HOST:             ${{ secrets.SMTP_HOST }}
+          SMTP_SERVER:           ${{ secrets.SMTP_SERVER }}
+          SMTP_PORT:             ${{ secrets.SMTP_PORT }}
+          # Recipients — support all common naming conventions
+          EMAIL_TO:              ${{ secrets.EMAIL_TO }}
+          NEWSLETTER_RECIPIENTS: ${{ secrets.NEWSLETTER_RECIPIENTS }}
+          RECIPIENTS:            ${{ secrets.RECIPIENTS }}
         run: python renderer.py
 
-      # ── 7. Upload HTML artifact (optional debug artifact) ────────────────
+      # ── 7. Upload HTML artifact ──────────────────────────────────────────
       - name: Upload newsletter HTML
         if: always()
         uses: actions/upload-artifact@v4
@@ -79,21 +82,17 @@ jobs:
           path: newsletter.html
           retention-days: 7
 
-      # ── 8. Memory — commit updated history.json back to repo ─────────────
-      # This is the persistence step: on the next run the script will read
-      # this file and skip any video IDs it already sent.
+      # ── 8. Commit updated history.json ───────────────────────────────────
       - name: Commit updated history.json
-        if: always()   # run even if send failed so history is still saved
+        if: always()
         run: |
           git config user.name  "newsletter-bot"
           git config user.email "newsletter-bot@users.noreply.github.com"
-          # history.json won't exist on the very first run — skip gracefully
           if [ ! -f history.json ]; then
             echo "history.json does not exist yet — skipping commit."
             exit 0
           fi
           git add history.json
-          # Only commit if something actually changed (avoids empty commits)
           if git diff --staged --quiet; then
             echo "history.json unchanged — nothing to commit."
           else
