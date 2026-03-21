@@ -391,6 +391,61 @@ details[open] > summary::before {
   border: 1px solid #BEF264;
 }
 
+/* ── Fern Greeting ───────────────────────────────────────── */
+.fern-greeting {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  background: #FFFFFF;
+  border: 1px solid #E0E0E0;
+  border-left: 4px solid #82954B;
+  border-radius: 12px;
+  padding: 16px 20px;
+  margin-bottom: 20px;
+}
+.fern-avatar {
+  font-size: 26px;
+  flex-shrink: 0;
+  line-height: 1.3;
+}
+.fern-byline {
+  font-size: 11px;
+  font-weight: 700;
+  color: #82954B;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  margin-bottom: 4px;
+}
+.fern-greeting p {
+  font-size: 14px;
+  color: #374151;
+  line-height: 1.65;
+  margin: 0;
+  font-style: italic;
+}
+
+/* ── Vibe Bar ────────────────────────────────────────────── */
+.vibe-section {
+  margin-bottom: 24px;
+}
+.vibe-label {
+  font-size: 12px;
+  color: #6B7280;
+  margin-bottom: 7px;
+}
+.vibe-label strong { color: #2C3E50; font-weight: 600; }
+.vibe-bar {
+  height: 8px;
+  border-radius: 999px;
+  overflow: hidden;
+  background: #5D6D7E;
+  display: flex;
+}
+.vibe-bar-wholesome {
+  background: #82954B;
+  height: 100%;
+}
+
 /* ── Footer ──────────────────────────────────────────────── */
 .footer {
   text-align: center;
@@ -404,6 +459,53 @@ details[open] > summary::before {
 
 # Accent colours cycle per theme section
 _ACCENTS = ["#5D6D7E", "#82954B", "#C17F3A", "#7B6FA0", "#3A7D85"]
+
+# Subreddits that count toward the "Wholesome" side of the vibe bar
+_WHOLESOME_SUBREDDITS = {"benignexistence", "cozyplaces", "simpleliving", "aww", "mildlyinteresting"}
+
+
+def _calculate_vibe(themes: list, global_silver_linings: list) -> tuple:
+    """Return (wholesome_pct, drama_pct) as integers that sum to 100."""
+    total = 0
+    wholesome = 0
+    for theme in themes:
+        for item in theme.get("items", []):
+            total += 1
+            if item.get("subreddit", "").lower() in _WHOLESOME_SUBREDDITS:
+                wholesome += 1
+    # Good news articles are always wholesome
+    wholesome += len(global_silver_linings)
+    total += len(global_silver_linings)
+    if total == 0:
+        return 50, 50
+    pct = round(wholesome / total * 100)
+    return pct, 100 - pct
+
+
+def _render_fern_greeting(greeting: str) -> str:
+    if not greeting:
+        return ""
+    escaped = greeting.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
+    return f"""
+<div class="fern-greeting">
+  <span class="fern-avatar">🌿</span>
+  <div>
+    <div class="fern-byline">A note from Fern</div>
+    <p>{escaped}</p>
+  </div>
+</div>"""
+
+
+def _render_vibe_bar(wholesome_pct: int, drama_pct: int) -> str:
+    return f"""
+<div class="vibe-section">
+  <div class="vibe-label">
+    Vibe Check: <strong>{wholesome_pct}% Wholesome</strong> | <strong>{drama_pct}% Spicy Drama</strong>
+  </div>
+  <div class="vibe-bar">
+    <div class="vibe-bar-wholesome" style="width:{wholesome_pct}%"></div>
+  </div>
+</div>"""
 
 
 def _render_reddit_card(post: dict) -> str:
@@ -691,6 +793,11 @@ def build_html(curated: dict) -> str:
         goodnews_pill,
     ])
 
+    fern_data             = curated.get("fern_data", {})
+    fern_greeting_html    = _render_fern_greeting(fern_data.get("greeting", ""))
+    wholesome_pct, drama_pct = _calculate_vibe(themes, global_silver_linings)
+    vibe_bar_html         = _render_vibe_bar(wholesome_pct, drama_pct)
+
     theme_html = "".join(
         _render_theme(theme, _ACCENTS[i % len(_ACCENTS)])
         for i, theme in enumerate(themes)
@@ -719,6 +826,10 @@ def build_html(curated: dict) -> str:
     <div class="brand-separator"></div>
     <div class="stats">{stats_html}</div>
   </div>
+
+  {fern_greeting_html}
+
+  {vibe_bar_html}
 
   {soundtrack_html}
 
@@ -780,13 +891,12 @@ def main() -> None:
 
     # Send only when SMTP credentials are present
     if os.environ.get("EMAIL_USER") and os.environ.get("SMTP_PASS"):
-        fetched_at = curated.get("fetched_at", "")
-        try:
-            dt = datetime.datetime.fromisoformat(fetched_at)
-            label = f"{dt.strftime('%b')} {dt.day}"
-        except Exception:
-            label = "Today"
-        send_email(html, subject=f"The Curated Canopy · {label}")
+        is_am      = curated.get("is_am_email", False)
+        fern_data  = curated.get("fern_data", {})
+        top_pick   = fern_data.get("top_pick_title", "").strip()
+        prefix     = "☀️ The Morning Rise" if is_am else "🌙 The Evening Wind-down"
+        subject    = f"{prefix} | {top_pick}" if top_pick else f"{prefix} · The Curated Canopy"
+        send_email(html, subject=subject)
     else:
         print("[render] EMAIL_USER / SMTP_PASS not set — skipping send.")
 

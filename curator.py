@@ -543,6 +543,85 @@ def audit_good_news_articles(
 
 
 # ---------------------------------------------------------------------------
+# Fern — Daily Greeting & Top Pick
+# ---------------------------------------------------------------------------
+
+_FERN_GREETING_SYSTEM = textwrap.dedent("""
+You are Fern — the AI curator behind a newsletter called The Curated Canopy.
+Personality: sophisticated, cozy, warm, slightly witty. Never cringe or overly cheerful.
+
+Write ONE sentence as Fern's daily note to open the newsletter.
+- AM greeting: reference morning rituals (bread, coffee, birds, morning light) and tease
+  the stories inside. Be specific and evocative.
+- PM greeting: reference winding down (sunset, closing tabs, soft music) and invite
+  quiet reading. Be gentle and slightly poetic.
+
+Also select ONE item from the content list that would be the most compelling subject
+line — the title most likely to make someone open the email. Keep it under 60 chars.
+If a title is too long, shorten it naturally.
+
+Return ONLY valid JSON:
+{
+  "greeting": "<one sentence daily note from Fern>",
+  "top_pick_title": "<most compelling item title, max 60 chars>"
+}
+
+Do not include any text outside the JSON object.
+""").strip()
+
+
+def generate_fern_greeting(
+    client: anthropic.Anthropic,
+    is_am: bool,
+    themes: list[dict],
+    morning_soundtrack: list[dict],
+    global_silver_linings: list[dict],
+) -> dict:
+    """
+    Generate Fern's one-sentence daily note and pick the top item title
+    for the email subject line.
+    """
+    time_label = "AM (morning edition)" if is_am else "PM (evening edition)"
+    lines = [f"Time of day: {time_label}\n\n## Content in today's digest:\n"]
+
+    for theme in themes:
+        lines.append(f"\nTheme: {theme['name']}")
+        for item in theme.get("items", []):
+            lines.append(f"  - {item.get('title', '')}")
+
+    for art in morning_soundtrack:
+        lines.append(f"  - [Music] {art.get('title', '')}")
+
+    for art in global_silver_linings:
+        lines.append(f"  - [Good News] {art.get('title', '')}")
+
+    print("[Fern] Generating greeting and top pick …")
+    message = client.messages.create(
+        model=CLAUDE_MODEL,
+        max_tokens=256,
+        system=_FERN_GREETING_SYSTEM,
+        messages=[{"role": "user", "content": "\n".join(lines)}],
+    )
+
+    raw = message.content[0].text.strip()
+    if raw.startswith("```"):
+        raw = raw.split("```")[1]
+        if raw.startswith("json"):
+            raw = raw[4:]
+        raw = raw.strip()
+
+    try:
+        return json.loads(raw)
+    except json.JSONDecodeError:
+        fallback = (
+            "Good morning! Fresh stories are waiting — let's dig in."
+            if is_am
+            else "The day is winding down. Let's close it with something worth reading."
+        )
+        return {"greeting": fallback, "top_pick_title": ""}
+
+
+# ---------------------------------------------------------------------------
 # Orchestrator
 # ---------------------------------------------------------------------------
 
@@ -576,6 +655,15 @@ def run_curation(raw_data: dict) -> dict:
     good_news_raw = raw_data.get("good_news_articles", [])
     global_silver_linings = audit_good_news_articles(client, good_news_raw)
 
+    # 6. Fern's daily greeting + top pick for subject line
+    fern_data = generate_fern_greeting(
+        client,
+        raw_data.get("is_am_email", False),
+        themes,
+        morning_soundtrack,
+        global_silver_linings,
+    )
+
     return {
         "fetched_at": raw_data.get("fetched_at"),
         "is_am_email": raw_data.get("is_am_email", False),
@@ -591,4 +679,5 @@ def run_curation(raw_data: dict) -> dict:
         "themes": themes,
         "morning_soundtrack": morning_soundtrack,
         "global_silver_linings": global_silver_linings,
+        "fern_data": fern_data,
     }
