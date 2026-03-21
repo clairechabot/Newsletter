@@ -27,6 +27,7 @@ from pathlib import Path
 from zoneinfo import ZoneInfo
 
 import re
+import random
 from urllib.parse import urlparse
 
 import requests
@@ -73,9 +74,29 @@ YOUTUBE_CHANNEL_IDS: list[str] = [
 HISTORY_FILE = Path(__file__).parent / "history.json"
 REDDIT_WINDOW_HOURS = 12
 REDDIT_REQUEST_DELAY = 2.0   # seconds between public API calls — stay well under rate limit
-YOUTUBE_VIDEOS_PER_CHANNEL = 2
+YOUTUBE_VIDEOS_PER_CHANNEL = 1        # 1 per channel conserves quota for wildcard search
 YOUTUBE_MIN_DURATION_SECONDS = 60
+YOUTUBE_WILDCARD_MIN_SECONDS = 300    # wildcard must be ≥ 5 minutes
 YOUTUBE_DOUBLE_CHECK_SLEEP = 300  # 5 minutes
+
+# Wildcard categories — one is chosen at random each run
+WILDCARD_CATEGORIES = [
+    {
+        "name": "Nature",
+        "topic_id": "/m/06mf6",
+        "queries": ["wildlife", "ocean life"],
+    },
+    {
+        "name": "Travel",
+        "topic_id": "/m/019_rr",
+        "queries": ["travel vlog", "scenic journey"],
+    },
+    {
+        "name": "Good News",
+        "topic_id": "/m/098wr",
+        "queries": ["positive news", "restoring faith in humanity"],
+    },
+]
 
 # Reddit public API — no OAuth needed
 REDDIT_USER_AGENT = os.environ.get(
@@ -366,55 +387,78 @@ def fetch_channel_videos(youtube, seen_ids: set[str]) -> list[dict]:
 
 def fetch_trending_video(youtube, subreddits: list[str], seen_ids: set[str]) -> dict | None:
     """
-    Fetch ONE wildcard video that matches the Lifestyle / Hobbies & Leisure topic
-    using YouTube's topicId filter on search.list — much more targeted than the
-    mostPopular chart approach.
+    Pick ONE wildcard video by randomly selecting a category (Nature / Travel / Good News),
+    then searching with that category's topicId + one of its query strings.
 
-    Topic IDs (Freebase):
-        /m/019_rr  — Lifestyle
-        /m/05qt0   — Hobbies & Leisure
-    Tries Lifestyle first; falls back to Hobbies & Leisure if nothing passes filters.
+    Constraints:
+      - Published within the last 24 hours
+      - At least YOUTUBE_WILDCARD_MIN_SECONDS long (5 minutes) — no Shorts
+      - Not already in history (seen_ids deduplication)
+
+    Falls back through both query strings and all three categories before giving up.
     """
-    # Topic IDs in priority order — both align with bread-making / gardening vibe
-    TOPIC_IDS = ["/m/019_rr", "/m/05qt0"]
+    published_after = (
+        datetime.datetime.now(UTC) - datetime.timedelta(hours=24)
+    ).strftime("%Y-%m-%dT%H:%M:%SZ")
 
-    for topic_id in TOPIC_IDS:
-        print(f"[YouTube] Fetching wildcard via topicId {topic_id} …")
+    # Shuffle so we try a different category each run
+    categories = WILDCARD_CATEGORIES.copy()
+    random.shuffle(categories)
 
-        search_resp = (
-            youtube.search()
-            .list(
-                part="id",
-                type="video",
-                topicId=topic_id,
-                order="viewCount",
-                regionCode="US",
-                maxResults=20,
+    for category in categories:
+        for query in category["queries"]:
+            print(
+                f"[YouTube] Wildcard search — category: {category['name']!r}, "
+                f"query: {query!r} …"
             )
-            .execute()
-        )
 
-        candidate_ids = [
-            item["id"]["videoId"]
-            for item in search_resp.get("items", [])
-            if item["id"]["videoId"] not in seen_ids
-        ]
+            search_resp = (
+                youtube.search()
+                .list(
+                    part="id",
+                    type="video",
+                    topicId=category["topic_id"],
+                    q=query,
+                    publishedAfter=published_after,
+                    order="viewCount",
+                    regionCode="US",
+                    maxResults=20,
+                )
+                .execute()
+            )
 
-        if not candidate_ids:
-            continue
+            candidate_ids = [
+                item["id"]["videoId"]
+                for item in search_resp.get("items", [])
+                if item["id"]["videoId"] not in seen_ids
+            ]
 
-        # Fetch full details (duration, statistics) for deduplication + shorts check
-        details = _fetch_video_details(youtube, candidate_ids)
-        for video in details:
-            vid_id = video["video_id"]
-            if vid_id in seen_ids:
-                print(f"  [skip/dup] wildcard candidate {vid_id} already in history")
+            if not candidate_ids:
+                print(f"  [wildcard] No fresh candidates for query {query!r}.")
                 continue
-            seen_ids.add(vid_id)
-            print(f"[YouTube] Wildcard pick (topicId {topic_id}): {video['title']}")
-            return {**video, "source": "youtube_trending"}
 
-    print("[YouTube] No wildcard video found after trying all topic IDs.")
+            details = _fetch_video_details(youtube, candidate_ids)
+
+            for video in details:
+                vid_id = video["video_id"]
+                if vid_id in seen_ids:
+                    print(f"  [skip/dup] wildcard {vid_id} already in history")
+                    continue
+                if video["duration_seconds"] < YOUTUBE_WILDCARD_MIN_SECONDS:
+                    print(
+                        f"  [skip/short] wildcard {vid_id} — "
+                        f"{video['duration_seconds']}s < {YOUTUBE_WILDCARD_MIN_SECONDS}s"
+                    )
+                    continue
+
+                seen_ids.add(vid_id)
+                print(
+                    f"[YouTube] Wildcard pick ({category['name']} / {query!r}): "
+                    f"{video['title']}"
+                )
+                return {**video, "source": "youtube_trending"}
+
+    print("[YouTube] No wildcard video found after exhausting all categories.")
     return None
 
 
