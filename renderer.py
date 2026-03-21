@@ -564,10 +564,16 @@ def _render_morning_soundtrack(articles: list[dict]) -> str:
 
 
 def _render_good_news_card(article: dict) -> str:
-    title       = article.get("title", "(no title)")
+    raw_title   = article.get("title", "(no title)")
     source_name = article.get("source_name", "Good News")
     url         = article.get("url", "#")
-    reason      = article.get("reason", "")
+    raw_reason  = article.get("reason", "")
+
+    def _e(s: str) -> str:
+        return s.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
+
+    title  = _e(raw_title)
+    reason = _e(raw_reason)
 
     source_badge = '<span class="badge badge-goodnews">🌿 Good News</span>'
 
@@ -638,7 +644,7 @@ def build_html(curated: dict) -> str:
 
     try:
         dt = datetime.datetime.fromisoformat(fetched_at)
-        date_str = dt.strftime("%A, %B %-d %Y · %H:%M UTC")
+        date_str = f"{dt.strftime('%A, %B')} {dt.day} {dt.strftime('%Y · %H:%M')} UTC"
     except Exception:
         date_str = fetched_at
 
@@ -747,7 +753,7 @@ def main() -> None:
         fetched_at = curated.get("fetched_at", "")
         try:
             dt = datetime.datetime.fromisoformat(fetched_at)
-            label = dt.strftime("%b %-d")
+            label = f"{dt.strftime('%b')} {dt.day}"
         except Exception:
             label = "Today"
         send_email(html, subject=f"Daily Digest · {label}")

@@ -26,10 +26,12 @@ import datetime
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
+import re
+from urllib.parse import urlparse
+
 import requests
 from bs4 import BeautifulSoup
 from googleapiclient.discovery import build
-from dateutil import parser as dateutil_parser
 
 # ---------------------------------------------------------------------------
 # Configuration — replace the placeholder lists before running
@@ -225,7 +227,6 @@ def build_youtube_client():
 
 def _parse_iso8601_duration(duration: str) -> int:
     """Convert ISO 8601 duration (PT4M13S) to total seconds."""
-    import re
     pattern = re.compile(
         r"PT(?:(?P<hours>\d+)H)?(?:(?P<minutes>\d+)M)?(?:(?P<seconds>\d+)S)?"
     )
@@ -352,7 +353,6 @@ def fetch_trending_video(youtube, subreddits: list[str], seen_ids: set[str]) -> 
             part="snippet,contentDetails,statistics",
             chart="mostPopular",
             regionCode="US",
-            videoCategoryId="",  # all categories; narrow if needed
             maxResults=25,
         )
         .execute()
@@ -435,7 +435,6 @@ def _find_music_embed(article_url: str) -> str | None:
             return f"https://www.youtube.com/embed/{vid_id}"
 
     # Fallback: bare YouTube watch links in the page body
-    import re
     yt_match = re.search(
         r'https?://(?:www\.)?youtube\.com/watch\?v=([\w-]{11})', resp.text
     )
@@ -446,13 +445,9 @@ def _find_music_embed(article_url: str) -> str | None:
     for a in soup.find_all("a", href=True):
         href: str = a["href"]
         if re.search(r'bandcamp\.com/(album|track)/', href):
-            # Build a minimal EmbeddedPlayer URL from the album/track path
-            clean = href.split("?")[0].rstrip("/")
-            kind = "album" if "/album/" in clean else "track"
-            slug = clean.split(f"/{kind}/")[-1]
-            # We don't have the numeric ID here, so link to the page itself;
-            # the rendered card will still show a "Listen" button.
-            return clean  # direct Bandcamp page is still distraction-light
+            # No numeric ID available from the link alone; return the clean page
+            # URL — the renderer will show a "Listen on Bandcamp" button.
+            return href.split("?")[0].rstrip("/")
 
     return None
 
@@ -657,7 +652,6 @@ def _scrape_source(base_url: str, source_label: str, limit: int) -> list[dict]:
         link_el = title_el if title_el.name == "a" else title_el.find("a")
         href = (link_el.get("href") or "") if link_el else ""
         if href.startswith("/"):
-            from urllib.parse import urlparse
             parsed = urlparse(base_url)
             href = f"{parsed.scheme}://{parsed.netloc}{href}"
 
