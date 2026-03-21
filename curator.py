@@ -556,14 +556,20 @@ Write ONE sentence as Fern's daily note to open the newsletter.
 - PM greeting: reference winding down (sunset, closing tabs, soft music) and invite
   quiet reading. Be gentle and slightly poetic.
 
-Also select ONE item from the content list that would be the most compelling subject
-line — the title most likely to make someone open the email. Keep it under 60 chars.
-If a title is too long, shorten it naturally.
+Also write a short, original title for this edition — Fern's own name for today's
+digest, inspired by the themes and mood of the content. Think of it like a newspaper
+editor naming an issue. It should be evocative, slightly poetic, and under 50 chars.
+Do NOT copy any existing headline — invent something that captures the spirit of the day.
+
+Examples of good edition titles:
+  "Quiet Corners & Loud Ideas"
+  "The Week the Internet Was Kind"
+  "Small Wonders, Big Skies"
 
 Return ONLY valid JSON:
 {
   "greeting": "<one sentence daily note from Fern>",
-  "top_pick_title": "<most compelling item title, max 60 chars>"
+  "top_pick_title": "<Fern's original title for this edition, max 50 chars>"
 }
 
 Do not include any text outside the JSON object.
