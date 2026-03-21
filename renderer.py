@@ -855,14 +855,19 @@ def send_email(html_body: str, subject: str) -> None:
     smtp_user = os.environ.get("SMTP_USER") or os.environ.get("EMAIL_USER", "")
     smtp_pass = os.environ.get("SMTP_PASS", "")
     smtp_host = os.environ.get("SMTP_SERVER") or os.environ.get("SMTP_HOST", "")
-    smtp_port = int(os.environ.get("SMTP_PORT") or 587)
+    smtp_port = int(os.environ.get("SMTP_PORT", 587))
 
-    # Fail fast with a clear message rather than a cryptic SMTPServerDisconnected
-    if not smtp_host or not smtp_user:
-        raise ValueError(
-            "Missing required SMTP secrets — set SMTP_SERVER (or SMTP_HOST) "
-            "and SMTP_USER (or EMAIL_USER) in GitHub Secrets."
-        )
+    # Debug — visible in GitHub Actions logs so we can confirm what the runner sees
+    print(f"DEBUG: Attempting to connect to host: '{smtp_host}' on port: '{smtp_port}'")
+    print(f"DEBUG: smtp_user set: {bool(smtp_user)} | smtp_pass set: {bool(smtp_pass)}")
+
+    # Bail out with a clear message rather than a cryptic socket error
+    if not smtp_host or smtp_host.strip() == "":
+        print("ERROR: SMTP_SERVER environment variable is empty. Check GitHub Secrets!")
+        return
+    if not smtp_user:
+        print("ERROR: SMTP_USER / EMAIL_USER environment variable is empty. Check GitHub Secrets!")
+        return
 
     recipients_raw = os.environ.get("NEWSLETTER_RECIPIENTS", smtp_user)
     recipients = [r.strip() for r in recipients_raw.split(",") if r.strip()]
