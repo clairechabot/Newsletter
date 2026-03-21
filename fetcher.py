@@ -38,8 +38,20 @@ from googleapiclient.discovery import build
 # ---------------------------------------------------------------------------
 
 SUBREDDITS: list[str] = [
-    # e.g. "Cooking", "EatCheapAndHealthy", "MealPrepSunday"
-    # [Paste Subreddit List Here]
+    "BreadMachines",
+    "ObsidianMD",
+    "BestofRedditorUpdates",
+    "AmITheAngel",
+    "pettyrevenge",
+    "BenignExistence",
+    "MaliciousCompliance",
+    "ContainerGardening",
+    "HobbyDrama",
+    "LifeofNorman",
+    "Vintagemenus",
+    "OldRecipes",
+    "CozyPlaces",
+    "SimpleLiving",
 ]
 
 YOUTUBE_CHANNEL_IDS: list[str] = [
