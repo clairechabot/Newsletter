@@ -77,14 +77,13 @@ _CSS = """
 /* ── Reset & Base ────────────────────────────────────────── */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-               Helvetica, Arial, sans-serif;
-  background: #0f0f11;
-  color: #e4e4e7;
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  background: #F9F7F2;
+  color: #2C3E50;
   line-height: 1.6;
   padding: 0;
 }
-a { color: #a78bfa; text-decoration: none; }
+a { color: #5D6D7E; text-decoration: none; }
 a:hover { text-decoration: underline; }
 
 /* ── Wrapper ─────────────────────────────────────────────── */
@@ -96,7 +95,7 @@ a:hover { text-decoration: underline; }
 
 /* ── Masthead ────────────────────────────────────────────── */
 .masthead {
-  background: linear-gradient(135deg, #1e1b4b 0%, #312e81 100%);
+  background: linear-gradient(135deg, #5D6D7E 0%, #4a5968 100%);
   border-radius: 16px;
   padding: 36px 32px;
   margin-bottom: 32px;
@@ -109,7 +108,7 @@ a:hover { text-decoration: underline; }
   color: #fff;
 }
 .masthead .date {
-  color: #c4b5fd;
+  color: rgba(255,255,255,0.75);
   font-size: 13px;
   margin-top: 6px;
 }
@@ -117,56 +116,56 @@ a:hover { text-decoration: underline; }
   margin-top: 14px;
   display: flex;
   justify-content: center;
-  gap: 18px;
+  gap: 12px;
   flex-wrap: wrap;
 }
 .masthead .stat-pill {
-  background: rgba(255,255,255,0.1);
+  background: rgba(255,255,255,0.18);
   border-radius: 999px;
   padding: 4px 14px;
   font-size: 12px;
-  color: #e0d9ff;
+  color: #fff;
 }
 
 /* ── Theme Section ───────────────────────────────────────── */
 .theme-section {
-  margin-bottom: 36px;
+  margin-bottom: 32px;
 }
 .theme-header {
-  border-left: 4px solid var(--accent, #7c3aed);
+  border-left: 4px solid var(--accent, #5D6D7E);
   padding: 10px 16px;
   margin-bottom: 12px;
-  background: rgba(124, 58, 237, 0.08);
+  background: rgba(93, 109, 126, 0.06);
   border-radius: 0 10px 10px 0;
 }
 .theme-header h2 {
-  font-size: 19px;
+  font-size: 18px;
   font-weight: 700;
-  color: #fff;
+  color: #2C3E50;
 }
 .theme-header .tagline {
   font-size: 13px;
-  color: #a1a1aa;
+  color: #6B7280;
   margin-top: 2px;
 }
 
 /* ── Content Card ────────────────────────────────────────── */
 .card {
-  background: #18181b;
-  border: 1px solid #27272a;
+  background: #FFFFFF;
+  border: 1px solid #E0E0E0;
   border-radius: 12px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   overflow: hidden;
   transition: border-color 0.15s;
 }
-.card:hover { border-color: #52525b; }
+.card:hover { border-color: #B0BEC5; }
 
 /* ── <details> / <summary> ───────────────────────────────── */
 details { }
 summary {
   list-style: none;
   cursor: pointer;
-  padding: 14px 16px;
+  padding: 16px 20px;
   display: flex;
   align-items: flex-start;
   gap: 10px;
@@ -176,7 +175,7 @@ summary::-webkit-details-marker { display: none; }
 summary::before {
   content: "▶";
   font-size: 10px;
-  color: #71717a;
+  color: #9CA3AF;
   margin-top: 4px;
   flex-shrink: 0;
   transition: transform 0.2s;
@@ -189,12 +188,12 @@ details[open] > summary::before {
 .summary-title {
   font-size: 14px;
   font-weight: 600;
-  color: #f4f4f5;
+  color: #2C3E50;
   line-height: 1.4;
 }
 .summary-desc {
   font-size: 13px;
-  color: #a1a1aa;
+  color: #6B7280;
   margin-top: 3px;
   line-height: 1.5;
 }
@@ -208,34 +207,35 @@ details[open] > summary::before {
   align-self: flex-start;
   margin-top: 3px;
 }
-.badge-reddit  { background: #ff45001a; color: #ff6b35; border: 1px solid #ff450033; }
-.badge-youtube { background: #ff00001a; color: #ff4444; border: 1px solid #ff000033; }
-.badge-ai      { background: #fbbf2422; color: #fbbf24; border: 1px solid #fbbf2433; }
-.badge-wildcard{ background: #10b98122; color: #34d399; border: 1px solid #10b98133; }
+.badge-reddit   { background: #FFF4F0; color: #C0392B; border: 1px solid #FFCCC7; }
+.badge-youtube  { background: #FFF1F0; color: #C0392B; border: 1px solid #FFC9C9; }
+.badge-ai       { background: #FFFBEB; color: #92400E; border: 1px solid #FDE68A; }
+.badge-wildcard { background: #F0FDF4; color: #3F6212; border: 1px solid #BBF7D0; }
 
 /* ── Expanded Content ────────────────────────────────────── */
 .card-body {
-  padding: 0 16px 16px 16px;
-  border-top: 1px solid #27272a;
+  padding: 20px;
+  border-top: 1px solid #E0E0E0;
 }
 .post-text {
   font-size: 13px;
-  color: #d4d4d8;
-  margin-top: 14px;
+  color: #374151;
+  margin-top: 0;
   white-space: pre-wrap;
   word-break: break-word;
   max-height: 260px;
   overflow-y: auto;
-  background: #09090b;
+  background: #F9F7F2;
   border-radius: 8px;
   padding: 12px 14px;
   line-height: 1.65;
 }
 .post-link {
   display: inline-block;
-  margin-top: 10px;
+  margin-top: 12px;
   font-size: 12px;
-  color: #818cf8;
+  color: #5D6D7E;
+  font-weight: 500;
 }
 
 /* ── Image Grid ──────────────────────────────────────────── */
@@ -243,24 +243,24 @@ details[open] > summary::before {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
   gap: 8px;
-  margin-top: 12px;
+  margin-top: 14px;
 }
 .image-grid img {
   width: 100%;
   height: 130px;
   object-fit: cover;
   border-radius: 8px;
-  border: 1px solid #27272a;
+  border: 1px solid #E0E0E0;
 }
 
 /* ── YouTube Embed Block ─────────────────────────────────── */
 .yt-container {
-  margin-top: 14px;
+  margin-top: 0;
   position: relative;
   display: block;
   border-radius: 10px;
   overflow: hidden;
-  border: 1px solid #27272a;
+  border: 1px solid #E0E0E0;
 }
 .yt-container img {
   width: 100%;
@@ -274,10 +274,10 @@ details[open] > summary::before {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(0,0,0,0.35);
+  background: rgba(0,0,0,0.25);
   transition: background 0.15s;
 }
-.yt-container:hover .yt-play-overlay { background: rgba(0,0,0,0.5); }
+.yt-container:hover .yt-play-overlay { background: rgba(0,0,0,0.4); }
 .yt-play-btn {
   width: 62px;
   height: 44px;
@@ -297,33 +297,33 @@ details[open] > summary::before {
 
 /* ── Morning Soundtrack Section ──────────────────────────── */
 .soundtrack-section {
-  margin-bottom: 36px;
+  margin-bottom: 32px;
 }
 .soundtrack-header {
-  border-left: 4px solid #f472b6;
+  border-left: 4px solid #A0647A;
   padding: 10px 16px;
   margin-bottom: 12px;
-  background: rgba(244, 114, 182, 0.08);
+  background: rgba(160, 100, 122, 0.06);
   border-radius: 0 10px 10px 0;
 }
 .soundtrack-header h2 {
-  font-size: 19px;
+  font-size: 18px;
   font-weight: 700;
-  color: #fff;
+  color: #2C3E50;
 }
 .soundtrack-header .tagline {
   font-size: 13px;
-  color: #a1a1aa;
+  color: #6B7280;
   margin-top: 2px;
 }
 .badge-music {
-  background: #f472b61a;
-  color: #f472b6;
-  border: 1px solid #f472b633;
+  background: #FDF4FF;
+  color: #86198F;
+  border: 1px solid #E9D5FF;
 }
 .vibe-check {
   font-size: 12px;
-  color: #f472b6;
+  color: #A0647A;
   margin-top: 6px;
   font-style: italic;
 }
@@ -331,56 +331,56 @@ details[open] > summary::before {
   display: inline-block;
   margin-top: 12px;
   padding: 7px 16px;
-  background: rgba(244,114,182,0.12);
-  border: 1px solid #f472b633;
+  background: rgba(160, 100, 122, 0.08);
+  border: 1px solid #D8A0B4;
   border-radius: 999px;
-  color: #f472b6;
+  color: #A0647A;
   font-size: 13px;
   font-weight: 600;
   text-decoration: none;
 }
-.music-listen-btn:hover { background: rgba(244,114,182,0.22); }
+.music-listen-btn:hover { background: rgba(160, 100, 122, 0.15); }
 
 /* ── Global Silver Linings Section ───────────────────────── */
 .goodnews-section {
-  margin-bottom: 36px;
+  margin-bottom: 32px;
 }
 .goodnews-header {
-  border-left: 4px solid #34d399;
+  border-left: 4px solid #82954B;
   padding: 10px 16px;
   margin-bottom: 12px;
-  background: rgba(52, 211, 153, 0.08);
+  background: rgba(130, 149, 75, 0.06);
   border-radius: 0 10px 10px 0;
 }
 .goodnews-header h2 {
-  font-size: 19px;
+  font-size: 18px;
   font-weight: 700;
-  color: #fff;
+  color: #2C3E50;
 }
 .goodnews-header .tagline {
   font-size: 13px;
-  color: #a1a1aa;
+  color: #6B7280;
   margin-top: 2px;
 }
 .badge-goodnews {
-  background: #34d39922;
-  color: #34d399;
-  border: 1px solid #34d39933;
+  background: #F0FDF4;
+  color: #3F6212;
+  border: 1px solid #BEF264;
 }
 
 /* ── Footer ──────────────────────────────────────────────── */
 .footer {
   text-align: center;
   font-size: 11px;
-  color: #52525b;
+  color: #9CA3AF;
   margin-top: 40px;
   padding-top: 20px;
-  border-top: 1px solid #27272a;
+  border-top: 1px solid #E0E0E0;
 }
 """
 
 # Accent colours cycle per theme section
-_ACCENTS = ["#7c3aed", "#0ea5e9", "#f59e0b", "#10b981", "#ec4899"]
+_ACCENTS = ["#5D6D7E", "#82954B", "#C17F3A", "#7B6FA0", "#3A7D85"]
 
 
 def _render_reddit_card(post: dict) -> str:
@@ -588,7 +588,7 @@ def _render_good_news_card(article: dict) -> str:
       {source_badge}
     </summary>
     <div class="card-body">
-      <p style="font-size:13px;color:#d4d4d8;margin-top:14px;line-height:1.6;">{reason}</p>
+      <p style="font-size:13px;color:#374151;margin-top:14px;line-height:1.6;">{reason}</p>
       <a class="post-link" href="{url}" target="_blank"
          style="margin-top:10px;display:inline-block;">
         ↗ Read Full Story on {source_name}
@@ -615,7 +615,10 @@ def _render_global_silver_linings(articles: list[dict]) -> str:
 def _render_theme(theme: dict, accent: str) -> str:
     name    = theme.get("name", "Untitled")
     tagline = theme.get("tagline", "")
+    emoji   = theme.get("emoji", "")
     items   = theme.get("items", [])
+
+    heading = f"{emoji} {name}" if emoji else name
 
     cards = []
     for item in items:
@@ -628,7 +631,7 @@ def _render_theme(theme: dict, accent: str) -> str:
     return f"""
 <section class="theme-section" style="--accent: {accent}">
   <div class="theme-header">
-    <h2>{name}</h2>
+    <h2>{heading}</h2>
     <div class="tagline">{tagline}</div>
   </div>
   {"".join(cards)}

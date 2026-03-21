@@ -268,6 +268,7 @@ Return ONLY valid JSON, exactly in this shape:
   "themes": [
     {
       "name": "<creative theme name>",
+      "emoji": "<single emoji that best represents this theme's mood or subject>",
       "tagline": "<one punchy sentence that teases what's inside>",
       "items": [
         {
@@ -379,6 +380,7 @@ def cluster_content(
         themes.append(
             {
                 "name": theme.get("name", "Untitled Theme"),
+                "emoji": theme.get("emoji", ""),
                 "tagline": theme.get("tagline", ""),
                 "items": resolved_items,
             }
