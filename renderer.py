@@ -851,15 +851,21 @@ def build_html(curated: dict) -> str:
 # ---------------------------------------------------------------------------
 
 def send_email(html_body: str, subject: str) -> None:
-    # Support both SMTP_USER and EMAIL_USER secret names
-    smtp_user   = os.environ.get("SMTP_USER") or os.environ["EMAIL_USER"]
-    smtp_pass   = os.environ["SMTP_PASS"]
-    # Support both SMTP_SERVER and SMTP_HOST secret names
-    smtp_host   = os.environ.get("SMTP_SERVER") or os.environ.get("SMTP_HOST", "smtp.gmail.com")
-    # Guard against empty string secrets with `or 587`
-    smtp_port   = int(os.environ.get("SMTP_PORT") or 587)
+    # Support both SMTP_USER / EMAIL_USER and SMTP_SERVER / SMTP_HOST secret names
+    smtp_user = os.environ.get("SMTP_USER") or os.environ.get("EMAIL_USER", "")
+    smtp_pass = os.environ.get("SMTP_PASS", "")
+    smtp_host = os.environ.get("SMTP_SERVER") or os.environ.get("SMTP_HOST", "")
+    smtp_port = int(os.environ.get("SMTP_PORT") or 587)
+
+    # Fail fast with a clear message rather than a cryptic SMTPServerDisconnected
+    if not smtp_host or not smtp_user:
+        raise ValueError(
+            "Missing required SMTP secrets — set SMTP_SERVER (or SMTP_HOST) "
+            "and SMTP_USER (or EMAIL_USER) in GitHub Secrets."
+        )
+
     recipients_raw = os.environ.get("NEWSLETTER_RECIPIENTS", smtp_user)
-    recipients  = [r.strip() for r in recipients_raw.split(",") if r.strip()]
+    recipients = [r.strip() for r in recipients_raw.split(",") if r.strip()]
 
     msg = MIMEMultipart("alternative")
     msg["Subject"] = subject
@@ -892,8 +898,13 @@ def main() -> None:
     OUTPUT_HTML.write_text(html, encoding="utf-8")
     print(f"[render] HTML written → {OUTPUT_HTML}")
 
-    # Send only when SMTP credentials are present
-    if os.environ.get("EMAIL_USER") and os.environ.get("SMTP_PASS"):
+    # Send only when all required SMTP credentials are present
+    smtp_ready = (
+        (os.environ.get("SMTP_USER") or os.environ.get("EMAIL_USER"))
+        and os.environ.get("SMTP_PASS")
+        and (os.environ.get("SMTP_SERVER") or os.environ.get("SMTP_HOST"))
+    )
+    if smtp_ready:
         is_am      = curated.get("is_am_email", False)
         fern_data  = curated.get("fern_data", {})
         top_pick   = fern_data.get("top_pick_title", "").strip()
