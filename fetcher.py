@@ -77,7 +77,6 @@ REDDIT_REQUEST_DELAY = 2.0   # seconds between public API calls — stay well un
 YOUTUBE_VIDEOS_PER_CHANNEL = 1        # 1 per channel conserves quota for wildcard search
 YOUTUBE_MIN_DURATION_SECONDS = 60
 YOUTUBE_WILDCARD_MIN_SECONDS = 300    # wildcard must be ≥ 5 minutes
-YOUTUBE_DOUBLE_CHECK_SLEEP = 300  # 5 minutes
 
 # Wildcard categories — one is chosen at random each run
 WILDCARD_CATEGORIES = [
@@ -329,56 +328,77 @@ def _fetch_video_details(youtube, video_ids: list[str]) -> list[dict]:
     return videos
 
 
-def fetch_channel_videos(youtube, seen_ids: set[str]) -> list[dict]:
+def _get_uploads_playlist_ids(youtube, channel_ids: list[str]) -> dict[str, str]:
     """
-    Fetch the latest YOUTUBE_VIDEOS_PER_CHANNEL videos per channel,
-    double-check after a sleep, and filter against history.
+    Map channel_id → uploads_playlist_id using channels.list.
+    Costs 1 quota unit per 50 channels (vs 100/channel with search.list).
     """
-    def _get_latest_ids(channel_id: str) -> list[str]:
-        response = (
-            youtube.search()
-            .list(
-                part="id",
-                channelId=channel_id,
-                order="date",
-                type="video",
-                maxResults=YOUTUBE_VIDEOS_PER_CHANNEL * 2,  # extra buffer for filtering
-            )
+    result: dict[str, str] = {}
+    for i in range(0, len(channel_ids), 50):
+        batch = channel_ids[i : i + 50]
+        resp = (
+            youtube.channels()
+            .list(part="contentDetails", id=",".join(batch))
             .execute()
         )
-        return [item["id"]["videoId"] for item in response.get("items", [])]
+        for item in resp.get("items", []):
+            ch_id = item["id"]
+            uploads_id = (
+                item.get("contentDetails", {})
+                .get("relatedPlaylists", {})
+                .get("uploads", "")
+            )
+            if uploads_id:
+                result[ch_id] = uploads_id
+    return result
 
-    # First fetch
+
+def _get_playlist_latest_ids(youtube, playlist_id: str, max_results: int = 5) -> list[str]:
+    """
+    Return the latest video IDs from an uploads playlist.
+    Costs 1 quota unit per call (vs 100 for search.list).
+    """
+    resp = (
+        youtube.playlistItems()
+        .list(part="contentDetails", playlistId=playlist_id, maxResults=max_results)
+        .execute()
+    )
+    return [item["contentDetails"]["videoId"] for item in resp.get("items", [])]
+
+
+def fetch_channel_videos(youtube, seen_ids: set[str]) -> list[dict]:
+    """
+    Fetch the latest YOUTUBE_VIDEOS_PER_CHANNEL videos per channel using
+    playlistItems.list (1 unit/channel) instead of search.list (100 units/channel).
+    """
+    # Step 1: resolve uploads playlist IDs for all channels (~1 unit per 50 channels)
+    print(f"[YouTube] Resolving uploads playlists for {len(YOUTUBE_CHANNEL_IDS)} channels …")
+    uploads_map = _get_uploads_playlist_ids(youtube, YOUTUBE_CHANNEL_IDS)
+
+    # Step 2: fetch latest video IDs from each uploads playlist (1 unit/channel)
     channel_id_map: dict[str, list[str]] = {}
     for ch_id in YOUTUBE_CHANNEL_IDS:
+        playlist_id = uploads_map.get(ch_id)
+        if not playlist_id:
+            print(f"  [warn] No uploads playlist found for channel {ch_id}")
+            continue
         print(f"[YouTube] Fetching channel {ch_id} …")
-        channel_id_map[ch_id] = _get_latest_ids(ch_id)
+        vid_ids = _get_playlist_latest_ids(
+            youtube, playlist_id, max_results=YOUTUBE_VIDEOS_PER_CHANNEL * 3
+        )
+        channel_id_map[ch_id] = vid_ids
 
-    # Double-check after sleep to catch metadata updates
-    print(f"[YouTube] Sleeping {YOUTUBE_DOUBLE_CHECK_SLEEP}s for double-check …")
-    time.sleep(YOUTUBE_DOUBLE_CHECK_SLEEP)
-
-    for ch_id in YOUTUBE_CHANNEL_IDS:
-        refreshed = _get_latest_ids(ch_id)
-        # Merge: prefer the refreshed list but keep any IDs only in the first pass
-        merged = list(dict.fromkeys(refreshed + channel_id_map[ch_id]))
-        channel_id_map[ch_id] = merged
-
+    # Step 3: fetch details and filter per channel (videos.list = 1 unit per 50 videos)
     all_results: list[dict] = []
-
     for ch_id, vid_ids in channel_id_map.items():
-        # Deduplicate: compare each videoId string against history
         skipped = [v for v in vid_ids if v in seen_ids]
         fresh_ids = [v for v in vid_ids if v not in seen_ids]
         if skipped:
             print(f"  [skip/dup] {len(skipped)} video(s) already in history for {ch_id}")
         details = _fetch_video_details(youtube, fresh_ids)
-
-        # Take only the configured number of non-short videos per channel
         accepted = details[:YOUTUBE_VIDEOS_PER_CHANNEL]
         for v in accepted:
             seen_ids.add(v["video_id"])
-
         all_results.extend(accepted)
 
     print(f"[YouTube] Collected {len(all_results)} channel videos.")
