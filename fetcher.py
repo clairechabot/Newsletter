@@ -55,8 +55,19 @@ SUBREDDITS: list[str] = [
 ]
 
 YOUTUBE_CHANNEL_IDS: list[str] = [
-    # e.g. "UCxxxxxxxxxxxxxxxxxxxxxx"
-    # [Paste Channel ID List Here]
+    "UCsaGKqPZnGp_7N80hcHySGQ", "UCHL9bfHTxCMi-7vfxQ-AYtg", "UCSbyncU597LMwb3HhnAI_4w",
+    "UC-pkCUlaRDMA--8LTWQDuHA", "UCZwU2G-KVl-P-O-B35chZOQ", "UC4sEmXUuWIFlxRIFBRV6VXQ",
+    "UCDdi0yUyGW1PKzYXaIACnuA", "UCNvsIonJdJ5E4EXMa65VYpA", "UCXcTkcC_H4XeDGfJ7rQGJaw",
+    "UCvQECJukTDE2i6aCoMnS-Vg", "UCUA99fY1YylIrjeL9IH9SaA", "UC_-hYjoNe4PJNFa9iZ4lraA",
+    "UCtBzfGaJzGGNJVOVM0mK4uQ", "UCIWGaKFnTIv97liBxlQ2Otw", "UC-SrCCzkGq0wmSAuRs7EBFg",
+    "UCSwwoUNvQWgZDC8a_O6Qs_A", "UCqrqFLPh4cRM1VomUzG24sQ", "UCSHtaUm-FjUps090S7crO4Q",
+    "UCLuYADJ6hESLHX87JnsGbjA", "UCzH5n3Ih5kgQoiDAQt2FwLw", "UCvy6TA5egUGHnZXVRYDKOhg",
+    "UC4HRlp7zs7UpIFM67eGjhow", "UC9r61qohBg1qgGty4_WzojA", "UC_8x1VmhDgsU72Yktd9Ukeg",
+    "UC6nSFpj9HTCZ5t-N3Rm3-HA", "UCEqU-Ts-hxmpnlWgRMgd2MQ", "UCmGSJVG3mCRXVOP4yZrU1Dw",
+    "UC-lHJZR3Gqxm24_Vd_AJ5Yw", "UC3cpN6gcJQqcCM6mxRUo_dA", "UCJI86v9et-IZd1KJSfahN8g",
+    "UCwQnoax3HWID1WOzZ4mqLPQ", "UC2Kyj04yISmHr1V-UlJz4eg", "UCRhQsN8AVIfZuBNeRV1A37w",
+    "UCftwRNsjfRo08xYE31tkiyw", "UCNwZIGnHkzy6KpHPQtserzQ", "UCuu8TaJ-CPGV0_dJ-7OEY3A",
+    "UCjz8uBTLs0f7Fnlxc5nzT5g", "UC_HF-dqn4lCs4fEA4GB210g",
 ]
 
 HISTORY_FILE = Path(__file__).parent / "history.json"
@@ -335,8 +346,11 @@ def fetch_channel_videos(youtube, seen_ids: set[str]) -> list[dict]:
     all_results: list[dict] = []
 
     for ch_id, vid_ids in channel_id_map.items():
-        # Filter already-seen
+        # Deduplicate: compare each videoId string against history
+        skipped = [v for v in vid_ids if v in seen_ids]
         fresh_ids = [v for v in vid_ids if v not in seen_ids]
+        if skipped:
+            print(f"  [skip/dup] {len(skipped)} video(s) already in history for {ch_id}")
         details = _fetch_video_details(youtube, fresh_ids)
 
         # Take only the configured number of non-short videos per channel
@@ -352,61 +366,55 @@ def fetch_channel_videos(youtube, seen_ids: set[str]) -> list[dict]:
 
 def fetch_trending_video(youtube, subreddits: list[str], seen_ids: set[str]) -> dict | None:
     """
-    Fetch ONE trending video whose topic aligns with the subreddit interests.
-    Uses the YouTube mostPopular chart, filtered by a derived topic keyword.
+    Fetch ONE wildcard video that matches the Lifestyle / Hobbies & Leisure topic
+    using YouTube's topicId filter on search.list — much more targeted than the
+    mostPopular chart approach.
+
+    Topic IDs (Freebase):
+        /m/019_rr  — Lifestyle
+        /m/05qt0   — Hobbies & Leisure
+    Tries Lifestyle first; falls back to Hobbies & Leisure if nothing passes filters.
     """
-    # Derive a simple keyword from subreddit names (first non-empty subreddit)
-    keyword = subreddits[0].replace("_", " ") if subreddits else "food"
-    print(f"[YouTube] Fetching trending video for topic: '{keyword}' …")
+    # Topic IDs in priority order — both align with bread-making / gardening vibe
+    TOPIC_IDS = ["/m/019_rr", "/m/05qt0"]
 
-    response = (
-        youtube.videos()
-        .list(
-            part="snippet,contentDetails,statistics",
-            chart="mostPopular",
-            regionCode="US",
-            maxResults=25,
+    for topic_id in TOPIC_IDS:
+        print(f"[YouTube] Fetching wildcard via topicId {topic_id} …")
+
+        search_resp = (
+            youtube.search()
+            .list(
+                part="id",
+                type="video",
+                topicId=topic_id,
+                order="viewCount",
+                regionCode="US",
+                maxResults=20,
+            )
+            .execute()
         )
-        .execute()
-    )
 
-    keyword_lower = keyword.lower()
-    for item in response.get("items", []):
-        vid_id = item["id"]
-        if vid_id in seen_ids:
+        candidate_ids = [
+            item["id"]["videoId"]
+            for item in search_resp.get("items", [])
+            if item["id"]["videoId"] not in seen_ids
+        ]
+
+        if not candidate_ids:
             continue
 
-        snippet = item["snippet"]
-        title = snippet["title"].lower()
-        description = snippet.get("description", "").lower()
-        tags = " ".join(snippet.get("tags", [])).lower()
+        # Fetch full details (duration, statistics) for deduplication + shorts check
+        details = _fetch_video_details(youtube, candidate_ids)
+        for video in details:
+            vid_id = video["video_id"]
+            if vid_id in seen_ids:
+                print(f"  [skip/dup] wildcard candidate {vid_id} already in history")
+                continue
+            seen_ids.add(vid_id)
+            print(f"[YouTube] Wildcard pick (topicId {topic_id}): {video['title']}")
+            return {**video, "source": "youtube_trending"}
 
-        relevance_text = f"{title} {description} {tags}"
-        if keyword_lower not in relevance_text:
-            continue
-
-        duration_sec = _parse_iso8601_duration(item["contentDetails"]["duration"])
-        url = f"https://www.youtube.com/watch?v={vid_id}"
-
-        if _is_short(vid_id, url, duration_sec):
-            continue
-
-        seen_ids.add(vid_id)
-        print(f"[YouTube] Trending pick: {snippet['title']}")
-        return {
-            "source": "youtube_trending",
-            "video_id": vid_id,
-            "title": snippet["title"],
-            "channel_id": snippet["channelId"],
-            "channel_title": snippet["channelTitle"],
-            "published_at": snippet["publishedAt"],
-            "url": url,
-            "duration_seconds": duration_sec,
-            "view_count": item["statistics"].get("viewCount"),
-            "description": snippet.get("description", "")[:500],
-        }
-
-    print("[YouTube] No on-topic trending video found.")
+    print("[YouTube] No wildcard video found after trying all topic IDs.")
     return None
 
 
