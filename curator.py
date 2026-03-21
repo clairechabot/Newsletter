@@ -21,7 +21,7 @@ import anthropic
 # Constants
 # ---------------------------------------------------------------------------
 
-CLAUDE_MODEL = "claude-3-5-sonnet-20241022"
+CLAUDE_MODEL = "claude-sonnet-4-6"
 AI_SCORE_DISCARD_THRESHOLD = 75       # percent
 REDDIT_BATCH_SIZE = 6                 # posts per audit API call
 THEME_COUNT_MIN, THEME_COUNT_MAX = 3, 4
