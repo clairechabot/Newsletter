@@ -12,6 +12,10 @@ jobs:
     name: Fetch · Curate · Render · Send
     runs-on: ubuntu-latest
 
+    # Silence Node.js 16 deprecation warnings from older action wrappers
+    env:
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
     # Required so the memory step can push history.json back
     permissions:
       contents: write
@@ -58,8 +62,10 @@ jobs:
       - name: Render newsletter and send
         env:
           EMAIL_USER:              ${{ secrets.EMAIL_USER }}
+          SMTP_USER:               ${{ secrets.SMTP_USER }}
           SMTP_PASS:               ${{ secrets.SMTP_PASS }}
           SMTP_HOST:               ${{ secrets.SMTP_HOST }}
+          SMTP_SERVER:             ${{ secrets.SMTP_SERVER }}
           SMTP_PORT:               ${{ secrets.SMTP_PORT }}
           NEWSLETTER_RECIPIENTS:   ${{ secrets.NEWSLETTER_RECIPIENTS }}
         run: python renderer.py

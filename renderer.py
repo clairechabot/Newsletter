@@ -851,10 +851,13 @@ def build_html(curated: dict) -> str:
 # ---------------------------------------------------------------------------
 
 def send_email(html_body: str, subject: str) -> None:
-    smtp_user   = os.environ["EMAIL_USER"]
+    # Support both SMTP_USER and EMAIL_USER secret names
+    smtp_user   = os.environ.get("SMTP_USER") or os.environ["EMAIL_USER"]
     smtp_pass   = os.environ["SMTP_PASS"]
-    smtp_host   = os.environ.get("SMTP_HOST", "smtp.gmail.com")
-    smtp_port   = int(os.environ.get("SMTP_PORT", "587"))
+    # Support both SMTP_SERVER and SMTP_HOST secret names
+    smtp_host   = os.environ.get("SMTP_SERVER") or os.environ.get("SMTP_HOST", "smtp.gmail.com")
+    # Guard against empty string secrets with `or 587`
+    smtp_port   = int(os.environ.get("SMTP_PORT") or 587)
     recipients_raw = os.environ.get("NEWSLETTER_RECIPIENTS", smtp_user)
     recipients  = [r.strip() for r in recipients_raw.split(",") if r.strip()]
 
