@@ -33,6 +33,7 @@ from urllib.parse import urlparse
 import requests
 from bs4 import BeautifulSoup
 from googleapiclient.discovery import build
+from googleapiclient.errors import HttpError
 
 # ---------------------------------------------------------------------------
 # Configuration — replace the placeholder lists before running
@@ -154,9 +155,13 @@ def save_history(seen_ids: set[str]) -> None:
 # ---------------------------------------------------------------------------
 
 def _reddit_session() -> requests.Session:
-    """Return a requests Session pre-configured with the required User-Agent."""
+    """Return a requests Session pre-configured for Reddit's public JSON API."""
     session = requests.Session()
-    session.headers.update({"User-Agent": REDDIT_USER_AGENT})
+    session.headers.update({
+        "User-Agent": REDDIT_USER_AGENT,
+        "Accept": "application/json",
+        "Accept-Language": "en-US,en;q=0.9",
+    })
     return session
 
 
@@ -368,38 +373,71 @@ def _get_playlist_latest_ids(youtube, playlist_id: str, max_results: int = 5) ->
 
 def fetch_channel_videos(youtube, seen_ids: set[str]) -> list[dict]:
     """
-    Fetch the latest YOUTUBE_VIDEOS_PER_CHANNEL videos per channel using
-    playlistItems.list (1 unit/channel) instead of search.list (100 units/channel).
+    Fetch the latest YOUTUBE_VIDEOS_PER_CHANNEL videos per channel.
+
+    Quota cost breakdown (38 channels):
+      - 1 call  to channels.list  for all 38 IDs  →  1 unit
+      - 1 call  to playlistItems.list per channel  → 38 units
+      - 1 call  to videos.list per ~50 fresh IDs   →  1 unit
+      Total: ~40 units  (vs ~7,600 with the old search.list approach)
+
+    If a quota-exceeded error is hit at any stage, the function returns
+    whatever has been collected so far rather than crashing the whole run.
     """
-    # Step 1: resolve uploads playlist IDs for all channels (~1 unit per 50 channels)
-    print(f"[YouTube] Resolving uploads playlists for {len(YOUTUBE_CHANNEL_IDS)} channels …")
-    uploads_map = _get_uploads_playlist_ids(youtube, YOUTUBE_CHANNEL_IDS)
+    all_results: list[dict] = []
+
+    try:
+        # Step 1: resolve uploads playlist IDs (1 unit per 50 channels)
+        print(f"[YouTube] Resolving uploads playlists for {len(YOUTUBE_CHANNEL_IDS)} channels …")
+        uploads_map = _get_uploads_playlist_ids(youtube, YOUTUBE_CHANNEL_IDS)
+    except HttpError as exc:
+        if "quotaExceeded" in str(exc):
+            print("[YouTube] Quota exceeded during playlist resolution — skipping channel videos.")
+            return all_results
+        raise
 
     # Step 2: fetch latest video IDs from each uploads playlist (1 unit/channel)
-    channel_id_map: dict[str, list[str]] = {}
+    # Skip channels whose most-recent video is already in history — saves a videos.list call.
+    fresh_ids_per_channel: dict[str, list[str]] = {}
     for ch_id in YOUTUBE_CHANNEL_IDS:
         playlist_id = uploads_map.get(ch_id)
         if not playlist_id:
             print(f"  [warn] No uploads playlist found for channel {ch_id}")
             continue
         print(f"[YouTube] Fetching channel {ch_id} …")
-        vid_ids = _get_playlist_latest_ids(
-            youtube, playlist_id, max_results=YOUTUBE_VIDEOS_PER_CHANNEL * 3
-        )
-        channel_id_map[ch_id] = vid_ids
+        try:
+            vid_ids = _get_playlist_latest_ids(
+                youtube, playlist_id, max_results=YOUTUBE_VIDEOS_PER_CHANNEL * 3
+            )
+        except HttpError as exc:
+            if "quotaExceeded" in str(exc):
+                print(f"[YouTube] Quota exceeded at channel {ch_id} — stopping channel fetch.")
+                break
+            print(f"  [warn] playlistItems error for {ch_id}: {exc}")
+            continue
+
+        # If every candidate is already in history, skip videos.list entirely
+        fresh = [v for v in vid_ids if v not in seen_ids]
+        dupes = len(vid_ids) - len(fresh)
+        if dupes:
+            print(f"  [skip/dup] {dupes} video(s) already in history for {ch_id}")
+        if not fresh:
+            continue
+        fresh_ids_per_channel[ch_id] = fresh
 
     # Step 3: fetch details and filter per channel (videos.list = 1 unit per 50 videos)
-    all_results: list[dict] = []
-    for ch_id, vid_ids in channel_id_map.items():
-        skipped = [v for v in vid_ids if v in seen_ids]
-        fresh_ids = [v for v in vid_ids if v not in seen_ids]
-        if skipped:
-            print(f"  [skip/dup] {len(skipped)} video(s) already in history for {ch_id}")
-        details = _fetch_video_details(youtube, fresh_ids)
-        accepted = details[:YOUTUBE_VIDEOS_PER_CHANNEL]
-        for v in accepted:
-            seen_ids.add(v["video_id"])
-        all_results.extend(accepted)
+    try:
+        for ch_id, fresh_ids in fresh_ids_per_channel.items():
+            details = _fetch_video_details(youtube, fresh_ids)
+            accepted = details[:YOUTUBE_VIDEOS_PER_CHANNEL]
+            for v in accepted:
+                seen_ids.add(v["video_id"])
+            all_results.extend(accepted)
+    except HttpError as exc:
+        if "quotaExceeded" in str(exc):
+            print("[YouTube] Quota exceeded during video detail fetch — using partial results.")
+        else:
+            raise
 
     print(f"[YouTube] Collected {len(all_results)} channel videos.")
     return all_results
@@ -810,7 +848,14 @@ def main() -> dict:
     # --- YouTube ---
     youtube = build_youtube_client()
     channel_videos = fetch_channel_videos(youtube, seen_ids)
-    trending_video = fetch_trending_video(youtube, SUBREDDITS, seen_ids)
+    try:
+        trending_video = fetch_trending_video(youtube, SUBREDDITS, seen_ids)
+    except HttpError as exc:
+        if "quotaExceeded" in str(exc):
+            print("[YouTube] Quota exceeded during wildcard search — skipping trending video.")
+            trending_video = None
+        else:
+            raise
 
     youtube_results = channel_videos + ([trending_video] if trending_video else [])
 
