@@ -927,7 +927,14 @@ def main() -> None:
         subject    = f"{prefix} | {top_pick}" if top_pick else f"{prefix} · The Curated Canopy"
         send_email(html, subject=subject)
     else:
-        print("[render] EMAIL_USER / SMTP_PASS not set — skipping send.")
+        missing = []
+        if not (os.environ.get("SMTP_USER") or os.environ.get("EMAIL_USER")):
+            missing.append("SMTP_USER / EMAIL_USER")
+        if not os.environ.get("SMTP_PASS"):
+            missing.append("SMTP_PASS")
+        if not (os.environ.get("SMTP_SERVER") or os.environ.get("SMTP_HOST")):
+            missing.append("SMTP_SERVER / SMTP_HOST")
+        print(f"[render] Skipping send — missing secrets: {', '.join(missing)}")
 
 
 if __name__ == "__main__":

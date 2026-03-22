@@ -103,7 +103,7 @@ WILDCARD_CATEGORIES = [
 REDDIT_USER_AGENT = os.environ.get(
     "REDDIT_USER_AGENT",
     "newsletter-fetcher/1.0 (personal digest bot)",
-)
+).strip()  # strip accidental newlines from GitHub Secrets copy-paste
 
 # Music scraper — 3 articles per source, AM email only
 MUSIC_SOURCES: list[dict] = [
