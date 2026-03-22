@@ -28,6 +28,7 @@ from zoneinfo import ZoneInfo
 
 import re
 import random
+import xml.etree.ElementTree as ET
 from urllib.parse import urlparse
 
 import requests
@@ -731,58 +732,53 @@ def fetch_music_articles() -> list[dict]:
 
 
 # ---------------------------------------------------------------------------
-# Good News Scraper
+# Good News — RSS feeds (structured XML, never breaks on redesigns)
 # ---------------------------------------------------------------------------
 
 GOOD_NEWS_TOTAL = 2   # articles to collect across both sources
 
-def _scrape_source(base_url: str, source_label: str, limit: int) -> list[dict]:
+GOOD_NEWS_FEEDS = [
+    {
+        "url":         "https://www.goodnewsnetwork.org/feed/",
+        "source_name": "Good News Network",
+    },
+    {
+        "url":         "https://www.positive.news/feed/",
+        "source_name": "Positive News",
+    },
+]
+
+
+def _fetch_rss_articles(feed_url: str, source_name: str, limit: int) -> list[dict]:
     """
-    Generic scraper for news listing pages.
-    Tries common article-card patterns; returns up to `limit` items.
+    Fetch up to `limit` articles from an RSS feed using xml.etree (stdlib).
+    Far more reliable than HTML scraping — RSS is a stable, published contract.
     """
     try:
-        resp = requests.get(base_url, headers=SCRAPER_HEADERS, timeout=15)
+        resp = requests.get(feed_url, headers=SCRAPER_HEADERS, timeout=15)
         resp.raise_for_status()
     except requests.RequestException as exc:
-        print(f"  [warn] {source_label} fetch failed: {exc}")
+        print(f"  [warn] RSS fetch failed ({source_name}): {exc}")
         return []
 
-    soup = BeautifulSoup(resp.text, "html.parser")
-
-    candidates = (
-        soup.select("article")
-        or soup.select(".entry-title")
-        or soup.select(".post")
-        or soup.select("[class*='card']")
-        or soup.select("[class*='story']")
-    )
+    try:
+        root = ET.fromstring(resp.content)
+    except ET.ParseError as exc:
+        print(f"  [warn] RSS parse error ({source_name}): {exc}")
+        return []
 
     articles: list[dict] = []
-    for el in candidates[:limit * 3]:
-        title_el = (
-            el.select_one("h2 a") or el.select_one("h3 a")
-            or el.select_one("h2")  or el.select_one("h3")
-            or (el if el.name == "a" else None)
-        )
-        if not title_el:
+    for item in root.findall(".//item"):
+        title = (item.findtext("title") or "").strip()
+        url   = (item.findtext("link")  or "").strip()
+        if not title or not url:
             continue
-        title = title_el.get_text(strip=True)
-        if not title:
-            continue
-
-        link_el = title_el if title_el.name == "a" else title_el.find("a")
-        href = (link_el.get("href") or "") if link_el else ""
-        if href.startswith("/"):
-            parsed = urlparse(base_url)
-            href = f"{parsed.scheme}://{parsed.netloc}{href}"
-
         articles.append(
             {
-                "source": "good_news",
-                "source_name": source_label,
-                "title": title,
-                "url": href or base_url,
+                "source":      "good_news",
+                "source_name": source_name,
+                "title":       title,
+                "url":         url,
             }
         )
         if len(articles) >= limit:
@@ -793,20 +789,20 @@ def _scrape_source(base_url: str, source_label: str, limit: int) -> list[dict]:
 
 def fetch_good_news_articles() -> list[dict]:
     """
-    Fetch GOOD_NEWS_TOTAL articles from Good News Network, falling back to
-    Positive News if the first source yields fewer than needed.
+    Fetch GOOD_NEWS_TOTAL articles via RSS.
+    Falls back to the second feed if the first yields fewer than needed.
     Runs on both AM and PM emails.
     """
-    print("[GoodNews] Scraping good news sources …")
+    print("[GoodNews] Fetching good news RSS feeds …")
 
-    results = _scrape_source(
-        "https://www.goodnewsnetwork.org/", "Good News Network", GOOD_NEWS_TOTAL
+    results = _fetch_rss_articles(
+        GOOD_NEWS_FEEDS[0]["url"], GOOD_NEWS_FEEDS[0]["source_name"], GOOD_NEWS_TOTAL
     )
 
     if len(results) < GOOD_NEWS_TOTAL:
-        needed = GOOD_NEWS_TOTAL - len(results)
-        fallback = _scrape_source(
-            "https://www.positive.news/", "Positive News", needed
+        needed   = GOOD_NEWS_TOTAL - len(results)
+        fallback = _fetch_rss_articles(
+            GOOD_NEWS_FEEDS[1]["url"], GOOD_NEWS_FEEDS[1]["source_name"], needed
         )
         results.extend(fallback)
 
