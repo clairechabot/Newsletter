@@ -121,8 +121,12 @@ SCRAPER_HEADERS = {
     "User-Agent": (
         "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
         "AppleWebKit/537.36 (KHTML, like Gecko) "
-        "Chrome/124.0 Safari/537.36"
-    )
+        "Chrome/124.0.0.0 Safari/537.36"
+    ),
+    "Accept":          "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Accept-Encoding": "gzip, deflate, br",
+    "DNT":             "1",
 }
 
 UTC = ZoneInfo("UTC")
@@ -149,6 +153,61 @@ def save_history(seen_ids: set[str]) -> None:
     HISTORY_FILE.write_text(
         json.dumps(existing, indent=2, ensure_ascii=False), encoding="utf-8"
     )
+
+
+# ---------------------------------------------------------------------------
+# Shared scraper session + retry helper
+# ---------------------------------------------------------------------------
+
+# Status codes worth retrying (transient server errors)
+_RETRY_STATUSES = {500, 502, 503, 504}
+
+
+def _scraper_session() -> requests.Session:
+    """Return a Session pre-loaded with realistic browser headers.
+    Keep-Alive reuse and cookie persistence are automatic with Session."""
+    session = requests.Session()
+    session.headers.update(SCRAPER_HEADERS)
+    return session
+
+
+def _fetch_with_retry(
+    url: str,
+    session: requests.Session,
+    retries: int = 3,
+    backoff: float = 2.0,
+    referer: str = "",
+) -> requests.Response | None:
+    """
+    GET `url` via `session`, retrying up to `retries` times on transient
+    failures (connection errors, timeouts, 5xx responses).
+
+    `backoff` is the base wait in seconds; each retry doubles it.
+    `referer` is injected as a Referer header when provided.
+    Returns the Response on success, or None after all retries are exhausted.
+    """
+    headers = {"Referer": referer} if referer else {}
+    delay = backoff
+
+    for attempt in range(1, retries + 1):
+        try:
+            resp = session.get(url, headers=headers, timeout=15)
+            if resp.status_code in _RETRY_STATUSES:
+                raise requests.HTTPError(response=resp)
+            resp.raise_for_status()
+            return resp
+        except (requests.ConnectionError, requests.Timeout) as exc:
+            print(f"  [retry {attempt}/{retries}] Connection error for {url}: {exc}")
+        except requests.HTTPError as exc:
+            code = exc.response.status_code if exc.response is not None else "?"
+            print(f"  [retry {attempt}/{retries}] HTTP {code} for {url}")
+
+        if attempt < retries:
+            time.sleep(delay)
+            delay *= 2  # exponential back-off
+
+    print(f"  [warn] Gave up fetching {url} after {retries} attempts.")
+    return None
 
 
 # ---------------------------------------------------------------------------
@@ -525,7 +584,7 @@ def fetch_trending_video(youtube, subreddits: list[str], seen_ids: set[str]) -> 
 # Music Scraper
 # ---------------------------------------------------------------------------
 
-def _find_music_embed(article_url: str) -> str | None:
+def _find_music_embed(article_url: str, session: requests.Session) -> str | None:
     """
     Fetch an article page and return the first distraction-free embed URL found.
 
@@ -539,10 +598,11 @@ def _find_music_embed(article_url: str) -> str | None:
     """
     if not article_url or article_url == "#":
         return None
-    try:
-        resp = requests.get(article_url, headers=SCRAPER_HEADERS, timeout=15)
-        resp.raise_for_status()
-    except requests.RequestException:
+    # Derive a plausible Referer from the article URL's origin
+    parsed_origin = urlparse(article_url)
+    referer = f"{parsed_origin.scheme}://{parsed_origin.netloc}/"
+    resp = _fetch_with_retry(article_url, session, referer=referer)
+    if resp is None:
         return None
 
     soup = BeautifulSoup(resp.text, "html.parser")
@@ -575,17 +635,15 @@ def _find_music_embed(article_url: str) -> str | None:
     return None
 
 
-def _scrape_sofar_sounds(limit: int) -> list[dict]:
+def _scrape_sofar_sounds(limit: int, session: requests.Session) -> list[dict]:
     """
     Scrape latest articles from sofarsounds.com/blog.
     Returns a list of {title, url, snippet, embed_url, source_name} dicts.
     """
     url = MUSIC_SOURCES[0]["url"]
-    try:
-        resp = requests.get(url, headers=SCRAPER_HEADERS, timeout=15)
-        resp.raise_for_status()
-    except requests.RequestException as exc:
-        print(f"  [warn] Sofar Sounds fetch failed: {exc}")
+    resp = _fetch_with_retry(url, session, referer="https://www.sofarsounds.com/")
+    if resp is None:
+        print("  [warn] Sofar Sounds fetch failed after retries.")
         return []
 
     soup = BeautifulSoup(resp.text, "html.parser")
@@ -627,7 +685,7 @@ def _scrape_sofar_sounds(limit: int) -> list[dict]:
 
         article_url = href or url
         time.sleep(1)  # polite delay before fetching article page
-        embed_url = _find_music_embed(article_url)
+        embed_url = _find_music_embed(article_url, session)
         if embed_url:
             print(f"    [embed] found for '{title[:50]}'")
 
@@ -648,17 +706,15 @@ def _scrape_sofar_sounds(limit: int) -> list[dict]:
     return articles
 
 
-def _scrape_bandcamp_daily(limit: int) -> list[dict]:
+def _scrape_bandcamp_daily(limit: int, session: requests.Session) -> list[dict]:
     """
     Scrape latest articles from daily.bandcamp.com.
     Returns a list of {title, url, snippet, embed_url, source_name} dicts.
     """
     url = MUSIC_SOURCES[1]["url"]
-    try:
-        resp = requests.get(url, headers=SCRAPER_HEADERS, timeout=15)
-        resp.raise_for_status()
-    except requests.RequestException as exc:
-        print(f"  [warn] Bandcamp Daily fetch failed: {exc}")
+    resp = _fetch_with_retry(url, session, referer="https://daily.bandcamp.com/")
+    if resp is None:
+        print("  [warn] Bandcamp Daily fetch failed after retries.")
         return []
 
     soup = BeautifulSoup(resp.text, "html.parser")
@@ -701,7 +757,7 @@ def _scrape_bandcamp_daily(limit: int) -> list[dict]:
 
         article_url = href or url
         time.sleep(1)
-        embed_url = _find_music_embed(article_url)
+        embed_url = _find_music_embed(article_url, session)
         if embed_url:
             print(f"    [embed] found for '{title[:50]}'")
 
@@ -725,8 +781,9 @@ def _scrape_bandcamp_daily(limit: int) -> list[dict]:
 def fetch_music_articles() -> list[dict]:
     """Fetch MUSIC_ARTICLES_PER_SOURCE articles from each music source."""
     print("[Music] Scraping music sources …")
-    results = _scrape_sofar_sounds(MUSIC_ARTICLES_PER_SOURCE)
-    results += _scrape_bandcamp_daily(MUSIC_ARTICLES_PER_SOURCE)
+    session = _scraper_session()
+    results  = _scrape_sofar_sounds(MUSIC_ARTICLES_PER_SOURCE, session)
+    results += _scrape_bandcamp_daily(MUSIC_ARTICLES_PER_SOURCE, session)
     print(f"[Music] Total articles collected: {len(results)}")
     return results
 
@@ -749,16 +806,16 @@ GOOD_NEWS_FEEDS = [
 ]
 
 
-def _fetch_rss_articles(feed_url: str, source_name: str, limit: int) -> list[dict]:
+def _fetch_rss_articles(
+    feed_url: str, source_name: str, limit: int, session: requests.Session
+) -> list[dict]:
     """
     Fetch up to `limit` articles from an RSS feed using xml.etree (stdlib).
     Far more reliable than HTML scraping — RSS is a stable, published contract.
     """
-    try:
-        resp = requests.get(feed_url, headers=SCRAPER_HEADERS, timeout=15)
-        resp.raise_for_status()
-    except requests.RequestException as exc:
-        print(f"  [warn] RSS fetch failed ({source_name}): {exc}")
+    resp = _fetch_with_retry(feed_url, session)
+    if resp is None:
+        print(f"  [warn] RSS fetch failed after retries ({source_name}).")
         return []
 
     try:
@@ -794,15 +851,16 @@ def fetch_good_news_articles() -> list[dict]:
     Runs on both AM and PM emails.
     """
     print("[GoodNews] Fetching good news RSS feeds …")
+    session = _scraper_session()
 
     results = _fetch_rss_articles(
-        GOOD_NEWS_FEEDS[0]["url"], GOOD_NEWS_FEEDS[0]["source_name"], GOOD_NEWS_TOTAL
+        GOOD_NEWS_FEEDS[0]["url"], GOOD_NEWS_FEEDS[0]["source_name"], GOOD_NEWS_TOTAL, session
     )
 
     if len(results) < GOOD_NEWS_TOTAL:
         needed   = GOOD_NEWS_TOTAL - len(results)
         fallback = _fetch_rss_articles(
-            GOOD_NEWS_FEEDS[1]["url"], GOOD_NEWS_FEEDS[1]["source_name"], needed
+            GOOD_NEWS_FEEDS[1]["url"], GOOD_NEWS_FEEDS[1]["source_name"], needed, session
         )
         results.extend(fallback)
 
