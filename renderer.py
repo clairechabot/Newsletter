@@ -391,6 +391,37 @@ details[open] > summary::before {
   border: 1px solid #BEF264;
 }
 
+/* ── Section-level collapsible ───────────────────────────── */
+.section-details > summary {
+  padding: 0;
+  display: block;
+  list-style: none;
+}
+.section-details > summary::-webkit-details-marker { display: none; }
+.section-details > summary::before { display: none; }
+.section-header-toggle {
+  cursor: pointer;
+  user-select: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0;
+}
+.section-details[open] .section-header-toggle {
+  margin-bottom: 12px;
+}
+.section-chevron {
+  font-size: 14px;
+  color: #9CA3AF;
+  margin-left: 12px;
+  flex-shrink: 0;
+  transition: transform 0.2s;
+  line-height: 1;
+}
+.section-details[open] > summary .section-chevron {
+  transform: rotate(180deg);
+}
+
 /* ── Fern Greeting ───────────────────────────────────────── */
 .fern-greeting {
   display: flex;
@@ -680,11 +711,18 @@ def _render_morning_soundtrack(articles: list[dict]) -> str:
 
     return f"""
 <section class="soundtrack-section">
-  <div class="soundtrack-header">
-    <h2>The Morning Soundtrack</h2>
-    <div class="tagline">Fresh picks from the music world to set the tone for your day.</div>
-  </div>
-  {cards}
+  <details class="section-details">
+    <summary>
+      <div class="soundtrack-header section-header-toggle">
+        <div>
+          <h2>The Morning Soundtrack</h2>
+          <div class="tagline">Fresh picks from the music world to set the tone for your day.</div>
+        </div>
+        <span class="section-chevron">▾</span>
+      </div>
+    </summary>
+    {cards}
+  </details>
 </section>"""
 
 
@@ -729,11 +767,18 @@ def _render_global_silver_linings(articles: list[dict]) -> str:
     cards = "".join(_render_good_news_card(a) for a in articles)
     return f"""
 <section class="goodnews-section">
-  <div class="goodnews-header">
-    <h2>Global Silver Linings</h2>
-    <div class="tagline">Two stories that remind you the world is still full of good.</div>
-  </div>
-  {cards}
+  <details class="section-details">
+    <summary>
+      <div class="goodnews-header section-header-toggle">
+        <div>
+          <h2>Global Silver Linings</h2>
+          <div class="tagline">Two stories that remind you the world is still full of good.</div>
+        </div>
+        <span class="section-chevron">▾</span>
+      </div>
+    </summary>
+    {cards}
+  </details>
 </section>"""
 
 
@@ -755,11 +800,18 @@ def _render_theme(theme: dict, accent: str) -> str:
 
     return f"""
 <section class="theme-section" style="--accent: {accent}">
-  <div class="theme-header">
-    <h2>{heading}</h2>
-    <div class="tagline">{tagline}</div>
-  </div>
-  {"".join(cards)}
+  <details class="section-details">
+    <summary>
+      <div class="theme-header section-header-toggle">
+        <div>
+          <h2>{heading}</h2>
+          <div class="tagline">{tagline}</div>
+        </div>
+        <span class="section-chevron">▾</span>
+      </div>
+    </summary>
+    {"".join(cards)}
+  </details>
 </section>"""
 
 
@@ -831,11 +883,11 @@ def build_html(curated: dict) -> str:
 
   {vibe_bar_html}
 
+  {silver_linings_html}
+
   {soundtrack_html}
 
   {theme_html}
-
-  {silver_linings_html}
 
   <div class="footer">
     Generated automatically · AI audit threshold 75% · Curated by Claude

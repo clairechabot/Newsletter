@@ -81,6 +81,22 @@ YOUTUBE_MIN_DURATION_SECONDS = 60
 YOUTUBE_WILDCARD_MIN_SECONDS = 300    # wildcard must be ≥ 5 minutes
 
 # Wildcard categories — one is chosen at random each run
+_POLITICAL_KEYWORDS = frozenset({
+    "war", "trump", "biden", "harris", "election", "congress", "senate",
+    "iran", "israel", "gaza", "ukraine", "russia", "military", "nato",
+    "bombing", "coup", "legislation", "sanctions", "republican", "democrat",
+    "whitehouse", "pentagon", "missile", "nuclear", "ceasefire", "protest",
+    "assassination", "tariff", "tariffs", "impeach", "geopolitical",
+    "kamala", "maga", "liberal", "conservative", "partisan", "filibuster",
+})
+
+
+def _is_political(title: str) -> bool:
+    """Return True if the video title contains political keywords."""
+    words = set(re.findall(r'\w+', title.lower()))
+    return bool(words & _POLITICAL_KEYWORDS)
+
+
 WILDCARD_CATEGORIES = [
     {
         "name": "Nature",
@@ -567,6 +583,9 @@ def fetch_trending_video(youtube, subreddits: list[str], seen_ids: set[str]) -> 
                         f"  [skip/short] wildcard {vid_id} — "
                         f"{video['duration_seconds']}s < {YOUTUBE_WILDCARD_MIN_SECONDS}s"
                     )
+                    continue
+                if _is_political(video["title"]):
+                    print(f"  [skip/political] wildcard {vid_id} — '{video['title']}'")
                     continue
 
                 seen_ids.add(vid_id)
