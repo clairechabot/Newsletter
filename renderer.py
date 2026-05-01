@@ -182,9 +182,9 @@ a:hover { text-decoration: underline; }
 /* ── Content Card ────────────────────────────────────────── */
 .card {
   background: #FFFFFF;
-  border: 1px solid #E0E0E0;
-  border-radius: 12px;
-  margin-bottom: 15px;
+  border: 1px solid #EEEEEE;
+  border-radius: 8px;
+  margin-bottom: 20px;
   overflow: hidden;
   transition: border-color 0.15s;
 }
@@ -195,7 +195,7 @@ details { }
 summary {
   list-style: none;
   cursor: pointer;
-  padding: 16px 20px;
+  padding: 20px 24px;
   display: flex;
   align-items: flex-start;
   gap: 10px;
@@ -218,6 +218,7 @@ details[open] > summary::before {
 .summary-title {
   font-size: 14px;
   font-weight: 600;
+  font-family: Georgia, serif;
   color: #2C3E50;
   line-height: 1.4;
 }
@@ -225,11 +226,11 @@ details[open] > summary::before {
   font-size: 13px;
   color: #6B7280;
   margin-top: 3px;
-  line-height: 1.5;
+  line-height: 1.6;
 }
 .badge {
   font-size: 11px;
-  font-weight: 600;
+  font-weight: 500;
   padding: 2px 8px;
   border-radius: 999px;
   white-space: nowrap;
@@ -244,8 +245,8 @@ details[open] > summary::before {
 
 /* ── Expanded Content ────────────────────────────────────── */
 .card-body {
-  padding: 20px;
-  border-top: 1px solid #E0E0E0;
+  padding: 24px;
+  border-top: 1px solid #EEEEEE;
 }
 .post-text {
   font-size: 13px;
@@ -255,17 +256,15 @@ details[open] > summary::before {
   word-break: break-word;
   max-height: 260px;
   overflow-y: auto;
-  background: #F9F7F2;
-  border-radius: 8px;
-  padding: 12px 14px;
   line-height: 1.65;
 }
 .post-link {
   display: inline-block;
   margin-top: 12px;
   font-size: 12px;
-  color: #5D6D7E;
+  color: #82954B;
   font-weight: 500;
+  text-decoration: none;
 }
 
 /* ── Image Grid ──────────────────────────────────────────── */
@@ -757,7 +756,7 @@ def _render_reddit_card(post: dict) -> str:
     <div class="card-body">
       {post_body}
       {image_grid}
-      <a class="post-link" href="{url}" target="_blank">↗ View on Reddit</a>
+      <a class="post-link" href="{url}" target="_blank">Read full story →</a>
     </div>
   </details>
 </div>"""
@@ -850,11 +849,6 @@ def _render_music_card(article: dict) -> str:
 
     source_badge = f'<span class="badge badge-music">♪ {source_name}</span>'
 
-    snippet_html = ""
-    if snippet:
-        escaped = snippet.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
-        snippet_html = f'<div class="post-text">{escaped}</div>'
-
     embed_html = _render_music_embed(embed_url, title)
 
     return f"""
@@ -869,8 +863,7 @@ def _render_music_card(article: dict) -> str:
     </summary>
     <div class="card-body">
       {embed_html}
-      {snippet_html}
-      <a class="post-link" href="{url}" target="_blank">↗ Read on {source_name}</a>
+      <a class="post-link" href="{url}" target="_blank">Read full story →</a>
     </div>
   </details>
 </div>"""
@@ -924,11 +917,7 @@ def _render_good_news_card(article: dict) -> str:
       {source_badge}
     </summary>
     <div class="card-body">
-      <p style="font-size:13px;color:#374151;margin-top:14px;line-height:1.6;">{reason}</p>
-      <a class="post-link" href="{url}" target="_blank"
-         style="margin-top:10px;display:inline-block;">
-        ↗ Read Full Story on {source_name}
-      </a>
+      <a class="post-link" href="{url}" target="_blank">Read full story →</a>
     </div>
   </details>
 </div>"""
