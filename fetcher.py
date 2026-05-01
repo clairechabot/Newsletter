@@ -74,7 +74,7 @@ YOUTUBE_CHANNEL_IDS: list[str] = [
 ]
 
 HISTORY_FILE = Path(__file__).parent / "history.json"
-REDDIT_WINDOW_HOURS = 12
+REDDIT_WINDOW_HOURS = 24
 REDDIT_REQUEST_DELAY = 2.0   # seconds between public API calls — stay well under rate limit
 YOUTUBE_VIDEOS_PER_CHANNEL = 1        # 1 per channel conserves quota for wildcard search
 YOUTUBE_MIN_DURATION_SECONDS = 240
