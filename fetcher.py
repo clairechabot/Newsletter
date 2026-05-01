@@ -77,7 +77,7 @@ HISTORY_FILE = Path(__file__).parent / "history.json"
 REDDIT_WINDOW_HOURS = 12
 REDDIT_REQUEST_DELAY = 2.0   # seconds between public API calls — stay well under rate limit
 YOUTUBE_VIDEOS_PER_CHANNEL = 1        # 1 per channel conserves quota for wildcard search
-YOUTUBE_MIN_DURATION_SECONDS = 60
+YOUTUBE_MIN_DURATION_SECONDS = 240
 YOUTUBE_WILDCARD_MIN_SECONDS = 300    # wildcard must be ≥ 5 minutes
 
 # Wildcard categories — one is chosen at random each run
@@ -88,13 +88,51 @@ _POLITICAL_KEYWORDS = frozenset({
     "whitehouse", "pentagon", "missile", "nuclear", "ceasefire", "protest",
     "assassination", "tariff", "tariffs", "impeach", "geopolitical",
     "kamala", "maga", "liberal", "conservative", "partisan", "filibuster",
+    "death", "violence", "conflict", "shooting", "tragedy",
 })
 
 
-def _is_political(title: str) -> bool:
-    """Return True if the video title contains political keywords."""
-    words = set(re.findall(r'\w+', title.lower()))
-    return bool(words & _POLITICAL_KEYWORDS)
+def _is_political(title: str, description: str = "") -> bool:
+    """Return True if the title or description contains blocked content keywords."""
+    title_words = set(re.findall(r'\w+', title.lower()))
+    if title_words & _POLITICAL_KEYWORDS:
+        return True
+    if description:
+        desc_words = set(re.findall(r'\w+', description.lower()))
+        return bool(desc_words & _POLITICAL_KEYWORDS)
+    return False
+
+
+_CLICKBAIT_PHRASES = frozenset({
+    "you won't believe",
+    "they don't want you to know",
+    "this will shock you",
+    "gone wrong",
+    "watch till the end",
+    "must watch",
+    "shocking truth",
+    "exposed",
+    "the truth about",
+    "secret they",
+    "doctors hate",
+    "one weird trick",
+})
+
+
+def _is_clickbait(title: str) -> bool:
+    """Return True if the title shows ALL-CAPS spam or clickbait patterns."""
+    if title.count("!") + title.count("?") >= 3:
+        return True
+    title_lower = title.lower()
+    if any(phrase in title_lower for phrase in _CLICKBAIT_PHRASES):
+        return True
+    # Flag if 60%+ of words with 4+ chars are fully uppercase (requires ≥3 such words)
+    words = re.findall(r'[A-Za-z]{4,}', title)
+    if len(words) >= 3:
+        caps_count = sum(1 for w in words if w.isupper())
+        if caps_count / len(words) >= 0.6:
+            return True
+    return False
 
 
 WILDCARD_CATEGORIES = [
@@ -392,7 +430,12 @@ def _fetch_video_details(youtube, video_ids: list[str]) -> list[dict]:
         url = f"https://www.youtube.com/watch?v={vid_id}"
 
         if _is_short(vid_id, url, duration_sec):
-            print(f"  [skip] {vid_id} — short/under 60s ({duration_sec}s)")
+            print(f"  [skip/short] {vid_id} — {duration_sec}s < {YOUTUBE_MIN_DURATION_SECONDS}s")
+            continue
+
+        audio_lang = snippet.get("defaultAudioLanguage", "")
+        if audio_lang and not audio_lang.startswith("en"):
+            print(f"  [skip/lang] {vid_id} — language '{audio_lang}'")
             continue
 
         videos.append(
@@ -508,7 +551,16 @@ def fetch_channel_videos(youtube, seen_ids: set[str]) -> list[dict]:
     try:
         for ch_id, fresh_ids in fresh_ids_per_channel.items():
             details = _fetch_video_details(youtube, fresh_ids)
-            accepted = details[:YOUTUBE_VIDEOS_PER_CHANNEL]
+            filtered = []
+            for v in details:
+                if _is_political(v["title"], v.get("description", "")):
+                    print(f"  [skip/blocked] channel {v['video_id']} — '{v['title']}'")
+                    continue
+                if _is_clickbait(v["title"]):
+                    print(f"  [skip/clickbait] channel {v['video_id']} — '{v['title']}'")
+                    continue
+                filtered.append(v)
+            accepted = filtered[:YOUTUBE_VIDEOS_PER_CHANNEL]
             for v in accepted:
                 seen_ids.add(v["video_id"])
             all_results.extend(accepted)
@@ -559,6 +611,7 @@ def fetch_trending_video(youtube, subreddits: list[str], seen_ids: set[str]) -> 
                     publishedAfter=published_after,
                     order="viewCount",
                     regionCode="US",
+                    relevanceLanguage="en",
                     maxResults=20,
                 )
                 .execute()
@@ -587,8 +640,11 @@ def fetch_trending_video(youtube, subreddits: list[str], seen_ids: set[str]) -> 
                         f"{video['duration_seconds']}s < {YOUTUBE_WILDCARD_MIN_SECONDS}s"
                     )
                     continue
-                if _is_political(video["title"]):
+                if _is_political(video["title"], video.get("description", "")):
                     print(f"  [skip/political] wildcard {vid_id} — '{video['title']}'")
+                    continue
+                if _is_clickbait(video["title"]):
+                    print(f"  [skip/clickbait] wildcard {vid_id} — '{video['title']}'")
                     continue
 
                 seen_ids.add(vid_id)
