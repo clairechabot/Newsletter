@@ -980,14 +980,18 @@ def main() -> dict:
     # --- YouTube ---
     youtube = build_youtube_client()
     channel_videos = fetch_channel_videos(youtube, seen_ids)
-    try:
-        trending_video = fetch_trending_video(youtube, SUBREDDITS, seen_ids)
-    except HttpError as exc:
-        if "quotaExceeded" in str(exc):
-            print("[YouTube] Quota exceeded during wildcard search — skipping trending video.")
-            trending_video = None
-        else:
-            raise
+    if is_am_email:
+        print("[YouTube] AM email — skipping wildcard search.")
+        trending_video = None
+    else:
+        try:
+            trending_video = fetch_trending_video(youtube, SUBREDDITS, seen_ids)
+        except HttpError as exc:
+            if "quotaExceeded" in str(exc):
+                print("[YouTube] Quota exceeded during wildcard search — skipping trending video.")
+                trending_video = None
+            else:
+                raise
 
     youtube_results = channel_videos + ([trending_video] if trending_video else [])
 
