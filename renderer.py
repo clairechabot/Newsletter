@@ -17,6 +17,7 @@ import json
 import random
 import smtplib
 import datetime
+from zoneinfo import ZoneInfo
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from email.utils import formataddr
@@ -995,8 +996,8 @@ def build_html(curated: dict) -> str:
     global_silver_linings  = curated.get("global_silver_linings", [])
 
     try:
-        dt = datetime.datetime.fromisoformat(fetched_at)
-        date_str = f"{dt.strftime('%A, %B')} {dt.day}, {dt.strftime('%Y')} - {dt.strftime('%H:%M')} {dt.strftime('%Z')}"
+        dt = datetime.datetime.fromisoformat(fetched_at).astimezone(ZoneInfo("Europe/Zurich"))
+        date_str = f"{dt.strftime('%A, %B')} {dt.day}, {dt.strftime('%Y')} | {dt.strftime('%H:%M')} {dt.strftime('%Z')}"
     except Exception:
         date_str = fetched_at
 

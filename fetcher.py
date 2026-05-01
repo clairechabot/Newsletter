@@ -74,7 +74,7 @@ YOUTUBE_CHANNEL_IDS: list[str] = [
 ]
 
 HISTORY_FILE = Path(__file__).parent / "history.json"
-REDDIT_WINDOW_HOURS = 24
+REDDIT_WINDOW_HOURS = 48
 REDDIT_REQUEST_DELAY = 2.0   # seconds between public API calls — stay well under rate limit
 YOUTUBE_VIDEOS_PER_CHANNEL = 1        # 1 per channel conserves quota for wildcard search
 YOUTUBE_MIN_DURATION_SECONDS = 61
@@ -285,6 +285,7 @@ def _reddit_get(session: requests.Session, url: str) -> dict | None:
     time.sleep(REDDIT_REQUEST_DELAY)
     try:
         resp = session.get(url, timeout=15)
+        print(f"[Reddit] Status Code for {url.split('/r/')[-1].split('/')[0]}: {resp.status_code}")
         if resp.status_code == 429:
             retry_after = int(resp.headers.get("Retry-After", 60))
             print(f"  [warn] Reddit rate-limited — sleeping {retry_after}s …")
