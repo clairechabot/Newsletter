@@ -77,7 +77,7 @@ HISTORY_FILE = Path(__file__).parent / "history.json"
 REDDIT_WINDOW_HOURS = 24
 REDDIT_REQUEST_DELAY = 2.0   # seconds between public API calls — stay well under rate limit
 YOUTUBE_VIDEOS_PER_CHANNEL = 1        # 1 per channel conserves quota for wildcard search
-YOUTUBE_MIN_DURATION_SECONDS = 240
+YOUTUBE_MIN_DURATION_SECONDS = 61
 YOUTUBE_WILDCARD_MIN_SECONDS = 300    # wildcard must be ≥ 5 minutes
 
 # Wildcard categories — one is chosen at random each run
@@ -156,7 +156,7 @@ WILDCARD_CATEGORIES = [
 # Reddit public API — no OAuth needed
 REDDIT_USER_AGENT = os.environ.get(
     "REDDIT_USER_AGENT",
-    "FernDigestBot/1.1 by /u/clmchabot",
+    "Fern_Curation_Bot_v1.2_User_clairechabot",
 ).strip()  # strip accidental newlines from GitHub Secrets copy-paste
 
 # Music scraper — 3 articles per source, AM email only
@@ -180,6 +180,7 @@ SCRAPER_HEADERS = {
 }
 
 UTC = ZoneInfo("UTC")
+ZURICH = ZoneInfo("Europe/Zurich")
 
 
 # ---------------------------------------------------------------------------
@@ -299,6 +300,8 @@ def _reddit_get(session: requests.Session, url: str) -> dict | None:
 def _within_window(utc_timestamp: float, hours: int = REDDIT_WINDOW_HOURS) -> bool:
     cutoff = datetime.datetime.now(UTC) - datetime.timedelta(hours=hours)
     post_time = datetime.datetime.fromtimestamp(utc_timestamp, tz=UTC)
+    print(f"[filter] Current script time (Zurich): {datetime.datetime.now(ZURICH).strftime('%Y-%m-%d %H:%M:%S %Z')}")
+    print(f"[filter] Post creation time (UTC):      {post_time.strftime('%Y-%m-%d %H:%M:%S %Z')} | within window: {post_time >= cutoff}")
     return post_time >= cutoff
 
 
@@ -325,54 +328,64 @@ def fetch_reddit_posts(session: requests.Session, seen_post_ids: set[str]) -> li
     """
     Fetch top posts from the last REDDIT_WINDOW_HOURS hours across all configured
     subreddits via Reddit's public /top.json endpoint (no auth required).
-    Uses the 'day' time filter then trims to exactly 12 hours via datetime comparison.
+    Uses the 'day' time filter then trims via datetime comparison.
+    Falls back to /hot.json for any subreddit that returns 0 top posts.
     Skips posts already present in seen_post_ids and registers new ones into that set.
     """
     results: list[dict] = []
 
     for sub_name in SUBREDDITS:
-        print(f"[Reddit] Fetching r/{sub_name} …")
-        url = f"https://www.reddit.com/r/{sub_name}/top.json?t=day&limit=25"
+        for sort in ("top", "hot"):
+            if sort == "top":
+                url = f"https://www.reddit.com/r/{sub_name}/top.json?t=day&limit=25"
+                print(f"[Reddit] Fetching r/{sub_name}/top …")
+            else:
+                url = f"https://www.reddit.com/r/{sub_name}/hot.json?limit=25"
+                print(f"  [Reddit] r/{sub_name}/top returned 0 posts — trying /hot as fallback …")
 
-        try:
-            data = _reddit_get(session, url)
-            if not data:
-                continue
-
-            for child in data.get("data", {}).get("children", []):
-                post = child.get("data", {})
-
-                if not _within_window(post.get("created_utc", 0)):
+            before = len(results)
+            try:
+                data = _reddit_get(session, url)
+                if not data:
                     continue
 
-                post_id = post.get("id", "")
-                if post_id in seen_post_ids:
-                    print(f"  [skip/dup] {post_id} already in history")
-                    continue
+                for child in data.get("data", {}).get("children", []):
+                    post = child.get("data", {})
 
-                author = post.get("author") or "[deleted]"
+                    if not _within_window(post.get("created_utc", 0)):
+                        continue
 
-                op_context: str | None = None
-                if author not in ("[deleted]", "AutoModerator"):
-                    op_context = _fetch_op_context(session, post.get("permalink", ""), author)
+                    post_id = post.get("id", "")
+                    if post_id in seen_post_ids:
+                        print(f"  [skip/dup] {post_id} already in history")
+                        continue
 
-                results.append(
-                    {
-                        "source": "reddit",
-                        "subreddit": sub_name,
-                        "id": post_id,
-                        "title": post.get("title", ""),
-                        "url": post.get("url", ""),
-                        "score": post.get("score", 0),
-                        "author": author,
-                        "created_utc": post.get("created_utc", 0),
-                        "selftext": post.get("selftext") or None,
-                        "op_context": op_context,
-                    }
-                )
-                seen_post_ids.add(post_id)
-        except Exception as exc:  # noqa: BLE001
-            print(f"  [error] r/{sub_name}: {exc}")
+                    author = post.get("author") or "[deleted]"
+
+                    op_context: str | None = None
+                    if author not in ("[deleted]", "AutoModerator"):
+                        op_context = _fetch_op_context(session, post.get("permalink", ""), author)
+
+                    results.append(
+                        {
+                            "source": "reddit",
+                            "subreddit": sub_name,
+                            "id": post_id,
+                            "title": post.get("title", ""),
+                            "url": post.get("url", ""),
+                            "score": post.get("score", 0),
+                            "author": author,
+                            "created_utc": post.get("created_utc", 0),
+                            "selftext": post.get("selftext") or None,
+                            "op_context": op_context,
+                        }
+                    )
+                    seen_post_ids.add(post_id)
+            except Exception as exc:  # noqa: BLE001
+                print(f"  [error] r/{sub_name} ({sort}): {exc}")
+
+            if len(results) > before:
+                break  # got posts from this subreddit — skip hot fallback
 
     print(f"[Reddit] Collected {len(results)} posts within the last {REDDIT_WINDOW_HOURS}h.")
     return results
@@ -991,10 +1004,10 @@ def main() -> dict:
     if not YOUTUBE_CHANNEL_IDS:
         raise ValueError("YOUTUBE_CHANNEL_IDS list is empty. Add channel IDs before running.")
 
-    # Determine AM/PM — based on UTC hour; AM runs at 08:00, PM runs at 20:00
-    now_utc = datetime.datetime.now(UTC)
-    is_am_email: bool = now_utc.hour < 12
-    print(f"[fetch] Run type: {'AM' if is_am_email else 'PM'} (UTC hour {now_utc.hour})")
+    # Determine AM/PM — based on Zurich hour; AM runs at 10:00, PM runs at 22:00 CEST
+    now_ch = datetime.datetime.now(ZURICH)
+    is_am_email: bool = now_ch.hour < 12
+    print(f"[fetch] Run type: {'AM' if is_am_email else 'PM'} (Zurich hour {now_ch.hour})")
 
     seen_ids, seen_post_ids = load_history()
 
@@ -1034,7 +1047,7 @@ def main() -> dict:
     save_history(seen_ids, seen_post_ids)
 
     raw_payload = {
-        "fetched_at": now_utc.isoformat(),
+        "fetched_at": now_ch.isoformat(),
         "is_am_email": is_am_email,
         "reddit_posts": reddit_posts,
         "youtube_videos": youtube_results,

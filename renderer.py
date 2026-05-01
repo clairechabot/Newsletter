@@ -996,7 +996,7 @@ def build_html(curated: dict) -> str:
 
     try:
         dt = datetime.datetime.fromisoformat(fetched_at)
-        date_str = f"{dt.strftime('%A, %B')} {dt.day} {dt.strftime('%Y · %H:%M')} UTC"
+        date_str = f"{dt.strftime('%A, %B')} {dt.day}, {dt.strftime('%Y')} - {dt.strftime('%H:%M')} {dt.strftime('%Z')}"
     except Exception:
         date_str = fetched_at
 
