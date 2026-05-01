@@ -14,10 +14,12 @@ Required environment variables:
 import os
 import re
 import json
+import random
 import smtplib
 import datetime
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
+from email.utils import formataddr
 from pathlib import Path
 
 # ---------------------------------------------------------------------------
@@ -27,6 +29,10 @@ from pathlib import Path
 BASE_DIR      = Path(__file__).parent
 CURATED_FILE  = BASE_DIR / "curated_data.json"
 OUTPUT_HTML   = BASE_DIR / "newsletter.html"
+
+# Set to an externally-hosted URL or a data:image/png;base64,... URI to display the Fern logo.
+# Leave empty to show only the emoji brand mark.
+FERN_LOGO_URL = os.environ.get("FERN_LOGO_URL", "")
 
 # ---------------------------------------------------------------------------
 # Image extraction helpers
@@ -477,6 +483,9 @@ details[open] > summary::before {
   height: 100%;
 }
 
+/* ── Energy Spectrum Bar (inline-only — kept for browser view) ── */
+/* Rendered entirely with inline styles for email-client compatibility. */
+
 /* ── Footer ──────────────────────────────────────────────── */
 .footer {
   text-align: center;
@@ -493,6 +502,46 @@ _ACCENTS = ["#5D6D7E", "#82954B", "#C17F3A", "#7B6FA0", "#3A7D85"]
 
 # Subreddits that count toward the "Wholesome" side of the vibe bar
 _WHOLESOME_SUBREDDITS = {"benignexistence", "cozyplaces", "simpleliving", "aww", "mildlyinteresting"}
+
+# Mood score buckets — subreddit names lowercased
+_EMERALD_SUBREDDITS = frozenset({"containergardening", "simpleliving", "breadmachines"})
+_AMBER_SUBREDDITS   = frozenset({"obsidianmd", "oldrecipes", "vintagemenus"})
+_CRIMSON_SUBREDDITS = frozenset({"hobbydrama", "pettyrevenge", "maliciouscompliance", "amitheangel"})
+
+# Fern's energy-aware opening lines, keyed by dominant mood
+_FERN_ENERGY_LINES: dict[str, list[str]] = {
+    "emerald": [
+        "I've kept things soft and slow today — the kind of reading that pairs well with warm tea and an open window.",
+        "Everything today feels like it's quietly growing; I hope this collection gives you a gentle landing.",
+        "It's a peaceful one in the archive — I've gathered the slower, softer corners of the internet for you.",
+    ],
+    "amber": [
+        "My curiosity got the better of me today, so I followed a few rabbit holes and brought back the best ones.",
+        "Today's collection has a wonderfully wandering quality to it — the kind of reading that makes you want to learn something new.",
+        "There's a lot of interesting texture in today's curation, so settle in with something to sip.",
+    ],
+    "crimson": [
+        "It's a bit of a spicy evening in the archives, so I've brewed a strong tea for you.",
+        "The internet had opinions today — I've collected the most entertaining ones so you don't have to wade in yourself.",
+        "A little more dramatic than usual in the stacks today; consider this your permission to enjoy the chaos from a safe distance.",
+    ],
+    "balanced": [
+        "Today's mix is a little bit of everything — calm corners, curious detours, and just enough drama to keep things interesting.",
+        "I couldn't settle on a single mood today, so I brought a bit of everything; I hope something here finds you well.",
+    ],
+}
+
+
+def _fern_energy_line(emerald_pct: int, amber_pct: int, crimson_pct: int) -> str:
+    """Return a Fern opening sentence that reflects the dominant energy type."""
+    scores = [("emerald", emerald_pct), ("amber", amber_pct), ("crimson", crimson_pct)]
+    scores.sort(key=lambda x: x[1], reverse=True)
+    dominant, top_val = scores[0]
+    second_val = scores[1][1]
+    # Within 10 points at the top → call it balanced
+    if top_val - second_val <= 10:
+        dominant = "balanced"
+    return random.choice(_FERN_ENERGY_LINES[dominant])
 
 
 def _calculate_vibe(themes: list, global_silver_linings: list) -> tuple:
@@ -513,16 +562,75 @@ def _calculate_vibe(themes: list, global_silver_linings: list) -> tuple:
     return pct, 100 - pct
 
 
-def _render_fern_greeting(greeting: str) -> str:
-    if not greeting:
+def _calculate_mood_score(themes: list, global_silver_linings: list) -> tuple[int, int, int]:
+    """Return (emerald_pct, amber_pct, crimson_pct) as integers summing to 100.
+
+    Scoring rules:
+      Emerald (Growth)   — r/ContainerGardening, r/SimpleLiving, r/BreadMachines, Good News articles
+      Amber   (Curiosity)— r/ObsidianMD, r/OldRecipes, r/Vintagemenus, curated YouTube channel videos
+      Crimson (Chaos)    — r/HobbyDrama, r/pettyrevenge, r/MaliciousCompliance, r/AmITheAngel
+    Items that match none of the above are unscored (do not affect percentages).
+    """
+    emerald = amber = crimson = 0
+
+    for theme in themes:
+        for item in theme.get("items", []):
+            sub    = item.get("subreddit", "").lower()
+            source = item.get("source", "")
+            if sub in _EMERALD_SUBREDDITS:
+                emerald += 1
+            elif sub in _AMBER_SUBREDDITS:
+                amber += 1
+            elif sub in _CRIMSON_SUBREDDITS:
+                crimson += 1
+            elif source == "youtube":
+                # Curated hobby/interest channel videos → Curiosity
+                amber += 1
+
+    # Good News articles always count as Emerald growth
+    emerald += len(global_silver_linings)
+
+    total = emerald + amber + crimson
+    if total == 0:
+        return 34, 33, 33
+
+    e_pct = round(emerald / total * 100)
+    a_pct = round(amber   / total * 100)
+    c_pct = round(crimson / total * 100)
+
+    # Correct any rounding drift so the three values always sum to exactly 100
+    diff = 100 - (e_pct + a_pct + c_pct)
+    if diff != 0:
+        # Apply correction to whichever bucket is largest
+        if emerald >= amber and emerald >= crimson:
+            e_pct += diff
+        elif amber >= crimson:
+            a_pct += diff
+        else:
+            c_pct += diff
+
+    return e_pct, a_pct, c_pct
+
+
+def _render_fern_greeting(greeting: str, energy_line: str = "") -> str:
+    if not greeting and not energy_line:
         return ""
-    escaped = greeting.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
+
+    def _e(s: str) -> str:
+        return s.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
+
+    energy_html  = (
+        f'<p style="font-style:italic;margin:0 0 8px;color:#5a6e52;">{_e(energy_line)}</p>'
+        if energy_line else ""
+    )
+    greeting_html = f"<p>{_e(greeting)}</p>" if greeting else ""
+
     return f"""
 <div class="fern-greeting">
   <span class="fern-avatar">🌿</span>
   <div>
     <div class="fern-byline">A note from Fern</div>
-    <p>{escaped}</p>
+    {energy_html}{greeting_html}
   </div>
 </div>"""
 
@@ -536,6 +644,56 @@ def _render_vibe_bar(wholesome_pct: int, drama_pct: int) -> str:
   <div class="vibe-bar">
     <div class="vibe-bar-wholesome" style="width:{wholesome_pct}%"></div>
   </div>
+</div>"""
+
+
+def _render_mood_score(emerald_pct: int, amber_pct: int, crimson_pct: int) -> str:
+    """
+    Renders the Energy Spectrum bar using a single linear-gradient div + inline styles.
+    All styles are inline so the bar survives email-client <style> stripping.
+    """
+    stop2 = emerald_pct
+    stop3 = emerald_pct + amber_pct
+
+    # Hard colour stops: duplicate each boundary to get a clean edge (no bleed)
+    gradient = (
+        f"linear-gradient(to right,"
+        f" #50C878 0%, #50C878 {stop2}%,"
+        f" #FFBF00 {stop2}%, #FFBF00 {stop3}%,"
+        f" #DC143C {stop3}%, #DC143C 100%)"
+    )
+
+    # Shared inline style fragments
+    _font = "font-family:'Segoe UI',Roboto,Helvetica,Arial,sans-serif;"
+    _lbl  = f"display:block;font-size:11px;font-weight:600;letter-spacing:0.2px;{_font}"
+    _pct  = f"display:block;font-size:10px;color:#9CA3AF;margin-top:1px;{_font}"
+
+    def _cell(pct: int, emoji: str, name: str, color: str) -> str:
+        # Suppress label content if segment is too narrow to fit text
+        inner = (
+            f'<span style="{_lbl}color:{color};">{emoji}&nbsp;{name}</span>'
+            f'<span style="{_pct}">{pct}%</span>'
+        ) if pct >= 10 else f'<span style="{_pct}text-align:center;">{pct}%</span>'
+        return (
+            f'<td style="width:{pct}%;vertical-align:top;text-align:center;'
+            f'padding:0 2px;overflow:hidden;">{inner}</td>'
+        )
+
+    cells = "".join([
+        _cell(emerald_pct, "🌿", "Tranquil", "#2d8a50"),
+        _cell(amber_pct,   "✦",  "Engaged",  "#9a6200"),
+        _cell(crimson_pct, "🌶", "Spicy",    "#B94040"),
+    ])
+
+    return f"""
+<div style="margin-bottom:24px;">
+  <div style="font-size:10px;color:#9CA3AF;letter-spacing:0.8px;text-transform:uppercase;margin-bottom:8px;{_font}">
+    Today&rsquo;s Energy Spectrum
+  </div>
+  <div style="height:10px;border-radius:999px;overflow:hidden;background:{gradient};background-color:#82954B;"></div>
+  <table role="presentation" cellpadding="0" cellspacing="0" style="width:100%;border-collapse:collapse;margin-top:8px;table-layout:fixed;">
+    <tr>{cells}</tr>
+  </table>
 </div>"""
 
 
@@ -845,8 +1003,13 @@ def build_html(curated: dict) -> str:
         goodnews_pill,
     ])
 
+    # Mood scores first — used both for the spectrum bar and Fern's opening line
+    emerald_pct, amber_pct, crimson_pct = _calculate_mood_score(themes, global_silver_linings)
+    mood_score_html       = _render_mood_score(emerald_pct, amber_pct, crimson_pct)
+
     fern_data             = curated.get("fern_data", {})
-    fern_greeting_html    = _render_fern_greeting(fern_data.get("greeting", ""))
+    energy_line           = _fern_energy_line(emerald_pct, amber_pct, crimson_pct)
+    fern_greeting_html    = _render_fern_greeting(fern_data.get("greeting", ""), energy_line)
     wholesome_pct, drama_pct = _calculate_vibe(themes, global_silver_linings)
     vibe_bar_html         = _render_vibe_bar(wholesome_pct, drama_pct)
 
@@ -857,6 +1020,12 @@ def build_html(curated: dict) -> str:
 
     soundtrack_html       = _render_morning_soundtrack(morning_soundtrack)
     silver_linings_html   = _render_global_silver_linings(global_silver_linings)
+
+    logo_html = (
+        f'<img src="{FERN_LOGO_URL}" alt="Fern" '
+        f'style="display:block;margin:0 auto 20px;max-width:110px;height:auto;">'
+        if FERN_LOGO_URL else ""
+    )
 
     return f"""<!DOCTYPE html>
 <html lang="en">
@@ -871,6 +1040,7 @@ def build_html(curated: dict) -> str:
 <div class="wrapper">
 
   <div class="masthead">
+    {logo_html}
     <div class="brand-logo">🍞🌿🐚</div>
     <h1 class="brand-title">The Curated Canopy</h1>
     <p class="brand-tagline">Your 12-hour curation of Human Stories, Good News, and Nature.</p>
@@ -882,6 +1052,8 @@ def build_html(curated: dict) -> str:
   {fern_greeting_html}
 
   {vibe_bar_html}
+
+  {mood_score_html}
 
   {silver_linings_html}
 
@@ -936,7 +1108,7 @@ def send_email(html_body: str, subject: str) -> None:
 
     msg = MIMEMultipart("alternative")
     msg["Subject"] = subject
-    msg["From"]    = smtp_user
+    msg["From"]    = formataddr(("Fern | The Morning Crust", smtp_user))
     msg["To"]      = ", ".join(recipients)
     msg.attach(MIMEText(html_body, "html", "utf-8"))
 
