@@ -156,7 +156,7 @@ WILDCARD_CATEGORIES = [
 # Reddit public API — no OAuth needed
 REDDIT_USER_AGENT = os.environ.get(
     "REDDIT_USER_AGENT",
-    "Fern_Curation_Bot_v1.2_User_clairechabot",
+    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) FernDigest/1.2 (Personal Project for /u/clairechabot)",
 ).strip()  # strip accidental newlines from GitHub Secrets copy-paste
 
 # Music scraper — 3 articles per source, AM email only
@@ -273,6 +273,7 @@ def _reddit_session() -> requests.Session:
         "User-Agent": REDDIT_USER_AGENT,
         "Accept": "application/json",
         "Accept-Language": "en-US,en;q=0.9",
+        "Referer": "https://www.google.com/",
     })
     return session
 
@@ -282,7 +283,7 @@ def _reddit_get(session: requests.Session, url: str) -> dict | None:
     GET a Reddit .json URL, retrying once on 429.
     Returns the parsed JSON dict or None on failure.
     """
-    time.sleep(REDDIT_REQUEST_DELAY)
+    time.sleep(random.uniform(2, 5))
     try:
         resp = session.get(url, timeout=15)
         print(f"[Reddit] Status Code for {url.split('/r/')[-1].split('/')[0]}: {resp.status_code}")
