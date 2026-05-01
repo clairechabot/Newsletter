@@ -118,7 +118,7 @@ WILDCARD_CATEGORIES = [
 # Reddit public API — no OAuth needed
 REDDIT_USER_AGENT = os.environ.get(
     "REDDIT_USER_AGENT",
-    "newsletter-fetcher/1.0 (personal digest bot)",
+    "FernDigestBot/1.1 by /u/clmchabot",
 ).strip()  # strip accidental newlines from GitHub Secrets copy-paste
 
 # Music scraper — 3 articles per source, AM email only
@@ -152,20 +152,21 @@ UTC = ZoneInfo("UTC")
 # History helpers
 # ---------------------------------------------------------------------------
 
-def load_history() -> set[str]:
-    """Return the set of already-seen video IDs."""
+def load_history() -> tuple[set[str], set[str]]:
+    """Return (video_ids, reddit_post_ids) seen in previous runs."""
     if HISTORY_FILE.exists():
         data = json.loads(HISTORY_FILE.read_text(encoding="utf-8"))
-        return set(data.get("video_ids", []))
-    return set()
+        return set(data.get("video_ids", [])), set(data.get("reddit_post_ids", []))
+    return set(), set()
 
 
-def save_history(seen_ids: set[str]) -> None:
-    """Persist seen video IDs back to disk."""
+def save_history(seen_ids: set[str], seen_post_ids: set[str]) -> None:
+    """Persist seen video IDs and Reddit post IDs back to disk."""
     existing: dict = {}
     if HISTORY_FILE.exists():
         existing = json.loads(HISTORY_FILE.read_text(encoding="utf-8"))
     existing["video_ids"] = sorted(seen_ids)
+    existing["reddit_post_ids"] = sorted(seen_post_ids)
     HISTORY_FILE.write_text(
         json.dumps(existing, indent=2, ensure_ascii=False), encoding="utf-8"
     )
@@ -246,6 +247,7 @@ def _reddit_get(session: requests.Session, url: str) -> dict | None:
     GET a Reddit .json URL, retrying once on 429.
     Returns the parsed JSON dict or None on failure.
     """
+    time.sleep(REDDIT_REQUEST_DELAY)
     try:
         resp = session.get(url, timeout=15)
         if resp.status_code == 429:
@@ -267,17 +269,13 @@ def _within_window(utc_timestamp: float, hours: int = REDDIT_WINDOW_HOURS) -> bo
 
 
 def _fetch_op_context(
-    session: requests.Session, sub_name: str, post_id: str, op_author: str
+    session: requests.Session, permalink: str, op_author: str
 ) -> str | None:
     """
     Fetch the comments listing for a post and return the first top-level comment
     written by the OP, or None.  Uses depth=1 to limit payload size.
     """
-    url = (
-        f"https://www.reddit.com/r/{sub_name}/comments/{post_id}.json"
-        f"?limit=50&depth=1&sort=top"
-    )
-    time.sleep(REDDIT_REQUEST_DELAY)
+    url = f"https://www.reddit.com{permalink}.json?limit=50&depth=1&sort=top"
     data = _reddit_get(session, url)
     if not data or len(data) < 2:
         return None
@@ -289,21 +287,21 @@ def _fetch_op_context(
     return None
 
 
-def fetch_reddit_posts(session: requests.Session) -> list[dict]:
+def fetch_reddit_posts(session: requests.Session, seen_post_ids: set[str]) -> list[dict]:
     """
     Fetch top posts from the last REDDIT_WINDOW_HOURS hours across all configured
     subreddits via Reddit's public /top.json endpoint (no auth required).
     Uses the 'day' time filter then trims to exactly 12 hours via datetime comparison.
+    Skips posts already present in seen_post_ids and registers new ones into that set.
     """
     results: list[dict] = []
 
     for sub_name in SUBREDDITS:
         print(f"[Reddit] Fetching r/{sub_name} …")
-        url = f"https://www.reddit.com/r/{sub_name}/top.json?t=day&limit=100"
+        url = f"https://www.reddit.com/r/{sub_name}/top.json?t=day&limit=25"
 
         try:
             data = _reddit_get(session, url)
-            time.sleep(REDDIT_REQUEST_DELAY)
             if not data:
                 continue
 
@@ -314,11 +312,15 @@ def fetch_reddit_posts(session: requests.Session) -> list[dict]:
                     continue
 
                 post_id = post.get("id", "")
-                author  = post.get("author") or "[deleted]"
+                if post_id in seen_post_ids:
+                    print(f"  [skip/dup] {post_id} already in history")
+                    continue
+
+                author = post.get("author") or "[deleted]"
 
                 op_context: str | None = None
                 if author not in ("[deleted]", "AutoModerator"):
-                    op_context = _fetch_op_context(session, sub_name, post_id, author)
+                    op_context = _fetch_op_context(session, post.get("permalink", ""), author)
 
                 results.append(
                     {
@@ -334,6 +336,7 @@ def fetch_reddit_posts(session: requests.Session) -> list[dict]:
                         "op_context": op_context,
                     }
                 )
+                seen_post_ids.add(post_id)
         except Exception as exc:  # noqa: BLE001
             print(f"  [error] r/{sub_name}: {exc}")
 
@@ -912,11 +915,11 @@ def main() -> dict:
     is_am_email: bool = now_utc.hour < 12
     print(f"[fetch] Run type: {'AM' if is_am_email else 'PM'} (UTC hour {now_utc.hour})")
 
-    seen_ids = load_history()
+    seen_ids, seen_post_ids = load_history()
 
     # --- Reddit ---
     reddit_session = _reddit_session()
-    reddit_posts = fetch_reddit_posts(reddit_session)
+    reddit_posts = fetch_reddit_posts(reddit_session, seen_post_ids)
 
     # --- YouTube ---
     youtube = build_youtube_client()
@@ -943,7 +946,7 @@ def main() -> dict:
     good_news_articles = fetch_good_news_articles()
 
     # --- Persist history ---
-    save_history(seen_ids)
+    save_history(seen_ids, seen_post_ids)
 
     raw_payload = {
         "fetched_at": now_utc.isoformat(),
