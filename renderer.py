@@ -361,7 +361,7 @@ details[open] > summary::before {
   margin-top: 12px;
   padding: 7px 16px;
   background: rgba(160, 100, 122, 0.08);
-  border: 1px solid #D8A0B4;
+  border: 1px solid #87A878;
   border-radius: 999px;
   color: #A0647A;
   font-size: 13px;
@@ -562,12 +562,18 @@ def _calculate_vibe(themes: list, global_silver_linings: list) -> tuple:
     return pct, 100 - pct
 
 
-def _calculate_mood_score(themes: list, global_silver_linings: list) -> tuple[int, int, int]:
+def _calculate_mood_score(
+    themes: list,
+    global_silver_linings: list,
+    music_articles: list | None = None,
+) -> tuple[int, int, int]:
     """Return (emerald_pct, amber_pct, crimson_pct) as integers summing to 100.
 
     Scoring rules:
-      Emerald (Growth)   — r/ContainerGardening, r/SimpleLiving, r/BreadMachines, Good News articles
-      Amber   (Curiosity)— r/ObsidianMD, r/OldRecipes, r/Vintagemenus, curated YouTube channel videos
+      Emerald (Growth)   — r/ContainerGardening, r/SimpleLiving, r/BreadMachines,
+                           Good News articles, Sofar Sounds music articles (+2 each)
+      Amber   (Curiosity)— r/ObsidianMD, r/OldRecipes, r/Vintagemenus,
+                           curated YouTube channel videos, Bandcamp Daily articles (+2 each)
       Crimson (Chaos)    — r/HobbyDrama, r/pettyrevenge, r/MaliciousCompliance, r/AmITheAngel
     Items that match none of the above are unscored (do not affect percentages).
     """
@@ -589,6 +595,14 @@ def _calculate_mood_score(themes: list, global_silver_linings: list) -> tuple[in
 
     # Good News articles always count as Emerald growth
     emerald += len(global_silver_linings)
+
+    # Music articles: Sofar Sounds → Emerald (+2), Bandcamp Daily → Amber (+2)
+    for article in (music_articles or []):
+        source_name = article.get("source_name", "")
+        if source_name == "Sofar Sounds":
+            emerald += 2
+        elif source_name == "Bandcamp Daily":
+            amber += 2
 
     total = emerald + amber + crimson
     if total == 0:
@@ -801,7 +815,7 @@ def _render_music_embed(embed_url: str, title: str) -> str:
         thumb  = f"https://img.youtube.com/vi/{vid_id}/hqdefault.jpg"
         return (
             f'<a class="yt-container" href="{embed_url}" target="_blank" '
-            f'title="Watch: {title}">'
+            f'title="Watch: {title}" style="border:2px solid #87A878;">'
             f'<img src="{thumb}" alt="{title}" loading="lazy">'
             f'<span class="yt-play-overlay"><span class="yt-play-btn"></span></span>'
             f'</a>'
@@ -811,7 +825,7 @@ def _render_music_embed(embed_url: str, title: str) -> str:
         return (
             f'<iframe class="bc-player" src="{embed_url}" '
             f'seamless title="{title}" loading="lazy" '
-            f'style="border:0;width:100%;height:120px;border-radius:8px;'
+            f'style="border:2px solid #87A878;width:100%;height:120px;border-radius:8px;'
             f'margin-top:12px;"></iframe>'
         )
 
@@ -1004,7 +1018,7 @@ def build_html(curated: dict) -> str:
     ])
 
     # Mood scores first — used both for the spectrum bar and Fern's opening line
-    emerald_pct, amber_pct, crimson_pct = _calculate_mood_score(themes, global_silver_linings)
+    emerald_pct, amber_pct, crimson_pct = _calculate_mood_score(themes, global_silver_linings, morning_soundtrack)
     mood_score_html       = _render_mood_score(emerald_pct, amber_pct, crimson_pct)
 
     fern_data             = curated.get("fern_data", {})
