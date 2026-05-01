@@ -172,11 +172,7 @@ MUSIC_SOURCES: list[dict] = [
 ]
 MUSIC_ARTICLES_PER_SOURCE = 3
 SCRAPER_HEADERS = {
-    "User-Agent": (
-        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
-        "AppleWebKit/537.36 (KHTML, like Gecko) "
-        "Chrome/124.0.0.0 Safari/537.36"
-    ),
+    "User-Agent":      REDDIT_USER_AGENT,
     "Accept":          "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
     "Accept-Language": "en-US,en;q=0.9",
     "Accept-Encoding": "gzip, deflate, br",
@@ -728,11 +724,10 @@ def _scrape_sofar_sounds(limit: int, session: requests.Session) -> list[dict]:
     articles: list[dict] = []
 
     candidates = (
-        soup.select("article")
-        or soup.select(".post")
-        or soup.select(".blog-post")
+        soup.select("article.post-card")
         or soup.select("[class*='post-card']")
-        or soup.select("[class*='blog-card']")
+        or soup.select("article")
+        or soup.select(".post")
     )
 
     for el in candidates[:limit * 2]:
@@ -763,9 +758,13 @@ def _scrape_sofar_sounds(limit: int, session: requests.Session) -> list[dict]:
 
         article_url = href or url
         time.sleep(1)  # polite delay before fetching article page
-        embed_url = _find_music_embed(article_url, session)
-        if embed_url:
-            print(f"    [embed] found for '{title[:50]}'")
+        try:
+            embed_url = _find_music_embed(article_url, session)
+            if embed_url:
+                print(f"    [embed] found for '{title[:50]}'")
+        except Exception as exc:
+            print(f"    [warn] embed lookup failed for '{title[:50]}': {exc}")
+            embed_url = None
 
         articles.append(
             {
@@ -799,11 +798,10 @@ def _scrape_bandcamp_daily(limit: int, session: requests.Session) -> list[dict]:
     articles: list[dict] = []
 
     candidates = (
-        soup.select(".story")
-        or soup.select("article")
-        or soup.select(".daily-story")
+        soup.select("article.story")
+        or soup.select(".story")
         or soup.select("[class*='story']")
-        or soup.select("[class*='post']")
+        or soup.select("article")
     )
 
     for el in candidates[:limit * 2]:
@@ -835,9 +833,13 @@ def _scrape_bandcamp_daily(limit: int, session: requests.Session) -> list[dict]:
 
         article_url = href or url
         time.sleep(1)
-        embed_url = _find_music_embed(article_url, session)
-        if embed_url:
-            print(f"    [embed] found for '{title[:50]}'")
+        try:
+            embed_url = _find_music_embed(article_url, session)
+            if embed_url:
+                print(f"    [embed] found for '{title[:50]}'")
+        except Exception as exc:
+            print(f"    [warn] embed lookup failed for '{title[:50]}': {exc}")
+            embed_url = None
 
         articles.append(
             {
@@ -856,12 +858,35 @@ def _scrape_bandcamp_daily(limit: int, session: requests.Session) -> list[dict]:
     return articles
 
 
+MUSIC_EVERGREEN: list[dict] = [
+    {
+        "source": "music",
+        "source_name": "Sofar Sounds",
+        "title": "Best of Sofar: Sessions Worth Revisiting",
+        "url": "https://www.sofarsounds.com/blog",
+        "snippet": "The archives were a bit quiet this morning, so I've pulled a timeless favorite for your coffee.",
+        "embed_url": None,
+    },
+    {
+        "source": "music",
+        "source_name": "Bandcamp",
+        "title": "Bandcamp: Cozy — Music to Settle Into",
+        "url": "https://bandcamp.com/tag/cozy",
+        "snippet": "The archives were a bit quiet this morning, so I've pulled a timeless favorite for your coffee.",
+        "embed_url": None,
+    },
+]
+
+
 def fetch_music_articles() -> list[dict]:
     """Fetch MUSIC_ARTICLES_PER_SOURCE articles from each music source."""
     print("[Music] Scraping music sources …")
     session = _scraper_session()
     results  = _scrape_sofar_sounds(MUSIC_ARTICLES_PER_SOURCE, session)
     results += _scrape_bandcamp_daily(MUSIC_ARTICLES_PER_SOURCE, session)
+    if not results:
+        print("[Music] Both scrapers returned 0 results — using evergreen fallback.")
+        results = MUSIC_EVERGREEN
     print(f"[Music] Total articles collected: {len(results)}")
     return results
 
