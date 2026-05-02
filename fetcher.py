@@ -161,7 +161,7 @@ ZURICH = ZoneInfo("Europe/Zurich")
 def load_history() -> tuple[set[str], set[str], set[str]]:
     """Return (video_ids, good_news_urls, discovery_urls) seen in previous runs."""
     if HISTORY_FILE.exists():
-        data = json.loads(HISTORY_FILE.read_text(encoding="utf-8"))
+        data = json.loads(HISTORY_FILE.read_text(encoding="utf-8-sig"))
         return (
             set(data.get("video_ids", [])),
             set(data.get("good_news_urls", [])),
@@ -178,7 +178,7 @@ def save_history(
     """Persist seen video IDs, Good News URLs, and Discovery URLs back to disk."""
     existing: dict = {}
     if HISTORY_FILE.exists():
-        existing = json.loads(HISTORY_FILE.read_text(encoding="utf-8"))
+        existing = json.loads(HISTORY_FILE.read_text(encoding="utf-8-sig"))
     existing["video_ids"]       = sorted(seen_ids)
     existing["good_news_urls"]  = sorted(seen_good_news_urls)
     existing["discovery_urls"]  = sorted(seen_discovery_urls)
@@ -270,10 +270,15 @@ def _is_short(video_id: str, url: str, duration_seconds: int) -> bool:
     return "/shorts/" in url or duration_seconds < YOUTUBE_MIN_DURATION_SECONDS
 
 
-def _fetch_video_details(youtube, video_ids: list[str]) -> list[dict]:
-    """Retrieve full metadata for a batch of video IDs."""
+def _fetch_video_details(youtube, video_ids: list[str]) -> tuple[list[dict], set[str]]:
+    """Retrieve full metadata for a batch of video IDs.
+
+    Returns (videos, processed_ids) where processed_ids contains every vid_id
+    touched — accepted or skipped — so callers can register skips in seen_ids
+    and avoid re-fetching the same video on the next run.
+    """
     if not video_ids:
-        return []
+        return [], set()
 
     response = (
         youtube.videos()
@@ -282,8 +287,10 @@ def _fetch_video_details(youtube, video_ids: list[str]) -> list[dict]:
     )
 
     videos: list[dict] = []
+    processed_ids: set[str] = set()
     for item in response.get("items", []):
         vid_id = item["id"]
+        processed_ids.add(vid_id)
         snippet = item.get("snippet")
         if not snippet:
             print(f"  [skip/no-snippet] {vid_id} — missing snippet metadata")
@@ -335,7 +342,7 @@ def _fetch_video_details(youtube, video_ids: list[str]) -> list[dict]:
                 "description": snippet.get("description", "")[:500],
             }
         )
-    return videos
+    return videos, processed_ids
 
 
 def _get_uploads_playlist_ids(youtube, channel_ids: list[str]) -> dict[str, str]:
@@ -437,7 +444,8 @@ def fetch_channel_videos(youtube, seen_ids: set[str]) -> list[dict]:
     # Step 3: fetch details and filter per channel (videos.list = 1 unit per 50 videos)
     try:
         for ch_id, fresh_ids in fresh_ids_per_channel.items():
-            details = _fetch_video_details(youtube, fresh_ids)
+            details, processed_ids = _fetch_video_details(youtube, fresh_ids)
+            seen_ids |= processed_ids   # register skipped IDs — avoids re-fetching Shorts etc.
             filtered = []
             for v in details:
                 if _is_political(v["title"], v.get("description", "")):
@@ -514,7 +522,8 @@ def fetch_trending_video(youtube, seen_ids: set[str]) -> dict | None:
                 print(f"  [wildcard] No fresh candidates for query {query!r}.")
                 continue
 
-            details = _fetch_video_details(youtube, candidate_ids)
+            details, processed_ids = _fetch_video_details(youtube, candidate_ids)
+            seen_ids |= processed_ids   # register skipped wildcard candidates
 
             for video in details:
                 vid_id = video["video_id"]
