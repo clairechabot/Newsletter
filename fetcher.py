@@ -824,8 +824,8 @@ DISCOVERY_FEEDS = [
         "category":    "history",
     },
     {
-        "url":         "https://www.quantamagazine.org/feed",
-        "source_name": "Quanta Magazine",
+        "url":         "https://www.sciencenews.org/feed",
+        "source_name": "Science News",
         "category":    "science",
     },
 ]

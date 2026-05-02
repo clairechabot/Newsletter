@@ -895,8 +895,30 @@ def _render_discovery_card(article: dict) -> str:
 </div>"""
 
 
+def _render_from_the_curators_desk(articles: list[dict]) -> str:
+    items = [a for a in articles if a.get("source_name") == "British Museum"]
+    if not items:
+        return ""
+    cards = "".join(_render_discovery_card(a) for a in items)
+    return f"""
+<section class="goodnews-section">
+  <details class="section-details">
+    <summary>
+      <div class="archives-header section-header-toggle">
+        <div>
+          <h2>🏛 From the Curator's Desk</h2>
+          <div class="tagline">Dispatches from one of the world's great collections.</div>
+        </div>
+        <span class="section-chevron">▾</span>
+      </div>
+    </summary>
+    {cards}
+  </details>
+</section>"""
+
+
 def _render_from_the_archives(articles: list[dict]) -> str:
-    items = [a for a in articles if a.get("category") == "history"]
+    items = [a for a in articles if a.get("source_name") == "Atlas Obscura"]
     if not items:
         return ""
     cards = "".join(_render_discovery_card(a) for a in items)
@@ -1022,6 +1044,7 @@ def build_html(curated: dict) -> str:
 
     soundtrack_html       = _render_morning_soundtrack(morning_soundtrack)
     silver_linings_html   = _render_global_silver_linings(global_silver_linings)
+    curators_desk_html    = _render_from_the_curators_desk(discovery_articles)
     archives_html         = _render_from_the_archives(discovery_articles)
     lab_html              = _render_the_laboratory(discovery_articles)
 
@@ -1058,6 +1081,8 @@ def build_html(curated: dict) -> str:
   {mood_score_html}
 
   {silver_linings_html}
+
+  {curators_desk_html}
 
   {archives_html}
 
