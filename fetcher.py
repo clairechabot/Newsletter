@@ -1,19 +1,13 @@
 """
 Newsletter Data Fetcher
 -----------------------
-Fetches Reddit posts (via public RSS feeds — no API key required),
-YouTube videos, and music articles with deduplication and OP context extraction,
+Fetches YouTube videos, music articles, and good news RSS feeds,
 then runs the AI audit + curation layer (curator.py).
 
 Required environment variables:
     YOUTUBE_API_KEY
     CLAUDE_API_KEY
     EMAIL_USER, SMTP_PASS (reserved for downstream use)
-
-Optional environment variables:
-    REDDIT_USER_AGENT  — default: "newsletter-fetcher/1.0 (personal digest bot)"
-                         Reddit's ToS requires a descriptive UA; add your username
-                         e.g. "newsletter-fetcher/1.0 by u/YourUsername"
 
 Install dependencies:
     pip install google-api-python-client python-dateutil anthropic requests beautifulsoup4
@@ -32,7 +26,6 @@ from langdetect import detect, LangDetectException
 import xml.etree.ElementTree as ET
 from urllib.parse import urlparse
 
-import feedparser
 import requests
 from bs4 import BeautifulSoup
 from googleapiclient.discovery import build
@@ -42,22 +35,6 @@ from googleapiclient.errors import HttpError
 # Configuration — replace the placeholder lists before running
 # ---------------------------------------------------------------------------
 
-SUBREDDITS: list[str] = [
-    "BreadMachines",
-    "ObsidianMD",
-    "BestofRedditorUpdates",
-    "AmITheAngel",
-    "pettyrevenge",
-    "BenignExistence",
-    "MaliciousCompliance",
-    "ContainerGardening",
-    "HobbyDrama",
-    "LifeofNorman",
-    "Vintagemenus",
-    "OldRecipes",
-    "CozyPlaces",
-    "SimpleLiving",
-]
 
 YOUTUBE_CHANNEL_IDS: list[str] = [
     "UCsaGKqPZnGp_7N80hcHySGQ", "UCHL9bfHTxCMi-7vfxQ-AYtg", "UCSbyncU597LMwb3HhnAI_4w",
@@ -76,8 +53,6 @@ YOUTUBE_CHANNEL_IDS: list[str] = [
 ]
 
 HISTORY_FILE = Path(__file__).parent / "history.json"
-REDDIT_WINDOW_HOURS = 48
-REDDIT_REQUEST_DELAY = 2.0   # seconds between public API calls — stay well under rate limit
 YOUTUBE_VIDEOS_PER_CHANNEL = 1        # 1 per channel conserves quota for wildcard search
 YOUTUBE_MIN_DURATION_SECONDS = 61
 YOUTUBE_WILDCARD_MIN_SECONDS = 300    # wildcard must be ≥ 5 minutes
@@ -155,12 +130,6 @@ WILDCARD_CATEGORIES = [
     },
 ]
 
-# Reddit public API — no OAuth needed
-REDDIT_USER_AGENT = os.environ.get(
-    "REDDIT_USER_AGENT",
-    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) FernDigest/1.2 (Personal Project for /u/clairechabot)",
-).strip()  # strip accidental newlines from GitHub Secrets copy-paste
-
 # Music scraper — 3 articles per source, AM email only
 MUSIC_SOURCES: list[dict] = [
     {
@@ -174,7 +143,7 @@ MUSIC_SOURCES: list[dict] = [
 ]
 MUSIC_ARTICLES_PER_SOURCE = 3
 SCRAPER_HEADERS = {
-    "User-Agent":      REDDIT_USER_AGENT,
+    "User-Agent":      "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) FernDigest/1.2",
     "Accept":          "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
     "Accept-Language": "en-US,en;q=0.9",
     "Accept-Encoding": "gzip, deflate, br",
@@ -189,25 +158,23 @@ ZURICH = ZoneInfo("Europe/Zurich")
 # History helpers
 # ---------------------------------------------------------------------------
 
-def load_history() -> tuple[set[str], set[str], set[str]]:
-    """Return (video_ids, reddit_post_ids, good_news_urls) seen in previous runs."""
+def load_history() -> tuple[set[str], set[str]]:
+    """Return (video_ids, good_news_urls) seen in previous runs."""
     if HISTORY_FILE.exists():
         data = json.loads(HISTORY_FILE.read_text(encoding="utf-8"))
         return (
             set(data.get("video_ids", [])),
-            set(data.get("reddit_post_ids", [])),
             set(data.get("good_news_urls", [])),
         )
-    return set(), set(), set()
+    return set(), set()
 
 
-def save_history(seen_ids: set[str], seen_post_ids: set[str], seen_good_news_urls: set[str]) -> None:
-    """Persist seen video IDs, Reddit post IDs, and Good News URLs back to disk."""
+def save_history(seen_ids: set[str], seen_good_news_urls: set[str]) -> None:
+    """Persist seen video IDs and Good News URLs back to disk."""
     existing: dict = {}
     if HISTORY_FILE.exists():
         existing = json.loads(HISTORY_FILE.read_text(encoding="utf-8"))
     existing["video_ids"] = sorted(seen_ids)
-    existing["reddit_post_ids"] = sorted(seen_post_ids)
     existing["good_news_urls"] = sorted(seen_good_news_urls)
     HISTORY_FILE.write_text(
         json.dumps(existing, indent=2, ensure_ascii=False), encoding="utf-8"
@@ -267,103 +234,6 @@ def _fetch_with_retry(
 
     print(f"  [warn] Gave up fetching {url} after {retries} attempts.")
     return None
-
-
-# ---------------------------------------------------------------------------
-# Reddit  (public RSS feeds — no API key required)
-# ---------------------------------------------------------------------------
-
-def _reddit_session() -> requests.Session:
-    """Return a Session pre-configured for Reddit's public RSS feeds."""
-    session = requests.Session()
-    session.headers.update({
-        "User-Agent": REDDIT_USER_AGENT,
-        "Accept": "application/rss+xml, text/xml",
-    })
-    return session
-
-
-def _within_window(utc_timestamp: float, hours: int = REDDIT_WINDOW_HOURS) -> bool:
-    cutoff = datetime.datetime.now(UTC) - datetime.timedelta(hours=hours)
-    post_time = datetime.datetime.fromtimestamp(utc_timestamp, tz=UTC)
-    print(f"[filter] Current script time (Zurich): {datetime.datetime.now(ZURICH).strftime('%Y-%m-%d %H:%M:%S %Z')}")
-    print(f"[filter] Post creation time (UTC):      {post_time.strftime('%Y-%m-%d %H:%M:%S %Z')} | within window: {post_time >= cutoff}")
-    return post_time >= cutoff
-
-
-def fetch_reddit_posts(session: requests.Session, seen_post_ids: set[str]) -> list[dict]:
-    """
-    Fetch top posts from the last REDDIT_WINDOW_HOURS hours across all configured
-    subreddits via Reddit's public RSS feeds (no auth required).
-    Uses the 'day' time filter then trims via datetime comparison.
-    Falls back to /hot/.rss for any subreddit that returns 0 top posts.
-    Skips posts already present in seen_post_ids and registers new ones into that set.
-    Note: RSS does not expose post scores or selftext; both default to 0/None.
-    """
-    results: list[dict] = []
-
-    for sub_name in SUBREDDITS:
-        for sort in ("top", "hot"):
-            if sort == "top":
-                url = f"https://www.reddit.com/r/{sub_name}/top/.rss?t=day"
-                print(f"[Reddit] Fetching r/{sub_name}/top (RSS) …")
-            else:
-                url = f"https://www.reddit.com/r/{sub_name}/hot/.rss"
-                print(f"  [Reddit] r/{sub_name}/top returned 0 posts — trying /hot …")
-
-            before = len(results)
-            try:
-                resp = _fetch_with_retry(url, session)
-                if resp is None:
-                    continue
-
-                feed = feedparser.parse(resp.content)
-
-                for entry in feed.entries:
-                    id_match = re.search(r"/comments/([a-z0-9]+)/", entry.get("link", ""))
-                    if not id_match:
-                        continue
-                    post_id = id_match.group(1)
-
-                    pub = entry.get("published_parsed")
-                    created_utc = (
-                        datetime.datetime(*pub[:6], tzinfo=UTC).timestamp() if pub else 0.0
-                    )
-
-                    if not _within_window(created_utc):
-                        continue
-
-                    if post_id in seen_post_ids:
-                        print(f"  [skip/dup] {post_id} already in history")
-                        continue
-
-                    author_raw = entry.get("author", "") or ""
-                    author = author_raw.removeprefix("/u/") or "[deleted]"
-
-                    results.append(
-                        {
-                            "source":      "reddit",
-                            "subreddit":   sub_name,
-                            "id":          post_id,
-                            "title":       entry.get("title", ""),
-                            "url":         entry.get("link", ""),
-                            "score":       0,
-                            "author":      author,
-                            "created_utc": created_utc,
-                            "selftext":    None,
-                            "op_context":  None,
-                        }
-                    )
-                    seen_post_ids.add(post_id)
-
-            except Exception as exc:  # noqa: BLE001
-                print(f"  [error] r/{sub_name} ({sort}): {exc}")
-
-            if len(results) > before:
-                break  # got posts from this subreddit — skip hot fallback
-
-    print(f"[Reddit] Collected {len(results)} posts within the last {REDDIT_WINDOW_HOURS}h.")
-    return results
 
 
 # ---------------------------------------------------------------------------
@@ -572,7 +442,7 @@ def fetch_channel_videos(youtube, seen_ids: set[str]) -> list[dict]:
     return all_results
 
 
-def fetch_trending_video(youtube, subreddits: list[str], seen_ids: set[str]) -> dict | None:
+def fetch_trending_video(youtube, seen_ids: set[str]) -> dict | None:
     """
     Pick ONE wildcard video by randomly selecting a category (Nature / Travel / Good News),
     then searching with that category's topicId + one of its query strings.
@@ -995,8 +865,6 @@ def main() -> dict:
     if missing:
         raise EnvironmentError(f"Missing required environment variables: {', '.join(missing)}")
 
-    if not SUBREDDITS:
-        raise ValueError("SUBREDDITS list is empty. Add subreddit names before running.")
     if not YOUTUBE_CHANNEL_IDS:
         raise ValueError("YOUTUBE_CHANNEL_IDS list is empty. Add channel IDs before running.")
 
@@ -1005,11 +873,7 @@ def main() -> dict:
     is_am_email: bool = now_ch.hour < 12
     print(f"[fetch] Run type: {'AM' if is_am_email else 'PM'} (Zurich hour {now_ch.hour})")
 
-    seen_ids, seen_post_ids, seen_good_news_urls = load_history()
-
-    # --- Reddit ---
-    reddit_session = _reddit_session()
-    reddit_posts = fetch_reddit_posts(reddit_session, seen_post_ids)
+    seen_ids, seen_good_news_urls = load_history()
 
     # --- YouTube ---
     youtube = build_youtube_client()
@@ -1019,7 +883,7 @@ def main() -> dict:
         trending_video = None
     else:
         try:
-            trending_video = fetch_trending_video(youtube, SUBREDDITS, seen_ids)
+            trending_video = fetch_trending_video(youtube, seen_ids)
         except HttpError as exc:
             if "quotaExceeded" in str(exc):
                 print("[YouTube] Quota exceeded during wildcard search — skipping trending video.")
@@ -1040,12 +904,11 @@ def main() -> dict:
     good_news_articles = fetch_good_news_articles(seen_good_news_urls)
 
     # --- Persist history ---
-    save_history(seen_ids, seen_post_ids, seen_good_news_urls)
+    save_history(seen_ids, seen_good_news_urls)
 
     raw_payload = {
         "fetched_at": now_ch.isoformat(),
         "is_am_email": is_am_email,
-        "reddit_posts": reddit_posts,
         "youtube_videos": youtube_results,
         "music_articles": music_articles,
         "good_news_articles": good_news_articles,
@@ -1056,8 +919,7 @@ def main() -> dict:
     raw_file.write_text(json.dumps(raw_payload, indent=2, ensure_ascii=False), encoding="utf-8")
     print(
         f"\n[fetch] Raw data → {raw_file} "
-        f"({len(reddit_posts)} Reddit posts | "
-        f"{len(channel_videos)} channel videos | "
+        f"({len(channel_videos)} channel videos | "
         f"{'1 trending video' if trending_video else 'no trending video'} | "
         f"{len(music_articles)} music articles | "
         f"{len(good_news_articles)} good news articles)"
@@ -1079,9 +941,7 @@ def main() -> dict:
     )
     print(
         f"\n[done] Curated data → {curated_file}\n"
-        f"       Reddit: {summary['reddit_accepted']}/{summary['reddit_raw']} accepted "
-        f"({summary['reddit_discarded']} discarded) | "
-        f"YouTube: {summary['youtube_videos']} videos | "
+        f"       YouTube: {summary['youtube_videos']} videos | "
         f"Themes: {summary['themes']}{music_line} | "
         f"Good News: {summary.get('good_news_articles', 0)} articles"
     )

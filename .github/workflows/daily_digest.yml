@@ -49,12 +49,11 @@ jobs:
       - name: Install dependencies
         run: |
           pip install --quiet -r requirements.txt
-          pip install --quiet anthropic google-api-python-client python-dateutil requests beautifulsoup4 feedparser
+          pip install --quiet anthropic google-api-python-client python-dateutil requests beautifulsoup4
 
       # ── 5. Fetch & Curate ────────────────────────────────────────────────
-      - name: Fetch Reddit + YouTube + Music + Good News, curate with Claude
+      - name: Fetch YouTube + Music + Good News, curate with Claude
         env:
-          REDDIT_USER_AGENT:  ${{ secrets.REDDIT_USER_AGENT }}
           YOUTUBE_API_KEY:    ${{ secrets.YOUTUBE_API_KEY }}
           CLAUDE_API_KEY:     ${{ secrets.CLAUDE_API_KEY }}
         run: python fetcher.py

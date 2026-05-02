@@ -35,39 +35,6 @@ OUTPUT_HTML   = BASE_DIR / "newsletter.html"
 # Leave empty to show only the emoji brand mark.
 FERN_LOGO_URL = os.environ.get("FERN_LOGO_URL", "")
 
-# ---------------------------------------------------------------------------
-# Image extraction helpers
-# ---------------------------------------------------------------------------
-
-_IMAGE_EXTENSIONS = re.compile(r"\.(jpg|jpeg|png|gif|webp)(\?.*)?$", re.IGNORECASE)
-_MARKDOWN_IMG     = re.compile(r"!\[.*?\]\((https?://\S+?)\)")
-_BARE_URL         = re.compile(r"https?://\S+\.(?:jpg|jpeg|png|gif|webp)(?:\?\S*)?", re.IGNORECASE)
-
-
-def _extract_images(post: dict) -> list[str]:
-    """Return a de-duplicated list of image URLs found in a Reddit post."""
-    found: list[str] = []
-
-    # Direct link to an image
-    url = post.get("url", "")
-    if _IMAGE_EXTENSIONS.search(url):
-        found.append(url)
-
-    # Images embedded in selftext
-    selftext = post.get("selftext") or ""
-    found.extend(_MARKDOWN_IMG.findall(selftext))
-    found.extend(_BARE_URL.findall(selftext))
-
-    # Deduplicate while preserving order
-    seen: set[str] = set()
-    unique: list[str] = []
-    for img in found:
-        if img not in seen:
-            seen.add(img)
-            unique.append(img)
-    return unique
-
-
 def _yt_thumbnail(video_id: str) -> str:
     return f"https://img.youtube.com/vi/{video_id}/hqdefault.jpg"
 
@@ -241,7 +208,6 @@ details[open] > summary::before {
   align-self: flex-start;
   margin-top: 3px;
 }
-.badge-reddit   { background: #FFF4F0; color: #C0392B; border: 1px solid #FFCCC7; }
 .badge-youtube  { background: #FFF1F0; color: #C0392B; border: 1px solid #FFC9C9; }
 .badge-ai       { background: #FFFBEB; color: #92400E; border: 1px solid #FDE68A; }
 .badge-wildcard { background: #F0FDF4; color: #3F6212; border: 1px solid #BBF7D0; }
@@ -487,11 +453,6 @@ _ACCENTS = ["#5D6D7E", "#82954B", "#C17F3A", "#7B6FA0", "#3A7D85"]
 
 
 
-# Mood score buckets — subreddit names lowercased
-_EMERALD_SUBREDDITS = frozenset({"containergardening", "simpleliving", "breadmachines"})
-_AMBER_SUBREDDITS   = frozenset({"obsidianmd", "oldrecipes", "vintagemenus"})
-_CRIMSON_SUBREDDITS = frozenset({"hobbydrama", "pettyrevenge", "maliciouscompliance", "amitheangel"})
-
 # Fern's energy-aware opening lines, keyed by dominant mood
 _FERN_ENERGY_LINES: dict[str, list[str]] = {
     "emerald": [
@@ -537,27 +498,18 @@ def _calculate_mood_score(
     """Return (emerald_pct, amber_pct, crimson_pct) as integers summing to 100.
 
     Scoring rules:
-      Emerald (Growth)   — r/ContainerGardening, r/SimpleLiving, r/BreadMachines,
-                           Good News articles, Sofar Sounds music articles (+2 each)
-      Amber   (Curiosity)— r/ObsidianMD, r/OldRecipes, r/Vintagemenus,
-                           curated YouTube channel videos, Bandcamp Daily articles (+2 each)
-      Crimson (Chaos)    — r/HobbyDrama, r/pettyrevenge, r/MaliciousCompliance, r/AmITheAngel
-    Items that match none of the above are unscored (do not affect percentages).
+      Emerald (Growth)   — Good News articles, Sofar Sounds music articles (+2 each)
+      Amber   (Curiosity)— YouTube channel videos, Bandcamp Daily articles (+2 each)
+      Crimson (Chaos)    — YouTube trending/wildcard videos
     """
     emerald = amber = crimson = 0
 
     for theme in themes:
         for item in theme.get("items", []):
-            sub    = item.get("subreddit", "").lower()
             source = item.get("source", "")
-            if sub in _EMERALD_SUBREDDITS:
-                emerald += 1
-            elif sub in _AMBER_SUBREDDITS:
-                amber += 1
-            elif sub in _CRIMSON_SUBREDDITS:
+            if source == "youtube_trending":
                 crimson += 1
             elif source == "youtube":
-                # Curated hobby/interest channel videos → Curiosity
                 amber += 1
 
     # Good News articles always count as Emerald growth
@@ -665,57 +617,6 @@ def _render_mood_score(emerald_pct: int, amber_pct: int, crimson_pct: int) -> st
   <table role="presentation" cellpadding="0" cellspacing="0" style="width:100%;border-collapse:collapse;margin-top:8px;table-layout:fixed;">
     <tr>{cells}</tr>
   </table>
-</div>"""
-
-
-def _render_reddit_card(post: dict) -> str:
-    title      = post.get("title", "(no title)")
-    summary    = post.get("summary", "")
-    ai_score   = post.get("ai_score")
-    url        = post.get("url", "#")
-    selftext   = (post.get("selftext") or "").strip()[:5000]
-    images     = _extract_images(post)
-    subreddit  = post.get("subreddit", "")
-    is_wildcard = post.get("is_wildcard", False)
-
-    ai_badge = (
-        f'<span class="badge badge-ai">🤖 {ai_score}% AI</span>'
-        if ai_score is not None else ""
-    )
-    wildcard_badge = (
-        '<span class="badge badge-wildcard">✦ Wildcard</span>'
-        if is_wildcard else ""
-    )
-    sub_badge = f'<span class="badge badge-reddit">r/{subreddit}</span>' if subreddit else ""
-
-    image_grid = ""
-    if images:
-        imgs = "".join(
-            f'<img src="{img}" alt="" loading="lazy">' for img in images[:6]
-        )
-        image_grid = f'<div class="image-grid">{imgs}</div>'
-
-    post_body = ""
-    if selftext:
-        escaped = selftext.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
-        post_body = f'<div class="post-text">{escaped}</div>'
-
-    return f"""
-<div class="card">
-  <details>
-    <summary>
-      <div class="summary-body">
-        <div class="summary-title">{title}</div>
-        <div class="summary-desc">{summary}</div>
-      </div>
-      {sub_badge}{ai_badge}{wildcard_badge}
-    </summary>
-    <div class="card-body">
-      {post_body}
-      {image_grid}
-      <a class="post-link" href="{url}" target="_blank">Read full story →</a>
-    </div>
-  </details>
 </div>"""
 
 
@@ -912,10 +813,7 @@ def _render_theme(theme: dict, accent: str) -> str:
     cards = []
     for item in items:
         source = item.get("source", "")
-        if source in ("youtube", "youtube_trending"):
-            cards.append(_render_youtube_card(item))
-        else:
-            cards.append(_render_reddit_card(item))
+        cards.append(_render_youtube_card(item))
 
     return f"""
 <section class="theme-section" style="--accent: {accent}">
@@ -957,10 +855,8 @@ def build_html(curated: dict) -> str:
         if global_silver_linings else ""
     )
     stats_html = "".join([
-        f'<span class="stat-pill">✓ {summary.get("reddit_accepted", 0)} Reddit posts</span>',
         f'<span class="stat-pill">▶ {summary.get("youtube_videos", 0)} Videos</span>',
         f'<span class="stat-pill">🗂 {summary.get("themes", len(themes))} Themes</span>',
-        f'<span class="stat-pill">🚫 {summary.get("reddit_discarded", 0)} filtered</span>',
         music_pill,
         goodnews_pill,
     ])

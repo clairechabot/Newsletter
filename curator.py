@@ -1,10 +1,11 @@
 """
 Newsletter Curator — Audit & Curation Layer
 --------------------------------------------
-Uses Claude (claude-3-5-sonnet) to:
-  1. Audit Reddit posts for Dead Internet / AI-generated patterns (hard-discard ≥ 75%).
-  2. Generate "Why Watch" descriptions for YouTube videos.
-  3. Cluster all accepted content into 3-4 cross-platform creative themes.
+Uses Claude to:
+  1. Generate "Why Watch" descriptions for YouTube videos.
+  2. Cluster videos into 3-4 creative themes.
+  3. Run Music Vibe Check and Good News silver linings.
+  4. Generate Fern's daily greeting.
 
 Required environment variable:
     CLAUDE_API_KEY
@@ -22,8 +23,6 @@ import anthropic
 # ---------------------------------------------------------------------------
 
 CLAUDE_MODEL = "claude-sonnet-4-6"
-AI_SCORE_DISCARD_THRESHOLD = 75       # percent
-REDDIT_BATCH_SIZE = 6                 # posts per audit API call
 THEME_COUNT_MIN, THEME_COUNT_MAX = 3, 4
 
 
@@ -33,132 +32,6 @@ THEME_COUNT_MIN, THEME_COUNT_MAX = 3, 4
 
 def build_claude_client() -> anthropic.Anthropic:
     return anthropic.Anthropic(api_key=os.environ["CLAUDE_API_KEY"])
-
-
-# ---------------------------------------------------------------------------
-# Reddit Audit
-# ---------------------------------------------------------------------------
-
-_REDDIT_AUDIT_SYSTEM = textwrap.dedent("""
-You are a sharp editorial assistant for a curated human-interest newsletter.
-Your job is to audit Reddit posts for authenticity and summarize the genuine ones.
-
-## Dead Internet / AI-Generated Content — Detection Criteria
-Score each post on a 0-100 scale (AI-Generated Likelihood). Look for:
-
-HIGH-RISK signals (push score up significantly):
-- Unnaturally flawless grammar/spelling in a casual subreddit context
-- Generic non-specific personal anecdotes ("I was walking one day and I realized...")
-- Emotionally performative language with zero concrete detail
-- List-heavy, perfectly balanced structure that reads like product copy
-- Title engineered for maximum engagement ("This changed everything", "You won't believe...")
-- OP comment is a suspiciously clean, step-by-step recipe or guide without any personal voice
-- Broad mass-appeal with no community-specific jargon or in-jokes
-- The post could have been written about ANY subreddit, not THIS one specifically
-
-LOW-RISK signals (push score down):
-- Typos, slang, or casual phrasing
-- Highly specific personal detail ("my 2003 Honda Civic", "my aunt Linda's kitchen")
-- Direct reply to or reference of another user or recent event
-- Genuine frustration, confusion, or emotion that is clearly unscripted
-- Niche knowledge or jargon specific to the community
-
-## Output Format
-Return ONLY a valid JSON array. Each element corresponds to one post in the input order:
-[
-  {
-    "id": "<post id>",
-    "ai_score": <integer 0-100>,
-    "discard": <true if ai_score >= 75, else false>,
-    "summary": "<1-2 sentence newsletter summary. If discard=true, write 'DISCARD'. If OP_Context contains a recipe or link, reference it explicitly in the summary.>"
-  },
-  ...
-]
-
-Do not include any text outside the JSON array.
-""").strip()
-
-
-def _build_reddit_audit_user_message(batch: list[dict]) -> str:
-    posts_text = []
-    for i, post in enumerate(batch, 1):
-        op_ctx = post.get("op_context") or "(none)"
-        selftext = (post.get("selftext") or "").strip()[:400] or "(link/image post)"
-        posts_text.append(
-            f"--- Post {i} ---\n"
-            f"ID: {post['id']}\n"
-            f"Subreddit: r/{post['subreddit']}\n"
-            f"Title: {post['title']}\n"
-            f"Score: {post['score']}\n"
-            f"Body: {selftext}\n"
-            f"OP_Context (OP's own comment): {op_ctx[:600]}"
-        )
-    return "\n\n".join(posts_text)
-
-
-def audit_reddit_posts(client: anthropic.Anthropic, posts: list[dict]) -> list[dict]:
-    """
-    Run Dead Internet audit on all Reddit posts in batches.
-    Returns only posts that pass (ai_score < 75), each enriched with
-    'ai_score' and 'summary' fields.
-    """
-    accepted: list[dict] = []
-    discarded_count = 0
-
-    for batch_start in range(0, len(posts), REDDIT_BATCH_SIZE):
-        batch = posts[batch_start : batch_start + REDDIT_BATCH_SIZE]
-        print(
-            f"[Audit/Reddit] Auditing posts {batch_start + 1}–"
-            f"{batch_start + len(batch)} of {len(posts)} …"
-        )
-
-        message = client.messages.create(
-            model=CLAUDE_MODEL,
-            max_tokens=1024,
-            system=_REDDIT_AUDIT_SYSTEM,
-            messages=[{"role": "user", "content": _build_reddit_audit_user_message(batch)}],
-        )
-
-        raw = message.content[0].text.strip()
-        # Strip accidental markdown fences
-        if raw.startswith("```"):
-            raw = raw.split("```")[1]
-            if raw.startswith("json"):
-                raw = raw[4:]
-            raw = raw.strip()
-
-        try:
-            results: list[dict] = json.loads(raw)
-        except json.JSONDecodeError as exc:
-            print(f"  [warn] JSON parse error in Reddit audit batch: {exc}. Skipping batch.")
-            continue
-
-        id_to_result = {r["id"]: r for r in results}
-
-        for post in batch:
-            result = id_to_result.get(post["id"])
-            if result is None:
-                print(f"  [warn] No audit result for post {post['id']}. Keeping as-is.")
-                accepted.append(post)
-                continue
-
-            score = int(result.get("ai_score", 0))
-            discard = score >= AI_SCORE_DISCARD_THRESHOLD
-
-            if discard:
-                discarded_count += 1
-                print(
-                    f"  [discard] '{post['title'][:60]}' — AI score {score}%"
-                )
-            else:
-                enriched = {**post, "ai_score": score, "summary": result.get("summary", "")}
-                accepted.append(enriched)
-
-    print(
-        f"[Audit/Reddit] {len(accepted)} accepted, {discarded_count} discarded "
-        f"(threshold ≥{AI_SCORE_DISCARD_THRESHOLD}%)."
-    )
-    return accepted
 
 
 # ---------------------------------------------------------------------------
@@ -250,17 +123,14 @@ _CLUSTER_SYSTEM = textwrap.dedent("""
 You are a creative newsletter editor with a talent for finding unexpected thematic
 connections across different types of content.
 
-You will receive a mixed batch of Reddit posts and YouTube videos.
+You will receive a batch of YouTube videos.
 Your task: group all items into exactly 3 or 4 thematic clusters that will become
 newsletter sections. The themes must be:
 
   • FUN and CREATIVE — real section names (e.g. "The Daily Crust", "Digital Zen",
     "Cozy Corners", "Rabbit Holes Worth Falling Down") — NOT generic labels like
     "Food Content" or "Tech Videos".
-  • CROSS-PLATFORM — each theme MUST mix Reddit and YouTube items where possible.
-    Do NOT create Reddit-only or YouTube-only sections.
-  • THEMATICALLY COHERENT — items grouped by subject matter, mood, or angle,
-    not by source platform.
+  • THEMATICALLY COHERENT — items grouped by subject matter, mood, or angle.
   • The item marked [WILDCARD] must be placed into whichever theme fits it best.
 
 Return ONLY valid JSON, exactly in this shape:
@@ -272,8 +142,8 @@ Return ONLY valid JSON, exactly in this shape:
       "tagline": "<one punchy sentence that teases what's inside>",
       "items": [
         {
-          "item_id": "<post 'id' or video 'video_id'>",
-          "platform": "reddit" | "youtube",
+          "item_id": "<video 'video_id'>",
+          "platform": "youtube",
           "is_wildcard": <true | false>
         },
         ...
@@ -287,17 +157,8 @@ Do not include any text outside the JSON object.
 """).strip()
 
 
-def _build_cluster_user_message(
-    reddit_posts: list[dict], youtube_videos: list[dict]
-) -> str:
-    lines = ["## Reddit Posts\n"]
-    for p in reddit_posts:
-        lines.append(
-            f"- ID: {p['id']} | r/{p['subreddit']} | \"{p['title']}\"\n"
-            f"  Summary: {p.get('summary', p['title'])}"
-        )
-
-    lines.append("\n## YouTube Videos\n")
+def _build_cluster_user_message(youtube_videos: list[dict]) -> str:
+    lines = ["## YouTube Videos\n"]
     for v in youtube_videos:
         is_wildcard = v.get("source") == "youtube_trending"
         label = " [WILDCARD]" if is_wildcard else ""
@@ -305,21 +166,18 @@ def _build_cluster_user_message(
             f"- ID: {v['video_id']}{label} | {v['channel_title']} | \"{v['title']}\"\n"
             f"  Why Watch: {v.get('why_watch', v.get('description', ''))[:200]}"
         )
-
     return "\n".join(lines)
 
 
 def cluster_content(
     client: anthropic.Anthropic,
-    reddit_posts: list[dict],
     youtube_videos: list[dict],
 ) -> list[dict]:
     """
-    Group all accepted content into 3-4 cross-platform creative themes.
+    Group YouTube videos into 3-4 creative themes.
     Returns a list of theme dicts, each with full item objects embedded.
     """
-    total = len(reddit_posts) + len(youtube_videos)
-    print(f"[Curator] Clustering {total} items into {THEME_COUNT_MIN}–{THEME_COUNT_MAX} themes …")
+    print(f"[Curator] Clustering {len(youtube_videos)} videos into {THEME_COUNT_MIN}–{THEME_COUNT_MAX} themes …")
 
     message = client.messages.create(
         model=CLAUDE_MODEL,
@@ -328,7 +186,7 @@ def cluster_content(
         messages=[
             {
                 "role": "user",
-                "content": _build_cluster_user_message(reddit_posts, youtube_videos),
+                "content": _build_cluster_user_message(youtube_videos),
             }
         ],
     )
@@ -348,12 +206,10 @@ def cluster_content(
             {
                 "name": "This Week's Picks",
                 "tagline": "A curated mix of the best content.",
-                "items": reddit_posts + youtube_videos,
+                "items": youtube_videos,
             }
         ]
 
-    # Build lookup maps for fast item resolution
-    reddit_map: dict[str, dict] = {p["id"]: p for p in reddit_posts}
     youtube_map: dict[str, dict] = {v["video_id"]: v for v in youtube_videos}
 
     themes: list[dict] = []
@@ -361,13 +217,7 @@ def cluster_content(
         resolved_items: list[dict] = []
         for ref in theme.get("items", []):
             item_id = ref.get("item_id", "")
-            platform = ref.get("platform", "")
-            full_item: dict[str, Any] | None = None
-
-            if platform == "reddit":
-                full_item = reddit_map.get(item_id)
-            elif platform == "youtube":
-                full_item = youtube_map.get(item_id)
+            full_item = youtube_map.get(item_id)
 
             if full_item is None:
                 print(f"  [warn] Could not resolve item_id '{item_id}' for theme '{theme['name']}'")
@@ -640,16 +490,12 @@ def run_curation(raw_data: dict) -> dict:
     """
     client = build_claude_client()
 
-    # 1. Reddit audit — discard AI-generated posts
-    reddit_posts = raw_data.get("reddit_posts", [])
-    accepted_reddit = audit_reddit_posts(client, reddit_posts)
-
-    # 2. YouTube audit — generate Why Watch
+    # 1. YouTube audit — generate Why Watch
     youtube_videos = raw_data.get("youtube_videos", [])
     enriched_youtube = audit_youtube_videos(client, youtube_videos)
 
-    # 3. Cross-platform clustering
-    themes = cluster_content(client, accepted_reddit, enriched_youtube)
+    # 2. Clustering
+    themes = cluster_content(client, enriched_youtube)
 
     # 4. Music Vibe Check (AM only — presence of articles signals AM run)
     music_articles = raw_data.get("music_articles", [])
@@ -674,9 +520,6 @@ def run_curation(raw_data: dict) -> dict:
         "fetched_at": raw_data.get("fetched_at"),
         "is_am_email": raw_data.get("is_am_email", False),
         "audit_summary": {
-            "reddit_raw": len(reddit_posts),
-            "reddit_accepted": len(accepted_reddit),
-            "reddit_discarded": len(reddit_posts) - len(accepted_reddit),
             "youtube_videos": len(enriched_youtube),
             "themes": len(themes),
             "music_articles": len(morning_soundtrack),
