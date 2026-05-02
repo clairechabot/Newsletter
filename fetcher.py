@@ -28,6 +28,7 @@ from zoneinfo import ZoneInfo
 
 import re
 import random
+from langdetect import detect, LangDetectException
 import xml.etree.ElementTree as ET
 from urllib.parse import urlparse
 
@@ -444,16 +445,30 @@ def _fetch_video_details(youtube, video_ids: list[str]) -> list[dict]:
             print(f"  [skip/short] {vid_id} — {duration_sec}s < {YOUTUBE_MIN_DURATION_SECONDS}s")
             continue
 
+        title = snippet["title"]
+        if re.search(r'[^\x00-\x7FÀ-ɏḀ-ỿ]', title):
+            print(f"  [skip/non-latin] {vid_id} — non-Latin characters in title")
+            continue
+
         audio_lang = snippet.get("defaultAudioLanguage", "")
         if audio_lang and not audio_lang.startswith("en"):
             print(f"  [skip/lang] {vid_id} — language '{audio_lang}'")
             continue
 
+        desc_text = snippet.get("description", "").strip()
+        if desc_text:
+            try:
+                if detect(desc_text) != "en":
+                    print(f"  [skip/lang] {vid_id} — description not English")
+                    continue
+            except LangDetectException:
+                pass
+
         videos.append(
             {
                 "source": "youtube",
                 "video_id": vid_id,
-                "title": snippet["title"],
+                "title": title,
                 "channel_id": snippet["channelId"],
                 "channel_title": snippet["channelTitle"],
                 "published_at": snippet["publishedAt"],

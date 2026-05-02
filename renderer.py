@@ -468,28 +468,6 @@ details[open] > summary::before {
   font-style: italic;
 }
 
-/* ── Vibe Bar ────────────────────────────────────────────── */
-.vibe-section {
-  margin-bottom: 24px;
-}
-.vibe-label {
-  font-size: 12px;
-  color: #6B7280;
-  margin-bottom: 7px;
-}
-.vibe-label strong { color: #2C3E50; font-weight: 600; }
-.vibe-bar {
-  height: 8px;
-  border-radius: 999px;
-  overflow: hidden;
-  background: #5D6D7E;
-  display: flex;
-}
-.vibe-bar-wholesome {
-  background: #82954B;
-  height: 100%;
-}
-
 /* ── Energy Spectrum Bar (inline-only — kept for browser view) ── */
 /* Rendered entirely with inline styles for email-client compatibility. */
 
@@ -507,8 +485,7 @@ details[open] > summary::before {
 # Accent colours cycle per theme section
 _ACCENTS = ["#5D6D7E", "#82954B", "#C17F3A", "#7B6FA0", "#3A7D85"]
 
-# Subreddits that count toward the "Wholesome" side of the vibe bar
-_WHOLESOME_SUBREDDITS = {"benignexistence", "cozyplaces", "simpleliving", "aww", "mildlyinteresting"}
+
 
 # Mood score buckets — subreddit names lowercased
 _EMERALD_SUBREDDITS = frozenset({"containergardening", "simpleliving", "breadmachines"})
@@ -550,23 +527,6 @@ def _fern_energy_line(emerald_pct: int, amber_pct: int, crimson_pct: int) -> str
         dominant = "balanced"
     return random.choice(_FERN_ENERGY_LINES[dominant])
 
-
-def _calculate_vibe(themes: list, global_silver_linings: list) -> tuple:
-    """Return (wholesome_pct, drama_pct) as integers that sum to 100."""
-    total = 0
-    wholesome = 0
-    for theme in themes:
-        for item in theme.get("items", []):
-            total += 1
-            if item.get("subreddit", "").lower() in _WHOLESOME_SUBREDDITS:
-                wholesome += 1
-    # Good news articles are always wholesome
-    wholesome += len(global_silver_linings)
-    total += len(global_silver_linings)
-    if total == 0:
-        return 50, 50
-    pct = round(wholesome / total * 100)
-    return pct, 100 - pct
 
 
 def _calculate_mood_score(
@@ -656,16 +616,6 @@ def _render_fern_greeting(greeting: str, energy_line: str = "") -> str:
 </div>"""
 
 
-def _render_vibe_bar(wholesome_pct: int, drama_pct: int) -> str:
-    return f"""
-<div class="vibe-section">
-  <div class="vibe-label">
-    Vibe Check: <strong>{wholesome_pct}% Wholesome</strong> | <strong>{drama_pct}% Spicy Drama</strong>
-  </div>
-  <div class="vibe-bar">
-    <div class="vibe-bar-wholesome" style="width:{wholesome_pct}%"></div>
-  </div>
-</div>"""
 
 
 def _render_mood_score(emerald_pct: int, amber_pct: int, crimson_pct: int) -> str:
@@ -993,7 +943,8 @@ def build_html(curated: dict) -> str:
 
     try:
         dt = datetime.datetime.fromisoformat(fetched_at).astimezone(ZoneInfo("Europe/Zurich"))
-        date_str = f"{dt.strftime('%A, %B')} {dt.day}, {dt.strftime('%Y')} | {dt.strftime('%H:%M')} {dt.strftime('%Z')}"
+        tz_abbr = "CEST" if int(dt.utcoffset().total_seconds() / 3600) == 2 else "CET"
+        date_str = f"{dt.strftime('%A, %B')} {dt.day}, {dt.strftime('%Y')} | {dt.strftime('%H:%M')} {tz_abbr}"
     except Exception:
         date_str = fetched_at
 
@@ -1021,8 +972,7 @@ def build_html(curated: dict) -> str:
     fern_data             = curated.get("fern_data", {})
     energy_line           = _fern_energy_line(emerald_pct, amber_pct, crimson_pct)
     fern_greeting_html    = _render_fern_greeting(fern_data.get("greeting", ""), energy_line)
-    wholesome_pct, drama_pct = _calculate_vibe(themes, global_silver_linings)
-    vibe_bar_html         = _render_vibe_bar(wholesome_pct, drama_pct)
+
 
     theme_html = "".join(
         _render_theme(theme, _ACCENTS[i % len(_ACCENTS)])
@@ -1061,8 +1011,6 @@ def build_html(curated: dict) -> str:
   </div>
 
   {fern_greeting_html}
-
-  {vibe_bar_html}
 
   {mood_score_html}
 
