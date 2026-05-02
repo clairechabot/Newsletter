@@ -162,13 +162,15 @@ a:hover { text-decoration: underline; }
   margin-bottom: 32px;
 }
 .theme-header {
-  border-left: 4px solid var(--accent, #5D6D7E);
+  border: none;
+  border-left: 6px solid #82954B;
+  background: #F9FAF9;
+  border-radius: 0 12px 12px 0;
   padding: 10px 16px;
   margin-bottom: 12px;
-  background: rgba(93, 109, 126, 0.06);
-  border-radius: 0 10px 10px 0;
 }
 .theme-header h2 {
+  font-family: Georgia, serif;
   font-size: 18px;
   font-weight: 700;
   color: #2C3E50;
@@ -181,14 +183,15 @@ a:hover { text-decoration: underline; }
 
 /* ── Content Card ────────────────────────────────────────── */
 .card {
-  background: #FFFFFF;
-  border: 1px solid #EEEEEE;
-  border-radius: 8px;
+  background: #F9FAF9;
+  border: none;
+  border-left: 6px solid #82954B;
+  border-radius: 0 12px 12px 0;
   margin-bottom: 20px;
   overflow: hidden;
-  transition: border-color 0.15s;
+  transition: border-left-color 0.15s;
 }
-.card:hover { border-color: #B0BEC5; }
+.card:hover { border-left-color: #6B7C3A; }
 
 /* ── <details> / <summary> ───────────────────────────────── */
 details { }
@@ -329,13 +332,15 @@ details[open] > summary::before {
   margin-bottom: 32px;
 }
 .soundtrack-header {
-  border-left: 4px solid #A0647A;
+  border: none;
+  border-left: 6px solid #82954B;
+  background: #F9FAF9;
+  border-radius: 0 12px 12px 0;
   padding: 10px 16px;
   margin-bottom: 12px;
-  background: rgba(160, 100, 122, 0.06);
-  border-radius: 0 10px 10px 0;
 }
 .soundtrack-header h2 {
+  font-family: Georgia, serif;
   font-size: 18px;
   font-weight: 700;
   color: #2C3E50;
@@ -375,13 +380,15 @@ details[open] > summary::before {
   margin-bottom: 32px;
 }
 .goodnews-header {
-  border-left: 4px solid #82954B;
+  border: none;
+  border-left: 6px solid #82954B;
+  background: #F9FAF9;
+  border-radius: 0 12px 12px 0;
   padding: 10px 16px;
   margin-bottom: 12px;
-  background: rgba(130, 149, 75, 0.06);
-  border-radius: 0 10px 10px 0;
 }
 .goodnews-header h2 {
+  font-family: Georgia, serif;
   font-size: 18px;
   font-weight: 700;
   color: #2C3E50;
@@ -433,10 +440,10 @@ details[open] > summary::before {
   display: flex;
   align-items: flex-start;
   gap: 14px;
-  background: #FFFFFF;
-  border: 1px solid #E0E0E0;
-  border-left: 4px solid #82954B;
-  border-radius: 12px;
+  background: #F9FAF9;
+  border: none;
+  border-left: 6px solid #82954B;
+  border-radius: 0 12px 12px 0;
   padding: 16px 20px;
   margin-bottom: 20px;
 }
@@ -881,7 +888,7 @@ def _render_morning_soundtrack(articles: list[dict]) -> str:
     <summary>
       <div class="soundtrack-header section-header-toggle">
         <div>
-          <h2>The Morning Soundtrack</h2>
+          <h2>🎵 The Morning Soundtrack</h2>
           <div class="tagline">Fresh picks from the music world to set the tone for your day.</div>
         </div>
         <span class="section-chevron">▾</span>
@@ -933,7 +940,7 @@ def _render_global_silver_linings(articles: list[dict]) -> str:
     <summary>
       <div class="goodnews-header section-header-toggle">
         <div>
-          <h2>Global Silver Linings</h2>
+          <h2>🌿 Global Silver Linings</h2>
           <div class="tagline">Two stories that remind you the world is still full of good.</div>
         </div>
         <span class="section-chevron">▾</span>
