@@ -284,9 +284,18 @@ def _fetch_video_details(youtube, video_ids: list[str]) -> list[dict]:
     videos: list[dict] = []
     for item in response.get("items", []):
         vid_id = item["id"]
-        snippet = item["snippet"]
-        duration_str = item.get("contentDetails", {}).get("duration", "PT0S")
+        snippet = item.get("snippet")
+        if not snippet:
+            print(f"  [skip/no-snippet] {vid_id} — missing snippet metadata")
+            continue
+        duration_str = item.get("contentDetails", {}).get("duration", "")
+        if not duration_str:
+            print(f"  [skip/no-duration] {vid_id} — duration metadata absent")
+            continue
         duration_sec = _parse_iso8601_duration(duration_str)
+        if duration_sec == 0:
+            print(f"  [skip/no-duration] {vid_id} — duration unparseable ({duration_str!r})")
+            continue
         url = f"https://www.youtube.com/watch?v={vid_id}"
 
         if _is_short(vid_id, url, duration_sec):
@@ -322,7 +331,7 @@ def _fetch_video_details(youtube, video_ids: list[str]) -> list[dict]:
                 "published_at": snippet["publishedAt"],
                 "url": url,
                 "duration_seconds": duration_sec,
-                "view_count": item["statistics"].get("viewCount"),
+                "view_count": item.get("statistics", {}).get("viewCount"),
                 "description": snippet.get("description", "")[:500],
             }
         )
@@ -364,7 +373,11 @@ def _get_playlist_latest_ids(youtube, playlist_id: str, max_results: int = 5) ->
         .list(part="contentDetails", playlistId=playlist_id, maxResults=max_results)
         .execute()
     )
-    return [item["contentDetails"]["videoId"] for item in resp.get("items", [])]
+    return [
+        vid_id
+        for item in resp.get("items", [])
+        if (vid_id := item.get("contentDetails", {}).get("videoId"))
+    ]
 
 
 def fetch_channel_videos(youtube, seen_ids: set[str]) -> list[dict]:
@@ -869,11 +882,15 @@ def _fetch_rss_articles(
     return articles
 
 
-def fetch_good_news_articles(seen_urls: set[str]) -> list[dict]:
+def fetch_good_news_articles(
+    seen_all_urls: set[str],
+    seen_good_news_urls: set[str],
+) -> list[dict]:
     """
     Fetch one article from each feed in GOOD_NEWS_FEEDS independently.
     Each source always contributes its own slot; failures produce 0 from that source.
-    Skips any article whose URL was already seen in a previous run.
+    Checks seen_all_urls (full cross-bucket history) to prevent duplicates; writes
+    accepted URLs to both seen_all_urls and seen_good_news_urls.
     Runs on both AM and PM emails.
     """
     print("[GoodNews] Fetching good news RSS feeds …")
@@ -884,22 +901,27 @@ def fetch_good_news_articles(seen_urls: set[str]) -> list[dict]:
         fetched = _fetch_rss_articles(feed["url"], feed["source_name"], 1, session)
         for article in fetched:
             url = article["url"]
-            if url in seen_urls:
+            if url in seen_all_urls:
                 print(f"  [skip/dup] Good News article already in history: {url}")
                 continue
-            seen_urls.add(url)
+            seen_all_urls.add(url)
+            seen_good_news_urls.add(url)
             results.append(article)
 
     print(f"[GoodNews] Collected {len(results)} article(s).")
     return results
 
 
-def fetch_discovery(seen_urls: set[str]) -> list[dict]:
+def fetch_discovery(
+    seen_all_urls: set[str],
+    seen_discovery_urls: set[str],
+) -> list[dict]:
     """
     Fetch History/Mystery and Science articles from curated RSS feeds.
     Fetches DISCOVERY_CANDIDATES_PER_SOURCE candidates per source, priority-sorts
     by mystery keywords, then keeps DISCOVERY_ARTICLES_PER_SOURCE per source.
-    Deduplicates against seen_urls (backed by history.json).
+    Checks seen_all_urls (full cross-bucket history) to prevent duplicates; writes
+    accepted URLs to both seen_all_urls and seen_discovery_urls.
     Runs on both AM and PM emails.
     """
     print("[Discovery] Fetching discovery RSS feeds …")
@@ -919,10 +941,11 @@ def fetch_discovery(seen_urls: set[str]) -> list[dict]:
             if taken >= DISCOVERY_ARTICLES_PER_SOURCE:
                 break
             url = article["url"]
-            if url in seen_urls:
+            if url in seen_all_urls:
                 print(f"  [skip/dup] Discovery article already in history: {url}")
                 continue
-            seen_urls.add(url)
+            seen_all_urls.add(url)
+            seen_discovery_urls.add(url)
             results.append({**article, "category": feed["category"]})
             taken += 1
 
@@ -954,6 +977,9 @@ def main() -> dict:
 
     seen_ids, seen_good_news_urls, seen_discovery_urls = load_history()
 
+    # Unified URL pool — checked by all RSS fetchers to prevent cross-bucket repeats
+    seen_all_urls: set[str] = seen_good_news_urls | seen_discovery_urls
+
     # --- YouTube ---
     youtube = build_youtube_client()
     channel_videos = fetch_channel_videos(youtube, seen_ids)
@@ -980,10 +1006,10 @@ def main() -> dict:
         print("[Music] PM email — skipping music section.")
 
     # --- Good News (every run) ---
-    good_news_articles = fetch_good_news_articles(seen_good_news_urls)
+    good_news_articles = fetch_good_news_articles(seen_all_urls, seen_good_news_urls)
 
     # --- Discovery: History/Mystery + Science (every run) ---
-    discovery_articles = fetch_discovery(seen_discovery_urls)
+    discovery_articles = fetch_discovery(seen_all_urls, seen_discovery_urls)
 
     # --- Persist history ---
     save_history(seen_ids, seen_good_news_urls, seen_discovery_urls)

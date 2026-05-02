@@ -552,13 +552,14 @@ def _calculate_mood_score(
     themes: list,
     global_silver_linings: list,
     music_articles: list | None = None,
+    discovery_articles: list | None = None,
 ) -> tuple[int, int, int]:
     """Return (emerald_pct, amber_pct, crimson_pct) as integers summing to 100.
 
     Scoring rules:
-      Emerald (Growth)   — Good News articles, Sofar Sounds music articles (+2 each)
-      Amber   (Curiosity)— YouTube channel videos, Bandcamp Daily articles (+2 each)
-      Crimson (Chaos)    — YouTube trending/wildcard videos
+      Emerald (Growth)   — Good News articles (+1), all music articles (+2 each)
+      Amber   (Curiosity)— YouTube channel videos (+1), Discovery articles (+1 each)
+      Crimson (Chaos)    — YouTube trending/wildcard videos (+1)
     """
     emerald = amber = crimson = 0
 
@@ -570,16 +571,14 @@ def _calculate_mood_score(
             elif source == "youtube":
                 amber += 1
 
-    # Good News articles always count as Emerald growth
+    # Good News articles → Emerald
     emerald += len(global_silver_linings)
 
-    # Music articles: Sofar Sounds → Emerald (+2), Bandcamp Daily → Amber (+2)
-    for article in (music_articles or []):
-        source_name = article.get("source_name", "")
-        if source_name == "Sofar Sounds":
-            emerald += 2
-        elif source_name == "Bandcamp Daily":
-            amber += 2
+    # All music (Sofar Sounds + Bandcamp Daily) → Emerald; music is calming, not curiosity-driven
+    emerald += len(music_articles or []) * 2
+
+    # Discovery articles (History/Mystery + Science) → Amber
+    amber += len(discovery_articles or [])
 
     total = emerald + amber + crimson
     if total == 0:
@@ -1007,7 +1006,9 @@ def build_html(curated: dict) -> str:
     ])
 
     # Mood scores first — used both for the spectrum bar and Fern's opening line
-    emerald_pct, amber_pct, crimson_pct = _calculate_mood_score(themes, global_silver_linings, morning_soundtrack)
+    emerald_pct, amber_pct, crimson_pct = _calculate_mood_score(
+        themes, global_silver_linings, morning_soundtrack, discovery_articles
+    )
     mood_score_html       = _render_mood_score(emerald_pct, amber_pct, crimson_pct)
 
     fern_data             = curated.get("fern_data", {})
