@@ -188,21 +188,26 @@ ZURICH = ZoneInfo("Europe/Zurich")
 # History helpers
 # ---------------------------------------------------------------------------
 
-def load_history() -> tuple[set[str], set[str]]:
-    """Return (video_ids, reddit_post_ids) seen in previous runs."""
+def load_history() -> tuple[set[str], set[str], set[str]]:
+    """Return (video_ids, reddit_post_ids, good_news_urls) seen in previous runs."""
     if HISTORY_FILE.exists():
         data = json.loads(HISTORY_FILE.read_text(encoding="utf-8"))
-        return set(data.get("video_ids", [])), set(data.get("reddit_post_ids", []))
-    return set(), set()
+        return (
+            set(data.get("video_ids", [])),
+            set(data.get("reddit_post_ids", [])),
+            set(data.get("good_news_urls", [])),
+        )
+    return set(), set(), set()
 
 
-def save_history(seen_ids: set[str], seen_post_ids: set[str]) -> None:
-    """Persist seen video IDs and Reddit post IDs back to disk."""
+def save_history(seen_ids: set[str], seen_post_ids: set[str], seen_good_news_urls: set[str]) -> None:
+    """Persist seen video IDs, Reddit post IDs, and Good News URLs back to disk."""
     existing: dict = {}
     if HISTORY_FILE.exists():
         existing = json.loads(HISTORY_FILE.read_text(encoding="utf-8"))
     existing["video_ids"] = sorted(seen_ids)
     existing["reddit_post_ids"] = sorted(seen_post_ids)
+    existing["good_news_urls"] = sorted(seen_good_news_urls)
     HISTORY_FILE.write_text(
         json.dumps(existing, indent=2, ensure_ascii=False), encoding="utf-8"
     )
@@ -984,10 +989,11 @@ def _fetch_rss_articles(
     return articles
 
 
-def fetch_good_news_articles() -> list[dict]:
+def fetch_good_news_articles(seen_urls: set[str]) -> list[dict]:
     """
     Fetch one article from each feed in GOOD_NEWS_FEEDS independently.
     Each source always contributes its own slot; failures produce 0 from that source.
+    Skips any article whose URL was already seen in a previous run.
     Runs on both AM and PM emails.
     """
     print("[GoodNews] Fetching good news RSS feeds …")
@@ -996,7 +1002,13 @@ def fetch_good_news_articles() -> list[dict]:
 
     for feed in GOOD_NEWS_FEEDS:
         fetched = _fetch_rss_articles(feed["url"], feed["source_name"], 1, session)
-        results.extend(fetched)
+        for article in fetched:
+            url = article["url"]
+            if url in seen_urls:
+                print(f"  [skip/dup] Good News article already in history: {url}")
+                continue
+            seen_urls.add(url)
+            results.append(article)
 
     print(f"[GoodNews] Collected {len(results)} article(s).")
     return results
@@ -1026,7 +1038,7 @@ def main() -> dict:
     is_am_email: bool = now_ch.hour < 12
     print(f"[fetch] Run type: {'AM' if is_am_email else 'PM'} (Zurich hour {now_ch.hour})")
 
-    seen_ids, seen_post_ids = load_history()
+    seen_ids, seen_post_ids, seen_good_news_urls = load_history()
 
     # --- Reddit ---
     reddit_session = _reddit_session()
@@ -1058,10 +1070,10 @@ def main() -> dict:
         print("[Music] PM email — skipping music section.")
 
     # --- Good News (every run) ---
-    good_news_articles = fetch_good_news_articles()
+    good_news_articles = fetch_good_news_articles(seen_good_news_urls)
 
     # --- Persist history ---
-    save_history(seen_ids, seen_post_ids)
+    save_history(seen_ids, seen_post_ids, seen_good_news_urls)
 
     raw_payload = {
         "fetched_at": now_ch.isoformat(),

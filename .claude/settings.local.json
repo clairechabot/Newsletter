@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(Get-ChildItem -Path \"c:\\\\Other\\\\VS Code\\\\Newsletter\" -Recurse -File)",
+      "Bash(Select-Object FullName)"
+    ]
+  }
+}
