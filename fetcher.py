@@ -1,7 +1,7 @@
 """
 Newsletter Data Fetcher
 -----------------------
-Fetches Reddit posts (via public .json endpoints — no API key required),
+Fetches Reddit posts (via public RSS feeds — no API key required),
 YouTube videos, and music articles with deduplication and OP context extraction,
 then runs the AI audit + curation layer (curator.py).
 
@@ -32,6 +32,7 @@ from langdetect import detect, LangDetectException
 import xml.etree.ElementTree as ET
 from urllib.parse import urlparse
 
+import feedparser
 import requests
 from bs4 import BeautifulSoup
 from googleapiclient.discovery import build
@@ -269,40 +270,17 @@ def _fetch_with_retry(
 
 
 # ---------------------------------------------------------------------------
-# Reddit  (public .json endpoints — no API key required)
+# Reddit  (public RSS feeds — no API key required)
 # ---------------------------------------------------------------------------
 
 def _reddit_session() -> requests.Session:
-    """Return a requests Session pre-configured for Reddit's public JSON API."""
+    """Return a Session pre-configured for Reddit's public RSS feeds."""
     session = requests.Session()
     session.headers.update({
         "User-Agent": REDDIT_USER_AGENT,
-        "Accept": "application/json",
-        "Accept-Language": "en-US,en;q=0.9",
-        "Referer": "https://www.google.com/",
+        "Accept": "application/rss+xml, text/xml",
     })
     return session
-
-
-def _reddit_get(session: requests.Session, url: str) -> dict | None:
-    """
-    GET a Reddit .json URL, retrying once on 429.
-    Returns the parsed JSON dict or None on failure.
-    """
-    time.sleep(random.uniform(2, 5))
-    try:
-        resp = session.get(url, timeout=15)
-        print(f"[Reddit] Status Code for {url.split('/r/')[-1].split('/')[0]}: {resp.status_code}")
-        if resp.status_code == 429:
-            retry_after = int(resp.headers.get("Retry-After", 60))
-            print(f"  [warn] Reddit rate-limited — sleeping {retry_after}s …")
-            time.sleep(retry_after)
-            resp = session.get(url, timeout=15)
-        resp.raise_for_status()
-        return resp.json()
-    except Exception as exc:  # noqa: BLE001
-        print(f"  [warn] Reddit request failed ({url}): {exc}")
-        return None
 
 
 def _within_window(utc_timestamp: float, hours: int = REDDIT_WINDOW_HOURS) -> bool:
@@ -313,82 +291,71 @@ def _within_window(utc_timestamp: float, hours: int = REDDIT_WINDOW_HOURS) -> bo
     return post_time >= cutoff
 
 
-def _fetch_op_context(
-    session: requests.Session, permalink: str, op_author: str
-) -> str | None:
-    """
-    Fetch the comments listing for a post and return the first top-level comment
-    written by the OP, or None.  Uses depth=1 to limit payload size.
-    """
-    url = f"https://www.reddit.com{permalink}.json?limit=50&depth=1&sort=top"
-    data = _reddit_get(session, url)
-    if not data or len(data) < 2:
-        return None
-
-    for child in data[1].get("data", {}).get("children", []):
-        c = child.get("data", {})
-        if c.get("author") == op_author and c.get("body"):
-            return c["body"]
-    return None
-
-
 def fetch_reddit_posts(session: requests.Session, seen_post_ids: set[str]) -> list[dict]:
     """
     Fetch top posts from the last REDDIT_WINDOW_HOURS hours across all configured
-    subreddits via Reddit's public /top.json endpoint (no auth required).
+    subreddits via Reddit's public RSS feeds (no auth required).
     Uses the 'day' time filter then trims via datetime comparison.
-    Falls back to /hot.json for any subreddit that returns 0 top posts.
+    Falls back to /hot/.rss for any subreddit that returns 0 top posts.
     Skips posts already present in seen_post_ids and registers new ones into that set.
+    Note: RSS does not expose post scores or selftext; both default to 0/None.
     """
     results: list[dict] = []
 
     for sub_name in SUBREDDITS:
         for sort in ("top", "hot"):
             if sort == "top":
-                url = f"https://www.reddit.com/r/{sub_name}/top.json?t=day&limit=25"
-                print(f"[Reddit] Fetching r/{sub_name}/top …")
+                url = f"https://www.reddit.com/r/{sub_name}/top/.rss?t=day"
+                print(f"[Reddit] Fetching r/{sub_name}/top (RSS) …")
             else:
-                url = f"https://www.reddit.com/r/{sub_name}/hot.json?limit=25"
-                print(f"  [Reddit] r/{sub_name}/top returned 0 posts — trying /hot as fallback …")
+                url = f"https://www.reddit.com/r/{sub_name}/hot/.rss"
+                print(f"  [Reddit] r/{sub_name}/top returned 0 posts — trying /hot …")
 
             before = len(results)
             try:
-                data = _reddit_get(session, url)
-                if not data:
+                resp = _fetch_with_retry(url, session)
+                if resp is None:
                     continue
 
-                for child in data.get("data", {}).get("children", []):
-                    post = child.get("data", {})
+                feed = feedparser.parse(resp.content)
 
-                    if not _within_window(post.get("created_utc", 0)):
+                for entry in feed.entries:
+                    id_match = re.search(r"/comments/([a-z0-9]+)/", entry.get("link", ""))
+                    if not id_match:
+                        continue
+                    post_id = id_match.group(1)
+
+                    pub = entry.get("published_parsed")
+                    created_utc = (
+                        datetime.datetime(*pub[:6], tzinfo=UTC).timestamp() if pub else 0.0
+                    )
+
+                    if not _within_window(created_utc):
                         continue
 
-                    post_id = post.get("id", "")
                     if post_id in seen_post_ids:
                         print(f"  [skip/dup] {post_id} already in history")
                         continue
 
-                    author = post.get("author") or "[deleted]"
-
-                    op_context: str | None = None
-                    if author not in ("[deleted]", "AutoModerator"):
-                        op_context = _fetch_op_context(session, post.get("permalink", ""), author)
+                    author_raw = entry.get("author", "") or ""
+                    author = author_raw.removeprefix("/u/") or "[deleted]"
 
                     results.append(
                         {
-                            "source": "reddit",
-                            "subreddit": sub_name,
-                            "id": post_id,
-                            "title": post.get("title", ""),
-                            "url": post.get("url", ""),
-                            "score": post.get("score", 0),
-                            "author": author,
-                            "created_utc": post.get("created_utc", 0),
-                            "selftext": post.get("selftext") or None,
-                            "op_context": op_context,
+                            "source":      "reddit",
+                            "subreddit":   sub_name,
+                            "id":          post_id,
+                            "title":       entry.get("title", ""),
+                            "url":         entry.get("link", ""),
+                            "score":       0,
+                            "author":      author,
+                            "created_utc": created_utc,
+                            "selftext":    None,
+                            "op_context":  None,
                         }
                     )
                     seen_post_ids.add(post_id)
+
             except Exception as exc:  # noqa: BLE001
                 print(f"  [error] r/{sub_name} ({sort}): {exc}")
 
@@ -442,7 +409,7 @@ def _fetch_video_details(youtube, video_ids: list[str]) -> list[dict]:
     for item in response.get("items", []):
         vid_id = item["id"]
         snippet = item["snippet"]
-        duration_str = item["contentDetails"]["duration"]
+        duration_str = item.get("contentDetails", {}).get("duration", "PT0S")
         duration_sec = _parse_iso8601_duration(duration_str)
         url = f"https://www.youtube.com/watch?v={vid_id}"
 
