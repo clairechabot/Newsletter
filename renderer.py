@@ -370,6 +370,64 @@ details[open] > summary::before {
   border: 1px solid #BEF264;
 }
 
+/* ── Discovery sections (From the Archives + The Laboratory) ── */
+.archives-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  cursor: pointer;
+  padding: 16px 20px;
+  border-radius: 10px 10px 0 0;
+  background: #f8f5f0;
+}
+.lab-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  cursor: pointer;
+  padding: 16px 20px;
+  border-radius: 10px 10px 0 0;
+  background: #f0f5f8;
+}
+.archives-header .tagline,
+.lab-header .tagline {
+  font-size: 13px;
+  color: #6B7280;
+  margin-top: 2px;
+}
+.discovery-card {
+  border-left: 4px solid #87a878;
+}
+.discovery-card-title {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 15px;
+  font-weight: 700;
+  color: #2c2c2c;
+  line-height: 1.4;
+}
+.discovery-card-snippet {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 13px;
+  color: #555;
+  margin-top: 6px;
+  line-height: 1.6;
+}
+.badge-archives {
+  background: #fdf3e3;
+  color: #7a4f00;
+  border: 1px solid #c8a96e;
+}
+.badge-lab {
+  background: #e6f4f4;
+  color: #1a5f5f;
+  border: 1px solid #4a9a9a;
+}
+.badge-museum {
+  background: #eeecf5;
+  color: #3d2e6e;
+  border: 1px solid #7a6e9a;
+}
+
 /* ── Section-level collapsible ───────────────────────────── */
 .section-details > summary {
   padding: 0;
@@ -802,6 +860,86 @@ def _render_global_silver_linings(articles: list[dict]) -> str:
 </section>"""
 
 
+def _render_discovery_card(article: dict) -> str:
+    def _e(s: str) -> str:
+        return s.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
+
+    title      = _e(article.get("title", "(no title)"))
+    url        = article.get("url", "#")
+    snippet    = _e(article.get("snippet", ""))
+    ferns_note = _e(article.get("ferns_note", ""))
+    source     = article.get("source_name", "")
+    category   = article.get("category", "history")
+
+    if source == "British Museum":
+        badge = '<span class="badge badge-museum">🏛 British Museum Archives</span>'
+    elif category == "science":
+        badge = '<span class="badge badge-lab">🔬 Science</span>'
+    else:
+        badge = '<span class="badge badge-archives">📜 Archives</span>'
+
+    return f"""
+<div class="card discovery-card">
+  <details>
+    <summary>
+      <div class="summary-body">
+        <div class="discovery-card-title">{title}</div>
+        <div class="summary-desc">{ferns_note}</div>
+      </div>
+      {badge}
+    </summary>
+    <div class="card-body">
+      <div class="discovery-card-snippet">{snippet}</div>
+      <a class="post-link" href="{url}" target="_blank">Read full story →</a>
+    </div>
+  </details>
+</div>"""
+
+
+def _render_from_the_archives(articles: list[dict]) -> str:
+    items = [a for a in articles if a.get("category") == "history"]
+    if not items:
+        return ""
+    cards = "".join(_render_discovery_card(a) for a in items)
+    return f"""
+<section class="goodnews-section">
+  <details class="section-details">
+    <summary>
+      <div class="archives-header section-header-toggle">
+        <div>
+          <h2>📜 From the Archives</h2>
+          <div class="tagline">Forgotten places, hidden histories, and mysteries that linger.</div>
+        </div>
+        <span class="section-chevron">▾</span>
+      </div>
+    </summary>
+    {cards}
+  </details>
+</section>"""
+
+
+def _render_the_laboratory(articles: list[dict]) -> str:
+    items = [a for a in articles if a.get("category") == "science"]
+    if not items:
+        return ""
+    cards = "".join(_render_discovery_card(a) for a in items)
+    return f"""
+<section class="goodnews-section">
+  <details class="section-details">
+    <summary>
+      <div class="lab-header section-header-toggle">
+        <div>
+          <h2>🔬 The Laboratory</h2>
+          <div class="tagline">The science stories that rewire how you see the world.</div>
+        </div>
+        <span class="section-chevron">▾</span>
+      </div>
+    </summary>
+    {cards}
+  </details>
+</section>"""
+
+
 def _render_theme(theme: dict, accent: str) -> str:
     name    = theme.get("name", "Untitled")
     tagline = theme.get("tagline", "")
@@ -838,6 +976,7 @@ def build_html(curated: dict) -> str:
     fetched_at             = curated.get("fetched_at", "")
     morning_soundtrack     = curated.get("morning_soundtrack", [])
     global_silver_linings  = curated.get("global_silver_linings", [])
+    discovery_articles     = curated.get("discovery_articles", [])
 
     try:
         dt = datetime.datetime.fromisoformat(fetched_at).astimezone(ZoneInfo("Europe/Zurich"))
@@ -854,11 +993,17 @@ def build_html(curated: dict) -> str:
         f'<span class="stat-pill">🌿 {len(global_silver_linings)} Good News</span>'
         if global_silver_linings else ""
     )
+    discovery_count = len(discovery_articles)
+    discovery_pill = (
+        f'<span class="stat-pill">📜 {discovery_count} Discoveries</span>'
+        if discovery_count else ""
+    )
     stats_html = "".join([
         f'<span class="stat-pill">▶ {summary.get("youtube_videos", 0)} Videos</span>',
         f'<span class="stat-pill">🗂 {summary.get("themes", len(themes))} Themes</span>',
         music_pill,
         goodnews_pill,
+        discovery_pill,
     ])
 
     # Mood scores first — used both for the spectrum bar and Fern's opening line
@@ -869,7 +1014,6 @@ def build_html(curated: dict) -> str:
     energy_line           = _fern_energy_line(emerald_pct, amber_pct, crimson_pct)
     fern_greeting_html    = _render_fern_greeting(fern_data.get("greeting", ""), energy_line)
 
-
     theme_html = "".join(
         _render_theme(theme, _ACCENTS[i % len(_ACCENTS)])
         for i, theme in enumerate(themes)
@@ -877,6 +1021,8 @@ def build_html(curated: dict) -> str:
 
     soundtrack_html       = _render_morning_soundtrack(morning_soundtrack)
     silver_linings_html   = _render_global_silver_linings(global_silver_linings)
+    archives_html         = _render_from_the_archives(discovery_articles)
+    lab_html              = _render_the_laboratory(discovery_articles)
 
     logo_html = (
         f'<img src="{FERN_LOGO_URL}" alt="Fern" '
@@ -911,6 +1057,10 @@ def build_html(curated: dict) -> str:
   {mood_score_html}
 
   {silver_linings_html}
+
+  {archives_html}
+
+  {lab_html}
 
   {soundtrack_html}
 

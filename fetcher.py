@@ -158,24 +158,30 @@ ZURICH = ZoneInfo("Europe/Zurich")
 # History helpers
 # ---------------------------------------------------------------------------
 
-def load_history() -> tuple[set[str], set[str]]:
-    """Return (video_ids, good_news_urls) seen in previous runs."""
+def load_history() -> tuple[set[str], set[str], set[str]]:
+    """Return (video_ids, good_news_urls, discovery_urls) seen in previous runs."""
     if HISTORY_FILE.exists():
         data = json.loads(HISTORY_FILE.read_text(encoding="utf-8"))
         return (
             set(data.get("video_ids", [])),
             set(data.get("good_news_urls", [])),
+            set(data.get("discovery_urls", [])),
         )
-    return set(), set()
+    return set(), set(), set()
 
 
-def save_history(seen_ids: set[str], seen_good_news_urls: set[str]) -> None:
-    """Persist seen video IDs and Good News URLs back to disk."""
+def save_history(
+    seen_ids: set[str],
+    seen_good_news_urls: set[str],
+    seen_discovery_urls: set[str],
+) -> None:
+    """Persist seen video IDs, Good News URLs, and Discovery URLs back to disk."""
     existing: dict = {}
     if HISTORY_FILE.exists():
         existing = json.loads(HISTORY_FILE.read_text(encoding="utf-8"))
-    existing["video_ids"] = sorted(seen_ids)
-    existing["good_news_urls"] = sorted(seen_good_news_urls)
+    existing["video_ids"]       = sorted(seen_ids)
+    existing["good_news_urls"]  = sorted(seen_good_news_urls)
+    existing["discovery_urls"]  = sorted(seen_discovery_urls)
     HISTORY_FILE.write_text(
         json.dumps(existing, indent=2, ensure_ascii=False), encoding="utf-8"
     )
@@ -784,9 +790,44 @@ GOOD_NEWS_FEEDS = [
     },
 ]
 
+DISCOVERY_FEEDS = [
+    {
+        "url":         "https://www.atlasobscura.com/feeds/latest",
+        "source_name": "Atlas Obscura",
+        "category":    "history",
+    },
+    {
+        "url":         "https://www.britishmuseum.org/blog/rss.xml",
+        "source_name": "British Museum",
+        "category":    "history",
+    },
+    {
+        "url":         "https://www.quantamagazine.org/feed",
+        "source_name": "Quanta Magazine",
+        "category":    "science",
+    },
+]
+DISCOVERY_CANDIDATES_PER_SOURCE = 8
+DISCOVERY_ARTICLES_PER_SOURCE   = 2
+
+_MYSTERY_KEYWORDS = {
+    "mystery", "unknown", "discovery", "ancient", "secret",
+    "lost", "hidden", "forgotten", "rare", "unearthed",
+}
+
+
+def _first_sentences(text: str, n: int = 3) -> str:
+    sentences = re.split(r'(?<=[.!?])\s+', text.strip())
+    return " ".join(sentences[:n])
+
+
+def _mystery_score(title: str) -> int:
+    return int(bool(_MYSTERY_KEYWORDS & set(title.lower().split())))
+
 
 def _fetch_rss_articles(
-    feed_url: str, source_name: str, limit: int, session: requests.Session
+    feed_url: str, source_name: str, limit: int, session: requests.Session,
+    source_tag: str = "good_news",
 ) -> list[dict]:
     """
     Fetch up to `limit` articles from an RSS feed using xml.etree (stdlib).
@@ -810,10 +851,12 @@ def _fetch_rss_articles(
         if not title or not url:
             continue
         raw_desc = item.findtext("description") or ""
-        snippet  = BeautifulSoup(raw_desc, "html.parser").get_text(" ", strip=True)[:200]
+        snippet  = _first_sentences(
+            BeautifulSoup(raw_desc, "html.parser").get_text(" ", strip=True)
+        )
         articles.append(
             {
-                "source":      "good_news",
+                "source":      source_tag,
                 "source_name": source_name,
                 "title":       title,
                 "url":         url,
@@ -851,6 +894,42 @@ def fetch_good_news_articles(seen_urls: set[str]) -> list[dict]:
     return results
 
 
+def fetch_discovery(seen_urls: set[str]) -> list[dict]:
+    """
+    Fetch History/Mystery and Science articles from curated RSS feeds.
+    Fetches DISCOVERY_CANDIDATES_PER_SOURCE candidates per source, priority-sorts
+    by mystery keywords, then keeps DISCOVERY_ARTICLES_PER_SOURCE per source.
+    Deduplicates against seen_urls (backed by history.json).
+    Runs on both AM and PM emails.
+    """
+    print("[Discovery] Fetching discovery RSS feeds …")
+    session = _scraper_session()
+    results = []
+
+    for feed in DISCOVERY_FEEDS:
+        candidates = _fetch_rss_articles(
+            feed["url"], feed["source_name"],
+            DISCOVERY_CANDIDATES_PER_SOURCE, session,
+            source_tag="discovery",
+        )
+        candidates.sort(key=lambda a: _mystery_score(a["title"]), reverse=True)
+
+        taken = 0
+        for article in candidates:
+            if taken >= DISCOVERY_ARTICLES_PER_SOURCE:
+                break
+            url = article["url"]
+            if url in seen_urls:
+                print(f"  [skip/dup] Discovery article already in history: {url}")
+                continue
+            seen_urls.add(url)
+            results.append({**article, "category": feed["category"]})
+            taken += 1
+
+    print(f"[Discovery] Collected {len(results)} article(s).")
+    return results
+
+
 # ---------------------------------------------------------------------------
 # Main
 # ---------------------------------------------------------------------------
@@ -873,7 +952,7 @@ def main() -> dict:
     is_am_email: bool = now_ch.hour < 12
     print(f"[fetch] Run type: {'AM' if is_am_email else 'PM'} (Zurich hour {now_ch.hour})")
 
-    seen_ids, seen_good_news_urls = load_history()
+    seen_ids, seen_good_news_urls, seen_discovery_urls = load_history()
 
     # --- YouTube ---
     youtube = build_youtube_client()
@@ -903,8 +982,11 @@ def main() -> dict:
     # --- Good News (every run) ---
     good_news_articles = fetch_good_news_articles(seen_good_news_urls)
 
+    # --- Discovery: History/Mystery + Science (every run) ---
+    discovery_articles = fetch_discovery(seen_discovery_urls)
+
     # --- Persist history ---
-    save_history(seen_ids, seen_good_news_urls)
+    save_history(seen_ids, seen_good_news_urls, seen_discovery_urls)
 
     raw_payload = {
         "fetched_at": now_ch.isoformat(),
@@ -912,6 +994,7 @@ def main() -> dict:
         "youtube_videos": youtube_results,
         "music_articles": music_articles,
         "good_news_articles": good_news_articles,
+        "discovery_articles": discovery_articles,
     }
 
     # Write raw fetch snapshot (useful for debugging / re-running curation without re-fetching)
@@ -922,7 +1005,8 @@ def main() -> dict:
         f"({len(channel_videos)} channel videos | "
         f"{'1 trending video' if trending_video else 'no trending video'} | "
         f"{len(music_articles)} music articles | "
-        f"{len(good_news_articles)} good news articles)"
+        f"{len(good_news_articles)} good news articles | "
+        f"{len(discovery_articles)} discovery articles)"
     )
 
     # --- Audit & Curation ---
@@ -943,7 +1027,8 @@ def main() -> dict:
         f"\n[done] Curated data → {curated_file}\n"
         f"       YouTube: {summary['youtube_videos']} videos | "
         f"Themes: {summary['themes']}{music_line} | "
-        f"Good News: {summary.get('good_news_articles', 0)} articles"
+        f"Good News: {summary.get('good_news_articles', 0)} articles | "
+        f"Discovery: {summary.get('discovery_articles', 0)} articles"
     )
     return curated
 

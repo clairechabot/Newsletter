@@ -65,12 +65,13 @@ def _build_youtube_audit_user_message(videos: list[dict]) -> str:
     for i, v in enumerate(videos, 1):
         is_wildcard = v.get("source") == "youtube_trending"
         label = " [WILDCARD — Trending Pick]" if is_wildcard else ""
+        _dur = v.get("duration_seconds", 0)
         items.append(
             f"--- Video {i}{label} ---\n"
             f"ID: {v['video_id']}\n"
             f"Title: {v['title']}\n"
             f"Channel: {v['channel_title']}\n"
-            f"Duration: {v['duration_seconds'] // 60}m {v['duration_seconds'] % 60}s\n"
+            f"Duration: {_dur // 60}m {_dur % 60}s\n"
             f"Views: {v.get('view_count', 'N/A')}\n"
             f"Description snippet: {v.get('description', '')[:400]}"
         )
@@ -393,6 +394,79 @@ def audit_good_news_articles(
 
 
 # ---------------------------------------------------------------------------
+# Discovery Audit — Fern's Note (History/Mystery + Science)
+# ---------------------------------------------------------------------------
+
+_DISCOVERY_AUDIT_SYSTEM = textwrap.dedent("""
+You are Fern — the AI curator behind The Curated Canopy newsletter.
+Personality: sophisticated, cozy, warm, slightly witty. Never cringe or hypey.
+
+For each article provided — either a history/mystery piece or a science story —
+write a "Fern's Note" of 1-2 tight sentences revealing the most surprising or
+evocative angle: the detail that makes it worth stopping for.
+
+History/mystery articles: lean into the eerie, the forgotten, the curious.
+Science articles: lean into the wonder, the implication, the human story.
+
+Return ONLY a valid JSON array, one element per article in input order:
+[
+  {
+    "index": <integer, 0-based>,
+    "ferns_note": "<1-2 sentence Fern's Note>"
+  },
+  ...
+]
+
+Do not include any text outside the JSON array.
+""").strip()
+
+
+def audit_discovery_articles(
+    client: anthropic.Anthropic, articles: list[dict]
+) -> list[dict]:
+    """
+    Generate a "Fern's Note" for each discovery article (history/mystery or science).
+    Returns each article enriched with a 'ferns_note' field.
+    """
+    if not articles:
+        return []
+
+    print(f"[Audit/Discovery] Generating Fern's Notes for {len(articles)} article(s) …")
+
+    items_text = "\n\n".join(
+        f"--- Article {i} ---\n"
+        f"Category: {a.get('category', 'unknown')}\n"
+        f"Source: {a.get('source_name', '')}\n"
+        f"Headline: {a['title']}\n"
+        f"Snippet: {a.get('snippet', '')}"
+        for i, a in enumerate(articles)
+    )
+
+    message = client.messages.create(
+        model=CLAUDE_MODEL,
+        max_tokens=768,
+        system=_DISCOVERY_AUDIT_SYSTEM,
+        messages=[{"role": "user", "content": items_text}],
+    )
+
+    raw = message.content[0].text.strip()
+    if raw.startswith("```"):
+        raw = raw.split("```")[1]
+        if raw.startswith("json"):
+            raw = raw[4:]
+        raw = raw.strip()
+
+    try:
+        results: list[dict] = json.loads(raw)
+    except json.JSONDecodeError as exc:
+        print(f"  [warn] JSON parse error in Discovery audit: {exc}. Returning as-is.")
+        return articles
+
+    index_to_note = {r["index"]: r.get("ferns_note", "") for r in results}
+    return [{**a, "ferns_note": index_to_note.get(i, "")} for i, a in enumerate(articles)]
+
+
+# ---------------------------------------------------------------------------
 # Fern — Daily Greeting & Top Pick
 # ---------------------------------------------------------------------------
 
@@ -432,6 +506,7 @@ def generate_fern_greeting(
     themes: list[dict],
     morning_soundtrack: list[dict],
     global_silver_linings: list[dict],
+    discovery_articles: list[dict] | None = None,
 ) -> dict:
     """
     Generate Fern's one-sentence daily note and pick the top item title
@@ -450,6 +525,11 @@ def generate_fern_greeting(
 
     for art in global_silver_linings:
         lines.append(f"  - [Good News] {art.get('title', '')}")
+
+    for art in (discovery_articles or []):
+        category = art.get("category", "discovery")
+        label = "From the Archives" if category == "history" else "The Laboratory"
+        lines.append(f"  - [{label}] {art.get('title', '')}")
 
     print("[Fern] Generating greeting and top pick …")
     message = client.messages.create(
@@ -507,13 +587,18 @@ def run_curation(raw_data: dict) -> dict:
     good_news_raw = raw_data.get("good_news_articles", [])
     global_silver_linings = audit_good_news_articles(client, good_news_raw)
 
-    # 6. Fern's daily greeting + top pick for subject line
+    # 6. Discovery — Fern's Note for History/Mystery + Science (every run)
+    discovery_raw = raw_data.get("discovery_articles", [])
+    discovery_articles = audit_discovery_articles(client, discovery_raw)
+
+    # 7. Fern's daily greeting + top pick for subject line
     fern_data = generate_fern_greeting(
         client,
         raw_data.get("is_am_email", False),
         themes,
         morning_soundtrack,
         global_silver_linings,
+        discovery_articles,
     )
 
     return {
@@ -524,9 +609,11 @@ def run_curation(raw_data: dict) -> dict:
             "themes": len(themes),
             "music_articles": len(morning_soundtrack),
             "good_news_articles": len(global_silver_linings),
+            "discovery_articles": len(discovery_articles),
         },
         "themes": themes,
         "morning_soundtrack": morning_soundtrack,
         "global_silver_linings": global_silver_linings,
+        "discovery_articles": discovery_articles,
         "fern_data": fern_data,
     }
