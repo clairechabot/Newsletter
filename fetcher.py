@@ -925,7 +925,7 @@ def fetch_music_articles() -> list[dict]:
 # Good News — RSS feeds (structured XML, never breaks on redesigns)
 # ---------------------------------------------------------------------------
 
-GOOD_NEWS_TOTAL = 2   # articles to collect across both sources
+GOOD_NEWS_TOTAL = 3   # one article per source
 
 GOOD_NEWS_FEEDS = [
     {
@@ -935,6 +935,10 @@ GOOD_NEWS_FEEDS = [
     {
         "url":         "https://www.positive.news/feed/",
         "source_name": "Positive News",
+    },
+    {
+        "url":         "https://www.upworthy.com/feed/",
+        "source_name": "Upworthy",
     },
 ]
 
@@ -963,12 +967,15 @@ def _fetch_rss_articles(
         url   = (item.findtext("link")  or "").strip()
         if not title or not url:
             continue
+        raw_desc = item.findtext("description") or ""
+        snippet  = BeautifulSoup(raw_desc, "html.parser").get_text(" ", strip=True)[:200]
         articles.append(
             {
                 "source":      "good_news",
                 "source_name": source_name,
                 "title":       title,
                 "url":         url,
+                "snippet":     snippet,
             }
         )
         if len(articles) >= limit:
@@ -979,25 +986,18 @@ def _fetch_rss_articles(
 
 def fetch_good_news_articles() -> list[dict]:
     """
-    Fetch GOOD_NEWS_TOTAL articles via RSS.
-    Falls back to the second feed if the first yields fewer than needed.
+    Fetch one article from each feed in GOOD_NEWS_FEEDS independently.
+    Each source always contributes its own slot; failures produce 0 from that source.
     Runs on both AM and PM emails.
     """
     print("[GoodNews] Fetching good news RSS feeds …")
     session = _scraper_session()
+    results = []
 
-    results = _fetch_rss_articles(
-        GOOD_NEWS_FEEDS[0]["url"], GOOD_NEWS_FEEDS[0]["source_name"], GOOD_NEWS_TOTAL, session
-    )
+    for feed in GOOD_NEWS_FEEDS:
+        fetched = _fetch_rss_articles(feed["url"], feed["source_name"], 1, session)
+        results.extend(fetched)
 
-    if len(results) < GOOD_NEWS_TOTAL:
-        needed   = GOOD_NEWS_TOTAL - len(results)
-        fallback = _fetch_rss_articles(
-            GOOD_NEWS_FEEDS[1]["url"], GOOD_NEWS_FEEDS[1]["source_name"], needed, session
-        )
-        results.extend(fallback)
-
-    results = results[:GOOD_NEWS_TOTAL]
     print(f"[GoodNews] Collected {len(results)} article(s).")
     return results
 
