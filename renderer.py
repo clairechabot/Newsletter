@@ -133,7 +133,7 @@ a:hover { text-decoration: underline; }
   border-left: 6px solid #82954B;
   background: #F9FAF9;
   border-radius: 0 12px 12px 0;
-  padding: 10px 16px;
+  padding: 20px 30px;
   margin-bottom: 12px;
 }
 .theme-header h2 {
@@ -165,7 +165,7 @@ details { }
 summary {
   list-style: none;
   cursor: pointer;
-  padding: 20px 24px;
+  padding: 20px 30px;
   display: flex;
   align-items: flex-start;
   gap: 10px;
@@ -302,7 +302,7 @@ details[open] > summary::before {
   border-left: 6px solid #82954B;
   background: #F9FAF9;
   border-radius: 0 12px 12px 0;
-  padding: 10px 16px;
+  padding: 20px 30px;
   margin-bottom: 12px;
 }
 .soundtrack-header h2 {
@@ -350,7 +350,7 @@ details[open] > summary::before {
   border-left: 6px solid #82954B;
   background: #F9FAF9;
   border-radius: 0 12px 12px 0;
-  padding: 10px 16px;
+  padding: 20px 30px;
   margin-bottom: 12px;
 }
 .goodnews-header h2 {
@@ -376,7 +376,7 @@ details[open] > summary::before {
   justify-content: space-between;
   align-items: flex-start;
   cursor: pointer;
-  padding: 16px 20px;
+  padding: 20px 30px;
   border-radius: 10px 10px 0 0;
   background: #f8f5f0;
 }
@@ -385,7 +385,7 @@ details[open] > summary::before {
   justify-content: space-between;
   align-items: flex-start;
   cursor: pointer;
-  padding: 16px 20px;
+  padding: 20px 30px;
   border-radius: 10px 10px 0 0;
   background: #f0f5f8;
 }
@@ -468,7 +468,7 @@ details[open] > summary::before {
   border: none;
   border-left: 6px solid #82954B;
   border-radius: 0 12px 12px 0;
-  padding: 16px 20px;
+  padding: 20px 30px;
   margin-bottom: 20px;
 }
 .fern-avatar {
