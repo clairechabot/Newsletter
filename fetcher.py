@@ -24,7 +24,7 @@ import re
 import random
 from langdetect import detect, LangDetectException
 import xml.etree.ElementTree as ET
-from urllib.parse import urlparse
+from urllib.parse import urlparse, urljoin
 
 import requests
 from bs4 import BeautifulSoup
