@@ -6,19 +6,163 @@
 <title>The Curated Canopy — Full Edition</title>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
 <style>
+  * { box-sizing:border-box; margin:0; padding:0; }
   body { font-family:'Segoe UI',Roboto,Helvetica,Arial,sans-serif; background:#F9F7F2;
-    color:#2C3E50; text-align:center; padding:80px 20px; }
-  .brand { font-size:48px; }
-  h1 { font-family:'Playfair Display',Georgia,serif; color:#5D6D7E; margin:12px 0; }
-  p { color:#7A8794; max-width:520px; margin:8px auto; }
+    color:#2C3E50; line-height:1.6; }
+  .wrap { max-width:1000px; margin:0 auto; padding:28px 18px 64px; }
+  header { text-align:center; margin-bottom:24px; }
+  .brand { font-size:40px; }
+  h1 { font-family:'Playfair Display',Georgia,serif; font-size:30px; color:#5D6D7E; margin:6px 0; }
+  .greeting { color:#7A8794; font-style:italic; max-width:640px; margin:8px auto 0; }
+  .date { color:#A9A39A; font-size:13px; margin-top:6px; }
+  /* Tabs */
+  .tabs { display:flex; flex-wrap:wrap; gap:8px; justify-content:center; margin:24px 0; }
+  .tab { padding:9px 18px; border-radius:24px; border:1px solid #D9D3C7; background:#fff;
+    cursor:pointer; font-weight:bold; font-size:14px; color:#5D6D7E; }
+  .tab.active { background:#5D6D7E; color:#fff; border-color:#4A5763; }
+  .panel { display:none; }
+  .panel.active { display:block; }
+  /* Genre filter */
+  .genres { display:flex; flex-wrap:wrap; gap:6px; justify-content:center; margin-bottom:18px; }
+  .genre { padding:5px 12px; border-radius:18px; border:1px solid #D9D3C7; background:#fff;
+    cursor:pointer; font-size:12px; color:#7A8794; }
+  .genre.active { background:#87A878; color:#fff; border-color:#6E9162; }
+  /* Carousel */
+  .carousel { position:relative; }
+  .track { display:flex; gap:16px; overflow-x:auto; scroll-behavior:smooth;
+    -webkit-overflow-scrolling:touch; padding:6px 2px 16px; scroll-snap-type:x mandatory; }
+  .arrow { position:absolute; top:38%; transform:translateY(-50%); z-index:5; border:none;
+    background:rgba(93,109,126,.92); color:#fff; width:40px; height:40px; border-radius:50%;
+    font-size:18px; cursor:pointer; }
+  .arrow.left { left:-6px; } .arrow.right { right:-6px; }
+  /* Cards */
+  .grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(220px,1fr)); gap:16px; }
+  .card { flex:0 0 auto; width:230px; scroll-snap-align:start; background:#fff;
+    border:1px solid #E0E0E0; border-radius:14px; overflow:hidden; }
+  .grid .card { width:auto; }
+  .card a { color:#2C3E50; text-decoration:none; display:block; }
+  .cover { width:100%; height:200px; object-fit:cover; display:block; background:#EFECE4; }
+  .cover-tile { width:100%; height:150px; display:flex; align-items:center; justify-content:center;
+    font-size:54px; background:linear-gradient(135deg,#EFE9DD,#E3EDE0); }
+  .body { padding:12px 14px 16px; }
+  .badge { font-size:10px; color:#87A878; font-weight:bold; text-transform:uppercase; letter-spacing:.4px; }
+  .title { font-weight:bold; font-size:15px; margin:5px 0; line-height:1.35; }
+  .note { font-size:13px; color:#7A8794; }
+  .empty { text-align:center; color:#A9A39A; padding:40px 0; }
+  footer { text-align:center; color:#A9A39A; font-size:12px; margin-top:40px; }
 </style>
 </head>
 <body>
-  <div class="brand">🍞🌿🐚</div>
-  <h1>The Curated Canopy</h1>
-  <p>Today's interactive edition will appear here after the next scheduled run
-     (mornings &amp; evenings, Zurich time).</p>
-  <p>Browse music by genre, flip through album covers, and switch between
-     Watch, Good News, and Discovery — all in one place.</p>
+<div class="wrap">
+  <header>
+    <div class="brand">🍞🌿🐚</div>
+    <h1>The Curated Canopy</h1>
+    <div class="greeting" id="greeting"></div>
+    <div class="date">Friday, June 5, 2026 · 07:18</div>
+  </header>
+
+  <div class="tabs" id="tabs"></div>
+
+  <div class="panel active" data-panel="music">
+    <div class="genres" id="genres"></div>
+    <div class="carousel">
+      <button class="arrow left"  onclick="slide(-1)">‹</button>
+      <div class="track" id="music-track"></div>
+      <button class="arrow right" onclick="slide(1)">›</button>
+    </div>
+  </div>
+  <div class="panel" data-panel="videos"><div class="grid" id="videos-grid"></div></div>
+  <div class="panel" data-panel="good_news"><div class="grid" id="good_news-grid"></div></div>
+  <div class="panel" data-panel="discovery"><div class="grid" id="discovery-grid"></div></div>
+
+  <footer>Generated automatically · Curated by Claude · Fern | The Morning Crust</footer>
+</div>
+
+<script id="data" type="application/json">{"is_am": true, "greeting": "While the coffee breathes and the birds are still deciding what to say, settle in \u2014 today's canopy is thick with sunken pirate ships, secret queen bees, deer finding their way home, and music soft enough to hold the morning gently.", "music": [{"title": "Best of Sofar: Sessions Worth Revisiting", "note": "Like stumbling onto an intimate living-room performance you almost missed, replayed over a slow morning cup.", "url": "https://www.sofarsounds.com/blog", "cover": "", "genre": "", "source": "Sofar Sounds"}, {"title": "Bandcamp: Cozy \u2014 Music to Settle Into", "note": "The musical equivalent of pulling a worn quilt over your shoulders as the radiator ticks to life.", "url": "https://bandcamp.com/tag/cozy", "cover": "", "genre": "", "source": "Bandcamp"}], "videos": [], "good_news": [{"title": "Shipwrecks from the Age of the Real \u2018Pirates of the Caribbean\u2019 Found\u2013and Filmed\u2013for the First Time", "note": "These newly filmed wrecks are living time capsules from a forgotten era, reminding us that the ocean still holds astonishing secrets waiting to be discovered and shared. Every find like this deepens our understanding of history and keeps the spirit of genuine exploration alive.", "url": "https://www.goodnewsnetwork.org/shipwrecks-linked-to-the-caribbeans-infamous-age-of-piracy-found-and-filmed-for-the-first-time/", "source": "Good News Network"}, {"title": "What went right this week: the good news that matters", "note": "In a media landscape often dominated by alarm, a dedicated weekly roundup of meaningful good news is a quiet act of resistance \u2014 proof that hopeful stories are happening all the time, they just need someone to gather them.", "url": "https://www.positive.news/society/good-news-stories-from-week-23-of-2026/", "source": "Positive News"}, {"title": "Project designers cheer as cameras capture first mule deer crossing new California wildlife bridge", "note": "A mule deer stepping onto a new wildlife bridge is exactly the moment conservationists work years to see \u2014 proof that when we deliberately design space for animals, nature accepts the invitation. It's a small crossing with big implications for reconnecting fragmented wild habitats.", "url": "https://www.upworthy.com/project-designers-cheer-as-cameras-capture-first-mule-deer-crossing-new-california-wildlife-bridge/", "source": "Upworthy"}], "discovery": [{"title": "Hotel de Paris Museum in Georgetown, Colorado", "note": "Louis Dupuy, a French immigrant and former soldier, built an incongruous palace of fine wine and linen napkins in a rough-hewn mining boomtown \u2014 and somehow, it worked. Over 5,000 original objects still sit inside, as though he simply stepped out for a moment and never came back.", "url": "https://www.atlasobscura.com/places/hotel-de-paris-a-museum", "source": "Atlas Obscura", "category": "history"}, {"title": "Fault Whisper in San Diego, California", "note": "Two metal spheres in a San Diego park are quietly listening to the earth shift beneath them, translating seismic tremors into something you can actually hear. It's a fault line whispering its own diary, in real time.", "url": "https://www.atlasobscura.com/places/fault-whisper", "source": "Atlas Obscura", "category": "history"}, {"title": "A secret to making a queen bee may lie in the wax around it", "note": "For decades, royal jelly got all the credit for turning an ordinary larva into a queen \u2014 but it turns out the wax walls of her cradle may be quietly pulling strings too. The throne itself, it seems, is part of the coronation.", "url": "https://www.sciencenews.org/article/queen-honeybee-development-wax", "source": "Science News", "category": "science"}, {"title": "Remote workers feel isolated. Back-to-office mandates are not a fix", "note": "The loneliness of remote work isn't actually a location problem \u2014 people feel just as isolated in open-plan offices \u2014 which means forcing everyone back to a building solves exactly nothing. The real fix is designing connection into the work itself, wherever it happens.", "url": "https://www.sciencenews.org/article/remote-workers-isolated-office-social", "source": "Science News", "category": "science"}]}</script>
+<script>
+const DATA = JSON.parse(document.getElementById('data').textContent);
+document.getElementById('greeting').textContent = DATA.greeting || '';
+
+const PANELS = [
+  {key:'music',     label:'🎵 Music'},
+  {key:'videos',    label:'▶ Watch'},
+  {key:'good_news', label:'🌿 Good News'},
+  {key:'discovery', label:'📜 Discovery'},
+];
+const tabs = document.getElementById('tabs');
+PANELS.forEach((p, i) => {
+  const b = document.createElement('div');
+  b.className = 'tab' + (i === 0 ? ' active' : '');
+  b.textContent = p.label;
+  b.onclick = () => selectTab(p.key, b);
+  tabs.appendChild(b);
+});
+function selectTab(key, btn) {
+  document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+  btn.classList.add('active');
+  document.querySelectorAll('.panel').forEach(pl =>
+    pl.classList.toggle('active', pl.dataset.panel === key));
+}
+
+function esc(s) {
+  return String(s == null ? '' : s).replace(/[&<>"'`]/g, c => ({
+    '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;','`':'&#96;'
+  }[c]));
+}
+function safeUrl(u) {
+  try {
+    const p = new URL(u, location.href);
+    return ['http:','https:','mailto:'].includes(p.protocol) ? p.href : '#';
+  } catch (e) { return '#'; }
+}
+function coverHTML(url, emoji) {
+  return url ? `<img class="cover" src="${esc(safeUrl(url))}" alt="">`
+             : `<div class="cover-tile">${emoji}</div>`;
+}
+function cardHTML(it, emoji) {
+  return `<div class="card"><a href="${esc(safeUrl(it.url))}" target="_blank">${coverHTML(it.cover, emoji)}`
+    + `<div class="body"><div class="badge">${esc(it.source || it.theme || '')}</div>`
+    + `<div class="title">${esc(it.title)}</div><div class="note">${esc(it.note)}</div></div></a></div>`;
+}
+
+// Grids
+function fillGrid(id, items, emoji) {
+  const el = document.getElementById(id);
+  el.innerHTML = items.length
+    ? items.map(it => cardHTML(it, emoji)).join('')
+    : '<div class="empty">Nothing here in this edition.</div>';
+}
+fillGrid('videos-grid', DATA.videos.map(v => ({...v, url:'https://www.youtube.com/watch?v=' + v.video_id, cover:'https://img.youtube.com/vi/' + v.video_id + '/hqdefault.jpg'})), '▶');
+fillGrid('good_news-grid', DATA.good_news, '🌿');
+fillGrid('discovery-grid', DATA.discovery, '📜');
+
+// Music carousel + genre filter
+const GENRES = [...new Set(DATA.music.map(m => (m.genre || '').trim()).filter(Boolean))];
+let activeGenre = null;
+const genresEl = document.getElementById('genres');
+function renderGenres() {
+  const all = [{g:null, label:'All'}].concat(GENRES.map(g => ({g, label:g})));
+  genresEl.innerHTML = all.map(x =>
+    `<div class="genre ${x.g === activeGenre ? 'active' : ''}" data-g="${esc(x.g || '')}">${esc(x.label)}</div>`
+  ).join('');
+  genresEl.querySelectorAll('.genre').forEach(el => el.onclick = () => {
+    activeGenre = el.dataset.g || null; renderGenres(); renderMusic();
+  });
+}
+function renderMusic() {
+  const track = document.getElementById('music-track');
+  const items = activeGenre
+    ? DATA.music.filter(m => (m.genre || '').trim() === activeGenre)
+    : DATA.music;
+  track.innerHTML = items.length
+    ? items.map(it => cardHTML(it, '🎵')).join('')
+    : '<div class="empty">No tracks match that genre in this edition.</div>';
+}
+function slide(dir) {
+  document.getElementById('music-track').scrollBy({left: dir * 260, behavior:'smooth'});
+}
+renderGenres();
+renderMusic();
+</script>
 </body>
 </html>
