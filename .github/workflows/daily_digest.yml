@@ -88,18 +88,24 @@ jobs:
       #   GitHub Pages must be enabled for this repo with
       #   Settings → Pages → Source: "Deploy from a branch", branch: main, folder: /docs
       #   so https://<owner>.github.io/Newsletter/ serves docs/index.html.
+      # Non-fatal: the email is the primary deliverable; persisting history/docs
+      # must never turn a successful send red. Operates on the CURRENT branch
+      # (GITHUB_REF_NAME), not a hardcoded main, so it works pre-merge too.
       - name: Commit updated history.json and full edition
         if: always()
+        continue-on-error: true
         run: |
           git config user.name  "newsletter-bot"
           git config user.email "newsletter-bot@users.noreply.github.com"
-          # Stage whichever of these exist
+          BRANCH="${GITHUB_REF_NAME}"
           [ -f history.json ]     && git add history.json
           [ -f docs/index.html ]  && git add docs/index.html
           if git diff --staged --quiet; then
             echo "Nothing changed — nothing to commit."
-          else
-            git commit -m "chore: update history.json + full edition [skip ci]"
-            git pull --rebase origin main
-            git push
+            exit 0
           fi
+          git commit -m "chore: update history.json + full edition [skip ci]"
+          # Rebase onto the latest of THIS branch, preferring our freshly
+          # regenerated files on the (rare) conflict.
+          git pull --rebase -X ours origin "$BRANCH" || git rebase --abort || true
+          git push origin "HEAD:$BRANCH" || echo "::warning::history/docs push skipped"

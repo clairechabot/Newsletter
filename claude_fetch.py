@@ -1,15 +1,19 @@
-"""Claude server-side web-fetch extractor.
+"""Claude-assisted music extraction.
 
-Adapted from the daily-briefing engine (briefing/sources/claude_fetch.py).
-Instead of fragile CSS scraping, we ask Claude to fetch a music site and
-return the *actual* newest posts — real artist name, album/track title,
-genre, and a cover image — as strict JSON. This is the fix for the old
-"generic front page, no real titles" music bug.
+Robust two-step replacement for the brittle CSS scrapers:
+  1. fetcher fetches the page with the hardened http_fetch (browser UA + retries)
+     and hands us the candidate links (anchor text + absolute URL).
+  2. Claude (a plain message call — no beta server tools) picks the entries that
+     are real, recent music posts and formats them as "Artist — Album/Track"
+     with a best-guess genre.
+
+This avoids the server-side web_fetch beta tool (which returned empty responses
+in practice) while still getting REAL titles instead of a generic front page.
 
 Reconciled to Newsletter conventions:
   - reads CLAUDE_API_KEY (not ANTHROPIC_API_KEY)
-  - returns plain Newsletter music dicts (not briefing.models.Item)
-  - hardcodes claude-sonnet-4-6 to match curator.CLAUDE_MODEL
+  - returns plain Newsletter music dicts
+  - uses claude-sonnet-4-6 (matches curator.CLAUDE_MODEL)
 """
 from __future__ import annotations
 import os
@@ -25,49 +29,59 @@ def _client() -> anthropic.Anthropic:
     return anthropic.Anthropic(api_key=os.environ["CLAUDE_API_KEY"])
 
 
-_PROMPT = (
-    "Fetch this music site and extract its NEWEST posts/features: {url}\n"
-    "For each post, identify the ACTUAL artist name, the album / track / session "
-    "title, the primary genre, and the post's cover or lead image URL.\n"
-    "Skip site navigation, ads, and 'about'/'shop' pages — only real music posts.\n"
-    "Return ONLY valid JSON, no markdown fences:\n"
-    '{{"items": [{{"title": "Artist — Album/Track", "url": "https://...", '
-    '"summary": "one evocative line", "genre": "primary genre", '
-    '"cover_url": "https://..."}}]}}'
-)
+def _strip_fences(text: str) -> str:
+    return re.sub(r"^```[a-z]*\n?|```$", "", text.strip(), flags=re.MULTILINE)
 
 
-def fetch_music_items(url: str, source_name: str, max_items: int = 8) -> list[dict]:
-    """Return up to `max_items` real music posts from `url` as Newsletter dicts.
+def extract_music_from_links(
+    source_name: str,
+    page_url: str,
+    links: list[tuple[str, str]],
+    max_items: int = 8,
+) -> list[dict]:
+    """Given (anchor_text, absolute_url) pairs scraped from a music site, return
+    up to `max_items` real music posts as Newsletter dicts.
 
     Raises on hard API/JSON failure so the caller can fall back per-source."""
-    client = _client()
-    # Anthropic server-side web-fetch tool. If a future SDK changes the tool
-    # type string or beta header, update these two values per Anthropic docs.
-    msg = client.messages.create(
-        model=MODEL, max_tokens=1500,
-        tools=[{"type": "web_fetch_20250910", "name": "web_fetch", "max_uses": 3}],
-        extra_headers={"anthropic-beta": "web-fetch-2025-09-10"},
-        messages=[{"role": "user", "content": _PROMPT.format(url=url)}],
-    )
-    text = "".join(
-        b.text for b in msg.content if getattr(b, "type", "") == "text"
-    )
-    text = re.sub(r"^```[a-z]*\n?|```$", "", text.strip(), flags=re.MULTILINE)
-    data = json.loads(text)
+    if not links:
+        return []
 
+    listing = "\n".join(f"- {text} | {url}" for text, url in links)
+    prompt = (
+        f"These are links scraped from the music site \"{source_name}\" "
+        f"({page_url}). Identify the entries that are REAL, recent music posts — "
+        f"album reviews, artist features, new releases, live sessions. Ignore "
+        f"navigation, categories, tags, shop, about, login, and social links.\n\n"
+        f"Links (anchor text | url):\n{listing}\n\n"
+        f"Return ONLY JSON, no markdown fences:\n"
+        f'{{"items": [{{"title": "Artist — Album/Track (or the post title)", '
+        f'"url": "<one of the urls above>", "summary": "one short line", '
+        f'"genre": "best-guess primary genre"}}]}}\n'
+        f"Limit to the {max_items} most relevant. If none are music posts, "
+        f'return {{"items": []}}.'
+    )
+
+    msg = _client().messages.create(
+        model=MODEL, max_tokens=1024,
+        messages=[{"role": "user", "content": prompt}],
+    )
+    text = "".join(b.text for b in msg.content if getattr(b, "type", "") == "text")
+    data = json.loads(_strip_fences(text))
+
+    valid_urls = {u for _, u in links}
     out: list[dict] = []
     for it in data.get("items", [])[:max_items]:
-        if not it.get("url"):
+        url = it.get("url", "")
+        if url not in valid_urls:  # guard against hallucinated links
             continue
         out.append({
             "source": "music",
             "source_name": source_name,
             "title": it.get("title", "(untitled)"),
-            "url": it["url"],
+            "url": url,
             "snippet": it.get("summary", ""),
             "genre": it.get("genre", ""),
-            "cover_url": it.get("cover_url", ""),
-            "embed_url": None,  # filled later by _find_music_embed
+            "cover_url": "",      # filled later by _find_embed_and_cover (og:image)
+            "embed_url": None,    # filled later by _find_embed_and_cover
         })
     return out
