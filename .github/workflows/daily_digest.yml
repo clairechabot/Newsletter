@@ -84,21 +84,22 @@ jobs:
           path: newsletter.html
           retention-days: 7
 
-      # ── 8. Commit updated history.json ───────────────────────────────────
-      - name: Commit updated history.json
+      # ── 8. Commit history.json + the GitHub Pages "full edition" ─────────
+      #   GitHub Pages must be enabled for this repo with
+      #   Settings → Pages → Source: "Deploy from a branch", branch: main, folder: /docs
+      #   so https://<owner>.github.io/Newsletter/ serves docs/index.html.
+      - name: Commit updated history.json and full edition
         if: always()
         run: |
           git config user.name  "newsletter-bot"
           git config user.email "newsletter-bot@users.noreply.github.com"
-          if [ ! -f history.json ]; then
-            echo "history.json does not exist yet — skipping commit."
-            exit 0
-          fi
-          git add history.json
+          # Stage whichever of these exist
+          [ -f history.json ]     && git add history.json
+          [ -f docs/index.html ]  && git add docs/index.html
           if git diff --staged --quiet; then
-            echo "history.json unchanged — nothing to commit."
+            echo "Nothing changed — nothing to commit."
           else
-            git commit -m "chore: update history.json [skip ci]"
+            git commit -m "chore: update history.json + full edition [skip ci]"
             git pull --rebase origin main
             git push
           fi

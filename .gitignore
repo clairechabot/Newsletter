@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+# Per-run generated artifacts (re-created every run; not source)
+curated_data.json
+fetched_data.json
+newsletter.html
