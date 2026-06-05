@@ -84,6 +84,34 @@ jobs:
           path: newsletter.html
           retention-days: 7
 
+      # ── 7b. Publish the full edition to the PUBLIC Pages repo ────────────
+      #   Needs a secret EDITION_DEPLOY_TOKEN = a fine-grained PAT with
+      #   Contents:write on clairechabot/canopy-edition. Skips quietly if absent.
+      - name: Publish full edition to public site
+        if: always()
+        continue-on-error: true
+        env:
+          EDITION_DEPLOY_TOKEN: ${{ secrets.EDITION_DEPLOY_TOKEN }}
+        run: |
+          if [ -z "$EDITION_DEPLOY_TOKEN" ]; then
+            echo "No EDITION_DEPLOY_TOKEN secret — skipping public edition publish."
+            exit 0
+          fi
+          [ -f docs/index.html ] || { echo "No docs/index.html to publish."; exit 0; }
+          rm -rf /tmp/edition
+          git clone "https://x-access-token:${EDITION_DEPLOY_TOKEN}@github.com/clairechabot/canopy-edition.git" /tmp/edition
+          cp docs/index.html /tmp/edition/index.html
+          cd /tmp/edition
+          git config user.name  "newsletter-bot"
+          git config user.email "newsletter-bot@users.noreply.github.com"
+          git add index.html
+          if git diff --staged --quiet; then
+            echo "Edition unchanged — nothing to publish."
+          else
+            git commit -m "Publish edition ${{ github.run_id }}"
+            git push
+          fi
+
       # ── 8. Commit history.json + the GitHub Pages "full edition" ─────────
       #   GitHub Pages must be enabled for this repo with
       #   Settings → Pages → Source: "Deploy from a branch", branch: main, folder: /docs

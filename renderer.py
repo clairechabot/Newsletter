@@ -36,7 +36,7 @@ EDITION_HTML  = DOCS_DIR / "index.html"
 # Public GitHub Pages URL for the interactive "full edition". Override via env.
 # Set to "" to hide the button (e.g. if Pages isn't enabled yet).
 EDITION_URL   = os.environ.get(
-    "EDITION_URL", "https://clairechabot.github.io/Newsletter/"
+    "EDITION_URL", "https://clairechabot.github.io/canopy-edition/"
 )
 
 # Set to an externally-hosted URL or a data:image/png;base64,... URI to display the Fern logo.
