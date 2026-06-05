@@ -686,9 +686,13 @@ def _render_mood_score(emerald_pct: int, amber_pct: int, crimson_pct: int) -> st
 
 
 # ---------------------------------------------------------------------------
-# Browsable layout toolkit — hero + horizontal swipe strips + album covers.
-# Email-safe (no JS): native horizontal scroll/swipe, works in Gmail/Apple Mail.
+# Browsable layout toolkit — hero + compact stacked rows.
+# Mobile-mail-safe: NO horizontal scroll (iOS Mail/Gmail collapse it), NO empty
+# cover tiles. Each section shows a featured hero + a few compact full-width
+# rows; the rest live on the interactive "full edition" web page.
 # ---------------------------------------------------------------------------
+
+ROWS_PER_SECTION = 5   # compact rows shown after the hero (rest -> full edition)
 
 _CSS_EXTRA = """
 /* ── Open full edition button ─────────────────────────────── */
@@ -698,46 +702,45 @@ _CSS_EXTRA = """
   padding:12px 24px; border-radius:30px; font-weight:bold; font-size:14px;
   text-decoration:none; border:1px solid #4A5763;
 }
-/* ── Horizontal swipe strip ───────────────────────────────── */
-.strip-wrap { margin:8px 0 4px; }
-.swipe-strip {
-  display:flex; gap:12px; overflow-x:auto; -webkit-overflow-scrolling:touch;
-  padding:4px 2px 12px; scroll-snap-type:x mandatory;
-}
-.swipe-strip::-webkit-scrollbar { height:6px; }
-.swipe-strip::-webkit-scrollbar-thumb { background:#CBC3B5; border-radius:3px; }
-.strip-hint { font-size:11px; color:#A9A39A; text-align:right; padding-right:6px; }
-.dot { display:inline-block; width:6px; height:6px; border-radius:50%;
-  background:#D6CFC2; margin-right:3px; vertical-align:middle; }
-.dot.dot-on { background:#87A878; }
-.swipe-label { margin-left:6px; }
-/* ── Mini cards (in strips) ───────────────────────────────── */
-.mini-card {
-  flex:0 0 auto; width:160px; scroll-snap-align:start; background:#FFFFFF;
-  border:1px solid #E0E0E0; border-radius:12px; overflow:hidden;
-}
-.mini-card a { display:block; color:#2C3E50; }
-.mini-cover { width:100%; height:150px; object-fit:cover; display:block; background:#EFECE4; }
-.mini-cover-tile { width:100%; height:120px; display:flex; align-items:center;
-  justify-content:center; font-size:42px; background:linear-gradient(135deg,#EFE9DD,#E3EDE0); }
-.mini-body { padding:10px 12px 14px; }
-.mini-badge { font-size:10px; color:#87A878; font-weight:bold;
-  text-transform:uppercase; letter-spacing:.4px; }
-.mini-title { font-weight:bold; font-size:14px; line-height:1.35; margin:4px 0; }
-.mini-note { font-size:12px; color:#7A8794; line-height:1.4; }
+/* ── Compact stacked rows (full width, no horizontal scroll) ─ */
+.row { display:block; background:#FFFFFF; border:1px solid #E0E0E0;
+  border-radius:10px; margin:8px 0; padding:10px 12px; overflow:hidden; }
+.row-thumb, .row-chip { float:left; width:54px; height:54px; border-radius:8px;
+  margin-right:12px; }
+.row-thumb { object-fit:cover; display:block; }
+.row-chip { background:linear-gradient(135deg,#EFE9DD,#E3EDE0); text-align:center;
+  line-height:54px; font-size:26px; }
+.row-text { display:block; overflow:hidden; }
+.row-badge { font-size:10px; color:#87A878; font-weight:bold;
+  text-transform:uppercase; letter-spacing:.3px; }
+.row-title { display:block; font-weight:bold; font-size:14px; color:#2C3E50; line-height:1.3; }
+.row-sub { display:block; font-size:12px; color:#7A8794; line-height:1.4; margin-top:2px; }
+.more-link { display:block; text-align:center; font-size:12px; color:#7A8794;
+  margin:8px 0 2px; }
 /* ── Hero card (featured first item) ──────────────────────── */
 .hero-card { background:#FFFFFF; border:1px solid #E0E0E0; border-radius:14px;
-  overflow:hidden; margin-bottom:4px; }
+  overflow:hidden; margin-bottom:6px; }
 .hero-card a { display:block; color:#2C3E50; }
-.hero-cover { width:100%; max-height:240px; object-fit:cover; display:block; background:#EFECE4; }
-.hero-cover-tile { width:100%; height:150px; display:flex; align-items:center;
-  justify-content:center; font-size:60px; background:linear-gradient(135deg,#EFE9DD,#E3EDE0); }
+.hero-cover { width:100%; max-height:240px; object-fit:cover; display:block; }
 .hero-body { padding:14px 18px 18px; }
 .hero-badge { font-size:11px; color:#87A878; font-weight:bold;
   text-transform:uppercase; letter-spacing:.4px; }
-.hero-title { font-family:'Playfair Display', Georgia, serif; font-size:20px;
+.hero-title { font-family:'Playfair Display', Georgia, serif; font-size:19px;
   font-weight:bold; margin:6px 0; line-height:1.3; }
 .hero-note { font-size:14px; color:#5D6D7E; }
+/* ── Teaser list (email cover) + big call-to-action ───────── */
+.teaser { margin:4px 0 18px; }
+.teaser-row { display:block; background:#FFFFFF; border:1px solid #E0E0E0;
+  border-radius:10px; margin:8px 0; padding:12px 14px; overflow:hidden;
+  color:#2C3E50; }
+.teaser-emoji { float:left; font-size:22px; margin-right:12px; line-height:1.3; }
+.teaser-text { display:block; overflow:hidden; font-size:14px; }
+.teaser-name { font-weight:bold; }
+.teaser-count { color:#87A878; font-weight:bold; }
+.teaser-top { display:block; color:#7A8794; font-size:12px; margin-top:3px; }
+.cta-big { display:block; text-align:center; background:#5D6D7E; color:#FFFFFF !important;
+  padding:16px 18px; border-radius:12px; font-weight:bold; font-size:15px;
+  text-decoration:none; margin:10px 0 24px; border:1px solid #4A5763; }
 """
 
 
@@ -748,6 +751,11 @@ def _esc(s: str) -> str:
         .replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
         .replace('"', "&quot;").replace("'", "&#39;")
     )
+
+
+def _clip(s: str, n: int = 110) -> str:
+    s = (s or "").strip()
+    return s if len(s) <= n else s[: n - 1].rstrip() + "…"
 
 
 def _safe_url(u: str) -> str:
@@ -761,27 +769,12 @@ def _safe_url(u: str) -> str:
 
 
 def _cover_html(url: str, emoji: str, *, hero: bool = False) -> str:
-    """An <img> cover when a URL is present, else an emoji gradient tile."""
-    cls = "hero-cover" if hero else "mini-cover"
-    tile_cls = "hero-cover-tile" if hero else "mini-cover-tile"
+    """A real <img> when a URL is present; otherwise NO image for heroes (clean
+    text card) and a small emoji chip for rows. Never a big empty tile."""
     if url:
+        cls = "hero-cover" if hero else "row-thumb"
         return f'<img class="{cls}" src="{_safe_url(url)}" alt="" loading="lazy">'
-    return f'<div class="{tile_cls}">{emoji}</div>'
-
-
-def _swipe_strip(cards: list[str]) -> str:
-    if not cards:
-        return ""
-    dots = "".join(
-        f'<span class="dot{" dot-on" if i == 0 else ""}"></span>'
-        for i in range(min(len(cards), 5))
-    )
-    body = "".join(cards)
-    hint = (
-        f'<div class="strip-hint">{dots}<span class="swipe-label">swipe →</span></div>'
-        if len(cards) > 1 else ""
-    )
-    return f'<div class="strip-wrap"><div class="swipe-strip">{body}</div>{hint}</div>'
+    return "" if hero else f'<span class="row-chip">{emoji}</span>'
 
 
 def _hero_card(*, href: str, cover: str, badge: str, title: str, note: str) -> str:
@@ -798,18 +791,46 @@ def _hero_card(*, href: str, cover: str, badge: str, title: str, note: str) -> s
 </div>"""
 
 
-def _mini_card(*, href: str, cover: str, badge: str, title: str, note: str) -> str:
-    return f"""
-<div class="mini-card">
-  <a href="{_safe_url(href)}" target="_blank">
-    {cover}
-    <div class="mini-body">
-      <div class="mini-badge">{badge}</div>
-      <div class="mini-title">{title}</div>
-      <div class="mini-note">{note}</div>
-    </div>
-  </a>
-</div>"""
+def _row(*, href: str, thumb: str, badge: str, title: str, sub: str) -> str:
+    badge_html = f'<span class="row-badge">{badge}</span>' if badge else ""
+    return (
+        f'<a class="row" href="{_safe_url(href)}" target="_blank">{thumb}'
+        f'<span class="row-text">{badge_html}'
+        f'<span class="row-title">{title}</span>'
+        f'<span class="row-sub">{sub}</span></span></a>'
+    )
+
+
+def _teaser_row(emoji: str, name: str, count: int, unit: str, tops: list[str]) -> str:
+    """One compact 'what's inside' line linking to the full edition."""
+    if count <= 0:
+        return ""
+    top_txt = ", ".join(_esc(t) for t in tops if t)
+    top_html = f'<span class="teaser-top">{_clip(top_txt, 80)}</span>' if top_txt else ""
+    href = _safe_url(EDITION_URL) if EDITION_URL else "#"
+    return (
+        f'<a class="teaser-row" href="{href}" target="_blank">'
+        f'<span class="teaser-emoji">{emoji}</span>'
+        f'<span class="teaser-text"><span class="teaser-name">{name}</span> · '
+        f'<span class="teaser-count">{count} {unit}</span>{top_html}</span></a>'
+    )
+
+
+def _render_teaser(themes, music, good_news, discovery) -> str:
+    """The email body: a short 'what's inside' list. The full, browsable content
+    lives on the web edition (linked via the CTA) where interactivity works."""
+    videos = [v for t in themes for v in t.get("items", [])]
+    rows = "".join([
+        _teaser_row("🎵", "Morning Soundtrack", len(music), "tracks",
+                    [m.get("title", "") for m in music[:2]]),
+        _teaser_row("▶", "Watch", len(videos), "videos",
+                    [v.get("title", "") for v in videos[:2]]),
+        _teaser_row("🌿", "Good News", len(good_news), "stories",
+                    [g.get("title", "") for g in good_news[:2]]),
+        _teaser_row("📜", "Discovery", len(discovery), "finds",
+                    [d.get("title", "") for d in discovery[:2]]),
+    ])
+    return f'<div class="teaser">{rows}</div>' if rows else ""
 
 
 def _render_browsable_section(
@@ -822,12 +843,19 @@ def _render_browsable_section(
     mini_fn,
     accent_style: str = "",
 ) -> str:
-    """A section as a featured hero + a horizontal swipe strip of the rest,
-    inside the existing collapsible <details> shell."""
+    """A section as a featured hero + a few compact stacked rows, inside the
+    existing collapsible <details> shell. Overflow points to the full edition."""
     if not items:
         return ""
     hero = hero_fn(items[0])
-    strip = _swipe_strip([mini_fn(it) for it in items[1:]])
+    shown = items[1: 1 + ROWS_PER_SECTION]
+    rows = "".join(mini_fn(it) for it in shown)
+    extra = len(items) - 1 - len(shown)
+    more = (
+        f'<a class="more-link" href="{EDITION_URL}" target="_blank">'
+        f'+ {extra} more in the full edition →</a>'
+        if extra > 0 and EDITION_URL else ""
+    )
     return f"""
 <section class="{section_class}"{accent_style}>
   <details class="section-details" open>
@@ -841,7 +869,8 @@ def _render_browsable_section(
       </div>
     </summary>
     {hero}
-    {strip}
+    {rows}
+    {more}
   </details>
 </section>"""
 
@@ -952,12 +981,12 @@ def _music_hero(article: dict) -> str:
 
 
 def _music_mini(article: dict) -> str:
-    return _mini_card(
+    return _row(
         href=article.get("embed_url") or article.get("url", "#"),
-        cover=_cover_html(article.get("cover_url", ""), "🎵"),
+        thumb=_cover_html(article.get("cover_url", ""), "🎵"),
         badge=_music_badge(article),
         title=_esc(article.get("title", "(no title)")),
-        note=_esc(article.get("vibe_check") or (article.get("snippet") or "").strip()),
+        sub=_esc(_clip(article.get("vibe_check") or article.get("snippet", ""))),
     )
 
 
@@ -1014,12 +1043,12 @@ def _good_news_hero(article: dict) -> str:
 
 
 def _good_news_mini(article: dict) -> str:
-    return _mini_card(
+    return _row(
         href=article.get("url", "#"),
-        cover=_cover_html("", "🌿"),
+        thumb=_cover_html("", "🌿"),
         badge=f"🌿 {_esc(article.get('source_name', 'Good News'))}",
         title=_esc(article.get("title", "(no title)")),
-        note=_esc(article.get("reason", "")),
+        sub=_esc(_clip(article.get("reason", ""))),
     )
 
 
@@ -1081,12 +1110,12 @@ def _discovery_hero(article: dict, emoji: str, badge: str) -> str:
 
 
 def _discovery_mini(article: dict, emoji: str, badge: str) -> str:
-    return _mini_card(
+    return _row(
         href=article.get("url", "#"),
-        cover=_cover_html("", emoji),
+        thumb=_cover_html("", emoji),
         badge=badge,
         title=_esc(article.get("title", "(no title)")),
-        note=_esc(article.get("ferns_note") or article.get("snippet", "")),
+        sub=_esc(_clip(article.get("ferns_note") or article.get("snippet", ""))),
     )
 
 
@@ -1145,12 +1174,12 @@ def _youtube_hero(video: dict) -> str:
 
 
 def _youtube_mini(video: dict) -> str:
-    return _mini_card(
+    return _row(
         href=_yt_embed(video.get("video_id", "")),
-        cover=_cover_html(_yt_thumbnail(video.get("video_id", "")), "▶"),
+        thumb=_cover_html(_yt_thumbnail(video.get("video_id", "")), "▶"),
         badge=_yt_badge_text(video),
         title=_esc(video.get("title", "(no title)")),
-        note=_yt_note(video),
+        sub=_esc(_clip(video.get("why_watch", video.get("description", "")))),
     )
 
 
@@ -1218,16 +1247,11 @@ def build_html(curated: dict) -> str:
     energy_line           = _fern_energy_line(emerald_pct, amber_pct, crimson_pct)
     fern_greeting_html    = _render_fern_greeting(fern_data.get("greeting", ""), energy_line)
 
-    theme_html = "".join(
-        _render_theme(theme, _ACCENTS[i % len(_ACCENTS)])
-        for i, theme in enumerate(themes)
+    # The email is a short "cover": Fern's note + today's vibe + a teaser list.
+    # All the browsable content lives on the interactive web edition.
+    teaser_html = _render_teaser(
+        themes, morning_soundtrack, global_silver_linings, discovery_articles
     )
-
-    soundtrack_html       = _render_morning_soundtrack(morning_soundtrack)
-    silver_linings_html   = _render_global_silver_linings(global_silver_linings)
-    curators_desk_html    = _render_from_the_curators_desk(discovery_articles)
-    archives_html         = _render_from_the_archives(discovery_articles)
-    lab_html              = _render_the_laboratory(discovery_articles)
 
     logo_html = (
         f'<img src="{FERN_LOGO_URL}" alt="Fern" '
@@ -1239,6 +1263,11 @@ def build_html(curated: dict) -> str:
         f'<div class="edition-btn-wrap">'
         f'<a class="edition-btn" href="{EDITION_URL}" target="_blank">▶ Open today\'s full edition →</a>'
         f'</div>'
+        if EDITION_URL else ""
+    )
+    cta_big_html = (
+        f'<a class="cta-big" href="{EDITION_URL}" target="_blank">'
+        f'▶ Open the full edition — covers, carousel &amp; more →</a>'
         if EDITION_URL else ""
     )
 
@@ -1270,20 +1299,12 @@ def build_html(curated: dict) -> str:
 
   {mood_score_html}
 
-  {silver_linings_html}
+  {teaser_html}
 
-  {curators_desk_html}
-
-  {archives_html}
-
-  {lab_html}
-
-  {soundtrack_html}
-
-  {theme_html}
+  {cta_big_html}
 
   <div class="footer">
-    Generated automatically · AI audit threshold 75% · Curated by Claude
+    Tap “full edition” to browse everything · Curated by Claude · Fern
   </div>
 
 </div>
