@@ -176,13 +176,23 @@ function selectTab(key, btn) {{
     pl.classList.toggle('active', pl.dataset.panel === key));
 }}
 
-function esc(s) {{ const d = document.createElement('div'); d.textContent = s || ''; return d.innerHTML; }}
+function esc(s) {{
+  return String(s == null ? '' : s).replace(/[&<>"'`]/g, c => ({{
+    '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;','`':'&#96;'
+  }}[c]));
+}}
+function safeUrl(u) {{
+  try {{
+    const p = new URL(u, location.href);
+    return ['http:','https:','mailto:'].includes(p.protocol) ? p.href : '#';
+  }} catch (e) {{ return '#'; }}
+}}
 function coverHTML(url, emoji) {{
-  return url ? `<img class="cover" src="${{esc(url)}}" alt="">`
+  return url ? `<img class="cover" src="${{esc(safeUrl(url))}}" alt="">`
              : `<div class="cover-tile">${{emoji}}</div>`;
 }}
 function cardHTML(it, emoji) {{
-  return `<div class="card"><a href="${{esc(it.url)}}" target="_blank">${{coverHTML(it.cover, emoji)}}`
+  return `<div class="card"><a href="${{esc(safeUrl(it.url))}}" target="_blank">${{coverHTML(it.cover, emoji)}}`
     + `<div class="body"><div class="badge">${{esc(it.source || it.theme || '')}}</div>`
     + `<div class="title">${{esc(it.title)}}</div><div class="note">${{esc(it.note)}}</div></div></a></div>`;
 }}
@@ -237,7 +247,17 @@ def build_edition(curated: dict) -> str:
         date_str = f"{dt.strftime('%A, %B')} {dt.day}, {dt.strftime('%Y')} · {dt.strftime('%H:%M')}"
     except Exception:
         date_str = fetched_at
-    data_json = json.dumps(_payload(curated))
+    # Harden JSON for embedding in an HTML <script> element: neutralise any
+    # character that could start an HTML tag/comment ("</script>", "<!--") or
+    # break the JS string/line context. None of these change the parsed value.
+    data_json = (
+        json.dumps(_payload(curated))
+        .replace("<", "\\u003c")
+        .replace(">", "\\u003e")
+        .replace("&", "\\u0026")
+        .replace(chr(0x2028), "\\u2028")  # JS line separator
+        .replace(chr(0x2029), "\\u2029")  # JS paragraph separator
+    )
     return _PAGE.format(date_str=date_str, data_json=data_json)
 
 

@@ -742,7 +742,22 @@ _CSS_EXTRA = """
 
 
 def _esc(s: str) -> str:
-    return (s or "").replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
+    """Escape for both text and double-quoted attribute contexts."""
+    return (
+        (s or "")
+        .replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
+        .replace('"', "&quot;").replace("'", "&#39;")
+    )
+
+
+def _safe_url(u: str) -> str:
+    """Allow only http(s)/mailto/relative URLs; escape for attribute use.
+    Blocks javascript:/data: and other script-bearing schemes."""
+    u = (u or "").strip()
+    low = u.lower()
+    if low.startswith(("http://", "https://", "mailto:")) or u.startswith(("/", "#")):
+        return _esc(u)
+    return "#"
 
 
 def _cover_html(url: str, emoji: str, *, hero: bool = False) -> str:
@@ -750,7 +765,7 @@ def _cover_html(url: str, emoji: str, *, hero: bool = False) -> str:
     cls = "hero-cover" if hero else "mini-cover"
     tile_cls = "hero-cover-tile" if hero else "mini-cover-tile"
     if url:
-        return f'<img class="{cls}" src="{_esc(url)}" alt="" loading="lazy">'
+        return f'<img class="{cls}" src="{_safe_url(url)}" alt="" loading="lazy">'
     return f'<div class="{tile_cls}">{emoji}</div>'
 
 
@@ -772,7 +787,7 @@ def _swipe_strip(cards: list[str]) -> str:
 def _hero_card(*, href: str, cover: str, badge: str, title: str, note: str) -> str:
     return f"""
 <div class="hero-card">
-  <a href="{href}" target="_blank">
+  <a href="{_safe_url(href)}" target="_blank">
     {cover}
     <div class="hero-body">
       <div class="hero-badge">{badge}</div>
@@ -786,7 +801,7 @@ def _hero_card(*, href: str, cover: str, badge: str, title: str, note: str) -> s
 def _mini_card(*, href: str, cover: str, badge: str, title: str, note: str) -> str:
     return f"""
 <div class="mini-card">
-  <a href="{href}" target="_blank">
+  <a href="{_safe_url(href)}" target="_blank">
     {cover}
     <div class="mini-body">
       <div class="mini-badge">{badge}</div>
@@ -909,8 +924,8 @@ def _render_music_embed(embed_url: str, title: str) -> str:
 
 
 def _music_badge(article: dict) -> str:
-    source_name = article.get("source_name", "Music")
-    genre = (article.get("genre") or "").strip()
+    source_name = _esc(article.get("source_name", "Music"))
+    genre = _esc((article.get("genre") or "").strip())
     return f"♪ {source_name}" + (f" · {genre}" if genre else "")
 
 
@@ -924,7 +939,7 @@ def _music_hero(article: dict) -> str:
     embed_block = f'<div style="padding:0 18px 16px;">{embed_html}</div>' if embed_html else ""
     return f"""
 <div class="hero-card">
-  <a href="{url}" target="_blank">
+  <a href="{_safe_url(url)}" target="_blank">
     {cover}
     <div class="hero-body">
       <div class="hero-badge">{_music_badge(article)}</div>
