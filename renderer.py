@@ -30,6 +30,14 @@ from pathlib import Path
 BASE_DIR      = Path(__file__).parent
 CURATED_FILE  = BASE_DIR / "curated_data.json"
 OUTPUT_HTML   = BASE_DIR / "newsletter.html"
+DOCS_DIR      = BASE_DIR / "docs"
+EDITION_HTML  = DOCS_DIR / "index.html"
+
+# Public GitHub Pages URL for the interactive "full edition". Override via env.
+# Set to "" to hide the button (e.g. if Pages isn't enabled yet).
+EDITION_URL   = os.environ.get(
+    "EDITION_URL", "https://clairechabot.github.io/Newsletter/"
+)
 
 # Set to an externally-hosted URL or a data:image/png;base64,... URI to display the Fern logo.
 # Leave empty to show only the emoji brand mark.
@@ -677,6 +685,152 @@ def _render_mood_score(emerald_pct: int, amber_pct: int, crimson_pct: int) -> st
 </div>"""
 
 
+# ---------------------------------------------------------------------------
+# Browsable layout toolkit — hero + horizontal swipe strips + album covers.
+# Email-safe (no JS): native horizontal scroll/swipe, works in Gmail/Apple Mail.
+# ---------------------------------------------------------------------------
+
+_CSS_EXTRA = """
+/* ── Open full edition button ─────────────────────────────── */
+.edition-btn-wrap { text-align:center; margin:0 0 28px; }
+.edition-btn {
+  display:inline-block; background:#5D6D7E; color:#FFFFFF !important;
+  padding:12px 24px; border-radius:30px; font-weight:bold; font-size:14px;
+  text-decoration:none; border:1px solid #4A5763;
+}
+/* ── Horizontal swipe strip ───────────────────────────────── */
+.strip-wrap { margin:8px 0 4px; }
+.swipe-strip {
+  display:flex; gap:12px; overflow-x:auto; -webkit-overflow-scrolling:touch;
+  padding:4px 2px 12px; scroll-snap-type:x mandatory;
+}
+.swipe-strip::-webkit-scrollbar { height:6px; }
+.swipe-strip::-webkit-scrollbar-thumb { background:#CBC3B5; border-radius:3px; }
+.strip-hint { font-size:11px; color:#A9A39A; text-align:right; padding-right:6px; }
+.dot { display:inline-block; width:6px; height:6px; border-radius:50%;
+  background:#D6CFC2; margin-right:3px; vertical-align:middle; }
+.dot.dot-on { background:#87A878; }
+.swipe-label { margin-left:6px; }
+/* ── Mini cards (in strips) ───────────────────────────────── */
+.mini-card {
+  flex:0 0 auto; width:160px; scroll-snap-align:start; background:#FFFFFF;
+  border:1px solid #E0E0E0; border-radius:12px; overflow:hidden;
+}
+.mini-card a { display:block; color:#2C3E50; }
+.mini-cover { width:100%; height:150px; object-fit:cover; display:block; background:#EFECE4; }
+.mini-cover-tile { width:100%; height:120px; display:flex; align-items:center;
+  justify-content:center; font-size:42px; background:linear-gradient(135deg,#EFE9DD,#E3EDE0); }
+.mini-body { padding:10px 12px 14px; }
+.mini-badge { font-size:10px; color:#87A878; font-weight:bold;
+  text-transform:uppercase; letter-spacing:.4px; }
+.mini-title { font-weight:bold; font-size:14px; line-height:1.35; margin:4px 0; }
+.mini-note { font-size:12px; color:#7A8794; line-height:1.4; }
+/* ── Hero card (featured first item) ──────────────────────── */
+.hero-card { background:#FFFFFF; border:1px solid #E0E0E0; border-radius:14px;
+  overflow:hidden; margin-bottom:4px; }
+.hero-card a { display:block; color:#2C3E50; }
+.hero-cover { width:100%; max-height:240px; object-fit:cover; display:block; background:#EFECE4; }
+.hero-cover-tile { width:100%; height:150px; display:flex; align-items:center;
+  justify-content:center; font-size:60px; background:linear-gradient(135deg,#EFE9DD,#E3EDE0); }
+.hero-body { padding:14px 18px 18px; }
+.hero-badge { font-size:11px; color:#87A878; font-weight:bold;
+  text-transform:uppercase; letter-spacing:.4px; }
+.hero-title { font-family:'Playfair Display', Georgia, serif; font-size:20px;
+  font-weight:bold; margin:6px 0; line-height:1.3; }
+.hero-note { font-size:14px; color:#5D6D7E; }
+"""
+
+
+def _esc(s: str) -> str:
+    return (s or "").replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
+
+
+def _cover_html(url: str, emoji: str, *, hero: bool = False) -> str:
+    """An <img> cover when a URL is present, else an emoji gradient tile."""
+    cls = "hero-cover" if hero else "mini-cover"
+    tile_cls = "hero-cover-tile" if hero else "mini-cover-tile"
+    if url:
+        return f'<img class="{cls}" src="{_esc(url)}" alt="" loading="lazy">'
+    return f'<div class="{tile_cls}">{emoji}</div>'
+
+
+def _swipe_strip(cards: list[str]) -> str:
+    if not cards:
+        return ""
+    dots = "".join(
+        f'<span class="dot{" dot-on" if i == 0 else ""}"></span>'
+        for i in range(min(len(cards), 5))
+    )
+    body = "".join(cards)
+    hint = (
+        f'<div class="strip-hint">{dots}<span class="swipe-label">swipe →</span></div>'
+        if len(cards) > 1 else ""
+    )
+    return f'<div class="strip-wrap"><div class="swipe-strip">{body}</div>{hint}</div>'
+
+
+def _hero_card(*, href: str, cover: str, badge: str, title: str, note: str) -> str:
+    return f"""
+<div class="hero-card">
+  <a href="{href}" target="_blank">
+    {cover}
+    <div class="hero-body">
+      <div class="hero-badge">{badge}</div>
+      <div class="hero-title">{title}</div>
+      <div class="hero-note">{note}</div>
+    </div>
+  </a>
+</div>"""
+
+
+def _mini_card(*, href: str, cover: str, badge: str, title: str, note: str) -> str:
+    return f"""
+<div class="mini-card">
+  <a href="{href}" target="_blank">
+    {cover}
+    <div class="mini-body">
+      <div class="mini-badge">{badge}</div>
+      <div class="mini-title">{title}</div>
+      <div class="mini-note">{note}</div>
+    </div>
+  </a>
+</div>"""
+
+
+def _render_browsable_section(
+    items: list[dict],
+    *,
+    section_class: str,
+    heading: str,
+    tagline: str,
+    hero_fn,
+    mini_fn,
+    accent_style: str = "",
+) -> str:
+    """A section as a featured hero + a horizontal swipe strip of the rest,
+    inside the existing collapsible <details> shell."""
+    if not items:
+        return ""
+    hero = hero_fn(items[0])
+    strip = _swipe_strip([mini_fn(it) for it in items[1:]])
+    return f"""
+<section class="{section_class}"{accent_style}>
+  <details class="section-details" open>
+    <summary>
+      <div class="section-header-toggle">
+        <div>
+          <h2>{heading}</h2>
+          <div class="tagline">{tagline}</div>
+        </div>
+        <span class="section-chevron">▾</span>
+      </div>
+    </summary>
+    {hero}
+    {strip}
+  </details>
+</section>"""
+
+
 def _render_youtube_card(video: dict) -> str:
     title       = video.get("title", "(no title)")
     why_watch   = video.get("why_watch", video.get("description", ""))
@@ -754,57 +908,53 @@ def _render_music_embed(embed_url: str, title: str) -> str:
     return ""
 
 
-def _render_music_card(article: dict) -> str:
-    title       = article.get("title", "(no title)")
+def _music_badge(article: dict) -> str:
     source_name = article.get("source_name", "Music")
-    url         = article.get("url", "#")
-    snippet     = (article.get("snippet") or "").strip()
-    vibe_check  = article.get("vibe_check", "")
-    embed_url   = article.get("embed_url") or ""
+    genre = (article.get("genre") or "").strip()
+    return f"♪ {source_name}" + (f" · {genre}" if genre else "")
 
-    source_badge = f'<span class="badge badge-music">♪ {source_name}</span>'
 
-    embed_html = _render_music_embed(embed_url, title)
-
+def _music_hero(article: dict) -> str:
+    """Featured track: album cover + vibe + an inline player when available."""
+    title      = _esc(article.get("title", "(no title)"))
+    url        = article.get("embed_url") or article.get("url", "#")
+    note       = _esc(article.get("vibe_check") or (article.get("snippet") or "").strip())
+    cover      = _cover_html(article.get("cover_url", ""), "🎵", hero=True)
+    embed_html = _render_music_embed(article.get("embed_url") or "", title)
+    embed_block = f'<div style="padding:0 18px 16px;">{embed_html}</div>' if embed_html else ""
     return f"""
-<div class="card">
-  <details>
-    <summary>
-      <div class="summary-body">
-        <div class="summary-title">{title}</div>
-        <div class="summary-desc">{vibe_check}</div>
-      </div>
-      {source_badge}
-    </summary>
-    <div class="card-body">
-      {embed_html}
-      <a class="post-link" href="{url}" target="_blank">Read full story →</a>
+<div class="hero-card">
+  <a href="{url}" target="_blank">
+    {cover}
+    <div class="hero-body">
+      <div class="hero-badge">{_music_badge(article)}</div>
+      <div class="hero-title">{title}</div>
+      <div class="hero-note">{note}</div>
     </div>
-  </details>
+  </a>
+  {embed_block}
 </div>"""
 
 
+def _music_mini(article: dict) -> str:
+    return _mini_card(
+        href=article.get("embed_url") or article.get("url", "#"),
+        cover=_cover_html(article.get("cover_url", ""), "🎵"),
+        badge=_music_badge(article),
+        title=_esc(article.get("title", "(no title)")),
+        note=_esc(article.get("vibe_check") or (article.get("snippet") or "").strip()),
+    )
+
+
 def _render_morning_soundtrack(articles: list[dict]) -> str:
-    if not articles:
-        return ""
-
-    cards = "".join(_render_music_card(a) for a in articles)
-
-    return f"""
-<section class="soundtrack-section">
-  <details class="section-details">
-    <summary>
-      <div class="soundtrack-header section-header-toggle">
-        <div>
-          <h2>🎵 The Morning Soundtrack</h2>
-          <div class="tagline">Fresh picks from the music world to set the tone for your day.</div>
-        </div>
-        <span class="section-chevron">▾</span>
-      </div>
-    </summary>
-    {cards}
-  </details>
-</section>"""
+    return _render_browsable_section(
+        articles,
+        section_class="soundtrack-section",
+        heading="🎵 The Morning Soundtrack",
+        tagline="Fresh picks from the music world to set the tone for your day.",
+        hero_fn=_music_hero,
+        mini_fn=_music_mini,
+    )
 
 
 def _render_good_news_card(article: dict) -> str:
@@ -838,25 +988,35 @@ def _render_good_news_card(article: dict) -> str:
 </div>"""
 
 
+def _good_news_hero(article: dict) -> str:
+    return _hero_card(
+        href=article.get("url", "#"),
+        cover=_cover_html("", "🌿", hero=True),
+        badge="🌿 Good News",
+        title=_esc(article.get("title", "(no title)")),
+        note=_esc(article.get("reason", "")),
+    )
+
+
+def _good_news_mini(article: dict) -> str:
+    return _mini_card(
+        href=article.get("url", "#"),
+        cover=_cover_html("", "🌿"),
+        badge=f"🌿 {_esc(article.get('source_name', 'Good News'))}",
+        title=_esc(article.get("title", "(no title)")),
+        note=_esc(article.get("reason", "")),
+    )
+
+
 def _render_global_silver_linings(articles: list[dict]) -> str:
-    if not articles:
-        return ""
-    cards = "".join(_render_good_news_card(a) for a in articles)
-    return f"""
-<section class="goodnews-section">
-  <details class="section-details">
-    <summary>
-      <div class="goodnews-header section-header-toggle">
-        <div>
-          <h2>🌿 Global Silver Linings</h2>
-          <div class="tagline">Two stories that remind you the world is still full of good.</div>
-        </div>
-        <span class="section-chevron">▾</span>
-      </div>
-    </summary>
-    {cards}
-  </details>
-</section>"""
+    return _render_browsable_section(
+        articles,
+        section_class="goodnews-section",
+        heading="🌿 Global Silver Linings",
+        tagline="Stories that remind you the world is still full of good.",
+        hero_fn=_good_news_hero,
+        mini_fn=_good_news_mini,
+    )
 
 
 def _render_discovery_card(article: dict) -> str:
@@ -895,70 +1055,88 @@ def _render_discovery_card(article: dict) -> str:
 </div>"""
 
 
+def _discovery_hero(article: dict, emoji: str, badge: str) -> str:
+    return _hero_card(
+        href=article.get("url", "#"),
+        cover=_cover_html("", emoji, hero=True),
+        badge=badge,
+        title=_esc(article.get("title", "(no title)")),
+        note=_esc(article.get("ferns_note") or article.get("snippet", "")),
+    )
+
+
+def _discovery_mini(article: dict, emoji: str, badge: str) -> str:
+    return _mini_card(
+        href=article.get("url", "#"),
+        cover=_cover_html("", emoji),
+        badge=badge,
+        title=_esc(article.get("title", "(no title)")),
+        note=_esc(article.get("ferns_note") or article.get("snippet", "")),
+    )
+
+
 def _render_from_the_curators_desk(articles: list[dict]) -> str:
     items = [a for a in articles if a.get("source_name") == "British Museum"]
-    if not items:
-        return ""
-    cards = "".join(_render_discovery_card(a) for a in items)
-    return f"""
-<section class="goodnews-section">
-  <details class="section-details">
-    <summary>
-      <div class="archives-header section-header-toggle">
-        <div>
-          <h2>🏛 From the Curator's Desk</h2>
-          <div class="tagline">Dispatches from one of the world's great collections.</div>
-        </div>
-        <span class="section-chevron">▾</span>
-      </div>
-    </summary>
-    {cards}
-  </details>
-</section>"""
+    return _render_browsable_section(
+        items,
+        section_class="goodnews-section",
+        heading="🏛 From the Curator's Desk",
+        tagline="Dispatches from one of the world's great collections.",
+        hero_fn=lambda a: _discovery_hero(a, "🏛", "🏛 British Museum"),
+        mini_fn=lambda a: _discovery_mini(a, "🏛", "🏛 British Museum"),
+    )
 
 
 def _render_from_the_archives(articles: list[dict]) -> str:
     items = [a for a in articles if a.get("source_name") == "Atlas Obscura"]
-    if not items:
-        return ""
-    cards = "".join(_render_discovery_card(a) for a in items)
-    return f"""
-<section class="goodnews-section">
-  <details class="section-details">
-    <summary>
-      <div class="archives-header section-header-toggle">
-        <div>
-          <h2>📜 From the Archives</h2>
-          <div class="tagline">Forgotten places, hidden histories, and mysteries that linger.</div>
-        </div>
-        <span class="section-chevron">▾</span>
-      </div>
-    </summary>
-    {cards}
-  </details>
-</section>"""
+    return _render_browsable_section(
+        items,
+        section_class="goodnews-section",
+        heading="📜 From the Archives",
+        tagline="Forgotten places, hidden histories, and mysteries that linger.",
+        hero_fn=lambda a: _discovery_hero(a, "📜", "📜 Archives"),
+        mini_fn=lambda a: _discovery_mini(a, "📜", "📜 Archives"),
+    )
 
 
 def _render_the_laboratory(articles: list[dict]) -> str:
     items = [a for a in articles if a.get("category") == "science"]
-    if not items:
-        return ""
-    cards = "".join(_render_discovery_card(a) for a in items)
-    return f"""
-<section class="goodnews-section">
-  <details class="section-details">
-    <summary>
-      <div class="lab-header section-header-toggle">
-        <div>
-          <h2>🔬 The Laboratory</h2>
-          <div class="tagline">The science stories that rewire how you see the world.</div>
-        </div>
-        <span class="section-chevron">▾</span>
-      </div>
-    </summary>
-    {cards}
-  </details>
-</section>"""
+    return _render_browsable_section(
+        items,
+        section_class="goodnews-section",
+        heading="🔬 The Laboratory",
+        tagline="The science stories that rewire how you see the world.",
+        hero_fn=lambda a: _discovery_hero(a, "🔬", "🔬 Science"),
+        mini_fn=lambda a: _discovery_mini(a, "🔬", "🔬 Science"),
+    )
+
+
+def _yt_badge_text(video: dict) -> str:
+    return "✦ Wildcard" if video.get("is_wildcard") else "▶ YouTube"
+
+
+def _yt_note(video: dict) -> str:
+    return _esc(video.get("why_watch", video.get("description", "")))
+
+
+def _youtube_hero(video: dict) -> str:
+    return _hero_card(
+        href=_yt_embed(video.get("video_id", "")),
+        cover=_cover_html(_yt_thumbnail(video.get("video_id", "")), "▶", hero=True),
+        badge=_yt_badge_text(video),
+        title=_esc(video.get("title", "(no title)")),
+        note=_yt_note(video),
+    )
+
+
+def _youtube_mini(video: dict) -> str:
+    return _mini_card(
+        href=_yt_embed(video.get("video_id", "")),
+        cover=_cover_html(_yt_thumbnail(video.get("video_id", "")), "▶"),
+        badge=_yt_badge_text(video),
+        title=_esc(video.get("title", "(no title)")),
+        note=_yt_note(video),
+    )
 
 
 def _render_theme(theme: dict, accent: str) -> str:
@@ -966,29 +1144,17 @@ def _render_theme(theme: dict, accent: str) -> str:
     tagline = theme.get("tagline", "")
     emoji   = theme.get("emoji", "")
     items   = theme.get("items", [])
-
     heading = f"{emoji} {name}" if emoji else name
 
-    cards = []
-    for item in items:
-        source = item.get("source", "")
-        cards.append(_render_youtube_card(item))
-
-    return f"""
-<section class="theme-section" style="--accent: {accent}">
-  <details class="section-details">
-    <summary>
-      <div class="theme-header section-header-toggle">
-        <div>
-          <h2>{heading}</h2>
-          <div class="tagline">{tagline}</div>
-        </div>
-        <span class="section-chevron">▾</span>
-      </div>
-    </summary>
-    {"".join(cards)}
-  </details>
-</section>"""
+    return _render_browsable_section(
+        items,
+        section_class="theme-section",
+        heading=heading,
+        tagline=tagline,
+        hero_fn=_youtube_hero,
+        mini_fn=_youtube_mini,
+        accent_style=f' style="--accent: {accent}"',
+    )
 
 
 def build_html(curated: dict) -> str:
@@ -1054,6 +1220,13 @@ def build_html(curated: dict) -> str:
         if FERN_LOGO_URL else ""
     )
 
+    edition_html = (
+        f'<div class="edition-btn-wrap">'
+        f'<a class="edition-btn" href="{EDITION_URL}" target="_blank">▶ Open today\'s full edition →</a>'
+        f'</div>'
+        if EDITION_URL else ""
+    )
+
     return f"""<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -1061,7 +1234,7 @@ def build_html(curated: dict) -> str:
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>The Curated Canopy</title>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
-  <style>{_CSS}</style>
+  <style>{_CSS}{_CSS_EXTRA}</style>
 </head>
 <body>
 <div class="wrapper">
@@ -1075,6 +1248,8 @@ def build_html(curated: dict) -> str:
     <div class="brand-separator"></div>
     <div class="stats">{stats_html}</div>
   </div>
+
+  {edition_html}
 
   {fern_greeting_html}
 
@@ -1116,13 +1291,14 @@ def send_email(html_body: str, subject: str) -> None:
     print(f"DEBUG: Attempting to connect to host: '{smtp_host}' on port: '{smtp_port}'")
     print(f"DEBUG: smtp_user set: {bool(smtp_user)} | smtp_pass set: {bool(smtp_pass)}")
 
-    # Bail out with a clear message rather than a cryptic socket error
+    # Fail LOUD (non-zero exit) rather than silently returning — a missing
+    # secret must turn the Actions run RED, not look successful.
     if not smtp_host or smtp_host.strip() == "":
-        print("ERROR: SMTP_SERVER environment variable is empty. Check GitHub Secrets!")
-        return
+        raise SystemExit("ERROR: SMTP_SERVER/SMTP_HOST is empty. Check GitHub Secrets!")
     if not smtp_user:
-        print("ERROR: SMTP_USER / EMAIL_USER environment variable is empty. Check GitHub Secrets!")
-        return
+        raise SystemExit("ERROR: SMTP_USER/EMAIL_USER is empty. Check GitHub Secrets!")
+    if not smtp_pass:
+        raise SystemExit("ERROR: SMTP_PASS is empty. Check GitHub Secrets!")
 
     # Try every common naming convention for the recipient list
     raw_to = (
@@ -1132,8 +1308,7 @@ def send_email(html_body: str, subject: str) -> None:
         or smtp_user  # last resort: send to the sender address
     )
     if not raw_to or raw_to.strip() == "":
-        print("❌ ERROR: Fern cannot find a recipient email. Ensure 'EMAIL_TO' is in your .yml 'env' section.")
-        return
+        raise SystemExit("ERROR: No recipient. Set EMAIL_TO (or NEWSLETTER_RECIPIENTS/RECIPIENTS).")
     recipients = [r.strip() for r in raw_to.split(",") if r.strip()]
     print(f"✅ Fern is delivering to: {recipients}")
 
@@ -1168,6 +1343,14 @@ def main() -> None:
     OUTPUT_HTML.write_text(html, encoding="utf-8")
     print(f"[render] HTML written → {OUTPUT_HTML}")
 
+    # Companion interactive "full edition" → docs/index.html (GitHub Pages)
+    try:
+        import webpage
+        path = webpage.write_edition(curated)
+        print(f"[render] Full edition written → {path}")
+    except Exception as exc:
+        print(f"[render] WARN — could not build full edition page: {exc}")
+
     # Send only when all required SMTP credentials are present
     smtp_ready = (
         (os.environ.get("SMTP_USER") or os.environ.get("EMAIL_USER"))
@@ -1181,15 +1364,22 @@ def main() -> None:
         prefix     = "☀️ The Morning Rise" if is_am else "🌙 The Evening Wind-down"
         subject    = f"{prefix} | {top_pick}" if top_pick else f"{prefix} · The Curated Canopy"
         send_email(html, subject=subject)
+        return
+
+    # No secrets present. Allow purely-local HTML/edition previews via
+    # ALLOW_NO_EMAIL=1; otherwise fail LOUD so a misconfigured CI run goes RED.
+    missing = []
+    if not (os.environ.get("SMTP_USER") or os.environ.get("EMAIL_USER")):
+        missing.append("SMTP_USER/EMAIL_USER")
+    if not os.environ.get("SMTP_PASS"):
+        missing.append("SMTP_PASS")
+    if not (os.environ.get("SMTP_SERVER") or os.environ.get("SMTP_HOST")):
+        missing.append("SMTP_SERVER/SMTP_HOST")
+    msg = f"[render] EMAIL NOT SENT — missing secrets: {', '.join(missing)}"
+    if os.environ.get("ALLOW_NO_EMAIL") == "1":
+        print(msg + " (ALLOW_NO_EMAIL=1 — continuing without sending)")
     else:
-        missing = []
-        if not (os.environ.get("SMTP_USER") or os.environ.get("EMAIL_USER")):
-            missing.append("SMTP_USER / EMAIL_USER")
-        if not os.environ.get("SMTP_PASS"):
-            missing.append("SMTP_PASS")
-        if not (os.environ.get("SMTP_SERVER") or os.environ.get("SMTP_HOST")):
-            missing.append("SMTP_SERVER / SMTP_HOST")
-        print(f"[render] Skipping send — missing secrets: {', '.join(missing)}")
+        raise SystemExit(msg)
 
 
 if __name__ == "__main__":

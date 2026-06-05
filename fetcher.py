@@ -31,6 +31,9 @@ from bs4 import BeautifulSoup
 from googleapiclient.discovery import build
 from googleapiclient.errors import HttpError
 
+import http_fetch      # hardened HTTP (browser UA + retries), ported from daily-briefing
+import claude_fetch    # Claude web-fetch music extractor (real titles), ported from daily-briefing
+
 # ---------------------------------------------------------------------------
 # Configuration — replace the placeholder lists before running
 # ---------------------------------------------------------------------------
@@ -53,8 +56,9 @@ YOUTUBE_CHANNEL_IDS: list[str] = [
 ]
 
 HISTORY_FILE = Path(__file__).parent / "history.json"
+CLAUDE_MODEL = "claude-sonnet-4-6"    # matches curator.CLAUDE_MODEL
 YOUTUBE_VIDEOS_PER_CHANNEL = 1        # 1 per channel conserves quota for wildcard search
-YOUTUBE_MIN_DURATION_SECONDS = 61
+YOUTUBE_MIN_DURATION_SECONDS = 121    # ≥ 2 min — removes the 0–2 min band where Shorts cluster
 YOUTUBE_WILDCARD_MIN_SECONDS = 300    # wildcard must be ≥ 5 minutes
 
 # Wildcard categories — one is chosen at random each run
@@ -130,18 +134,27 @@ WILDCARD_CATEGORIES = [
     },
 ]
 
-# Music scraper — 3 articles per source, AM email only
+# Music sources — real artists/albums extracted via Claude web-fetch, AM email only
 MUSIC_SOURCES: list[dict] = [
-    {
-        "name": "Sofar Sounds",
-        "url": "https://www.sofarsounds.com/blog",
-    },
-    {
-        "name": "Bandcamp Daily",
-        "url": "https://daily.bandcamp.com/",
-    },
+    {"name": "Sofar Sounds",  "url": "https://www.sofarsounds.com/blog"},
+    {"name": "Bandcamp Daily", "url": "https://daily.bandcamp.com/"},
+    {"name": "NPR Music",      "url": "https://www.npr.org/music/"},
+    {"name": "Pitchfork",      "url": "https://pitchfork.com/best/"},
+    {"name": "Stereogum",      "url": "https://www.stereogum.com/"},
+    {"name": "JazzTimes",      "url": "https://jazztimes.com/"},
+    {"name": "No Depression",  "url": "https://www.nodepression.com/"},
 ]
-MUSIC_ARTICLES_PER_SOURCE = 3
+MUSIC_ARTICLES_PER_SOURCE = 3          # post-filter cap per source
+MUSIC_CANDIDATES_PER_SOURCE = 8        # pull this many, then genre-filter down
+
+# Genres the reader likes — music items are filtered to these by Claude.
+# Edit this list to retune taste.
+MUSIC_GENRES: list[str] = [
+    "jazz", "soul", "neo-soul", "classical", "classical crossover", "acoustic",
+    "country", "Americana", "90s", "80s", "rock", "classic rock", "blues rock",
+    "folk rock", "alt-rock", "folk", "bluegrass", "Celtic", "world", "roots",
+    "pop", "indie pop", "singer-songwriter", "dream pop",
+]
 SCRAPER_HEADERS = {
     "User-Agent":      "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) FernDigest/1.2",
     "Accept":          "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
@@ -214,32 +227,24 @@ def _fetch_with_retry(
     GET `url` via `session`, retrying up to `retries` times on transient
     failures (connection errors, timeouts, 5xx responses).
 
-    `backoff` is the base wait in seconds; each retry doubles it.
+    `backoff` is the base wait in seconds; passed through as the retry delay.
     `referer` is injected as a Referer header when provided.
     Returns the Response on success, or None after all retries are exhausted.
+
+    The actual request now goes through `http_fetch.fetch` (browser UA +
+    retries + raise_for_status), so every scraping call site benefits from the
+    hardened path. The `session` arg is kept for signature compatibility but is
+    no longer used for the network call.
     """
     headers = {"Referer": referer} if referer else {}
-    delay = backoff
-
-    for attempt in range(1, retries + 1):
-        try:
-            resp = session.get(url, headers=headers, timeout=15)
-            if resp.status_code in _RETRY_STATUSES:
-                raise requests.HTTPError(response=resp)
-            resp.raise_for_status()
-            return resp
-        except (requests.ConnectionError, requests.Timeout) as exc:
-            print(f"  [retry {attempt}/{retries}] Connection error for {url}: {exc}")
-        except requests.HTTPError as exc:
-            code = exc.response.status_code if exc.response is not None else "?"
-            print(f"  [retry {attempt}/{retries}] HTTP {code} for {url}")
-
-        if attempt < retries:
-            time.sleep(delay)
-            delay *= 2  # exponential back-off
-
-    print(f"  [warn] Gave up fetching {url} after {retries} attempts.")
-    return None
+    try:
+        return http_fetch.fetch(
+            url, headers=headers, timeout=15,
+            retries=retries, retry_delay=backoff,
+        )
+    except requests.RequestException as exc:
+        print(f"  [warn] Gave up fetching {url} after {retries} attempts: {exc}")
+        return None
 
 
 # ---------------------------------------------------------------------------
@@ -266,8 +271,22 @@ def _parse_iso8601_duration(duration: str) -> int:
     )
 
 
-def _is_short(video_id: str, url: str, duration_seconds: int) -> bool:
-    return "/shorts/" in url or duration_seconds < YOUTUBE_MIN_DURATION_SECONDS
+def _is_short(video_id: str, url: str, duration_seconds: int, title: str = "") -> bool:
+    """Tightened Shorts detection.
+
+    1. `/shorts/` in the URL — explicit Short.
+    2. Under the 2-minute floor — kills the band where Shorts cluster, even when
+       the API rounds `contentDetails.duration` to a whole minute.
+    3. A sub-3-minute clip whose title carries a #shorts hashtag — catches the
+       round-duration edge case without any extra API call.
+    """
+    if "/shorts/" in url:
+        return True
+    if duration_seconds < YOUTUBE_MIN_DURATION_SECONDS:
+        return True
+    if duration_seconds <= 180 and "#short" in title.lower():
+        return True
+    return False
 
 
 def _fetch_video_details(youtube, video_ids: list[str]) -> tuple[list[dict], set[str]]:
@@ -304,12 +323,11 @@ def _fetch_video_details(youtube, video_ids: list[str]) -> tuple[list[dict], set
             print(f"  [skip/no-duration] {vid_id} — duration unparseable ({duration_str!r})")
             continue
         url = f"https://www.youtube.com/watch?v={vid_id}"
-
-        if _is_short(vid_id, url, duration_sec):
-            print(f"  [skip/short] {vid_id} — {duration_sec}s < {YOUTUBE_MIN_DURATION_SECONDS}s")
-            continue
-
         title = snippet["title"]
+
+        if _is_short(vid_id, url, duration_sec, title):
+            print(f"  [skip/short] {vid_id} — {duration_sec}s (min {YOUTUBE_MIN_DURATION_SECONDS}s)")
+            continue
         if re.search(r'[^\x00-\x7FÀ-ɏḀ-ỿ]', title):
             print(f"  [skip/non-latin] {vid_id} — non-Latin characters in title")
             continue
@@ -558,204 +576,98 @@ def fetch_trending_video(youtube, seen_ids: set[str]) -> dict | None:
 # Music Scraper
 # ---------------------------------------------------------------------------
 
-def _find_music_embed(article_url: str, session: requests.Session) -> str | None:
-    """
-    Fetch an article page and return the first distraction-free embed URL found.
+def _embed_from_soup(soup: BeautifulSoup, page_text: str) -> str | None:
+    """First distraction-free embed URL found in a parsed article page.
 
     Priority order:
       1. Bandcamp EmbeddedPlayer iframe  → bandcamp.com/EmbeddedPlayer/...
       2. YouTube iframe                  → youtube.com/embed/VIDEO_ID
       3. Bare YouTube watch link         → converted to youtube.com/embed/VIDEO_ID
-      4. Bare Bandcamp album/track link  → converted to EmbeddedPlayer URL
-
-    Returns None if nothing playable is found or the page fetch fails.
+      4. Bare Bandcamp album/track link  → cleaned page URL ("Listen on Bandcamp")
     """
-    if not article_url or article_url == "#":
-        return None
-    # Derive a plausible Referer from the article URL's origin
-    parsed_origin = urlparse(article_url)
-    referer = f"{parsed_origin.scheme}://{parsed_origin.netloc}/"
-    resp = _fetch_with_retry(article_url, session, referer=referer)
-    if resp is None:
-        return None
-
-    soup = BeautifulSoup(resp.text, "html.parser")
-
     for iframe in soup.find_all("iframe", src=True):
         src: str = iframe["src"]
         if "bandcamp.com/EmbeddedPlayer" in src:
-            # Ensure it's https and strip any extra query cruft
             return src if src.startswith("http") else "https:" + src
         if "youtube.com/embed/" in src or "youtube-nocookie.com/embed/" in src:
-            # Normalise to plain embed URL (strip autoplay etc.)
             vid_id = src.split("/embed/")[1].split("?")[0].split("&")[0]
             return f"https://www.youtube.com/embed/{vid_id}"
 
-    # Fallback: bare YouTube watch links in the page body
     yt_match = re.search(
-        r'https?://(?:www\.)?youtube\.com/watch\?v=([\w-]{11})', resp.text
+        r'https?://(?:www\.)?youtube\.com/watch\?v=([\w-]{11})', page_text
     )
     if yt_match:
         return f"https://www.youtube.com/embed/{yt_match.group(1)}"
 
-    # Fallback: Bandcamp album/track page link → convert to EmbeddedPlayer
     for a in soup.find_all("a", href=True):
         href: str = a["href"]
         if re.search(r'bandcamp\.com/(album|track)/', href):
-            # No numeric ID available from the link alone; return the clean page
-            # URL — the renderer will show a "Listen on Bandcamp" button.
             return href.split("?")[0].rstrip("/")
 
     return None
 
 
-def _scrape_sofar_sounds(limit: int, session: requests.Session) -> list[dict]:
-    """
-    Scrape latest articles from sofarsounds.com/blog.
-    Returns a list of {title, url, snippet, embed_url, source_name} dicts.
-    """
-    url = MUSIC_SOURCES[0]["url"]
-    resp = _fetch_with_retry(url, session, referer="https://www.sofarsounds.com/")
+def _cover_from_soup(soup: BeautifulSoup) -> str | None:
+    """The article's social/lead image (og:image, then twitter:image)."""
+    for prop in ("og:image", "twitter:image", "twitter:image:src"):
+        tag = soup.find("meta", property=prop) or soup.find("meta", attrs={"name": prop})
+        if tag and tag.get("content"):
+            return tag["content"].strip()
+    return None
+
+
+def _find_embed_and_cover(
+    article_url: str, session: requests.Session
+) -> tuple[str | None, str | None]:
+    """Fetch an article page once and return (embed_url, cover_url).
+
+    Returns (None, None) if the page can't be fetched."""
+    if not article_url or article_url == "#":
+        return None, None
+    parsed_origin = urlparse(article_url)
+    referer = f"{parsed_origin.scheme}://{parsed_origin.netloc}/"
+    resp = _fetch_with_retry(article_url, session, referer=referer)
     if resp is None:
-        print("  [warn] Sofar Sounds fetch failed after retries.")
-        return []
-
+        return None, None
     soup = BeautifulSoup(resp.text, "html.parser")
-    articles: list[dict] = []
-
-    candidates = (
-        soup.select("article.post-card")
-        or soup.select("[class*='post-card']")
-        or soup.select("article")
-        or soup.select(".post")
-    )
-
-    for el in candidates[:limit * 2]:
-        title_el = (
-            el.select_one("h2 a")
-            or el.select_one("h3 a")
-            or el.select_one("h2")
-            or el.select_one("h3")
-        )
-        if not title_el:
-            continue
-        title = title_el.get_text(strip=True)
-
-        link_el = title_el if title_el.name == "a" else title_el.find("a")
-        href = link_el["href"] if link_el and link_el.get("href") else ""
-        if href and href.startswith("/"):
-            href = "https://www.sofarsounds.com" + href
-
-        snippet_el = (
-            el.select_one("p")
-            or el.select_one("[class*='excerpt']")
-            or el.select_one("[class*='summary']")
-        )
-        snippet = snippet_el.get_text(strip=True)[:300] if snippet_el else ""
-
-        if not title:
-            continue
-
-        article_url = href or url
-        time.sleep(1)  # polite delay before fetching article page
-        try:
-            embed_url = _find_music_embed(article_url, session)
-            if embed_url:
-                print(f"    [embed] found for '{title[:50]}'")
-        except Exception as exc:
-            print(f"    [warn] embed lookup failed for '{title[:50]}': {exc}")
-            embed_url = None
-
-        articles.append(
-            {
-                "source": "music",
-                "source_name": "Sofar Sounds",
-                "title": title,
-                "url": article_url,
-                "snippet": snippet,
-                "embed_url": embed_url,
-            }
-        )
-        if len(articles) >= limit:
-            break
-
-    print(f"[Music] Sofar Sounds → {len(articles)} article(s)")
-    return articles
+    return _embed_from_soup(soup, resp.text), _cover_from_soup(soup)
 
 
-def _scrape_bandcamp_daily(limit: int, session: requests.Session) -> list[dict]:
+def _filter_music_by_genre(items: list[dict], client) -> list[dict]:
+    """Keep only items whose music plausibly fits the reader's MUSIC_GENRES.
+
+    Claude judges (inclusive of adjacent styles). Fail-open: on any error or
+    empty result we return the items unchanged rather than emptying the section.
     """
-    Scrape latest articles from daily.bandcamp.com.
-    Returns a list of {title, url, snippet, embed_url, source_name} dicts.
-    """
-    url = MUSIC_SOURCES[1]["url"]
-    resp = _fetch_with_retry(url, session, referer="https://daily.bandcamp.com/")
-    if resp is None:
-        print("  [warn] Bandcamp Daily fetch failed after retries.")
+    if not items:
         return []
-
-    soup = BeautifulSoup(resp.text, "html.parser")
-    articles: list[dict] = []
-
-    candidates = (
-        soup.select("article.story")
-        or soup.select(".story")
-        or soup.select("[class*='story']")
-        or soup.select("article")
+    listing = "\n".join(
+        f"{i}: {it.get('title','')} | genre hint: {it.get('genre','?')} "
+        f"| {it.get('snippet','')[:120]}"
+        for i, it in enumerate(items)
     )
-
-    for el in candidates[:limit * 2]:
-        title_el = (
-            el.select_one("h2 a")
-            or el.select_one("h3 a")
-            or el.select_one(".story-title a")
-            or el.select_one("h2")
-            or el.select_one("h3")
+    prompt = (
+        f"Reader's preferred genres: {', '.join(MUSIC_GENRES)}.\n"
+        f"From the list below, return ONLY the indices whose music plausibly "
+        f"fits those genres (be inclusive of adjacent styles and eras). Items:\n"
+        f"{listing}\n\n"
+        'Return ONLY JSON, no fences: {"keep": [<indices>]}'
+    )
+    try:
+        msg = client.messages.create(
+            model=CLAUDE_MODEL, max_tokens=256,
+            messages=[{"role": "user", "content": prompt}],
         )
-        if not title_el:
-            continue
-        title = title_el.get_text(strip=True)
-
-        link_el = title_el if title_el.name == "a" else title_el.find("a")
-        href = link_el["href"] if link_el and link_el.get("href") else ""
-        if href and href.startswith("/"):
-            href = "https://daily.bandcamp.com" + href
-
-        snippet_el = (
-            el.select_one(".story-excerpt")
-            or el.select_one("[class*='excerpt']")
-            or el.select_one("p")
-        )
-        snippet = snippet_el.get_text(strip=True)[:300] if snippet_el else ""
-
-        if not title:
-            continue
-
-        article_url = href or url
-        time.sleep(1)
-        try:
-            embed_url = _find_music_embed(article_url, session)
-            if embed_url:
-                print(f"    [embed] found for '{title[:50]}'")
-        except Exception as exc:
-            print(f"    [warn] embed lookup failed for '{title[:50]}': {exc}")
-            embed_url = None
-
-        articles.append(
-            {
-                "source": "music",
-                "source_name": "Bandcamp Daily",
-                "title": title,
-                "url": article_url,
-                "snippet": snippet,
-                "embed_url": embed_url,
-            }
-        )
-        if len(articles) >= limit:
-            break
-
-    print(f"[Music] Bandcamp Daily → {len(articles)} article(s)")
-    return articles
+        raw = "".join(
+            b.text for b in msg.content if getattr(b, "type", "") == "text"
+        ).strip()
+        raw = re.sub(r"^```[a-z]*\n?|```$", "", raw, flags=re.MULTILINE)
+        keep = set(json.loads(raw).get("keep", []))
+    except Exception as exc:
+        print(f"  [warn] genre filter failed ({exc}) — keeping all candidates.")
+        return items
+    filtered = [it for i, it in enumerate(items) if i in keep]
+    return filtered or items  # never empty the section on an over-eager filter
 
 
 MUSIC_EVERGREEN: list[dict] = [
@@ -765,6 +677,8 @@ MUSIC_EVERGREEN: list[dict] = [
         "title": "Best of Sofar: Sessions Worth Revisiting",
         "url": "https://www.sofarsounds.com/blog",
         "snippet": "The archives were a bit quiet this morning, so I've pulled a timeless favorite for your coffee.",
+        "genre": "",
+        "cover_url": "",
         "embed_url": None,
     },
     {
@@ -773,22 +687,65 @@ MUSIC_EVERGREEN: list[dict] = [
         "title": "Bandcamp: Cozy — Music to Settle Into",
         "url": "https://bandcamp.com/tag/cozy",
         "snippet": "The archives were a bit quiet this morning, so I've pulled a timeless favorite for your coffee.",
+        "genre": "",
+        "cover_url": "",
         "embed_url": None,
     },
 ]
 
 
 def fetch_music_articles() -> list[dict]:
-    """Fetch MUSIC_ARTICLES_PER_SOURCE articles from each music source."""
-    print("[Music] Scraping music sources …")
+    """Extract real artists/albums from each music source via Claude web-fetch,
+    filter to the reader's genres, then enrich with an embed + cover image."""
+    print("[Music] Extracting real titles via Claude web-fetch …")
+    from curator import build_claude_client  # reuses CLAUDE_API_KEY client
+    client = build_claude_client()
     session = _scraper_session()
-    results  = _scrape_sofar_sounds(MUSIC_ARTICLES_PER_SOURCE, session)
-    results += _scrape_bandcamp_daily(MUSIC_ARTICLES_PER_SOURCE, session)
-    if not results:
-        print("[Music] Both scrapers returned 0 results — using evergreen fallback.")
-        results = MUSIC_EVERGREEN
-    print(f"[Music] Total articles collected: {len(results)}")
-    return results
+
+    candidates: list[dict] = []
+    for src in MUSIC_SOURCES:
+        try:
+            items = claude_fetch.fetch_music_items(
+                src["url"], src["name"], MUSIC_CANDIDATES_PER_SOURCE
+            )
+            print(f"  [{src['name']}] {len(items)} candidate(s)")
+            candidates.extend(items)
+        except Exception as exc:
+            print(f"  [warn] Claude fetch failed for {src['name']}: {exc}")
+
+    if not candidates:
+        print("[Music] No candidates from any source — using evergreen fallback.")
+        return MUSIC_EVERGREEN
+
+    # Filter to the reader's taste, then cap per-source.
+    kept = _filter_music_by_genre(candidates, client)
+    print(f"[Music] {len(kept)}/{len(candidates)} candidate(s) match genres.")
+
+    per_source: dict[str, int] = {}
+    selected: list[dict] = []
+    for art in kept:
+        name = art.get("source_name", "")
+        if per_source.get(name, 0) >= MUSIC_ARTICLES_PER_SOURCE:
+            continue
+        per_source[name] = per_source.get(name, 0) + 1
+        selected.append(art)
+
+    # Enrich with a distraction-free embed and a cover image (single fetch each).
+    for art in selected:
+        try:
+            embed_url, cover_url = _find_embed_and_cover(art["url"], session)
+        except Exception as exc:
+            print(f"    [warn] enrich failed for '{art.get('title','')[:50]}': {exc}")
+            embed_url, cover_url = None, None
+        art["embed_url"] = embed_url
+        if not art.get("cover_url"):
+            art["cover_url"] = cover_url or ""
+
+    if not selected:
+        print("[Music] Nothing selected after filtering — using evergreen fallback.")
+        return MUSIC_EVERGREEN
+    print(f"[Music] Total music items: {len(selected)}")
+    return selected
 
 
 # ---------------------------------------------------------------------------
