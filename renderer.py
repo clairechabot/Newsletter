@@ -694,13 +694,6 @@ def _render_mood_score(emerald_pct: int, amber_pct: int, crimson_pct: int) -> st
 ROWS_PER_SECTION = 5   # compact rows shown after the hero (rest -> full edition)
 
 _CSS_EXTRA = """
-/* ── Open full edition button ─────────────────────────────── */
-.edition-btn-wrap { text-align:center; margin:0 0 28px; }
-.edition-btn {
-  display:inline-block; background:#5D6D7E; color:#FFFFFF !important;
-  padding:12px 24px; border-radius:30px; font-weight:bold; font-size:14px;
-  text-decoration:none; border:1px solid #4A5763;
-}
 /* ── Compact stacked rows (full width, no horizontal scroll) ─ */
 .row { display:block; background:#FFFFFF; border:1px solid #E0E0E0;
   border-radius:10px; margin:8px 0; padding:10px 12px; overflow:hidden; }
@@ -1254,12 +1247,6 @@ def build_html(curated: dict) -> str:
         if FERN_LOGO_URL else ""
     )
 
-    edition_html = (
-        f'<div class="edition-btn-wrap">'
-        f'<a class="edition-btn" href="{EDITION_URL}" target="_blank">Open today\'s full edition →</a>'
-        f'</div>'
-        if EDITION_URL else ""
-    )
     cta_big_html = (
         f'<a class="cta-big" href="{EDITION_URL}" target="_blank">'
         f'Open the full edition — covers, carousel &amp; more →</a>'
@@ -1286,8 +1273,6 @@ def build_html(curated: dict) -> str:
     <div class="brand-separator"></div>
     <div class="stats">{stats_html}</div>
   </div>
-
-  {edition_html}
 
   {fern_greeting_html}
 
