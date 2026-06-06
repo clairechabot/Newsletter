@@ -912,6 +912,16 @@ def fetch_good_news_articles(
             results.append(article)
 
     print(f"[GoodNews] Collected {len(results)} article(s).")
+
+    # Enrich with cover images (og:image) from each article page
+    for article in results:
+        try:
+            _, cover = _find_embed_and_cover(article["url"], session)
+            article["cover_url"] = cover or ""
+        except Exception as exc:
+            print(f"  [warn] cover fetch failed for '{article.get('title','')[:50]}': {exc}")
+            article["cover_url"] = ""
+
     return results
 
 
@@ -953,6 +963,17 @@ def fetch_discovery(
             taken += 1
 
     print(f"[Discovery] Collected {len(results)} article(s).")
+
+    # Enrich with cover images (og:image) from each article page
+    session2 = _scraper_session()
+    for article in results:
+        try:
+            _, cover = _find_embed_and_cover(article["url"], session2)
+            article["cover_url"] = cover or ""
+        except Exception as exc:
+            print(f"  [warn] cover fetch failed for '{article.get('title','')[:50]}': {exc}")
+            article["cover_url"] = ""
+
     return results
 
 

@@ -625,7 +625,6 @@ def _render_fern_greeting(greeting: str, energy_line: str = "") -> str:
 
     return f"""
 <div class="fern-greeting">
-  <span class="fern-avatar">🌿</span>
   <div>
     <div class="fern-byline">A note from Fern</div>
     {energy_html}{greeting_html}
@@ -659,7 +658,7 @@ def _render_mood_score(emerald_pct: int, amber_pct: int, crimson_pct: int) -> st
     def _cell(pct: int, emoji: str, name: str, color: str) -> str:
         # Suppress label content if segment is too narrow to fit text
         inner = (
-            f'<span style="{_lbl}color:{color};">{emoji}&nbsp;{name}</span>'
+            f'<span style="{_lbl}color:{color};">{name}</span>'
             f'<span style="{_pct}">{pct}%</span>'
         ) if pct >= 10 else f'<span style="{_pct}text-align:center;">{pct}%</span>'
         return (
@@ -668,9 +667,9 @@ def _render_mood_score(emerald_pct: int, amber_pct: int, crimson_pct: int) -> st
         )
 
     cells = "".join([
-        _cell(emerald_pct, "🌿", "Tranquil", "#2d8a50"),
-        _cell(amber_pct,   "✦",  "Engaged",  "#9a6200"),
-        _cell(crimson_pct, "🌶", "Spicy",    "#B94040"),
+        _cell(emerald_pct, "", "Tranquil", "#2d8a50"),
+        _cell(amber_pct,   "", "Engaged",  "#9a6200"),
+        _cell(crimson_pct, "", "Spicy",    "#B94040"),
     ])
 
     return f"""
@@ -733,7 +732,6 @@ _CSS_EXTRA = """
 .teaser-row { display:block; background:#FFFFFF; border:1px solid #E0E0E0;
   border-radius:10px; margin:8px 0; padding:12px 14px; overflow:hidden;
   color:#2C3E50; }
-.teaser-emoji { float:left; font-size:22px; margin-right:12px; line-height:1.3; }
 .teaser-text { display:block; overflow:hidden; font-size:14px; }
 .teaser-name { font-weight:bold; }
 .teaser-count { color:#87A878; font-weight:bold; }
@@ -801,7 +799,7 @@ def _row(*, href: str, thumb: str, badge: str, title: str, sub: str) -> str:
     )
 
 
-def _teaser_row(emoji: str, name: str, count: int, unit: str, tops: list[str]) -> str:
+def _teaser_row(name: str, count: int, unit: str, tops: list[str]) -> str:
     """One compact 'what's inside' line linking to the full edition."""
     if count <= 0:
         return ""
@@ -810,7 +808,6 @@ def _teaser_row(emoji: str, name: str, count: int, unit: str, tops: list[str]) -
     href = _safe_url(EDITION_URL) if EDITION_URL else "#"
     return (
         f'<a class="teaser-row" href="{href}" target="_blank">'
-        f'<span class="teaser-emoji">{emoji}</span>'
         f'<span class="teaser-text"><span class="teaser-name">{name}</span> · '
         f'<span class="teaser-count">{count} {unit}</span>{top_html}</span></a>'
     )
@@ -821,13 +818,13 @@ def _render_teaser(themes, music, good_news, discovery) -> str:
     lives on the web edition (linked via the CTA) where interactivity works."""
     videos = [v for t in themes for v in t.get("items", [])]
     rows = "".join([
-        _teaser_row("🎵", "Morning Soundtrack", len(music), "tracks",
+        _teaser_row("Music", len(music), "tracks",
                     [m.get("title", "") for m in music[:2]]),
-        _teaser_row("▶", "Watch", len(videos), "videos",
+        _teaser_row("Videos", len(videos), "videos",
                     [v.get("title", "") for v in videos[:2]]),
-        _teaser_row("🌿", "Good News", len(good_news), "stories",
+        _teaser_row("Good News", len(good_news), "stories",
                     [g.get("title", "") for g in good_news[:2]]),
-        _teaser_row("📜", "Discovery", len(discovery), "finds",
+        _teaser_row("Discovery", len(discovery), "finds",
                     [d.get("title", "") for d in discovery[:2]]),
     ])
     return f'<div class="teaser">{rows}</div>' if rows else ""
@@ -887,9 +884,9 @@ def _render_youtube_card(video: dict) -> str:
     thumb_url   = _yt_thumbnail(video_id)
     embed_url   = _yt_embed(video_id)
 
-    yt_badge = '<span class="badge badge-youtube">▶ YouTube</span>'
+    yt_badge = '<span class="badge badge-youtube">YouTube</span>'
     wildcard_badge = (
-        '<span class="badge badge-wildcard">✦ Wildcard</span>'
+        '<span class="badge badge-wildcard">Wildcard</span>'
         if is_wildcard else ""
     )
 
@@ -955,7 +952,7 @@ def _render_music_embed(embed_url: str, title: str) -> str:
 def _music_badge(article: dict) -> str:
     source_name = _esc(article.get("source_name", "Music"))
     genre = _esc((article.get("genre") or "").strip())
-    return f"♪ {source_name}" + (f" · {genre}" if genre else "")
+    return source_name + (f" · {genre}" if genre else "")
 
 
 def _music_hero(article: dict) -> str:
@@ -994,7 +991,7 @@ def _render_morning_soundtrack(articles: list[dict]) -> str:
     return _render_browsable_section(
         articles,
         section_class="soundtrack-section",
-        heading="🎵 The Morning Soundtrack",
+        heading="The Morning Soundtrack",
         tagline="Fresh picks from the music world to set the tone for your day.",
         hero_fn=_music_hero,
         mini_fn=_music_mini,
@@ -1013,7 +1010,7 @@ def _render_good_news_card(article: dict) -> str:
     title  = _e(raw_title)
     reason = _e(raw_reason)
 
-    source_badge = '<span class="badge badge-goodnews">🌿 Good News</span>'
+    source_badge = '<span class="badge badge-goodnews">Good News</span>'
 
     return f"""
 <div class="card">
@@ -1035,8 +1032,8 @@ def _render_good_news_card(article: dict) -> str:
 def _good_news_hero(article: dict) -> str:
     return _hero_card(
         href=article.get("url", "#"),
-        cover=_cover_html("", "🌿", hero=True),
-        badge="🌿 Good News",
+        cover=_cover_html(article.get("cover_url", ""), "", hero=True),
+        badge="Good News",
         title=_esc(article.get("title", "(no title)")),
         note=_esc(article.get("reason", "")),
     )
@@ -1045,8 +1042,8 @@ def _good_news_hero(article: dict) -> str:
 def _good_news_mini(article: dict) -> str:
     return _row(
         href=article.get("url", "#"),
-        thumb=_cover_html("", "🌿"),
-        badge=f"🌿 {_esc(article.get('source_name', 'Good News'))}",
+        thumb=_cover_html(article.get("cover_url", ""), ""),
+        badge=_esc(article.get('source_name', 'Good News')),
         title=_esc(article.get("title", "(no title)")),
         sub=_esc(_clip(article.get("reason", ""))),
     )
@@ -1056,7 +1053,7 @@ def _render_global_silver_linings(articles: list[dict]) -> str:
     return _render_browsable_section(
         articles,
         section_class="goodnews-section",
-        heading="🌿 Global Silver Linings",
+        heading="Global Silver Linings",
         tagline="Stories that remind you the world is still full of good.",
         hero_fn=_good_news_hero,
         mini_fn=_good_news_mini,
@@ -1075,11 +1072,11 @@ def _render_discovery_card(article: dict) -> str:
     category   = article.get("category", "history")
 
     if source == "British Museum":
-        badge = '<span class="badge badge-museum">🏛 British Museum Archives</span>'
+        badge = '<span class="badge badge-museum">British Museum</span>'
     elif category == "science":
-        badge = '<span class="badge badge-lab">🔬 Science</span>'
+        badge = '<span class="badge badge-lab">Science</span>'
     else:
-        badge = '<span class="badge badge-archives">📜 Archives</span>'
+        badge = '<span class="badge badge-archives">Archives</span>'
 
     return f"""
 <div class="card discovery-card">
@@ -1124,10 +1121,10 @@ def _render_from_the_curators_desk(articles: list[dict]) -> str:
     return _render_browsable_section(
         items,
         section_class="goodnews-section",
-        heading="🏛 From the Curator's Desk",
+        heading="From the Curator's Desk",
         tagline="Dispatches from one of the world's great collections.",
-        hero_fn=lambda a: _discovery_hero(a, "🏛", "🏛 British Museum"),
-        mini_fn=lambda a: _discovery_mini(a, "🏛", "🏛 British Museum"),
+        hero_fn=lambda a: _discovery_hero(a, "", "British Museum"),
+        mini_fn=lambda a: _discovery_mini(a, "", "British Museum"),
     )
 
 
@@ -1136,10 +1133,10 @@ def _render_from_the_archives(articles: list[dict]) -> str:
     return _render_browsable_section(
         items,
         section_class="goodnews-section",
-        heading="📜 From the Archives",
+        heading="From the Archives",
         tagline="Forgotten places, hidden histories, and mysteries that linger.",
-        hero_fn=lambda a: _discovery_hero(a, "📜", "📜 Archives"),
-        mini_fn=lambda a: _discovery_mini(a, "📜", "📜 Archives"),
+        hero_fn=lambda a: _discovery_hero(a, "", "Archives"),
+        mini_fn=lambda a: _discovery_mini(a, "", "Archives"),
     )
 
 
@@ -1148,15 +1145,15 @@ def _render_the_laboratory(articles: list[dict]) -> str:
     return _render_browsable_section(
         items,
         section_class="goodnews-section",
-        heading="🔬 The Laboratory",
+        heading="The Laboratory",
         tagline="The science stories that rewire how you see the world.",
-        hero_fn=lambda a: _discovery_hero(a, "🔬", "🔬 Science"),
-        mini_fn=lambda a: _discovery_mini(a, "🔬", "🔬 Science"),
+        hero_fn=lambda a: _discovery_hero(a, "", "Science"),
+        mini_fn=lambda a: _discovery_mini(a, "", "Science"),
     )
 
 
 def _yt_badge_text(video: dict) -> str:
-    return "✦ Wildcard" if video.get("is_wildcard") else "▶ YouTube"
+    return "Wildcard" if video.get("is_wildcard") else "YouTube"
 
 
 def _yt_note(video: dict) -> str:
@@ -1186,14 +1183,12 @@ def _youtube_mini(video: dict) -> str:
 def _render_theme(theme: dict, accent: str) -> str:
     name    = theme.get("name", "Untitled")
     tagline = theme.get("tagline", "")
-    emoji   = theme.get("emoji", "")
     items   = theme.get("items", [])
-    heading = f"{emoji} {name}" if emoji else name
 
     return _render_browsable_section(
         items,
         section_class="theme-section",
-        heading=heading,
+        heading=name,
         tagline=tagline,
         hero_fn=_youtube_hero,
         mini_fn=_youtube_mini,
@@ -1217,21 +1212,21 @@ def build_html(curated: dict) -> str:
         date_str = fetched_at
 
     music_pill = (
-        f'<span class="stat-pill">♪ {len(morning_soundtrack)} Music</span>'
+        f'<span class="stat-pill">{len(morning_soundtrack)} Music</span>'
         if morning_soundtrack else ""
     )
     goodnews_pill = (
-        f'<span class="stat-pill">🌿 {len(global_silver_linings)} Good News</span>'
+        f'<span class="stat-pill">{len(global_silver_linings)} Good News</span>'
         if global_silver_linings else ""
     )
     discovery_count = len(discovery_articles)
     discovery_pill = (
-        f'<span class="stat-pill">📜 {discovery_count} Discoveries</span>'
+        f'<span class="stat-pill">{discovery_count} Discoveries</span>'
         if discovery_count else ""
     )
     stats_html = "".join([
-        f'<span class="stat-pill">▶ {summary.get("youtube_videos", 0)} Videos</span>',
-        f'<span class="stat-pill">🗂 {summary.get("themes", len(themes))} Themes</span>',
+        f'<span class="stat-pill">{summary.get("youtube_videos", 0)} Videos</span>',
+        f'<span class="stat-pill">{summary.get("themes", len(themes))} Themes</span>',
         music_pill,
         goodnews_pill,
         discovery_pill,
@@ -1261,13 +1256,13 @@ def build_html(curated: dict) -> str:
 
     edition_html = (
         f'<div class="edition-btn-wrap">'
-        f'<a class="edition-btn" href="{EDITION_URL}" target="_blank">▶ Open today\'s full edition →</a>'
+        f'<a class="edition-btn" href="{EDITION_URL}" target="_blank">Open today\'s full edition →</a>'
         f'</div>'
         if EDITION_URL else ""
     )
     cta_big_html = (
         f'<a class="cta-big" href="{EDITION_URL}" target="_blank">'
-        f'▶ Open the full edition — covers, carousel &amp; more →</a>'
+        f'Open the full edition — covers, carousel &amp; more →</a>'
         if EDITION_URL else ""
     )
 
@@ -1285,7 +1280,6 @@ def build_html(curated: dict) -> str:
 
   <div class="masthead">
     {logo_html}
-    <div class="brand-logo">🍞🌿🐚</div>
     <h1 class="brand-title">The Curated Canopy</h1>
     <p class="brand-tagline">Your 12-hour curation of Human Stories, Good News, and Nature.</p>
     <div class="brand-date">{date_str}</div>
