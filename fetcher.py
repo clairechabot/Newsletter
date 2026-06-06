@@ -1068,12 +1068,8 @@ def main() -> dict:
 
     youtube_results = channel_videos + ([trending_video] if trending_video else [])
 
-    # --- Music (AM only) ---
-    music_articles: list[dict] = []
-    if is_am_email:
-        music_articles = fetch_music_articles()
-    else:
-        print("[Music] PM email — skipping music section.")
+    # --- Music (every run) ---
+    music_articles: list[dict] = fetch_music_articles()
 
     # --- Good News (every run) ---
     good_news_articles = fetch_good_news_articles(seen_all_urls, seen_good_news_urls)
@@ -1117,7 +1113,6 @@ def main() -> dict:
     summary = curated["audit_summary"]
     music_line = (
         f" | Music: {summary.get('music_articles', 0)} articles"
-        if is_am_email else ""
     )
     print(
         f"\n[done] Curated data → {curated_file}\n"
