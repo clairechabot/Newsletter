@@ -24,7 +24,7 @@ import re
 import random
 from langdetect import detect, LangDetectException
 import xml.etree.ElementTree as ET
-from urllib.parse import urlparse
+from urllib.parse import urlparse, urljoin
 
 import requests
 from bs4 import BeautifulSoup
@@ -694,31 +694,68 @@ MUSIC_EVERGREEN: list[dict] = [
 ]
 
 
+def _scrape_links(page_url: str, session: requests.Session) -> list[tuple[str, str]]:
+    """Fetch a page via the hardened helper and return de-duplicated
+    (anchor_text, absolute_url) pairs worth showing to Claude."""
+    parsed = urlparse(page_url)
+    referer = f"{parsed.scheme}://{parsed.netloc}/"
+    resp = _fetch_with_retry(page_url, session, referer=referer)
+    if resp is None:
+        return []
+    soup = BeautifulSoup(resp.text, "html.parser")
+    # Obvious non-article paths to skip so real posts aren't crowded out.
+    deny = (
+        "/login", "/subscribe", "/signup", "/account", "/products", "/shop",
+        "/newsletter", "/category/", "/categories", "/tag/", "/tags",
+        "/about", "/contact", "/privacy", "/terms", "/advertise", "/jobs",
+        "/feed", "/rss", "/search",
+    )
+    seen: set[str] = set()
+    links: list[tuple[str, str]] = []
+    for a in soup.find_all("a", href=True):
+        text = a.get_text(" ", strip=True)
+        href = a["href"].strip()
+        if len(text) < 5 or href.startswith(("#", "javascript:", "mailto:")):
+            continue
+        absu = urljoin(page_url, href).split("#")[0]
+        if absu in seen or any(frag in absu.lower() for frag in deny):
+            continue
+        seen.add(absu)
+        links.append((text[:120], absu))
+        if len(links) >= 80:
+            break
+    return links
+
+
 def fetch_music_articles() -> list[dict]:
-    """Extract real artists/albums from each music source via Claude web-fetch,
-    filter to the reader's genres, then enrich with an embed + cover image."""
-    print("[Music] Extracting real titles via Claude web-fetch …")
-    from curator import build_claude_client  # reuses CLAUDE_API_KEY client
-    client = build_claude_client()
+    """Extract real artists/albums from each music source (hardened fetch +
+    Claude link selection), filter to the reader's genres, then enrich with an
+    embed + cover image."""
+    print("[Music] Extracting real titles (hardened fetch + Claude) …")
     session = _scraper_session()
 
     candidates: list[dict] = []
     for src in MUSIC_SOURCES:
         try:
-            items = claude_fetch.fetch_music_items(
-                src["url"], src["name"], MUSIC_CANDIDATES_PER_SOURCE
+            links = _scrape_links(src["url"], session)
+            if not links:
+                print(f"  [{src['name']}] page fetch returned no links — skipping")
+                continue
+            items = claude_fetch.extract_music_from_links(
+                src["name"], src["url"], links, MUSIC_CANDIDATES_PER_SOURCE
             )
-            print(f"  [{src['name']}] {len(items)} candidate(s)")
+            print(f"  [{src['name']}] {len(items)} candidate(s) from {len(links)} links")
             candidates.extend(items)
         except Exception as exc:
-            print(f"  [warn] Claude fetch failed for {src['name']}: {exc}")
+            print(f"  [warn] music extraction failed for {src['name']}: {exc}")
 
     if not candidates:
         print("[Music] No candidates from any source — using evergreen fallback.")
         return MUSIC_EVERGREEN
 
     # Filter to the reader's taste, then cap per-source.
-    kept = _filter_music_by_genre(candidates, client)
+    from curator import build_claude_client  # reuses CLAUDE_API_KEY client
+    kept = _filter_music_by_genre(candidates, build_claude_client())
     print(f"[Music] {len(kept)}/{len(candidates)} candidate(s) match genres.")
 
     per_source: dict[str, int] = {}
@@ -875,6 +912,16 @@ def fetch_good_news_articles(
             results.append(article)
 
     print(f"[GoodNews] Collected {len(results)} article(s).")
+
+    # Enrich with cover images (og:image) from each article page
+    for article in results:
+        try:
+            _, cover = _find_embed_and_cover(article["url"], session)
+            article["cover_url"] = cover or ""
+        except Exception as exc:
+            print(f"  [warn] cover fetch failed for '{article.get('title','')[:50]}': {exc}")
+            article["cover_url"] = ""
+
     return results
 
 
@@ -916,6 +963,17 @@ def fetch_discovery(
             taken += 1
 
     print(f"[Discovery] Collected {len(results)} article(s).")
+
+    # Enrich with cover images (og:image) from each article page
+    session2 = _scraper_session()
+    for article in results:
+        try:
+            _, cover = _find_embed_and_cover(article["url"], session2)
+            article["cover_url"] = cover or ""
+        except Exception as exc:
+            print(f"  [warn] cover fetch failed for '{article.get('title','')[:50]}': {exc}")
+            article["cover_url"] = ""
+
     return results
 
 
