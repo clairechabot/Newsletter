@@ -118,8 +118,8 @@ _PAGE = """<!DOCTYPE html>
     font-size:54px; background:linear-gradient(135deg,#EFE9DD,#E3EDE0); }}
   .body {{ padding:12px 14px 16px; }}
   .badge {{ font-size:10px; color:#87A878; font-weight:bold; text-transform:uppercase; letter-spacing:.4px; }}
-  .title {{ font-weight:bold; font-size:15px; margin:5px 0; line-height:1.35; }}
-  .note {{ font-size:13px; color:#7A8794; }}
+  .title {{ font-weight:bold; font-size:16px; margin:5px 0; line-height:1.35; }}
+  .note {{ font-size:14px; color:#7A8794; line-height:1.5; }}
   .empty {{ text-align:center; color:#A9A39A; padding:40px 0; }}
   footer {{ text-align:center; color:#A9A39A; font-size:12px; margin-top:40px; }}
 </style>

@@ -23,7 +23,7 @@ from zoneinfo import ZoneInfo
 import re
 import random
 from langdetect import detect, LangDetectException
-import xml.etree.ElementTree as ET
+import defusedxml.ElementTree as ET
 from urllib.parse import urlparse, urljoin
 
 import requests
@@ -134,15 +134,15 @@ WILDCARD_CATEGORIES = [
     },
 ]
 
-# Music sources — real artists/albums extracted via Claude web-fetch, AM email only
+# Music sources — RSS feeds preferred (never blocked); scrape fallback where no feed exists.
 MUSIC_SOURCES: list[dict] = [
-    {"name": "Sofar Sounds",  "url": "https://www.sofarsounds.com/blog"},
-    {"name": "Bandcamp Daily", "url": "https://daily.bandcamp.com/"},
-    {"name": "NPR Music",      "url": "https://www.npr.org/music/"},
-    {"name": "Pitchfork",      "url": "https://pitchfork.com/best/"},
-    {"name": "Stereogum",      "url": "https://www.stereogum.com/"},
-    {"name": "JazzTimes",      "url": "https://jazztimes.com/"},
-    {"name": "No Depression",  "url": "https://www.nodepression.com/"},
+    {"name": "NPR Music",      "rss": "https://feeds.npr.org/1039/rss.xml"},
+    {"name": "Stereogum",      "rss": "https://www.stereogum.com/feed/"},
+    {"name": "No Depression",  "rss": "https://www.nodepression.com/feed/"},
+    {"name": "Pitchfork",      "rss": "https://pitchfork.com/rss/news/feed.xml"},
+    {"name": "Bandcamp Daily", "rss": "https://daily.bandcamp.com/feed"},
+    {"name": "JazzTimes",      "rss": "https://jazztimes.com/feed/"},
+    {"name": "Sofar Sounds",   "url": "https://www.sofarsounds.com/blog"},  # no RSS — scrape
 ]
 MUSIC_ARTICLES_PER_SOURCE = 3          # post-filter cap per source
 MUSIC_CANDIDATES_PER_SOURCE = 8        # pull this many, then genre-filter down
@@ -727,24 +727,70 @@ def _scrape_links(page_url: str, session: requests.Session) -> list[tuple[str, s
     return links
 
 
+def _rss_music_items(src: dict, n: int, session: requests.Session) -> list[dict]:
+    """Parse an RSS feed and return up to n candidate music items."""
+    resp = _fetch_with_retry(src["rss"], session, referer="https://www.google.com/")
+    if resp is None:
+        return []
+    try:
+        root = ET.fromstring(resp.content)
+    except ET.ParseError as exc:
+        print(f"  [{src['name']}] RSS parse error: {exc}")
+        return []
+    items = []
+    for item in root.findall(".//item")[:n]:
+        title = (item.findtext("title") or "").strip()
+        link  = (item.findtext("link") or "").strip()
+        desc  = re.sub(r"<[^>]+>", "", item.findtext("description") or "").strip()[:300]
+        if not title or not link:
+            continue
+        # Try to grab cover from enclosure or media:thumbnail/content
+        cover = ""
+        enc = item.find("enclosure")
+        if enc is not None and (enc.get("type", "").startswith("image") or enc.get("url", "").endswith((".jpg", ".png", ".webp"))):
+            cover = enc.get("url", "")
+        if not cover:
+            for ns_prefix in ("media", "itunes"):
+                thumb = item.find(f"{{{ns_prefix}}}thumbnail") or item.find(f"{{{ns_prefix}}}image")
+                if thumb is not None:
+                    cover = thumb.get("url", "") or (thumb.text or "")
+                    break
+        items.append({
+            "source":      "music",
+            "source_name": src["name"],
+            "title":       title,
+            "snippet":     desc,
+            "url":         link,
+            "genre":       "",
+            "vibe_check":  "",
+            "cover_url":   cover,
+            "embed_url":   None,
+        })
+    return items
+
+
 def fetch_music_articles() -> list[dict]:
-    """Extract real artists/albums from each music source (hardened fetch +
-    Claude link selection), filter to the reader's genres, then enrich with an
+    """Extract real artists/albums from each music source (RSS preferred,
+    Claude scrape fallback), filter to the reader's genres, then enrich with an
     embed + cover image."""
-    print("[Music] Extracting real titles (hardened fetch + Claude) …")
+    print("[Music] Fetching music sources …")
     session = _scraper_session()
 
     candidates: list[dict] = []
     for src in MUSIC_SOURCES:
         try:
-            links = _scrape_links(src["url"], session)
-            if not links:
-                print(f"  [{src['name']}] page fetch returned no links — skipping")
-                continue
-            items = claude_fetch.extract_music_from_links(
-                src["name"], src["url"], links, MUSIC_CANDIDATES_PER_SOURCE
-            )
-            print(f"  [{src['name']}] {len(items)} candidate(s) from {len(links)} links")
+            if "rss" in src:
+                items = _rss_music_items(src, MUSIC_CANDIDATES_PER_SOURCE, session)
+                print(f"  [{src['name']}] {len(items)} RSS item(s)")
+            else:
+                links = _scrape_links(src["url"], session)
+                if not links:
+                    print(f"  [{src['name']}] page fetch returned no links — skipping")
+                    continue
+                items = claude_fetch.extract_music_from_links(
+                    src["name"], src["url"], links, MUSIC_CANDIDATES_PER_SOURCE
+                )
+                print(f"  [{src['name']}] {len(items)} candidate(s) from {len(links)} links")
             candidates.extend(items)
         except Exception as exc:
             print(f"  [warn] music extraction failed for {src['name']}: {exc}")

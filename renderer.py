@@ -100,7 +100,7 @@ a:hover { text-decoration: underline; }
 }
 .brand-tagline {
   font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-  font-size: 14px;
+  font-size: 15px;
   color: #666666;
   margin: 6px 0 0;
 }
@@ -194,14 +194,14 @@ details[open] > summary::before {
 
 .summary-body { flex: 1; min-width: 0; }
 .summary-title {
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 600;
   font-family: Georgia, serif;
   color: #2C3E50;
   line-height: 1.4;
 }
 .summary-desc {
-  font-size: 13px;
+  font-size: 14px;
   color: #6B7280;
   margin-top: 3px;
   line-height: 1.6;
@@ -226,7 +226,7 @@ details[open] > summary::before {
   border-top: 1px solid #EEEEEE;
 }
 .post-text {
-  font-size: 13px;
+  font-size: 14px;
   color: #374151;
   margin-top: 0;
   white-space: pre-wrap;
@@ -493,11 +493,10 @@ details[open] > summary::before {
   margin-bottom: 4px;
 }
 .fern-greeting p {
-  font-size: 14px;
+  font-size: 15px;
   color: #374151;
   line-height: 1.65;
   margin: 0;
-  font-style: italic;
 }
 
 /* ── Energy Spectrum Bar (inline-only — kept for browser view) ── */
@@ -705,8 +704,8 @@ _CSS_EXTRA = """
 .row-text { display:block; overflow:hidden; }
 .row-badge { font-size:10px; color:#87A878; font-weight:bold;
   text-transform:uppercase; letter-spacing:.3px; }
-.row-title { display:block; font-weight:bold; font-size:14px; color:#2C3E50; line-height:1.3; }
-.row-sub { display:block; font-size:12px; color:#7A8794; line-height:1.4; margin-top:2px; }
+.row-title { display:block; font-weight:bold; font-size:15px; color:#2C3E50; line-height:1.3; }
+.row-sub { display:block; font-size:13px; color:#7A8794; line-height:1.4; margin-top:2px; }
 .more-link { display:block; text-align:center; font-size:12px; color:#7A8794;
   margin:8px 0 2px; }
 /* ── Hero card (featured first item) ──────────────────────── */
