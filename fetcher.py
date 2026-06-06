@@ -869,8 +869,8 @@ DISCOVERY_FEEDS = [
         "category":    "science",
     },
 ]
-DISCOVERY_CANDIDATES_PER_SOURCE = 8
-DISCOVERY_ARTICLES_PER_SOURCE   = 2
+DISCOVERY_CANDIDATES_PER_SOURCE = 15
+DISCOVERY_ARTICLES_PER_SOURCE   = 4
 
 _MYSTERY_KEYWORDS = {
     "mystery", "unknown", "discovery", "ancient", "secret",
