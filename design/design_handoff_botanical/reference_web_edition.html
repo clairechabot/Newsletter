@@ -1,123 +1,4 @@
-"""
-Newsletter — Companion "full edition" web page (GitHub Pages)
-------------------------------------------------------------
-Reads curated_data.json -> writes docs/index.html, a self-contained interactive
-page the email links out to: a Botanical-Editorial magazine with a masthead,
-Fern's note, a hero feature, sticky section tabs, a music genre filter, and
-four browsable sections rendered with large imagery.
-
-Run standalone:  python webpage.py
-Or call write_edition(curated) from renderer.py.
-"""
-from __future__ import annotations
-
-import json
-import datetime
-from pathlib import Path
-from zoneinfo import ZoneInfo
-
-BASE_DIR     = Path(__file__).parent
-CURATED_FILE = BASE_DIR / "curated_data.json"
-DOCS_DIR     = BASE_DIR / "docs"
-EDITION_HTML = DOCS_DIR / "index.html"
-
-
-def _dedash(s: str) -> str:
-    """Remove em/en dashes from Fern's prose (reads less machine-made)."""
-    if not s:
-        return s
-    s = s.replace(" — ", ", ").replace(" – ", ", ")
-    s = s.replace("\u2014", ", ").replace("\u2013", "-")
-    while ", ," in s:
-        s = s.replace(", ,", ",")
-    return s.strip()
-
-
-# Running issue number, like a real periodical ("No. 248").
-# Set this to the date of your VERY FIRST edition. Editions go out twice a day,
-# so the number climbs by 2 each day on its own — no manual tracking needed.
-CANOPY_LAUNCH = datetime.date(2025, 1, 1)
-
-# Where Fern's garden lives — shown in the "From the Garden" eyebrow.
-import os
-GARDEN_LOCALE = os.environ.get("GARDEN_LOCALE", "Zürich")
-
-
-def _edition_no(dt: datetime.datetime, is_am: bool) -> int:
-    days = (dt.date() - CANOPY_LAUNCH).days
-    return max(1, days * 2 + (0 if is_am else 1) + 1)
-
-
-def _payload(curated: dict) -> dict:
-    """Flatten curated data into the shape the page's JS consumes."""
-    videos: list[dict] = []
-    for theme in curated.get("themes", []):
-        for v in theme.get("items", []):
-            videos.append({
-                "title":    v.get("title", ""),
-                "note":     _dedash(v.get("why_watch", v.get("description", ""))),
-                "video_id": v.get("video_id", ""),
-                "channel":  v.get("channel_title", ""),
-                "wild":     bool(v.get("is_wildcard", False)),
-            })
-
-    music = [{
-        "title":  m.get("title", ""),
-        "note":   _dedash(m.get("vibe_check") or (m.get("snippet") or "")),
-        "url":    m.get("embed_url") or m.get("url", "#"),
-        "cover":  m.get("cover_url", ""),
-        "genre":  (m.get("genre") or "").strip(),
-        "source": m.get("source_name", ""),
-    } for m in curated.get("morning_soundtrack", [])]
-
-    good_news = [{
-        "title":  g.get("title", ""),
-        "note":   _dedash(g.get("reason", "")),
-        "url":    g.get("url", "#"),
-        "cover":  g.get("cover_url", ""),
-        "source": g.get("source_name", ""),
-    } for g in curated.get("global_silver_linings", [])]
-
-    discovery = [{
-        "title":  d.get("title", ""),
-        "note":   _dedash(d.get("ferns_note") or d.get("snippet", "")),
-        "url":    d.get("url", "#"),
-        "cover":  d.get("cover_url", ""),
-        "source": d.get("source_name", ""),
-        "cat":    (d.get("category", "history") or "history").title(),
-    } for d in curated.get("discovery_articles", [])]
-
-    fr = curated.get("featured_read") or {}
-    featured_read = {
-        "title":  fr.get("title", ""),
-        "note":   _dedash(fr.get("blurb") or fr.get("snippet", "")),
-        "url":    fr.get("url", "#"),
-        "cover":  fr.get("cover_url", ""),
-        "source": fr.get("source_name", ""),
-    } if fr.get("title") else None
-
-    g = curated.get("garden_note") or {}
-    garden = {
-        "note":        _dedash(g.get("note", "")),
-        "in_season":   [s for s in (g.get("in_season") or []) if s],
-        "sky_tonight": _dedash(g.get("sky_tonight", "")),
-        "moon_label":  g.get("moon_label", ""),
-    } if g.get("note") else None
-
-    return {
-        "is_am":    curated.get("is_am_email", False),
-        "greeting": _dedash(curated.get("fern_data", {}).get("greeting", "")),
-        "garden":    garden,
-        "featured_read": featured_read,
-        "music":     music,
-        "videos":    videos,
-        "good_news": good_news,
-        "discovery": discovery,
-    }
-
-
-# Token-replaced (NOT str.format) so CSS/JS braces stay single.
-_PAGE = """<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -253,7 +134,7 @@ _PAGE = """<!DOCTYPE html>
 </head>
 <body>
   <header class="cover">
-    <div class="eyebrow">__EDITION_LABEL__ &nbsp;&middot;&nbsp; __ISSUE____DATE_STR__</div>
+    <div class="eyebrow">Morning Edition &nbsp;&middot;&nbsp; No. 1047 &middot; Mon, June 8, 2026</div>
     <h1>The Curated Canopy</h1>
     <div class="tagline">Human stories, good news &amp; the natural world</div>
     <div class="meta" id="meta"></div>
@@ -268,7 +149,7 @@ _PAGE = """<!DOCTYPE html>
   </section>
 
   <section class="almanac" id="almanac" style="display:none;">
-    <div class="eyebrow">From the Garden &middot; __GARDEN_LOCALE__</div>
+    <div class="eyebrow">From the Garden &middot; Zürich</div>
     <p id="garden-note"></p>
     <div class="almanac-foot">
       <div class="chips" id="garden-season"></div>
@@ -321,7 +202,7 @@ _PAGE = """<!DOCTYPE html>
     <div class="links"><a href="#">About</a><a href="#">The Archive</a><a href="#">Preferences</a><a href="#">Unsubscribe</a></div>
   </footer>
 
-<script id="data" type="application/json">__DATA_JSON__</script>
+<script id="data" type="application/json">{"is_am":true,"greeting":"It's a slow, green sort of morning in the archive. I've gathered the quiet corners today: patient craft, a little birdsong, and good news drifting up from the coral. Pour something warm; there's no hurry here.","garden":{"note":"The elderflower is frothing white along the Sihl, and the lake has finally warmed enough for an evening swim. Leave the windows open tonight; the linden trees are about to scent the whole city.","in_season":["Elderflower","Strawberries","Peonies"],"sky_tonight":"The Summer Triangle, rising in the east","moon_label":"Waxing Gibbous"},"featured_read":{"title":"The quiet mathematics of how a forest shares its light","note":"A physicist and a botanist spend a year under the same canopy, and come away with the same conclusion about patience.","url":"#","cover":"","source":"Emergence Magazine"},"music":[{"title":"On the Slow Return of Ambient Piano","note":"A lovely long read on why we're all reaching for stillness right now.","url":"#","cover":"","genre":"","source":"Bandcamp Daily"},{"title":"Aoife O'Donovan's new chapter","note":"Strings that ache and lift in the same breath.","url":"#","cover":"","genre":"","source":"NPR Music"},{"title":"The harpist rewriting jazz","note":"Nala Sinephro and the slow tide of harp, breath and synth.","url":"#","cover":"","genre":"","source":"The Quietus"}],"videos":[{"title":"How a Japanese joiner builds without a single nail","note":"Twenty quiet minutes of pure, meditative craft.","video_id":"","channel":"Woodcraft","wild":false},{"title":"The last glassblowers of Murano","note":"A dying trade, captured with extraordinary patience.","video_id":"","channel":"Process","wild":false},{"title":"Foraging the hedgerows of Devon","note":"An hour outside, no narration, just the walk.","video_id":"","channel":"Field Notes","wild":false},{"title":"Why old bookshops smell so good","note":"A small chemistry lesson with a soul.","video_id":"","channel":"Curio","wild":true}],"good_news":[{"title":"Jaguars return to a reforested Costa Rican valley","note":"Thirty years of patience, and the cats came back.","url":"#","cover":"","source":"Reasons to be Cheerful"},{"title":"Lisbon's new library stays open all night","note":"A city deciding that warm, quiet rooms are a public good.","url":"#","cover":"","source":"Positive News"}],"discovery":[{"title":"The hidden ice houses beneath London","note":"Before refrigeration, the city kept its cold underground.","url":"#","cover":"","source":"Atlas Obscura","cat":"Archives"},{"title":"Trees talk through fungal networks","note":"The 'wood wide web' gets its closest study yet.","url":"#","cover":"","source":"Quanta","cat":"Science"},{"title":"A 3,000-year-old recipe, finally translated","note":"Dinner, as it was served in Babylon.","url":"#","cover":"","source":"British Museum","cat":"Museum"},{"title":"The town that moved itself, building by building","note":"When the lake rose, the town simply walked uphill.","url":"#","cover":"","source":"Atlas Obscura","cat":"Archives"}]}</script>
 <script>
 const DATA = JSON.parse(document.getElementById('data').textContent);
 const $ = (s,r=document)=>r.querySelector(s);
@@ -446,54 +327,4 @@ const sentinel=tabbar.offsetTop;
 window.addEventListener('scroll',()=>{tabbar.classList.toggle('stuck',window.scrollY>sentinel+4);},{passive:true});
 </script>
 </body>
-</html>"""
-
-
-def build_edition(curated: dict) -> str:
-    fetched_at = curated.get("fetched_at", "")
-    is_am = curated.get("is_am_email", False)
-    edition_label = "Morning Edition" if is_am else "Evening Edition"
-    try:
-        dt = datetime.datetime.fromisoformat(fetched_at).astimezone(ZoneInfo("Europe/Zurich"))
-        date_str = f"{dt.strftime('%a, %B')} {dt.day}, {dt.strftime('%Y')}"
-        issue = f"No. {_edition_no(dt, is_am)} &nbsp;&middot;&nbsp; "
-    except Exception:
-        date_str = fetched_at or ""
-        issue = ""
-
-    # Harden JSON for embedding in an HTML <script> element.
-    data_json = (
-        json.dumps(_payload(curated))
-        .replace("<", "\\u003c")
-        .replace(">", "\\u003e")
-        .replace("&", "\\u0026")
-        .replace("\u2028", "\\u2028")
-        .replace("\u2029", "\\u2029")
-    )
-
-    return (
-        _PAGE
-        .replace("__EDITION_LABEL__", edition_label)
-        .replace("__ISSUE__", issue)
-        .replace("__DATE_STR__", date_str)
-        .replace("__GARDEN_LOCALE__", GARDEN_LOCALE)
-        .replace("__DATA_JSON__", data_json)
-    )
-
-
-def write_edition(curated: dict) -> Path:
-    DOCS_DIR.mkdir(exist_ok=True)
-    EDITION_HTML.write_text(build_edition(curated), encoding="utf-8")
-    return EDITION_HTML
-
-
-def main() -> None:
-    if not CURATED_FILE.exists():
-        raise FileNotFoundError(f"{CURATED_FILE} not found. Run fetcher.py first.")
-    curated = json.loads(CURATED_FILE.read_text(encoding="utf-8"))
-    path = write_edition(curated)
-    print(f"[webpage] Full edition written -> {path}")
-
-
-if __name__ == "__main__":
-    main()
+</html>
