@@ -4,165 +4,276 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>The Curated Canopy — Full Edition</title>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
-  * { box-sizing:border-box; margin:0; padding:0; }
-  body { font-family:'Segoe UI',Roboto,Helvetica,Arial,sans-serif; background:#F9F7F2;
-    color:#2C3E50; line-height:1.6; }
-  .wrap { max-width:1000px; margin:0 auto; padding:28px 18px 64px; }
-  header { text-align:center; margin-bottom:24px; }
-  .brand { font-size:40px; }
-  h1 { font-family:'Playfair Display',Georgia,serif; font-size:30px; color:#5D6D7E; margin:6px 0; }
-  .greeting { color:#7A8794; font-style:italic; max-width:640px; margin:8px auto 0; }
-  .date { color:#A9A39A; font-size:13px; margin-top:6px; }
-  /* Tabs */
-  .tabs { display:flex; flex-wrap:wrap; gap:8px; justify-content:center; margin:24px 0; }
-  .tab { padding:9px 18px; border-radius:24px; border:1px solid #D9D3C7; background:#fff;
-    cursor:pointer; font-weight:bold; font-size:14px; color:#5D6D7E; }
-  .tab.active { background:#5D6D7E; color:#fff; border-color:#4A5763; }
-  .panel { display:none; }
-  .panel.active { display:block; }
-  /* Genre filter */
-  .genres { display:flex; flex-wrap:wrap; gap:6px; justify-content:center; margin-bottom:18px; }
-  .genre { padding:5px 12px; border-radius:18px; border:1px solid #D9D3C7; background:#fff;
-    cursor:pointer; font-size:12px; color:#7A8794; }
-  .genre.active { background:#87A878; color:#fff; border-color:#6E9162; }
-  /* Carousel */
-  .carousel { position:relative; }
-  .track { display:flex; gap:16px; overflow-x:auto; scroll-behavior:smooth;
-    -webkit-overflow-scrolling:touch; padding:6px 2px 16px; scroll-snap-type:x mandatory; }
-  .arrow { position:absolute; top:38%; transform:translateY(-50%); z-index:5; border:none;
-    background:rgba(93,109,126,.92); color:#fff; width:40px; height:40px; border-radius:50%;
-    font-size:18px; cursor:pointer; }
-  .arrow.left { left:-6px; } .arrow.right { right:-6px; }
-  /* Cards */
-  .grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(220px,1fr)); gap:16px; }
-  .card { flex:0 0 auto; width:230px; scroll-snap-align:start; background:#fff;
-    border:1px solid #E0E0E0; border-radius:14px; overflow:hidden; }
-  .grid .card { width:auto; }
-  .card a { color:#2C3E50; text-decoration:none; display:block; }
-  .cover { width:100%; height:200px; object-fit:cover; display:block; background:#EFECE4; }
-  .cover-tile { width:100%; height:150px; display:flex; align-items:center; justify-content:center;
-    font-size:54px; background:linear-gradient(135deg,#EFE9DD,#E3EDE0); }
-  .body { padding:12px 14px 16px; }
-  .badge { font-size:10px; color:#87A878; font-weight:bold; text-transform:uppercase; letter-spacing:.4px; }
-  .title { font-weight:bold; font-size:16px; margin:5px 0; line-height:1.35; }
-  .note { font-size:14px; color:#7A8794; line-height:1.5; }
-  .empty { text-align:center; color:#A9A39A; padding:40px 0; }
-  footer { text-align:center; color:#A9A39A; font-size:12px; margin-top:40px; }
+  :root{
+    --paper:#F4EEE2;--paper-deep:#E9E1D1;--surface:#FBF7EE;
+    --ink:#20271F;--ink-soft:#4A4A3E;--ink-mute:#7C7565;
+    --forest:#2C3A2B;--moss:#6E7B4B;--moss-deep:#55603A;
+    --clay:#A85A36;--clay-deep:#8E4A2C;--line:#D9CFBC;--line-soft:#E5DCCB;--radius:12px;
+    --serif:'Newsreader',Georgia,'Times New Roman',serif;
+    --sans:'Hanken Grotesk',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+  }
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body{font-family:var(--sans);background:var(--paper);color:var(--ink);line-height:1.6;-webkit-font-smoothing:antialiased;}
+  img{max-width:100%;display:block;}
+  a{color:inherit;text-decoration:none;}
+  .wrap{max-width:1120px;margin:0 auto;padding:0 40px;}
+  .eyebrow{font-size:11px;font-weight:600;letter-spacing:0.22em;text-transform:uppercase;color:var(--moss-deep);}
+
+  .img,.photo{position:relative;width:100%;overflow:hidden;}
+  .img{background:linear-gradient(135deg,rgba(255,255,255,0.18),rgba(255,255,255,0) 60%),repeating-linear-gradient(135deg,rgba(32,39,31,0.035) 0 2px,transparent 2px 11px),linear-gradient(160deg,var(--ph-a,#C9CBB0),var(--ph-b,#9DA882));border:1px solid rgba(32,39,31,0.10);}
+  .img::after{content:attr(data-label);position:absolute;left:12px;bottom:11px;font-family:ui-monospace,Menlo,monospace;font-size:9px;letter-spacing:0.12em;text-transform:uppercase;color:rgba(255,255,255,0.92);background:rgba(32,39,31,0.32);padding:3px 8px;border-radius:100px;}
+  .img.t0{--ph-a:#D9CFB8;--ph-b:#B3A684;} .img.t1{--ph-a:#D8B59B;--ph-b:#B0764F;}
+  .img.t2{--ph-a:#B7C29A;--ph-b:#7E8C5A;} .img.t3{--ph-a:#7E8C6E;--ph-b:#46553E;}
+  .photo{border:1px solid rgba(32,39,31,0.10);}
+  .photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;}
+  .play{position:absolute;inset:0;margin:auto;width:60px;height:60px;border-radius:50%;border:1.5px solid rgba(255,255,255,0.92);background:rgba(32,39,31,0.16);display:flex;align-items:center;justify-content:center;transition:transform .25s ease,background .25s ease;}
+  .play::after{content:"";margin-left:3px;border-style:solid;border-width:9px 0 9px 15px;border-color:transparent transparent transparent rgba(255,255,255,0.95);}
+
+  .cover{text-align:center;padding:60px 40px 40px;}
+  .cover .eyebrow{color:var(--clay-deep);margin-bottom:22px;}
+  .cover h1{font-family:var(--serif);font-weight:500;font-size:clamp(46px,8vw,84px);line-height:0.98;letter-spacing:-0.015em;color:var(--forest);}
+  .cover .tagline{font-family:var(--serif);font-style:italic;font-size:clamp(17px,2.4vw,22px);color:var(--ink-soft);margin-top:18px;}
+  .cover .meta{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:16px;margin-top:30px;font-size:11.5px;letter-spacing:0.16em;text-transform:uppercase;color:var(--ink-mute);}
+  .cover .meta .dot{width:3px;height:3px;border-radius:50%;background:var(--clay);}
+
+  .fern{max-width:720px;margin:0 auto;padding:0 40px 8px;display:flex;gap:22px;align-items:flex-start;}
+  .monogram{flex-shrink:0;width:52px;height:52px;border-radius:50%;border:1px solid var(--moss);color:var(--moss-deep);font-family:var(--serif);font-size:24px;display:flex;align-items:center;justify-content:center;margin-top:6px;}
+  .fern .eyebrow{margin-bottom:9px;}
+  .fern p{font-family:var(--serif);font-size:20px;line-height:1.6;color:var(--ink-soft);}
+  .fern .sign{font-style:italic;color:var(--forest);}
+
+  .hero{margin-top:52px;}
+  .hero-grid{display:grid;grid-template-columns:1.5fr 1fr;border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
+  .hero-grid .cell{min-height:420px;border-right:1px solid var(--line);}
+  .hero-text{padding:44px 48px;display:flex;flex-direction:column;justify-content:center;}
+  .hero-text .eyebrow{color:var(--clay-deep);margin-bottom:18px;}
+  .hero-text h2{font-family:var(--serif);font-weight:500;font-size:clamp(28px,3.4vw,40px);line-height:1.1;letter-spacing:-0.01em;color:var(--forest);}
+  .hero-text p{font-size:16.5px;color:var(--ink-soft);margin-top:18px;max-width:42ch;}
+  .textlink{display:inline-flex;align-items:center;gap:8px;margin-top:26px;font-size:13px;font-weight:600;letter-spacing:0.04em;color:var(--clay-deep);}
+  .textlink .arr{transition:transform .2s ease;} .textlink:hover .arr{transform:translateX(4px);}
+
+  .tabbar{position:sticky;top:0;z-index:50;background:rgba(244,238,226,0.86);backdrop-filter:blur(10px) saturate(120%);border-bottom:1px solid var(--line);margin-top:56px;}
+  .tabbar-inner{max-width:1120px;margin:0 auto;padding:0 40px;display:flex;align-items:center;gap:28px;height:60px;}
+  .tabmark{font-family:var(--serif);font-size:18px;color:var(--forest);white-space:nowrap;opacity:0;width:0;overflow:hidden;transition:opacity .3s ease;}
+  .tabbar.stuck .tabmark{opacity:1;width:auto;margin-right:8px;}
+  .tabs{display:flex;gap:4px;flex:1;overflow-x:auto;scrollbar-width:none;}
+  .tabs::-webkit-scrollbar{display:none;}
+  .tab{position:relative;white-space:nowrap;cursor:pointer;padding:19px 14px;font-size:13px;font-weight:600;letter-spacing:0.04em;color:var(--ink-mute);background:none;border:0;font-family:var(--sans);transition:color .2s ease;}
+  .tab:hover{color:var(--ink);} .tab.active{color:var(--forest);}
+  .tab .ix{font-family:var(--serif);font-size:11px;color:var(--moss);margin-right:6px;font-weight:400;}
+  .tab::after{content:"";position:absolute;left:14px;right:14px;bottom:-1px;height:2px;background:var(--clay);transform:scaleX(0);transition:transform .25s ease;}
+  .tab.active::after{transform:scaleX(1);}
+
+  .panel{display:none;padding:56px 0 20px;}
+  .panel.active{display:block;animation:fade .4s ease;}
+  @keyframes fade{from{opacity:0;transform:translateY(8px);}to{opacity:1;transform:none;}}
+  @media (prefers-reduced-motion:reduce){.panel.active{animation:none;}}
+  .sec-head{margin-bottom:34px;}
+  .sec-head .eyebrow{display:flex;align-items:center;gap:16px;color:var(--clay-deep);}
+  .sec-head .eyebrow::after{content:"";flex:1;height:1px;background:var(--line);}
+  .sec-head h3{font-family:var(--serif);font-weight:500;font-size:clamp(30px,4vw,44px);line-height:1.05;letter-spacing:-0.01em;color:var(--forest);margin-top:16px;}
+  .sec-head .lede{font-family:var(--serif);font-style:italic;font-size:18px;color:var(--ink-mute);margin-top:10px;max-width:54ch;}
+
+  .chips{display:flex;flex-wrap:wrap;gap:9px;margin-bottom:30px;}
+  .chip{cursor:pointer;font-family:var(--sans);font-size:12px;font-weight:600;letter-spacing:0.03em;padding:8px 16px;border-radius:100px;border:1px solid var(--line);background:var(--surface);color:var(--ink-soft);transition:all .18s ease;}
+  .chip:hover{border-color:var(--moss);color:var(--forest);} .chip.active{background:var(--forest);border-color:var(--forest);color:var(--paper);}
+
+  .grid{display:grid;gap:30px 26px;}
+  .grid.music{grid-template-columns:repeat(auto-fill,minmax(220px,1fr));}
+  .grid.watch{grid-template-columns:repeat(auto-fill,minmax(340px,1fr));}
+  .grid.read{grid-template-columns:repeat(auto-fill,minmax(300px,1fr));}
+  .card{display:flex;flex-direction:column;}
+  .card .cv{border-radius:var(--radius);}
+  .card.music .cv{aspect-ratio:1/1;} .card.watch .cv{aspect-ratio:16/9;} .card.read .cv{aspect-ratio:3/2;}
+  .card .cv .play{width:52px;height:52px;} .card:hover .cv .play{transform:scale(1.06);background:rgba(32,39,31,0.32);}
+  .card .meta-line{display:flex;align-items:center;gap:10px;margin-top:16px;font-size:10.5px;font-weight:600;letter-spacing:0.13em;text-transform:uppercase;color:var(--moss-deep);}
+  .card .meta-line .sep{color:var(--line);} .card .meta-line .dur{margin-left:auto;color:var(--ink-mute);letter-spacing:0.08em;}
+  .card h4{font-family:var(--serif);font-weight:500;font-size:21px;line-height:1.2;color:var(--forest);margin-top:9px;letter-spacing:-0.005em;}
+  .card.music h4{font-size:19px;}
+  .card .note{font-size:14.5px;color:var(--ink-soft);margin-top:8px;line-height:1.55;}
+  .card .go{margin-top:14px;font-size:12px;font-weight:600;letter-spacing:0.04em;color:var(--clay-deep);display:inline-flex;align-items:center;gap:7px;}
+  .card .go .arr{transition:transform .2s ease;} .card:hover .go .arr{transform:translateX(4px);}
+  .badge{font-size:10px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;padding:3px 9px;border-radius:100px;border:1px solid var(--line);color:var(--moss-deep);}
+  .empty{color:var(--ink-mute);font-style:italic;font-family:var(--serif);padding:30px 0;}
+
+  footer{margin-top:80px;border-top:1px solid var(--line);padding:50px 40px 60px;text-align:center;}
+  footer .fmark{font-family:var(--serif);font-size:26px;color:var(--forest);}
+  footer .ftag{font-family:var(--serif);font-style:italic;color:var(--ink-mute);margin-top:8px;}
+  footer .links{margin-top:22px;font-size:11px;letter-spacing:0.14em;text-transform:uppercase;color:var(--ink-mute);display:flex;gap:18px;justify-content:center;flex-wrap:wrap;}
+  footer .links a{color:var(--ink-soft);}
+
+  @media (max-width:820px){
+    .hero-grid{grid-template-columns:1fr;}
+    .hero-grid .cell{border-right:0;border-bottom:1px solid var(--line);min-height:280px;}
+    .hero-text{padding:34px 0;}
+  }
+  @media (max-width:600px){
+    .wrap,.tabbar-inner{padding-left:22px;padding-right:22px;}
+    .cover{padding:44px 22px 30px;} .fern{padding:0 22px 8px;gap:16px;} .fern p{font-size:18px;}
+    .hero{margin-top:36px;} .panel{padding-top:40px;} .grid{gap:26px 18px;}
+    .grid.music{grid-template-columns:repeat(auto-fill,minmax(150px,1fr));}
+    .tabbar-inner{gap:0;} .tab{padding:19px 12px;}
+  }
 </style>
 </head>
 <body>
-<div class="wrap">
-  <header>
-    <div class="brand">🍞🌿🐚</div>
+  <header class="cover">
+    <div class="eyebrow">Morning Edition &nbsp;&middot;&nbsp; No. 1047 &nbsp;&middot;&nbsp; Mon, June 8, 2026</div>
     <h1>The Curated Canopy</h1>
-    <div class="greeting" id="greeting"></div>
-    <div class="date">Sunday, June 7, 2026 · 19:24</div>
+    <div class="tagline">Human stories, good news &amp; the natural world</div>
+    <div class="meta" id="meta"></div>
   </header>
 
-  <div class="tabs" id="tabs"></div>
-
-  <div class="panel active" data-panel="music">
-    <div class="genres" id="genres"></div>
-    <div class="carousel">
-      <button class="arrow left"  onclick="slide(-1)">‹</button>
-      <div class="track" id="music-track"></div>
-      <button class="arrow right" onclick="slide(1)">›</button>
+  <section class="fern" id="fern" style="display:none;">
+    <div class="monogram">F</div>
+    <div>
+      <div class="eyebrow">A note from Fern</div>
+      <p><span id="greeting"></span> <span class="sign">Yours, Fern</span></p>
     </div>
+  </section>
+
+  <div class="wrap hero" id="hero-wrap" style="display:none;">
+    <a class="hero-grid" id="hero" href="#"></a>
   </div>
-  <div class="panel" data-panel="videos"><div class="grid" id="videos-grid"></div></div>
-  <div class="panel" data-panel="good_news"><div class="grid" id="good_news-grid"></div></div>
-  <div class="panel" data-panel="discovery"><div class="grid" id="discovery-grid"></div></div>
 
-  <footer>Generated automatically · Curated by Claude · Fern | The Morning Crust</footer>
-</div>
+  <nav class="tabbar" id="tabbar">
+    <div class="tabbar-inner">
+      <span class="tabmark">Canopy</span>
+      <div class="tabs" id="tabs"></div>
+    </div>
+  </nav>
 
-<script id="data" type="application/json">{"is_am": false, "greeting": "The sunset has done its work, the tabs can wait \u2014 settle in with tonight's dispatch of rabbit holes, rare live sets, and one hospice story that will quietly rearrange something inside you.", "music": [{"title": "Death Cab for Cutie plays through the pain", "note": "Frontman Ben Gibbard talks about the band's latest album, I Built You a Tower.", "url": "https://www.npr.org/sections/world-cafe/2026/06/05/nx-s1-5847666/death-cab-for-cutie-album-i-built-you-a-tower", "cover": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3877x2181+0+239/resize/1400/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F05%2F13%2Fb8687da840bfbac34ffc948dc429%2Fdeath-cab-for-cutie-press-photo-credit-shervin-lainez.jpg", "genre": "", "source": "NPR Music"}, {"title": "'The ship of my life': Sting talks the comeback of his musical", "note": "The Last Ship, the first musical to be staged at New York's Metropolitan Opera, inspired by Sting's childhood growing up in the shadow of a shipyard.", "url": "https://www.npr.org/2026/06/04/nx-s1-5608084/sting-musical-the-last-ship-interview", "cover": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/4201x2363+0+438/resize/1400/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F8d%2F07%2Ffeca1e1747d2aa638cc22d5ce8ba%2Fthe-last-ship-2026-show-6546.jpg", "genre": "", "source": "NPR Music"}, {"title": "Bruce Springsteen Covers American Classics With Public Enemy, Sheryl Crow, Jon Bon Jovi, Dropkick Murphys, \u0026 More At Songs That Shaped Us Concerts", "note": "Last night was the second and final night of Music America: The Songs that Shaped Us, a two-day concert celebration of 250 years of American music held at the OceanFirst Bank Center in Monmouth, New Jersey. The celebration spanned centuries of American music, beginning with tributes to artists like ", "url": "https://www.youtube.com/embed/JZsYL_nR-JE", "cover": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/06/IMG_1255.jpeg", "genre": "", "source": "Stereogum"}, {"title": "The Cure Break Out Live Rarities At Primavera Sound 2026", "note": "Last night the Cure headlined Primavera Sound 2026 at Barcelona's Parc Del Forum. It was the band's first performance since their intimate November 2024 show at London's Troxy celebrating the release of Songs Of A Lost World. That album, one of the best of that year, was the Cure's first UK #1 in 32", "url": "https://www.youtube.com/embed/nvHGa6fDhUs", "cover": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/06/the-cure-primavera-sound-2024.jpg", "genre": "", "source": "Stereogum"}, {"title": "Osees Surprise-Release New Album Off Course", "note": "Don't let the fact that John Dwyer is always releasing new music trick you into taking him for granted. In the first half of this year, the California psychedelic garage-punk king has already launched the new side project Heathen Axe, released a new album under his solo guise Damaged Bug, and droppe", "url": "https://ohsees.bandcamp.com/album/off-course", "cover": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/06/a0793610449_10.jpg", "genre": "", "source": "Stereogum"}, {"title": "BONUS TRACKS: Changes at Folk Alley and IBMA, New Music from Keb' Mo' and Wyatt Flores, and More Roots Music News", "note": "For the last seven years or so, No Depression has been honored to share a metaphorical roof with Folk Alley. In 2019, the FreshGrass Foundation (No Depression\u0026apos;s nonprofit publisher), brought Folk Alley into the fold, helping keep the 24-hour streaming radio service playing when its previous rad", "url": "https://www.youtube.com/embed/jczRHwbuwQg", "cover": "https://storage.ghost.io/c/18/d0/18d08e58-3b1b-4720-ae25-a31b44e69d4b/content/images/size/w1200/2026/06/unnamed.jpg", "genre": "", "source": "No Depression"}, {"title": "NO DEPRESSION SESSIONS at Wild Coyote: Cat Clyde", "note": "Canadian songwriter Cat Clyde shared two songs from her fourth full-length album Mud Blood Bone with us on her \u0026quot;day off\u0026quot; between shows at Baby\u0026apos;s All Right in Brooklyn, and Club Passim in Cambridge.Between songs, Clyde discussed the album\u0026apos;s creation, including her collaboration", "url": "https://www.youtube.com/embed/9S5hfuT7Xow", "cover": "https://storage.ghost.io/c/18/d0/18d08e58-3b1b-4720-ae25-a31b44e69d4b/content/images/size/w1200/2026/06/Cat-Clyde-Press-Photo-by-Julio-Assis.jpeg", "genre": "", "source": "No Depression"}, {"title": "ALBUM REVIEW: Charlie Marie Finds Herself in the Great Unknown on \u2018Signs\u2019", "note": "A voice like Charlie Marie\u0026#x2019;s doesn\u0026#x2019;t come along too often, but when people were floored by it in 2021 upon release of her phenomenal, hard-won debut Ramble On, she wasn\u0026#x2019;t prepared for the reverberations. As her golden-throated country songs were finally catching on, her", "url": "https://nodepression.org/album-review-charlie-marie-finds-herself-in-the-great-unknown-on-signs/", "cover": "https://storage.ghost.io/c/18/d0/18d08e58-3b1b-4720-ae25-a31b44e69d4b/content/images/2026/06/Charlie-Marie.jpg", "genre": "", "source": "No Depression"}, {"title": "Kurt Rosenwinkel Quintet at the Village Vanguard \u2013 Jeff \u201cTain\u201d Watts Edition", "note": "I will never be accused of neglecting jazz guitarists, and indeed I had the pleasure of taking in two recent livestreams from The Jazz Gallery \u0026#8230; Read More \"Kurt Rosenwinkel Quintet at the Village Vanguard \u2013 Jeff \u201cTain\u201d Watts Edition\"\nThe post Kurt Rosenwinkel Quintet at the Village Vanguard \u2013 ", "url": "https://www.jazztimes.com/reviews/live/kurt-rosenwinkel-quintet-at-the-village-vanguard-jeff-tain-watts-edition/", "cover": "https://www.jazztimes.com/wp-content/uploads/2026/06/IMG_4242.jpeg", "genre": "", "source": "JazzTimes"}, {"title": "Miles Styles: Talking Avant-Garde Fashion with Artist Mikel Elam, Stylist and PA to Davis in His Final Years", "note": "Before we move too far from the calendar of the Miles Davis centennial and related events, it\u2019s important to make his personal style a part \u0026#8230; Read More \"Miles Styles: Talking Avant-Garde Fashion with Artist Mikel Elam, Stylist and PA to Davis in His Final Years\"\nThe post Miles Styles: Talking ", "url": "https://www.jazztimes.com/features/profiles/miles-styles-talking-avant-garde-fashion-with-artist-mikel-elam-stylist-and-pa-to-davis-in-his-final-years/", "cover": "https://www.jazztimes.com/wp-content/uploads/2026/06/Unknown.png", "genre": "", "source": "JazzTimes"}, {"title": "Artist-Sculptor Donna Isham, Trumpeter-Composer Mark Isham: Immersive Art with a Soundtrack", "note": "Donna and Mark Isham are long-respected artists, outstanding in their fields. Yet while Donna is acclaimed as a Hollywood costume designer and stylist-turned-painter and sculptor, \u0026#8230; Read More \"Artist-Sculptor Donna Isham, Trumpeter-Composer Mark Isham: Immersive Art with a Soundtrack\"\nThe post", "url": "https://www.youtube.com/embed/Pzjhrwh0NCU", "cover": "https://www.jazztimes.com/wp-content/uploads/2026/06/Mark-and-Donna-Isham-Headshot-Photo-by-Jake-Isham-scaled.jpg", "genre": "", "source": "JazzTimes"}, {"title": "5 Classic Covers by Sofar Artists", "note": "A roundup of classic song covers performed by Sofar artists.", "url": "https://www.youtube.com/embed/MpMPkfOXP84", "cover": "https://sofar-sounds-blog.imgix.net/wp-content/uploads/Web_Ready-14.-LILYALLEN_JANEJIMENEZ_7-2.jpg", "genre": "Various", "source": "Sofar Sounds"}, {"title": "Sofar Fringe Festival 2025", "note": "Coverage of Sofar's Fringe Festival 2025 live music event.", "url": "https://www.sofarsounds.com/blog/articles/sofar-fringe-festival-2025", "cover": "https://sofar-sounds-blog.imgix.net/wp-content/uploads/Web_Ready-Janisa_BlueMoonBrewery_Toronto_PascalineLeBras_17July2023_8.jpg", "genre": "Various", "source": "Sofar Sounds"}, {"title": "Sofar, So Long, Summer Setlist", "note": "A curated summer setlist featuring Sofar artists and tracks.", "url": "https://www.youtube.com/embed/oIv_Y2RPQ_A", "cover": "https://sofar-sounds-blog.imgix.net/wp-content/uploads/Web_Ready-Montreal-Photo-by-Lashan.jpg", "genre": "Various", "source": "Sofar Sounds"}], "videos": [{"title": "Gen Z's Male Reading Crisis", "note": "Cole Hastings digs into why young men are reading less and what that actually means for how they think, communicate, and see themselves. At 15 minutes, it's a focused argument rather than a rant \u2014 useful if you're a reader who's noticed this trend among the men in your life. The angle is personal enough to feel grounded, not like another culture-war talking point.", "video_id": "B3lPguEvVZU", "channel": "Cole Hastings", "theme": "Rabbit Holes Worth Falling Down"}], "good_news": [{"title": "Hospice Staff Finds Dying Patient\u2019s Missing Brother Working in Their Own Charity Thrift Shop", "note": "In a world that can feel vast and disconnected, this story is a quiet reminder that ordinary people \u2014 just showing up to work \u2014 can become the thread that reunites a family in its most tender final hours. Sometimes the right hands find each other just in time.", "url": "https://www.goodnewsnetwork.org/hospice-staff-finds-dying-patients-missing-brother-working-in-their-thrift-shop/", "source": "Good News Network"}, {"title": "UPS driver goes viral after sharing his weekly paycheck", "note": "When a working person shares an honest glimpse of their livelihood and it sparks a genuine national conversation about fair wages and the dignity of skilled labour, that's the public discourse working exactly as it should.", "url": "https://www.upworthy.com/ups-driver-shares-viral-paycheck-ex1/", "source": "Upworthy"}], "discovery": []}</script>
+  <main class="wrap">
+    <section class="panel active" data-panel="music">
+      <div class="sec-head"><div class="eyebrow">Section One</div><h3>The Morning Soundtrack</h3>
+        <div class="lede">Fresh picks from the music world to set the tone for your day.</div></div>
+      <div class="chips" id="genres"></div>
+      <div class="grid music" id="music-grid"></div>
+    </section>
+    <section class="panel" data-panel="watch">
+      <div class="sec-head"><div class="eyebrow">Section Two</div><h3>Worth Watching</h3>
+        <div class="lede">Long, patient films for when you have a little time to spend.</div></div>
+      <div class="grid watch" id="watch-grid"></div>
+    </section>
+    <section class="panel" data-panel="good_news">
+      <div class="sec-head"><div class="eyebrow">Section Three</div><h3>Global Silver Linings</h3>
+        <div class="lede">Stories that remind you the world is still full of good.</div></div>
+      <div class="grid read" id="good_news-grid"></div>
+    </section>
+    <section class="panel" data-panel="discovery">
+      <div class="sec-head"><div class="eyebrow">Section Four</div><h3>From the Archives</h3>
+        <div class="lede">Forgotten places, hidden histories, and the science that rewires how you see the world.</div></div>
+      <div class="grid read" id="discovery-grid"></div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="fmark">The Curated Canopy</div>
+    <div class="ftag">Gathered twice daily by Fern</div>
+    <div class="links"><a href="#">About</a><a href="#">The Archive</a><a href="#">Preferences</a><a href="#">Unsubscribe</a></div>
+  </footer>
+
+<script id="data" type="application/json">{"is_am": true, "greeting": "While the coffee brews and the first birds argue outside your window, settle in, today's canopy is rich with sound, from tiny Elvis impersonators in Tupelo to Robert Smith unearthing rarities under Spanish skies.", "music": [{"title": "Kids compete in the annual Elvis tribute competition in the singer's hometown", "note": "In Tupelo, Miss., the next generation of Elvis tribute artists competed at an annual Elvis fest in the town where The King was born.", "url": "https://www.npr.org/2026/06/07/nx-s1-5847996/kids-compete-in-the-annual-elvis-tribute-competition-in-the-singers-hometown", "cover": "https://media.npr.org/include/images/facebook-default-wide-s1400-c85.jpg", "genre": "", "source": "NPR Music"}, {"title": "Death Cab for Cutie plays through the pain", "note": "Frontman Ben Gibbard talks about the band's latest album, I Built You a Tower.", "url": "https://www.npr.org/sections/world-cafe/2026/06/05/nx-s1-5847666/death-cab-for-cutie-album-i-built-you-a-tower", "cover": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3877x2181+0+239/resize/1400/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F05%2F13%2Fb8687da840bfbac34ffc948dc429%2Fdeath-cab-for-cutie-press-photo-credit-shervin-lainez.jpg", "genre": "", "source": "NPR Music"}, {"title": "Earth, Wind \u0026 Fire documentary explores band's creative genius", "note": "A new HBO documentary by Questlove tells the story of the R\u0026B band Earth, Wind \u0026 Fire. Morning Edition host A Martinez speaks with band members Philip Bailey, Verdine White and Ralph Johnson.", "url": "https://www.npr.org/2026/06/05/nx-s1-5819591/earth-wind-fire-to-be-celestial-vs-thats-the-weight-of-the-world-hbo-documentary", "cover": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/5712x3213+0+936/resize/1400/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Fbe%2Fdd%2Fe0d5f69141b5ac6817bb87f07078%2Fimg-5054.jpg", "genre": "", "source": "NPR Music"}, {"title": "Dave Matthews Gives Concert Speech About His Palestine Advocacy Getting \u201cTwisted\u201d Into Antisemitism", "note": "In 2024, Dave Matthews showed up for the Free Palestine movement and protested Israeli Prime Minister\u00a0Benjamin Netanyahu's address to US Congress, saying in an interview, \"It's a disgusting show of support for someone who doesn't deserve our support. I'm ashamed that my tax dollars are going to the", "url": "https://stereogum.com/2501656/dave-matthews-gives-concert-speech-about-his-palestine-advocacy-getting-twisted-into-antisemitism/news/", "cover": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/06/Screenshot-2026-06-07-at-1.32.22-PM.png", "genre": "", "source": "Stereogum"}, {"title": "Bruce Springsteen Covers American Classics With Public Enemy, Sheryl Crow, Jon Bon Jovi, Dropkick Murphys, \u0026 More At Songs That Shaped Us Concerts", "note": "Last night was the second and final night of Music America: The Songs that Shaped Us, a two-day concert celebration of 250 years of American music held at the OceanFirst Bank Center in Monmouth, New Jersey. The celebration spanned centuries of American music, beginning with tributes to artists like", "url": "https://www.youtube.com/embed/JZsYL_nR-JE", "cover": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/06/IMG_1255.jpeg", "genre": "", "source": "Stereogum"}, {"title": "The Cure Break Out Live Rarities At Primavera Sound 2026", "note": "Last night the Cure headlined Primavera Sound 2026 at Barcelona's Parc Del Forum. It was the band's first performance since their intimate November 2024 show at London's Troxy celebrating the release of Songs Of A Lost World. That album, one of the best of that year, was the Cure's first UK #1 in 32", "url": "https://www.youtube.com/embed/nvHGa6fDhUs", "cover": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/06/the-cure-primavera-sound-2024.jpg", "genre": "", "source": "Stereogum"}, {"title": "BONUS TRACKS: Changes at Folk Alley and IBMA, New Music from Keb' Mo' and Wyatt Flores, and More Roots Music News", "note": "For the last seven years or so, No Depression has been honored to share a metaphorical roof with Folk Alley. In 2019, the FreshGrass Foundation (No Depression\u0026apos;s nonprofit publisher), brought Folk Alley into the fold, helping keep the 24-hour streaming radio service playing when its previous rad", "url": "https://www.youtube.com/embed/jczRHwbuwQg", "cover": "https://storage.ghost.io/c/18/d0/18d08e58-3b1b-4720-ae25-a31b44e69d4b/content/images/size/w1200/2026/06/unnamed.jpg", "genre": "", "source": "No Depression"}, {"title": "NO DEPRESSION SESSIONS at Wild Coyote: Cat Clyde", "note": "Canadian songwriter Cat Clyde shared two songs from her fourth full-length album Mud Blood Bone with us on her \u0026quot;day off\u0026quot; between shows at Baby\u0026apos;s All Right in Brooklyn, and Club Passim in Cambridge.Between songs, Clyde discussed the album\u0026apos;s creation, including her collaboration", "url": "https://www.youtube.com/embed/9S5hfuT7Xow", "cover": "https://storage.ghost.io/c/18/d0/18d08e58-3b1b-4720-ae25-a31b44e69d4b/content/images/size/w1200/2026/06/Cat-Clyde-Press-Photo-by-Julio-Assis.jpeg", "genre": "", "source": "No Depression"}, {"title": "ALBUM REVIEW: Charlie Marie Finds Herself in the Great Unknown on \u2018Signs\u2019", "note": "A voice like Charlie Marie\u0026#x2019;s doesn\u0026#x2019;t come along too often, but when people were floored by it in 2021 upon release of her phenomenal, hard-won debut Ramble On, she wasn\u0026#x2019;t prepared for the reverberations. As her golden-throated country songs were finally catching on, her", "url": "https://nodepression.org/album-review-charlie-marie-finds-herself-in-the-great-unknown-on-signs/", "cover": "https://storage.ghost.io/c/18/d0/18d08e58-3b1b-4720-ae25-a31b44e69d4b/content/images/2026/06/Charlie-Marie.jpg", "genre": "", "source": "No Depression"}, {"title": "Kurt Rosenwinkel Quintet at the Village Vanguard \u2013 Jeff \u201cTain\u201d Watts Edition", "note": "I will never be accused of neglecting jazz guitarists, and indeed I had the pleasure of taking in two recent livestreams from The Jazz Gallery \u0026#8230; Read More \"Kurt Rosenwinkel Quintet at the Village Vanguard, Jeff \u201cTain\u201d Watts Edition\"\nThe post Kurt Rosenwinkel Quintet at the Village Vanguard,", "url": "https://www.jazztimes.com/reviews/live/kurt-rosenwinkel-quintet-at-the-village-vanguard-jeff-tain-watts-edition/", "cover": "https://www.jazztimes.com/wp-content/uploads/2026/06/IMG_4242.jpeg", "genre": "", "source": "JazzTimes"}, {"title": "Miles Styles: Talking Avant-Garde Fashion with Artist Mikel Elam, Stylist and PA to Davis in His Final Years", "note": "Before we move too far from the calendar of the Miles Davis centennial and related events, it\u2019s important to make his personal style a part \u0026#8230; Read More \"Miles Styles: Talking Avant-Garde Fashion with Artist Mikel Elam, Stylist and PA to Davis in His Final Years\"\nThe post Miles Styles: Talking", "url": "https://www.jazztimes.com/features/profiles/miles-styles-talking-avant-garde-fashion-with-artist-mikel-elam-stylist-and-pa-to-davis-in-his-final-years/", "cover": "https://www.jazztimes.com/wp-content/uploads/2026/06/Unknown.png", "genre": "", "source": "JazzTimes"}, {"title": "Artist-Sculptor Donna Isham, Trumpeter-Composer Mark Isham: Immersive Art with a Soundtrack", "note": "Donna and Mark Isham are long-respected artists, outstanding in their fields. Yet while Donna is acclaimed as a Hollywood costume designer and stylist-turned-painter and sculptor, \u0026#8230; Read More \"Artist-Sculptor Donna Isham, Trumpeter-Composer Mark Isham: Immersive Art with a Soundtrack\"\nThe post", "url": "https://www.youtube.com/embed/Pzjhrwh0NCU", "cover": "https://www.jazztimes.com/wp-content/uploads/2026/06/Mark-and-Donna-Isham-Headshot-Photo-by-Jake-Isham-scaled.jpg", "genre": "", "source": "JazzTimes"}, {"title": "5 classic covers by sofar artists", "note": "A roundup of five classic song covers performed by Sofar artists.", "url": "https://www.youtube.com/embed/MpMPkfOXP84", "cover": "https://sofar-sounds-blog.imgix.net/wp-content/uploads/Web_Ready-14.-LILYALLEN_JANEJIMENEZ_7-2.jpg", "genre": "Various", "source": "Sofar Sounds"}, {"title": "Sofar Fringe Festival 2025", "note": "Coverage or preview of Sofar's Fringe Festival live music event in 2025.", "url": "https://www.sofarsounds.com/blog/articles/sofar-fringe-festival-2025", "cover": "https://sofar-sounds-blog.imgix.net/wp-content/uploads/Web_Ready-Janisa_BlueMoonBrewery_Toronto_PascalineLeBras_17July2023_8.jpg", "genre": "Various", "source": "Sofar Sounds"}, {"title": "Sofar, So Long, Summer Setlist", "note": "A curated summer setlist playlist feature from Sofar Sounds artists.", "url": "https://www.youtube.com/embed/oIv_Y2RPQ_A", "cover": "https://sofar-sounds-blog.imgix.net/wp-content/uploads/Web_Ready-Montreal-Photo-by-Lashan.jpg", "genre": "Various", "source": "Sofar Sounds"}], "videos": [], "good_news": [{"title": "Good News in History, June 8", "note": "History is full of quiet turning points worth remembering, pausing to mark them reminds us that progress is real, cumulative, and built by ordinary people over time.", "url": "https://www.goodnewsnetwork.org/events060608/", "cover": "https://www.goodnewsnetwork.org/wp-content/uploads/2021/06/2020DevilsTower-Copy.jpg", "source": "Good News Network"}, {"title": "7 years ago, news anchor had the ultimate response to man who told her to dress \u2018like a normal woman\u2019", "note": "When one woman responded to criticism with confidence and grace, she gave countless others permission to take up space on their own terms, and that ripple is still being felt today.", "url": "https://www.upworthy.com/news-anchor-responds-normal-woman-appearance-ex1/", "cover": "https://www.upworthy.com/wp-content/uploads/sites/2/2025/12/origin_3a1972.jpg", "source": "Upworthy"}], "discovery": []}</script>
 <script>
 const DATA = JSON.parse(document.getElementById('data').textContent);
-document.getElementById('greeting').textContent = DATA.greeting || '';
+const $ = (s,r=document)=>r.querySelector(s);
+const ARR = '<span class="arr">&rarr;</span>';
+function esc(s){return String(s==null?'':s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
+function safeUrl(u){try{const p=new URL(u,location.href);return ['http:','https:','mailto:'].includes(p.protocol)?p.href:'#';}catch(e){return '#';}}
+function ytThumb(id){return 'https://img.youtube.com/vi/'+id+'/hqdefault.jpg';}
+function ytWatch(id){return 'https://www.youtube.com/watch?v='+id;}
 
-const PANELS = [
-  {key:'music',     label:'🎵 Music'},
-  {key:'videos',    label:'▶ Watch'},
-  {key:'good_news', label:'🌿 Good News'},
-  {key:'discovery', label:'📜 Discovery'},
-];
-const tabs = document.getElementById('tabs');
-PANELS.forEach((p, i) => {
-  const b = document.createElement('div');
-  b.className = 'tab' + (i === 0 ? ' active' : '');
-  b.textContent = p.label;
-  b.onclick = () => selectTab(p.key, b);
-  tabs.appendChild(b);
+// cover: real image when present, else a toned placeholder tile
+function cover(url,tone,label,play){
+  const p = play?'<span class="play"></span>':'';
+  if(url) return '<div class="cv photo"><img src="'+esc(safeUrl(url))+'" alt="" loading="lazy">'+p+'</div>';
+  return '<div class="cv img t'+tone+'" data-label="'+label+'">'+p+'</div>';
+}
+
+// Masthead meta + Fern note
+(function(){
+  const bits=[];
+  bits.push(DATA.is_am?'Gathered at dawn':'Gathered at dusk');
+  if(DATA.music.length) bits.push(DATA.music.length+' tracks');
+  if(DATA.videos.length) bits.push(DATA.videos.length+' films');
+  const extra=DATA.good_news.length+DATA.discovery.length;
+  if(extra) bits.push(extra+' stories &amp; finds');
+  $('#meta').innerHTML = bits.map((b,i)=>(i?'<span class="dot"></span>':'')+'<span>'+b+'</span>').join('');
+  if(DATA.greeting){ $('#greeting').textContent = DATA.greeting; $('#fern').style.display=''; }
+})();
+
+// Hero feature = first video
+(function(){
+  const v = DATA.videos[0]; if(!v) return;
+  const kick = "Today's opening" + (v.channel?' &nbsp;&middot;&nbsp; '+esc(v.channel):'');
+  $('#hero').href = v.video_id?ytWatch(v.video_id):'#';
+  $('#hero').innerHTML =
+    '<div class="cell">'+(v.video_id
+        ? '<div class="photo" style="height:100%"><img src="'+ytThumb(v.video_id)+'" alt=""><span class="play"></span></div>'
+        : '<div class="img t3" data-label="Video still" style="height:100%"><span class="play"></span></div>')+'</div>'
+    + '<div class="hero-text"><div class="eyebrow">'+kick+'</div><h2>'+esc(v.title)+'</h2>'
+    + '<p>'+esc(v.note)+'</p><span class="textlink">Watch the film '+ARR+'</span></div>';
+  $('#hero-wrap').style.display='';
+})();
+
+// Tabs
+const TABS=[{k:'music',l:'Soundtrack'},{k:'watch',l:'Watch'},{k:'good_news',l:'Good News'},{k:'discovery',l:'Archives'}];
+const tabsEl=$('#tabs');
+TABS.forEach((t,i)=>{
+  const b=document.createElement('button');
+  b.className='tab'+(i===0?' active':'');
+  b.innerHTML='<span class="ix">0'+(i+1)+'</span>'+t.l;
+  b.onclick=()=>{
+    document.querySelectorAll('.tab').forEach(x=>x.classList.remove('active'));
+    b.classList.add('active');
+    document.querySelectorAll('.panel').forEach(p=>p.classList.toggle('active',p.dataset.panel===t.k));
+    const top=$('#tabbar').getBoundingClientRect().top+window.scrollY;
+    if(window.scrollY>top) window.scrollTo({top:top,behavior:'smooth'});
+  };
+  tabsEl.appendChild(b);
 });
-function selectTab(key, btn) {
-  document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
-  btn.classList.add('active');
-  document.querySelectorAll('.panel').forEach(pl =>
-    pl.classList.toggle('active', pl.dataset.panel === key));
-}
 
-function esc(s) {
-  return String(s == null ? '' : s).replace(/[&<>"'`]/g, c => ({
-    '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;','`':'&#96;'
-  }[c]));
+// Music + genre filter
+const GENRES=[...new Set(DATA.music.map(m=>m.genre).filter(Boolean))];
+let activeGenre=null;
+function renderGenres(){
+  const all=[{g:null,l:'All'}].concat(GENRES.map(g=>({g,l:g})));
+  $('#genres').innerHTML=all.map(x=>'<button class="chip'+(x.g===activeGenre?' active':'')+'" data-g="'+esc(x.g||'')+'">'+esc(x.l)+'</button>').join('');
+  $('#genres').querySelectorAll('.chip').forEach(c=>c.onclick=()=>{activeGenre=c.dataset.g||null;renderGenres();renderMusic();});
+  if(!GENRES.length) $('#genres').innerHTML='';
 }
-function safeUrl(u) {
-  try {
-    const p = new URL(u, location.href);
-    return ['http:','https:','mailto:'].includes(p.protocol) ? p.href : '#';
-  } catch (e) { return '#'; }
+function renderMusic(){
+  const items=activeGenre?DATA.music.filter(m=>m.genre===activeGenre):DATA.music;
+  $('#music-grid').innerHTML=items.length?items.map((m,i)=>
+    '<a class="card music" href="'+esc(safeUrl(m.url))+'" target="_blank">'+cover(m.cover,i%4,'Album cover',false)
+    +'<div class="meta-line"><span>'+esc(m.source||'Music')+'</span>'+(m.genre?'<span class="sep">&middot;</span><span>'+esc(m.genre)+'</span>':'')+'</div>'
+    +'<h4>'+esc(m.title)+'</h4><div class="note">'+esc(m.note)+'</div><span class="go">Listen '+ARR+'</span></a>').join('')
+    :'<div class="empty">No tracks in this edition.</div>';
 }
-function coverHTML(url, emoji) {
-  return url ? `<img class="cover" src="${esc(safeUrl(url))}" alt="">`
-             : `<div class="cover-tile">${emoji}</div>`;
-}
-function cardHTML(it, emoji) {
-  return `<div class="card"><a href="${esc(safeUrl(it.url))}" target="_blank">${coverHTML(it.cover, emoji)}`
-    + `<div class="body"><div class="badge">${esc(it.source || it.theme || '')}</div>`
-    + `<div class="title">${esc(it.title)}</div><div class="note">${esc(it.note)}</div></div></a></div>`;
-}
+$('#watch-grid').innerHTML=DATA.videos.length?DATA.videos.map((v,i)=>
+  '<a class="card watch" href="'+(v.video_id?ytWatch(v.video_id):'#')+'" target="_blank">'+cover(v.video_id?ytThumb(v.video_id):'',i%4,'Video still',true)
+  +'<div class="meta-line"><span>'+esc(v.channel||'Video')+'</span>'+(v.wild?'<span class="sep">&middot;</span><span>Wildcard</span>':'')+'</div>'
+  +'<h4>'+esc(v.title)+'</h4><div class="note">'+esc(v.note)+'</div><span class="go">Watch '+ARR+'</span></a>').join('')
+  :'<div class="empty">No films in this edition.</div>';
+$('#good_news-grid').innerHTML=DATA.good_news.length?DATA.good_news.map((g,i)=>
+  '<a class="card read" href="'+esc(safeUrl(g.url))+'" target="_blank">'+cover(g.cover,i%4,'Feature image',false)
+  +'<div class="meta-line"><span>'+esc(g.source||'Good News')+'</span></div>'
+  +'<h4>'+esc(g.title)+'</h4><div class="note">'+esc(g.note)+'</div><span class="go">Read the story '+ARR+'</span></a>').join('')
+  :'<div class="empty">Nothing here in this edition.</div>';
+$('#discovery-grid').innerHTML=DATA.discovery.length?DATA.discovery.map((d,i)=>
+  '<a class="card read" href="'+esc(safeUrl(d.url))+'" target="_blank">'+cover(d.cover,i%4,'Feature image',false)
+  +'<div class="meta-line">'+(d.cat?'<span class="badge">'+esc(d.cat)+'</span>':'')+'<span>'+esc(d.source||'')+'</span></div>'
+  +'<h4>'+esc(d.title)+'</h4><div class="note">'+esc(d.note)+'</div><span class="go">Read the story '+ARR+'</span></a>').join('')
+  :'<div class="empty">Nothing here in this edition.</div>';
 
-// Grids
-function fillGrid(id, items, emoji) {
-  const el = document.getElementById(id);
-  el.innerHTML = items.length
-    ? items.map(it => cardHTML(it, emoji)).join('')
-    : '<div class="empty">Nothing here in this edition.</div>';
-}
-fillGrid('videos-grid', DATA.videos.map(v => ({...v, url:'https://www.youtube.com/watch?v=' + v.video_id, cover:'https://img.youtube.com/vi/' + v.video_id + '/hqdefault.jpg'})), '▶');
-fillGrid('good_news-grid', DATA.good_news, '🌿');
-fillGrid('discovery-grid', DATA.discovery, '📜');
+renderGenres(); renderMusic();
 
-// Music carousel + genre filter
-const GENRES = [...new Set(DATA.music.map(m => (m.genre || '').trim()).filter(Boolean))];
-let activeGenre = null;
-const genresEl = document.getElementById('genres');
-function renderGenres() {
-  const all = [{g:null, label:'All'}].concat(GENRES.map(g => ({g, label:g})));
-  genresEl.innerHTML = all.map(x =>
-    `<div class="genre ${x.g === activeGenre ? 'active' : ''}" data-g="${esc(x.g || '')}">${esc(x.label)}</div>`
-  ).join('');
-  genresEl.querySelectorAll('.genre').forEach(el => el.onclick = () => {
-    activeGenre = el.dataset.g || null; renderGenres(); renderMusic();
-  });
-}
-function renderMusic() {
-  const track = document.getElementById('music-track');
-  const items = activeGenre
-    ? DATA.music.filter(m => (m.genre || '').trim() === activeGenre)
-    : DATA.music;
-  track.innerHTML = items.length
-    ? items.map(it => cardHTML(it, '🎵')).join('')
-    : '<div class="empty">No tracks match that genre in this edition.</div>';
-}
-function slide(dir) {
-  document.getElementById('music-track').scrollBy({left: dir * 260, behavior:'smooth'});
-}
-renderGenres();
-renderMusic();
+const tabbar=$('#tabbar');
+const sentinel=tabbar.offsetTop;
+window.addEventListener('scroll',()=>{tabbar.classList.toggle('stuck',window.scrollY>sentinel+4);},{passive:true});
 </script>
 </body>
 </html>
