@@ -24,7 +24,7 @@ import re
 import random
 from langdetect import detect, LangDetectException
 import defusedxml.ElementTree as ET
-from urllib.parse import urlparse, urljoin
+from urllib.parse import urlparse, urljoin, quote
 
 import requests
 from bs4 import BeautifulSoup
@@ -863,8 +863,10 @@ DISCOVERY_FEEDS = [
         "category":    "history",
     },
     {
-        "url":         "https://www.britishmuseum.org/blog/rss.xml",
-        "source_name": "British Museum",
+        # British Museum's blog feed hard-403s every request (even via proxy), so it
+        # never contributed. Smithsonian fills the same history/culture slot.
+        "url":         "https://www.smithsonianmag.com/rss/latest_articles/",
+        "source_name": "Smithsonian",
         "category":    "history",
     },
     {
@@ -941,6 +943,48 @@ def _season(dt: datetime.datetime) -> str:
     return _SEASON_BY_MONTH.get(dt.month, "")
 
 
+# Public read-through proxies, tried in order when a feed blocks our egress IP.
+# Some publishers (Atlas Obscura, Science News) are fronted by Cloudflare and 403
+# datacenter IPs like GitHub Actions runners, even with a browser UA. These relays
+# fetch the feed from their own IPs and hand back the raw bytes.
+_RSS_PROXY_BUILDERS = [
+    lambda u: "https://api.codetabs.com/v1/proxy/?quest=" + quote(u, safe=""),
+    lambda u: "https://api.allorigins.win/raw?url=" + quote(u, safe=""),
+]
+
+
+def _rss_item_count(content: bytes) -> int:
+    """Number of <item> elements in `content`, or -1 if it isn't parseable RSS."""
+    try:
+        return len(ET.fromstring(content).findall(".//item"))
+    except Exception:
+        return -1
+
+
+def _fetch_feed_bytes(
+    feed_url: str, source_name: str, session: requests.Session
+) -> bytes | None:
+    """Return raw RSS bytes for `feed_url`, trying a direct fetch first and then
+    public proxies if the direct path is blocked or returns a non-RSS body
+    (e.g. a Cloudflare challenge page). Returns None if every path fails."""
+    resp = _fetch_with_retry(feed_url, session, referer="https://www.google.com/")
+    if resp is not None and _rss_item_count(resp.content) > 0:
+        return resp.content
+
+    for build_proxy in _RSS_PROXY_BUILDERS:
+        proxy_url = build_proxy(feed_url)
+        try:
+            r = http_fetch.fetch(proxy_url, timeout=30, retries=2, retry_delay=3)
+        except requests.RequestException:
+            continue
+        if _rss_item_count(r.content) > 0:
+            print(f"  [{source_name}] direct fetch blocked — recovered via proxy.")
+            return r.content
+
+    print(f"  [warn] {source_name}: direct and proxy fetches all failed/empty.")
+    return None
+
+
 def _fetch_rss_articles(
     feed_url: str, source_name: str, limit: int, session: requests.Session,
     source_tag: str = "good_news",
@@ -948,14 +992,14 @@ def _fetch_rss_articles(
     """
     Fetch up to `limit` articles from an RSS feed using xml.etree (stdlib).
     Far more reliable than HTML scraping — RSS is a stable, published contract.
+    Falls back to public read-through proxies when a feed blocks our egress IP.
     """
-    resp = _fetch_with_retry(feed_url, session)
-    if resp is None:
-        print(f"  [warn] RSS fetch failed after retries ({source_name}).")
+    content = _fetch_feed_bytes(feed_url, source_name, session)
+    if content is None:
         return []
 
     try:
-        root = ET.fromstring(resp.content)
+        root = ET.fromstring(content)
     except ET.ParseError as exc:
         print(f"  [warn] RSS parse error ({source_name}): {exc}")
         return []
