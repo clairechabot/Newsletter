@@ -1,17 +1,16 @@
 """
 Newsletter — Companion "full edition" web page (GitHub Pages)
 ------------------------------------------------------------
-Reads curated_data.json → writes docs/index.html, a self-contained interactive
-page the email links out to. Real JavaScript here (unlike email): a music
-carousel with arrows + album covers, section tabs, and a client-side genre
-filter over the music items.
+Reads curated_data.json -> writes docs/index.html, a self-contained interactive
+page the email links out to: a Botanical-Editorial magazine with a masthead,
+Fern's note, a hero feature, sticky section tabs, a music genre filter, and
+four browsable sections rendered with large imagery.
 
 Run standalone:  python webpage.py
-Or call build_edition(curated) from renderer.py.
+Or call write_edition(curated) from renderer.py.
 """
 from __future__ import annotations
 
-import os
 import json
 import datetime
 from pathlib import Path
@@ -23,218 +22,354 @@ DOCS_DIR     = BASE_DIR / "docs"
 EDITION_HTML = DOCS_DIR / "index.html"
 
 
+def _dedash(s: str) -> str:
+    """Remove em/en dashes from Fern's prose (reads less machine-made)."""
+    if not s:
+        return s
+    s = s.replace(" — ", ", ").replace(" – ", ", ")
+    s = s.replace("\u2014", ", ").replace("\u2013", "-")
+    while ", ," in s:
+        s = s.replace(", ,", ",")
+    return s.strip()
+
+
+# Running issue number, like a real periodical ("No. 248").
+# Set this to the date of your VERY FIRST edition. Editions go out twice a day,
+# so the number climbs by 2 each day on its own — no manual tracking needed.
+CANOPY_LAUNCH = datetime.date(2025, 1, 1)
+
+
+def _edition_no(dt: datetime.datetime, is_am: bool) -> int:
+    days = (dt.date() - CANOPY_LAUNCH).days
+    return max(1, days * 2 + (0 if is_am else 1) + 1)
+
+
 def _payload(curated: dict) -> dict:
     """Flatten curated data into the shape the page's JS consumes."""
     videos: list[dict] = []
     for theme in curated.get("themes", []):
         for v in theme.get("items", []):
             videos.append({
-                "title": v.get("title", ""),
-                "note": v.get("why_watch", v.get("description", "")),
+                "title":    v.get("title", ""),
+                "note":     _dedash(v.get("why_watch", v.get("description", ""))),
                 "video_id": v.get("video_id", ""),
-                "channel": v.get("channel_title", ""),
-                "theme": theme.get("name", ""),
+                "channel":  v.get("channel_title", ""),
+                "wild":     bool(v.get("is_wildcard", False)),
             })
 
     music = [{
-        "title": m.get("title", ""),
-        "note": m.get("vibe_check") or (m.get("snippet") or ""),
-        "url": m.get("embed_url") or m.get("url", "#"),
-        "cover": m.get("cover_url", ""),
-        "genre": m.get("genre", ""),
+        "title":  m.get("title", ""),
+        "note":   _dedash(m.get("vibe_check") or (m.get("snippet") or "")),
+        "url":    m.get("embed_url") or m.get("url", "#"),
+        "cover":  m.get("cover_url", ""),
+        "genre":  (m.get("genre") or "").strip(),
         "source": m.get("source_name", ""),
     } for m in curated.get("morning_soundtrack", [])]
 
     good_news = [{
-        "title": g.get("title", ""),
-        "note": g.get("reason", ""),
-        "url": g.get("url", "#"),
+        "title":  g.get("title", ""),
+        "note":   _dedash(g.get("reason", "")),
+        "url":    g.get("url", "#"),
+        "cover":  g.get("cover_url", ""),
         "source": g.get("source_name", ""),
     } for g in curated.get("global_silver_linings", [])]
 
     discovery = [{
-        "title": d.get("title", ""),
-        "note": d.get("ferns_note") or d.get("snippet", ""),
-        "url": d.get("url", "#"),
+        "title":  d.get("title", ""),
+        "note":   _dedash(d.get("ferns_note") or d.get("snippet", "")),
+        "url":    d.get("url", "#"),
+        "cover":  d.get("cover_url", ""),
         "source": d.get("source_name", ""),
-        "category": d.get("category", "history"),
+        "cat":    (d.get("category", "history") or "history").title(),
     } for d in curated.get("discovery_articles", [])]
 
     return {
-        "is_am": curated.get("is_am_email", False),
-        "greeting": curated.get("fern_data", {}).get("greeting", ""),
-        "music": music,
-        "videos": videos,
+        "is_am":    curated.get("is_am_email", False),
+        "greeting": _dedash(curated.get("fern_data", {}).get("greeting", "")),
+        "music":     music,
+        "videos":    videos,
         "good_news": good_news,
         "discovery": discovery,
     }
 
 
+# Token-replaced (NOT str.format) so CSS/JS braces stay single.
 _PAGE = """<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>The Curated Canopy — Full Edition</title>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
-  * {{ box-sizing:border-box; margin:0; padding:0; }}
-  body {{ font-family:'Segoe UI',Roboto,Helvetica,Arial,sans-serif; background:#F9F7F2;
-    color:#2C3E50; line-height:1.6; }}
-  .wrap {{ max-width:1000px; margin:0 auto; padding:28px 18px 64px; }}
-  header {{ text-align:center; margin-bottom:24px; }}
-  .brand {{ font-size:40px; }}
-  h1 {{ font-family:'Playfair Display',Georgia,serif; font-size:30px; color:#5D6D7E; margin:6px 0; }}
-  .greeting {{ color:#7A8794; font-style:italic; max-width:640px; margin:8px auto 0; }}
-  .date {{ color:#A9A39A; font-size:13px; margin-top:6px; }}
-  /* Tabs */
-  .tabs {{ display:flex; flex-wrap:wrap; gap:8px; justify-content:center; margin:24px 0; }}
-  .tab {{ padding:9px 18px; border-radius:24px; border:1px solid #D9D3C7; background:#fff;
-    cursor:pointer; font-weight:bold; font-size:14px; color:#5D6D7E; }}
-  .tab.active {{ background:#5D6D7E; color:#fff; border-color:#4A5763; }}
-  .panel {{ display:none; }}
-  .panel.active {{ display:block; }}
-  /* Genre filter */
-  .genres {{ display:flex; flex-wrap:wrap; gap:6px; justify-content:center; margin-bottom:18px; }}
-  .genre {{ padding:5px 12px; border-radius:18px; border:1px solid #D9D3C7; background:#fff;
-    cursor:pointer; font-size:12px; color:#7A8794; }}
-  .genre.active {{ background:#87A878; color:#fff; border-color:#6E9162; }}
-  /* Carousel */
-  .carousel {{ position:relative; }}
-  .track {{ display:flex; gap:16px; overflow-x:auto; scroll-behavior:smooth;
-    -webkit-overflow-scrolling:touch; padding:6px 2px 16px; scroll-snap-type:x mandatory; }}
-  .arrow {{ position:absolute; top:38%; transform:translateY(-50%); z-index:5; border:none;
-    background:rgba(93,109,126,.92); color:#fff; width:40px; height:40px; border-radius:50%;
-    font-size:18px; cursor:pointer; }}
-  .arrow.left {{ left:-6px; }} .arrow.right {{ right:-6px; }}
-  /* Cards */
-  .grid {{ display:grid; grid-template-columns:repeat(auto-fill,minmax(220px,1fr)); gap:16px; }}
-  .card {{ flex:0 0 auto; width:230px; scroll-snap-align:start; background:#fff;
-    border:1px solid #E0E0E0; border-radius:14px; overflow:hidden; }}
-  .grid .card {{ width:auto; }}
-  .card a {{ color:#2C3E50; text-decoration:none; display:block; }}
-  .cover {{ width:100%; height:200px; object-fit:cover; display:block; background:#EFECE4; }}
-  .cover-tile {{ width:100%; height:150px; display:flex; align-items:center; justify-content:center;
-    font-size:54px; background:linear-gradient(135deg,#EFE9DD,#E3EDE0); }}
-  .body {{ padding:12px 14px 16px; }}
-  .badge {{ font-size:10px; color:#87A878; font-weight:bold; text-transform:uppercase; letter-spacing:.4px; }}
-  .title {{ font-weight:bold; font-size:16px; margin:5px 0; line-height:1.35; }}
-  .note {{ font-size:14px; color:#7A8794; line-height:1.5; }}
-  .empty {{ text-align:center; color:#A9A39A; padding:40px 0; }}
-  footer {{ text-align:center; color:#A9A39A; font-size:12px; margin-top:40px; }}
+  :root{
+    --paper:#F4EEE2;--paper-deep:#E9E1D1;--surface:#FBF7EE;
+    --ink:#20271F;--ink-soft:#4A4A3E;--ink-mute:#7C7565;
+    --forest:#2C3A2B;--moss:#6E7B4B;--moss-deep:#55603A;
+    --clay:#A85A36;--clay-deep:#8E4A2C;--line:#D9CFBC;--line-soft:#E5DCCB;--radius:12px;
+    --serif:'Newsreader',Georgia,'Times New Roman',serif;
+    --sans:'Hanken Grotesk',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+  }
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body{font-family:var(--sans);background:var(--paper);color:var(--ink);line-height:1.6;-webkit-font-smoothing:antialiased;}
+  img{max-width:100%;display:block;}
+  a{color:inherit;text-decoration:none;}
+  .wrap{max-width:1120px;margin:0 auto;padding:0 40px;}
+  .eyebrow{font-size:11px;font-weight:600;letter-spacing:0.22em;text-transform:uppercase;color:var(--moss-deep);}
+
+  .img,.photo{position:relative;width:100%;overflow:hidden;}
+  .img{background:linear-gradient(135deg,rgba(255,255,255,0.18),rgba(255,255,255,0) 60%),repeating-linear-gradient(135deg,rgba(32,39,31,0.035) 0 2px,transparent 2px 11px),linear-gradient(160deg,var(--ph-a,#C9CBB0),var(--ph-b,#9DA882));border:1px solid rgba(32,39,31,0.10);}
+  .img::after{content:attr(data-label);position:absolute;left:12px;bottom:11px;font-family:ui-monospace,Menlo,monospace;font-size:9px;letter-spacing:0.12em;text-transform:uppercase;color:rgba(255,255,255,0.92);background:rgba(32,39,31,0.32);padding:3px 8px;border-radius:100px;}
+  .img.t0{--ph-a:#D9CFB8;--ph-b:#B3A684;} .img.t1{--ph-a:#D8B59B;--ph-b:#B0764F;}
+  .img.t2{--ph-a:#B7C29A;--ph-b:#7E8C5A;} .img.t3{--ph-a:#7E8C6E;--ph-b:#46553E;}
+  .photo{border:1px solid rgba(32,39,31,0.10);}
+  .photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;}
+  .play{position:absolute;inset:0;margin:auto;width:60px;height:60px;border-radius:50%;border:1.5px solid rgba(255,255,255,0.92);background:rgba(32,39,31,0.16);display:flex;align-items:center;justify-content:center;transition:transform .25s ease,background .25s ease;}
+  .play::after{content:"";margin-left:3px;border-style:solid;border-width:9px 0 9px 15px;border-color:transparent transparent transparent rgba(255,255,255,0.95);}
+
+  .cover{text-align:center;padding:60px 40px 40px;}
+  .cover .eyebrow{color:var(--clay-deep);margin-bottom:22px;}
+  .cover h1{font-family:var(--serif);font-weight:500;font-size:clamp(46px,8vw,84px);line-height:0.98;letter-spacing:-0.015em;color:var(--forest);}
+  .cover .tagline{font-family:var(--serif);font-style:italic;font-size:clamp(17px,2.4vw,22px);color:var(--ink-soft);margin-top:18px;}
+  .cover .meta{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:16px;margin-top:30px;font-size:11.5px;letter-spacing:0.16em;text-transform:uppercase;color:var(--ink-mute);}
+  .cover .meta .dot{width:3px;height:3px;border-radius:50%;background:var(--clay);}
+
+  .fern{max-width:720px;margin:0 auto;padding:0 40px 8px;display:flex;gap:22px;align-items:flex-start;}
+  .monogram{flex-shrink:0;width:52px;height:52px;border-radius:50%;border:1px solid var(--moss);color:var(--moss-deep);font-family:var(--serif);font-size:24px;display:flex;align-items:center;justify-content:center;margin-top:6px;}
+  .fern .eyebrow{margin-bottom:9px;}
+  .fern p{font-family:var(--serif);font-size:20px;line-height:1.6;color:var(--ink-soft);}
+  .fern .sign{font-style:italic;color:var(--forest);}
+
+  .hero{margin-top:52px;}
+  .hero-grid{display:grid;grid-template-columns:1.5fr 1fr;border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
+  .hero-grid .cell{min-height:420px;border-right:1px solid var(--line);}
+  .hero-text{padding:44px 48px;display:flex;flex-direction:column;justify-content:center;}
+  .hero-text .eyebrow{color:var(--clay-deep);margin-bottom:18px;}
+  .hero-text h2{font-family:var(--serif);font-weight:500;font-size:clamp(28px,3.4vw,40px);line-height:1.1;letter-spacing:-0.01em;color:var(--forest);}
+  .hero-text p{font-size:16.5px;color:var(--ink-soft);margin-top:18px;max-width:42ch;}
+  .textlink{display:inline-flex;align-items:center;gap:8px;margin-top:26px;font-size:13px;font-weight:600;letter-spacing:0.04em;color:var(--clay-deep);}
+  .textlink .arr{transition:transform .2s ease;} .textlink:hover .arr{transform:translateX(4px);}
+
+  .tabbar{position:sticky;top:0;z-index:50;background:rgba(244,238,226,0.86);backdrop-filter:blur(10px) saturate(120%);border-bottom:1px solid var(--line);margin-top:56px;}
+  .tabbar-inner{max-width:1120px;margin:0 auto;padding:0 40px;display:flex;align-items:center;gap:28px;height:60px;}
+  .tabmark{font-family:var(--serif);font-size:18px;color:var(--forest);white-space:nowrap;opacity:0;width:0;overflow:hidden;transition:opacity .3s ease;}
+  .tabbar.stuck .tabmark{opacity:1;width:auto;margin-right:8px;}
+  .tabs{display:flex;gap:4px;flex:1;overflow-x:auto;scrollbar-width:none;}
+  .tabs::-webkit-scrollbar{display:none;}
+  .tab{position:relative;white-space:nowrap;cursor:pointer;padding:19px 14px;font-size:13px;font-weight:600;letter-spacing:0.04em;color:var(--ink-mute);background:none;border:0;font-family:var(--sans);transition:color .2s ease;}
+  .tab:hover{color:var(--ink);} .tab.active{color:var(--forest);}
+  .tab .ix{font-family:var(--serif);font-size:11px;color:var(--moss);margin-right:6px;font-weight:400;}
+  .tab::after{content:"";position:absolute;left:14px;right:14px;bottom:-1px;height:2px;background:var(--clay);transform:scaleX(0);transition:transform .25s ease;}
+  .tab.active::after{transform:scaleX(1);}
+
+  .panel{display:none;padding:56px 0 20px;}
+  .panel.active{display:block;animation:fade .4s ease;}
+  @keyframes fade{from{opacity:0;transform:translateY(8px);}to{opacity:1;transform:none;}}
+  @media (prefers-reduced-motion:reduce){.panel.active{animation:none;}}
+  .sec-head{margin-bottom:34px;}
+  .sec-head .eyebrow{display:flex;align-items:center;gap:16px;color:var(--clay-deep);}
+  .sec-head .eyebrow::after{content:"";flex:1;height:1px;background:var(--line);}
+  .sec-head h3{font-family:var(--serif);font-weight:500;font-size:clamp(30px,4vw,44px);line-height:1.05;letter-spacing:-0.01em;color:var(--forest);margin-top:16px;}
+  .sec-head .lede{font-family:var(--serif);font-style:italic;font-size:18px;color:var(--ink-mute);margin-top:10px;max-width:54ch;}
+
+  .chips{display:flex;flex-wrap:wrap;gap:9px;margin-bottom:30px;}
+  .chip{cursor:pointer;font-family:var(--sans);font-size:12px;font-weight:600;letter-spacing:0.03em;padding:8px 16px;border-radius:100px;border:1px solid var(--line);background:var(--surface);color:var(--ink-soft);transition:all .18s ease;}
+  .chip:hover{border-color:var(--moss);color:var(--forest);} .chip.active{background:var(--forest);border-color:var(--forest);color:var(--paper);}
+
+  .grid{display:grid;gap:30px 26px;}
+  .grid.music{grid-template-columns:repeat(auto-fill,minmax(220px,1fr));}
+  .grid.watch{grid-template-columns:repeat(auto-fill,minmax(340px,1fr));}
+  .grid.read{grid-template-columns:repeat(auto-fill,minmax(300px,1fr));}
+  .card{display:flex;flex-direction:column;}
+  .card .cv{border-radius:var(--radius);}
+  .card.music .cv{aspect-ratio:1/1;} .card.watch .cv{aspect-ratio:16/9;} .card.read .cv{aspect-ratio:3/2;}
+  .card .cv .play{width:52px;height:52px;} .card:hover .cv .play{transform:scale(1.06);background:rgba(32,39,31,0.32);}
+  .card .meta-line{display:flex;align-items:center;gap:10px;margin-top:16px;font-size:10.5px;font-weight:600;letter-spacing:0.13em;text-transform:uppercase;color:var(--moss-deep);}
+  .card .meta-line .sep{color:var(--line);} .card .meta-line .dur{margin-left:auto;color:var(--ink-mute);letter-spacing:0.08em;}
+  .card h4{font-family:var(--serif);font-weight:500;font-size:21px;line-height:1.2;color:var(--forest);margin-top:9px;letter-spacing:-0.005em;}
+  .card.music h4{font-size:19px;}
+  .card .note{font-size:14.5px;color:var(--ink-soft);margin-top:8px;line-height:1.55;}
+  .card .go{margin-top:14px;font-size:12px;font-weight:600;letter-spacing:0.04em;color:var(--clay-deep);display:inline-flex;align-items:center;gap:7px;}
+  .card .go .arr{transition:transform .2s ease;} .card:hover .go .arr{transform:translateX(4px);}
+  .badge{font-size:10px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;padding:3px 9px;border-radius:100px;border:1px solid var(--line);color:var(--moss-deep);}
+  .empty{color:var(--ink-mute);font-style:italic;font-family:var(--serif);padding:30px 0;}
+
+  footer{margin-top:80px;border-top:1px solid var(--line);padding:50px 40px 60px;text-align:center;}
+  footer .fmark{font-family:var(--serif);font-size:26px;color:var(--forest);}
+  footer .ftag{font-family:var(--serif);font-style:italic;color:var(--ink-mute);margin-top:8px;}
+  footer .links{margin-top:22px;font-size:11px;letter-spacing:0.14em;text-transform:uppercase;color:var(--ink-mute);display:flex;gap:18px;justify-content:center;flex-wrap:wrap;}
+  footer .links a{color:var(--ink-soft);}
+
+  @media (max-width:820px){
+    .hero-grid{grid-template-columns:1fr;}
+    .hero-grid .cell{border-right:0;border-bottom:1px solid var(--line);min-height:280px;}
+    .hero-text{padding:34px 0;}
+  }
+  @media (max-width:600px){
+    .wrap,.tabbar-inner{padding-left:22px;padding-right:22px;}
+    .cover{padding:44px 22px 30px;} .fern{padding:0 22px 8px;gap:16px;} .fern p{font-size:18px;}
+    .hero{margin-top:36px;} .panel{padding-top:40px;} .grid{gap:26px 18px;}
+    .grid.music{grid-template-columns:repeat(auto-fill,minmax(150px,1fr));}
+    .tabbar-inner{gap:0;} .tab{padding:19px 12px;}
+  }
 </style>
 </head>
 <body>
-<div class="wrap">
-  <header>
-    <div class="brand">🍞🌿🐚</div>
+  <header class="cover">
+    <div class="eyebrow">__EDITION_LABEL__ &nbsp;&middot;&nbsp; __ISSUE____DATE_STR__</div>
     <h1>The Curated Canopy</h1>
-    <div class="greeting" id="greeting"></div>
-    <div class="date">{date_str}</div>
+    <div class="tagline">Human stories, good news &amp; the natural world</div>
+    <div class="meta" id="meta"></div>
   </header>
 
-  <div class="tabs" id="tabs"></div>
-
-  <div class="panel active" data-panel="music">
-    <div class="genres" id="genres"></div>
-    <div class="carousel">
-      <button class="arrow left"  onclick="slide(-1)">‹</button>
-      <div class="track" id="music-track"></div>
-      <button class="arrow right" onclick="slide(1)">›</button>
+  <section class="fern" id="fern" style="display:none;">
+    <div class="monogram">F</div>
+    <div>
+      <div class="eyebrow">A note from Fern</div>
+      <p><span id="greeting"></span> <span class="sign">Yours, Fern</span></p>
     </div>
+  </section>
+
+  <div class="wrap hero" id="hero-wrap" style="display:none;">
+    <a class="hero-grid" id="hero" href="#"></a>
   </div>
-  <div class="panel" data-panel="videos"><div class="grid" id="videos-grid"></div></div>
-  <div class="panel" data-panel="good_news"><div class="grid" id="good_news-grid"></div></div>
-  <div class="panel" data-panel="discovery"><div class="grid" id="discovery-grid"></div></div>
 
-  <footer>Generated automatically · Curated by Claude · Fern | The Morning Crust</footer>
-</div>
+  <nav class="tabbar" id="tabbar">
+    <div class="tabbar-inner">
+      <span class="tabmark">Canopy</span>
+      <div class="tabs" id="tabs"></div>
+    </div>
+  </nav>
 
-<script id="data" type="application/json">{data_json}</script>
+  <main class="wrap">
+    <section class="panel active" data-panel="music">
+      <div class="sec-head"><div class="eyebrow">Section One</div><h3>The Morning Soundtrack</h3>
+        <div class="lede">Fresh picks from the music world to set the tone for your day.</div></div>
+      <div class="chips" id="genres"></div>
+      <div class="grid music" id="music-grid"></div>
+    </section>
+    <section class="panel" data-panel="watch">
+      <div class="sec-head"><div class="eyebrow">Section Two</div><h3>Worth Watching</h3>
+        <div class="lede">Long, patient films for when you have a little time to spend.</div></div>
+      <div class="grid watch" id="watch-grid"></div>
+    </section>
+    <section class="panel" data-panel="good_news">
+      <div class="sec-head"><div class="eyebrow">Section Three</div><h3>Global Silver Linings</h3>
+        <div class="lede">Stories that remind you the world is still full of good.</div></div>
+      <div class="grid read" id="good_news-grid"></div>
+    </section>
+    <section class="panel" data-panel="discovery">
+      <div class="sec-head"><div class="eyebrow">Section Four</div><h3>From the Archives</h3>
+        <div class="lede">Forgotten places, hidden histories, and the science that rewires how you see the world.</div></div>
+      <div class="grid read" id="discovery-grid"></div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="fmark">The Curated Canopy</div>
+    <div class="ftag">Gathered twice daily by Fern</div>
+    <div class="links"><a href="#">About</a><a href="#">The Archive</a><a href="#">Preferences</a><a href="#">Unsubscribe</a></div>
+  </footer>
+
+<script id="data" type="application/json">__DATA_JSON__</script>
 <script>
 const DATA = JSON.parse(document.getElementById('data').textContent);
-document.getElementById('greeting').textContent = DATA.greeting || '';
+const $ = (s,r=document)=>r.querySelector(s);
+const ARR = '<span class="arr">&rarr;</span>';
+function esc(s){return String(s==null?'':s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
+function safeUrl(u){try{const p=new URL(u,location.href);return ['http:','https:','mailto:'].includes(p.protocol)?p.href:'#';}catch(e){return '#';}}
+function ytThumb(id){return 'https://img.youtube.com/vi/'+id+'/hqdefault.jpg';}
+function ytWatch(id){return 'https://www.youtube.com/watch?v='+id;}
 
-const PANELS = [
-  {{key:'music',     label:'🎵 Music'}},
-  {{key:'videos',    label:'▶ Watch'}},
-  {{key:'good_news', label:'🌿 Good News'}},
-  {{key:'discovery', label:'📜 Discovery'}},
-];
-const tabs = document.getElementById('tabs');
-PANELS.forEach((p, i) => {{
-  const b = document.createElement('div');
-  b.className = 'tab' + (i === 0 ? ' active' : '');
-  b.textContent = p.label;
-  b.onclick = () => selectTab(p.key, b);
-  tabs.appendChild(b);
-}});
-function selectTab(key, btn) {{
-  document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
-  btn.classList.add('active');
-  document.querySelectorAll('.panel').forEach(pl =>
-    pl.classList.toggle('active', pl.dataset.panel === key));
-}}
+// cover: real image when present, else a toned placeholder tile
+function cover(url,tone,label,play){
+  const p = play?'<span class="play"></span>':'';
+  if(url) return '<div class="cv photo"><img src="'+esc(safeUrl(url))+'" alt="" loading="lazy">'+p+'</div>';
+  return '<div class="cv img t'+tone+'" data-label="'+label+'">'+p+'</div>';
+}
 
-function esc(s) {{
-  return String(s == null ? '' : s).replace(/[&<>"'`]/g, c => ({{
-    '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;','`':'&#96;'
-  }}[c]));
-}}
-function safeUrl(u) {{
-  try {{
-    const p = new URL(u, location.href);
-    return ['http:','https:','mailto:'].includes(p.protocol) ? p.href : '#';
-  }} catch (e) {{ return '#'; }}
-}}
-function coverHTML(url, emoji) {{
-  return url ? `<img class="cover" src="${{esc(safeUrl(url))}}" alt="">`
-             : `<div class="cover-tile">${{emoji}}</div>`;
-}}
-function cardHTML(it, emoji) {{
-  return `<div class="card"><a href="${{esc(safeUrl(it.url))}}" target="_blank">${{coverHTML(it.cover, emoji)}}`
-    + `<div class="body"><div class="badge">${{esc(it.source || it.theme || '')}}</div>`
-    + `<div class="title">${{esc(it.title)}}</div><div class="note">${{esc(it.note)}}</div></div></a></div>`;
-}}
+// Masthead meta + Fern note
+(function(){
+  const bits=[];
+  bits.push(DATA.is_am?'Gathered at dawn':'Gathered at dusk');
+  if(DATA.music.length) bits.push(DATA.music.length+' tracks');
+  if(DATA.videos.length) bits.push(DATA.videos.length+' films');
+  const extra=DATA.good_news.length+DATA.discovery.length;
+  if(extra) bits.push(extra+' stories &amp; finds');
+  $('#meta').innerHTML = bits.map((b,i)=>(i?'<span class="dot"></span>':'')+'<span>'+b+'</span>').join('');
+  if(DATA.greeting){ $('#greeting').textContent = DATA.greeting; $('#fern').style.display=''; }
+})();
 
-// Grids
-function fillGrid(id, items, emoji) {{
-  const el = document.getElementById(id);
-  el.innerHTML = items.length
-    ? items.map(it => cardHTML(it, emoji)).join('')
-    : '<div class="empty">Nothing here in this edition.</div>';
-}}
-fillGrid('videos-grid', DATA.videos.map(v => ({{...v, url:'https://www.youtube.com/watch?v=' + v.video_id, cover:'https://img.youtube.com/vi/' + v.video_id + '/hqdefault.jpg'}})), '▶');
-fillGrid('good_news-grid', DATA.good_news, '🌿');
-fillGrid('discovery-grid', DATA.discovery, '📜');
+// Hero feature = first video
+(function(){
+  const v = DATA.videos[0]; if(!v) return;
+  const kick = "Today's opening" + (v.channel?' &nbsp;&middot;&nbsp; '+esc(v.channel):'');
+  $('#hero').href = v.video_id?ytWatch(v.video_id):'#';
+  $('#hero').innerHTML =
+    '<div class="cell">'+(v.video_id
+        ? '<div class="photo" style="height:100%"><img src="'+ytThumb(v.video_id)+'" alt=""><span class="play"></span></div>'
+        : '<div class="img t3" data-label="Video still" style="height:100%"><span class="play"></span></div>')+'</div>'
+    + '<div class="hero-text"><div class="eyebrow">'+kick+'</div><h2>'+esc(v.title)+'</h2>'
+    + '<p>'+esc(v.note)+'</p><span class="textlink">Watch the film '+ARR+'</span></div>';
+  $('#hero-wrap').style.display='';
+})();
 
-// Music carousel + genre filter
-const GENRES = [...new Set(DATA.music.map(m => (m.genre || '').trim()).filter(Boolean))];
-let activeGenre = null;
-const genresEl = document.getElementById('genres');
-function renderGenres() {{
-  const all = [{{g:null, label:'All'}}].concat(GENRES.map(g => ({{g, label:g}})));
-  genresEl.innerHTML = all.map(x =>
-    `<div class="genre ${{x.g === activeGenre ? 'active' : ''}}" data-g="${{esc(x.g || '')}}">${{esc(x.label)}}</div>`
-  ).join('');
-  genresEl.querySelectorAll('.genre').forEach(el => el.onclick = () => {{
-    activeGenre = el.dataset.g || null; renderGenres(); renderMusic();
-  }});
-}}
-function renderMusic() {{
-  const track = document.getElementById('music-track');
-  const items = activeGenre
-    ? DATA.music.filter(m => (m.genre || '').trim() === activeGenre)
-    : DATA.music;
-  track.innerHTML = items.length
-    ? items.map(it => cardHTML(it, '🎵')).join('')
-    : '<div class="empty">No tracks match that genre in this edition.</div>';
-}}
-function slide(dir) {{
-  document.getElementById('music-track').scrollBy({{left: dir * 260, behavior:'smooth'}});
-}}
-renderGenres();
-renderMusic();
+// Tabs
+const TABS=[{k:'music',l:'Soundtrack'},{k:'watch',l:'Watch'},{k:'good_news',l:'Good News'},{k:'discovery',l:'Archives'}];
+const tabsEl=$('#tabs');
+TABS.forEach((t,i)=>{
+  const b=document.createElement('button');
+  b.className='tab'+(i===0?' active':'');
+  b.innerHTML='<span class="ix">0'+(i+1)+'</span>'+t.l;
+  b.onclick=()=>{
+    document.querySelectorAll('.tab').forEach(x=>x.classList.remove('active'));
+    b.classList.add('active');
+    document.querySelectorAll('.panel').forEach(p=>p.classList.toggle('active',p.dataset.panel===t.k));
+    const top=$('#tabbar').getBoundingClientRect().top+window.scrollY;
+    if(window.scrollY>top) window.scrollTo({top:top,behavior:'smooth'});
+  };
+  tabsEl.appendChild(b);
+});
+
+// Music + genre filter
+const GENRES=[...new Set(DATA.music.map(m=>m.genre).filter(Boolean))];
+let activeGenre=null;
+function renderGenres(){
+  const all=[{g:null,l:'All'}].concat(GENRES.map(g=>({g,l:g})));
+  $('#genres').innerHTML=all.map(x=>'<button class="chip'+(x.g===activeGenre?' active':'')+'" data-g="'+esc(x.g||'')+'">'+esc(x.l)+'</button>').join('');
+  $('#genres').querySelectorAll('.chip').forEach(c=>c.onclick=()=>{activeGenre=c.dataset.g||null;renderGenres();renderMusic();});
+  if(!GENRES.length) $('#genres').innerHTML='';
+}
+function renderMusic(){
+  const items=activeGenre?DATA.music.filter(m=>m.genre===activeGenre):DATA.music;
+  $('#music-grid').innerHTML=items.length?items.map((m,i)=>
+    '<a class="card music" href="'+esc(safeUrl(m.url))+'" target="_blank">'+cover(m.cover,i%4,'Album cover',false)
+    +'<div class="meta-line"><span>'+esc(m.source||'Music')+'</span>'+(m.genre?'<span class="sep">&middot;</span><span>'+esc(m.genre)+'</span>':'')+'</div>'
+    +'<h4>'+esc(m.title)+'</h4><div class="note">'+esc(m.note)+'</div><span class="go">Listen '+ARR+'</span></a>').join('')
+    :'<div class="empty">No tracks in this edition.</div>';
+}
+$('#watch-grid').innerHTML=DATA.videos.length?DATA.videos.map((v,i)=>
+  '<a class="card watch" href="'+(v.video_id?ytWatch(v.video_id):'#')+'" target="_blank">'+cover(v.video_id?ytThumb(v.video_id):'',i%4,'Video still',true)
+  +'<div class="meta-line"><span>'+esc(v.channel||'Video')+'</span>'+(v.wild?'<span class="sep">&middot;</span><span>Wildcard</span>':'')+'</div>'
+  +'<h4>'+esc(v.title)+'</h4><div class="note">'+esc(v.note)+'</div><span class="go">Watch '+ARR+'</span></a>').join('')
+  :'<div class="empty">No films in this edition.</div>';
+$('#good_news-grid').innerHTML=DATA.good_news.length?DATA.good_news.map((g,i)=>
+  '<a class="card read" href="'+esc(safeUrl(g.url))+'" target="_blank">'+cover(g.cover,i%4,'Feature image',false)
+  +'<div class="meta-line"><span>'+esc(g.source||'Good News')+'</span></div>'
+  +'<h4>'+esc(g.title)+'</h4><div class="note">'+esc(g.note)+'</div><span class="go">Read the story '+ARR+'</span></a>').join('')
+  :'<div class="empty">Nothing here in this edition.</div>';
+$('#discovery-grid').innerHTML=DATA.discovery.length?DATA.discovery.map((d,i)=>
+  '<a class="card read" href="'+esc(safeUrl(d.url))+'" target="_blank">'+cover(d.cover,i%4,'Feature image',false)
+  +'<div class="meta-line">'+(d.cat?'<span class="badge">'+esc(d.cat)+'</span>':'')+'<span>'+esc(d.source||'')+'</span></div>'
+  +'<h4>'+esc(d.title)+'</h4><div class="note">'+esc(d.note)+'</div><span class="go">Read the story '+ARR+'</span></a>').join('')
+  :'<div class="empty">Nothing here in this edition.</div>';
+
+renderGenres(); renderMusic();
+
+const tabbar=$('#tabbar');
+const sentinel=tabbar.offsetTop;
+window.addEventListener('scroll',()=>{tabbar.classList.toggle('stuck',window.scrollY>sentinel+4);},{passive:true});
 </script>
 </body>
 </html>"""
@@ -242,23 +377,33 @@ renderMusic();
 
 def build_edition(curated: dict) -> str:
     fetched_at = curated.get("fetched_at", "")
+    is_am = curated.get("is_am_email", False)
+    edition_label = "Morning Edition" if is_am else "Evening Edition"
     try:
         dt = datetime.datetime.fromisoformat(fetched_at).astimezone(ZoneInfo("Europe/Zurich"))
-        date_str = f"{dt.strftime('%A, %B')} {dt.day}, {dt.strftime('%Y')} · {dt.strftime('%H:%M')}"
+        date_str = f"{dt.strftime('%a, %B')} {dt.day}, {dt.strftime('%Y')}"
+        issue = f"No. {_edition_no(dt, is_am)} &nbsp;&middot;&nbsp; "
     except Exception:
-        date_str = fetched_at
-    # Harden JSON for embedding in an HTML <script> element: neutralise any
-    # character that could start an HTML tag/comment ("</script>", "<!--") or
-    # break the JS string/line context. None of these change the parsed value.
+        date_str = fetched_at or ""
+        issue = ""
+
+    # Harden JSON for embedding in an HTML <script> element.
     data_json = (
         json.dumps(_payload(curated))
         .replace("<", "\\u003c")
         .replace(">", "\\u003e")
         .replace("&", "\\u0026")
-        .replace(chr(0x2028), "\\u2028")  # JS line separator
-        .replace(chr(0x2029), "\\u2029")  # JS paragraph separator
+        .replace("\u2028", "\\u2028")
+        .replace("\u2029", "\\u2029")
     )
-    return _PAGE.format(date_str=date_str, data_json=data_json)
+
+    return (
+        _PAGE
+        .replace("__EDITION_LABEL__", edition_label)
+        .replace("__ISSUE__", issue)
+        .replace("__DATE_STR__", date_str)
+        .replace("__DATA_JSON__", data_json)
+    )
 
 
 def write_edition(curated: dict) -> Path:
@@ -272,7 +417,7 @@ def main() -> None:
         raise FileNotFoundError(f"{CURATED_FILE} not found. Run fetcher.py first.")
     curated = json.loads(CURATED_FILE.read_text(encoding="utf-8"))
     path = write_edition(curated)
-    print(f"[webpage] Full edition written → {path}")
+    print(f"[webpage] Full edition written -> {path}")
 
 
 if __name__ == "__main__":
