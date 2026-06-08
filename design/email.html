@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Curated Canopy — Morning Edition</title>
+<link rel="stylesheet" href="tokens.css">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: var(--sans);
+    background: var(--paper-deep);
+    color: var(--ink);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  .frame {
+    max-width: 600px;
+    margin: 0 auto;
+    background: var(--paper);
+    padding: 0;
+  }
+
+  .pad { padding: 0 32px; }
+
+  /* ── Masthead ─────────────────────────────────── */
+  .masthead {
+    text-align: center;
+    padding: 44px 32px 30px;
+  }
+  .eyebrow {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--moss-deep);
+  }
+  .masthead .eyebrow { margin-bottom: 18px; }
+  .wordmark {
+    font-family: var(--serif);
+    font-weight: 500;
+    font-size: 44px;
+    line-height: 1.02;
+    letter-spacing: -0.01em;
+    color: var(--forest);
+  }
+  .tagline {
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: 16px;
+    color: var(--ink-soft);
+    margin-top: 12px;
+  }
+  .rule-fine {
+    height: 1px;
+    background: var(--line);
+    border: 0;
+  }
+  .meta-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    margin-top: 26px;
+    font-size: 11.5px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--ink-mute);
+  }
+  .meta-row .dot { width: 3px; height: 3px; border-radius: 50%; background: var(--clay); }
+
+  /* ── Fern's note ──────────────────────────────── */
+  .note {
+    padding: 30px 32px 34px;
+    border-top: 1px solid var(--line-soft);
+    border-bottom: 1px solid var(--line-soft);
+    background: var(--surface);
+    display: flex;
+    gap: 18px;
+    align-items: flex-start;
+  }
+  .monogram {
+    flex-shrink: 0;
+    width: 46px; height: 46px;
+    border-radius: 50%;
+    border: 1px solid var(--moss);
+    color: var(--moss-deep);
+    font-family: var(--serif);
+    font-size: 22px;
+    display: flex; align-items: center; justify-content: center;
+    margin-top: 4px;
+  }
+  .note .eyebrow { margin-bottom: 8px; }
+  .note p {
+    font-family: var(--serif);
+    font-size: 17.5px;
+    line-height: 1.62;
+    color: var(--ink-soft);
+  }
+  .note .sign {
+    font-style: italic;
+    color: var(--forest);
+  }
+
+  /* ── Section eyebrow w/ rule ──────────────────── */
+  .lead {
+    padding: 36px 32px 0;
+  }
+  .lead .eyebrow {
+    display: flex; align-items: center; gap: 14px;
+    color: var(--clay-deep);
+  }
+  .lead .eyebrow::after {
+    content: ""; flex: 1; height: 1px; background: var(--line);
+  }
+
+  /* ── Hero feature ─────────────────────────────── */
+  .hero { padding: 16px 32px 8px; }
+  .hero .img {
+    aspect-ratio: 3 / 2;
+    border-radius: var(--radius);
+  }
+  .hero h2 {
+    font-family: var(--serif);
+    font-weight: 500;
+    font-size: 27px;
+    line-height: 1.16;
+    letter-spacing: -0.01em;
+    color: var(--forest);
+    margin-top: 18px;
+  }
+  .hero .kicker {
+    font-size: 11px; font-weight: 600; letter-spacing: 0.16em;
+    text-transform: uppercase; color: var(--moss-deep);
+    margin-bottom: 10px;
+  }
+  .hero p {
+    font-size: 15px;
+    color: var(--ink-soft);
+    margin-top: 8px;
+    max-width: 46ch;
+  }
+
+  /* ── Image placeholder system ─────────────────── */
+  .img {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    background:
+      linear-gradient(135deg, rgba(255,255,255,0.18), rgba(255,255,255,0) 60%),
+      repeating-linear-gradient(135deg, rgba(32,39,31,0.035) 0 2px, transparent 2px 11px),
+      linear-gradient(160deg, var(--ph-a, #C9CBB0), var(--ph-b, #9DA882));
+    border: 1px solid rgba(32,39,31,0.10);
+  }
+  .img::after {
+    content: attr(data-label);
+    position: absolute;
+    left: 12px; bottom: 11px;
+    font-family: ui-monospace, 'SFMono-Regular', Menlo, monospace;
+    font-size: 9.5px; letter-spacing: 0.12em; text-transform: uppercase;
+    color: rgba(255,255,255,0.9);
+    background: rgba(32,39,31,0.34);
+    padding: 3px 8px; border-radius: 100px;
+    backdrop-filter: blur(2px);
+  }
+  .img.moss  { --ph-a:#B7C29A; --ph-b:#7E8C5A; }
+  .img.clay  { --ph-a:#D8B59B; --ph-b:#B0764F; }
+  .img.stone { --ph-a:#D9CFB8; --ph-b:#B3A684; }
+  .img.deep  { --ph-a:#7E8C6E; --ph-b:#46553E; }
+
+  /* play affordance for video imagery */
+  .img .play {
+    position: absolute; inset: 0; margin: auto;
+    width: 56px; height: 56px; border-radius: 50%;
+    border: 1.5px solid rgba(255,255,255,0.92);
+    background: rgba(32,39,31,0.18);
+    display: flex; align-items: center; justify-content: center;
+  }
+  .img .play::after {
+    content: ""; margin-left: 3px;
+    border-style: solid; border-width: 8px 0 8px 13px;
+    border-color: transparent transparent transparent rgba(255,255,255,0.95);
+  }
+
+  /* ── In this edition ──────────────────────────── */
+  .contents { padding: 36px 32px 8px; }
+  .contents .eyebrow {
+    display: flex; align-items: center; gap: 14px;
+    color: var(--clay-deep); margin-bottom: 4px;
+  }
+  .contents .eyebrow::after {
+    content: ""; flex: 1; height: 1px; background: var(--line);
+  }
+  .toc-row {
+    display: flex; align-items: baseline; gap: 16px;
+    padding: 18px 0;
+    border-bottom: 1px solid var(--line-soft);
+    text-decoration: none;
+    color: inherit;
+  }
+  .toc-row:last-child { border-bottom: 0; }
+  .toc-num {
+    font-family: var(--serif);
+    font-size: 14px;
+    color: var(--moss);
+    width: 24px; flex-shrink: 0;
+    font-variant-numeric: tabular-nums;
+  }
+  .toc-body { flex: 1; min-width: 0; }
+  .toc-cat {
+    font-family: var(--serif);
+    font-size: 19px;
+    color: var(--forest);
+    line-height: 1.2;
+  }
+  .toc-lead {
+    font-size: 13.5px;
+    color: var(--ink-mute);
+    margin-top: 3px;
+    overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+  }
+  .toc-count {
+    font-size: 11px; font-weight: 600;
+    letter-spacing: 0.1em; text-transform: uppercase;
+    color: var(--moss-deep);
+    flex-shrink: 0;
+    font-variant-numeric: tabular-nums;
+  }
+
+  /* ── CTA ──────────────────────────────────────── */
+  .cta-wrap { padding: 34px 32px 8px; text-align: center; }
+  .cta {
+    display: inline-block;
+    font-family: var(--sans);
+    font-size: 14px; font-weight: 600;
+    letter-spacing: 0.04em;
+    color: #FBF7EE;
+    background: var(--clay);
+    padding: 15px 34px;
+    border-radius: 100px;
+    text-decoration: none;
+    white-space: nowrap;
+    box-shadow: 0 10px 24px -12px rgba(168,90,54,0.7);
+  }
+  .cta-sub {
+    margin-top: 14px;
+    font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--ink-mute);
+  }
+
+  /* ── Footer ───────────────────────────────────── */
+  .footer {
+    text-align: center;
+    padding: 40px 32px 46px;
+    margin-top: 30px;
+    border-top: 1px solid var(--line-soft);
+  }
+  .footer .fmark {
+    font-family: var(--serif);
+    font-size: 16px; color: var(--forest);
+    letter-spacing: 0.02em;
+  }
+  .footer p {
+    font-size: 12px; color: var(--ink-mute);
+    margin-top: 12px; line-height: 1.7;
+  }
+  .footer a { color: var(--ink-soft); text-decoration: underline; text-underline-offset: 2px; }
+
+  @media (max-width: 460px) {
+    .pad, .masthead, .note, .hero, .contents, .cta-wrap, .footer, .lead { padding-left: 22px; padding-right: 22px; }
+    .wordmark { font-size: 36px; }
+    .hero h2 { font-size: 23px; }
+    .meta-row { flex-wrap: wrap; gap: 8px 12px; }
+  }
+</style>
+</head>
+<body>
+<div class="frame">
+
+  <!-- Masthead -->
+  <header class="masthead">
+    <div class="eyebrow">Morning Edition &nbsp;·&nbsp; No. 248</div>
+    <div class="wordmark">The Curated&nbsp;Canopy</div>
+    <div class="tagline">Human stories, good news &amp; the natural world</div>
+    <div class="meta-row">
+      <span>Sat, June 7</span>
+      <span class="dot"></span>
+      <span>Gathered at dawn</span>
+      <span class="dot"></span>
+      <span>5 min</span>
+    </div>
+  </header>
+
+  <!-- Fern's note -->
+  <section class="note">
+    <div class="monogram">F</div>
+    <div>
+      <div class="eyebrow">A note from Fern</div>
+      <p>It's a slow, green sort of morning in the archive. I've gathered the quiet corners today: patient craft, a little birdsong, and good news drifting up from the coral. Pour something warm; there's no hurry here. <span class="sign">Yours, Fern</span></p>
+    </div>
+  </section>
+
+  <!-- Hero feature -->
+  <div class="lead"><div class="eyebrow">Today's opening</div></div>
+  <a class="hero" href="#" style="display:block;text-decoration:none;">
+    <div class="img deep" data-label="Video still" style="aspect-ratio:3/2;border-radius:var(--radius);">
+      <span class="play"></span>
+    </div>
+    <div class="kicker">Watch &nbsp;·&nbsp; Woodcraft</div>
+    <h2>How a Japanese joiner builds without a single nail</h2>
+    <p>Twenty quiet minutes of pure, meditative craft: chisels, cedar, and joints cut to a hair's width.</p>
+  </a>
+
+  <!-- In this edition -->
+  <section class="contents">
+    <div class="eyebrow">In this edition</div>
+
+    <a class="toc-row" href="#">
+      <span class="toc-num">01</span>
+      <span class="toc-body">
+        <span class="toc-cat">The Morning Soundtrack</span>
+        <span class="toc-lead">Hania Rani — “Ghosts” · Aoife O'Donovan · Nala Sinephro</span>
+      </span>
+      <span class="toc-count">5 Tracks</span>
+    </a>
+
+    <a class="toc-row" href="#">
+      <span class="toc-num">02</span>
+      <span class="toc-body">
+        <span class="toc-cat">Worth Watching</span>
+        <span class="toc-lead">The last glassblowers of Murano · Foraging Devon's hedgerows</span>
+      </span>
+      <span class="toc-count">5 Films</span>
+    </a>
+
+    <a class="toc-row" href="#">
+      <span class="toc-num">03</span>
+      <span class="toc-body">
+        <span class="toc-cat">Global Silver Linings</span>
+        <span class="toc-lead">Jaguars return to a reforested Costa Rican valley</span>
+      </span>
+      <span class="toc-count">4 Stories</span>
+    </a>
+
+    <a class="toc-row" href="#">
+      <span class="toc-num">04</span>
+      <span class="toc-body">
+        <span class="toc-cat">From the Archives</span>
+        <span class="toc-lead">The hidden ice houses beneath London · How trees talk</span>
+      </span>
+      <span class="toc-count">4 Finds</span>
+    </a>
+  </section>
+
+  <!-- CTA -->
+  <div class="cta-wrap">
+    <a class="cta" href="#">Open the full edition</a>
+    <div class="cta-sub">Covers, films &amp; the complete collection</div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="fmark">The Curated Canopy</div>
+    <p>
+      Curated twice daily by Fern.<br>
+      You're receiving this because you asked for a quieter inbox.<br>
+      <a href="#">Preferences</a> &nbsp;·&nbsp; <a href="#">Unsubscribe</a>
+    </p>
+  </footer>
+
+</div>
+</body>
+</html>

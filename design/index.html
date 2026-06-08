@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Curated Canopy — Redesign</title>
+<link rel="stylesheet" href="tokens.css">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: var(--sans);
+    background: #DDD5C4;
+    color: var(--ink);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  .eyebrow {
+    font-size: 11px; font-weight: 600;
+    letter-spacing: 0.22em; text-transform: uppercase; color: var(--clay-deep);
+  }
+  .wrap { max-width: 1180px; margin: 0 auto; padding: 0 32px; }
+
+  /* Header */
+  header.top { text-align: center; padding: 72px 32px 12px; }
+  header.top h1 {
+    font-family: var(--serif); font-weight: 500;
+    font-size: clamp(40px, 7vw, 72px); line-height: 1; letter-spacing: -0.015em;
+    color: var(--forest); margin-top: 18px;
+  }
+  header.top .sub {
+    font-family: var(--serif); font-style: italic; font-size: clamp(17px,2.4vw,21px);
+    color: var(--ink-soft); margin-top: 16px;
+  }
+
+  /* Art direction strip */
+  .ad {
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px;
+    background: var(--line); border: 1px solid var(--line);
+    border-radius: var(--radius); overflow: hidden; margin: 48px 0 8px;
+  }
+  .ad > div { background: var(--paper); padding: 28px 26px; }
+  .ad h3 {
+    font-size: 11px; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase;
+    color: var(--moss-deep); margin-bottom: 18px;
+  }
+  .swatches { display: flex; flex-wrap: wrap; gap: 10px; }
+  .sw { display: flex; flex-direction: column; gap: 7px; align-items: center; }
+  .sw i {
+    width: 42px; height: 42px; border-radius: 9px; border: 1px solid rgba(32,39,31,0.12); display:block;
+  }
+  .sw span { font-size: 9.5px; letter-spacing: 0.06em; color: var(--ink-mute); text-transform: uppercase; }
+  .type-spec .big {
+    font-family: var(--serif); font-size: 40px; color: var(--forest); line-height: 1; font-weight: 500;
+  }
+  .type-spec .big em { color: var(--clay); }
+  .type-spec .lab { margin-top: 12px; font-size: 13px; color: var(--ink-soft); }
+  .type-spec .lab b { color: var(--forest); font-weight: 600; }
+  .type-spec .sans-row {
+    margin-top: 14px; font-size: 12px; letter-spacing: 0.04em; color: var(--ink-soft);
+    border-top: 1px solid var(--line-soft); padding-top: 14px;
+  }
+  .ad ul { list-style: none; }
+  .ad ul li {
+    font-size: 13.5px; color: var(--ink-soft); padding: 7px 0 7px 18px; position: relative;
+  }
+  .ad ul li::before {
+    content: ""; position: absolute; left: 0; top: 14px;
+    width: 6px; height: 6px; border-radius: 50%; background: var(--moss);
+  }
+
+  /* Section block */
+  .block { padding: 60px 0 12px; }
+  .block-head { display: flex; align-items: baseline; gap: 16px; margin-bottom: 30px; }
+  .block-head .num { font-family: var(--serif); font-size: 15px; color: var(--moss); }
+  .block-head h2 {
+    font-family: var(--serif); font-weight: 500; font-size: clamp(26px,3.4vw,36px);
+    color: var(--forest); letter-spacing: -0.01em;
+  }
+  .block-head .desc { margin-left: auto; max-width: 38ch; font-size: 14px; color: var(--ink-soft); text-align: right; }
+
+  /* Browser frame */
+  .browser {
+    border-radius: 14px; overflow: hidden; background: var(--surface);
+    box-shadow: 0 2px 4px rgba(32,39,31,0.06), 0 40px 80px -40px rgba(32,39,31,0.4);
+    border: 1px solid rgba(32,39,31,0.08);
+  }
+  .chrome {
+    height: 46px; display: flex; align-items: center; gap: 8px; padding: 0 16px;
+    background: #ECE4D4; border-bottom: 1px solid var(--line);
+  }
+  .chrome i { width: 11px; height: 11px; border-radius: 50%; display: block; }
+  .chrome .r { background: #C98166; } .chrome .y { background: #D6B36A; } .chrome .g { background: #9BA873; }
+  .chrome .url {
+    margin: 0 auto; font-size: 12px; color: var(--ink-mute); letter-spacing: 0.03em;
+    background: var(--paper); padding: 6px 22px; border-radius: 100px; border: 1px solid var(--line);
+  }
+  .browser iframe { width: 100%; height: 760px; border: 0; display: block; background: var(--paper); }
+
+  /* Phones row */
+  .phones { display: flex; gap: 44px; flex-wrap: wrap; justify-content: center; align-items: flex-start; }
+  .phone-col { display: flex; flex-direction: column; align-items: center; gap: 16px; }
+  .phone-col .cap { font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--ink-mute); }
+  .phone {
+    width: 372px; padding: 13px; background: #232319; border-radius: 46px;
+    box-shadow: 0 2px 4px rgba(32,39,31,0.1), 0 50px 90px -40px rgba(32,39,31,0.55);
+  }
+  .phone .screen {
+    position: relative; border-radius: 34px; overflow: hidden; background: var(--paper);
+  }
+  .phone .notch {
+    position: absolute; top: 10px; left: 50%; transform: translateX(-50%);
+    width: 108px; height: 28px; background: #232319; border-radius: 100px; z-index: 3;
+  }
+  .phone iframe { width: 346px; height: 740px; border: 0; display: block; }
+
+  .hint {
+    text-align: center; font-size: 12px; color: var(--ink-mute);
+    margin-top: 28px; letter-spacing: 0.04em;
+  }
+  .hint a { color: var(--clay-deep); text-decoration: underline; text-underline-offset: 2px; }
+
+  footer.end {
+    text-align: center; padding: 70px 32px 80px; margin-top: 40px;
+    border-top: 1px solid var(--line);
+  }
+  footer.end .fmark { font-family: var(--serif); font-size: 22px; color: var(--forest); }
+  footer.end p { font-size: 13px; color: var(--ink-mute); margin-top: 10px; }
+
+  @media (max-width: 760px) {
+    .ad { grid-template-columns: 1fr; }
+    .block-head { flex-wrap: wrap; }
+    .block-head .desc { margin-left: 0; text-align: left; }
+    .phone { width: 320px; }
+    .phone iframe { width: 294px; height: 620px; }
+  }
+</style>
+</head>
+<body>
+
+  <header class="top">
+    <div class="eyebrow">Redesign &nbsp;·&nbsp; Direction 01 — Botanical Editorial</div>
+    <h1>The Curated Canopy</h1>
+    <div class="sub">A more adult, luxurious treatment of the email &amp; the web edition — still organic, easy on the eye from phone to desktop.</div>
+  </header>
+
+  <div class="wrap">
+
+    <!-- Art direction -->
+    <div class="ad">
+      <div>
+        <h3>Palette — Warm stone, moss &amp; clay</h3>
+        <div class="swatches">
+          <div class="sw"><i style="background:#F4EEE2"></i><span>Stone</span></div>
+          <div class="sw"><i style="background:#2C3A2B"></i><span>Forest</span></div>
+          <div class="sw"><i style="background:#6E7B4B"></i><span>Moss</span></div>
+          <div class="sw"><i style="background:#A85A36"></i><span>Clay</span></div>
+          <div class="sw"><i style="background:#20271F"></i><span>Ink</span></div>
+          <div class="sw"><i style="background:#FBF7EE"></i><span>Paper</span></div>
+        </div>
+      </div>
+      <div class="type-spec">
+        <h3>Typography</h3>
+        <div class="big">Aa <em>Bb</em></div>
+        <div class="lab"><b>Newsreader</b> — literary serif for headlines &amp; Fern's voice</div>
+        <div class="sans-row"><b style="font-weight:700;color:var(--forest)">Hanken Grotesk</b> — labels, metadata &amp; UI</div>
+      </div>
+      <div>
+        <h3>Principles</h3>
+        <ul>
+          <li>Hairline rules &amp; whitespace, not heavy accent bars</li>
+          <li>Editorial eyebrows &amp; index numerals</li>
+          <li>Large, magazine-scale imagery</li>
+          <li>No emojis — typographic marks instead</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Web edition desktop -->
+    <section class="block">
+      <div class="block-head">
+        <span class="num">01</span>
+        <h2>The Web Edition</h2>
+        <span class="desc">Leads with big imagery. Sticky tabs, a music genre filter, and four browsable sections — fully interactive.</span>
+      </div>
+      <div class="browser">
+        <div class="chrome">
+          <i class="r"></i><i class="y"></i><i class="g"></i>
+          <span class="url">thecuratedcanopy.com / edition</span>
+        </div>
+        <iframe src="edition.html" title="Web edition" loading="lazy"></iframe>
+      </div>
+      <div class="hint">Live preview — scroll inside, switch tabs, filter by genre. Or <a href="edition.html" target="_blank">open it full-screen →</a></div>
+    </section>
+
+    <!-- Phones -->
+    <section class="block">
+      <div class="block-head">
+        <span class="num">02</span>
+        <h2>On the phone</h2>
+        <span class="desc">The same system, reflowed for the inbox and the small screen.</span>
+      </div>
+      <div class="phones">
+        <div class="phone-col">
+          <div class="cap">The Email — a quiet cover</div>
+          <div class="phone">
+            <div class="screen">
+              <div class="notch"></div>
+              <iframe src="email.html" title="Email" loading="lazy"></iframe>
+            </div>
+          </div>
+        </div>
+        <div class="phone-col">
+          <div class="cap">The Web Edition — mobile</div>
+          <div class="phone">
+            <div class="screen">
+              <div class="notch"></div>
+              <iframe src="edition.html" title="Web edition mobile" loading="lazy"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hint">Both are live &amp; scrollable. Open standalone: <a href="email.html" target="_blank">Email →</a> &nbsp; <a href="edition.html" target="_blank">Web edition →</a></div>
+    </section>
+
+  </div>
+
+  <footer class="end">
+    <div class="fmark">The Curated Canopy</div>
+    <p>Direction 01 of the redesign. Once we lock the look, I'll rebuild the Python templates (renderer.py &amp; webpage.py) to match.</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Curated Canopy — Full Edition</title>
+<link rel="stylesheet" href="tokens.css">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: var(--sans);
+    background: var(--paper);
+    color: var(--ink);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+  img { max-width: 100%; display: block; }
+  a { color: inherit; text-decoration: none; }
+
+  .wrap { max-width: 1120px; margin: 0 auto; padding: 0 40px; }
+
+  .eyebrow {
+    font-size: 11px; font-weight: 600;
+    letter-spacing: 0.22em; text-transform: uppercase;
+    color: var(--moss-deep);
+  }
+
+  /* ── Image placeholder system ─────────────────── */
+  .img {
+    position: relative; width: 100%; overflow: hidden;
+    background:
+      linear-gradient(135deg, rgba(255,255,255,0.18), rgba(255,255,255,0) 60%),
+      repeating-linear-gradient(135deg, rgba(32,39,31,0.035) 0 2px, transparent 2px 11px),
+      linear-gradient(160deg, var(--ph-a, #C9CBB0), var(--ph-b, #9DA882));
+    border: 1px solid rgba(32,39,31,0.10);
+  }
+  .img::after {
+    content: attr(data-label);
+    position: absolute; left: 12px; bottom: 11px;
+    font-family: ui-monospace, 'SFMono-Regular', Menlo, monospace;
+    font-size: 9px; letter-spacing: 0.12em; text-transform: uppercase;
+    color: rgba(255,255,255,0.92);
+    background: rgba(32,39,31,0.32);
+    padding: 3px 8px; border-radius: 100px; backdrop-filter: blur(2px);
+  }
+  .img.moss  { --ph-a:#B7C29A; --ph-b:#7E8C5A; }
+  .img.clay  { --ph-a:#D8B59B; --ph-b:#B0764F; }
+  .img.stone { --ph-a:#D9CFB8; --ph-b:#B3A684; }
+  .img.deep  { --ph-a:#7E8C6E; --ph-b:#46553E; }
+  .img .play {
+    position: absolute; inset: 0; margin: auto;
+    width: 60px; height: 60px; border-radius: 50%;
+    border: 1.5px solid rgba(255,255,255,0.92);
+    background: rgba(32,39,31,0.16);
+    display: flex; align-items: center; justify-content: center;
+    transition: transform .25s ease, background .25s ease;
+  }
+  .img .play::after {
+    content: ""; margin-left: 3px;
+    border-style: solid; border-width: 9px 0 9px 15px;
+    border-color: transparent transparent transparent rgba(255,255,255,0.95);
+  }
+
+  /* ── Masthead cover ───────────────────────────── */
+  .cover { text-align: center; padding: 60px 40px 40px; }
+  .cover .eyebrow { color: var(--clay-deep); margin-bottom: 22px; }
+  .cover h1 {
+    font-family: var(--serif); font-weight: 500;
+    font-size: clamp(46px, 8vw, 84px); line-height: 0.98;
+    letter-spacing: -0.015em; color: var(--forest);
+  }
+  .cover .tagline {
+    font-family: var(--serif); font-style: italic;
+    font-size: clamp(17px, 2.4vw, 22px);
+    color: var(--ink-soft); margin-top: 18px;
+  }
+  .cover .meta {
+    display: flex; flex-wrap: wrap; align-items: center; justify-content: center;
+    gap: 16px; margin-top: 30px;
+    font-size: 11.5px; letter-spacing: 0.16em; text-transform: uppercase;
+    color: var(--ink-mute);
+  }
+  .cover .meta .dot { width: 3px; height: 3px; border-radius: 50%; background: var(--clay); }
+
+  /* ── Fern note ────────────────────────────────── */
+  .fern {
+    max-width: 720px; margin: 0 auto; padding: 0 40px 8px;
+    display: flex; gap: 22px; align-items: flex-start;
+  }
+  .monogram {
+    flex-shrink: 0; width: 52px; height: 52px; border-radius: 50%;
+    border: 1px solid var(--moss); color: var(--moss-deep);
+    font-family: var(--serif); font-size: 24px;
+    display: flex; align-items: center; justify-content: center; margin-top: 6px;
+  }
+  .fern .eyebrow { margin-bottom: 9px; }
+  .fern p {
+    font-family: var(--serif); font-size: 20px; line-height: 1.6;
+    color: var(--ink-soft);
+  }
+  .fern .sign { font-style: italic; color: var(--forest); }
+
+  /* ── Hero feature ─────────────────────────────── */
+  .hero { margin-top: 52px; }
+  .hero-grid {
+    display: grid; grid-template-columns: 1.5fr 1fr; gap: 0;
+    border-top: 1px solid var(--line); border-bottom: 1px solid var(--line);
+  }
+  .hero-grid .img { height: 100%; min-height: 420px; border: 0; border-right: 1px solid var(--line); }
+  .hero-text { padding: 44px 48px; display: flex; flex-direction: column; justify-content: center; }
+  .hero-text .eyebrow { color: var(--clay-deep); margin-bottom: 18px; }
+  .hero-text h2 {
+    font-family: var(--serif); font-weight: 500;
+    font-size: clamp(28px, 3.4vw, 40px); line-height: 1.1;
+    letter-spacing: -0.01em; color: var(--forest);
+  }
+  .hero-text p {
+    font-size: 16.5px; color: var(--ink-soft); margin-top: 18px; max-width: 42ch;
+  }
+  .textlink {
+    display: inline-flex; align-items: center; gap: 8px;
+    margin-top: 26px; font-size: 13px; font-weight: 600;
+    letter-spacing: 0.04em; color: var(--clay-deep);
+  }
+  .textlink .arr { transition: transform .2s ease; }
+  .textlink:hover .arr { transform: translateX(4px); }
+
+  /* ── Sticky tab bar ───────────────────────────── */
+  .tabbar {
+    position: sticky; top: 0; z-index: 50;
+    background: rgba(244,238,226,0.86);
+    backdrop-filter: blur(10px) saturate(120%);
+    border-bottom: 1px solid var(--line);
+    margin-top: 56px;
+  }
+  .tabbar-inner {
+    max-width: 1120px; margin: 0 auto; padding: 0 40px;
+    display: flex; align-items: center; gap: 28px; height: 60px;
+  }
+  .tabmark {
+    font-family: var(--serif); font-size: 18px; color: var(--forest);
+    white-space: nowrap; opacity: 0; transform: translateX(-6px);
+    transition: opacity .3s ease, transform .3s ease; pointer-events: none;
+    width: 0; overflow: hidden;
+  }
+  .tabbar.stuck .tabmark { opacity: 1; transform: none; width: auto; margin-right: 8px; }
+  .tabs {
+    display: flex; gap: 4px; flex: 1;
+    overflow-x: auto; scrollbar-width: none;
+  }
+  .tabs::-webkit-scrollbar { display: none; }
+  .tab {
+    position: relative; white-space: nowrap; cursor: pointer;
+    padding: 19px 14px; font-size: 13px; font-weight: 600;
+    letter-spacing: 0.04em; color: var(--ink-mute);
+    background: none; border: 0; font-family: var(--sans);
+    transition: color .2s ease;
+  }
+  .tab:hover { color: var(--ink); }
+  .tab.active { color: var(--forest); }
+  .tab .ix {
+    font-family: var(--serif); font-size: 11px; color: var(--moss);
+    margin-right: 6px; font-weight: 400;
+  }
+  .tab::after {
+    content: ""; position: absolute; left: 14px; right: 14px; bottom: -1px;
+    height: 2px; background: var(--clay); transform: scaleX(0);
+    transition: transform .25s ease; transform-origin: center;
+  }
+  .tab.active::after { transform: scaleX(1); }
+
+  /* ── Panels ───────────────────────────────────── */
+  .panel { display: none; padding: 56px 0 20px; }
+  .panel.active { display: block; animation: fade .4s ease; }
+  @keyframes fade { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+
+  .sec-head { margin-bottom: 34px; }
+  .sec-head .eyebrow { display: flex; align-items: center; gap: 16px; color: var(--clay-deep); }
+  .sec-head .eyebrow::after { content: ""; flex: 1; height: 1px; background: var(--line); }
+  .sec-head h3 {
+    font-family: var(--serif); font-weight: 500;
+    font-size: clamp(30px, 4vw, 44px); line-height: 1.05;
+    letter-spacing: -0.01em; color: var(--forest); margin-top: 16px;
+  }
+  .sec-head .lede {
+    font-family: var(--serif); font-style: italic;
+    font-size: 18px; color: var(--ink-mute); margin-top: 10px; max-width: 54ch;
+  }
+
+  /* genre chips */
+  .chips { display: flex; flex-wrap: wrap; gap: 9px; margin-bottom: 30px; }
+  .chip {
+    cursor: pointer; font-family: var(--sans);
+    font-size: 12px; font-weight: 600; letter-spacing: 0.03em;
+    padding: 8px 16px; border-radius: 100px;
+    border: 1px solid var(--line); background: var(--surface);
+    color: var(--ink-soft); transition: all .18s ease;
+  }
+  .chip:hover { border-color: var(--moss); color: var(--forest); }
+  .chip.active { background: var(--forest); border-color: var(--forest); color: var(--paper); }
+
+  /* card grids */
+  .grid { display: grid; gap: 30px 26px; }
+  .grid.music   { grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); }
+  .grid.watch   { grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); }
+  .grid.read    { grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); }
+
+  .card { display: flex; flex-direction: column; }
+  .card .cover-img { border-radius: var(--radius); }
+  .card.music .cover-img { aspect-ratio: 1 / 1; }
+  .card.watch .cover-img { aspect-ratio: 16 / 9; }
+  .card.read  .cover-img { aspect-ratio: 3 / 2; }
+  .card .cover-img .play { width: 52px; height: 52px; }
+  .card:hover .cover-img .play { transform: scale(1.06); background: rgba(32,39,31,0.32); }
+  .card .meta-line {
+    display: flex; align-items: center; gap: 10px;
+    margin-top: 16px; font-size: 10.5px; font-weight: 600;
+    letter-spacing: 0.13em; text-transform: uppercase; color: var(--moss-deep);
+  }
+  .card .meta-line .sep { color: var(--line); }
+  .card .meta-line .dur { margin-left: auto; color: var(--ink-mute); letter-spacing: 0.08em; }
+  .card h4 {
+    font-family: var(--serif); font-weight: 500;
+    font-size: 21px; line-height: 1.2; color: var(--forest);
+    margin-top: 9px; letter-spacing: -0.005em;
+  }
+  .card.music h4 { font-size: 19px; }
+  .card .note { font-size: 14.5px; color: var(--ink-soft); margin-top: 8px; line-height: 1.55; }
+  .card .go {
+    margin-top: 14px; font-size: 12px; font-weight: 600; letter-spacing: 0.04em;
+    color: var(--clay-deep); display: inline-flex; align-items: center; gap: 7px;
+  }
+  .card .go .arr { transition: transform .2s ease; }
+  .card:hover .go .arr { transform: translateX(4px); }
+  .badge {
+    font-family: var(--sans); font-size: 10px; font-weight: 700;
+    letter-spacing: 0.1em; text-transform: uppercase;
+    padding: 3px 9px; border-radius: 100px; border: 1px solid var(--line);
+    color: var(--moss-deep);
+  }
+
+  /* ── Footer ───────────────────────────────────── */
+  footer {
+    margin-top: 80px; border-top: 1px solid var(--line);
+    padding: 50px 40px 60px; text-align: center;
+  }
+  footer .fmark { font-family: var(--serif); font-size: 26px; color: var(--forest); }
+  footer .ftag { font-family: var(--serif); font-style: italic; color: var(--ink-mute); margin-top: 8px; }
+  footer .links {
+    margin-top: 22px; font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--ink-mute); display: flex; gap: 18px; justify-content: center;
+  }
+  footer .links a { color: var(--ink-soft); }
+
+  /* ── Responsive ───────────────────────────────── */
+  @media (max-width: 820px) {
+    .hero-grid { grid-template-columns: 1fr; }
+    .hero-grid .img { border-right: 0; border-bottom: 1px solid var(--line); min-height: 280px; }
+    .hero-text { padding: 34px 0; }
+  }
+  @media (max-width: 600px) {
+    .wrap, .tabbar-inner { padding-left: 22px; padding-right: 22px; }
+    .cover { padding: 44px 22px 30px; }
+    .fern { padding: 0 22px 8px; gap: 16px; }
+    .fern p { font-size: 18px; }
+    .hero { margin-top: 36px; }
+    .panel { padding-top: 40px; }
+    .grid { gap: 26px 18px; }
+    .grid.music { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); }
+    .tabbar-inner { gap: 0; }
+    .tab { padding: 19px 12px; }
+  }
+</style>
+</head>
+<body>
+
+  <!-- Masthead -->
+  <header class="cover">
+    <div class="eyebrow">Morning Edition &nbsp;·&nbsp; No. 248 &nbsp;·&nbsp; Sat, June 7</div>
+    <h1>The Curated Canopy</h1>
+    <div class="tagline">Human stories, good news &amp; the natural world</div>
+    <div class="meta">
+      <span>Gathered at dawn</span>
+      <span class="dot"></span>
+      <span>5 tracks · 5 films</span>
+      <span class="dot"></span>
+      <span>8 stories &amp; finds</span>
+    </div>
+  </header>
+
+  <!-- Fern's note -->
+  <section class="fern">
+    <div class="monogram">F</div>
+    <div>
+      <div class="eyebrow">A note from Fern</div>
+      <p>It's a slow, green sort of morning in the archive. I've gathered the quiet corners today: patient craft, a little birdsong, and good news drifting up from the coral. Pour something warm; there's no hurry here. <span class="sign">Yours, Fern</span></p>
+    </div>
+  </section>
+
+  <!-- Hero feature -->
+  <div class="wrap hero">
+    <a class="hero-grid" href="#">
+      <div class="img deep" data-label="Video still"><span class="play"></span></div>
+      <div class="hero-text">
+        <div class="eyebrow">Today's opening &nbsp;·&nbsp; Watch</div>
+        <h2>How a Japanese joiner builds without a single nail</h2>
+        <p>Twenty quiet minutes of pure, meditative craft: chisels, cedar, and joinery cut to a hair's width, held together by nothing but geometry.</p>
+        <span class="textlink">Watch the film <span class="arr">→</span></span>
+      </div>
+    </a>
+  </div>
+
+  <!-- Sticky tabs -->
+  <nav class="tabbar" id="tabbar">
+    <div class="tabbar-inner">
+      <span class="tabmark">Canopy</span>
+      <div class="tabs" id="tabs"></div>
+    </div>
+  </nav>
+
+  <!-- Panels -->
+  <main class="wrap">
+    <section class="panel active" data-panel="music">
+      <div class="sec-head">
+        <div class="eyebrow">Section One</div>
+        <h3>The Morning Soundtrack</h3>
+        <div class="lede">Fresh picks from the music world to set the tone for your day.</div>
+      </div>
+      <div class="chips" id="genres"></div>
+      <div class="grid music" id="music-grid"></div>
+    </section>
+
+    <section class="panel" data-panel="watch">
+      <div class="sec-head">
+        <div class="eyebrow">Section Two</div>
+        <h3>Worth Watching</h3>
+        <div class="lede">Long, patient films for when you have a little time to spend.</div>
+      </div>
+      <div class="grid watch" id="watch-grid"></div>
+    </section>
+
+    <section class="panel" data-panel="good_news">
+      <div class="sec-head">
+        <div class="eyebrow">Section Three</div>
+        <h3>Global Silver Linings</h3>
+        <div class="lede">Stories that remind you the world is still full of good.</div>
+      </div>
+      <div class="grid read" id="good_news-grid"></div>
+    </section>
+
+    <section class="panel" data-panel="discovery">
+      <div class="sec-head">
+        <div class="eyebrow">Section Four</div>
+        <h3>From the Archives</h3>
+        <div class="lede">Forgotten places, hidden histories, and the science that rewires how you see the world.</div>
+      </div>
+      <div class="grid read" id="discovery-grid"></div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="fmark">The Curated Canopy</div>
+    <div class="ftag">Gathered twice daily by Fern</div>
+    <div class="links">
+      <a href="#">About</a>
+      <a href="#">The Archive</a>
+      <a href="#">Preferences</a>
+      <a href="#">Unsubscribe</a>
+    </div>
+  </footer>
+
+<script>
+const DATA = {
+  music: [
+    { title:"Ghosts", artist:"Hania Rani", genre:"Modern Classical", source:"Bandcamp Daily", note:"Piano like light moving slowly across a wall.", tone:"stone" },
+    { title:"All My Friends", artist:"Aoife O'Donovan", genre:"Folk", source:"NPR Music", note:"Strings that ache and lift in the same breath.", tone:"clay" },
+    { title:"Endlessness", artist:"Nala Sinephro", genre:"Ambient Jazz", source:"Bandcamp Daily", note:"A slow tide of harp, breath, and synth.", tone:"moss" },
+    { title:"Black Classical Music", artist:"Yussef Dayes", genre:"Jazz", source:"Sofar Sounds", note:"Warm, rolling, gloriously unhurried percussion.", tone:"deep" },
+    { title:"Bright Future", artist:"Adrianne Lenker", genre:"Folk", source:"NPR Music", note:"Recorded to tape; you can hear the room breathe.", tone:"stone" },
+    { title:"Cascade", artist:"Floating Points", genre:"Ambient Jazz", source:"Bandcamp Daily", note:"Synth lines that bloom and dissolve like weather.", tone:"moss" },
+  ],
+  watch: [
+    { title:"How a Japanese joiner builds without a single nail", channel:"Woodcraft", dur:"21:04", note:"Twenty minutes of pure, meditative craft.", tone:"deep", wild:false },
+    { title:"The last glassblowers of Murano", channel:"Process", dur:"14:32", note:"A dying trade, captured with extraordinary patience.", tone:"clay", wild:false },
+    { title:"Foraging the hedgerows of Devon", channel:"Field Notes", dur:"58:10", note:"An hour outside, no narration — just the walk.", tone:"moss", wild:false },
+    { title:"Restoring a 1960s Olivetti typewriter", channel:"Patina", dur:"18:47", note:"Satisfying in a way you won't expect.", tone:"stone", wild:false },
+    { title:"Why old bookshops smell so good", channel:"Curio", dur:"09:12", note:"A small chemistry lesson with a soul.", tone:"deep", wild:true },
+  ],
+  good_news: [
+    { title:"Jaguars return to a reforested Costa Rican valley", source:"Reasons to be Cheerful", note:"Thirty years of patience, and the cats came back.", tone:"moss" },
+    { title:"Lisbon's new library stays open all night", source:"Positive News", note:"A city deciding that warm, quiet rooms are a public good.", tone:"clay" },
+    { title:"Coral nurseries off Sulawesi show first signs of recovery", source:"The Guardian", note:"Slow, fragile, and unmistakably real.", tone:"stone" },
+    { title:"A Welsh village now runs entirely on its own river", source:"Good News Network", note:"Power, and pride, drawn from the water running through town.", tone:"deep" },
+  ],
+  discovery: [
+    { title:"The hidden ice houses beneath London", source:"Atlas Obscura", cat:"Archives", note:"Before refrigeration, the city kept its cold underground.", tone:"stone" },
+    { title:"Trees talk through fungal networks — and we're finally listening", source:"Quanta", cat:"Science", note:"The 'wood wide web' gets its closest study yet.", tone:"moss" },
+    { title:"A 3,000-year-old recipe, finally translated", source:"British Museum", cat:"Museum", note:"Dinner, as it was served in Babylon.", tone:"clay" },
+    { title:"The town that moved itself, building by building", source:"Atlas Obscura", cat:"Archives", note:"When the lake rose, the town simply walked uphill.", tone:"deep" },
+  ],
+};
+
+const $ = (s, r=document) => r.querySelector(s);
+const el = (tag, cls, html) => { const n=document.createElement(tag); if(cls)n.className=cls; if(html!=null)n.innerHTML=html; return n; };
+const ARR = '<span class="arr">→</span>';
+
+/* Tabs */
+const TABS = [
+  { key:"music",     label:"Soundtrack" },
+  { key:"watch",     label:"Watch" },
+  { key:"good_news", label:"Good News" },
+  { key:"discovery", label:"Archives" },
+];
+const tabsEl = $('#tabs');
+TABS.forEach((t, i) => {
+  const b = el('button', 'tab' + (i===0?' active':''),
+    `<span class="ix">0${i+1}</span>${t.label}`);
+  b.onclick = () => selectTab(t.key, b);
+  tabsEl.appendChild(b);
+});
+function selectTab(key, btn) {
+  document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+  btn.classList.add('active');
+  document.querySelectorAll('.panel').forEach(p => p.classList.toggle('active', p.dataset.panel === key));
+  const top = $('#tabbar').getBoundingClientRect().top + window.scrollY;
+  if (window.scrollY > top) window.scrollTo({ top: top, behavior:'smooth' });
+}
+
+/* Cover helper */
+function cover(tone, label, play) {
+  return `<div class="img ${tone} cover-img" data-label="${label}">${play?'<span class="play"></span>':''}</div>`;
+}
+
+/* Music (with genre filter) */
+const GENRES = [...new Set(DATA.music.map(m => m.genre))];
+let activeGenre = null;
+const genresEl = $('#genres');
+function renderGenres() {
+  genresEl.innerHTML = '';
+  [{g:null,label:'All'}, ...GENRES.map(g => ({g,label:g}))].forEach(x => {
+    const c = el('button', 'chip' + (x.g===activeGenre?' active':''), x.label);
+    c.onclick = () => { activeGenre = x.g; renderGenres(); renderMusic(); };
+    genresEl.appendChild(c);
+  });
+}
+function renderMusic() {
+  const grid = $('#music-grid');
+  const items = activeGenre ? DATA.music.filter(m => m.genre===activeGenre) : DATA.music;
+  grid.innerHTML = items.map(m => `
+    <a class="card music" href="#">
+      ${cover(m.tone, 'Album cover', false)}
+      <div class="meta-line"><span>${m.source}</span><span class="sep">·</span><span>${m.genre}</span></div>
+      <h4>${m.title}</h4>
+      <div class="note">${m.artist} — ${m.note}</div>
+      <span class="go">Listen ${ARR}</span>
+    </a>`).join('');
+}
+
+/* Watch */
+$('#watch-grid').innerHTML = DATA.watch.map(v => `
+  <a class="card watch" href="#">
+    ${cover(v.tone, 'Video still', true)}
+    <div class="meta-line"><span>${v.channel}</span>${v.wild?'<span class="sep">·</span><span>Wildcard</span>':''}<span class="dur">${v.dur}</span></div>
+    <h4>${v.title}</h4>
+    <div class="note">${v.note}</div>
+    <span class="go">Watch ${ARR}</span>
+  </a>`).join('');
+
+/* Good News */
+$('#good_news-grid').innerHTML = DATA.good_news.map(g => `
+  <a class="card read" href="#">
+    ${cover(g.tone, 'Feature image', false)}
+    <div class="meta-line"><span>${g.source}</span></div>
+    <h4>${g.title}</h4>
+    <div class="note">${g.note}</div>
+    <span class="go">Read the story ${ARR}</span>
+  </a>`).join('');
+
+/* Discovery */
+$('#discovery-grid').innerHTML = DATA.discovery.map(d => `
+  <a class="card read" href="#">
+    ${cover(d.tone, 'Feature image', false)}
+    <div class="meta-line"><span class="badge">${d.cat}</span><span>${d.source}</span></div>
+    <h4>${d.title}</h4>
+    <div class="note">${d.note}</div>
+    <span class="go">Read the story ${ARR}</span>
+  </a>`).join('');
+
+renderGenres();
+renderMusic();
+
+/* Sticky condense */
+const tabbar = $('#tabbar');
+const sentinel = tabbar.offsetTop;
+window.addEventListener('scroll', () => {
+  tabbar.classList.toggle('stuck', window.scrollY > sentinel + 4);
+}, { passive:true });
+</script>
+</body>
+</html>
