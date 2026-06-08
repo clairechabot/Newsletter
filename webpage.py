@@ -211,11 +211,15 @@ _PAGE = """<!DOCTYPE html>
   .chip{cursor:pointer;font-family:var(--sans);font-size:12px;font-weight:600;letter-spacing:0.03em;padding:8px 16px;border-radius:100px;border:1px solid var(--line);background:var(--surface);color:var(--ink-soft);transition:all .18s ease;}
   .chip:hover{border-color:var(--moss);color:var(--forest);} .chip.active{background:var(--forest);border-color:var(--forest);color:var(--paper);}
 
-  .grid{display:grid;gap:30px 26px;}
-  .grid.music{grid-template-columns:repeat(auto-fill,minmax(220px,1fr));}
-  .grid.watch{grid-template-columns:repeat(auto-fill,minmax(340px,1fr));}
-  .grid.read{grid-template-columns:repeat(auto-fill,minmax(300px,1fr));}
-  .card{display:flex;flex-direction:column;}
+  /* Horizontal swipe carousels — one scroll-snapping row per section. */
+  .grid{display:flex;gap:26px;overflow-x:auto;overflow-y:hidden;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;padding-bottom:16px;scrollbar-width:thin;scrollbar-color:var(--line) transparent;}
+  .grid::-webkit-scrollbar{height:8px;}
+  .grid::-webkit-scrollbar-thumb{background:var(--line);border-radius:100px;}
+  .grid::-webkit-scrollbar-track{background:transparent;}
+  .card{display:flex;flex-direction:column;flex:0 0 auto;scroll-snap-align:start;}
+  .grid.music .card{width:220px;}
+  .grid.watch .card{width:360px;}
+  .grid.read .card{width:320px;}
   .card .cv{border-radius:var(--radius);}
   .card.music .cv{aspect-ratio:1/1;} .card.watch .cv{aspect-ratio:16/9;} .card.read .cv{aspect-ratio:3/2;}
   .card .cv .play{width:52px;height:52px;} .card:hover .cv .play{transform:scale(1.06);background:rgba(32,39,31,0.32);}
@@ -245,8 +249,10 @@ _PAGE = """<!DOCTYPE html>
     .wrap,.tabbar-inner{padding-left:22px;padding-right:22px;}
     .cover{padding:44px 22px 30px;} .fern{padding:0 22px 8px;gap:16px;} .fern p{font-size:18px;}
     .almanac{padding:14px 22px 4px;} .almanac p{font-size:16.5px;}
-    .hero{margin-top:36px;} .panel{padding-top:40px;} .grid{gap:26px 18px;}
-    .grid.music{grid-template-columns:repeat(auto-fill,minmax(150px,1fr));}
+    .hero{margin-top:36px;} .panel{padding-top:40px;} .grid{gap:18px;}
+    .grid.music .card{width:160px;}
+    .grid.watch .card{width:280px;}
+    .grid.read .card{width:260px;}
     .tabbar-inner{gap:0;} .tab{padding:19px 12px;}
   }
 </style>
