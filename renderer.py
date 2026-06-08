@@ -39,6 +39,10 @@ EDITION_URL  = os.environ.get(
 )
 FERN_LOGO_URL = os.environ.get("FERN_LOGO_URL", "")
 
+# Where Fern's garden lives — shown in the "From the Garden" eyebrow and used by
+# curator.py to ground the seasonal note + night sky. Override with GARDEN_LOCALE.
+GARDEN_LOCALE = os.environ.get("GARDEN_LOCALE", "Z\u00fcrich")
+
 
 # Running issue number, like a real periodical ("No. 248").
 # Set this to the date of your VERY FIRST edition. Editions go out twice a day,
@@ -101,109 +105,73 @@ def _top_titles(items, n=2, key="title") -> str:
 
 
 # ---------------------------------------------------------------------------
-# Styles  (Botanical Editorial)
+# Email-safe rendering
 # ---------------------------------------------------------------------------
-_CSS = """
-@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=Hanken+Grotesk:wght@400;500;600;700&display=swap');
-:root{
-  --paper:#F4EEE2; --paper-deep:#E9E1D1; --surface:#FBF7EE;
-  --ink:#20271F; --ink-soft:#4A4A3E; --ink-mute:#7C7565;
-  --forest:#2C3A2B; --moss:#6E7B4B; --moss-deep:#55603A;
-  --clay:#A85A36; --clay-deep:#8E4A2C;
-  --line:#D9CFBC; --line-soft:#E5DCCB; --radius:12px;
-  --serif:'Newsreader',Georgia,'Times New Roman',serif;
-  --sans:'Hanken Grotesk',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
-}
-*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
-body{font-family:var(--sans);background:var(--paper-deep);color:var(--ink);line-height:1.6;-webkit-font-smoothing:antialiased;}
-.frame{max-width:600px;margin:0 auto;background:var(--paper);}
-a{color:inherit;text-decoration:none;}
-img{max-width:100%;display:block;}
-.eyebrow{font-size:11px;font-weight:600;letter-spacing:0.22em;text-transform:uppercase;color:var(--moss-deep);}
+# Email clients (Gmail especially) strip CSS custom properties (var()), web
+# fonts loaded via @import, flexbox/grid and aspect-ratio. So the email is
+# built the bulletproof way: table layout, fully inline styles, hardcoded hex
+# colors, explicit image dimensions, and Georgia/Helvetica as the fallbacks
+# for the (progressively-enhanced) Newsreader/Hanken web fonts.
+SERIF = "'Newsreader',Georgia,'Times New Roman',serif"
+SANS  = "'Hanken Grotesk',Helvetica,Arial,sans-serif"
 
-.masthead{text-align:center;padding:44px 32px 30px;}
-.masthead .eyebrow{color:var(--clay-deep);margin-bottom:18px;}
-.wordmark{font-family:var(--serif);font-weight:500;font-size:44px;line-height:1.02;letter-spacing:-0.01em;color:var(--forest);}
-.tagline{font-family:var(--serif);font-style:italic;font-size:16px;color:var(--ink-soft);margin-top:12px;}
-.meta-row{display:flex;align-items:center;justify-content:center;gap:14px;margin-top:26px;font-size:11.5px;letter-spacing:0.16em;text-transform:uppercase;color:var(--ink-mute);flex-wrap:wrap;}
-.meta-row .dot{width:3px;height:3px;border-radius:50%;background:var(--clay);}
-
-.note{padding:30px 32px 34px;border-top:1px solid var(--line-soft);border-bottom:1px solid var(--line-soft);background:var(--surface);display:flex;gap:18px;align-items:flex-start;}
-.monogram{flex-shrink:0;width:46px;height:46px;border-radius:50%;border:1px solid var(--moss);color:var(--moss-deep);font-family:var(--serif);font-size:22px;display:flex;align-items:center;justify-content:center;margin-top:4px;}
-.note .eyebrow{margin-bottom:8px;}
-.note p{font-family:var(--serif);font-size:17.5px;line-height:1.62;color:var(--ink-soft);}
-.note .sign{font-style:italic;color:var(--forest);}
-
-.garden{padding:24px 32px 26px;border-bottom:1px solid var(--line-soft);}
-.garden .eyebrow{color:var(--moss-deep);margin-bottom:9px;}
-.garden p{font-family:var(--serif);font-size:16px;line-height:1.58;color:var(--ink-soft);}
-.garden .garden-meta{margin-top:12px;font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:var(--ink-mute);}
-
-.lead{padding:36px 32px 0;}
-.lead .eyebrow{display:flex;align-items:center;gap:14px;color:var(--clay-deep);}
-.lead .eyebrow::after{content:"";flex:1;height:1px;background:var(--line);}
-
-.hero{padding:16px 32px 8px;display:block;}
-.hero .kicker{font-size:11px;font-weight:600;letter-spacing:0.16em;text-transform:uppercase;color:var(--moss-deep);margin:18px 0 0;}
-.hero h2{font-family:var(--serif);font-weight:500;font-size:27px;line-height:1.16;letter-spacing:-0.01em;color:var(--forest);margin-top:8px;}
-.hero p{font-size:15px;color:var(--ink-soft);margin-top:8px;max-width:46ch;}
-
-.img,.img-photo{position:relative;width:100%;overflow:hidden;border-radius:var(--radius);}
-.img{background:linear-gradient(135deg,rgba(255,255,255,0.18),rgba(255,255,255,0) 60%),repeating-linear-gradient(135deg,rgba(32,39,31,0.035) 0 2px,transparent 2px 11px),linear-gradient(160deg,var(--ph-a,#C9CBB0),var(--ph-b,#9DA882));border:1px solid rgba(32,39,31,0.10);}
-.img::after{content:attr(data-label);position:absolute;left:12px;bottom:11px;font-family:ui-monospace,Menlo,monospace;font-size:9.5px;letter-spacing:0.12em;text-transform:uppercase;color:rgba(255,255,255,0.9);background:rgba(32,39,31,0.34);padding:3px 8px;border-radius:100px;}
-.img.deep{--ph-a:#7E8C6E;--ph-b:#46553E;}
-.img-photo img{width:100%;height:100%;object-fit:cover;display:block;}
-.img-photo{border:1px solid rgba(32,39,31,0.10);}
-.play{position:absolute;inset:0;margin:auto;width:56px;height:56px;border-radius:50%;border:1.5px solid rgba(255,255,255,0.92);background:rgba(32,39,31,0.18);display:flex;align-items:center;justify-content:center;}
-.play::after{content:"";margin-left:3px;border-style:solid;border-width:8px 0 8px 13px;border-color:transparent transparent transparent rgba(255,255,255,0.95);}
-
-.contents{padding:36px 32px 8px;}
-.contents .eyebrow{display:flex;align-items:center;gap:14px;color:var(--clay-deep);margin-bottom:4px;}
-.contents .eyebrow::after{content:"";flex:1;height:1px;background:var(--line);}
-.toc-row{display:flex;align-items:baseline;gap:16px;padding:18px 0;border-bottom:1px solid var(--line-soft);color:inherit;}
-.toc-row:last-child{border-bottom:0;}
-.toc-num{font-family:var(--serif);font-size:14px;color:var(--moss);width:24px;flex-shrink:0;}
-.toc-body{flex:1;min-width:0;}
-.toc-cat{font-family:var(--serif);font-size:19px;color:var(--forest);line-height:1.2;display:block;}
-.toc-lead{font-size:13.5px;color:var(--ink-mute);margin-top:3px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;display:block;}
-.toc-count{font-size:11px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:var(--moss-deep);flex-shrink:0;white-space:nowrap;}
-
-.cta-wrap{padding:34px 32px 8px;text-align:center;}
-.cta{display:inline-block;font-size:14px;font-weight:600;letter-spacing:0.04em;color:#FBF7EE;background:var(--clay);padding:15px 34px;border-radius:100px;white-space:nowrap;}
-.cta-sub{margin-top:14px;font-size:11px;letter-spacing:0.14em;text-transform:uppercase;color:var(--ink-mute);}
-
-.footer{text-align:center;padding:40px 32px 46px;margin-top:30px;border-top:1px solid var(--line-soft);}
-.footer .fmark{font-family:var(--serif);font-size:16px;color:var(--forest);}
-.footer p{font-size:12px;color:var(--ink-mute);margin-top:12px;line-height:1.7;}
-.footer a{color:var(--ink-soft);text-decoration:underline;text-underline-offset:2px;}
-
-@media (max-width:460px){
-  .masthead,.note,.garden,.hero,.contents,.cta-wrap,.footer,.lead{padding-left:22px;padding-right:22px;}
-  .wordmark{font-size:36px;}.hero h2{font-size:23px;}
-}
-"""
+_HEAD = """<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="color-scheme" content="light only">
+<meta name="supported-color-schemes" content="light only">
+<title>The Curated Canopy</title>
+<!--[if mso]>
+<noscript><xml><o:OfficeDocumentSettings><o:PixelsPerInch>96</o:PixelsPerInch></o:OfficeDocumentSettings></xml></noscript>
+<![endif]-->
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  body { margin:0; padding:0; width:100% !important; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; }
+  table { border-collapse:collapse; }
+  img { border:0; outline:none; text-decoration:none; -ms-interpolation-mode:bicubic; }
+  a { color:#8E4A2C; }
+  .hover-cta:hover { background:#8E4A2C !important; }
+  @media only screen and (max-width:600px) {
+    .container { width:100% !important; }
+    .px { padding-left:22px !important; padding-right:22px !important; }
+    .wordmark { font-size:38px !important; }
+    .hero-h { font-size:23px !important; }
+  }
+</style>
+</head>"""
 
 
-# ---------------------------------------------------------------------------
-# Render fragments
-# ---------------------------------------------------------------------------
 def _render_fern_note(greeting: str) -> str:
     greeting = _dedash(greeting).strip()
     if not greeting:
         greeting = ("Today's gathering is a quiet one. Pour something warm, "
                     "and take it at your own pace.")
-    # Strip a trailing sign-off the curator may have added, then add our own.
     for tail in ("Fern", "\u2014 Fern", "- Fern", "Yours, Fern"):
         if greeting.endswith(tail):
             greeting = greeting[: -len(tail)].rstrip(" ,\u2014-").strip()
     return f"""
-  <section class="note">
-    <div class="monogram">F</div>
-    <div>
-      <div class="eyebrow">A note from Fern</div>
-      <p>{_esc(greeting)} <span class="sign">Yours, Fern</span></p>
-    </div>
-  </section>"""
+        <tr>
+          <td class="px" style="padding:28px 32px 30px 32px; background-color:#FBF7EE; border-top:1px solid #E5DCCB; border-bottom:1px solid #E5DCCB;">
+            <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+              <tr>
+                <td valign="top" width="62" style="width:62px; padding-top:4px;">
+                  <table role="presentation" cellpadding="0" cellspacing="0" width="46" height="46" style="width:46px; height:46px; border:1px solid #6E7B4B; border-radius:50%;">
+                    <tr><td align="center" valign="middle" style="font-family:{SERIF}; font-size:22px; color:#55603A; height:46px;">F</td></tr>
+                  </table>
+                </td>
+                <td valign="top">
+                  <div style="font-family:{SANS}; font-size:11px; font-weight:600; letter-spacing:3px; text-transform:uppercase; color:#55603A; padding-bottom:8px;">A note from Fern</div>
+                  <div style="font-family:{SERIF}; font-size:17.5px; line-height:1.62; color:#4A4A3E;">
+                    {_esc(greeting)} <span style="font-style:italic; color:#2C3A2B;">Yours, Fern</span>
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>"""
 
 
 def _render_hero(video: dict) -> str:
@@ -212,54 +180,81 @@ def _render_hero(video: dict) -> str:
     channel = _esc(video.get("channel_title", ""))
     vid     = video.get("video_id", "")
     href    = _safe_url(EDITION_URL) if EDITION_URL else _yt_embed(vid)
-    kicker  = "Watch" + (f" &nbsp;\u00b7&nbsp; {channel}" if channel else "")
+    kicker  = "Watch" + (f" &nbsp;&middot;&nbsp; {channel}" if channel else "")
     if vid:
-        cover = (f'<div class="img-photo" style="aspect-ratio:3/2;">'
-                 f'<img src="{_safe_url(_yt_thumbnail(vid))}" alt=""><span class="play"></span></div>')
+        media = (f'<img src="{_safe_url(_yt_thumbnail(vid))}" alt="" width="536" '
+                 f'style="display:block; width:100%; max-width:536px; height:auto; border-radius:12px;">')
     else:
-        cover = ('<div class="img deep" data-label="Video still" '
-                 'style="aspect-ratio:3/2;"><span class="play"></span></div>')
+        media = (
+            '<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="border-radius:12px;">'
+            '<tr><td align="center" valign="middle" height="358" bgcolor="#46553E" style="height:358px; background-color:#46553E; border-radius:12px;">'
+            '<table role="presentation" cellpadding="0" cellspacing="0" width="60" height="60" style="width:60px; height:60px; border:2px solid #FBF7EE; border-radius:50%;">'
+            '<tr><td align="center" valign="middle" style="height:60px; font-family:Georgia,serif; font-size:20px; color:#FBF7EE; padding-left:5px;">&#9658;</td></tr>'
+            '</table></td></tr></table>'
+        )
     return f"""
-  <div class="lead"><div class="eyebrow">Today's opening</div></div>
-  <a class="hero" href="{href}" target="_blank">
-    {cover}
-    <div class="kicker">{kicker}</div>
-    <h2>{title}</h2>
-    <p>{note}</p>
-  </a>"""
-
-
-def _toc_row(num: str, cat: str, lead: str, count: str, href: str) -> str:
-    return f"""
-    <a class="toc-row" href="{href}" target="_blank">
-      <span class="toc-num">{num}</span>
-      <span class="toc-body">
-        <span class="toc-cat">{cat}</span>
-        <span class="toc-lead">{lead}</span>
-      </span>
-      <span class="toc-count">{count}</span>
-    </a>"""
+        <tr>
+          <td class="px" style="padding:34px 32px 0 32px;">
+            <table role="presentation" width="100%" cellpadding="0" cellspacing="0"><tr>
+              <td style="font-family:{SANS}; font-size:11px; font-weight:600; letter-spacing:3px; text-transform:uppercase; color:#8E4A2C; white-space:nowrap;">Today's opening</td>
+              <td width="100%" style="padding-left:14px;"><div style="height:1px; background-color:#D9CFBC; font-size:0; line-height:0;">&nbsp;</div></td>
+            </tr></table>
+          </td>
+        </tr>
+        <tr>
+          <td class="px" style="padding:16px 32px 6px 32px;">
+            <a href="{href}" style="text-decoration:none; color:#2C3A2B;">
+              {media}
+              <div style="font-family:{SANS}; font-size:11px; font-weight:600; letter-spacing:1.8px; text-transform:uppercase; color:#55603A; padding-top:18px;">{kicker}</div>
+              <div class="hero-h" style="font-family:{SERIF}; font-weight:500; font-size:27px; line-height:1.16; letter-spacing:-0.3px; color:#2C3A2B; padding-top:9px;">{title}</div>
+              <div style="font-family:{SANS}; font-size:15px; line-height:1.55; color:#4A4A3E; padding-top:9px;">{note}</div>
+            </a>
+          </td>
+        </tr>"""
 
 
 def _render_garden(garden: dict) -> str:
-    """A compact 'From the Garden' almanac block for the email cover."""
+    """Compact 'From the Garden' almanac block (email-safe, no emoji)."""
     if not garden or not garden.get("note"):
         return ""
-    note      = _esc(_dedash(garden.get("note", "")))
+    note = _esc(_dedash(garden.get("note", "")))
     in_season = [s for s in (garden.get("in_season") or []) if s]
-    season_txt = _clip(" · ".join(_esc(s) for s in in_season), 60)
+    season_txt = _clip(" \u00b7 ".join(_esc(s) for s in in_season), 60)
     bits = [b for b in (
         _esc(garden.get("moon_label", "")),
         season_txt,
         _esc(_dedash(garden.get("sky_tonight", ""))),
     ) if b]
-    meta = '<div class="garden-meta">' + " &nbsp;·&nbsp; ".join(bits) + "</div>" if bits else ""
+    meta = (
+        f'<div style="font-family:{SANS}; font-size:11px; letter-spacing:1.4px; '
+        f'text-transform:uppercase; color:#7C7565; padding-top:12px;">'
+        + " &nbsp;&middot;&nbsp; ".join(bits) + "</div>"
+    ) if bits else ""
     return f"""
-  <section class="garden">
-    <div class="eyebrow">\U0001F331 From the Garden</div>
-    <p>{note}</p>
-    {meta}
-  </section>"""
+        <tr>
+          <td class="px" style="padding:24px 32px 26px 32px; background-color:#FBF7EE; border-bottom:1px solid #E5DCCB;">
+            <div style="font-family:{SANS}; font-size:11px; font-weight:600; letter-spacing:3px; text-transform:uppercase; color:#55603A; padding-bottom:9px;">From the Garden &nbsp;&middot;&nbsp; {_esc(GARDEN_LOCALE)}</div>
+            <div style="font-family:{SERIF}; font-size:16px; line-height:1.58; color:#4A4A3E;">{note}</div>
+            {meta}
+          </td>
+        </tr>"""
+
+
+def _toc_row(num: str, cat: str, lead: str, count: str, href: str, last: bool = False) -> str:
+    border = "" if last else " border-bottom:1px solid #E5DCCB;"
+    return f"""
+        <tr><td class="px" style="padding:0 32px;">
+          <a href="{href}" style="text-decoration:none; color:#2C3A2B; display:block;">
+          <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="{border}"><tr>
+            <td valign="top" width="26" style="font-family:{SERIF}; font-size:14px; color:#6E7B4B; padding:18px 0;">{num}</td>
+            <td valign="top" style="padding:18px 0;">
+              <div style="font-family:{SERIF}; font-size:19px; color:#2C3A2B; line-height:1.2;">{cat}</div>
+              <div style="font-family:{SANS}; font-size:13.5px; color:#7C7565; padding-top:3px;">{lead}</div>
+            </td>
+            <td valign="top" align="right" width="84" style="font-family:{SANS}; font-size:11px; font-weight:600; letter-spacing:1px; text-transform:uppercase; color:#55603A; padding:21px 0; white-space:nowrap;">{count}</td>
+          </tr></table>
+          </a>
+        </td></tr>"""
 
 
 def _render_contents(videos, music, good_news, discovery, read=None) -> str:
@@ -270,25 +265,27 @@ def _render_contents(videos, music, good_news, discovery, read=None) -> str:
         ("Global Silver Linings",  good_news, _top_titles(good_news), "Stories"),
         ("From the Archives",      discovery, _top_titles(discovery), "Finds"),
     ]
+    present = [(c, items, lead, unit) for c, items, lead, unit in specs if items]
+    has_read = bool(read and read.get("title"))
+    if not present and not has_read:
+        return ""
+    total = len(present) + (1 if has_read else 0)
     rows, n = [], 0
-    for cat, items, lead, unit in specs:
-        if not items:
-            continue
+    for cat, items, lead, unit in present:
         n += 1
         rows.append(_toc_row(f"{n:02d}", cat, lead or "&nbsp;",
-                             f"{len(items)} {unit}", href))
-    if read and read.get("title"):
+                             f"{len(items)} {unit}", href, last=(n == total)))
+    if has_read:
         n += 1
         rows.append(_toc_row(f"{n:02d}", "One Good Read",
                              _clip(_esc(read.get("title", "")), 78),
-                             _esc(read.get("source_name", "")) or "Essay", href))
-    if not rows:
-        return ""
+                             _esc(read.get("source_name", "")) or "Essay", href, last=(n == total)))
     return f"""
-  <section class="contents">
-    <div class="eyebrow">In this edition</div>
-    {''.join(rows)}
-  </section>"""
+        <tr>
+          <td class="px" style="padding:36px 32px 4px 32px;">
+            <div style="font-family:{SANS}; font-size:11px; font-weight:600; letter-spacing:3px; text-transform:uppercase; color:#8E4A2C;">In this edition</div>
+          </td>
+        </tr>{''.join(rows)}"""
 
 
 # ---------------------------------------------------------------------------
@@ -312,18 +309,21 @@ def build_html(curated: dict) -> str:
     try:
         dt = datetime.datetime.fromisoformat(fetched).astimezone(ZoneInfo("Europe/Zurich"))
         date_str = f"{dt.strftime('%a, %B')} {dt.day}"
-        issue_html = f"No. {_edition_no(dt, is_am)} &nbsp;\u00b7&nbsp; "
+        issue_html = f"No. {_edition_no(dt, is_am)} &nbsp;&middot;&nbsp; "
     except Exception:
         date_str = fetched or ""
         issue_html = ""
 
     counts = []
-    if music:     counts.append(f"{len(music)} tracks")
-    if videos:    counts.append(f"{len(videos)} films")
+    if music:  counts.append(f"{len(music)} tracks")
+    if videos: counts.append(f"{len(videos)} films")
     extra = len(good_news) + len(discovery)
-    if extra:     counts.append(f"{extra} stories &amp; finds")
-    meta_bits = [gathered] + counts
-    meta_html = '<span class="dot"></span>'.join(f"<span>{b}</span>" for b in meta_bits)
+    if extra:  counts.append(f"{extra} stories &amp; finds")
+    sep = "&nbsp;&nbsp;&middot;&nbsp;&nbsp;"
+    meta_line = sep.join([gathered] + counts)
+
+    preheader = _esc(_clip(_dedash(fern.get("greeting", "")) or
+                           "A quiet gathering, music, good news, and the natural world.", 110))
 
     hero_html   = _render_hero(videos[0]) if videos else ""
     fern_html   = _render_fern_note(fern.get("greeting", ""))
@@ -331,49 +331,55 @@ def build_html(curated: dict) -> str:
     toc_html    = _render_contents(videos, music, good_news, discovery, read)
 
     logo_html = (
-        f'<img src="{_safe_url(FERN_LOGO_URL)}" alt="" '
-        f'style="max-width:96px;height:auto;margin:0 auto 18px;">'
+        f'<img src="{_safe_url(FERN_LOGO_URL)}" alt="" width="96" '
+        f'style="display:block; margin:0 auto 18px auto; max-width:96px; height:auto;">'
         if FERN_LOGO_URL else ""
     )
     cta_html = (
-        f'<div class="cta-wrap"><a class="cta" href="{_safe_url(EDITION_URL)}" '
-        f'target="_blank">Open the full edition</a>'
-        f'<div class="cta-sub">Covers, films &amp; the complete collection</div></div>'
+        f"""
+        <tr>
+          <td align="center" style="padding:34px 32px 8px 32px;">
+            <table role="presentation" cellpadding="0" cellspacing="0" align="center"><tr>
+              <td class="hover-cta" align="center" bgcolor="#A85A36" style="background-color:#A85A36; border-radius:100px;">
+                <a href="{_safe_url(EDITION_URL)}" style="display:inline-block; font-family:{SANS}; font-size:14px; font-weight:600; letter-spacing:0.5px; color:#FBF7EE; text-decoration:none; padding:15px 34px; white-space:nowrap;">Open the full edition</a>
+              </td>
+            </tr></table>
+            <div style="font-family:{SANS}; font-size:11px; letter-spacing:1.6px; text-transform:uppercase; color:#7C7565; padding-top:14px;">Covers, films &amp; the complete collection</div>
+          </td>
+        </tr>"""
         if EDITION_URL else ""
     )
 
-    return f"""<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>The Curated Canopy</title>
-<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-<style>{_CSS}</style>
-</head>
-<body>
-<div class="frame">
-  <header class="masthead">
-    {logo_html}
-    <div class="eyebrow">{edition_label} &nbsp;\u00b7&nbsp; {issue_html}{date_str}</div>
-    <div class="wordmark">The Curated&nbsp;Canopy</div>
-    <div class="tagline">Human stories, good news &amp; the natural world</div>
-    <div class="meta-row">{meta_html}</div>
-  </header>
-  {fern_html}
-  {garden_html}
-  {hero_html}
-  {toc_html}
-  {cta_html}
-  <footer class="footer">
-    <div class="fmark">The Curated Canopy</div>
-    <p>
-      Curated twice daily by Fern.<br>
-      You're receiving this because you asked for a quieter inbox.<br>
-      <a href="#">Preferences</a> &nbsp;\u00b7&nbsp; <a href="#">Unsubscribe</a>
-    </p>
-  </footer>
-</div>
+    return f"""{_HEAD}
+<body style="margin:0; padding:0; background-color:#E9E1D1;">
+<div style="display:none; max-height:0; overflow:hidden; opacity:0; mso-hide:all; font-size:1px; line-height:1px; color:#E9E1D1;">{preheader}</div>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background-color:#E9E1D1;">
+  <tr>
+    <td align="center" style="padding:0;">
+      <table role="presentation" class="container" width="600" cellpadding="0" cellspacing="0" style="width:600px; max-width:600px; background-color:#F4EEE2;">
+        <tr>
+          <td class="px" align="center" style="padding:46px 32px 30px 32px;">
+            {logo_html}
+            <div style="font-family:{SANS}; font-size:11px; font-weight:600; letter-spacing:3px; text-transform:uppercase; color:#8E4A2C; padding-bottom:18px;">{edition_label} &nbsp;&middot;&nbsp; {issue_html}{date_str}</div>
+            <div class="wordmark" style="font-family:{SERIF}; font-weight:500; font-size:46px; line-height:1.02; letter-spacing:-0.5px; color:#2C3A2B;">The&nbsp;Curated&nbsp;Canopy</div>
+            <div style="font-family:{SERIF}; font-style:italic; font-size:16px; color:#4A4A3E; padding-top:12px;">Human stories, good news &amp; the natural world</div>
+            <div style="font-family:{SANS}; font-size:11px; letter-spacing:1.6px; text-transform:uppercase; color:#7C7565; padding-top:24px;">{meta_line}</div>
+          </td>
+        </tr>{fern_html}{garden_html}{hero_html}{toc_html}{cta_html}
+        <tr>
+          <td class="px" align="center" style="padding:40px 32px 46px 32px; border-top:1px solid #E5DCCB;">
+            <div style="font-family:{SERIF}; font-size:16px; color:#2C3A2B; letter-spacing:0.3px;">The Curated Canopy</div>
+            <div style="font-family:{SANS}; font-size:12px; color:#7C7565; line-height:1.7; padding-top:12px;">
+              Curated twice daily by Fern.<br>
+              You're receiving this because you asked for a quieter inbox.<br>
+              <a href="#" style="color:#4A4A3E; text-decoration:underline;">Preferences</a>&nbsp;&nbsp;&middot;&nbsp;&nbsp;<a href="#" style="color:#4A4A3E; text-decoration:underline;">Unsubscribe</a>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
 </body>
 </html>"""
 
