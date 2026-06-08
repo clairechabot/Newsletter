@@ -171,30 +171,34 @@ ZURICH = ZoneInfo("Europe/Zurich")
 # History helpers
 # ---------------------------------------------------------------------------
 
-def load_history() -> tuple[set[str], set[str], set[str]]:
-    """Return (video_ids, good_news_urls, discovery_urls) seen in previous runs."""
+def load_history() -> tuple[set[str], set[str], set[str], set[str]]:
+    """Return (video_ids, good_news_urls, discovery_urls, reads_urls) seen before.
+    reads_urls defaults to empty so pre-existing history.json files still load."""
     if HISTORY_FILE.exists():
         data = json.loads(HISTORY_FILE.read_text(encoding="utf-8-sig"))
         return (
             set(data.get("video_ids", [])),
             set(data.get("good_news_urls", [])),
             set(data.get("discovery_urls", [])),
+            set(data.get("reads_urls", [])),
         )
-    return set(), set(), set()
+    return set(), set(), set(), set()
 
 
 def save_history(
     seen_ids: set[str],
     seen_good_news_urls: set[str],
     seen_discovery_urls: set[str],
+    seen_reads_urls: set[str],
 ) -> None:
-    """Persist seen video IDs, Good News URLs, and Discovery URLs back to disk."""
+    """Persist seen video IDs, Good News URLs, Discovery URLs, and Reads URLs."""
     existing: dict = {}
     if HISTORY_FILE.exists():
         existing = json.loads(HISTORY_FILE.read_text(encoding="utf-8-sig"))
     existing["video_ids"]       = sorted(seen_ids)
     existing["good_news_urls"]  = sorted(seen_good_news_urls)
     existing["discovery_urls"]  = sorted(seen_discovery_urls)
+    existing["reads_urls"]      = sorted(seen_reads_urls)
     HISTORY_FILE.write_text(
         json.dumps(existing, indent=2, ensure_ascii=False), encoding="utf-8"
     )
@@ -872,6 +876,14 @@ DISCOVERY_FEEDS = [
 DISCOVERY_CANDIDATES_PER_SOURCE = 15
 DISCOVERY_ARTICLES_PER_SOURCE   = 4
 
+# One Good Read — a single reflective essay/longread per edition.
+READS_FEEDS = [
+    {"url": "https://www.themarginalian.org/feed/", "source_name": "The Marginalian"},
+    {"url": "https://aeon.co/feed.rss",             "source_name": "Aeon"},
+    {"url": "https://nautil.us/feed/",              "source_name": "Nautilus"},
+]
+READS_CANDIDATES_PER_SOURCE = 4   # pull a few per feed, then keep the single best
+
 _MYSTERY_KEYWORDS = {
     "mystery", "unknown", "discovery", "ancient", "secret",
     "lost", "hidden", "forgotten", "rare", "unearthed",
@@ -885,6 +897,48 @@ def _first_sentences(text: str, n: int = 3) -> str:
 
 def _mystery_score(title: str) -> int:
     return int(bool(_MYSTERY_KEYWORDS & set(title.lower().split())))
+
+
+# ---------------------------------------------------------------------------
+# From the Garden — deterministic almanac facts (no network)
+# ---------------------------------------------------------------------------
+
+# Known new moon (UTC): 2000-01-06 18:14. Synodic month = 29.530588853 days.
+_NEW_MOON_EPOCH = datetime.datetime(2000, 1, 6, 18, 14, tzinfo=ZoneInfo("UTC"))
+_SYNODIC_MONTH  = 29.530588853
+
+_MOON_PHASES = [
+    "New moon", "Waxing crescent", "First quarter", "Waxing gibbous",
+    "Full moon", "Waning gibbous", "Last quarter", "Waning crescent",
+]
+
+
+def _moon_phase(dt: datetime.datetime) -> dict:
+    """Deterministic moon phase from date — no API. Returns label + % illuminated."""
+    if dt.tzinfo is None:
+        dt = dt.replace(tzinfo=ZoneInfo("UTC"))
+    days = (dt - _NEW_MOON_EPOCH).total_seconds() / 86400.0
+    age = days % _SYNODIC_MONTH          # 0..29.53 days into the cycle
+    frac = age / _SYNODIC_MONTH          # 0..1 through the cycle
+    # 8 named phases, each a 1/8 slice centred on its canonical age.
+    label = _MOON_PHASES[int((frac + 1 / 16) % 1.0 * 8)]
+    # Illuminated fraction: 0 at new, 100 at full, back to 0 at next new.
+    import math
+    illum = round((1 - math.cos(2 * math.pi * frac)) / 2 * 100)
+    return {"label": label, "illum_pct": illum}
+
+
+# Northern-hemisphere seasonal label, tuned for a temperate (Zurich) garden.
+_SEASON_BY_MONTH = {
+    1: "Deep winter", 2: "Late winter", 3: "Early spring", 4: "Mid spring",
+    5: "Late spring", 6: "Early summer", 7: "High summer", 8: "Late summer",
+    9: "Early autumn", 10: "Mid autumn", 11: "Late autumn", 12: "Deep winter",
+}
+
+
+def _season(dt: datetime.datetime) -> str:
+    """Coarse N-hemisphere season label from the month."""
+    return _SEASON_BY_MONTH.get(dt.month, "")
 
 
 def _fetch_rss_articles(
@@ -1023,6 +1077,53 @@ def fetch_discovery(
     return results
 
 
+def fetch_reads(
+    seen_all_urls: set[str],
+    seen_reads_urls: set[str],
+) -> list[dict]:
+    """
+    Fetch reflective essays/longreads from READS_FEEDS and return the SINGLE best
+    fresh one (this is one featured read, not a grid). Pulls a few candidates per
+    feed, dedups against seen_all_urls, and stops at the first unseen item.
+    Accepted URL is written to both seen_all_urls and seen_reads_urls.
+    Runs on both AM and PM emails.
+    """
+    print("[Reads] Fetching One Good Read feeds …")
+    session = _scraper_session()
+
+    chosen: dict | None = None
+    for feed in READS_FEEDS:
+        candidates = _fetch_rss_articles(
+            feed["url"], feed["source_name"],
+            READS_CANDIDATES_PER_SOURCE, session,
+            source_tag="reads",
+        )
+        for article in candidates:
+            url = article["url"]
+            if url in seen_all_urls:
+                continue
+            seen_all_urls.add(url)
+            seen_reads_urls.add(url)
+            chosen = article
+            break
+        if chosen:
+            break
+
+    if not chosen:
+        print("[Reads] No fresh read found this run.")
+        return []
+
+    try:
+        _, cover = _find_embed_and_cover(chosen["url"], session)
+        chosen["cover_url"] = cover or ""
+    except Exception as exc:
+        print(f"  [warn] cover fetch failed for '{chosen.get('title','')[:50]}': {exc}")
+        chosen["cover_url"] = ""
+
+    print(f"[Reads] Selected: {chosen.get('title','')[:60]} ({chosen.get('source_name','')})")
+    return [chosen]
+
+
 # ---------------------------------------------------------------------------
 # Main
 # ---------------------------------------------------------------------------
@@ -1045,10 +1146,10 @@ def main() -> dict:
     is_am_email: bool = now_ch.hour < 12
     print(f"[fetch] Run type: {'AM' if is_am_email else 'PM'} (Zurich hour {now_ch.hour})")
 
-    seen_ids, seen_good_news_urls, seen_discovery_urls = load_history()
+    seen_ids, seen_good_news_urls, seen_discovery_urls, seen_reads_urls = load_history()
 
     # Unified URL pool — checked by all RSS fetchers to prevent cross-bucket repeats
-    seen_all_urls: set[str] = seen_good_news_urls | seen_discovery_urls
+    seen_all_urls: set[str] = seen_good_news_urls | seen_discovery_urls | seen_reads_urls
 
     # --- YouTube ---
     youtube = build_youtube_client()
@@ -1077,8 +1178,20 @@ def main() -> dict:
     # --- Discovery: History/Mystery + Science (every run) ---
     discovery_articles = fetch_discovery(seen_all_urls, seen_discovery_urls)
 
+    # --- One Good Read: a single reflective essay (every run) ---
+    reads = fetch_reads(seen_all_urls, seen_reads_urls)
+
+    # --- From the Garden: deterministic seasonal almanac (no network) ---
+    garden_seed = {
+        "date":   now_ch.date().isoformat(),
+        "season": _season(now_ch),
+        "moon":   _moon_phase(now_ch),
+        "is_am":  is_am_email,
+        "locale": "Zurich",
+    }
+
     # --- Persist history ---
-    save_history(seen_ids, seen_good_news_urls, seen_discovery_urls)
+    save_history(seen_ids, seen_good_news_urls, seen_discovery_urls, seen_reads_urls)
 
     raw_payload = {
         "fetched_at": now_ch.isoformat(),
@@ -1087,6 +1200,8 @@ def main() -> dict:
         "music_articles": music_articles,
         "good_news_articles": good_news_articles,
         "discovery_articles": discovery_articles,
+        "reads": reads,
+        "garden_seed": garden_seed,
     }
 
     # Write raw fetch snapshot (useful for debugging / re-running curation without re-fetching)
@@ -1098,7 +1213,8 @@ def main() -> dict:
         f"{'1 trending video' if trending_video else 'no trending video'} | "
         f"{len(music_articles)} music articles | "
         f"{len(good_news_articles)} good news articles | "
-        f"{len(discovery_articles)} discovery articles)"
+        f"{len(discovery_articles)} discovery articles | "
+        f"{len(reads)} featured read)"
     )
 
     # --- Audit & Curation ---
