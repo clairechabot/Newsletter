@@ -83,9 +83,28 @@ def _payload(curated: dict) -> dict:
         "cat":    (d.get("category", "history") or "history").title(),
     } for d in curated.get("discovery_articles", [])]
 
+    fr = curated.get("featured_read") or {}
+    featured_read = {
+        "title":  fr.get("title", ""),
+        "note":   _dedash(fr.get("blurb") or fr.get("snippet", "")),
+        "url":    fr.get("url", "#"),
+        "cover":  fr.get("cover_url", ""),
+        "source": fr.get("source_name", ""),
+    } if fr.get("title") else None
+
+    g = curated.get("garden_note") or {}
+    garden = {
+        "note":        _dedash(g.get("note", "")),
+        "in_season":   [s for s in (g.get("in_season") or []) if s],
+        "sky_tonight": _dedash(g.get("sky_tonight", "")),
+        "moon_label":  g.get("moon_label", ""),
+    } if g.get("note") else None
+
     return {
         "is_am":    curated.get("is_am_email", False),
         "greeting": _dedash(curated.get("fern_data", {}).get("greeting", "")),
+        "garden":    garden,
+        "featured_read": featured_read,
         "music":     music,
         "videos":    videos,
         "good_news": good_news,
@@ -141,9 +160,20 @@ _PAGE = """<!DOCTYPE html>
   .fern p{font-family:var(--serif);font-size:20px;line-height:1.6;color:var(--ink-soft);}
   .fern .sign{font-style:italic;color:var(--forest);}
 
+  .almanac{max-width:720px;margin:0 auto;padding:18px 40px 4px;}
+  .almanac .eyebrow{color:var(--moss-deep);margin-bottom:11px;}
+  .almanac p{font-family:var(--serif);font-size:18px;line-height:1.6;color:var(--ink-soft);}
+  .almanac-foot{display:flex;flex-wrap:wrap;align-items:center;gap:12px 22px;margin-top:18px;}
+  .almanac-meta{display:flex;align-items:center;gap:12px;font-size:11.5px;letter-spacing:0.14em;text-transform:uppercase;color:var(--ink-mute);}
+  .almanac-meta .dot{width:3px;height:3px;border-radius:50%;background:var(--clay);}
+  .chip.static{cursor:default;}
+
   .hero{margin-top:52px;}
-  .hero-grid{display:grid;grid-template-columns:1.5fr 1fr;border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
-  .hero-grid .cell{min-height:420px;border-right:1px solid var(--line);}
+  .hero-grid,.feature-read{display:grid;border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
+  .hero-grid{grid-template-columns:1.5fr 1fr;}
+  .feature-read{grid-template-columns:1fr 1.5fr;margin-top:8px;}
+  .hero-grid .cell,.feature-read .cell{min-height:420px;border-right:1px solid var(--line);}
+  .feature-read .cell{min-height:340px;}
   .hero-text{padding:44px 48px;display:flex;flex-direction:column;justify-content:center;}
   .hero-text .eyebrow{color:var(--clay-deep);margin-bottom:18px;}
   .hero-text h2{font-family:var(--serif);font-weight:500;font-size:clamp(28px,3.4vw,40px);line-height:1.1;letter-spacing:-0.01em;color:var(--forest);}
@@ -202,13 +232,15 @@ _PAGE = """<!DOCTYPE html>
   footer .links a{color:var(--ink-soft);}
 
   @media (max-width:820px){
-    .hero-grid{grid-template-columns:1fr;}
-    .hero-grid .cell{border-right:0;border-bottom:1px solid var(--line);min-height:280px;}
+    .hero-grid,.feature-read{grid-template-columns:1fr;}
+    .hero-grid .cell,.feature-read .cell{border-right:0;border-bottom:1px solid var(--line);min-height:280px;}
+    .feature-read .read-cover{order:-1;}
     .hero-text{padding:34px 0;}
   }
   @media (max-width:600px){
     .wrap,.tabbar-inner{padding-left:22px;padding-right:22px;}
     .cover{padding:44px 22px 30px;} .fern{padding:0 22px 8px;gap:16px;} .fern p{font-size:18px;}
+    .almanac{padding:14px 22px 4px;} .almanac p{font-size:16.5px;}
     .hero{margin-top:36px;} .panel{padding-top:40px;} .grid{gap:26px 18px;}
     .grid.music{grid-template-columns:repeat(auto-fill,minmax(150px,1fr));}
     .tabbar-inner{gap:0;} .tab{padding:19px 12px;}
@@ -231,8 +263,21 @@ _PAGE = """<!DOCTYPE html>
     </div>
   </section>
 
+  <section class="almanac" id="almanac" style="display:none;">
+    <div class="eyebrow">&#127793; From the Garden</div>
+    <p id="garden-note"></p>
+    <div class="almanac-foot">
+      <div class="chips" id="garden-season"></div>
+      <div class="almanac-meta" id="garden-meta"></div>
+    </div>
+  </section>
+
   <div class="wrap hero" id="hero-wrap" style="display:none;">
     <a class="hero-grid" id="hero" href="#"></a>
+  </div>
+
+  <div class="wrap" id="read-wrap" style="display:none;">
+    <a class="feature-read" id="read" href="#" target="_blank"></a>
   </div>
 
   <nav class="tabbar" id="tabbar">
@@ -301,18 +346,43 @@ function cover(url,tone,label,play){
   if(DATA.greeting){ $('#greeting').textContent = DATA.greeting; $('#fern').style.display=''; }
 })();
 
+// From the Garden almanac
+(function(){
+  const g = DATA.garden; if(!g || !g.note) return;
+  $('#garden-note').textContent = g.note;
+  const season=(g.in_season||[]);
+  $('#garden-season').innerHTML = season.map(s=>'<span class="chip static">'+esc(s)+'</span>').join('');
+  const meta=[]; if(g.moon_label) meta.push(g.moon_label); if(g.sky_tonight) meta.push(g.sky_tonight);
+  $('#garden-meta').innerHTML = meta.map((b,i)=>(i?'<span class="dot"></span>':'')+'<span>'+esc(b)+'</span>').join('');
+  $('#almanac').style.display='';
+})();
+
 // Hero feature = first video
 (function(){
   const v = DATA.videos[0]; if(!v) return;
   const kick = "Today's opening" + (v.channel?' &nbsp;&middot;&nbsp; '+esc(v.channel):'');
-  $('#hero').href = v.video_id?ytWatch(v.video_id):'#';
+  $('#hero').href = v.video_id?esc(safeUrl(ytWatch(v.video_id))):'#';
   $('#hero').innerHTML =
     '<div class="cell">'+(v.video_id
-        ? '<div class="photo" style="height:100%"><img src="'+ytThumb(v.video_id)+'" alt=""><span class="play"></span></div>'
+        ? '<div class="photo" style="height:100%"><img src="'+esc(safeUrl(ytThumb(v.video_id)))+'" alt=""><span class="play"></span></div>'
         : '<div class="img t3" data-label="Video still" style="height:100%"><span class="play"></span></div>')+'</div>'
     + '<div class="hero-text"><div class="eyebrow">'+kick+'</div><h2>'+esc(v.title)+'</h2>'
     + '<p>'+esc(v.note)+'</p><span class="textlink">Watch the film '+ARR+'</span></div>';
   $('#hero-wrap').style.display='';
+})();
+
+// One Good Read = a single featured essay
+(function(){
+  const r = DATA.featured_read; if(!r || !r.title) return;
+  $('#read').href = esc(safeUrl(r.url));
+  $('#read').innerHTML =
+    '<div class="cell read-cover">'+(r.cover
+        ? '<div class="photo" style="height:100%"><img src="'+esc(safeUrl(r.cover))+'" alt="" loading="lazy"></div>'
+        : '<div class="img t1" data-label="One Good Read" style="height:100%"></div>')+'</div>'
+    + '<div class="hero-text"><div class="eyebrow">One Good Read'+(r.source?' &nbsp;&middot;&nbsp; '+esc(r.source):'')+'</div>'
+    + '<h2>'+esc(r.title)+'</h2><p>'+esc(r.note)+'</p>'
+    + '<span class="textlink">Read the essay '+ARR+'</span></div>';
+  $('#read-wrap').style.display='';
 })();
 
 // Tabs
@@ -350,7 +420,7 @@ function renderMusic(){
     :'<div class="empty">No tracks in this edition.</div>';
 }
 $('#watch-grid').innerHTML=DATA.videos.length?DATA.videos.map((v,i)=>
-  '<a class="card watch" href="'+(v.video_id?ytWatch(v.video_id):'#')+'" target="_blank">'+cover(v.video_id?ytThumb(v.video_id):'',i%4,'Video still',true)
+  '<a class="card watch" href="'+(v.video_id?esc(safeUrl(ytWatch(v.video_id))):'#')+'" target="_blank">'+cover(v.video_id?ytThumb(v.video_id):'',i%4,'Video still',true)
   +'<div class="meta-line"><span>'+esc(v.channel||'Video')+'</span>'+(v.wild?'<span class="sep">&middot;</span><span>Wildcard</span>':'')+'</div>'
   +'<h4>'+esc(v.title)+'</h4><div class="note">'+esc(v.note)+'</div><span class="go">Watch '+ARR+'</span></a>').join('')
   :'<div class="empty">No films in this edition.</div>';

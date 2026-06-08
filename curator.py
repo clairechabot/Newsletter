@@ -467,6 +467,144 @@ def audit_discovery_articles(
 
 
 # ---------------------------------------------------------------------------
+# One Good Read — Fern's blurb for the featured essay
+# ---------------------------------------------------------------------------
+
+_READS_AUDIT_SYSTEM = textwrap.dedent("""
+You are Fern — the AI curator behind The Curated Canopy newsletter.
+Personality: sophisticated, cozy, warm, slightly witty. Never cringe or hypey.
+
+For each essay or longread provided, write a "blurb" of 1-2 tight sentences that
+makes the reader want to set aside a quiet half-hour for it: name the specific idea,
+question, or feeling at its heart. This is the one piece of beautiful writing in
+today's edition, so make the invitation feel worth it. Avoid vague praise.
+
+Return ONLY a valid JSON array, one element per essay in input order:
+[
+  {
+    "index": <integer, 0-based>,
+    "blurb": "<1-2 sentence invitation to read>"
+  },
+  ...
+]
+
+Do not include any text outside the JSON array.
+""").strip()
+
+
+def audit_reads(client: anthropic.Anthropic, articles: list[dict]) -> list[dict]:
+    """Generate Fern's blurb for each featured read. Enriches with a 'blurb' field."""
+    if not articles:
+        return []
+
+    print(f"[Audit/Reads] Generating blurbs for {len(articles)} read(s) …")
+
+    items_text = "\n\n".join(
+        f"--- Essay {i} ---\n"
+        f"Source: {a.get('source_name', '')}\n"
+        f"Title: {a['title']}\n"
+        f"Snippet: {a.get('snippet', '')}"
+        for i, a in enumerate(articles)
+    )
+
+    message = client.messages.create(
+        model=CLAUDE_MODEL,
+        max_tokens=384,
+        system=_READS_AUDIT_SYSTEM,
+        messages=[{"role": "user", "content": items_text}],
+    )
+
+    raw = message.content[0].text.strip()
+    if raw.startswith("```"):
+        raw = raw.split("```")[1]
+        if raw.startswith("json"):
+            raw = raw[4:]
+        raw = raw.strip()
+
+    try:
+        results: list[dict] = json.loads(raw)
+    except json.JSONDecodeError as exc:
+        print(f"  [warn] JSON parse error in Reads audit: {exc}. Returning as-is.")
+        return articles
+
+    index_to_blurb = {r["index"]: r.get("blurb", "") for r in results}
+    return [{**a, "blurb": index_to_blurb.get(i, "")} for i, a in enumerate(articles)]
+
+
+# ---------------------------------------------------------------------------
+# From the Garden — Fern's seasonal almanac note
+# ---------------------------------------------------------------------------
+
+_GARDEN_SYSTEM = textwrap.dedent("""
+You are Fern — the AI curator behind The Curated Canopy newsletter.
+Personality: sophisticated, cozy, warm, slightly witty. Never cringe or hypey.
+
+You write a tiny "From the Garden" almanac for a reader with a temperate Northern
+Hemisphere garden (Zurich, Switzerland). You will be given the date, the season, the
+moon phase, and whether this is a morning or evening edition. Ground every detail in
+that real season and moon — do not invent out-of-season plants.
+
+- Morning edition: lean toward what's happening in the garden right now.
+- Evening edition: lean toward the night sky and winding down outdoors.
+
+Return ONLY valid JSON:
+{
+  "note": "<1-2 warm, specific sentences in Fern's voice about this moment in the season>",
+  "in_season": ["<2-4 short items genuinely in season now: a flower, a crop, a job>"],
+  "sky_tonight": "<one short line: a planet, constellation, or the moon to look for>",
+  "moon_label": "<echo the moon phase label you were given>"
+}
+
+Do not include any text outside the JSON object.
+""").strip()
+
+
+def generate_garden_note(client: anthropic.Anthropic, garden_seed: dict) -> dict:
+    """Generate Fern's seasonal almanac note, grounded in season + moon phase."""
+    if not garden_seed:
+        return {}
+
+    moon = garden_seed.get("moon", {})
+    moon_label = moon.get("label", "")
+    is_am = garden_seed.get("is_am", True)
+    user_message = (
+        f"Date: {garden_seed.get('date', '')}\n"
+        f"Season: {garden_seed.get('season', '')}\n"
+        f"Moon phase: {moon_label} ({moon.get('illum_pct', 0)}% illuminated)\n"
+        f"Locale: {garden_seed.get('locale', 'Zurich')} (Northern Hemisphere, temperate)\n"
+        f"Edition: {'morning' if is_am else 'evening'}"
+    )
+
+    print("[Garden] Generating From the Garden note …")
+    message = client.messages.create(
+        model=CLAUDE_MODEL,
+        max_tokens=384,
+        system=_GARDEN_SYSTEM,
+        messages=[{"role": "user", "content": user_message}],
+    )
+
+    raw = message.content[0].text.strip()
+    if raw.startswith("```"):
+        raw = raw.split("```")[1]
+        if raw.startswith("json"):
+            raw = raw[4:]
+        raw = raw.strip()
+
+    try:
+        note = json.loads(raw)
+    except json.JSONDecodeError as exc:
+        print(f"  [warn] JSON parse error in Garden note: {exc}. Using fallback.")
+        return {
+            "note": "",
+            "in_season": [],
+            "sky_tonight": "",
+            "moon_label": moon_label,
+        }
+    note.setdefault("moon_label", moon_label)
+    return note
+
+
+# ---------------------------------------------------------------------------
 # Fern — Daily Greeting & Top Pick
 # ---------------------------------------------------------------------------
 
@@ -507,6 +645,7 @@ def generate_fern_greeting(
     morning_soundtrack: list[dict],
     global_silver_linings: list[dict],
     discovery_articles: list[dict] | None = None,
+    featured_read: dict | None = None,
 ) -> dict:
     """
     Generate Fern's one-sentence daily note and pick the top item title
@@ -530,6 +669,9 @@ def generate_fern_greeting(
         category = art.get("category", "discovery")
         label = "From the Archives" if category == "history" else "The Laboratory"
         lines.append(f"  - [{label}] {art.get('title', '')}")
+
+    if featured_read and featured_read.get("title"):
+        lines.append(f"  - [One Good Read] {featured_read.get('title', '')}")
 
     print("[Fern] Generating greeting and top pick …")
     message = client.messages.create(
@@ -591,7 +733,14 @@ def run_curation(raw_data: dict) -> dict:
     discovery_raw = raw_data.get("discovery_articles", [])
     discovery_articles = audit_discovery_articles(client, discovery_raw)
 
-    # 7. Fern's daily greeting + top pick for subject line
+    # 7. One Good Read — a single featured essay with Fern's blurb (every run)
+    reads_audited = audit_reads(client, raw_data.get("reads", []))
+    featured_read = reads_audited[0] if reads_audited else {}
+
+    # 8. From the Garden — Fern's seasonal almanac note (every run)
+    garden_note = generate_garden_note(client, raw_data.get("garden_seed", {}))
+
+    # 9. Fern's daily greeting + top pick for subject line
     fern_data = generate_fern_greeting(
         client,
         raw_data.get("is_am_email", False),
@@ -599,6 +748,7 @@ def run_curation(raw_data: dict) -> dict:
         morning_soundtrack,
         global_silver_linings,
         discovery_articles,
+        featured_read,
     )
 
     return {
@@ -610,10 +760,14 @@ def run_curation(raw_data: dict) -> dict:
             "music_articles": len(morning_soundtrack),
             "good_news_articles": len(global_silver_linings),
             "discovery_articles": len(discovery_articles),
+            "featured_read": 1 if featured_read else 0,
+            "garden": 1 if garden_note.get("note") else 0,
         },
         "themes": themes,
         "morning_soundtrack": morning_soundtrack,
         "global_silver_linings": global_silver_linings,
         "discovery_articles": discovery_articles,
+        "featured_read": featured_read,
+        "garden_note": garden_note,
         "fern_data": fern_data,
     }

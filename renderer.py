@@ -134,6 +134,11 @@ img{max-width:100%;display:block;}
 .note p{font-family:var(--serif);font-size:17.5px;line-height:1.62;color:var(--ink-soft);}
 .note .sign{font-style:italic;color:var(--forest);}
 
+.garden{padding:24px 32px 26px;border-bottom:1px solid var(--line-soft);}
+.garden .eyebrow{color:var(--moss-deep);margin-bottom:9px;}
+.garden p{font-family:var(--serif);font-size:16px;line-height:1.58;color:var(--ink-soft);}
+.garden .garden-meta{margin-top:12px;font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:var(--ink-mute);}
+
 .lead{padding:36px 32px 0;}
 .lead .eyebrow{display:flex;align-items:center;gap:14px;color:var(--clay-deep);}
 .lead .eyebrow::after{content:"";flex:1;height:1px;background:var(--line);}
@@ -173,7 +178,7 @@ img{max-width:100%;display:block;}
 .footer a{color:var(--ink-soft);text-decoration:underline;text-underline-offset:2px;}
 
 @media (max-width:460px){
-  .masthead,.note,.hero,.contents,.cta-wrap,.footer,.lead{padding-left:22px;padding-right:22px;}
+  .masthead,.note,.garden,.hero,.contents,.cta-wrap,.footer,.lead{padding-left:22px;padding-right:22px;}
   .wordmark{font-size:36px;}.hero h2{font-size:23px;}
 }
 """
@@ -210,7 +215,7 @@ def _render_hero(video: dict) -> str:
     kicker  = "Watch" + (f" &nbsp;\u00b7&nbsp; {channel}" if channel else "")
     if vid:
         cover = (f'<div class="img-photo" style="aspect-ratio:3/2;">'
-                 f'<img src="{_yt_thumbnail(vid)}" alt=""><span class="play"></span></div>')
+                 f'<img src="{_safe_url(_yt_thumbnail(vid))}" alt=""><span class="play"></span></div>')
     else:
         cover = ('<div class="img deep" data-label="Video still" '
                  'style="aspect-ratio:3/2;"><span class="play"></span></div>')
@@ -236,7 +241,28 @@ def _toc_row(num: str, cat: str, lead: str, count: str, href: str) -> str:
     </a>"""
 
 
-def _render_contents(videos, music, good_news, discovery) -> str:
+def _render_garden(garden: dict) -> str:
+    """A compact 'From the Garden' almanac block for the email cover."""
+    if not garden or not garden.get("note"):
+        return ""
+    note      = _esc(_dedash(garden.get("note", "")))
+    in_season = [s for s in (garden.get("in_season") or []) if s]
+    season_txt = _clip(" · ".join(_esc(s) for s in in_season), 60)
+    bits = [b for b in (
+        _esc(garden.get("moon_label", "")),
+        season_txt,
+        _esc(_dedash(garden.get("sky_tonight", ""))),
+    ) if b]
+    meta = '<div class="garden-meta">' + " &nbsp;·&nbsp; ".join(bits) + "</div>" if bits else ""
+    return f"""
+  <section class="garden">
+    <div class="eyebrow">\U0001F331 From the Garden</div>
+    <p>{note}</p>
+    {meta}
+  </section>"""
+
+
+def _render_contents(videos, music, good_news, discovery, read=None) -> str:
     href = _safe_url(EDITION_URL) if EDITION_URL else "#"
     specs = [
         ("The Morning Soundtrack", music,     _top_titles(music),     "Tracks"),
@@ -251,6 +277,11 @@ def _render_contents(videos, music, good_news, discovery) -> str:
         n += 1
         rows.append(_toc_row(f"{n:02d}", cat, lead or "&nbsp;",
                              f"{len(items)} {unit}", href))
+    if read and read.get("title"):
+        n += 1
+        rows.append(_toc_row(f"{n:02d}", "One Good Read",
+                             _clip(_esc(read.get("title", "")), 78),
+                             _esc(read.get("source_name", "")) or "Essay", href))
     if not rows:
         return ""
     return f"""
@@ -268,6 +299,8 @@ def build_html(curated: dict) -> str:
     music     = curated.get("morning_soundtrack", [])
     good_news = curated.get("global_silver_linings", [])
     discovery = curated.get("discovery_articles", [])
+    read      = curated.get("featured_read", {})
+    garden    = curated.get("garden_note", {})
     fern      = curated.get("fern_data", {})
     is_am     = curated.get("is_am_email", False)
     fetched   = curated.get("fetched_at", "")
@@ -292,9 +325,10 @@ def build_html(curated: dict) -> str:
     meta_bits = [gathered] + counts
     meta_html = '<span class="dot"></span>'.join(f"<span>{b}</span>" for b in meta_bits)
 
-    hero_html = _render_hero(videos[0]) if videos else ""
-    fern_html = _render_fern_note(fern.get("greeting", ""))
-    toc_html  = _render_contents(videos, music, good_news, discovery)
+    hero_html   = _render_hero(videos[0]) if videos else ""
+    fern_html   = _render_fern_note(fern.get("greeting", ""))
+    garden_html = _render_garden(garden)
+    toc_html    = _render_contents(videos, music, good_news, discovery, read)
 
     logo_html = (
         f'<img src="{_safe_url(FERN_LOGO_URL)}" alt="" '
@@ -327,6 +361,7 @@ def build_html(curated: dict) -> str:
     <div class="meta-row">{meta_html}</div>
   </header>
   {fern_html}
+  {garden_html}
   {hero_html}
   {toc_html}
   {cta_html}
