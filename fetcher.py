@@ -171,9 +171,9 @@ ZURICH = ZoneInfo("Europe/Zurich")
 # History helpers
 # ---------------------------------------------------------------------------
 
-def load_history() -> tuple[set[str], set[str], set[str], set[str]]:
-    """Return (video_ids, good_news_urls, discovery_urls, reads_urls) seen before.
-    reads_urls defaults to empty so pre-existing history.json files still load."""
+def load_history() -> tuple[set[str], set[str], set[str], set[str], set[str]]:
+    """Return (video_ids, good_news_urls, discovery_urls, reads_urls, music_urls)
+    seen before. New buckets default to empty so older history.json files load."""
     if HISTORY_FILE.exists():
         data = json.loads(HISTORY_FILE.read_text(encoding="utf-8-sig"))
         return (
@@ -181,8 +181,9 @@ def load_history() -> tuple[set[str], set[str], set[str], set[str]]:
             set(data.get("good_news_urls", [])),
             set(data.get("discovery_urls", [])),
             set(data.get("reads_urls", [])),
+            set(data.get("music_urls", [])),
         )
-    return set(), set(), set(), set()
+    return set(), set(), set(), set(), set()
 
 
 def save_history(
@@ -190,8 +191,9 @@ def save_history(
     seen_good_news_urls: set[str],
     seen_discovery_urls: set[str],
     seen_reads_urls: set[str],
+    seen_music_urls: set[str],
 ) -> None:
-    """Persist seen video IDs, Good News URLs, Discovery URLs, and Reads URLs."""
+    """Persist seen video IDs and the Good News / Discovery / Reads / Music URLs."""
     existing: dict = {}
     if HISTORY_FILE.exists():
         existing = json.loads(HISTORY_FILE.read_text(encoding="utf-8-sig"))
@@ -199,6 +201,7 @@ def save_history(
     existing["good_news_urls"]  = sorted(seen_good_news_urls)
     existing["discovery_urls"]  = sorted(seen_discovery_urls)
     existing["reads_urls"]      = sorted(seen_reads_urls)
+    existing["music_urls"]      = sorted(seen_music_urls)
     HISTORY_FILE.write_text(
         json.dumps(existing, indent=2, ensure_ascii=False), encoding="utf-8"
     )
@@ -773,10 +776,21 @@ def _rss_music_items(src: dict, n: int, session: requests.Session) -> list[dict]
     return items
 
 
-def fetch_music_articles() -> list[dict]:
+def fetch_music_articles(
+    seen_all_urls: set[str] | None = None,
+    seen_music_urls: set[str] | None = None,
+) -> list[dict]:
     """Extract real artists/albums from each music source (RSS preferred,
     Claude scrape fallback), filter to the reader's genres, then enrich with an
-    embed + cover image."""
+    embed + cover image.
+
+    Dedups against history so the same article never appears twice across runs:
+    candidates already in seen_all_urls are dropped before curation, and the URLs
+    of the items actually selected are written back to seen_all_urls/seen_music_urls.
+    The evergreen fallback is intentionally NOT registered (it may recur)."""
+    seen_all_urls = seen_all_urls if seen_all_urls is not None else set()
+    seen_music_urls = seen_music_urls if seen_music_urls is not None else set()
+
     print("[Music] Fetching music sources …")
     session = _scraper_session()
 
@@ -799,8 +813,14 @@ def fetch_music_articles() -> list[dict]:
         except Exception as exc:
             print(f"  [warn] music extraction failed for {src['name']}: {exc}")
 
+    # Drop anything we've already shown in a previous edition (any section).
+    before = len(candidates)
+    candidates = [c for c in candidates if c.get("url") and c["url"] not in seen_all_urls]
+    if before != len(candidates):
+        print(f"[Music] Dropped {before - len(candidates)} already-seen candidate(s).")
+
     if not candidates:
-        print("[Music] No candidates from any source — using evergreen fallback.")
+        print("[Music] No fresh candidates from any source — using evergreen fallback.")
         return MUSIC_EVERGREEN
 
     # Filter to the reader's taste, then cap per-source.
@@ -816,6 +836,9 @@ def fetch_music_articles() -> list[dict]:
             continue
         per_source[name] = per_source.get(name, 0) + 1
         selected.append(art)
+        # Register the URL so this item never recurs in a future edition.
+        seen_all_urls.add(art["url"])
+        seen_music_urls.add(art["url"])
 
     # Enrich with a distraction-free embed and a cover image (single fetch each).
     for art in selected:
@@ -1146,10 +1169,13 @@ def main() -> dict:
     is_am_email: bool = now_ch.hour < 12
     print(f"[fetch] Run type: {'AM' if is_am_email else 'PM'} (Zurich hour {now_ch.hour})")
 
-    seen_ids, seen_good_news_urls, seen_discovery_urls, seen_reads_urls = load_history()
+    (seen_ids, seen_good_news_urls, seen_discovery_urls,
+     seen_reads_urls, seen_music_urls) = load_history()
 
     # Unified URL pool — checked by all RSS fetchers to prevent cross-bucket repeats
-    seen_all_urls: set[str] = seen_good_news_urls | seen_discovery_urls | seen_reads_urls
+    seen_all_urls: set[str] = (
+        seen_good_news_urls | seen_discovery_urls | seen_reads_urls | seen_music_urls
+    )
 
     # --- YouTube ---
     youtube = build_youtube_client()
@@ -1170,7 +1196,7 @@ def main() -> dict:
     youtube_results = channel_videos + ([trending_video] if trending_video else [])
 
     # --- Music (every run) ---
-    music_articles: list[dict] = fetch_music_articles()
+    music_articles: list[dict] = fetch_music_articles(seen_all_urls, seen_music_urls)
 
     # --- Good News (every run) ---
     good_news_articles = fetch_good_news_articles(seen_all_urls, seen_good_news_urls)
@@ -1191,7 +1217,8 @@ def main() -> dict:
     }
 
     # --- Persist history ---
-    save_history(seen_ids, seen_good_news_urls, seen_discovery_urls, seen_reads_urls)
+    save_history(seen_ids, seen_good_news_urls, seen_discovery_urls,
+                 seen_reads_urls, seen_music_urls)
 
     raw_payload = {
         "fetched_at": now_ch.isoformat(),
