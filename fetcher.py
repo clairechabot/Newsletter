@@ -41,18 +41,20 @@ import claude_fetch    # Claude web-fetch music extractor (real titles), ported 
 
 YOUTUBE_CHANNEL_IDS: list[str] = [
     "UCsaGKqPZnGp_7N80hcHySGQ", "UCHL9bfHTxCMi-7vfxQ-AYtg", "UCSbyncU597LMwb3HhnAI_4w",
-    "UC-pkCUlaRDMA--8LTWQDuHA", "UCZwU2G-KVl-P-O-B35chZOQ", "UC4sEmXUuWIFlxRIFBRV6VXQ",
-    "UCDdi0yUyGW1PKzYXaIACnuA", "UCNvsIonJdJ5E4EXMa65VYpA", "UCXcTkcC_H4XeDGfJ7rQGJaw",
-    "UCvQECJukTDE2i6aCoMnS-Vg", "UCUA99fY1YylIrjeL9IH9SaA", "UC_-hYjoNe4PJNFa9iZ4lraA",
-    "UCtBzfGaJzGGNJVOVM0mK4uQ", "UCIWGaKFnTIv97liBxlQ2Otw", "UC-SrCCzkGq0wmSAuRs7EBFg",
-    "UCSwwoUNvQWgZDC8a_O6Qs_A", "UCqrqFLPh4cRM1VomUzG24sQ", "UCSHtaUm-FjUps090S7crO4Q",
-    "UCLuYADJ6hESLHX87JnsGbjA", "UCzH5n3Ih5kgQoiDAQt2FwLw", "UCvy6TA5egUGHnZXVRYDKOhg",
+    "UCZwU2G-KVl-P-O-B35chZOQ", "UC4sEmXUuWIFlxRIFBRV6VXQ",
+    "UCDdi0yUyGW1PKzYXaIACnuA", "UCXcTkcC_H4XeDGfJ7rQGJaw",
+    "UCvQECJukTDE2i6aCoMnS-Vg", "UC_-hYjoNe4PJNFa9iZ4lraA",
+    "UCtBzfGaJzGGNJVOVM0mK4uQ", "UC-SrCCzkGq0wmSAuRs7EBFg",
+    "UCSwwoUNvQWgZDC8a_O6Qs_A", "UCSHtaUm-FjUps090S7crO4Q",
+    "UCvy6TA5egUGHnZXVRYDKOhg",
     "UC4HRlp7zs7UpIFM67eGjhow", "UC9r61qohBg1qgGty4_WzojA", "UC_8x1VmhDgsU72Yktd9Ukeg",
     "UC6nSFpj9HTCZ5t-N3Rm3-HA", "UCEqU-Ts-hxmpnlWgRMgd2MQ", "UCmGSJVG3mCRXVOP4yZrU1Dw",
-    "UC-lHJZR3Gqxm24_Vd_AJ5Yw", "UC3cpN6gcJQqcCM6mxRUo_dA", "UCJI86v9et-IZd1KJSfahN8g",
-    "UCwQnoax3HWID1WOzZ4mqLPQ", "UC2Kyj04yISmHr1V-UlJz4eg", "UCRhQsN8AVIfZuBNeRV1A37w",
-    "UCftwRNsjfRo08xYE31tkiyw", "UCNwZIGnHkzy6KpHPQtserzQ", "UCuu8TaJ-CPGV0_dJ-7OEY3A",
-    "UCjz8uBTLs0f7Fnlxc5nzT5g", "UC_HF-dqn4lCs4fEA4GB210g",
+    "UC3cpN6gcJQqcCM6mxRUo_dA", "UCJI86v9et-IZd1KJSfahN8g",
+    "UC2Kyj04yISmHr1V-UlJz4eg", "UCftwRNsjfRo08xYE31tkiyw", "UCNwZIGnHkzy6KpHPQtserzQ",
+    # Added channels
+    "UCnCk_o6ySiM_ZzxubCv899Q", "UCCGtjLbNN7rtBRlAbnKOrBg", "UC1t6kKXoBvjdr8m9KJ2Fx7A",
+    "UCZB1r1In9RfE7tpVrYgcjLQ", "UCR2uRTQ53V_egXKFflMMaaw",
+    "UCs7nPQIEba0T3tGOWWsZpJQ", "UCNaq5Jh4SQ1oBAjhQ0KPhoA",
 ]
 
 HISTORY_FILE = Path(__file__).parent / "history.json"
