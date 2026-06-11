@@ -677,6 +677,49 @@ def _filter_music_by_genre(items: list[dict], client) -> list[dict]:
     return filtered or items  # never empty the section on an over-eager filter
 
 
+# --- Music dedup helpers ---------------------------------------------------
+# Strict dedup so the same article never recurs: we match on a normalized URL
+# (case/host/query/trailing-slash insensitive) AND on a title fingerprint, so a
+# post slipping through under a variant URL — or the same headline from another
+# source — is still caught. Title fingerprints are persisted in the music history
+# bucket with a "title::" prefix.
+_LANDING_STEMS = {
+    "blog", "news", "music", "features", "reviews", "albums",
+    "stories", "articles", "posts", "tag", "tags", "category", "categories",
+}
+
+
+def _norm_url(u: str) -> str:
+    """Canonical form of a URL for dedup: drop fragment + query, lowercase the
+    host (minus www.), and strip a trailing slash."""
+    if not u:
+        return ""
+    p = urlparse(u.strip())
+    host = (p.netloc or "").lower()
+    if host.startswith("www."):
+        host = host[4:]
+    path = (p.path or "").rstrip("/")
+    return f"{host}{path}".lower()
+
+
+def _title_key(t: str) -> str:
+    """Alphanumeric-only lowercase fingerprint of a title."""
+    return re.sub(r"[^a-z0-9]+", "", (t or "").lower())
+
+
+def _is_landing_url(u: str) -> bool:
+    """True for bare-domain / index / tag pages (e.g. sofarsounds.com/blog,
+    bandcamp.com/tag/cozy) — the 'generic front page' links, not real articles."""
+    segs = [s for s in urlparse(u or "").path.split("/") if s]
+    if not segs:
+        return True
+    if segs[0].lower() in _LANDING_STEMS and len(segs) == 1:
+        return True
+    if segs[0].lower() in {"tag", "tags", "category", "categories"}:
+        return True
+    return False
+
+
 MUSIC_EVERGREEN: list[dict] = [
     {
         "source": "music",
@@ -784,12 +827,29 @@ def fetch_music_articles(
     Claude scrape fallback), filter to the reader's genres, then enrich with an
     embed + cover image.
 
-    Dedups against history so the same article never appears twice across runs:
-    candidates already in seen_all_urls are dropped before curation, and the URLs
-    of the items actually selected are written back to seen_all_urls/seen_music_urls.
-    The evergreen fallback is intentionally NOT registered (it may recur)."""
+    Strict dedup so the same article never appears twice across editions: a
+    candidate is rejected if its normalized URL OR its title fingerprint has been
+    shown before (any section for URLs; the music history for titles). Generic
+    front-page / tag / index links are dropped outright. Items actually shown —
+    including the evergreen fallback — are registered so they can't recur."""
     seen_all_urls = seen_all_urls if seen_all_urls is not None else set()
     seen_music_urls = seen_music_urls if seen_music_urls is not None else set()
+
+    # Reconstruct the seen sets from history: normalized URLs (cross-section) and
+    # title fingerprints (stored in the music bucket with a "title::" prefix).
+    seen_titles = {x[len("title::"):] for x in seen_music_urls if x.startswith("title::")}
+    seen_norm = {_norm_url(x) for x in seen_all_urls}
+    seen_norm |= {_norm_url(x) for x in seen_music_urls if not x.startswith("title::")}
+    seen_norm.discard("")
+
+    def _seen(art: dict) -> bool:
+        return _norm_url(art.get("url", "")) in seen_norm or _title_key(art.get("title", "")) in seen_titles
+
+    def _register(art: dict) -> None:
+        nu, tk = _norm_url(art.get("url", "")), _title_key(art.get("title", ""))
+        seen_norm.add(nu); seen_titles.add(tk)
+        seen_all_urls.add(art["url"]); seen_music_urls.add(art["url"])
+        seen_music_urls.add("title::" + tk)
 
     print("[Music] Fetching music sources …")
     session = _scraper_session()
@@ -813,15 +873,26 @@ def fetch_music_articles(
         except Exception as exc:
             print(f"  [warn] music extraction failed for {src['name']}: {exc}")
 
-    # Drop anything we've already shown in a previous edition (any section).
+    # Drop generic landing/index/tag pages — the "front page" noise, not articles.
     before = len(candidates)
-    candidates = [c for c in candidates if c.get("url") and c["url"] not in seen_all_urls]
-    if before != len(candidates):
-        print(f"[Music] Dropped {before - len(candidates)} already-seen candidate(s).")
+    candidates = [c for c in candidates if c.get("url") and not _is_landing_url(c["url"])]
+    dropped_landing = before - len(candidates)
+
+    # Drop anything already shown (normalized URL or title), and any in-batch dupes.
+    fresh, batch_seen = [], set()
+    for c in candidates:
+        key = (_norm_url(c["url"]), _title_key(c.get("title", "")))
+        if _seen(c) or key in batch_seen:
+            continue
+        batch_seen.add(key)
+        fresh.append(c)
+    print(f"[Music] {len(fresh)} fresh candidate(s) "
+          f"(dropped {dropped_landing} landing, {before - dropped_landing - len(fresh)} already-seen/dupes).")
+    candidates = fresh
 
     if not candidates:
-        print("[Music] No fresh candidates from any source — using evergreen fallback.")
-        return MUSIC_EVERGREEN
+        print("[Music] No fresh candidates — trying evergreen fallback.")
+        return _evergreen_fallback(_seen, _register)
 
     # Filter to the reader's taste, then cap per-source.
     from curator import build_claude_client  # reuses CLAUDE_API_KEY client
@@ -836,9 +907,7 @@ def fetch_music_articles(
             continue
         per_source[name] = per_source.get(name, 0) + 1
         selected.append(art)
-        # Register the URL so this item never recurs in a future edition.
-        seen_all_urls.add(art["url"])
-        seen_music_urls.add(art["url"])
+        _register(art)  # never recurs in a future edition (by URL or title)
 
     # Enrich with a distraction-free embed and a cover image (single fetch each).
     for art in selected:
@@ -852,10 +921,21 @@ def fetch_music_articles(
             art["cover_url"] = cover_url or ""
 
     if not selected:
-        print("[Music] Nothing selected after filtering — using evergreen fallback.")
-        return MUSIC_EVERGREEN
+        print("[Music] Nothing selected after filtering — trying evergreen fallback.")
+        return _evergreen_fallback(_seen, _register)
     print(f"[Music] Total music items: {len(selected)}")
     return selected
+
+
+def _evergreen_fallback(seen, register) -> list[dict]:
+    """Return evergreen items not already shown, registering them so even the
+    fallback never repeats. Empty if every evergreen entry has been used."""
+    out = [e for e in MUSIC_EVERGREEN if not seen(e)]
+    for e in out:
+        register(e)
+    if not out:
+        print("[Music] Evergreen exhausted — no fresh music this edition.")
+    return out
 
 
 # ---------------------------------------------------------------------------
