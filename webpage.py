@@ -20,6 +20,8 @@ BASE_DIR     = Path(__file__).parent
 CURATED_FILE = BASE_DIR / "curated_data.json"
 DOCS_DIR     = BASE_DIR / "docs"
 EDITION_HTML = DOCS_DIR / "index.html"
+EDITIONS_DIR = DOCS_DIR / "editions"
+ARCHIVE_HTML = DOCS_DIR / "archive.html"
 
 
 def _dedash(s: str) -> str:
@@ -324,7 +326,7 @@ _PAGE = """<!DOCTYPE html>
   <footer>
     <div class="fmark">The Curated Canopy</div>
     <div class="ftag">Gathered twice daily by Fern</div>
-    <div class="links"><a href="#">About</a><a href="#">The Archive</a><a href="#">Preferences</a><a href="#">Unsubscribe</a></div>
+    <div class="links"><a href="#">About</a><a href="./archive.html">The Archive</a><a href="#">Preferences</a><a href="#">Unsubscribe</a></div>
   </footer>
 
 <script id="data" type="application/json">__DATA_JSON__</script>
@@ -455,6 +457,135 @@ window.addEventListener('scroll',()=>{tabbar.classList.toggle('stuck',window.scr
 </html>"""
 
 
+def _edition_slug(dt: datetime.datetime, is_am: bool) -> str:
+    return f"{dt.date().isoformat()}-{'morning' if is_am else 'evening'}"
+
+
+def _parse_edition_slug(stem: str) -> "tuple[datetime.date, bool] | None":
+    for suffix, is_am in (("-morning", True), ("-evening", False)):
+        if stem.endswith(suffix):
+            try:
+                return datetime.date.fromisoformat(stem[: -len(suffix)]), is_am
+            except ValueError:
+                return None
+    return None
+
+
+def _day_suffix(d: int) -> str:
+    if 11 <= d <= 13:
+        return "th"
+    return {1: "st", 2: "nd", 3: "rd"}.get(d % 10, "th")
+
+
+_ARCHIVE_PAGE = """<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Archive — The Curated Canopy</title>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#F4EEE2;--paper-deep:#E9E1D1;--surface:#FBF7EE;
+    --ink:#20271F;--ink-soft:#4A4A3E;--ink-mute:#7C7565;
+    --forest:#2C3A2B;--moss:#6E7B4B;--moss-deep:#55603A;
+    --clay:#A85A36;--clay-deep:#8E4A2C;--line:#D9CFBC;--line-soft:#E5DCCB;--radius:12px;
+    --serif:'Newsreader',Georgia,'Times New Roman',serif;
+    --sans:'Hanken Grotesk',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+  }
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body{font-family:var(--sans);background:var(--paper);color:var(--ink);line-height:1.6;-webkit-font-smoothing:antialiased;min-height:100vh;}
+  a{color:inherit;text-decoration:none;}
+  .wrap{max-width:800px;margin:0 auto;padding:0 40px;}
+  .eyebrow{font-size:11px;font-weight:600;letter-spacing:0.22em;text-transform:uppercase;color:var(--moss-deep);}
+  .cover{text-align:center;padding:60px 40px 50px;}
+  .cover .eyebrow{color:var(--clay-deep);margin-bottom:22px;}
+  .cover h1{font-family:var(--serif);font-weight:500;font-size:clamp(36px,6vw,60px);line-height:1.05;letter-spacing:-0.015em;color:var(--forest);}
+  .cover .tagline{font-family:var(--serif);font-style:italic;font-size:18px;color:var(--ink-soft);margin-top:14px;}
+  .back{display:inline-flex;align-items:center;gap:8px;font-size:12px;font-weight:600;letter-spacing:0.06em;text-transform:uppercase;color:var(--clay-deep);margin-top:24px;transition:color .15s ease;}
+  .back:hover{color:var(--clay);}
+  .edition-list{border-top:1px solid var(--line);margin-top:8px;}
+  .edition-row{display:flex;align-items:center;gap:20px;padding:20px 0;border-bottom:1px solid var(--line-soft);cursor:pointer;}
+  .edition-row:hover .edition-title{color:var(--clay-deep);}
+  .edition-no{font-family:var(--serif);font-size:13px;color:var(--ink-mute);min-width:56px;flex-shrink:0;}
+  .edition-info{flex:1;}
+  .edition-title{font-family:var(--serif);font-size:20px;color:var(--forest);line-height:1.25;transition:color .15s ease;}
+  .edition-meta{font-size:11.5px;letter-spacing:0.12em;text-transform:uppercase;color:var(--ink-mute);margin-top:4px;}
+  .edition-tag{display:inline-block;padding:2px 10px;border-radius:100px;border:1px solid var(--line);font-size:10.5px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:var(--moss-deep);margin-left:10px;vertical-align:middle;}
+  .edition-arr{color:var(--clay);font-size:18px;flex-shrink:0;transition:transform .15s ease;}
+  .edition-row:hover .edition-arr{transform:translateX(4px);}
+  .empty{padding:60px 0;text-align:center;font-family:var(--serif);font-style:italic;color:var(--ink-mute);font-size:18px;}
+  footer{margin-top:80px;border-top:1px solid var(--line);padding:40px 40px 60px;text-align:center;}
+  footer .fmark{font-family:var(--serif);font-size:24px;color:var(--forest);}
+  footer .ftag{font-family:var(--serif);font-style:italic;color:var(--ink-mute);margin-top:6px;}
+  @media (max-width:600px){
+    .wrap{padding:0 22px;} .cover{padding:40px 22px 36px;}
+    .edition-row{gap:14px;} .edition-no{min-width:44px;font-size:12px;}
+    .edition-title{font-size:17px;}
+  }
+</style>
+</head>
+<body>
+<header class="cover">
+  <div class="eyebrow">The Curated Canopy &nbsp;&middot;&nbsp; Archive</div>
+  <h1>Every Edition</h1>
+  <div class="tagline">All past issues, gathered here.</div>
+  <a class="back" href="./index.html">&larr; Current edition</a>
+</header>
+<div class="wrap">
+__EDITION_LIST__
+</div>
+<footer>
+  <div class="fmark">The Curated Canopy</div>
+  <div class="ftag">Gathered twice daily by Fern</div>
+</footer>
+</body>
+</html>"""
+
+
+def write_archive(editions_dir: Path, archive_path: Path) -> Path:
+    """Scan editions_dir for saved editions and rebuild archive.html."""
+    entries = []
+    for p in editions_dir.glob("*.html"):
+        parsed = _parse_edition_slug(p.stem)
+        if parsed is None:
+            continue
+        d, is_am = parsed
+        entries.append((d, is_am, p.name))
+
+    entries.sort(key=lambda e: (e[0], not e[1]), reverse=True)
+
+    if not entries:
+        list_html = '<div class="empty">No past editions yet — check back soon.</div>'
+    else:
+        rows = []
+        for d, is_am, fname in entries:
+            dt_fake = datetime.datetime(d.year, d.month, d.day, 7 if is_am else 18)
+            ed_no = _edition_no(dt_fake, is_am)
+            suffix = _day_suffix(d.day)
+            date_str = f"{d.strftime('%B')} {d.day}<sup>{suffix}</sup> {d.year}"
+            tag = "Morning" if is_am else "Evening"
+            weekday = d.strftime("%A")
+            rows.append(
+                f'<a class="edition-row" href="./editions/{fname}">'
+                f'<div class="edition-no">No.&nbsp;{ed_no}</div>'
+                f'<div class="edition-info">'
+                f'<div class="edition-title">{date_str}<span class="edition-tag">{tag}</span></div>'
+                f'<div class="edition-meta">{weekday}</div>'
+                f'</div>'
+                f'<span class="edition-arr">&rarr;</span>'
+                f'</a>'
+            )
+        list_html = '<div class="edition-list">' + "\n".join(rows) + "</div>"
+
+    archive_path.write_text(
+        _ARCHIVE_PAGE.replace("__EDITION_LIST__", list_html),
+        encoding="utf-8",
+    )
+    return archive_path
+
+
 def build_edition(curated: dict) -> str:
     fetched_at = curated.get("fetched_at", "")
     is_am = curated.get("is_am_email", False)
@@ -489,7 +620,22 @@ def build_edition(curated: dict) -> str:
 
 def write_edition(curated: dict) -> Path:
     DOCS_DIR.mkdir(exist_ok=True)
-    EDITION_HTML.write_text(build_edition(curated), encoding="utf-8")
+    EDITIONS_DIR.mkdir(exist_ok=True)
+
+    html = build_edition(curated)
+    EDITION_HTML.write_text(html, encoding="utf-8")
+
+    # Persist this edition to the dated archive
+    fetched_at = curated.get("fetched_at", "")
+    is_am = curated.get("is_am_email", False)
+    try:
+        dt = datetime.datetime.fromisoformat(fetched_at).astimezone(ZoneInfo("Europe/Zurich"))
+        slug = _edition_slug(dt, is_am)
+        (EDITIONS_DIR / f"{slug}.html").write_text(html, encoding="utf-8")
+    except Exception as exc:
+        print(f"[webpage] Could not save dated edition: {exc}")
+
+    write_archive(EDITIONS_DIR, ARCHIVE_HTML)
     return EDITION_HTML
 
 
