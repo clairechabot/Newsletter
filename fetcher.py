@@ -983,6 +983,10 @@ DISCOVERY_FEEDS = [
 DISCOVERY_CANDIDATES_PER_SOURCE = 15
 DISCOVERY_ARTICLES_PER_SOURCE   = 4
 
+# Fermat's Library — one annotated academic paper per week (no RSS; scrape journal_club)
+FERMAT_LIBRARY_URL = "https://www.fermatslibrary.com/journal_club"
+FERMAT_PAPERS_PER_RUN = 1
+
 # One Good Read — a single reflective essay/longread per edition.
 READS_FEEDS = [
     {"url": "https://www.themarginalian.org/feed/", "source_name": "The Marginalian"},
@@ -1174,6 +1178,48 @@ def fetch_good_news_articles(
     return results
 
 
+def _scrape_fermat_papers(session: requests.Session, n: int = 1) -> list[dict]:
+    """Scrape the Fermat's Library Journal Club page for recent annotated papers.
+
+    Returns up to `n` articles in the standard discovery format. Fermat's Library
+    has no RSS feed, so we parse the paper-container elements directly. Fail-silent:
+    any network or parsing error returns an empty list.
+    """
+    resp = _fetch_with_retry(FERMAT_LIBRARY_URL, session, referer="https://www.fermatslibrary.com/")
+    if resp is None:
+        print("[Fermat] Could not fetch journal_club page — skipping.")
+        return []
+    soup = BeautifulSoup(resp.text, "html.parser")
+    results = []
+    for link_el in soup.select("a.paper-container"):
+        if len(results) >= n:
+            break
+        href = link_el.get("href", "")
+        if not href or not href.startswith("/s/"):
+            continue
+        url = f"https://www.fermatslibrary.com{href}"
+        title_el   = link_el.select_one(".paper-title")
+        authors_el = link_el.select_one(".paper-author")
+        title      = (title_el.get_text(strip=True) if title_el else "").strip()
+        # Strip the "- N comments" suffix Fermat appends to author text
+        authors    = re.sub(r"\s*-\s*\d+\s*comments?\s*$", "",
+                            (authors_el.get_text(strip=True) if authors_el else ""),
+                            flags=re.I).strip()
+        if not title:
+            continue
+        snippet = f"By {authors}" if authors else ""
+        results.append({
+            "source":      "discovery",
+            "source_name": "Fermat's Library",
+            "title":       title,
+            "url":         url,
+            "snippet":     snippet,
+            "category":    "science",
+        })
+    print(f"[Fermat] Scraped {len(results)} paper(s).")
+    return results
+
+
 def fetch_discovery(
     seen_all_urls: set[str],
     seen_discovery_urls: set[str],
@@ -1210,6 +1256,17 @@ def fetch_discovery(
             seen_discovery_urls.add(url)
             results.append({**article, "category": feed["category"]})
             taken += 1
+
+    # Fermat's Library — scrape the weekly annotated academic paper
+    fermat_session = _scraper_session()
+    for paper in _scrape_fermat_papers(fermat_session, n=FERMAT_PAPERS_PER_RUN):
+        url = paper["url"]
+        if url in seen_all_urls:
+            print(f"  [skip/dup] Fermat paper already in history: {url}")
+            continue
+        seen_all_urls.add(url)
+        seen_discovery_urls.add(url)
+        results.append(paper)
 
     print(f"[Discovery] Collected {len(results)} article(s).")
 
