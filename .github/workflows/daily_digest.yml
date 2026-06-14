@@ -126,13 +126,15 @@ jobs:
           git config user.name  "newsletter-bot"
           git config user.email "newsletter-bot@users.noreply.github.com"
           BRANCH="${GITHUB_REF_NAME}"
-          [ -f history.json ]     && git add history.json
-          [ -f docs/index.html ]  && git add docs/index.html
+          [ -f history.json ]      && git add history.json
+          [ -f docs/index.html ]   && git add docs/index.html
+          [ -f docs/archive.html ] && git add docs/archive.html
+          [ -d docs/editions ]     && git add docs/editions/
           if git diff --staged --quiet; then
             echo "Nothing changed — nothing to commit."
             exit 0
           fi
-          git commit -m "chore: update history.json + full edition [skip ci]"
+          git commit -m "chore: update history.json + edition archive [skip ci]"
           # Rebase onto the latest of THIS branch, preferring our freshly
           # regenerated files on the (rare) conflict.
           git pull --rebase -X ours origin "$BRANCH" || git rebase --abort || true

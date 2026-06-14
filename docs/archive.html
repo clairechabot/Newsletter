@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Archive — The Curated Canopy</title>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#F4EEE2;--paper-deep:#E9E1D1;--surface:#FBF7EE;
+    --ink:#20271F;--ink-soft:#4A4A3E;--ink-mute:#7C7565;
+    --forest:#2C3A2B;--moss:#6E7B4B;--moss-deep:#55603A;
+    --clay:#A85A36;--clay-deep:#8E4A2C;--line:#D9CFBC;--line-soft:#E5DCCB;--radius:12px;
+    --serif:'Newsreader',Georgia,'Times New Roman',serif;
+    --sans:'Hanken Grotesk',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+  }
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body{font-family:var(--sans);background:var(--paper);color:var(--ink);line-height:1.6;-webkit-font-smoothing:antialiased;min-height:100vh;}
+  a{color:inherit;text-decoration:none;}
+  .wrap{max-width:800px;margin:0 auto;padding:0 40px;}
+  .eyebrow{font-size:11px;font-weight:600;letter-spacing:0.22em;text-transform:uppercase;color:var(--moss-deep);}
+  .cover{text-align:center;padding:60px 40px 50px;}
+  .cover .eyebrow{color:var(--clay-deep);margin-bottom:22px;}
+  .cover h1{font-family:var(--serif);font-weight:500;font-size:clamp(36px,6vw,60px);line-height:1.05;letter-spacing:-0.015em;color:var(--forest);}
+  .cover .tagline{font-family:var(--serif);font-style:italic;font-size:18px;color:var(--ink-soft);margin-top:14px;}
+  .back{display:inline-flex;align-items:center;gap:8px;font-size:12px;font-weight:600;letter-spacing:0.06em;text-transform:uppercase;color:var(--clay-deep);margin-top:24px;transition:color .15s ease;}
+  .back:hover{color:var(--clay);}
+  .edition-list{border-top:1px solid var(--line);margin-top:8px;}
+  .edition-row{display:flex;align-items:center;gap:20px;padding:20px 0;border-bottom:1px solid var(--line-soft);cursor:pointer;}
+  .edition-row:hover .edition-title{color:var(--clay-deep);}
+  .edition-no{font-family:var(--serif);font-size:13px;color:var(--ink-mute);min-width:56px;flex-shrink:0;}
+  .edition-info{flex:1;}
+  .edition-title{font-family:var(--serif);font-size:20px;color:var(--forest);line-height:1.25;transition:color .15s ease;}
+  .edition-meta{font-size:11.5px;letter-spacing:0.12em;text-transform:uppercase;color:var(--ink-mute);margin-top:4px;}
+  .edition-tag{display:inline-block;padding:2px 10px;border-radius:100px;border:1px solid var(--line);font-size:10.5px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:var(--moss-deep);margin-left:10px;vertical-align:middle;}
+  .edition-arr{color:var(--clay);font-size:18px;flex-shrink:0;transition:transform .15s ease;}
+  .edition-row:hover .edition-arr{transform:translateX(4px);}
+  .empty{padding:60px 0;text-align:center;font-family:var(--serif);font-style:italic;color:var(--ink-mute);font-size:18px;}
+  footer{margin-top:80px;border-top:1px solid var(--line);padding:40px 40px 60px;text-align:center;}
+  footer .fmark{font-family:var(--serif);font-size:24px;color:var(--forest);}
+  footer .ftag{font-family:var(--serif);font-style:italic;color:var(--ink-mute);margin-top:6px;}
+  @media (max-width:600px){
+    .wrap{padding:0 22px;} .cover{padding:40px 22px 36px;}
+    .edition-row{gap:14px;} .edition-no{min-width:44px;font-size:12px;}
+    .edition-title{font-size:17px;}
+  }
+</style>
+</head>
+<body>
+<header class="cover">
+  <div class="eyebrow">The Curated Canopy &nbsp;&middot;&nbsp; Archive</div>
+  <h1>Every Edition</h1>
+  <div class="tagline">All past issues, gathered here.</div>
+  <a class="back" href="./index.html">&larr; Current edition</a>
+</header>
+<div class="wrap">
+<div class="edition-list"><a class="edition-row" href="./editions/2026-06-14-morning.html"><div class="edition-no">No.&nbsp;1059</div><div class="edition-info"><div class="edition-title">June 14<sup>th</sup> 2026<span class="edition-tag">Morning</span></div><div class="edition-meta">Sunday</div></div><span class="edition-arr">&rarr;</span></a></div>
+</div>
+<footer>
+  <div class="fmark">The Curated Canopy</div>
+  <div class="ftag">Gathered twice daily by Fern</div>
+</footer>
+</body>
+</html>

@@ -47,9 +47,9 @@ Helpers: `http_fetch.py` (hardened browser-UA fetch with retries) and `claude_fe
 | **From the Garden** | Deterministic almanac (season + moon phase, no network) + Claude note | AM + PM |
 | **Today's opening** (hero) | First curated YouTube video | AM + PM |
 | **The Morning Soundtrack** | 7 music RSS feeds (NPR, Pitchfork, Stereogum, Bandcamp Daily, JazzTimes, No Depression, Sofar) | AM |
-| **Worth Watching** | 38 YouTube channels (1 video each) + 1 trending wildcard | AM (+ wildcard PM) |
+| **Worth Watching** | 32 YouTube channels (1 video each) + 1 trending wildcard | AM (+ wildcard PM) |
 | **Global Silver Linings** | Good News Network, Positive News, Upworthy | AM + PM |
-| **From the Archives** | Atlas Obscura, Smithsonian, Science News | AM + PM |
+| **From the Archives** | Atlas Obscura, Smithsonian, Science News, Fermat's Library | AM + PM |
 | **One Good Read** | The Marginalian, Aeon, Nautilus (single best essay) | AM + PM |
 
 Music items are filtered to the reader's taste (`MUSIC_GENRES` in `fetcher.py`) by Claude.
@@ -82,7 +82,8 @@ ALLOW_NO_EMAIL=1 python renderer.py
 ```
 
 `curated_data.json`, `fetched_data.json`, and `newsletter.html` are per-run artifacts
-(git-ignored); `history.json` and `docs/index.html` persist.
+(git-ignored); `history.json`, `docs/index.html`, `docs/archive.html`, and
+`docs/editions/` persist (committed back each run).
 
 ---
 
@@ -110,8 +111,18 @@ ALLOW_NO_EMAIL=1 python renderer.py
 `.github/workflows/daily_digest.yml` runs on a cron schedule (`0 5` and `0 16` UTC),
 installs deps, runs `fetcher.py` then `renderer.py`, uploads the email artifact,
 publishes `docs/index.html` to the public edition repo (`canopy-edition`), and commits
-the updated `history.json` + edition back to the branch. Secrets are configured in the
+the updated `history.json`, `docs/index.html`, `docs/archive.html`, and the dated
+edition file (`docs/editions/`) back to the branch. Secrets are configured in the
 repository settings. The workflow can also be triggered manually via `workflow_dispatch`.
+
+### Edition archive
+
+Every run saves a permanent copy of the web edition to `docs/editions/YYYY-MM-DD-morning.html`
+or `docs/editions/YYYY-MM-DD-evening.html`, and rebuilds `docs/archive.html` — a browsable
+index of all past issues. GitHub Pages must be enabled (Settings → Pages → Source: branch
+`main`, folder `/docs`) for the archive to be public at
+`https://clairechabot.github.io/Newsletter/archive.html`.
+The newsletter footer's "The Archive" link points there automatically.
 
 ---
 
@@ -125,6 +136,8 @@ webpage.py        interactive web edition → docs/index.html
 http_fetch.py     hardened HTTP fetch (browser UA, retries)
 claude_fetch.py   Claude web-fetch music extractor
 history.json      seen-content memory (dedup)
-docs/index.html   published web edition (GitHub Pages)
+docs/index.html   current web edition (GitHub Pages)
+docs/archive.html browsable index of every past edition
+docs/editions/    one HTML file per edition, named YYYY-MM-DD-{morning|evening}.html
 design/           Botanical Editorial design references + handoff mockups
 ```
