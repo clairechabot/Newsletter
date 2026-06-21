@@ -1,0 +1,56 @@
+name: Tag The Grove (moods)
+
+# One-off / on-demand: rebuild docs/grove.json from every saved edition, then
+# mood-tag any untagged items with Claude and commit the result. Useful to
+# backfill moods across the whole archive without waiting for the daily run.
+# (Normal edition runs already tag new items incrementally.)
+
+on:
+  workflow_dispatch:
+
+jobs:
+  tag-grove:
+    name: Aggregate + mood-tag The Grove
+    runs-on: ubuntu-latest
+
+    env:
+      TZ: Europe/Zurich
+
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install --quiet anthropic
+
+      - name: Rebuild + mood-tag The Grove
+        env:
+          CLAUDE_API_KEY: ${{ secrets.CLAUDE_API_KEY }}
+        run: |
+          python -c "import webpage; webpage.build_grove()"
+          python -c "import curator; curator.tag_grove_moods('docs/grove.json')"
+
+      - name: Commit tagged Grove
+        run: |
+          git config user.name  "newsletter-bot"
+          git config user.email "newsletter-bot@users.noreply.github.com"
+          BRANCH="${GITHUB_REF_NAME}"
+          [ -f docs/grove.html ] && git add docs/grove.html
+          [ -f docs/grove.json ] && git add docs/grove.json
+          if git diff --staged --quiet; then
+            echo "Nothing changed — nothing to commit."
+            exit 0
+          fi
+          git commit -m "chore: mood-tag The Grove [skip ci]"
+          git pull --rebase -X ours origin "$BRANCH" || git rebase --abort || true
+          git push origin "HEAD:$BRANCH" || echo "::warning::grove push skipped"
