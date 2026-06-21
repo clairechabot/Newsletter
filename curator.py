@@ -14,6 +14,7 @@ Required environment variable:
 import json
 import os
 import textwrap
+from pathlib import Path
 from typing import Any
 
 import anthropic
@@ -24,6 +25,12 @@ import anthropic
 
 CLAUDE_MODEL = "claude-sonnet-4-6"
 THEME_COUNT_MIN, THEME_COUNT_MAX = 3, 4
+
+# Fixed mood vocabulary for The Grove feed. Keep in sync with webpage.GROVE_MOODS.
+GROVE_MOODS: list[str] = [
+    "cozy", "curious", "uplifting", "wonder",
+    "hopeful", "energizing", "reflective", "playful",
+]
 
 
 # ---------------------------------------------------------------------------
@@ -697,6 +704,123 @@ def generate_fern_greeting(
             else "The day is winding down. Let's close it with something worth reading."
         )
         return {"greeting": fallback, "top_pick_title": ""}
+
+
+# ---------------------------------------------------------------------------
+# The Grove — mood tagging for the cross-edition feed
+# ---------------------------------------------------------------------------
+
+_MOOD_SYSTEM = textwrap.dedent(f"""
+You tag items for a cozy newsletter's browsable feed called "The Grove".
+Readers filter the feed by mood, so each item needs 1 to 3 mood tags that capture
+how it would make a reader feel or what headspace it suits.
+
+Choose ONLY from this exact vocabulary (use the words verbatim, lowercase):
+{", ".join(GROVE_MOODS)}
+
+Guidance:
+  • cozy — warm, comforting, slow, homey.
+  • curious — sparks questions, makes you want to learn more.
+  • uplifting — kind, heartening, good-news energy.
+  • wonder — awe at the world, nature, the cosmos.
+  • hopeful — forward-looking, reassuring about the future.
+  • energizing — lively, motivating, gets you moving.
+  • reflective — quiet, contemplative, good for winding down.
+  • playful — fun, witty, lighthearted.
+
+Pick the 1-3 that fit best. Do not invent new moods.
+
+Return ONLY a valid JSON array, one element per item in input order:
+[
+  {{"index": <integer, 0-based>, "moods": ["<mood>", "..."]}},
+  ...
+]
+
+Do not include any text outside the JSON array.
+""").strip()
+
+
+def tag_moods(client: anthropic.Anthropic, items: list[dict]) -> list[list[str]]:
+    """
+    Given feed items (each with title/note/source/section), return a list of
+    mood-lists aligned to the input order. Moods are restricted to GROVE_MOODS.
+    """
+    if not items:
+        return []
+
+    items_text = "\n\n".join(
+        f"--- Item {i} ---\n"
+        f"Section: {it.get('section', '')}\n"
+        f"Source: {it.get('source', '')}\n"
+        f"Title: {it.get('title', '')}\n"
+        f"Note: {it.get('note', '')}"
+        for i, it in enumerate(items)
+    )
+
+    message = client.messages.create(
+        model=CLAUDE_MODEL,
+        max_tokens=1500,
+        system=_MOOD_SYSTEM,
+        messages=[{"role": "user", "content": items_text}],
+    )
+
+    raw = message.content[0].text.strip()
+    if raw.startswith("```"):
+        raw = raw.split("```")[1]
+        if raw.startswith("json"):
+            raw = raw[4:]
+        raw = raw.strip()
+
+    try:
+        results: list[dict] = json.loads(raw)
+    except json.JSONDecodeError as exc:
+        print(f"  [warn] JSON parse error in mood tagging: {exc}. Leaving items untagged.")
+        return [[] for _ in items]
+
+    allowed = set(GROVE_MOODS)
+    index_to_moods = {
+        r.get("index"): [m for m in (r.get("moods") or []) if m in allowed][:3]
+        for r in results
+    }
+    return [index_to_moods.get(i, []) for i in range(len(items))]
+
+
+def tag_grove_moods(grove_json_path, batch_size: int = 40) -> int:
+    """
+    Load docs/grove.json, tag any items that don't yet have moods (in batches),
+    write the moods back, and return how many items were newly tagged.
+
+    Incremental by design: items keep their moods across rebuilds, so a normal
+    run only tags the handful of new items; the very first run backfills all of
+    them. No-ops cleanly when there is nothing to tag or no CLAUDE_API_KEY.
+    """
+    path = Path(grove_json_path)
+    if not path.exists():
+        print("[Grove] grove.json not found — nothing to tag.")
+        return 0
+
+    data = json.loads(path.read_text(encoding="utf-8"))
+    items = data.get("items", [])
+    untagged = [it for it in items if not it.get("moods")]
+    if not untagged:
+        print("[Grove] All items already mood-tagged.")
+        return 0
+
+    print(f"[Grove] Mood-tagging {len(untagged)} item(s) …")
+    client = build_claude_client()
+
+    tagged = 0
+    for start in range(0, len(untagged), batch_size):
+        batch = untagged[start : start + batch_size]
+        moods = tag_moods(client, batch)
+        for it, ms in zip(batch, moods):
+            if ms:
+                it["moods"] = ms
+                tagged += 1
+
+    path.write_text(json.dumps(data, ensure_ascii=False, indent=1), encoding="utf-8")
+    print(f"[Grove] Tagged {tagged} item(s).")
+    return tagged
 
 
 # ---------------------------------------------------------------------------
