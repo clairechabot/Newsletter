@@ -1,0 +1,48 @@
+name: Publish site to canopy-edition
+
+# On-demand: push the full static site (index, archive, The Grove + its data,
+# and every dated edition) from this repo's docs/ to the public canopy-edition
+# repo that GitHub Pages serves. Use this to sync pages the normal edition run
+# would otherwise only refresh on its next publish. No email, no content fetch.
+
+on:
+  workflow_dispatch:
+
+jobs:
+  publish:
+    name: Sync docs/ to canopy-edition
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Publish docs/ to canopy-edition
+        env:
+          EDITION_DEPLOY_TOKEN: ${{ secrets.EDITION_DEPLOY_TOKEN }}
+        run: |
+          if [ -z "$EDITION_DEPLOY_TOKEN" ]; then
+            echo "::error::No EDITION_DEPLOY_TOKEN secret — cannot publish."
+            exit 1
+          fi
+          [ -f docs/index.html ] || { echo "::error::No docs/index.html."; exit 1; }
+          rm -rf /tmp/edition
+          git clone "https://x-access-token:${EDITION_DEPLOY_TOKEN}@github.com/clairechabot/canopy-edition.git" /tmp/edition
+          cp docs/index.html /tmp/edition/index.html
+          [ -f docs/archive.html ] && cp docs/archive.html /tmp/edition/archive.html
+          [ -f docs/grove.html ]   && cp docs/grove.html   /tmp/edition/grove.html
+          [ -f docs/grove.json ]   && cp docs/grove.json   /tmp/edition/grove.json
+          if [ -d docs/editions ]; then
+            mkdir -p /tmp/edition/editions
+            cp docs/editions/*.html /tmp/edition/editions/ 2>/dev/null || true
+          fi
+          cd /tmp/edition
+          git config user.name  "newsletter-bot"
+          git config user.email "newsletter-bot@users.noreply.github.com"
+          git add -A
+          if git diff --staged --quiet; then
+            echo "Site already up to date — nothing to publish."
+            exit 0
+          fi
+          git commit -m "Sync full site (index, archive, grove, editions)"
+          git push
