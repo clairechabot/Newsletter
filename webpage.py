@@ -665,8 +665,8 @@ _GROVE_PAGE = """<!DOCTYPE html>
   .card .meta-line .date{color:var(--ink-mute);}
   .card h4{font-family:var(--serif);font-weight:500;font-size:20px;line-height:1.22;color:var(--forest);margin-top:10px;letter-spacing:-0.005em;}
   .card .note{font-size:14px;color:var(--ink-soft);margin-top:9px;line-height:1.55;}
-  .card .moods{display:flex;flex-wrap:wrap;gap:6px;margin-top:13px;}
-  .card .moodtag{font-size:9.5px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;padding:3px 9px;border-radius:100px;border:1px solid var(--line);color:var(--clay-deep);}
+  .card .moods{display:flex;flex-wrap:wrap;gap:10px;margin-top:11px;}
+  .card .moodtag{font-size:9px;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;color:rgba(124,117,101,0.55);}
   .card .from{margin-top:14px;font-size:11px;letter-spacing:0.06em;color:var(--ink-mute);}
   .card .from a{color:var(--clay-deep);font-weight:600;}
 
