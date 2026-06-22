@@ -7,6 +7,11 @@ name: Tag The Grove (moods)
 
 on:
   workflow_dispatch:
+    inputs:
+      retag:
+        description: "Re-tag every item from scratch (use after changing the mood vocabulary)"
+        type: boolean
+        default: false
 
 jobs:
   tag-grove:
@@ -36,9 +41,10 @@ jobs:
       - name: Rebuild + mood-tag The Grove
         env:
           CLAUDE_API_KEY: ${{ secrets.CLAUDE_API_KEY }}
+          RETAG: ${{ inputs.retag }}
         run: |
           python -c "import webpage; webpage.build_grove()"
-          python -c "import curator; curator.tag_grove_moods('docs/grove.json')"
+          python -c "import os, curator; curator.tag_grove_moods('docs/grove.json', retag=os.environ.get('RETAG')=='true')"
 
       - name: Commit tagged Grove
         run: |

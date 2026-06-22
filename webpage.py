@@ -32,6 +32,8 @@ GROVE_JSON   = DOCS_DIR / "grove.json"
 GROVE_MOODS: list[str] = [
     "cozy", "curious", "uplifting", "wonder",
     "hopeful", "energizing", "reflective", "playful",
+    "Romantic", "Crafty / Creative", "Cheer Up!", "Calm Down",
+    "Energize", "Inspire",
 ]
 
 

@@ -30,6 +30,8 @@ THEME_COUNT_MIN, THEME_COUNT_MAX = 3, 4
 GROVE_MOODS: list[str] = [
     "cozy", "curious", "uplifting", "wonder",
     "hopeful", "energizing", "reflective", "playful",
+    "Romantic", "Crafty / Creative", "Cheer Up!", "Calm Down",
+    "Energize", "Inspire",
 ]
 
 
@@ -715,7 +717,8 @@ You tag items for a cozy newsletter's browsable feed called "The Grove".
 Readers filter the feed by mood, so each item needs 1 to 3 mood tags that capture
 how it would make a reader feel or what headspace it suits.
 
-Choose ONLY from this exact vocabulary (use the words verbatim, lowercase):
+Choose ONLY from this exact vocabulary. Copy each tag VERBATIM, preserving its
+exact capitalization, spaces, slashes and punctuation:
 {", ".join(GROVE_MOODS)}
 
 Guidance:
@@ -727,8 +730,14 @@ Guidance:
   • energizing — lively, motivating, gets you moving.
   • reflective — quiet, contemplative, good for winding down.
   • playful — fun, witty, lighthearted.
+  • Romantic — love, tenderness, longing, intimacy, matters of the heart.
+  • Crafty / Creative — making things: art, design, DIY, craft, hands-on creativity.
+  • Cheer Up! — for a low moment: joyful, heartwarming, feel-good lift.
+  • Calm Down — soothing and grounding; helps you relax and decompress.
+  • Energize — invigorating, motivating, gets you up and going.
+  • Inspire — sparks ambition and big ideas; makes you want to create or act.
 
-Pick the 1-3 that fit best. Do not invent new moods.
+Pick the 1-3 that fit best (across the WHOLE list, old and new). Do not invent new moods.
 
 Return ONLY a valid JSON array, one element per item in input order:
 [
@@ -785,14 +794,15 @@ def tag_moods(client: anthropic.Anthropic, items: list[dict]) -> list[list[str]]
     return [index_to_moods.get(i, []) for i in range(len(items))]
 
 
-def tag_grove_moods(grove_json_path, batch_size: int = 40) -> int:
+def tag_grove_moods(grove_json_path, batch_size: int = 40, retag: bool = False) -> int:
     """
-    Load docs/grove.json, tag any items that don't yet have moods (in batches),
-    write the moods back, and return how many items were newly tagged.
+    Load docs/grove.json, tag items (in batches), write the moods back, and
+    return how many items were tagged.
 
-    Incremental by design: items keep their moods across rebuilds, so a normal
-    run only tags the handful of new items; the very first run backfills all of
-    them. No-ops cleanly when there is nothing to tag or no CLAUDE_API_KEY.
+    Incremental by default: items keep their moods across rebuilds, so a normal
+    run only tags the handful of new (untagged) items. Pass retag=True to re-tag
+    EVERY item from scratch — used when the mood vocabulary changes. No-ops
+    cleanly when there is nothing to tag or no CLAUDE_API_KEY.
     """
     path = Path(grove_json_path)
     if not path.exists():
@@ -801,17 +811,18 @@ def tag_grove_moods(grove_json_path, batch_size: int = 40) -> int:
 
     data = json.loads(path.read_text(encoding="utf-8"))
     items = data.get("items", [])
-    untagged = [it for it in items if not it.get("moods")]
-    if not untagged:
+    targets = items if retag else [it for it in items if not it.get("moods")]
+    if not targets:
         print("[Grove] All items already mood-tagged.")
         return 0
 
-    print(f"[Grove] Mood-tagging {len(untagged)} item(s) …")
+    label = "Re-tagging" if retag else "Mood-tagging"
+    print(f"[Grove] {label} {len(targets)} item(s) …")
     client = build_claude_client()
 
     tagged = 0
-    for start in range(0, len(untagged), batch_size):
-        batch = untagged[start : start + batch_size]
+    for start in range(0, len(targets), batch_size):
+        batch = targets[start : start + batch_size]
         moods = tag_moods(client, batch)
         for it, ms in zip(batch, moods):
             if ms:
