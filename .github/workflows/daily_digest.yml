@@ -101,10 +101,20 @@ jobs:
           rm -rf /tmp/edition
           git clone "https://x-access-token:${EDITION_DEPLOY_TOKEN}@github.com/clairechabot/canopy-edition.git" /tmp/edition
           cp docs/index.html /tmp/edition/index.html
+          # The edition footer links to ./archive.html and ./grove.html, and the
+          # Grove/Archive link out to ./editions/* and ./grove.json — so publish
+          # the whole linked set, not just index.html, or those pages 404.
+          [ -f docs/archive.html ] && cp docs/archive.html /tmp/edition/archive.html
+          [ -f docs/grove.html ]   && cp docs/grove.html   /tmp/edition/grove.html
+          [ -f docs/grove.json ]   && cp docs/grove.json   /tmp/edition/grove.json
+          if [ -d docs/editions ]; then
+            mkdir -p /tmp/edition/editions
+            cp docs/editions/*.html /tmp/edition/editions/ 2>/dev/null || true
+          fi
           cd /tmp/edition
           git config user.name  "newsletter-bot"
           git config user.email "newsletter-bot@users.noreply.github.com"
-          git add index.html
+          git add -A
           if git diff --staged --quiet; then
             echo "Edition unchanged — nothing to publish."
           else
