@@ -129,6 +129,8 @@ jobs:
           [ -f history.json ]      && git add history.json
           [ -f docs/index.html ]   && git add docs/index.html
           [ -f docs/archive.html ] && git add docs/archive.html
+          [ -f docs/grove.html ]   && git add docs/grove.html
+          [ -f docs/grove.json ]   && git add docs/grove.json
           [ -d docs/editions ]     && git add docs/editions/
           if git diff --staged --quiet; then
             echo "Nothing changed — nothing to commit."

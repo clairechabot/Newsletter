@@ -55,6 +55,7 @@ YOUTUBE_CHANNEL_IDS: list[str] = [
     "UCnCk_o6ySiM_ZzxubCv899Q", "UCCGtjLbNN7rtBRlAbnKOrBg", "UC1t6kKXoBvjdr8m9KJ2Fx7A",
     "UCZB1r1In9RfE7tpVrYgcjLQ", "UCR2uRTQ53V_egXKFflMMaaw",
     "UCs7nPQIEba0T3tGOWWsZpJQ", "UCNaq5Jh4SQ1oBAjhQ0KPhoA",
+    "UCAcoda6jlC-xpxGhwW7yFZw",  # Matt Reconstructs History
 ]
 
 HISTORY_FILE = Path(__file__).parent / "history.json"

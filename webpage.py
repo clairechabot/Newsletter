@@ -12,6 +12,7 @@ Or call write_edition(curated) from renderer.py.
 from __future__ import annotations
 
 import json
+import re
 import datetime
 from pathlib import Path
 from zoneinfo import ZoneInfo
@@ -22,6 +23,16 @@ DOCS_DIR     = BASE_DIR / "docs"
 EDITION_HTML = DOCS_DIR / "index.html"
 EDITIONS_DIR = DOCS_DIR / "editions"
 ARCHIVE_HTML = DOCS_DIR / "archive.html"
+GROVE_HTML   = DOCS_DIR / "grove.html"
+GROVE_JSON   = DOCS_DIR / "grove.json"
+
+# The fixed mood vocabulary used across The Grove. Claude tags each item with
+# 1–3 of these at build time (see curator.tag_grove_moods); the page exposes
+# them as filter chips. Keep this list in sync with curator.GROVE_MOODS.
+GROVE_MOODS: list[str] = [
+    "cozy", "curious", "uplifting", "wonder",
+    "hopeful", "energizing", "reflective", "playful",
+]
 
 
 def _dedash(s: str) -> str:
@@ -326,7 +337,7 @@ _PAGE = """<!DOCTYPE html>
   <footer>
     <div class="fmark">The Curated Canopy</div>
     <div class="ftag">Gathered twice daily by Fern</div>
-    <div class="links"><a href="#">About</a><a href="./archive.html">The Archive</a><a href="#">Preferences</a><a href="#">Unsubscribe</a></div>
+    <div class="links"><a href="#">About</a><a href="./archive.html">The Archive</a><a href="./grove.html">The Grove</a><a href="#">Preferences</a><a href="#">Unsubscribe</a></div>
   </footer>
 
 <script id="data" type="application/json">__DATA_JSON__</script>
@@ -532,6 +543,7 @@ _ARCHIVE_PAGE = """<!DOCTYPE html>
   <h1>Every Edition</h1>
   <div class="tagline">All past issues, gathered here.</div>
   <a class="back" href="./index.html">&larr; Current edition</a>
+  <a class="back" href="./grove.html" style="margin-left:18px;">Wander The Grove &rarr;</a>
 </header>
 <div class="wrap">
 __EDITION_LIST__
@@ -586,6 +598,349 @@ def write_archive(editions_dir: Path, archive_path: Path) -> Path:
     return archive_path
 
 
+# ---------------------------------------------------------------------------
+# The Grove — a scrollable, filterable feed of every item across all editions
+# ---------------------------------------------------------------------------
+
+_GROVE_PAGE = """<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Grove — The Curated Canopy</title>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#F4EEE2;--paper-deep:#E9E1D1;--surface:#FBF7EE;
+    --ink:#20271F;--ink-soft:#4A4A3E;--ink-mute:#7C7565;
+    --forest:#2C3A2B;--moss:#6E7B4B;--moss-deep:#55603A;
+    --clay:#A85A36;--clay-deep:#8E4A2C;--line:#D9CFBC;--line-soft:#E5DCCB;--radius:12px;
+    --serif:'Newsreader',Georgia,'Times New Roman',serif;
+    --sans:'Hanken Grotesk',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+  }
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body{font-family:var(--sans);background:var(--paper);color:var(--ink);line-height:1.6;-webkit-font-smoothing:antialiased;min-height:100vh;}
+  img{max-width:100%;display:block;}
+  a{color:inherit;text-decoration:none;}
+  .wrap{max-width:1120px;margin:0 auto;padding:0 40px;}
+  .eyebrow{font-size:11px;font-weight:600;letter-spacing:0.22em;text-transform:uppercase;color:var(--moss-deep);}
+
+  .cover{text-align:center;padding:58px 40px 30px;}
+  .cover .eyebrow{color:var(--clay-deep);margin-bottom:20px;}
+  .cover h1{font-family:var(--serif);font-weight:500;font-size:clamp(40px,7vw,70px);line-height:1.02;letter-spacing:-0.015em;color:var(--forest);}
+  .cover .tagline{font-family:var(--serif);font-style:italic;font-size:clamp(16px,2.2vw,20px);color:var(--ink-soft);margin-top:14px;}
+  .cover .nav{margin-top:22px;display:flex;gap:18px;justify-content:center;flex-wrap:wrap;font-size:12px;font-weight:600;letter-spacing:0.06em;text-transform:uppercase;}
+  .cover .nav a{color:var(--clay-deep);transition:color .15s ease;}
+  .cover .nav a:hover{color:var(--clay);}
+
+  .controls{position:sticky;top:0;z-index:50;background:rgba(244,238,226,0.9);backdrop-filter:blur(10px) saturate(120%);border-bottom:1px solid var(--line);padding:16px 0;}
+  .controls .wrap{display:flex;flex-direction:column;gap:12px;}
+  .search{width:100%;font-family:var(--sans);font-size:15px;color:var(--ink);background:var(--surface);border:1px solid var(--line);border-radius:100px;padding:12px 20px;outline:none;transition:border-color .15s ease;}
+  .search:focus{border-color:var(--moss);}
+  .search::placeholder{color:var(--ink-mute);}
+  .chips{display:flex;flex-wrap:wrap;gap:8px;}
+  .chip{cursor:pointer;font-family:var(--sans);font-size:12px;font-weight:600;letter-spacing:0.03em;padding:7px 15px;border-radius:100px;border:1px solid var(--line);background:var(--surface);color:var(--ink-soft);transition:all .16s ease;text-transform:capitalize;}
+  .chip:hover{border-color:var(--moss);color:var(--forest);}
+  .chip.active{background:var(--forest);border-color:var(--forest);color:var(--paper);}
+  .chip.mood.active{background:var(--clay-deep);border-color:var(--clay-deep);}
+  .chip-row-label{font-size:10px;font-weight:700;letter-spacing:0.16em;text-transform:uppercase;color:var(--ink-mute);align-self:center;margin-right:4px;}
+
+  .count{padding:24px 0 6px;font-family:var(--serif);font-style:italic;color:var(--ink-mute);font-size:15px;}
+
+  .feed{column-count:3;column-gap:26px;padding:8px 0 20px;}
+  .card{break-inside:avoid;margin-bottom:26px;display:block;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;transition:transform .18s ease,box-shadow .18s ease,border-color .18s ease;}
+  .card:hover{transform:translateY(-3px);box-shadow:0 10px 30px rgba(32,39,31,0.10);border-color:var(--moss);}
+  .card .cv{position:relative;width:100%;overflow:hidden;background:linear-gradient(160deg,var(--ph-a,#C9CBB0),var(--ph-b,#9DA882));}
+  .card .cv img{width:100%;height:100%;object-fit:cover;display:block;}
+  .card .cv.t0{--ph-a:#D9CFB8;--ph-b:#B3A684;} .card .cv.t1{--ph-a:#D8B59B;--ph-b:#B0764F;}
+  .card .cv.t2{--ph-a:#B7C29A;--ph-b:#7E8C5A;} .card .cv.t3{--ph-a:#7E8C6E;--ph-b:#46553E;}
+  .card .cv.ph{aspect-ratio:16/10;}
+  .play{position:absolute;inset:0;margin:auto;width:54px;height:54px;border-radius:50%;border:1.5px solid rgba(255,255,255,0.92);background:rgba(32,39,31,0.22);display:flex;align-items:center;justify-content:center;transition:transform .2s ease;}
+  .play::after{content:"";margin-left:3px;border-style:solid;border-width:8px 0 8px 13px;border-color:transparent transparent transparent rgba(255,255,255,0.95);}
+  .card:hover .play{transform:scale(1.08);}
+  .card .body{padding:18px 20px 20px;}
+  .card .meta-line{display:flex;align-items:center;gap:9px;font-size:10px;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:var(--moss-deep);flex-wrap:wrap;}
+  .card .meta-line .sep{color:var(--line);}
+  .card .meta-line .date{color:var(--ink-mute);}
+  .card h4{font-family:var(--serif);font-weight:500;font-size:20px;line-height:1.22;color:var(--forest);margin-top:10px;letter-spacing:-0.005em;}
+  .card .note{font-size:14px;color:var(--ink-soft);margin-top:9px;line-height:1.55;}
+  .card .moods{display:flex;flex-wrap:wrap;gap:10px;margin-top:11px;}
+  .card .moodtag{font-size:9px;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;color:rgba(124,117,101,0.55);}
+  .card .from{margin-top:14px;font-size:11px;letter-spacing:0.06em;color:var(--ink-mute);}
+  .card .from a{color:var(--clay-deep);font-weight:600;}
+
+  .empty{text-align:center;font-family:var(--serif);font-style:italic;color:var(--ink-mute);font-size:19px;padding:70px 0;}
+  #sentinel{height:1px;}
+
+  footer{margin-top:40px;border-top:1px solid var(--line);padding:40px 40px 60px;text-align:center;}
+  footer .fmark{font-family:var(--serif);font-size:24px;color:var(--forest);}
+  footer .ftag{font-family:var(--serif);font-style:italic;color:var(--ink-mute);margin-top:6px;}
+
+  @media (max-width:900px){ .feed{column-count:2;} }
+  @media (max-width:600px){
+    .wrap{padding:0 22px;} .cover{padding:42px 22px 24px;}
+    .feed{column-count:1;}
+  }
+</style>
+</head>
+<body>
+<header class="cover">
+  <div class="eyebrow">The Curated Canopy &nbsp;&middot;&nbsp; The Grove</div>
+  <h1>The Grove</h1>
+  <div class="tagline">Wander every story, song &amp; film we&#39;ve ever gathered.</div>
+  <div class="nav">
+    <a href="./index.html">&larr; Current edition</a>
+    <a href="./archive.html">The Archive</a>
+  </div>
+</header>
+
+<div class="controls">
+  <div class="wrap">
+    <input class="search" id="search" type="search" placeholder="Search The Grove — a title, a source, a feeling…" autocomplete="off">
+    <div class="chips" id="section-chips"></div>
+    <div class="chips" id="mood-chips"></div>
+  </div>
+</div>
+
+<main class="wrap">
+  <div class="count" id="count"></div>
+  <div class="feed" id="feed"></div>
+  <div id="sentinel"></div>
+</main>
+
+<footer>
+  <div class="fmark">The Curated Canopy</div>
+  <div class="ftag">Gathered twice daily by Fern</div>
+</footer>
+
+<script>
+const $ = (s,r=document)=>r.querySelector(s);
+function esc(s){return String(s==null?'':s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
+function safeUrl(u){try{const p=new URL(u,location.href);return ['http:','https:','mailto:'].includes(p.protocol)?p.href:'#';}catch(e){return '#';}}
+const SECTION_LABEL={music:'Soundtrack',videos:'Worth Watching',good_news:'Good News',discovery:'From the Archives',featured_read:'One Good Read'};
+const ARR='<span>&rarr;</span>';
+
+let ALL=[], MOODS=[], SECTIONS=[];
+let activeSection=null, activeMoods=new Set(), query='';
+let filtered=[], shown=0;
+const BATCH=24;
+
+function fmtDate(iso,ampm){
+  try{const d=new Date(iso+'T12:00:00');
+    return d.toLocaleDateString('en-US',{month:'short',day:'numeric',year:'numeric'})+' · '+(ampm==='morning'?'Morning':'Evening');
+  }catch(e){return iso;}
+}
+
+function cardHTML(it,idx){
+  const tone='t'+(idx%4);
+  const isVid=it.section==='videos';
+  const cv=it.image
+    ? '<div class="cv photo"><img src="'+esc(safeUrl(it.image))+'" alt="" loading="lazy">'+(isVid?'<span class="play"></span>':'')+'</div>'
+    : '<div class="cv ph '+tone+'">'+(isVid?'<span class="play"></span>':'')+'</div>';
+  const moods=(it.moods||[]).map(m=>'<span class="moodtag">'+esc(m)+'</span>').join('');
+  const src=it.source?'<span>'+esc(it.source)+'</span><span class="sep">&middot;</span>':'';
+  return '<a class="card" href="'+esc(safeUrl(it.url))+'" target="_blank" rel="noopener">'
+    + cv
+    + '<div class="body">'
+    +   '<div class="meta-line">'+src+'<span>'+esc(SECTION_LABEL[it.section]||it.section)+'</span></div>'
+    +   '<h4>'+esc(it.title)+'</h4>'
+    +   (it.note?'<div class="note">'+esc(it.note)+'</div>':'')
+    +   (moods?'<div class="moods">'+moods+'</div>':'')
+    +   '<div class="from">From the <a href="./editions/'+esc(it.edition)+'">'+esc(fmtDate(it.date,it.ampm))+'</a> edition</div>'
+    + '</div></a>';
+}
+
+function applyFilters(){
+  const q=query.trim().toLowerCase();
+  filtered=ALL.filter(it=>{
+    if(activeSection && it.section!==activeSection) return false;
+    if(activeMoods.size){ const ms=it.moods||[]; let ok=false; for(const m of activeMoods){ if(ms.includes(m)){ok=true;break;} } if(!ok) return false; }
+    if(q){ const hay=(it.title+' '+it.note+' '+it.source+' '+(it.moods||[]).join(' ')).toLowerCase(); if(!hay.includes(q)) return false; }
+    return true;
+  });
+  shown=0;
+  $('#feed').innerHTML='';
+  const n=filtered.length;
+  $('#count').textContent = n===0 ? '' : (n+' '+(n===1?'thing':'things')+' to wander through');
+  if(n===0){ $('#feed').innerHTML='<div class="empty">Nothing matches just yet — try a different mood or search.</div>'; return; }
+  renderMore();
+}
+
+function renderMore(){
+  const next=filtered.slice(shown,shown+BATCH);
+  if(!next.length) return;
+  const frag=document.createElement('div');
+  frag.innerHTML=next.map((it,i)=>cardHTML(it,shown+i)).join('');
+  while(frag.firstChild) $('#feed').appendChild(frag.firstChild);
+  shown+=next.length;
+}
+
+function renderChips(){
+  const sc=$('#section-chips');
+  const all=[{k:null,l:'Everything'}].concat(SECTIONS.map(s=>({k:s.key,l:s.label})));
+  sc.innerHTML=all.map(x=>'<button class="chip'+(x.k===activeSection?' active':'')+'" data-k="'+esc(x.k||'')+'">'+esc(x.l)+'</button>').join('');
+  sc.querySelectorAll('.chip').forEach(c=>c.onclick=()=>{activeSection=c.dataset.k||null;renderChips();applyFilters();});
+  const mc=$('#mood-chips');
+  if(!MOODS.length){ mc.innerHTML=''; return; }
+  mc.innerHTML='<span class="chip-row-label">Mood</span>'+MOODS.map(m=>'<button class="chip mood'+(activeMoods.has(m)?' active':'')+'" data-m="'+esc(m)+'">'+esc(m)+'</button>').join('');
+  mc.querySelectorAll('.chip.mood').forEach(c=>c.onclick=()=>{const m=c.dataset.m;activeMoods.has(m)?activeMoods.delete(m):activeMoods.add(m);renderChips();applyFilters();});
+}
+
+$('#search').addEventListener('input',e=>{query=e.target.value;applyFilters();});
+
+new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting)renderMore();});},{rootMargin:'600px'}).observe($('#sentinel'));
+
+fetch('./grove.json',{cache:'no-cache'}).then(r=>r.json()).then(d=>{
+  ALL=d.items||[]; MOODS=d.moods||[]; SECTIONS=d.sections||[];
+  // hide mood chips entirely until at least one item carries a mood
+  if(!ALL.some(it=>(it.moods||[]).length)) MOODS=[];
+  renderChips(); applyFilters();
+}).catch(()=>{ $('#feed').innerHTML='<div class="empty">The Grove is still growing — check back soon.</div>'; });
+</script>
+</body>
+</html>"""
+
+
+# Human-facing labels per section, used by the page's chips and card meta.
+_GROVE_SECTIONS = [
+    ("music",         "Soundtrack"),
+    ("videos",        "Worth Watching"),
+    ("good_news",     "Good News"),
+    ("discovery",     "From the Archives"),
+    ("featured_read", "One Good Read"),
+]
+
+
+def _extract_payload(html: str) -> "dict | None":
+    """Pull the embedded JSON payload out of a rendered edition HTML file."""
+    m = re.search(
+        r'<script id="data" type="application/json">(.*?)</script>', html, re.S
+    )
+    if not m:
+        return None
+    try:
+        return json.loads(m.group(1))
+    except json.JSONDecodeError:
+        return None
+
+
+def _grove_rank(entry: dict) -> tuple:
+    """Sort key: (date, morning=0/evening=1). Larger = more recent."""
+    return (entry["date"], 0 if entry["ampm"] == "morning" else 1)
+
+
+def _grove_entries(data: dict, d: datetime.date, is_am: bool) -> list[dict]:
+    """Flatten one edition payload into a list of feed entries."""
+    date_iso = d.isoformat()
+    ampm = "morning" if is_am else "evening"
+    edition_file = f"{date_iso}-{ampm}.html"
+    out: list[dict] = []
+
+    def add(section, title, note, url, image, source, genre=""):
+        if not title:
+            return
+        out.append({
+            "section": section,
+            "title":   title,
+            "note":    note or "",
+            "url":     url or "#",
+            "image":   image or "",
+            "source":  source or "",
+            "genre":   genre or "",
+            "date":    date_iso,
+            "ampm":    ampm,
+            "edition": edition_file,
+            "moods":   [],
+        })
+
+    for m in data.get("music", []):
+        add("music", m.get("title"), m.get("note"), m.get("url"),
+            m.get("cover"), m.get("source"), m.get("genre"))
+    for v in data.get("videos", []):
+        vid = v.get("video_id", "")
+        add("videos", v.get("title"), v.get("note"),
+            f"https://www.youtube.com/watch?v={vid}" if vid else "#",
+            f"https://img.youtube.com/vi/{vid}/hqdefault.jpg" if vid else "",
+            v.get("channel"))
+    for g in data.get("good_news", []):
+        add("good_news", g.get("title"), g.get("note"), g.get("url"),
+            g.get("cover"), g.get("source"))
+    for x in data.get("discovery", []):
+        add("discovery", x.get("title"), x.get("note"), x.get("url"),
+            x.get("cover"), x.get("source"))
+    fr = data.get("featured_read")
+    if fr and fr.get("title"):
+        add("featured_read", fr.get("title"), fr.get("note"), fr.get("url"),
+            fr.get("cover"), fr.get("source"))
+    return out
+
+
+def build_grove(
+    editions_dir: Path = EDITIONS_DIR,
+    grove_json: Path = GROVE_JSON,
+    grove_html: Path = GROVE_HTML,
+) -> Path:
+    """
+    Aggregate every item from every saved edition into docs/grove.json and
+    (re)write docs/grove.html. Items are deduped on URL (keeping the earliest
+    appearance) and sorted newest-first. Any moods already computed for an item
+    are preserved across rebuilds so we never re-tag what Claude has seen.
+    """
+    DOCS_DIR.mkdir(exist_ok=True)
+
+    # Preserve previously-tagged moods (keyed by URL) across regenerations.
+    prev_moods: dict[str, list[str]] = {}
+    if grove_json.exists():
+        try:
+            old = json.loads(grove_json.read_text(encoding="utf-8"))
+            for it in old.get("items", []):
+                if it.get("moods"):
+                    prev_moods[it["url"]] = it["moods"]
+        except Exception:
+            pass
+
+    collected: dict[str, dict] = {}
+    order: list[str] = []
+    for p in sorted(editions_dir.glob("*.html")):
+        parsed = _parse_edition_slug(p.stem)
+        if parsed is None:
+            continue
+        d, is_am = parsed
+        data = _extract_payload(p.read_text(encoding="utf-8"))
+        if not data:
+            continue
+        for entry in _grove_entries(data, d, is_am):
+            key = entry["url"]
+            if key in ("", "#"):
+                key = entry["section"] + "|" + entry["title"]
+            existing = collected.get(key)
+            if existing is None:
+                collected[key] = entry
+                order.append(key)
+            elif _grove_rank(entry) < _grove_rank(existing):
+                # keep the earliest appearance's date/edition
+                collected[key] = entry
+
+    items = [collected[k] for k in order]
+    for it in items:
+        if it["url"] in prev_moods:
+            it["moods"] = prev_moods[it["url"]]
+    items.sort(key=_grove_rank, reverse=True)
+
+    payload = {
+        "generated_at": datetime.datetime.now(ZoneInfo("Europe/Zurich")).isoformat(),
+        "moods": GROVE_MOODS,
+        "sections": [{"key": k, "label": l} for k, l in _GROVE_SECTIONS],
+        "items": items,
+    }
+    grove_json.write_text(
+        json.dumps(payload, ensure_ascii=False, indent=1), encoding="utf-8"
+    )
+    grove_html.write_text(_GROVE_PAGE, encoding="utf-8")
+    return grove_json
+
+
 def build_edition(curated: dict) -> str:
     fetched_at = curated.get("fetched_at", "")
     is_am = curated.get("is_am_email", False)
@@ -636,6 +991,17 @@ def write_edition(curated: dict) -> Path:
         print(f"[webpage] Could not save dated edition: {exc}")
 
     write_archive(EDITIONS_DIR, ARCHIVE_HTML)
+
+    # Rebuild The Grove (aggregates every saved edition), then best-effort
+    # mood-tag any new/untagged items. Tagging is optional: it needs a Claude
+    # key and never blocks the edition from publishing.
+    build_grove()
+    try:
+        import curator
+        curator.tag_grove_moods(GROVE_JSON)
+    except Exception as exc:
+        print(f"[webpage] Skipped Grove mood tagging: {exc}")
+
     return EDITION_HTML
 
 
