@@ -28,8 +28,7 @@ THEME_COUNT_MIN, THEME_COUNT_MAX = 3, 4
 
 # Fixed mood vocabulary for The Grove feed. Keep in sync with webpage.GROVE_MOODS.
 GROVE_MOODS: list[str] = [
-    "cozy", "curious", "uplifting", "wonder",
-    "hopeful", "energizing", "reflective", "playful",
+    "cozy", "curious", "wonder", "playful",
     "Romantic", "Crafty / Creative", "Cheer Up!", "Calm Down",
     "Energize", "Inspire",
 ]
@@ -724,11 +723,7 @@ exact capitalization, spaces, slashes and punctuation:
 Guidance:
   • cozy — warm, comforting, slow, homey.
   • curious — sparks questions, makes you want to learn more.
-  • uplifting — kind, heartening, good-news energy.
   • wonder — awe at the world, nature, the cosmos.
-  • hopeful — forward-looking, reassuring about the future.
-  • energizing — lively, motivating, gets you moving.
-  • reflective — quiet, contemplative, good for winding down.
   • playful — fun, witty, lighthearted.
   • Romantic — love, tenderness, longing, intimacy, matters of the heart.
   • Crafty / Creative — making things: art, design, DIY, craft, hands-on creativity.
