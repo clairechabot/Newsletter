@@ -30,8 +30,7 @@ GROVE_JSON   = DOCS_DIR / "grove.json"
 # 1–3 of these at build time (see curator.tag_grove_moods); the page exposes
 # them as filter chips. Keep this list in sync with curator.GROVE_MOODS.
 GROVE_MOODS: list[str] = [
-    "cozy", "curious", "uplifting", "wonder",
-    "hopeful", "energizing", "reflective", "playful",
+    "cozy", "curious", "wonder", "playful",
     "Romantic", "Crafty / Creative", "Cheer Up!", "Calm Down",
     "Energize", "Inspire",
 ]
