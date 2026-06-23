@@ -1085,17 +1085,31 @@ def write_edition(curated: dict) -> Path:
 
     write_archive(EDITIONS_DIR, ARCHIVE_HTML)
 
-    # Rebuild The Grove (aggregates every saved edition), then best-effort
-    # mood-tag any new/untagged items. Tagging is optional: it needs a Claude
-    # key and never blocks the edition from publishing.
+    # Rebuild The Grove (aggregates every saved edition) and AUTOMATICALLY
+    # mood-tag this edition's new items so they're immediately sortable by mood
+    # in the Grove. tag_grove_moods() is incremental — it only tags items that
+    # don't yet have moods — so every edition's freshly-added items get tagged
+    # on the same run, and a transient failure self-heals on the next run
+    # (the still-untagged items are simply retried). Tagging never blocks the
+    # edition from publishing: if there's no CLAUDE_API_KEY we skip quietly,
+    # and any real error is logged as a warning rather than raised.
     build_grove()
-    try:
-        import curator
-        curator.tag_grove_moods(GROVE_JSON)
-    except Exception as exc:
-        print(f"[webpage] Skipped Grove mood tagging: {exc}")
+    _autotag_grove()
 
     return EDITION_HTML
+
+
+def _autotag_grove() -> None:
+    """Mood-tag any untagged Grove items (best-effort, never raises)."""
+    if not os.environ.get("CLAUDE_API_KEY"):
+        print("[webpage] No CLAUDE_API_KEY — Grove items will be mood-tagged on the next run with a key.")
+        return
+    try:
+        import curator
+        tagged = curator.tag_grove_moods(GROVE_JSON)
+        print(f"[webpage] Grove auto-tagged {tagged} new item(s) with moods.")
+    except Exception as exc:
+        print(f"[webpage] WARN — Grove mood tagging failed (will retry next run): {exc}")
 
 
 def main() -> None:
