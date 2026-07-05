@@ -147,8 +147,10 @@ MUSIC_SOURCES: list[dict] = [
     {"name": "Stereogum",      "rss": "https://www.stereogum.com/feed/"},
     {"name": "No Depression",  "rss": "https://www.nodepression.com/feed/"},
     {"name": "Pitchfork",      "rss": "https://pitchfork.com/rss/news/"},
-    # Bandcamp Daily removed — its RSS endpoint now serves an HTML app
-    # (and the site is JS-rendered, so the scrape fallback can't read it).
+    # Bandcamp Daily's RSS was discontinued — replaced with the three below.
+    {"name": "Aquarium Drunkard", "rss": "https://aquariumdrunkard.com/feed/"},
+    {"name": "The Quietus",    "rss": "https://thequietus.com/feed/"},
+    {"name": "UK Jazz News",   "rss": "https://ukjazznews.com/feed/"},
     {"name": "JazzTimes",      "rss": "https://jazztimes.com/feed/"},
     {"name": "Sofar Sounds",   "url": "https://www.sofarsounds.com/blog"},  # no RSS — scrape
 ]
