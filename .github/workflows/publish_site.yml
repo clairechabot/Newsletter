@@ -41,8 +41,33 @@ jobs:
           git config user.email "newsletter-bot@users.noreply.github.com"
           git add -A
           if git diff --staged --quiet; then
-            echo "Site already up to date — nothing to publish."
-            exit 0
+            echo "Site already in sync — pushing empty commit to re-trigger the Pages build."
+            git commit --allow-empty -m "Retrigger Pages build"
+          else
+            git commit -m "Sync full site (index, archive, grove, editions)"
           fi
-          git commit -m "Sync full site (index, archive, grove, editions)"
           git push
+
+      # GitHub Pages deploys occasionally fail transiently ("try again later").
+      # Verify the freshly pushed grove.json is actually being served, and
+      # re-trigger the Pages build with an empty commit if it isn't.
+      - name: Verify deploy went live
+        continue-on-error: true
+        env:
+          EDITION_DEPLOY_TOKEN: ${{ secrets.EDITION_DEPLOY_TOKEN }}
+        run: |
+          WANT=$(python3 -c "import json;print(json.load(open('docs/grove.json'))['generated_at'])")
+          URL="https://clairechabot.github.io/canopy-edition/grove.json"
+          for i in 1 2 3 4; do
+            sleep 60
+            GOT=$(curl -s -L "$URL?v=$RANDOM" | python3 -c "import json,sys;print(json.load(sys.stdin).get('generated_at',''))" || true)
+            [ "$GOT" = "$WANT" ] && { echo "Live and current."; exit 0; }
+            echo "Attempt $i: live=$GOT want=$WANT"
+          done
+          echo "::warning::Deploy still stale — re-triggering Pages build."
+          cd /tmp/edition
+          git commit --allow-empty -m "Retrigger Pages build (deploy verification failed)"
+          git push
+          sleep 90
+          GOT=$(curl -s -L "$URL?v=$RANDOM" | python3 -c "import json,sys;print(json.load(sys.stdin).get('generated_at',''))" || true)
+          [ "$GOT" = "$WANT" ] && echo "Live after retry." || echo "::warning::Still stale after retry — check canopy-edition Pages."
