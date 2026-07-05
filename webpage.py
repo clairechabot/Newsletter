@@ -350,7 +350,7 @@ _PAGE = """<!DOCTYPE html>
 
   <main class="wrap">
     <section class="panel active" data-panel="music">
-      <div class="sec-head"><div class="eyebrow orn">Section One</div><h3>The Morning Soundtrack</h3>
+      <div class="sec-head"><div class="eyebrow orn">Section One</div><h3>__SOUNDTRACK_LABEL__</h3>
         <div class="lede">Fresh picks from the music world to set the tone for your day.</div></div>
       <div class="chips" id="genres"></div>
       <div class="grid music" id="music-grid"></div>
@@ -1061,6 +1061,8 @@ def build_edition(curated: dict) -> str:
         .replace("__EDITION_LABEL__", edition_label)
         .replace("__ISSUE__", issue)
         .replace("__DATE_STR__", date_str)
+        .replace("__SOUNDTRACK_LABEL__",
+                 "The Morning Soundtrack" if is_am else "The Evening Soundtrack")
         .replace("__GARDEN_LOCALE__", GARDEN_LOCALE)
         .replace("__DATA_JSON__", data_json)
     )

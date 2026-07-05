@@ -293,10 +293,11 @@ def _toc_row(num: str, cat: str, lead: str, count: str, href: str, last: bool = 
         </td></tr>"""
 
 
-def _render_contents(videos, music, good_news, discovery, read=None) -> str:
+def _render_contents(videos, music, good_news, discovery, read=None, is_am=True) -> str:
     href = _safe_url(EDITION_URL) if EDITION_URL else "#"
+    soundtrack_label = "The Morning Soundtrack" if is_am else "The Evening Soundtrack"
     specs = [
-        ("The Morning Soundtrack", music,     _top_titles(music),     "Tracks"),
+        (soundtrack_label,         music,     _top_titles(music),     "Tracks"),
         ("Worth Watching",         videos,    _top_titles(videos),    "Films"),
         ("Global Silver Linings",  good_news, _top_titles(good_news), "Stories"),
         ("From the Archives",      discovery, _top_titles(discovery), "Finds"),
@@ -364,7 +365,7 @@ def build_html(curated: dict) -> str:
     hero_html   = _render_hero(videos[0]) if videos else ""
     fern_html   = _render_fern_note(fern.get("greeting", ""))
     garden_html = _render_garden(garden)
-    toc_html    = _render_contents(videos, music, good_news, discovery, read)
+    toc_html    = _render_contents(videos, music, good_news, discovery, read, is_am=is_am)
 
     logo_html = (
         f'<img src="{_safe_url(FERN_LOGO_URL)}" alt="" width="96" '

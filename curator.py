@@ -846,8 +846,12 @@ def run_curation(raw_data: dict) -> dict:
     youtube_videos = raw_data.get("youtube_videos", [])
     enriched_youtube = audit_youtube_videos(client, youtube_videos)
 
-    # 2. Clustering
-    themes = cluster_content(client, enriched_youtube)
+    # 2. Clustering — skip the Claude call entirely when there are no videos
+    if enriched_youtube:
+        themes = cluster_content(client, enriched_youtube)
+    else:
+        print("[Curator] No videos this run — skipping clustering.")
+        themes = []
 
     # 4. Music Vibe Check (AM only — presence of articles signals AM run)
     music_articles = raw_data.get("music_articles", [])

@@ -2,10 +2,13 @@ name: Daily Newsletter Digest
 
 on:
   schedule:
-    # 07:00 Zurich (CEST = UTC+2) → 05:00 UTC
-    - cron: "0 5 * * *"
-    # 18:00 Zurich (CEST = UTC+2) → 16:00 UTC
-    - cron: "0 16 * * *"
+    # GitHub delays on-the-hour crons heavily (often 1-3h), so these fire early
+    # at an off-hour minute and let the delay land the email near the target:
+    # morning target ≤07:30 Zurich, evening target ≤18:00 Zurich.
+    # 05:23 Zurich summer (CEST = UTC+2) → 03:23 UTC. Winter (CET) runs 1h earlier.
+    - cron: "23 3 * * *"
+    # 16:23 Zurich summer (CEST = UTC+2) → 14:23 UTC.
+    - cron: "23 14 * * *"
   # Allow manual trigger from the Actions tab
   workflow_dispatch:
 
@@ -61,6 +64,9 @@ jobs:
       # ── 6. Render HTML + Send email ──────────────────────────────────────
       - name: Render newsletter and send
         env:
+          # Needed by webpage._autotag_grove() — every edition's new Grove items
+          # are mood-tagged during this step so they're sortable immediately.
+          CLAUDE_API_KEY:        ${{ secrets.CLAUDE_API_KEY }}
           # Sender credentials — support both naming conventions
           EMAIL_USER:            ${{ secrets.EMAIL_USER }}
           SMTP_USER:             ${{ secrets.SMTP_USER }}
@@ -122,6 +128,36 @@ jobs:
             git push
           fi
 
+      # ── 7c. Verify the public deploy actually went live ──────────────────
+      #   GitHub Pages deploys occasionally fail with a transient "try again
+      #   later" — usually self-healing, but this makes sure: wait for the
+      #   Pages build, check today's edition URL, and re-trigger the build
+      #   with an empty commit if it isn't live yet.
+      - name: Verify public site deploy
+        if: always()
+        continue-on-error: true
+        env:
+          EDITION_DEPLOY_TOKEN: ${{ secrets.EDITION_DEPLOY_TOKEN }}
+        run: |
+          [ -z "$EDITION_DEPLOY_TOKEN" ] && exit 0
+          SLUG="$(date +%F)-$([ "$(date +%H)" -lt 12 ] && echo morning || echo evening)"
+          URL="https://clairechabot.github.io/canopy-edition/editions/${SLUG}.html"
+          sleep 90
+          for i in 1 2 3; do
+            CODE=$(curl -s -o /dev/null -w "%{http_code}" -L "$URL")
+            [ "$CODE" = "200" ] && { echo "Live: $URL"; exit 0; }
+            echo "Attempt $i: $URL -> $CODE; waiting..."
+            sleep 60
+          done
+          echo "::warning::$URL still not live — re-triggering Pages build."
+          rm -rf /tmp/edition-retry
+          git clone --depth 1 "https://x-access-token:${EDITION_DEPLOY_TOKEN}@github.com/clairechabot/canopy-edition.git" /tmp/edition-retry
+          cd /tmp/edition-retry
+          git config user.name  "newsletter-bot"
+          git config user.email "newsletter-bot@users.noreply.github.com"
+          git commit --allow-empty -m "Retrigger Pages build (deploy verification failed)"
+          git push
+
       # ── 8. Commit history.json + the GitHub Pages "full edition" ─────────
       #   GitHub Pages must be enabled for this repo with
       #   Settings → Pages → Source: "Deploy from a branch", branch: main, folder: /docs
@@ -129,8 +165,11 @@ jobs:
       # Non-fatal: the email is the primary deliverable; persisting history/docs
       # must never turn a successful send red. Operates on the CURRENT branch
       # (GITHUB_REF_NAME), not a hardcoded main, so it works pre-merge too.
+      # Gated on success() — if the fetch/curate/send failed, the consumed
+      # URLs/video-IDs must NOT be committed to history, or that content is
+      # marked "seen" without ever having been delivered (lost forever).
       - name: Commit updated history.json and full edition
-        if: always()
+        if: success()
         continue-on-error: true
         run: |
           git config user.name  "newsletter-bot"

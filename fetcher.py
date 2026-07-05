@@ -63,6 +63,8 @@ YOUTUBE_CHANNEL_IDS: list[str] = [
 HISTORY_FILE = Path(__file__).parent / "history.json"
 CLAUDE_MODEL = "claude-sonnet-4-6"    # matches curator.CLAUDE_MODEL
 YOUTUBE_VIDEOS_PER_CHANNEL = 1        # 1 per channel conserves quota for wildcard search
+CHANNEL_SCAN_DEPTH = 10               # look this many uploads back per channel for unseen videos
+MAX_VIDEOS_PER_EDITION = 10           # newest-first cap across all channels + wildcard
 YOUTUBE_MIN_DURATION_SECONDS = 121    # ≥ 2 min — removes the 0–2 min band where Shorts cluster
 YOUTUBE_WILDCARD_MIN_SECONDS = 300    # wildcard must be ≥ 5 minutes
 
@@ -144,8 +146,9 @@ MUSIC_SOURCES: list[dict] = [
     {"name": "NPR Music",      "rss": "https://feeds.npr.org/1039/rss.xml"},
     {"name": "Stereogum",      "rss": "https://www.stereogum.com/feed/"},
     {"name": "No Depression",  "rss": "https://www.nodepression.com/feed/"},
-    {"name": "Pitchfork",      "rss": "https://pitchfork.com/rss/news/feed.xml"},
-    {"name": "Bandcamp Daily", "rss": "https://daily.bandcamp.com/feed"},
+    {"name": "Pitchfork",      "rss": "https://pitchfork.com/rss/news/"},
+    # Bandcamp Daily removed — its RSS endpoint now serves an HTML app
+    # (and the site is JS-rendered, so the scrape fallback can't read it).
     {"name": "JazzTimes",      "rss": "https://jazztimes.com/feed/"},
     {"name": "Sofar Sounds",   "url": "https://www.sofarsounds.com/blog"},  # no RSS — scrape
 ]
@@ -417,15 +420,26 @@ def _get_playlist_latest_ids(youtube, playlist_id: str, max_results: int = 5) ->
     ]
 
 
-def fetch_channel_videos(youtube, seen_ids: set[str]) -> list[dict]:
+def fetch_channel_videos(
+    youtube, seen_ids: set[str], max_videos: int = MAX_VIDEOS_PER_EDITION
+) -> list[dict]:
     """
-    Fetch the latest YOUTUBE_VIDEOS_PER_CHANNEL videos per channel.
+    Scan the last CHANNEL_SCAN_DEPTH uploads of every channel for unseen videos,
+    accept up to YOUTUBE_VIDEOS_PER_CHANNEL per channel, then keep the
+    `max_videos` newest across all channels.
 
-    Quota cost breakdown (38 channels):
-      - 1 call  to channels.list  for all 38 IDs  →  1 unit
-      - 1 call  to playlistItems.list per channel  → 38 units
-      - 1 call  to videos.list per ~50 fresh IDs   →  1 unit
-      Total: ~40 units  (vs ~7,600 with the old search.list approach)
+    Seen-marking rules (so no eligible video is ever silently lost):
+      - videos rejected for cause (Short/political/clickbait/non-English) are
+        marked seen — they will never become eligible;
+      - eligible videos NOT chosen this run (per-channel surplus or cut by the
+        newest-first cap) are left unseen and compete again next run;
+      - only the videos actually returned are marked seen.
+
+    Quota cost breakdown (~35 channels):
+      - 1 call  to channels.list  for all IDs      →  1 unit
+      - 1 call  to playlistItems.list per channel  → 35 units (depth ≤50 is free)
+      - videos.list on fresh IDs, 1 unit per 50    → ~1-3 units
+      Total: ~40 units  (vs ~7,000 with the old search.list approach)
 
     If a quota-exceeded error is hit at any stage, the function returns
     whatever has been collected so far rather than crashing the whole run.
@@ -453,7 +467,7 @@ def fetch_channel_videos(youtube, seen_ids: set[str]) -> list[dict]:
         print(f"[YouTube] Fetching channel {ch_id} …")
         try:
             vid_ids = _get_playlist_latest_ids(
-                youtube, playlist_id, max_results=YOUTUBE_VIDEOS_PER_CHANNEL * 3
+                youtube, playlist_id, max_results=CHANNEL_SCAN_DEPTH
             )
         except HttpError as exc:
             if "quotaExceeded" in str(exc):
@@ -475,7 +489,6 @@ def fetch_channel_videos(youtube, seen_ids: set[str]) -> list[dict]:
     try:
         for ch_id, fresh_ids in fresh_ids_per_channel.items():
             details, processed_ids = _fetch_video_details(youtube, fresh_ids)
-            seen_ids |= processed_ids   # register skipped IDs — avoids re-fetching Shorts etc.
             filtered = []
             for v in details:
                 if _is_political(v["title"], v.get("description", "")):
@@ -485,15 +498,30 @@ def fetch_channel_videos(youtube, seen_ids: set[str]) -> list[dict]:
                     print(f"  [skip/clickbait] channel {v['video_id']} — '{v['title']}'")
                     continue
                 filtered.append(v)
+            # Register only rejected-for-cause IDs (Shorts, blocked, clickbait,
+            # language). Eligible videos stay unseen until actually used, so a
+            # channel that posts several videos doesn't lose the surplus.
+            eligible_ids = {v["video_id"] for v in filtered}
+            seen_ids |= processed_ids - eligible_ids
             accepted = filtered[:YOUTUBE_VIDEOS_PER_CHANNEL]
-            for v in accepted:
-                seen_ids.add(v["video_id"])
+            if len(filtered) > len(accepted):
+                print(f"  [defer] {len(filtered) - len(accepted)} eligible video(s) "
+                      f"left for a future edition ({ch_id})")
             all_results.extend(accepted)
     except HttpError as exc:
         if "quotaExceeded" in str(exc):
             print("[YouTube] Quota exceeded during video detail fetch — using partial results.")
         else:
             raise
+
+    # Keep the newest `max_videos` across all channels; videos cut by the cap
+    # remain unseen and compete again next run.
+    all_results.sort(key=lambda v: v.get("published_at", ""), reverse=True)
+    if len(all_results) > max_videos:
+        print(f"[YouTube] Capping {len(all_results)} accepted videos to the {max_videos} newest.")
+        all_results = all_results[:max_videos]
+    for v in all_results:
+        seen_ids.add(v["video_id"])
 
     print(f"[YouTube] Collected {len(all_results)} channel videos.")
     return all_results
@@ -1364,20 +1392,20 @@ def main() -> dict:
     )
 
     # --- YouTube ---
+    # Wildcard runs on BOTH editions (2 × 100 quota units/day — fine within 10k).
+    # Channel videos are capped one below MAX so the wildcard fits inside it.
     youtube = build_youtube_client()
-    channel_videos = fetch_channel_videos(youtube, seen_ids)
-    if is_am_email:
-        print("[YouTube] AM email — skipping wildcard search.")
-        trending_video = None
-    else:
-        try:
-            trending_video = fetch_trending_video(youtube, seen_ids)
-        except HttpError as exc:
-            if "quotaExceeded" in str(exc):
-                print("[YouTube] Quota exceeded during wildcard search — skipping trending video.")
-                trending_video = None
-            else:
-                raise
+    channel_videos = fetch_channel_videos(
+        youtube, seen_ids, max_videos=MAX_VIDEOS_PER_EDITION - 1
+    )
+    try:
+        trending_video = fetch_trending_video(youtube, seen_ids)
+    except HttpError as exc:
+        if "quotaExceeded" in str(exc):
+            print("[YouTube] Quota exceeded during wildcard search — skipping trending video.")
+            trending_video = None
+        else:
+            raise
 
     youtube_results = channel_videos + ([trending_video] if trending_video else [])
 
@@ -1401,10 +1429,6 @@ def main() -> dict:
         "is_am":  is_am_email,
         "locale": "Zurich",
     }
-
-    # --- Persist history ---
-    save_history(seen_ids, seen_good_news_urls, seen_discovery_urls,
-                 seen_reads_urls, seen_music_urls)
 
     raw_payload = {
         "fetched_at": now_ch.isoformat(),
@@ -1435,6 +1459,13 @@ def main() -> dict:
 
     print("\n[curator] Starting audit & curation …")
     curated = run_curation(raw_payload)
+
+    # --- Persist history ---
+    # Deliberately AFTER curation: if curation raises, the consumed URLs and
+    # video IDs are not saved, so the same content is retried next run instead
+    # of being marked seen without ever having been published.
+    save_history(seen_ids, seen_good_news_urls, seen_discovery_urls,
+                 seen_reads_urls, seen_music_urls)
 
     curated_file = Path(__file__).parent / "curated_data.json"
     curated_file.write_text(json.dumps(curated, indent=2, ensure_ascii=False), encoding="utf-8")
