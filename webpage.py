@@ -118,10 +118,27 @@ def _payload(curated: dict) -> dict:
         "moon_label":  g.get("moon_label", ""),
     } if g.get("note") else None
 
+    pz = curated.get("puzzle") or {}
+    puzzle = {
+        "label":  pz.get("label", ""),
+        "prompt": _dedash(pz.get("prompt", "")),
+        "answer": _dedash(pz.get("answer", "")),
+        "hint":   _dedash(pz.get("hint", "")),
+    } if pz.get("prompt") and pz.get("answer") else None
+
+    pp = curated.get("previous_puzzle") or {}
+    prev_puzzle = {
+        "label":  pp.get("label", ""),
+        "prompt": _dedash(pp.get("prompt", "")),
+        "answer": _dedash(pp.get("answer", "")),
+    } if pp.get("answer") else None
+
     return {
         "is_am":    curated.get("is_am_email", False),
         "greeting": _dedash(curated.get("fern_data", {}).get("greeting", "")),
         "garden":    garden,
+        "puzzle":    puzzle,
+        "prev_puzzle": prev_puzzle,
         "featured_read": featured_read,
         "music":     music,
         "videos":    videos,
@@ -215,6 +232,20 @@ _PAGE = """<!DOCTYPE html>
   .almanac-foot{display:flex;flex-wrap:wrap;align-items:center;gap:12px 22px;margin-top:18px;}
   .almanac-meta{display:flex;align-items:center;gap:12px;font-size:11px;letter-spacing:0.15em;text-transform:uppercase;color:var(--ink-mute);}
   .almanac-meta .dot{width:4px;height:4px;border-radius:50%;background:var(--brass);}
+
+  /* ---- Fern's daily puzzle ---- */
+  .puzzle{max-width:740px;margin:0 auto;padding:26px 40px 4px;}
+  .puzzle .eyebrow{margin-bottom:12px;}
+  .puzzle p{font-family:var(--serif);font-size:18px;line-height:1.62;color:var(--ink-soft);white-space:pre-line;}
+  .puzzle .hint{font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:var(--ink-mute);margin-top:12px;}
+  .puzzle details{margin-top:16px;}
+  .puzzle summary{display:inline-block;cursor:pointer;font-family:var(--sans);font-size:11.5px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;padding:8px 18px;border:1px solid var(--brass);color:var(--brass-deep);transition:all .18s ease;list-style:none;}
+  .puzzle summary::-webkit-details-marker{display:none;}
+  .puzzle summary:hover{background:var(--brass);color:var(--forest-deep);}
+  .puzzle details[open] summary{display:none;}
+  .puzzle .answer{font-family:var(--display);font-style:italic;font-size:21px;color:var(--forest);border-left:2px solid var(--brass);padding-left:16px;}
+  .puzzle .prev{margin-top:18px;padding-top:14px;border-top:1px solid var(--line);font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:var(--ink-mute);}
+  .puzzle .prev b{color:var(--brass-deep);font-weight:600;}
 
   /* ---- hero + feature ---- */
   .hero{margin-top:14px;}
@@ -337,6 +368,17 @@ _PAGE = """<!DOCTYPE html>
     </div>
   </section>
 
+  <section class="puzzle" id="puzzle" style="display:none;">
+    <div class="eyebrow orn" id="puzzle-label"></div>
+    <p id="puzzle-prompt"></p>
+    <div class="hint" id="puzzle-hint" style="display:none;"></div>
+    <details>
+      <summary>Reveal the answer</summary>
+      <div class="answer" id="puzzle-answer"></div>
+    </details>
+    <div class="prev" id="puzzle-prev" style="display:none;"></div>
+  </section>
+
   <div class="rule-flr"><span class="flr" aria-hidden="true"><svg viewBox="0 0 200 20" width="190" height="19"><g fill="none" stroke="currentColor" stroke-width="1.1" stroke-linecap="round"><path d="M100 10 C84 10 78 3.5 64 3.5 C52 3.5 48 10 38 10"/><path d="M100 10 C116 10 122 3.5 136 3.5 C148 3.5 152 10 162 10"/><path d="M38 10 H10"/><path d="M162 10 H190"/></g><g fill="currentColor"><path d="M100 4 l4.5 6 l-4.5 6 l-4.5 -6 z"/><circle cx="10" cy="10" r="1.6"/><circle cx="190" cy="10" r="1.6"/><circle cx="64" cy="3.5" r="1.7"/><circle cx="136" cy="3.5" r="1.7"/></g></svg></span></div>
 
   <div class="wrap hero" id="hero-wrap" style="display:none;">
@@ -422,6 +464,27 @@ function cover(url,tone,label,play){
   const meta=[]; if(g.moon_label) meta.push(g.moon_label); if(g.sky_tonight) meta.push(g.sky_tonight);
   $('#garden-meta').innerHTML = meta.map((b,i)=>(i?'<span class="dot"></span>':'')+'<span>'+esc(b)+'</span>').join('');
   $('#almanac').style.display='';
+})();
+
+// Fern's daily puzzle — tap-to-reveal answer + last edition's answer
+(function(){
+  const p = DATA.puzzle, prev = DATA.prev_puzzle;
+  if(!p && !prev) return;
+  if(p){
+    $('#puzzle-label').textContent = p.label || "Fern's Puzzle";
+    $('#puzzle-prompt').textContent = p.prompt;
+    $('#puzzle-answer').textContent = p.answer;
+    if(p.hint){ $('#puzzle-hint').textContent = 'Hint: '+p.hint; $('#puzzle-hint').style.display=''; }
+  } else {
+    $('#puzzle-label').textContent = 'The Puzzle Corner';
+    $('#puzzle-prompt').textContent = '';
+    document.querySelector('#puzzle details').style.display='none';
+  }
+  if(prev && prev.answer){
+    $('#puzzle-prev').innerHTML = 'Last edition\\u2019s answer &middot; <b>'+esc(prev.answer)+'</b>';
+    $('#puzzle-prev').style.display='';
+  }
+  $('#puzzle').style.display='';
 })();
 
 // Hero feature = first video

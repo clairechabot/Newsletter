@@ -276,6 +276,47 @@ def _render_garden(garden: dict) -> str:
         </tr>"""
 
 
+def _render_puzzle(puzzle: dict, prev: dict) -> str:
+    """Fern's daily puzzle block (email-safe). The answer lives behind a link to
+    the full edition's tap-to-reveal, plus the previous edition's answer inline."""
+    puzzle = puzzle or {}
+    prev = prev or {}
+    if not puzzle.get("prompt") and not prev.get("answer"):
+        return ""
+    rows = []
+    if puzzle.get("prompt"):
+        label = _esc(puzzle.get("label") or "Fern's Puzzle")
+        prompt = _esc(_dedash(puzzle["prompt"])).replace("\n", "<br>")
+        hint = _esc(_dedash(puzzle.get("hint", "")))
+        hint_html = (
+            f'<div style="font-family:{SANS}; font-size:10.5px; letter-spacing:1.2px; '
+            f'text-transform:uppercase; color:{INK_MUTE}; padding-top:10px;">Hint: {hint}</div>'
+        ) if hint else ""
+        href = _safe_url(EDITION_URL) if EDITION_URL else "#"
+        rows.append(
+            f'<div style="font-family:{SANS}; font-size:11px; font-weight:600; letter-spacing:3px; '
+            f'text-transform:uppercase; color:{BRASS_DEEP}; padding-bottom:10px;">{_eyebrow(label, BRASS_DEEP)}</div>'
+            f'<div style="font-family:{SERIF}; font-size:16px; line-height:1.6; color:{INK_SOFT};">{prompt}</div>'
+            f'{hint_html}'
+            f'<div style="padding-top:14px;"><a href="{href}" style="font-family:{SANS}; font-size:11px; '
+            f'font-weight:600; letter-spacing:1.2px; text-transform:uppercase; color:{CLAY_DEEP}; '
+            f'text-decoration:none;">Reveal the answer in the full edition &rarr;</a></div>'
+        )
+    if prev.get("answer"):
+        border = f'border-top:1px solid {LINE}; margin-top:16px; padding-top:12px;' if rows else ""
+        rows.append(
+            f'<div style="{border}font-family:{SANS}; font-size:11px; letter-spacing:1.2px; '
+            f'text-transform:uppercase; color:{INK_MUTE};">Last edition&#39;s answer &nbsp;&middot;&nbsp; '
+            f'<span style="color:{BRASS_DEEP}; font-weight:600;">{_esc(_dedash(prev["answer"]))}</span></div>'
+        )
+    return f"""
+        <tr>
+          <td class="px" style="padding:24px 32px 26px 32px; background-color:{SURFACE}; border-bottom:1px solid {LINE};">
+            {''.join(rows)}
+          </td>
+        </tr>"""
+
+
 def _toc_row(num: str, cat: str, lead: str, count: str, href: str, last: bool = False) -> str:
     border = "" if last else f" border-bottom:1px solid {LINE};"
     return f"""
@@ -365,6 +406,7 @@ def build_html(curated: dict) -> str:
     hero_html   = _render_hero(videos[0]) if videos else ""
     fern_html   = _render_fern_note(fern.get("greeting", ""))
     garden_html = _render_garden(garden)
+    puzzle_html = _render_puzzle(curated.get("puzzle"), curated.get("previous_puzzle"))
     toc_html    = _render_contents(videos, music, good_news, discovery, read, is_am=is_am)
 
     logo_html = (
@@ -409,7 +451,7 @@ def build_html(curated: dict) -> str:
               </tr>
             </table>
           </td>
-        </tr>{fern_html}{garden_html}{hero_html}{toc_html}{cta_html}
+        </tr>{fern_html}{garden_html}{puzzle_html}{hero_html}{toc_html}{cta_html}
         <tr>
           <td align="center" bgcolor="{FOREST}" style="background-color:{FOREST}; padding:30px 22px 36px 22px; margin-top:40px;">
             <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="border:1px solid {BRASS};">
