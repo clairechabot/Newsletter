@@ -114,11 +114,15 @@
   .chip:hover{border-color:var(--brass);color:var(--forest);} .chip.active{background:var(--forest);border-color:var(--forest);color:var(--cream);}
   .chip.static{cursor:default;} .chip.static:hover{border-color:var(--line);color:var(--ink-soft);}
 
-  .grid{display:grid;gap:34px 26px;}
-  .grid.music{grid-template-columns:repeat(auto-fill,minmax(220px,1fr));}
-  .grid.watch{grid-template-columns:repeat(auto-fill,minmax(340px,1fr));}
-  .grid.read{grid-template-columns:repeat(auto-fill,minmax(300px,1fr));}
-  .card{display:flex;flex-direction:column;}
+  /* Horizontal swipe carousels — one scroll-snapping row per section. */
+  .grid{display:flex;gap:26px;overflow-x:auto;overflow-y:hidden;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;padding-bottom:16px;scrollbar-width:thin;scrollbar-color:var(--line) transparent;}
+  .grid::-webkit-scrollbar{height:8px;}
+  .grid::-webkit-scrollbar-thumb{background:var(--line);border-radius:100px;}
+  .grid::-webkit-scrollbar-track{background:transparent;}
+  .card{display:flex;flex-direction:column;flex:0 0 auto;scroll-snap-align:start;}
+  .grid.music .card{width:220px;}
+  .grid.watch .card{width:360px;}
+  .grid.read .card{width:320px;}
   .card .cv{position:relative;}
   .card .cv::after{content:"";position:absolute;inset:0;border:1px solid rgba(192,148,51,0);transition:border-color .2s ease;pointer-events:none;}
   .card:hover .cv::after{border-color:var(--brass);}
@@ -153,8 +157,10 @@
     .wrap,.tabbar-inner{padding-left:22px;padding-right:22px;}
     .cover{padding:48px 22px 40px;} .fern{padding:0 22px;gap:16px;} .fern p{font-size:18px;}
     .almanac{padding:20px 22px 4px;} .almanac p{font-size:16.5px;}
-    .panel{padding-top:40px;} .grid{gap:30px 18px;}
-    .grid.music{grid-template-columns:repeat(auto-fill,minmax(150px,1fr));}
+    .panel{padding-top:40px;} .grid{gap:18px;}
+    .grid.music .card{width:160px;}
+    .grid.watch .card{width:280px;}
+    .grid.read .card{width:260px;}
     .tabbar-inner{gap:0;} .tab{padding:20px 12px;}
   }
 </style>
@@ -206,7 +212,7 @@
 
   <main class="wrap">
     <section class="panel active" data-panel="music">
-      <div class="sec-head"><div class="eyebrow orn">Section One</div><h3>The Morning Soundtrack</h3>
+      <div class="sec-head"><div class="eyebrow orn">Section One</div><h3>The Evening Soundtrack</h3>
         <div class="lede">Fresh picks from the music world to set the tone for your day.</div></div>
       <div class="chips" id="genres"></div>
       <div class="grid music" id="music-grid"></div>
