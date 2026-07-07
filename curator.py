@@ -830,6 +830,122 @@ def tag_grove_moods(grove_json_path, batch_size: int = 40, retag: bool = False) 
 
 
 # ---------------------------------------------------------------------------
+# Fern's daily puzzle — morning riddle / rotating evening enigma
+# ---------------------------------------------------------------------------
+
+# Evening puzzle kinds, rotated deterministically by day-of-year so a re-run of
+# the same edition produces the same kind.
+PM_PUZZLE_KINDS = ["lateral teaser", "two truths & a lie", "anagram"]
+
+_PUZZLE_KIND_GUIDANCE = {
+    "riddle": (
+        "Write a classic riddle in 2-4 short lines, gently poetic, ideally drawing "
+        "on nature, the seasons, music, or everyday household objects. The answer "
+        "is a single word or short phrase."
+    ),
+    "lateral teaser": (
+        "Write a tiny lateral-thinking mystery: 2-3 sentences describing a curious "
+        "situation with one surprising-but-logical explanation. The answer explains "
+        "it in one or two sentences."
+    ),
+    "two truths & a lie": (
+        "Write three numbered claims about nature, history, music, or science — two "
+        "genuinely true and surprising, one false but plausible. The prompt lists the "
+        "claims as '1. … 2. … 3. …'. The answer names which number is the lie and "
+        "corrects it in one sentence. Only use claims you are certain about."
+    ),
+    "anagram": (
+        "Choose a real word or short phrase connected to nature, music, or history, "
+        "scramble its letters into something pronounceable, and present it as: the "
+        "scrambled letters in CAPITALS plus a one-line clue to the unscrambled "
+        "answer. The answer is the unscrambled word/phrase."
+    ),
+}
+
+_PUZZLE_SYSTEM = textwrap.dedent("""
+You are Fern — the AI curator behind The Curated Canopy newsletter.
+Personality: sophisticated, cozy, warm, slightly witty. Never cringe or hypey.
+No emojis.
+
+Write ONE small puzzle for today's edition, following the kind-specific
+instructions in the user message. Keep it solvable over a coffee: satisfying,
+not obscure. Ground any factual content in things you are certain of.
+
+Return ONLY valid JSON:
+{
+  "prompt": "<the puzzle text shown to the reader>",
+  "answer": "<the solution, one short sentence or phrase>",
+  "hint": "<one gentle nudge, or an empty string>"
+}
+
+Do not include any text outside the JSON object.
+""").strip()
+
+
+def puzzle_kind_for(is_am: bool, date: "datetime.date") -> str:
+    """Deterministic puzzle kind: mornings are always riddles; evenings rotate."""
+    if is_am:
+        return "riddle"
+    return PM_PUZZLE_KINDS[date.timetuple().tm_yday % len(PM_PUZZLE_KINDS)]
+
+
+def generate_puzzle(client: anthropic.Anthropic, is_am: bool,
+                    date_str: str, season: str = "") -> dict:
+    """
+    Generate Fern's daily puzzle. Morning editions get a riddle
+    ("Fern's Morning Riddle"); evenings rotate lateral teaser / two truths & a
+    lie / anagram ("The Evening Enigma"). Returns {} on any failure so the
+    edition renders without the section.
+    """
+    import datetime as _dt
+    try:
+        date = _dt.date.fromisoformat(date_str[:10])
+    except ValueError:
+        date = _dt.date.today()
+    kind = puzzle_kind_for(is_am, date)
+    label = "Fern's Morning Riddle" if is_am else "The Evening Enigma"
+
+    user_message = (
+        f"Puzzle kind: {kind}\n"
+        f"Instructions: {_PUZZLE_KIND_GUIDANCE[kind]}\n"
+        f"Date: {date_str}\n"
+        + (f"Season: {season}\n" if season else "")
+        + f"Edition: {'morning' if is_am else 'evening'}"
+    )
+
+    print(f"[Puzzle] Generating {label} ({kind}) …")
+    message = client.messages.create(
+        model=CLAUDE_MODEL,
+        max_tokens=512,
+        system=_PUZZLE_SYSTEM,
+        messages=[{"role": "user", "content": user_message}],
+    )
+
+    raw = message.content[0].text.strip()
+    if raw.startswith("```"):
+        raw = raw.split("```")[1]
+        if raw.startswith("json"):
+            raw = raw[4:]
+        raw = raw.strip()
+
+    try:
+        data = json.loads(raw)
+    except json.JSONDecodeError as exc:
+        print(f"  [warn] JSON parse error in puzzle: {exc}. Skipping puzzle.")
+        return {}
+    if not data.get("prompt") or not data.get("answer"):
+        print("  [warn] Puzzle missing prompt/answer. Skipping puzzle.")
+        return {}
+    return {
+        "kind":   kind,
+        "label":  label,
+        "prompt": data["prompt"],
+        "answer": data["answer"],
+        "hint":   data.get("hint", ""),
+    }
+
+
+# ---------------------------------------------------------------------------
 # Orchestrator
 # ---------------------------------------------------------------------------
 
@@ -874,6 +990,19 @@ def run_curation(raw_data: dict) -> dict:
     # 8. From the Garden — Fern's seasonal almanac note (every run)
     garden_note = generate_garden_note(client, raw_data.get("garden_seed", {}))
 
+    # 8b. Fern's daily puzzle (morning riddle / evening enigma). Best-effort:
+    # a failure just means the edition ships without the puzzle section.
+    try:
+        puzzle = generate_puzzle(
+            client,
+            raw_data.get("is_am_email", False),
+            raw_data.get("fetched_at", "") or "",
+            raw_data.get("garden_seed", {}).get("season", ""),
+        )
+    except Exception as exc:
+        print(f"  [warn] Puzzle generation failed: {exc}. Skipping puzzle.")
+        puzzle = {}
+
     # 9. Fern's daily greeting + top pick for subject line
     fern_data = generate_fern_greeting(
         client,
@@ -896,6 +1025,7 @@ def run_curation(raw_data: dict) -> dict:
             "discovery_articles": len(discovery_articles),
             "featured_read": 1 if featured_read else 0,
             "garden": 1 if garden_note.get("note") else 0,
+            "puzzle": 1 if puzzle else 0,
         },
         "themes": themes,
         "morning_soundtrack": morning_soundtrack,
@@ -903,5 +1033,7 @@ def run_curation(raw_data: dict) -> dict:
         "discovery_articles": discovery_articles,
         "featured_read": featured_read,
         "garden_note": garden_note,
+        "puzzle": puzzle,
+        "previous_puzzle": raw_data.get("previous_puzzle") or {},
         "fern_data": fern_data,
     }

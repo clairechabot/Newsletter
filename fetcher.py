@@ -202,8 +202,13 @@ def save_history(
     seen_discovery_urls: set[str],
     seen_reads_urls: set[str],
     seen_music_urls: set[str],
+    pending_puzzle: "dict | None" = None,
 ) -> None:
-    """Persist seen video IDs and the Good News / Discovery / Reads / Music URLs."""
+    """Persist seen video IDs and the Good News / Discovery / Reads / Music URLs.
+
+    pending_puzzle carries this edition's puzzle (label/prompt/answer) forward so
+    the NEXT edition can print the answer. None leaves any existing pending
+    puzzle untouched (so an unanswered puzzle isn't dropped by a puzzle-less run)."""
     existing: dict = {}
     if HISTORY_FILE.exists():
         existing = json.loads(HISTORY_FILE.read_text(encoding="utf-8-sig"))
@@ -212,6 +217,8 @@ def save_history(
     existing["discovery_urls"]  = sorted(seen_discovery_urls)
     existing["reads_urls"]      = sorted(seen_reads_urls)
     existing["music_urls"]      = sorted(seen_music_urls)
+    if pending_puzzle is not None:
+        existing["pending_puzzle"] = pending_puzzle
     HISTORY_FILE.write_text(
         json.dumps(existing, indent=2, ensure_ascii=False), encoding="utf-8"
     )
@@ -1432,6 +1439,16 @@ def main() -> dict:
         "locale": "Zurich",
     }
 
+    # Last edition's puzzle (so this edition can print its answer)
+    previous_puzzle: dict = {}
+    if HISTORY_FILE.exists():
+        try:
+            previous_puzzle = json.loads(
+                HISTORY_FILE.read_text(encoding="utf-8-sig")
+            ).get("pending_puzzle") or {}
+        except Exception:
+            previous_puzzle = {}
+
     raw_payload = {
         "fetched_at": now_ch.isoformat(),
         "is_am_email": is_am_email,
@@ -1441,6 +1458,7 @@ def main() -> dict:
         "discovery_articles": discovery_articles,
         "reads": reads,
         "garden_seed": garden_seed,
+        "previous_puzzle": previous_puzzle,
     }
 
     # Write raw fetch snapshot (useful for debugging / re-running curation without re-fetching)
@@ -1466,8 +1484,13 @@ def main() -> dict:
     # Deliberately AFTER curation: if curation raises, the consumed URLs and
     # video IDs are not saved, so the same content is retried next run instead
     # of being marked seen without ever having been published.
+    new_puzzle = curated.get("puzzle") or {}
     save_history(seen_ids, seen_good_news_urls, seen_discovery_urls,
-                 seen_reads_urls, seen_music_urls)
+                 seen_reads_urls, seen_music_urls,
+                 pending_puzzle=(
+                     {k: new_puzzle[k] for k in ("label", "prompt", "answer")}
+                     if new_puzzle.get("answer") else None
+                 ))
 
     curated_file = Path(__file__).parent / "curated_data.json"
     curated_file.write_text(json.dumps(curated, indent=2, ensure_ascii=False), encoding="utf-8")
