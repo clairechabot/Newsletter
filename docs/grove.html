@@ -86,6 +86,16 @@
   footer .ftag{font-family:var(--display);font-style:italic;font-size:17px;color:var(--cream-mute);margin-top:6px;}
 
   @media (max-width:900px){ .feed{column-count:2;} }
+  @media (max-width:700px){
+    /* Keep the sticky filter bar compact: one swipeable line per chip row. */
+    .controls{padding:10px 0;}
+    .controls .wrap{gap:8px;}
+    .search{padding:9px 16px;font-size:13px;}
+    .chips{flex-wrap:nowrap;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none;padding-bottom:2px;}
+    .chips::-webkit-scrollbar{display:none;}
+    .chip{flex:0 0 auto;white-space:nowrap;}
+    .chip-row-label{flex:0 0 auto;}
+  }
   @media (max-width:600px){ .wrap{padding:0 22px;} .cover{padding:40px 22px 30px;} .feed{column-count:1;} }
 </style>
 </head>
