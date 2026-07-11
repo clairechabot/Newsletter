@@ -247,8 +247,12 @@ _PAGE = """<!DOCTYPE html>
   .puzzle .prev{margin-top:18px;padding-top:14px;border-top:1px solid var(--line);font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:var(--ink-mute);}
   .puzzle .prev b{color:var(--brass-deep);font-weight:600;}
 
-  /* ---- FIP live radio bar ---- */
-  .radio-bar{display:flex;align-items:center;gap:18px;background:var(--forest);border:1px solid var(--brass);color:var(--cream);padding:16px 22px;margin-bottom:30px;flex-wrap:wrap;}
+  /* ---- FIP live radio bar (gilt double frame + diamond accents) ---- */
+  .radio-bar{position:relative;display:flex;align-items:center;gap:18px;background:var(--forest);border:1px solid var(--brass);color:var(--cream);padding:18px 30px;margin-bottom:30px;flex-wrap:wrap;}
+  .radio-bar::before{content:"";position:absolute;inset:5px;border:1px solid rgba(216,185,104,0.30);pointer-events:none;}
+  .radio-bar::after{content:"";position:absolute;right:14px;top:50%;width:6px;height:6px;margin-top:-3px;background:var(--brass-soft);transform:rotate(45deg);pointer-events:none;}
+  .radio-orn{position:absolute;left:14px;top:50%;width:6px;height:6px;margin-top:-3px;background:var(--brass-soft);transform:rotate(45deg);pointer-events:none;}
+  @media (max-width:700px){.radio-bar::after,.radio-orn{display:none;}.radio-bar{padding:14px 18px;}}
   .radio-play{flex:none;width:44px;height:44px;border-radius:50%;border:1.5px solid var(--brass-soft);background:transparent;color:var(--brass-soft);font-size:15px;line-height:1;cursor:pointer;transition:all .18s ease;display:flex;align-items:center;justify-content:center;padding-left:3px;}
   .radio-play:hover{background:var(--brass);border-color:var(--brass);color:var(--forest-deep);}
   .radio-info{flex:1;min-width:200px;}
@@ -301,6 +305,7 @@ _PAGE = """<!DOCTYPE html>
   .sec-head .lede{font-family:var(--serif);font-style:italic;font-size:18px;color:var(--ink-mute);margin-top:9px;max-width:54ch;}
 
   .chips{display:flex;flex-wrap:wrap;gap:9px;margin-bottom:30px;}
+  .chips:empty{display:none;margin:0;padding:0;}
   .chip{cursor:pointer;font-family:var(--sans);font-size:11.5px;font-weight:600;letter-spacing:0.04em;padding:8px 16px;border:1px solid var(--line);background:var(--surface);color:var(--ink-soft);transition:all .18s ease;}
   .chip:hover{border-color:var(--brass);color:var(--forest);} .chip.active{background:var(--forest);border-color:var(--forest);color:var(--cream);}
   .chip.static{cursor:default;} .chip.static:hover{border-color:var(--line);color:var(--ink-soft);}
@@ -418,6 +423,7 @@ _PAGE = """<!DOCTYPE html>
         <div class="lede">Fresh picks from the music world to set the tone for your day.</div></div>
       <div class="chips" id="genres"></div>
       <div class="radio-bar">
+        <span class="radio-orn" aria-hidden="true"></span>
         <button class="radio-play" id="radio-play" aria-label="Play FIP live radio">&#9654;</button>
         <div class="radio-info">
           <div class="radio-name">FIP<span class="radio-live">Live from Paris</span></div>
@@ -883,6 +889,16 @@ _GROVE_PAGE = """<!DOCTYPE html>
   footer .ftag{font-family:var(--display);font-style:italic;font-size:17px;color:var(--cream-mute);margin-top:6px;}
 
   @media (max-width:900px){ .feed{column-count:2;} }
+  @media (max-width:700px){
+    /* Keep the sticky filter bar compact: one swipeable line per chip row. */
+    .controls{padding:10px 0;}
+    .controls .wrap{gap:8px;}
+    .search{padding:9px 16px;font-size:13px;}
+    .chips{flex-wrap:nowrap;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none;padding-bottom:2px;}
+    .chips::-webkit-scrollbar{display:none;}
+    .chip{flex:0 0 auto;white-space:nowrap;}
+    .chip-row-label{flex:0 0 auto;}
+  }
   @media (max-width:600px){ .wrap{padding:0 22px;} .cover{padding:40px 22px 30px;} .feed{column-count:1;} }
 </style>
 </head>
