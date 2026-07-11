@@ -527,7 +527,10 @@ def send_email(html_body: str, subject: str) -> None:
     msg = MIMEMultipart("alternative")
     msg["Subject"] = subject
     msg["From"]    = formataddr(("Fern | The Curated Canopy", smtp_user))
-    msg["To"]      = ", ".join(recipients)
+    # Recipients are BCC'd: delivery happens via the SMTP envelope below, and
+    # the visible To: shows only the sender, so readers never see each other's
+    # addresses.
+    msg["To"]      = formataddr(("The Curated Canopy readers", smtp_user))
     msg.attach(MIMEText(html_body, "html", "utf-8"))
 
     print(f"[SMTP] Connecting to {smtp_host}:{smtp_port} …")
