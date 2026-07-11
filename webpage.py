@@ -247,6 +247,22 @@ _PAGE = """<!DOCTYPE html>
   .puzzle .prev{margin-top:18px;padding-top:14px;border-top:1px solid var(--line);font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:var(--ink-mute);}
   .puzzle .prev b{color:var(--brass-deep);font-weight:600;}
 
+  /* ---- FIP live radio bar ---- */
+  .radio-bar{display:flex;align-items:center;gap:18px;background:var(--forest);border:1px solid var(--brass);color:var(--cream);padding:16px 22px;margin-bottom:30px;flex-wrap:wrap;}
+  .radio-play{flex:none;width:44px;height:44px;border-radius:50%;border:1.5px solid var(--brass-soft);background:transparent;color:var(--brass-soft);font-size:15px;line-height:1;cursor:pointer;transition:all .18s ease;display:flex;align-items:center;justify-content:center;padding-left:3px;}
+  .radio-play:hover{background:var(--brass);border-color:var(--brass);color:var(--forest-deep);}
+  .radio-info{flex:1;min-width:200px;}
+  .radio-name{font-family:var(--display);font-weight:600;font-size:22px;line-height:1.1;color:var(--cream);}
+  .radio-live{font-family:var(--sans);font-size:10px;font-weight:600;letter-spacing:0.16em;text-transform:uppercase;color:var(--brass-soft);margin-left:12px;vertical-align:middle;}
+  .radio-live::before{content:"";display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--brass-soft);margin-right:7px;vertical-align:middle;}
+  body.radio-on .radio-live::before{animation:onair 1.4s ease-in-out infinite;}
+  @keyframes onair{0%,100%{opacity:1;}50%{opacity:0.25;}}
+  @media (prefers-reduced-motion:reduce){body.radio-on .radio-live::before{animation:none;}}
+  .radio-tag{font-family:var(--serif);font-style:italic;font-size:14px;color:var(--cream-mute);margin-top:3px;}
+  .radio-link{flex:none;font-family:var(--sans);font-size:10.5px;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:var(--brass-soft);transition:color .15s ease;}
+  .radio-link:hover{color:var(--cream);}
+  @media (max-width:600px){.radio-link{display:none;}.radio-bar{gap:14px;padding:14px 16px;}}
+
   /* ---- hero + feature ---- */
   .hero{margin-top:14px;}
   .hero-grid,.feature-read{display:grid;border-top:1px solid var(--brass);border-bottom:1px solid var(--brass);}
@@ -401,6 +417,14 @@ _PAGE = """<!DOCTYPE html>
       <div class="sec-head"><div class="eyebrow orn">Section One</div><h3>__SOUNDTRACK_LABEL__</h3>
         <div class="lede">Fresh picks from the music world to set the tone for your day.</div></div>
       <div class="chips" id="genres"></div>
+      <div class="radio-bar">
+        <button class="radio-play" id="radio-play" aria-label="Play FIP live radio">&#9654;</button>
+        <div class="radio-info">
+          <div class="radio-name">FIP<span class="radio-live">Live from Paris</span></div>
+          <div class="radio-tag">Eclectic radio with famously good taste, streaming ad-free.</div>
+        </div>
+        <a class="radio-link" href="https://www.radiofrance.fr/fip" target="_blank" rel="noopener">radiofrance.fr/fip &rarr;</a>
+      </div>
       <div class="grid music" id="music-grid"></div>
     </section>
     <section class="panel" data-panel="watch">
@@ -566,6 +590,24 @@ $('#discovery-grid').innerHTML=DATA.discovery.length?DATA.discovery.map((d,i)=>
   :'<div class="empty">Nothing here in this edition.</div>';
 
 renderGenres(); renderMusic();
+
+// FIP live radio — lazy-created stream, toggled by the brass button
+const RADIO_SRC='https://icecast.radiofrance.fr/fip-midfi.mp3';
+let radio=null;
+$('#radio-play').onclick=()=>{
+  if(!radio){ radio=new Audio(RADIO_SRC); radio.preload='none'; }
+  if(radio.paused){
+    radio.play();
+    $('#radio-play').innerHTML='&#9646;&#9646;';
+    $('#radio-play').style.paddingLeft='0';
+    document.body.classList.add('radio-on');
+  } else {
+    radio.pause();
+    $('#radio-play').innerHTML='&#9654;';
+    $('#radio-play').style.paddingLeft='3px';
+    document.body.classList.remove('radio-on');
+  }
+};
 
 const tabbar=$('#tabbar');
 const sentinel=tabbar.offsetTop;
