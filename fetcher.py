@@ -63,7 +63,7 @@ YOUTUBE_CHANNEL_IDS: list[str] = [
 HISTORY_FILE = Path(__file__).parent / "history.json"
 CLAUDE_MODEL = "claude-sonnet-4-6"    # matches curator.CLAUDE_MODEL
 YOUTUBE_VIDEOS_PER_CHANNEL = 1        # 1 per channel conserves quota for wildcard search
-CHANNEL_SCAN_DEPTH = 10               # look this many uploads back per channel for unseen videos
+CHANNEL_SCAN_DEPTH = 50               # uploads scanned back per channel for unseen videos (mines backlog, not just recent)
 MAX_VIDEOS_PER_EDITION = 10           # newest-first cap across all channels + wildcard
 YOUTUBE_MIN_DURATION_SECONDS = 121    # ≥ 2 min — removes the 0–2 min band where Shorts cluster
 YOUTUBE_WILDCARD_MIN_SECONDS = 300    # wildcard must be ≥ 5 minutes
@@ -414,19 +414,33 @@ def _get_uploads_playlist_ids(youtube, channel_ids: list[str]) -> dict[str, str]
 
 def _get_playlist_latest_ids(youtube, playlist_id: str, max_results: int = 5) -> list[str]:
     """
-    Return the latest video IDs from an uploads playlist.
-    Costs 1 quota unit per call (vs 100 for search.list).
+    Return up to `max_results` latest video IDs from an uploads playlist,
+    newest first. The API caps a page at 50, so we paginate with pageToken to
+    reach the channel's backlog. Costs 1 quota unit per page (vs 100 for
+    search.list) — e.g. 1 unit for depth ≤50, 3 for depth 150.
     """
-    resp = (
-        youtube.playlistItems()
-        .list(part="contentDetails", playlistId=playlist_id, maxResults=max_results)
-        .execute()
-    )
-    return [
-        vid_id
-        for item in resp.get("items", [])
-        if (vid_id := item.get("contentDetails", {}).get("videoId"))
-    ]
+    ids: list[str] = []
+    page_token = None
+    while len(ids) < max_results:
+        resp = (
+            youtube.playlistItems()
+            .list(
+                part="contentDetails",
+                playlistId=playlist_id,
+                maxResults=min(50, max_results - len(ids)),
+                pageToken=page_token,
+            )
+            .execute()
+        )
+        ids.extend(
+            vid_id
+            for item in resp.get("items", [])
+            if (vid_id := item.get("contentDetails", {}).get("videoId"))
+        )
+        page_token = resp.get("nextPageToken")
+        if not page_token:
+            break
+    return ids[:max_results]
 
 
 def fetch_channel_videos(
@@ -1018,6 +1032,29 @@ DISCOVERY_FEEDS = [
         "url":         "https://www.sciencenews.org/feed",
         "source_name": "Science News",
         "category":    "science",
+    },
+    # Added for breadth + backlog so the Archive rarely runs dry (RSS is a
+    # rolling window; more feeds = more headroom before everything is seen).
+    {
+        "url":         "https://publicdomainreview.org/rss.xml",
+        "source_name": "The Public Domain Review",
+        "category":    "history",
+    },
+    {
+        "url":         "https://aeon.co/feed.rss",
+        "source_name": "Aeon",
+        "category":    "science",
+    },
+    {
+        "url":         "https://daily.jstor.org/feed/",
+        "source_name": "JSTOR Daily",
+        "category":    "history",
+    },
+    {
+        # Distinct from the /feeds/latest (places) feed above — this is essays.
+        "url":         "https://www.atlasobscura.com/feeds/articles",
+        "source_name": "Atlas Obscura",
+        "category":    "history",
     },
 ]
 DISCOVERY_CANDIDATES_PER_SOURCE = 15
