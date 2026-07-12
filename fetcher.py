@@ -149,8 +149,10 @@ MUSIC_SOURCES: list[dict] = [
     {"name": "Pitchfork",      "rss": "https://pitchfork.com/rss/news/"},
     # Bandcamp Daily's RSS was discontinued — replaced with the three below.
     {"name": "Aquarium Drunkard", "rss": "https://aquariumdrunkard.com/feed/"},
-    {"name": "The Quietus",    "rss": "https://thequietus.com/feed/"},
-    {"name": "UK Jazz News",   "rss": "https://ukjazznews.com/feed/"},
+    # The Quietus + UK Jazz News were Cloudflare-blocked (403) from GitHub's IP;
+    # replaced with non-Cloudflare feeds that serve from GitHub runners.
+    {"name": "Consequence",    "rss": "https://consequence.net/feed/"},
+    {"name": "Nextbop",        "rss": "https://nextbop.com/feed"},
     {"name": "JazzTimes",      "rss": "https://jazztimes.com/feed/"},
     {"name": "Sofar Sounds",   "url": "https://www.sofarsounds.com/blog"},  # no RSS — scrape
 ]
