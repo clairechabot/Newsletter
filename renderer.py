@@ -43,7 +43,6 @@ EDITION_URL  = os.environ.get(
     "EDITION_URL", "https://clairechabot.github.io/canopy-edition/"
 )
 FERN_LOGO_URL = os.environ.get("FERN_LOGO_URL", "")
-FIP_URL = "https://www.radiofrance.fr/fip"   # linked from the "On the Wireless" row
 
 # Where Fern's garden lives — shown in the "From the Garden" eyebrow and used by
 # curator.py to ground the seasonal note + night sky. Override with GARDEN_LOCALE.
@@ -318,25 +317,6 @@ def _render_puzzle(puzzle: dict, prev: dict) -> str:
         </tr>"""
 
 
-def _render_radio() -> str:
-    """'On the Wireless' — a compact FIP live-radio link row (email-safe)."""
-    return f"""
-        <tr>
-          <td class="px" style="padding:20px 32px 22px 32px; background-color:{SURFACE}; border-bottom:1px solid {LINE};">
-            <div style="font-family:{SANS}; font-size:11px; font-weight:600; letter-spacing:3px; text-transform:uppercase; color:{BRASS_DEEP}; padding-bottom:8px;">{_eyebrow("On the Wireless", BRASS_DEEP)}</div>
-            <table role="presentation" width="100%" cellpadding="0" cellspacing="0"><tr>
-              <td style="font-family:{SERIF}; font-size:15.5px; line-height:1.5; color:{INK_SOFT};">
-                <span style="font-family:{DISPLAY}; font-weight:600; font-size:18px; color:{FOREST};">FIP</span>
-                &nbsp;&middot;&nbsp; Live from Paris — eclectic radio, ad-free.
-              </td>
-              <td align="right" valign="middle" style="white-space:nowrap; padding-left:14px;">
-                <a href="{_safe_url(FIP_URL)}" style="font-family:{SANS}; font-size:11px; font-weight:600; letter-spacing:1.2px; text-transform:uppercase; color:{CLAY_DEEP}; text-decoration:none;">Tune in &rarr;</a>
-              </td>
-            </tr></table>
-          </td>
-        </tr>"""
-
-
 def _toc_row(num: str, cat: str, lead: str, count: str, href: str, last: bool = False) -> str:
     border = "" if last else f" border-bottom:1px solid {LINE};"
     return f"""
@@ -427,7 +407,6 @@ def build_html(curated: dict) -> str:
     fern_html   = _render_fern_note(fern.get("greeting", ""))
     garden_html = _render_garden(garden)
     puzzle_html = _render_puzzle(curated.get("puzzle"), curated.get("previous_puzzle"))
-    radio_html  = _render_radio()
     toc_html    = _render_contents(videos, music, good_news, discovery, read, is_am=is_am)
 
     logo_html = (
@@ -472,7 +451,7 @@ def build_html(curated: dict) -> str:
               </tr>
             </table>
           </td>
-        </tr>{fern_html}{garden_html}{puzzle_html}{radio_html}{hero_html}{toc_html}{cta_html}
+        </tr>{fern_html}{garden_html}{puzzle_html}{hero_html}{toc_html}{cta_html}
         <tr>
           <td align="center" bgcolor="{FOREST}" style="background-color:{FOREST}; padding:30px 22px 36px 22px; margin-top:40px;">
             <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="border:1px solid {BRASS};">
