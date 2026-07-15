@@ -176,6 +176,9 @@ jobs:
           git config user.email "newsletter-bot@users.noreply.github.com"
           BRANCH="${GITHUB_REF_NAME}"
           [ -f history.json ]      && git add history.json
+          # Persist the curated content so the regional (Nova Scotia) edition can
+          # reuse this exact edition instead of re-fetching.
+          [ -f curated_data.json ] && git add curated_data.json
           [ -f docs/index.html ]   && git add docs/index.html
           [ -f docs/archive.html ] && git add docs/archive.html
           [ -f docs/grove.html ]   && git add docs/grove.html

@@ -1,0 +1,55 @@
+name: Nova Scotia Edition
+
+# Regional re-send of the primary Curated Canopy for readers in the Annapolis
+# Valley, Nova Scotia (Atlantic Time). It does NOT re-fetch or re-curate — it
+# reuses the primary edition's committed curated_data.json, re-localizes only
+# "From the Garden" to Nova Scotia, and emails it to the EMAIL_TO_NS list at
+# local morning/evening. No web publish, no history writes.
+#
+# Timing: GitHub delays scheduled crons, so these fire early to land near the
+# target. 07:00 ADT (UTC-3 summer) ≈ 10:00 UTC → fire 08:23 UTC; 19:00 ADT ≈
+# 22:00 UTC → fire 20:23 UTC. Fixed-UTC cron means winter (AST, UTC-4) arrives
+# ~1h earlier. Both slots fire AFTER the primary edition of the same half-day
+# has committed curated_data.json (main runs 03:23 / 14:23 UTC).
+
+on:
+  schedule:
+    - cron: "23 8 * * *"    # ≈ 07:00 Atlantic (morning)
+    - cron: "23 20 * * *"   # ≈ 19:00 Atlantic (evening)
+  workflow_dispatch:
+
+jobs:
+  ns-edition:
+    name: Nova Scotia re-send
+    runs-on: ubuntu-latest
+    env:
+      TZ: America/Halifax
+      EDITION_TZ: America/Halifax
+      GARDEN_LOCALE: "Annapolis Valley, Nova Scotia"
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        # default: latest main, which carries the primary run's curated_data.json
+
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: |
+          pip install --quiet -r requirements.txt
+          pip install --quiet anthropic google-api-python-client python-dateutil requests beautifulsoup4
+
+      - name: Re-localize + send the Nova Scotia edition
+        env:
+          CLAUDE_API_KEY:        ${{ secrets.CLAUDE_API_KEY }}
+          EMAIL_USER:            ${{ secrets.EMAIL_USER }}
+          SMTP_USER:             ${{ secrets.SMTP_USER }}
+          SMTP_PASS:             ${{ secrets.SMTP_PASS }}
+          SMTP_HOST:             ${{ secrets.SMTP_HOST }}
+          SMTP_SERVER:           ${{ secrets.SMTP_SERVER }}
+          SMTP_PORT:             ${{ secrets.SMTP_PORT }}
+          EMAIL_TO:              ${{ secrets.EMAIL_TO_NS }}
+        run: python renderer.py --regional

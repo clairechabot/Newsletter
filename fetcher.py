@@ -176,7 +176,11 @@ SCRAPER_HEADERS = {
 }
 
 UTC = ZoneInfo("UTC")
-ZURICH = ZoneInfo("Europe/Zurich")
+# Edition timezone + garden locale are env-overridable so a regional edition can
+# reuse the same code (defaults keep the primary Zürich edition unchanged).
+EDITION_TZ = ZoneInfo(os.environ.get("EDITION_TZ", "Europe/Zurich"))
+ZURICH = EDITION_TZ  # backward-compatible alias
+GARDEN_LOCALE = os.environ.get("GARDEN_LOCALE", "Zürich")
 
 
 # ---------------------------------------------------------------------------
@@ -1426,10 +1430,11 @@ def main() -> dict:
     if not YOUTUBE_CHANNEL_IDS:
         raise ValueError("YOUTUBE_CHANNEL_IDS list is empty. Add channel IDs before running.")
 
-    # Determine AM/PM — based on Zurich hour; AM runs at 10:00, PM runs at 22:00 CEST
-    now_ch = datetime.datetime.now(ZURICH)
+    # Determine AM/PM from the edition timezone's local hour.
+    now_ch = datetime.datetime.now(EDITION_TZ)
     is_am_email: bool = now_ch.hour < 12
-    print(f"[fetch] Run type: {'AM' if is_am_email else 'PM'} (Zurich hour {now_ch.hour})")
+    print(f"[fetch] Run type: {'AM' if is_am_email else 'PM'} "
+          f"({GARDEN_LOCALE} hour {now_ch.hour})")
 
     (seen_ids, seen_good_news_urls, seen_discovery_urls,
      seen_reads_urls, seen_music_urls) = load_history()
@@ -1475,7 +1480,7 @@ def main() -> dict:
         "season": _season(now_ch),
         "moon":   _moon_phase(now_ch),
         "is_am":  is_am_email,
-        "locale": "Zurich",
+        "locale": GARDEN_LOCALE,
     }
 
     # Last edition's puzzle (so this edition can print its answer)

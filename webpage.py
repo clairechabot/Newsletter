@@ -55,6 +55,8 @@ CANOPY_LAUNCH = datetime.date(2025, 1, 1)
 # Where Fern's garden lives — shown in the "From the Garden" eyebrow.
 import os
 GARDEN_LOCALE = os.environ.get("GARDEN_LOCALE", "Zürich")
+# Edition timezone (env-overridable for regional editions; default = primary).
+EDITION_TZ = ZoneInfo(os.environ.get("EDITION_TZ", "Europe/Zurich"))
 
 
 def _edition_no(dt: datetime.datetime, is_am: bool) -> int:
@@ -1149,7 +1151,7 @@ def build_grove(
     items.sort(key=_grove_rank, reverse=True)
 
     payload = {
-        "generated_at": datetime.datetime.now(ZoneInfo("Europe/Zurich")).isoformat(),
+        "generated_at": datetime.datetime.now(EDITION_TZ).isoformat(),
         "moods": GROVE_MOODS,
         "sections": [{"key": k, "label": l} for k, l in _GROVE_SECTIONS],
         "items": items,
@@ -1166,7 +1168,7 @@ def build_edition(curated: dict) -> str:
     is_am = curated.get("is_am_email", False)
     edition_label = "Morning Edition" if is_am else "Evening Edition"
     try:
-        dt = datetime.datetime.fromisoformat(fetched_at).astimezone(ZoneInfo("Europe/Zurich"))
+        dt = datetime.datetime.fromisoformat(fetched_at).astimezone(EDITION_TZ)
         date_str = f"{dt.strftime('%a, %B')} {dt.day}, {dt.strftime('%Y')}"
         issue = f"No. {_edition_no(dt, is_am)} &nbsp;&middot;&nbsp; "
     except Exception:
@@ -1206,7 +1208,7 @@ def write_edition(curated: dict) -> Path:
     fetched_at = curated.get("fetched_at", "")
     is_am = curated.get("is_am_email", False)
     try:
-        dt = datetime.datetime.fromisoformat(fetched_at).astimezone(ZoneInfo("Europe/Zurich"))
+        dt = datetime.datetime.fromisoformat(fetched_at).astimezone(EDITION_TZ)
         slug = _edition_slug(dt, is_am)
         (EDITIONS_DIR / f"{slug}.html").write_text(html, encoding="utf-8")
     except Exception as exc:

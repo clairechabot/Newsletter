@@ -1,6 +1,6 @@
 __pycache__/
 *.pyc
 # Per-run generated artifacts (re-created every run; not source)
-curated_data.json
+# curated_data.json is committed by CI so the regional (NS) edition can reuse it.
 fetched_data.json
 newsletter.html
