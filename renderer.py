@@ -47,6 +47,8 @@ FERN_LOGO_URL = os.environ.get("FERN_LOGO_URL", "")
 # Where Fern's garden lives — shown in the "From the Garden" eyebrow and used by
 # curator.py to ground the seasonal note + night sky. Override with GARDEN_LOCALE.
 GARDEN_LOCALE = os.environ.get("GARDEN_LOCALE", "Zürich")
+# Edition timezone (env-overridable for regional editions; default = primary).
+EDITION_TZ = ZoneInfo(os.environ.get("EDITION_TZ", "Europe/Zurich"))
 
 
 # Running issue number, like a real periodical ("No. 248").
@@ -385,7 +387,7 @@ def build_html(curated: dict) -> str:
     edition_label = "Morning Edition" if is_am else "Evening Edition"
     gathered      = "Gathered at dawn" if is_am else "Gathered at dusk"
     try:
-        dt = datetime.datetime.fromisoformat(fetched).astimezone(ZoneInfo("Europe/Zurich"))
+        dt = datetime.datetime.fromisoformat(fetched).astimezone(EDITION_TZ)
         date_str = f"{dt.strftime('%a, %B')} {dt.day}"
         issue_html = f"No. {_edition_no(dt, is_am)} &nbsp;&middot;&nbsp; "
     except Exception:
@@ -561,5 +563,85 @@ def main() -> None:
         raise SystemExit(msg)
 
 
+def _subject_for(curated: dict) -> str:
+    is_am    = curated.get("is_am_email", False)
+    top_pick = _dedash(curated.get("fern_data", {}).get("top_pick_title", "")).strip()
+    prefix   = "The Morning Rise" if is_am else "The Evening Wind-down"
+    return f"{prefix} | {top_pick}" if top_pick else f"{prefix} · The Curated Canopy"
+
+
+def send_regional() -> None:
+    """
+    Regional re-send: reuse the primary edition's committed content, re-localize
+    only "From the Garden" (to GARDEN_LOCALE / EDITION_TZ), and email it to this
+    region's recipient list (EMAIL_TO). No web publish, no history writes.
+
+    Guards (skip cleanly rather than send a wrong/duplicate email):
+      - curated_data.json must exist and be TODAY's (in EDITION_TZ);
+      - its AM/PM must match this region's local time (morning reuses a morning
+        edition, evening an evening one).
+    """
+    if not CURATED_FILE.exists():
+        raise SystemExit(f"[regional] {CURATED_FILE} not found — primary edition hasn't run yet.")
+    curated = json.loads(CURATED_FILE.read_text(encoding="utf-8"))
+
+    now = datetime.datetime.now(EDITION_TZ)
+    fetched = curated.get("fetched_at", "")
+    try:
+        content_date = datetime.datetime.fromisoformat(fetched).astimezone(EDITION_TZ).date()
+    except Exception:
+        content_date = None
+    if content_date != now.date():
+        print(f"[regional] Skipping: curated content date {content_date} != today {now.date()} "
+              f"({GARDEN_LOCALE}). Primary edition may not have run yet.")
+        return
+    want_am = now.hour < 12
+    if bool(curated.get("is_am_email", False)) != want_am:
+        print(f"[regional] Skipping: content is {'AM' if curated.get('is_am_email') else 'PM'} "
+              f"but {GARDEN_LOCALE} wants {'AM' if want_am else 'PM'}.")
+        return
+
+    # Re-localize the garden note for this region (season/moon are identical;
+    # locale flavour + sky framing differ). Best-effort: keep the primary note on
+    # any failure so the edition still goes out.
+    try:
+        import curator
+        from fetcher import _season, _moon_phase  # the real season/moon implementations
+        seed = {
+            "date":   now.date().isoformat(),
+            "season": _season(now),
+            "moon":   _moon_phase(now),
+            "is_am":  want_am,
+            "locale": GARDEN_LOCALE,
+        }
+        note = curator.generate_garden_note(curator.build_claude_client(), seed)
+        if note.get("note"):
+            curated["garden_note"] = note
+            print(f"[regional] Re-localized From the Garden for {GARDEN_LOCALE}.")
+        else:
+            print("[regional] Garden regen returned empty — keeping the primary note.")
+    except Exception as exc:
+        print(f"[regional] Garden regen skipped ({exc}) — keeping the primary note.")
+
+    html = build_html(curated)
+    OUTPUT_HTML.write_text(html, encoding="utf-8")
+
+    smtp_ready = (
+        (os.environ.get("SMTP_USER") or os.environ.get("EMAIL_USER"))
+        and os.environ.get("SMTP_PASS")
+        and (os.environ.get("SMTP_SERVER") or os.environ.get("SMTP_HOST"))
+    )
+    if not smtp_ready:
+        if os.environ.get("ALLOW_NO_EMAIL") == "1":
+            print("[regional] EMAIL NOT SENT (ALLOW_NO_EMAIL=1 — preview only).")
+            return
+        raise SystemExit("[regional] EMAIL NOT SENT — missing SMTP secrets.")
+    send_email(html, subject=_subject_for(curated))
+
+
 if __name__ == "__main__":
-    main()
+    import sys
+    if "--regional" in sys.argv:
+        send_regional()
+    else:
+        main()
