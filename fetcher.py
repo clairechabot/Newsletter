@@ -154,6 +154,10 @@ MUSIC_SOURCES: list[dict] = [
     {"name": "Consequence",    "rss": "https://consequence.net/feed/"},
     {"name": "Nextbop",        "rss": "https://nextbop.com/feed"},
     {"name": "JazzTimes",      "rss": "https://jazztimes.com/feed/"},
+    # Broad, thoughtful reviews + a dedicated home for the Americana / folk /
+    # bluegrass / Celtic corner. Both verified non-Cloudflare, fresh feeds.
+    {"name": "PopMatters",        "rss": "https://www.popmatters.com/feed"},
+    {"name": "Fretboard Journal", "rss": "https://www.fretboardjournal.com/feed/"},
     {"name": "Sofar Sounds",   "url": "https://www.sofarsounds.com/blog"},  # no RSS — scrape
 ]
 MUSIC_ARTICLES_PER_SOURCE = 3          # post-filter cap per source
@@ -209,12 +213,16 @@ def save_history(
     seen_reads_urls: set[str],
     seen_music_urls: set[str],
     pending_puzzle: "dict | None" = None,
+    recent_puzzles: "list | None" = None,
 ) -> None:
     """Persist seen video IDs and the Good News / Discovery / Reads / Music URLs.
 
     pending_puzzle carries this edition's puzzle (label/prompt/answer) forward so
     the NEXT edition can print the answer. None leaves any existing pending
-    puzzle untouched (so an unanswered puzzle isn't dropped by a puzzle-less run)."""
+    puzzle untouched (so an unanswered puzzle isn't dropped by a puzzle-less run).
+
+    recent_puzzles is a rolling list of recently-used puzzles ({kind/prompt/answer})
+    the generator is told to avoid repeating; None leaves it untouched."""
     existing: dict = {}
     if HISTORY_FILE.exists():
         existing = json.loads(HISTORY_FILE.read_text(encoding="utf-8-sig"))
@@ -225,6 +233,8 @@ def save_history(
     existing["music_urls"]      = sorted(seen_music_urls)
     if pending_puzzle is not None:
         existing["pending_puzzle"] = pending_puzzle
+    if recent_puzzles is not None:
+        existing["recent_puzzles"] = recent_puzzles
     HISTORY_FILE.write_text(
         json.dumps(existing, indent=2, ensure_ascii=False), encoding="utf-8"
     )
@@ -1004,7 +1014,7 @@ def _evergreen_fallback(seen, register) -> list[dict]:
 # Good News — RSS feeds (structured XML, never breaks on redesigns)
 # ---------------------------------------------------------------------------
 
-GOOD_NEWS_TOTAL = 3   # one article per source
+GOOD_NEWS_TOTAL = 3   # advisory only — fetch_good_news_articles pulls one per feed
 
 GOOD_NEWS_FEEDS = [
     {
@@ -1018,6 +1028,15 @@ GOOD_NEWS_FEEDS = [
     {
         "url":         "https://www.upworthy.com/feed/",
         "source_name": "Upworthy",
+    },
+    {
+        # Solutions journalism — uplifting without being saccharine.
+        "url":         "https://reasonstobecheerful.world/feed/",
+        "source_name": "Reasons to be Cheerful",
+    },
+    {
+        "url":         "https://www.optimistdaily.com/feed/",
+        "source_name": "The Optimist Daily",
     },
 ]
 
@@ -1060,6 +1079,18 @@ DISCOVERY_FEEDS = [
         # Distinct from the /feeds/latest (places) feed above — this is essays.
         "url":         "https://www.atlasobscura.com/feeds/articles",
         "source_name": "Atlas Obscura",
+        "category":    "history",
+    },
+    {
+        # Ad-free, foundation-funded math/physics/biology writing.
+        "url":         "https://api.quantamagazine.org/feed/",
+        "source_name": "Quanta Magazine",
+        "category":    "science",
+    },
+    {
+        # Art, craft & design finds — pairs with the Crafty / Creative mood.
+        "url":         "https://www.thisiscolossal.com/feed/",
+        "source_name": "Colossal",
         "category":    "history",
     },
 ]
@@ -1133,6 +1164,65 @@ _SEASON_BY_MONTH = {
 def _season(dt: datetime.datetime) -> str:
     """Coarse N-hemisphere season label from the month."""
     return _SEASON_BY_MONTH.get(dt.month, "")
+
+
+# Coordinates per garden locale, so the almanac can carry *real* local sun times
+# (sunrise/sunset/twilight) rather than a generic season label. Keyed by the
+# GARDEN_LOCALE env value. Add a row here to support a new regional edition.
+LOCALE_COORDS = {
+    "Zürich":                          (47.37, 8.54),
+    "Annapolis Valley, Nova Scotia":   (45.03, -64.50),
+}
+
+
+def _sun_times(locale: str, date: datetime.date) -> dict:
+    """
+    Real local sunrise/sunset/twilight for a locale via sunrise-sunset.org (free,
+    no key). Best-effort: returns {} on any failure so the garden note still
+    renders. Times are formatted "HH:MM" in EDITION_TZ.
+    """
+    coords = LOCALE_COORDS.get(locale)
+    if not coords:
+        return {}
+    lat, lng = coords
+    url = (
+        "https://api.sunrise-sunset.org/json"
+        f"?lat={lat}&lng={lng}&date={date.isoformat()}&formatted=0"
+    )
+    try:
+        resp = requests.get(url, timeout=15)
+        resp.raise_for_status()
+        payload = resp.json()
+    except Exception as exc:  # network, JSON, non-200 — all non-fatal
+        print(f"  [warn] sun-times fetch failed for {locale}: {exc}")
+        return {}
+    if payload.get("status") != "OK":
+        return {}
+    res = payload.get("results", {})
+
+    def _fmt(key: str) -> str:
+        iso = res.get(key)
+        if not iso:
+            return ""
+        try:
+            return (
+                datetime.datetime.fromisoformat(iso)
+                .astimezone(EDITION_TZ)
+                .strftime("%H:%M")
+            )
+        except Exception:
+            return ""
+
+    out = {
+        "sunrise":       _fmt("sunrise"),
+        "sunset":        _fmt("sunset"),
+        "dawn":          _fmt("civil_twilight_begin"),
+        "dusk":          _fmt("civil_twilight_end"),
+    }
+    # Drop the whole block if we couldn't resolve the two essentials.
+    if not out["sunrise"] or not out["sunset"]:
+        return {}
+    return out
 
 
 # Public read-through proxies, tried in order when a feed blocks our egress IP.
@@ -1219,6 +1309,38 @@ def _fetch_rss_articles(
             break
 
     return articles
+
+
+# Local news feeds per regional edition, keyed by GARDEN_LOCALE. Used only by the
+# regional re-send to add a small "Around the Valley" block. CBC's regional feeds
+# are reliable, non-Cloudflare, and update frequently.
+REGIONAL_FEEDS = {
+    "Annapolis Valley, Nova Scotia": {
+        "url":         "https://www.cbc.ca/webfeed/rss/rss-canada-novascotia",
+        "source_name": "CBC Nova Scotia",
+    },
+}
+
+
+def fetch_regional(locale: str, n: int = 2) -> list[dict]:
+    """
+    Fetch the newest `n` local-news items for a regional edition (e.g. CBC Nova
+    Scotia for the Annapolis Valley). Best-effort: returns [] on any failure or if
+    the locale has no configured feed, so the regional email simply omits the block.
+    """
+    feed = REGIONAL_FEEDS.get(locale)
+    if not feed:
+        return []
+    try:
+        session = _scraper_session()
+        items = _fetch_rss_articles(
+            feed["url"], feed["source_name"], n, session, source_tag="regional"
+        )
+    except Exception as exc:
+        print(f"  [warn] regional fetch failed for {locale}: {exc}")
+        return []
+    print(f"[Regional] Collected {len(items)} local item(s) for {locale}.")
+    return items
 
 
 def fetch_good_news_articles(
@@ -1479,19 +1601,22 @@ def main() -> dict:
         "date":   now_ch.date().isoformat(),
         "season": _season(now_ch),
         "moon":   _moon_phase(now_ch),
+        "sun":    _sun_times(GARDEN_LOCALE, now_ch.date()),
         "is_am":  is_am_email,
         "locale": GARDEN_LOCALE,
     }
 
-    # Last edition's puzzle (so this edition can print its answer)
+    # Last edition's puzzle (so this edition can print its answer) + the rolling
+    # recent-puzzles list (so the generator avoids repeating itself).
     previous_puzzle: dict = {}
+    recent_puzzles: list = []
     if HISTORY_FILE.exists():
         try:
-            previous_puzzle = json.loads(
-                HISTORY_FILE.read_text(encoding="utf-8-sig")
-            ).get("pending_puzzle") or {}
+            _hist = json.loads(HISTORY_FILE.read_text(encoding="utf-8-sig"))
+            previous_puzzle = _hist.get("pending_puzzle") or {}
+            recent_puzzles = _hist.get("recent_puzzles") or []
         except Exception:
-            previous_puzzle = {}
+            previous_puzzle, recent_puzzles = {}, []
 
     raw_payload = {
         "fetched_at": now_ch.isoformat(),
@@ -1503,6 +1628,7 @@ def main() -> dict:
         "reads": reads,
         "garden_seed": garden_seed,
         "previous_puzzle": previous_puzzle,
+        "recent_puzzles": recent_puzzles,
     }
 
     # Write raw fetch snapshot (useful for debugging / re-running curation without re-fetching)
@@ -1529,12 +1655,21 @@ def main() -> dict:
     # video IDs are not saved, so the same content is retried next run instead
     # of being marked seen without ever having been published.
     new_puzzle = curated.get("puzzle") or {}
+    # Append this edition's puzzle to the rolling anti-repetition memory (last 14).
+    updated_recent = None
+    if new_puzzle.get("prompt"):
+        updated_recent = (recent_puzzles + [{
+            "kind":   new_puzzle.get("kind", ""),
+            "prompt": new_puzzle.get("prompt", ""),
+            "answer": new_puzzle.get("answer", ""),
+        }])[-14:]
     save_history(seen_ids, seen_good_news_urls, seen_discovery_urls,
                  seen_reads_urls, seen_music_urls,
                  pending_puzzle=(
                      {k: new_puzzle[k] for k in ("label", "prompt", "answer")}
                      if new_puzzle.get("answer") else None
-                 ))
+                 ),
+                 recent_puzzles=updated_recent)
 
     curated_file = Path(__file__).parent / "curated_data.json"
     curated_file.write_text(json.dumps(curated, indent=2, ensure_ascii=False), encoding="utf-8")

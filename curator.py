@@ -549,18 +549,24 @@ Personality: sophisticated, cozy, warm, slightly witty. Never cringe or hypey.
 
 You write a tiny "From the Garden" almanac for a reader with a temperate Northern
 Hemisphere garden. You will be given the reader's LOCALE, the date, the season, the
-moon phase, and whether this is a morning or evening edition. Ground every detail in
-that real locale, season and moon — favour plants, crops and sky sights true to that
-specific region, and do not invent out-of-season plants.
+moon phase, the real local sun times (when provided), and whether this is a morning
+or evening edition. Ground every detail in that real locale, season and moon —
+favour plants, crops and sky sights true to that specific region, and do not invent
+out-of-season plants.
 
-- Morning edition: lean toward what's happening in the garden right now.
-- Evening edition: lean toward the night sky and winding down outdoors.
+- Morning edition: lean toward what's happening in the garden right now; you may
+  reference first light / sunrise.
+- Evening edition: lean toward the night sky and winding down outdoors; you may
+  reference sunset / dusk.
+- If sun times are given, weave one naturally into the note or sky line (e.g. "the
+  sun slips away by 20:41 tonight"). Never invent times that weren't given.
 
 Return ONLY valid JSON:
 {
   "note": "<1-2 warm, specific sentences in Fern's voice about this moment in the season>",
   "in_season": ["<2-4 short items genuinely in season now: a flower, a crop, a job>"],
   "sky_tonight": "<one short line: a planet, constellation, or the moon to look for>",
+  "sun_times": "<one short line echoing today's sunrise/sunset in local time, or an empty string if none were given>",
   "moon_label": "<echo the moon phase label you were given>"
 }
 
@@ -576,10 +582,19 @@ def generate_garden_note(client: anthropic.Anthropic, garden_seed: dict) -> dict
     moon = garden_seed.get("moon", {})
     moon_label = moon.get("label", "")
     is_am = garden_seed.get("is_am", True)
+    sun = garden_seed.get("sun", {}) or {}
+    sun_line = ""
+    if sun.get("sunrise") and sun.get("sunset"):
+        sun_line = (
+            f"Sun today (local time): rises {sun['sunrise']}, sets {sun['sunset']}"
+            + (f", first light {sun['dawn']}, dusk {sun['dusk']}" if sun.get("dawn") else "")
+            + "\n"
+        )
     user_message = (
         f"Date: {garden_seed.get('date', '')}\n"
         f"Season: {garden_seed.get('season', '')}\n"
         f"Moon phase: {moon_label} ({moon.get('illum_pct', 0)}% illuminated)\n"
+        f"{sun_line}"
         f"Locale: {garden_seed.get('locale', 'Zurich')} (Northern Hemisphere, temperate)\n"
         f"Edition: {'morning' if is_am else 'evening'}"
     )
@@ -607,9 +622,13 @@ def generate_garden_note(client: anthropic.Anthropic, garden_seed: dict) -> dict
             "note": "",
             "in_season": [],
             "sky_tonight": "",
+            "sun_times": "",
             "moon_label": moon_label,
         }
     note.setdefault("moon_label", moon_label)
+    # Fall back to a plain sunrise/sunset line if the model left it blank.
+    if not note.get("sun_times") and sun.get("sunrise") and sun.get("sunset"):
+        note["sun_times"] = f"Sun: {sun['sunrise']} – {sun['sunset']}"
     return note
 
 
@@ -834,15 +853,47 @@ def tag_grove_moods(grove_json_path, batch_size: int = 40, retag: bool = False) 
 # Fern's daily puzzle — morning riddle / rotating evening enigma
 # ---------------------------------------------------------------------------
 
-# Evening puzzle kinds, rotated deterministically by day-of-year so a re-run of
-# the same edition produces the same kind.
-PM_PUZZLE_KINDS = ["lateral teaser", "two truths & a lie", "anagram"]
+# Puzzle kinds are split into a morning pool (gentle, riddle-family) and an
+# evening pool (trickier), each rotated deterministically by day-of-year so a
+# re-run of the same edition reproduces the same kind — but consecutive mornings
+# (and evenings) no longer repeat the same kind, which was the main source of
+# "too repetitive." Anti-repetition memory (recent_puzzles) keeps even same-kind
+# days from echoing earlier content.
+AM_PUZZLE_KINDS = ["riddle", "haiku riddle", "rebus", "hidden word", "anagram"]
+PM_PUZZLE_KINDS = [
+    "lateral teaser", "two truths & a lie", "cryptic clue", "odd one out",
+    "what comes next", "spot the connection", "guess the year", "fake etymology",
+]
 
 _PUZZLE_KIND_GUIDANCE = {
     "riddle": (
         "Write a classic riddle in 2-4 short lines, gently poetic, ideally drawing "
         "on nature, the seasons, music, or everyday household objects. The answer "
-        "is a single word or short phrase."
+        "is a single word or short phrase. Avoid the most over-used riddles."
+    ),
+    "haiku riddle": (
+        "Write a riddle in the form of a haiku (three lines, roughly 5-7-5 syllables) "
+        "describing an object, creature, or natural phenomenon without naming it. "
+        "The answer is what the haiku describes, in a word or two."
+    ),
+    "rebus": (
+        "Write a rebus: describe in words a little picture-puzzle where words, "
+        "letters, or their arrangement encode a common phrase or word (e.g. "
+        "'the word STAND written above the letters MISUNDERSTANDING' style). "
+        "Because this is text-only, phrase it as 'What word/phrase is suggested by: "
+        "<description>'. The answer is the phrase; keep it solvable."
+    ),
+    "hidden word": (
+        "Write 2-3 sentences in Fern's voice on a seasonal or musical theme that "
+        "conceal a related word spelled across word boundaries (e.g. 'the CELLO's "
+        "note' hides 'cellos'). Ask the reader to find the hidden word tied to a "
+        "given category. The answer is the hidden word and where it sits."
+    ),
+    "anagram": (
+        "Choose a real word or short phrase connected to nature, music, or history, "
+        "scramble its letters into something pronounceable, and present it as: the "
+        "scrambled letters in CAPITALS plus a one-line clue to the unscrambled "
+        "answer. The answer is the unscrambled word/phrase."
     ),
     "lateral teaser": (
         "Write a tiny lateral-thinking mystery: 2-3 sentences describing a curious "
@@ -855,11 +906,39 @@ _PUZZLE_KIND_GUIDANCE = {
         "claims as '1. … 2. … 3. …'. The answer names which number is the lie and "
         "corrects it in one sentence. Only use claims you are certain about."
     ),
-    "anagram": (
-        "Choose a real word or short phrase connected to nature, music, or history, "
-        "scramble its letters into something pronounceable, and present it as: the "
-        "scrambled letters in CAPITALS plus a one-line clue to the unscrambled "
-        "answer. The answer is the unscrambled word/phrase."
+    "cryptic clue": (
+        "Write ONE gentle cryptic-crossword clue (definition + wordplay) for a "
+        "common word of 4-7 letters tied to nature, music, or the everyday. State "
+        "the answer's letter count in parentheses. The answer is the word plus a "
+        "one-line explanation of how the wordplay works."
+    ),
+    "odd one out": (
+        "List four items (words, places, songs, creatures) where three share a "
+        "hidden property and one does not. Present them as 'A, B, C, D'. The answer "
+        "names the odd one and the property the other three share. Only use facts "
+        "you are certain of."
+    ),
+    "what comes next": (
+        "Present a short logical or numeric/letter sequence of 4-5 terms with a "
+        "discoverable rule, and ask for the next term. Keep the rule elegant, not "
+        "obscure. The answer gives the next term and states the rule in one line."
+    ),
+    "spot the connection": (
+        "Give three or four seemingly unrelated things (people, words, songs, "
+        "places) that share one hidden link. Ask what connects them. The answer "
+        "names the connection in one sentence. Only use links you are certain of."
+    ),
+    "guess the year": (
+        "Describe a single real historical year with 2-3 true, evocative clues "
+        "(an invention, a song, an event) without naming it, and ask the reader to "
+        "guess the year within a decade. The answer gives the exact year and briefly "
+        "confirms the clues. Only use facts you are certain of."
+    ),
+    "fake etymology": (
+        "Offer two short origin stories for a common word — one the true etymology, "
+        "one plausible-but-invented — labelled A and B, and ask which is real. The "
+        "answer names the real one and the actual origin in a sentence. Only claim "
+        "an etymology you are certain of."
     ),
 }
 
@@ -872,6 +951,15 @@ Write ONE small puzzle for today's edition, following the kind-specific
 instructions in the user message. Keep it solvable over a coffee: satisfying,
 not obscure. Ground any factual content in things you are certain of.
 
+Freshness matters most. Find a genuinely new angle every day:
+- Do NOT reuse stock/greatest-hits puzzles (e.g. "what has keys but no locks",
+  "what has to be broken before you use it", the "Mississippi" anagram, the
+  candle/echo/map riddles). If a puzzle feels familiar, discard it and try again.
+- If the user message lists RECENT PUZZLES, your puzzle must not repeat their
+  answers, themes, or structure — pick a different subject entirely.
+- Vary the subject matter day to day: rotate among nature, music, history,
+  science, language, and everyday objects rather than leaning on one.
+
 Return ONLY valid JSON:
 {
   "prompt": "<the puzzle text shown to the reader>",
@@ -882,21 +970,41 @@ Return ONLY valid JSON:
 Do not include any text outside the JSON object.
 """).strip()
 
+# Friendly display labels per kind (shown as the section eyebrow).
+_PUZZLE_LABELS = {
+    "riddle":              "Fern's Morning Riddle",
+    "haiku riddle":        "Fern's Morning Riddle",
+    "rebus":               "Fern's Morning Rebus",
+    "hidden word":         "Fern's Morning Hunt",
+    "anagram":             "Fern's Morning Anagram",
+    "lateral teaser":      "The Evening Enigma",
+    "two truths & a lie":  "The Evening Enigma",
+    "cryptic clue":        "The Evening Cryptic",
+    "odd one out":         "The Evening Enigma",
+    "what comes next":     "The Evening Sequence",
+    "spot the connection": "The Evening Enigma",
+    "guess the year":      "The Evening Almanac",
+    "fake etymology":      "The Evening Enigma",
+}
+
 
 def puzzle_kind_for(is_am: bool, date: "datetime.date") -> str:
-    """Deterministic puzzle kind: mornings are always riddles; evenings rotate."""
-    if is_am:
-        return "riddle"
-    return PM_PUZZLE_KINDS[date.timetuple().tm_yday % len(PM_PUZZLE_KINDS)]
+    """Deterministic puzzle kind, rotated by day-of-year so consecutive mornings
+    (and evenings) differ but a re-run of the same edition is stable. Mornings
+    draw from the gentle AM pool, evenings from the trickier PM pool."""
+    yday = date.timetuple().tm_yday
+    pool = AM_PUZZLE_KINDS if is_am else PM_PUZZLE_KINDS
+    return pool[yday % len(pool)]
 
 
 def generate_puzzle(client: anthropic.Anthropic, is_am: bool,
-                    date_str: str, season: str = "") -> dict:
+                    date_str: str, season: str = "",
+                    recent: "list[dict] | None" = None) -> dict:
     """
-    Generate Fern's daily puzzle. Morning editions get a riddle
-    ("Fern's Morning Riddle"); evenings rotate lateral teaser / two truths & a
-    lie / anagram ("The Evening Enigma"). Returns {} on any failure so the
-    edition renders without the section.
+    Generate Fern's daily puzzle. Mornings draw from a gentle riddle-family pool,
+    evenings from a trickier pool, both rotated by day-of-year. `recent` is a list
+    of recently-used puzzles ({kind, prompt, answer}) the model is told to avoid
+    echoing. Returns {} on any failure so the edition renders without the section.
     """
     import datetime as _dt
     try:
@@ -904,10 +1012,26 @@ def generate_puzzle(client: anthropic.Anthropic, is_am: bool,
     except ValueError:
         date = _dt.date.today()
     kind = puzzle_kind_for(is_am, date)
-    label = "Fern's Morning Riddle" if is_am else "The Evening Enigma"
+    label = _PUZZLE_LABELS.get(kind, "Fern's Morning Riddle" if is_am else "The Evening Enigma")
+
+    avoid_block = ""
+    recent = recent or []
+    if recent:
+        lines = []
+        for p in recent[-10:]:
+            ans = (p.get("answer") or "").strip()
+            prm = (p.get("prompt") or "").strip().replace("\n", " ")
+            if ans or prm:
+                lines.append(f"- ({p.get('kind','?')}) {prm[:90]} → {ans[:60]}")
+        if lines:
+            avoid_block = (
+                "RECENT PUZZLES (do not repeat these answers, themes, or structure):\n"
+                + "\n".join(lines) + "\n\n"
+            )
 
     user_message = (
-        f"Puzzle kind: {kind}\n"
+        avoid_block
+        + f"Puzzle kind: {kind}\n"
         f"Instructions: {_PUZZLE_KIND_GUIDANCE[kind]}\n"
         f"Date: {date_str}\n"
         + (f"Season: {season}\n" if season else "")
@@ -999,6 +1123,7 @@ def run_curation(raw_data: dict) -> dict:
             raw_data.get("is_am_email", False),
             raw_data.get("fetched_at", "") or "",
             raw_data.get("garden_seed", {}).get("season", ""),
+            recent=raw_data.get("recent_puzzles", []),
         )
     except Exception as exc:
         print(f"  [warn] Puzzle generation failed: {exc}. Skipping puzzle.")

@@ -117,6 +117,7 @@ def _payload(curated: dict) -> dict:
         "note":        _dedash(g.get("note", "")),
         "in_season":   [s for s in (g.get("in_season") or []) if s],
         "sky_tonight": _dedash(g.get("sky_tonight", "")),
+        "sun_times":   _dedash(g.get("sun_times", "")),
         "moon_label":  g.get("moon_label", ""),
     } if g.get("note") else None
 
@@ -493,7 +494,7 @@ function cover(url,tone,label,play){
   $('#garden-note').textContent = g.note;
   const season=(g.in_season||[]);
   $('#garden-season').innerHTML = season.map(s=>'<span class="chip static">'+esc(s)+'</span>').join('');
-  const meta=[]; if(g.moon_label) meta.push(g.moon_label); if(g.sky_tonight) meta.push(g.sky_tonight);
+  const meta=[]; if(g.moon_label) meta.push(g.moon_label); if(g.sun_times) meta.push(g.sun_times); if(g.sky_tonight) meta.push(g.sky_tonight);
   $('#garden-meta').innerHTML = meta.map((b,i)=>(i?'<span class="dot"></span>':'')+'<span>'+esc(b)+'</span>').join('');
   $('#almanac').style.display='';
 })();

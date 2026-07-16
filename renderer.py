@@ -260,6 +260,7 @@ def _render_garden(garden: dict) -> str:
     season_txt = _clip(" · ".join(_esc(s) for s in in_season), 60)
     bits = [b for b in (
         _esc(garden.get("moon_label", "")),
+        _esc(_dedash(garden.get("sun_times", ""))),
         season_txt,
         _esc(_dedash(garden.get("sky_tonight", ""))),
     ) if b]
@@ -274,6 +275,37 @@ def _render_garden(garden: dict) -> str:
             <div style="font-family:{SANS}; font-size:11px; font-weight:600; letter-spacing:3px; text-transform:uppercase; color:{BRASS_DEEP}; padding-bottom:9px;">{_eyebrow(f"From the Garden &nbsp;&middot;&nbsp; {_esc(GARDEN_LOCALE)}", BRASS_DEEP)}</div>
             <div style="font-family:{SERIF}; font-size:16px; line-height:1.58; color:{INK_SOFT};">{note}</div>
             {meta}
+          </td>
+        </tr>"""
+
+
+def _render_regional(block: dict) -> str:
+    """Small 'Around the Valley' block — regional headlines for a locale edition.
+    Only rendered when present (the primary edition never sets `regional_block`)."""
+    block = block or {}
+    items = [i for i in (block.get("items") or []) if i.get("title") and i.get("url")]
+    if not items:
+        return ""
+    label = _esc(block.get("label") or f"Around {GARDEN_LOCALE}")
+    rows = []
+    for it in items:
+        title = _esc(_dedash(it["title"]))
+        href = _safe_url(it["url"])
+        src = _esc(it.get("source_name", ""))
+        src_html = (
+            f'<div style="font-family:{SANS}; font-size:10.5px; letter-spacing:1.2px; '
+            f'text-transform:uppercase; color:{INK_MUTE}; padding-top:3px;">{src}</div>'
+        ) if src else ""
+        rows.append(
+            f'<div style="padding-top:12px;">'
+            f'<a href="{href}" style="font-family:{SERIF}; font-size:16px; line-height:1.5; '
+            f'color:{INK_SOFT}; text-decoration:none;">{title}</a>{src_html}</div>'
+        )
+    return f"""
+        <tr>
+          <td class="px" style="padding:24px 32px 26px 32px; background-color:{SURFACE}; border-bottom:1px solid {LINE};">
+            <div style="font-family:{SANS}; font-size:11px; font-weight:600; letter-spacing:3px; text-transform:uppercase; color:{BRASS_DEEP}; padding-bottom:4px;">{_eyebrow(label, BRASS_DEEP)}</div>
+            {"".join(rows)}
           </td>
         </tr>"""
 
@@ -408,6 +440,7 @@ def build_html(curated: dict) -> str:
     hero_html   = _render_hero(videos[0]) if videos else ""
     fern_html   = _render_fern_note(fern.get("greeting", ""))
     garden_html = _render_garden(garden)
+    regional_html = _render_regional(curated.get("regional_block"))
     puzzle_html = _render_puzzle(curated.get("puzzle"), curated.get("previous_puzzle"))
     toc_html    = _render_contents(videos, music, good_news, discovery, read, is_am=is_am)
 
@@ -453,7 +486,7 @@ def build_html(curated: dict) -> str:
               </tr>
             </table>
           </td>
-        </tr>{fern_html}{garden_html}{puzzle_html}{hero_html}{toc_html}{cta_html}
+        </tr>{fern_html}{garden_html}{regional_html}{puzzle_html}{hero_html}{toc_html}{cta_html}
         <tr>
           <td align="center" bgcolor="{FOREST}" style="background-color:{FOREST}; padding:30px 22px 36px 22px; margin-top:40px;">
             <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="border:1px solid {BRASS};">
@@ -606,11 +639,12 @@ def send_regional() -> None:
     # any failure so the edition still goes out.
     try:
         import curator
-        from fetcher import _season, _moon_phase  # the real season/moon implementations
+        from fetcher import _season, _moon_phase, _sun_times  # real almanac implementations
         seed = {
             "date":   now.date().isoformat(),
             "season": _season(now),
             "moon":   _moon_phase(now),
+            "sun":    _sun_times(GARDEN_LOCALE, now.date()),
             "is_am":  want_am,
             "locale": GARDEN_LOCALE,
         }
@@ -622,6 +656,20 @@ def send_regional() -> None:
             print("[regional] Garden regen returned empty — keeping the primary note.")
     except Exception as exc:
         print(f"[regional] Garden regen skipped ({exc}) — keeping the primary note.")
+
+    # A small block of genuinely local news for this region (best-effort).
+    try:
+        from fetcher import fetch_regional
+        local_items = fetch_regional(GARDEN_LOCALE, n=2)
+        if local_items:
+            short_locale = GARDEN_LOCALE.split(",")[0].strip()
+            curated["regional_block"] = {
+                "label": f"Around {short_locale}",
+                "items": local_items,
+            }
+            print(f"[regional] Added {len(local_items)} local item(s) for {GARDEN_LOCALE}.")
+    except Exception as exc:
+        print(f"[regional] Local news skipped ({exc}).")
 
     html = build_html(curated)
     OUTPUT_HTML.write_text(html, encoding="utf-8")
