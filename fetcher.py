@@ -216,6 +216,7 @@ def save_history(
     recent_puzzles: "list | None" = None,
     seen_riddle_ids: "list | None" = None,
     seen_anagram_seeds: "list | None" = None,
+    seen_haiku_ids: "list | None" = None,
 ) -> None:
     """Persist seen video IDs and the Good News / Discovery / Reads / Music URLs.
 
@@ -244,6 +245,8 @@ def save_history(
         existing["seen_riddle_ids"] = seen_riddle_ids
     if seen_anagram_seeds is not None:
         existing["seen_anagram_seeds"] = seen_anagram_seeds
+    if seen_haiku_ids is not None:
+        existing["seen_haiku_ids"] = seen_haiku_ids
     HISTORY_FILE.write_text(
         json.dumps(existing, indent=2, ensure_ascii=False), encoding="utf-8"
     )
@@ -1484,6 +1487,59 @@ def fetch_anagram_puzzle(seen_seeds: set[str]) -> dict:
     return {}
 
 
+# Real, published contemporary haiku (one per feed item, with the poet named) —
+# folded into the "haiku riddle" mornings as a fill-in-the-blank verse puzzle.
+HAIKU_URL = "https://tinywords.com/feed/"
+
+
+def fetch_haiku(n: int = 8) -> list[dict]:
+    """
+    Scrape a batch of real haiku from tinywords.com's feed. Each item carries the
+    poem (content:encoded/description), the poet (dc:creator), and a stable guid.
+    Returns up to `n` `{"id","text","author"}` (text = the poem, newline-joined,
+    2-4 short lines). Best-effort: [] on any failure so the haiku-riddle day simply
+    falls back to an AI-written haiku.
+    """
+    import html as _html
+    try:
+        resp = _fetch_with_retry(HAIKU_URL, _scraper_session())
+        if resp is None:
+            return []
+        raw = resp.text
+    except Exception as exc:
+        print(f"  [warn] tinywords haiku fetch failed: {exc}")
+        return []
+
+    out: list[dict] = []
+    for item in re.findall(r"<item>(.*?)</item>", raw, re.S):
+        gid = re.search(r"<guid[^>]*>(.*?)</guid>", item, re.S)
+        link = re.search(r"<link>(.*?)</link>", item, re.S)
+        cre = re.search(r"<dc:creator>(.*?)</dc:creator>", item, re.S)
+        body_m = (re.search(r"<content:encoded>(.*?)</content:encoded>", item, re.S)
+                  or re.search(r"<description>(.*?)</description>", item, re.S))
+        if not body_m:
+            continue
+        rid = (gid.group(1) if gid else (link.group(1) if link else "")).strip()
+        author = re.sub(r"<!\[CDATA\[|\]\]>", "", cre.group(1)).strip() if cre else ""
+        body = re.sub(r"<!\[CDATA\[|\]\]>", "", body_m.group(1))
+        body = re.sub(r"<[^>]+>", "\n", body)                    # tags → line breaks
+        body = _html.unescape(body).replace("\xa0", " ")
+        body = re.sub(r"\(\s*Originally.*?\)", "", body, flags=re.S | re.I)  # drop credit note
+        lines = [l.strip() for l in re.split(r"[\r\n]+", body) if l.strip()]
+        lines = [l for l in lines if not re.match(r"^(originally|first published)", l, re.I)]
+        if not (1 <= len(lines) <= 4):
+            continue
+        text = "\n".join(lines)
+        words = re.findall(r"[A-Za-z']+", text)
+        if not rid or not (3 <= len(words) <= 22):
+            continue
+        out.append({"id": rid, "text": text, "author": author})
+        if len(out) >= n:
+            break
+    print(f"[Haiku] Scraped {len(out)} haiku from tinywords.com.")
+    return out
+
+
 def fetch_good_news_articles(
     seen_all_urls: set[str],
     seen_good_news_urls: set[str],
@@ -1754,6 +1810,7 @@ def main() -> dict:
     recent_puzzles: list = []
     seen_riddle_ids: list = []
     seen_anagram_seeds: list = []
+    seen_haiku_ids: list = []
     if HISTORY_FILE.exists():
         try:
             _hist = json.loads(HISTORY_FILE.read_text(encoding="utf-8-sig"))
@@ -1761,18 +1818,21 @@ def main() -> dict:
             recent_puzzles = _hist.get("recent_puzzles") or []
             seen_riddle_ids = _hist.get("seen_riddle_ids") or []
             seen_anagram_seeds = _hist.get("seen_anagram_seeds") or []
+            seen_haiku_ids = _hist.get("seen_haiku_ids") or []
         except Exception:
             previous_puzzle, recent_puzzles = {}, []
-            seen_riddle_ids, seen_anagram_seeds = [], []
+            seen_riddle_ids, seen_anagram_seeds, seen_haiku_ids = [], [], []
 
-    # Real puzzle material for the classic riddle/anagram mornings (best-effort;
-    # AI generation is the fallback). Only bother fetching for morning editions.
+    # Real puzzle material for the classic riddle/anagram/haiku mornings (best-
+    # effort; AI generation is the fallback). Only fetch for morning editions.
     riddle_pool: list = []
     anagram_pool: list = []
+    haiku_pool: list = []
     if is_am_email:
         riddle_pool = [r for r in fetch_riddles(25) if r["id"] not in set(seen_riddle_ids)]
         one = fetch_anagram_puzzle(set(seen_anagram_seeds))
         anagram_pool = [one] if one else []
+        haiku_pool = [h for h in fetch_haiku(8) if h["id"] not in set(seen_haiku_ids)]
 
     raw_payload = {
         "fetched_at": now_ch.isoformat(),
@@ -1787,6 +1847,7 @@ def main() -> dict:
         "recent_puzzles": recent_puzzles,
         "riddle_pool": riddle_pool,
         "anagram_pool": anagram_pool,
+        "haiku_pool": haiku_pool,
     }
 
     # Write raw fetch snapshot (useful for debugging / re-running curation without re-fetching)
@@ -1823,13 +1884,15 @@ def main() -> dict:
         }])[-14:]
     # If the puzzle came from a real source (riddles.com / wordsmith), record its id
     # so that exact riddle/seed isn't reused (capped so the file can't grow forever).
-    updated_riddle_ids = updated_anagram_seeds = None
+    updated_riddle_ids = updated_anagram_seeds = updated_haiku_ids = None
     src = new_puzzle.get("source", "")
     sid = new_puzzle.get("source_id", "")
     if src == "riddles.com" and sid:
         updated_riddle_ids = (seen_riddle_ids + [sid])[-400:]
     elif src == "wordsmith.org" and sid:
         updated_anagram_seeds = (seen_anagram_seeds + [sid])[-len(ANAGRAM_SEEDS):]
+    elif src == "tinywords.com" and sid:
+        updated_haiku_ids = (seen_haiku_ids + [sid])[-400:]
     save_history(seen_ids, seen_good_news_urls, seen_discovery_urls,
                  seen_reads_urls, seen_music_urls,
                  pending_puzzle=(
@@ -1838,7 +1901,8 @@ def main() -> dict:
                  ),
                  recent_puzzles=updated_recent,
                  seen_riddle_ids=updated_riddle_ids,
-                 seen_anagram_seeds=updated_anagram_seeds)
+                 seen_anagram_seeds=updated_anagram_seeds,
+                 seen_haiku_ids=updated_haiku_ids)
 
     curated_file = Path(__file__).parent / "curated_data.json"
     curated_file.write_text(json.dumps(curated, indent=2, ensure_ascii=False), encoding="utf-8")

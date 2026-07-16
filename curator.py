@@ -13,6 +13,7 @@ Required environment variable:
 
 import json
 import os
+import re
 import textwrap
 from pathlib import Path
 from typing import Any
@@ -997,21 +998,105 @@ def puzzle_kind_for(is_am: bool, date: "datetime.date") -> str:
     return pool[yday % len(pool)]
 
 
+_HAIKU_PICK_SYSTEM = textwrap.dedent("""
+You help build a gentle "fill in the missing word" puzzle from a real haiku.
+Choose exactly ONE word already present in the haiku to blank out — pick an
+evocative, guessable content word (a vivid noun, verb, or image), never an
+article/preposition/pronoun (a, the, of, in, her…). The word should be fun to
+guess from the rest of the poem.
+
+Return ONLY valid JSON: {"word": "<the exact word from the haiku>",
+"hint": "<one short gentle nudge, or empty string>"}. No text outside the JSON.
+""").strip()
+
+
+def _haiku_fallback_word(text: str) -> str:
+    """Deterministic blank-word choice: the longest alphabetic word (ties → last),
+    skipping tiny function words. Used if the model pick fails."""
+    stop = {"the", "and", "her", "his", "its", "for", "with", "into", "from", "that",
+            "this", "your", "you", "are", "was"}
+    words = re.findall(r"[A-Za-z][A-Za-z'-]*", text)
+    best = ""
+    for w in words:
+        if len(w) >= 4 and w.lower() not in stop and len(w) >= len(best):
+            best = w
+    return best
+
+
+def _blank_word(text: str, word: str) -> str:
+    """Replace the first whole-word (case-insensitive) occurrence of `word` with a
+    blank of proportional length. Returns '' if the word isn't found."""
+    pat = re.compile(rf"\b{re.escape(word)}\b", re.I)
+    if not pat.search(text):
+        return ""
+    blank = " " * 0 + "____"
+    return pat.sub(blank, text, count=1)
+
+
+def _haiku_fill_puzzle(client: anthropic.Anthropic, haiku: dict) -> dict:
+    """Turn a real haiku into a fill-in-the-blank puzzle: blank one evocative word
+    (chosen by the model, deterministic fallback) and credit the poet. Returns the
+    puzzle dict, or {} if it couldn't be built (→ AI-written haiku riddle instead)."""
+    text = (haiku.get("text") or "").strip()
+    author = (haiku.get("author") or "").strip()
+    if not text:
+        return {}
+
+    word, hint = "", ""
+    try:
+        msg = client.messages.create(
+            model=CLAUDE_MODEL, max_tokens=128, system=_HAIKU_PICK_SYSTEM,
+            messages=[{"role": "user", "content": f"Haiku:\n{text}"}],
+        )
+        raw = msg.content[0].text.strip()
+        if raw.startswith("```"):
+            raw = raw.split("```")[1]
+            raw = raw[4:] if raw.startswith("json") else raw
+            raw = raw.strip()
+        data = json.loads(raw)
+        cand = (data.get("word") or "").strip()
+        if cand and re.search(rf"\b{re.escape(cand)}\b", text, re.I):
+            word, hint = cand, (data.get("hint") or "")
+    except Exception as exc:
+        print(f"  [warn] haiku word pick failed: {exc}. Using fallback.")
+
+    if not word:
+        word = _haiku_fallback_word(text)
+    prompt_text = _blank_word(text, word) if word else ""
+    if not prompt_text:
+        return {}
+
+    credit = f"Haiku by {author}, via tinywords.com" if author else "via tinywords.com"
+    print(f"[Puzzle] Fill-in haiku from tinywords.com (blank: {word}).")
+    return {
+        "kind": "haiku riddle",
+        "label": "The Morning Haiku",
+        "prompt": prompt_text + "\n\n(Fill in the missing word.)",
+        "answer": word,
+        "hint": hint,
+        "source": "tinywords.com",
+        "source_id": haiku.get("id", ""),
+        "credit": credit,
+    }
+
+
 def generate_puzzle(client: anthropic.Anthropic, is_am: bool,
                     date_str: str, season: str = "",
                     recent: "list[dict] | None" = None,
                     riddle_pool: "list[dict] | None" = None,
-                    anagram_pool: "list[dict] | None" = None) -> dict:
+                    anagram_pool: "list[dict] | None" = None,
+                    haiku_pool: "list[dict] | None" = None) -> dict:
     """
     Generate Fern's daily puzzle. Mornings draw from a gentle riddle-family pool,
     evenings from a trickier pool, both rotated by day-of-year. `recent` is a list
     of recently-used puzzles ({kind, prompt, answer}) the model is told to avoid
     echoing.
 
-    On the classic "riddle" / "anagram" mornings, a real riddle (riddles.com) or
-    real anagram (wordsmith.org) from `riddle_pool` / `anagram_pool` is used when
-    available; otherwise the AI generator writes the puzzle. Returns {} on any
-    failure so the edition renders without the section.
+    On the classic "riddle" / "anagram" / "haiku riddle" mornings, real material is
+    folded in when available — a riddle (riddles.com), anagram (wordsmith.org), or a
+    published haiku (tinywords.com) turned into a fill-in-the-blank verse — otherwise
+    the AI generator writes the puzzle. Returns {} on any failure so the edition
+    renders without the section.
     """
     import datetime as _dt
     try:
@@ -1051,6 +1136,11 @@ def generate_puzzle(client: anthropic.Anthropic, is_am: bool,
                 "answer": answer_txt, "hint": hint,
                 "source": "wordsmith.org", "source_id": a.get("source_id", seed.lower()),
             }
+    if kind == "haiku riddle" and haiku_pool:
+        puzzle = _haiku_fill_puzzle(client, haiku_pool[0])
+        if puzzle:
+            return puzzle
+        # else: fall through to the AI-written haiku riddle
 
     avoid_block = ""
     recent = recent or []
@@ -1164,6 +1254,7 @@ def run_curation(raw_data: dict) -> dict:
             recent=raw_data.get("recent_puzzles", []),
             riddle_pool=raw_data.get("riddle_pool", []),
             anagram_pool=raw_data.get("anagram_pool", []),
+            haiku_pool=raw_data.get("haiku_pool", []),
         )
     except Exception as exc:
         print(f"  [warn] Puzzle generation failed: {exc}. Skipping puzzle.")
