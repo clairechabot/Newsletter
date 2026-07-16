@@ -154,6 +154,10 @@ MUSIC_SOURCES: list[dict] = [
     {"name": "Consequence",    "rss": "https://consequence.net/feed/"},
     {"name": "Nextbop",        "rss": "https://nextbop.com/feed"},
     {"name": "JazzTimes",      "rss": "https://jazztimes.com/feed/"},
+    # Broad, thoughtful reviews + a dedicated home for the Americana / folk /
+    # bluegrass / Celtic corner. Both verified non-Cloudflare, fresh feeds.
+    {"name": "PopMatters",        "rss": "https://www.popmatters.com/feed"},
+    {"name": "Fretboard Journal", "rss": "https://www.fretboardjournal.com/feed/"},
     {"name": "Sofar Sounds",   "url": "https://www.sofarsounds.com/blog"},  # no RSS — scrape
 ]
 MUSIC_ARTICLES_PER_SOURCE = 3          # post-filter cap per source
@@ -209,12 +213,21 @@ def save_history(
     seen_reads_urls: set[str],
     seen_music_urls: set[str],
     pending_puzzle: "dict | None" = None,
+    recent_puzzles: "list | None" = None,
+    seen_riddle_ids: "list | None" = None,
+    seen_anagram_seeds: "list | None" = None,
 ) -> None:
     """Persist seen video IDs and the Good News / Discovery / Reads / Music URLs.
 
     pending_puzzle carries this edition's puzzle (label/prompt/answer) forward so
     the NEXT edition can print the answer. None leaves any existing pending
-    puzzle untouched (so an unanswered puzzle isn't dropped by a puzzle-less run)."""
+    puzzle untouched (so an unanswered puzzle isn't dropped by a puzzle-less run).
+
+    recent_puzzles is a rolling list of recently-used puzzles ({kind/prompt/answer})
+    the generator is told to avoid repeating; None leaves it untouched.
+
+    seen_riddle_ids / seen_anagram_seeds record the real riddles.com / wordsmith
+    material already used, so those sources don't repeat; None leaves them untouched."""
     existing: dict = {}
     if HISTORY_FILE.exists():
         existing = json.loads(HISTORY_FILE.read_text(encoding="utf-8-sig"))
@@ -225,6 +238,12 @@ def save_history(
     existing["music_urls"]      = sorted(seen_music_urls)
     if pending_puzzle is not None:
         existing["pending_puzzle"] = pending_puzzle
+    if recent_puzzles is not None:
+        existing["recent_puzzles"] = recent_puzzles
+    if seen_riddle_ids is not None:
+        existing["seen_riddle_ids"] = seen_riddle_ids
+    if seen_anagram_seeds is not None:
+        existing["seen_anagram_seeds"] = seen_anagram_seeds
     HISTORY_FILE.write_text(
         json.dumps(existing, indent=2, ensure_ascii=False), encoding="utf-8"
     )
@@ -1004,7 +1023,7 @@ def _evergreen_fallback(seen, register) -> list[dict]:
 # Good News — RSS feeds (structured XML, never breaks on redesigns)
 # ---------------------------------------------------------------------------
 
-GOOD_NEWS_TOTAL = 3   # one article per source
+GOOD_NEWS_TOTAL = 3   # advisory only — fetch_good_news_articles pulls one per feed
 
 GOOD_NEWS_FEEDS = [
     {
@@ -1018,6 +1037,15 @@ GOOD_NEWS_FEEDS = [
     {
         "url":         "https://www.upworthy.com/feed/",
         "source_name": "Upworthy",
+    },
+    {
+        # Solutions journalism — uplifting without being saccharine.
+        "url":         "https://reasonstobecheerful.world/feed/",
+        "source_name": "Reasons to be Cheerful",
+    },
+    {
+        "url":         "https://www.optimistdaily.com/feed/",
+        "source_name": "The Optimist Daily",
     },
 ]
 
@@ -1060,6 +1088,18 @@ DISCOVERY_FEEDS = [
         # Distinct from the /feeds/latest (places) feed above — this is essays.
         "url":         "https://www.atlasobscura.com/feeds/articles",
         "source_name": "Atlas Obscura",
+        "category":    "history",
+    },
+    {
+        # Ad-free, foundation-funded math/physics/biology writing.
+        "url":         "https://api.quantamagazine.org/feed/",
+        "source_name": "Quanta Magazine",
+        "category":    "science",
+    },
+    {
+        # Art, craft & design finds — pairs with the Crafty / Creative mood.
+        "url":         "https://www.thisiscolossal.com/feed/",
+        "source_name": "Colossal",
         "category":    "history",
     },
 ]
@@ -1133,6 +1173,65 @@ _SEASON_BY_MONTH = {
 def _season(dt: datetime.datetime) -> str:
     """Coarse N-hemisphere season label from the month."""
     return _SEASON_BY_MONTH.get(dt.month, "")
+
+
+# Coordinates per garden locale, so the almanac can carry *real* local sun times
+# (sunrise/sunset/twilight) rather than a generic season label. Keyed by the
+# GARDEN_LOCALE env value. Add a row here to support a new regional edition.
+LOCALE_COORDS = {
+    "Zürich":                          (47.37, 8.54),
+    "Annapolis Valley, Nova Scotia":   (45.03, -64.50),
+}
+
+
+def _sun_times(locale: str, date: datetime.date) -> dict:
+    """
+    Real local sunrise/sunset/twilight for a locale via sunrise-sunset.org (free,
+    no key). Best-effort: returns {} on any failure so the garden note still
+    renders. Times are formatted "HH:MM" in EDITION_TZ.
+    """
+    coords = LOCALE_COORDS.get(locale)
+    if not coords:
+        return {}
+    lat, lng = coords
+    url = (
+        "https://api.sunrise-sunset.org/json"
+        f"?lat={lat}&lng={lng}&date={date.isoformat()}&formatted=0"
+    )
+    try:
+        resp = requests.get(url, timeout=15)
+        resp.raise_for_status()
+        payload = resp.json()
+    except Exception as exc:  # network, JSON, non-200 — all non-fatal
+        print(f"  [warn] sun-times fetch failed for {locale}: {exc}")
+        return {}
+    if payload.get("status") != "OK":
+        return {}
+    res = payload.get("results", {})
+
+    def _fmt(key: str) -> str:
+        iso = res.get(key)
+        if not iso:
+            return ""
+        try:
+            return (
+                datetime.datetime.fromisoformat(iso)
+                .astimezone(EDITION_TZ)
+                .strftime("%H:%M")
+            )
+        except Exception:
+            return ""
+
+    out = {
+        "sunrise":       _fmt("sunrise"),
+        "sunset":        _fmt("sunset"),
+        "dawn":          _fmt("civil_twilight_begin"),
+        "dusk":          _fmt("civil_twilight_end"),
+    }
+    # Drop the whole block if we couldn't resolve the two essentials.
+    if not out["sunrise"] or not out["sunset"]:
+        return {}
+    return out
 
 
 # Public read-through proxies, tried in order when a feed blocks our egress IP.
@@ -1219,6 +1318,170 @@ def _fetch_rss_articles(
             break
 
     return articles
+
+
+# Local news feeds per regional edition, keyed by GARDEN_LOCALE. Used only by the
+# regional re-send to add a small "Around the Valley" block. CBC's regional feeds
+# are reliable, non-Cloudflare, and update frequently.
+REGIONAL_FEEDS = {
+    "Annapolis Valley, Nova Scotia": {
+        "url":         "https://www.cbc.ca/webfeed/rss/rss-canada-novascotia",
+        "source_name": "CBC Nova Scotia",
+    },
+}
+
+
+def fetch_regional(locale: str, n: int = 2) -> list[dict]:
+    """
+    Fetch the newest `n` local-news items for a regional edition (e.g. CBC Nova
+    Scotia for the Annapolis Valley). Best-effort: returns [] on any failure or if
+    the locale has no configured feed, so the regional email simply omits the block.
+    """
+    feed = REGIONAL_FEEDS.get(locale)
+    if not feed:
+        return []
+    try:
+        session = _scraper_session()
+        items = _fetch_rss_articles(
+            feed["url"], feed["source_name"], n, session, source_tag="regional"
+        )
+    except Exception as exc:
+        print(f"  [warn] regional fetch failed for {locale}: {exc}")
+        return []
+    print(f"[Regional] Collected {len(items)} local item(s) for {locale}.")
+    return items
+
+
+# ---------------------------------------------------------------------------
+# Puzzle content sources — real riddles + real anagrams
+# ---------------------------------------------------------------------------
+#   The daily puzzle is normally written by Claude, but on the classic-"riddle"
+#   and "anagram" mornings we serve genuine, human-vetted material scraped from
+#   these sources (with the AI generator as the fallback if a fetch fails).
+
+RIDDLES_URL = "https://www.riddles.com/"
+
+
+def fetch_riddles(n: int = 25) -> list[dict]:
+    """
+    Scrape a batch of real riddles from riddles.com. Each riddle lives in a
+    `div.riddle.body > details[id="Riddle-####"]` with the question in <summary>
+    and the answer in a <p><strong>Answer:</strong> …</p>. Returns up to `n`
+    `{"id","question","answer"}`. Best-effort: [] on any failure so the morning
+    riddle simply falls back to AI generation.
+    """
+    try:
+        resp = _fetch_with_retry(RIDDLES_URL, _scraper_session())
+        if resp is None:
+            return []
+        soup = BeautifulSoup(resp.text, "html.parser")
+    except Exception as exc:
+        print(f"  [warn] riddles.com fetch failed: {exc}")
+        return []
+
+    out: list[dict] = []
+    for det in soup.select("div.riddle.body > details"):
+        rid = (det.get("id") or "").strip()
+        summary = det.find("summary")
+        answer_p = det.find("p")
+        if not rid or summary is None or answer_p is None:
+            continue
+        question = summary.get_text(" ", strip=True)
+        # Answer text is "Answer: <text>" — drop the leading label.
+        answer = re.sub(r"^\s*Answer:\s*", "", answer_p.get_text(" ", strip=True), flags=re.I).strip()
+        answer = answer.rstrip(".").strip()
+        if not question or not answer or len(question) > 240:
+            continue
+        out.append({"id": rid, "question": question, "answer": answer})
+        if len(out) >= n:
+            break
+    print(f"[Riddles] Scraped {len(out)} riddle(s) from riddles.com.")
+    return out
+
+
+# Seed words with elegant anagrams, themed to the newsletter (nature / music /
+# seasons / everyday). wordsmith turns each into its real anagram(s).
+ANAGRAM_SEEDS = [
+    "listen", "silent", "earth", "heart", "meteor", "winter", "spring",
+    "autumn", "forest", "stream", "meadow", "garden", "petals", "leaves",
+    "notes", "chords", "melody", "voices", "singer", "player", "violas",
+    "cellos", "orchestra", "twilight", "moonlight", "sunset", "aurora",
+    "willow", "cedars", "thrush", "swallow", "lantern", "kitchen", "teacup",
+]
+_ANAGRAM_CGI = "https://wordsmith.org/anagram/anagram.cgi"
+
+
+def fetch_anagram(seed: str) -> list[str]:
+    """Query wordsmith's Internet Anagram Server for `seed` and return the list of
+    anagram words/phrases it finds. Best-effort: [] on any failure."""
+    url = (
+        f"{_ANAGRAM_CGI}?anagram={quote(seed)}"
+        "&language=english&t=50&d=&include=&exclude=&n=&m=&a=n&l=n&q=n&k=1&enc=utf-8"
+    )
+    try:
+        resp = _fetch_with_retry(url, _scraper_session())
+        if resp is None:
+            return []
+        text = BeautifulSoup(resp.text, "html.parser").get_text("\n")
+    except Exception as exc:
+        print(f"  [warn] wordsmith anagram fetch failed for '{seed}': {exc}")
+        return []
+
+    lines = [l.strip() for l in text.split("\n") if l.strip()]
+    # Results follow a "N found. Displaying …:" marker line.
+    start = next((i for i, l in enumerate(lines) if re.search(r"\bfound\b.*:", l, re.I)), None)
+    if start is None:
+        return []
+    results = []
+    for l in lines[start + 1:]:
+        # Stop at the trailing site chrome / notes.
+        if re.search(r"(anagram|wordsmith|advanced|sort|show|©|about|contact)", l, re.I):
+            break
+        if re.fullmatch(r"[A-Za-z][A-Za-z' ]{1,40}", l):
+            results.append(l.strip())
+    return results
+
+
+def fetch_anagram_puzzle(seen_seeds: set[str]) -> dict:
+    """
+    Build one anagram puzzle from real wordsmith anagrams: pick a fresh seed (not in
+    `seen_seeds`), query wordsmith, and collect the clean single-word rearrangements
+    of it (a real word, same letters, not the seed itself). The puzzle asks the
+    reader to rearrange the seed word; every collected word is a valid answer.
+    Returns {"seed","answers",...} or {} if nothing clean was found (→ the AI
+    generator handles the day instead).
+    """
+    # Once every seed has been used, start the cycle over (recording keeps only the
+    # last len(ANAGRAM_SEEDS) ids, but this guards against a full-set stall).
+    if seen_seeds.issuperset(s.lower() for s in ANAGRAM_SEEDS):
+        seen_seeds = set()
+    for seed in ANAGRAM_SEEDS:
+        if seed.lower() in seen_seeds:
+            continue
+        target = sorted(seed.lower())
+        seen_words = {seed.lower()}
+        answers: list[str] = []
+        for cand in fetch_anagram(seed):
+            c = cand.strip()
+            if (
+                " " not in c
+                and c.isalpha()
+                and c.lower() not in seen_words
+                and sorted(c.lower()) == target
+            ):
+                answers.append(c.capitalize())
+                seen_words.add(c.lower())
+            if len(answers) >= 5:
+                break
+        if answers:
+            print(f"[Anagram] wordsmith: {seed} -> {', '.join(answers)}")
+            return {
+                "seed":      seed,
+                "answers":   answers,
+                "source":    "wordsmith.org",
+                "source_id": seed.lower(),
+            }
+    return {}
 
 
 def fetch_good_news_articles(
@@ -1479,19 +1742,37 @@ def main() -> dict:
         "date":   now_ch.date().isoformat(),
         "season": _season(now_ch),
         "moon":   _moon_phase(now_ch),
+        "sun":    _sun_times(GARDEN_LOCALE, now_ch.date()),
         "is_am":  is_am_email,
         "locale": GARDEN_LOCALE,
     }
 
-    # Last edition's puzzle (so this edition can print its answer)
+    # Last edition's puzzle (so this edition can print its answer) + the rolling
+    # recent-puzzles list (so the generator avoids repeating itself) + the seen
+    # riddle-ids / anagram-seeds (so real-source puzzles don't repeat).
     previous_puzzle: dict = {}
+    recent_puzzles: list = []
+    seen_riddle_ids: list = []
+    seen_anagram_seeds: list = []
     if HISTORY_FILE.exists():
         try:
-            previous_puzzle = json.loads(
-                HISTORY_FILE.read_text(encoding="utf-8-sig")
-            ).get("pending_puzzle") or {}
+            _hist = json.loads(HISTORY_FILE.read_text(encoding="utf-8-sig"))
+            previous_puzzle = _hist.get("pending_puzzle") or {}
+            recent_puzzles = _hist.get("recent_puzzles") or []
+            seen_riddle_ids = _hist.get("seen_riddle_ids") or []
+            seen_anagram_seeds = _hist.get("seen_anagram_seeds") or []
         except Exception:
-            previous_puzzle = {}
+            previous_puzzle, recent_puzzles = {}, []
+            seen_riddle_ids, seen_anagram_seeds = [], []
+
+    # Real puzzle material for the classic riddle/anagram mornings (best-effort;
+    # AI generation is the fallback). Only bother fetching for morning editions.
+    riddle_pool: list = []
+    anagram_pool: list = []
+    if is_am_email:
+        riddle_pool = [r for r in fetch_riddles(25) if r["id"] not in set(seen_riddle_ids)]
+        one = fetch_anagram_puzzle(set(seen_anagram_seeds))
+        anagram_pool = [one] if one else []
 
     raw_payload = {
         "fetched_at": now_ch.isoformat(),
@@ -1503,6 +1784,9 @@ def main() -> dict:
         "reads": reads,
         "garden_seed": garden_seed,
         "previous_puzzle": previous_puzzle,
+        "recent_puzzles": recent_puzzles,
+        "riddle_pool": riddle_pool,
+        "anagram_pool": anagram_pool,
     }
 
     # Write raw fetch snapshot (useful for debugging / re-running curation without re-fetching)
@@ -1529,12 +1813,32 @@ def main() -> dict:
     # video IDs are not saved, so the same content is retried next run instead
     # of being marked seen without ever having been published.
     new_puzzle = curated.get("puzzle") or {}
+    # Append this edition's puzzle to the rolling anti-repetition memory (last 14).
+    updated_recent = None
+    if new_puzzle.get("prompt"):
+        updated_recent = (recent_puzzles + [{
+            "kind":   new_puzzle.get("kind", ""),
+            "prompt": new_puzzle.get("prompt", ""),
+            "answer": new_puzzle.get("answer", ""),
+        }])[-14:]
+    # If the puzzle came from a real source (riddles.com / wordsmith), record its id
+    # so that exact riddle/seed isn't reused (capped so the file can't grow forever).
+    updated_riddle_ids = updated_anagram_seeds = None
+    src = new_puzzle.get("source", "")
+    sid = new_puzzle.get("source_id", "")
+    if src == "riddles.com" and sid:
+        updated_riddle_ids = (seen_riddle_ids + [sid])[-400:]
+    elif src == "wordsmith.org" and sid:
+        updated_anagram_seeds = (seen_anagram_seeds + [sid])[-len(ANAGRAM_SEEDS):]
     save_history(seen_ids, seen_good_news_urls, seen_discovery_urls,
                  seen_reads_urls, seen_music_urls,
                  pending_puzzle=(
                      {k: new_puzzle[k] for k in ("label", "prompt", "answer")}
                      if new_puzzle.get("answer") else None
-                 ))
+                 ),
+                 recent_puzzles=updated_recent,
+                 seen_riddle_ids=updated_riddle_ids,
+                 seen_anagram_seeds=updated_anagram_seeds)
 
     curated_file = Path(__file__).parent / "curated_data.json"
     curated_file.write_text(json.dumps(curated, indent=2, ensure_ascii=False), encoding="utf-8")
