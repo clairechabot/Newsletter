@@ -326,11 +326,12 @@ def _render_puzzle(puzzle: dict, prev: dict) -> str:
             f'<div style="font-family:{SANS}; font-size:10.5px; letter-spacing:1.2px; '
             f'text-transform:uppercase; color:{INK_MUTE}; padding-top:10px;">Hint: {hint}</div>'
         ) if hint else ""
-        source = _esc(puzzle.get("source", ""))
+        credit = _esc(puzzle.get("credit", "")) or (
+            f'via {_esc(puzzle["source"])}' if puzzle.get("source") else "")
         source_html = (
             f'<div style="font-family:{SANS}; font-size:10px; letter-spacing:1px; '
-            f'color:{INK_MUTE}; padding-top:8px;">via {source}</div>'
-        ) if source else ""
+            f'color:{INK_MUTE}; padding-top:8px;">{credit}</div>'
+        ) if credit else ""
         href = _safe_url(EDITION_URL) if EDITION_URL else "#"
         rows.append(
             f'<div style="font-family:{SANS}; font-size:11px; font-weight:600; letter-spacing:3px; '

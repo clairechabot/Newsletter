@@ -128,6 +128,7 @@ def _payload(curated: dict) -> dict:
         "answer": _dedash(pz.get("answer", "")),
         "hint":   _dedash(pz.get("hint", "")),
         "source": pz.get("source", ""),
+        "credit": _dedash(pz.get("credit", "")),
     } if pz.get("prompt") and pz.get("answer") else None
 
     pp = curated.get("previous_puzzle") or {}
@@ -511,7 +512,8 @@ function cover(url,tone,label,play){
     $('#puzzle-prompt').textContent = p.prompt;
     $('#puzzle-answer').textContent = p.answer;
     if(p.hint){ $('#puzzle-hint').textContent = 'Hint: '+p.hint; $('#puzzle-hint').style.display=''; }
-    if(p.source){ $('#puzzle-source').textContent = 'via '+p.source; $('#puzzle-source').style.display=''; }
+    var credit = p.credit || (p.source ? 'via '+p.source : '');
+    if(credit){ $('#puzzle-source').textContent = credit; $('#puzzle-source').style.display=''; }
   } else {
     $('#puzzle-label').textContent = 'The Puzzle Corner';
     $('#puzzle-prompt').textContent = '';
