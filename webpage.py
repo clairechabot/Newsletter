@@ -127,6 +127,7 @@ def _payload(curated: dict) -> dict:
         "prompt": _dedash(pz.get("prompt", "")),
         "answer": _dedash(pz.get("answer", "")),
         "hint":   _dedash(pz.get("hint", "")),
+        "source": pz.get("source", ""),
     } if pz.get("prompt") and pz.get("answer") else None
 
     pp = curated.get("previous_puzzle") or {}
@@ -249,6 +250,7 @@ _PAGE = """<!DOCTYPE html>
   .puzzle .answer{font-family:var(--display);font-style:italic;font-size:21px;color:var(--forest);border-left:2px solid var(--brass);padding-left:16px;}
   .puzzle .prev{margin-top:18px;padding-top:14px;border-top:1px solid var(--line);font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:var(--ink-mute);}
   .puzzle .prev b{color:var(--brass-deep);font-weight:600;}
+  .puzzle .source{margin-top:10px;font-family:var(--sans);font-size:10.5px;letter-spacing:0.06em;color:var(--ink-mute);}
 
   /* ---- FIP live radio bar (gilt double frame + diamond accents) ---- */
   .radio-bar{position:relative;display:flex;align-items:center;gap:18px;background:var(--forest);border:1px solid var(--brass);color:var(--cream);padding:18px 30px;margin-bottom:30px;flex-wrap:wrap;}
@@ -400,6 +402,7 @@ _PAGE = """<!DOCTYPE html>
       <summary>Reveal the answer</summary>
       <div class="answer" id="puzzle-answer"></div>
     </details>
+    <div class="source" id="puzzle-source" style="display:none;"></div>
     <div class="prev" id="puzzle-prev" style="display:none;"></div>
   </section>
 
@@ -508,6 +511,7 @@ function cover(url,tone,label,play){
     $('#puzzle-prompt').textContent = p.prompt;
     $('#puzzle-answer').textContent = p.answer;
     if(p.hint){ $('#puzzle-hint').textContent = 'Hint: '+p.hint; $('#puzzle-hint').style.display=''; }
+    if(p.source){ $('#puzzle-source').textContent = 'via '+p.source; $('#puzzle-source').style.display=''; }
   } else {
     $('#puzzle-label').textContent = 'The Puzzle Corner';
     $('#puzzle-prompt').textContent = '';

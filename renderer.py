@@ -326,6 +326,11 @@ def _render_puzzle(puzzle: dict, prev: dict) -> str:
             f'<div style="font-family:{SANS}; font-size:10.5px; letter-spacing:1.2px; '
             f'text-transform:uppercase; color:{INK_MUTE}; padding-top:10px;">Hint: {hint}</div>'
         ) if hint else ""
+        source = _esc(puzzle.get("source", ""))
+        source_html = (
+            f'<div style="font-family:{SANS}; font-size:10px; letter-spacing:1px; '
+            f'color:{INK_MUTE}; padding-top:8px;">via {source}</div>'
+        ) if source else ""
         href = _safe_url(EDITION_URL) if EDITION_URL else "#"
         rows.append(
             f'<div style="font-family:{SANS}; font-size:11px; font-weight:600; letter-spacing:3px; '
@@ -335,6 +340,7 @@ def _render_puzzle(puzzle: dict, prev: dict) -> str:
             f'<div style="padding-top:14px;"><a href="{href}" style="font-family:{SANS}; font-size:11px; '
             f'font-weight:600; letter-spacing:1.2px; text-transform:uppercase; color:{CLAY_DEEP}; '
             f'text-decoration:none;">Reveal the answer in the full edition &rarr;</a></div>'
+            f'{source_html}'
         )
     if prev.get("answer"):
         border = f'border-top:1px solid {LINE}; margin-top:16px; padding-top:12px;' if rows else ""

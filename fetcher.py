@@ -214,6 +214,8 @@ def save_history(
     seen_music_urls: set[str],
     pending_puzzle: "dict | None" = None,
     recent_puzzles: "list | None" = None,
+    seen_riddle_ids: "list | None" = None,
+    seen_anagram_seeds: "list | None" = None,
 ) -> None:
     """Persist seen video IDs and the Good News / Discovery / Reads / Music URLs.
 
@@ -222,7 +224,10 @@ def save_history(
     puzzle untouched (so an unanswered puzzle isn't dropped by a puzzle-less run).
 
     recent_puzzles is a rolling list of recently-used puzzles ({kind/prompt/answer})
-    the generator is told to avoid repeating; None leaves it untouched."""
+    the generator is told to avoid repeating; None leaves it untouched.
+
+    seen_riddle_ids / seen_anagram_seeds record the real riddles.com / wordsmith
+    material already used, so those sources don't repeat; None leaves them untouched."""
     existing: dict = {}
     if HISTORY_FILE.exists():
         existing = json.loads(HISTORY_FILE.read_text(encoding="utf-8-sig"))
@@ -235,6 +240,10 @@ def save_history(
         existing["pending_puzzle"] = pending_puzzle
     if recent_puzzles is not None:
         existing["recent_puzzles"] = recent_puzzles
+    if seen_riddle_ids is not None:
+        existing["seen_riddle_ids"] = seen_riddle_ids
+    if seen_anagram_seeds is not None:
+        existing["seen_anagram_seeds"] = seen_anagram_seeds
     HISTORY_FILE.write_text(
         json.dumps(existing, indent=2, ensure_ascii=False), encoding="utf-8"
     )
@@ -1343,6 +1352,138 @@ def fetch_regional(locale: str, n: int = 2) -> list[dict]:
     return items
 
 
+# ---------------------------------------------------------------------------
+# Puzzle content sources — real riddles + real anagrams
+# ---------------------------------------------------------------------------
+#   The daily puzzle is normally written by Claude, but on the classic-"riddle"
+#   and "anagram" mornings we serve genuine, human-vetted material scraped from
+#   these sources (with the AI generator as the fallback if a fetch fails).
+
+RIDDLES_URL = "https://www.riddles.com/"
+
+
+def fetch_riddles(n: int = 25) -> list[dict]:
+    """
+    Scrape a batch of real riddles from riddles.com. Each riddle lives in a
+    `div.riddle.body > details[id="Riddle-####"]` with the question in <summary>
+    and the answer in a <p><strong>Answer:</strong> …</p>. Returns up to `n`
+    `{"id","question","answer"}`. Best-effort: [] on any failure so the morning
+    riddle simply falls back to AI generation.
+    """
+    try:
+        resp = _fetch_with_retry(RIDDLES_URL, _scraper_session())
+        if resp is None:
+            return []
+        soup = BeautifulSoup(resp.text, "html.parser")
+    except Exception as exc:
+        print(f"  [warn] riddles.com fetch failed: {exc}")
+        return []
+
+    out: list[dict] = []
+    for det in soup.select("div.riddle.body > details"):
+        rid = (det.get("id") or "").strip()
+        summary = det.find("summary")
+        answer_p = det.find("p")
+        if not rid or summary is None or answer_p is None:
+            continue
+        question = summary.get_text(" ", strip=True)
+        # Answer text is "Answer: <text>" — drop the leading label.
+        answer = re.sub(r"^\s*Answer:\s*", "", answer_p.get_text(" ", strip=True), flags=re.I).strip()
+        answer = answer.rstrip(".").strip()
+        if not question or not answer or len(question) > 240:
+            continue
+        out.append({"id": rid, "question": question, "answer": answer})
+        if len(out) >= n:
+            break
+    print(f"[Riddles] Scraped {len(out)} riddle(s) from riddles.com.")
+    return out
+
+
+# Seed words with elegant anagrams, themed to the newsletter (nature / music /
+# seasons / everyday). wordsmith turns each into its real anagram(s).
+ANAGRAM_SEEDS = [
+    "listen", "silent", "earth", "heart", "meteor", "winter", "spring",
+    "autumn", "forest", "stream", "meadow", "garden", "petals", "leaves",
+    "notes", "chords", "melody", "voices", "singer", "player", "violas",
+    "cellos", "orchestra", "twilight", "moonlight", "sunset", "aurora",
+    "willow", "cedars", "thrush", "swallow", "lantern", "kitchen", "teacup",
+]
+_ANAGRAM_CGI = "https://wordsmith.org/anagram/anagram.cgi"
+
+
+def fetch_anagram(seed: str) -> list[str]:
+    """Query wordsmith's Internet Anagram Server for `seed` and return the list of
+    anagram words/phrases it finds. Best-effort: [] on any failure."""
+    url = (
+        f"{_ANAGRAM_CGI}?anagram={quote(seed)}"
+        "&language=english&t=50&d=&include=&exclude=&n=&m=&a=n&l=n&q=n&k=1&enc=utf-8"
+    )
+    try:
+        resp = _fetch_with_retry(url, _scraper_session())
+        if resp is None:
+            return []
+        text = BeautifulSoup(resp.text, "html.parser").get_text("\n")
+    except Exception as exc:
+        print(f"  [warn] wordsmith anagram fetch failed for '{seed}': {exc}")
+        return []
+
+    lines = [l.strip() for l in text.split("\n") if l.strip()]
+    # Results follow a "N found. Displaying …:" marker line.
+    start = next((i for i, l in enumerate(lines) if re.search(r"\bfound\b.*:", l, re.I)), None)
+    if start is None:
+        return []
+    results = []
+    for l in lines[start + 1:]:
+        # Stop at the trailing site chrome / notes.
+        if re.search(r"(anagram|wordsmith|advanced|sort|show|©|about|contact)", l, re.I):
+            break
+        if re.fullmatch(r"[A-Za-z][A-Za-z' ]{1,40}", l):
+            results.append(l.strip())
+    return results
+
+
+def fetch_anagram_puzzle(seen_seeds: set[str]) -> dict:
+    """
+    Build one anagram puzzle from real wordsmith anagrams: pick a fresh seed (not in
+    `seen_seeds`), query wordsmith, and collect the clean single-word rearrangements
+    of it (a real word, same letters, not the seed itself). The puzzle asks the
+    reader to rearrange the seed word; every collected word is a valid answer.
+    Returns {"seed","answers",...} or {} if nothing clean was found (→ the AI
+    generator handles the day instead).
+    """
+    # Once every seed has been used, start the cycle over (recording keeps only the
+    # last len(ANAGRAM_SEEDS) ids, but this guards against a full-set stall).
+    if seen_seeds.issuperset(s.lower() for s in ANAGRAM_SEEDS):
+        seen_seeds = set()
+    for seed in ANAGRAM_SEEDS:
+        if seed.lower() in seen_seeds:
+            continue
+        target = sorted(seed.lower())
+        seen_words = {seed.lower()}
+        answers: list[str] = []
+        for cand in fetch_anagram(seed):
+            c = cand.strip()
+            if (
+                " " not in c
+                and c.isalpha()
+                and c.lower() not in seen_words
+                and sorted(c.lower()) == target
+            ):
+                answers.append(c.capitalize())
+                seen_words.add(c.lower())
+            if len(answers) >= 5:
+                break
+        if answers:
+            print(f"[Anagram] wordsmith: {seed} -> {', '.join(answers)}")
+            return {
+                "seed":      seed,
+                "answers":   answers,
+                "source":    "wordsmith.org",
+                "source_id": seed.lower(),
+            }
+    return {}
+
+
 def fetch_good_news_articles(
     seen_all_urls: set[str],
     seen_good_news_urls: set[str],
@@ -1607,16 +1748,31 @@ def main() -> dict:
     }
 
     # Last edition's puzzle (so this edition can print its answer) + the rolling
-    # recent-puzzles list (so the generator avoids repeating itself).
+    # recent-puzzles list (so the generator avoids repeating itself) + the seen
+    # riddle-ids / anagram-seeds (so real-source puzzles don't repeat).
     previous_puzzle: dict = {}
     recent_puzzles: list = []
+    seen_riddle_ids: list = []
+    seen_anagram_seeds: list = []
     if HISTORY_FILE.exists():
         try:
             _hist = json.loads(HISTORY_FILE.read_text(encoding="utf-8-sig"))
             previous_puzzle = _hist.get("pending_puzzle") or {}
             recent_puzzles = _hist.get("recent_puzzles") or []
+            seen_riddle_ids = _hist.get("seen_riddle_ids") or []
+            seen_anagram_seeds = _hist.get("seen_anagram_seeds") or []
         except Exception:
             previous_puzzle, recent_puzzles = {}, []
+            seen_riddle_ids, seen_anagram_seeds = [], []
+
+    # Real puzzle material for the classic riddle/anagram mornings (best-effort;
+    # AI generation is the fallback). Only bother fetching for morning editions.
+    riddle_pool: list = []
+    anagram_pool: list = []
+    if is_am_email:
+        riddle_pool = [r for r in fetch_riddles(25) if r["id"] not in set(seen_riddle_ids)]
+        one = fetch_anagram_puzzle(set(seen_anagram_seeds))
+        anagram_pool = [one] if one else []
 
     raw_payload = {
         "fetched_at": now_ch.isoformat(),
@@ -1629,6 +1785,8 @@ def main() -> dict:
         "garden_seed": garden_seed,
         "previous_puzzle": previous_puzzle,
         "recent_puzzles": recent_puzzles,
+        "riddle_pool": riddle_pool,
+        "anagram_pool": anagram_pool,
     }
 
     # Write raw fetch snapshot (useful for debugging / re-running curation without re-fetching)
@@ -1663,13 +1821,24 @@ def main() -> dict:
             "prompt": new_puzzle.get("prompt", ""),
             "answer": new_puzzle.get("answer", ""),
         }])[-14:]
+    # If the puzzle came from a real source (riddles.com / wordsmith), record its id
+    # so that exact riddle/seed isn't reused (capped so the file can't grow forever).
+    updated_riddle_ids = updated_anagram_seeds = None
+    src = new_puzzle.get("source", "")
+    sid = new_puzzle.get("source_id", "")
+    if src == "riddles.com" and sid:
+        updated_riddle_ids = (seen_riddle_ids + [sid])[-400:]
+    elif src == "wordsmith.org" and sid:
+        updated_anagram_seeds = (seen_anagram_seeds + [sid])[-len(ANAGRAM_SEEDS):]
     save_history(seen_ids, seen_good_news_urls, seen_discovery_urls,
                  seen_reads_urls, seen_music_urls,
                  pending_puzzle=(
                      {k: new_puzzle[k] for k in ("label", "prompt", "answer")}
                      if new_puzzle.get("answer") else None
                  ),
-                 recent_puzzles=updated_recent)
+                 recent_puzzles=updated_recent,
+                 seen_riddle_ids=updated_riddle_ids,
+                 seen_anagram_seeds=updated_anagram_seeds)
 
     curated_file = Path(__file__).parent / "curated_data.json"
     curated_file.write_text(json.dumps(curated, indent=2, ensure_ascii=False), encoding="utf-8")

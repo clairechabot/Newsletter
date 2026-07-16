@@ -999,12 +999,19 @@ def puzzle_kind_for(is_am: bool, date: "datetime.date") -> str:
 
 def generate_puzzle(client: anthropic.Anthropic, is_am: bool,
                     date_str: str, season: str = "",
-                    recent: "list[dict] | None" = None) -> dict:
+                    recent: "list[dict] | None" = None,
+                    riddle_pool: "list[dict] | None" = None,
+                    anagram_pool: "list[dict] | None" = None) -> dict:
     """
     Generate Fern's daily puzzle. Mornings draw from a gentle riddle-family pool,
     evenings from a trickier pool, both rotated by day-of-year. `recent` is a list
     of recently-used puzzles ({kind, prompt, answer}) the model is told to avoid
-    echoing. Returns {} on any failure so the edition renders without the section.
+    echoing.
+
+    On the classic "riddle" / "anagram" mornings, a real riddle (riddles.com) or
+    real anagram (wordsmith.org) from `riddle_pool` / `anagram_pool` is used when
+    available; otherwise the AI generator writes the puzzle. Returns {} on any
+    failure so the edition renders without the section.
     """
     import datetime as _dt
     try:
@@ -1013,6 +1020,37 @@ def generate_puzzle(client: anthropic.Anthropic, is_am: bool,
         date = _dt.date.today()
     kind = puzzle_kind_for(is_am, date)
     label = _PUZZLE_LABELS.get(kind, "Fern's Morning Riddle" if is_am else "The Evening Enigma")
+
+    # --- Real-source short-circuits (no Claude call) ---------------------------
+    if kind == "riddle" and riddle_pool:
+        r = riddle_pool[0]
+        print(f"[Puzzle] Using a real riddle from riddles.com ({r.get('id','')}).")
+        return {
+            "kind": "riddle", "label": label,
+            "prompt": r["question"], "answer": r["answer"], "hint": "",
+            "source": "riddles.com", "source_id": r.get("id", ""),
+        }
+    if kind == "anagram" and anagram_pool:
+        a = anagram_pool[0]
+        seed = a["seed"]
+        answers = a.get("answers") or ([a["answer"]] if a.get("answer") else [])
+        if answers:
+            n = len(answers)
+            print(f"[Puzzle] Using a real anagram from wordsmith.org ({seed} -> {', '.join(answers)}).")
+            answer_txt = answers[0] if n == 1 else answers[0] + " (also " + ", ".join(answers[1:]) + ")"
+            hint = (
+                f"There is one other word hiding in it."
+                if n == 1 else f"There are {n} words hiding in these letters."
+            )
+            return {
+                "kind": "anagram", "label": _PUZZLE_LABELS.get("anagram", label),
+                "prompt": (
+                    f"Rearrange the letters of {seed.upper()} to make a different "
+                    f"common word."
+                ),
+                "answer": answer_txt, "hint": hint,
+                "source": "wordsmith.org", "source_id": a.get("source_id", seed.lower()),
+            }
 
     avoid_block = ""
     recent = recent or []
@@ -1124,6 +1162,8 @@ def run_curation(raw_data: dict) -> dict:
             raw_data.get("fetched_at", "") or "",
             raw_data.get("garden_seed", {}).get("season", ""),
             recent=raw_data.get("recent_puzzles", []),
+            riddle_pool=raw_data.get("riddle_pool", []),
+            anagram_pool=raw_data.get("anagram_pool", []),
         )
     except Exception as exc:
         print(f"  [warn] Puzzle generation failed: {exc}. Skipping puzzle.")
