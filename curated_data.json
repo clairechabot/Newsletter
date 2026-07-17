@@ -1,161 +1,152 @@
 {
-  "fetched_at": "2026-07-17T07:58:19.737329+02:00",
-  "is_am_email": true,
+  "fetched_at": "2026-07-17T17:51:16.815338+02:00",
+  "is_am_email": false,
   "audit_summary": {
     "youtube_videos": 9,
     "themes": 3,
-    "music_articles": 13,
-    "good_news_articles": 5,
-    "discovery_articles": 17,
+    "music_articles": 11,
+    "good_news_articles": 4,
+    "discovery_articles": 14,
     "featured_read": 1,
     "garden": 1,
-    "puzzle": 0
+    "puzzle": 1
   },
   "themes": [
     {
-      "name": "Dust, Myths & Lost Worlds",
-      "emoji": "🏛️",
-      "tagline": "History gets weird, gorgeous, and surprisingly personal — from Greek gods to crumbling attics.",
+      "name": "Rabbit Holes Worth Falling Down",
+      "emoji": "🕳️",
+      "tagline": "From mustard dynasties to Greenland grabs — the weird, wild, and surprisingly deep corners of history and culture.",
       "items": [
         {
           "source": "youtube",
-          "video_id": "Sta6s648Mw0",
-          "title": "Ancient Historian Answers Your Greek Myth Questions",
-          "channel_id": "UCZwU2G-KVl-P-O-B35chZOQ",
-          "channel_title": "History Hit",
-          "published_at": "2026-07-16T18:00:39Z",
-          "url": "https://www.youtube.com/watch?v=Sta6s648Mw0",
-          "duration_seconds": 1959,
-          "view_count": "12524",
-          "description": "Odyssey, the Iliad, Hercules, Troy and Medusa, what are they really about? Classicist historian Daisy Dunn answers your most asked questions about ancient Greek myths. \n\n0:00 Introduction\n0:42 What are Greek myths?\n1:32 Where do Greek myths come from?\n3:02 Are Greek myths real?\n4:26 How were Greek myths used?\n5:34 Did ancient people believe Greek myths?\n6:38 What religion was Greek mythology?\n7:06 How many Greek gods were there?\n8:00 Who were the Titans in Greek mythology?\n8:42 How was Athena bo",
-          "why_watch": "Classicist Daisy Dunn tackles the questions people actually Google about Greek myths — not just what they are, but whether ancient Greeks genuinely believed them and how they functioned socially and religiously. It's structured around real audience questions, so it moves efficiently through the material rather than padding a lecture. Good entry point if you want substance without a full university course.",
-          "is_wildcard": false
-        },
-        {
-          "source": "youtube",
-          "video_id": "oMn7MgPdY1U",
-          "title": "10 Amazing Buildings That Once Were!",
-          "channel_id": "UCAcoda6jlC-xpxGhwW7yFZw",
-          "channel_title": "Matt Reconstructs History",
-          "published_at": "2026-01-13T12:43:39Z",
-          "url": "https://www.youtube.com/watch?v=oMn7MgPdY1U",
-          "duration_seconds": 1615,
-          "view_count": "506176",
-          "description": "Some buildings survive for thousands of years. Others - just as magnificent, just as important - disappear completely. In this video, I use AI to reconstruct 10 of history's most legendary lost structures. From Shakespeare's Globe Theatre to the fortress that sparked the French Revolution, these buildings shaped the world... then vanished. Discover what they looked like, why they mattered, and how they were destroyed. History you can finally see again.\n\n00:00 Intro\n00:54 Hanging Gardens of Babyl",
-          "why_watch": "This video uses AI reconstruction to show what ten significant lost buildings — including the original Globe Theatre and the Bastille — actually looked like before they disappeared, pairing visuals with the history of why each one vanished. The reconstructions make it easier to understand the architectural and cultural scale of what's been lost. A genuinely useful visual supplement to history you may already know in outline.",
-          "is_wildcard": false
-        },
-        {
-          "source": "youtube",
-          "video_id": "ZLuoMxuhVaQ",
-          "title": "Clearing out the Chateau Attic, the start of MAJOR renovation.",
-          "channel_id": "UCEqU-Ts-hxmpnlWgRMgd2MQ",
-          "channel_title": "How To Renovate A Chateau",
-          "published_at": "2026-01-11T19:30:07Z",
-          "url": "https://www.youtube.com/watch?v=ZLuoMxuhVaQ",
-          "duration_seconds": 1195,
-          "view_count": "178444",
-          "description": "Check out Wild’s refillable deodorant, body wash, lip balm, and hand wash— packed with natural nourishment, Vegan and Leaping Bunny Certified, and super effective. Go to https://shopwildrefill.com/howtorenovateachateau-2, use my code RENOVATE20, and get 20% off all products for a limited time only! Available worldwide. 🏰🕯️ Discover our Chateau Candle and Wallpaper Collection here https://www.lefleur.fr/\nAnd follow us on instagram: https://www.instagram.com/le_fleur_honfleur\n\nBonus videos and exc",
-          "why_watch": "Clearing a chateau attic sounds mundane until you see what accumulates over centuries in a French country estate — this functions as both a renovation diary and an accidental archaeology of previous occupants' lives. It's the kind of slow, satisfying discovery video that works well if you like process over polish. A good entry point to the channel if you haven't followed their renovation journey.",
-          "is_wildcard": false
-        },
-        {
-          "source": "youtube",
-          "video_id": "-ywgLCREfMU",
-          "title": "I Tested Different Victorian Menstruation Products",
-          "channel_id": "UCNwZIGnHkzy6KpHPQtserzQ",
-          "channel_title": "Karolina Żebrowska",
-          "published_at": "2026-01-20T18:26:20Z",
-          "url": "https://www.youtube.com/watch?v=-ywgLCREfMU",
-          "duration_seconds": 1816,
-          "view_count": "147771",
-          "description": "Sources: \n\nhttps://www.kristinholt.com/archives/5029 \n\nhttps://susannaives.com/wordpress/2015/09/tidbits-on-mid-victorian-era-menstrual-hygiene/ \n\nhttp://www.mum.org/",
-          "why_watch": "Karolina Żebrowska goes beyond describing Victorian menstrual products and actually tests reconstructions of them, which shifts this from historical curiosity into something genuinely illuminating about daily life constraints women navigated. Her dry, unsentimental humor keeps it engaging rather than grim. It's the kind of history that makes you reconsider what 'getting dressed' used to involve.",
-          "is_wildcard": false
-        }
-      ]
-    },
-    {
-      "name": "Stranger Than Fiction",
-      "emoji": "🥫",
-      "tagline": "Canned cheeseburgers, Greenland power plays, and Netflix rabbit holes — reality is doing its best.",
-      "items": [
-        {
-          "source": "youtube",
-          "video_id": "msR0J5qdwCw",
-          "title": "The Weirdest Foods Ever Put in A Can",
+          "video_id": "WTcBbh_2ALI",
+          "title": "How Grey Poupon Became The Mustard Of Rich People",
           "channel_id": "UCNaq5Jh4SQ1oBAjhQ0KPhoA",
           "channel_title": "Weird History Food",
-          "published_at": "2026-05-10T14:15:06Z",
-          "url": "https://www.youtube.com/watch?v=msR0J5qdwCw",
-          "duration_seconds": 605,
-          "view_count": "108759",
-          "description": "As a people, we have made some pretty great technological strides like the wheel, the printing press, and the camera.  One that maybe doesn’t get spoken about enough though, is canned food. And much like the aforementioned advances, we’ve done some pretty strange stuff with it. \n\nWhat's the strangest thing you have ever seen canned? What is your favorite? Let us know in the comments!\n\n(Much like real history, this video was produced entirely by human beings.)\n\n#cannedgoods #canning #weirdhistory",
-          "why_watch": "A light, quick tour through the genuinely strange history of what humanity has decided to preserve in tin — think whole chickens, cheeseburgers, and things you'd never expect to survive a shelf. It's the kind of video that works best as a casual lunch break watch. No deep insight, but reliably entertaining and mercifully short at 10 minutes.",
+          "published_at": "2026-05-07T14:15:04Z",
+          "url": "https://www.youtube.com/watch?v=WTcBbh_2ALI",
+          "duration_seconds": 872,
+          "view_count": "75747",
+          "description": "The idea that someone's personality can be judged solely by what condiments they put on their food sounds ridiculous, but one mustard brand actually convinced an entire nation it was possible… and people bought into it. But how did a simple condiment reshape identity, class, and culture? And why did it work so well?\n\nIn this episode of Weird History, we dive into the surprisingly effective marketing campaign and strange psychology that turned Grey Poupon Dijon Mustard into an unlikely status sym",
           "is_wildcard": false
         },
         {
           "source": "youtube",
-          "video_id": "Wm8y2fz78Yc",
-          "title": "Why everyone wants Greenland",
+          "video_id": "60SUGnS9esg",
+          "title": "Best of: Bonkers Baseball",
+          "channel_id": "UC4sEmXUuWIFlxRIFBRV6VXQ",
+          "channel_title": "The History Guy: History Deserves to Be Remembered",
+          "published_at": "2026-07-17T12:00:04Z",
+          "url": "https://www.youtube.com/watch?v=60SUGnS9esg",
+          "duration_seconds": 2166,
+          "view_count": "1779",
+          "description": "Think Americans are crazy? Look at what goes on with the national pastime. Three classic the History Guy episodes where the diamond hosted more than a game.\n\n00:00  The Baltimore Baseball Brawl\n15:22  1950 Baseballs and Bullets at The Polo Grounds\n23:04  The 'Ten Cent Beer Night' Riot\n\nCheck out our new shop for fun The History Guy merchandise:\nhttps://thehistoryguy-shop.fourthwall.com/products/thg-history\n\nThis is original content based on research by The History Guy. Images in the Public Domai",
+          "is_wildcard": false
+        },
+        {
+          "source": "youtube",
+          "video_id": "7D0FhJFUzeA",
+          "title": "I went to Greenland, here's why the US wants it",
           "channel_id": "UCmGSJVG3mCRXVOP4yZrU1Dw",
           "channel_title": "Johnny Harris",
-          "published_at": "2026-01-08T14:05:41Z",
-          "url": "https://www.youtube.com/watch?v=Wm8y2fz78Yc",
-          "duration_seconds": 137,
-          "view_count": "588068",
+          "published_at": "2026-01-07T20:40:10Z",
+          "url": "https://www.youtube.com/watch?v=7D0FhJFUzeA",
+          "duration_seconds": 151,
+          "view_count": "7802306",
           "description": "",
-          "why_watch": "In just over two minutes, Johnny Harris distills the geographic, strategic, and resource-based reasons why Greenland keeps appearing in geopolitical conversations — no filler, no padding. It's a rare case where the short format actually serves the topic, giving you exactly enough context to follow the news without a 20-minute explainer. Efficient and worth the two minutes.",
           "is_wildcard": false
         },
         {
           "source": "youtube",
-          "video_id": "lne1kCLWlEM",
-          "title": "A BREAKDOWN of ALL Clues, Symbolism, & the Ending of HIS & HERS EXPLAINED",
-          "channel_id": "UCXcTkcC_H4XeDGfJ7rQGJaw",
-          "channel_title": "Lucas Blue",
-          "published_at": "2026-01-15T03:30:41Z",
-          "url": "https://www.youtube.com/watch?v=lne1kCLWlEM",
-          "duration_seconds": 983,
-          "view_count": "85392",
-          "description": "In this Netflix HIS and HERS Explained / His & Hers Ending Explained, Plot Twist Analysis, I deep-dive analyze HIS & HERS 2026, starring Jon Bernthal and Tessa Thompson. This Netflix series is a perfect blend of mystery, crime, and whodunit, exploring themes of marriage, justice, and vengeance. I believe this film is excellent in capturing the major themes of prejudice and social hierarchy through great writing, acting, directing and filmmaking.\n\nFurthermore, in this HIS & HERS explained video (",
-          "why_watch": "If you finished the Netflix series and felt like you'd missed something, this breakdown maps the specific clues and symbolic choices the showrunners embedded around themes of marriage, prejudice, and class. Lucas Blue focuses on what the ending is actually arguing, not just recapping what happened. Worth watching alongside the show rather than instead of it.",
+          "video_id": "04ayuOqvHvE",
+          "title": "This Village in Japan Should Be Dying. Why Isn't It?",
+          "channel_id": "UCHL9bfHTxCMi-7vfxQ-AYtg",
+          "channel_title": "Abroad in Japan",
+          "published_at": "2026-07-17T14:00:14Z",
+          "url": "https://www.youtube.com/watch?v=04ayuOqvHvE",
+          "duration_seconds": 2003,
+          "view_count": "27261",
+          "description": "The Japanese countryside is overlooked all too often.\n🇯🇵 GRAB your 15-day Unlimited Pro JJESIM: https://jjesim.com/esim-unlimited-pro-15d?via=chris&utm_source=youtube&utm_medium=influencer&utm_campaign=ChrisKDDI&utm_content=15d_desc\n🌟 30 Day Unlimited Pro JJESIM: https://jjesim.com/esim-unlimited-pro?via=chris&utm_source=youtube&utm_medium=influencer&utm_campaign=ChrisKDDI&utm_content=unlimited_desc\n\nStarring the great Natsuki Aso\nFilmed & Edited by Chris Broad\n\n🍿 MAKE this madness happen on Pat",
           "is_wildcard": false
         }
       ]
     },
     {
-      "name": "Slow & Intentional Living",
-      "emoji": "🌱",
-      "tagline": "Seeds, puppies, and creative restarts — the gentle art of tending to things that take time.",
+      "name": "Big Brain Hours",
+      "emoji": "🧠",
+      "tagline": "Morality, symbolism, and the messy interior of the human mind — buckle up, it gets philosophical.",
       "items": [
         {
           "source": "youtube",
-          "video_id": "VHsWZd27B3Y",
-          "title": "Smart Gardeners Sow These Seeds in Late Winter",
-          "channel_id": "UC9r61qohBg1qgGty4_WzojA",
-          "channel_title": "GrowVeg",
-          "published_at": "2026-01-24T18:15:21Z",
-          "url": "https://www.youtube.com/watch?v=VHsWZd27B3Y",
-          "duration_seconds": 1160,
-          "view_count": "197580",
-          "description": "Enjoy a no-obligation, completely free trial of the Garden Planner here: \nhttps://www.GrowVeg.com/grow-planner-free\n\nAnd for your completely free abridged version of Ben's book, click here:\nhttps://www.growveg.com/grow-book-download\n\nThink it's too early to start sowing and growing? Think again! In fact, starting now gives smart gardeners a super-early head start on the growing season. In this week's episode, Ben suggests some of his favourite crops to start in winter and demonstrates some simpl",
-          "why_watch": "GrowVeg makes a concrete case for which seeds actually benefit from a late-winter indoor start versus which ones are a waste of your windowsill space. The advice is tied to real growing timelines, not just enthusiasm, so it's practical for anyone planning a vegetable garden. If you've ever started seeds too early and watched leggy seedlings collapse, this is worth your time.",
+          "video_id": "rsE_kFE_ZHE",
+          "title": "The psychology of morality, perversion, and revenge, in 67 minutes | Paul Bloom: Full Interview",
+          "channel_id": "UCvQECJukTDE2i6aCoMnS-Vg",
+          "channel_title": "Big Think",
+          "published_at": "2026-07-17T13:00:16Z",
+          "url": "https://www.youtube.com/watch?v=rsE_kFE_ZHE",
+          "duration_seconds": 4045,
+          "view_count": "3940",
+          "description": "Become a Big Think member to unlock expert classes, premium print issues, exclusive events and more: https://bigthink.com/membership/?utm_source=youtube&utm_medium=social&utm_campaign=yt_desc\n\nSubscribe to Big Think on YouTube ► https://www.youtube.com/channel/UCvQECJukTDE2i6aCoMnS-Vg?sub_confirmation=1\nUp next, \nThe blueprint for becoming an emotionally mature adult, in 68 minutes | Mark Manson: Full Interview ► https://www.youtube.com/watch?v=8Swxy4tUE3s&vl=en\n\nPsychologist Paul Bloom has spen",
           "is_wildcard": false
         },
         {
           "source": "youtube",
-          "video_id": "eZhHZPh89hM",
-          "title": "We Adopted a PUPPY! (& other updates)",
-          "channel_id": "UCJI86v9et-IZd1KJSfahN8g",
-          "channel_title": "Rachel Maksy",
-          "published_at": "2026-01-10T00:58:15Z",
-          "url": "https://www.youtube.com/watch?v=eZhHZPh89hM",
-          "duration_seconds": 1640,
-          "view_count": "257944",
-          "description": "Haaaaallo, my dear friends!!! I am BACK from my month-long break with a little surprise, hahaha. May I introduce: Pippin! Our new little girl and member of the family.\nAlong with this huge life event, I wanted to have some cozy chats about this next year, tour a potential workshop space, relay how grateful I am for the 54607th time.\nSo grab a blanket and a snack, get cozy and de-stress.\nI love you all so ardently, and I cannot wait to see where this next year takes us.\nLet's GOOO!!\n\nPatreon: htt",
-          "why_watch": "Rachel Maksy returns from a break to introduce a new puppy, tour a potential new workspace, and have an unscripted, warm conversation about where her creative work is heading. It's a low-stakes life-update video that rewards viewers who already enjoy her presence, though it offers little for newcomers looking for a project or tutorial. Think of it as checking in with a friend rather than learning something specific.",
-          "is_wildcard": true
+          "video_id": "o8xkPZp30y8",
+          "title": "A BREAKDOWN of ALL Themes, Symbolism, & the Ending of Marty Supreme",
+          "channel_id": "UCXcTkcC_H4XeDGfJ7rQGJaw",
+          "channel_title": "Lucas Blue",
+          "published_at": "2026-01-09T02:30:06Z",
+          "url": "https://www.youtube.com/watch?v=o8xkPZp30y8",
+          "duration_seconds": 1348,
+          "view_count": "107934",
+          "description": "In this A24 Marty Supreme Explained / Marty Supreme Ending Explained and Analysis, I take a deep dive into the new Marty Supreme movie, starring Timothee Chalamet, Gwyneth Paltrow, Odessa A'zion, Tyler The Creator, and Kevin O’Leary. Directed by Josh Safdie, the film is a perfect blend of drama, historical epic, and romance, exploring themes of individualism, capitalism, and the American Dream. I believe this film is excellent in capturing the major themes of destiny and dreams in 1950’s New Yor",
+          "is_wildcard": false
+        },
+        {
+          "source": "youtube",
+          "video_id": "2__T5cs5HvQ",
+          "title": "Reading the Most Unhinged Comments About Me",
+          "channel_id": "UCDdi0yUyGW1PKzYXaIACnuA",
+          "channel_title": "Jessica Kellgren-Fozard",
+          "published_at": "2026-07-17T15:00:23Z",
+          "url": "https://www.youtube.com/watch?v=2__T5cs5HvQ",
+          "duration_seconds": 1241,
+          "view_count": "1928",
+          "description": "Go to https://surfshark.com/jessica or use code JESSICA at checkout to get 4 extra months of Surfshark VPN!\n\nTIMESTAMPS\n00:00 What is a hate comment?\n05:32 The feminism has upset the men\n10:10 The homophobia of it all\n13:37 It's becoming weirdly personal\n17:02 You absolute legends!\n\nMy BRAND NEW MERCH store: https://jessicaoutofthecloset.myshopify.com/\n\nIf you'd like to send the twins a baby gift, please consider donating to their nappy stock- they're very grateful! https://ko-fi.com/jessicaouto",
+          "is_wildcard": false
+        }
+      ]
+    },
+    {
+      "name": "Slow Living, Big Rewards",
+      "emoji": "🌿",
+      "tagline": "Growing your own food, restoring a château, and building something beautiful with your hands — the good life, one project at a time.",
+      "items": [
+        {
+          "source": "youtube",
+          "video_id": "KjvFBP06trc",
+          "title": "How He Feeds His Family From a Small Backyard Garden",
+          "channel_id": "UC9r61qohBg1qgGty4_WzojA",
+          "channel_title": "GrowVeg",
+          "published_at": "2026-01-17T15:45:01Z",
+          "url": "https://www.youtube.com/watch?v=KjvFBP06trc",
+          "duration_seconds": 1173,
+          "view_count": "175641",
+          "description": "Enjoy a no-obligation, completely free trial of the Garden Planner here: \nhttps://www.GrowVeg.com/grow-planner-free\n\nAnd for your completely free abridged version of Ben's book, click here:\nhttps://www.growveg.com/grow-book-download\n\nFor our tour around Kevin's garden at Epic Gardening watch this next:\nhttps://youtu.be/54V22h1jF5A\n\nWhat does it take to be self-sufficient? What are the tips and tricks for maximizing our yields in a small space like a family-sized back yard? Well, in this week's e",
+          "is_wildcard": false
+        },
+        {
+          "source": "youtube",
+          "video_id": "VExisk6Ztpc",
+          "title": "Revealing our CRAZY Renovations of 2026 (Big News)",
+          "channel_id": "UCEqU-Ts-hxmpnlWgRMgd2MQ",
+          "channel_title": "How To Renovate A Chateau",
+          "published_at": "2026-01-05T06:16:11Z",
+          "url": "https://www.youtube.com/watch?v=VExisk6Ztpc",
+          "duration_seconds": 1316,
+          "view_count": "131956",
+          "description": "👒🔍Download June’s Journey for free now using my link: https://woo.ga/7is94zi2\n🏰🕯️ Discover our Wall Paper Collection here https://www.lefleur.fr/\nBonus videos and exclusive live streams every month! Check out our Patreon page for all the latest from us: https://www.patreon.com/Howtorenovateachateau",
+          "is_wildcard": false
         }
       ]
     }
@@ -163,379 +154,327 @@
   "morning_soundtrack": [
     {
       "source": "music",
-      "source_name": "NPR Music",
-      "title": "The Rolling Stones are for the young",
-      "snippet": "You could look at Foreign Tongues, the Rolling Stones' 25th album, as a tour of the group's musical variations. But it mixes reliable fun and remarkable energy with a generous attitude toward aging.",
-      "url": "https://www.npr.org/2026/07/16/nx-s1-5888437/rolling-stones-foreign-tongues-album-review",
+      "source_name": "Stereogum",
+      "title": "Blackberry Crush – “Patterns”",
+      "snippet": "Spacey-gauzy alt-rock band Blackberry Crush started off as a duo in Wyoming before moving to Denver and expanding into a four-piece. They make woozy, riffy music that's at least shoegaze-adjacent. But they're more direct than most shoegaze bands, and their sighing harmony vocals set them apart. \nThe",
+      "url": "https://stereogum.com/2505593/blackberry-crush-patterns/music/",
       "genre": "",
       "vibe_check": "",
-      "cover_url": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/2832x1592+0+119/resize/1400/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F27%2Fc4%2Fb549c6cd4f9da5a2be2a7cd3695f%2Fgettyimages-2161942283.jpg",
-      "embed_url": "https://www.youtube.com/embed/oT5LwwEHgnc"
+      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/07/Blackberry-Crush-Patterns.jpg",
+      "embed_url": "https://www.youtube.com/embed/B4tC3e5xIO8"
     },
     {
       "source": "music",
       "source_name": "Stereogum",
-      "title": "Hana Stretton – “Seagull Theory II” & “As It Was Before This”",
-      "snippet": "The British-Australian musical artist Hana Stretton specializes in ambient folk, seemingly merging samples, field recordings, and original tracks into soft smears of emotion. Her songs inspire warm comparisons to geniuses like Grouper and Claire Rousay, and she's gained a fervent supporter in Phil E",
-      "url": "https://stereogum.com/2505481/hana-stretton-seagull-theory-ii-as-it-was-before-this/music/",
+      "title": "Matt Berninger – “Martini Me Fatso”",
+      "snippet": "Publicly, Matt Berninger's been in solo mode for well over a year now between the rollout and the touring for his album Get Sunk. It seems he is not ready to shift out of that gear yet. The National frontman has a new solo single out today with an extremely memorable title.\nThe post Matt Berninger &",
+      "url": "https://stereogum.com/2505525/matt-berninger-martini-me-fatso/music/",
       "genre": "",
       "vibe_check": "",
-      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/07/unnamed-2026-07-16T124408.205.jpg",
-      "embed_url": "https://hanastretton.bandcamp.com/album/tiarn-2"
+      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/07/26CRGIM55364.rgb_.jpg",
+      "embed_url": "https://www.youtube.com/embed/1Cg3fPzSAJg"
     },
     {
       "source": "music",
       "source_name": "Stereogum",
-      "title": "Petey USA – “Save For The Horses”",
-      "snippet": "Back in May, Petey USA continued to explore his mix of emo, heartland rock, and electronics on the new single \"Kiss The City.\" He's since given us the bummed-out synth-pop slow-build \"Like A Mantra,\" and now there's a third new self-produced track.\nThe post Petey USA &#8211; &#8220;Save For The Hors",
-      "url": "https://stereogum.com/2505478/petey-usa-save-for-the-horses/music/",
+      "title": "Clairo Joins Ryan Beatty For Live Debut Of Their New Collabs In NYC",
+      "snippet": "The first time that Clairo ever performed her hit \"Sexy To Someone\" wasn't at one of her own shows. Instead, back in 2024 she made a surprise appearance during a set from Ryan Beatty, her peer in chilled-out singer-songwriterdom. Last month, Clairo sang backup on a few songs from Beatty's new album ",
+      "url": "https://stereogum.com/2505560/clairo-joins-ryan-beatty-for-live-debut-of-their-new-collabs-in-nyc/news/",
       "genre": "",
       "vibe_check": "",
-      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/07/unnamed-2026-07-16T122630.043.jpg",
-      "embed_url": "https://www.youtube.com/embed/jpiUan0ZTcQ"
-    },
-    {
-      "source": "music",
-      "source_name": "Stereogum",
-      "title": "Hovvdy – “You Will Go Far”",
-      "snippet": "Texas duo Will Taylor and Charlie Martin, aka Hovvdy, don't make nostalgic music, but there's a sentimental time-shiftiness that runs through their songwriting. Their latest singles, \"Blast\" and \"Try Try Try,\" from the forthcoming album Big World, are especially adept at keeping the atmosphere light",
-      "url": "https://stereogum.com/2505423/hovvdy-you-will-go-far/music/",
-      "genre": "",
-      "vibe_check": "",
-      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/07/Hovvdy-by-Adam-Alonzo-3.jpg",
-      "embed_url": "https://www.youtube.com/embed/PyUw81y8FlE"
+      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/07/clairo2.jpg",
+      "embed_url": null
     },
     {
       "source": "music",
       "source_name": "No Depression",
-      "title": "ALBUM REVIEW: Cinder Well’s Austere ‘A Blooming Body’ Finds Fascination in the Everyday",
-      "snippet": "Amelia Baker delivers her austere songs with the sober bearing of someone imparting fateful news. For a decade the California native, who records as Cinder Well, has excelled at an unadorned brand of folk that rewards full attention, performing spare tunes in a gently commanding voice. Teasing deepe",
-      "url": "https://nodepression.org/album-review-3/",
+      "title": "CROWDFUNDING RADAR: Maya de Vitry, Rio Tripiano, and David Wax Museum",
+      "snippet": "Most months, all three of my featured campaigns come from Kickstarter. That&apos;s because Kickstarter is, by far, the biggest crowdfunding platform around for music. But there are others, including some unconventional ones, which deserve attention as well. This month they get it as all of my featur",
+      "url": "https://nodepression.org/crowdfunding-radar-maya-de-vitry-rio-tripiano-and-david-wax-museum/",
       "genre": "",
       "vibe_check": "",
-      "cover_url": "https://storage.ghost.io/c/18/d0/18d08e58-3b1b-4720-ae25-a31b44e69d4b/content/images/size/w1200/2026/07/Cinder-Well---A-Blooming-Body-Cover--Titles-.jpg",
-      "embed_url": null
+      "cover_url": "https://storage.ghost.io/c/18/d0/18d08e58-3b1b-4720-ae25-a31b44e69d4b/content/images/size/w1200/2026/07/Maya-de-Vitry-photo-by-Ethan-Jodziewicz.jpeg",
+      "embed_url": "https://mayadevitry.bandcamp.com/album/all-my-faith"
     },
     {
       "source": "music",
       "source_name": "Pitchfork",
-      "title": "Echo and the Bunnymen Reveal First Album in 12 Years",
-      "snippet": "Apples for Isaac features contributions from late drummer Clem Burke",
-      "url": "https://pitchfork.com/story/echo-and-the-bunnymen-new-album-apples-for-isaac/",
+      "title": "Leon Bridges Launches New Album With Four Singles",
+      "snippet": "Happiness Anytime, produced by two members of Jungle, is due September 25",
+      "url": "https://pitchfork.com/story/leon-bridges-launches-new-album-with-four-singles/",
       "genre": "",
       "vibe_check": "",
-      "cover_url": "https://media.pitchfork.com/photos/6a58f786587cbb4741cfb32a/16:9/w_1280,c_limit/GettyImages-2163233587.jpg",
+      "cover_url": "https://media.pitchfork.com/photos/6a5a1b646b5ecdb34557ee3e/16:9/w_1280,c_limit/leon-bridges-new-album.jpg",
       "embed_url": null
     },
     {
       "source": "music",
-      "source_name": "Aquarium Drunkard",
-      "title": "Jacob Ungerleider :: Congratulations",
-      "snippet": "Jacob Ungerleider's solo debut, Congratulations, finds unexpected lift in melancholy. Richly arranged yet remarkably unforced, these finely crafted pop songs seem to end every phrase on an updraft.\nThe post Jacob Ungerleider :: Congratulations first appeared on Aquarium Drunkard.",
-      "url": "https://aquariumdrunkard.com/2026/07/12/jacob-ungerleider-congratulations/",
+      "source_name": "Consequence",
+      "title": "Leon Bridges Announces New Album Happiness Anytime, Releases Four-Song EP: Stream",
+      "snippet": "The record by the Grammy winning R&#38;B artist will be out in September and is produced by members of neo-soul group Jungle.\nLeon Bridges Announces New Album Happiness Anytime, Releases Four-Song EP: Stream\nTravis Bland",
+      "url": "https://consequence.net/2026/07/leon-bridges-announces-album-happiness/",
       "genre": "",
       "vibe_check": "",
-      "cover_url": "https://aquariumdrunkard.com/_newness/wp-content/uploads/2026/07/jacob.jpg",
-      "embed_url": null
+      "cover_url": "https://consequence.net/wp-content/uploads/2026/07/LB-0074_Credit-Joshua-Kissi.jpg",
+      "embed_url": "https://www.youtube.com/embed/cBQYANdjiP8"
     },
     {
       "source": "music",
-      "source_name": "PopMatters",
-      "title": "The Waterboys’ Mike Scott Hasn’t Yet Done His Last Jam",
-      "snippet": "With the release of a box set that expands upon the Waterboys' most iconic album, frontman Mike Scott reflects as much as he continues to propel forward.",
-      "url": "https://www.popmatters.com/waterboys-mike-scott-interview-2026",
+      "source_name": "Consequence",
+      "title": "Brandon Flowers Reveals New Single “Paradise”: Stream",
+      "snippet": "Brandon Flowers' solo country effort, THRASHER, is due out August 21st via Island Records.\nBrandon Flowers Reveals New Single &#8220;Paradise&#8221;: Stream\nKiana Fitzgerald",
+      "url": "https://consequence.net/2026/07/brandon-flowers-new-song-paradise/",
       "genre": "",
       "vibe_check": "",
-      "cover_url": "https://www.popmatters.com/wp-content/uploads/2026/07/The-Waterboys-Mike-Scott-2026-by-Paul-Mac-Manus.webp",
-      "embed_url": "https://www.youtube.com/embed/ALhtqysPNQw"
+      "cover_url": "https://consequence.net/wp-content/uploads/2026/07/brandon-flowers.jpg",
+      "embed_url": "https://www.youtube.com/embed/esRxX_TVXZs"
     },
     {
       "source": "music",
-      "source_name": "PopMatters",
-      "title": "“Mother of the Blues” Ma Rainey Is Restored to Full Glory",
-      "snippet": "Ma Rainey's Mother of the Blues: The Complete Paramount Recordings 1923-1928 is a treasure trove that fully lives up to both of Rainey's famous sobriquets.",
-      "url": "https://www.popmatters.com/ma-rainey-mother-of-the-blues",
+      "source_name": "Consequence",
+      "title": "The Olivia Tremor Control Announce The Same Place, First New Album in 27 Years",
+      "snippet": "The band's third album is honor of two lost members, Will Hart and Bill Doss\nThe Olivia Tremor Control Announce The Same Place, First New Album in 27 Years\nChris Coplan",
+      "url": "https://consequence.net/2026/07/olivia-tremor-control-new-album-the-same-place/",
       "genre": "",
       "vibe_check": "",
-      "cover_url": "https://www.popmatters.com/wp-content/uploads/2026/07/Ma-Rainey-Mother-of-the-Blues-social.webp",
-      "embed_url": "https://www.youtube.com/embed/gwG6JLXc8uI"
+      "cover_url": "https://consequence.net/wp-content/uploads/2026/07/olivia-tremor-control-26.jpg",
+      "embed_url": "https://www.youtube.com/embed/pb0jlulX3Co"
     },
     {
       "source": "music",
-      "source_name": "PopMatters",
-      "title": "Lily Lane Embraces Her Sense of Place in “So Long, California”",
-      "snippet": "Like a gem dropped into a flute of champagne, Lily Lane never truly dissolved into her effervescent surroundings in Los Angeles, moving to New York.",
-      "url": "https://www.popmatters.com/lily-lane-interview-2026",
+      "source_name": "JazzTimes",
+      "title": "Drummer-Composer Lesley Mok’s Music of Becoming",
+      "snippet": "Some records announce themselves through virtuosity — an immediately legible mastery that signals control over instrument, form and lineage. Then there are records that refuse &#8230; Read More \"Drummer-Composer Lesley Mok’s Music of Becoming\"\nThe post Drummer-Composer Lesley Mok’s Music of Becoming",
+      "url": "https://www.jazztimes.com/features/profiles/drummer-composer-lesley-moks-music-of-becoming/",
       "genre": "",
       "vibe_check": "",
-      "cover_url": "https://www.popmatters.com/wp-content/uploads/2026/07/Lily-Lane-2026-via-LPR-Agency-1.webp",
-      "embed_url": "https://www.youtube.com/embed/H7_r6WgYGoU"
+      "cover_url": "https://www.jazztimes.com/wp-content/uploads/2026/07/photo-by-Kenneth-Jimenez.jpeg",
+      "embed_url": "https://www.youtube.com/embed/Bxitk26ICFI"
     },
     {
       "source": "music",
       "source_name": "Fretboard Journal",
-      "title": "Wintergrass Sessions: Grant Gordy & Joe K. Walsh",
-      "snippet": "At the 2026 Wintergrass festival in Bellevue, Washington, the Fretboard Journal teamed up with filmers I Know We Should to capture some of our favorite artists (and talk gear). For this session, FJ favorites Grant Gordy and Joe K. Walsh perform &#8220;Verona&#8221; and &#8220;Moon River&#8221; A com",
-      "url": "https://www.fretboardjournal.com/video/wintergrass-sessions-grant-gordy-joe-k-walsh/?utm_source=rss&utm_medium=rss&utm_campaign=wintergrass-sessions-grant-gordy-joe-k-walsh",
+      "title": "Wintergrass Sessions: Tray Wellington",
+      "snippet": "At the 2026 Wintergrass festival in Bellevue, Washington, the Fretboard Journal teamed up with filmers  I Know We Should to capture some of our favorite artists (and talk gear). First up, banjo player Tray Wellington performing &#8220;Moon In Motion I&#8221; / “Moon In Motion III&#8221; and &#8220;F",
+      "url": "https://www.fretboardjournal.com/video/wintergrass-sessions-tray-wellington/?utm_source=rss&utm_medium=rss&utm_campaign=wintergrass-sessions-tray-wellington",
       "genre": "",
       "vibe_check": "",
-      "cover_url": "https://images.fretboardjournal.com/wp-content/uploads/2026/07/08125922/Screenshot-2026-07-08-at-12.54.52-PM.png",
-      "embed_url": "https://www.youtube.com/embed/vyIi0Uhysno"
+      "cover_url": "https://images.fretboardjournal.com/wp-content/uploads/2026/07/01093112/Screenshot-2026-07-01-at-9.25.49-AM.png",
+      "embed_url": "https://www.youtube.com/embed/-vb89U0c1Es"
     },
     {
       "source": "music",
       "source_name": "Fretboard Journal",
-      "title": "Podcast 556: Louis Campbell",
-      "snippet": "﻿﻿﻿﻿﻿﻿ Today on the podcast, we are joined by guitarist Louis Campbell, who talks to us about growing up playing traditional music, studying with Martin Simpson, his affinity for using the electric guitar like a piano, and much more. You can check out his original music via his duo Spafford Campbell",
-      "url": "https://www.fretboardjournal.com/podcasts/podcast-556-louis-campbell/?utm_source=rss&utm_medium=rss&utm_campaign=podcast-556-louis-campbell",
+      "title": "Podcast 555: Micah Preite",
+      "snippet": "﻿﻿﻿﻿﻿﻿ LA-based singer-songwriter/composer/guitarist Micah Preite joins us this week! https://micahpreite.bandcamp.com Though his lo-fi/indie songs have millions of streams on Spotify, Preite’s background includes time with SoCal jazz legend Bruce Forman, a visit as a teenager to the OG 2015 Fretboa",
+      "url": "https://www.fretboardjournal.com/podcasts/podcast-555-micah-preite/?utm_source=rss&utm_medium=rss&utm_campaign=podcast-555-micah-preite",
       "genre": "",
       "vibe_check": "",
-      "cover_url": "https://images.fretboardjournal.com/wp-content/uploads/2026/07/03113926/York-Tillyer-Real-World-Records-photo-credit-.jpg",
-      "embed_url": null
-    },
-    {
-      "source": "music",
-      "source_name": "Fretboard Journal",
-      "title": "Luthier on Luthier: Marco Bortolozzo",
-      "snippet": "﻿﻿﻿﻿ For Episode 115 of the podcast, we’re joined by classical guitarmaker Marco Bortolozzo. In our conversation, Marco tells us about the mentorship that launched his career, and the story behind his signature Olympic ring rosette, inspired by a 19th-century Spanish guitar. We also discuss his neck",
-      "url": "https://www.fretboardjournal.com/podcasts/luthier-on-luthier-marco-bortolozzo/?utm_source=rss&utm_medium=rss&utm_campaign=luthier-on-luthier-marco-bortolozzo",
-      "genre": "",
-      "vibe_check": "",
-      "cover_url": "https://images.fretboardjournal.com/wp-content/uploads/2026/07/01191847/portrait-04-scaled.jpg",
-      "embed_url": null
+      "cover_url": "https://images.fretboardjournal.com/wp-content/uploads/2026/06/19105559/IMG_3259-2-scaled.jpg",
+      "embed_url": "https://www.youtube.com/embed/KxjOJBB7d9U"
     }
   ],
   "global_silver_linings": [
     {
       "source": "good_news",
       "source_name": "Good News Network",
-      "title": "30 Beluga Whales are Finally Being Rescued After 2 Years Waiting in Shuttered Theme Park",
-      "url": "https://www.goodnewsnetwork.org/30-beluga-whales-finally-rescued-after-2-years-waiting-in-shuttered-theme-park/",
-      "snippet": "The US and Canadian governments recently approved a plan for the transfer of captive beluga whales which have been stranded for years at a closed theme park. Shuttered years ago when the captivity for intelligent marine mammals became too controversial, Ontario’s Marineland still contained 30 beluga whales in need of new, more ethical homes. Located […] The post 30 Beluga Whales are Finally Being Rescued After 2 Years Waiting in Shuttered Theme Park appeared first on Good News Network .",
-      "cover_url": "https://www.goodnewsnetwork.org/wp-content/uploads/2020/08/beluga-whales-sanctuary-released-Sea-Life-Trust..jpg",
-      "reason": "After two years stranded in a shuttered theme park, 30 beluga whales are finally getting the rescue they deserve — a reminder that sustained public pressure and dedicated conservationists can move mountains, even for the most overlooked animals. This is what it looks like when people simply refuse to give up."
+      "title": "It Takes a Village to Raise a Child, But This Lonely 4-yo First Had to Raise His Neighborhood (WATCH)",
+      "url": "https://www.goodnewsnetwork.org/it-takes-a-village-to-raise-a-child-but-this-lonely-4-yo-first-had-to-raise-his-neighborhood-watch/",
+      "snippet": "There’s an old saying that it takes a village to raise a child. That was true for this lonely 4-year-old in North Carolina. What his neighborhood didn’t know, however, was that it sometimes takes a child to raise a village.",
+      "cover_url": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/07/maxresdefault-3.jpg",
+      "reason": "A four-year-old's instinct to care for those around him sparked a whole community into showing up for each other — proof that the impulse toward connection starts early and ripples outward. Sometimes it takes the smallest person in the room to remind neighbours they belong to one another."
     },
     {
       "source": "good_news",
       "source_name": "Positive News",
-      "title": "What went right this week: the good news that matters",
-      "url": "https://www.positive.news/society/good-news-stories-from-week-29-of-2026/",
-      "snippet": "Heath wins for El Salvador and Cambodia, progress for the global ocean treaty, and a new species discovery, plus more The post What went right this week: the good news that matters appeared first on Positive News .",
-      "cover_url": "https://positivenews.kinsta.cloud/wp-content/uploads/2026/07/iStock-1371435413.jpg",
-      "reason": "Amid the noise of daily headlines, there are always quiet wins worth celebrating — and a weekly roundup dedicated to finding them is proof that good things keep happening whether or not we're paying attention."
+      "title": "In pictures: How forensic science is helping tackle wildlife poaching",
+      "url": "https://www.positive.news/society/how-forensic-science-is-helping-tackle-poaching/",
+      "snippet": "Advances in forensic science are disrupting the illegal wildlife trade – and are documented in a new photo series The post In pictures: How forensic science is helping tackle wildlife poaching appeared first on Positive News .",
+      "cover_url": "https://www.positive.news/wp-content/uploads/2026/07/©B.Jaschinski_Forensics_Finger_Prints-on-Ivory--e1784281061958.jpg",
+      "reason": "Forensic science is now being turned on poachers the same way it's used to solve human crimes, giving wildlife defenders a powerful new toolkit to catch traffickers and protect endangered species. It's a quiet but meaningful sign that the legal world is taking the destruction of wildlife as seriously as it deserves."
     },
     {
       "source": "good_news",
       "source_name": "Upworthy",
-      "title": "15 ‘Expert Flirts’ share their can’t-miss advice to help shy people flirt",
-      "url": "https://www.upworthy.com/how-to-flirt-ex1-2/",
-      "snippet": "\"Do not think of anything except them. When you look at them, focus on how much you like them.\" The post 15 ‘Expert Flirts’ share their can’t-miss advice to help shy people flirt appeared first on Upworthy .",
-      "cover_url": "https://www.upworthy.com/wp-content/uploads/sites/2/2025/01/origin-118.png",
-      "reason": "Real human connection still matters, and the fact that people are sharing genuine, low-stakes ways to reach out to one another is a small but warm antidote to an increasingly isolated world."
+      "title": "Doctors blamed her seizures on anxiety. An AI chatbot finally helped her figure out the real cause.",
+      "url": "https://www.upworthy.com/pn-chatgpt-diagnosis-hereditary-spastic-paraplegia-phoebe-tesoriere/",
+      "snippet": "After years of doctors dismissing her seizures as mental health issues, she finally uncovered the genetic disorder they missed. The post Doctors blamed her seizures on anxiety. An AI chatbot finally helped her figure out the real cause.",
+      "cover_url": "https://www.upworthy.com/wp-content/uploads/sites/2/2026/07/preview-1.png",
+      "reason": "When years of dismissed symptoms finally found an explanation through an unexpected tool, it opened a conversation about how emerging technology can fill the gaps left by an overstretched medical system. For the many people whose conditions go unrecognised, stories like this are a genuine reason to keep pushing for answers."
     },
     {
       "source": "good_news",
       "source_name": "Reasons to be Cheerful",
-      "title": "‘Food Really Is Medicine’",
-      "url": "https://reasonstobecheerful.world/food-is-medicine-study/",
-      "snippet": "This article was originally published by Stateline. About a dozen states offer “medically tailored meals” to people with conditions such as diabetes and heart disease who get their insurance through Medicaid. Such programs significantly improve the health of the people in them, according to a new study.",
-      "cover_url": "https://reasonstobecheerful.world/wp-content/uploads/2026/07/shutterstock_2478590363-scaled.jpg",
-      "reason": "Growing evidence that food can function as medicine puts meaningful health tools back in everyday hands, shifting power toward prevention and away from purely reactive care."
-    },
-    {
-      "source": "good_news",
-      "source_name": "The Optimist Daily",
-      "title": "A cheap, homegrown catnip lotion could replace DEET for millions of Ugandans",
-      "url": "https://www.optimistdaily.com/2026/07/a-cheap-homegrown-catnip-lotion-could-replace-deet-for-millions-of-ugandans/",
-      "snippet": "BY THE OPTIMIST DAILY EDITORIAL TEAM A lotion made from catnip oil matched DEET in field trials in Uganda, according to research presented at the Society for Experimental Biology conference in Florence last week. Catnip (Nepeta cataria), a common herb in the mint family, contains nepetalactone, the compound that makes cats go sideways. It also […] The post A cheap, homegrown catnip lotion could replace DEET for millions of Ugandans first appeared on The Optimist Daily: Making Solutions the News .",
-      "cover_url": "https://www.optimistdaily.com/wp-content/uploads/Depositphotos_624778446_L.jpg",
-      "reason": "Researchers have found that catnip — an easy-to-grow backyard plant — produces a lotion that rivals DEET at repelling mosquitoes, offering a cheap, natural, and locally sourced protection against malaria for millions of Ugandans. It's a beautiful example of nature quietly holding solutions we're only beginning to notice."
+      "title": "Tampons Are Becoming a Valuable Medical Tool",
+      "url": "https://reasonstobecheerful.world/menstrual-blood-medical-possibilities/",
+      "snippet": "Sometimes the most consequential innovations are fueled by frustration. When she was in her early thirties, Ridhi Tariyal asked her gynecologist for a fertility test. Her doctor dismissed the request, saying such a test wasn’t possible.",
+      "cover_url": "",
+      "reason": "Researchers are finding that a familiar, low-cost everyday item could have real diagnostic and therapeutic uses in medicine — a reminder that innovation doesn't always require expensive new inventions. Practical, accessible solutions like this have the potential to reach patients who need help most."
     }
   ],
   "discovery_articles": [
     {
       "source": "discovery",
       "source_name": "Atlas Obscura",
-      "title": "Porcelain Room in Aranjuez, Spain",
-      "url": "https://www.atlasobscura.com/places/porcelain-room",
-      "snippet": "Visitors to Aranjuez often come for its royal gardens and the grandeur of the Royal Palace of Aranjuez. Yet one of the palace's most astonishing treasures is tucked away in a corner room that feels more like a theatrical illusion than a royal chamber. Completed in 1765, the Porcelain Room was the first major masterpiece created by the Royal Porcelain Factory established under Charles III of Spain.",
+      "title": "ScottCakes in Provincetown, Massachusetts",
+      "url": "https://www.atlasobscura.com/places/scottcakes",
+      "snippet": "In a pink-walled basement on Commercial Street, ScottCakes sells one item and nothing else: a golden butter cake under a swirl of pink vanilla buttercream. There are no rotating flavors, no seasonal specials, no coffee menu to round out the order. One cupcake, made one way, on purpose.",
       "category": "history",
-      "cover_url": "https://img.atlasobscura.com/OzMZAOABLlhNWU4wwgX47iMWtkg23BRwG0KTRaoxkTE/rt:fit/w:600/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy8wNDVi/ZjAzMS0yNmE2LTRm/ODUtOTA2Yi1jM2E0/OGZlM2IzN2FhN2Q3/NTM2YmEwMmQyNWU2/YzZfMTJfQXJhbmp1/ZXpfKDQxKS5qcGc.jpg"
-    },
-    {
-      "source": "discovery",
-      "source_name": "Atlas Obscura",
-      "title": "Celestia in Laporte Township, Pennsylvania",
-      "url": "https://www.atlasobscura.com/places/celestia",
-      "snippet": "Today, visitors to Celestia will find little more than a forest, a few traces of old foundations, and a historical marker along Route 42. In the mid-1800s, however, this mountaintop was intended to become something far more ambitious: a sacred city built in preparation for Christ's return. Founded by religious leader Peter E.",
-      "category": "history",
-      "cover_url": "https://img.atlasobscura.com/L8pozuquKuvwLS0RqjAf0kP68_In3qt25vNFOXX0qrI/rt:fit/w:600/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy8wMjdm/ZjAzMy1lNjkxLTQ3/YzYtYjE0NC1iNzQ4/MGZmOWU0ZTMyZmZh/YjQ5N2QwNWI2YzIw/MWZfMTAwMDAyOTEy/Ny5qcGc.jpg"
-    },
-    {
-      "source": "discovery",
-      "source_name": "Atlas Obscura",
-      "title": "National Gallery of Armenia in Yerevan, Armenia",
-      "url": "https://www.atlasobscura.com/places/national-gallery-of-armenia",
-      "snippet": "The National Gallery of Armenia is the largest fine arts museum in Armenia and home to the most comprehensive collection of Armenian art in the world. Founded in 1921, the Gallery preserves more than 42,000 works of Armenian and international fine art and decorative-applied arts. Its collections include masterpieces by world-renowned artists such as Hovhannes Aivazovsky, Vardges Sureniants, Arshile Gorky, Marc Chagall, Wassily Kandinsky, Donatello, Tintoretto, and many others.",
-      "category": "history",
-      "cover_url": "https://img.atlasobscura.com/8v9U9ASN8951bVTR5dBz4a87K1jv8A2dDi8IZPp-Wp4/rt:fit/w:600/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy85Y2M4/MzIxMS04NWQyLTRi/MGUtOGE5MC02NDFl/MDJkMDRiODg0NDMx/MjRiM2Y1MTU5OGM3/OTNfR2FsbGVyeS5q/cGc.jpg"
+      "cover_url": "https://img.atlasobscura.com/ngh9Eohjuatexx5ZfPsvJJGIK1alBf9gBtHp2q3ESuQ/rt:fit/w:600/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy80YWI4/MWZhZC1kMDM0LTQ1/NGQtOWQyYS0xYmJk/MjAwMjA5NzU1NGJk/ZGE1ZDZhNjQyZDhm/NjlfSU1HXzE5MjMu/anBlZw.jpg"
     },
     {
       "source": "discovery",
       "source_name": "Smithsonian",
-      "title": "Buzz Aldrin Used This Humble Felt-Tip Pen to Save the Apollo II Astronauts. It Just Sold for More Than $850,000",
-      "url": "https://www.smithsonianmag.com/smart-news/buzz-aldrin-used-this-humble-felt-tip-pen-to-save-the-apollo-ii-astronauts-it-just-sold-for-more-than-850000-180989142/",
-      "snippet": "In July 1969, a quick-thinking Aldrin used the writing instrument to rearm the engine arm circuit of the lunar module \"Eagle\" after the switch broke off during the  moon landing",
+      "title": "These 16 Splendid Aerial Views Capture Wildlife From Above, Revealing the Beauty and Mystery of Nature",
+      "url": "https://www.smithsonianmag.com/smart-news/these-16-splendid-aerial-views-capture-wildlife-from-above-revealing-the-beauty-and-mystery-of-nature-180989141/",
+      "snippet": "The second International Aerial Photographer of the Year contest selected its winners and 101 top images. Here’s a selection of the photos that spotlight animals from a new perspective",
       "category": "history",
-      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/iVBSaQDCX9lF4HhxTXz5sZrPjng=/fit-in/1600x0/filters:focal(384x227:385x228)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/4e/ef/4eef342c-0f1c-48ce-a941-bfb64c516a24/screenshot_2026-07-16_at_20301pm.png"
+      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/brS6r0nWKd8MXvTFPWOShRbLGoY=/fit-in/1600x0/filters:focal(1177x1269:1178x1270)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/98/69/9869f609-2225-47ad-8fd3-d68aa66df7ab/67363_rhiannon_lawler_holding_on.jpg"
     },
     {
       "source": "discovery",
       "source_name": "Smithsonian",
-      "title": "This Viking Longship Crossed the Atlantic Before Starring in Christopher Nolan's 'Odyssey' as Odysseus' Greek Galley",
-      "url": "https://www.smithsonianmag.com/smart-news/thisviking-longship-crossed-the-atlantic-before-starring-in-christopher-nolans-odyssey-as-odysseus-greek-galley-180989137/",
-      "snippet": "Hollywood stars including Matt Damon went to rowing camp to learn how to operate the vessel for the new film",
+      "title": "Meet the Orange-Lipped 'Likweli' Monkey, a New Species That Was Discovered in the Congo Rainforest",
+      "url": "https://www.smithsonianmag.com/smart-news/meet-the-orange-lipped-likweli-monkey-a-new-species-that-was-discovered-in-the-congo-rainforest-180989140/",
+      "snippet": "The creatures, which weigh about the same as a small dog, have spiky black hair, orange-cream skin around their mouths and a white patch on their rear ends. Scientists say that they're probably endangered",
       "category": "history",
-      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/-bg0n6JCkK-Esi40DL53514WfGM=/fit-in/1600x0/filters:focal(3273x2214:3274x2215)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/5e/55/5e553358-71d5-44ec-8033-9b0efc181aec/160527_dsc6743_photo-viking_nilsson.jpeg"
+      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/ukFbLYvcLvopou_o0qMWGWfnnOs=/fit-in/1600x0/filters:focal(612x396:613x397)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/28/36/2836c35b-9e1f-4646-b86b-8544a0060ac5/ccongoensis.jpg"
     },
     {
       "source": "discovery",
       "source_name": "Smithsonian",
-      "title": "This Meteorite Crashed Into a New Jersey Home in 2024. Now, Scientists Say It Contains Some of the Building Blocks of Life",
-      "url": "https://www.smithsonianmag.com/smart-news/this-meteorite-crashed-into-a-new-jersey-home-in-2024-now-scientists-say-it-contains-some-of-the-building-blocks-of-life-180989138/",
-      "snippet": "The Hillsborough meteorite belongs to a rare class of rocks from space, according to a new study. It holds amino acids and other organic compounds, as well as evidence of salty water",
+      "title": "When a Cat Licks Another Cat, It's Not Always a Friendly Gesture. New Study Reveals They May Just Want Their Own Space",
+      "url": "https://www.smithsonianmag.com/smart-news/when-a-cat-licks-another-cat-its-not-always-friendly-new-study-reveals-180989136/",
+      "snippet": "Classic feline behavior could be a passive-aggressive maneuver to get what they want.",
       "category": "history",
-      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/0u1Tg8KjcDFUE6X-rXviGNNT0LY=/fit-in/1600x0/filters:focal(585x451:586x452)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/7f/38/7f38918b-31e3-42f8-942d-06eedb65924d/figure-4.jpg"
+      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/cAcHgqaboc2CWeSMWDKqPzZQyiw=/fit-in/1600x0/filters:focal(2453x1635:2454x1636)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/4f/01/4f012102-b763-467e-bfb9-2214738dbefd/selective-focus-shot-cute-beautiful-gray-white-cats-having-fun-together.jpg"
     },
     {
       "source": "discovery",
       "source_name": "Smithsonian",
-      "title": "Buckingham Palace's Royal Picture Gallery Revives the Salon-Style Hang, Doubling the Number of Masterpieces on View",
-      "url": "https://www.smithsonianmag.com/smart-news/buckingham-palaces-royal-picture-gallery-revives-the-salon-style-hang-doubling-the-number-of-masterpieces-on-view-180989135/",
-      "snippet": "Charles III reportedly had a say in the stylistic switch, which rearranged and added artworks by the likes of Rembrandt, Rubens, Vermeer and Van Dyck",
+      "title": "15 Kitten Photos That Will Make You Feel as Warm and Fuzzy as the Tiny Felines Themselves",
+      "url": "https://www.smithsonianmag.com/travel/15-kitten-photos-that-will-make-you-feel-as-warm-and-fuzzy-as-the-tiny-felines-themselves-180989111/",
+      "snippet": "These moments from the Smithsonian Magazine Photo Contest highlight curious kittens from around the world",
       "category": "history",
-      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/qwCHwXJMY2TF1oa2MQKXoHAkagk=/fit-in/1600x0/filters:focal(2943x1962:2944x1963)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/55/e3/55e32f0a-6f5b-4b30-b059-bf3cfd601093/060726_photo_ben_fitzpatrick_-_picture_gallery_final_touches_2jpg.jpg"
+      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/vPZe9po05EJZizJi7kQeg36BNx4=/fit-in/1600x0/filters:focal(1585x699:1586x700)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/51/78/5178f475-2b21-49f2-83ab-dfef6d8bae5d/14-d124fe1fb4c35ab8af7bcbcda67e7014e28619de.jpeg"
     },
     {
       "source": "discovery",
       "source_name": "Science News",
-      "title": "Ancient Egyptian princesses knew their way around weapons of war",
-      "url": "https://www.sciencenews.org/article/ancient-egyptian-princesses-weapons-war",
-      "snippet": "Analysis of six mummies from ancient Egypt challenges the idea that the bows and daggers buried with some royal women were merely ceremonial.",
+      "title": "Many universities hold seized human remains. What should they do with them?",
+      "url": "https://www.sciencenews.org/article/human-remains-ethics-fatimah-jackson",
+      "snippet": "Biological anthropologist Fatimah Jackson is leading an effort to prevent history from repeating.",
       "category": "science",
-      "cover_url": "https://www.sciencenews.org/wp-content/uploads/sites/2/2026/07/071626_TM_egyptian-warrior-princesses_main.jpg"
+      "cover_url": "https://www.sciencenews.org/wp-content/uploads/sites/2/2026/07/0826_unsung-jackson_feat.jpg"
     },
     {
       "source": "discovery",
       "source_name": "Science News",
-      "title": "This “exotic weirdo” exoplanet has a rocky surface and an atmosphere",
-      "url": "https://www.sciencenews.org/article/rocky-exoplanet-helium-atmosphere",
-      "snippet": "Astronomers found a helium atmosphere around a rocky exoplanet — a good sign for the search for life outside the solar system.",
+      "title": "Math puzzle: A sequence of odd events",
+      "url": "https://www.sciencenews.org/article/math-puzzle-2026-august-odd-family",
+      "snippet": "Solve the math puzzle from our August 2026 issue, in which a family investigates an odd happening.",
       "category": "science",
-      "cover_url": "https://www.sciencenews.org/wp-content/uploads/sites/2/2026/07/071526_LG_helium-atmosphere_feat.jpg"
+      "cover_url": "https://www.sciencenews.org/wp-content/uploads/sites/2/2026/07/0826_puzzle_main.jpg"
+    },
+    {
+      "source": "discovery",
+      "source_name": "Aeon",
+      "title": "Transit of wonder",
+      "url": "https://aeon.co/essays/why-has-venus-obsessed-so-many-astronomers",
+      "snippet": "Every 122 years, Venus crosses the Sun as a black and fleeting teardrop, kindling the awe of all those who dare to know - by Ananya Palivela Read on Aeon",
+      "category": "science",
+      "cover_url": ""
+    },
+    {
+      "source": "discovery",
+      "source_name": "JSTOR Daily",
+      "title": "How Sir Lawrence Alma-Tadema Imagined Ancient Rome",
+      "url": "https://daily.jstor.org/how-sir-lawrence-alma-tadema-imagined-ancient-rome/",
+      "snippet": "The Victorian painter drew on archaeology and ancient texts to create richly detailed scenes of love and excess. The post How Sir Lawrence Alma-Tadema Imagined Ancient Rome appeared first on JSTOR Daily .",
+      "category": "history",
+      "cover_url": "https://daily.jstor.org/wp-content/uploads/2026/07/how_sir_lawrence_alma_tadema_imagined_ancient_rome_1050x700.jpg"
     },
     {
       "source": "discovery",
       "source_name": "Quanta Magazine",
-      "title": "Thermodynamic Computers Go With the (Energy) Flow",
-      "url": "https://www.quantamagazine.org/thermodynamic-computers-go-with-the-energy-flow-20260715/",
-      "snippet": "Today’s computers need safeguards against random energy fluctuations. Thermodynamic computers would put those fluctuations to use. The post Thermodynamic Computers Go With the (Energy) Flow first appeared on Quanta Magazine",
+      "title": "Martin Picard’s Mitochondrial Theory of Mind",
+      "url": "https://www.quantamagazine.org/martin-picards-mitochondrial-theory-of-mind-20260717/",
+      "snippet": "The biologist’s bold “energetic view of life” looks to the body’s strangest organelles as the link between cells, health, and mind and the foundation of our experience of being alive. The post Martin Picard’s Mitochondrial Theory of Mind first appeared on Quanta Magazine",
       "category": "science",
-      "cover_url": "https://www.quantamagazine.org/wp-content/uploads/2026/07/Thermodynamic-Computing-cr-Ada-Zejun-Shen-Social.jpg"
-    },
-    {
-      "source": "discovery",
-      "source_name": "Quanta Magazine",
-      "title": "Why Am I Left-Handed?",
-      "url": "https://www.quantamagazine.org/why-am-i-left-handed-20260713/",
-      "snippet": "An invisible difference in 10% of humans poses deep mysteries in several fields at once. The post Why Am I Left-Handed? first appeared on Quanta Magazine",
-      "category": "science",
-      "cover_url": "https://www.quantamagazine.org/wp-content/uploads/2026/07/QualiaLeftHand-crKristinaArmitage-Social.jpg"
-    },
-    {
-      "source": "discovery",
-      "source_name": "Quanta Magazine",
-      "title": "We Know Simple Fluids Can Flow. Turns Out, Some Can Fracture.",
-      "url": "https://www.quantamagazine.org/we-know-simple-fluids-can-flow-turns-out-some-can-fracture-20260710/",
-      "snippet": "Researchers thought that what enabled complex fluids to break apart was their elasticity. But a crack in a nonelastic simple fluid has them questioning that idea. The post We Know Simple Fluids Can Flow.",
-      "category": "science",
-      "cover_url": "https://www.quantamagazine.org/wp-content/uploads/2026/07/CrackingLiquids-cr-Adapted-with-permission-from-Phys.-Rev.-Lett.-136-124002.-Copyrighted-by-the-American-Physical-Society.-Social.jpg"
-    },
-    {
-      "source": "discovery",
-      "source_name": "Quanta Magazine",
-      "title": "Will We Ever Find Alien Civilizations?",
-      "url": "https://www.quantamagazine.org/will-we-ever-find-alien-civilizations-20260709/",
-      "snippet": "Astronomer David Kipping discusses why claims of extraterrestrial life keep dissolving under scrutiny, why we need a more statistically grounded approach to searching for life beyond Earth, and why it’s rational to believe that we may be alone. The post Will We Ever Find Alien Civilizations? first appeared on Quanta Magazine",
-      "category": "science",
-      "cover_url": "https://www.quantamagazine.org/wp-content/uploads/2026/07/JOW-S5E2-David-Kipping-cr-Chanelle-Nibbelink-Social-LOGO.jpg"
+      "cover_url": "https://www.quantamagazine.org/wp-content/uploads/2026/07/Martin-Picard-cr-Sasha-Maslov-Social.jpg"
     },
     {
       "source": "discovery",
       "source_name": "Colossal",
-      "title": "Trompe-L’œil Paintings by Jason Limon Reveal a Hidden Skeletal World",
-      "url": "https://www.thisiscolossal.com/2026/07/trompe-loeil-paintings-jason-limon/",
-      "snippet": "If you were to rip open a tattered matchbox, what might you find hidden in its confines? Do stories and artists like this matter to you? Become a Colossal Member today and support independent arts publishing for as little as $7 per month.",
+      "title": "‘Voices in the Mirror’ Honors the Legacy of Pioneering Photographer Gordon Parks",
+      "url": "https://www.thisiscolossal.com/2026/07/gordon-parks-photography-voices-in-the-mirror-exhibition/",
+      "snippet": "The exhibition also celebrates the 20th anniversary of The Gordon Parks Foundation. Do stories and artists like this matter to you? Become a Colossal Member today and support independent arts publishing for as little as $7 per month.",
       "category": "history",
-      "cover_url": "https://www.thisiscolossal.com/wp-content/uploads/2026/07/limon-10.jpg"
+      "cover_url": "https://www.thisiscolossal.com/wp-content/uploads/2026/07/parks-3.jpg"
     },
     {
       "source": "discovery",
       "source_name": "Colossal",
-      "title": "Cocoa Plantations Set the Scene for Divine Events in Marc Padeu’s ‘Memento Vivere’",
-      "url": "https://www.thisiscolossal.com/2026/07/marc-padeu-memento-vivere-acrylic-paintings/",
-      "snippet": "Humans' futile control of time forms the basis of a new suite of works in Padeu's solo show at Larkin Durey. Do stories and artists like this matter to you? Become a Colossal Member today and support independent arts publishing for as little as $7 per month.",
+      "title": "Divine Sculptures Revere a Yorùbá Goddess in Nigeria’s Ọṣun-Òṣogbo Sacred Grove",
+      "url": "https://www.thisiscolossal.com/2026/07/osun-osogbo-sacred-grove-nigeria-documentary/",
+      "snippet": "A short documentary visits the sacred art environment in southwestern Nigeria. Do stories and artists like this matter to you? Become a Colossal Member today and support independent arts publishing for as little as $7 per month.",
       "category": "history",
-      "cover_url": "https://www.thisiscolossal.com/wp-content/uploads/2026/07/padeu-3.jpg"
+      "cover_url": "https://www.thisiscolossal.com/wp-content/uploads/2026/07/osun-2.jpg"
     },
     {
       "source": "discovery",
       "source_name": "Colossal",
-      "title": "See Peter Marlow’s ‘The English Cathedral’ at London’s Oldest Gothic Church",
-      "url": "https://www.thisiscolossal.com/2026/07/peter-marlow-english-cathedral-architecture-exhibition/",
-      "snippet": "Between 2010 and 2011, Marlow documented all 42 Anglican cathedrals across the breadth and length of England. Do stories and artists like this matter to you? Become a Colossal Member today and support independent arts publishing for as little as $7 per month.",
+      "title": "‘Absurdist Basketmaker’ Lewis Prosser Weaves Contemporary Visions of Regional Heritage",
+      "url": "https://www.thisiscolossal.com/2026/07/lewis-prosser-baskets-costumes-folklore-performance/",
+      "snippet": "The Cardiff-based artist taps into storytelling, masking traditions, and public ceremony and celebration. Do stories and artists like this matter to you? Become a Colossal Member today and support independent arts publishing for as little as $7 per month.",
       "category": "history",
-      "cover_url": "https://www.thisiscolossal.com/wp-content/uploads/2026/07/marlow-2.jpg"
+      "cover_url": "https://www.thisiscolossal.com/wp-content/uploads/2026/07/prosser-2-e1784033531178.jpg"
     },
     {
       "source": "discovery",
       "source_name": "Colossal",
-      "title": "Experience Ana Mendieta’s Visceral, ‘Neolithic’ Work in a Major Survey",
-      "url": "https://www.thisiscolossal.com/2026/07/ana-mendieta-exhibition-photography-sculpture-art-history/",
-      "snippet": "A large-scale, immersive exhibition of her work opens today at Tate Modern. Do stories and artists like this matter to you? Become a Colossal Member today and support independent arts publishing for as little as $7 per month.",
+      "title": "Korea’s Coastal Folklore Surfaces in Jeongmin Lee’s Ink Illustrations",
+      "url": "https://www.thisiscolossal.com/2026/07/jeongmin-lee-korean-folklore-illustrations/",
+      "snippet": "\"I rarely paint a folktale exactly as it's written,\" Lee says. \"I'm more interested in its symbols, emotions, and the questions it leaves behind.\" Do stories and artists like this matter to you? Become a Colossal Member today and support independent arts publishing for as little as $7 per month.",
       "category": "history",
-      "cover_url": "https://www.thisiscolossal.com/wp-content/uploads/2026/07/mendieta-7.jpg"
+      "cover_url": "https://www.thisiscolossal.com/wp-content/uploads/2026/07/lee-10.jpg"
     }
   ],
   "featured_read": {
     "source": "reads",
     "source_name": "The Marginalian",
-    "title": "Diseases of the Will: Neuroscience Founding Father Santiago Ramón y Cajal on the Six Psychological Flaws That Keep the Gifted from Living Up to Their Gift",
-    "url": "https://www.themarginalian.org/2026/07/15/diseases-of-the-will-cajal-advice-for-a-young-investigator/",
-    "snippet": "\"Our neurons must be used ... not only to know but also to transform knowledge; not only to experience but also to construct.\"",
-    "cover_url": "https://www.themarginalian.org/wp-content/uploads/2017/03/cajal.jpg?fit=600%2C315&ssl=1",
-    "blurb": "Santiago Ramón y Cajal — the man who mapped the architecture of the human brain — turns that same precision on the quiet self-sabotages that hollow out a talented life from the inside. If you've ever suspected your greatest obstacle is not circumstance but something more interior and harder to name, this is the essay to read with a cup of something warm and no interruptions."
+    "title": "The Wild Iris: Nobel Laureate Louise Glück on the Door at the End of Your Suffering",
+    "url": "https://www.themarginalian.org/2026/07/16/louse-gluck-wild-iris/",
+    "snippet": "\"Whatever returns from oblivion returns to find a voice.\"",
+    "cover_url": "https://www.themarginalian.org/wp-content/uploads/2024/04/louisegluck0-scaled.jpg?fit=1200%2C630&ssl=1",
+    "blurb": "Louise Glück asks what it might mean for suffering to have an exit — not an escape, but a genuine threshold — and finds her answer, quietly devastating, in the mouth of a flower. Set aside the half-hour; this one earns the silence after."
   },
   "garden_note": {
-    "note": "First light crept over the Zürich rooftops at 05:08 this morning, catching the lavender and ripening tomatoes in that particular gold that belongs only to high summer — step outside early and the garden is already humming with bees before most of the city has boiled its first coffee.",
+    "note": "The long July evening is yours to linger in, Zürich — with dusk not settling until nearly 22:00, there's still time to wander the borders and catch the heady scent of lavender warming in the last of the light. High summer is at its most generous right now, so let the garden hold you a little longer before you head inside.",
     "in_season": [
-      "Lavender (Lavandula angustifolia) — cut stems for drying before the heat peaks",
-      "Courgettes — check daily; they double in size overnight in July",
-      "Runner beans — harvest young pods to keep the plants producing",
-      "Dead-head dahlias and roses to encourage a late-summer flush"
+      "Lavender (Lavandula angustifolia) in full, fragrant bloom",
+      "Zucchini — check daily, they escape notice and turn marrow overnight",
+      "French beans ready to harvest before they toughen",
+      "Deadhead roses to coax a second flush through August"
     ],
-    "sky_tonight": "After dusk, a slim waxing crescent moon sets in the west — look too for the Summer Triangle (Vega, Deneb, Altair) climbing high overhead as darkness finally settles.",
-    "sun_times": "First light arrives at 05:08, with sunrise at 05:44 and a long summer evening stretching until sunset at 21:19.",
-    "moon_label": "Waxing crescent (7% illuminated)"
+    "sky_tonight": "A slender waxing crescent moon sets early in the west — look for it low in the twilight glow just after dusk, then turn your eyes toward Scorpius rising in the south with ruddy Antares glowing at its heart.",
+    "sun_times": "First light crept in at 05:08 this morning, and the sun slips away tonight at 21:19 — though dusk won't fully close in until around 21:55.",
+    "moon_label": "Waxing crescent (9% illuminated)"
   },
-  "puzzle": {},
+  "puzzle": {
+    "kind": "guess the year",
+    "label": "The Evening Almanac",
+    "prompt": "A summer evening puzzle for the patient and curious. Three true things happened in the same year — name it within a decade:\n\nA Scottish engineer demonstrated the first working television picture, transmitting the flickering image of a ventriloquist's dummy in a London attic.\n\nA young American novelist published a story about a man who cannot escape his own hollow glamour, set against the Long Island summer heat.\n\nBritain's coal miners walked out in the largest general strike the country had ever seen, halting trains and newspapers alike for nine days.\n\nWhat year do these belong to?",
+    "answer": "1926. John Logie Baird demonstrated television in January of that year; F. Scott Fitzgerald published The Great Gatsby in 1925 — correction: the novel clue should be set aside. The confirmed year is 1926: Baird's television demonstration and the British General Strike are both firmly placed there.",
+    "hint": "Think mid-1920s — closer to the Charleston than to the Wall Street crash."
+  },
   "previous_puzzle": {
     "label": "Fern's Morning Riddle",
     "prompt": "I rise without waking, fall without sleep,\nI paint the window gold before the house stirs.\nI am loudest in silence, gone by your first cup.\nWhat am I?",
     "answer": "The morning light"
   },
   "fern_data": {
-    "greeting": "While the bread is still warm and the coffee is finding its way into your hands, settle in — today's canopy stretches from Greek myths and Victorian medicine to beluga whales finally going home and an exoplanet with something to say.",
-    "top_pick_title": "Lost Worlds & the Hum of Living Things"
+    "greeting": "The sun has made its exit, the tabs can wait — settle in with something warmer than a screen, because tonight's canopy has rabbit holes, slow gardens, a Japanese village that refused to disappear, and enough music to carry you gently to the other side of the evening.",
+    "top_pick_title": "Roots, Ruins & Beautiful Persistence"
   }
 }
