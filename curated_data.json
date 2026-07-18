@@ -1,12 +1,12 @@
 {
-  "fetched_at": "2026-07-18T07:39:47.100111+02:00",
-  "is_am_email": true,
+  "fetched_at": "2026-07-18T17:26:43.305440+02:00",
+  "is_am_email": false,
   "audit_summary": {
-    "youtube_videos": 9,
+    "youtube_videos": 10,
     "themes": 3,
-    "music_articles": 13,
-    "good_news_articles": 3,
-    "discovery_articles": 12,
+    "music_articles": 19,
+    "good_news_articles": 1,
+    "discovery_articles": 5,
     "featured_read": 1,
     "garden": 1,
     "puzzle": 1
@@ -15,161 +15,151 @@
     {
       "name": "Rabbit Holes Worth Falling Down",
       "emoji": "🕳️",
-      "tagline": "Big systems explained beautifully — from star maps to border disputes to the pizza empires that fed America.",
+      "tagline": "From frozen OJ empires to cancelled Christmases — history is stranger than you remembered.",
       "items": [
         {
           "source": "youtube",
-          "video_id": "TnpGfdEkV4Q",
-          "title": "Mythology Expert Breaks Down Every Ancient Greek Constellation",
-          "channel_id": "UCftwRNsjfRo08xYE31tkiyw",
-          "channel_title": "WIRED",
-          "published_at": "2026-07-17T16:00:16Z",
-          "url": "https://www.youtube.com/watch?v=TnpGfdEkV4Q",
-          "duration_seconds": 3708,
-          "view_count": "7684",
-          "description": "Mythology expert and Professor of classics Peter Meineck deep dives into all 48 of the constellations the ancient Greeks used in the night sky. From maritime navigation to agriculture and timekeeping, Meineck explains how eight main groupings of constellations were tracked in the night sky—and how they translate to today’s mythological storytelling.\n\nWIRED recommends:\nhttps://youtu.be/GkM5zdUHcaQ\nhttps://youtu.be/p8qElr8nWzQ\nhttps://youtu.be/o-jUQhCeazQ\n\nWhat do Iron Man and Odysseus have in com",
-          "why_watch": "Professor Peter Meineck treats the 48 Greek constellations not as trivia but as a working system — one the ancients used for navigation, farming, and timekeeping. The organizing framework of eight groupings gives a genuinely new way to see the night sky rather than a random mythology dump. It's an hour well spent if you've ever looked up and felt like you were missing context.",
-          "is_wildcard": false
-        },
-        {
-          "source": "youtube",
-          "video_id": "19ywglc9Wds",
-          "title": "How Every Major Pizza Chain Came To Be | Compilation",
+          "video_id": "pHUwXzls5AI",
+          "title": "The Rise And Fall Of Frozen Orange Juice",
           "channel_id": "UCNaq5Jh4SQ1oBAjhQ0KPhoA",
           "channel_title": "Weird History Food",
-          "published_at": "2026-05-06T14:15:01Z",
-          "url": "https://www.youtube.com/watch?v=19ywglc9Wds",
-          "duration_seconds": 6044,
-          "view_count": "24730",
-          "description": "Pizza.... we have all had it, we all have our favorite toppings. It's even been said, 'even when it's bad, it's still pretty good!' Pizza has a very long and storied past... from the ancient days up to the point you can get a nice hot pie in 30 minutes or less delivered to your door! Which is your favorite pizza? What about your favorite toppings? Let us know in the comments!\n\nChapters:\n\n00:00:00 - $1 Pizza Vs. $1,000 Pizza\n00:12:13 - The Greasy Downfall Of Sbarro Pizza\n00:21:33 - Everything Tha",
-          "why_watch": "Nearly two hours of the actual origin stories behind Domino's, Pizza Hut, Little Caesars, and others — less food tourism, more business history told through immigrant ambition and postwar American appetite. Good background listening if you enjoy the 'how did this become everywhere' genre of corporate storytelling.",
+          "published_at": "2026-04-30T14:15:08Z",
+          "url": "https://www.youtube.com/watch?v=pHUwXzls5AI",
+          "duration_seconds": 877,
+          "view_count": "63286",
+          "description": "Minute Maid frozen orange juice is a grocery store classic with a surprising history. A freezer aisle staple since the late 1940s, frozen orange juice concentrate has long been helping families get their daily dose of vitamin C quickly and affordably. But recently, Minute Maid has chosen to discontinue the product leaving loyal customers wondering... why?\n\nIn this episode of Weird History, we dive into the fascinating story behind frozen orange juice, from its unexpected origins, to its cultural",
           "is_wildcard": false
         },
         {
           "source": "youtube",
-          "video_id": "rPckDuTaSnw",
-          "title": "India vs China, Explained",
-          "channel_id": "UCmGSJVG3mCRXVOP4yZrU1Dw",
-          "channel_title": "Johnny Harris",
-          "published_at": "2025-12-22T13:01:44Z",
-          "url": "https://www.youtube.com/watch?v=rPckDuTaSnw",
-          "duration_seconds": 1898,
-          "view_count": "2667306",
-          "description": "Inside the Rivalry Between Asia’s Two Giants\nTake back your personal data with Incogni! Use code johnnyharris at the link below and get 60% off annual plans: https://incogni.com/johnnyharris \n\nCheck out all my sources for this video here: https://docs.google.com/document/d/1liPrhZ4_-_mwJ_xpg1os-8R1qxsPPt0Qn_LGZ6N9sOM/edit?usp=sharing\n\nIndia and China share the world’s largest disputed border, and their rivalry with global consequences. Through the lenses of the border, trade, the Indian Ocean, a",
-          "why_watch": "Johnny Harris maps the India-China rivalry through its least-understood dimension: the 2,100-mile disputed border and the military infrastructure both sides have been quietly building along it. He grounds the geopolitics in specific geography and recent flashpoints, making a genuinely complex relationship legible without oversimplifying it.",
-          "is_wildcard": false
-        },
-        {
-          "source": "youtube",
-          "video_id": "nVQTs6Tlp7w",
-          "title": "Edinburgh - 1700s",
+          "video_id": "7GbINMis_Qs",
+          "title": "Boston - 1700s",
           "channel_id": "UCAcoda6jlC-xpxGhwW7yFZw",
           "channel_title": "Matt Reconstructs History",
-          "published_at": "2025-12-30T17:07:36Z",
-          "url": "https://www.youtube.com/watch?v=nVQTs6Tlp7w",
-          "duration_seconds": 1523,
-          "view_count": "244882",
-          "description": "Step into Edinburgh before the New Town, when the city was dense, defensive, and shaped by centuries of pressure. This video explores 18th-century Edinburgh through its streets, landmarks, and hidden edges — from the castle rock and crowded High Street to vanished features like the Nor Loch. Using modern AI tools and historic paintings, maps, and engravings, the past is reconstructed in motion, allowing us to move through these scenes and experience the city as it once was. Stay until the end to",
-          "why_watch": "Matt Reconstructs History rebuilds 1700s Edinburgh — before the planned New Town was built — using AI visuals layered against period maps, paintings, and engravings, giving you a real sense of how dense and vertical the old city actually was. The Nor Loch, the crowded High Street, the logic of building upward on a volcanic ridge — it all clicks into place in under 25 minutes.",
+          "published_at": "2025-12-23T00:21:36Z",
+          "url": "https://www.youtube.com/watch?v=7GbINMis_Qs",
+          "duration_seconds": 1095,
+          "view_count": "443338",
+          "description": "Journey through pre-Revolutionary Boston, a city on the brink of dramatic change in American history. From a crowded colonial port to the streets, taverns, and meeting halls that shaped resistance, this exploration reveals a city defined by trade, tension, and everyday life on the edge of revolution.\n\nUsing modern AI video tools and original 18th-century paintings, maps, and engravings, this video reconstructs Boston as it existed before independence with striking realism. By reimagining period ",
+          "is_wildcard": false
+        },
+        {
+          "source": "youtube",
+          "video_id": "18pZYQ-ESYM",
+          "title": "The Time Christmas Was Cancelled and Riots Ensued",
+          "channel_id": "UCSwwoUNvQWgZDC8a_O6Qs_A",
+          "channel_title": "Kaz Rowe",
+          "published_at": "2025-12-18T17:53:39Z",
+          "url": "https://www.youtube.com/watch?v=18pZYQ-ESYM",
+          "duration_seconds": 1061,
+          "view_count": "96743",
+          "description": "Use my code KAZROWE10 at Hungry Minds for a special holiday discount on The Book:The Ultimate Guide to Rebuilding a Civilization!  https://bit.ly/4rCgeQX\n #thebook, #hungrymindsbooks, #howtorebuildcivilization, #hungryminds, #hungrymindsthebook, #christmasgifts \n\nIn the 17th century, England's Puritan-headed Parliament effectively cancelled Christmas, harassing and jailing anyone trying to make the season merry and bright. Riots ensued in places like London and Canterbury, and things got wild. C",
+          "is_wildcard": false
+        },
+        {
+          "source": "youtube_trending",
+          "video_id": "6evS47d3H1E",
+          "title": "Good Morning San Antonio 6 a.m. Saturday : Jul 18, 2026",
+          "channel_id": "UCETE4rKzRRjqM0JaB7TlPpQ",
+          "channel_title": "KSAT 12",
+          "published_at": "2026-07-18T12:09:35Z",
+          "url": "https://www.youtube.com/watch?v=6evS47d3H1E",
+          "duration_seconds": 2395,
+          "view_count": "1412",
+          "description": "The KSAT 12 News Team provides a look at local, regional, statewide and national news events and the latest information on local traffic and weather issues.",
+          "is_wildcard": true
+        }
+      ]
+    },
+    {
+      "name": "Slow Living, Big Crafts",
+      "emoji": "🏰",
+      "tagline": "Château candles, medieval armour, and lazy gardens — the art of making things with patience and soul.",
+      "items": [
+        {
+          "source": "youtube",
+          "video_id": "NQwm4LAhTqU",
+          "title": "A Cozy Christmas Celebration at Our French Château (extended Cut)",
+          "channel_id": "UCEqU-Ts-hxmpnlWgRMgd2MQ",
+          "channel_title": "How To Renovate A Chateau",
+          "published_at": "2025-12-21T19:29:07Z",
+          "url": "https://www.youtube.com/watch?v=NQwm4LAhTqU",
+          "duration_seconds": 2218,
+          "view_count": "158587",
+          "description": "AD: https://www.squarespace.com/howtorenovateachateau to save 10% off your first purchase of a website or domain using code HOWTORENOVATEACHATEAU\n\n🏰🕯️ Discover our Chateau Candle Collection here https://www.lefleur.fr/\nAnd follow us on instagram: https://www.instagram.com/le_fleur_honfleur\n\nBonus videos and exclusive live streams every month! Check out our Patreon page for all the latest from us: https://www.patreon.com/Howtorenovateachateau",
+          "is_wildcard": false
+        },
+        {
+          "source": "youtube",
+          "video_id": "hLWTDhKltJk",
+          "title": "Making Medieval Armour for Joan of Arc",
+          "channel_id": "UCSHtaUm-FjUps090S7crO4Q",
+          "channel_title": "Bernadette Banner",
+          "published_at": "2025-12-13T15:25:11Z",
+          "url": "https://www.youtube.com/watch?v=hLWTDhKltJk",
+          "duration_seconds": 1473,
+          "view_count": "333579",
+          "description": "If you were interested in checking out Nebula, use my link for some fancy fancy discounts! http://www.nebula.tv/bernadettebanner\nLancaster Armoury: https://www.lancasterarmoury.co.uk/\nKeep up with Matt's latest work: https://www.instagram.com/lancasterar... \nToby has a new book out! https://www.olympiaauctions.com/about... \nKeep up with Toby's latest work: https://www.instagram.com/tobiascapwe...\n\n⤠ HOW TO SUPPORT ⤟\n♥️ PATREON for exclusive behind-the-scenes content!   / bernadettebanner  \n⚝ NEB",
+          "is_wildcard": false
+        },
+        {
+          "source": "youtube",
+          "video_id": "GmN4WzYHNWI",
+          "title": "The Lazy Gardener's Best Vegetables to Grow in 2026",
+          "channel_id": "UC9r61qohBg1qgGty4_WzojA",
+          "channel_title": "GrowVeg",
+          "published_at": "2026-01-03T15:45:04Z",
+          "url": "https://www.youtube.com/watch?v=GmN4WzYHNWI",
+          "duration_seconds": 850,
+          "view_count": "154776",
+          "description": "Enjoy a no-obligation, completely free trial of the Garden Planner here: \nhttps://www.GrowVeg.com/grow-planner-free\n\nAnd for your completely free abridged version of Ben's book, click here:\nhttps://www.growveg.com/grow-book-download\n\nCopy this blueprint of Ben's garden and follow along to grow the best varieties that are worth growing - only award winning vegetables need apply!  Don't we all sometimes with that an expert gardener would tell us exactly what to grow, not only the crop types but th",
           "is_wildcard": false
         }
       ]
     },
     {
       "name": "The Examined Life",
-      "emoji": "🪞",
-      "tagline": "Philosophy, communication, and the art of thinking clearly — for people who argue with books in the margins.",
+      "emoji": "📚",
+      "tagline": "Great books, deeper meanings, and the nagging feeling there's something worth figuring out.",
       "items": [
         {
           "source": "youtube",
-          "video_id": "au4CjRNO8x4",
-          "title": "How to define the conversation | Charles Duhigg",
-          "channel_id": "UCvQECJukTDE2i6aCoMnS-Vg",
-          "channel_title": "Big Think",
-          "published_at": "2026-07-17T16:04:24Z",
-          "url": "https://www.youtube.com/watch?v=au4CjRNO8x4",
-          "duration_seconds": 152,
-          "view_count": "6998",
-          "description": "How to define the conversation | Charles Duhigg",
-          "why_watch": "Charles Duhigg distills a single, underused communication skill: deciding what kind of conversation you're actually in before it goes sideways. At under three minutes, it's the kind of reframe that makes you immediately rethink your last difficult exchange. Practical and precise.",
-          "is_wildcard": false
-        },
-        {
-          "source": "youtube",
-          "video_id": "oGpBjoHbqHI",
-          "title": "Ranking Classic Philosophy Books (with Joe Folley)",
+          "video_id": "U0REsgdTVmI",
+          "title": "These are the 8 best books I read in 2025",
           "channel_id": "UC2Kyj04yISmHr1V-UlJz4eg",
           "channel_title": "Jared Henderson",
-          "published_at": "2026-01-03T17:47:50Z",
-          "url": "https://www.youtube.com/watch?v=oGpBjoHbqHI",
-          "duration_seconds": 14521,
-          "view_count": "258596",
-          "description": "I invited Joe Folley (from  @unsolicitedadvice9198) to help me make a tier list of classic works of philosophy.\n\nMy article on Stoicism: https://jaredhenderson.substack.com/p/why-i-am-not-a-modern-stoic\n\nWatch my videos early on Nebula: https://go.nebula.tv/jaredhenderson\n\n→ Chapters\n\n00:00 Beginning\n01:57 The Republic\n19:08 Nicomachean Ethics\n36:24 Meditations\n56:04 Confessions\n1:05:58 Consolations of Philosophy\n1:12:23 Summa Theologica\n1:21:43 Montaigne's Essays\n1:29:09 Meditations\n1:41:27 Lev",
-          "why_watch": "Jared Henderson and Joe Folley work through canonical philosophy texts — Plato, Aristotle, Marcus Aurelius, Augustine — arguing seriously about which ones still hold up and which are more monument than reading experience. The tier-list format keeps a four-hour runtime moving, and the disagreements are substantive enough to make you want to revisit books you thought you knew.",
+          "published_at": "2025-12-23T16:16:30Z",
+          "url": "https://www.youtube.com/watch?v=U0REsgdTVmI",
+          "duration_seconds": 2149,
+          "view_count": "149428",
+          "description": "Head to https://80000hours.org/jaredhenderson to start planning a career that is meaningful, fulfilling, and helps solve one of the world’s most pressing problems.\n\nSince we're at the end of the year, I wanted to share the best books I read in 2025.\n\nBooks mentioned: The Honourable Schoolboy by John Le Carré, Ficciones by Borges, No Longer Human by Osamu Dazai, Remains of the Day by Kazuo Ishiguro, On The Calculation of Volume by Solvej Balle, The Affirmation of Life by Bernard Reginster, Techno",
           "is_wildcard": false
         },
         {
           "source": "youtube",
-          "video_id": "Ts5QV5rzwlo",
-          "title": "A FULL BREAKDOWN of ALL Symbols, Themes, and Social Commentary in Pluribus",
+          "video_id": "h524lFqwk3w",
+          "title": "A BREAKDOWN of the Clues, Symbols, and Social Commentary in Wake Up Dead Man: A Knives Out Mystery",
           "channel_id": "UCXcTkcC_H4XeDGfJ7rQGJaw",
           "channel_title": "Lucas Blue",
-          "published_at": "2026-01-02T01:09:36Z",
-          "url": "https://www.youtube.com/watch?v=Ts5QV5rzwlo",
-          "duration_seconds": 1584,
-          "view_count": "27431",
-          "description": "In this Apple TV Pluribus Explained / Pluribus Season 1 Ending Explained and Analysis, I deep-dive analyze the Pluribus series, starring Rhea Seehorn, Karolina Wydra, Carlos Manuel Vesga, Miriam Shor, and Samba Schutte. Created by Vince Gilligan, the series is a perfect blend of sci-fi horror and psychological thriller, exploring themes of happiness, peace, and identity. I believe this film is excellent in capturing the major themes of social conformity and individuality through great writing, a",
-          "why_watch": "Vince Gilligan's Apple TV+ series 'Pluribus' rewards close reading, and Lucas Blue does the work of mapping its symbols and social commentary systematically rather than impressionistically. If you've finished the show and felt there was more under the surface, this is the breakdown that will confirm or sharpen your instincts.",
-          "is_wildcard": false
-        }
-      ]
-    },
-    {
-      "name": "Slow & Rooted",
-      "emoji": "🌿",
-      "tagline": "Dirt under the fingernails, snow in the Alps, and cities that no longer exist — a theme for slowing all the way down.",
-      "items": [
-        {
-          "source": "youtube",
-          "video_id": "MhOsPjtrQdc",
-          "title": "I Started a Garden With ZERO Budget - Here's What Happened",
-          "channel_id": "UC9r61qohBg1qgGty4_WzojA",
-          "channel_title": "GrowVeg",
-          "published_at": "2026-01-10T15:45:04Z",
-          "url": "https://www.youtube.com/watch?v=MhOsPjtrQdc",
-          "duration_seconds": 843,
-          "view_count": "58699",
-          "description": "Enjoy a no-obligation, completely free trial of the Garden Planner here: \nhttps://www.GrowVeg.com/grow-planner-free\n\nAnd for your completely free abridged version of Ben's book, click here:\nhttps://www.growveg.com/grow-book-download\n\nHere's the link to our video on growing herbs from supermarket packets of herbs - well worth a grow: https://youtu.be/jYNiCsfyrn0?si=6v9AInNs81Ro5PNU\n\nTo watch our video on how make leaf mould, go to :\nhttps://youtu.be/eeEKQLEpZfA\n\nOr if you are keen for some more t",
-          "why_watch": "GrowVeg's Ben tests whether you can start a productive garden with literally no money, leaning on cuttings, seed-saving, and supermarket herb rescues. The constraints make it more instructive than a standard gardening tutorial — you see which shortcuts actually work. Fourteen minutes with real, replicable results.",
+          "published_at": "2025-12-19T02:14:48Z",
+          "url": "https://www.youtube.com/watch?v=h524lFqwk3w",
+          "duration_seconds": 1454,
+          "view_count": "141454",
+          "description": "In this Netflix Wake Up Dead Man Explained / Knives Out 3 Ending Explained and Analysis, I deep-dive analyze Wake Up Dead Man 2025, starring Daniel Craig, Josh O'Connor, Josh Brolin, Cailee Spaeny - Glenn Close, Jeremy Renner, and Mila Kunis. Directed by Rian Johnson, the film is a perfect blend of mystery, crime, and whodunit, exploring themes of religion, faith, and belief. I believe this film is excellent in capturing the major themes of vengeance and temptation through great writing, acting,",
           "is_wildcard": false
         },
         {
           "source": "youtube",
-          "video_id": "v-hTwxXFeiY",
-          "title": "Beyond the Chateau - Our Family's Cozy Christmas in the Italian Alps",
-          "channel_id": "UCEqU-Ts-hxmpnlWgRMgd2MQ",
-          "channel_title": "How To Renovate A Chateau",
-          "published_at": "2025-12-28T19:30:07Z",
-          "url": "https://www.youtube.com/watch?v=v-hTwxXFeiY",
-          "duration_seconds": 993,
-          "view_count": "105114",
-          "description": "🌍 Get an exclusive 15% discount on Saily data plans! Use code chateau at checkout. Download Saily app or go to https://saily.com/chateau ⛵\n\n🏰🕯️ Discover our Chateau Candle Collection here https://www.lefleur.fr/\nAnd follow us on instagram: https://www.instagram.com/le_fleur_honfleur\n\nBonus videos and exclusive live streams every month! Check out our Patreon page for all the latest from us: https://www.patreon.com/Howtorenovateachateau",
-          "why_watch": "The family behind the chateau renovation channel trades their French project for a low-key Christmas in the Italian Alps, and the result is quieter and more personal than their usual content. If you follow them for the lifestyle as much as the construction, this is a warm detour worth the 16 minutes.",
+          "video_id": "zFYZvSEDjxE",
+          "title": "Why is NO ONE Talking About British Matt and Abby's BIZARRE Behavior?",
+          "channel_id": "UC4HRlp7zs7UpIFM67eGjhow",
+          "channel_title": "Crooked Timber",
+          "published_at": "2025-12-15T14:55:40Z",
+          "url": "https://www.youtube.com/watch?v=zFYZvSEDjxE",
+          "duration_seconds": 2002,
+          "view_count": "230501",
+          "description": "If you’re ever injured in an accident, you can check out Morgan & Morgan. You can start your claim with just a click without having to leave your couch. To start your claim, visit: https://www.forthepeople.com/Timber\n\nConnor and Liana started their channel with pranks. With their clickbait titles and promises of a proposal that never comes, I'm starting to wonder: Did the pranks ever end? \n\nTheir audience adores their children, their parenting style, and their cozy, at-home vlogs. Many viewers s",
           "is_wildcard": false
-        },
-        {
-          "source": "youtube",
-          "video_id": "nVQTs6Tlp7w",
-          "title": "Edinburgh - 1700s",
-          "channel_id": "UCAcoda6jlC-xpxGhwW7yFZw",
-          "channel_title": "Matt Reconstructs History",
-          "published_at": "2025-12-30T17:07:36Z",
-          "url": "https://www.youtube.com/watch?v=nVQTs6Tlp7w",
-          "duration_seconds": 1523,
-          "view_count": "244882",
-          "description": "Step into Edinburgh before the New Town, when the city was dense, defensive, and shaped by centuries of pressure. This video explores 18th-century Edinburgh through its streets, landmarks, and hidden edges — from the castle rock and crowded High Street to vanished features like the Nor Loch. Using modern AI tools and historic paintings, maps, and engravings, the past is reconstructed in motion, allowing us to move through these scenes and experience the city as it once was. Stay until the end to",
-          "why_watch": "Matt Reconstructs History rebuilds 1700s Edinburgh — before the planned New Town was built — using AI visuals layered against period maps, paintings, and engravings, giving you a real sense of how dense and vertical the old city actually was. The Nor Loch, the crowded High Street, the logic of building upward on a volcanic ridge — it all clicks into place in under 25 minutes.",
-          "is_wildcard": true
         }
       ]
     }
@@ -177,145 +167,211 @@
   "morning_soundtrack": [
     {
       "source": "music",
-      "source_name": "Stereogum",
-      "title": "Fenne Lily – “Thank You Sorry”",
-      "snippet": "You like really intense lyrics about post-breakup epiphanies? Well, here's one for you: \"You thank me for a good year and go/ And you say it like you have to leave/ You're sorry for the good parts, as well as what you really did wrong/ But it's all the same to me.\" Those are the opening lines from t",
-      "url": "https://stereogum.com/2505618/fenne-lily-thank-you-sorry/music/",
+      "source_name": "NPR Music",
+      "title": "'Les Miserable' area concert wraps up world tour in New York City",
+      "snippet": "After 17 countries and audiences of thousands, the concert celebrating the 40th anniversary of the landmark musical is drawing to a close.",
+      "url": "https://www.npr.org/2026/07/18/nx-s1-5891891/les-miserable-area-concert-wraps-up-world-tour-in-new-york-city",
       "genre": "",
       "vibe_check": "",
-      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/07/Fenne-Lily.jpg",
-      "embed_url": "https://www.youtube.com/embed/UpFsH11yBVg"
+      "cover_url": "https://media.npr.org/include/images/facebook-default-wide-s1400-c85.jpg",
+      "embed_url": null
+    },
+    {
+      "source": "music",
+      "source_name": "NPR Music",
+      "title": "10 photographers share favorite moments from the Tiny Desk Contest Tour",
+      "snippet": "Ten photographers share their favorite memories from the 2026 Tiny Desk Contest On The Road tour, which was headlined by this year's winner, the Dallas hip-hop group Cure for Paranoia.",
+      "url": "https://www.npr.org/sections/the-picture-show/2026/07/16/nx-s1-5894701/tiny-desk-contest-tour-photographers-favorite-moments",
+      "genre": "",
+      "vibe_check": "",
+      "cover_url": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/6000x3375+0+313/resize/1400/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F03%2F06%2F873ce2874b729fe813aa1875b38f%2F1-260614-npr-tinydesk-seattle-jt-075-copy.jpg",
+      "embed_url": null
+    },
+    {
+      "source": "music",
+      "source_name": "NPR Music",
+      "title": "What do a bar and a Muslim community organization have in common?",
+      "snippet": "Artists create, even during times of chaos. In response to Trump policies and ICE's incursions, arts organizations are leaning in to new ways of fostering community in ways large and small.",
+      "url": "https://www.npr.org/2026/07/15/nx-s1-5783840/trump-arts-policy-iman-nighthawk-chicago",
+      "genre": "",
+      "vibe_check": "",
+      "cover_url": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/4500x2531+0+234/resize/1400/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Fb3%2F81%2F8a391dcb403fbf6b774cef8669dd%2F20260515-npr-oliviaobineme-maga-arts-chicago-30.jpg",
+      "embed_url": null
     },
     {
       "source": "music",
       "source_name": "Stereogum",
-      "title": "Hear Bright Eyes & The Lumineers’ Tracks From A New Felice Brothers Tribute Album",
-      "snippet": "New York folk-rock ramblers the Felice Brothers started out busking in subway stations more than two decades ago, and now they're getting their own tribute album. Brandy Schultz, Felice Brothers supporter and wife of Lumineers frontman Wesley Schultz, put the tribute LP together Felice County Fair, ",
-      "url": "https://stereogum.com/2505608/hear-bright-eyes-the-lumineers-tracks-from-a-new-felice-brothers-tribute-album/music/",
+      "title": "Crash Of Rhinos Play First Show In 13 Years",
+      "snippet": "On Friday (July 17), Crash Of Rhinos played their first show since 2013. In Nottingham, the band kicked of a short tour in support of Logbook, the Derby emo revivalists' first album since that year.\nThe post Crash Of Rhinos Play First Show In 13 Years appeared first on Stereogum.",
+      "url": "https://stereogum.com/2505668/crash-of-rhinos-play-first-show-in-13-years/news/",
       "genre": "",
       "vibe_check": "",
-      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/07/Felice-County-Fair.jpeg",
-      "embed_url": "https://www.youtube.com/embed/8j1y3WSfpYc"
+      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/07/Screenshot-2026-07-18-at-10.06.25-AM.png",
+      "embed_url": null
     },
     {
       "source": "music",
       "source_name": "Stereogum",
-      "title": "The Olivia Tremor Control Announce First New Album In 27 Years The Same Place",
-      "snippet": "The idea of a new Olivia Tremor Control was basically unthinkable, but it's happening anyway. The lo-fi psychedelic pop band was a key driving force in Athens, Georgia's Elephant 6 collective in the '90s, but they only released two cult-beloved albums, 1996's Dusk At Cubist Castle and 1999's Black F",
-      "url": "https://stereogum.com/2505601/the-olivia-tremor-control-announce-first-new-album-in-27-years-the-same-place/news/",
+      "title": "Martin Garrix Brings Out The Edge To Debut Latest U2 Collab “Fireflies” At Tomorrowland",
+      "snippet": "Last week, U2 released their new song \"Street Of Dreams,\" which was first teased in May with a music video shoot in the streets of Mexico City. On Friday (July 17), the Edge joined Dutch DJ Martin Garrix onstage at Antwerp's Tomorrowland festival to debut a new collab called \"Fireflies.\"\nThe post Ma",
+      "url": "https://stereogum.com/2505662/martin-garrix-brings-out-the-edge-to-debut-latest-u2-collab-fireflies-at-tomorrowland/news/",
       "genre": "",
       "vibe_check": "",
-      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/07/Olivia-Tremor-Control.jpg",
-      "embed_url": "https://www.youtube.com/embed/9AhJZ2EJENM"
+      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/07/fireflies2.jpg",
+      "embed_url": "https://www.youtube.com/embed/zAjDIHQZnfc"
+    },
+    {
+      "source": "music",
+      "source_name": "Stereogum",
+      "title": "Zohran Mamdani Makes “Charlie’s Garden” Cameo In Djo’s Forest Hills Show",
+      "snippet": "Zohran Mamdani loves to make cameos at shows. He's joined MJ Lenderman at Brooklyn Steel, Lucy Dacus at the All Things Go Festival, PinkPantheress at Kings Theatre, and more. On Friday (July 17), the beloved NYC Mayor made a video appearance at Djo's Forest Hills concert.\nThe post Zohran Mamdani Mak",
+      "url": "https://stereogum.com/2505653/zohran-mamdani-makes-charlies-garden-cameo-in-djos-forest-hills-show/news/",
+      "genre": "",
+      "vibe_check": "",
+      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/07/djo-copy.png",
+      "embed_url": null
     },
     {
       "source": "music",
       "source_name": "No Depression",
-      "title": "SPOTLIGHT: John R. Miller’s ‘The Great Unknowing’ Is a Thoughtful Education on The World’s Crumbling",
-      "snippet": "Editor&apos;s Note:&#xA0;John R. Miller, whose new LP&#xA0;titled The Great Unknowing came out today via Rounder Records, is&#xA0;No Depression&apos;s&#xA0;Spotlight Artist for July 2026. Read more about Miller&apos;s fifth album and stay tuned for more from him all",
-      "url": "https://nodepression.org/spotlight-john-r-millers-the-great-unknowing-is-a-thoughtful-education-on-the-worlds-crumbling/",
+      "title": "THE READING ROOM: Craig Havighurt’s ‘Musicality for Modern Humans’",
+      "snippet": "We often refers to certain pieces of music, usually popular songs or albums associated with memorable experiences (whether happy or sad) or significant swathes of time, as the soundtrack of our lives. Every now and then, a song comes on the radio and in that moment we&#x2019;re transported",
+      "url": "https://nodepression.org/the-reading-room-craig-havighurts-musicality-for-modern-humans/",
       "genre": "",
       "vibe_check": "",
-      "cover_url": "https://storage.ghost.io/c/18/d0/18d08e58-3b1b-4720-ae25-a31b44e69d4b/content/images/2026/07/Spotlight-Template.png",
-      "embed_url": "https://www.youtube.com/embed/EIyOTR8sCLo"
-    },
-    {
-      "source": "music",
-      "source_name": "No Depression",
-      "title": "BONUS TRACKS: Uncertainty at Levon Helm Studios, New Willie Carlisle LP Produced by Tyler Childers, and More Roots Music News",
-      "snippet": "Breaking news out of Woodstock, New York this week illuminated deep fissions among the ownership of Levon Helm Studios. Levon, of course, was a beloved, co-founding member of The Band and established this space, affectionately just known as The Barn, in 1975. In the early 2000s, as he was",
-      "url": "https://nodepression.org/bonus-tracks-uncertainty-at-levon-helm-studios-new-willie-carlisle-lp-produced-by-tyler-childers-and-more-roots-music-news/",
-      "genre": "",
-      "vibe_check": "",
-      "cover_url": "https://storage.ghost.io/c/18/d0/18d08e58-3b1b-4720-ae25-a31b44e69d4b/content/images/size/w1200/2026/07/Amy-Helm---Cayamo-2023---Photo-by-Boom-Baker.jpg",
-      "embed_url": "https://www.youtube.com/embed/QFN2BClKhnU"
-    },
-    {
-      "source": "music",
-      "source_name": "Pitchfork",
-      "title": "Jeff Tweedy Brings “Out in the Dark” to Kimmel",
-      "snippet": "The singer played the Twilight Override track as Wilco wrap up their North American trek",
-      "url": "https://pitchfork.com/story/jeff-tweedy-brings-out-in-the-dark-to-kimmel/",
-      "genre": "",
-      "vibe_check": "",
-      "cover_url": "https://media.pitchfork.com/photos/6a5a5f437687eb98ceb816f2/16:9/w_1280,c_limit/Jeff%20Tweedy-Kimmel.JPG",
+      "cover_url": "https://storage.ghost.io/c/18/d0/18d08e58-3b1b-4720-ae25-a31b44e69d4b/content/images/size/w1200/2026/07/aFWsMXfc4bHWilK0_Musicality_FC_2400x1600.jpeg",
       "embed_url": null
     },
     {
       "source": "music",
       "source_name": "Pitchfork",
-      "title": "Bill Callahan Is Entering the Audiobook Space",
-      "snippet": "The singer-songwriter is set to narrate a new memoir about grief",
-      "url": "https://pitchfork.com/story/bill-callahan-audiobook-matthew-schnipper/",
+      "title": "James Blake and Travis Scott Duet on The Odyssey End Credits Song “When I’m Home”",
+      "snippet": "Listen to the closer of Ludwig Göransson’s original soundtrack, co-written by Christopher Nolan himself",
+      "url": "https://pitchfork.com/story/james-blake-and-travis-scott-duet-on-the-odyssey-end-credits-song-when-im-home/",
       "genre": "",
       "vibe_check": "",
-      "cover_url": "https://media.pitchfork.com/photos/6a5a459263e78c247e3dc976/16:9/w_1280,c_limit/DC964_BillCallahan_byBillMcCullough2.jpg",
+      "cover_url": "https://media.pitchfork.com/photos/6a5a423473ff020926f43d60/16:9/w_1280,c_limit/james-blake-travis-scott-odyssey-end-credits-song.jpg",
+      "embed_url": null
+    },
+    {
+      "source": "music",
+      "source_name": "Pitchfork",
+      "title": "11 New Albums You Should Listen to Now: Steve Lacy, Syd, and More",
+      "snippet": "Stream new releases from Steve Lacy, Syd, Helado Tropical, and more",
+      "url": "https://pitchfork.com/story/11-new-albums-you-should-listen-to-now-steve-lacy-syd-and-more/",
+      "genre": "",
+      "vibe_check": "",
+      "cover_url": "https://media.pitchfork.com/photos/6a57feaf358c1b39467c3816/16:9/w_1280,c_limit/SinglePressPhoto_%20GusVanSant.jpg",
+      "embed_url": "https://heladotropical.bandcamp.com/album/helado-tropical"
+    },
+    {
+      "source": "music",
+      "source_name": "Pitchfork",
+      "title": "Lorde on Spotify’s AI Song Descriptions: “We Don’t Want This”",
+      "snippet": "On Instagram, the singer wrote that an ”inaccurate” AI-generated summary of “Current Affairs“ “limits free interpretation\"",
+      "url": "https://pitchfork.com/story/lorde-on-spotifys-ai-song-descriptions/",
+      "genre": "",
+      "vibe_check": "",
+      "cover_url": "https://media.pitchfork.com/photos/6a5959c5abe685250156368e/16:9/w_1280,c_limit/GettyImages-2279413164.jpg",
+      "embed_url": null
+    },
+    {
+      "source": "music",
+      "source_name": "Aquarium Drunkard",
+      "title": "DIY Festivals, Coast to Coast :: Ghost Canyon, Fly Around Fest & Open Melody",
+      "snippet": "Beyond the festival-industrial complex, a different ecosystem is quietly thriving. We check in with the organizers behind three fiercely independent gatherings—Ghost Canyon, Fly Around Fest and Open Melody—to talk curation, community, risk, and why the best music festivals still feel like beautifull",
+      "url": "https://aquariumdrunkard.com/2026/07/17/diy-festivals-coast-to-coast-ghost-canyon-fly-around-fest-open-melody/",
+      "genre": "",
+      "vibe_check": "",
+      "cover_url": "https://aquariumdrunkard.com/_newness/wp-content/uploads/2026/07/FESTS.jpg",
+      "embed_url": null
+    },
+    {
+      "source": "music",
+      "source_name": "Aquarium Drunkard",
+      "title": "Horse Lords :: Demand to Be Taken to Heaven Alive!",
+      "snippet": "Horse Lords return with what may well be their strangest and prettiest album yet. Here the Baltimore-Berlin quartet adds Protestant hymn-singing, swamp boogie, early computer music and even robot funk to their signature brand of phase-shifting krautrock groove. It is an alluring, compelling mix that",
+      "url": "https://aquariumdrunkard.com/2026/07/16/horse-lords-demand-to-be-taken-to-heaven-alive/",
+      "genre": "",
+      "vibe_check": "",
+      "cover_url": "https://aquariumdrunkard.com/_newness/wp-content/uploads/2026/07/Demand-to-Be-Taken-to-Heaven-Alive.jpg",
       "embed_url": null
     },
     {
       "source": "music",
       "source_name": "Consequence",
-      "title": "Korn’s Jonathan Davis Joins Yoshiki for Classical Performance of “Freak on a Leash”: Watch",
-      "snippet": "The Korn frontman joined the X Japan leader at the first of two classical shows at Walt Disney Concert Hall.\nKorn&#8217;s Jonathan Davis Joins Yoshiki for Classical Performance of &#8220;Freak on a Leash&#8221;: Watch\nSpencer Kaufman",
-      "url": "https://consequence.net/2026/07/korn-jonathan-davis-yoshiki-classical-freak-on-a-leash/",
+      "title": "Heavy Song of the Week: The Ocean Deliver a Dynamic Banger with “Belligerence”",
+      "snippet": "The Ocean's new lineup shows their worth with the dynamic \"Belligerence,\" covering ground from hardcore and thrash to prog and doom over its 10-minute span.\nHeavy Song of the Week: The Ocean Deliver a Dynamic Banger with &#8220;Belligerence&#8221;\nLangdon Hickman",
+      "url": "https://consequence.net/2026/07/heavy-song-of-the-week-the-ocean-belligerence/",
       "genre": "",
       "vibe_check": "",
-      "cover_url": "https://consequence.net/wp-content/uploads/2026/07/Yoshiki-and-Jonathan-Davis.jpg",
-      "embed_url": "https://www.youtube.com/embed/LSyW1WBwarg"
+      "cover_url": "https://consequence.net/wp-content/uploads/2026/07/The-Ocean-1.jpg",
+      "embed_url": "https://www.youtube.com/embed/bl4X7Qsag2s"
     },
     {
       "source": "music",
       "source_name": "Consequence",
-      "title": "Garth Brooks Adds More Shows to Tour Launch in Indianapolis",
-      "snippet": "The country star has added an opening night show for August 20th and a matinee performance for August 23rd.\nGarth Brooks Adds More Shows to Tour Launch in Indianapolis\nScoop Harrison",
-      "url": "https://consequence.net/2026/07/garth-brooks-adds-more-shows-to-tour-launch-in-indianapolis/",
+      "title": "Larry David Roasts RFK Jr. in Newest Life, Larry, and the Pursuit of Unhappiness",
+      "snippet": "David tells a Kennedy stand-in that “If some idiot, some moron, ever put you in charge, that would be a dark day for humanity.\"\nLarry David Roasts RFK Jr. in Newest Life, Larry, and the Pursuit of Unhappiness\nLiz Shannon Miller",
+      "url": "https://consequence.net/2026/07/larry-david-rfk-jr-life-larry-pursuit-of-unhappiness/",
       "genre": "",
       "vibe_check": "",
-      "cover_url": "https://consequence.net/wp-content/uploads/2026/07/Garth-Brooks-1.jpeg",
+      "cover_url": "https://consequence.net/wp-content/uploads/2026/07/life-larry-pursuit-of-unhappiness-episode-4-larry-david-gregg-perrie.jpg",
       "embed_url": null
     },
     {
       "source": "music",
-      "source_name": "JazzTimes",
-      "title": "Miles Okazaki’s Boomtown Ensemble In Effect at The Jazz Gallery",
-      "snippet": "I f you look back, guitarist Miles Okazaki’s output has unfolded in threes. The Mirror/Generations/Figurations trilogy featured septet with no piano on the first two, &#8230; Read More \"Miles Okazaki’s Boomtown Ensemble In Effect at The Jazz Gallery\"\nThe post Miles Okazaki’s Boomtown Ensemble In Eff",
-      "url": "https://www.jazztimes.com/reviews/live/miles-okazakis-boomtown-ensemble-in-effect-at-the-jazz-gallery/",
+      "source_name": "Consequence",
+      "title": "“Ozzy Day” To Be Celebrated in Late Metal Icon’s Hometown of Birmingham, England",
+      "snippet": "The celebration is set for July 22nd and will feature live music, tributes, and more.\n&#8220;Ozzy Day&#8221; To Be Celebrated in Late Metal Icon&#8217;s Hometown of Birmingham, England\nSpencer Kaufman",
+      "url": "https://consequence.net/2026/07/ozzy-day-birmingham-england/",
       "genre": "",
       "vibe_check": "",
-      "cover_url": "https://www.jazztimes.com/wp-content/uploads/2026/07/featured-Miles-O-scaled.jpg",
-      "embed_url": "https://miniatureamerica.bandcamp.com/album/miniature-america"
+      "cover_url": "https://consequence.net/wp-content/uploads/2025/09/ozzy-osbourne-paramount-plus-documentary-no-escape-from-now.jpg",
+      "embed_url": null
     },
     {
       "source": "music",
-      "source_name": "Fretboard Journal",
-      "title": "20 Things I Can’t Wait to See at the 2026 Fretboard Summit",
-      "snippet": "As of this writing, we are one month out from one of the most unique guitar gatherings on Earth: The Fretboard Summit. This is where the staff from the Fretboard Journal (including yours truly), Chicago’s famed Old Town School of Folk Music, and dozens of brands and independent luthiers, collectors ",
-      "url": "https://www.fretboardjournal.com/features/20-things-i-cant-wait-to-see-at-the-2026-fretboard-summit/?utm_source=rss&utm_medium=rss&utm_campaign=20-things-i-cant-wait-to-see-at-the-2026-fretboard-summit",
+      "source_name": "PopMatters",
+      "title": "‘The Odyssey’ Rocks the Boat of History",
+      "snippet": "Christopher Nolan’s “blank check” epic, The Odyssey, is a curiously bold, dark, and surprising take on the dangerous ways in which we create history.",
+      "url": "https://www.popmatters.com/the-odyssey-rocks-history-memory",
       "genre": "",
       "vibe_check": "",
-      "cover_url": "https://images.fretboardjournal.com/wp-content/uploads/2026/07/17161026/IMG_8284-scaled.jpg",
+      "cover_url": "https://www.popmatters.com/wp-content/uploads/2026/07/The-Odyssey-Christopher-Nolan-fi.webp",
+      "embed_url": "https://www.youtube.com/embed/Mzw2ttJD2qQ"
+    },
+    {
+      "source": "music",
+      "source_name": "PopMatters",
+      "title": "Panda Bear and Sonic Boom Create Immersive Neo-Psychedelia",
+      "snippet": "What feels missing from Panda Bear's new LP is a greater willingness to let carefully chosen timbres lead to equally adventurous harmonic or structural destinations.",
+      "url": "https://www.popmatters.com/panda-bear-sonic-boom-a-when",
+      "genre": "",
+      "vibe_check": "",
+      "cover_url": "https://www.popmatters.com/wp-content/uploads/2026/07/Panda-Bear-and-Sonic-Boom-A-of-When-social.webp",
+      "embed_url": "https://www.youtube.com/embed/StFlPZ602tQ"
+    },
+    {
+      "source": "music",
+      "source_name": "PopMatters",
+      "title": "Adam Gnade’s ‘Wild Horse Shit’ Encourages Joyful Resistance",
+      "snippet": "Cult novelist Adam Gnade's latest, Wild Horse Shit, wrestles with the state of the world, encouraging untamed joy in the face of fascism.",
+      "url": "https://www.popmatters.com/wild-horse-shit-adam-gnade",
+      "genre": "",
+      "vibe_check": "",
+      "cover_url": "https://www.popmatters.com/wp-content/uploads/2025/04/Northern-Ireland-Horse-TSO-AdobeStock_1307573274.webp",
       "embed_url": null
     },
     {
       "source": "music",
       "source_name": "Fretboard Journal",
-      "title": "Shane Parish – “Slip”",
-      "snippet": "Guitarist Shane Parish performs Autechre&#8217;s &#8220;Slip&#8221; at the Fretboard Journal. For this session, Parish is using his Taylor 214E-G. Parish&#8217;s 2026 Autechre Guitar album features groundbreaking acoustic guitar arrangements of Autechre&#8217;s early electronic music output. The ori",
-      "url": "https://www.fretboardjournal.com/video/shane-parish-slip/?utm_source=rss&utm_medium=rss&utm_campaign=shane-parish-slip",
+      "title": "Podcast 557: Summer School Electronics’ Mark Turley",
+      "snippet": "﻿﻿﻿﻿﻿﻿﻿ Today on the podcast, Summer School Electronics founder Mark Turley joins us once again. We talk about Summer School&#8217;s current pedal offerings, the 2026 Fretboard Summit, and the two pedal-making classes that Mark will be teaching at the Summit. https://www.summerschoolelectronics.com ",
+      "url": "https://www.fretboardjournal.com/podcasts/podcast-557-summer-school-electronics-mark-turley/?utm_source=rss&utm_medium=rss&utm_campaign=podcast-557-summer-school-electronics-mark-turley",
       "genre": "",
       "vibe_check": "",
-      "cover_url": "https://images.fretboardjournal.com/wp-content/uploads/2026/07/15090957/DSC_1589-scaled.jpg",
-      "embed_url": "https://www.youtube.com/embed/Un7BboQn3To"
-    },
-    {
-      "source": "music",
-      "source_name": "Fretboard Journal",
-      "title": "The Truth About Vintage Amps, Ep. 167",
-      "snippet": "﻿﻿﻿﻿ It&#8217;s the 167th episode of the Truth About Vintage Amps, the call-in show where amp tech Skip Simmons fields all of your tube amp and life questions. Our sponsors: Grez Guitars; Emerald City Guitars; and Amplified Parts / Mod Electronics. Some of the topics discussed this week: :00 Skip&#8",
-      "url": "https://www.fretboardjournal.com/podcasts/the-truth-about-vintage-amps-ep-167/?utm_source=rss&utm_medium=rss&utm_campaign=the-truth-about-vintage-amps-ep-167",
-      "genre": "",
-      "vibe_check": "",
-      "cover_url": "https://images.fretboardjournal.com/wp-content/uploads/2026/06/30132521/Silvertone-Powermaster-2.jpeg",
+      "cover_url": "https://images.fretboardjournal.com/wp-content/uploads/2026/07/16181409/image0-39-scaled.jpeg",
       "embed_url": null
     }
   ],
@@ -323,178 +379,102 @@
     {
       "source": "good_news",
       "source_name": "Good News Network",
-      "title": "Homegrown Catnip Lotion Proves to Be An Effective Mosquito Repellent in Rural Uganda",
-      "url": "https://www.goodnewsnetwork.org/homegrown-catnip-lotion-proves-to-be-an-effective-mosquito-repellent-in-rural-uganda/",
-      "snippet": "Homegrown catnip plants have proven to be as effective as DEET for repelling mosquitoes in rural Uganda. Presented at an international science conference in Florence, Italy, a collaborative team of Welsh and Ugandan researchers believe they’ve found a lower cost solution to mosquito control that can reduce reliance on malaria medication, which the parasite is […] The post Homegrown Catnip Lotion Proves to Be An Effective Mosquito Repellent in Rural Uganda appeared first on Good News Network .",
-      "cover_url": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/07/Catnip-flowers-credit-Gordon-Robertson-CC-3.0.-via-Wikimedia.jpg",
-      "reason": "A plant anyone can grow in their garden is proving to repel mosquitoes as effectively as synthetic chemicals, offering rural communities in Uganda an affordable, homegrown shield against disease. It's a beautiful reminder that nature often holds practical solutions we've barely begun to explore."
-    },
-    {
-      "source": "good_news",
-      "source_name": "Upworthy",
-      "title": "In just 15 days, this Ohio woman crocheted her own wedding dress and the wedding party’s attire",
-      "url": "https://www.upworthy.com/in-just-15-days-this-ohio-woman-crocheted-her-own-wedding-dress-and-the-wedding-partys-attire/",
-      "snippet": "\"I made it happen through determination, a very tight schedule, and many nights of running on five hours of sleep or less.\" The post In just 15 days, this Ohio woman crocheted her own wedding dress and the wedding party’s attire appeared first on Upworthy .",
-      "cover_url": "https://www.upworthy.com/wp-content/uploads/sites/2/2026/07/Untitled-1200-x-640-px-4.jpg",
-      "reason": "One woman's decision to crochet her entire wedding wardrobe in 15 days is a joyful testament to what human hands and determination can create outside the pressures of consumer culture. There's something quietly radical about choosing craft over convenience for one of life's biggest moments."
-    },
-    {
-      "source": "good_news",
-      "source_name": "The Optimist Daily",
-      "title": "Podcast Transcript July 17th, 2026— Wildfire satellites, Seine city cooling, and parenting securely attached kids",
-      "url": "https://www.optimistdaily.com/2026/07/podcast-transcript-july-17th-2026-wildfire-satellites-seine-city-cooling-and-parenting-securely-attached-kids/",
-      "snippet": "Episode Description: Greece just launched the world’s first satellite constellation built specifically for wildfire detection. It can spot a fire measuring only a few feet across, a huge improvement on conventional satellites, which start flagging fires when they’re already the size of a cruise ship. Ten solutions this week with Arielle and Karissa, including the […] The post Podcast Transcript July 17th, 2026— Wildfire satellites, Seine city cooling, and parenting securely attached kids first appeared on The Optimist Daily: Making Solutions the News .",
-      "cover_url": "https://www.optimistdaily.com/wp-content/uploads/Podcast-Logo-3000-×-3000-px-2-13.png",
-      "reason": "From satellites tracking wildfires in real time to a major city harnessing its river to cool urban streets, these emerging tools show that communities are finding genuinely creative ways to adapt and protect the places we love."
+      "title": "Your Weekly Horoscope – ‘Free Will Astrology’ by Rob Brezsny",
+      "url": "https://www.goodnewsnetwork.org/horoscope-from-rob-brezsnys-free-will-astrology-7-18-2026/",
+      "snippet": "Our partner Rob Brezsny, whose latest book is Astrology Is Real: Revelations from My Life as an Oracle, provides his weekly wisdom to enlighten our thinking and motivate our mood. Rob’s Free Will Astrology, is a syndicated weekly column appearing in over a hundred publications. He is also the author of Pronoia Is the Antidote for Paranoia: […] The post Your Weekly Horoscope – ‘Free Will Astrology’ by Rob Brezsny appeared first on Good News Network .",
+      "cover_url": "https://www.goodnewsnetwork.org/wp-content/uploads/2020/10/Freewill-Astrology-horoscope-logo.jpg",
+      "reason": "A weekly reminder that people are still carving out space for reflection, wonder, and a little cosmic curiosity — proof that the human need for meaning and self-examination is alive and well."
     }
   ],
   "discovery_articles": [
     {
       "source": "discovery",
       "source_name": "Atlas Obscura",
-      "title": "The Solgrylle at the Blacksmith's Bridge in Aarhus, Denmark",
-      "url": "https://www.atlasobscura.com/places/the-solgrylle-of-the-blacksmiths-bridge",
-      "snippet": "Smedens Bro , \"The Blacksmith's Bridge\", is a pedestrian and cycling bridge in central Aarhus. It was built in 1911 at the initiative of the local ironsmith and businessman Hans Peter Jensen, who funded its construction to improve access for residents of his neighbourhood. Spanning the Aarhus River, the light grey railings rise and curve outward at both ends, framing the city's coat of arms.",
+      "title": "Saint-Thibault Chapel in La Chapelle-au-Mans, France",
+      "url": "https://www.atlasobscura.com/places/chapelle-saint-thibault",
+      "snippet": "On a remote hill in the middle of nowhere in southern Burgundy stands a small chapel. Nobody knows exactly how long it has been around and why it was built. What is certain is that it suddenly appeared as a ruin on plans and maps in 1672.",
       "category": "history",
-      "cover_url": "https://img.atlasobscura.com/qTBSf6ZW9ynMw22AZRcieQ0fUHxFDdzo3X9FZNGfWOA/rt:fit/w:600/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy9hOWVh/OWRkOC1lMzVhLTRh/ZmYtODQzMi1hZTI0/M2ZkMTBkYTY4NWE3/OTMxMGMyODhlMGFh/ZDBfNzI1MzkzNDMz/XzE1NDUxODkzOTA2/NjEyNTRfMjAyMTQ4/Njk3Nzc1NDUzMDg3/MF9uLmpwZw.jpg"
+      "cover_url": "https://img.atlasobscura.com/QmYXIiiscxlt4w3dO3TlYCgU8mQA9-mzne3E-bMAWhY/rt:fit/w:600/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy83NThi/MTVjZi0xZjY1LTQx/MjItYjEzYi1jZTk1/MGYyMjY3NjQzZjRl/ZjFjZWM3Y2ViZTBh/MDRfVGhpYmF1bHQg/MS5qcGc.jpg",
+      "ferns_note": "This chapel didn't gradually fall into ruin — it *began* as one, materializing on 17th-century maps already ancient and broken, with no record of who built it or why. It's as if history simply forgot to include the beginning."
     },
     {
       "source": "discovery",
       "source_name": "Atlas Obscura",
-      "title": "Borden Avenue Bridge in Queens, New York",
-      "url": "https://www.atlasobscura.com/places/borden-avenue-bridge",
-      "snippet": "New York City is a city of the water, built on a series of islands criss-crossed by rivers and streams. So the city is also populated by almost 800 bridges, from giant spans like the Verrazzano to smaller wooden trestles that might only cross a tiny creek. In the case of the Borden Avenue Bridge, this doesn’t mean it’s boring or unimpressive.",
+      "title": "Steve Ovett's Foot in Brighton, England",
+      "url": "https://www.atlasobscura.com/places/steve-ovetts-foot",
+      "snippet": "A runner’s feet may be his most important asset, so it’s rather fitting that the only remaining feature of a statue commemorating Brighton-born Olympian and holder of the world record for the fastest mile on more than one occasion, Steve Ovett, is his right foot. Ovett trained in Preston Park and went on to become Cross-country National Junior Champion in 1975, European Junior Champion over 800 metres in 1973, and gained his first major title, winning the 800 metres at the European Championships. He competed in three Olympic Games and won the 800 metres in Moscow in 1980.",
       "category": "history",
-      "cover_url": "https://img.atlasobscura.com/RBm5BKOHc1kmLPzgHcDPIS2A764JRKw5XU9Dq2laEHY/rt:fit/w:600/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy8xYmUy/MzEwZS04YWJjLTRl/MWItODk5OS0wY2E1/NjMxYmM5MGQ3ZmMw/MTg0NDc4YjM0ZmQ1/YjZfUFhMXzIwMjYw/NDExXzIxNTEzNTg5/Mi5NUC5qcGc.jpg"
+      "cover_url": "https://img.atlasobscura.com/_P9o-nEWOBKvm9_-JYZ5WSSkZjAGnO47NN_dOgVxV6U/rt:fit/w:600/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy83MGZm/NWVmMS0zMGNkLTQy/NWQtYTE3Ny00NzVj/NDA3OGU2ZmMwYzYx/MTE2ZjgyZTcxNjgw/Y2FfSU1HXzE3MjAu/anBn.jpg",
+      "ferns_note": "Of an entire bronze athlete, only the foot survives — which is either a poetic tribute to what made him great, or the universe's most pointed piece of public art criticism."
     },
     {
       "source": "discovery",
       "source_name": "Atlas Obscura",
-      "title": "Grace Episcopal Church of City Island in Bronx, New York",
-      "url": "https://www.atlasobscura.com/places/grace-episcopal-church-of-city-island",
-      "snippet": "Many New Yorkers will be familiar with Manhattan’s Grace Church, a French Gothic masterpiece built in 1846–1847 on Broadway. Or, if they’re from Brooklyn, perhaps they’re more acquainted with the Grace Church on Hicks Street, which was built in 1847 when the other Grace Church’s then-new location proved too far a trip for some faithful. However, for parishioners in the Bronx, specifically in the small seafaring community of City Point, Grace Episcopal Church on City Island Avenue is the one true bearer of the popular name – and this National Historic Place just so happens to have been built around the same time as its two more famous namesakes, in 1849.",
+      "title": "Humphrey the M5 Camel in East Bower, England",
+      "url": "https://www.atlasobscura.com/places/humphrey-the-m5-camel",
+      "snippet": "After more than 25 years of standing in a field between Junctions 23 and 24 of the M5 in Somerset, this fiberglass sculpture has become an icon for commuters. Throughout the year Humphrey receives Christmas cards, postcards, and even seasonal clothing like Hawaiian shirts and Santa hats. So iconic is he that this fan mail can be addressed simply: The Camel, M5 Junction 23 and 24.",
       "category": "history",
-      "cover_url": "https://img.atlasobscura.com/utAR8P9E6LfxQv0Fhxz50Cffe0Aj39juJNftHKvFuzE/rt:fit/w:600/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy8xMDFl/MmIwYi0zOTdmLTQ5/OWQtOTc2Yy03NWMz/NGMxOTYxYzMwMzli/MjQ2MTU3NmZmZWQ3/ZTZfUFhMXzIwMjYw/NDA3XzE3MDY0MzE4/NS5NUC5qcGc.jpg"
+      "cover_url": "https://img.atlasobscura.com/g2bnXrZvqI0AhL_okraCBX7u6DRwE-YyOVhIjdtHVYo/rt:fit/w:600/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy8xMjdh/NjE5ZS1mMzEyLTRl/MGYtYjBjOS0zZjhk/MDBlYjEwMzg5YmQx/YmQ0MjYzZDkxNThl/M2ZfMjc5MzkxMl8y/MTgyNTA3Zi5qcGc.jpg",
+      "ferns_note": "Humphrey receives fan mail addressed to nothing more than 'The Camel, M5 Junction 23 and 24' — proof that a fiberglass dromedary in a Somerset field has achieved a level of celebrity most humans never will."
     },
     {
       "source": "discovery",
       "source_name": "Atlas Obscura",
-      "title": "Michael Jackson HIStory Statue in Villan-Södra Utmarken, Sweden",
-      "url": "https://www.atlasobscura.com/places/michael-jackson-history-statue",
-      "snippet": "[ NOTE TO THE EDITOR: If this entry is published, please correct the geo header by replacing 'Villan-Södra Utmarken' (a neighborhood) with ' Ängelholm '.] Additionally, the Ängelholm UFO Memorial , which is already published, has the redundant compass location \"V\" (Väst / West) after the city name in the geo header. By the way, perhaps my submission, if accepted, and the other location would warrant an Ängelholm destination guide? +  +  + In 1995, Sony Music commissioned ten identical 33-foot (10-meter) fiberglass statues of pop icon Michael Jackson to promote the album HIStory: Past, Present and Future, Book I .",
+      "title": "Statue of Lennie Gwyther and His Horse Ginger Mick in Leongatha, Australia",
+      "url": "https://www.atlasobscura.com/places/statue-of-gwyther-lennie-and-his-horse-ginger-mick",
+      "snippet": "9-year-old Lennie spent his spare time helping at the family’s farm, and when his father was incapacitated following a serious accident, young Lennie ran the farm until his father could return to work. When asked what he would like as a reward for his efforts, he asked if he could travel from the town of Leongatha in the state of Victoria to see the official opening of the Sydney Harbour Bridge. Lennie had a keen interest in machinery and engineering, and the Sydney Harbour Bridge at that time was the largest single-span bridge in the world and an engineering marvel.",
       "category": "history",
-      "cover_url": "https://img.atlasobscura.com/8EcLzuU5bvfBwUs0_-6plaZge_g1p2xsg3zk1B9DNBY/rt:fit/w:600/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy8zMjhl/OTgyMi01MDBkLTQz/ZjktOTQ2YS1kZWE2/MjMzNzMzZGY3Nzgw/NDdjOGY5NmJiNjY0/ZDlfMjAyNjA3MDRf/MTI1ODA3LmpwZw.jpg"
-    },
-    {
-      "source": "discovery",
-      "source_name": "Smithsonian",
-      "title": "Luke Skywalker’s Lightsaber and Severed Hand From Famed Darth Vader Duel Sold For a Record $3.75 Million at Auction",
-      "url": "https://www.smithsonianmag.com/smart-news/luke-skywalkers-lightsaber-and-severed-hand-from-famed-darth-vader-duel-sold-for-a-record-more-than-3-million-at-auction-180989144/",
-      "snippet": "The item, which became the most-valued on-screen Star Wars prop ever sold at auction, was born from cast-off parts from a camera shop",
-      "category": "history",
-      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/Cvqm3-ygQ6jwGL5Er6gTkdRtpYk=/fit-in/1600x0/filters:focal(412x302:413x303)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/cd/3e/cd3e663b-6a73-4ffb-b6b8-3f8b0c698fb9/ha_4.jpeg"
-    },
-    {
-      "source": "discovery",
-      "source_name": "Smithsonian",
-      "title": "Was There Ever an Original Version of 'The Odyssey,' and Do We Need to Worry About What Homer Would Think?",
-      "url": "https://www.smithsonianmag.com/history/was-there-ever-an-original-version-of-the-odyssey-and-do-we-need-to-worry-about-what-homer-would-think-180989143/",
-      "snippet": "The earliest surviving fragments of the epic poem—the subject of Christopher Nolan's latest Hollywood blockbuster—date back more than 2,000 years. But oral storytelling about a hero named Odysseus is much older",
-      "category": "history",
-      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/Xbl3DA4fsNmK2syqTz5zpTyy4XE=/fit-in/1600x0/filters:focal(750x500:751x501)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/38/b1/38b1449a-6437-4ff8-bb93-d552fa88436d/odyssey.jpg"
-    },
-    {
-      "source": "discovery",
-      "source_name": "Smithsonian",
-      "title": "This 19th-Century Diary Written by an Enslaved Maryland Man Is a Crucial Record of His Life and Family History—and the Only One of Its Kind Found in the United States",
-      "url": "https://www.smithsonianmag.com/smithsonian-institution/this-19th-century-diary-written-by-an-enslaved-maryland-man-is-a-crucial-record-of-his-life-and-family-historyand-the-only-one-of-its-kind-found-in-the-united-states-180989146/",
-      "snippet": "Adam Francis Plummer’s chronicle is believed to be the country’s sole known example of a multigenerational journal begun by an enslaved person. It’s now on view at the Smithsonian’s Anacostia Community Museum",
-      "category": "history",
-      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/B20VnzXaq9pA2PgXg5e5tegCS0s=/fit-in/1600x0/filters:focal(754x506:755x507)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/20/c9/20c91947-1fd2-4f9c-8e5e-12bde058310e/diary4.jpg"
-    },
-    {
-      "source": "discovery",
-      "source_name": "Smithsonian",
-      "title": "New Close-Up Images Reveal the Wreckage of Ernest Shackleton's Last Ship, Now Draped in Discarded Fishing Gear and Teeming With Life",
-      "url": "https://www.smithsonianmag.com/smart-news/new-close-up-images-reveal-the-wreckage-of-ernest-shackletons-last-ship-now-draped-in-discarded-fishing-gear-and-teeming-with-life-180989139/",
-      "snippet": "The vessel \"Quest,\" found in 2024 off the coast of northeastern Canada, has become a home for corals, anemones and fish. It also holds the leftovers from decades of commercial fishing that happened above it after it sank",
-      "category": "history",
-      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/vVhcpXGZMWWaqLvn7wIn6CtvkEI=/fit-in/1600x0/filters:focal(1420x1096:1421x1097)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/99/8e/998e0ec0-37ac-40f7-b4fc-14899a637643/quest.jpg"
+      "cover_url": "https://img.atlasobscura.com/nCpnnUmsYInPLXpgrjKu1m4LvGiN9RDLgWyktGJGtoM/rt:fit/w:600/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy85Y2Q2/ZWEzYS0yMDM2LTQ4/YzUtYTc1Mi1kYTFk/YzM5OTA1ZmNjNDhk/YjA3YzAyYWY5ZmJl/MDJfMzU4MTQ0NDcx/XzIwNjc2NjkyNTY3/MjEzMF81NDM5NDUw/NDY5MDQxMzM5NTUw/X24uanBn.jpg",
+      "ferns_note": "When a nine-year-old single-handedly kept a farm running in his injured father's absence, the only reward he wanted was to ride his horse 600 miles to watch a bridge open — which he then did, becoming a national sensation along the way."
     },
     {
       "source": "discovery",
       "source_name": "Science News",
-      "title": "Inside the fight against the parasite Cyclospora",
-      "url": "https://www.sciencenews.org/article/cyclospora-outbreak-lettuce-diarrhea",
-      "snippet": "Parasite-induced cases of explosive diarrhea are sweeping the United States. Containing the outbreak won’t be easy.",
+      "title": "Who owns your bones?",
+      "url": "https://www.sciencenews.org/article/who-owns-your-bones-ed-note-august-2026",
+      "snippet": "Editor in Chief Nancy Shute discusses the history of unethical practices in research on human remains and the progress toward more ethical standards.",
       "category": "science",
-      "cover_url": "https://www.sciencenews.org/wp-content/uploads/sites/2/2026/07/071725_fi_cyclospora_main.jpg"
-    },
-    {
-      "source": "discovery",
-      "source_name": "Science News",
-      "title": "No, SpudCells aren’t alive. But they’re a step toward the first synthetic life",
-      "url": "https://www.sciencenews.org/article/spudcells-synthetic-life-lab-made-cell",
-      "snippet": "The lab-made cells open a window into what’s possible for synthetic life, researchers say.",
-      "category": "science",
-      "cover_url": "https://www.sciencenews.org/wp-content/uploads/sites/2/2026/07/071425_ts_spudcell_main_social.jpg"
-    },
-    {
-      "source": "discovery",
-      "source_name": "Colossal",
-      "title": "Helena Minginowicz Transforms Humble Paper Towel into Ethereal Paintings",
-      "url": "https://www.thisiscolossal.com/2026/07/helena-minginowicz-paper-towel-renaissance-paintings-value/",
-      "snippet": "\"Civilizations are remembered through their monuments, but understood through the things they throw away,\" the artist says. Do stories and artists like this matter to you? Become a Colossal Member today and support independent arts publishing for as little as $7 per month.",
-      "category": "history",
-      "cover_url": "https://www.thisiscolossal.com/wp-content/uploads/2026/07/minginowicz-7-e1783955577732.jpeg"
-    },
-    {
-      "source": "discovery",
-      "source_name": "Colossal",
-      "title": "Uncanny Landscapes in Pen and Ink Span Wooden Panels by John Buck",
-      "url": "https://www.thisiscolossal.com/2026/07/john-buck-wooden-panel-pink-ink-drawings/",
-      "snippet": "The Bozeman-based artist is known for his eccentric wooden works that draw on folklore, personal memory, and daily observations. Do stories and artists like this matter to you? Become a Colossal Member today and support independent arts publishing for as little as $7 per month.",
-      "category": "history",
-      "cover_url": "https://www.thisiscolossal.com/wp-content/uploads/2026/07/buck-7.jpg"
+      "cover_url": "https://www.sciencenews.org/wp-content/uploads/sites/2/2025/01/webfallback_dark.jpg",
+      "ferns_note": "The question of who legally and morally owns human remains after death has shadowed medicine for centuries, with countless individuals — disproportionately from marginalized communities — studied without consent or dignity. The reckoning, it turns out, is still very much underway."
     }
   ],
   "featured_read": {
     "source": "reads",
     "source_name": "The Marginalian",
-    "title": "Marcus Aurelius on the Good Luck of Your Bad Luck: The Stoic Strategy for Weathering Life’s Waves and Turning Suffering into Strength",
-    "url": "https://www.themarginalian.org/2026/07/16/marcus-aurelius-luck/",
-    "snippet": "\"What happened could have happened to anyone, but not everyone could have carried on.\"",
-    "cover_url": "https://www.themarginalian.org/wp-content/uploads/2021/08/greatwave_hokusai0.jpg?fit=1200%2C630&ssl=1",
-    "blurb": "Marcus Aurelius offers something rarer than consolation: the argument that the specific shape of your hardship is, quietly, a measure of your capacity to bear it. A Stoic reframe so precise it almost stings — in the best way."
+    "title": "The Art of the Sacred Pause and Despair as a Catalyst of Regeneration",
+    "url": "https://www.themarginalian.org/2026/07/17/marett-humility/",
+    "snippet": "Just as there are transitional times in the life of the world — dark periods of disorientation between two world systems, periods in which humanity loses the ability to comprehend itself and collapses into chaos in order to rebuild itself around a new organizing principle — there are such times in every human life, times when the entire system seems to cave in and curl up into a catatonia of anguish and confusion, difficult yet necessary for our growth. In such times, the most courageous thing we can do is surrender to the process that is the pause, trust the… read article",
+    "cover_url": "https://www.themarginalian.org/wp-content/uploads/2024/12/pause.jpg?fit=1200%2C630&ssl=1",
+    "blurb": "This essay makes a quiet, radical argument: that the moments when life seems to collapse into paralysis are not failures of resilience but the necessary dark between one version of yourself and the next. It asks what it might look like to stop fighting the pause — and trust it."
   },
   "garden_note": {
-    "note": "First light crept over the Zürich rooftops at 05:09 this morning, and the garden is already humming — high summer here means the courgettes have doubled overnight and the lavender is at its fragrant, bee-loud peak. Step outside before the heat builds and you'll catch the best of it.",
+    "note": "The long Swiss evening lingers beautifully tonight — dusk doesn't settle over Zürich until nearly ten, giving you a golden extra hour to deadhead the dahlias or simply sit among the lavender while the bees clock off. High summer here means the kitchen garden is gloriously demanding, and that's exactly as it should be.",
     "in_season": [
-      "Lavender — harvest flower spikes before midday heat fades the oils",
-      "Courgettes — check daily and pick small for best flavour",
-      "Climbing French beans — should be podding well now",
-      "Deadhead roses to encourage a late-summer flush"
+      "Dahlias coming into first bloom",
+      "Courgettes to harvest daily before they escape into marrows",
+      "French beans ready to pick",
+      "Deadheading roses for a late-summer flush"
     ],
-    "sky_tonight": "A slender waxing crescent moon hangs low in the western sky after dusk — a lovely sight above the Albis hills around 22:00 before it follows the sun down.",
-    "sun_times": "First light arrives at 05:09, the sun rises at 05:46, and the long Swiss summer day closes gently with dusk at 21:54.",
-    "moon_label": "Waxing crescent (13% illuminated)"
+    "sky_tonight": "Look southwest after dusk for a slim waxing crescent moon low on the horizon — Saturn rises later to the southeast, worth staying up for.",
+    "sun_times": "The sun slips away at 21:18 tonight, with dusk easing in around 21:54.",
+    "moon_label": "Waxing crescent (16% illuminated)",
+    "illum_pct": 16,
+    "sun_range": "05:46–21:18"
   },
   "puzzle": {
-    "kind": "anagram",
-    "label": "Fern's Morning Anagram",
-    "prompt": "Rearrange the letters of LISTEN to make a different common word.",
-    "answer": "Inlets (also Enlist, Silent, Tinsel)",
-    "hint": "There are 4 words hiding in these letters.",
-    "source": "wordsmith.org",
-    "source_id": "listen"
+    "kind": "fake etymology",
+    "label": "The Evening Enigma",
+    "prompt": "Which origin story for the word 'salary' is true?\n\nA. From the Latin 'salarium,' referring to the portion of salt given to Roman soldiers as part of their pay — salt being a precious and practical commodity in the ancient world.\n\nB. From the Old French 'salarier,' meaning 'to settle accounts at season's end,' itself rooted in 'salair,' a harvest-time ledger kept by estate managers.",
+    "answer": "A is true: 'salary' derives from the Latin 'salarium,' connected to 'sal' (salt), reflecting the value of salt as a form of payment or allowance in ancient Rome.",
+    "hint": "Think about a common phrase we still use today that links human worth to this same substance."
   },
   "previous_puzzle": {
-    "label": "The Evening Almanac",
-    "prompt": "A summer evening puzzle for the patient and curious. Three true things happened in the same year — name it within a decade:\n\nA Scottish engineer demonstrated the first working television picture, transmitting the flickering image of a ventriloquist's dummy in a London attic.\n\nA young American novelist published a story about a man who cannot escape his own hollow glamour, set against the Long Island summer heat.\n\nBritain's coal miners walked out in the largest general strike the country had ever seen, halting trains and newspapers alike for nine days.\n\nWhat year do these belong to?",
-    "answer": "1926. John Logie Baird demonstrated television in January of that year; F. Scott Fitzgerald published The Great Gatsby in 1925 — correction: the novel clue should be set aside. The confirmed year is 1926: Baird's television demonstration and the British General Strike are both firmly placed there."
+    "label": "Fern's Morning Anagram",
+    "prompt": "Rearrange the letters of LISTEN to make a different common word.",
+    "answer": "Inlets (also Enlist, Silent, Tinsel)"
   },
   "fern_data": {
-    "greeting": "While the bread is still warm and the coffee earns its keep, settle in — today's canopy stretches from the Greek stars overhead to the philosophy of how we even talk to each other, with enough rabbit holes to keep you gloriously lost until lunch.",
-    "top_pick_title": "Star Maps & Sourdough Mornings"
+    "greeting": "As the last light folds itself behind the rooftops and your open tabs multiply like small anxieties, let tonight's edition be your reason to close them — one by one — in favor of something richer: cancelled Christmases, medieval armour, and the quiet art of the sacred pause.",
+    "top_pick_title": "Riots, Relics & the Examined Evening"
   }
 }
