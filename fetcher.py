@@ -578,7 +578,9 @@ def fetch_channel_videos(
     return all_results
 
 
-def fetch_trending_video(youtube, seen_ids: set[str]) -> dict | None:
+def fetch_trending_video(
+    youtube, seen_ids: set[str], exclude_channel_ids: "set[str] | None" = None
+) -> dict | None:
     """
     Pick ONE wildcard video by randomly selecting a category (Nature / Travel / Good News),
     then searching with that category's topicId + one of its query strings.
@@ -587,9 +589,13 @@ def fetch_trending_video(youtube, seen_ids: set[str]) -> dict | None:
       - Published within the last 24 hours
       - At least YOUTUBE_WILDCARD_MIN_SECONDS long (5 minutes) — no Shorts
       - Not already in history (seen_ids deduplication)
+      - Not from a channel the newsletter already features (exclude_channel_ids) —
+        the wildcard is meant to be a discovery from OUTSIDE the subscribed channels,
+        so it never duplicates a video already in the edition's watch list.
 
     Falls back through both query strings and all three categories before giving up.
     """
+    exclude_channel_ids = exclude_channel_ids or set()
     published_after = (
         datetime.datetime.now(UTC) - datetime.timedelta(hours=24)
     ).strftime("%Y-%m-%dT%H:%M:%SZ")
@@ -632,12 +638,20 @@ def fetch_trending_video(youtube, seen_ids: set[str]) -> dict | None:
                 continue
 
             details, processed_ids = _fetch_video_details(youtube, candidate_ids)
-            seen_ids |= processed_ids   # register skipped wildcard candidates
+            # Register only the candidates that were filtered out (Shorts, non-
+            # English, unavailable) — NOT the ones still eligible in `details`, or
+            # every wildcard would be marked seen and skipped before we can pick it.
+            eligible_ids = {v["video_id"] for v in details}
+            seen_ids |= processed_ids - eligible_ids
 
             for video in details:
                 vid_id = video["video_id"]
                 if vid_id in seen_ids:
                     print(f"  [skip/dup] wildcard {vid_id} already in history")
+                    continue
+                if video.get("channel_id") in exclude_channel_ids:
+                    print(f"  [skip/own-channel] wildcard {vid_id} — "
+                          f"'{video.get('channel_title','')}' is already featured")
                     continue
                 if video["duration_seconds"] < YOUTUBE_WILDCARD_MIN_SECONDS:
                     print(
@@ -1771,13 +1785,24 @@ def main() -> dict:
         youtube, seen_ids, max_videos=MAX_VIDEOS_PER_EDITION - 1
     )
     try:
-        trending_video = fetch_trending_video(youtube, seen_ids)
+        # Exclude subscribed channels so the wildcard is a genuine outside
+        # discovery and can't duplicate a video already in this edition's list.
+        trending_video = fetch_trending_video(
+            youtube, seen_ids, exclude_channel_ids=set(YOUTUBE_CHANNEL_IDS)
+        )
     except HttpError as exc:
         if "quotaExceeded" in str(exc):
             print("[YouTube] Quota exceeded during wildcard search — skipping trending video.")
             trending_video = None
         else:
             raise
+
+    # Safety dedup: never let the wildcard repeat a channel pick's video id.
+    channel_ids = {v["video_id"] for v in channel_videos}
+    if trending_video and trending_video["video_id"] in channel_ids:
+        print(f"[YouTube] Wildcard {trending_video['video_id']} duplicates a channel "
+              f"video — dropping it.")
+        trending_video = None
 
     youtube_results = channel_videos + ([trending_video] if trending_video else [])
 

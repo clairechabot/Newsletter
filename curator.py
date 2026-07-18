@@ -223,6 +223,7 @@ def cluster_content(
     youtube_map: dict[str, dict] = {v["video_id"]: v for v in youtube_videos}
 
     themes: list[dict] = []
+    used_ids: set[str] = set()   # a video may appear in only one theme
     for theme in cluster_data.get("themes", []):
         resolved_items: list[dict] = []
         for ref in theme.get("items", []):
@@ -232,6 +233,10 @@ def cluster_content(
             if full_item is None:
                 print(f"  [warn] Could not resolve item_id '{item_id}' for theme '{theme['name']}'")
                 continue
+            if item_id in used_ids:
+                print(f"  [skip/dup] video '{item_id}' already placed — not repeating it in '{theme['name']}'")
+                continue
+            used_ids.add(item_id)
 
             resolved_items.append(
                 {**full_item, "is_wildcard": ref.get("is_wildcard", False)}
@@ -624,12 +629,18 @@ def generate_garden_note(client: anthropic.Anthropic, garden_seed: dict) -> dict
             "in_season": [],
             "sky_tonight": "",
             "sun_times": "",
+            "sun_range": "",
             "moon_label": moon_label,
+            "illum_pct": moon.get("illum_pct", 0),
         }
     note.setdefault("moon_label", moon_label)
-    # Fall back to a plain sunrise/sunset line if the model left it blank.
-    if not note.get("sun_times") and sun.get("sunrise") and sun.get("sunset"):
-        note["sun_times"] = f"Sun: {sun['sunrise']} – {sun['sunset']}"
+    note.setdefault("illum_pct", moon.get("illum_pct", 0))
+    # A compact sunrise–sunset range for the small (uppercase) meta row. The longer
+    # sky_tonight sentence is rendered as normal-case prose, not squeezed in here.
+    if sun.get("sunrise") and sun.get("sunset"):
+        note["sun_range"] = f"{sun['sunrise']}–{sun['sunset']}"  # unspaced en-dash range
+    else:
+        note.setdefault("sun_range", "")
     return note
 
 
