@@ -117,8 +117,9 @@ def _payload(curated: dict) -> dict:
         "note":        _dedash(g.get("note", "")),
         "in_season":   [s for s in (g.get("in_season") or []) if s],
         "sky_tonight": _dedash(g.get("sky_tonight", "")),
-        "sun_times":   _dedash(g.get("sun_times", "")),
+        "sun_range":   g.get("sun_range", ""),   # structured range — keep the dash
         "moon_label":  g.get("moon_label", ""),
+        "illum_pct":   g.get("illum_pct", 0),
     } if g.get("note") else None
 
     pz = curated.get("puzzle") or {}
@@ -234,8 +235,9 @@ _PAGE = """<!DOCTYPE html>
   .almanac{max-width:740px;margin:0 auto;padding:26px 40px 4px;}
   .almanac .eyebrow{margin-bottom:12px;}
   .almanac p{font-family:var(--serif);font-size:18px;line-height:1.62;color:var(--ink-soft);}
+  .almanac-sky{font-family:var(--serif);font-style:italic;font-size:16px;line-height:1.55;color:var(--ink-mute);margin-top:10px;}
   .almanac-foot{display:flex;flex-wrap:wrap;align-items:center;gap:12px 22px;margin-top:18px;}
-  .almanac-meta{display:flex;align-items:center;gap:12px;font-size:11px;letter-spacing:0.15em;text-transform:uppercase;color:var(--ink-mute);}
+  .almanac-meta{display:flex;flex-wrap:wrap;align-items:center;gap:8px 12px;font-size:11px;letter-spacing:0.15em;text-transform:uppercase;color:var(--ink-mute);}
   .almanac-meta .dot{width:4px;height:4px;border-radius:50%;background:var(--brass);}
 
   /* ---- Fern's daily puzzle ---- */
@@ -249,7 +251,8 @@ _PAGE = """<!DOCTYPE html>
   .puzzle summary:hover{background:var(--brass);color:var(--forest-deep);}
   .puzzle details[open] summary{display:none;}
   .puzzle .answer{font-family:var(--display);font-style:italic;font-size:21px;color:var(--forest);border-left:2px solid var(--brass);padding-left:16px;}
-  .puzzle .prev{margin-top:18px;padding-top:14px;border-top:1px solid var(--line);font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:var(--ink-mute);}
+  .puzzle .prev{margin-top:18px;padding-top:14px;border-top:1px solid var(--line);font-size:14px;line-height:1.55;color:var(--ink-soft);}
+  .puzzle .prev .lbl{display:block;font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:var(--ink-mute);margin-bottom:4px;}
   .puzzle .prev b{color:var(--brass-deep);font-weight:600;}
   .puzzle .source{margin-top:10px;font-family:var(--sans);font-size:10.5px;letter-spacing:0.06em;color:var(--ink-mute);}
 
@@ -389,6 +392,7 @@ _PAGE = """<!DOCTYPE html>
   <section class="almanac" id="almanac" style="display:none;">
     <div class="eyebrow orn">From the Garden &middot; __GARDEN_LOCALE__</div>
     <p id="garden-note"></p>
+    <div class="almanac-sky" id="garden-sky" style="display:none;"></div>
     <div class="almanac-foot">
       <div class="chips" id="garden-season"></div>
       <div class="almanac-meta" id="garden-meta"></div>
@@ -498,7 +502,12 @@ function cover(url,tone,label,play){
   $('#garden-note').textContent = g.note;
   const season=(g.in_season||[]);
   $('#garden-season').innerHTML = season.map(s=>'<span class="chip static">'+esc(s)+'</span>').join('');
-  const meta=[]; if(g.moon_label) meta.push(g.moon_label); if(g.sun_times) meta.push(g.sun_times); if(g.sky_tonight) meta.push(g.sky_tonight);
+  // The sky-tonight sentence reads as normal-case prose, not an uppercase chip.
+  if(g.sky_tonight){ $('#garden-sky').textContent = g.sky_tonight; $('#garden-sky').style.display=''; }
+  // The uppercase meta row holds only short tokens: moon (+ %) and the sun range.
+  const meta=[];
+  if(g.moon_label) meta.push(g.illum_pct ? g.moon_label+' ('+g.illum_pct+'% illuminated)' : g.moon_label);
+  if(g.sun_range) meta.push('Sun '+g.sun_range);
   $('#garden-meta').innerHTML = meta.map((b,i)=>(i?'<span class="dot"></span>':'')+'<span>'+esc(b)+'</span>').join('');
   $('#almanac').style.display='';
 })();
@@ -520,7 +529,7 @@ function cover(url,tone,label,play){
     document.querySelector('#puzzle details').style.display='none';
   }
   if(prev && prev.answer){
-    $('#puzzle-prev').innerHTML = 'Last edition\\u2019s answer &middot; <b>'+esc(prev.answer)+'</b>';
+    $('#puzzle-prev').innerHTML = '<span class="lbl">Last edition\\u2019s answer</span><b>'+esc(prev.answer)+'</b>';
     $('#puzzle-prev').style.display='';
   }
   $('#puzzle').style.display='';

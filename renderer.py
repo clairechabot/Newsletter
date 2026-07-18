@@ -258,22 +258,31 @@ def _render_garden(garden: dict) -> str:
     note = _esc(_dedash(garden.get("note", "")))
     in_season = [s for s in (garden.get("in_season") or []) if s]
     season_txt = _clip(" · ".join(_esc(s) for s in in_season), 60)
-    bits = [b for b in (
-        _esc(garden.get("moon_label", "")),
-        _esc(_dedash(garden.get("sun_times", ""))),
-        season_txt,
-        _esc(_dedash(garden.get("sky_tonight", ""))),
-    ) if b]
+    # Compose a short moon token, e.g. "Waxing crescent (13% illuminated)".
+    moon_label = garden.get("moon_label", "")
+    illum = garden.get("illum_pct", 0)
+    moon_txt = f"{moon_label} ({illum}% illuminated)" if moon_label else ""
+    sun_txt = garden.get("sun_range", "")
+    sun_txt = f"Sun {sun_txt}" if sun_txt else ""
+    # Small uppercase meta row holds only SHORT tokens (moon · sun · in-season).
+    bits = [b for b in (_esc(moon_txt), _esc(sun_txt), season_txt) if b]
     meta = (
         f'<div style="font-family:{SANS}; font-size:11px; letter-spacing:1.4px; '
         f'text-transform:uppercase; color:{INK_MUTE}; padding-top:12px;">'
         + " &nbsp;&middot;&nbsp; ".join(bits) + "</div>"
     ) if bits else ""
+    # The sky-tonight sentence reads as normal-case prose, not an uppercase chip.
+    sky = _esc(_dedash(garden.get("sky_tonight", "")))
+    sky_html = (
+        f'<div style="font-family:{SERIF}; font-style:italic; font-size:15px; '
+        f'line-height:1.55; color:{INK_MUTE}; padding-top:10px;">{sky}</div>'
+    ) if sky else ""
     return f"""
         <tr>
           <td class="px" style="padding:24px 32px 26px 32px; background-color:{SURFACE}; border-bottom:1px solid {LINE};">
             <div style="font-family:{SANS}; font-size:11px; font-weight:600; letter-spacing:3px; text-transform:uppercase; color:{BRASS_DEEP}; padding-bottom:9px;">{_eyebrow(f"From the Garden &nbsp;&middot;&nbsp; {_esc(GARDEN_LOCALE)}", BRASS_DEEP)}</div>
             <div style="font-family:{SERIF}; font-size:16px; line-height:1.58; color:{INK_SOFT};">{note}</div>
+            {sky_html}
             {meta}
           </td>
         </tr>"""
@@ -346,9 +355,12 @@ def _render_puzzle(puzzle: dict, prev: dict) -> str:
     if prev.get("answer"):
         border = f'border-top:1px solid {LINE}; margin-top:16px; padding-top:12px;' if rows else ""
         rows.append(
-            f'<div style="{border}font-family:{SANS}; font-size:11px; letter-spacing:1.2px; '
-            f'text-transform:uppercase; color:{INK_MUTE};">Last edition&#39;s answer &nbsp;&middot;&nbsp; '
-            f'<span style="color:{BRASS_DEEP}; font-weight:600;">{_esc(_dedash(prev["answer"]))}</span></div>'
+            f'<div style="{border}">'
+            f'<div style="font-family:{SANS}; font-size:11px; letter-spacing:1.2px; '
+            f'text-transform:uppercase; color:{INK_MUTE}; padding-bottom:4px;">Last edition&#39;s answer</div>'
+            f'<div style="font-family:{SERIF}; font-size:15px; line-height:1.55; color:{INK_SOFT};">'
+            f'{_esc(_dedash(prev["answer"]))}</div>'
+            f'</div>'
         )
     return f"""
         <tr>
