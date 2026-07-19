@@ -3,8 +3,8 @@ name: Berlin Edition
 # Regional re-send of the primary Curated Canopy for a reader in Berlin, Germany
 # (Central European Time). It does NOT re-fetch or re-curate — it reuses the primary
 # edition's committed curated_data.json, re-localizes "From the Garden", The Larder's
-# seasonal food note, and adds a local-news block (The Local, Germany-wide English),
-# then emails it to the EMAIL_TO_BERLIN list. No web publish, no history writes.
+# seasonal food note, and the local sun times, then emails it to the EMAIL_TO_BERLIN
+# list. No web publish, no history writes.
 #
 # Timing: Berlin shares the Zürich source's time zone, and the source content isn't
 # committed until ~06:15 UTC (~08:15 Berlin). So the morning fires 06:23 UTC — just

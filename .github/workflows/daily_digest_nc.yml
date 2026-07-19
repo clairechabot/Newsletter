@@ -3,8 +3,8 @@ name: North Carolina Edition
 # Regional re-send of the primary Curated Canopy for a reader in North Carolina
 # (Raleigh / Triangle, US Eastern). It does NOT re-fetch or re-curate — it reuses
 # the primary edition's committed curated_data.json, re-localizes "From the Garden",
-# The Larder's seasonal food note, and adds a local-news block (WRAL), then emails
-# it to the EMAIL_TO_NC list at local morning/evening. No web publish, no history.
+# The Larder's seasonal food note, and the local sun times, then emails it to the
+# EMAIL_TO_NC list at local morning/evening. No web publish, no history.
 #
 # Timing: GitHub delays scheduled crons, so these fire early to land near the
 # target. 07:00 EDT (UTC-4 summer) = 11:00 UTC → fire 09:23 UTC; 19:00 EDT =
