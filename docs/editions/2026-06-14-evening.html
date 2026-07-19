@@ -68,8 +68,9 @@
   .almanac{max-width:740px;margin:0 auto;padding:26px 40px 4px;}
   .almanac .eyebrow{margin-bottom:12px;}
   .almanac p{font-family:var(--serif);font-size:18px;line-height:1.62;color:var(--ink-soft);}
+  .almanac-sky{font-family:var(--serif);font-style:italic;font-size:16px;line-height:1.55;color:var(--ink-mute);margin-top:10px;}
   .almanac-foot{display:flex;flex-wrap:wrap;align-items:center;gap:12px 22px;margin-top:18px;}
-  .almanac-meta{display:flex;align-items:center;gap:12px;font-size:11px;letter-spacing:0.15em;text-transform:uppercase;color:var(--ink-mute);}
+  .almanac-meta{display:flex;flex-wrap:wrap;align-items:center;gap:8px 12px;font-size:11px;letter-spacing:0.15em;text-transform:uppercase;color:var(--ink-mute);}
   .almanac-meta .dot{width:4px;height:4px;border-radius:50%;background:var(--brass);}
 
   /* ---- Fern's daily puzzle ---- */
@@ -83,8 +84,10 @@
   .puzzle summary:hover{background:var(--brass);color:var(--forest-deep);}
   .puzzle details[open] summary{display:none;}
   .puzzle .answer{font-family:var(--display);font-style:italic;font-size:21px;color:var(--forest);border-left:2px solid var(--brass);padding-left:16px;}
-  .puzzle .prev{margin-top:18px;padding-top:14px;border-top:1px solid var(--line);font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:var(--ink-mute);}
+  .puzzle .prev{margin-top:18px;padding-top:14px;border-top:1px solid var(--line);font-size:14px;line-height:1.55;color:var(--ink-soft);}
+  .puzzle .prev .lbl{display:block;font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:var(--ink-mute);margin-bottom:4px;}
   .puzzle .prev b{color:var(--brass-deep);font-weight:600;}
+  .puzzle .source{margin-top:10px;font-family:var(--sans);font-size:10.5px;letter-spacing:0.06em;color:var(--ink-mute);}
 
   /* ---- FIP live radio bar (gilt double frame + diamond accents) ---- */
   .radio-bar{position:relative;display:flex;align-items:center;gap:18px;background:var(--forest);border:1px solid var(--brass);color:var(--cream);padding:18px 30px;margin-bottom:30px;flex-wrap:wrap;}
@@ -203,7 +206,7 @@
 <body>
   <header class="cover">
     <div class="cover-in">
-      <div class="eyebrow orn">Evening Edition &nbsp;&middot;&nbsp; No. 1060 &nbsp;&middot;&nbsp; Sun, June 14, 2026</div>
+      <div class="eyebrow orn">Evening Edition &nbsp;&middot;&nbsp; No. 10 &nbsp;&middot;&nbsp; Sun, June 14, 2026</div>
       <h1>The Curated Canopy</h1>
       <div class="tagline">Human stories, good news &amp; the natural world</div>
       <div class="flr" aria-hidden="true"><svg viewBox="0 0 200 20" width="200" height="20"><g fill="none" stroke="currentColor" stroke-width="1.1" stroke-linecap="round"><path d="M100 10 C84 10 78 3.5 64 3.5 C52 3.5 48 10 38 10"/><path d="M100 10 C116 10 122 3.5 136 3.5 C148 3.5 152 10 162 10"/><path d="M38 10 H10"/><path d="M162 10 H190"/></g><g fill="currentColor"><path d="M100 4 l4.5 6 l-4.5 6 l-4.5 -6 z"/><circle cx="10" cy="10" r="1.6"/><circle cx="190" cy="10" r="1.6"/><circle cx="64" cy="3.5" r="1.7"/><circle cx="136" cy="3.5" r="1.7"/></g></svg></div>
@@ -222,6 +225,7 @@
   <section class="almanac" id="almanac" style="display:none;">
     <div class="eyebrow orn">From the Garden &middot; Zürich</div>
     <p id="garden-note"></p>
+    <div class="almanac-sky" id="garden-sky" style="display:none;"></div>
     <div class="almanac-foot">
       <div class="chips" id="garden-season"></div>
       <div class="almanac-meta" id="garden-meta"></div>
@@ -236,6 +240,7 @@
       <summary>Reveal the answer</summary>
       <div class="answer" id="puzzle-answer"></div>
     </details>
+    <div class="source" id="puzzle-source" style="display:none;"></div>
     <div class="prev" id="puzzle-prev" style="display:none;"></div>
   </section>
 
@@ -296,7 +301,7 @@
     <div class="links"><a href="#">About</a><a href="./archive.html">The Archive</a><a href="./grove.html">The Grove</a><a href="#">Preferences</a></div>
   </footer>
 
-<script id="data" type="application/json">{"is_am": false, "greeting": "As the last light folds itself into the horizon and the day's open tabs feel suddenly heavy, settle in, tonight we're wandering to remote islands, ancient tombs, and the defiant edges of mortality with Dylan Thomas as your guide.", "garden": {"note": "The garden exhales into the longest evenings of the year, roses at their peak flush and elderflower just opening its lacy umbels, there is nowhere better to be than outside right now. Tonight, with the moon entirely absent, the darkness is yours to keep.", "in_season": ["Rose first flush \u2014 deadhead spent blooms to encourage the next wave", "Elderflower in full bloom \u2014 gather clusters for cordial before they brown", "Strawberries ripening \u2014 check under leaves for hidden ripe ones", "Stake tall perennials like delphiniums before summer storms arrive"], "sky_tonight": "With no moon to wash it out, look south after 22:00 for Scorpius low on the horizon and brilliant Arcturus high overhead in Bo\u00f6tes.", "moon_label": "New moon (0% illuminated)"}, "featured_read": {"title": "The Story Behind Dylan Thomas\u2019s \u201cDo Not Go Gentle Into That Good Night\u201d and the Poet\u2019s Own Stirring Reading of His Masterpiece", "note": "This piece traces the raw biographical grief behind Dylan Thomas's most famous villanelle, the dying father, the desperate son, the poem as a last act of love disguised as defiance. Then it gives you Thomas himself reading it aloud, which is the only way to understand why those repeating lines don't feel like repetition at all.", "url": "https://www.themarginalian.org/2026/06/12/dylan-thomas-do-not-go-gentle-into-that-good-night/", "cover": "https://www.themarginalian.org/wp-content/uploads/2017/01/dylanthomas.jpg?fit=600%2C315\u0026ssl=1", "source": "The Marginalian"}, "music": [{"title": "Bruce Springsteen Receives Social Justice Award, Apologizes To Bono At Tribeca Festival", "note": "The kind of earnest, weathered idealism that sounds like a Telecaster ringing out over a crowd that still believes in something.", "url": "https://www.youtube.com/embed/6WtINvxtLWw", "cover": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/06/bono-springsteen.png", "genre": "", "source": "Stereogum"}], "videos": [{"title": "I Escaped to Japan's Most Remote Island for 72Hrs", "note": "Chris visits Hatoma, a tiny Okinawan island where 65 people and a surplus of goats outnumber tourists by design, it's genuinely off the beaten path, not just marketed that way. The 72-hour format gives the video a slow, observational quality that lets you feel the island's pace rather than just catalog its sights. If you've ever wondered what Japanese rural life looks like at its most stripped-back, this is a rare, unhurried look.", "video_id": "XyLswMZtmkM", "channel": "Abroad in Japan", "wild": false}], "good_news": [{"title": "An Almost Incomparable \u2018Princely\u2019 Tomb of Ancient Celtic Noble Found in Germany", "note": "The discovery of a richly furnished Celtic tomb in Germany reminds us that the earth still holds extraordinary secrets waiting to be uncovered, deepening our understanding of the people who shaped early European history. Every such find is a quiet miracle, proof that curiosity and careful digging can bring lost worlds back to life.", "url": "https://www.goodnewsnetwork.org/an-almost-incomparable-princely-tomb-of-ancient-celtic-noble-found-in-germany/", "cover": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/06/The-burial-mound-at-Glauberg-of-a-similar-culture-to-the-find-at-Bad-Camberg-Sven-Teschke-credit-CC-3.0.-BY-SA-de.jpg", "source": "Good News Network"}, {"title": "The intriguing reason why people in the past looked a lot older than people today", "note": "Research into why our ancestors appeared older than their years is a testament to how far everyday living conditions, nutrition, healthcare, and safer environments, have genuinely improved for millions of people. It's a grounding reminder that progress, however imperfect, is real and measurable in the faces we see around us.", "url": "https://www.upworthy.com/why-people-looked-older-than-today-ex1/", "cover": "https://www.upworthy.com/wp-content/uploads/sites/2/2025/11/origin_645eef.jpg", "source": "Upworthy"}], "discovery": [{"title": "Age of meteorites and the earth", "note": "The same man who dated Earth to 4.5 billion years old also discovered that our entire civilization had quietly poisoned itself with lead, and then spent decades fighting the industry that didn't want you to know. Patterson's paper is a number, but his life was a reckoning.", "url": "https://www.fermatslibrary.com/s/age-of-meteorites-and-the-earth", "cover": "https://www.fermatslibrary.com/fl-card.png", "source": "Fermat's Library", "cat": "Science"}]}</script>
+<script id="data" type="application/json">{"is_am": false, "greeting": "As the last light folds itself into the horizon and the day's open tabs feel suddenly heavy, settle in, tonight we're wandering to remote islands, ancient tombs, and the defiant edges of mortality with Dylan Thomas as your guide.", "garden": {"note": "The garden exhales into the longest evenings of the year, roses at their peak flush and elderflower just opening its lacy umbels, there is nowhere better to be than outside right now. Tonight, with the moon entirely absent, the darkness is yours to keep.", "in_season": ["Rose first flush \u2014 deadhead spent blooms to encourage the next wave", "Elderflower in full bloom \u2014 gather clusters for cordial before they brown", "Strawberries ripening \u2014 check under leaves for hidden ripe ones", "Stake tall perennials like delphiniums before summer storms arrive"], "sky_tonight": "With no moon to wash it out, look south after 22:00 for Scorpius low on the horizon and brilliant Arcturus high overhead in Bo\u00f6tes.", "moon_label": "New moon", "illum_pct": 1, "sun_range": "05:26\u201321:25"}, "featured_read": {"title": "The Story Behind Dylan Thomas\u2019s \u201cDo Not Go Gentle Into That Good Night\u201d and the Poet\u2019s Own Stirring Reading of His Masterpiece", "note": "This piece traces the raw biographical grief behind Dylan Thomas's most famous villanelle, the dying father, the desperate son, the poem as a last act of love disguised as defiance. Then it gives you Thomas himself reading it aloud, which is the only way to understand why those repeating lines don't feel like repetition at all.", "url": "https://www.themarginalian.org/2026/06/12/dylan-thomas-do-not-go-gentle-into-that-good-night/", "cover": "https://www.themarginalian.org/wp-content/uploads/2017/01/dylanthomas.jpg?fit=600%2C315\u0026ssl=1", "source": "The Marginalian"}, "music": [{"title": "Bruce Springsteen Receives Social Justice Award, Apologizes To Bono At Tribeca Festival", "note": "The kind of earnest, weathered idealism that sounds like a Telecaster ringing out over a crowd that still believes in something.", "url": "https://www.youtube.com/embed/6WtINvxtLWw", "cover": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/06/bono-springsteen.png", "genre": "", "source": "Stereogum"}], "videos": [{"title": "I Escaped to Japan's Most Remote Island for 72Hrs", "note": "Chris visits Hatoma, a tiny Okinawan island where 65 people and a surplus of goats outnumber tourists by design, it's genuinely off the beaten path, not just marketed that way. The 72-hour format gives the video a slow, observational quality that lets you feel the island's pace rather than just catalog its sights. If you've ever wondered what Japanese rural life looks like at its most stripped-back, this is a rare, unhurried look.", "video_id": "XyLswMZtmkM", "channel": "Abroad in Japan", "wild": false}], "good_news": [{"title": "An Almost Incomparable \u2018Princely\u2019 Tomb of Ancient Celtic Noble Found in Germany", "note": "The discovery of a richly furnished Celtic tomb in Germany reminds us that the earth still holds extraordinary secrets waiting to be uncovered, deepening our understanding of the people who shaped early European history. Every such find is a quiet miracle, proof that curiosity and careful digging can bring lost worlds back to life.", "url": "https://www.goodnewsnetwork.org/an-almost-incomparable-princely-tomb-of-ancient-celtic-noble-found-in-germany/", "cover": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/06/The-burial-mound-at-Glauberg-of-a-similar-culture-to-the-find-at-Bad-Camberg-Sven-Teschke-credit-CC-3.0.-BY-SA-de.jpg", "source": "Good News Network"}, {"title": "The intriguing reason why people in the past looked a lot older than people today", "note": "Research into why our ancestors appeared older than their years is a testament to how far everyday living conditions, nutrition, healthcare, and safer environments, have genuinely improved for millions of people. It's a grounding reminder that progress, however imperfect, is real and measurable in the faces we see around us.", "url": "https://www.upworthy.com/why-people-looked-older-than-today-ex1/", "cover": "https://www.upworthy.com/wp-content/uploads/sites/2/2025/11/origin_645eef.jpg", "source": "Upworthy"}], "discovery": [{"title": "Age of meteorites and the earth", "note": "The same man who dated Earth to 4.5 billion years old also discovered that our entire civilization had quietly poisoned itself with lead, and then spent decades fighting the industry that didn't want you to know. Patterson's paper is a number, but his life was a reckoning.", "url": "https://www.fermatslibrary.com/s/age-of-meteorites-and-the-earth", "cover": "https://www.fermatslibrary.com/fl-card.png", "source": "Fermat's Library", "cat": "Science"}]}</script>
 <script>
 const DATA = JSON.parse(document.getElementById('data').textContent);
 const $ = (s,r=document)=>r.querySelector(s);
@@ -330,7 +335,12 @@ function cover(url,tone,label,play){
   $('#garden-note').textContent = g.note;
   const season=(g.in_season||[]);
   $('#garden-season').innerHTML = season.map(s=>'<span class="chip static">'+esc(s)+'</span>').join('');
-  const meta=[]; if(g.moon_label) meta.push(g.moon_label); if(g.sky_tonight) meta.push(g.sky_tonight);
+  // The sky-tonight sentence reads as normal-case prose, not an uppercase chip.
+  if(g.sky_tonight){ $('#garden-sky').textContent = g.sky_tonight; $('#garden-sky').style.display=''; }
+  // The uppercase meta row holds only short tokens: moon (+ %) and the sun range.
+  const meta=[];
+  if(g.moon_label) meta.push((g.illum_pct && !/illumin/i.test(g.moon_label)) ? g.moon_label+' ('+g.illum_pct+'% illuminated)' : g.moon_label);
+  if(g.sun_range) meta.push('Sun '+g.sun_range);
   $('#garden-meta').innerHTML = meta.map((b,i)=>(i?'<span class="dot"></span>':'')+'<span>'+esc(b)+'</span>').join('');
   $('#almanac').style.display='';
 })();
@@ -344,13 +354,15 @@ function cover(url,tone,label,play){
     $('#puzzle-prompt').textContent = p.prompt;
     $('#puzzle-answer').textContent = p.answer;
     if(p.hint){ $('#puzzle-hint').textContent = 'Hint: '+p.hint; $('#puzzle-hint').style.display=''; }
+    var credit = p.credit || (p.source ? 'via '+p.source : '');
+    if(credit){ $('#puzzle-source').textContent = credit; $('#puzzle-source').style.display=''; }
   } else {
     $('#puzzle-label').textContent = 'The Puzzle Corner';
     $('#puzzle-prompt').textContent = '';
     document.querySelector('#puzzle details').style.display='none';
   }
   if(prev && prev.answer){
-    $('#puzzle-prev').innerHTML = 'Last edition\u2019s answer &middot; <b>'+esc(prev.answer)+'</b>';
+    $('#puzzle-prev').innerHTML = '<span class="lbl">Last edition\u2019s answer</span><b>'+esc(prev.answer)+'</b>';
     $('#puzzle-prev').style.display='';
   }
   $('#puzzle').style.display='';

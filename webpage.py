@@ -50,7 +50,7 @@ def _dedash(s: str) -> str:
 # Running issue number, like a real periodical ("No. 248").
 # Set this to the date of your VERY FIRST edition. Editions go out twice a day,
 # so the number climbs by 2 each day on its own — no manual tracking needed.
-CANOPY_LAUNCH = datetime.date(2025, 1, 1)
+CANOPY_LAUNCH = datetime.date(2026, 6, 10)  # first edition; No. 1 = 2026-06-10 morning
 
 # Where Fern's garden lives — shown in the "From the Garden" eyebrow.
 import os

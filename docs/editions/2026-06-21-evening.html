@@ -68,8 +68,9 @@
   .almanac{max-width:740px;margin:0 auto;padding:26px 40px 4px;}
   .almanac .eyebrow{margin-bottom:12px;}
   .almanac p{font-family:var(--serif);font-size:18px;line-height:1.62;color:var(--ink-soft);}
+  .almanac-sky{font-family:var(--serif);font-style:italic;font-size:16px;line-height:1.55;color:var(--ink-mute);margin-top:10px;}
   .almanac-foot{display:flex;flex-wrap:wrap;align-items:center;gap:12px 22px;margin-top:18px;}
-  .almanac-meta{display:flex;align-items:center;gap:12px;font-size:11px;letter-spacing:0.15em;text-transform:uppercase;color:var(--ink-mute);}
+  .almanac-meta{display:flex;flex-wrap:wrap;align-items:center;gap:8px 12px;font-size:11px;letter-spacing:0.15em;text-transform:uppercase;color:var(--ink-mute);}
   .almanac-meta .dot{width:4px;height:4px;border-radius:50%;background:var(--brass);}
 
   /* ---- Fern's daily puzzle ---- */
@@ -83,8 +84,10 @@
   .puzzle summary:hover{background:var(--brass);color:var(--forest-deep);}
   .puzzle details[open] summary{display:none;}
   .puzzle .answer{font-family:var(--display);font-style:italic;font-size:21px;color:var(--forest);border-left:2px solid var(--brass);padding-left:16px;}
-  .puzzle .prev{margin-top:18px;padding-top:14px;border-top:1px solid var(--line);font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:var(--ink-mute);}
+  .puzzle .prev{margin-top:18px;padding-top:14px;border-top:1px solid var(--line);font-size:14px;line-height:1.55;color:var(--ink-soft);}
+  .puzzle .prev .lbl{display:block;font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:var(--ink-mute);margin-bottom:4px;}
   .puzzle .prev b{color:var(--brass-deep);font-weight:600;}
+  .puzzle .source{margin-top:10px;font-family:var(--sans);font-size:10.5px;letter-spacing:0.06em;color:var(--ink-mute);}
 
   /* ---- FIP live radio bar (gilt double frame + diamond accents) ---- */
   .radio-bar{position:relative;display:flex;align-items:center;gap:18px;background:var(--forest);border:1px solid var(--brass);color:var(--cream);padding:18px 30px;margin-bottom:30px;flex-wrap:wrap;}
@@ -203,7 +206,7 @@
 <body>
   <header class="cover">
     <div class="cover-in">
-      <div class="eyebrow orn">Evening Edition &nbsp;&middot;&nbsp; No. 1074 &nbsp;&middot;&nbsp; Sun, June 21, 2026</div>
+      <div class="eyebrow orn">Evening Edition &nbsp;&middot;&nbsp; No. 24 &nbsp;&middot;&nbsp; Sun, June 21, 2026</div>
       <h1>The Curated Canopy</h1>
       <div class="tagline">Human stories, good news &amp; the natural world</div>
       <div class="flr" aria-hidden="true"><svg viewBox="0 0 200 20" width="200" height="20"><g fill="none" stroke="currentColor" stroke-width="1.1" stroke-linecap="round"><path d="M100 10 C84 10 78 3.5 64 3.5 C52 3.5 48 10 38 10"/><path d="M100 10 C116 10 122 3.5 136 3.5 C148 3.5 152 10 162 10"/><path d="M38 10 H10"/><path d="M162 10 H190"/></g><g fill="currentColor"><path d="M100 4 l4.5 6 l-4.5 6 l-4.5 -6 z"/><circle cx="10" cy="10" r="1.6"/><circle cx="190" cy="10" r="1.6"/><circle cx="64" cy="3.5" r="1.7"/><circle cx="136" cy="3.5" r="1.7"/></g></svg></div>
@@ -222,6 +225,7 @@
   <section class="almanac" id="almanac" style="display:none;">
     <div class="eyebrow orn">From the Garden &middot; Zürich</div>
     <p id="garden-note"></p>
+    <div class="almanac-sky" id="garden-sky" style="display:none;"></div>
     <div class="almanac-foot">
       <div class="chips" id="garden-season"></div>
       <div class="almanac-meta" id="garden-meta"></div>
@@ -236,6 +240,7 @@
       <summary>Reveal the answer</summary>
       <div class="answer" id="puzzle-answer"></div>
     </details>
+    <div class="source" id="puzzle-source" style="display:none;"></div>
     <div class="prev" id="puzzle-prev" style="display:none;"></div>
   </section>
 
@@ -296,7 +301,7 @@
     <div class="links"><a href="#">About</a><a href="./archive.html">The Archive</a><a href="./grove.html">The Grove</a><a href="#">Preferences</a></div>
   </footer>
 
-<script id="data" type="application/json">{"is_am": false, "greeting": "As the last light goes soft and the day's noise finally loses interest in itself, settle in, tonight's canopy holds everything from forgotten neon drinks to ancient symbols, a pianist conjuring myth into music, and a teenager who quietly outran a prognosis.", "garden": {"note": "The longest day just exhaled its last golden breath over Zurich, the solstice has a particular stillness to it, as if the garden itself is pausing before the slow lean back toward autumn. Sit outside a little longer tonight; the elderflower scent lingering in the warm air is a gift that won't last.", "in_season": ["Elderflower (pick now before the blooms brown)", "Strawberries ripening fast in the beds", "Deadhead roses to encourage a second flush", "First courgettes swelling \u2014 check daily"], "sky_tonight": "The First Quarter Moon sets around midnight, leaving the western sky clear, look for Arcturus, the warm amber star blazing high in Bo\u00f6tes.", "moon_label": "First quarter (40% illuminated)"}, "featured_read": {"title": "Life Is a Story That Begins in the Middle: Bayo Akomolafe on the Rewilding Power of Obstacles", "note": "Bayo Akomolafe makes a quietly radical case that obstacles aren't detours from your life's story but the very particle colliders that crack open new forms of being. Read this one slowly, preferably when you're in the middle of something that isn't going according to plan.", "url": "https://www.themarginalian.org/2026/06/21/bayo-akomolafe-wilds-obstacles/", "cover": "https://www.themarginalian.org/wp-content/uploads/2026/06/obstacle.jpg?fit=1200%2C630\u0026ssl=1", "source": "The Marginalian"}, "music": [{"title": "Goose Share Statement After Fan Falls To His Death At MSG", "note": "The hollow silence after the music stops, when a room full of people collectively holds its breath and nothing feels the same.", "url": "https://stereogum.com/2502903/goose-share-statement-after-fan-falls-to-his-death/news/", "cover": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/06/IMG_2333.jpeg", "genre": "", "source": "Stereogum"}, {"title": "Pianist Nduduzo Makhathini on Sons, Fathers, the Power of Myth and a New Blue Note Album", "note": "Ancestral fire burning low at dusk, where jazz, myth, and memory spiral upward like smoke into something timeless.", "url": "https://www.youtube.com/embed/P0xFIkTQMi8", "cover": "https://www.jazztimes.com/wp-content/uploads/2026/06/NduduzoMakhathini_5_bySiphiweMhlambi-scaled.jpg", "genre": "", "source": "JazzTimes"}], "videos": [{"title": "What Happened To SoBe?", "note": "SoBe was everywhere in the late '90s, those lizard-logo glass bottles were practically a cultural artifact, and then quietly disappeared without most people noticing exactly when or why. Weird History Food traces the brand's rise from a Connecticut startup through its Pepsi acquisition and gradual shelf-death, giving you the actual business explanation behind the nostalgia. It's a tidy 15 minutes that scratches the \"wait, whatever happened to...\" itch cleanly.", "video_id": "oeICOPNscio", "channel": "Weird History Food", "wild": false}, {"title": "A BREAKDOWN of ALL Symbols, Themes, \u0026 the Ending of Leviticus EXPLAINED", "note": "If you've already seen Adrian Chiarella's under-the-radar Australian queer horror film *Leviticus*, this breakdown offers a close reading of its religious symbolism and internalized shame themes that the film layers in quietly. Lucas Blue treats it as the serious genre work it is rather than a novelty, which is rare for a film with only 220 views on its analysis. Worth it for anyone who left the ending feeling like they'd missed a thread.", "video_id": "_Sc0xaknkaU", "channel": "Lucas Blue", "wild": false}], "good_news": [{"title": "Given Just 8 Months to Live, Teen Graduates Cancer-Free 4 Years Later Thanks to Doctor\u2019s Promise (Watch)", "note": "A teenager given just eight months to live is now four years cancer-free, a testament to what determined medical care and a kept promise can achieve against the odds. Stories like this remind us that medicine is as much about human commitment as it is about science.", "url": "https://www.goodnewsnetwork.org/given-just-8-months-to-live-teen-is-cancer-free-4-years-on-thanks-to-doctors-promise/", "cover": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/06/Dr-Mary-Austin-with-Dylan\u2013family-photo-via-CBS-on-youtube.jpg", "source": "Good News Network"}, {"title": "The two signs someone is incredibly intelligent, according to philosopher Arthur Schopenhauer", "note": "Revisiting a philosopher's timeless observations about intelligence is a gentle nudge that deep thinking and self-awareness have always been valued, and are still within reach for any of us willing to reflect and listen well.", "url": "https://www.upworthy.com/signs-of-intelligence-ex1/", "cover": "https://www.upworthy.com/wp-content/uploads/sites/2/2025/12/origin_9b97a8.jpg", "source": "Upworthy"}], "discovery": []}</script>
+<script id="data" type="application/json">{"is_am": false, "greeting": "As the last light goes soft and the day's noise finally loses interest in itself, settle in, tonight's canopy holds everything from forgotten neon drinks to ancient symbols, a pianist conjuring myth into music, and a teenager who quietly outran a prognosis.", "garden": {"note": "The longest day just exhaled its last golden breath over Zurich, the solstice has a particular stillness to it, as if the garden itself is pausing before the slow lean back toward autumn. Sit outside a little longer tonight; the elderflower scent lingering in the warm air is a gift that won't last.", "in_season": ["Elderflower (pick now before the blooms brown)", "Strawberries ripening fast in the beds", "Deadhead roses to encourage a second flush", "First courgettes swelling \u2014 check daily"], "sky_tonight": "The First Quarter Moon sets around midnight, leaving the western sky clear, look for Arcturus, the warm amber star blazing high in Bo\u00f6tes.", "moon_label": "First quarter", "illum_pct": 37, "sun_range": "05:27\u201321:28"}, "featured_read": {"title": "Life Is a Story That Begins in the Middle: Bayo Akomolafe on the Rewilding Power of Obstacles", "note": "Bayo Akomolafe makes a quietly radical case that obstacles aren't detours from your life's story but the very particle colliders that crack open new forms of being. Read this one slowly, preferably when you're in the middle of something that isn't going according to plan.", "url": "https://www.themarginalian.org/2026/06/21/bayo-akomolafe-wilds-obstacles/", "cover": "https://www.themarginalian.org/wp-content/uploads/2026/06/obstacle.jpg?fit=1200%2C630\u0026ssl=1", "source": "The Marginalian"}, "music": [{"title": "Goose Share Statement After Fan Falls To His Death At MSG", "note": "The hollow silence after the music stops, when a room full of people collectively holds its breath and nothing feels the same.", "url": "https://stereogum.com/2502903/goose-share-statement-after-fan-falls-to-his-death/news/", "cover": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/06/IMG_2333.jpeg", "genre": "", "source": "Stereogum"}, {"title": "Pianist Nduduzo Makhathini on Sons, Fathers, the Power of Myth and a New Blue Note Album", "note": "Ancestral fire burning low at dusk, where jazz, myth, and memory spiral upward like smoke into something timeless.", "url": "https://www.youtube.com/embed/P0xFIkTQMi8", "cover": "https://www.jazztimes.com/wp-content/uploads/2026/06/NduduzoMakhathini_5_bySiphiweMhlambi-scaled.jpg", "genre": "", "source": "JazzTimes"}], "videos": [{"title": "What Happened To SoBe?", "note": "SoBe was everywhere in the late '90s, those lizard-logo glass bottles were practically a cultural artifact, and then quietly disappeared without most people noticing exactly when or why. Weird History Food traces the brand's rise from a Connecticut startup through its Pepsi acquisition and gradual shelf-death, giving you the actual business explanation behind the nostalgia. It's a tidy 15 minutes that scratches the \"wait, whatever happened to...\" itch cleanly.", "video_id": "oeICOPNscio", "channel": "Weird History Food", "wild": false}, {"title": "A BREAKDOWN of ALL Symbols, Themes, \u0026 the Ending of Leviticus EXPLAINED", "note": "If you've already seen Adrian Chiarella's under-the-radar Australian queer horror film *Leviticus*, this breakdown offers a close reading of its religious symbolism and internalized shame themes that the film layers in quietly. Lucas Blue treats it as the serious genre work it is rather than a novelty, which is rare for a film with only 220 views on its analysis. Worth it for anyone who left the ending feeling like they'd missed a thread.", "video_id": "_Sc0xaknkaU", "channel": "Lucas Blue", "wild": false}], "good_news": [{"title": "Given Just 8 Months to Live, Teen Graduates Cancer-Free 4 Years Later Thanks to Doctor\u2019s Promise (Watch)", "note": "A teenager given just eight months to live is now four years cancer-free, a testament to what determined medical care and a kept promise can achieve against the odds. Stories like this remind us that medicine is as much about human commitment as it is about science.", "url": "https://www.goodnewsnetwork.org/given-just-8-months-to-live-teen-is-cancer-free-4-years-on-thanks-to-doctors-promise/", "cover": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/06/Dr-Mary-Austin-with-Dylan\u2013family-photo-via-CBS-on-youtube.jpg", "source": "Good News Network"}, {"title": "The two signs someone is incredibly intelligent, according to philosopher Arthur Schopenhauer", "note": "Revisiting a philosopher's timeless observations about intelligence is a gentle nudge that deep thinking and self-awareness have always been valued, and are still within reach for any of us willing to reflect and listen well.", "url": "https://www.upworthy.com/signs-of-intelligence-ex1/", "cover": "https://www.upworthy.com/wp-content/uploads/sites/2/2025/12/origin_9b97a8.jpg", "source": "Upworthy"}], "discovery": []}</script>
 <script>
 const DATA = JSON.parse(document.getElementById('data').textContent);
 const $ = (s,r=document)=>r.querySelector(s);
@@ -330,7 +335,12 @@ function cover(url,tone,label,play){
   $('#garden-note').textContent = g.note;
   const season=(g.in_season||[]);
   $('#garden-season').innerHTML = season.map(s=>'<span class="chip static">'+esc(s)+'</span>').join('');
-  const meta=[]; if(g.moon_label) meta.push(g.moon_label); if(g.sky_tonight) meta.push(g.sky_tonight);
+  // The sky-tonight sentence reads as normal-case prose, not an uppercase chip.
+  if(g.sky_tonight){ $('#garden-sky').textContent = g.sky_tonight; $('#garden-sky').style.display=''; }
+  // The uppercase meta row holds only short tokens: moon (+ %) and the sun range.
+  const meta=[];
+  if(g.moon_label) meta.push((g.illum_pct && !/illumin/i.test(g.moon_label)) ? g.moon_label+' ('+g.illum_pct+'% illuminated)' : g.moon_label);
+  if(g.sun_range) meta.push('Sun '+g.sun_range);
   $('#garden-meta').innerHTML = meta.map((b,i)=>(i?'<span class="dot"></span>':'')+'<span>'+esc(b)+'</span>').join('');
   $('#almanac').style.display='';
 })();
@@ -344,13 +354,15 @@ function cover(url,tone,label,play){
     $('#puzzle-prompt').textContent = p.prompt;
     $('#puzzle-answer').textContent = p.answer;
     if(p.hint){ $('#puzzle-hint').textContent = 'Hint: '+p.hint; $('#puzzle-hint').style.display=''; }
+    var credit = p.credit || (p.source ? 'via '+p.source : '');
+    if(credit){ $('#puzzle-source').textContent = credit; $('#puzzle-source').style.display=''; }
   } else {
     $('#puzzle-label').textContent = 'The Puzzle Corner';
     $('#puzzle-prompt').textContent = '';
     document.querySelector('#puzzle details').style.display='none';
   }
   if(prev && prev.answer){
-    $('#puzzle-prev').innerHTML = 'Last edition\u2019s answer &middot; <b>'+esc(prev.answer)+'</b>';
+    $('#puzzle-prev').innerHTML = '<span class="lbl">Last edition\u2019s answer</span><b>'+esc(prev.answer)+'</b>';
     $('#puzzle-prev').style.display='';
   }
   $('#puzzle').style.display='';
