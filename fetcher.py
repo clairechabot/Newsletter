@@ -1365,49 +1365,6 @@ def _fetch_rss_articles(
     return articles
 
 
-# Local news feeds per regional edition, keyed by GARDEN_LOCALE. Used only by the
-# regional re-send to add a small "Around the Valley" block. CBC's regional feeds
-# are reliable, non-Cloudflare, and update frequently.
-REGIONAL_FEEDS = {
-    "Annapolis Valley, Nova Scotia": {
-        "url":         "https://www.cbc.ca/webfeed/rss/rss-canada-novascotia",
-        "source_name": "CBC Nova Scotia",
-    },
-    "Raleigh, North Carolina": {
-        "url":         "https://www.wral.com/news/rss/142/",
-        "source_name": "WRAL",
-    },
-    "Berlin, Germany": {
-        # Germany-wide English news (no clean Berlin-only English feed).
-        "url":         "https://www.thelocal.de/feeds/rss.php",
-        "source_name": "The Local",
-    },
-    # Ramsau am Dachstein and Zug have no reliable English local feed — those
-    # editions omit the "Around <place>" block (fetch_regional returns []).
-}
-
-
-def fetch_regional(locale: str, n: int = 2) -> list[dict]:
-    """
-    Fetch the newest `n` local-news items for a regional edition (e.g. CBC Nova
-    Scotia for the Annapolis Valley). Best-effort: returns [] on any failure or if
-    the locale has no configured feed, so the regional email simply omits the block.
-    """
-    feed = REGIONAL_FEEDS.get(locale)
-    if not feed:
-        return []
-    try:
-        session = _scraper_session()
-        items = _fetch_rss_articles(
-            feed["url"], feed["source_name"], n, session, source_tag="regional"
-        )
-    except Exception as exc:
-        print(f"  [warn] regional fetch failed for {locale}: {exc}")
-        return []
-    print(f"[Regional] Collected {len(items)} local item(s) for {locale}.")
-    return items
-
-
 # ---------------------------------------------------------------------------
 # Puzzle content sources — real riddles + real anagrams
 # ---------------------------------------------------------------------------
