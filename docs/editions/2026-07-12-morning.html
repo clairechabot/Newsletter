@@ -68,8 +68,9 @@
   .almanac{max-width:740px;margin:0 auto;padding:26px 40px 4px;}
   .almanac .eyebrow{margin-bottom:12px;}
   .almanac p{font-family:var(--serif);font-size:18px;line-height:1.62;color:var(--ink-soft);}
+  .almanac-sky{font-family:var(--serif);font-style:italic;font-size:16px;line-height:1.55;color:var(--ink-mute);margin-top:10px;}
   .almanac-foot{display:flex;flex-wrap:wrap;align-items:center;gap:12px 22px;margin-top:18px;}
-  .almanac-meta{display:flex;align-items:center;gap:12px;font-size:11px;letter-spacing:0.15em;text-transform:uppercase;color:var(--ink-mute);}
+  .almanac-meta{display:flex;flex-wrap:wrap;align-items:center;gap:8px 12px;font-size:11px;letter-spacing:0.15em;text-transform:uppercase;color:var(--ink-mute);}
   .almanac-meta .dot{width:4px;height:4px;border-radius:50%;background:var(--brass);}
 
   /* ---- Fern's daily puzzle ---- */
@@ -83,8 +84,10 @@
   .puzzle summary:hover{background:var(--brass);color:var(--forest-deep);}
   .puzzle details[open] summary{display:none;}
   .puzzle .answer{font-family:var(--display);font-style:italic;font-size:21px;color:var(--forest);border-left:2px solid var(--brass);padding-left:16px;}
-  .puzzle .prev{margin-top:18px;padding-top:14px;border-top:1px solid var(--line);font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:var(--ink-mute);}
+  .puzzle .prev{margin-top:18px;padding-top:14px;border-top:1px solid var(--line);font-size:14px;line-height:1.55;color:var(--ink-soft);}
+  .puzzle .prev .lbl{display:block;font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:var(--ink-mute);margin-bottom:4px;}
   .puzzle .prev b{color:var(--brass-deep);font-weight:600;}
+  .puzzle .source{margin-top:10px;font-family:var(--sans);font-size:10.5px;letter-spacing:0.06em;color:var(--ink-mute);}
 
   /* ---- FIP live radio bar (gilt double frame + diamond accents) ---- */
   .radio-bar{position:relative;display:flex;align-items:center;gap:18px;background:var(--forest);border:1px solid var(--brass);color:var(--cream);padding:18px 30px;margin-bottom:30px;flex-wrap:wrap;}
@@ -203,7 +206,7 @@
 <body>
   <header class="cover">
     <div class="cover-in">
-      <div class="eyebrow orn">Morning Edition &nbsp;&middot;&nbsp; No. 1115 &nbsp;&middot;&nbsp; Sun, July 12, 2026</div>
+      <div class="eyebrow orn">Morning Edition &nbsp;&middot;&nbsp; No. 65 &nbsp;&middot;&nbsp; Sun, July 12, 2026</div>
       <h1>The Curated Canopy</h1>
       <div class="tagline">Human stories, good news &amp; the natural world</div>
       <div class="flr" aria-hidden="true"><svg viewBox="0 0 200 20" width="200" height="20"><g fill="none" stroke="currentColor" stroke-width="1.1" stroke-linecap="round"><path d="M100 10 C84 10 78 3.5 64 3.5 C52 3.5 48 10 38 10"/><path d="M100 10 C116 10 122 3.5 136 3.5 C148 3.5 152 10 162 10"/><path d="M38 10 H10"/><path d="M162 10 H190"/></g><g fill="currentColor"><path d="M100 4 l4.5 6 l-4.5 6 l-4.5 -6 z"/><circle cx="10" cy="10" r="1.6"/><circle cx="190" cy="10" r="1.6"/><circle cx="64" cy="3.5" r="1.7"/><circle cx="136" cy="3.5" r="1.7"/></g></svg></div>
@@ -222,6 +225,7 @@
   <section class="almanac" id="almanac" style="display:none;">
     <div class="eyebrow orn">From the Garden &middot; Zürich</div>
     <p id="garden-note"></p>
+    <div class="almanac-sky" id="garden-sky" style="display:none;"></div>
     <div class="almanac-foot">
       <div class="chips" id="garden-season"></div>
       <div class="almanac-meta" id="garden-meta"></div>
@@ -236,6 +240,7 @@
       <summary>Reveal the answer</summary>
       <div class="answer" id="puzzle-answer"></div>
     </details>
+    <div class="source" id="puzzle-source" style="display:none;"></div>
     <div class="prev" id="puzzle-prev" style="display:none;"></div>
   </section>
 
@@ -296,7 +301,7 @@
     <div class="links"><a href="#">About</a><a href="./archive.html">The Archive</a><a href="./grove.html">The Grove</a><a href="#">Preferences</a></div>
   </footer>
 
-<script id="data" type="application/json">{"is_am": true, "greeting": "While the bread is still warm and your coffee earns its moment, settle in, today's canopy holds folk love letters, record-breaking duets, a medical breakthrough years in the making, and a read that just might ask something of you.", "garden": {"note": "High summer has settled into its most generous and demanding mood at once, the beans are climbing without asking permission and the basil is begging to be pinched before it bolts. Step outside early while the air still holds a thread of coolness; by noon, the garden will be strictly for the bees.", "in_season": ["French beans ready to harvest (pick daily to keep plants producing)", "Basil at peak \u2014 pinch flower buds to extend the flush", "Echinacea and rudbeckia opening their first summer faces", "Deadhead roses and water deeply at the root, not the leaves"], "sky_tonight": "With the crescent moon rising very late and dim, tonight offers rare dark skies, look east after midnight for the first hints of the Perseid meteor shower warming up.", "moon_label": "Waning crescent (7% illuminated)"}, "puzzle": {"label": "Fern's Morning Riddle", "prompt": "I live at the window but never step through.\nI stretch without moving, I fade without rue.\nThe longer the day, the thinner I grow , \nby noon I have vanished, by dusk I put on a show.", "answer": "A shadow", "hint": "Think of what the summer sun does to the thing you cast."}, "prev_puzzle": {"label": "The Evening Enigma", "prompt": "A woman walks into a library, asks for a book about the sea, and leaves in tears, yet she is perfectly happy when she gets home. The librarian was not unkind, and the woman received exactly what she asked for.", "answer": "The book she requested was one she had written herself, and seeing it on the shelf confirmed that it had finally been published, she wept from joy, not sorrow, and the happiness simply deepened once she was home and could tell her family."}, "featured_read": {"title": "Do Not Spare Yourself", "note": "This essay asks whether our lifelong instinct for self-protection, from heartbreak, from longing, from the sheer collision of our hopes with reality, is actually the thing quietly hollowing us out. It's an invitation to sit with the uncomfortable possibility that sparing yourself is its own kind of loss.", "url": "https://www.themarginalian.org/2026/07/12/no-te-salves/", "cover": "https://www.themarginalian.org/wp-content/uploads/2025/01/notesalves_TheMarginalian.jpg?fit=1200%2C630\u0026ssl=1", "source": "The Marginalian"}, "music": [{"title": "Old Crow Medicine Show's new album is a 'love letter' to America", "note": "A front-porch singalong that smells like sawdust and feels like flipping through a worn family photo album.", "url": "https://www.npr.org/2026/07/11/nx-s1-5864193/old-crow-medicine-shows-new-album-is-a-love-letter-to-america", "cover": "https://media.npr.org/include/images/facebook-default-wide-s1400-c85.jpg", "genre": "", "source": "NPR Music"}, {"title": "Johnny Hates Jazz\u2019s Calvin Hayes Dead At 63", "note": "The bittersweet ache of hearing a half-forgotten melody drift from a room that's now empty.", "url": "https://stereogum.com/2504962/johnny-hate-jazzs-calvin-hayes-dead-at-63/news/", "cover": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/07/05099921466854.rgb_.jpg", "genre": "", "source": "Stereogum"}, {"title": "Sam Fender \u0026 Olivia Dean\u2019s \u201cRein Me In\u201d Is The UK\u2019s New Longest-Running #1 Single By British Artists", "note": "That unstoppable, can't-skip-it feeling of a song that's somehow everywhere and still never gets old.", "url": "https://stereogum.com/2504901/sam-fender-olivia-deans-rein-me-in-is-the-uks-new-longest-running-1-single-by-british-artists/news/", "cover": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/07/unnamed-2026-07-10T141502.231.jpg", "genre": "", "source": "Stereogum"}], "videos": [], "good_news": [{"title": "\u2018Game-Changing\u2019 Saliva Test Can Diagnose Endometriosis in Days Rather Than Years", "note": "For the millions who've spent years in pain without answers, a simple saliva test that can diagnose endometriosis quickly is a profound step forward, early diagnosis means earlier relief and better quality of life. This is what medicine getting it right looks like.", "url": "https://www.goodnewsnetwork.org/new-test-scan-diagnose-endometriosis-in-days-rather-than-years/", "cover": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/07/Gut-pain-cure-hot-pad-sick-by-Curated-Lifestyle-For-Unsplash-O_tZw9fO6yY.jpeg", "source": "Good News Network"}, {"title": "Millennials complain that their Boomer parents won\u2019t throw anything away. A psychologist explains why.", "note": "Understanding the psychology behind why older generations hold onto possessions fosters genuine empathy between families rather than frustration, a small but meaningful reminder that behaviour that puzzles us often has deep, human roots worth exploring.", "url": "https://www.upworthy.com/millennials-complain-that-their-boomer-parents-wont-throw-anything-away-a-psychologist-explains-why-ex1/", "cover": "https://www.upworthy.com/wp-content/uploads/sites/2/2026/02/boomer-parents.webp", "source": "Upworthy"}], "discovery": []}</script>
+<script id="data" type="application/json">{"is_am": true, "greeting": "While the bread is still warm and your coffee earns its moment, settle in, today's canopy holds folk love letters, record-breaking duets, a medical breakthrough years in the making, and a read that just might ask something of you.", "garden": {"note": "High summer has settled into its most generous and demanding mood at once, the beans are climbing without asking permission and the basil is begging to be pinched before it bolts. Step outside early while the air still holds a thread of coolness; by noon, the garden will be strictly for the bees.", "in_season": ["French beans ready to harvest (pick daily to keep plants producing)", "Basil at peak \u2014 pinch flower buds to extend the flush", "Echinacea and rudbeckia opening their first summer faces", "Deadhead roses and water deeply at the root, not the leaves"], "sky_tonight": "With the crescent moon rising very late and dim, tonight offers rare dark skies, look east after midnight for the first hints of the Perseid meteor shower warming up.", "moon_label": "Waning crescent", "illum_pct": 6, "sun_range": "05:39\u201321:23"}, "puzzle": {"label": "Fern's Morning Riddle", "prompt": "I live at the window but never step through.\nI stretch without moving, I fade without rue.\nThe longer the day, the thinner I grow , \nby noon I have vanished, by dusk I put on a show.", "answer": "A shadow", "hint": "Think of what the summer sun does to the thing you cast."}, "prev_puzzle": {"label": "The Evening Enigma", "prompt": "A woman walks into a library, asks for a book about the sea, and leaves in tears, yet she is perfectly happy when she gets home. The librarian was not unkind, and the woman received exactly what she asked for.", "answer": "The book she requested was one she had written herself, and seeing it on the shelf confirmed that it had finally been published, she wept from joy, not sorrow, and the happiness simply deepened once she was home and could tell her family."}, "featured_read": {"title": "Do Not Spare Yourself", "note": "This essay asks whether our lifelong instinct for self-protection, from heartbreak, from longing, from the sheer collision of our hopes with reality, is actually the thing quietly hollowing us out. It's an invitation to sit with the uncomfortable possibility that sparing yourself is its own kind of loss.", "url": "https://www.themarginalian.org/2026/07/12/no-te-salves/", "cover": "https://www.themarginalian.org/wp-content/uploads/2025/01/notesalves_TheMarginalian.jpg?fit=1200%2C630\u0026ssl=1", "source": "The Marginalian"}, "music": [{"title": "Old Crow Medicine Show's new album is a 'love letter' to America", "note": "A front-porch singalong that smells like sawdust and feels like flipping through a worn family photo album.", "url": "https://www.npr.org/2026/07/11/nx-s1-5864193/old-crow-medicine-shows-new-album-is-a-love-letter-to-america", "cover": "https://media.npr.org/include/images/facebook-default-wide-s1400-c85.jpg", "genre": "", "source": "NPR Music"}, {"title": "Johnny Hates Jazz\u2019s Calvin Hayes Dead At 63", "note": "The bittersweet ache of hearing a half-forgotten melody drift from a room that's now empty.", "url": "https://stereogum.com/2504962/johnny-hate-jazzs-calvin-hayes-dead-at-63/news/", "cover": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/07/05099921466854.rgb_.jpg", "genre": "", "source": "Stereogum"}, {"title": "Sam Fender \u0026 Olivia Dean\u2019s \u201cRein Me In\u201d Is The UK\u2019s New Longest-Running #1 Single By British Artists", "note": "That unstoppable, can't-skip-it feeling of a song that's somehow everywhere and still never gets old.", "url": "https://stereogum.com/2504901/sam-fender-olivia-deans-rein-me-in-is-the-uks-new-longest-running-1-single-by-british-artists/news/", "cover": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/07/unnamed-2026-07-10T141502.231.jpg", "genre": "", "source": "Stereogum"}], "videos": [], "good_news": [{"title": "\u2018Game-Changing\u2019 Saliva Test Can Diagnose Endometriosis in Days Rather Than Years", "note": "For the millions who've spent years in pain without answers, a simple saliva test that can diagnose endometriosis quickly is a profound step forward, early diagnosis means earlier relief and better quality of life. This is what medicine getting it right looks like.", "url": "https://www.goodnewsnetwork.org/new-test-scan-diagnose-endometriosis-in-days-rather-than-years/", "cover": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/07/Gut-pain-cure-hot-pad-sick-by-Curated-Lifestyle-For-Unsplash-O_tZw9fO6yY.jpeg", "source": "Good News Network"}, {"title": "Millennials complain that their Boomer parents won\u2019t throw anything away. A psychologist explains why.", "note": "Understanding the psychology behind why older generations hold onto possessions fosters genuine empathy between families rather than frustration, a small but meaningful reminder that behaviour that puzzles us often has deep, human roots worth exploring.", "url": "https://www.upworthy.com/millennials-complain-that-their-boomer-parents-wont-throw-anything-away-a-psychologist-explains-why-ex1/", "cover": "https://www.upworthy.com/wp-content/uploads/sites/2/2026/02/boomer-parents.webp", "source": "Upworthy"}], "discovery": []}</script>
 <script>
 const DATA = JSON.parse(document.getElementById('data').textContent);
 const $ = (s,r=document)=>r.querySelector(s);
@@ -330,7 +335,12 @@ function cover(url,tone,label,play){
   $('#garden-note').textContent = g.note;
   const season=(g.in_season||[]);
   $('#garden-season').innerHTML = season.map(s=>'<span class="chip static">'+esc(s)+'</span>').join('');
-  const meta=[]; if(g.moon_label) meta.push(g.moon_label); if(g.sky_tonight) meta.push(g.sky_tonight);
+  // The sky-tonight sentence reads as normal-case prose, not an uppercase chip.
+  if(g.sky_tonight){ $('#garden-sky').textContent = g.sky_tonight; $('#garden-sky').style.display=''; }
+  // The uppercase meta row holds only short tokens: moon (+ %) and the sun range.
+  const meta=[];
+  if(g.moon_label) meta.push((g.illum_pct && !/illumin/i.test(g.moon_label)) ? g.moon_label+' ('+g.illum_pct+'% illuminated)' : g.moon_label);
+  if(g.sun_range) meta.push('Sun '+g.sun_range);
   $('#garden-meta').innerHTML = meta.map((b,i)=>(i?'<span class="dot"></span>':'')+'<span>'+esc(b)+'</span>').join('');
   $('#almanac').style.display='';
 })();
@@ -344,13 +354,15 @@ function cover(url,tone,label,play){
     $('#puzzle-prompt').textContent = p.prompt;
     $('#puzzle-answer').textContent = p.answer;
     if(p.hint){ $('#puzzle-hint').textContent = 'Hint: '+p.hint; $('#puzzle-hint').style.display=''; }
+    var credit = p.credit || (p.source ? 'via '+p.source : '');
+    if(credit){ $('#puzzle-source').textContent = credit; $('#puzzle-source').style.display=''; }
   } else {
     $('#puzzle-label').textContent = 'The Puzzle Corner';
     $('#puzzle-prompt').textContent = '';
     document.querySelector('#puzzle details').style.display='none';
   }
   if(prev && prev.answer){
-    $('#puzzle-prev').innerHTML = 'Last edition\u2019s answer &middot; <b>'+esc(prev.answer)+'</b>';
+    $('#puzzle-prev').innerHTML = '<span class="lbl">Last edition\u2019s answer</span><b>'+esc(prev.answer)+'</b>';
     $('#puzzle-prev').style.display='';
   }
   $('#puzzle').style.display='';

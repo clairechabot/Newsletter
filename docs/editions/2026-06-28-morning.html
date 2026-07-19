@@ -68,8 +68,9 @@
   .almanac{max-width:740px;margin:0 auto;padding:26px 40px 4px;}
   .almanac .eyebrow{margin-bottom:12px;}
   .almanac p{font-family:var(--serif);font-size:18px;line-height:1.62;color:var(--ink-soft);}
+  .almanac-sky{font-family:var(--serif);font-style:italic;font-size:16px;line-height:1.55;color:var(--ink-mute);margin-top:10px;}
   .almanac-foot{display:flex;flex-wrap:wrap;align-items:center;gap:12px 22px;margin-top:18px;}
-  .almanac-meta{display:flex;align-items:center;gap:12px;font-size:11px;letter-spacing:0.15em;text-transform:uppercase;color:var(--ink-mute);}
+  .almanac-meta{display:flex;flex-wrap:wrap;align-items:center;gap:8px 12px;font-size:11px;letter-spacing:0.15em;text-transform:uppercase;color:var(--ink-mute);}
   .almanac-meta .dot{width:4px;height:4px;border-radius:50%;background:var(--brass);}
 
   /* ---- Fern's daily puzzle ---- */
@@ -83,8 +84,10 @@
   .puzzle summary:hover{background:var(--brass);color:var(--forest-deep);}
   .puzzle details[open] summary{display:none;}
   .puzzle .answer{font-family:var(--display);font-style:italic;font-size:21px;color:var(--forest);border-left:2px solid var(--brass);padding-left:16px;}
-  .puzzle .prev{margin-top:18px;padding-top:14px;border-top:1px solid var(--line);font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:var(--ink-mute);}
+  .puzzle .prev{margin-top:18px;padding-top:14px;border-top:1px solid var(--line);font-size:14px;line-height:1.55;color:var(--ink-soft);}
+  .puzzle .prev .lbl{display:block;font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:var(--ink-mute);margin-bottom:4px;}
   .puzzle .prev b{color:var(--brass-deep);font-weight:600;}
+  .puzzle .source{margin-top:10px;font-family:var(--sans);font-size:10.5px;letter-spacing:0.06em;color:var(--ink-mute);}
 
   /* ---- FIP live radio bar (gilt double frame + diamond accents) ---- */
   .radio-bar{position:relative;display:flex;align-items:center;gap:18px;background:var(--forest);border:1px solid var(--brass);color:var(--cream);padding:18px 30px;margin-bottom:30px;flex-wrap:wrap;}
@@ -203,7 +206,7 @@
 <body>
   <header class="cover">
     <div class="cover-in">
-      <div class="eyebrow orn">Morning Edition &nbsp;&middot;&nbsp; No. 1087 &nbsp;&middot;&nbsp; Sun, June 28, 2026</div>
+      <div class="eyebrow orn">Morning Edition &nbsp;&middot;&nbsp; No. 37 &nbsp;&middot;&nbsp; Sun, June 28, 2026</div>
       <h1>The Curated Canopy</h1>
       <div class="tagline">Human stories, good news &amp; the natural world</div>
       <div class="flr" aria-hidden="true"><svg viewBox="0 0 200 20" width="200" height="20"><g fill="none" stroke="currentColor" stroke-width="1.1" stroke-linecap="round"><path d="M100 10 C84 10 78 3.5 64 3.5 C52 3.5 48 10 38 10"/><path d="M100 10 C116 10 122 3.5 136 3.5 C148 3.5 152 10 162 10"/><path d="M38 10 H10"/><path d="M162 10 H190"/></g><g fill="currentColor"><path d="M100 4 l4.5 6 l-4.5 6 l-4.5 -6 z"/><circle cx="10" cy="10" r="1.6"/><circle cx="190" cy="10" r="1.6"/><circle cx="64" cy="3.5" r="1.7"/><circle cx="136" cy="3.5" r="1.7"/></g></svg></div>
@@ -222,6 +225,7 @@
   <section class="almanac" id="almanac" style="display:none;">
     <div class="eyebrow orn">From the Garden &middot; Zürich</div>
     <p id="garden-note"></p>
+    <div class="almanac-sky" id="garden-sky" style="display:none;"></div>
     <div class="almanac-foot">
       <div class="chips" id="garden-season"></div>
       <div class="almanac-meta" id="garden-meta"></div>
@@ -236,6 +240,7 @@
       <summary>Reveal the answer</summary>
       <div class="answer" id="puzzle-answer"></div>
     </details>
+    <div class="source" id="puzzle-source" style="display:none;"></div>
     <div class="prev" id="puzzle-prev" style="display:none;"></div>
   </section>
 
@@ -296,7 +301,7 @@
     <div class="links"><a href="#">About</a><a href="./archive.html">The Archive</a><a href="./grove.html">The Grove</a><a href="#">Preferences</a></div>
   </footer>
 
-<script id="data" type="application/json">{"is_am": true, "greeting": "While the coffee brews and the birds are still deciding what to say, settle in, today's canopy holds a 92-year-old artist's secret to staying alive in your work, a quietly generous man who built 5,000 schools and asked for nothing, and enough music to carry you through whatever uncertain thing this day has planned.", "garden": {"note": "The garden has hit its full-throated June stride, roses tumbling over themselves, lavender humming with bees before the heat of the day sets in. This morning, step out early while the dew still clings and let the almost-full moon's pale ghost overhead remind you that tonight will be spectacular.", "in_season": ["Rosa (climbing and shrub roses at peak bloom \u2014 deadhead faded flowers to encourage a second flush)", "Lavandula angustifolia (lavender just opening \u2014 harvest a few stems before the bees get there first)", "Courgettes (first zucchini swelling fast; check daily or you'll find a marrow by Tuesday)", "Stake and tie tall dahlias and delphiniums before summer storms arrive"], "sky_tonight": "The Full Strawberry Moon rises at dusk in Sagittarius, so bright it will cast faint shadows across the lawn; no telescope needed.", "moon_label": "Full moon (97% illuminated)"}, "featured_read": {"title": "Legendary Artist Sheila Hicks, at 92, on the Secret to Creative Vitality", "note": "At 92, weaver and artist Sheila Hicks offers a quiet rebuke to the age of virality, this piece traces how she has spent a lifetime chasing the unknown rather than confirming what the market already believes. It's a reminder that creative vitality has always been less a talent than a refusal.", "url": "https://www.themarginalian.org/2026/06/27/sheila-hicks/", "cover": "https://www.themarginalian.org/wp-content/uploads/2026/06/sheilahicks1.jpg?fit=622%2C327\u0026ssl=1", "source": "The Marginalian"}, "music": [{"title": "Caleb Caudle's \"Heavy Thrill\" is built for uncertain times", "note": "Like sitting on a porch at dusk watching storm clouds roll in, grateful for everything that anchors you to the ground.", "url": "https://www.npr.org/2026/06/27/nx-s1-5836494/caleb-caudles-heavy-thrill-is-built-for-uncertain-times", "cover": "https://media.npr.org/include/images/facebook-default-wide-s1400-c85.jpg", "genre": "", "source": "NPR Music"}, {"title": "Noah Kahan Asks Concertgoers Not To Shit In Their Seats", "note": "The chaotic energy of a sold-out stadium where something has gone deeply, irreversibly wrong.", "url": "https://stereogum.com/2503674/noah-kahan-asks-concertgoers-not-to-shit-in-their-seats/news/", "cover": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/06/noah-kahan-1.jpg", "genre": "", "source": "Stereogum"}, {"title": "Andy Cohen Claims To Be A Deadhead But Only Just Found Out Phil Lesh Was On Real Housewives In 2008", "note": "The delightful awkwardness of running into someone at a party who claims to love your favorite obscure band but clearly only knows the hits.", "url": "https://stereogum.com/2503655/andy-cohen-claims-to-be-a-deadhead-but-only-just-found-out-phil-lesh-was-on-real-housewives-in-2008/news/", "cover": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/06/lesh-copy.png", "genre": "", "source": "Stereogum"}, {"title": "Concert Review: DoYeon Kim Quartet at Solar Myth, Philadelphia", "note": "Late-night Philadelphia basement energy, where a zither rewires your nervous system and you leave unsure which century you're walking back into.", "url": "https://www.jazztimes.com/reviews/live/concert-review-doyeon-kim-quartet-at-solar-myth-philadelphia/", "cover": "https://www.jazztimes.com/wp-content/uploads/2026/06/20260624_210043-scaled.jpg", "genre": "", "source": "JazzTimes"}], "videos": [], "good_news": [{"title": "Good News in History, June 28", "note": "History is full of quiet turning points worth remembering, and pausing to mark them reminds us that progress has always been possible, even in difficult times. These moments are a genuine anchor for hope.", "url": "https://www.goodnewsnetwork.org/events060628/", "cover": "https://www.goodnewsnetwork.org/wp-content/uploads/2020/06/Mel-Brooks-2010-cc-Angela-George-and-w-Anne-Bancroft-in-1991-cc-Georges-Biard.jpg", "source": "Good News Network"}, {"title": "Wealthy Chicagoan secretly built 5,000 schools and a popular museum, but refused to put his name on them", "note": "Julius Rosenwald's choice to pour his fortune into 5,000 schools for Black children across the South, anonymously, is a powerful reminder that generosity at its best seeks impact, not recognition. It's the kind of story that makes you want to be a little more quietly useful in the world.", "url": "https://www.upworthy.com/wealthy-chicagoan-secretly-built-5000-schools-and-a-popular-museum-but-refused-to-put-his-name-on-them/", "cover": "https://www.upworthy.com/wp-content/uploads/sites/2/2026/06/1_6c2eca.jpg", "source": "Upworthy"}], "discovery": []}</script>
+<script id="data" type="application/json">{"is_am": true, "greeting": "While the coffee brews and the birds are still deciding what to say, settle in, today's canopy holds a 92-year-old artist's secret to staying alive in your work, a quietly generous man who built 5,000 schools and asked for nothing, and enough music to carry you through whatever uncertain thing this day has planned.", "garden": {"note": "The garden has hit its full-throated June stride, roses tumbling over themselves, lavender humming with bees before the heat of the day sets in. This morning, step out early while the dew still clings and let the almost-full moon's pale ghost overhead remind you that tonight will be spectacular.", "in_season": ["Rosa (climbing and shrub roses at peak bloom \u2014 deadhead faded flowers to encourage a second flush)", "Lavandula angustifolia (lavender just opening \u2014 harvest a few stems before the bees get there first)", "Courgettes (first zucchini swelling fast; check daily or you'll find a marrow by Tuesday)", "Stake and tie tall dahlias and delphiniums before summer storms arrive"], "sky_tonight": "The Full Strawberry Moon rises at dusk in Sagittarius, so bright it will cast faint shadows across the lawn; no telescope needed.", "moon_label": "Full moon", "illum_pct": 97, "sun_range": "05:29\u201321:28"}, "featured_read": {"title": "Legendary Artist Sheila Hicks, at 92, on the Secret to Creative Vitality", "note": "At 92, weaver and artist Sheila Hicks offers a quiet rebuke to the age of virality, this piece traces how she has spent a lifetime chasing the unknown rather than confirming what the market already believes. It's a reminder that creative vitality has always been less a talent than a refusal.", "url": "https://www.themarginalian.org/2026/06/27/sheila-hicks/", "cover": "https://www.themarginalian.org/wp-content/uploads/2026/06/sheilahicks1.jpg?fit=622%2C327\u0026ssl=1", "source": "The Marginalian"}, "music": [{"title": "Caleb Caudle's \"Heavy Thrill\" is built for uncertain times", "note": "Like sitting on a porch at dusk watching storm clouds roll in, grateful for everything that anchors you to the ground.", "url": "https://www.npr.org/2026/06/27/nx-s1-5836494/caleb-caudles-heavy-thrill-is-built-for-uncertain-times", "cover": "https://media.npr.org/include/images/facebook-default-wide-s1400-c85.jpg", "genre": "", "source": "NPR Music"}, {"title": "Noah Kahan Asks Concertgoers Not To Shit In Their Seats", "note": "The chaotic energy of a sold-out stadium where something has gone deeply, irreversibly wrong.", "url": "https://stereogum.com/2503674/noah-kahan-asks-concertgoers-not-to-shit-in-their-seats/news/", "cover": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/06/noah-kahan-1.jpg", "genre": "", "source": "Stereogum"}, {"title": "Andy Cohen Claims To Be A Deadhead But Only Just Found Out Phil Lesh Was On Real Housewives In 2008", "note": "The delightful awkwardness of running into someone at a party who claims to love your favorite obscure band but clearly only knows the hits.", "url": "https://stereogum.com/2503655/andy-cohen-claims-to-be-a-deadhead-but-only-just-found-out-phil-lesh-was-on-real-housewives-in-2008/news/", "cover": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/06/lesh-copy.png", "genre": "", "source": "Stereogum"}, {"title": "Concert Review: DoYeon Kim Quartet at Solar Myth, Philadelphia", "note": "Late-night Philadelphia basement energy, where a zither rewires your nervous system and you leave unsure which century you're walking back into.", "url": "https://www.jazztimes.com/reviews/live/concert-review-doyeon-kim-quartet-at-solar-myth-philadelphia/", "cover": "https://www.jazztimes.com/wp-content/uploads/2026/06/20260624_210043-scaled.jpg", "genre": "", "source": "JazzTimes"}], "videos": [], "good_news": [{"title": "Good News in History, June 28", "note": "History is full of quiet turning points worth remembering, and pausing to mark them reminds us that progress has always been possible, even in difficult times. These moments are a genuine anchor for hope.", "url": "https://www.goodnewsnetwork.org/events060628/", "cover": "https://www.goodnewsnetwork.org/wp-content/uploads/2020/06/Mel-Brooks-2010-cc-Angela-George-and-w-Anne-Bancroft-in-1991-cc-Georges-Biard.jpg", "source": "Good News Network"}, {"title": "Wealthy Chicagoan secretly built 5,000 schools and a popular museum, but refused to put his name on them", "note": "Julius Rosenwald's choice to pour his fortune into 5,000 schools for Black children across the South, anonymously, is a powerful reminder that generosity at its best seeks impact, not recognition. It's the kind of story that makes you want to be a little more quietly useful in the world.", "url": "https://www.upworthy.com/wealthy-chicagoan-secretly-built-5000-schools-and-a-popular-museum-but-refused-to-put-his-name-on-them/", "cover": "https://www.upworthy.com/wp-content/uploads/sites/2/2026/06/1_6c2eca.jpg", "source": "Upworthy"}], "discovery": []}</script>
 <script>
 const DATA = JSON.parse(document.getElementById('data').textContent);
 const $ = (s,r=document)=>r.querySelector(s);
@@ -330,7 +335,12 @@ function cover(url,tone,label,play){
   $('#garden-note').textContent = g.note;
   const season=(g.in_season||[]);
   $('#garden-season').innerHTML = season.map(s=>'<span class="chip static">'+esc(s)+'</span>').join('');
-  const meta=[]; if(g.moon_label) meta.push(g.moon_label); if(g.sky_tonight) meta.push(g.sky_tonight);
+  // The sky-tonight sentence reads as normal-case prose, not an uppercase chip.
+  if(g.sky_tonight){ $('#garden-sky').textContent = g.sky_tonight; $('#garden-sky').style.display=''; }
+  // The uppercase meta row holds only short tokens: moon (+ %) and the sun range.
+  const meta=[];
+  if(g.moon_label) meta.push((g.illum_pct && !/illumin/i.test(g.moon_label)) ? g.moon_label+' ('+g.illum_pct+'% illuminated)' : g.moon_label);
+  if(g.sun_range) meta.push('Sun '+g.sun_range);
   $('#garden-meta').innerHTML = meta.map((b,i)=>(i?'<span class="dot"></span>':'')+'<span>'+esc(b)+'</span>').join('');
   $('#almanac').style.display='';
 })();
@@ -344,13 +354,15 @@ function cover(url,tone,label,play){
     $('#puzzle-prompt').textContent = p.prompt;
     $('#puzzle-answer').textContent = p.answer;
     if(p.hint){ $('#puzzle-hint').textContent = 'Hint: '+p.hint; $('#puzzle-hint').style.display=''; }
+    var credit = p.credit || (p.source ? 'via '+p.source : '');
+    if(credit){ $('#puzzle-source').textContent = credit; $('#puzzle-source').style.display=''; }
   } else {
     $('#puzzle-label').textContent = 'The Puzzle Corner';
     $('#puzzle-prompt').textContent = '';
     document.querySelector('#puzzle details').style.display='none';
   }
   if(prev && prev.answer){
-    $('#puzzle-prev').innerHTML = 'Last edition\u2019s answer &middot; <b>'+esc(prev.answer)+'</b>';
+    $('#puzzle-prev').innerHTML = '<span class="lbl">Last edition\u2019s answer</span><b>'+esc(prev.answer)+'</b>';
     $('#puzzle-prev').style.display='';
   }
   $('#puzzle').style.display='';

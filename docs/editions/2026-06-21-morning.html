@@ -68,8 +68,9 @@
   .almanac{max-width:740px;margin:0 auto;padding:26px 40px 4px;}
   .almanac .eyebrow{margin-bottom:12px;}
   .almanac p{font-family:var(--serif);font-size:18px;line-height:1.62;color:var(--ink-soft);}
+  .almanac-sky{font-family:var(--serif);font-style:italic;font-size:16px;line-height:1.55;color:var(--ink-mute);margin-top:10px;}
   .almanac-foot{display:flex;flex-wrap:wrap;align-items:center;gap:12px 22px;margin-top:18px;}
-  .almanac-meta{display:flex;align-items:center;gap:12px;font-size:11px;letter-spacing:0.15em;text-transform:uppercase;color:var(--ink-mute);}
+  .almanac-meta{display:flex;flex-wrap:wrap;align-items:center;gap:8px 12px;font-size:11px;letter-spacing:0.15em;text-transform:uppercase;color:var(--ink-mute);}
   .almanac-meta .dot{width:4px;height:4px;border-radius:50%;background:var(--brass);}
 
   /* ---- Fern's daily puzzle ---- */
@@ -83,8 +84,10 @@
   .puzzle summary:hover{background:var(--brass);color:var(--forest-deep);}
   .puzzle details[open] summary{display:none;}
   .puzzle .answer{font-family:var(--display);font-style:italic;font-size:21px;color:var(--forest);border-left:2px solid var(--brass);padding-left:16px;}
-  .puzzle .prev{margin-top:18px;padding-top:14px;border-top:1px solid var(--line);font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:var(--ink-mute);}
+  .puzzle .prev{margin-top:18px;padding-top:14px;border-top:1px solid var(--line);font-size:14px;line-height:1.55;color:var(--ink-soft);}
+  .puzzle .prev .lbl{display:block;font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:var(--ink-mute);margin-bottom:4px;}
   .puzzle .prev b{color:var(--brass-deep);font-weight:600;}
+  .puzzle .source{margin-top:10px;font-family:var(--sans);font-size:10.5px;letter-spacing:0.06em;color:var(--ink-mute);}
 
   /* ---- FIP live radio bar (gilt double frame + diamond accents) ---- */
   .radio-bar{position:relative;display:flex;align-items:center;gap:18px;background:var(--forest);border:1px solid var(--brass);color:var(--cream);padding:18px 30px;margin-bottom:30px;flex-wrap:wrap;}
@@ -203,7 +206,7 @@
 <body>
   <header class="cover">
     <div class="cover-in">
-      <div class="eyebrow orn">Morning Edition &nbsp;&middot;&nbsp; No. 1073 &nbsp;&middot;&nbsp; Sun, June 21, 2026</div>
+      <div class="eyebrow orn">Morning Edition &nbsp;&middot;&nbsp; No. 23 &nbsp;&middot;&nbsp; Sun, June 21, 2026</div>
       <h1>The Curated Canopy</h1>
       <div class="tagline">Human stories, good news &amp; the natural world</div>
       <div class="flr" aria-hidden="true"><svg viewBox="0 0 200 20" width="200" height="20"><g fill="none" stroke="currentColor" stroke-width="1.1" stroke-linecap="round"><path d="M100 10 C84 10 78 3.5 64 3.5 C52 3.5 48 10 38 10"/><path d="M100 10 C116 10 122 3.5 136 3.5 C148 3.5 152 10 162 10"/><path d="M38 10 H10"/><path d="M162 10 H190"/></g><g fill="currentColor"><path d="M100 4 l4.5 6 l-4.5 6 l-4.5 -6 z"/><circle cx="10" cy="10" r="1.6"/><circle cx="190" cy="10" r="1.6"/><circle cx="64" cy="3.5" r="1.7"/><circle cx="136" cy="3.5" r="1.7"/></g></svg></div>
@@ -222,6 +225,7 @@
   <section class="almanac" id="almanac" style="display:none;">
     <div class="eyebrow orn">From the Garden &middot; Zürich</div>
     <p id="garden-note"></p>
+    <div class="almanac-sky" id="garden-sky" style="display:none;"></div>
     <div class="almanac-foot">
       <div class="chips" id="garden-season"></div>
       <div class="almanac-meta" id="garden-meta"></div>
@@ -236,6 +240,7 @@
       <summary>Reveal the answer</summary>
       <div class="answer" id="puzzle-answer"></div>
     </details>
+    <div class="source" id="puzzle-source" style="display:none;"></div>
     <div class="prev" id="puzzle-prev" style="display:none;"></div>
   </section>
 
@@ -296,7 +301,7 @@
     <div class="links"><a href="#">About</a><a href="./archive.html">The Archive</a><a href="./grove.html">The Grove</a><a href="#">Preferences</a></div>
   </footer>
 
-<script id="data" type="application/json">{"is_am": true, "greeting": "While the bread is still warm and the coffee is finding its courage, settle in, today's Canopy has fast-growing radishes, a choir that will ambush your heart, and Oliver Sacks reminding us what all of this is actually for.", "garden": {"note": "The summer solstice has arrived, the longest, most generous day of the year, and the garden knows it, stretching itself toward a sun that won't set until nearly half past nine. This is the hinge moment, that rarest of mornings when the light is at its absolute peak and the roses still haven't heard the news that summer will slowly begin to shorten from here.", "in_season": ["Rosa \u2014 shrub and climbing roses at full, glorious flush", "Lavender just coming into first bloom, ready for an early harvest", "Courgettes swelling overnight \u2014 check under the leaves daily", "Deadhead and tie in climbing plants before the heat sets in"], "sky_tonight": "The First Quarter Moon rides high in the southwest after dusk, look for Saturn rising in the southeast as darkness finally falls around 22:30.", "moon_label": "First quarter (37% illuminated)"}, "featured_read": {"title": "Oliver Sacks on Despair and the Meaning of Life", "note": "Oliver Sacks, writing with the particular clarity of someone who has stared down a terminal diagnosis, arrives at a quietly radical answer to the question most of us are too busy to ask. This is the kind of essay you finish and then sit with for a while, hands still.", "url": "https://www.themarginalian.org/2026/06/19/oliver-sacks-letters-meaning-of-life/", "cover": "https://www.themarginalian.org/wp-content/uploads/2024/11/OliverSacks_BillHayes10.jpg?fit=1200%2C630\u0026ssl=1", "source": "The Marginalian"}, "music": [{"title": "Meet the elementary school choir that's capturing hearts by joyfully covering hits\"", "note": "The kind of pure, unguarded joy that makes you tear up in a grocery store without knowing exactly why.", "url": "https://www.npr.org/2026/06/20/nx-s1-5684186/meet-the-elementary-school-choir-thats-capturing-hearts-by-joyfully-covering-hits", "cover": "https://media.npr.org/include/images/facebook-default-wide-s1400-c85.jpg", "genre": "", "source": "NPR Music"}, {"title": "The Swifties Are Coming For Metallica\u2019s Kirk Hammett", "note": "Extremely online chaos energy, like watching two fandoms collide in a comment section at 2am.", "url": "https://stereogum.com/2502894/the-swifties-are-coming-for-metallicas-kirk-hammett/news/", "cover": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/06/Screenshot-2026-06-20-at-1.10.15-PM.png", "genre": "", "source": "Stereogum"}], "videos": [{"title": "The Fastest Crops You Can Grow (Seed to Plate in WEEKS)", "note": "Kevin from Epic Gardening teams up with Jacques to walk through 7 specific crops, including French Breakfast radishes, baby bok choy, and microgreens, that go from seed to harvest in under 30 days. It's a practical shortlist for anyone who's given up on gardening because results feel too slow, or who just wants something growing on a kitchen counter this week. Timestamps and direct seed links make it easy to act on immediately.", "video_id": "fwMdk2r8d_w", "channel": "Epic Gardening", "wild": false}], "good_news": [{"title": "Good News in History, June 21", "note": "History is full of quiet victories worth remembering, pausing to mark them reminds us that progress has always been built one small, good moment at a time. Looking back at what humanity has overcome is a genuinely grounding source of hope.", "url": "https://www.goodnewsnetwork.org/events060621/", "cover": "https://www.goodnewsnetwork.org/wp-content/uploads/2016/06/Pierre-Omidyar-lecturing-by-Joi-Ito-CC.jpg", "source": "Good News Network"}, {"title": "Video of a 1949 kitchen design has people drooling over its brilliant features", "note": "A 1949 kitchen drawing crowds of admirers shows that thoughtful, human-centred design never goes out of style, and that good ideas, however old, have a wonderful way of inspiring new ones.", "url": "https://www.upworthy.com/1949-kitchen-design-ex1/", "cover": "https://www.upworthy.com/wp-content/uploads/sites/2/2025/12/origin_aacf95.png", "source": "Upworthy"}], "discovery": []}</script>
+<script id="data" type="application/json">{"is_am": true, "greeting": "While the bread is still warm and the coffee is finding its courage, settle in, today's Canopy has fast-growing radishes, a choir that will ambush your heart, and Oliver Sacks reminding us what all of this is actually for.", "garden": {"note": "The summer solstice has arrived, the longest, most generous day of the year, and the garden knows it, stretching itself toward a sun that won't set until nearly half past nine. This is the hinge moment, that rarest of mornings when the light is at its absolute peak and the roses still haven't heard the news that summer will slowly begin to shorten from here.", "in_season": ["Rosa \u2014 shrub and climbing roses at full, glorious flush", "Lavender just coming into first bloom, ready for an early harvest", "Courgettes swelling overnight \u2014 check under the leaves daily", "Deadhead and tie in climbing plants before the heat sets in"], "sky_tonight": "The First Quarter Moon rides high in the southwest after dusk, look for Saturn rising in the southeast as darkness finally falls around 22:30.", "moon_label": "First quarter", "illum_pct": 37, "sun_range": "05:27\u201321:28"}, "featured_read": {"title": "Oliver Sacks on Despair and the Meaning of Life", "note": "Oliver Sacks, writing with the particular clarity of someone who has stared down a terminal diagnosis, arrives at a quietly radical answer to the question most of us are too busy to ask. This is the kind of essay you finish and then sit with for a while, hands still.", "url": "https://www.themarginalian.org/2026/06/19/oliver-sacks-letters-meaning-of-life/", "cover": "https://www.themarginalian.org/wp-content/uploads/2024/11/OliverSacks_BillHayes10.jpg?fit=1200%2C630\u0026ssl=1", "source": "The Marginalian"}, "music": [{"title": "Meet the elementary school choir that's capturing hearts by joyfully covering hits\"", "note": "The kind of pure, unguarded joy that makes you tear up in a grocery store without knowing exactly why.", "url": "https://www.npr.org/2026/06/20/nx-s1-5684186/meet-the-elementary-school-choir-thats-capturing-hearts-by-joyfully-covering-hits", "cover": "https://media.npr.org/include/images/facebook-default-wide-s1400-c85.jpg", "genre": "", "source": "NPR Music"}, {"title": "The Swifties Are Coming For Metallica\u2019s Kirk Hammett", "note": "Extremely online chaos energy, like watching two fandoms collide in a comment section at 2am.", "url": "https://stereogum.com/2502894/the-swifties-are-coming-for-metallicas-kirk-hammett/news/", "cover": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/06/Screenshot-2026-06-20-at-1.10.15-PM.png", "genre": "", "source": "Stereogum"}], "videos": [{"title": "The Fastest Crops You Can Grow (Seed to Plate in WEEKS)", "note": "Kevin from Epic Gardening teams up with Jacques to walk through 7 specific crops, including French Breakfast radishes, baby bok choy, and microgreens, that go from seed to harvest in under 30 days. It's a practical shortlist for anyone who's given up on gardening because results feel too slow, or who just wants something growing on a kitchen counter this week. Timestamps and direct seed links make it easy to act on immediately.", "video_id": "fwMdk2r8d_w", "channel": "Epic Gardening", "wild": false}], "good_news": [{"title": "Good News in History, June 21", "note": "History is full of quiet victories worth remembering, pausing to mark them reminds us that progress has always been built one small, good moment at a time. Looking back at what humanity has overcome is a genuinely grounding source of hope.", "url": "https://www.goodnewsnetwork.org/events060621/", "cover": "https://www.goodnewsnetwork.org/wp-content/uploads/2016/06/Pierre-Omidyar-lecturing-by-Joi-Ito-CC.jpg", "source": "Good News Network"}, {"title": "Video of a 1949 kitchen design has people drooling over its brilliant features", "note": "A 1949 kitchen drawing crowds of admirers shows that thoughtful, human-centred design never goes out of style, and that good ideas, however old, have a wonderful way of inspiring new ones.", "url": "https://www.upworthy.com/1949-kitchen-design-ex1/", "cover": "https://www.upworthy.com/wp-content/uploads/sites/2/2025/12/origin_aacf95.png", "source": "Upworthy"}], "discovery": []}</script>
 <script>
 const DATA = JSON.parse(document.getElementById('data').textContent);
 const $ = (s,r=document)=>r.querySelector(s);
@@ -330,7 +335,12 @@ function cover(url,tone,label,play){
   $('#garden-note').textContent = g.note;
   const season=(g.in_season||[]);
   $('#garden-season').innerHTML = season.map(s=>'<span class="chip static">'+esc(s)+'</span>').join('');
-  const meta=[]; if(g.moon_label) meta.push(g.moon_label); if(g.sky_tonight) meta.push(g.sky_tonight);
+  // The sky-tonight sentence reads as normal-case prose, not an uppercase chip.
+  if(g.sky_tonight){ $('#garden-sky').textContent = g.sky_tonight; $('#garden-sky').style.display=''; }
+  // The uppercase meta row holds only short tokens: moon (+ %) and the sun range.
+  const meta=[];
+  if(g.moon_label) meta.push((g.illum_pct && !/illumin/i.test(g.moon_label)) ? g.moon_label+' ('+g.illum_pct+'% illuminated)' : g.moon_label);
+  if(g.sun_range) meta.push('Sun '+g.sun_range);
   $('#garden-meta').innerHTML = meta.map((b,i)=>(i?'<span class="dot"></span>':'')+'<span>'+esc(b)+'</span>').join('');
   $('#almanac').style.display='';
 })();
@@ -344,13 +354,15 @@ function cover(url,tone,label,play){
     $('#puzzle-prompt').textContent = p.prompt;
     $('#puzzle-answer').textContent = p.answer;
     if(p.hint){ $('#puzzle-hint').textContent = 'Hint: '+p.hint; $('#puzzle-hint').style.display=''; }
+    var credit = p.credit || (p.source ? 'via '+p.source : '');
+    if(credit){ $('#puzzle-source').textContent = credit; $('#puzzle-source').style.display=''; }
   } else {
     $('#puzzle-label').textContent = 'The Puzzle Corner';
     $('#puzzle-prompt').textContent = '';
     document.querySelector('#puzzle details').style.display='none';
   }
   if(prev && prev.answer){
-    $('#puzzle-prev').innerHTML = 'Last edition\u2019s answer &middot; <b>'+esc(prev.answer)+'</b>';
+    $('#puzzle-prev').innerHTML = '<span class="lbl">Last edition\u2019s answer</span><b>'+esc(prev.answer)+'</b>';
     $('#puzzle-prev').style.display='';
   }
   $('#puzzle').style.display='';
