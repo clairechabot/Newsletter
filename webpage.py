@@ -506,7 +506,7 @@ function cover(url,tone,label,play){
   if(g.sky_tonight){ $('#garden-sky').textContent = g.sky_tonight; $('#garden-sky').style.display=''; }
   // The uppercase meta row holds only short tokens: moon (+ %) and the sun range.
   const meta=[];
-  if(g.moon_label) meta.push(g.illum_pct ? g.moon_label+' ('+g.illum_pct+'% illuminated)' : g.moon_label);
+  if(g.moon_label) meta.push((g.illum_pct && !/illumin/i.test(g.moon_label)) ? g.moon_label+' ('+g.illum_pct+'% illuminated)' : g.moon_label);
   if(g.sun_range) meta.push('Sun '+g.sun_range);
   $('#garden-meta').innerHTML = meta.map((b,i)=>(i?'<span class="dot"></span>':'')+'<span>'+esc(b)+'</span>').join('');
   $('#almanac').style.display='';

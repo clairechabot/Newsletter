@@ -217,6 +217,7 @@ def save_history(
     seen_riddle_ids: "list | None" = None,
     seen_anagram_seeds: "list | None" = None,
     seen_haiku_ids: "list | None" = None,
+    recent_greetings: "list | None" = None,
 ) -> None:
     """Persist seen video IDs and the Good News / Discovery / Reads / Music URLs.
 
@@ -247,6 +248,8 @@ def save_history(
         existing["seen_anagram_seeds"] = seen_anagram_seeds
     if seen_haiku_ids is not None:
         existing["seen_haiku_ids"] = seen_haiku_ids
+    if recent_greetings is not None:
+        existing["recent_greetings"] = recent_greetings
     HISTORY_FILE.write_text(
         json.dumps(existing, indent=2, ensure_ascii=False), encoding="utf-8"
     )
@@ -1836,6 +1839,7 @@ def main() -> dict:
     seen_riddle_ids: list = []
     seen_anagram_seeds: list = []
     seen_haiku_ids: list = []
+    recent_greetings: list = []
     if HISTORY_FILE.exists():
         try:
             _hist = json.loads(HISTORY_FILE.read_text(encoding="utf-8-sig"))
@@ -1844,9 +1848,11 @@ def main() -> dict:
             seen_riddle_ids = _hist.get("seen_riddle_ids") or []
             seen_anagram_seeds = _hist.get("seen_anagram_seeds") or []
             seen_haiku_ids = _hist.get("seen_haiku_ids") or []
+            recent_greetings = _hist.get("recent_greetings") or []
         except Exception:
             previous_puzzle, recent_puzzles = {}, []
             seen_riddle_ids, seen_anagram_seeds, seen_haiku_ids = [], [], []
+            recent_greetings = []
 
     # Real puzzle material for the classic riddle/anagram/haiku mornings (best-
     # effort; AI generation is the fallback). Only fetch for morning editions.
@@ -1870,6 +1876,7 @@ def main() -> dict:
         "garden_seed": garden_seed,
         "previous_puzzle": previous_puzzle,
         "recent_puzzles": recent_puzzles,
+        "recent_greetings": recent_greetings,
         "riddle_pool": riddle_pool,
         "anagram_pool": anagram_pool,
         "haiku_pool": haiku_pool,
@@ -1918,6 +1925,12 @@ def main() -> dict:
         updated_anagram_seeds = (seen_anagram_seeds + [sid])[-len(ANAGRAM_SEEDS):]
     elif src == "tinywords.com" and sid:
         updated_haiku_ids = (seen_haiku_ids + [sid])[-400:]
+    # Roll this edition's greeting into the anti-repetition memory (last 10) so
+    # the next notes avoid echoing its opening, imagery, and structure.
+    updated_greetings = None
+    new_greeting = (curated.get("fern_data") or {}).get("greeting", "").strip()
+    if new_greeting:
+        updated_greetings = (recent_greetings + [new_greeting])[-10:]
     save_history(seen_ids, seen_good_news_urls, seen_discovery_urls,
                  seen_reads_urls, seen_music_urls,
                  pending_puzzle=(
@@ -1927,7 +1940,8 @@ def main() -> dict:
                  recent_puzzles=updated_recent,
                  seen_riddle_ids=updated_riddle_ids,
                  seen_anagram_seeds=updated_anagram_seeds,
-                 seen_haiku_ids=updated_haiku_ids)
+                 seen_haiku_ids=updated_haiku_ids,
+                 recent_greetings=updated_greetings)
 
     curated_file = Path(__file__).parent / "curated_data.json"
     curated_file.write_text(json.dumps(curated, indent=2, ensure_ascii=False), encoding="utf-8")

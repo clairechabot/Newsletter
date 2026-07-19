@@ -261,7 +261,11 @@ def _render_garden(garden: dict) -> str:
     # Compose a short moon token, e.g. "Waxing crescent (13% illuminated)".
     moon_label = garden.get("moon_label", "")
     illum = garden.get("illum_pct", 0)
-    moon_txt = f"{moon_label} ({illum}% illuminated)" if moon_label else ""
+    # Guard against a label that already carries "(NN% illuminated)".
+    if moon_label and illum and "illumin" not in moon_label.lower():
+        moon_txt = f"{moon_label} ({illum}% illuminated)"
+    else:
+        moon_txt = moon_label
     sun_txt = garden.get("sun_range", "")
     sun_txt = f"Sun {sun_txt}" if sun_txt else ""
     # Small uppercase meta row holds only SHORT tokens (moon · sun · in-season).
