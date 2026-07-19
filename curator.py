@@ -471,6 +471,49 @@ def audit_larder(client: anthropic.Anthropic, larder_raw: dict) -> dict:
     return {"news": out_news, "recipe": out_recipe}
 
 
+_LARDER_NOTE_SYSTEM = textwrap.dedent("""
+You are Fern — the AI curator behind The Curated Canopy newsletter.
+Personality: sophisticated, cozy, warm, slightly witty. Never cringe or hypey.
+
+Write ONE short seasonal note (1-2 sentences) about EATING and COOKING in the
+reader's LOCALE right now. Ground it in that real region and season: what's coming
+into season at the markets, gardens, orchards, or waters there — a specific
+ingredient, dish, or small ritual worth seeking out this week. Favour things true
+to that place (e.g. Alpine Switzerland vs coastal Nova Scotia differ). Do NOT invent
+out-of-season produce. Be specific and appetising, not generic.
+
+Return ONLY valid JSON: {"note": "<1-2 warm, specific sentences>"}
+Do not include any text outside the JSON object.
+""").strip()
+
+
+def generate_larder_note(client: anthropic.Anthropic, locale: str, season: str,
+                         is_am: bool = True) -> str:
+    """Fern's short seasonal food note, grounded in the reader's locale + season.
+    Best-effort: returns '' on any failure so the section still renders."""
+    if not locale:
+        return ""
+    user_message = (
+        f"Locale: {locale} (Northern Hemisphere, temperate)\n"
+        f"Season: {season}\n"
+        f"Edition: {'morning' if is_am else 'evening'}"
+    )
+    try:
+        message = client.messages.create(
+            model=CLAUDE_MODEL, max_tokens=256, system=_LARDER_NOTE_SYSTEM,
+            messages=[{"role": "user", "content": user_message}],
+        )
+        raw = message.content[0].text.strip()
+        if raw.startswith("```"):
+            raw = raw.split("```")[1]
+            raw = raw[4:] if raw.startswith("json") else raw
+            raw = raw.strip()
+        return (json.loads(raw).get("note") or "").strip()
+    except Exception as exc:
+        print(f"  [warn] Larder seasonal note failed for {locale}: {exc}")
+        return ""
+
+
 # ---------------------------------------------------------------------------
 # Discovery Audit — Fern's Note (History/Mystery + Science)
 # ---------------------------------------------------------------------------
@@ -1385,8 +1428,16 @@ def run_curation(raw_data: dict) -> dict:
     # 8. From the Garden — Fern's seasonal almanac note (every run)
     garden_note = generate_garden_note(client, raw_data.get("garden_seed", {}))
 
-    # 8a. The Larder — food news + a recipe, with Fern blurbs (morning only)
+    # 8a. The Larder — food news + a recipe, with Fern blurbs (morning only).
+    # A locale-aware seasonal food note is added (Swiss/Zürich here; the regional
+    # re-send regenerates it for its own locale, e.g. Nova Scotia).
     larder = audit_larder(client, raw_data.get("food", {}))
+    if larder.get("news") or larder.get("recipe"):
+        _seed = raw_data.get("garden_seed", {})
+        larder["seasonal_note"] = generate_larder_note(
+            client, _seed.get("locale", "Zürich"), _seed.get("season", ""),
+            raw_data.get("is_am_email", True),
+        )
 
     # 8b. Fern's daily puzzle (morning riddle / evening enigma). Best-effort:
     # a failure just means the edition ships without the puzzle section.
