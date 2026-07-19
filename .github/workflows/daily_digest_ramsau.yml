@@ -1,0 +1,53 @@
+name: Ramsau am Dachstein Edition
+
+# Regional re-send of the primary Curated Canopy for a reader in Ramsau am Dachstein,
+# Austria (Central European Time). It does NOT re-fetch or re-curate — it reuses the
+# primary edition's committed curated_data.json and re-localizes "From the Garden" and
+# The Larder's seasonal food note, then emails it to the EMAIL_TO_RAMSAU list. No local
+# news block (no reliable English feed for the village). No web publish, no history writes.
+#
+# Timing: same time zone as the Zürich source, whose content commits ~06:15 UTC
+# (~08:15 local), so the morning fires 06:23 UTC and lands ~08:30–10:00 local (a true
+# 07:00 isn't possible with the re-send model). Evening: 19:00 CEST = 17:00 UTC → fire
+# 16:23 UTC, after the ~15:55 UTC evening commit. Winter (CET) arrives ~1h earlier.
+
+on:
+  schedule:
+    - cron: "23 6 * * *"    # morning — just after the day's content commits
+    - cron: "23 16 * * *"   # ≈ 19:00 Austria (evening)
+  workflow_dispatch:
+
+jobs:
+  ramsau-edition:
+    name: Ramsau am Dachstein re-send
+    runs-on: ubuntu-latest
+    env:
+      TZ: Europe/Vienna
+      EDITION_TZ: Europe/Vienna
+      GARDEN_LOCALE: "Ramsau am Dachstein, Austria"
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: |
+          pip install --quiet -r requirements.txt
+          pip install --quiet anthropic google-api-python-client python-dateutil requests beautifulsoup4
+
+      - name: Re-localize + send the Ramsau am Dachstein edition
+        env:
+          CLAUDE_API_KEY:        ${{ secrets.CLAUDE_API_KEY }}
+          EMAIL_USER:            ${{ secrets.EMAIL_USER }}
+          SMTP_USER:             ${{ secrets.SMTP_USER }}
+          SMTP_PASS:             ${{ secrets.SMTP_PASS }}
+          SMTP_HOST:             ${{ secrets.SMTP_HOST }}
+          SMTP_SERVER:           ${{ secrets.SMTP_SERVER }}
+          SMTP_PORT:             ${{ secrets.SMTP_PORT }}
+          EMAIL_TO:              ${{ secrets.EMAIL_TO_RAMSAU }}
+        run: python renderer.py --regional

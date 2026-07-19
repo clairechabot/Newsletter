@@ -1,0 +1,54 @@
+name: Berlin Edition
+
+# Regional re-send of the primary Curated Canopy for a reader in Berlin, Germany
+# (Central European Time). It does NOT re-fetch or re-curate — it reuses the primary
+# edition's committed curated_data.json, re-localizes "From the Garden", The Larder's
+# seasonal food note, and adds a local-news block (The Local, Germany-wide English),
+# then emails it to the EMAIL_TO_BERLIN list. No web publish, no history writes.
+#
+# Timing: Berlin shares the Zürich source's time zone, and the source content isn't
+# committed until ~06:15 UTC (~08:15 Berlin). So the morning fires 06:23 UTC — just
+# after the content is ready — landing ~08:30–10:00 local (a true 07:00 isn't
+# possible with the re-send model). Evening: 19:00 CEST = 17:00 UTC → fire 16:23 UTC,
+# after the ~15:55 UTC evening commit. Fixed-UTC cron means winter (CET) arrives ~1h earlier.
+
+on:
+  schedule:
+    - cron: "23 6 * * *"    # morning — just after the day's content commits
+    - cron: "23 16 * * *"   # ≈ 19:00 Berlin (evening)
+  workflow_dispatch:
+
+jobs:
+  berlin-edition:
+    name: Berlin re-send
+    runs-on: ubuntu-latest
+    env:
+      TZ: Europe/Berlin
+      EDITION_TZ: Europe/Berlin
+      GARDEN_LOCALE: "Berlin, Germany"
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: |
+          pip install --quiet -r requirements.txt
+          pip install --quiet anthropic google-api-python-client python-dateutil requests beautifulsoup4
+
+      - name: Re-localize + send the Berlin edition
+        env:
+          CLAUDE_API_KEY:        ${{ secrets.CLAUDE_API_KEY }}
+          EMAIL_USER:            ${{ secrets.EMAIL_USER }}
+          SMTP_USER:             ${{ secrets.SMTP_USER }}
+          SMTP_PASS:             ${{ secrets.SMTP_PASS }}
+          SMTP_HOST:             ${{ secrets.SMTP_HOST }}
+          SMTP_SERVER:           ${{ secrets.SMTP_SERVER }}
+          SMTP_PORT:             ${{ secrets.SMTP_PORT }}
+          EMAIL_TO:              ${{ secrets.EMAIL_TO_BERLIN }}
+        run: python renderer.py --regional
