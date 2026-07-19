@@ -28,7 +28,7 @@ import datetime
 from zoneinfo import ZoneInfo
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
-from email.utils import formataddr
+from email.utils import formataddr, getaddresses
 from pathlib import Path
 
 # ---------------------------------------------------------------------------
@@ -572,7 +572,26 @@ def build_html(curated: dict) -> str:
 # ---------------------------------------------------------------------------
 # SMTP sender  (unchanged behaviour)
 # ---------------------------------------------------------------------------
-def send_email(html_body: str, subject: str) -> None:
+def _env_recipient_pairs() -> list[tuple[str, str]]:
+    """Parse EMAIL_TO (or NEWSLETTER_RECIPIENTS / RECIPIENTS) into (name, email)
+    pairs, honouring the standard `Name <email>` format so the main list can
+    carry per-reader names. Bare `email` entries come back with an empty name."""
+    raw_to = (
+        os.environ.get("EMAIL_TO")
+        or os.environ.get("NEWSLETTER_RECIPIENTS")
+        or os.environ.get("RECIPIENTS")
+        or ""
+    )
+    return [(n.strip(), e.strip()) for (n, e) in getaddresses([raw_to]) if e.strip()]
+
+
+def send_email(html_body: str, subject: str,
+               recipients: "list[str] | None" = None,
+               to_name: str = "", to_addr: str = "") -> None:
+    """Send one HTML message. `recipients` is the SMTP envelope (bare addresses);
+    when None it's parsed from EMAIL_TO. `to_name`/`to_addr` set the visible To —
+    used to address a single reader personally; otherwise recipients are effectively
+    BCC'd behind the sender label."""
     smtp_user = os.environ.get("SMTP_USER") or os.environ.get("EMAIL_USER", "")
     smtp_pass = os.environ.get("SMTP_PASS", "")
     smtp_host = os.environ.get("SMTP_SERVER") or os.environ.get("SMTP_HOST", "")
@@ -585,23 +604,18 @@ def send_email(html_body: str, subject: str) -> None:
     if not smtp_pass:
         raise SystemExit("ERROR: SMTP_PASS is empty. Check secrets!")
 
-    raw_to = (
-        os.environ.get("EMAIL_TO")
-        or os.environ.get("NEWSLETTER_RECIPIENTS")
-        or os.environ.get("RECIPIENTS")
-        or smtp_user
-    )
-    recipients = [r.strip() for r in raw_to.split(",") if r.strip()]
+    if recipients is None:
+        recipients = [e for (_n, e) in _env_recipient_pairs()] or [smtp_user]
     if not recipients:
         raise SystemExit("ERROR: No recipient. Set EMAIL_TO.")
 
     msg = MIMEMultipart("alternative")
     msg["Subject"] = subject
     msg["From"]    = formataddr(("Fern | The Curated Canopy", smtp_user))
-    # Recipients are BCC'd: delivery happens via the SMTP envelope below, and
-    # the visible To: shows only the sender, so readers never see each other's
-    # addresses.
-    msg["To"]      = formataddr(("The Curated Canopy readers", smtp_user))
+    # A personalized single send shows the reader's own address in To:; a batch
+    # send hides everyone behind the sender label (BCC via the envelope below).
+    msg["To"]      = (formataddr((to_name, to_addr)) if to_addr
+                      else formataddr(("The Curated Canopy readers", smtp_user)))
     msg.attach(MIMEText(html_body, "html", "utf-8"))
 
     print(f"[SMTP] Connecting to {smtp_host}:{smtp_port} …")
@@ -610,7 +624,8 @@ def send_email(html_body: str, subject: str) -> None:
         server.starttls()
         server.login(smtp_user, smtp_pass)
         server.sendmail(smtp_user, recipients, msg.as_bytes())
-    print(f"[SMTP] Sent to {len(recipients)} recipient(s).")
+    who = to_addr or f"{len(recipients)} recipient(s)"
+    print(f"[SMTP] Sent to {who}.")
 
 
 # ---------------------------------------------------------------------------
@@ -643,7 +658,52 @@ def main() -> None:
         top_pick = _dedash(fern.get("top_pick_title", "")).strip()
         prefix   = "The Morning Rise" if is_am else "The Evening Wind-down"
         subject  = f"{prefix} | {top_pick}" if top_pick else f"{prefix} · The Curated Canopy"
-        send_email(html, subject=subject)
+
+        pairs   = _env_recipient_pairs()
+        named   = [(n, e) for (n, e) in pairs if n]
+        unnamed = [e for (n, e) in pairs if not n]
+
+        if not named:
+            # No per-reader names — one send to the whole list, as before.
+            send_email(html, subject=subject)
+            return
+
+        # Personalize Fern's note per named reader. Generate ONE greeting with a
+        # {{NAME}} slot, then substitute each reader's name (natural, one Claude
+        # call). If the slot doesn't survive, fall back to a simple salutation.
+        placeholder = ""
+        try:
+            import curator
+            tmpl = curator.generate_fern_greeting(
+                curator.build_claude_client(), is_am,
+                curated.get("themes", []), curated.get("morning_soundtrack", []),
+                curated.get("global_silver_linings", []), curated.get("discovery_articles", []),
+                curated.get("featured_read", {}),
+                date_str=curated.get("fetched_at", "") or "",
+                recipient="{{NAME}}",
+            )
+            if "{{NAME}}" in (tmpl.get("greeting") or ""):
+                placeholder = tmpl["greeting"]
+        except Exception as exc:
+            print(f"[render] Personalized greeting template failed ({exc}) — using salutation.")
+
+        base_greeting = fern.get("greeting", "")
+
+        def _note_for(name: str) -> str:
+            if placeholder:
+                return placeholder.replace("{{NAME}}", name)
+            salute = ("Good morning, " if is_am else "Good evening, ") + name + ". "
+            return (salute + base_greeting).strip()
+
+        for name, email in named:
+            c2 = json.loads(json.dumps(curated))
+            c2.setdefault("fern_data", {})["greeting"] = _note_for(name)
+            send_email(build_html(c2), subject=subject,
+                       recipients=[email], to_name=name, to_addr=email)
+
+        if unnamed:
+            # Everyone without a name gets the shared (generic) note in one batch.
+            send_email(html, subject=subject, recipients=unnamed)
         return
 
     msg = "[render] EMAIL NOT SENT — missing SMTP secrets."
