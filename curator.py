@@ -408,6 +408,70 @@ def audit_good_news_articles(
 
 
 # ---------------------------------------------------------------------------
+# The Larder — food news/trends + a recipe (morning only)
+# ---------------------------------------------------------------------------
+
+_LARDER_SYSTEM = textwrap.dedent("""
+You are Fern — the AI curator behind The Curated Canopy newsletter.
+Personality: sophisticated, cozy, warm, slightly witty. Never cringe or hypey.
+
+You will receive food items — some are news/trend pieces, one is a RECIPE. For each,
+write a short blurb in Fern's voice:
+  • news/trend item: ONE sentence on why it's a tasty read or a trend worth knowing.
+  • recipe: ONE warm, appetising sentence inviting the reader to cook it (mention
+    what makes it lovely — season, ease, comfort), without inventing ingredients.
+
+Return ONLY a valid JSON array, one element per item in input order:
+[
+  { "index": <integer, 0-based>, "blurb": "<one sentence>" },
+  ...
+]
+Do not include any text outside the JSON array.
+""").strip()
+
+
+def audit_larder(client: anthropic.Anthropic, larder_raw: dict) -> dict:
+    """Add Fern's one-line blurb to each Larder news item and the recipe. Returns
+    {"news": [...], "recipe": {...}} enriched with 'blurb'. Best-effort: on failure
+    the items pass through without blurbs (the section still renders)."""
+    larder_raw = larder_raw or {}
+    news = list(larder_raw.get("news") or [])
+    recipe = dict(larder_raw.get("recipe") or {})
+    items = news + ([recipe] if recipe else [])
+    if not items:
+        return {"news": [], "recipe": {}}
+
+    print(f"[Audit/Larder] Blurbing {len(items)} food item(s) …")
+    lines = []
+    for i, it in enumerate(items):
+        kind = "RECIPE" if it.get("is_recipe") else "news/trend"
+        lines.append(
+            f"--- Item {i} ({kind}) ---\nSource: {it.get('source_name','')}\n"
+            f"Title: {it.get('title','')}\nSnippet: {it.get('snippet','')[:200]}"
+        )
+    try:
+        message = client.messages.create(
+            model=CLAUDE_MODEL, max_tokens=512, system=_LARDER_SYSTEM,
+            messages=[{"role": "user", "content": "\n\n".join(lines)}],
+        )
+        raw = message.content[0].text.strip()
+        if raw.startswith("```"):
+            raw = raw.split("```")[1]
+            raw = raw[4:] if raw.startswith("json") else raw
+            raw = raw.strip()
+        results = json.loads(raw)
+        idx_to_blurb = {r["index"]: r.get("blurb", "") for r in results}
+    except Exception as exc:
+        print(f"  [warn] Larder audit failed: {exc}. Passing items through.")
+        idx_to_blurb = {}
+
+    enriched = [{**it, "blurb": idx_to_blurb.get(i, "")} for i, it in enumerate(items)]
+    out_news = enriched[:len(news)]
+    out_recipe = enriched[len(news)] if recipe else {}
+    return {"news": out_news, "recipe": out_recipe}
+
+
+# ---------------------------------------------------------------------------
 # Discovery Audit — Fern's Note (History/Mystery + Science)
 # ---------------------------------------------------------------------------
 
@@ -1321,6 +1385,9 @@ def run_curation(raw_data: dict) -> dict:
     # 8. From the Garden — Fern's seasonal almanac note (every run)
     garden_note = generate_garden_note(client, raw_data.get("garden_seed", {}))
 
+    # 8a. The Larder — food news + a recipe, with Fern blurbs (morning only)
+    larder = audit_larder(client, raw_data.get("food", {}))
+
     # 8b. Fern's daily puzzle (morning riddle / evening enigma). Best-effort:
     # a failure just means the edition ships without the puzzle section.
     try:
@@ -1364,6 +1431,7 @@ def run_curation(raw_data: dict) -> dict:
             "featured_read": 1 if featured_read else 0,
             "garden": 1 if garden_note.get("note") else 0,
             "puzzle": 1 if puzzle else 0,
+            "larder": len(larder.get("news", [])) + (1 if larder.get("recipe") else 0),
         },
         "themes": themes,
         "morning_soundtrack": morning_soundtrack,
@@ -1373,5 +1441,6 @@ def run_curation(raw_data: dict) -> dict:
         "garden_note": garden_note,
         "puzzle": puzzle,
         "previous_puzzle": raw_data.get("previous_puzzle") or {},
+        "larder": larder,
         "fern_data": fern_data,
     }

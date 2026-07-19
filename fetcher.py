@@ -191,9 +191,10 @@ GARDEN_LOCALE = os.environ.get("GARDEN_LOCALE", "Zürich")
 # History helpers
 # ---------------------------------------------------------------------------
 
-def load_history() -> tuple[set[str], set[str], set[str], set[str], set[str]]:
-    """Return (video_ids, good_news_urls, discovery_urls, reads_urls, music_urls)
-    seen before. New buckets default to empty so older history.json files load."""
+def load_history() -> tuple[set[str], set[str], set[str], set[str], set[str], set[str]]:
+    """Return (video_ids, good_news_urls, discovery_urls, reads_urls, music_urls,
+    food_urls) seen before. New buckets default to empty so older history.json
+    files load."""
     if HISTORY_FILE.exists():
         data = json.loads(HISTORY_FILE.read_text(encoding="utf-8-sig"))
         return (
@@ -202,8 +203,9 @@ def load_history() -> tuple[set[str], set[str], set[str], set[str], set[str]]:
             set(data.get("discovery_urls", [])),
             set(data.get("reads_urls", [])),
             set(data.get("music_urls", [])),
+            set(data.get("food_urls", [])),
         )
-    return set(), set(), set(), set(), set()
+    return set(), set(), set(), set(), set(), set()
 
 
 def save_history(
@@ -218,6 +220,7 @@ def save_history(
     seen_anagram_seeds: "list | None" = None,
     seen_haiku_ids: "list | None" = None,
     recent_greetings: "list | None" = None,
+    seen_food_urls: "set | None" = None,
 ) -> None:
     """Persist seen video IDs and the Good News / Discovery / Reads / Music URLs.
 
@@ -250,6 +253,8 @@ def save_history(
         existing["seen_haiku_ids"] = seen_haiku_ids
     if recent_greetings is not None:
         existing["recent_greetings"] = recent_greetings
+    if seen_food_urls is not None:
+        existing["food_urls"] = sorted(seen_food_urls)
     HISTORY_FILE.write_text(
         json.dumps(existing, indent=2, ensure_ascii=False), encoding="utf-8"
     )
@@ -1138,6 +1143,22 @@ READS_FEEDS = [
 ]
 READS_CANDIDATES_PER_SOURCE = 4   # pull a few per feed, then keep the single best
 
+# The Larder — food news/trends + one recipe pick. MORNING editions only.
+# All feeds verified reachable (200, non-Cloudflare) from GitHub runners.
+FOOD_FEEDS = [
+    {"url": "https://www.thekitchn.com/main.rss",     "source_name": "The Kitchn"},
+    {"url": "https://www.eater.com/rss/index.xml",    "source_name": "Eater"},
+    {"url": "https://www.theguardian.com/food/rss",   "source_name": "The Guardian"},
+    {"url": "https://www.saveur.com/feed/",           "source_name": "Saveur"},
+]
+RECIPE_FEEDS = [
+    {"url": "https://smittenkitchen.com/feed/",       "source_name": "Smitten Kitchen"},
+    {"url": "https://www.101cookbooks.com/feed",      "source_name": "101 Cookbooks"},
+    {"url": "https://www.davidlebovitz.com/feed/",    "source_name": "David Lebovitz"},
+]
+FOOD_NEWS_ITEMS = 3               # trend/news items shown alongside the recipe
+RECIPE_CANDIDATES_PER_SOURCE = 5
+
 _MYSTERY_KEYWORDS = {
     "mystery", "unknown", "discovery", "ancient", "secret",
     "lost", "hidden", "forgotten", "rare", "unearthed",
@@ -1702,6 +1723,65 @@ def fetch_discovery(
     return results
 
 
+def fetch_larder(
+    seen_all_urls: set[str],
+    seen_food_urls: set[str],
+) -> dict:
+    """
+    The Larder (MORNING only): a few food news/trend items + one recipe pick.
+    Pulls one fresh article from each FOOD_FEED (up to FOOD_NEWS_ITEMS) and the
+    single best fresh recipe from RECIPE_FEEDS. Dedups against seen_all_urls; writes
+    accepted URLs to both seen_all_urls and seen_food_urls. Cover images (og:image)
+    are attached to the recipe and news items. Returns {"news": [...], "recipe": {}}.
+    """
+    print("[Larder] Fetching food news + a recipe …")
+    session = _scraper_session()
+    news: list[dict] = []
+
+    for feed in FOOD_FEEDS:
+        if len(news) >= FOOD_NEWS_ITEMS:
+            break
+        for article in _fetch_rss_articles(feed["url"], feed["source_name"], 3, session,
+                                            source_tag="food"):
+            url = article["url"]
+            if url in seen_all_urls:
+                continue
+            seen_all_urls.add(url)
+            seen_food_urls.add(url)
+            news.append(article)
+            break  # one per source
+
+    recipe: dict = {}
+    for feed in RECIPE_FEEDS:
+        candidates = _fetch_rss_articles(feed["url"], feed["source_name"],
+                                         RECIPE_CANDIDATES_PER_SOURCE, session,
+                                         source_tag="recipe")
+        for cand in candidates:
+            url = cand["url"]
+            if url in seen_all_urls:
+                continue
+            seen_all_urls.add(url)
+            seen_food_urls.add(url)
+            recipe = {**cand, "is_recipe": True}
+            break
+        if recipe:
+            break
+
+    # Cover images for the recipe (always) and the news items (when available).
+    cover_session = _scraper_session()
+    for item in ([recipe] if recipe else []) + news:
+        try:
+            _, cover = _find_embed_and_cover(item["url"], cover_session)
+            item["cover_url"] = cover or ""
+        except Exception as exc:
+            print(f"  [warn] Larder cover fetch failed for '{item.get('title','')[:40]}': {exc}")
+            item["cover_url"] = ""
+
+    print(f"[Larder] Collected {len(news)} news item(s)"
+          f" + {'1 recipe' if recipe else 'no recipe'}.")
+    return {"news": news, "recipe": recipe}
+
+
 def fetch_reads(
     seen_all_urls: set[str],
     seen_reads_urls: set[str],
@@ -1773,11 +1853,12 @@ def main() -> dict:
           f"({GARDEN_LOCALE} hour {now_ch.hour})")
 
     (seen_ids, seen_good_news_urls, seen_discovery_urls,
-     seen_reads_urls, seen_music_urls) = load_history()
+     seen_reads_urls, seen_music_urls, seen_food_urls) = load_history()
 
     # Unified URL pool — checked by all RSS fetchers to prevent cross-bucket repeats
     seen_all_urls: set[str] = (
-        seen_good_news_urls | seen_discovery_urls | seen_reads_urls | seen_music_urls
+        seen_good_news_urls | seen_discovery_urls | seen_reads_urls
+        | seen_music_urls | seen_food_urls
     )
 
     # --- YouTube ---
@@ -1820,6 +1901,9 @@ def main() -> dict:
 
     # --- One Good Read: a single reflective essay (every run) ---
     reads = fetch_reads(seen_all_urls, seen_reads_urls)
+
+    # --- The Larder: food news + a recipe (MORNING editions only) ---
+    larder_raw = fetch_larder(seen_all_urls, seen_food_urls) if is_am_email else {}
 
     # --- From the Garden: deterministic seasonal almanac (no network) ---
     garden_seed = {
@@ -1880,6 +1964,7 @@ def main() -> dict:
         "riddle_pool": riddle_pool,
         "anagram_pool": anagram_pool,
         "haiku_pool": haiku_pool,
+        "food": larder_raw,
     }
 
     # Write raw fetch snapshot (useful for debugging / re-running curation without re-fetching)
@@ -1941,7 +2026,8 @@ def main() -> dict:
                  seen_riddle_ids=updated_riddle_ids,
                  seen_anagram_seeds=updated_anagram_seeds,
                  seen_haiku_ids=updated_haiku_ids,
-                 recent_greetings=updated_greetings)
+                 recent_greetings=updated_greetings,
+                 seen_food_urls=seen_food_urls)
 
     curated_file = Path(__file__).parent / "curated_data.json"
     curated_file.write_text(json.dumps(curated, indent=2, ensure_ascii=False), encoding="utf-8")
