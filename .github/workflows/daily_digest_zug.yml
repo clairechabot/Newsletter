@@ -52,4 +52,5 @@ jobs:
           SMTP_SERVER:           ${{ secrets.SMTP_SERVER }}
           SMTP_PORT:             ${{ secrets.SMTP_PORT }}
           EMAIL_TO:              ${{ secrets.EMAIL_TO_ZUG }}
+          RECIPIENT_NAME:        ${{ secrets.RECIPIENT_NAME_ZUG }}
         run: python renderer.py --regional

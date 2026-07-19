@@ -731,6 +731,34 @@ def send_regional() -> None:
         except Exception as exc:
             print(f"[regional] Larder note regen skipped ({exc}).")
 
+    # Personalize Fern's opening note to this edition's single recipient, if a name
+    # is provided (RECIPIENT_NAME). Re-generates the greeting from the same shared
+    # content so Fern addresses them by name. Best-effort: keep the shared note on failure.
+    recipient = os.environ.get("RECIPIENT_NAME", "").strip()
+    if recipient:
+        try:
+            import curator
+            from fetcher import _season
+            fern = curator.generate_fern_greeting(
+                curator.build_claude_client(),
+                want_am,
+                curated.get("themes", []),
+                curated.get("morning_soundtrack", []),
+                curated.get("global_silver_linings", []),
+                curated.get("discovery_articles", []),
+                curated.get("featured_read", {}),
+                date_str=curated.get("fetched_at", "") or "",
+                season=_season(now),
+                recipient=recipient,
+            )
+            if fern.get("greeting"):
+                # keep the shared subject-line title; only swap the personalized note
+                fern["top_pick_title"] = curated.get("fern_data", {}).get("top_pick_title", fern.get("top_pick_title", ""))
+                curated["fern_data"] = fern
+                print(f"[regional] Personalized Fern's note for {recipient}.")
+        except Exception as exc:
+            print(f"[regional] Greeting personalization skipped ({exc}).")
+
     html = build_html(curated)
     OUTPUT_HTML.write_text(html, encoding="utf-8")
 

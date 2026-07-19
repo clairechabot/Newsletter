@@ -842,11 +842,16 @@ def generate_fern_greeting(
     date_str: str = "",
     season: str = "",
     recent_greetings: list[str] | None = None,
+    recipient: str = "",
 ) -> dict:
     """
     Generate Fern's short daily note and an edition title for the subject line.
     A rotating opening angle + a recent-notes avoid-list + the real season keep
     consecutive greetings from collapsing into one template.
+
+    `recipient`, when set, personalizes the note — Fern warmly addresses that
+    reader by name (used by the single-recipient regional editions). Empty means
+    the general, unaddressed note for the main list.
     """
     import datetime as _dt
     try:
@@ -860,6 +865,12 @@ def generate_fern_greeting(
     if season:
         lines.append(f"Season right now: {season}")
     lines.append(f"\nOPENING ANGLE for today (follow this): {angle}")
+    if recipient:
+        lines.append(
+            f"\nThis edition goes to ONE reader: {recipient}. Address them by name, "
+            f"warmly and naturally, within the note (not a stiff 'Dear {recipient},'). "
+            f"Weave the name into your opening while still following the angle above."
+        )
 
     recent_greetings = recent_greetings or []
     if recent_greetings:

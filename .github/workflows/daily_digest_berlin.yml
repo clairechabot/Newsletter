@@ -51,4 +51,5 @@ jobs:
           SMTP_SERVER:           ${{ secrets.SMTP_SERVER }}
           SMTP_PORT:             ${{ secrets.SMTP_PORT }}
           EMAIL_TO:              ${{ secrets.EMAIL_TO_BERLIN }}
+          RECIPIENT_NAME:        ${{ secrets.RECIPIENT_NAME_BERLIN }}
         run: python renderer.py --regional
