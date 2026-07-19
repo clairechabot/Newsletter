@@ -633,8 +633,11 @@ def generate_garden_note(client: anthropic.Anthropic, garden_seed: dict) -> dict
             "moon_label": moon_label,
             "illum_pct": moon.get("illum_pct", 0),
         }
-    note.setdefault("moon_label", moon_label)
-    note.setdefault("illum_pct", moon.get("illum_pct", 0))
+    # Force the BARE phase label (the model sometimes echoes "Waxing crescent
+    # (21% illuminated)"; the render appends the % itself, so keep only the phase
+    # to avoid a doubled "(NN% illuminated) (NN% illuminated)").
+    note["moon_label"] = re.sub(r"\s*\(.*?illuminat.*?\)", "", moon_label, flags=re.I).strip() or moon_label
+    note["illum_pct"] = moon.get("illum_pct", 0)
     # A compact sunrise–sunset range for the small (uppercase) meta row. The longer
     # sky_tonight sentence is rendered as normal-case prose, not squeezed in here.
     if sun.get("sunrise") and sun.get("sunset"):
@@ -648,20 +651,63 @@ def generate_garden_note(client: anthropic.Anthropic, garden_seed: dict) -> dict
 # Fern — Daily Greeting & Top Pick
 # ---------------------------------------------------------------------------
 
+# Rotating opening "angle" so consecutive greetings don't fall into one template.
+# Picked deterministically by day-of-year (so a re-run is stable) and split by
+# AM/PM. Each angle nudges a DIFFERENT structure/entry point — the single biggest
+# lever against the "While the bread is still warm…" / "As the last light folds…"
+# repetition.
+AM_GREETING_ANGLES = [
+    "Open with a precise sensory detail of a morning in THIS season — the quality of the light, the temperature of the air, a specific sound or smell. Do NOT mention coffee or bread.",
+    "Open with a small, wry observation about the day, the week, or the world.",
+    "Open by speaking straight to the reader with a warm, specific invitation to begin.",
+    "Open with a gentle question the morning seems to pose.",
+    "Open by naming what the season and weather are doing right now, then turn toward the reading.",
+    "Open on a tiny ordinary scene unfolding somewhere at this early hour.",
+    "Open with an unexpected image or metaphor for starting the day.",
+    "Open mid-thought, unhurried, as if continuing a quiet conversation already underway.",
+]
+PM_GREETING_ANGLES = [
+    "Open with a precise sensory detail of dusk in THIS season — the colour of the sky, the cooling air, a sound. Do NOT use 'the last light folds' or 'open tabs'.",
+    "Open with a small reflective observation about the day now ending.",
+    "Open by speaking straight to the reader, inviting them to set the day down.",
+    "Open with a gentle question suited to the evening.",
+    "Open by naming tonight's sky or the season's particular evening mood.",
+    "Open on a tiny domestic evening scene — a lamp, a kettle, a window.",
+    "Open with an unexpected metaphor for the day's close.",
+    "Open mid-thought, lamplit and unhurried, as if mid-exhale.",
+]
+
+
+def greeting_angle_for(is_am: bool, date: "datetime.date") -> str:
+    pool = AM_GREETING_ANGLES if is_am else PM_GREETING_ANGLES
+    return pool[date.timetuple().tm_yday % len(pool)]
+
+
 _FERN_GREETING_SYSTEM = textwrap.dedent("""
 You are Fern — the AI curator behind a newsletter called The Curated Canopy.
 Personality: sophisticated, cozy, warm, slightly witty. Never cringe or overly cheerful.
 
-Write ONE sentence as Fern's daily note to open the newsletter.
-- AM greeting: reference morning rituals (bread, coffee, birds, morning light) and tease
-  the stories inside. Be specific and evocative.
-- PM greeting: reference winding down (sunset, closing tabs, soft music) and invite
-  quiet reading. Be gentle and slightly poetic.
+Write Fern's short daily note that opens the newsletter — ONE or TWO short sentences
+(vary the length day to day). Follow the OPENING ANGLE given in the user message, then
+weave in a specific tease of 2-3 of today's actual items. Be concrete and evocative,
+never generic.
+
+FRESHNESS IS THE POINT. These notes have become repetitive, so:
+- Follow the assigned opening angle — do not default to your usual formula.
+- Do NOT reuse the recurring crutches (they are worn out): "settle in", "the bread is
+  still warm", any "the coffee [finds/earns/finding] its …", "the last light folds
+  itself", "your open tabs", "today's canopy stretches from", "rabbit holes",
+  "come settle in".
+- If a RECENT NOTES list is given, your note must not echo their openings, images,
+  rhythm, or structure. Pick a different entry point entirely.
+- Vary sentence shape: sometimes a single vivid line; sometimes a short one then a
+  longer one; sometimes a direct address or a question. Not every note needs to list
+  what's inside.
+- You may sign off "— Fern" occasionally, but not every time.
 
 Also write a short, original title for this edition — Fern's own name for today's
-digest, inspired by the themes and mood of the content. Think of it like a newspaper
-editor naming an issue. It should be evocative, slightly poetic, and under 50 chars.
-Do NOT copy any existing headline — invent something that captures the spirit of the day.
+digest, inspired by the themes and mood of the content. Evocative, slightly poetic,
+under 50 chars. Invent something fresh; do not copy any headline.
 
 Examples of good edition titles:
   "Quiet Corners & Loud Ideas"
@@ -670,7 +716,7 @@ Examples of good edition titles:
 
 Return ONLY valid JSON:
 {
-  "greeting": "<one sentence daily note from Fern>",
+  "greeting": "<Fern's daily note, 1-2 short sentences>",
   "top_pick_title": "<Fern's original title for this edition, max 50 chars>"
 }
 
@@ -686,14 +732,35 @@ def generate_fern_greeting(
     global_silver_linings: list[dict],
     discovery_articles: list[dict] | None = None,
     featured_read: dict | None = None,
+    date_str: str = "",
+    season: str = "",
+    recent_greetings: list[str] | None = None,
 ) -> dict:
     """
-    Generate Fern's one-sentence daily note and pick the top item title
-    for the email subject line.
+    Generate Fern's short daily note and an edition title for the subject line.
+    A rotating opening angle + a recent-notes avoid-list + the real season keep
+    consecutive greetings from collapsing into one template.
     """
-    time_label = "AM (morning edition)" if is_am else "PM (evening edition)"
-    lines = [f"Time of day: {time_label}\n\n## Content in today's digest:\n"]
+    import datetime as _dt
+    try:
+        date = _dt.date.fromisoformat(date_str[:10])
+    except ValueError:
+        date = _dt.date.today()
+    angle = greeting_angle_for(is_am, date)
 
+    time_label = "AM (morning edition)" if is_am else "PM (evening edition)"
+    lines = [f"Time of day: {time_label}"]
+    if season:
+        lines.append(f"Season right now: {season}")
+    lines.append(f"\nOPENING ANGLE for today (follow this): {angle}")
+
+    recent_greetings = recent_greetings or []
+    if recent_greetings:
+        lines.append("\nRECENT NOTES (do NOT echo their openings, images, or structure):")
+        for g in recent_greetings[-6:]:
+            lines.append(f"  - {g[:160]}")
+
+    lines.append("\n## Content in today's digest:\n")
     for theme in themes:
         lines.append(f"\nTheme: {theme['name']}")
         for item in theme.get("items", []):
@@ -713,10 +780,10 @@ def generate_fern_greeting(
     if featured_read and featured_read.get("title"):
         lines.append(f"  - [One Good Read] {featured_read.get('title', '')}")
 
-    print("[Fern] Generating greeting and top pick …")
+    print(f"[Fern] Generating greeting (angle: {angle[:40]}…) and top pick …")
     message = client.messages.create(
         model=CLAUDE_MODEL,
-        max_tokens=256,
+        max_tokens=320,
         system=_FERN_GREETING_SYSTEM,
         messages=[{"role": "user", "content": "\n".join(lines)}],
     )
@@ -1280,6 +1347,9 @@ def run_curation(raw_data: dict) -> dict:
         global_silver_linings,
         discovery_articles,
         featured_read,
+        date_str=raw_data.get("fetched_at", "") or "",
+        season=raw_data.get("garden_seed", {}).get("season", ""),
+        recent_greetings=raw_data.get("recent_greetings", []),
     )
 
     return {
