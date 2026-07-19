@@ -1,11 +1,11 @@
 {
-  "fetched_at": "2026-07-19T08:11:26.974358+02:00",
-  "is_am_email": true,
+  "fetched_at": "2026-07-19T17:28:31.112560+02:00",
+  "is_am_email": false,
   "audit_summary": {
     "youtube_videos": 10,
     "themes": 3,
-    "music_articles": 2,
-    "good_news_articles": 2,
+    "music_articles": 1,
+    "good_news_articles": 1,
     "discovery_articles": 4,
     "featured_read": 1,
     "garden": 1,
@@ -13,153 +13,153 @@
   },
   "themes": [
     {
-      "name": "Rabbit Holes Worth Falling Down",
-      "emoji": "🕳️",
-      "tagline": "Weird, wonderful, and slightly obsessive deep dives into things you never knew you needed to know.",
+      "name": "Ghosts in the Machine",
+      "emoji": "🤖",
+      "tagline": "When the past gets reconstructed, cloned, or challenged by technology — what's left of the real thing?",
       "items": [
         {
           "source": "youtube",
-          "video_id": "_igZEQ2_PuM",
-          "title": "What Exactly Is Worcestershire Sauce?",
-          "channel_id": "UCNaq5Jh4SQ1oBAjhQ0KPhoA",
-          "channel_title": "Weird History Food",
-          "published_at": "2026-04-19T14:15:08Z",
-          "url": "https://www.youtube.com/watch?v=_igZEQ2_PuM",
-          "duration_seconds": 912,
-          "view_count": "141166",
-          "description": "Worcestershire sauce: It's salty, tangy, funky, fishy and almost impossible to spell or pronounce. But while you’ve almost certainly tasted it... do you actually know what’s in it?\nOne of the oldest bottled sauces in America, this mysterious condiment turns up everywhere from burgers to Bloody Marys and it has a history that’s far stranger than you’d expect.\n\nSo on this episode of Weird History Food, we're going to try and answer the questions: What is Worcestershire sauce and how did it become ",
-          "is_wildcard": false
-        },
-        {
-          "source": "youtube",
-          "video_id": "7MfvZuCXVMQ",
-          "title": "The Official Blue Berry of North Carolina",
-          "channel_id": "UC6nSFpj9HTCZ5t-N3Rm3-HA",
-          "channel_title": "Vsauce",
-          "published_at": "2025-12-12T22:15:15Z",
-          "url": "https://www.youtube.com/watch?v=7MfvZuCXVMQ",
-          "duration_seconds": 164,
-          "view_count": "2802668",
-          "description": "",
-          "is_wildcard": false
-        },
-        {
-          "source": "youtube",
-          "video_id": "qGevfvovVCQ",
-          "title": "The Terrifying ARG in a Haunted YouTube Channel",
-          "channel_id": "UC3cpN6gcJQqcCM6mxRUo_dA",
-          "channel_title": "Wendigoon",
-          "published_at": "2025-11-30T16:01:31Z",
-          "url": "https://www.youtube.com/watch?v=qGevfvovVCQ",
-          "duration_seconds": 9092,
-          "view_count": "2093687",
-          "description": "AG1 has their best offer ever - subscribe through my link: https://drinkag1.com/wendigoon and you’ll unlock 7 free gifts worth $126!\n\nGET THE REDACTED MERCH & pins WHILE YOU CAN: https://wendigoon.shop/\n\n\nFake Documentary Q Channel: @フェイクドキュメンタリーQ \n\nThe book: https://www.reddit.com/r/FakeDocumentaryQ/comments/1dv5w3a/fake_documentary_q_the_book/ (linking Japanese Amazon causes a super long link so here's a reddit post with the link)\n\nTwitter: https://x.com/pro9ramQ\n\nThe subreddit: https://www.re",
-          "is_wildcard": false
-        },
-        {
-          "source": "youtube",
-          "video_id": "OMbV1rIPhCg",
-          "title": "How Switzerland Engineered the Perfect Country",
-          "channel_id": "UCmGSJVG3mCRXVOP4yZrU1Dw",
-          "channel_title": "Johnny Harris",
-          "published_at": "2025-12-11T13:00:59Z",
-          "url": "https://www.youtube.com/watch?v=OMbV1rIPhCg",
-          "duration_seconds": 2586,
-          "view_count": "3066100",
-          "description": "Secret Behind the World’s Most Efficient Train System\nSpecial Thanks to Adobe - explore Creative Cloud: https://adobe.ly/exploreCC_JH\n\nCheck out this interactive map of the Swiss Train System and my route for the canton challenge: https://labs.newpress.com/swiss-trains/#/story\n\nCheck out all my sources for this video here: https://docs.google.com/document/d/1X61tezER7ZxlrQUXKm-AKJZZJL7v0cuYQOSpuSgd_xU/edit?usp=sharing\n\nVery grateful for the access to trains given to me by:\n- SBB: https://www.sbb",
-          "is_wildcard": false
-        }
-      ]
-    },
-    {
-      "name": "Slow World, Well Made",
-      "emoji": "🏡",
-      "tagline": "Gardens, châteaux, and clever hands — life lived with patience and a little beauty.",
-      "items": [
-        {
-          "source": "youtube",
-          "video_id": "9wJmnS-3Tfg",
-          "title": "6 Super-Early Vegetables to Start in Winter",
-          "channel_id": "UC9r61qohBg1qgGty4_WzojA",
-          "channel_title": "GrowVeg",
-          "published_at": "2025-12-27T15:45:01Z",
-          "url": "https://www.youtube.com/watch?v=9wJmnS-3Tfg",
-          "duration_seconds": 1035,
-          "view_count": "185671",
-          "description": "Enjoy a no-obligation, completely free trial of the Garden Planner here: \nhttps://www.GrowVeg.com/grow-planner-free\n\nAnd for your completely free abridged version of Ben's book, click here:\nhttps://www.growveg.com/grow-book-download\n\nThink it's too early to start sowing and growing in mid winter? Think again! So if you're itching to get growing, you'll be pleased to know that in fact, now is a great time to get a head start on the coming growing season. With a little know-how, there's loads we c",
-          "is_wildcard": false
-        },
-        {
-          "source": "youtube",
-          "video_id": "DNn5f_z9VZs",
-          "title": "Decorating our French Chateau for Christmas (2025)",
-          "channel_id": "UCEqU-Ts-hxmpnlWgRMgd2MQ",
-          "channel_title": "How To Renovate A Chateau",
-          "published_at": "2025-12-14T19:30:07Z",
-          "url": "https://www.youtube.com/watch?v=DNn5f_z9VZs",
-          "duration_seconds": 1566,
-          "view_count": "162667",
-          "description": "Check out FOREO FAQ 202 LED Mask and their amazing Holiday sale here: https://foreo.se/U18XW and use my code 35RENOVATE for an extra 35% off almost all products. The code is stackable on sale items too! Get your Scarf here: https://lefleur.fr/\n\n🏰🕯️ Discover our Chateau Candle Collection here https://www.lefleur.fr/\nAnd follow us on instagram: https://www.instagram.com/le_fleur_honfleur\n\nBonus videos and exclusive live streams every month! Check out our Patreon page for all the latest from us: ht",
-          "is_wildcard": false
-        },
-        {
-          "source": "youtube",
-          "video_id": "PUBmR7JhP-8",
-          "title": "How I Made Magnetic Oven Mitts",
-          "channel_id": "UCvy6TA5egUGHnZXVRYDKOhg",
-          "channel_title": "TriggTube",
-          "published_at": "2025-12-08T23:01:43Z",
-          "url": "https://www.youtube.com/watch?v=PUBmR7JhP-8",
-          "duration_seconds": 170,
-          "view_count": "237595",
-          "description": "",
-          "is_wildcard": false
-        }
-      ]
-    },
-    {
-      "name": "Dispatches from Elsewhere",
-      "emoji": "🌍",
-      "tagline": "Other places, other times — history, food, and wild nature that makes you feel gloriously small.",
-      "items": [
-        {
-          "source": "youtube",
-          "video_id": "994nGl4m-VM",
-          "title": "London - 1600s",
+          "video_id": "leOuMPXdi94",
+          "title": "Greatest Speech in American History?",
           "channel_id": "UCAcoda6jlC-xpxGhwW7yFZw",
           "channel_title": "Matt Reconstructs History",
-          "published_at": "2025-12-16T18:31:03Z",
-          "url": "https://www.youtube.com/watch?v=994nGl4m-VM",
-          "duration_seconds": 755,
-          "view_count": "1657310",
-          "description": "Journey through 17th-century London, a transformative era in British history when the City of London stood on the edge of catastrophe and change. From plague-ridden streets to the Great Fire of 1666, this historical exploration reveals a city shaped by survival, trade, and early urban growth. Discover how modern AI video technology, using period artwork and historical records, reconstructs London before industrialization with striking realism, bringing the sights, scale, and atmosphere of 1600s ",
+          "published_at": "2025-12-11T15:57:55Z",
+          "url": "https://www.youtube.com/watch?v=leOuMPXdi94",
+          "duration_seconds": 291,
+          "view_count": "42666",
+          "description": "This video presents an AI reconstruction of Abraham Lincoln’s Gettysburg Address, recreated with care to honor its historical legacy.\nUsing advanced voice and audio modeling, the speech is brought to life in a way modern audiences can experience firsthand.\nThe setting and tone aim to reflect the solemn atmosphere of the original 1863 ceremony.\nThis reconstruction does not alter the message, but seeks to preserve the emotional weight of the moment.\nViewers are invited to imagine the crowd, the ba",
           "is_wildcard": false
         },
         {
           "source": "youtube",
-          "video_id": "6mm56crya-4",
-          "title": "6 Must Try Foods on Japan's Most UNDERRATED Island",
-          "channel_id": "UCHL9bfHTxCMi-7vfxQ-AYtg",
-          "channel_title": "Abroad in Japan",
-          "published_at": "2025-12-07T14:03:13Z",
-          "url": "https://www.youtube.com/watch?v=6mm56crya-4",
-          "duration_seconds": 1914,
-          "view_count": "730686",
-          "description": "We travel 400km across Shikoku to taste 6 mouthwatering dishes unique to the island.\n🌟Grab the TABELOG app from here! https://tabelog-tourists.onelink.me/3eEh?af_xp=custom&pid=tabelog_tourists&c=inb_pr_inf_aij_shikoku\n\n🌟🌟Our Shikoku Restaurant List (in order of appearance):🌟🌟\n🇯🇵 Shina Soba Wanwan Ken Hon Ten / Ramen / Tabelog 100\nhttps://tabelog.com/en/tokushima/A3603/A360303/36000071/?cid=inb_pr_inf_aij_shikoku\n\n🇯🇵Yamagoe Udon / Udon / Tabelog 100\nhttps://tabelog.com/en/kagawa/A3702/A370202/370",
+          "video_id": "Avr5K6tX1x4",
+          "title": "We Recreated The Oldest Surviving Globe",
+          "channel_id": "UC6nSFpj9HTCZ5t-N3Rm3-HA",
+          "channel_title": "Vsauce",
+          "published_at": "2025-12-04T03:11:54Z",
+          "url": "https://www.youtube.com/watch?v=Avr5K6tX1x4",
+          "duration_seconds": 122,
+          "view_count": "2358751",
+          "description": "https://www.curiositybox.com/pages/closest-approach-to-uranus",
+          "is_wildcard": false
+        },
+        {
+          "source": "youtube",
+          "video_id": "S2vPs8ld4nU",
+          "title": "An AI Company Wants to Clone Me",
+          "channel_id": "UC2Kyj04yISmHr1V-UlJz4eg",
+          "channel_title": "Jared Henderson",
+          "published_at": "2025-11-29T03:38:28Z",
+          "url": "https://www.youtube.com/watch?v=S2vPs8ld4nU",
+          "duration_seconds": 1068,
+          "view_count": "113892",
+          "description": "Check out Lindsay Ellis' new video only on Nebula: https://nebula.tv/videos/lindsayellis-bluey-adults?ref=jaredhenderson\n\nAI companies are selling products that purport to let you speak with your dead loved ones or your favorite creators. And one wanted to make an AI clone of me.\n\nRead my full letter: https://jaredhenderson.substack.com/p/a-company-wanted-to-make-an-ai-clone\n\nSOURCES\n\nTechnopoly by Neil Postman\n\nhttps://www.sciencedirect.com/science/article/pii/S2949882125000398?via%3Dihub",
           "is_wildcard": false
         },
         {
           "source": "youtube_trending",
-          "video_id": "56XQlUkSum0",
-          "title": "Deadliest Battles for Survival on the African Savannah | FULL EPISODE | Wildlife Documentary",
-          "channel_id": "UC7R28A21ABhLnvY9bRed8MQ",
-          "channel_title": "Nature's Moments",
-          "published_at": "2026-07-18T13:01:37Z",
-          "url": "https://www.youtube.com/watch?v=56XQlUkSum0",
-          "duration_seconds": 13958,
-          "view_count": "53954",
-          "description": "Deadliest Battles for Survival on the African Savannah | FULL EPISODE | Wildlife Documentary is a breathtaking nature animal documentary that begins on the sun scorched plains of the Serengeti and climbs all the way to the frozen roof of the world, asking one brutal question that every predator on Earth must answer: how do you survive when everything around you is built to kill you.\n\nThrough cinematic footage and educational storytelling, this documentary reveals that nature never gives the same",
+          "video_id": "b2GZNofx_3s",
+          "title": "Forgotten Goliath Mawtrain Pulled from the Ocean Floor Back to Life Full Rebuilt!",
+          "channel_id": "UCSnlI_gua1HRABgQkurjz7A",
+          "channel_title": "Bulldozer Jobs",
+          "published_at": "2026-07-19T10:31:35Z",
+          "url": "https://www.youtube.com/watch?v=b2GZNofx_3s",
+          "duration_seconds": 1671,
+          "view_count": "2335",
+          "description": "Forgotten Goliath Mawtrain Pulled from the Ocean Floor Back to Life Full Rebuilt!\n\nGoliath Mawtrain returns from the depths in one of the most incredible restoration projects ever imagined. After spending decades abandoned underwater, this massive machine is recovered from the ocean floor with extreme rust, severe corrosion, broken components, faded paint, and years of damage caused by saltwater exposure.\n\nWatch the complete journey as the Goliath Mawtrain is carefully recovered, fully dismantle",
           "is_wildcard": true
+        }
+      ]
+    },
+    {
+      "name": "The Myth vs. The Moment",
+      "emoji": "🏛️",
+      "tagline": "History has a PR problem — these videos are here to set the record straight.",
+      "items": [
+        {
+          "source": "youtube",
+          "video_id": "vcF2k1WgxMU",
+          "title": "Why THIS Became The Most Hated Bottled Water",
+          "channel_id": "UCNaq5Jh4SQ1oBAjhQ0KPhoA",
+          "channel_title": "Weird History Food",
+          "published_at": "2026-04-12T14:15:05Z",
+          "url": "https://www.youtube.com/watch?v=vcF2k1WgxMU",
+          "duration_seconds": 988,
+          "view_count": "140949",
+          "description": "In the late 1990s, Americans started turning away from sugary soda and embracing what seemed like a healthier alternative: bottled water. Sensing the massive shift in consumer habits, Coca-Cola jumped into the booming market in 1999 with Dasani.\n\nBut what followed wasn’t so much a success story as it was a branding disaster. From its controversial sourcing to its unusual taste, Dasani triggered a public backlash and quickly became one of the most criticized bottled water brands ever.\n\nSo how did",
+          "is_wildcard": false
+        },
+        {
+          "source": "youtube",
+          "video_id": "nSBbX5gn1Lg",
+          "title": "Why USA 1.0 failed",
+          "channel_id": "UCmGSJVG3mCRXVOP4yZrU1Dw",
+          "channel_title": "Johnny Harris",
+          "published_at": "2025-12-04T13:01:43Z",
+          "url": "https://www.youtube.com/watch?v=nSBbX5gn1Lg",
+          "duration_seconds": 1963,
+          "view_count": "2478338",
+          "description": "The decade of failure that created the US Constitution.\nTake back your personal data with Incogni! Use code johnnyharris at the link below and get 60% off annual plans: https://incogni.com/johnnyharris \n\nCheck out all my sources for this video here: https://docs.google.com/document/d/1WFNlnVRik_9NSlrPcTQP2sMtXgFENrLtGTm_2Ue0Stg/edit?usp=sharing\n\nMost Americans don’t realize it, but the country we call home is actually the SECOND United States of America. What came first was a story of failure, e",
+          "is_wildcard": false
+        },
+        {
+          "source": "youtube",
+          "video_id": "_WP7grAB7C8",
+          "title": "Did Regency Women ACTUALLY Wear Wet Dresses??",
+          "channel_id": "UCSHtaUm-FjUps090S7crO4Q",
+          "channel_title": "Bernadette Banner",
+          "published_at": "2025-11-29T15:01:12Z",
+          "url": "https://www.youtube.com/watch?v=_WP7grAB7C8",
+          "duration_seconds": 1208,
+          "view_count": "418235",
+          "description": "The first 500 people to use my link in the description or scan the QR code will receive a one month free trial of Skillshare, plus 20% off your first year! Get started today!\nhttps://skl.sh/bernadettebanner11251\nHilary's book! https://yalebooks.co.uk/book/9780300282412/a-guide-to-regency-dress/\nMore Hilary: https://www.instagram.com/fourredshoes/\n\n⤠ HOW TO SUPPORT ⤟\n♥️ PATREON for exclusive behind-the-scenes content! https://www.patreon.com/bernadettebanner\n⚝ NEBULA to see these videos ad- and s",
+          "is_wildcard": false
+        }
+      ]
+    },
+    {
+      "name": "Making Things With Your Hands (And Your Whole Heart)",
+      "emoji": "🌿",
+      "tagline": "Grow it, sew it, restore it, transform it — slow, intentional making is having its moment.",
+      "items": [
+        {
+          "source": "youtube",
+          "video_id": "yWAjlVk45Jg",
+          "title": "Organic City Garden: Turn Any Space Into Huge Harvests",
+          "channel_id": "UC9r61qohBg1qgGty4_WzojA",
+          "channel_title": "GrowVeg",
+          "published_at": "2025-12-20T15:45:06Z",
+          "url": "https://www.youtube.com/watch?v=yWAjlVk45Jg",
+          "duration_seconds": 1038,
+          "view_count": "27753",
+          "description": "Enjoy a no-obligation, completely free trial of the Garden Planner here: \nhttps://www.GrowVeg.com/grow-planner-free\n\nAnd for your completely free abridged version of Ben's book, click here:\nhttps://www.growveg.com/grow-book-download\n\nTo learn more about the great work shown in this film, check out the Smiling Hogshead Ranch website here:\nhttps://smilinghogsheadranch.org\n\nSometimes we might assume that a piece of land is beyond repair; that it is too toxic, too ruined and lifeless for it to be po",
+          "is_wildcard": false
+        },
+        {
+          "source": "youtube",
+          "video_id": "moOATWREEzI",
+          "title": "Christmas TRANSFORMATION at the Chateau",
+          "channel_id": "UCEqU-Ts-hxmpnlWgRMgd2MQ",
+          "channel_title": "How To Renovate A Chateau",
+          "published_at": "2025-12-07T19:30:07Z",
+          "url": "https://www.youtube.com/watch?v=moOATWREEzI",
+          "duration_seconds": 1307,
+          "view_count": "146227",
+          "description": "AD: https://www.squarespace.com/howtorenovateachateau to save 10% off your first purchase of a website or domain using code HOWTORENOVATEACHATEAU \nGet on the SCARF WAITLIST: https://go.lefleur.fr/waitlist\nDiscover our Chateau Candle Collection here https://www.lefleur.fr/\nAnd follow us on instagram: https://www.instagram.com/le_fleur_honfleur\n\nBonus videos and exclusive live streams every month! Check out our Patreon page for all the latest from us: https://www.patreon.com/Howtorenovateachateau",
+          "is_wildcard": false
+        },
+        {
+          "source": "youtube",
+          "video_id": "GOA8QawW6BQ",
+          "title": "Attempting to Make \"The Creature\" from Frankenstein (2025)",
+          "channel_id": "UCJI86v9et-IZd1KJSfahN8g",
+          "channel_title": "Rachel Maksy",
+          "published_at": "2025-11-29T01:36:33Z",
+          "url": "https://www.youtube.com/watch?v=GOA8QawW6BQ",
+          "duration_seconds": 2031,
+          "view_count": "229721",
+          "description": "What's that??? ME? Making an actually relevant costume? *sharp gasp that causes me to choke on my spit a little*\nThat's right. It's not often that I am utterly entranced and motivated to drop what I'm doing and create a new cosplay, but watching Guillermo Del Toro's Frankenstein got my creature-loving brain FIRED UP.\nSo please enjoy this lengthy quest of me trying many new methods, wig styling, prosthetic makeup, and more!\nI am taking December off, so I will see you in the new year!\nI love you a",
+          "is_wildcard": false
         }
       ]
     }
@@ -167,128 +167,106 @@
   "morning_soundtrack": [
     {
       "source": "music",
-      "source_name": "Stereogum",
-      "title": "Clairo Shares “Losing Pride” Demo To Benefit Climate Justice",
-      "snippet": "Clairo hasn't released new music since her critically acclaimed 2024 LP Charm, but she's stayed busy. She's collaborated with Daniel Caesar, Smerz, Rostam, Ryan Beatty, and more; she's signed to Atlantic Records; and she's offered updates on her forthcoming fourth album. Now, as raging Canadian wild",
-      "url": "https://stereogum.com/2505688/clairo-shares-losing-pride-demo-to-benefit-climate-justice/music/",
-      "genre": "",
-      "vibe_check": "A quietly urgent bedroom whisper sent out into a burning world, fragile but purposeful.",
-      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/07/a1041141771_10.jpg",
-      "embed_url": "https://clairo2.bandcamp.com/track/losing-pride"
-    },
-    {
-      "source": "music",
       "source_name": "JazzTimes",
-      "title": "Ma Rainey, Fats Waller and the Jazzy, Bluesy, Showy Roar of the Roaring ’20s",
-      "snippet": "W hile no one could ever confuse the compositions of raw, blues belter Gertrude “Ma” Rainey (1886–1939) with that of showy jazz singer and pianist-organist &#8230; Read More \"Ma Rainey, Fats Waller and the Jazzy, Bluesy, Showy Roar of the Roaring ’20s\"\nThe post Ma Rainey, Fats Waller and the Jazzy, ",
-      "url": "https://www.jazztimes.com/reviews/albums/ma-rainey-fats-waller-and-the-jazzy-bluesy-showy-roar-of-the-roaring-20s/",
+      "title": "Pianist Joey Alexander Savors Contemplation, Expands His Art on the New Celestial Keeper",
+      "snippet": "T here are few places farther removed from Manhattan than Bali. One hums relentlessly — sirens, subway platforms, late-night jam sessions and an endless stream &#8230; Read More \"Pianist Joey Alexander Savors Contemplation, Expands His Art on the New Celestial Keeper\"\nThe post Pianist Joey Alexander",
+      "url": "https://www.jazztimes.com/features/profiles/pianist-joey-alexander-savors-contemplation-expands-his-art-on-the-new-celestial-keeper/",
       "genre": "",
-      "vibe_check": "Smoke-stained speakeasy energy that makes you want to order something strong and let the century wash over you.",
-      "cover_url": "https://www.jazztimes.com/wp-content/uploads/2026/07/016-Ma-Rainey-wildcats-2.jpg",
-      "embed_url": null
+      "vibe_check": "Like sitting cross-legged between two worlds — the chaos of a city that never sleeps and the stillness of a place where time moves like incense smoke.",
+      "cover_url": "https://www.jazztimes.com/wp-content/uploads/2026/07/enhancedalexander.jpg",
+      "embed_url": "https://www.youtube.com/embed/wSJh_SS85KE"
     }
   ],
   "global_silver_linings": [
     {
       "source": "good_news",
       "source_name": "Good News Network",
-      "title": "Others Dreamed of His Basketball Career But He Wanted to Help People–He’s Now a Texas Police Officer",
-      "url": "https://www.goodnewsnetwork.org/instead-of-basketball-career-he-wanted-to-help-people-as-police-officer/",
-      "snippet": "Although everyone urged the giant man to pursue a basketball career as a 7-foot-3-inch athlete, but that was never his dream. Jordan Wilmore would rather help others, so he trained to become a Texas policeman. He was one of the tallest players in college basketball, but now, he’s going to be one of the tallest […] The post Others Dreamed of His Basketball Career But He Wanted to Help People–He’s Now a Texas Police Officer appeared first on Good News Network .",
-      "cover_url": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/07/Jordan-Wilmore-with-Kemah-Texas-police-officer.jpg",
-      "reason": "In a world that often pushes people toward fame and fortune, this young man chose quiet, meaningful service to his community instead. It's a reminder that real fulfilment comes from following your own calling, not someone else's dream."
-    },
-    {
-      "source": "good_news",
-      "source_name": "Upworthy",
-      "title": "After 33 years, two old-school pen pals an ocean apart finally got to meet in person",
-      "url": "https://www.upworthy.com/after-33-years-two-old-school-pen-pals-an-ocean-apart-finally-got-to-meet-in-person/",
-      "snippet": "They started writing letters to one another in elementary school, and their connection never stopped. The post After 33 years, two old-school pen pals an ocean apart finally got to meet in person appeared first on Upworthy .",
-      "cover_url": "https://www.upworthy.com/wp-content/uploads/sites/2/2026/07/cover_450b45.jpg",
-      "reason": "Thirty-three years of handwritten letters across an ocean is a testament to the enduring power of genuine human connection — and the moment those two friends finally embraced in person proves that real friendship doesn't need Wi-Fi to survive."
+      "title": "Pharaoh’s Daughters Were Skilled at Archery 4,000 Years ago, Reveals New Research",
+      "url": "https://www.goodnewsnetwork.org/pharaohs-daughters-were-skilled-at-archery-4000-years-ago-reveals-new-research/",
+      "snippet": "For decades, experts have disputed whether weapons found in ancient burial chambers of Egyptian princesses were actually their tools or placed there in a purely symbolic way. Now, a reassessment of five royal women who lived 4,000 years ago showed they were skilled at archery. Strong muscle attachments and healed fractures were observed in multiple […] The post Pharaoh’s Daughters Were Skilled at Archery 4,000 Years ago, Reveals New Research appeared first on Good News Network .",
+      "cover_url": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/07/Female-Mummy-in-Giza-in-Egypt-–credit-Mauricio-Artieda-on-Pexels-Free-Use-17447963.jpeg",
+      "reason": "New research revealing that ancient Egyptian princesses were accomplished archers 4,000 years ago reminds us that human skill, strength, and ambition have never been the sole preserve of one gender. History keeps offering up these quiet corrections, and every one of them expands our sense of what people are capable of."
     }
   ],
   "discovery_articles": [
     {
       "source": "discovery",
       "source_name": "Atlas Obscura",
-      "title": "Penshurst Medieval Dole Table in Penshurst, England",
-      "url": "https://www.atlasobscura.com/places/penshurst-medieval-dole-table",
-      "snippet": "The Penshurst medieval dole table is one of only a handful to survive in English churchyards. The dole was a small portion of food, clothing or money that was placed on the table for the poor on special occasions such as St Thomas' Day, 21st December each year. Dole tables or stones were stone tables or ledges usually located in church porches and more rarely in churchyards.",
+      "title": "World's Largest Tortilla in Tlalnepantla de Baz, Mexico",
+      "url": "https://www.atlasobscura.com/places/worlds-largest-tortilla",
+      "snippet": "On November 25, 2013, Ripley México presented the recognition to Tlanepantla municipality for presenting the largest tortilla in the world. It was 3 meters in diameter and weighed 120 kilos; but it was not made to be eaten that day, but to be mounted on a fiberglass structure and sculpted on it. The sculptures were made by art teacher Enrique Ramos from corn dough and represent everything that Mexico means.",
       "category": "history",
-      "cover_url": "https://img.atlasobscura.com/WzYUS2EGNv6fsRWT-ge7pwZoroJdNr4SjWXw-twD2E8/rt:fit/w:600/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy8wOTQ5/YjJjZi01YjgzLTRi/MzEtOWNkNC0wMzJi/Y2E3NDUzMzllODM4/ZTUyNTFjODU1ZWIw/NWZfRFNDXzA0OTZh/LkpQRw.jpg",
-      "ferns_note": "A stone table in a churchyard where the poor would receive food or clothing on the darkest day of the year — most have vanished, making Penshurst's survivor a quiet monument to organized compassion. There's something almost haunting about a table set for centuries of forgotten guests."
+      "cover_url": "https://img.atlasobscura.com/MergsKjTwpbQs5n5S8EDCNKSesOjdcTD07ad4-i8ZZE/rt:fit/w:600/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy8yNDA2/NDkxNC0yMTdkLTQx/OWUtYWFlYy1iMTM4/ZDgwMWY4YTE4MTZj/MjU3ZTYwZmRjYTFi/NzZfSU1HXzA3OTUu/SlBH.jpg",
+      "ferns_note": "A 120-kilo tortilla was never meant to be eaten — it was a canvas, sculpted into an edible (well, technically) monument to Mexican identity by a single art teacher working in corn dough. There's something quietly radical about turning the most ordinary staple into the grandest possible gesture."
     },
     {
       "source": "discovery",
       "source_name": "Atlas Obscura",
-      "title": "Knute Rockne Statue in Notre Dame, Indiana",
-      "url": "https://www.atlasobscura.com/places/knute-rockne-statue",
-      "snippet": "When the going gets tough and you are really up against it, are you going to be inspired to go out and try your hardest by being told to \"win one for George\"? Of course not. But with your back against the wall, if you were told to go out and \"win one for the Gipper,\" then you just might give your all and achieve success.",
+      "title": "Roadside America Museum in Hillsboro, Texas",
+      "url": "https://www.atlasobscura.com/places/roadside-america-museum",
+      "snippet": "Carroll Estes has spent his life fixated on the past. Professionally, he made his living through his restoration shop Carroll’s Classic Auto Body. Personally, he was snapping up pieces of 1950s memorabilia, relics, and iconography before they were even retro, amassing an impressive enough collection by 1975 to begin showing it off to the public.",
       "category": "history",
-      "cover_url": "https://img.atlasobscura.com/hxY-K3SlwQshfoZuUAzbgnBno9mRojkDBJb64lMK2lQ/rt:fit/w:600/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy82MWUz/ZmZiNy1kNzI0LTQw/YzktYjAzYS0zNzNh/Y2EwZTFlOTYxNmRl/NTkxZDMwODUwYjAy/NTBfSU1HXzU5NjMu/SlBH.jpg",
-      "ferns_note": "The phrase 'Win one for the Gipper' has been borrowed by politicians and coaches alike, yet most people couldn't tell you who the Gipper actually was — a young Notre Dame halfback named George Gipp who died at 25. Rockne reportedly held the deathbed request in reserve for eight years, waiting for exactly the right losing locker room to unleash it."
+      "cover_url": "https://img.atlasobscura.com/eMlcIRHeriJ-UxuYEhToH1tKOLK3kbzwdboHNDmBdms/rt:fit/w:600/c:1181:787:nowe:0:28/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy83NzBm/YjRmYS03ZDk3LTQ4/MzEtODhkZS05ZDYx/NmZjMmYwMDQzNGM2/OWVhOGYyMGJiZDM1/YTNfNTlfYnVpY2tf/aW52aWN0YV9ieV9w/ZXBwZXJtaW50cGlj/c19kZ2txcHljLWZ1/bGx2aWV3LmpwZw.jpg",
+      "ferns_note": "Carroll Estes was collecting 1950s Americana before nostalgia had even decided the '50s were worth missing — which means he wasn't chasing a trend, he was just paying attention when everyone else was throwing things away. That's the rarest kind of curator."
     },
     {
       "source": "discovery",
       "source_name": "Atlas Obscura",
-      "title": "Anna Freitag Memorial in Scheiben, Austria",
-      "url": "https://www.atlasobscura.com/places/anna-freitag-denkmal-memorial-for-a-murdered-postal-worker",
-      "snippet": "The 26-year-old post office manager from Bad Grosspertholz, Anna Freitag, was very popular among the people. The pretty young woman was born in Heidenreichstein. Since Anna could not often visit her family because of work, the shy and reserved Anna sometimes felt lonely and the townsfolk were happy to invite her for Sunday dinners.",
+      "title": "Major Adams Monument in Johannesburg, California",
+      "url": "https://www.atlasobscura.com/places/major-adams-monument",
+      "snippet": "The X-15 rocket plane program is barely remembered today, but it was the first venture by crewed craft to the edge of space. The rocket plane, carrying a human pilot, would be carried to high altitude under the wing of a modified B-52. The plane would then be released, and the pilot would initiate a flight plan, firing the rocket engine and commonly flying up to the edge of space.",
       "category": "history",
-      "cover_url": "https://img.atlasobscura.com/0r8nMuu6IDbA-EdpjIgD_YjHFPBlovOqLcRtm_6_-so/rt:fit/w:600/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy8zMmI2/Mjg1YS1jNTQ4LTQ0/ZTEtYmQ1MC03ZTRk/ZGNmMDU3NjJkZDRj/YTgxNmE0YjA4NTkx/MzVfMS5qcGc.jpg",
-      "ferns_note": "A shy young postmistress, lonely enough to accept Sunday dinner invitations from strangers, was memorialized by the very village that took her in — which says something tender about how small communities quietly notice the isolated among them."
+      "cover_url": "https://img.atlasobscura.com/CU1l5BHsGzY2uPmbP0FuKeSU7QhLIQUHYiLIJdqE7ds/rt:fit/w:600/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy9lNzQ1/ZTZmZi1iZDRmLTQ3/ZjctYWU4ZS04NjYx/M2M2ZjBiMzYzMjJk/NDdmNjk2MjkxODMz/Y2RfeC0xNS1zaGlw/LTMtb24tbGFrZWJl/ZC1iOGQwMzktMTAy/NC5qcGc.jpg",
+      "ferns_note": "The X-15 pilots were technically astronauts — touching the edge of space — yet the program has nearly dissolved from public memory, overshadowed by the moonshot it quietly helped make possible. A monument on a California roadside may be all that marks the spot where that story almost disappeared entirely."
     },
     {
       "source": "discovery",
       "source_name": "Atlas Obscura",
-      "title": "The Jelling Stone Replica in London, England",
-      "url": "https://www.atlasobscura.com/places/the-jelling-stone-replica",
-      "snippet": "Near Regent's Park, beside the Danish Church, stands a curious tribute to the church's Scandinavian roots, a replica of one of Denmark's most significant national treasures: the Jelling Stone. This rocky reproduction is a cast of the original standing stone erected in Jelling around 980 by King Harald Bluetooth. Created for the 1948 Danish Arts and Culture exhibition at the Victoria and Albert Museum, this London counterpart boasts the vivid red, blue, yellow, and black hues that once enlivened the now weathered faces of the ancient Viking Age monument in Jelling.",
+      "title": "Kilmodan Stones in Glendaruel, Scotland",
+      "url": "https://www.atlasobscura.com/places/kilmodan-stones",
+      "snippet": "Located in the quiet village of Glendaruel in the Argyll and Bute region of Scotland, the Kilmodan Stones are a collection of ancient Pictish stones dating back to the medieval period. These weathered monoliths, primarily composed of local sandstone, are adorned with intricate carvings and designs, including Celtic motifs and Pictish symbols. Believed to have been created between the 7th and 9th centuries CE, the Kilmodan Stones are thought to have served various purposes within early Pictish society.",
       "category": "history",
-      "cover_url": "https://img.atlasobscura.com/prIl-gf0WB4V6ZqKYCB6pOlOaFgilWpbq5Z9rsqHiCc/rt:fit/w:600/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy83OGYx/ZDlmNy1iNDVmLTQ1/ZjgtODFjMS0xNTU2/Y2M1Mjk1OTg1MmI0/MTJiYzY5YTkzNmZi/MWVfSU1HXzMyMjYu/anBlZw.jpg",
-      "ferns_note": "The original Jelling Stone is so weathered its colors have nearly vanished, but the 1948 London replica was painted in the vivid reds, blues, and blacks scholars believe it once wore — meaning a cast tucked beside Regent's Park may be the closest thing we have to seeing the Viking Age monument as it actually looked."
+      "cover_url": "https://img.atlasobscura.com/PebkJdsAXEFajLZJ2FMyPCT2QkNiJVv5V2siPBWrPRs/rt:fit/w:600/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy8yYWUx/ZGNkYy00ODVlLTRi/MzktOWUzMS1kMjI0/YmMwMWRiN2FkZjU0/ODMzNjA4ZDVkOWRh/OTNfSU1HXzU5OTUu/anBlZw.jpg",
+      "ferns_note": "The Picts left no written language, so these carved sandstone slabs in a sleepy Scottish glen are effectively the closest thing to a sentence they ever finished. Whatever they were trying to say has been weathering slowly for over a thousand years, still legible enough to unsettle you."
     }
   ],
   "featured_read": {
     "source": "reads",
     "source_name": "The Marginalian",
-    "title": "How to Love: Legendary Zen Buddhist Teacher Thich Nhat Hanh on Mastering the Art of “Interbeing”",
-    "url": "https://www.themarginalian.org/2026/07/17/how-to-love-thich-nhat-hanh/",
-    "snippet": "\"To love without knowing how to love wounds the person we love.\"",
-    "cover_url": "https://www.themarginalian.org/wp-content/uploads/2015/03/tnh2.jpg?fit=585%2C307&ssl=1",
-    "blurb": "Thich Nhat Hanh dismantles the comfortable myth that love is something we simply feel, arguing instead that it is a skill—one most of us have never been taught. A quiet, unsettling, and ultimately tender reckoning with how much of our loving is actually hurting."
+    "title": "Borges on How to Conquer Time",
+    "url": "https://www.themarginalian.org/2026/07/18/a-new-refutation-of-time-borges/",
+    "snippet": "\"Time is the substance I am made of. Time is a river which sweeps me along, but I am the river; it is a tiger which destroys me, but I am the tiger; it is a fire which consumes me, but I am the fire.\"",
+    "cover_url": "https://www.themarginalian.org/wp-content/uploads/2016/09/borges_time.jpg?fit=600%2C315&ssl=1",
+    "blurb": "Borges offers something stranger and more consoling than the usual advice about mortality: not how to manage time, but how to recognize that you *are* it. Set aside the half-hour and let him dissolve the distance between the river and the person drowning in it."
   },
   "garden_note": {
-    "note": "First light crept over the Zürich rooftops at 05:11 this morning, and the garden is already humming — dahlias are hitting their generous mid-July stride, and the air carries that particular warmth that promises a long, golden day ahead. Now is the hour to deadhead and water before the sun climbs high enough to scorch tender stems.",
+    "note": "High summer lingers deliciously late in Zürich tonight — the last warmth pressed into stone walls, lavender still humming with bees even as the light fades. Step outside before 21:53 and catch that long amber dusk dissolving over the Albiskette; this is the season's unhurried gift.",
     "in_season": [
-      "Dahlias coming into full bloom",
-      "Courgettes — harvest daily before they run away from you",
-      "French beans ready for picking",
-      "Deadhead roses for a late-summer flush"
+      "Lavender in full bloom",
+      "Courgettes — harvest daily before they become marrows",
+      "French beans ready to pick",
+      "Deadhead roses to coax a second flush"
     ],
-    "sky_tonight": "After dusk, look southwest for a slim waxing crescent moon — at just 21% lit, it will set well before midnight, leaving the sky beautifully dark for the summer Milky Way arching overhead.",
-    "sun_times": "First light arrives at 05:11, with sunrise at 05:47 and a long, lingering dusk stretching to 21:53 tonight.",
-    "moon_label": "Waxing crescent (21% illuminated)",
-    "illum_pct": 21,
+    "sky_tonight": "A slim waxing crescent hangs low in the southwest after dusk — look just below it for Jupiter brightening as the sky deepens.",
+    "sun_times": "The sun sets at 21:17 tonight, with dusk easing in around 21:53.",
+    "moon_label": "Waxing crescent",
+    "illum_pct": 24,
     "sun_range": "05:47–21:17"
   },
   "puzzle": {
-    "kind": "riddle",
-    "label": "Fern's Morning Riddle",
-    "prompt": "While on my way to St. Ives, I saw a man with 7 wives. Each wife had 7 sacks. Each sack had 7 cats. Each cat had 7 kittens. Kittens, cats, sacks, and wives. How many were going to St. Ives?",
-    "answer": "Just one, me",
-    "hint": "",
-    "source": "riddles.com",
-    "source_id": "Riddle-211"
+    "kind": "lateral teaser",
+    "label": "The Evening Enigma",
+    "prompt": "A man carefully reads every word on the menu, orders confidently, and yet when the food arrives he cannot eat a single thing on his plate. The restaurant has made no mistakes, and the man is not ill. Why not?",
+    "answer": "The man is a professional food critic who ordered on behalf of his dining companion — the meal was always intended for someone else.",
+    "hint": "Consider who the food was actually meant for."
   },
   "previous_puzzle": {
-    "label": "The Evening Enigma",
-    "prompt": "Which origin story for the word 'salary' is true?\n\nA. From the Latin 'salarium,' referring to the portion of salt given to Roman soldiers as part of their pay — salt being a precious and practical commodity in the ancient world.\n\nB. From the Old French 'salarier,' meaning 'to settle accounts at season's end,' itself rooted in 'salair,' a harvest-time ledger kept by estate managers.",
-    "answer": "A is true: 'salary' derives from the Latin 'salarium,' connected to 'sal' (salt), reflecting the value of salt as a form of payment or allowance in ancient Rome."
+    "label": "Fern's Morning Riddle",
+    "prompt": "While on my way to St. Ives, I saw a man with 7 wives. Each wife had 7 sacks. Each sack had 7 cats. Each cat had 7 kittens. Kittens, cats, sacks, and wives. How many were going to St. Ives?",
+    "answer": "Just one, me"
   },
   "fern_data": {
-    "greeting": "While the coffee is still too hot to drink and the birds are workshopping their best material outside your window, settle in — today we're falling down rabbit holes about fermented anchovy sauces, Swiss perfection, and haunted YouTube channels, then surfacing just long enough to plant winter seeds and plot a French château Christmas.",
-    "top_pick_title": "Fermented Mysteries & Softer Mornings"
+    "greeting": "The sky outside is doing that particular August thing — half tangerine, half ash — and it felt like the right moment to sit with questions: whether the oldest surviving globe holds stranger secrets than we remember, whether Regency women were actually that unhinged (jury's still out), and what Borges, of all people, might tell us about evenings like this one.",
+    "top_pick_title": "Old Ghosts, Wet Hems & Borrowed Time"
   }
 }
