@@ -112,6 +112,25 @@ def _payload(curated: dict) -> dict:
         "source": fr.get("source_name", ""),
     } if fr.get("title") else None
 
+    ld = curated.get("larder") or {}
+    _lrec = ld.get("recipe") or {}
+    larder = {
+        "recipe": ({
+            "title":  _lrec.get("title", ""),
+            "note":   _dedash(_lrec.get("blurb") or _lrec.get("snippet", "")),
+            "url":    _lrec.get("url", "#"),
+            "cover":  _lrec.get("cover_url", ""),
+            "source": _lrec.get("source_name", ""),
+        } if _lrec.get("title") else None),
+        "news": [{
+            "title":  n.get("title", ""),
+            "note":   _dedash(n.get("blurb") or n.get("snippet", "")),
+            "url":    n.get("url", "#"),
+            "cover":  n.get("cover_url", ""),
+            "source": n.get("source_name", ""),
+        } for n in (ld.get("news") or []) if n.get("title")],
+    } if (_lrec.get("title") or ld.get("news")) else None
+
     g = curated.get("garden_note") or {}
     garden = {
         "note":        _dedash(g.get("note", "")),
@@ -150,6 +169,7 @@ def _payload(curated: dict) -> dict:
         "videos":    videos,
         "good_news": good_news,
         "discovery": discovery,
+        "larder":    larder,
     }
 
 
@@ -459,6 +479,11 @@ _PAGE = """<!DOCTYPE html>
         <div class="lede">Forgotten places, hidden histories, and the science that rewires how you see the world.</div></div>
       <div class="grid read" id="discovery-grid"></div>
     </section>
+    <section class="panel" data-panel="larder">
+      <div class="sec-head"><div class="eyebrow orn">The Larder</div><h3>The Larder</h3>
+        <div class="lede">Food news, trends, and a recipe worth cooking, gathered for the morning.</div></div>
+      <div class="grid read" id="larder-grid"></div>
+    </section>
   </main>
 
   <footer>
@@ -565,6 +590,7 @@ function cover(url,tone,label,play){
 
 // Tabs
 const TABS=[{k:'music',l:'Soundtrack'},{k:'watch',l:'Watch'},{k:'good_news',l:'Good News'},{k:'discovery',l:'Archives'}];
+if(DATA.larder && ((DATA.larder.recipe)||(DATA.larder.news&&DATA.larder.news.length))) TABS.push({k:'larder',l:'The Larder'});
 const tabsEl=$('#tabs');
 TABS.forEach((t,i)=>{
   const b=document.createElement('button');
@@ -612,6 +638,20 @@ $('#discovery-grid').innerHTML=DATA.discovery.length?DATA.discovery.map((d,i)=>
   +'<div class="meta-line">'+(d.cat?'<span class="badge">'+esc(d.cat)+'</span>':'')+'<span>'+esc(d.source||'')+'</span></div>'
   +'<h4>'+esc(d.title)+'</h4><div class="note">'+esc(d.note)+'</div><span class="go">Read the story '+ARR+'</span></a>').join('')
   :'<div class="empty">Nothing here in this edition.</div>';
+
+// The Larder — the recipe (badged) first, then food news (morning only)
+(function(){
+  const L=DATA.larder; if(!L) return;
+  const items=[];
+  if(L.recipe && L.recipe.title) items.push({...L.recipe, _recipe:true});
+  (L.news||[]).forEach(n=>items.push(n));
+  if(!items.length) return;
+  $('#larder-grid').innerHTML=items.map((it,i)=>
+    '<a class="card read" href="'+esc(safeUrl(it.url))+'" target="_blank">'+cover(it.cover,i%4,'Food image',false)
+    +'<div class="meta-line">'+(it._recipe?'<span class="badge">Recipe</span>':'')+'<span>'+esc(it.source||'')+'</span></div>'
+    +'<h4>'+esc(it.title)+'</h4><div class="note">'+esc(it.note)+'</div>'
+    +'<span class="go">'+(it._recipe?'Get the recipe ':'Read ')+ARR+'</span></a>').join('');
+})();
 
 renderGenres(); renderMusic();
 
@@ -958,7 +998,7 @@ _GROVE_PAGE = """<!DOCTYPE html>
 const $ = (s,r=document)=>r.querySelector(s);
 function esc(s){return String(s==null?'':s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
 function safeUrl(u){try{const p=new URL(u,location.href);return ['http:','https:','mailto:'].includes(p.protocol)?p.href:'#';}catch(e){return '#';}}
-const SECTION_LABEL={music:'Soundtrack',videos:'Worth Watching',good_news:'Good News',discovery:'From the Archives',featured_read:'One Good Read'};
+const SECTION_LABEL={music:'Soundtrack',videos:'Worth Watching',good_news:'Good News',discovery:'From the Archives',featured_read:'One Good Read',food:'The Larder'};
 
 let ALL=[], MOODS=[], SECTIONS=[];
 let activeSection=null, activeMoods=new Set(), query='';
@@ -1047,6 +1087,7 @@ _GROVE_SECTIONS = [
     ("good_news",     "Good News"),
     ("discovery",     "From the Archives"),
     ("featured_read", "One Good Read"),
+    ("food",          "The Larder"),
 ]
 
 
@@ -1111,6 +1152,14 @@ def _grove_entries(data: dict, d: datetime.date, is_am: bool) -> list[dict]:
     if fr and fr.get("title"):
         add("featured_read", fr.get("title"), fr.get("note"), fr.get("url"),
             fr.get("cover"), fr.get("source"))
+    ld = data.get("larder") or {}
+    rec = ld.get("recipe")
+    if rec and rec.get("title"):
+        add("food", rec.get("title"), rec.get("note"), rec.get("url"),
+            rec.get("cover"), rec.get("source"))
+    for n in (ld.get("news") or []):
+        add("food", n.get("title"), n.get("note"), n.get("url"),
+            n.get("cover"), n.get("source"))
     return out
 
 

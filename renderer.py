@@ -391,6 +391,65 @@ def _toc_row(num: str, cat: str, lead: str, count: str, href: str, last: bool = 
         </td></tr>"""
 
 
+def _render_larder(larder: dict) -> str:
+    """The Larder — food news + a recipe card (morning only). Gmail-safe.
+    Renders only when there's content (the PM edition never carries a larder)."""
+    larder = larder or {}
+    news = [n for n in (larder.get("news") or []) if n.get("title")]
+    recipe = larder.get("recipe") or {}
+    if not news and not recipe.get("title"):
+        return ""
+
+    blocks = []
+    # Recipe card — cover image (if any) + label + title + blurb + link.
+    if recipe.get("title"):
+        href = _safe_url(recipe.get("url", "#"))
+        cover = _safe_url(recipe.get("cover_url", "")) if recipe.get("cover_url") else ""
+        img = (
+            f'<a href="{href}"><img src="{cover}" alt="" width="536" '
+            f'style="display:block; width:100%; max-width:536px; height:auto; '
+            f'border:1px solid {BRASS}; margin-bottom:14px;"></a>'
+        ) if cover else ""
+        src = _esc(recipe.get("source_name", ""))
+        title = _esc(_dedash(recipe["title"]))
+        blurb = _esc(_dedash(recipe.get("blurb", "")))
+        blocks.append(
+            f'{img}'
+            f'<div style="font-family:{SANS}; font-size:10.5px; font-weight:600; letter-spacing:2px; '
+            f'text-transform:uppercase; color:{CLAY_DEEP}; padding-bottom:6px;">Recipe &nbsp;&middot;&nbsp; {src}</div>'
+            f'<div style="font-family:{DISPLAY}; font-weight:600; font-size:23px; line-height:1.15; color:{FOREST};">'
+            f'<a href="{href}" style="color:{FOREST}; text-decoration:none;">{title}</a></div>'
+            + (f'<div style="font-family:{SERIF}; font-size:15px; line-height:1.55; color:{INK_SOFT}; padding-top:8px;">{blurb}</div>' if blurb else "")
+            + f'<div style="padding-top:12px;"><a href="{href}" style="font-family:{SANS}; font-size:11px; '
+              f'font-weight:600; letter-spacing:1.2px; text-transform:uppercase; color:{CLAY_DEEP}; '
+              f'text-decoration:none;">Get the recipe &rarr;</a></div>'
+        )
+
+    # Food news headlines — compact list.
+    for i, n in enumerate(news):
+        href = _safe_url(n.get("url", "#"))
+        title = _esc(_dedash(n["title"]))
+        src = _esc(n.get("source_name", ""))
+        blurb = _esc(_dedash(n.get("blurb", "")))
+        border = f'border-top:1px solid {LINE}; margin-top:16px; padding-top:14px;' if (recipe.get("title") or i) else ""
+        blocks.append(
+            f'<div style="{border}">'
+            f'<div style="font-family:{SERIF}; font-size:16px; line-height:1.4;">'
+            f'<a href="{href}" style="color:{INK_SOFT}; text-decoration:none;">{title}</a></div>'
+            + (f'<div style="font-family:{SANS}; font-size:13px; line-height:1.5; color:{INK_MUTE}; padding-top:3px;">{blurb}</div>' if blurb else "")
+            + f'<div style="font-family:{SANS}; font-size:10px; letter-spacing:1.2px; text-transform:uppercase; color:{BRASS_DEEP}; padding-top:4px;">{src}</div>'
+            + '</div>'
+        )
+
+    return f"""
+        <tr>
+          <td class="px" style="padding:24px 32px 26px 32px; background-color:{SURFACE}; border-bottom:1px solid {LINE};">
+            <div style="font-family:{SANS}; font-size:11px; font-weight:600; letter-spacing:3px; text-transform:uppercase; color:{BRASS_DEEP}; padding-bottom:12px;">{_eyebrow("The Larder", BRASS_DEEP)}</div>
+            {''.join(blocks)}
+          </td>
+        </tr>"""
+
+
 def _render_contents(videos, music, good_news, discovery, read=None, is_am=True) -> str:
     href = _safe_url(EDITION_URL) if EDITION_URL else "#"
     soundtrack_label = "The Morning Soundtrack" if is_am else "The Evening Soundtrack"
@@ -464,6 +523,7 @@ def build_html(curated: dict) -> str:
     fern_html   = _render_fern_note(fern.get("greeting", ""))
     garden_html = _render_garden(garden)
     regional_html = _render_regional(curated.get("regional_block"))
+    larder_html = _render_larder(curated.get("larder"))
     puzzle_html = _render_puzzle(curated.get("puzzle"), curated.get("previous_puzzle"))
     toc_html    = _render_contents(videos, music, good_news, discovery, read, is_am=is_am)
 
@@ -509,7 +569,7 @@ def build_html(curated: dict) -> str:
               </tr>
             </table>
           </td>
-        </tr>{fern_html}{garden_html}{regional_html}{puzzle_html}{hero_html}{toc_html}{cta_html}
+        </tr>{fern_html}{garden_html}{regional_html}{larder_html}{puzzle_html}{hero_html}{toc_html}{cta_html}
         <tr>
           <td align="center" bgcolor="{FOREST}" style="background-color:{FOREST}; padding:30px 22px 36px 22px; margin-top:40px;">
             <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="border:1px solid {BRASS};">
