@@ -1222,6 +1222,10 @@ def _season(dt: datetime.datetime) -> str:
 LOCALE_COORDS = {
     "Zürich":                          (47.37, 8.54),
     "Annapolis Valley, Nova Scotia":   (45.03, -64.50),
+    "Raleigh, North Carolina":         (35.78, -78.64),
+    "Berlin, Germany":                 (52.52, 13.40),
+    "Ramsau am Dachstein, Austria":    (47.41, 13.65),
+    "Zug, Switzerland":                (47.17, 8.52),
 }
 
 
@@ -1369,6 +1373,17 @@ REGIONAL_FEEDS = {
         "url":         "https://www.cbc.ca/webfeed/rss/rss-canada-novascotia",
         "source_name": "CBC Nova Scotia",
     },
+    "Raleigh, North Carolina": {
+        "url":         "https://www.wral.com/news/rss/142/",
+        "source_name": "WRAL",
+    },
+    "Berlin, Germany": {
+        # Germany-wide English news (no clean Berlin-only English feed).
+        "url":         "https://www.thelocal.de/feeds/rss.php",
+        "source_name": "The Local",
+    },
+    # Ramsau am Dachstein and Zug have no reliable English local feed — those
+    # editions omit the "Around <place>" block (fetch_regional returns []).
 }
 
 

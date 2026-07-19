@@ -1,0 +1,55 @@
+name: Zug Edition
+
+# Regional re-send of the primary Curated Canopy for a reader in Zug, Switzerland.
+# Zug is ~30 km from the Zürich source and shares its climate and sky, so this
+# edition's value is the personalized "From the Garden · Zug", The Larder's seasonal
+# food note, and the reader's own send timing. It does NOT re-fetch or re-curate —
+# it reuses the primary edition's committed curated_data.json, re-localizes those
+# notes, and emails the EMAIL_TO_ZUG list. No local news block (no fresh English
+# feed). No web publish, no history writes.
+#
+# Timing: same time zone as the source, whose content commits ~06:15 UTC (~08:15
+# local), so the morning fires 06:23 UTC and lands ~08:30–10:00 local (a true 07:00
+# isn't possible with the re-send model). Evening: 19:00 CEST = 17:00 UTC → fire
+# 16:23 UTC, after the ~15:55 UTC evening commit. Winter (CET) arrives ~1h earlier.
+
+on:
+  schedule:
+    - cron: "23 6 * * *"    # morning — just after the day's content commits
+    - cron: "23 16 * * *"   # ≈ 19:00 Zug (evening)
+  workflow_dispatch:
+
+jobs:
+  zug-edition:
+    name: Zug re-send
+    runs-on: ubuntu-latest
+    env:
+      TZ: Europe/Zurich
+      EDITION_TZ: Europe/Zurich
+      GARDEN_LOCALE: "Zug, Switzerland"
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: |
+          pip install --quiet -r requirements.txt
+          pip install --quiet anthropic google-api-python-client python-dateutil requests beautifulsoup4
+
+      - name: Re-localize + send the Zug edition
+        env:
+          CLAUDE_API_KEY:        ${{ secrets.CLAUDE_API_KEY }}
+          EMAIL_USER:            ${{ secrets.EMAIL_USER }}
+          SMTP_USER:             ${{ secrets.SMTP_USER }}
+          SMTP_PASS:             ${{ secrets.SMTP_PASS }}
+          SMTP_HOST:             ${{ secrets.SMTP_HOST }}
+          SMTP_SERVER:           ${{ secrets.SMTP_SERVER }}
+          SMTP_PORT:             ${{ secrets.SMTP_PORT }}
+          EMAIL_TO:              ${{ secrets.EMAIL_TO_ZUG }}
+        run: python renderer.py --regional
