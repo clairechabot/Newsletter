@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-07-19T17:30:11.173172+02:00",
+ "generated_at": "2026-07-19T21:24:12.959189+02:00",
  "moods": [
   "cozy",
   "curious",
@@ -32,6 +32,10 @@
   {
    "key": "featured_read",
    "label": "One Good Read"
+  },
+  {
+   "key": "food",
+   "label": "The Larder"
   }
  ],
  "items": [

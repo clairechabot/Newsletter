@@ -981,6 +981,7 @@ _GROVE_PAGE = """<!DOCTYPE html>
     <input class="search" id="search" type="search" placeholder="Search The Grove — a title, a source, a feeling…" autocomplete="off">
     <div class="chips" id="section-chips"></div>
     <div class="chips" id="mood-chips"></div>
+    <div class="chips"><button class="chip" id="shuffle-btn" type="button">&#8635;&nbsp; Shuffle</button></div>
   </div>
 </div>
 
@@ -1006,6 +1007,16 @@ let ALL=[], MOODS=[], SECTIONS=[];
 let activeSection=null, activeMoods=new Set(), query='';
 let filtered=[], shown=0;
 const BATCH=24;
+
+// The Grove opens SHUFFLED — a serendipitous wander, not newest-first. ALL is
+// shuffled once on load (and on demand via the Shuffle button); applyFilters()
+// preserves that order, so Everything and every section/mood filter come up
+// randomized. Shuffling once keeps the order stable while you scroll (load-more
+// won't reorder what's on screen); reloading gives a fresh order.
+function shuffle(a){
+  for(let i=a.length-1;i>0;i--){ const j=Math.floor(Math.random()*(i+1)); [a[i],a[j]]=[a[j],a[i]]; }
+  return a;
+}
 
 function fmtDate(iso,ampm){
   try{const d=new Date(iso+'T12:00:00');
@@ -1068,11 +1079,12 @@ function renderChips(){
 }
 
 $('#search').addEventListener('input',e=>{query=e.target.value;applyFilters();});
+$('#shuffle-btn').addEventListener('click',()=>{shuffle(ALL);applyFilters();window.scrollTo({top:0,behavior:'smooth'});});
 
 new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting)renderMore();});},{rootMargin:'600px'}).observe($('#sentinel'));
 
 fetch('./grove.json',{cache:'no-cache'}).then(r=>r.json()).then(d=>{
-  ALL=d.items||[]; MOODS=d.moods||[]; SECTIONS=d.sections||[];
+  ALL=shuffle(d.items||[]); MOODS=d.moods||[]; SECTIONS=d.sections||[];
   // hide mood chips entirely until at least one item carries a mood
   if(!ALL.some(it=>(it.moods||[]).length)) MOODS=[];
   renderChips(); applyFilters();
