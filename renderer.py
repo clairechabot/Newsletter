@@ -400,6 +400,12 @@ def _render_larder(larder: dict) -> str:
     if not news and not recipe.get("title"):
         return ""
 
+    note = _esc(_dedash(larder.get("seasonal_note", "")))
+    note_html = (
+        f'<div style="font-family:{SERIF}; font-style:italic; font-size:15.5px; '
+        f'line-height:1.55; color:{INK_SOFT}; padding-bottom:16px;">{note}</div>'
+    ) if note else ""
+
     blocks = []
     # Recipe card — cover image (if any) + label + title + blurb + link.
     if recipe.get("title"):
@@ -445,7 +451,7 @@ def _render_larder(larder: dict) -> str:
         <tr>
           <td class="px" style="padding:24px 32px 26px 32px; background-color:{SURFACE}; border-bottom:1px solid {LINE};">
             <div style="font-family:{SANS}; font-size:11px; font-weight:600; letter-spacing:3px; text-transform:uppercase; color:{BRASS_DEEP}; padding-bottom:12px;">{_eyebrow("The Larder", BRASS_DEEP)}</div>
-            {''.join(blocks)}
+            {note_html}{''.join(blocks)}
           </td>
         </tr>"""
 
@@ -739,6 +745,23 @@ def send_regional() -> None:
             print("[regional] Garden regen returned empty — keeping the primary note.")
     except Exception as exc:
         print(f"[regional] Garden regen skipped ({exc}) — keeping the primary note.")
+
+    # Re-localize The Larder's seasonal food note for this region (the recipe +
+    # news are shared, only Fern's seasonal comment differs). Morning only, since
+    # that's the only edition that carries a larder. Best-effort.
+    larder = curated.get("larder") or {}
+    if larder.get("news") or larder.get("recipe"):
+        try:
+            import curator
+            from fetcher import _season
+            food_note = curator.generate_larder_note(
+                curator.build_claude_client(), GARDEN_LOCALE, _season(now), want_am)
+            if food_note:
+                larder["seasonal_note"] = food_note
+                curated["larder"] = larder
+                print(f"[regional] Re-localized The Larder note for {GARDEN_LOCALE}.")
+        except Exception as exc:
+            print(f"[regional] Larder note regen skipped ({exc}).")
 
     # A small block of genuinely local news for this region (best-effort).
     try:

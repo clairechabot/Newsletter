@@ -115,6 +115,7 @@ def _payload(curated: dict) -> dict:
     ld = curated.get("larder") or {}
     _lrec = ld.get("recipe") or {}
     larder = {
+        "seasonal_note": _dedash(ld.get("seasonal_note", "")),
         "recipe": ({
             "title":  _lrec.get("title", ""),
             "note":   _dedash(_lrec.get("blurb") or _lrec.get("snippet", "")),
@@ -481,7 +482,7 @@ _PAGE = """<!DOCTYPE html>
     </section>
     <section class="panel" data-panel="larder">
       <div class="sec-head"><div class="eyebrow orn">The Larder</div><h3>The Larder</h3>
-        <div class="lede">Food news, trends, and a recipe worth cooking, gathered for the morning.</div></div>
+        <div class="lede" id="larder-lede">Food news, trends, and a recipe worth cooking, gathered for the morning.</div></div>
       <div class="grid read" id="larder-grid"></div>
     </section>
   </main>
@@ -642,6 +643,7 @@ $('#discovery-grid').innerHTML=DATA.discovery.length?DATA.discovery.map((d,i)=>
 // The Larder — the recipe (badged) first, then food news (morning only)
 (function(){
   const L=DATA.larder; if(!L) return;
+  if(L.seasonal_note) $('#larder-lede').textContent = L.seasonal_note;
   const items=[];
   if(L.recipe && L.recipe.title) items.push({...L.recipe, _recipe:true});
   (L.news||[]).forEach(n=>items.push(n));
