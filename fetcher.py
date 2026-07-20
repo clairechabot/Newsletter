@@ -73,26 +73,41 @@ MAX_VIDEOS_PER_EDITION = 10           # newest-first cap across all channels + w
 YOUTUBE_MIN_DURATION_SECONDS = 121    # ≥ 2 min — removes the 0–2 min band where Shorts cluster
 YOUTUBE_WILDCARD_MIN_SECONDS = 300    # wildcard must be ≥ 5 minutes
 
-# Wildcard categories — one is chosen at random each run
-_POLITICAL_KEYWORDS = frozenset({
-    "war", "trump", "biden", "harris", "election", "congress", "senate",
-    "iran", "israel", "gaza", "ukraine", "russia", "military", "nato",
-    "bombing", "coup", "legislation", "sanctions", "republican", "democrat",
-    "whitehouse", "pentagon", "missile", "nuclear", "ceasefire", "protest",
-    "assassination", "tariff", "tariffs", "impeach", "geopolitical",
-    "kamala", "maga", "liberal", "conservative", "partisan", "filibuster",
-    "death", "violence", "conflict", "shooting", "tragedy",
+# Content filter keywords, split into two tiers:
+#  - _ALWAYS_BLOCK: modern politics / partisanship / current geopolitics — never
+#    wanted, in any context.
+#  - _CONFLICT_TERMS: plain conflict vocabulary that is normal in HISTORY content
+#    (a Roman war, a medieval siege). Blocked for the untrusted wildcard, but
+#    allowed for the user's hand-picked channels (allow_history=True), so history
+#    videos aren't skipped just for saying "war" / "military" / "battle".
+_ALWAYS_BLOCK = frozenset({
+    "trump", "biden", "harris", "kamala", "maga", "election", "congress", "senate",
+    "republican", "democrat", "whitehouse", "pentagon", "filibuster", "impeach",
+    "legislation", "sanctions", "tariff", "tariffs", "partisan", "liberal",
+    "conservative", "geopolitical", "protest", "nato", "gaza", "israel", "iran",
+    "ukraine", "russia", "ceasefire", "coup", "shooting",
 })
+_CONFLICT_TERMS = frozenset({
+    "war", "military", "missile", "nuclear", "bombing", "assassination",
+    "death", "violence", "conflict", "tragedy",
+})
+# Back-compat alias (full blocklist) for any external reference.
+_POLITICAL_KEYWORDS = _ALWAYS_BLOCK | _CONFLICT_TERMS
 
 
-def _is_political(title: str, description: str = "") -> bool:
-    """Return True if the title or description contains blocked content keywords."""
+def _is_political(title: str, description: str = "", allow_history: bool = False) -> bool:
+    """Return True if the title/description should be blocked.
+
+    Always blocks modern-political / current-events terms. Conflict vocabulary
+    (war, military, …) is blocked too UNLESS allow_history=True — set for the
+    user's curated channels so genuine history videos come through."""
+    blocked = _ALWAYS_BLOCK if allow_history else _POLITICAL_KEYWORDS
     title_words = set(re.findall(r'\w+', title.lower()))
-    if title_words & _POLITICAL_KEYWORDS:
+    if title_words & blocked:
         return True
     if description:
         desc_words = set(re.findall(r'\w+', description.lower()))
-        return bool(desc_words & _POLITICAL_KEYWORDS)
+        return bool(desc_words & blocked)
     return False
 
 
@@ -555,7 +570,9 @@ def fetch_channel_videos(
             details, processed_ids = _fetch_video_details(youtube, fresh_ids)
             filtered = []
             for v in details:
-                if _is_political(v["title"], v.get("description", "")):
+                # Curated channels are trusted with history/conflict vocabulary
+                # (war, military, …); only hard modern-politics is blocked here.
+                if _is_political(v["title"], v.get("description", ""), allow_history=True):
                     print(f"  [skip/blocked] channel {v['video_id']} — '{v['title']}'")
                     continue
                 if _is_clickbait(v["title"]):
