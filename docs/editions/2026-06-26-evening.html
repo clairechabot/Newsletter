@@ -19,8 +19,13 @@
     --sans:'Hanken Grotesk',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
   }
   *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
-  html{scroll-behavior:smooth;}
-  body{font-family:var(--sans);background:var(--paper);color:var(--ink);line-height:1.6;-webkit-font-smoothing:antialiased;}
+  /* Root paints forest so any overscroll/canvas below the footer (or above the
+     forest masthead) blends with it instead of showing a band of dead cream. */
+  html{scroll-behavior:smooth;background:var(--forest);}
+  body{font-family:var(--sans);background:var(--paper);color:var(--ink);line-height:1.6;-webkit-font-smoothing:antialiased;min-height:100vh;display:flex;flex-direction:column;}
+  /* Sticky footer: the tab deck absorbs any slack so the footer sits flush at the
+     bottom even when an edition is short — no dead cream space beneath the banner. */
+  main{flex:1 0 auto;}
   img{max-width:100%;display:block;}
   a{color:inherit;text-decoration:none;}
   .wrap{max-width:1120px;margin:0 auto;padding:0 40px;}
@@ -174,6 +179,7 @@
   .card .go{margin-top:14px;font-size:11px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:var(--clay-deep);display:inline-flex;align-items:center;gap:7px;}
   .card .go .arr{transition:transform .2s ease;color:var(--brass-deep);} .card:hover .go .arr{transform:translateX(4px);}
   .badge{font-size:9.5px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;padding:3px 9px;border:1px solid var(--brass);color:var(--brass-deep);}
+  .badge.wildcard{border-color:var(--clay-deep);color:var(--clay-deep);background:rgba(152,68,23,0.07);}
   .empty{color:var(--ink-mute);font-style:italic;font-family:var(--serif);padding:30px 0;}
 
   /* ---- footer (forest) ---- */
@@ -292,6 +298,11 @@
         <div class="lede">Forgotten places, hidden histories, and the science that rewires how you see the world.</div></div>
       <div class="grid read" id="discovery-grid"></div>
     </section>
+    <section class="panel" data-panel="larder">
+      <div class="sec-head"><div class="eyebrow orn">The Larder</div><h3>The Larder</h3>
+        <div class="lede" id="larder-lede">Food news, trends, and a recipe worth cooking, gathered for the morning.</div></div>
+      <div class="grid read" id="larder-grid"></div>
+    </section>
   </main>
 
   <footer>
@@ -398,6 +409,7 @@ function cover(url,tone,label,play){
 
 // Tabs
 const TABS=[{k:'music',l:'Soundtrack'},{k:'watch',l:'Watch'},{k:'good_news',l:'Good News'},{k:'discovery',l:'Archives'}];
+if(DATA.larder && ((DATA.larder.recipe)||(DATA.larder.news&&DATA.larder.news.length))) TABS.push({k:'larder',l:'The Larder'});
 const tabsEl=$('#tabs');
 TABS.forEach((t,i)=>{
   const b=document.createElement('button');
@@ -432,7 +444,7 @@ function renderMusic(){
 }
 $('#watch-grid').innerHTML=DATA.videos.length?DATA.videos.map((v,i)=>
   '<a class="card watch" href="'+(v.video_id?esc(safeUrl(ytWatch(v.video_id))):'#')+'" target="_blank">'+cover(v.video_id?ytThumb(v.video_id):'',i%4,'Video still',true)
-  +'<div class="meta-line"><span>'+esc(v.channel||'Video')+'</span>'+(v.wild?'<span class="sep">&middot;</span><span>Wildcard</span>':'')+'</div>'
+  +'<div class="meta-line">'+(v.wild?'<span class="badge wildcard">Random Pick</span>':'')+'<span>'+esc(v.channel||'Video')+'</span></div>'
   +'<h4>'+esc(v.title)+'</h4><div class="note">'+esc(v.note)+'</div><span class="go">Watch '+ARR+'</span></a>').join('')
   :'<div class="empty">No films in this edition.</div>';
 $('#good_news-grid').innerHTML=DATA.good_news.length?DATA.good_news.map((g,i)=>
@@ -445,6 +457,21 @@ $('#discovery-grid').innerHTML=DATA.discovery.length?DATA.discovery.map((d,i)=>
   +'<div class="meta-line">'+(d.cat?'<span class="badge">'+esc(d.cat)+'</span>':'')+'<span>'+esc(d.source||'')+'</span></div>'
   +'<h4>'+esc(d.title)+'</h4><div class="note">'+esc(d.note)+'</div><span class="go">Read the story '+ARR+'</span></a>').join('')
   :'<div class="empty">Nothing here in this edition.</div>';
+
+// The Larder — the recipe (badged) first, then food news (morning only)
+(function(){
+  const L=DATA.larder; if(!L) return;
+  if(L.seasonal_note) $('#larder-lede').textContent = L.seasonal_note;
+  const items=[];
+  if(L.recipe && L.recipe.title) items.push({...L.recipe, _recipe:true});
+  (L.news||[]).forEach(n=>items.push(n));
+  if(!items.length) return;
+  $('#larder-grid').innerHTML=items.map((it,i)=>
+    '<a class="card read" href="'+esc(safeUrl(it.url))+'" target="_blank">'+cover(it.cover,i%4,'Food image',false)
+    +'<div class="meta-line">'+(it._recipe?'<span class="badge">Recipe</span>':'')+'<span>'+esc(it.source||'')+'</span></div>'
+    +'<h4>'+esc(it.title)+'</h4><div class="note">'+esc(it.note)+'</div>'
+    +'<span class="go">'+(it._recipe?'Get the recipe ':'Read ')+ARR+'</span></a>').join('');
+})();
 
 renderGenres(); renderMusic();
 

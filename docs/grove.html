@@ -72,6 +72,8 @@
   .body{padding:16px 18px 0;}
   .meta-line{display:flex;align-items:center;gap:9px;font-size:9.5px;font-weight:600;letter-spacing:0.13em;text-transform:uppercase;color:var(--brass-deep);flex-wrap:wrap;}
   .meta-line .sep{color:var(--line);}
+  .badge{font-size:8.5px;font-weight:700;letter-spacing:0.11em;text-transform:uppercase;padding:2px 8px;border:1px solid var(--brass);color:var(--brass-deep);}
+  .badge.wildcard{border-color:var(--clay-deep);color:var(--clay-deep);background:rgba(152,68,23,0.07);}
   .card h4{font-family:var(--display);font-weight:600;font-size:21px;line-height:1.16;color:var(--forest);margin-top:9px;letter-spacing:0.005em;}
   .note{font-family:var(--serif);font-size:14px;color:var(--ink-soft);margin-top:8px;line-height:1.52;}
   .moods{display:flex;flex-wrap:wrap;gap:9px;margin-top:11px;}
@@ -171,7 +173,7 @@ function cardHTML(it){
   return '<div class="card"><a class="card-link" href="'+esc(safeUrl(it.url))+'" target="_blank" rel="noopener">'
     + cv
     + '<div class="body">'
-    +   '<div class="meta-line">'+src+'<span>'+esc(SECTION_LABEL[it.section]||it.section)+'</span></div>'
+    +   '<div class="meta-line">'+(it.wild?'<span class="badge wildcard">Random Pick</span>':'')+src+'<span>'+esc(SECTION_LABEL[it.section]||it.section)+'</span></div>'
     +   '<h4>'+esc(it.title)+'</h4>'
     +   (it.note?'<div class="note">'+esc(it.note)+'</div>':'')
     +   (moods?'<div class="moods">'+moods+'</div>':'')
