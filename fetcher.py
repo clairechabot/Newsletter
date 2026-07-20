@@ -59,6 +59,10 @@ YOUTUBE_CHANNEL_IDS: list[str] = [
     "UCYO_jab_esuFRV4b17AJtAw",  # 3Blue1Brown
     "UCXl4i9dYBrFOabk0xGmbkRA",  # Dwarkesh Patel
     "UCbFLHoeA-X5qRUDmb9tRRqA",  # Classic Masterworks
+    "UCdlktQvYRPgMVyvf_u-uZxA",  # Historic Royal Palaces
+    "UCH4BNI0-FOK2dMXoFtViWHw",  # Be Smart
+    "UCDz2F9qBLuUpI7ZIIcxEAEg",  # Mason Mignanelli
+    "UC2J29LPhS9vMiWyYEqBRB0w",  # The Ancients
 ]
 
 HISTORY_FILE = Path(__file__).parent / "history.json"
