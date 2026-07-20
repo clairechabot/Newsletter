@@ -207,8 +207,13 @@ _PAGE = """<!DOCTYPE html>
     --sans:'Hanken Grotesk',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
   }
   *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
-  html{scroll-behavior:smooth;}
-  body{font-family:var(--sans);background:var(--paper);color:var(--ink);line-height:1.6;-webkit-font-smoothing:antialiased;}
+  /* Root paints forest so any overscroll/canvas below the footer (or above the
+     forest masthead) blends with it instead of showing a band of dead cream. */
+  html{scroll-behavior:smooth;background:var(--forest);}
+  body{font-family:var(--sans);background:var(--paper);color:var(--ink);line-height:1.6;-webkit-font-smoothing:antialiased;min-height:100vh;display:flex;flex-direction:column;}
+  /* Sticky footer: the tab deck absorbs any slack so the footer sits flush at the
+     bottom even when an edition is short — no dead cream space beneath the banner. */
+  main{flex:1 0 auto;}
   img{max-width:100%;display:block;}
   a{color:inherit;text-decoration:none;}
   .wrap{max-width:1120px;margin:0 auto;padding:0 40px;}
