@@ -361,12 +361,14 @@ def _toc_row(num: str, cat: str, lead: str, count: str, href: str, last: bool = 
 
 
 def _render_larder(larder: dict) -> str:
-    """The Larder — food news + a recipe card (morning only). Gmail-safe.
-    Renders only when there's content (the PM edition never carries a larder)."""
+    """The Larder — the seasonal note + a single recipe card (morning only). Gmail-safe.
+    The email keeps it to one thing to cook: the locale-aware seasonal note (which is
+    re-localized per recipient) plus the one featured recipe with its photo. The extra
+    food-news headlines live only in the full web section (The Grove), never the email.
+    Renders only when there's a recipe (the PM edition never carries a larder)."""
     larder = larder or {}
-    news = [n for n in (larder.get("news") or []) if n.get("title")]
     recipe = larder.get("recipe") or {}
-    if not news and not recipe.get("title"):
+    if not recipe.get("title"):
         return ""
 
     note = _esc(_dedash(larder.get("seasonal_note", "")))
@@ -400,21 +402,8 @@ def _render_larder(larder: dict) -> str:
               f'text-decoration:none;">Get the recipe &rarr;</a></div>'
         )
 
-    # Food news headlines — compact list.
-    for i, n in enumerate(news):
-        href = _safe_url(n.get("url", "#"))
-        title = _esc(_dedash(n["title"]))
-        src = _esc(n.get("source_name", ""))
-        blurb = _esc(_dedash(n.get("blurb", "")))
-        border = f'border-top:1px solid {LINE}; margin-top:16px; padding-top:14px;' if (recipe.get("title") or i) else ""
-        blocks.append(
-            f'<div style="{border}">'
-            f'<div style="font-family:{SERIF}; font-size:16px; line-height:1.4;">'
-            f'<a href="{href}" style="color:{INK_SOFT}; text-decoration:none;">{title}</a></div>'
-            + (f'<div style="font-family:{SANS}; font-size:13px; line-height:1.5; color:{INK_MUTE}; padding-top:3px;">{blurb}</div>' if blurb else "")
-            + f'<div style="font-family:{SANS}; font-size:10px; letter-spacing:1.2px; text-transform:uppercase; color:{BRASS_DEEP}; padding-top:4px;">{src}</div>'
-            + '</div>'
-        )
+    # Food-news headlines are intentionally omitted from the email — they live only in
+    # the full web section (The Grove). The email carries just note + one recipe.
 
     return f"""
         <tr>
