@@ -251,8 +251,13 @@ def _render_hero(video: dict) -> str:
         </tr>"""
 
 
-def _render_garden(garden: dict) -> str:
-    """Compact 'From the Garden' almanac block (email-safe, no emoji)."""
+ON_THIS_DAY_URL = "https://www.britannica.com/on-this-day"
+
+
+def _render_garden(garden: dict, is_am: bool = False) -> str:
+    """Compact 'From the Garden' almanac block (email-safe, no emoji).
+    In the morning it carries a small self-updating 'This day in history' link to
+    Britannica's on-this-day page (always shows the current date)."""
     if not garden or not garden.get("note"):
         return ""
     note = _esc(_dedash(garden.get("note", "")))
@@ -281,6 +286,13 @@ def _render_garden(garden: dict) -> str:
         f'<div style="font-family:{SERIF}; font-style:italic; font-size:15px; '
         f'line-height:1.55; color:{INK_MUTE}; padding-top:10px;">{sky}</div>'
     ) if sky else ""
+    # Morning-only: a self-updating link to Britannica's "On This Day".
+    history_html = (
+        f'<div style="padding-top:14px;"><a href="{ON_THIS_DAY_URL}" '
+        f'style="font-family:{SANS}; font-size:11px; font-weight:600; letter-spacing:1.2px; '
+        f'text-transform:uppercase; color:{CLAY_DEEP}; text-decoration:none;">'
+        f'This day in history &rarr;</a></div>'
+    ) if is_am else ""
     return f"""
         <tr>
           <td class="px" style="padding:24px 32px 26px 32px; background-color:{SURFACE}; border-bottom:1px solid {LINE};">
@@ -288,6 +300,7 @@ def _render_garden(garden: dict) -> str:
             <div style="font-family:{SERIF}; font-size:16px; line-height:1.58; color:{INK_SOFT};">{note}</div>
             {sky_html}
             {meta}
+            {history_html}
           </td>
         </tr>"""
 
@@ -485,7 +498,7 @@ def build_html(curated: dict) -> str:
 
     hero_html   = _render_hero(videos[0]) if videos else ""
     fern_html   = _render_fern_note(fern.get("greeting", ""))
-    garden_html = _render_garden(garden)
+    garden_html = _render_garden(garden, is_am=is_am)
     larder_html = _render_larder(curated.get("larder"))
     puzzle_html = _render_puzzle(curated.get("puzzle"), curated.get("previous_puzzle"))
     toc_html    = _render_contents(videos, music, good_news, discovery, read, is_am=is_am)
