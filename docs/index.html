@@ -81,7 +81,7 @@
   .almanac-foot{display:flex;flex-wrap:wrap;align-items:center;gap:12px 22px;margin-top:18px;}
   .almanac-meta{display:flex;flex-wrap:wrap;align-items:center;gap:8px 12px;font-size:11px;letter-spacing:0.15em;text-transform:uppercase;color:var(--ink-mute);}
   .almanac-meta .dot{width:4px;height:4px;border-radius:50%;background:var(--brass);}
-  .almanac-history{display:inline-block;margin-top:16px;font-family:var(--sans);font-size:11px;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:var(--clay-deep);}
+  .history-link{display:inline-block;clear:both;margin-top:18px;font-family:var(--sans);font-size:11px;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:var(--clay-deep);}
 
   /* ---- Fern's daily puzzle ---- */
   .puzzle{max-width:740px;margin:0 auto;padding:26px 40px 4px;}
@@ -230,18 +230,8 @@
     <div>
       <div class="eyebrow orn">A note from Fern</div>
       <p class="lead"><span id="greeting"></span> <span class="sign">Yours, Fern</span></p>
+      <a class="history-link" id="history-link" href="https://www.britannica.com/on-this-day" target="_blank" rel="noopener" style="display:none;">This day in history &rarr;</a>
     </div>
-  </section>
-
-  <section class="almanac" id="almanac" style="display:none;">
-    <div class="eyebrow orn">From the Garden &middot; Zürich</div>
-    <p id="garden-note"></p>
-    <div class="almanac-sky" id="garden-sky" style="display:none;"></div>
-    <div class="almanac-foot">
-      <div class="chips" id="garden-season"></div>
-      <div class="almanac-meta" id="garden-meta"></div>
-    </div>
-    <a class="almanac-history" id="garden-history" href="https://www.britannica.com/on-this-day" target="_blank" rel="noopener" style="display:none;">This day in history &rarr;</a>
   </section>
 
   <section class="puzzle" id="puzzle" style="display:none;">
@@ -344,24 +334,9 @@ function cover(url,tone,label,play){
   if(extra) bits.push(extra+' stories &amp; finds');
   $('#meta').innerHTML = bits.map((b,i)=>(i?'<span class="dot"></span>':'')+'<span>'+b+'</span>').join('');
   if(DATA.greeting){ $('#greeting').textContent = DATA.greeting; $('#fern').style.display=''; }
-})();
-
-// From the Garden almanac
-(function(){
-  const g = DATA.garden; if(!g || !g.note) return;
-  $('#garden-note').textContent = g.note;
-  const season=(g.in_season||[]);
-  $('#garden-season').innerHTML = season.map(s=>'<span class="chip static">'+esc(s)+'</span>').join('');
-  // The sky-tonight sentence reads as normal-case prose, not an uppercase chip.
-  if(g.sky_tonight){ $('#garden-sky').textContent = g.sky_tonight; $('#garden-sky').style.display=''; }
-  // The uppercase meta row holds only short tokens: moon (+ %) and the sun range.
-  const meta=[];
-  if(g.moon_label) meta.push((g.illum_pct && !/illumin/i.test(g.moon_label)) ? g.moon_label+' ('+g.illum_pct+'% illuminated)' : g.moon_label);
-  if(g.sun_range) meta.push('Sun '+g.sun_range);
-  $('#garden-meta').innerHTML = meta.map((b,i)=>(i?'<span class="dot"></span>':'')+'<span>'+esc(b)+'</span>').join('');
-  // Morning-only: reveal the self-updating "This day in history" link.
-  if(DATA.is_am) $('#garden-history').style.display='';
-  $('#almanac').style.display='';
+  // Morning-only, live edition only: reveal the self-updating "This day in history"
+  // link. Hidden on archived /editions/ pages so old editions don't link to *today*.
+  if(DATA.is_am && !/\/editions\//.test(location.pathname)) $('#history-link').style.display='';
 })();
 
 // Fern's daily puzzle — tap-to-reveal answer + last edition's answer
