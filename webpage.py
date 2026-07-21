@@ -269,6 +269,7 @@ _PAGE = """<!DOCTYPE html>
   .almanac-foot{display:flex;flex-wrap:wrap;align-items:center;gap:12px 22px;margin-top:18px;}
   .almanac-meta{display:flex;flex-wrap:wrap;align-items:center;gap:8px 12px;font-size:11px;letter-spacing:0.15em;text-transform:uppercase;color:var(--ink-mute);}
   .almanac-meta .dot{width:4px;height:4px;border-radius:50%;background:var(--brass);}
+  .almanac-history{display:inline-block;margin-top:16px;font-family:var(--sans);font-size:11px;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:var(--clay-deep);}
 
   /* ---- Fern's daily puzzle ---- */
   .puzzle{max-width:740px;margin:0 auto;padding:26px 40px 4px;}
@@ -428,6 +429,7 @@ _PAGE = """<!DOCTYPE html>
       <div class="chips" id="garden-season"></div>
       <div class="almanac-meta" id="garden-meta"></div>
     </div>
+    <a class="almanac-history" id="garden-history" href="https://www.britannica.com/on-this-day" target="_blank" rel="noopener" style="display:none;">This day in history &rarr;</a>
   </section>
 
   <section class="puzzle" id="puzzle" style="display:none;">
@@ -545,6 +547,8 @@ function cover(url,tone,label,play){
   if(g.moon_label) meta.push((g.illum_pct && !/illumin/i.test(g.moon_label)) ? g.moon_label+' ('+g.illum_pct+'% illuminated)' : g.moon_label);
   if(g.sun_range) meta.push('Sun '+g.sun_range);
   $('#garden-meta').innerHTML = meta.map((b,i)=>(i?'<span class="dot"></span>':'')+'<span>'+esc(b)+'</span>').join('');
+  // Morning-only: reveal the self-updating "This day in history" link.
+  if(DATA.is_am) $('#garden-history').style.display='';
   $('#almanac').style.display='';
 })();
 
