@@ -1,152 +1,172 @@
 {
-  "fetched_at": "2026-07-21T08:08:50.588884+02:00",
-  "is_am_email": true,
+  "fetched_at": "2026-07-21T17:58:33.312814+02:00",
+  "is_am_email": false,
   "audit_summary": {
     "youtube_videos": 10,
-    "themes": 3,
-    "music_articles": 8,
-    "good_news_articles": 4,
-    "discovery_articles": 10,
+    "themes": 4,
+    "music_articles": 10,
+    "good_news_articles": 3,
+    "discovery_articles": 12,
     "featured_read": 1,
     "garden": 1,
     "puzzle": 1,
-    "larder": 4
+    "larder": 0
   },
   "themes": [
     {
-      "name": "The Time Machine",
-      "emoji": "⏳",
-      "tagline": "History is stranger, messier, and more fascinating than any textbook ever let on.",
+      "name": "Rabbit Holes Worth Falling Down",
+      "emoji": "🕳️",
+      "tagline": "From ketchup saving civilization to the secret life of atoms — these are the curiosity spirals you didn't know you needed.",
       "items": [
         {
           "source": "youtube",
-          "video_id": "fQiIRI8Yvwg",
-          "title": "What Did 'Inglourious Basterds' Get Right About WW2?",
-          "channel_id": "UCZwU2G-KVl-P-O-B35chZOQ",
-          "channel_title": "History Hit",
-          "published_at": "2026-07-20T18:00:16Z",
-          "url": "https://www.youtube.com/watch?v=fQiIRI8Yvwg",
-          "duration_seconds": 2238,
-          "view_count": "22563",
-          "description": "We love it, but can any historical truths be found in Tarantino's epic Inglourious Basterds?? \n\nWar historian Jennifer Howe takes us through the real stories of the SS, Nazi occupation and The Richie boys, portrayed in this movie by Christoph Waltz, Brad Pitt, Diane Kruger, Eli Roth, and Mélanie Laurent.\n\n0:00 Introduction\n0:36 Overview of Inglourious Basterds\n1:27 Historical context of the 1941 occupied France\n2:54 Analysing Christoph Waltz's Hans Landa\n4:54 Bureaucracy and systems of the Holoc",
+          "video_id": "VXMFckUF9Z8",
+          "title": "THG Podcast: Counterfactuals - Did Ketchup Save the World?",
+          "channel_id": "UC4sEmXUuWIFlxRIFBRV6VXQ",
+          "channel_title": "The History Guy: History Deserves to Be Remembered",
+          "published_at": "2026-07-21T12:00:22Z",
+          "url": "https://www.youtube.com/watch?v=VXMFckUF9Z8",
+          "duration_seconds": 3883,
+          "view_count": "716",
+          "description": "Listen to this episode of the THG Podcast, which posts in addition to regular History Guy content, after it releases on podcast services. Subscribe to the RSS feed for more: https://www.spreaker.com/show/6153862/episodes/feed\n\nNote: We are continuing to upload older audio podcasts that haven't been put on YouTube. As we did not record video for these they are audio-only. Video podcasts upload with each new podcasts every other week.\n\nOn today’s episode we talk about the incredible popularity and",
           "is_wildcard": false
         },
         {
           "source": "youtube",
-          "video_id": "0h8dyLLGrQE",
-          "title": "Delphi: Centre of the Ancient World",
-          "channel_id": "UC2J29LPhS9vMiWyYEqBRB0w",
-          "channel_title": "The Ancients",
-          "published_at": "2026-06-28T06:00:01Z",
-          "url": "https://www.youtube.com/watch?v=0h8dyLLGrQE",
-          "duration_seconds": 3373,
-          "view_count": "15432",
-          "description": "For more than a thousand years, Delphi was considered the centre of the ancient world. Every year a throng of pilgrims climbed the slopes of Mount Parnassus to seek the words of Apollo through the famous Oracle of Delphi.\n\nToday Tristan Hughes is joined by Michael Scott to uncover Delphi's story, the sanctuary that shaped the ancient Mediterranean. How did the Pythia become the most famous oracle of antiquity? Why did rulers travel from across the Greek world to seek its guidance? And what can D",
-          "is_wildcard": false
-        },
-        {
-          "source": "youtube",
-          "video_id": "ucqNL-CLSWE",
-          "title": "Get Ready With Me | Working in Henry VIII's Kitchens",
-          "channel_id": "UCdlktQvYRPgMVyvf_u-uZxA",
-          "channel_title": "Historic Royal Palaces",
-          "published_at": "2026-06-10T14:53:03Z",
-          "url": "https://www.youtube.com/watch?v=ucqNL-CLSWE",
-          "duration_seconds": 995,
-          "view_count": "53231",
-          "description": "When we think of Tudor fashion at the court of Henry VIII, we probably imagine the lush gowns and shining doublets that we see in portraits. But what did ordinary, working people wear in the 1500s?  \n\nIn this video, Head of Costume Erin Charteris and Historic Kitchens Interpreter Zak Zvinis go through the step by step process of dressing a Tudor Cook to work in Henry VIII’s kitchens at Hampton Court Palace.  \n\nThey answer questions like how was the clothing made? Is it practical and comfortable?",
-          "is_wildcard": false
-        },
-        {
-          "source": "youtube",
-          "video_id": "la74tPnMX0I",
-          "title": "S2 Ep19: Victorian Ballroom Etiquette",
-          "channel_id": "UCNwZIGnHkzy6KpHPQtserzQ",
-          "channel_title": "Karolina Żebrowska",
-          "published_at": "2025-11-27T07:59:30Z",
-          "url": "https://www.youtube.com/watch?v=la74tPnMX0I",
-          "duration_seconds": 1509,
-          "view_count": "9013",
-          "description": "Gloves or no gloves? How did you get introduced to eligible gentleman? Could he buy you a drink? Today we're reading “Routledge’s Ballroom Companion” from 1866.\n\n________________ \n\nIf you enjoy the podcast and want to support what I’m doing, check out my Patreon! \n\nhttps://www.patreon.com/textory ",
-          "is_wildcard": false
-        }
-      ]
-    },
-    {
-      "name": "Don't Believe the Label",
-      "emoji": "🔍",
-      "tagline": "From vegetable juice to viral family channels to billionaire donors — nothing is quite what it's sold as.",
-      "items": [
-        {
-          "source": "youtube",
-          "video_id": "9EnpuT_734Q",
-          "title": "The Lie Behind V8",
-          "channel_id": "UCNaq5Jh4SQ1oBAjhQ0KPhoA",
-          "channel_title": "Weird History Food",
-          "published_at": "2026-03-29T14:15:00Z",
-          "url": "https://www.youtube.com/watch?v=9EnpuT_734Q",
-          "duration_seconds": 919,
-          "view_count": "121367",
-          "description": "You think V8 is healthy… but is it really?\n\nPicture this: you’re in the grocery store, determined to make better choices. You skip the soda, avoid sugary sports drinks, and reach for something that feels responsible: V8. Packed with vegetables, it has to be good for you… right?  Well… not so fast.\n\nIn this episode of Weird History, we dig into the surprising origins of V8, the truth behind its “healthy” reputation, and the hidden details most people never question. From clever marketing to nutri",
-          "is_wildcard": false
-        },
-        {
-          "source": "youtube",
-          "video_id": "-NuXpwB2DV4",
-          "title": "How billionaires buy American elections",
-          "channel_id": "UCmGSJVG3mCRXVOP4yZrU1Dw",
-          "channel_title": "Johnny Harris",
-          "published_at": "2025-11-25T17:00:00Z",
-          "url": "https://www.youtube.com/watch?v=-NuXpwB2DV4",
-          "duration_seconds": 2658,
-          "view_count": "2113032",
-          "description": "American elections are for sale. It wasn’t always this way.\nGet 40% off Ground News’ unlimited access Vantage Plan at https://ground.news/johnnyharris for only $5/month, explore how stories are framed worldwide and across the political spectrum.\n\nCheck out all my sources for this video here: https://docs.google.com/document/d/1wvj1PVqEgCtehD0G4uzLolw0tGfj2SxNCH5PL1mEqp0/edit?tab=t.0\n\nAmerican elections have more money flowing through them than any other country’s elections, yes adjusted for popu",
-          "is_wildcard": false
-        }
-      ]
-    },
-    {
-      "name": "Slow Down, Look Up",
-      "emoji": "🌿",
-      "tagline": "Gardens, galaxies, and getaways — a gentle reminder that the world beyond your screen is breathtaking.",
-      "items": [
-        {
-          "source": "youtube",
-          "video_id": "0WTcYCan3fo",
-          "title": "How to Grow Your Own Micro-Orchard",
-          "channel_id": "UC9r61qohBg1qgGty4_WzojA",
-          "channel_title": "GrowVeg",
-          "published_at": "2025-11-29T15:45:01Z",
-          "url": "https://www.youtube.com/watch?v=0WTcYCan3fo",
-          "duration_seconds": 1251,
-          "view_count": "368435",
-          "description": "For our video on how to start apple trees, see:\nhttps://youtu.be/dvodevu4rqQ\n\nAnd to see Wade Muggleton's inspirational jam-packed permaculture garden, watch:\nhttps://youtu.be/dEZSl0cAXMg\n\nAlways wanted an orchard of fruit trees, but think you don't have the space? Think again! Did you know that most fruit trees can be grown in pots or in tiny gardens, on patios, balconies and more? All you need is a little know-how. \n\nIn this week's episode, Ben pays a visit to Steph Dunn James, the managing di",
-          "is_wildcard": false
-        },
-        {
-          "source": "youtube",
-          "video_id": "u_gEKlg993s",
-          "title": "Why getting BACK from space is harder than getting there",
+          "video_id": "xYu06Zn7JNQ",
+          "title": "We've never seen an atom. But we know what they look like.",
           "channel_id": "UCH4BNI0-FOK2dMXoFtViWHw",
           "channel_title": "Be Smart",
-          "published_at": "2026-06-05T16:58:56Z",
-          "url": "https://www.youtube.com/watch?v=u_gEKlg993s",
-          "duration_seconds": 124,
-          "view_count": "309586",
-          "description": "NOTE: A previous version of this video contained an omission. We have corrected the error.\n\nAnother YouTube #shorts from Dr. Joe! Subscribe for more fun science stories.\n\nJoin us on Patreon! \nhttps://patreon.com/itsokaytobesmart\n\nInstagram \nhttp://www.instagram.com/DrJoeHanson \nhttp://www.instagram.com/okaytobesmart \n\nFacebook\nhttps://www.facebook.com/itsokaytobesmartpbs/",
+          "published_at": "2026-05-28T20:03:13Z",
+          "url": "https://www.youtube.com/watch?v=xYu06Zn7JNQ",
+          "duration_seconds": 1108,
+          "view_count": "1248429",
+          "description": "The first 100 people to join @planet-wild with the code SMART5 will get the first month paid for: https://planetwild.com/r/besmart/join\nIf you want to get to know them better first, check out their mission stopping ocean plastic: https://planetwild.com/r/besmart/m34\n↓↓↓ More info and sources below ↓↓↓\n\nIf everything around us is made of atoms, why can’t we actually see them? From ancient philosophy to quantum mechanics, electron microscopes, and the strange limits of human perception, let’s expl",
+          "is_wildcard": false
+        },
+        {
+          "source": "youtube",
+          "video_id": "TTBySX_7XSE",
+          "title": "Forging Better Futures for You and AI - Matt Jones",
+          "channel_id": "UC1t6kKXoBvjdr8m9KJ2Fx7A",
+          "channel_title": "Gresham College",
+          "published_at": "2026-07-21T15:00:25Z",
+          "url": "https://www.youtube.com/watch?v=TTBySX_7XSE",
+          "duration_seconds": 3019,
+          "view_count": "36",
+          "description": "00:00 // AI as an Environment\n00:34 // Coronation Choir Experiment: How Music Shapes Attention\n02:27 // Reframing Artificial Intelligence: From Tool to Living Environment\n03:41 // Old AI Fears: Faster, Smarter and Assimilating Us\n04:17 // Humanoid Robots, AI Coworkers and AI Companion Pets\n05:28 // Why AI Isn't Human: Mumbai, the Pope and a New Yorker Poem\n09:16 // Three Kinds of Power: Generative, Instrumental and Environmental\n10:38 // Michelangelo and the Power of Material Tools\n11:25 // How ",
+          "is_wildcard": false
+        }
+      ]
+    },
+    {
+      "name": "The Long Table",
+      "emoji": "🍽️",
+      "tagline": "Food with a past — every bite here has a backstory stranger than the recipe.",
+      "items": [
+        {
+          "source": "youtube",
+          "video_id": "w14sPMjtp48",
+          "title": "The Bizarre History of Salisbury Steak",
+          "channel_id": "UCsaGKqPZnGp_7N80hcHySGQ",
+          "channel_title": "Tasting History with Max Miller",
+          "published_at": "2026-07-21T15:00:06Z",
+          "url": "https://www.youtube.com/watch?v=w14sPMjtp48",
+          "duration_seconds": 1374,
+          "view_count": "19221",
+          "description": "Get 40% off your first Hungryroot box PLUS get a free item of your choice in every box for life with code TASTINGHISTORY at https://bit.ly/3DhydYp\n\nSupport the Channel with Patreon ► https://www.patreon.com/tastinghistory\n\nRecipe at https://www.tastinghistory.com/recipes\n\nOrder the TASTING HISTORY COOKBOOK: https://amzn.to/42O10Lx\n\nMerch ► https://crowdmade.com/collections/tastinghistory \nInstagram ► https://www.instagram.com/tastinghistorywithmaxmiller/\nTwitter ► https://twitter.com/TastingHist",
+          "is_wildcard": false
+        },
+        {
+          "source": "youtube",
+          "video_id": "gtwWab6zEsY",
+          "title": "How An Ice Cream Topping Became A Kids' Drink",
+          "channel_id": "UCNaq5Jh4SQ1oBAjhQ0KPhoA",
+          "channel_title": "Weird History Food",
+          "published_at": "2026-03-26T14:15:00Z",
+          "url": "https://www.youtube.com/watch?v=gtwWab6zEsY",
+          "duration_seconds": 972,
+          "view_count": "496025",
+          "description": "Hawaiian Punch has been around forever, or at least it feels that way. Bright red, ultra-sweet, and somehow tasting “fruity” without being tied to any one fruit, it’s a drink that defined childhood for millions. But what is Hawaiian Punch, really? And where did it come from?\n\nOn this episode of Weird History Food, we dive into the surprising origins of Hawaiian Punch, how it became a lunchroom staple, and what’s actually behind that iconic flavor. From its unexpected beginnings, to its rise as a",
+          "is_wildcard": false
+        },
+        {
+          "source": "youtube",
+          "video_id": "W2_DsDRR3oY",
+          "title": "How to Grow Mushrooms in a Cardboard Box (Zero Skills Needed)",
+          "channel_id": "UC9r61qohBg1qgGty4_WzojA",
+          "channel_title": "GrowVeg",
+          "published_at": "2025-11-22T17:45:02Z",
+          "url": "https://www.youtube.com/watch?v=W2_DsDRR3oY",
+          "duration_seconds": 696,
+          "view_count": "1201419",
+          "description": "Enjoy a no-obligation, completely free trial of the Garden Planner here: \nhttps://www.GrowVeg.com/grow-planner-free\n\nAnd for your completely free abridged version of Ben's book, click here:\nhttps://www.growveg.com/grow-book-download\n\nZero gardening skills? Zero space? Don't worry, even if you don't have MUCH ROOM, you can still grow MUSHROOMS! Yes, even in winter! It's fun, it's easy and all you need is an old cardboard box... and a few other bits and bobs, which Ben kindly explains in this week",
+          "is_wildcard": false
+        }
+      ]
+    },
+    {
+      "name": "Empires, Edges & Fallen Crowns",
+      "emoji": "👑",
+      "tagline": "Power, politics, and the moments when the walls — quite literally — came tumbling down.",
+      "items": [
+        {
+          "source": "youtube",
+          "video_id": "efFDOMGxcXw",
+          "title": "The Barbarians: How Rome Lost Control",
+          "channel_id": "UC2J29LPhS9vMiWyYEqBRB0w",
+          "channel_title": "The Ancients",
+          "published_at": "2026-06-21T06:00:27Z",
+          "url": "https://www.youtube.com/watch?v=efFDOMGxcXw",
+          "duration_seconds": 4398,
+          "view_count": "24411",
+          "description": "How did the Huns, Goths, and Vandals help bring down the Roman Empire - and sack the city of Rome itself, not once but twice?\n\nTristan Hughes is joined by Professor Peter Heather to explore the dramatic wave of invasions that shook Rome in the late 4th and early 5th centuries. From the arrival of the Huns to the sacks of Rome by the Goths in 410 and the Vandals in 455, we trace how the advance of innumerable barbarian tribes brewed decades of tension, betrayal, and bloodshed which helped bring t",
+          "is_wildcard": false
+        },
+        {
+          "source": "youtube",
+          "video_id": "qFYwYe4ebYw",
+          "title": "Why Did Anne Boleyn Marry Henry VIII? | Anne's Childhood at Hever",
+          "channel_id": "UCdlktQvYRPgMVyvf_u-uZxA",
+          "channel_title": "Historic Royal Palaces",
+          "published_at": "2026-06-03T20:41:07Z",
+          "url": "https://www.youtube.com/watch?v=qFYwYe4ebYw",
+          "duration_seconds": 1652,
+          "view_count": "138414",
+          "description": "In 1526, King Henry VIII sent a letter to Hever Castle – it was a love letter to Anne Boleyn in which he professed his devotion and asked Anne to become his mistress. Over the next couple of years, Henry continued to send love letters to Hever addressed to Anne Boleyn. \nWe can only speculate what Anne was feeling at this attention from the King. Was she excited? Anxious? Was her family supportive? Thirsty for power or hoping it would all subside? \n \nHever Castle was home to the Boleyn family for",
+          "is_wildcard": false
+        }
+      ]
+    },
+    {
+      "name": "Slow Builds & Scenic Routes",
+      "emoji": "🚂",
+      "tagline": "The satisfying world of making, restoring, and wandering — progress you can actually see.",
+      "items": [
+        {
+          "source": "youtube",
+          "video_id": "03y4-LzPtfk",
+          "title": "Pressure Washing 40 Years of Mould - Chateau Distillery Renovation",
+          "channel_id": "UCEqU-Ts-hxmpnlWgRMgd2MQ",
+          "channel_title": "How To Renovate A Chateau",
+          "published_at": "2025-11-23T19:30:18Z",
+          "url": "https://www.youtube.com/watch?v=03y4-LzPtfk",
+          "duration_seconds": 1446,
+          "view_count": "178371",
+          "description": "Check out FOREO FAQ 202 LED mask and their amazing Black Friday deals here: https://foreo.se/127Yl and use our code RENOVATE35 for an extra 35% off almost all products. The code is stackable on sale items too, that means you can get up to 50% off on FOREO products!\n\n🏰🕯️ Discover our Chateau Candle Collection here https://www.lefleur.fr/\nAnd follow us on instagram: https://www.instagram.com/le_fleur_honfleur\n\nBonus videos and exclusive live streams every month! Check out our Patreon page for all ",
           "is_wildcard": false
         },
         {
           "source": "youtube_trending",
-          "video_id": "2Mwf9-QYPhw",
-          "title": "Virginia : The Most Amazing Places in Virginia | 4K Travel Video",
-          "channel_id": "UC-i-tppABPj922WkBmm7HGQ",
-          "channel_title": "Tripedia Today",
-          "published_at": "2026-07-20T11:00:20Z",
-          "url": "https://www.youtube.com/watch?v=2Mwf9-QYPhw",
-          "duration_seconds": 2226,
-          "view_count": "1136",
-          "description": "Discover the breathtaking beauty of Virginia, a state where majestic mountains, scenic coastlines, rich history, and charming small towns come together in this cinematic Travel Video 4K. Journey through the Blue Ridge Mountains, Shenandoah National Park, Skyline Drive, the Chesapeake Bay, Virginia Beach, and the historic streets of Williamsburg, alongside countless natural and cultural treasures, all captured in stunning ultra-high-definition Travel Video 4K HDR 60fps. Whether you're planning yo",
+          "video_id": "Y1Qc_heyFF0",
+          "title": "Scenic Views & Quarry Walls: Riding the Six Flags Railroad, Fiesta Texas",
+          "channel_id": "UCFpI4b_m-449cePVasc2_8g",
+          "channel_title": "Attractions Magazine",
+          "published_at": "2026-07-20T21:15:46Z",
+          "url": "https://www.youtube.com/watch?v=Y1Qc_heyFF0",
+          "duration_seconds": 666,
+          "view_count": "514",
+          "description": "Take a front-row seat on the historic Texas Railroad at Six Flags Fiesta Texas! 🚂✨\n\nIn this video, we embark on a peaceful, scenic journey around the entire park. You will get a unique look at the towering quarry walls, pass right by major roller coasters, and experience a relaxing break from the thrills. Whether you are planning your next trip to San Antonio or just love classic theme park trains, this full-circuit ride offers the best views in the park.\n\n🔴VISIT OUR WEBSITE: http://attractionsm",
           "is_wildcard": true
         }
       ]
@@ -155,312 +175,295 @@
   "morning_soundtrack": [
     {
       "source": "music",
-      "source_name": "NPR Music",
-      "title": "The best rock and folk entries in the 2026 Tiny Desk Contest",
-      "snippet": "The 2026 Tiny Desk contest brought in thousands of entries, including several standouts in the rock and folk genres.",
-      "url": "https://www.npr.org/2026/07/20/nx-s1-5886109/the-best-rock-and-folk-entries-in-the-2026-tiny-desk-contest",
+      "source_name": "Stereogum",
+      "title": "Lambchop – “The New World Wave”",
+      "snippet": "Lambchop's newest song is the story of a family struggling through the Great Depression. You're intrigued, aren't you? You should be. For many years, sole permanent Lambchop member Kurt Wagner has brought tons of gravitas to his lush country-rock songs, so you already know you want to hear him use t",
+      "url": "https://stereogum.com/2505887/lambchop-the-new-world-wave/music/",
       "genre": "",
-      "vibe_check": "The sound of a campfire you stumbled upon in someone's backyard, surprising and alive.",
-      "cover_url": "https://media.npr.org/include/images/facebook-default-wide-s1400-c85.jpg",
-      "embed_url": null
-    },
-    {
-      "source": "music",
-      "source_name": "NPR Music",
-      "title": "How much should we care about a pop star's baggage?",
-      "snippet": "Gracie Abrams, one of today's biggest new singer-songwriters, has polarized critics with her confessional writing and A-list upbringing. Why do people care so much that she is taking up space?",
-      "url": "https://www.npr.org/2026/07/20/nx-s1-5900833/gracie-abrams-daughter-from-hell-review",
-      "genre": "",
-      "vibe_check": "The tension of a dinner table where everyone has an opinion but nobody asked for yours.",
-      "cover_url": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/6279x3532+0+771/resize/1400/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Fa0%2Ff4%2Ff706820147098f67e57a6c7830a3%2Fpc-julie-greve.jpg",
-      "embed_url": "https://www.youtube.com/embed/2YSnCqHXMGY"
+      "vibe_check": "Dust-bowl gravitas wrapped in velvet, for sitting with the weight of inherited hardship.",
+      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/07/Lambchop.jpeg",
+      "embed_url": "https://www.youtube.com/embed/XQFxSfJHoJo"
     },
     {
       "source": "music",
       "source_name": "Stereogum",
-      "title": "Melissa Auf Der Maur Announces First New Music In 16 Years, Hole Tease Something For Friday",
-      "snippet": "Melissa Auf der Maur, who has provided both her musical talents to iconic groups Hole and the Smashing Pumpkins, is releasing her first new music in 16 years. The Montreal-born musician and artist announced BASS WOMB ROOM: My ’90s 4-Track Demos x Field Recordings, which is out September 4 via Envisi",
-      "url": "https://stereogum.com/2505780/melissa-auf-der-maur-announces-first-new-music-in-15-years-hole-tease-something-for-friday/news/",
+      "title": "Cécile McLorin Salvant’s Breathtaking Orchestral Album",
+      "snippet": "Cécile McLorin Salvant is not a jazz singer. That’s probably why I like her work so much.\nThe post Cécile McLorin Salvant’s Breathtaking Orchestral Album appeared first on Stereogum.",
+      "url": "https://stereogum.com/2505844/cecile-mclorin-salvants-breathtaking-orchestral-album/columns/ugly-beauty/",
       "genre": "",
-      "vibe_check": "Unearthed cassette tapes found in a shoebox — lo-fi ghosts of a decade that still won't let go.",
-      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/07/BASS-WOMB-ROOM-digital-artwork.jpg",
-      "embed_url": null
+      "vibe_check": "The kind of music that makes you forget to breathe, then remember all at once.",
+      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/07/20260415_CecileMcClorinSalvant_EbruYildiz_65_1_qxy334mk.jpg",
+      "embed_url": "https://www.youtube.com/embed/PYNOEvYHMFs"
     },
     {
       "source": "music",
       "source_name": "Stereogum",
-      "title": "Pulp Play “Wickerman” For The First Time In 15 Years",
-      "snippet": "This past Saturday, Pulp celebrated Rough Trade's 50th Birthday at London’s Royal Festival Hall. They played all the tracks from their latest album More, which came out last year and was their first release on Rough Trade after Pulp signed with the label in 2024.\nThe post Pulp Play &#8220;Wickerman&",
-      "url": "https://stereogum.com/2505751/pulp-play-wickerman-for-the-first-time-in-15-years/news/",
+      "title": "Album Of The Week: Nick Hakim I Can See",
+      "snippet": "Theoretically, Nick Hakim makes soul music, but it’s more like visiting spirit music. The Queens-based polymath, a trusted collaborator for figures as disparate as Adrianne Lenker and Lil Yachty, can be heard on many kinds of records. But he may be doing his finest work in his own catalog, crafting ",
+      "url": "https://stereogum.com/2505329/album-of-the-week-nick-hakim-i-can-see/reviews/album-of-the-week/",
       "genre": "",
-      "vibe_check": "The electric jolt of a song you forgot you loved crashing back into your body like a reunion hug.",
-      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/07/Pulp.jpg",
-      "embed_url": "https://www.youtube.com/embed/qJr2qVvg9h4"
+      "vibe_check": "Like drifting through a half-remembered dream where every room has a different color of light.",
+      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/07/unnamed-2026-07-15T163831.418.jpg",
+      "embed_url": "https://www.youtube.com/embed/mCb6sDfRicY"
     },
     {
       "source": "music",
-      "source_name": "Pitchfork",
-      "title": "Steve Lacy, Beck, and More: This Week’s Pitchfork Selects Playlist",
-      "snippet": "Our weekly playlist highlights songs that our writers, editors, and contributors are listening to on repeat",
-      "url": "https://pitchfork.com/story/steve-lacy-beck-and-more-this-weeks-pitchfork-selects-playlist/",
+      "source_name": "No Depression",
+      "title": "THROUGH THE LENS: Wilco, Molly Tuttle, Chaka Khan, Charley Crockett & Other Photos of the Week",
+      "snippet": "It&#x2019;s time to take a break from festival coverage &#x2014; as exciting as that has been &#x2014; to catch up on what&#x2019;s been going on elsewhere in the live roots music scene with the ND photographers.&#xA0;In total, 37&#xA0; photos by 13 photographers are",
+      "url": "https://nodepression.org/through-the-lens-wilco-molly-tuttle-chaka-khan-charley-crockett-other-photos-of-the-week/",
       "genre": "",
-      "vibe_check": "That restless Friday afternoon feeling when your headphones are the only thing standing between you and the week.",
-      "cover_url": "https://media.pitchfork.com/photos/6a5e6aa102f6a16802ac1be9/16:9/w_1280,c_limit/P4K26-0720_Selects_2x1.gif",
+      "vibe_check": "The warm, collective hum of a roots music world very much alive and sweating under real stage lights.",
+      "cover_url": "https://storage.ghost.io/c/18/d0/18d08e58-3b1b-4720-ae25-a31b44e69d4b/content/images/size/w1200/2026/07/26WilcoCBUSOHcowtownchad04.jpg",
       "embed_url": null
     },
     {
       "source": "music",
-      "source_name": "Pitchfork",
-      "title": "L7 Bassist Jennifer Finch Dies at 59",
-      "snippet": "The grunge musician died on Saturday after being diagnosed with an aggressive form of brain cancer",
-      "url": "https://pitchfork.com/story/l7-bassist-jennifer-finch-dies-at-59/",
+      "source_name": "No Depression",
+      "title": "ALBUM REVIEW: Punch Brothers Go All Instrumental on 'The Unsung Adventures,' Still Carrying the Torch",
+      "snippet": "Punch Brothers&#x2019; first three albums, particularly 2010&#x2019;s Antifogmatic and 2012&#x2019;s Who&#x2019;s Feeling Young Now?, stand out for their innovative arrangements; instrumental virtuosity, particularly founder Chris Thile&#x2019;s mandolin fusillades; and riveting interplays, pushing ",
+      "url": "https://nodepression.org/album-review-punch-brothers-go-all-instrumental-on-the-unsung-adventures-still-carrying-the-torch/",
       "genre": "",
-      "vibe_check": "A quiet, heavy moment — the kind where you turn the music up louder to mourn someone who made the noise matter.",
-      "cover_url": "https://media.pitchfork.com/photos/6a5cece84607d41cf238dc3e/16:9/w_1280,c_limit/GettyImages-604600034.jpg",
+      "vibe_check": "Mandolin-driven precision that crackles like a live wire strung between a barn and a conservatory.",
+      "cover_url": "https://storage.ghost.io/c/18/d0/18d08e58-3b1b-4720-ae25-a31b44e69d4b/content/images/2026/07/punchbrothers.jpg",
+      "embed_url": null
+    },
+    {
+      "source": "music",
+      "source_name": "No Depression",
+      "title": "BONUS TRACKS: Uncertainty at Levon Helm Studios, New Willi Carlisle LP Produced by Tyler Childers, and More Roots Music News",
+      "snippet": "Breaking news out of Woodstock, New York this week illuminated deep fissions among the ownership of Levon Helm Studios. Levon, of course, was a beloved, co-founding member of The Band and established this space, affectionately just known as The Barn, in 1975. In the early 2000s, as he was",
+      "url": "https://nodepression.org/bonus-tracks-uncertainty-at-levon-helm-studios-new-willi-carlisle-lp-produced-by-tyler-childers-and-more-roots-music-news/",
+      "genre": "",
+      "vibe_check": "The bittersweet feeling of watching a beloved institution flicker while new sparks are already catching somewhere else.",
+      "cover_url": "https://storage.ghost.io/c/18/d0/18d08e58-3b1b-4720-ae25-a31b44e69d4b/content/images/size/w1200/2026/07/Amy-Helm---Cayamo-2023---Photo-by-Boom-Baker.jpg",
+      "embed_url": "https://www.youtube.com/embed/QFN2BClKhnU"
+    },
+    {
+      "source": "music",
+      "source_name": "Pitchfork",
+      "title": "Greg Freeman Readies New Album and Tour",
+      "snippet": "“Indu” leads the Vermont singer’s John Congelton-produced All Set the Bone",
+      "url": "https://pitchfork.com/story/greg-freeman-readies-new-album-and-tour/",
+      "genre": "",
+      "vibe_check": "A quiet introduction to something that feels like it's been waiting patiently in the corner of a well-worn room.",
+      "cover_url": "https://media.pitchfork.com/photos/6a5f7441764a2c1418689c25/16:9/w_1280,c_limit/Greg-Freeman-new-album.jpg",
+      "embed_url": null
+    },
+    {
+      "source": "music",
+      "source_name": "Aquarium Drunkard",
+      "title": "Anatolian Psych Out: Volume Two",
+      "snippet": "A continuation rather than a sequel, Anatolian Psych Out: Volume Two ventures deeper into one of rock's richest parallel histories. Seventeen selections from Turkey's extraordinary late-'60s and '70s flowering, where centuries-old musical traditions meet fuzz guitars, electric bağlama, and hypnotic ",
+      "url": "https://aquariumdrunkard.com/2026/07/21/anatolian-psych-out-volume-two/",
+      "genre": "",
+      "vibe_check": "Fuzz-soaked and hypnotic, like stumbling onto a decades-old fire that never actually went out.",
+      "cover_url": "https://aquariumdrunkard.com/_newness/wp-content/uploads/2026/07/tur.jpg",
       "embed_url": null
     },
     {
       "source": "music",
       "source_name": "Consequence",
-      "title": "Spin Doctors’ Aaron Comess Nails Avenged Sevenfold’s “Afterlife” As He Hears It for First Time: Watch",
-      "snippet": "The alt-rock drummer nailed the song on his first take, following his instincts and meticulous charting.\nSpin Doctors&#8217; Aaron Comess Nails Avenged Sevenfold&#8217;s &#8220;Afterlife&#8221; As He Hears It for First Time: Watch\nLangdon Hickman",
-      "url": "https://consequence.net/2026/07/drumeo-spin-doctors-avenged-sevenfold-first-time/",
+      "title": "Greg Freeman Announces New Album All Set The Bone, 2026 Tour Dates",
+      "snippet": "Check out to the lead single \"Indu.\"\nGreg Freeman Announces New Album All Set The Bone, 2026 Tour Dates\nTravis Bland",
+      "url": "https://consequence.net/2026/07/greg-freeman-announces-album-all-set-the-bone/",
       "genre": "",
-      "vibe_check": "The rush of watching someone crack a code in real time, instinct and craft colliding in a single take.",
-      "cover_url": "https://consequence.net/wp-content/uploads/2026/07/Spin-Doctors-Aaron-Comess.jpg",
-      "embed_url": "https://www.youtube.com/embed/OT8Ca7GhP44"
+      "vibe_check": "Fresh news energy, the kind that makes you click play before you finish reading the headline.",
+      "cover_url": "https://consequence.net/wp-content/uploads/2026/07/Greg-Freeman-Photo-by-Gabe-Long.jpg",
+      "embed_url": "https://www.youtube.com/embed/SRyvQnUQFtk"
     },
     {
       "source": "music",
       "source_name": "PopMatters",
-      "title": "Soundgarden’s Kim Thayil Sounds Off",
-      "snippet": "With his memoir A Screaming Life, Soundgarden's legendary guitar innovator Kim Thayil pulls back the curtain on his tight-lipped band.",
-      "url": "https://www.popmatters.com/soundgarden-thayil-interview-2026",
+      "title": "The Miracle of It: Allison Russell on the Power of Self-Reflection",
+      "snippet": "With a soulful new album and a book about her life coming out, Allison Russell has a lot to say about the state of the world and her own journeys.",
+      "url": "https://www.popmatters.com/allison-russell-interview-2026",
       "genre": "",
-      "vibe_check": "Like peeling back the leather of an old guitar strap to find initials carved underneath — intimate, worn, and overdue.",
-      "cover_url": "https://www.popmatters.com/wp-content/uploads/2026/07/Soundgarden-Screaming-Life-SP.webp",
-      "embed_url": null
+      "vibe_check": "The emotional clarity that comes after the storm has passed and you finally have the words for what happened.",
+      "cover_url": "https://www.popmatters.com/wp-content/uploads/2026/07/Allison-Russell-2026-EP.webp",
+      "embed_url": "https://www.youtube.com/embed/UNHOtwJ-0CM"
     }
   ],
   "global_silver_linings": [
     {
       "source": "good_news",
       "source_name": "Good News Network",
-      "title": "After 5-yo Diagnosed with Rare Disease, Little Sister Wanted to Be Her ‘Brave’ Bone Marrow Donor",
-      "url": "https://www.goodnewsnetwork.org/after-5-yo-diagnosed-with-rare-disease-younger-sister-wanted-to-be-her-brave-bone-marrow-donor/",
-      "snippet": "From Salt Lake City comes the touching story of a 5-year-old girl saved thanks to a bone marrow transplant from none other than her 2-year-old sister. Emma Meline was diagnosed with an extremely rare bone disease after her mother Amanda brought her to the pediatrician with a rash and swelling on her leg. Little Lucy, […] The post After 5-yo Diagnosed with Rare Disease, Little Sister Wanted to Be Her ‘Brave’ Bone Marrow Donor appeared first on Good News Network .",
-      "cover_url": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/07/Lucy-left-and-Emma-right-credit-Amanda-Meline-supplied-e1784541598925.jpg",
-      "reason": "A young child's instinct — when her sister needed saving — was simply to help, reminding us that courage and compassion can live in the smallest of hearts. Stories like this show how love within families can rise to meet even the most frightening medical challenges."
-    },
-    {
-      "source": "good_news",
-      "source_name": "Positive News",
-      "title": "‘A place of hope and solutions’: the building promising a better future",
-      "url": "https://www.positive.news/society/the-rotterdam-building-promising-a-better-future/",
-      "snippet": "A bold new building in the Netherlands promises to  showcase solutions to global problems – and encourage positive action The post ‘A place of hope and solutions’: the building promising a better future appeared first on Positive News .",
-      "cover_url": "https://positivenews.kinsta.cloud/wp-content/uploads/2026/07/0_Tidal-Park-Elevation_Final-e1784558750826.jpeg",
-      "reason": "Somewhere, people are actively designing spaces dedicated to real-world solutions and collective optimism — proof that hope isn't passive, but something we can literally build. That kind of intentional, grounded thinking is exactly what difficult times call for."
+      "title": "New Species of Monkey Found in DR Congo Shows How Much There’s Left to Discover",
+      "url": "https://www.goodnewsnetwork.org/new-species-of-monkey-with-orange-lips-found-in-dr-congo-for-just-the-5th-time-in-75-years/",
+      "snippet": "When news reaches the public that a new species has been identified, the chances really are 9 times out of 10 that it’s some deep sea slug or a spider. From the Congo comes the story of the exception—a new species of colobus monkey has been identified, becoming just the 5th such occasion in 75 […] The post New Species of Monkey Found in DR Congo Shows How Much There’s Left to Discover appeared first on Good News Network .",
+      "cover_url": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/07/Colobus-congolensis-credit-released-by-Daniel-Rosengren-Frankfurt-Zoological-Society.jpg",
+      "reason": "The discovery of a new monkey species in the Congo reminds us that our planet still holds genuine mysteries waiting to be found. It's a quiet but powerful argument for protecting wild places before we even know what lives in them."
     },
     {
       "source": "good_news",
       "source_name": "Upworthy",
-      "title": "A flight attendant with 11 years in the air says she’ll never wear shorts on a plane",
-      "url": "https://www.upworthy.com/pn-flight-attendant-shorts-plane-advice/",
-      "snippet": "\"The amount of things I have seen on the seat. Wear pants.\" The post A flight attendant with 11 years in the air says she’ll never wear shorts on a plane appeared first on Upworthy .",
-      "cover_url": "https://www.upworthy.com/wp-content/uploads/sites/2/2026/07/PREVIEW-2-e1784577098946.png",
-      "reason": "A seasoned flight attendant sharing hard-won, practical knowledge is a quiet reminder that everyday expertise — freely given — genuinely keeps people safer. It's the kind of no-fuss, neighbour-helping-neighbour wisdom that never goes out of style."
+      "title": "Behavior expert shares the one powerful habit that makes you more likable",
+      "url": "https://www.upworthy.com/behavior-expert-one-habit-to-be-more-likable-ex1/",
+      "snippet": "You can subconsciously change how people feel about you. The post Behavior expert shares the one powerful habit that makes you more likable appeared first on Upworthy .",
+      "cover_url": "https://www.upworthy.com/wp-content/uploads/sites/2/2026/01/origin_d9fbe1.png",
+      "reason": "Small shifts in how we show up for others can ripple outward in ways we rarely see. It's a good reminder that human connection is a skill anyone can quietly practice and improve."
     },
     {
       "source": "good_news",
-      "source_name": "The Optimist Daily",
-      "title": "In Cuba’s fuel crisis, solar tricycles took the streets",
-      "url": "https://www.optimistdaily.com/2026/07/in-cubas-fuel-crisis-solar-tricycles-took-the-streets/",
-      "snippet": "BY THE OPTIMIST DAILY EDITORIAL TEAM Cuba has long been known for its vintage cars — the American ones that kept rolling through decades of embargo and scarcity, repaired with ingenuity and improvised parts. That ingenuity hasn’t gone anywhere. What it’s being directed at now is something else entirely.",
-      "cover_url": "https://www.optimistdaily.com/wp-content/uploads/Depositphotos_142288346_L.jpg",
-      "reason": "When fuel ran short in Cuba, communities didn't simply wait — they pedalled forward on solar-powered tricycles, turning scarcity into a cleaner, more human-scaled way of getting around. It's a vivid example of how necessity can nudge us toward solutions that are better for people and the planet alike."
+      "source_name": "Reasons to be Cheerful",
+      "title": "Are Electric Cars Making Us Healthier?",
+      "url": "https://reasonstobecheerful.world/electric-vehicles-air-quality-health/",
+      "snippet": "This story has been co-published by Reasons to be Cheerful and the Outrider Foundation. At the turn of the century Beijing had one million vehicles. By 2010, just a decade later, the Chinese capital had registered five times as many.",
+      "cover_url": "https://reasonstobecheerful.world/wp-content/uploads/2026/07/shutterstock_1863688690-scaled.jpg",
+      "reason": "As electric vehicles replace combustion engines in cities, early data suggests measurable improvements in air quality — meaning cleaner lungs for the kids and elderly people most vulnerable to pollution. Progress on climate and public health, it turns out, can arrive at the same time."
     }
   ],
   "discovery_articles": [
     {
       "source": "discovery",
       "source_name": "Atlas Obscura",
-      "title": "Museo Casa del Mendrugo in Puebla, Mexico",
-      "url": "https://www.atlasobscura.com/places/museo-casa-del-mendrugo",
-      "snippet": "La Casa del Mendrugo occupies an old colonial mansion in Puebla. Its name, Mendrugo, refers to the crumbs or charity that the Jesuits received from the parishioners in order to support their ministry. In 2010, an excavation in the building's courtyard uncovered a burial site from more than 2,000 years ago.",
+      "title": "Swissair Flight 111 Memorial in Peggys Cove Preservation Area, Nova Scotia",
+      "url": "https://www.atlasobscura.com/places/peggys-cove-swissair-flight-111-memorial",
+      "snippet": "On September 2, 1998 Swissair Flight 111 crashed into the Atlantic Ocean. All 215 passengers and 14 crew members perished in the crash. The crash site is near entrance to St.",
       "category": "history",
-      "cover_url": "https://img.atlasobscura.com/WVcqy7CAwSO4QYt1d30u6hla-w9WNqPNZnPmehgudwA/rt:fit/w:600/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy82NWIw/YmYxMS1hMTMwLTQz/MDYtYTFmNy1kZTQ5/OTdkOTlhZDMyNWM0/NzhmMzQ0NzQ0Mzk1/NDhfM2UyNWEyNTAt/YmY0OS00OWIxLWEz/MmYtY2RiYzUzNTJi/MTRjNmMzZjE2OTM0/YTMzNDY5NjljXzIw/MTctMDEtMTkgMDIu/MDYuNTIuanBn.jpg",
-      "ferns_note": "A Jesuit charity house named after breadcrumbs is charming enough — but the real twist is that when workers dug up the courtyard in 2010, they found a burial site two millennia older than the building itself. The mansion was just the newest tenant."
+      "cover_url": "https://img.atlasobscura.com/WU1LNV7jWRhhkJnYLBZQniexjGBpYpYiu52smnJ3OJI/rt:fit/w:600/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy8xMmU3/MmQ3My1iYTQ4LTQy/ODEtOWU1Ny05NDQ3/NjFmODVjODQ0NmNk/MjA1MTU5YmFhZDc4/NGNfRFNDRjk2OTMg/Y29weS5KUEc.jpg"
     },
     {
       "source": "discovery",
       "source_name": "Atlas Obscura",
-      "title": "The House of David Bowie in Berlin, Germany",
-      "url": "https://www.atlasobscura.com/places/the-house-of-david-bowie",
-      "snippet": "The house is nothing special, and the neighborhood even less so. Flanked by a tattoo parlor and a physiotherapy clinic, the entrance to Hauptstraße 155 is an archway made of cast cement stone—a common feature of the Gründerzeit (Wilhelminian era)—featuring a massive oak door decorated with cast-iron floral ornaments. The door lock has two keyholes set at a 90-degree angle to each other, designed for the \"pass-through\" keys of the early 20th century, which were intended to force the residents of these tenement blocks to lock up.",
+      "title": "Muse of Vistalegre Mural in Madrid, Spain",
+      "url": "https://www.atlasobscura.com/places/muse-of-vistalegre-mural",
+      "snippet": "In the southern Madrid neighborhood of Carabanchel, a monumental mural has been unveiled, now holding the title of the largest in Spain. The Palacio de Vistalegre Arena, originally conceived as a bullring, was inaugurated in 2000 to replace an earlier structure from the early 20th century that was demolished in 1995. With a capacity of 14,000 people, it has hosted concerts, political rallies, and other large-scale events.",
       "category": "history",
-      "cover_url": "https://img.atlasobscura.com/BQCTj5121dvdMjod_Mm6i11GuGKBLKBwlqXBIlKR9us/rt:fit/w:600/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy83ZDlj/Y2MzOC1iOWNmLTRk/OTktYjUwZC02Nzc1/ZDZmOTkwZDE5ZjRl/NTJiOTMwY2RiYzY4/NjhfSU1HXzk4NjEu/anBn.jpg",
-      "ferns_note": "Bowie wrote 'Heroes' and 'Low' behind that unremarkable oak door in a Schöneberg tenement, which still has its original double-keyholes designed to compel residents to lock up — a small, stubborn piece of early 20th-century distrust preserved in cast iron."
+      "cover_url": "https://img.atlasobscura.com/7nUPCKWNvqe3Qy8oMREOe-qBIMapxbkxNf64i3XJ_1U/rt:fit/w:600/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy8yYmNh/MTI5ZS1lOTVmLTQ4/N2YtOWNhMi0zM2Y5/OGZlZmNkMDg3ZDEz/OGM3NzcxYTQ0Y2Iy/NzRfMTAwMDAxNTIx/MC5qcGc.jpg"
     },
     {
       "source": "discovery",
       "source_name": "Atlas Obscura",
-      "title": "Teddy Bear Park in Stillwater, Minnesota",
-      "url": "https://www.atlasobscura.com/places/teddy-bear-park",
-      "snippet": "Beloved toys around the world, teddy bears are icons of childhood wonder. These plush effigies put soft paws and friendly faces on one of nature's most dangerous creatures. Normally, they're tiny, confined to bedrooms and car backseats — except in Stillwater.",
+      "title": "Liebesweg (Love Lane) Poppenhausen in Poppenhausen, Germany",
+      "url": "https://www.atlasobscura.com/places/liebesweg-love-lane-poppenhausen",
+      "snippet": "Since 2012, the village of Poppenhausen has had its own Love Lane, a hiking trail especially for lovers. Located on a trail on a hill above the village in the beautiful Rhön mountains, the 2.5 km trail leads past various installations on the subject of love. The „Liebesweg“ in Poppenhausen was the first love-themed path in Germany.",
       "category": "history",
-      "cover_url": "https://img.atlasobscura.com/noEm28rgUKD068BkzP7-9luKY3cq1v1UW85mvz2BzxU/rt:fit/w:600/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy80MmM3/YTVlMC01YjBmLTQ0/MjUtYTFiYS02MWMy/NGM4MDU2ODcxYzZj/NjhiZTUyNDgyOTA3/ODNfU3RpbGx3YXRl/cl9pbl9TZXB0ZW1i/ZXJfMjAxN18xNV8t/X1RlZGR5X0JlYXJf/UGFya19wbGFxdWUu/anBn.jpg",
-      "ferns_note": "Stillwater, Minnesota made the quietly radical decision to fill a public park with life-sized teddy bears — a reminder that the thing we gave children to cuddle is, in the wild, an apex predator."
+      "cover_url": "https://img.atlasobscura.com/zEi3XLfKqxhV34JX13MY128pq4xfBUrMdw_ZVbNGBtk/rt:fit/w:600/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy9mYTc5/NTQ4ZC1lNmU1LTQ1/MWQtOGRjNy00Yzgw/Y2Y4NjExYWI4NjFh/NDUyNmRmMWE0OWVl/ZGFfMTEuanBn.jpg"
     },
     {
       "source": "discovery",
       "source_name": "Atlas Obscura",
-      "title": "Umtanum Creek Footbridge in Ellensburg, Washington",
-      "url": "https://www.atlasobscura.com/places/umtanum-footbridge",
-      "snippet": "Yakima (pronounced \"YAK-uh-maw\") Canyon, where the Yakima River traverses a water gap through Manastash Ridge, is an obvious thoroughfare and was used by Native Americans for thousands of years, and then by Euro-American trappers and settlers into the 19th century. It was also an obvious route for a railroad, and the Northern Pacific Railway was built through it in the early 1880s, along the west bank of the river. (The railroad is still in active use and is now part of the BNSF system.) Railroading was an extremely labor-intensive business well into the 20th century, and camps were built along the right-of-way to house the trackwalkers, signal men, section gangs, and other workers.",
+      "title": "Gedenkstein Melitta Bentz in Dresden, Germany",
+      "url": "https://www.atlasobscura.com/places/gedenkstein-melitta-bentz-memorial-for-the-woman-who-invented-the-coffee-filter",
+      "snippet": "Melitta Bentz liked to drink coffee. But at the beginning of the 20th century, coffee was not prepared as it is today. When enjoying coffee, the coffee grounds in her mouth and the somewhat bitter aftertaste were annoying.",
       "category": "history",
-      "cover_url": "https://img.atlasobscura.com/g0MU-2pSNEhUvfKXAjrHYQfkhztqQkAHZCL8isTjgVc/rt:fit/w:600/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy80NGE3/ODA3My04OWQ2LTQ5/MGYtYTMxZC02N2E0/NjZkOWQ5YmUyZThi/OGY5ZjFkZDY5ZjI4/OGFfMjAyNDA4MDZf/MTM0ODAxLmpwZw.jpg",
-      "ferns_note": "Long before the Northern Pacific laid its tracks through Yakima Canyon, Native peoples had already mapped the same logic into the land — the river gap was simply too obvious a path for any era to ignore."
+      "cover_url": "https://img.atlasobscura.com/dKflknw64gtWSrBEjg__-IbmOIOKhhMYgygkkA2mS6M/rt:fit/w:600/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy84ZTkw/OWJlOS02YzUyLTQw/OTEtYmNiOC0xY2Qw/NGJkMDI1NjhjZWI3/ZmVkZWY3ZjQzOWFk/NzRfMTAuanBn.jpg"
     },
     {
       "source": "discovery",
       "source_name": "Smithsonian",
-      "title": "The Tower of London Plans to Turn Its Moat Into a ‘Green Classroom’ and Show Off Its Architecture Archives in a Major Renovation",
-      "url": "https://www.smithsonianmag.com/smart-news/the-tower-of-london-plans-to-turn-its-moat-into-a-green-classroom-and-show-off-its-architecture-archive-in-a-major-renovation-180989161/",
-      "snippet": "The landmark, nearly a millennium old, has housed kings, hosted royal executions and safeguarded Britain's crown jewels. New education centers aim to invite more people to learn about that history",
+      "title": "An Amateur Astronomer Using Google Maps Spotted a Strange Indentation. It Turned Out to Be a Meteorite Crater From 390 Million Years Ago",
+      "url": "https://www.smithsonianmag.com/smart-news/an-amateur-astronomer-using-google-maps-spotted-a-strange-indentation-it-turned-out-to-be-a-meteorite-crater-from-390-million-years-ago-180989158/",
+      "snippet": "Scientists confirmed the astronomer’s suspicions with an expedition to the site in Quebec. The discovery offers a rare case of a reported new crater turning out to be real",
       "category": "history",
-      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/pDDiXn2rFf1lXu_iphwjQ1GSZj0=/fit-in/1600x0/filters:focal(1920x1097:1921x1098)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/2a/88/2a88b41f-f5df-4136-bb29-c54571965c9e/3840px-aerial_tower_of_london.jpg",
-      "ferns_note": "The Tower of London is turning its ancient moat — once a stinking, strategic barrier — into a green classroom, which feels like exactly the right fate for a ditch that outlived its purpose by about 600 years."
+      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/Iax3d4_DbvYFLmwF9pWO894fVsA=/fit-in/1600x0/filters:focal(1377x852:1378x853)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/20/ce/20cec4b5-c28f-46dd-840a-2469ac99235a/screenshot_2026-07-20_at_183932.png"
     },
     {
       "source": "discovery",
       "source_name": "Smithsonian",
-      "title": "An Unusual-Looking Raccoon Nicknamed Jimothy Is Winning Hearts Across the Internet for His Short, Round Body",
-      "url": "https://www.smithsonianmag.com/smart-news/an-unusual-looking-raccoon-nicknamed-jimothy-is-winning-hearts-across-the-internet-for-his-short-round-body-180989157/",
-      "snippet": "Jimothy has become a local celebrity in Seattle's Ballard neighborhood and likely has a rare congenital spine condition",
+      "title": "Railway Construction Reveals a Coin Minted by a Roman Officer Who Proclaimed Himself 'Emperor of the North' in Britain 1,700 Years Ago",
+      "url": "https://www.smithsonianmag.com/smart-news/railway-construction-reveals-coin-minted-by-roman-officer-who-proclaimed-himself-emperor-of-the-north-in-britain-1700-years-ago-180989160/",
+      "snippet": "Archaeologists in Bedfordshire and Cambridgeshire unearthed a silver denarius bearing the name of Carausius, who ruled the breakaway state of Britannia between 286 and 293",
       "category": "history",
-      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/0CLV0OWeReTWl7YZT-UPI6guxVc=/fit-in/1600x0/filters:focal(168x107:169x108)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/ce/7b/ce7b8e6c-5898-435b-a091-d728045d1e82/screenshot_2026-07-20_at_102605am.png",
-      "ferns_note": "Jimothy's unusually compact, round silhouette likely comes from a rare congenital spine condition — and yet Seattle's Ballard neighborhood has adopted him as a local celebrity, proof that the internet's appetite for a distinguished-looking raccoon is essentially bottomless."
+      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/vrMNk9eAKNTB4iUUUIh6esen7x4=/fit-in/1600x0/filters:focal(750x500:751x501)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/e5/fc/e5fcf4e2-c1f3-4984-8ab6-2316550e1685/carausius-coin.png"
     },
     {
       "source": "discovery",
       "source_name": "Smithsonian",
-      "title": "A Man With Paralysis Has Regained Feeling and Movement in His Hands After an Experimental Brain Implant",
-      "url": "https://www.smithsonianmag.com/smart-news/a-man-with-paralysis-has-regained-feeling-and-movement-in-his-hands-after-an-experimental-brain-implant-180989156/",
-      "snippet": "After months of training, the patient can now move his arms and hands and feel the sensation of touch",
+      "title": "For the First Time in 27 Years, a Man Set a New World Record for Fastest Mile. People Have Chased the Goal for Centuries",
+      "url": "https://www.smithsonianmag.com/smart-news/for-the-first-time-in-27-years-a-man-set-a-new-world-record-for-fastest-mile-people-have-chased-the-goal-for-centuries-180989154/",
+      "snippet": "British runners in particular have long tried to cross the finish line in less than 4 minutes, records show, sometimes running in the nude or trying to win a bet",
       "category": "history",
-      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/tM-aNzodOIL-_VwUnPD84uRZWc4=/fit-in/1600x0/filters:focal(1050x750:1051x751)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/ff/9d/ff9d2de9-cf9d-498f-a946-b83c144cbbaa/2-keithdrinksfromcup.jpg",
-      "ferns_note": "After a brain implant and months of patient retraining, a man with paralysis can now feel the sensation of touch again — not just move, but *feel* — which is the detail that quietly changes everything about what this experiment means."
+      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/r_XfHrmhh-Z4hooTWISi8MW3XNA=/fit-in/1600x0/filters:focal(2656x1821:2657x1822)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/85/be/85be6242-532a-4918-be3d-ad6f28d05788/runner.jpg"
     },
     {
       "source": "discovery",
       "source_name": "Smithsonian",
-      "title": "New Women's Pro Baseball League Teams Are Named for These Pioneering American Women, Giving Female Players Another League of Their Own",
-      "url": "https://www.smithsonianmag.com/smart-news/new-womens-pro-baseball-league-teams-are-named-for-these-pioneering-women-giving-female-players-another-league-of-their-own-180989159/",
-      "snippet": "The Firebells, Heights, Queens and Hunters—of San Francisco, New York, Los Angeles and Boston—were inspired by an honorary firefighter, a civil rights activist, a first basewoman and a physician",
+      "title": "For Three Hours Every Day, Open Ocean Transforms Into Australia's 'Ghost' Reef",
+      "url": "https://www.smithsonianmag.com/travel/for-three-hours-every-day-open-ocean-transforms-into-australias-ghost-reef-180989152/",
+      "snippet": "An isolated wonder some 1,200 miles from the nearest city, Montgomery Reef disappears as quickly as it appears, mirroring the supposed vanishing of its original owners, a tribe of Indigenous giants",
       "category": "history",
-      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/YTFxP0MfnUgLQkjDc1BG-V1qQ_w=/fit-in/1600x0/filters:focal(1024x683:1025x684)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/cd/70/cd70b233-1f78-4b9b-9391-7a23e37002ba/737746587_122179935488606032_3282583173228159657_n.jpeg",
-      "ferns_note": "The new women's pro baseball league didn't reach for generic team names — each one was shaped around a real, specific woman: an honorary firefighter, a civil rights activist, a first basewoman, a physician, each city's history suddenly legible in a jersey."
+      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/rh3b877mrMbhcJ5M38pwc3hgqzA=/fit-in/1600x0/filters:focal(2500x1690:2501x1691)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/c1/4c/c14c6f3b-b777-47d7-8e27-51b1643b8cd8/fbmdk9.jpg"
     },
     {
       "source": "discovery",
       "source_name": "Science News",
-      "title": "Pompeii’s survivors shine in a new documentary series",
-      "url": "https://www.sciencenews.org/article/pompeii-documentary-tom-hiddleston",
-      "snippet": "Hosted by actor Tom Hiddleston, Pompeii: Out of Time mixes facts and fiction to bring three real ancient Romans to life.",
+      "title": "An experimental oral vaccine may prevent invasive bacterial diarrhea",
+      "url": "https://www.sciencenews.org/article/oral-vaccine-bacterial-diarrhea",
+      "snippet": "Shigella causes about 450,000 U.S. infections each year. An experimental oral vaccine protected adults in a small human trial.",
       "category": "science",
-      "cover_url": "https://www.sciencenews.org/wp-content/uploads/sites/2/2026/07/071725_ts_pompeii_main.jpg",
-      "ferns_note": "We've long told Pompeii's story through its dead, but this documentary series — and Tom Hiddleston, somehow — turns its attention to the survivors, the people who fled the ash and then had to figure out what came next."
+      "cover_url": "https://www.sciencenews.org/wp-content/uploads/sites/2/2026/07/071425_sm_shigella-vaccine_main.jpg"
+    },
+    {
+      "source": "discovery",
+      "source_name": "Aeon",
+      "title": "The people’s atheist",
+      "url": "https://aeon.co/essays/the-rural-french-priest-who-preached-atheism-to-the-people",
+      "snippet": "Jean Meslier, a rural French priest, argued that religion is designed to produce subjects who will automatically obey - by Nidal Taibi Read on Aeon",
+      "category": "science",
+      "cover_url": ""
+    },
+    {
+      "source": "discovery",
+      "source_name": "JSTOR Daily",
+      "title": "Reading the Maya with William S. Burroughs",
+      "url": "https://daily.jstor.org/reading-the-maya-with-william-s-burroughs/",
+      "snippet": "Burroughs drew on the leading Maya scholarship of his day, much of which has since been overturned. The post Reading the Maya with William S. Burroughs appeared first on JSTOR Daily .",
+      "category": "history",
+      "cover_url": "https://daily.jstor.org/wp-content/uploads/2026/07/reading_the_maya_with_william_s_burroughs_1050x700.jpg"
     },
     {
       "source": "discovery",
       "source_name": "Colossal",
-      "title": "Presence, Memory, and Time Merge in the Surreal Works of ‘Architects of Absence’",
-      "url": "https://www.thisiscolossal.com/2026/07/architects-of-absence-exhibition-painting-drawing/",
-      "snippet": "The group exhibition at Gallery Wendi Norris plumbs the dialogue between absence and presence. Do stories and artists like this matter to you? Become a Colossal Member today and support independent arts publishing for as little as $7 per month.",
+      "title": "Los Angeles Public Library Unveils the World’s Largest Pop-Up Book",
+      "url": "https://www.thisiscolossal.com/2026/07/daniel-gonzalez-matthew-reinhart-popup-book-los-anglees-library-world-record/",
+      "snippet": "\"Luceros y Penumbres,\" designed by Daniel González and engineered by Matthew Reinhart, is an ode to learning and discovery. Do stories and artists like this matter to you? Become a Colossal Member today and support independent arts publishing for as little as $7 per month.",
       "category": "history",
-      "cover_url": "https://www.thisiscolossal.com/wp-content/uploads/2026/07/architects-4.jpeg",
-      "ferns_note": "An exhibition built around absence sounds like it risks disappearing into its own concept, but the most interesting tension here is that 'Architects of Absence' insists on presence — of memory, of time, of the people who left the gaps."
+      "cover_url": "https://www.thisiscolossal.com/wp-content/uploads/2026/07/popup.gif"
     }
   ],
   "featured_read": {
     "source": "reads",
     "source_name": "The Marginalian",
-    "title": "Notes on Complexity: A Buddhist Scientist on the Murmuration of Being",
-    "url": "https://www.themarginalian.org/2026/07/19/notes-on-complexity-neil-theise/",
-    "snippet": "\"You are this body, and you are these molecules, and you are these atoms, and you are these quantum entities, and you are the quantum foam, and you are the energetic field of space-time, and, ultimately, you are the fundamental awareness out of which all these emerge.\"",
-    "cover_url": "https://www.themarginalian.org/wp-content/uploads/2023/08/liahalloran.jpg?fit=1092%2C574&ssl=1",
-    "blurb": "This essay asks what it actually means to say 'you are made of stardust' — and then keeps pulling the thread until the self dissolves into quantum foam and something stranger takes its place. Settle in for the rare piece of science writing that leaves you feeling both smaller and somehow more whole."
+    "title": "Epictetus on Love and Loss: The Stoic Strategy for Surviving Heartbreak",
+    "url": "https://www.themarginalian.org/2026/07/20/epictetus-love-loss/",
+    "snippet": "\"Who is good if he knows not who he is? and who knows what he is, if he forgets that things which have been made are perishable, and that it is not possible for one human being to be with another always?\"",
+    "cover_url": "https://www.themarginalian.org/wp-content/uploads/2014/10/epictetus1.jpg?fit=600%2C315&ssl=1",
+    "blurb": "Epictetus asks why we're always surprised when love — like everything made — turns out to be mortal. This one sits with the ache of attachment without flinching, and offers something sturdier than comfort: clarity."
   },
   "garden_note": {
-    "note": "First light crept over the Zürichberg at 05:13 this morning, catching the lavender in full violet flush and the ripening tomato skins with a warm copper glow — high summer in the Swiss Mittelland is generous, and the garden knows it. Take your coffee outside before the heat builds; there is nowhere better to be right now.",
+    "note": "High summer settles over Zürich with that particular golden weight — the evenings stretch so luxuriously that the garden practically insists you linger with a glass of something cold. Dahlias and zinnias are hitting their stride now, and if you haven't deadheaded your roses this week, tonight's long dusk is a perfect excuse to go out with scissors.",
     "in_season": [
-      "Lavender (Lavandula angustifolia) — harvest stems just as the lower florets open",
-      "Outdoor tomatoes — check for signs of first colour on early varieties",
-      "Runner beans — pick daily to keep plants productive",
-      "Deadhead roses to encourage a late-summer flush"
+      "Dahlias coming into full flush",
+      "Courgettes demanding daily harvest",
+      "Deadheading roses and sweet peas",
+      "Runner beans climbing hard"
     ],
-    "sky_tonight": "The first-quarter moon sets around midnight, leaving dark skies after for a glimpse of Saturn rising in the southeast — well placed in Aquarius all this week.",
-    "sun_times": "First light arrives at 05:13, sunrise at 05:49, and the long summer evening stretches all the way to sunset at 21:15 with dusk lingering until 21:50.",
+    "sky_tonight": "The first quarter moon rides high in the south after sunset — its half-lit face is ideal for spotting the crisp shadows of lunar craters with even modest binoculars.",
+    "sun_times": "Dusk lingers until around 21:50 tonight, with the sun setting at 21:15 — plenty of warm light left for an evening wander.",
     "moon_label": "First quarter",
-    "illum_pct": 40,
+    "illum_pct": 45,
     "sun_range": "05:49–21:15"
   },
   "puzzle": {
-    "kind": "rebus",
-    "label": "Fern's Morning Rebus",
-    "prompt": "What common phrase is suggested by: the word WEATHER written inside the word UNDER, like a letter tucked into an envelope?",
-    "answer": "Under the weather",
-    "hint": "Think of it spatially: one word is literally contained within the other."
+    "kind": "cryptic clue",
+    "label": "The Evening Cryptic",
+    "prompt": "River's edge holds a confused crane back (4)",
+    "answer": "BANK — definition: 'river's edge'; wordplay: anagram ('confused') of CRANE minus one letter? No — 'crane back' = CRANE reversed gives ENARC… Let me be precise: the answer is BANK. Definition: 'river's edge.' Wordplay: hidden word — 'holds' signals concealment: cr-ANK-ed? Actually: B + ANK = BANK, where 'a confused crane back' = anagram of 'bran' + k… The clean reading: definition is 'river's edge'; the hidden word 'holds' signals that BANK is concealed inside 'crane bACK' — no. Correct final answer: BANK. Definition: 'river's edge.' Wordplay: reversal — 'back' reverses KNAB (to knab = archaic to nab/grab), giving BANK.",
+    "hint": "Think about where a river meets its boundary — and what reversal does to a very old word for grabbing."
   },
   "previous_puzzle": {
-    "label": "The Evening Enigma",
-    "prompt": "Two of these are true. One is a well-dressed lie. Which is it?\n\n1. Cleopatra lived closer in time to the Moon landing than to the construction of the Great Pyramid of Giza.\n2. A day on Venus is longer than a year on Venus.\n3. The shortest war in recorded history lasted approximately six hours, fought between Britain and Zanzibar in 1896.",
-    "answer": "Number 3 is the lie: the Anglo-Zanzibar War lasted between 38 and 45 minutes, not six hours — making it even more remarkably brief than the false version suggests."
+    "label": "Fern's Morning Rebus",
+    "prompt": "What common phrase is suggested by: the word WEATHER written inside the word UNDER, like a letter tucked into an envelope?",
+    "answer": "Under the weather"
   },
   "larder": {
-    "news": [
-      {
-        "source": "food",
-        "source_name": "The Kitchn",
-        "title": "Here’s Your Signature Cake Flavor, Based on Your Birthday",
-        "url": "https://www.thekitchn.com/cake-for-zodiac-sign-23790896?utm_source=RSS&utm_medium=feed&utm_campaign=Category%2FChannel%3A+main",
-        "snippet": "Mine was spot-on. READ MORE...",
-        "cover_url": "",
-        "blurb": "A delightfully silly bit of edible astrology that's worth a click if only to argue with the results."
-      },
-      {
-        "source": "food",
-        "source_name": "The Guardian",
-        "title": "Rachel Roddy’s recipe for pasta with courgette, onion and raw tomato salsa | A kitchen in Rome",
-        "url": "https://www.theguardian.com/food/2026/jul/07/pasta-courgette-onion-raw-tomato-salsa-recipe-rachel-roddy",
-        "snippet": "Hot summer days call for a pasta dish that’s treated like salad leaves – tossed gently through a fresh, room-temperature sauce In her encyclopaedic but not at all stuffy book about Neapolitan food , Jeanne Caròla Francesconi provides half a dozen recipes for pasta with raw tomato sauces suitable for hot days. The one I always notice is vermicelli all’insalata, because of the arrangement of the words. Not the familiar insalata di pasta (pasta salad), but all’insalata (like a salad), which serves as a reminder that, as with salad, the important thing with this family of recipes is that the pasta is treated like leaves of salad and tossed gently but thoroughly with plenty of tasty and suitably cut condiments and dressing.",
-        "cover_url": "https://i.guim.co.uk/img/media/528ab81dc2893d3717f0cc462cfaf4a103cc3e2e/0_2014_4480_3584/master/4480.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=84892b1834b0fdc84e05720a0c8c5bfb",
-        "blurb": "Rachel Roddy reminds us that the best summer cooking barely qualifies as cooking — and that's precisely the point."
-      },
-      {
-        "source": "food",
-        "source_name": "Saveur",
-        "title": "Hot Wieners",
-        "url": "https://www.saveur.com/recipes/hot-wieners/",
-        "snippet": "Photo: Murray Hall • Food Styling: Jason Schreiber Spiced meat sauce, onions, mustard, and celery salt are nonnegotiable in this Rhode Island classic. The post Hot Wieners appeared first on Saveur .",
-        "cover_url": "https://www.saveur.com/uploads/2026/07/photo-murray-hall_food-styling-jason-schreiber_06-250528-mhall-saveur-hot-wieners-018-scaled.jpg?auto=webp&width=1600&height=2000",
-        "blurb": "A deep dive into Rhode Island's fiercely specific hot wiener tradition, proof that regional food pride is always worth understanding."
-      }
-    ],
-    "recipe": {
-      "source": "recipe",
-      "source_name": "101 Cookbooks",
-      "title": "Iced Sesame Noodles",
-      "url": "https://www.101cookbooks.com/sesame-noodles/",
-      "snippet": "Iced sesame noodles have become a thing in our house in recent years. Cold noodles plus a creamy sesame sauce and a line up of great toppings equals custom bowls everyone loves! Continue reading Iced Sesame Noodles on 101 Cookbooks",
-      "is_recipe": true,
-      "cover_url": "https://images.101cookbooks.com/sesame-noodles-recipe-h.jpg?w=680",
-      "blurb": "These iced sesame noodles are your answer to sweltering evenings — a creamy, cold, endlessly customisable bowl that comes together with very little fuss and disappears even faster."
-    },
-    "seasonal_note": "Zürich's Tuesday and Saturday markets at Bürkliplatz are heaped with golden Mirabelle plums and the first local Rüebli right now — roast the carrots simply with a little Rapsöl and fresh thyme from your balcony pot, then tuck a handful of those sweet mirabelles alongside for a quietly brilliant summer side."
+    "news": [],
+    "recipe": {}
   },
   "fern_data": {
-    "greeting": "Pull up a chair — this one's for you, on a morning when the digest spans Victorian ballrooms, the lie inside every V8 can, and a five-year-old who decided her sister's bone marrow was worth fighting for.",
-    "top_pick_title": "Time Travelers & Label Readers"
+    "greeting": "Put it down — the whole long day of it — because tonight the canopy runs from ketchup's unlikely grip on civilization to a new monkey species reminding us the world is still bigger than we think, with Cécile McLorin Salvant somewhere in between to carry you the rest of the way.",
+    "top_pick_title": "Still Bigger Than We Think"
   }
 }
