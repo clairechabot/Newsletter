@@ -47,7 +47,7 @@ YOUTUBE_CHANNEL_IDS: list[str] = [
     "UCtBzfGaJzGGNJVOVM0mK4uQ", "UC-SrCCzkGq0wmSAuRs7EBFg",
     "UCSwwoUNvQWgZDC8a_O6Qs_A", "UCSHtaUm-FjUps090S7crO4Q",
     "UCvy6TA5egUGHnZXVRYDKOhg",
-    "UC4HRlp7zs7UpIFM67eGjhow", "UC9r61qohBg1qgGty4_WzojA", "UC_8x1VmhDgsU72Yktd9Ukeg",
+    "UC9r61qohBg1qgGty4_WzojA", "UC_8x1VmhDgsU72Yktd9Ukeg",
     "UC6nSFpj9HTCZ5t-N3Rm3-HA", "UCEqU-Ts-hxmpnlWgRMgd2MQ", "UCmGSJVG3mCRXVOP4yZrU1Dw",
     "UC3cpN6gcJQqcCM6mxRUo_dA", "UCJI86v9et-IZd1KJSfahN8g",
     "UC2Kyj04yISmHr1V-UlJz4eg", "UCftwRNsjfRo08xYE31tkiyw", "UCNwZIGnHkzy6KpHPQtserzQ",
