@@ -26,6 +26,10 @@
   /* Sticky footer: the tab deck absorbs any slack so the footer sits flush at the
      bottom even when an edition is short — no dead cream space beneath the banner. */
   main{flex:1 0 auto;}
+  /* Keep the flex column from letting the horizontal card decks blow out the page
+     width: fill the viewport rather than shrink-to-content, and let the .grid
+     scrollers shrink so their own overflow-x scroll takes over. */
+  body>*{width:100%;min-width:0;}
   img{max-width:100%;display:block;}
   a{color:inherit;text-decoration:none;}
   .wrap{max-width:1120px;margin:0 auto;padding:0 40px;}
