@@ -1056,11 +1056,13 @@ def tag_grove_moods(grove_json_path, batch_size: int = 40, retag: bool = False) 
 # (and evenings) no longer repeat the same kind, which was the main source of
 # "too repetitive." Anti-repetition memory (recent_puzzles) keeps even same-kind
 # days from echoing earlier content.
-AM_PUZZLE_KINDS = ["riddle", "haiku riddle", "rebus", "hidden word", "anagram"]
-PM_PUZZLE_KINDS = [
-    "lateral teaser", "two truths & a lie", "cryptic clue", "odd one out",
-    "what comes next", "spot the connection", "guess the year", "fake etymology",
-]
+# Every puzzle now comes from a real source: riddles.com (riddle), wordsmith.org
+# (anagram), tinywords.com (haiku), and the Open Trivia Database (trivia). The
+# older AI-generated kinds (cryptic, lateral, two-truths, …) are retired — they
+# produced unreliable, occasionally garbled output. The AI generator remains only
+# as a last-resort fallback when a source pool comes back empty.
+AM_PUZZLE_KINDS = ["riddle", "anagram", "haiku riddle"]
+PM_PUZZLE_KINDS = ["trivia", "riddle", "anagram"]
 
 _PUZZLE_KIND_GUIDANCE = {
     "riddle": (
@@ -1170,6 +1172,7 @@ Do not include any text outside the JSON object.
 # Friendly display labels per kind (shown as the section eyebrow).
 _PUZZLE_LABELS = {
     "riddle":              "Fern's Morning Riddle",
+    "trivia":              "The Evening Trivia",
     "haiku riddle":        "Fern's Morning Riddle",
     "rebus":               "Fern's Morning Rebus",
     "hidden word":         "Fern's Morning Hunt",
@@ -1281,7 +1284,8 @@ def generate_puzzle(client: anthropic.Anthropic, is_am: bool,
                     recent: "list[dict] | None" = None,
                     riddle_pool: "list[dict] | None" = None,
                     anagram_pool: "list[dict] | None" = None,
-                    haiku_pool: "list[dict] | None" = None) -> dict:
+                    haiku_pool: "list[dict] | None" = None,
+                    trivia_pool: "list[dict] | None" = None) -> dict:
     """
     Generate Fern's daily puzzle. Mornings draw from a gentle riddle-family pool,
     evenings from a trickier pool, both rotated by day-of-year. `recent` is a list
@@ -1337,6 +1341,26 @@ def generate_puzzle(client: anthropic.Anthropic, is_am: bool,
         if puzzle:
             return puzzle
         # else: fall through to the AI-written haiku riddle
+    if kind == "trivia" and trivia_pool:
+        t = trivia_pool[0]
+        opts = t.get("options") or []
+        cat = (t.get("category") or "").strip()
+        prompt = t["question"]
+        if opts:
+            prompt += "\n\n" + "   ·   ".join(opts)
+        print(f"[Puzzle] Using a real trivia question from opentdb.com ({t.get('id','')}).")
+        return {
+            "kind": "trivia", "label": _PUZZLE_LABELS.get("trivia", label),
+            "prompt": prompt, "answer": t["answer"],
+            "hint": (f"Category: {cat}" if cat else ""),
+            "source": "opentdb.com", "source_id": t.get("id", ""),
+        }
+
+    # A source-backed kind whose pool came back empty (e.g. trivia fetch failed)
+    # has no AI guidance — fall back to generating a gentle riddle instead.
+    if kind not in _PUZZLE_KIND_GUIDANCE:
+        kind = "riddle"
+        label = _PUZZLE_LABELS["riddle"] if is_am else "The Evening Riddle"
 
     avoid_block = ""
     recent = recent or []
@@ -1385,11 +1409,21 @@ def generate_puzzle(client: anthropic.Anthropic, is_am: bool,
     if not data.get("prompt") or not data.get("answer"):
         print("  [warn] Puzzle missing prompt/answer. Skipping puzzle.")
         return {}
+    answer = str(data["answer"]).strip()
+    # Guard against reasoning-dump answers reaching the page (the old cryptic bug,
+    # where the model narrated its thinking into the answer field). A real answer
+    # is short and single-clause.
+    _dump_markers = ("let me", "actually", "wait", "hmm", "...", "…",
+                     " no,", "i think", "correct final", "let's", "= ")
+    low = answer.lower()
+    if len(answer) > 140 or "\n" in answer or any(m in low for m in _dump_markers):
+        print("  [warn] Puzzle answer looks like a reasoning dump. Skipping puzzle.")
+        return {}
     return {
         "kind":   kind,
         "label":  label,
         "prompt": data["prompt"],
-        "answer": data["answer"],
+        "answer": answer,
         "hint":   data.get("hint", ""),
     }
 
@@ -1462,6 +1496,7 @@ def run_curation(raw_data: dict) -> dict:
             riddle_pool=raw_data.get("riddle_pool", []),
             anagram_pool=raw_data.get("anagram_pool", []),
             haiku_pool=raw_data.get("haiku_pool", []),
+            trivia_pool=raw_data.get("trivia_pool", []),
         )
     except Exception as exc:
         print(f"  [warn] Puzzle generation failed: {exc}. Skipping puzzle.")

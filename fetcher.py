@@ -22,6 +22,8 @@ from zoneinfo import ZoneInfo
 
 import re
 import random
+import hashlib
+from html import unescape as _html_unescape
 from langdetect import detect, LangDetectException
 import defusedxml.ElementTree as ET
 from urllib.parse import urlparse, urljoin, quote
@@ -239,6 +241,7 @@ def save_history(
     seen_riddle_ids: "list | None" = None,
     seen_anagram_seeds: "list | None" = None,
     seen_haiku_ids: "list | None" = None,
+    seen_trivia_ids: "list | None" = None,
     recent_greetings: "list | None" = None,
     seen_food_urls: "set | None" = None,
 ) -> None:
@@ -271,6 +274,8 @@ def save_history(
         existing["seen_anagram_seeds"] = seen_anagram_seeds
     if seen_haiku_ids is not None:
         existing["seen_haiku_ids"] = seen_haiku_ids
+    if seen_trivia_ids is not None:
+        existing["seen_trivia_ids"] = seen_trivia_ids
     if recent_greetings is not None:
         existing["recent_greetings"] = recent_greetings
     if seen_food_urls is not None:
@@ -1434,6 +1439,45 @@ def fetch_riddles(n: int = 25) -> list[dict]:
     return out
 
 
+OPENTDB_URL = "https://opentdb.com/api.php"
+
+
+def fetch_trivia(n: int = 20) -> list[dict]:
+    """
+    Fetch multiple-choice trivia questions from the Open Trivia Database
+    (opentdb.com), across all categories. Returns up to `n`
+    {"id","question","answer","options","category"} — `options` are the four
+    choices in a stable alphabetical order (no RNG, so a re-run is identical).
+    Best-effort: [] on any failure, so the evening puzzle simply falls back to a
+    generated riddle.
+    """
+    try:
+        resp = _scraper_session().get(
+            OPENTDB_URL, params={"amount": n, "type": "multiple"}, timeout=20)
+        resp.raise_for_status()
+        data = resp.json()
+    except Exception as exc:
+        print(f"  [warn] opentdb.com fetch failed: {exc}")
+        return []
+    if data.get("response_code") not in (0, None):
+        print(f"  [warn] opentdb response_code {data.get('response_code')}.")
+        return []
+    out: list[dict] = []
+    for r in data.get("results", []):
+        q = _html_unescape(str(r.get("question", ""))).strip()
+        correct = _html_unescape(str(r.get("correct_answer", ""))).strip()
+        incorrect = [_html_unescape(str(x)).strip() for x in (r.get("incorrect_answers") or [])]
+        if not q or not correct or not incorrect:
+            continue
+        cat = _html_unescape(str(r.get("category", ""))).strip()
+        options = sorted([correct] + incorrect, key=lambda s: s.lower())
+        qid = hashlib.md5(q.encode("utf-8")).hexdigest()[:12]
+        out.append({"id": qid, "question": q, "answer": correct,
+                    "options": options, "category": cat})
+    print(f"[Trivia] Fetched {len(out)} question(s) from opentdb.com.")
+    return out
+
+
 # Seed words with elegant anagrams, themed to the newsletter (nature / music /
 # seasons / everyday). wordsmith turns each into its real anagram(s).
 ANAGRAM_SEEDS = [
@@ -1917,6 +1961,7 @@ def main() -> dict:
     seen_riddle_ids: list = []
     seen_anagram_seeds: list = []
     seen_haiku_ids: list = []
+    seen_trivia_ids: list = []
     recent_greetings: list = []
     if HISTORY_FILE.exists():
         try:
@@ -1926,10 +1971,12 @@ def main() -> dict:
             seen_riddle_ids = _hist.get("seen_riddle_ids") or []
             seen_anagram_seeds = _hist.get("seen_anagram_seeds") or []
             seen_haiku_ids = _hist.get("seen_haiku_ids") or []
+            seen_trivia_ids = _hist.get("seen_trivia_ids") or []
             recent_greetings = _hist.get("recent_greetings") or []
         except Exception:
             previous_puzzle, recent_puzzles = {}, []
             seen_riddle_ids, seen_anagram_seeds, seen_haiku_ids = [], [], []
+            seen_trivia_ids = []
             recent_greetings = []
 
     # Real puzzle material for the classic riddle/anagram/haiku mornings (best-
@@ -1937,11 +1984,16 @@ def main() -> dict:
     riddle_pool: list = []
     anagram_pool: list = []
     haiku_pool: list = []
+    trivia_pool: list = []
+    # riddle + anagram feed both the morning and evening rotations; haiku is
+    # morning-only; trivia is evening-only.
+    riddle_pool = [r for r in fetch_riddles(25) if r["id"] not in set(seen_riddle_ids)]
+    one = fetch_anagram_puzzle(set(seen_anagram_seeds))
+    anagram_pool = [one] if one else []
     if is_am_email:
-        riddle_pool = [r for r in fetch_riddles(25) if r["id"] not in set(seen_riddle_ids)]
-        one = fetch_anagram_puzzle(set(seen_anagram_seeds))
-        anagram_pool = [one] if one else []
         haiku_pool = [h for h in fetch_haiku(8) if h["id"] not in set(seen_haiku_ids)]
+    else:
+        trivia_pool = [t for t in fetch_trivia(20) if t["id"] not in set(seen_trivia_ids)]
 
     raw_payload = {
         "fetched_at": now_ch.isoformat(),
@@ -1958,6 +2010,7 @@ def main() -> dict:
         "riddle_pool": riddle_pool,
         "anagram_pool": anagram_pool,
         "haiku_pool": haiku_pool,
+        "trivia_pool": trivia_pool,
         "food": larder_raw,
     }
 
@@ -1996,6 +2049,7 @@ def main() -> dict:
     # If the puzzle came from a real source (riddles.com / wordsmith), record its id
     # so that exact riddle/seed isn't reused (capped so the file can't grow forever).
     updated_riddle_ids = updated_anagram_seeds = updated_haiku_ids = None
+    updated_trivia_ids = None
     src = new_puzzle.get("source", "")
     sid = new_puzzle.get("source_id", "")
     if src == "riddles.com" and sid:
@@ -2004,6 +2058,8 @@ def main() -> dict:
         updated_anagram_seeds = (seen_anagram_seeds + [sid])[-len(ANAGRAM_SEEDS):]
     elif src == "tinywords.com" and sid:
         updated_haiku_ids = (seen_haiku_ids + [sid])[-400:]
+    elif src == "opentdb.com" and sid:
+        updated_trivia_ids = (seen_trivia_ids + [sid])[-600:]
     # Roll this edition's greeting into the anti-repetition memory (last 10) so
     # the next notes avoid echoing its opening, imagery, and structure.
     updated_greetings = None
@@ -2020,6 +2076,7 @@ def main() -> dict:
                  seen_riddle_ids=updated_riddle_ids,
                  seen_anagram_seeds=updated_anagram_seeds,
                  seen_haiku_ids=updated_haiku_ids,
+                 seen_trivia_ids=updated_trivia_ids,
                  recent_greetings=updated_greetings,
                  seen_food_urls=seen_food_urls)
 
