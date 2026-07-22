@@ -488,8 +488,9 @@ Do not include any text outside the JSON object.
 
 
 def generate_larder_note(client: anthropic.Anthropic, locale: str, season: str,
-                         is_am: bool = True) -> str:
+                         is_am: bool = True, tone: str = "") -> str:
     """Fern's short seasonal food note, grounded in the reader's locale + season.
+    `tone`, when set, is a per-reader style directive (used by regional editions).
     Best-effort: returns '' on any failure so the section still renders."""
     if not locale:
         return ""
@@ -497,6 +498,7 @@ def generate_larder_note(client: anthropic.Anthropic, locale: str, season: str,
         f"Locale: {locale} (Northern Hemisphere, temperate)\n"
         f"Season: {season}\n"
         f"Edition: {'morning' if is_am else 'evening'}"
+        + (f"\nTONE ADJUSTMENT for this reader: {tone}" if tone else "")
     )
     try:
         message = client.messages.create(
@@ -703,6 +705,7 @@ def generate_garden_note(client: anthropic.Anthropic, garden_seed: dict) -> dict
             + (f", first light {sun['dawn']}, dusk {sun['dusk']}" if sun.get("dawn") else "")
             + "\n"
         )
+    tone = (garden_seed.get("tone") or "").strip()
     user_message = (
         f"Date: {garden_seed.get('date', '')}\n"
         f"Season: {garden_seed.get('season', '')}\n"
@@ -710,6 +713,7 @@ def generate_garden_note(client: anthropic.Anthropic, garden_seed: dict) -> dict
         f"{sun_line}"
         f"Locale: {garden_seed.get('locale', 'Zurich')} (Northern Hemisphere, temperate)\n"
         f"Edition: {'morning' if is_am else 'evening'}"
+        + (f"\nTONE ADJUSTMENT for this reader: {tone}" if tone else "")
     )
 
     print("[Garden] Generating From the Garden note …")
@@ -843,6 +847,7 @@ def generate_fern_greeting(
     season: str = "",
     recent_greetings: list[str] | None = None,
     recipient: str = "",
+    tone: str = "",
 ) -> dict:
     """
     Generate Fern's short daily note and an edition title for the subject line.
@@ -871,6 +876,8 @@ def generate_fern_greeting(
             f"warmly and naturally, within the note (not a stiff 'Dear {recipient},'). "
             f"Weave the name into your opening while still following the angle above."
         )
+    if tone:
+        lines.append(f"\nTONE ADJUSTMENT for this reader: {tone}")
 
     recent_greetings = recent_greetings or []
     if recent_greetings:
