@@ -1,173 +1,166 @@
 {
-  "fetched_at": "2026-07-22T08:07:38.710145+02:00",
-  "is_am_email": true,
+  "fetched_at": "2026-07-22T17:55:34.025342+02:00",
+  "is_am_email": false,
   "audit_summary": {
     "youtube_videos": 10,
-    "themes": 4,
-    "music_articles": 13,
+    "themes": 3,
+    "music_articles": 10,
     "good_news_articles": 3,
-    "discovery_articles": 11,
+    "discovery_articles": 15,
     "featured_read": 1,
     "garden": 1,
     "puzzle": 1,
-    "larder": 4
+    "larder": 0
   },
   "themes": [
     {
-      "name": "Dust, Dynasties & Dinner",
+      "name": "Dust & Dynasties",
       "emoji": "🏛️",
-      "tagline": "From Roman ruins to rotisserie chickens — history is messier (and tastier) than the textbooks let on.",
+      "tagline": "From gladiator uprisings to mango propaganda — history is always weirder than you think.",
       "items": [
         {
           "source": "youtube",
-          "video_id": "oDiZwmqn5Sc",
-          "title": "The Entire History of London",
-          "channel_id": "UCAcoda6jlC-xpxGhwW7yFZw",
-          "channel_title": "Matt Reconstructs History",
-          "published_at": "2026-07-21T23:30:01Z",
-          "url": "https://www.youtube.com/watch?v=oDiZwmqn5Sc",
-          "duration_seconds": 2809,
-          "view_count": "967",
-          "description": "London has been burned, plagued, bombed — and rebuilt every single time. Using AI trained on the historical record, we've reconstructed every era of the city, from Roman Londinium to today. This is the entire history of London.\n\n\n----------------------------------------------------------------------------------------------\n\n00:00 Intro\n00:56 Before London\n01:54 The Romans\n05:21 The Saxons & The Vikings\n09:00 Medieval London\n16:35 Tudor London\n23:36 Stuart London\n29:59 Georgian London\n34:00 Victo",
+          "video_id": "uOiMTXyg8Jg",
+          "title": "Mangoes, Madness, and Chairman Mao",
+          "channel_id": "UC4sEmXUuWIFlxRIFBRV6VXQ",
+          "channel_title": "The History Guy: History Deserves to Be Remembered",
+          "published_at": "2026-07-22T12:00:32Z",
+          "url": "https://www.youtube.com/watch?v=uOiMTXyg8Jg",
+          "duration_seconds": 1126,
+          "view_count": "2377",
+          "description": "The history of Mangoes includes piracy, passion, paisley and a very unfortunate dentist. \n\nCheck out our new shop for fun The History Guy merchandise:\nhttps://thehistoryguy-shop.fourthwall.com/products/thg-history\n\nThis is original content based on research by The History Guy. Images in the Public Domain are carefully selected and provide illustration.  As very few images of the actual event are available in the Public Domain, images of similar objects and events are used for illustration. \n\nNot",
           "is_wildcard": false
         },
         {
           "source": "youtube",
-          "video_id": "vi8risUFi4c",
-          "title": "The Rise & Fall of Thomas More | Henry VIII's Loyal Servant",
-          "channel_id": "UCdlktQvYRPgMVyvf_u-uZxA",
-          "channel_title": "Historic Royal Palaces",
-          "published_at": "2026-05-07T14:00:00Z",
-          "url": "https://www.youtube.com/watch?v=vi8risUFi4c",
-          "duration_seconds": 3022,
-          "view_count": "114306",
-          "description": "Sir Thomas More replaced Cardinal Wolsey as Henry VIII's Lord Chancellor. He lived by the mantra, ‘I am the King’s good servant, but God’s first’. He would also die by it. He defied Henry VIII, refusing to accept the king's break with the Roman Catholic Church, which led to him being imprisoned in the Tower of London. \n\nIn this episode of the Historic Royal Palaces podcast Tracy Borman is joined by historian Dr Joanne Paul to examine the truth behind Thomas More’s legacy.  \n\nWas he a saintly man",
-          "is_wildcard": false
-        },
-        {
-          "source": "youtube",
-          "video_id": "fDFmoZRWw6s",
-          "title": "Biology's Big Bang: The Cambrian Explosion",
+          "video_id": "_rMkVK99_34",
+          "title": "This Is Spartacus!",
           "channel_id": "UC2J29LPhS9vMiWyYEqBRB0w",
           "channel_title": "The Ancients",
-          "published_at": "2026-06-14T06:00:30Z",
-          "url": "https://www.youtube.com/watch?v=fDFmoZRWw6s",
-          "duration_seconds": 3839,
-          "view_count": "16098",
-          "description": "538 million years ago, life on Earth changed forever. In an evolutionary burst known as the Cambrian Explosion, complex animals rapidly appeared in the oceans, laying the foundations for almost every major animal group alive today.\n\nTristan Hughes is joined by the mighty Henry Gee to explore biology’s 'Big Bang'. What triggered this extraordinary leap in evolutionary complexity? Why did creatures with eyes, shells and limbs emerge so suddenly in the fossil record? And what can the Cambrian Explo",
+          "published_at": "2026-05-31T06:00:08Z",
+          "url": "https://www.youtube.com/watch?v=_rMkVK99_34",
+          "duration_seconds": 4536,
+          "view_count": "28651",
+          "description": "In 73 BC, a gladiator escaped slavery and launched a rebellion that shook the Roman Republic to its core. His name was Spartacus, and his uprising became one of the greatest threats Rome had ever faced from within.\n\nTristan Hughes is joined by Ben Kane to explore the dramatic story of Spartacus and his slave revolt that swept across Italy. Together, they cover the breakout at Capua to the battles against Roman armies and discover how Spartacus transformed a small band of fugitives into a force c",
           "is_wildcard": false
         },
         {
           "source": "youtube",
-          "video_id": "Cc-EclA_Vgg",
-          "title": "The Disastrous Downfall Of Boston Market",
+          "video_id": "wBvupNXo6Jo",
+          "title": "Why Did Henry VIII Betray Cardinal Wolsey? | Henry VIII's First Minister",
+          "channel_id": "UCdlktQvYRPgMVyvf_u-uZxA",
+          "channel_title": "Historic Royal Palaces",
+          "published_at": "2026-04-23T14:02:17Z",
+          "url": "https://www.youtube.com/watch?v=wBvupNXo6Jo",
+          "duration_seconds": 2904,
+          "view_count": "201215",
+          "description": "Cardinal Thomas Wolsey was merely the son of a butcher from Ipswich, yet he rose to become one of the most powerful men in Tudor England as Lord Chancellor to Henry VIII. He was even known as ‘The Other King’, and built a palace to rival Henry’s - Hampton Court. \n\nIn this first episode of a new series on the Historic Royal Palaces Podcast, Tracy Borman is joined by historian Elizabeth Norton in the Great Hall at Hampton Court Palace. They explore Wolsey’s rise to power, the Reformation, Anne Bol",
+          "is_wildcard": false
+        },
+        {
+          "source": "youtube",
+          "video_id": "N-8JttseH8o",
+          "title": "The Oldest Cola In The World is Not Coke",
           "channel_id": "UCNaq5Jh4SQ1oBAjhQ0KPhoA",
           "channel_title": "Weird History Food",
-          "published_at": "2026-03-22T14:15:02Z",
-          "url": "https://www.youtube.com/watch?v=Cc-EclA_Vgg",
-          "duration_seconds": 894,
-          "view_count": "219811",
-          "description": "Before meal kits, DoorDash, and cheap grocery store rotisserie chickens, Boston Market was a real presence. It promised comfort food classics, like Thanksgiving dinner any day of the week, without the cooking, cleanup, or family drama!  At its peak, this fast-casual chain was booming, redefining how Americans ate homestyle meals on the go. But almost as quickly as it rose, Boston Market began to collapse.\n\nSo what went wrong? On this episode of Weird History Food, we're taking a look at the stra",
+          "published_at": "2026-03-19T14:15:06Z",
+          "url": "https://www.youtube.com/watch?v=N-8JttseH8o",
+          "duration_seconds": 848,
+          "view_count": "29847",
+          "description": "Before the Coca-Cola vs. Pepsi cola wars took over the world, another soda was already making history.  On Colombia’s Caribbean coast, a mysterious bright pink drink was bubbling into existence decades before the big soda brands battled for dominance, and it’s still popular today.\n\nOn this episode of Weird History Food, we dive into the forgotten origins of Colombia’s iconic pink soda, Kola Roman, including the surprising story behind its invention, and how it survived the global takeover of the",
           "is_wildcard": false
         }
       ]
     },
     {
-      "name": "Slow Down, You're Moving Too Fast",
-      "emoji": "🌿",
-      "tagline": "Lazy potatoes, ferry rides, and cozy food stops — a love letter to doing things the unhurried way.",
+      "name": "Rabbit Holes Worth Falling Down",
+      "emoji": "🕳️",
+      "tagline": "One daring prison break, a stolen attention span, and a cult horror film — buckle up.",
       "items": [
         {
           "source": "youtube",
-          "video_id": "G7xFh0ZS7WI",
-          "title": "We Tried The Laziest Potato-Growing Method & This Happened",
-          "channel_id": "UCSbyncU597LMwb3HhnAI_4w",
-          "channel_title": "Epic Gardening",
-          "published_at": "2026-07-21T17:37:57Z",
-          "url": "https://www.youtube.com/watch?v=G7xFh0ZS7WI",
-          "duration_seconds": 478,
-          "view_count": "20362",
-          "description": "Planting potatoes doesn't have to mean digging trenches. In this video, I'll show you my favorite low-effort method using nothing but seed potatoes and a thick layer of straw. Less work, easier harvests, and a few key mistakes to avoid along the way.\n\nIN THIS VIDEO\n\n→ \n\nSUPPORT EPIC GARDENING\n\n→ Shop: https://growepic.co/shop\n→ Seeds: https://growepic.co/botanicalinterests\n\nLEARN MORE\n\n→ All Our Channels: https://growepic.co/youtube\n→ Blog: https://growepic.co/blog\n→ Podcast: https://growepic.co",
+          "video_id": "ClhyXtoneOc",
+          "title": "You didn't lose your attention span. It was stolen.",
+          "channel_id": "UC2Kyj04yISmHr1V-UlJz4eg",
+          "channel_title": "Jared Henderson",
+          "published_at": "2025-11-17T17:56:06Z",
+          "url": "https://www.youtube.com/watch?v=ClhyXtoneOc",
+          "duration_seconds": 972,
+          "view_count": "255670",
+          "description": "We're all worried about declining attention spans, but we forget something important: we didn't lose our attention spans, they were stolen. By looking at the history of newspapers, and then looking at how marketing works in the 21st century, we can see what we're up against.\n\nRead my newsletter: https://jaredhenderson.substack.com\n\nWatch my videos early on Nebula: https://go.nebula.tv/jaredhenderson\n\n→Sources\n\nThe Attention Merchants by Tim Wu\n\n'Who's Getting Rich Off Your Attention?' by Kyla Sc",
           "is_wildcard": false
         },
         {
-          "source": "youtube_trending",
-          "video_id": "tPe5M0B3jZM",
-          "title": "seattle travel vlog | where to eat, bainbridge island day trip, traveling with my in-laws",
-          "channel_id": "UCv-nP6YzWKo1QEJRJYuPXzQ",
-          "channel_title": "sallykim7",
-          "published_at": "2026-07-21T19:37:50Z",
-          "url": "https://www.youtube.com/watch?v=tPe5M0B3jZM",
-          "duration_seconds": 892,
-          "view_count": "2565",
-          "description": "itinerary\n» dough zone\n» fresh flours\n» pho bac\n» URL coffee\n» @maxituyip photoshoot\n» pike place market\n» pike place chowder\n» paju\n» basecamp cafe\n» molly moons\n» bainbridge island ferry\n» proper fish\n» fremont bowl\n\n................................................................................................\nsocials\n» insta https://www.instagram.com/sallykim7/ (@sallykim7)\n» tiktok https://www.tiktok.com/@sallykim7_? (@sallykim7_)\n» puppy ig https://www.instagram.com/olliekim7_/ (@olliekim",
-          "is_wildcard": true
+          "source": "youtube",
+          "video_id": "dMMHSXn9pow",
+          "title": "The Prison Break That Embarrassed an Entire Country",
+          "channel_id": "UCmGSJVG3mCRXVOP4yZrU1Dw",
+          "channel_title": "Johnny Harris",
+          "published_at": "2025-11-15T18:56:54Z",
+          "url": "https://www.youtube.com/watch?v=dMMHSXn9pow",
+          "duration_seconds": 1905,
+          "view_count": "2083927",
+          "description": "How El Chapo Escaped from Prison… Twice\nUse code johnnyharris at the link below to get an exclusive 60% off an annual Incogni plan: https://incogni.com/johnnyharris\n\nWatch me, @MarkRober, and @CleoAbram try to escape from Alcatraz Prison: https://youtu.be/pLtHyLlLt4Y\n\nJoin Newpress, our community-driven hub for creator journalism: https://newpress.com/go\n\nCheck out all my sources for this video here: https://docs.google.com/document/d/1GlJsJxSoaIE1Opejoklb_l55p_jhbyc_lG9b5jOAG3g/edit?usp=sharing",
+          "is_wildcard": false
+        },
+        {
+          "source": "youtube",
+          "video_id": "ipovQ_9VkWQ",
+          "title": "KEEPER EXPLAINED: Every Symbol, Theme, and the Ending",
+          "channel_id": "UCXcTkcC_H4XeDGfJ7rQGJaw",
+          "channel_title": "Lucas Blue",
+          "published_at": "2025-11-15T17:45:01Z",
+          "url": "https://www.youtube.com/watch?v=ipovQ_9VkWQ",
+          "duration_seconds": 621,
+          "view_count": "45360",
+          "description": "In this NEON Osgood Perkins Keeper 2025 Explained / Keeper Ending Explained and Analysis, I deep-dive analyze the Keeper movie starring Tatiana Maslany and Rossif Sutherland. Directed by Oz Perkins, the film is a perfect blend of mystery, horror, and psychological thriller, exploring themes of romantic relationships and emotional abuse. I believe this film is excellent in capturing the major themes of self-empowerment and self-love through great writing, acting, directing and filmmaking.\n\nFurthe",
+          "is_wildcard": false
+        },
+        {
+          "source": "youtube",
+          "video_id": "c4HegJfoUAo",
+          "title": "That Which Gave Chase - Cosmic Horror in the Deep Cold",
+          "channel_id": "UC3cpN6gcJQqcCM6mxRUo_dA",
+          "channel_title": "Wendigoon",
+          "published_at": "2025-11-15T17:01:03Z",
+          "url": "https://www.youtube.com/watch?v=c4HegJfoUAo",
+          "duration_seconds": 5493,
+          "view_count": "2283495",
+          "description": "Use code WENDIGOONFB50 to get 50% OFF your first Factor box plus free breakfast for 1 year at https://bit.ly/45kd89L !\n\nGET THE REDACTED MERCH WHILE YOU CAN: https://wendigoon.shop/\n\n\nGet That Which Gave Chase on Steam: https://store.steampowered.com/app/2431100/That_Which_Gave_Chase/\n\nFollow the dev here: https://www.aslakkh.no/\n\n\nEditor: Nate de Olivera\nThumbnail:  Elvan Putra  @elvandubz  \n\n\nCheck out the podcasts here:\n\nCreepCast: ‪ @CreepPodcast  \n\nThe Weird Bible Podcast: ‪ @TheWeirdBible ",
+          "is_wildcard": false
         }
       ]
     },
     {
-      "name": "Your Brain Is Lying To You (Lovingly)",
-      "emoji": "🧠",
-      "tagline": "Optical illusions, evolutionary explosions, and the vast gap between a million and a billion — your perception is due for an update.",
+      "name": "Quietly Astonishing",
+      "emoji": "🌿",
+      "tagline": "The natural world keeps secrets — trees are barely alive, and your best shot is still ahead of you.",
       "items": [
         {
           "source": "youtube",
-          "video_id": "s2XJAOs0n4U",
-          "title": "These 9 dots fool (almost) everyone's brain",
+          "video_id": "isHSltGHFoM",
+          "title": "How much of a tree is ACTUALLY alive?",
           "channel_id": "UCH4BNI0-FOK2dMXoFtViWHw",
           "channel_title": "Be Smart",
-          "published_at": "2026-05-12T16:10:48Z",
-          "url": "https://www.youtube.com/watch?v=s2XJAOs0n4U",
-          "duration_seconds": 121,
-          "view_count": "107199",
+          "published_at": "2026-04-08T15:57:30Z",
+          "url": "https://www.youtube.com/watch?v=isHSltGHFoM",
+          "duration_seconds": 130,
+          "view_count": "426249",
           "description": "Another YouTube #shorts from Dr. Joe! Subscribe for more fun science stories.\n\nJoin us on Patreon! \nhttps://patreon.com/itsokaytobesmart\n\nInstagram \nhttp://www.instagram.com/DrJoeHanson \nhttp://www.instagram.com/okaytobesmart \n\nFacebook\nhttps://www.facebook.com/itsokaytobesmartpbs/",
           "is_wildcard": false
         },
         {
-          "source": "youtube",
-          "video_id": "PpyPB3BF-hQ",
-          "title": "What Being a BILLIONAIRE Really Looks Like",
-          "channel_id": "UCmGSJVG3mCRXVOP4yZrU1Dw",
-          "channel_title": "Johnny Harris",
-          "published_at": "2025-11-21T13:00:59Z",
-          "url": "https://www.youtube.com/watch?v=PpyPB3BF-hQ",
-          "duration_seconds": 2189,
-          "view_count": "3678636",
-          "description": "100 Million vs 100 Billion\nGo to https://nordvpn.com/johnnyharris to get a 2-year plan plus 4 additional months with a huge discount. It’s risk-free with Nord’s 30-day money-back guarantee!\n\nJoin Newpress, our community-driven hub for creator journalism: https://newpress.com/go\n\nCheck out all my sources for this video here: https://docs.google.com/document/d/1OrYna6iXcCLWhr9Hx1gUhSw_07li3kvILrzlH30PDfI/edit?usp=sharing\n\nThe number of enormous fortunes has exploded in recent decades — and with th",
-          "is_wildcard": false
-        },
-        {
-          "source": "youtube",
-          "video_id": "Ar8afWneowM",
-          "title": "Comparing the Storylines, Scenes, and Endings of Bugonia and Save The Green Planet",
-          "channel_id": "UCXcTkcC_H4XeDGfJ7rQGJaw",
-          "channel_title": "Lucas Blue",
-          "published_at": "2025-11-22T16:00:30Z",
-          "url": "https://www.youtube.com/watch?v=Ar8afWneowM",
-          "duration_seconds": 750,
-          "view_count": "55438",
-          "description": "In this Bugonia Explained and Analysis / Save The Green Planet Explained, I deep-dive analyze Bugonia 2025 and the 2003 South Korean original movie. Bugonia stars Emma Stone and Jesse Plemons, and is directed by Yorgos Lanthimos. Each film is a perfect blend of dark comedy and psychological thriller, exploring themes of humanity, environmentalism, and corporate control. I believe both movies are excellent in capturing the major themes of conspiracy theories and personal freedom through great wri",
-          "is_wildcard": false
-        }
-      ]
-    },
-    {
-      "name": "Raising Tiny Humans (No Manual Included)",
-      "emoji": "🧸",
-      "tagline": "Ms. Rachel weighs in on screen time, boredom, and why kids are basically feral scientists — and that's okay.",
-      "items": [
-        {
-          "source": "youtube",
-          "video_id": "jb2lfKJ14w0",
-          "title": "Ms. Rachel Answers Parenting Questions | Tech Support | WIRED",
-          "channel_id": "UCftwRNsjfRo08xYE31tkiyw",
-          "channel_title": "WIRED",
-          "published_at": "2026-07-21T16:00:07Z",
-          "url": "https://www.youtube.com/watch?v=jb2lfKJ14w0",
-          "duration_seconds": 731,
-          "view_count": "62677",
-          "description": "Ms. Rachel joins WIRED to answer the internet’s burning questions about toddler learning. Is it okay to let kids get bored sometimes? How much screen time do you let your toddlers have? Is it okay to hate playing with your toddler? Answers to these questions and many more await on Ms. Rachel Support.\n\nWIRED recommends:\nhttps://www.youtube.com/shorts/u_-WDCePtWg\n\nWatch more from WIRED | Tech Support: https://www.youtube.com/show/VLPLibNZv5Zd0dwIx8baZGDdkoPNg6LHAPDi?sbp=QAE%3D\n\n#MsRachel #Toddler ",
-          "is_wildcard": false
+          "source": "youtube_trending",
+          "video_id": "x-MogJKGJNQ",
+          "title": "Wildlife photos are mostly bad",
+          "channel_id": "UCDkJEEIifDzR_2K2p9tnwYQ",
+          "channel_title": "Tony & Chelsea Northrup",
+          "published_at": "2026-07-21T18:47:30Z",
+          "url": "https://www.youtube.com/watch?v=x-MogJKGJNQ",
+          "duration_seconds": 806,
+          "view_count": "18597",
+          "description": "Go to http://squarespace.com/Chelsea & save 10% off your first website or domain with code “Chelsea\"\n\nPhotographers forget that we only see other people best work! The best photos are often made after a series of failures. Follow Chelsea Mercado as she tracks down a wood stork and shares a series of photo tips and processes that help turn her failures into good wildlife photos.",
+          "is_wildcard": true
         }
       ]
     }
@@ -175,360 +168,324 @@
   "morning_soundtrack": [
     {
       "source": "music",
-      "source_name": "NPR Music",
-      "title": "The best R&B entries in the 2026 Tiny Desk Contest",
-      "snippet": "Out of thousands of entries, several R&B artists stood out to the judges in the 2026 Tiny Desk Contest.",
-      "url": "https://www.npr.org/2026/07/21/nx-s1-5886105/the-best-r-b-entries-in-the-2026-tiny-desk-contest",
+      "source_name": "Stereogum",
+      "title": "Neil Young Covers Series Heart Of Gold Adds MJ Lenderman, Kurt Vile, Ben Gibbard, & More: Hear King Princess & Draco Rosa’s Tracks",
+      "snippet": "Neil Young deserves more than one tribute album. He has written too many great songs and made too much of an impact, and one compilations of Neil Young covers won't do the trick, no matter how impressive it may be. Last year's Heart Of Gold: The Songs Of Neil Young Volume I featured people like Fion",
+      "url": "https://stereogum.com/2505955/neil-young-covers-series-heart-of-gold-adds-mj-lenderman-kurt-vile-ben-gibbard-more-hear-king-princess-draco-rosas-tracks/music/",
       "genre": "",
-      "vibe_check": "",
-      "cover_url": "https://media.npr.org/include/images/facebook-default-wide-s1400-c85.jpg",
+      "vibe_check": "Like flipping through a beloved songwriter's worn lyric notebook with a room full of friends who all dog-eared different pages.",
+      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/07/Heart-Of-Gold-2.jpg",
+      "embed_url": "https://www.youtube.com/embed/tHIrPlaMQho"
+    },
+    {
+      "source": "music",
+      "source_name": "No Depression",
+      "title": "FOUNDERS KEEPERS: Margo Price Sings Truth to Power, Plus New Music from Luluc, Mason Jennings and More",
+      "snippet": "Here&#x2019;s a challenge to all Americana artists: Start recording and releasing sociopolitical songs NOW (if you haven&#x2019;t already). Write new songs if you&#x2019;re good at that, but if not, there&#x2019;s plenty out there that could always use a wider airing. As Margo",
+      "url": "https://nodepression.org/founders-keepers-margo-price-sings-truth-to-power-plus-new-music-from-luluc-mason-jennings-and-more/",
+      "genre": "",
+      "vibe_check": "The sound of boots on pavement and a clenched jaw — music that demands you feel something and then do something about it.",
+      "cover_url": "https://storage.ghost.io/c/18/d0/18d08e58-3b1b-4720-ae25-a31b44e69d4b/content/images/size/w1200/2026/07/Margo_Price_-_Days_Of_Unrest_-_Cover_Art.jpg",
       "embed_url": null
     },
     {
       "source": "music",
-      "source_name": "Stereogum",
-      "title": "Noah Kahan Concertgoers Are Apparently Still Using Their Seats As Toilets",
-      "snippet": "Noah Kahan's The Great Divide Tour kicked off last month, and there has been no shortage of controversy. The Philadelphia show on June 26 made headlines after an attendee went number two in their seat, and the folk-pop star made fans at subsequent shows pledge not to shit on the floor. Now, it seems",
-      "url": "https://stereogum.com/2505924/noah-kahan-concertgoers-are-apparently-still-using-their-seats-as-toilets/news/",
+      "source_name": "No Depression",
+      "title": "ALBUM REVIEW: Creekbed Carter Hogan Is a Court Jester of the Apocalypse on 'Peasants Revolt'",
+      "snippet": "&#x201C;I hear it&#x2019;s warmer than it ought to be / up there at the start of the Mississippi,&#x201D; Creekbed Carter Hogan sings on &#x201C;Burn.&#x201D; &#x201C;And the evergreens are like candle trees / they&#x2019;re leaning into the burn.&#x201D;The third track on Carter&",
+      "url": "https://nodepression.org/album-review-creekbed-carter-hogan/",
       "genre": "",
-      "vibe_check": "",
-      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/07/noah-kahan.jpg",
+      "vibe_check": "Fiddle-and-brimstone folk for watching the world unravel with a dark laugh and a half-empty mason jar.",
+      "cover_url": "https://storage.ghost.io/c/18/d0/18d08e58-3b1b-4720-ae25-a31b44e69d4b/content/images/size/w1200/2026/07/Peasant-Revolt---Front---Approved.jpg",
       "embed_url": null
     },
     {
       "source": "music",
-      "source_name": "Stereogum",
-      "title": "Radio Free Alice – “Kick In The Shins”",
-      "snippet": "Melbourne indie rockers Radio Free Alice have a sound that recalls the prime blog-rock days of the early '00s. It's a tense and loud but ultimately accessible version of post-punk, with big hooks belted out in in a desperate nasal-drone voice. If you're the right age, this stuff will instantly sweep",
-      "url": "https://stereogum.com/2505891/radio-free-alice-kick-in-the-shins/music/",
+      "source_name": "No Depression",
+      "title": "SPOTLIGHT: John R. Miller - \"Daughter of Night\" [VIDEO]",
+      "snippet": "Editor&apos;s Note:&#xA0;John R. Miller, whose new LP&#xA0;titled&#xA0;The Great Unknowing&#xA0;came out July 17 via Rounder Records, is&#xA0;No Depression&apos;s&#xA0;Spotlight Artist for July 2026. Read more about Miller&apos;s fifth album here and stay tuned for",
+      "url": "https://nodepression.org/spotlight-john-r-miller-daughter-of-night-video/",
       "genre": "",
-      "vibe_check": "",
-      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/07/Radio-Free-Alice.jpeg",
-      "embed_url": "https://www.youtube.com/embed/akWsEpRbWCY"
-    },
-    {
-      "source": "music",
-      "source_name": "Stereogum",
-      "title": "Chelsea Wolfe Announces New Album The Dark: Hear “Cold”",
-      "snippet": "Last month, the goth-folk artist Chelsea Wolfe became the face of a new paranormal-themed perfume called Ghosts, which feels perfectly in line with Wolfe's entire aesthetic. At the same time, Wolfe shared two new songs, \"Death Is Not The End\" and \"The Dark.\" As it turns out, both of those new songs ",
-      "url": "https://stereogum.com/2505906/chelsea-wolfe-announces-new-album-the-dark-hear-cold/music/",
-      "genre": "",
-      "vibe_check": "",
-      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/07/Chelsea-Wolfe-The-Dark.jpg",
-      "embed_url": "https://www.youtube.com/embed/QrqTW01HTas"
-    },
-    {
-      "source": "music",
-      "source_name": "Pitchfork",
-      "title": "Dagmar Zuniga to Tour This Fall",
-      "snippet": "Including opening dates for Cate Le Bon and Black Country, New Road",
-      "url": "https://pitchfork.com/story/dagmar-zuniga-to-tour-this-fall/",
-      "genre": "",
-      "vibe_check": "",
-      "cover_url": "https://media.pitchfork.com/photos/6a5f98b0bcb2cf911ed6f278/16:9/w_1280,c_limit/SCANS_BACK.jpeg",
+      "vibe_check": "Dusk settling over an empty two-lane highway, headlights not yet needed but the sky already turning.",
+      "cover_url": "https://storage.ghost.io/c/18/d0/18d08e58-3b1b-4720-ae25-a31b44e69d4b/content/images/2026/07/Spotlight-Template-2.png",
       "embed_url": null
     },
     {
       "source": "music",
       "source_name": "Pitchfork",
-      "title": "Sylvan Esso Line Up New Album Ow ∞",
-      "snippet": "Listen to the Sigur Rós-sampling “Concrete Glen” from the duo’s first album for its own Psychic Hotline label",
-      "url": "https://pitchfork.com/story/sylvan-esso-line-up-new-album-ow/",
+      "title": "Nigel Godrich and Dhani Harrison Launch New Project Dragonflies",
+      "snippet": "Harrison, son of George, and Godrich will share their debut album in September",
+      "url": "https://pitchfork.com/story/nigel-godrich-and-dhani-harrison-launch-new-project-dragonflies/",
       "genre": "",
-      "vibe_check": "",
-      "cover_url": "https://media.pitchfork.com/photos/6a5f6851cb332f065a5caf2a/16:9/w_1280,c_limit/Sylvan-Esso-new-album-Ow.jpeg",
+      "vibe_check": "The anticipation of a transmission arriving from somewhere between a Radiohead B-side and a Beatles dream sequence.",
+      "cover_url": "https://media.pitchfork.com/photos/6a60c5bf3ba75c448f8fe809/16:9/w_1280,c_limit/Dragonflies-Nigel-Godrich-Dhani-Harrison.jpeg",
       "embed_url": null
     },
     {
       "source": "music",
-      "source_name": "Aquarium Drunkard",
-      "title": "Styrofoam Winos :: The Aquarium Drunkard Interview",
-      "snippet": "Spend a few minutes talking with Styrofoam Winos and it becomes obvious why Any River feels so effortless. There are no fixed roles, no designated leader, and very little interest in conventional band hierarchy. Just three longtime friends following songs wherever they lead. We sat down with Joe Ken",
-      "url": "https://aquariumdrunkard.com/2026/07/21/styrofoam-winos-the-aquarium-drunkard-interview/",
+      "source_name": "Pitchfork",
+      "title": "MJ Lenderman, Kurt Vile, and Modest Mouse Cover Neil Young for New Compilation",
+      "snippet": "Listen to King Princess’ take on “Helpless” and Draco Rosa’s “After the Gold Rush” from Heart of Gold volumes two and three",
+      "url": "https://pitchfork.com/story/mj-lenderman-kurt-vile-and-modest-mouse-cover-neil-young-for-new-compilation/",
       "genre": "",
-      "vibe_check": "",
-      "cover_url": "https://aquariumdrunkard.com/_newness/wp-content/uploads/2026/07/winos-any-river.jpg",
-      "embed_url": null
-    },
-    {
-      "source": "music",
-      "source_name": "Consequence",
-      "title": "Guns N’ Roses’ 2026 North American Tour: How to Get Last-Minute Tickets",
-      "snippet": "The legendary rock act's 2026 summer tour features a wide range of opening acts. Learn how to get last-minute tickets here.\nGuns N&#8217; Roses&#8217; 2026 North American Tour: How to Get Last-Minute Tickets\nJon Hadusek",
-      "url": "https://consequence.net/2026/07/guns-n-roses-2026-tour-how-to-get-last-minute-tickets/",
-      "genre": "",
-      "vibe_check": "",
-      "cover_url": "https://consequence.net/wp-content/uploads/2026/05/Guns-N-Roses.jpg",
+      "vibe_check": "Like hearing your favorite song through a neighbor's wall — familiar, slightly transformed, and somehow more tender for the distance.",
+      "cover_url": "https://media.pitchfork.com/photos/6a60ded452064d9beaeaff84/16:9/w_1280,c_limit/neil-young-covers-compilation-mj-lenderman-kurt-vile.jpeg",
       "embed_url": null
     },
     {
       "source": "music",
       "source_name": "Consequence",
-      "title": "After World Cup, Oasis’ “Wonderwall” Returns to Hot 100 for First Time in Nearly 30 Years",
-      "snippet": "The Britpop anthem found a new generation of fans during the World Cup.\nAfter World Cup, Oasis&#8217; &#8220;Wonderwall&#8221; Returns to Hot 100 for First Time in Nearly 30 Years\nAlex Krinsky",
-      "url": "https://consequence.net/2026/07/after-world-cup-oasis-wonderwall-returns-to-hot-100-for-first-time-in-nearly-30-years/",
+      "title": "Nigel Godrich and Dhani Harrison Form Dragonflies, Release “Slower” Single: Stream",
+      "snippet": "Dragonflies' self-titled debut drops on September 18th.\nNigel Godrich and Dhani Harrison Form Dragonflies, Release &#8220;Slower&#8221; Single: Stream\nChris Coplan",
+      "url": "https://consequence.net/2026/07/nigel-godrich-dhani-harrison-dragonflies-album/",
       "genre": "",
-      "vibe_check": "",
-      "cover_url": "https://consequence.net/wp-content/uploads/2026/07/Wonderwall-on-charts-after-FIFA-WC.jpg",
-      "embed_url": "https://www.youtube.com/embed/D7otp-zhJ1U"
-    },
-    {
-      "source": "music",
-      "source_name": "Consequence",
-      "title": "Cheap Trick Add Fall 2026 Dates to “All Washed Up” Tour",
-      "snippet": "Cheap Trick have expanded their 2026 \"All Washed Up\" Tour with 10 newly announced US dates.\nCheap Trick Add Fall 2026 Dates to &#8220;All Washed Up&#8221; Tour\nAlex Krinsky",
-      "url": "https://consequence.net/2026/07/cheap-trick-add-fall-2026-dates-to-all-washed-up-tour/",
-      "genre": "",
-      "vibe_check": "",
-      "cover_url": "https://consequence.net/wp-content/uploads/2026/07/cheap-trick-expand-2026-fall-tour.jpg",
-      "embed_url": null
-    },
-    {
-      "source": "music",
-      "source_name": "JazzTimes",
-      "title": "A Salon Experience with Jamaaladeen Tacuma, Marshall Allen, Salvador Jiménez-Flores and Ensemble",
-      "snippet": "T here’s nothing new, really, about the merging of the fine arts with live music. Gertrude Stein’s Parisian salons were frequented by George Antheil and &#8230; Read More \"A Salon Experience with Jamaaladeen Tacuma, Marshall Allen, Salvador Jiménez-Flores and Ensemble\"\nThe post A Salon Experience wi",
-      "url": "https://www.jazztimes.com/reviews/live/a-salon-experience-with-jamaaladeen-tacuma-marshall-allen-salvador-jimenez-flores-and-ensemble/",
-      "genre": "",
-      "vibe_check": "",
-      "cover_url": "https://www.jazztimes.com/wp-content/uploads/2026/07/1B0A5355-scaled.jpg",
-      "embed_url": null
+      "vibe_check": "Celestial and unhurried, like watching light bend through water at the bottom of a very quiet afternoon.",
+      "cover_url": "https://consequence.net/wp-content/uploads/2026/07/Dragonflies-Photo-Magda-Kuca.jpg",
+      "embed_url": "https://www.youtube.com/embed/ZvsC5H8kjAE"
     },
     {
       "source": "music",
       "source_name": "PopMatters",
-      "title": "Les Claypool and Friends Deliver Musical Fireworks for 4th of July",
-      "snippet": "For the Claypool Gold Tour, Les Claypool pulls triple duty by bringing Primus together with his Fearless Flying Frog Brigade and the Claypool Lennon Delirium.",
-      "url": "https://www.popmatters.com/les-claypool-gold-tour-july-4",
+      "title": "Jack White Testifies with Electrifying Catharsis on ‘Frozen Charlotte’",
+      "snippet": "Frozen Charlotte demonstrates once again that Jack White remains a high level blues rock maestro and tone scientist still in the prime of his career.",
+      "url": "https://www.popmatters.com/jack-white-frozen-charlotte",
       "genre": "",
-      "vibe_check": "",
-      "cover_url": "https://www.popmatters.com/wp-content/uploads/2026/07/Claypool-Gold-SP-by-Lisa-Miller.webp",
-      "embed_url": "https://primusband.bandcamp.com/album/a-handful-of-nuggs"
+      "vibe_check": "Amp-scorching and sweat-soaked, the kind of riff that makes you want to break something beautiful on purpose.",
+      "cover_url": "https://www.popmatters.com/wp-content/uploads/2026/07/Jack-White-Frozen-Charlotte-social.webp",
+      "embed_url": "https://www.youtube.com/embed/MoOx5wU4btc"
     },
     {
       "source": "music",
       "source_name": "PopMatters",
-      "title": "MoMA’s Silent Film Week 2026 Is Major",
-      "snippet": "MoMA's Silent Film Week indulges our pleasure in viewing silents with live music and in good company, and there's a special treat for silent film fans in 2026.",
-      "url": "https://www.popmatters.com/silent-film-moma-2026",
+      "title": "Finn Wolfhard’s Sophomore Album Is an Off-the-Cuff Blockbuster",
+      "snippet": "On Fire From the Hip, Finn Wolfhard builds on the 1970s rock-inspired palette of his debut, modernizing the record with clever cultural allusions.",
+      "url": "https://www.popmatters.com/finn-wolfhard-fire-from-the-hip",
       "genre": "",
-      "vibe_check": "",
-      "cover_url": "https://www.popmatters.com/wp-content/uploads/2026/07/silent-film-D.W.-Griffith-Way-Down-East-fi-MoMA.webp",
-      "embed_url": null
+      "vibe_check": "Basement-rehearsal energy that somehow stumbled into arena-worthy swagger, all flannel and feeling.",
+      "cover_url": "https://www.popmatters.com/wp-content/uploads/2026/07/Finn-Wolfhard-Fire-From-the-Hip-social.webp",
+      "embed_url": "https://www.youtube.com/embed/C9h7Cl6OEvI"
+    },
+    {
+      "source": "music",
+      "source_name": "PopMatters",
+      "title": "Sequoia’s ‘So Long’ Is Imbued with Tuneful, Melodic Grace",
+      "snippet": "Sequoia's So Long is the sound of a well-lived, occasionally heartbroken folk troubadour who has seen it all and will happily oblige you with a story in song.",
+      "url": "https://www.popmatters.com/sequoia-so-long",
+      "genre": "",
+      "vibe_check": "Sitting across from a weathered stranger at a roadside diner who starts talking and you miss your exit because you can't leave.",
+      "cover_url": "https://www.popmatters.com/wp-content/uploads/2026/07/Sequoia-So-Long-social.webp",
+      "embed_url": "https://bandcamp.com/EmbeddedPlayer/album=1491838313/size=large/bgcol=ffffff/linkcol=e99708/tracklist=false/artwork=small/transparent=true/"
     }
   ],
   "global_silver_linings": [
     {
       "source": "good_news",
       "source_name": "Good News Network",
-      "title": "Off-duty North Texas Firefighter Saves 3 Children Trapped Under Boat on 4th of July",
-      "url": "https://www.goodnewsnetwork.org/off-duty-north-texas-firefighter-saves-3-children-trapped-under-boat-on-4th-of-july/",
-      "snippet": "From the Dallas Morning News comes the story of a firefighter who went above and beyond the call of duty, even though he was off duty. Out in the family boat on the 4th of July, Jason Horne rescued 3 drowning children trapped under a pontoon boat on Alvarado Lake, in Midlothian. The paper referenced […] The post Off-duty North Texas Firefighter Saves 3 Children Trapped Under Boat on 4th of July appeared first on Good News Network .",
-      "cover_url": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/07/capsize-drowning-boat-overboard-unsplash.jpg",
-      "reason": "Even off the clock, some people run toward danger without hesitation — a reminder that quiet heroism lives in ordinary communities. Three children are home safe because one person chose to act."
+      "title": "Rich Rainfall Set to Bust Mexico’s 6-year Drought",
+      "url": "https://www.goodnewsnetwork.org/rich-rainfall-set-to-bust-mexicos-6-year-drought/",
+      "snippet": "According to current predictions, Mexico may be free from a multi-year drought at the end of its current rainy season. Running from May to October, a wetter-than-normal El Niño phenomenon has led to rich rains across Mexico, from the drier north to the more humid south. Dante Sinohé Hernández Padrón, a researcher with the National […] The post Rich Rainfall Set to Bust Mexico’s 6-year Drought appeared first on Good News Network .",
+      "cover_url": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/07/A-reservoir-filled-to-brimming-in-central-Mexico-credit-Conagua.jpg",
+      "reason": "After six years of grinding drought, meaningful rainfall returning to Mexico offers real relief for farmers, ecosystems, and communities who have been living with water scarcity. Nature's capacity to recover, given the chance, is one of the most grounding reasons for hope."
     },
     {
       "source": "good_news",
-      "source_name": "Upworthy",
-      "title": "‘Don’t listen to that box. Listen to me.’ People are drooling over ‘melt-in-your-mouth’ cake hack.",
-      "url": "https://www.upworthy.com/dont-listen-to-that-box-listen-to-me-people-are-drooling-over-melt-in-your-mouth-cake-hack/",
-      "snippet": "Breaking the rules never tasted so good. The post ‘Don’t listen to that box. Listen to me.’ People are drooling over ‘melt-in-your-mouth’ cake hack.",
-      "cover_url": "https://www.upworthy.com/wp-content/uploads/sites/2/2026/07/WP-Heather-TOP-SPLASH-2026-07-21T154322.267.jpg",
-      "reason": "Home bakers sharing hard-won kitchen wisdom across generations is a small but genuine joy — proof that people still love gathering around something made with care."
+      "source_name": "Positive News",
+      "title": "The rise of community-led football",
+      "url": "https://www.positive.news/society/finding-their-grassroots/",
+      "snippet": "As Premier League prices rise, growing numbers of supporters are seeking out something closer, cheaper and more human in non-league football The post The rise of community-led football appeared first on Positive News .",
+      "cover_url": "https://www.positive.news/wp-content/uploads/2026/07/Real-Bedford-13APR24-61.jpeg",
+      "reason": "When supporters take ownership of their local clubs, football becomes about community and belonging rather than distant boardrooms — a quiet but powerful reminder that people can reshape institutions to serve them."
     },
     {
       "source": "good_news",
-      "source_name": "The Optimist Daily",
-      "title": "Scientists trial a painless brush test for oral cancer that returns results in 60 minutes",
-      "url": "https://www.optimistdaily.com/2026/07/scientists-trial-a-painless-brush-test-for-oral-cancer-that-returns-results-in-60-minutes/",
-      "snippet": "BY THE OPTIMIST DAILY EDITORIAL TEAM A brush swab of the mouth. Four genes. Results in under an hour.",
-      "cover_url": "https://www.optimistdaily.com/wp-content/uploads/Depositphotos_427917912_L.jpg",
-      "reason": "A painless, rapid brush test for oral cancer could make early detection far more accessible, giving patients a crucial head start when treatment is most effective."
+      "source_name": "Reasons to be Cheerful",
+      "title": "What We’re Reading: Saving One Centuries-Old Tree at a Time",
+      "url": "https://reasonstobecheerful.world/what-were-reading-saving-trees-japan/",
+      "snippet": "Welcome back to our weekly behind-the-scenes glimpse at what’s getting our team talking. Tell us what you’ve been reading at info@reasonstobecheerful.world and we just might feature it here. Uprooted When trees are in the path of development, they have to go.",
+      "cover_url": "https://reasonstobecheerful.world/wp-content/uploads/2026/07/shutterstock_2758379273-scaled.jpg",
+      "reason": "Every ancient tree saved is centuries of living history preserved — and the dedicated people working tree by tree to protect them remind us that patient, careful stewardship still exists and still makes a difference."
     }
   ],
   "discovery_articles": [
     {
       "source": "discovery",
       "source_name": "Atlas Obscura",
-      "title": "Osaka's midpoint in Osaka, Japan",
-      "url": "https://www.atlasobscura.com/places/osakas-midpoint",
-      "snippet": "When driving around a country you will find signs telling you the distance to surrounding places. People use these signs without much thought, but of course such a measurement needs to be based on something. In the case of Osaka, it is a shiny golden pin.",
+      "title": "Leroy's Place New Orleans in New Orleans, Louisiana",
+      "url": "https://www.atlasobscura.com/places/leroys-place-art-gifts",
+      "snippet": "Stepping into Leroy's Place is like stepping through a portal into a whimsical monster world, right in the middle of the Historic French Quarter. A 10 foot tall, hot pink, puppet cat (named Casual Carl) greets you as you walk inside under huge fabric trees. And the surprises don't stop there!",
       "category": "history",
-      "cover_url": "https://img.atlasobscura.com/enzlR8E1DHxOh-cjCxbazs_TaYAp6lGPmSiwHWhDAj4/rt:fit/w:600/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy8xZThm/YzIxMi1jZDI1LTQ4/MGYtYWFiOS1iZDQ0/MTkzY2MxNzhjODJm/MTEwMGNjMjY1N2Nh/ZjVfMTAwMDEzNTM2/Ni5qcGc.jpg"
+      "cover_url": "https://img.atlasobscura.com/-hgQ0yLuxyddqaS16P_bzt-DXdTT2Vyu7caulNOfvVg/rt:fit/w:600/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy9jNDYw/Mjk0Yy1iMDg0LTRl/NmItOTRiZi1kMmYw/ZGIxYWE2Nzc3OTJm/MGNmY2FhMzQzZmEy/NmJfOTIySW50ZXJp/b3IgLTIuanBn.jpg"
     },
     {
       "source": "discovery",
       "source_name": "Atlas Obscura",
-      "title": "The Canal Vulva (Kutkunst) in Rotterdam, Netherlands",
-      "url": "https://www.atlasobscura.com/places/the-canal-vulva-kutkunst",
-      "snippet": "Street art is ubiquitous in Rotterdam, coming in all shapes and sizes, covering a vast array of topics in its own unique way. The canal vulva is one such piece that has fascinated passersby for over a decade. Not much is known about this piece, apart from the fact that it is a female reproductive organ that was fastened to the wall close to some space invader mosaics.",
+      "title": "The Electrical Box Theatre in Los Angeles, California",
+      "url": "https://www.atlasobscura.com/places/the-electrical-box-theatre",
+      "snippet": "On the corner of Traction Avenue and 4th Place in Los Angeles’s Arts District sits a gray utility box. Big deal, right? Actually, yes.",
       "category": "history",
-      "cover_url": "https://img.atlasobscura.com/CieMjWAKjnsIvWtC6ngMUGtfkPfzIuYrY1KRHjKdtMo/rt:fit/w:600/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy83NWQy/N2IyYi1mNWEyLTQ1/MDAtOGE4NS02YTI5/MDc0Mzk3Y2IxZjY0/N2Q0OTkyNzU1MDcw/ODFfMTAwMDIxNDkx/NS5qcGc.jpg"
+      "cover_url": "https://img.atlasobscura.com/pfmVSrJr3zxVTw5f7NToFXytlQ_h3WBLai6HSaT9kwY/rt:fit/w:600/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy9kZDkz/NDA4NC1iNDEwLTRk/NzAtOTcwNi0xNDZh/OWY0MWQyYTc2MjJk/MTY4ODYzMzk4N2Ji/N2VfSU1HXzUxOTIu/SlBH.jpg"
     },
     {
       "source": "discovery",
       "source_name": "Atlas Obscura",
-      "title": "Bandai Co. Head Office in Taito City, Japan",
-      "url": "https://www.atlasobscura.com/places/bandai-co-head-office",
-      "snippet": "The key to success for toy companies is their product but also their IP. Bandai Co. excels in both, as they have some of the best-known characters in their roster.",
+      "title": "White Oak Avenue in Los Angeles, California",
+      "url": "https://www.atlasobscura.com/places/white-oak-avenue",
+      "snippet": "Children of the 1980s will remember this street from the finale of this beloved classic, when the main character, Elliot, and his friends escape with E.T. from the clutches of government agents on bicycles and fly to safety. Officially filming in 1981, Steven Spielberg shot many scenes of this cherished movie in suburban areas of Los Angeles county, such as the San Fernando Valley.",
       "category": "history",
-      "cover_url": "https://img.atlasobscura.com/yk_kdfaDuDaj1aTtcP4EyAEHsYeXlAYfwpPC7xC2rEg/rt:fit/w:600/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy8xNmIy/NjAyOC04ODI2LTQz/MjEtYTcwNy1jZTVk/MGY4ODdlNTdkZGFj/YzM4ZjJlOGM5MThj/YWVfMTAwMDEzODU3/Mi5qcGc.jpg"
+      "cover_url": "https://img.atlasobscura.com/BETYzsTlEGgLEYOYbELOwLuwDUVa4WXpJTmn7I_qRQM/rt:fit/w:600/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy8wOGY1/ZjZlZC04YzVjLTQ3/Y2ItOGUxMS1iM2Vh/OGYyNzAzNTY5MTg0/MWJlZTU0YjBjNTc3/ZTFfSU1HXzUzMDQu/anBlZw.jpg"
     },
     {
       "source": "discovery",
       "source_name": "Atlas Obscura",
-      "title": "Wabash & Erie Canal Park in Delphi, Indiana",
-      "url": "https://www.atlasobscura.com/places/wabash-erie-canal-park",
-      "snippet": "If you own a mule and it happens to be named Cal, Gal, Hal, Pal, Val, or preferably Sal, grab your towrope and head over to Delphi, Indiana, to check out the Wabash and Erie Canal Park and Museum. Opened in 2004, the museum features twelve interactive galleries tracing the history of the Wabash and Erie Canal from its inception and construction to its use and eventual closure. The park grounds have an extensive trail system and an 1850s pioneer village, where craftsmen ply their trades during canal season (mid-May through mid-September).",
+      "title": "Drops of Rain in Étretat, France",
+      "url": "https://www.atlasobscura.com/places/drops-of-rain-at-the-jardin-emotions",
+      "snippet": "Situated within the Jardin Emotions of the Jardins d'Étretat, one can find the \"Drops of Rain\" sculptures by Samuel Salcedo, that pout, grin, and stick their tongues out at visitors. These sculptures are nestled into bushes in a way that is supposed to resemble oyster habitats, as an homage to Marie Antoinette's oyster farm by this garden. They display the range of human emotion with a sort of lightheartedness and absurdity that makes Étretat feel even more magical.",
       "category": "history",
-      "cover_url": "https://img.atlasobscura.com/qpipSYRPPrZ4b7uwnTnSfVMDIY9bqZM3jSiHIt2VJbw/rt:fit/w:600/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy9hZTRj/NDI0MS0wYjIxLTQ1/NTktYmQ0YS1iMTcw/ZjI1MzhhYjUxNWZi/YWY1OThiMGU3Mjg1/ZGZfSU1HXzUzNTAu/SlBH.jpg"
+      "cover_url": "https://img.atlasobscura.com/b6ji8RB6NfLUDSlcVhZPxbGzQ3VlXXIdzUMrpW0O32M/rt:fit/w:600/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy8zMGE4/MGM4OS03NGFjLTRj/ZGMtODk2Ny1iNjIw/OTM3ODVmZGIxNmVi/YjYwOTFhMmM3YWUx/YjZfMjAyNjA0MTdf/MTU0NzEzLmpwZw.jpg"
     },
     {
       "source": "discovery",
       "source_name": "Smithsonian",
-      "title": "A Volunteer Stumbled Upon a Strange Document in the U.K. National Archives. It Turned Out to Be a Rare Copy of the Declaration of Independence Printed in July 1776",
-      "url": "https://www.smithsonianmag.com/smart-news/a-volunteer-stumbled-upon-a-strange-document-in-the-uk-national-archives-it-turned-out-to-be-a-rare-copy-of-the-declaration-of-independence-printed-in-july-1776-180989169/",
-      "snippet": "Michael Scurr, a retired insurance broker, found the text while cataloging boxes of 18th-century correspondence housed at the London archives. It's the only known copy of its kind outside the United States",
+      "title": "Ancient Genes Reveal That Big, Bright Avocados Were Carried Through the Americas Thousands of Years Ago",
+      "url": "https://www.smithsonianmag.com/smithsonian-institution/ancient-genes-reveal-that-big-bright-avocados-were-carried-through-the-americas-thousands-of-years-ago-180989171/",
+      "snippet": "People brought large avocado seeds from South America to Central America, kicking off a burst of diversity for the fruit",
       "category": "history",
-      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/-9yPG4lV5R-LS7csF55ZhbUVd-s=/fit-in/1600x0/filters:focal(750x500:751x501)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/0d/bd/0dbdb598-3662-410d-80ac-e487c47b7ef2/declaration-of-independence-archives.jpg"
+      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/ooS4XBqVd6frKvrVg6wQIQ4YwdY=/fit-in/1600x0/filters:focal(768x1024:769x1025)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/99/b2/99b2ce13-90c8-4c8b-834c-d7401974edf2/avocados_in_tree.jpg"
     },
     {
       "source": "discovery",
       "source_name": "Smithsonian",
-      "title": "British Intelligence Turned This Mansion Into a Bugged Spy Trap for Nazi Prisoners of War During World War II",
-      "url": "https://www.smithsonianmag.com/smart-news/british-intelligence-turned-this-mansion-into-a-bugged-spy-trap-for-nazi-prisoners-of-war-during-world-war-ii-180989166/",
-      "snippet": "Visitors can now tour the house, where German generals relaxed and gabbed upstairs while Jewish refugees working as spies and translators for the British government listened in from the basement",
+      "title": "This 1950s Airplane Disaster Prompted the Flight Safety Demonstrations Passengers Know Today. Searchers Just Found the Wreckage in the Atlantic Ocean",
+      "url": "https://www.smithsonianmag.com/smart-news/this-1950s-airplane-disaster-prompted-the-flight-safety-demonstrations-passengers-know-today-seachers-just-found-the-wreckage-in-the-atlantic-ocean-180989170/",
+      "snippet": "A team of explorers used an autonomous underwater vehicle to locate the remains of the Pan American ‘Clipper Endeavor’ about five miles off the coast of Puerto Rico",
       "category": "history",
-      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/crrTSIReGcbe--hDcetL1anhfMA=/fit-in/1600x0/filters:focal(600x400:601x401)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/e7/18/e718c2a2-c93b-4c84-b3ef-45fab1658994/untitled_design_-_1.jpeg"
+      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/J9ptzr9FrUnWPBcnC5UwQBZC2XM=/fit-in/1600x0/filters:focal(900x583:901x584)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/0f/b1/0fb10035-c13c-4626-be77-d3eb3108a170/rare_color_photo_of_clipper_endeavor_circa_late_1940s_credit-c-7514b6060df556d188552bbc5e8af531.jpg"
     },
     {
       "source": "discovery",
       "source_name": "Smithsonian",
-      "title": "Naked Mole-Rat Queens Emit a Special Scent to Stop Their Rivals From Reproducing, a New Study Suggests",
-      "url": "https://www.smithsonianmag.com/smart-news/naked-mole-rat-queens-emit-a-special-scent-to-stop-their-rivals-from-reproducing-a-new-study-suggests-180989148/",
-      "snippet": "The strange-looking creatures are one of two known mammals that use a social structure like that of bees and ants. A ruling rodent maintains power over her colony via one key chemical compound, according to new research",
+      "title": "Double Puggles: See the Adorable 'Twin' Echidnas Born at the San Diego Zoo Safari Park",
+      "url": "https://www.smithsonianmag.com/smart-news/double-puggles-see-the-adorable-twin-echidnas-born-at-the-san-diego-zoo-safari-park-180989165/",
+      "snippet": "The two babies hatched earlier this year to one mother during the same breeding season—an extremely rare occurrence, according to the San Diego Zoo Wildlife Alliance",
       "category": "history",
-      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/0Zjy4-mH0yAm5hjE5JrYVaun5P4=/fit-in/1600x0/filters:focal(1440x754:1441x755)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/94/a8/94a86081-317b-4091-aae2-53afb883fb9f/09-05_photo_naked_mole-rats_khallaf__lewin_felix_petermann_max_delbruck_center-5984.jpg"
+      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/ySd11uTGtiHxjlWswXPOk_yG-Lo=/fit-in/1600x0/filters:focal(1125x750:1126x751)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/3c/5e/3c5ed350-8bd3-4dde-9da5-b7486a04ff55/puggle_may_2026_1.jpg"
     },
     {
       "source": "discovery",
       "source_name": "Smithsonian",
-      "title": "A Massive Flow of Rock and Mud Tumbled Down Mount Rainier Centuries Ago. Scientists Pinpointed Its Date to Better Understand the Volcano's Complex Threats",
-      "url": "https://www.smithsonianmag.com/science-nature/a-massive-flow-of-rock-and-mud-tumbled-down-mount-rainier-centuries-ago-scientists-pinpointed-its-date-to-better-understand-the-volcanos-complex-threats-180989162/",
-      "snippet": "In a recent study, researchers dated a historic lahar called the Electron Mudflow to the summer of 1507, establishing a way to determine when past geologic events around the Puget Sound occurred",
+      "title": "A New World Record in the Greased Pole Walk Brought Extra Excitement to This Year's World Eskimo-Indian Olympics in Alaska",
+      "url": "https://www.smithsonianmag.com/smart-news/a-new-world-record-in-the-greased-pole-walk-brought-extra-excitement-to-this-years-world-eskimo-indian-olumpics-in-alaska-180989164/",
+      "snippet": "A 45-year-old record fell at the annual sporting event, which celebrates Indigenous athleticism and culture with events including the knuckle hop and the Alaskan high kick",
       "category": "history",
-      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/cxDHgWZj8cMJkF0GJNRD8RidQ_4=/fit-in/1600x0/filters:focal(2774x2067:2775x2068)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/36/69/36698a0a-640f-428f-8f74-645e7bd147c1/gettyimages-2169784114.jpg"
+      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/aL3exUYhlqc-gD13SIKLdFpfaGs=/fit-in/1600x0/filters:focal(2464x1314:2465x1315)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/6d/51/6d515795-1a1f-43d2-b387-59a7d1820124/2014_world_eskimo-indian_olympics_-_14662065366.jpg"
     },
     {
       "source": "discovery",
       "source_name": "Science News",
-      "title": "Ape cuddles could prevent conflicts",
-      "url": "https://www.sciencenews.org/article/ape-physical-touch-stress-relief-chimps",
-      "snippet": "Humans could learn from chimpanzees and bonobos, who turn to group members for physical comfort during tense moments.",
+      "title": "A rare 3-D snake fossil is spilling secrets of its unusual lifestyle",
+      "url": "https://www.sciencenews.org/article/3d-rare-snake-fossil-underground-home",
+      "snippet": "A new snake’s unique head anatomy suggests early snakes were even more diverse than thought. This one was a rare burrower.",
       "category": "science",
-      "cover_url": "https://www.sciencenews.org/wp-content/uploads/sites/2/2026/07/072126_MR_primate-cuddles_main.jpg"
+      "cover_url": "https://www.sciencenews.org/wp-content/uploads/sites/2/2026/07/072126_LR_early-snake_main.jpg"
     },
     {
       "source": "discovery",
       "source_name": "Science News",
-      "title": "Deep-sea snails ride surface currents to reach distant hydrothermal vents",
-      "url": "https://www.sciencenews.org/article/sea-snail-journey-hydrothermal-vents",
-      "snippet": "The finding shows how life spreads between isolated deep-sea vents — and how closely those ecosystems are tied to the sunlit ocean.",
+      "title": "A newly found world blurs the boundary between planet and moon",
+      "url": "https://www.sciencenews.org/article/exoplanet-object-moon-planet-unknown",
+      "snippet": "The object orbits a brown dwarf that orbits a star, and astronomers aren’t sure if it’s a planet, a moon — or something else entirely.",
       "category": "science",
-      "cover_url": "https://www.sciencenews.org/wp-content/uploads/sites/2/2026/07/071626_JB_hydrothermal_vent_feat.jpg"
+      "cover_url": "https://www.sciencenews.org/wp-content/uploads/sites/2/2026/07/072126_LG_exomoon_main.jpg"
+    },
+    {
+      "source": "discovery",
+      "source_name": "Science News",
+      "title": "Measles cases in the U.S. hit a new 34-year high",
+      "url": "https://www.sciencenews.org/article/measles-us-34-high-elimination-vaccine",
+      "snippet": "The U.S. hasn't seen measles numbers like this since 1992. An epidemiologist explains what's driving the surge.",
+      "category": "science",
+      "cover_url": "https://www.sciencenews.org/wp-content/uploads/sites/2/2026/07/071626_EG_new-measles-record_main.jpg"
+    },
+    {
+      "source": "discovery",
+      "source_name": "Science News",
+      "title": "This humpback whale hunting strategy has been out of sight — until now",
+      "url": "https://www.sciencenews.org/article/humpback-whale-hunting-seafloor",
+      "snippet": "Scientists documented humpback whales hunting together at the seafloor, coordinating their arrival to scoop up sand lances.",
+      "category": "science",
+      "cover_url": "https://www.sciencenews.org/wp-content/uploads/sites/2/2026/07/061526_PR_whale-hunt.jpg"
+    },
+    {
+      "source": "discovery",
+      "source_name": "Aeon",
+      "title": "Can cells think?",
+      "url": "https://aeon.co/videos/why-we-should-think-of-intelligence-in-terms-of-goals-not-brains",
+      "snippet": "Inside the lab of a biologist who is seeking to understand intelligence by focusing on problem-solving, not neurons - by Aeon Video Watch on Aeon",
+      "category": "science",
+      "cover_url": ""
+    },
+    {
+      "source": "discovery",
+      "source_name": "JSTOR Daily",
+      "title": "The Cassette Tapes of the Great Migration",
+      "url": "https://daily.jstor.org/the-cassette-tapes-of-the-great-migration/",
+      "snippet": "An archive of recorded interviews captures how ordinary people experienced one of the defining chapters of American history. The post The Cassette Tapes of the Great Migration appeared first on JSTOR Daily .",
+      "category": "history",
+      "cover_url": "https://daily.jstor.org/wp-content/uploads/2026/07/the_cassette_tapes_of_the_great_migration_alt_1050x700.jpg"
     },
     {
       "source": "discovery",
       "source_name": "Colossal",
-      "title": "Pittsburgh’s Pickleball Courts by Sharmistha Ray Are an Abstract Riot of Color",
-      "url": "https://www.thisiscolossal.com/2026/07/sharmistha-ray-geometry-play-color-pickleball-courts-pittsburgh/",
-      "snippet": "'Geometry of Play' comprises murals across three pickleball courts, marking the first artist-designed versions in the country. Do stories and artists like this matter to you? Become a Colossal Member today and support independent arts publishing for as little as $7 per month.",
+      "title": "The Era of Contradiction Materializes in Genesis Belanger’s Uncanny Sculptures",
+      "url": "https://www.thisiscolossal.com/2026/07/genesis-belanger-public-art-fund-sculptures/",
+      "snippet": "“I’m interested in creating work that reflects the contradictions we navigate every day, where life can be both exhilarating and devastating.\" Do stories and artists like this matter to you? Become a Colossal Member today and support independent arts publishing for as little as $7 per month. The article The Era of Contradiction Materializes in Genesis Belanger’s Uncanny Sculptures appeared first on Colossal .",
       "category": "history",
-      "cover_url": "https://www.thisiscolossal.com/wp-content/uploads/2026/07/ray-3.jpg"
+      "cover_url": "https://www.thisiscolossal.com/wp-content/uploads/2026/07/belanger-11.jpg"
     }
   ],
   "featured_read": {
     "source": "reads",
     "source_name": "The Marginalian",
-    "title": "How to Love the World More: George Saunders on the Courage of Uncertainty",
-    "url": "https://www.themarginalian.org/2026/07/20/george-saunders-uncertainty/",
-    "snippet": "\"In a world full of people who seem to know everything, passionately, based on little (often slanted) information, where certainty is often mistaken for power, what a relief it is to be in the company of someone confident enough to stay unsure (that is, perpetually curious).\"",
-    "cover_url": "https://www.themarginalian.org/wp-content/uploads/2015/02/thewellofbeing_weill0.jpg?fit=600%2C315&ssl=1",
-    "blurb": "George Saunders makes a quietly radical case that staying unsure — genuinely, courageously unsure — is not a weakness but a form of intellectual love. Set aside the half-hour; it may loosen something you didn't know you were gripping."
+    "title": "G.K. Chesterton on the Dandelion and the Meaning of Life",
+    "url": "https://www.themarginalian.org/2026/07/21/g-k-chesterton-dandelion/",
+    "snippet": "Recovering the \"forgotten blaze or burst of astonishment at our own existence\" alive in the back of our modernity-deadened minds.",
+    "cover_url": "https://www.themarginalian.org/wp-content/uploads/2022/06/Nebular_by_MariaPopova_cropped.jpg?fit=1200%2C630&ssl=1",
+    "blurb": "Chesterton uses the humble dandelion as a crowbar to pry open the question of why familiarity quietly murders wonder — and whether we can get it back. This one asks you to look at something ordinary until it becomes strange again."
   },
   "garden_note": {
-    "note": "First light steals over the Zürichberg just after five, and the garden is already humming — high summer in the Swiss Mittelland means dahlias shouldering upward, courgettes swelling overnight, and that particular green intensity that only July can conjure. Step out before the heat settles in; the borders reward an early visitor.",
+    "note": "Zürich's high summer evenings have that particular golden quality — the light lingering well past dinner, the linden blossom scent finally fading and giving way to the first warm whispers of ripening. Step outside tonight before the half-moon climbs too high and listen for the soft rustle of the bean canes; they've been busy all week.",
     "in_season": [
-      "Dahlias coming into first bloom",
-      "Courgettes — harvest daily before they outgrow themselves",
-      "Lavender at peak: cut for drying now",
-      "Deadhead roses to encourage a late-summer flush"
+      "Runner beans climbing their poles",
+      "Zucchini (courgette) at peak harvest",
+      "Echinacea and rudbeckia coming into bloom",
+      "Deadheading roses for a late-summer flush"
     ],
-    "sky_tonight": "The first-quarter Moon rides high in the south this evening — look for it near the constellation Libra as the stars emerge after dusk.",
-    "sun_times": "First light arrives at 05:14, sunrise at 05:50, with a long generous day stretching all the way to sunset at 21:14 and dusk lingering until 21:49.",
+    "sky_tonight": "The First Quarter Moon hangs in the southwest after sunset — look just below it for Saturn rising steadily in the southeast as full dark settles in.",
+    "sun_times": "The sun slips away at 21:14 tonight, with dusk lingering a generous 35 minutes more until 21:49.",
     "moon_label": "First quarter",
-    "illum_pct": 51,
+    "illum_pct": 55,
     "sun_range": "05:50–21:14"
   },
   "puzzle": {
-    "kind": "haiku riddle",
-    "label": "The Morning Haiku",
-    "prompt": "pap sips\nhis ____…\nwheat-penny smooth\n\n(Fill in the missing word.)",
-    "answer": "whisky",
-    "hint": "something amber and warming in a glass",
-    "source": "tinywords.com",
-    "source_id": "https://tinywords.com/?p=49430",
-    "credit": "Haiku by John Shiffer, via tinywords.com"
+    "kind": "anagram",
+    "label": "Fern's Morning Anagram",
+    "prompt": "Rearrange the letters of SILENT to make a different common word.",
+    "answer": "Listen (also Inlets, Enlist, Tinsel)",
+    "hint": "There are 4 words hiding in these letters.",
+    "source": "wordsmith.org",
+    "source_id": "silent"
   },
   "previous_puzzle": {
-    "label": "The Evening Cryptic",
-    "prompt": "River's edge holds a confused crane back (4)",
-    "answer": "BANK — definition: 'river's edge'; wordplay: anagram ('confused') of CRANE minus one letter? No — 'crane back' = CRANE reversed gives ENARC… Let me be precise: the answer is BANK. Definition: 'river's edge.' Wordplay: hidden word — 'holds' signals concealment: cr-ANK-ed? Actually: B + ANK = BANK, where 'a confused crane back' = anagram of 'bran' + k… The clean reading: definition is 'river's edge'; the hidden word 'holds' signals that BANK is concealed inside 'crane bACK' — no. Correct final answer: BANK. Definition: 'river's edge.' Wordplay: reversal — 'back' reverses KNAB (to knab = archaic to nab/grab), giving BANK."
+    "label": "The Morning Haiku",
+    "prompt": "pap sips\nhis ____…\nwheat-penny smooth\n\n(Fill in the missing word.)",
+    "answer": "whisky"
   },
   "larder": {
-    "news": [
-      {
-        "source": "food",
-        "source_name": "The Kitchn",
-        "title": "5 Grocery Staples Reddit Shoppers Quit Buying Because the Price Is “Genuinely Insulting”",
-        "url": "https://www.thekitchn.com/groceries-people-stopped-buying-due-to-cost-23791122?utm_source=RSS&utm_medium=feed&utm_campaign=Category%2FChannel%3A+main",
-        "snippet": "Number 1 came up over and over. READ MORE...",
-        "cover_url": "",
-        "blurb": "A cathartic read for anyone who's quietly fumed at the dairy aisle — Reddit has thoughts, and they are not polite."
-      },
-      {
-        "source": "food",
-        "source_name": "The Guardian",
-        "title": "Tropical, Mexican-style and Middle Eastern: Ravinder Bhogal’s fruit salad recipes",
-        "url": "https://www.theguardian.com/food/2026/jul/22/tropical-mexican-middle-eastern-fruit-salad-recipes-ravinder-bhogal",
-        "snippet": "Forget the underpowered, ready-made offerings of food chains: these vibrant mixes are bursting with fruit and notes of florals, citrus and spice Most of our experiences with fruit salad are dull: straight out of a can in saccharine syrup or unripe, slippery, unidentifiable chunks hastily bought from a sandwich chain when you’re trying to be healthy. The best ones, however, are life-enhancing and made fresh at home. And, with summer offering up a bounty of ripeness, now is the best time to make them.",
-        "cover_url": "https://i.guim.co.uk/img/media/4d4ddf3ddfdc42f5f7f6f675738142a877f51b38/960_1486_3174_2538/master/3174.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=ba9e26005d62dbf2f78a5c431aecbf09",
-        "blurb": "Ravinder Bhogal makes a compelling case that fruit salad deserves far better company than a plastic clamshell and a sad hotel buffet."
-      },
-      {
-        "source": "food",
-        "source_name": "Saveur",
-        "title": "Liberian Shrimp Skewers",
-        "url": "https://www.saveur.com/recipes/liberian-shrimp-skewers/",
-        "snippet": "Photo: Murray Hall • Food Styling: Jason Schreiber Gingery stewed greens and bright pickled onions make perfect toppings for this grilled seafood dish. The post Liberian Shrimp Skewers appeared first on Saveur .",
-        "cover_url": "https://www.saveur.com/uploads/2026/07/photo-murray-hall_food-styling-jason-schreiber_01-250528-mhall-saveur-liberian-shrimp-skewers-011-scaled.jpg?auto=webp&width=1600&height=2000",
-        "blurb": "Gingery greens and pickled onions alongside grilled shrimp skewers — Liberian cooking is having its well-earned moment in the spotlight."
-      }
-    ],
-    "recipe": {
-      "source": "recipe",
-      "source_name": "Smitten Kitchen",
-      "title": "house lemonade",
-      "url": "https://smittenkitchen.com/2026/07/house-lemonade/",
-      "snippet": "I realize as far as recipes go, suggesting one needs one for lemonade is questionable. What’s next, a set of detailed instructions for salted water, simple syrup, or buttered noodles? ( Whoops!",
-      "is_recipe": true,
-      "cover_url": "",
-      "blurb": "Smitten Kitchen's house lemonade is the kind of effortlessly charming summer recipe that makes you wonder why you ever reached for the powdered stuff."
-    },
-    "seasonal_note": "Zürich's Tuesday and Saturday markets at Bürkliplatz are piled with fat Thurgau apricots right now — halve a handful, roast them with a little honey and thyme, and spoon them over your Birchermüesli for a breakfast that tastes quietly triumphant."
+    "news": [],
+    "recipe": {}
   },
   "fern_data": {
-    "greeting": "What does a summer morning actually ask of you — rush, or linger? Today has a vote, and so does George Saunders on the courage of uncertainty, Thomas More on the cost of loyalty, and a lazy potato experiment that may quietly change your whole relationship with effort.",
-    "top_pick_title": "Loyalty, Laziness & a Little Mud"
+    "greeting": "Have you ever wondered how much of the world quietly lives without your noticing — a tree mostly dead wood and still standing, a whale hunting in ways no one caught on film until now, a cassette tape carrying an entire migration in its ribbon?",
+    "top_pick_title": "Still Waters, Deep Machinery"
   }
 }
