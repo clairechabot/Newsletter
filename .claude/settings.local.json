@@ -4,7 +4,14 @@
       "Bash(Get-ChildItem -Path \"c:\\\\Other\\\\VS Code\\\\Newsletter\" -Recurse -File)",
       "Bash(Select-Object FullName)",
       "Bash(python -c ' *)",
-      "Bash(python3 -c ' *)"
+      "Bash(python3 -c ' *)",
+      "Bash(python3 -c \"print\\(open\\('docs/index.html'\\).read\\(200\\)\\)\")",
+      "Bash(curl -s -L https://clairechabot.github.io/canopy-edition/index.html?v=__TRACKED_VAR__)",
+      "Bash(curl -s -L https://clairechabot.github.io/canopy-edition/grove.json?v=__TRACKED_VAR__)",
+      "Bash(python3 -c \"import json,sys;print\\('live:',json.load\\(sys.stdin\\).get\\('generated_at'\\)\\)\")",
+      "Bash(python3 -c \"import json;print\\('local:',json.load\\(open\\('docs/grove.json'\\)\\).get\\('generated_at'\\)\\)\")",
+      "Bash(curl -s -L https://clairechabot.github.io/canopy-edition/archive.html?v=__TRACKED_VAR__)",
+      "Bash(curl -s -L https://clairechabot.github.io/canopy-edition/editions/2026-07-21-morning.html?v=__TRACKED_VAR__)"
     ]
   }
 }
