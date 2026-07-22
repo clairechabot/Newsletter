@@ -21,7 +21,7 @@
   *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
   /* Root paints forest so any overscroll/canvas below the footer (or above the
      forest masthead) blends with it instead of showing a band of dead cream. */
-  html{scroll-behavior:smooth;background:var(--forest);}
+  html{scroll-behavior:smooth;background:var(--forest);overflow-x:clip;}
   body{font-family:var(--sans);background:var(--paper);color:var(--ink);line-height:1.6;-webkit-font-smoothing:antialiased;min-height:100vh;display:flex;flex-direction:column;}
   /* Sticky footer: the tab deck absorbs any slack so the footer sits flush at the
      bottom even when an edition is short — no dead cream space beneath the banner. */
@@ -143,9 +143,7 @@
   /* ---- sticky tabs ---- */
   .tabbar{position:sticky;top:0;z-index:50;background:rgba(239,231,214,0.9);backdrop-filter:blur(10px) saturate(120%);border-bottom:1px solid var(--brass);margin-top:8px;}
   .tabbar-inner{max-width:1120px;margin:0 auto;padding:0 40px;display:flex;align-items:center;gap:28px;height:62px;}
-  .tabmark{font-family:var(--display);font-weight:600;font-size:21px;color:var(--forest);white-space:nowrap;opacity:0;width:0;overflow:hidden;transition:opacity .3s ease;}
-  .tabbar.stuck .tabmark{opacity:1;width:auto;margin-right:10px;}
-  .tabs{display:flex;gap:6px;flex:1;overflow-x:auto;scrollbar-width:none;}
+  .tabs{display:flex;gap:6px;flex:1;min-width:0;overflow-x:auto;scrollbar-width:none;}
   .tabs::-webkit-scrollbar{display:none;}
   .tab{position:relative;white-space:nowrap;cursor:pointer;padding:20px 15px;font-size:12px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:var(--ink-mute);background:none;border:0;font-family:var(--sans);transition:color .2s ease;}
   .tab:hover{color:var(--ink);} .tab.active{color:var(--forest);}
@@ -267,7 +265,6 @@
 
   <nav class="tabbar" id="tabbar">
     <div class="tabbar-inner">
-      <span class="tabmark">Canopy</span>
       <div class="tabs" id="tabs"></div>
     </div>
   </nav>
@@ -484,9 +481,6 @@ $('#radio-play').onclick=()=>{
   }
 };
 
-const tabbar=$('#tabbar');
-const sentinel=tabbar.offsetTop;
-window.addEventListener('scroll',()=>{tabbar.classList.toggle('stuck',window.scrollY>sentinel+4);},{passive:true});
 </script>
 </body>
 </html>
