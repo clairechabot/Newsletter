@@ -756,6 +756,10 @@ def send_regional() -> None:
     # Re-localize the garden note for this region (season/moon are identical;
     # locale flavour + sky framing differ). Best-effort: keep the primary note on
     # any failure so the edition still goes out.
+    # Optional per-reader style directive (e.g. Ramsau: drier, no Dachstein-gushing).
+    # Only affects the pieces this re-send regenerates; empty means no change.
+    fern_tone = os.environ.get("FERN_TONE", "").strip()
+
     try:
         import curator
         from fetcher import _season, _moon_phase, _sun_times  # real almanac implementations
@@ -766,6 +770,7 @@ def send_regional() -> None:
             "sun":    _sun_times(GARDEN_LOCALE, now.date()),
             "is_am":  want_am,
             "locale": GARDEN_LOCALE,
+            "tone":   fern_tone,
         }
         note = curator.generate_garden_note(curator.build_claude_client(), seed)
         if note.get("note"):
@@ -785,7 +790,8 @@ def send_regional() -> None:
             import curator
             from fetcher import _season
             food_note = curator.generate_larder_note(
-                curator.build_claude_client(), GARDEN_LOCALE, _season(now), want_am)
+                curator.build_claude_client(), GARDEN_LOCALE, _season(now), want_am,
+                tone=fern_tone)
             if food_note:
                 larder["seasonal_note"] = food_note
                 curated["larder"] = larder
@@ -812,6 +818,7 @@ def send_regional() -> None:
                 date_str=curated.get("fetched_at", "") or "",
                 season=_season(now),
                 recipient=recipient,
+                tone=fern_tone,
             )
             if fern.get("greeting"):
                 # keep the shared subject-line title; only swap the personalized note
