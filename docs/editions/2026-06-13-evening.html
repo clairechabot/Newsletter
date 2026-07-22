@@ -19,10 +19,11 @@
     --sans:'Hanken Grotesk',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
   }
   *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
-  /* Root paints forest so any overscroll/canvas below the footer (or above the
-     forest masthead) blends with it instead of showing a band of dead cream. */
-  html{scroll-behavior:smooth;background:var(--forest);overflow-x:clip;}
-  body{font-family:var(--sans);background:var(--paper);color:var(--ink);line-height:1.6;-webkit-font-smoothing:antialiased;min-height:100vh;display:flex;flex-direction:column;}
+  /* Canvas matches the paper page, so overscroll and pinch-zoom-out show cream on the
+     sides/top rather than a band of forest. The sticky footer (below) keeps the footer
+     flush at the bottom, so no dead space returns beneath it. */
+  html{scroll-behavior:smooth;background:var(--paper);overflow-x:clip;}
+  body{font-family:var(--sans);background:var(--paper);color:var(--ink);line-height:1.6;-webkit-font-smoothing:antialiased;min-height:100vh;display:flex;flex-direction:column;overflow-wrap:break-word;}
   /* Sticky footer: the tab deck absorbs any slack so the footer sits flush at the
      bottom even when an edition is short — no dead cream space beneath the banner. */
   main{flex:1 0 auto;}
@@ -321,7 +322,7 @@ const $ = (s,r=document)=>r.querySelector(s);
 const ARR = '<span class="arr">&rarr;</span>';
 function esc(s){return String(s==null?'':s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
 function safeUrl(u){try{const p=new URL(u,location.href);return ['http:','https:','mailto:'].includes(p.protocol)?p.href:'#';}catch(e){return '#';}}
-function ytThumb(id){return 'https://img.youtube.com/vi/'+id+'/hqdefault.jpg';}
+function ytThumb(id){return 'https://img.youtube.com/vi/'+id+'/mqdefault.jpg';}
 function ytWatch(id){return 'https://www.youtube.com/watch?v='+id;}
 
 function cover(url,tone,label,play){
@@ -375,7 +376,7 @@ function cover(url,tone,label,play){
   $('#hero').href = v.video_id?esc(safeUrl(ytWatch(v.video_id))):'#';
   $('#hero').innerHTML =
     '<div class="cell">'+(v.video_id
-        ? '<div class="photo" style="height:100%"><img src="'+esc(safeUrl(ytThumb(v.video_id)))+'" alt=""><span class="play"></span></div>'
+        ? '<div class="photo" style="height:100%"><img src="https://img.youtube.com/vi/'+esc(v.video_id)+'/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://img.youtube.com/vi/'+esc(v.video_id)+'/mqdefault.jpg'" alt=""><span class="play"></span></div>'
         : '<div class="img t3" data-label="Video still" style="height:100%"><span class="play"></span></div>')+'</div>'
     + '<div class="hero-text"><div class="eyebrow orn">'+kick+'</div><h2>'+esc(v.title)+'</h2>'
     + '<p>'+esc(v.note)+'</p><span class="textlink">Watch the film '+ARR+'</span></div>';
