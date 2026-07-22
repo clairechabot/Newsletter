@@ -565,7 +565,7 @@ function cover(url,tone,label,play){
   $('#hero').href = v.video_id?esc(safeUrl(ytWatch(v.video_id))):'#';
   $('#hero').innerHTML =
     '<div class="cell">'+(v.video_id
-        ? '<div class="photo" style="height:100%"><img src="https://img.youtube.com/vi/'+esc(v.video_id)+'/maxresdefault.jpg" onerror="this.onerror=null;this.src=\'https://img.youtube.com/vi/'+esc(v.video_id)+'/mqdefault.jpg\'" alt=""><span class="play"></span></div>'
+        ? '<div class="photo" style="height:100%"><img src="'+esc(safeUrl(ytThumb(v.video_id)))+'" alt=""><span class="play"></span></div>'
         : '<div class="img t3" data-label="Video still" style="height:100%"><span class="play"></span></div>')+'</div>'
     + '<div class="hero-text"><div class="eyebrow orn">'+kick+'</div><h2>'+esc(v.title)+'</h2>'
     + '<p>'+esc(v.note)+'</p><span class="textlink">Watch the film '+ARR+'</span></div>';
