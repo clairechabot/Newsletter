@@ -79,6 +79,9 @@ jobs:
           EMAIL_TO:              ${{ secrets.EMAIL_TO }}
           NEWSLETTER_RECIPIENTS: ${{ secrets.NEWSLETTER_RECIPIENTS }}
           RECIPIENTS:            ${{ secrets.RECIPIENTS }}
+          # Weekly-only readers (names/emails, comma-separated) — skipped on
+          # every send except Sunday's morning edition.
+          WEEKLY_RECIPIENTS:     ${{ secrets.WEEKLY_RECIPIENTS }}
         run: python renderer.py
 
       # ── 7. Upload HTML artifact ──────────────────────────────────────────
