@@ -113,6 +113,28 @@ def _is_political(title: str, description: str = "", allow_history: bool = False
     return False
 
 
+# Finance/investing hype — never wanted in the WILDCARD (a stock-analysis video
+# once slipped in because the "good news" search matched "Massive News…").
+# Word-boundary matched like _is_political; hand-picked channels are unaffected.
+_FINANCE_HYPE = frozenset({
+    "stock", "stocks", "invest", "investing", "investor", "investors",
+    "investment", "investments", "crypto", "bitcoin", "ethereum", "trading",
+    "trader", "forex", "etf", "etfs", "nasdaq", "dividend", "dividends",
+    "portfolio", "ipo", "bullish", "bearish", "valuation",
+})
+
+
+def _is_finance_hype(title: str, description: str = "") -> bool:
+    """Return True if the title/description reads as finance/investing content."""
+    title_words = set(re.findall(r'\w+', title.lower()))
+    if title_words & _FINANCE_HYPE:
+        return True
+    if description:
+        desc_words = set(re.findall(r'\w+', description.lower()))
+        return bool(desc_words & _FINANCE_HYPE)
+    return False
+
+
 _CLICKBAIT_PHRASES = frozenset({
     "you won't believe",
     "they don't want you to know",
@@ -696,6 +718,9 @@ def fetch_trending_video(
                     continue
                 if _is_political(video["title"], video.get("description", "")):
                     print(f"  [skip/political] wildcard {vid_id} — '{video['title']}'")
+                    continue
+                if _is_finance_hype(video["title"], video.get("description", "")):
+                    print(f"  [skip/finance] wildcard {vid_id} — '{video['title']}'")
                     continue
                 if _is_clickbait(video["title"]):
                     print(f"  [skip/clickbait] wildcard {vid_id} — '{video['title']}'")

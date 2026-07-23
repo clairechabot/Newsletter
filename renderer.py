@@ -587,6 +587,28 @@ def _env_recipient_pairs() -> list[tuple[str, str]]:
     return [(n.strip(), e.strip()) for (n, e) in getaddresses([raw_to]) if e.strip()]
 
 
+def _filter_weekly_recipients(
+    pairs: "list[tuple[str, str]]",
+    weekly: "set[str]",
+    is_am: bool,
+    now: datetime.datetime,
+) -> "list[tuple[str, str]]":
+    """Drop recipients marked weekly-only (matched case-insensitively by name OR
+    email against the WEEKLY_RECIPIENTS set) unless this send is the Sunday
+    MORNING edition — the one weekly readers do receive. Pure function (clock
+    passed in) so the cadence rule is unit-testable."""
+    if not weekly:
+        return pairs
+    if now.weekday() == 6 and is_am:      # Sunday morning — everyone gets it
+        return pairs
+    kept = [(n, e) for (n, e) in pairs
+            if n.lower() not in weekly and e.lower() not in weekly]
+    for n, e in pairs:
+        if (n, e) not in kept:
+            print(f"[render] Weekly reader deferred to Sunday morning: {n or e}")
+    return kept
+
+
 def send_email(html_body: str, subject: str,
                recipients: "list[str] | None" = None,
                to_name: str = "", to_addr: str = "") -> None:
@@ -662,12 +684,22 @@ def main() -> None:
         subject  = f"{prefix} | {top_pick}" if top_pick else f"{prefix} · The Curated Canopy"
 
         pairs   = _env_recipient_pairs()
+        # Weekly-only readers (WEEKLY_RECIPIENTS secret: names/emails, comma-
+        # separated) are skipped on every send except Sunday's morning edition.
+        weekly = {w.strip().lower()
+                  for w in os.environ.get("WEEKLY_RECIPIENTS", "").split(",")
+                  if w.strip()}
+        pairs = _filter_weekly_recipients(
+            pairs, weekly, is_am, datetime.datetime.now(EDITION_TZ))
+        if not pairs:
+            print("[render] All recipients deferred this send — nothing to email.")
+            return
         named   = [(n, e) for (n, e) in pairs if n]
         unnamed = [e for (n, e) in pairs if not n]
 
         if not named:
-            # No per-reader names — one send to the whole list, as before.
-            send_email(html, subject=subject)
+            # No per-reader names — one send to the whole (filtered) list.
+            send_email(html, subject=subject, recipients=[e for (_n, e) in pairs])
             return
 
         # Personalize Fern's note per named reader. Generate ONE greeting with a
