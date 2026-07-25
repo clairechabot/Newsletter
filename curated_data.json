@@ -1,166 +1,166 @@
 {
-  "fetched_at": "2026-07-24T17:50:57.694276+02:00",
-  "is_am_email": false,
+  "fetched_at": "2026-07-25T07:58:48.139419+02:00",
+  "is_am_email": true,
   "audit_summary": {
     "youtube_videos": 10,
     "themes": 3,
-    "music_articles": 9,
-    "good_news_articles": 2,
-    "discovery_articles": 10,
+    "music_articles": 3,
+    "good_news_articles": 3,
+    "discovery_articles": 11,
     "featured_read": 1,
     "garden": 1,
     "puzzle": 1,
-    "larder": 0
+    "larder": 4
   },
   "themes": [
     {
-      "name": "Dead People, Great Problems",
-      "emoji": "🏛️",
-      "tagline": "Ancient generals, Roman lawyers, and medieval siege engines — history's most dramatic overachievers are back to teach us things.",
+      "name": "Rabbit Holes Worth Falling Down",
+      "emoji": "🕳️",
+      "tagline": "From rapture predictions to gold reserves — strap in, because these videos will eat your afternoon whole.",
       "items": [
         {
           "source": "youtube",
-          "video_id": "eoauXRBstk0",
-          "title": "Cicero In and On Political Crises - Melissa Lane",
-          "channel_id": "UC1t6kKXoBvjdr8m9KJ2Fx7A",
-          "channel_title": "Gresham College",
-          "published_at": "2026-07-24T15:00:31Z",
-          "url": "https://www.youtube.com/watch?v=eoauXRBstk0",
-          "duration_seconds": 2600,
-          "view_count": "44",
-          "description": "00:00 // Introduction: Meet Professor Melissa Lane \n00:15 // Cicero's Dilemma: A Letter on Tyranny \n03:07 // Who Was Cicero? Rise of a \"New Man\" \n05:36 // Philosopher and Statesman of Rome \n09:44 // Five Crises That Defined Cicero's Life \n12:27 // Crisis One: The Gracchi and Land Reform \n18:39 // Crisis Two: Sulla's Dictatorship and Civil War \n23:16 // Crisis Three: The Catiline Conspiracy \n27:13 // Crisis Four: Caesar's Tyranny and Assassination \n31:45 // Crisis Five: Cicero's War Against Mark ",
+          "video_id": "u2iyKl9564U",
+          "title": "The Weird World of Rapture Predictions - How One Guy Caused Rapturetok",
+          "channel_id": "UC3cpN6gcJQqcCM6mxRUo_dA",
+          "channel_title": "Wendigoon",
+          "published_at": "2025-10-25T16:44:08Z",
+          "url": "https://www.youtube.com/watch?v=u2iyKl9564U",
+          "duration_seconds": 17459,
+          "view_count": "2331296",
+          "description": "Try Rocket Money for free: https://RocketMoney.com/wendigoon\n\n\nChapters\nIntro 00:00-5:03\nBiblical Breakdown 5:03-56:39\nPrevious Failed Predictions 56:39-1:07:34\nFirst Podcast 1:07:34-1:49:27\nSecond Podcast 1:49:27-2:39:42\nThird Podcast 2:39:42-3:12:19\nThe Final Livestream of Planet Earth 3:12:19-4:05:06\nFourth & Final Podcast 4:05:06-4:35:23\nAn Angry Outro 4:35:23-4:50:58\n\n\nCheck out the podcasts here:\n\nCreepCast: @CreepPodcast \n\nThe Weird Bible Podcast: @TheWeirdBible \n\n\nDISCLAIMER: This video ",
           "is_wildcard": false
         },
         {
           "source": "youtube",
-          "video_id": "er754qe9soE",
-          "title": "Trebuchet!",
-          "channel_id": "UC4sEmXUuWIFlxRIFBRV6VXQ",
-          "channel_title": "The History Guy: History Deserves to Be Remembered",
-          "published_at": "2026-07-24T12:00:07Z",
-          "url": "https://www.youtube.com/watch?v=er754qe9soE",
-          "duration_seconds": 1072,
-          "view_count": "3402",
-          "description": "On July 24, 1304 King Edward I of England captured the last stronghold of resistance against English rule in Scotland, the formidable Stirling Castle. But he did  not have to storm the castle to make the defenders surrender. He merely had to threaten them with perhaps the most terrifying siege engine in the era before gunpowder. \n\nCheck out our new shop for fun The History Guy merchandise:\nhttps://thehistoryguy-shop.fourthwall.com/products/thg-history\n\nThis is original content based on research ",
-          "is_wildcard": false
-        },
-        {
-          "source": "youtube",
-          "video_id": "7CXR3vinNA4",
-          "title": "The Rise and Fall of Ancient Greece's Themistocles",
-          "channel_id": "UC2J29LPhS9vMiWyYEqBRB0w",
-          "channel_title": "The Ancients",
-          "published_at": "2026-04-19T06:00:10Z",
-          "url": "https://www.youtube.com/watch?v=7CXR3vinNA4",
-          "duration_seconds": 3201,
-          "view_count": "19023",
-          "description": "A legend of the great Greek city of Athens, Themistocles rose from obscurity to save ancient Greece and helped shape one of the greatest naval powers in history. Yet his story ends in exile, condemned as a traitor and serving the very empire he once defeated: Persia.\n\nIn this episode of The Ancients, Tristan Hughes is joined by Michael Scott to explore the extraordinary life of Themistocles. Together Tristan and Michael delve into the political intrigue of early Athenian democracy, charting Them",
-          "is_wildcard": false
-        },
-        {
-          "source": "youtube",
-          "video_id": "PRLEd6ccUW0",
-          "title": "The Rules of Foot Combat | Knights' Tournaments in the 16th Century",
-          "channel_id": "UCdlktQvYRPgMVyvf_u-uZxA",
-          "channel_title": "Historic Royal Palaces",
-          "published_at": "2026-03-11T11:44:53Z",
-          "url": "https://www.youtube.com/watch?v=PRLEd6ccUW0",
-          "duration_seconds": 297,
-          "view_count": "8270",
-          "description": "When we think of Tudor tournaments, we tend to think of jousting. But foot combat was an essential element of the tournament and also necessary practice for warfare. Foot combat encompassed a number of sports on foot, such as wrestling or sword fighting; combat without a horse. They were dangerous events, undertaken by strong and fit knights, often in heavy armour, and something we know Henry VIII relished. \n\nImage credits:\nHenry VIII (1491-1547) c.1560-80 © Royal Collection Enterprises Ltd 2025",
-          "is_wildcard": false
-        }
-      ]
-    },
-    {
-      "name": "Brains, Bugs & Beautiful Chaos",
-      "emoji": "🐜",
-      "tagline": "From ant swarms that outsmart us to the philosophy of stupidity — intelligence is weirder than you think.",
-      "items": [
-        {
-          "source": "youtube",
-          "video_id": "HbQ-t8GXYTA",
-          "title": "The 3 elements of stupidity, according to philosophy | Jonny Thomson: Full Interview",
-          "channel_id": "UCvQECJukTDE2i6aCoMnS-Vg",
-          "channel_title": "Big Think",
-          "published_at": "2026-07-24T13:00:38Z",
-          "url": "https://www.youtube.com/watch?v=HbQ-t8GXYTA",
-          "duration_seconds": 2687,
-          "view_count": "5042",
-          "description": "Become a Big Think member to unlock expert classes, premium print issues, exclusive events and more: https://bigthink.com/membership/?utm_source=youtube&utm_medium=social&utm_campaign=yt_desc\n\nSubscribe to Big Think on YouTube ► https://www.youtube.com/channel/UCvQECJukTDE2i6aCoMnS-Vg?sub_confirmation=1\nUp next, \nA philosopher’s argument against the cult of achievement | Zena Hitz: Full Interview ► https://www.youtube.com/watch?v=JD4Fhh6GDcY\n\nPhilosopher Jonny Thomson walks through Dietrich Bonh",
-          "is_wildcard": false
-        },
-        {
-          "source": "youtube",
-          "video_id": "iT2n41ZFDc0",
-          "title": "The Intelligence Test Where Ants Beat Humans",
-          "channel_id": "UCH4BNI0-FOK2dMXoFtViWHw",
-          "channel_title": "Be Smart",
-          "published_at": "2026-02-05T13:57:04Z",
-          "url": "https://www.youtube.com/watch?v=iT2n41ZFDc0",
-          "duration_seconds": 974,
-          "view_count": "775362",
-          "description": "Learn more about AnyDesk here: https://anydesk.com\n SUBSCRIBE so you don’t miss a video! ►► http://bit.ly/iotbs_sub \n↓↓↓ More info and sources below ↓↓↓\n\nAnt bridges, bee hives, bird flocks, fish schools and more all demonstrate how intelligent behavior can emerge from pretty stupid animals, and how that strange intelligence can solve seemingly impossible tasks with no individual directing the group. Let’s trace the history of swarm intelligence research, from Aristotle to modern computer modeli",
-          "is_wildcard": false
-        },
-        {
-          "source": "youtube",
-          "video_id": "tFvmwsQgvwc",
-          "title": "The g-Effect",
-          "channel_id": "UC6nSFpj9HTCZ5t-N3Rm3-HA",
-          "channel_title": "Vsauce",
-          "published_at": "2025-10-29T21:58:57Z",
-          "url": "https://www.youtube.com/watch?v=tFvmwsQgvwc",
-          "duration_seconds": 131,
-          "view_count": "3497952",
-          "description": "",
-          "is_wildcard": false
-        }
-      ]
-    },
-    {
-      "name": "The Algorithm Made Me Do It",
-      "emoji": "📡",
-      "tagline": "Deportation pipelines, AI slop floods, and ten years of making videos — the internet is reshaping reality whether we like it or not.",
-      "items": [
-        {
-          "source": "youtube",
-          "video_id": "aDbtrdfYqBc",
-          "title": "Why the US is deporting so many people",
+          "video_id": "JMObz0Dgq7M",
+          "title": "Gold Explained, Finally",
           "channel_id": "UCmGSJVG3mCRXVOP4yZrU1Dw",
           "channel_title": "Johnny Harris",
-          "published_at": "2025-10-31T12:00:04Z",
-          "url": "https://www.youtube.com/watch?v=aDbtrdfYqBc",
-          "duration_seconds": 2727,
-          "view_count": "5909347",
-          "description": "WHY ICE WEARS MASKS: https://www.youtube.com/watch?v=rThhm1-g1a8\nGet 40% off Ground News’ unlimited access Vantage Plan at https://ground.news/johnnyharris for only $5/month, explore how stories are framed worldwide and across the political spectrum. \n\nJoin Newpress, our community-driven hub for creator journalism: https://newpress.com/go\n\nCheck out all my sources for this video here: https://docs.google.com/document/d/12Sc-hyXFhV8N_YmtkTgroGRwBVKLTdt5teQEbBPKC8o/edit?usp=sharing\n\nICE, a governm",
+          "published_at": "2025-10-24T12:01:22Z",
+          "url": "https://www.youtube.com/watch?v=JMObz0Dgq7M",
+          "duration_seconds": 1936,
+          "view_count": "5377833",
+          "description": "Why Countries Are Suddenly Buying GOLD Again\nVisit http://hensonshaving.com/johnnyharris or use code johnnyharris to get 100 free blades with purchase. That's 3+ years worth of blades.\n\nJoin Newpress, our community-driven hub for creator journalism: https://newpress.com/go\n\nCheck out all my sources for this video here: https://docs.google.com/document/d/1ypDu8wEIo6Lazu6oGVWoYJOxYM1PgJNRuCcE2NYqEjg/edit?usp=sharing\n\nGold is sought after in every culture in the world… but why? I talked with expert",
+          "is_wildcard": false
+        },
+        {
+          "source": "youtube",
+          "video_id": "tgyZwxPHdgY",
+          "title": "I Made A Slap Bracelet For Time Travelers",
+          "channel_id": "UC6nSFpj9HTCZ5t-N3Rm3-HA",
+          "channel_title": "Vsauce",
+          "published_at": "2025-10-24T20:27:43Z",
+          "url": "https://www.youtube.com/watch?v=tgyZwxPHdgY",
+          "duration_seconds": 122,
+          "view_count": "15928042",
+          "description": "(you also get two other slap bracelets in this season's box: one's a ruler and the other is a π tape). https://www.curiositybox.com/\n\nALL SONGS BY JAKE CHUDNOW:\n0:00 - 0:13 \"Half A Dozen Bullets\"\n0:15 - 0:47 \"Towers and Tourists\"\n0:40 - 1:00 \"Sunday July 20th (Instrumental)\n1:00 - end \"It's Good To Be D\"",
+          "is_wildcard": false
+        },
+        {
+          "source": "youtube",
+          "video_id": "Wno_JVqhnqI",
+          "title": "A BREAKDOWN of ALL Symbols, Themes, & the Ending of The Odyssey EXPLAINED",
+          "channel_id": "UCXcTkcC_H4XeDGfJ7rQGJaw",
+          "channel_title": "Lucas Blue",
+          "published_at": "2026-07-25T01:26:23Z",
+          "url": "https://www.youtube.com/watch?v=Wno_JVqhnqI",
+          "duration_seconds": 1677,
+          "view_count": "473",
+          "description": "In this The Odyssey Movie Explained / The Odyssey 2026 Ending Explained & Analysis, I analyze the Christopher Nolan Odyssey film, starring Matt Damon, Tom Holland, Anne Hathaway, Robert Pattinson, Lupita Nyong'o, Samantha Morton, Zendaya, Charlize Theron and Himesh Patel. The film is a perfect blend of period drama and epic fantasy, exploring themes of morality, temptation, and legacy. I believe this film is excellent in capturing the essence of the Odyssey book and poem through great writing, a",
+          "is_wildcard": false
+        }
+      ]
+    },
+    {
+      "name": "Surprisingly Ancient",
+      "emoji": "🦴",
+      "tagline": "Neanderthals, Tudor sugar sculptures, and the deep past — history is weirder and more delicious than you remember.",
+      "items": [
+        {
+          "source": "youtube",
+          "video_id": "bSnPrL1sAdg",
+          "title": "Are Neanderthals Better Than Us Homo Sapiens?",
+          "channel_id": "UC2J29LPhS9vMiWyYEqBRB0w",
+          "channel_title": "The Ancients",
+          "published_at": "2026-04-12T06:00:34Z",
+          "url": "https://www.youtube.com/watch?v=bSnPrL1sAdg",
+          "duration_seconds": 3549,
+          "view_count": "41588",
+          "description": "Paleoanthropologist Ella Al-Shamahi joins Tristan Hughes to explore the relationship between Neanderthals and Homo Sapiens. \n\nWhat interactions between early Homo sapiens and Neanderthals may have been like, from communication and cultural exchange to interbreeding and the possibility of hybrid children navigating belonging. They discuss how new research is challenging “primitive” stereotypes to reveal how Neanderthals were complex beings who used pigments, pierced shells, talons, feathers, and ",
+          "is_wildcard": false
+        },
+        {
+          "source": "youtube",
+          "video_id": "BeuSc-InJ-c",
+          "title": "The Incredible Art of Subtleties | Tudor Feasts at Hampton Court Palace",
+          "channel_id": "UCdlktQvYRPgMVyvf_u-uZxA",
+          "channel_title": "Historic Royal Palaces",
+          "published_at": "2026-03-04T16:20:55Z",
+          "url": "https://www.youtube.com/watch?v=BeuSc-InJ-c",
+          "duration_seconds": 429,
+          "view_count": "27655",
+          "description": "The royal courts of Tudor England and 16th century Europe loved showing off with spectacular feasts and show-stopping foods. Sugar sculptures and subtleties were a display of wealth, excess and skill. From sugar playing cards to mountain ranges, the art of crafting in sugar and marzipan reached its peak in this century. In this video, Curator Charles Farris visits the Tudor Kitchens at Hampton Court Palace to find out more. Plus, stayed tuned for a demonstration of how to create a subtlety. \n\nIm",
+          "is_wildcard": false
+        },
+        {
+          "source": "youtube",
+          "video_id": "AxE13l_rXOI",
+          "title": "How much does Will Smith know about nature?",
+          "channel_id": "UCH4BNI0-FOK2dMXoFtViWHw",
+          "channel_title": "Be Smart",
+          "published_at": "2026-01-18T14:43:28Z",
+          "url": "https://www.youtube.com/watch?v=AxE13l_rXOI",
+          "duration_seconds": 175,
+          "view_count": "56223",
+          "description": "We got the chance to quiz Will Smith in his science and nature knowledge. Think you can do better?\n\nJoin us on Patreon! \nhttps://patreon.com/itsokaytobesmart\n\nInstagram \nhttp://www.instagram.com/DrJoeHanson \nhttp://www.instagram.com/okaytobesmart \n\nFacebook\nhttps://www.facebook.com/itsokaytobesmartpbs/",
+          "is_wildcard": false
+        }
+      ]
+    },
+    {
+      "name": "Slow Down & Make Something",
+      "emoji": "🌱",
+      "tagline": "DIY fixes, garden hacks, and feel-good moments that remind you the world is still worth tinkering with.",
+      "items": [
+        {
+          "source": "youtube",
+          "video_id": "DFxMNi1XNbY",
+          "title": "Redoing my Bad DIY's!",
+          "channel_id": "UCJI86v9et-IZd1KJSfahN8g",
+          "channel_title": "Rachel Maksy",
+          "published_at": "2026-07-24T23:02:30Z",
+          "url": "https://www.youtube.com/watch?v=DFxMNi1XNbY",
+          "duration_seconds": 1585,
+          "view_count": "50382",
+          "description": "Hey, kiddos!! If you want to head to Thrive Market and save $20 off your first 3 orders AND a free gift, use my link: http://thrivemarket.com/RachelMaksy\nThank you so much Thrive Market for sponsoring this video!\n\nALRIGHT, welcome to what I like to call DIY Blindess. A few years ago, I went real wild with house projects, some of them more successful than others. SoOoOo, while I have some time before I can start reno-ing the coffee shop, let's take care of some of those!\nLEVEL UP!\n\nPatreon: https",
+          "is_wildcard": false
+        },
+        {
+          "source": "youtube",
+          "video_id": "djYpS_NrBLI",
+          "title": "The Clever Reason Smart Gardeners Hoard Plastic Bottles",
+          "channel_id": "UC9r61qohBg1qgGty4_WzojA",
+          "channel_title": "GrowVeg",
+          "published_at": "2025-10-25T14:45:10Z",
+          "url": "https://www.youtube.com/watch?v=djYpS_NrBLI",
+          "duration_seconds": 639,
+          "view_count": "159911",
+          "description": "Enjoy a no-obligation, completely free trial of the Garden Planner here: \nhttps://www.GrowVeg.com/grow-planner-free\n\nAnd for your completely free abridged version of Ben's book, click here:\nhttps://www.growveg.com/grow-book-download\n\nTo watch our tour of giant vegetable grower Gerald Stratford's garden, see:\nhttps://youtu.be/KtpClGGkZZg\n\nWe all know that the vast number of plastic bottles in the world creates a big problem, so here are some solutions for how we can put them to good use around th",
           "is_wildcard": false
         },
         {
           "source": "youtube_trending",
-          "video_id": "5qf_4IPDc5U",
-          "title": "AI Animal Slop is Killing My Channel",
-          "channel_id": "UCJd-QMeSx_ARyIcRUFOHL7A",
-          "channel_title": "daninblue",
-          "published_at": "2026-07-23T18:45:10Z",
-          "url": "https://www.youtube.com/watch?v=5qf_4IPDc5U",
-          "duration_seconds": 1439,
-          "view_count": "63234",
-          "description": "Be kind to yourself this year. Using Zocdoc is FREE - visit https://zocdoc.com/daninblue to find and instantly book an appointment with a top-rated, in-network doctor today.\n\nA discussion about AI and biology, and how it will impact this channel and science media and YouTube as a whole going forward. Are we cooked?\n\n[CLOSED CAPTIONS ARE AVAILABLE ON THIS VIDEO]\n\nSponsorship inquiries: daninblue@fixated.com\nOther business/personal inquiries: daninblueofficial@gmail.com\n\nDiscord: https://discord.g",
+          "video_id": "eWVurBM_dS8",
+          "title": "American Reacts to Canadians Restoring Our Faith in Humanity",
+          "channel_id": "UC7L9dQ59FFcwjkVwfG7c_hg",
+          "channel_title": "Tyler Bucket",
+          "published_at": "2026-07-24T15:00:22Z",
+          "url": "https://www.youtube.com/watch?v=eWVurBM_dS8",
+          "duration_seconds": 1239,
+          "view_count": "35784",
+          "description": "Submit a video suggestion here:\nhttps://docs.google.com/forms/d/e/1FAIpQLScMHcqF-ycnGNaiioDAcS7sG4EcpeSSJeoRQF7EBNq_LZK9yw/viewform?usp=sf_link\n\nAs an American it can be a little disheartening to see how much we are all our for ourselves here in the United States. Today I want to check out some examples of Canadians being great people and restoring my faith in humanity. If you enjoyed the video feel free to leave a comment, like, or subscribe for more!",
           "is_wildcard": true
-        },
-        {
-          "source": "youtube",
-          "video_id": "a3gJx1Y7C0k",
-          "title": "I've Been a YouTuber For 10 Years.",
-          "channel_id": "UCNwZIGnHkzy6KpHPQtserzQ",
-          "channel_title": "Karolina Żebrowska",
-          "published_at": "2025-10-25T17:30:06Z",
-          "url": "https://www.youtube.com/watch?v=a3gJx1Y7C0k",
-          "duration_seconds": 1359,
-          "view_count": "90167",
-          "description": "wow. this has been a JOURNEY HUH? let's reflect on it a lil bit!\n\nalso pre-order my book here: https://linktr.ee/karolinazebrowskax",
-          "is_wildcard": false
         }
       ]
     }
@@ -168,259 +168,250 @@
   "morning_soundtrack": [
     {
       "source": "music",
-      "source_name": "NPR Music",
-      "title": "Dalia Stasevska shines a light on Ukraine's neglected composers on new album",
-      "snippet": "Dalia Stasevska is a rising star in the conducting world. On her new album, \"Ukrainian Mixtape,\" she's promoting some of Ukraine's neglected composers.",
-      "url": "https://www.npr.org/2026/07/24/nx-s1-5844677/dalia-stasevska-shines-a-light-on-ukraines-neglected-composers-on-new-album",
+      "source_name": "Stereogum",
+      "title": "J Mascis Makes Opry Debut",
+      "snippet": "Last week, John R. Miller's new alt-country LP The Great Unknowing (recorded at Leon Russell's legendary Church Studio in Tulsa) came out digitally. The acclaimed Appalachian musician returned to the Grand Ole Opry last night and introduced a \"monumentally influential practitioner of the guitar\" as ",
+      "url": "https://stereogum.com/2506248/j-mascis-makes-opry-debut/news/",
       "genre": "",
-      "vibe_check": "Like discovering a hidden room full of candlelight and forgotten masterpieces, each note a small act of reclamation.",
-      "cover_url": "https://media.npr.org/include/images/facebook-default-wide-s1400-c85.jpg",
+      "vibe_check": "Dust-worn denim and reverb-drenched guitar, like a long drive through Oklahoma at dusk where the radio finds something holy.",
+      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/07/Screenshot-2026-07-24-at-1.36.14-PM.png",
       "embed_url": null
     },
     {
       "source": "music",
       "source_name": "Stereogum",
-      "title": "Joy Oladokun Announces New Album Hope Is A Heavy Thing: Hear “Kind”",
-      "snippet": "At the top of this year, Nashville-based singer-songwriter Joy Oladokun released a very moving single \"Nothing Comes Easy.\" Today, she's returned with another thoughtful single \"Kind,\" which also announces her new album Hope Is A Heavy Thing that's out September 25. \nThe post Joy Oladokun Announces ",
-      "url": "https://stereogum.com/2506203/joy-oladokun-announces-new-album-hope-is-a-heavy-thing-hear-kind/music/",
+      "title": "Slothrust Announce New Album What They Grow In The Garden: Hear “Ring The Bell” & “00101001”",
+      "snippet": "Boston alt-rockers Slothrust are based in LA these days, and they're ready to announce their follow-up to the 2021 album Parallel Timeline. The band released a new single called \"Burn The Deck\" earlier this year, and that'll appear on What They Grow In The Garden, a new LP that'll come out later thi",
+      "url": "https://stereogum.com/2506225/slothrust-announce-new-album-what-they-grow-in-the-garden-hear-ring-the-bell-00101001/news/",
       "genre": "",
-      "vibe_check": "The kind of song you put on when you're holding yourself together with both hands and sheer stubbornness.",
-      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/07/26CRGIM55313.rgb_.jpg",
-      "embed_url": "https://www.youtube.com/embed/fKgEhRSRuhQ"
-    },
-    {
-      "source": "music",
-      "source_name": "Stereogum",
-      "title": "Orville Peck Shares “Too Little, Too Late,” Surprisingly Not A Cover Of The JoJo Hit Released 20 Years Ago Today",
-      "snippet": "Following a successful broadway stint as the Emcee in Cabaret last year, country pop star Orville Peck is returning as the masked balladeer with a new album. Mule, which is out September 18 via Warner Records, will be his latest full-length since 2022's Bronco. He announced news with the lead single",
-      "url": "https://stereogum.com/2506192/orville-peck-shares-too-little-too-late-surprisingly-not-a-cover-of-the-jojo-hit-released-20-years-ago-today/music/",
-      "genre": "",
-      "vibe_check": "Lonesome highway at dusk, the kind of ache that looks good in a sequined mask.",
-      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/07/093624821175-1.jpg",
-      "embed_url": "https://www.youtube.com/embed/sPn7iWVtCg4"
-    },
-    {
-      "source": "music",
-      "source_name": "Stereogum",
-      "title": "Jack White Covers Free With The Black Crowes’ Chris Robinson",
-      "snippet": "Years ago, one of my editors made a point about Jack White that I've had in my head ever since: He's Robert Plant and Jimmy Page at the same time. Within the White Stripes, White was more or less forced to play that role. This was a bare-bones duo who wanted to achieve rock-star immortality, so Whit",
-      "url": "https://stereogum.com/2506183/jack-white-covers-free-with-the-black-crowes-chris-robinson/news/",
-      "genre": "",
-      "vibe_check": "Two guitarists channeling decades of raw rock swagger into a sweat-soaked room that probably smelled like leather and amplifier heat.",
-      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/07/Jack-White-and-Chris-Robinson.jpeg",
-      "embed_url": "https://www.youtube.com/embed/bqJQHZu1Dg0"
-    },
-    {
-      "source": "music",
-      "source_name": "No Depression",
-      "title": "BONUS TRACKS: Raul Malo's Final Performance, New Music from Buddy Miller, Folk Alley's Cover Contest, and More Roots Music News",
-      "snippet": "Today marks the release of a double LP of The Mavericks&apos; late frontman Raul Malo&apos;s final performance. The posthumous new album, BELLA CIAO: RAUL MALO Live In Nashville, was recorded last Father&apos;s Day weekend at the 3rd &amp; Lindsley club with his son Dino&#xA0;",
-      "url": "https://nodepression.org/bonus-tracks-raul-malos-final-performance-new-music-from-buddy-miller-folk-alleys-cover-contest-and-more-roots-music-news/",
-      "genre": "",
-      "vibe_check": "A bittersweet last dance under the neon of a club that feels smaller than it should, carrying the weight of a final goodbye.",
-      "cover_url": "https://storage.ghost.io/c/18/d0/18d08e58-3b1b-4720-ae25-a31b44e69d4b/content/images/2026/07/Screenshot-2026-07-22-at-8.40.55---PM.png",
-      "embed_url": "https://www.youtube.com/embed/IgBXpWKkU1k"
-    },
-    {
-      "source": "music",
-      "source_name": "No Depression",
-      "title": "ALBUM REVIEW: The Revivalists Explore Difficult Issues Via Catchy Sounds With 'Get It Honest'",
-      "snippet": "With their sixth album, Get It Honest, the New Orleans-based octet The Revivalists continue to mine bluesy, classic, and Southern-rock templates. Produced by Rich Costey &#x2014; who also helmed their last album, 2023&#x2019;s Pour It Out into the Night &#x2014; Get It Honest reiterates the band&",
-      "url": "https://nodepression.org/album-review-the-revivalists-get-it-honest/",
-      "genre": "",
-      "vibe_check": "Southern rock with its sleeves rolled up, asking hard questions over a cold beer on a humid evening porch.",
-      "cover_url": "https://storage.ghost.io/c/18/d0/18d08e58-3b1b-4720-ae25-a31b44e69d4b/content/images/2026/07/therevivalistsfrontcover.jpg",
-      "embed_url": null
-    },
-    {
-      "source": "music",
-      "source_name": "Pitchfork",
-      "title": "Hole Reissuing Classic Albums on Vinyl",
-      "snippet": "Pretty on the Inside, Live Through This, and Celebrity Skin are getting an array of wax represses",
-      "url": "https://pitchfork.com/story/hole-reissuing-classic-albums-on-vinyl/",
-      "genre": "",
-      "vibe_check": "The crackling electricity of putting on a record that still makes you feel dangerous twenty years later.",
-      "cover_url": "https://media.pitchfork.com/photos/6a636f8c74005510ba9a8836/16:9/w_1280,c_limit/hole-vinyl-reissues.jpg",
-      "embed_url": null
+      "vibe_check": "The kind of jagged, restless energy that makes you want to rearrange your furniture at midnight.",
+      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/07/Slothrust-album.jpeg",
+      "embed_url": "https://www.youtube.com/embed/r_yX_BURdOs"
     },
     {
       "source": "music",
       "source_name": "Consequence",
-      "title": "Jack White Joined by Chris Robinson for Cover of Free’s “I’m a Mover”: Watch",
-      "snippet": "A filthy blues cover performed at White's show in Chicago.\nJack White Joined by Chris Robinson for Cover of Free&#8217;s &#8220;I&#8217;m a Mover&#8221;: Watch\nAlex Young",
-      "url": "https://consequence.net/2026/07/jack-white-chris-robinson-free-im-a-mover-cover/",
+      "title": "Michael Stipe Previews Solo Album with New Song “Hum Desiderata”",
+      "snippet": "The musical work combines a recitation of Max Ehrmann's poem with an instrumental version of Stipe's unreleased song \"Hum.\"\nMichael Stipe Previews Solo Album with New Song &#8220;Hum Desiderata&#8221;\nEddie Fu",
+      "url": "https://consequence.net/2026/07/michael-stipe-new-song-hum-desiderata/",
       "genre": "",
-      "vibe_check": "Grimy, grinning blues that rattles the floorboards and makes strangers lock eyes across a dark room.",
-      "cover_url": "https://consequence.net/wp-content/uploads/2026/07/Jack-White-and-Chris-Robinson.jpeg",
+      "vibe_check": "Quiet and weightless, like holding your breath in a sunlit room while someone reads aloud something you needed to hear.",
+      "cover_url": "https://consequence.net/wp-content/uploads/2026/07/michael-stipe-new-song-hum-desiderata.jpg",
       "embed_url": null
-    },
-    {
-      "source": "music",
-      "source_name": "Consequence",
-      "title": "Orville Peck Announces New Album Mule, 2026 North American Fall Tour",
-      "snippet": "The lead single, \"Too Little, Too Late,\" is out now.\nOrville Peck Announces New Album Mule, 2026 North American Fall Tour\nTravis Bland",
-      "url": "https://consequence.net/2026/07/orville-peck-new-album-mule-2026-tour-dates/",
-      "genre": "",
-      "vibe_check": "Dusty-road melancholy with sequins on — the slow burn before a very stylish disappearing act.",
-      "cover_url": "https://consequence.net/wp-content/uploads/2026/07/Orville-Peck-Gordon-Nicholas.jpg",
-      "embed_url": "https://www.youtube.com/embed/sPn7iWVtCg4"
     }
   ],
   "global_silver_linings": [
     {
       "source": "good_news",
       "source_name": "Good News Network",
-      "title": "Data Centers Had Been Benefitting from Sales Tax Breaks: More and More States Are Revoking Them",
-      "url": "https://www.goodnewsnetwork.org/data-centers-had-been-benefitting-from-sales-tax-breaks-more-and-more-states-are-revoking-them/",
-      "snippet": "As the AI infrastructure build out continues to meet headwinds from concerned citizens, 3 states recently signed laws ending what had been the largely standard practice of exempting data center operators from sales taxes. Tucked into a state budget passed on June 15th, Arizona Governor Katie Hobbs touted that data centers located in the state […] The post Data Centers Had Been Benefitting from Sales Tax Breaks: More and More States Are Revoking Them appeared first on Good News Network .",
-      "cover_url": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/06/The-Colossus-2-data-center-retrieved-from-xAI.jpg",
-      "reason": "States are reclaiming public funds that were quietly flowing to some of the world's wealthiest tech companies, redirecting that tax revenue toward schools, infrastructure, and community services. It's a quiet but meaningful correction in who actually benefits from public policy."
+      "title": "Beatles Tour Bus Pulls Alongside Paul McCartney–While He was on Video Call With Ringo",
+      "url": "https://www.goodnewsnetwork.org/beatles-tour-bus-pulls-alongside-paul-mccartney-while-on-video-call-with-ringo/",
+      "snippet": "Dozens of Beatles fans were left stunned after Paul McCartney pulled up alongside their Fab Four-themed tour bus. The Beatle-maniacs spotted the musical legend while aboard the Magical Mystery Tour bus that guides tourists around Liverpool, England, where all four lads grew up. The moment was even more special with drummer Ringo Starr showing up […] The post Beatles Tour Bus Pulls Alongside Paul McCartney–While He was on Video Call With Ringo appeared first on Good News Network .",
+      "cover_url": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/07/Paul-McCartney-by-Magical-Mystery-Tour-SWNS.jpeg",
+      "reason": "A delightfully accidental moment of joy — two Beatles legends on a video call just as a tribute tour bus rolled past — is a sweet reminder that the music and magic of that era still ripples warmly through everyday life. Sometimes the world just winks at you."
     },
     {
       "source": "good_news",
-      "source_name": "Reasons to be Cheerful",
-      "title": "When It Comes to Addiction Treatment, ‘Any Door Should Be the Right Door’",
-      "url": "https://reasonstobecheerful.world/hub-and-spoke-addiction-treatment/",
-      "snippet": "This article was originally published by the Daily Yonder, which is dedicated to uplifting the stories of rural people. Holly Warren was recently leafing through one of her old medical school textbooks, trying to recall how much instruction she’d received in addiction medicine — trying to recall, “Did we even talk about this? Was...",
-      "cover_url": "https://reasonstobecheerful.world/wp-content/uploads/2026/07/shutterstock_2614339967-scaled.jpg",
-      "reason": "A growing movement in addiction care means that wherever someone finds the courage to ask for help — a clinic, an ER, a community center — they can receive it without being turned away or bounced between systems. Meeting people exactly where they are saves lives, and that principle is finally gaining real traction."
+      "source_name": "Upworthy",
+      "title": "Stanford researchers find a single question could be the key to changing someone’s mind",
+      "url": "https://www.upworthy.com/stanford-research-shows-single-question-could-be-the-key-to-changing-someones-mind-ex1/",
+      "snippet": "Curiosity goes a lot further than we might think. The post Stanford researchers find a single question could be the key to changing someone’s mind appeared first on Upworthy .",
+      "cover_url": "https://www.upworthy.com/wp-content/uploads/sites/2/2026/02/origin_a3a2e4.jpg",
+      "reason": "Stanford researchers have identified a single, well-placed question that can genuinely open closed minds, suggesting that real dialogue and understanding between people isn't as impossible as it sometimes feels. That's a quiet but powerful tool for a divided world."
+    },
+    {
+      "source": "good_news",
+      "source_name": "The Optimist Daily",
+      "title": "Podcast Transcript July 24th, 2026— The science of soccer-stress, salsa dancing for depression, and why summer slips away",
+      "url": "https://www.optimistdaily.com/2026/07/podcast-transcript-july-24th-2026-the-science-of-soccer-stress-salsa-dancing-for-depression-and-why-summer-slips-away/",
+      "snippet": "Episode Description: Watching a tense soccer match nearly doubles cardiac event risk, and cortisol could start rising fourteen hours before kickoff. With Spain just taking the World Cup, a fair portion of the world’s population has basically been running a biological experiment on itself. Arielle and Karissa also get into the neurological reason summer keeps […] The post Podcast Transcript July 24th, 2026— The science of soccer-stress, salsa dancing for depression, and why summer slips away first appeared on The Optimist Daily: Making Solutions the News .",
+      "cover_url": "https://www.optimistdaily.com/wp-content/uploads/Podcast-Logo-3000-×-3000-px-2-13.png",
+      "reason": "From the stress-busting science of sport to salsa dancing as a remedy for depression, researchers are finding that joyful, embodied activities we already love may be some of our best medicines. It's a heartening reminder that looking after your mind doesn't always mean sitting still."
     }
   ],
   "discovery_articles": [
     {
       "source": "discovery",
       "source_name": "Atlas Obscura",
-      "title": "Tuam Railway Station in Tuam, Ireland",
-      "url": "https://www.atlasobscura.com/places/tuam-railway-station",
-      "snippet": "Tuam Railway Station opened in 1860 as part of the Waterford, Limerick and Western Railway, becoming one of the most important railway hubs in the west of Ireland. Passenger services ended in 1976 as part of a nationwide rationalisation of the railway network, although freight trains continued to use the station until 1993. Since then, the station has stood largely abandoned, with its Victorian buildings gradually falling into disrepair.",
+      "title": "Monument to José Mata in Santa Cruz de la Palma, Spain",
+      "url": "https://www.atlasobscura.com/places/monument-to-jose-mata",
+      "snippet": "The Canary Islands are celebrated for their volcanic landscapes, lush forests, and dramatic Atlantic coastline—not for bullfighting. Unlike much of mainland Spain, the tradition never gained deep roots in the archipelago. That makes the story of José Mata all the more remarkable.",
       "category": "history",
-      "cover_url": "https://img.atlasobscura.com/Jje5Ze8JwCTsyY8HVa7qpCJTfM5OtP_X-KZA4i3z_S0/rt:fit/w:600/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy82NzY3/MjUzYy04MmVhLTQ0/ZTItODliNC1lNDU0/Zjc3MzQyY2MxZTg2/OTExYTkwOWU3YzIz/NGNfMTc5NjAuanBn.jpg"
+      "cover_url": "https://img.atlasobscura.com/n07RDEOf9Y8u9jSS22dvr__kAUDo1AZJp4VGFylZKG0/rt:fit/w:600/c:2658:1772:nowe:869:232/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy9iNjYw/Mjk1ZC01ZWNkLTQy/Y2YtYmQ5My01NDg0/OWIxNGViMjRkZjZi/MGQ4ZGIzNzg0YTEy/YmRfSU1HXzE4MDcu/anBlZw.jpg"
+    },
+    {
+      "source": "discovery",
+      "source_name": "Atlas Obscura",
+      "title": "Yi Sun-Shin Monument in Chantilly, Virginia",
+      "url": "https://www.atlasobscura.com/places/yi-sun-shin-monument",
+      "snippet": "While not very well known in western culture, Admiral Yi Sun-Shin is a major figure in Korean and Asian history. Admiral Yi’s accomplishments on the battlefield, as a leader and a naval tactician, stymied Japanese efforts to invade Korea in the late 1500s and revolutionized maritime warfare. Admiral Yi was born in Seoul, Korea in 1545, to parents of modest means.",
+      "category": "history",
+      "cover_url": "https://img.atlasobscura.com/ePbW74qzwZS6QE8c7sfvOTvbtuhAWdO_CMpWIc__EdU/rt:fit/w:600/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy83ZTBm/ZTEyNy1hMTJlLTQz/N2ItOTMzYS1kZDk2/ZGQwMjFlMDM1Yzc2/ODFhYmY5ZDZhMDgz/OTNfSU1HXzQwNjEu/anBlZw.jpg"
+    },
+    {
+      "source": "discovery",
+      "source_name": "Atlas Obscura",
+      "title": "These Five Fun Events Are Worth a Detour",
+      "url": "https://www.atlasobscura.com/articles/these-five-events-are-worth-a-trip",
+      "snippet": "If you’re looking to liven up your weekend plans, we’ve got you covered, with unique event listings around the world. Find more exciting events in Amsterdam , Berlin , Boston , Chicago , London , Los Angeles , New York City , Paris , Prague , Rome , San Francisco , Seattle , Tokyo , and Washington, D.C. Flevopark becomes an unlikely stage for the unconventional when No Art Festival takes over the Amsterdam green space with a lineup of boundary-pushing performances and pioneering sounds.",
+      "category": "history",
+      "cover_url": "https://img.atlasobscura.com/-2V_0UhswcjuGfXZ2ZkI4etE-UIqa35NMXvz6p7PpzU/rt:fit/w:1200/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL2Fzc2V0/cy85ZmRkYmRkNC05/ODk2LTRjMmQtYWE2/Mi03NDIwZTFiMjBk/NTVkYmE2OWMzNGQz/ZThiNzhiYTVfZjAx/ZmUyM2YtY2YwZS00/NjJlLTkwNjMtYzRk/N2Y3OGRlYWI0Lmpw/Zw.jpg"
+    },
+    {
+      "source": "discovery",
+      "source_name": "Atlas Obscura",
+      "title": "The Afro-Antillean Museum in Panama City, Panama",
+      "url": "https://www.atlasobscura.com/places/the-afro-antillean-museum",
+      "snippet": "During the construction of the Panama Canal hundreds of thousands of workers were imported from Jamaica and other Caribbean islands and were settled in tenement housing on the outskirts of Panama City. Each house was constructed as small as possible, often no more than a wooden shack raised on posts to keep the insects out, with communal bathrooms and a zinc roof. It was in one of these tenement neighbourhoods, known then as Guachapalí, today as El Marañón, that canal workers constructed the Cristian Mission Chapel in their off hours, from 1909-1910.",
+      "category": "history",
+      "cover_url": "https://img.atlasobscura.com/eoD0LIkWBM_V7Vcbln4dTRy4XH_pWdqzNa1xRoVxPOQ/rt:fit/w:600/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy9kMTI0/ZDU3Zi1kYWVkLTQ0/ODMtOWM2MS1kMThi/MjQzMDViMDAxYThl/NzhjOGU3ZTEzYjIz/MTBfODRBNTY0REUt/MDkxMS00MkQyLUJD/RDctNjc4QkUxQ0I0/MjQyLmpwZWc.jpg"
     },
     {
       "source": "discovery",
       "source_name": "Smithsonian",
-      "title": "Mangroves Are Key to Coastal Ecosystems. See 20 Breathtaking Photos That Reveal How the Trees Support Wildlife and Face Threats",
-      "url": "https://www.smithsonianmag.com/smart-news/mangroves-are-key-to-coastal-ecosystems-see-20-breathtaking-photos-that-reveal-how-the-trees-support-wildlife-and-face-threats-180989186/",
-      "snippet": "The Mangrove Photography Awards honor images that show off the beauty—and the fragility—of these valuable intertidal forests",
+      "title": "Three Millennia Ago, Humans May Have Spoken Thousands More Languages Than We Have Today, During a Linguistic 'Golden Age'",
+      "url": "https://www.smithsonianmag.com/smart-news/three-millennia-ago-humans-may-have-spoken-thousands-more-languages-than-we-have-today-during-a-linguistic-golden-age-180989197/",
+      "snippet": "A new study suggests linguistic diversity reached its peak between 1000 B.C.E. and 1000 C.E. before declining",
       "category": "history",
-      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/e0lNV7UGtv-OR83Rz8yOLAvylIA=/fit-in/1600x0/filters:focal(1892x1279:1893x1280)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/f2/dc/f2dca069-cf2b-4d15-a5b0-779aa3245413/wildlife_mammals_-_royal_mangrove_dweller_-_avijit_ghorai.jpg"
+      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/8OqtrTmikFNc1zJquNSjKUvlDOo=/fit-in/1600x0/filters:focal(600x317:601x318)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/3d/ed/3dedf986-0087-44f0-9c5a-d7bc444bedec/map.jpg"
     },
     {
       "source": "discovery",
       "source_name": "Smithsonian",
-      "title": "Students in Florida Discovered a 400-Year-Old Intact Pot That Reveals Conflict Among Indigenous, Spanish and English Powers",
-      "url": "https://www.smithsonianmag.com/smart-news/students-in-florida-discovered-a-400-year-old-intact-pot-that-reveals-conflict-among-indigenous-spanish-and-english-powers-180989188/",
-      "snippet": "Archaeology students at the University of Florida discovered the rare vessel at the site of the former Mission San Francisco de Potano, established in 1606 when Florida was under Spanish rule",
+      "title": "It's Nature Vs. Culture as Europeans Vote on New Designs for Euro Banknotes That Pit Kingfishers Against Leonardo da Vinci",
+      "url": "https://www.smithsonianmag.com/smart-news/its-nature-versus-culture-as-europeans-vote-on-new-designs-for-euro-banknotes-that-pit-kingfishers-against-leonardo-da-vinci-180989193/",
+      "snippet": "The European Central Bank released a shortlist of ten potential designs for a new series of printed banknotes, the first complete redesign since the Euro note was issued in 2002.",
       "category": "history",
-      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/7hp-4Qh_Zvn5KedkOm6bIc9MmE4=/fit-in/1600x0/filters:focal(1000x667:1001x668)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/56/c0/56c0e9d9-e2dd-45a9-a77b-86acc725a0ea/751111359_955707160864416_4593662300171942136_n.png"
+      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/pAycJcl2eTIkuM68EMmo-7uNjXo=/fit-in/1600x0/filters:focal(1070x714:1071x715)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/4a/62/4a625159-a9c3-4390-8e62-5afc2285cb64/screenshot_2026-07-24_at_11455pm.jpeg"
     },
     {
       "source": "discovery",
       "source_name": "Smithsonian",
-      "title": "Why Are These Whales Floating Upside-Down? They Might Just Be Moms Who Need a Break From Feeding Their Babies",
-      "url": "https://www.smithsonianmag.com/smart-news/why-are-these-whales-floating-upside-down-they-might-just-be-moms-who-need-a-break-from-feeding-their-babies-180989184/",
-      "snippet": "Each year, southern right whales migrate thousands of miles from their feeding grounds to breed, give birth and raise their young. Taking rests and regulating their calves' nursing schedules might help mothers conserve energy while they're far from food",
+      "title": "This Robot Can Flap Its Wings to Both Fly and Swim. It Might One Day Help Scientists Study Diving Birds and Survey Ocean Habitats",
+      "url": "https://www.smithsonianmag.com/smart-news/this-robot-can-flap-its-wings-to-both-fly-and-swim-it-might-one-day-help-scientists-study-diving-birds-and-survey-ocean-habitats-180989172/",
+      "snippet": "The bioinspired device, which weighs roughly half a pound and measures around three feet wide, was also modeled after aquatic birds like puffins, gulls and loons",
       "category": "history",
-      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/V-JlivyKkTn-7NKMLcfKQ_ERO2Y=/fit-in/1600x0/filters:focal(800x411:801x412)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/63/7f/637f114f-ffdf-48dc-b200-f219c89f63bc/upside-down-whale.png"
+      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/LmLsFsdTm2A8fHVSnSVvEdXUF-s=/fit-in/1600x0/filters:focal(450x300:451x301)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/19/9b/199ba538-8871-4dae-9a16-b29452ee99fb/mit-flapping-robot-01-press_0.jpg"
     },
     {
       "source": "discovery",
       "source_name": "Smithsonian",
-      "title": "These Photos of Nashville Will Have You Packing Your Bags for Music City, USA",
-      "url": "https://www.smithsonianmag.com/travel/these-photos-of-nashville-will-have-you-packing-your-bags-for-music-city-usa-180989180/",
-      "snippet": "These 15 images from the archives of the Smithsonian Magazine Photo Contest give us a glimpse of life in Tennessee’s capital city",
+      "title": "Hollywood's Iconic Cinerama Dome, One of the World's Most Famous Movie Theaters, Is Set to Reopen in Early 2028",
+      "url": "https://www.smithsonianmag.com/smart-news/hollywoods-iconic-cinerama-dome-one-of-the-worlds-most-famous-movie-theatres-is-set-to-reopen-in-early-2028-180989190/",
+      "snippet": "Shuttered since the Covid-19 pandemic, the Los Angeles landmark is being revived as more Americans buy tickets to see movies in theaters",
       "category": "history",
-      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/CT0w_SGyu7fyLcz03lRZYzBmi6Q=/fit-in/1600x0/filters:focal(1000x686:1001x687)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/5f/e0/5fe09fa3-e328-4b40-a064-7acf1443d26a/72c0100e-66f7-4c1f-8ca0-3453475fbe66.jpg"
+      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/lR46vImOhDl_rL8g947ZPJbBKu8=/fit-in/1600x0/filters:focal(1611x982:1612x983)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/83/e4/83e404be-f007-420f-a287-a5b780c3cc99/cinerama_dome_front.jpg"
     },
     {
       "source": "discovery",
       "source_name": "Science News",
-      "title": "Struggling with a hard life choice? AI future selves have tips",
-      "url": "https://www.sciencenews.org/article/life-choice-ai-future-selves-decisions",
-      "snippet": "A chat with aged avatars of future selves can guide people paralyzed by tough decisions. The question is what information to feed the bots.",
+      "title": "What’s to blame for Canada’s wildfires?",
+      "url": "https://www.sciencenews.org/article/what-blame-canada-wildfires-toxic-smoke",
+      "snippet": "The inferno that sent toxic smoke billowing toward the United States won't be the last. Officials are now battling both the wildfires and misinformation.",
       "category": "science",
-      "cover_url": "https://www.sciencenews.org/wp-content/uploads/sites/2/2026/07/071626_SG_digital-twin_feat.jpg"
-    },
-    {
-      "source": "discovery",
-      "source_name": "Science News",
-      "title": "What kinds of black holes exist — and how are they different?",
-      "url": "https://www.sciencenews.org/article/video-black-hole-types",
-      "snippet": "Scientists have identified four types of black holes, classified mostly by their masses. But these mysterious objects continue to challenge our understanding of the universe.",
-      "category": "science",
-      "cover_url": "https://www.sciencenews.org/wp-admin/admin-ajax.php?action=rank_math_overlay_thumb&id=3174442&type=play&hash=69a5573ca4aa38f15d69c7ff168ab677"
-    },
-    {
-      "source": "discovery",
-      "source_name": "Aeon",
-      "title": "Signal then storm",
-      "url": "https://aeon.co/essays/a-researchers-50-year-hunt-for-the-source-of-chronic-pain",
-      "snippet": "Allan Basbaum has spent 50 years searching the nervous system for the places where pain begins – and where it can be stopped - by Stephani Sutherland Read on Aeon",
-      "category": "science",
-      "cover_url": ""
-    },
-    {
-      "source": "discovery",
-      "source_name": "JSTOR Daily",
-      "title": "Born Without a Country",
-      "url": "https://daily.jstor.org/born-without-a-country/",
-      "snippet": "In Southeast Asia, colonial legacies and citizenship policies continue to leave hundreds of thousands without legal nationality. The post Born Without a Country appeared first on JSTOR Daily .",
-      "category": "history",
-      "cover_url": "https://daily.jstor.org/wp-content/uploads/2026/07/born_without_a_country_1050x700.jpg"
+      "cover_url": "https://www.sciencenews.org/wp-content/uploads/sites/2/2026/07/072326_CG_wildfire_social.jpg"
     },
     {
       "source": "discovery",
       "source_name": "Colossal",
-      "title": "A New Colossal Shop Collection Highlights Local Artists and Chicago-Made Goods",
-      "url": "https://www.thisiscolossal.com/2026/07/chicago-makers-collection/",
-      "snippet": "Discover one-of-a-kind and handmade objects from artists we're excited to share a city with. Do stories and artists like this matter to you? Become a Colossal Member today and support independent arts publishing for as little as $7 per month.",
+      "title": "Damien Aubin Documents a Former Soviet Mining Settlement Suspended in Time",
+      "url": "https://www.thisiscolossal.com/2026/07/damien-aubin-pyramiden-photo-book/",
+      "snippet": "\"The place has not been abandoned. It has been left in suspension,\" Damien Aubin says. Do stories and artists like this matter to you?",
       "category": "history",
-      "cover_url": "https://www.thisiscolossal.com/wp-content/uploads/2026/07/chicagoitems-33.jpg"
+      "cover_url": "https://www.thisiscolossal.com/wp-content/uploads/2026/07/aubin-2.jpg"
+    },
+    {
+      "source": "discovery",
+      "source_name": "Colossal",
+      "title": "Felicia Chiao’s Domestic Scenes Reflect the Emotional Structures of Daily Life",
+      "url": "https://www.thisiscolossal.com/2026/07/felicia-chiao-mixed-media-illustrations/",
+      "snippet": "Felicia Chiao's warm illustrations capture emotion and the variances of mental health through surreal compositions. Do stories and artists like this matter to you? Become a Colossal Member today and support independent arts publishing for as little as $7 per month.",
+      "category": "history",
+      "cover_url": "https://www.thisiscolossal.com/wp-content/uploads/2026/07/chiao-8.jpg"
     }
   ],
   "featured_read": {
     "source": "reads",
     "source_name": "The Marginalian",
-    "title": "Albert Camus on the Three Antidotes to the Absurdity of Life",
-    "url": "https://www.themarginalian.org/2026/07/23/albert-camus-interview-absurd/",
-    "snippet": "\"In a world whose absurdity appears to be so impenetrable, we simply must reach a greater degree of understanding among men, a greater sincerity.\"",
-    "cover_url": "https://www.themarginalian.org/wp-content/uploads/2014/09/albertcamus1.jpg?fit=600%2C315&ssl=1",
-    "blurb": "Camus believed that staring down life's fundamental meaninglessness doesn't have to end in despair — and this piece traces his quietly radical argument that sincerity, rebellion, and human solidarity are not consolations but actual answers. Set aside the half-hour and let it rearrange something."
+    "title": "Dostoyevsky in Love",
+    "url": "https://www.themarginalian.org/2026/07/23/dostoyevsky-in-love/",
+    "snippet": "“I love her happiness more than my own.”",
+    "cover_url": "https://www.themarginalian.org/wp-content/uploads/2014/11/fyodordostoyevsky.jpg?fit=600%2C315&ssl=1",
+    "blurb": "This piece sits with the uncomfortable truth that loving someone deeply can mean subordinating your own joy to theirs — and asks whether that selflessness is devotion or a quiet kind of disappearance. Dostoyevsky wrote some of the most tortured, luminous sentences about human longing, and here those sentences are turned on his own life."
   },
   "garden_note": {
-    "note": "The long July evening stretches luxuriously past nine, and Zürich's gardens are deep in their most generous mood — beans dangling heavy on their poles, dahlias beginning their slow theatrical ascent toward August glory.",
+    "note": "First light creeps over the Zürichberg just after five this morning, and the garden is already humming — dahlias are fattening their buds, courgettes are doing their best to become marrows overnight, and the air carries that particular green-and-warm scent that only high summer can produce. Step out early; the dew on the bean leaves is worth the wet shoes.",
     "in_season": [
-      "French beans (Buschbohnen) — harvest daily to keep plants producing",
-      "Dahlias — stake and disbud for showier blooms",
-      "Zucchini — check under leaves; they hide and swell overnight",
-      "Lavender — at peak, cut before it fully browns for drying"
+      "Dahlias coming into full bloom",
+      "Courgettes and summer squash to harvest daily",
+      "French beans ready to pick",
+      "Deadhead roses for a late-summer flush"
     ],
-    "sky_tonight": "A waxing gibbous moon rises in the southeast after dusk — bright enough to cast faint shadows across the beds, with Saturn climbing not far behind it later in the night.",
-    "sun_times": "The sun slips away at 21:12 tonight, with true dusk lingering until 21:47 — take a slow walk around the garden in that golden gap.",
+    "sky_tonight": "A waxing gibbous moon rides high and bright — look south after dusk for Saturn glowing steadily nearby in Aquarius.",
+    "sun_times": "First light arrives at 05:18, the sun rises at 05:53, and the long evening stretches all the way to dusk at 21:45.",
     "moon_label": "Waxing gibbous",
-    "illum_pct": 75,
-    "sun_range": "05:52–21:12"
+    "illum_pct": 80,
+    "sun_range": "05:53–21:10"
   },
   "puzzle": {
-    "kind": "riddle",
-    "label": "Fern's Morning Riddle",
-    "prompt": "I may be simple, I may be complex; I may have a name, but no gender or sex; I am often a question, or statement as a setup; I tend to have an answer, 'til you find it I won't let up. What am I?",
-    "answer": "A riddle",
-    "hint": "",
-    "source": "riddles.com",
-    "source_id": "Riddle-7553"
+    "kind": "haiku riddle",
+    "label": "The Morning Haiku",
+    "prompt": "summer shakespeare\nlady macbeth ____\nat the car alarm\n\n(Fill in the missing word.)",
+    "answer": "glowers",
+    "hint": "her expression is anything but pleased",
+    "source": "tinywords.com",
+    "source_id": "https://tinywords.com/?p=49728",
+    "credit": "Haiku by David Green, via tinywords.com"
   },
   "previous_puzzle": {
-    "label": "Fern's Morning Anagram",
-    "prompt": "Rearrange the letters of EARTH to make a different common word.",
-    "answer": "Heart (also Hater)"
+    "label": "Fern's Morning Riddle",
+    "prompt": "I may be simple, I may be complex; I may have a name, but no gender or sex; I am often a question, or statement as a setup; I tend to have an answer, 'til you find it I won't let up. What am I?",
+    "answer": "A riddle"
   },
   "larder": {
-    "news": [],
-    "recipe": {}
+    "news": [
+      {
+        "source": "food",
+        "source_name": "The Kitchn",
+        "title": "My Honest Review of Great Jones' Holy Sheet for 2026",
+        "url": "https://www.thekitchn.com/holy-sheet-review-23790974?utm_source=RSS&utm_medium=feed&utm_campaign=Category%2FChannel%3A+main",
+        "snippet": "No aluminum foil needed. READ MORE...",
+        "cover_url": "",
+        "blurb": "A sheet pan that ditches the foil entirely? Consider this the kitchen upgrade your Sunday roasts have been quietly lobbying for."
+      },
+      {
+        "source": "food",
+        "source_name": "The Guardian",
+        "title": "Meera Sodha’s vegan recipe for cold tomato and tahini noodles with peanut, coriander and lime | The new vegan",
+        "url": "https://www.theguardian.com/food/2026/jul/25/vegan-cold-tomato-tahini-noodles-recipe-peanut-coriander-lime-meera-sodha",
+        "snippet": "This globetrotting cold fusion dish boasts south-east Asian, Middle-Eastern and even Italian influences, producing sweet and sour notes and a chilli kick Can a person in a heatwave ever have too many cold noodle dishes? I’d wager no – hence today’s recipe. It started life as one of my favourite meals, the mighty spaghetti pomodoro, but then packed its bags and travelled through the Middle East, picking up some tahini along the way, then on to Indonesia for some heat (sambal oelek), and then hopped over to Vietnam for a final hurrah of fresh lime, coriander and peanuts.",
+        "cover_url": "https://i.guim.co.uk/img/media/dbcf3b360f756508c9ac022b87228edc4d5cc780/116_672_5234_4187/master/5234.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=2c40ca52d708d18db0a7825a05ffc202",
+        "blurb": "When a dish travels through Southeast Asia, the Middle East, and Italy before landing in your bowl, you know the flavour passport is well-stamped — a brilliant read for heat-wave recipe inspiration."
+      },
+      {
+        "source": "food",
+        "source_name": "Saveur",
+        "title": "Choripán (Chorizo Sandwich)",
+        "url": "https://www.saveur.com/argentinian-choripan-grilled-chorizo-sandwiches-with-chimichurri-recipe/",
+        "snippet": "Jenny Huang This Argentine street-food staple teams grilled sausage with crusty bread and herby chimichurri. The post Choripán (Chorizo Sandwich) appeared first on Saveur .",
+        "cover_url": "https://www.saveur.com/uploads/2019/08/Choripan06-scaled.jpg?auto=webp&width=1600&height=2000",
+        "blurb": "Grilled chorizo, crusty bread, and a slick of chimichurri — Saveur makes a compelling case that Argentina's favourite street sandwich deserves a permanent spot in your weekend rotation."
+      }
+    ],
+    "recipe": {
+      "source": "recipe",
+      "source_name": "101 Cookbooks",
+      "title": "Green Bean Salad with Peaches",
+      "url": "https://www.101cookbooks.com/green-bean-salad-with-peaches/",
+      "snippet": "This green bean salad with peaches can anchor many summer meals. It features caramelized onions, toasted nuts, dates, a jolt of serrano pepper and a unifying oregano-garlic drizzle. Continue reading Green Bean Salad with Peaches on 101 Cookbooks",
+      "is_recipe": true,
+      "cover_url": "https://images.101cookbooks.com/green-bean-salad-23-h.jpg?w=680",
+      "blurb": "This summery green bean salad is the kind of thing you'll want on the table all season long — caramelized onions, juicy peaches, toasted nuts, sweet dates, and a warm kick of serrano all pulled together by an oregano-garlic drizzle that does the quiet heavy lifting."
+    },
+    "seasonal_note": "Zürich's Tuesday and Saturday markets at Bürkliplatz are spilling over with sun-warm Thurgauer Kirschen right now — pick up a paper bag and eat them as you walk along the Limmat, then bring the rest home to simmer into a quick Kirschenkompott with a splash of Kirsch for spooning over Birchermüesli in the morning."
   },
   "fern_data": {
-    "greeting": "The kettle's going, the lamp is doing its amber thing against the window, and somewhere in tonight's pile Cicero is having a worse political crisis than yours — which helps — while ants are quietly outscoring humans on intelligence tests and a YouTuber ten years in is reckoning with what the algorithm has cost him.",
-    "top_pick_title": "Ancient Problems, Smarter Ants"
+    "greeting": "A slap bracelet engineered for time travelers, Tudor sugar sculptures that nobody ate, and the science of why summer keeps slipping your grip — think of this edition as a trapdoor disguised as an ordinary morning.",
+    "top_pick_title": "Trapdoors & Sugar Sculptures"
   }
 }
