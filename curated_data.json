@@ -1,165 +1,165 @@
 {
-  "fetched_at": "2026-07-25T17:34:10.591614+02:00",
-  "is_am_email": false,
+  "fetched_at": "2026-07-26T08:18:25.703101+02:00",
+  "is_am_email": true,
   "audit_summary": {
     "youtube_videos": 10,
     "themes": 3,
-    "music_articles": 2,
-    "good_news_articles": 1,
-    "discovery_articles": 2,
+    "music_articles": 7,
+    "good_news_articles": 2,
+    "discovery_articles": 0,
     "featured_read": 1,
     "garden": 1,
     "puzzle": 1,
-    "larder": 0
+    "larder": 4
   },
   "themes": [
     {
-      "name": "Echoes from the Past",
-      "emoji": "🏛️",
-      "tagline": "From Spartan kings to queer 17th-century musicians — history is stranger and richer than any textbook dared tell you.",
+      "name": "Dead Civilizations, Deadly Courts",
+      "emoji": "⚔️",
+      "tagline": "From Homer's wine-dark seas to Tudor chopping blocks — history has never been this gripping.",
       "items": [
         {
           "source": "youtube",
-          "video_id": "hlA4GkgIwjI",
-          "title": "King of Sparta: Who Was Leonidas?",
+          "video_id": "mILwIC_gqXw",
+          "title": "Hollywood's Odyssey: The Historians' Verdict",
           "channel_id": "UC2J29LPhS9vMiWyYEqBRB0w",
           "channel_title": "The Ancients",
-          "published_at": "2026-03-22T07:00:39Z",
-          "url": "https://www.youtube.com/watch?v=hlA4GkgIwjI",
-          "duration_seconds": 3905,
-          "view_count": "25822",
-          "description": "Who was the real Leonidas from the movie 300? In this podcast episode of the Ancients with Dr Andrew Bayliss and Tristan Hughes, they uncover the ancient historical figure of King Leonidas.\n\nIn 480 BC, at the narrow pass of Thermopylae, a vastly outnumbered Greek force prepares to face the advancing army of the Persian king Xerxes. At its head stands Leonidas, king of Sparta, ready to make a final stand that will become one of the most famous moments in ancient history.\n\nIn this episode of The A",
+          "published_at": "2026-07-26T06:00:21Z",
+          "url": "https://www.youtube.com/watch?v=mILwIC_gqXw",
+          "duration_seconds": 4123,
+          "view_count": "138",
+          "description": "Christopher Nolan’s new Odyssey brings Homer’s epic roaring back to life and Tristan Hughes and Dr. Emily Hauser are here to unpack every storm, monster and star-making turn. From the brilliance of the adaptation to the ancient story beneath it, Tristan and Emily bring their expert historical knowledge to challenge what Nolan keeps, what he changes, and why Odysseus still captivates us after 2,500 years.\n\n0:00 Introduction\n1:08 Going to the 'The Odyssey' premiere\n4:42 Comparing Nolan’s narrative",
           "is_wildcard": false
         },
         {
           "source": "youtube",
-          "video_id": "sbED_UfrsK0",
-          "title": "Arabella Hunt's True Love? Queer History at Hampton Court Palace",
+          "video_id": "CN3pKLzM5C4",
+          "title": "Executions at the Tower of London - with Tracy Borman",
           "channel_id": "UCdlktQvYRPgMVyvf_u-uZxA",
           "channel_title": "Historic Royal Palaces",
-          "published_at": "2026-02-25T13:42:16Z",
-          "url": "https://www.youtube.com/watch?v=sbED_UfrsK0",
-          "duration_seconds": 139,
-          "view_count": "2988",
-          "description": "Arabella Hunt was a famous singer and musician in the 17th Century. She married James Howard, but the marriage was annulled after only six months when Arabella sued for annulment, claiming that James was, in fact, a woman named Amy Poulter. \n\nThis LGBTQ+ History Month, discover some of the queer lives and possibilities connected to our sites by listening to the Historic Royal Palaces podcast: https://open.spotify.com/episode/1ceE6uF3nrZOMJUD9t1Nae?si=ALWiOyQ4Tred7TcKJXLwXw",
+          "published_at": "2026-02-18T16:22:18Z",
+          "url": "https://www.youtube.com/watch?v=CN3pKLzM5C4",
+          "duration_seconds": 579,
+          "view_count": "102065",
+          "description": "The Tudor period was a particularly brutal time in English history for executions. Many famous royals, courtiers, and clergy were executed at the Tower of London throughout the 16th Century, including Anne Boleyn, Katherine Howard, Lady Jane Grey, Sir Walter Raleigh, and Robert Deveruex. \n\nMany common people were also executed during the reigns of Henry VIII, Mary I, and Elizabeth I. Public executions were a huge spectacle, taking place on Tower Hill, with hundreds of people flocking to watch. M",
           "is_wildcard": false
         },
         {
           "source": "youtube",
-          "video_id": "7K5VXspJ8Eg",
-          "title": "S2 Ep17: Buster Keaton, The Exclusive Property of MGM",
-          "channel_id": "UCNwZIGnHkzy6KpHPQtserzQ",
-          "channel_title": "Karolina Żebrowska",
-          "published_at": "2025-10-23T05:19:12Z",
-          "url": "https://www.youtube.com/watch?v=7K5VXspJ8Eg",
-          "duration_seconds": 2123,
-          "view_count": "6328",
-          "description": "Famous for his dead-pan comedy style, Buster Keaton was one the kings of slapstick comedy. But behind his success hid battles with production studios, his wife, and his addiction. In today’s episode, we’re reading Keaton’s memoir “My Wonderful World of Slapstick”. \n\n________________ \n\nIf you enjoy the podcast and want to support what I’m doing, check out my Patreon! \n\n\n\nhttps://www.patreon.com/textory ",
-          "is_wildcard": false
-        }
-      ]
-    },
-    {
-      "name": "The Examined Life",
-      "emoji": "🔍",
-      "tagline": "Slow down, look closer — these videos crack open the hidden machinery behind movies, travel, flavor, and modern Japan.",
-      "items": [
-        {
-          "source": "youtube",
-          "video_id": "4SBXGzH_F3w",
-          "title": "Everything I Thought I Knew About Flavor Was Wrong",
-          "channel_id": "UCH4BNI0-FOK2dMXoFtViWHw",
-          "channel_title": "Be Smart",
-          "published_at": "2026-01-15T20:06:30Z",
-          "url": "https://www.youtube.com/watch?v=4SBXGzH_F3w",
-          "duration_seconds": 1267,
-          "view_count": "356247",
-          "description": "Learn more about AnyDesk here: https://anydesk.com/besmart \nSupport us on Patreon / itsokaytobesmart  \n↓↓↓ More info and sources below ↓↓↓\n\nWhat does flavor really mean? And how does it work? In this episode, Joe visits a flavor chemistry lab to meet a master flavorist and uncover how taste, smell, sound, sight, and memory combine in the brain. Along the way, he learns how flavors are built molecule by molecule—and why identical foods can taste completely different to different people.\n\n--------",
+          "video_id": "4PYgCHPrJWY",
+          "title": "The Empress Who Battled All of Europe",
+          "channel_id": "UCbFLHoeA-X5qRUDmb9tRRqA",
+          "channel_title": "Classic Masterworks",
+          "published_at": "2025-10-12T07:00:04Z",
+          "url": "https://www.youtube.com/watch?v=4PYgCHPrJWY",
+          "duration_seconds": 822,
+          "view_count": "159",
+          "description": "They thought she’d crumble.\nAt just 23, Maria Theresa inherited a bankrupt empire, a crumbling army, and a throne every king in Europe was already measuring for his own crown. Within months, Prussia, France, Bavaria, Spain, and more descended like vultures—ready to tear the Habsburg realm apart.\n\nBut instead of surrendering, Maria Theresa fought back—with nothing but willpower, paperwork, and one legendary speech that made an entire nation rise to defend her.\n\nThis is the true story of how one w",
           "is_wildcard": false
         },
         {
           "source": "youtube",
-          "video_id": "jEWhmQjeh_I",
-          "title": "What is Happening to Japan?",
-          "channel_id": "UCHL9bfHTxCMi-7vfxQ-AYtg",
-          "channel_title": "Abroad in Japan",
-          "published_at": "2025-10-23T15:44:56Z",
-          "url": "https://www.youtube.com/watch?v=jEWhmQjeh_I",
-          "duration_seconds": 899,
-          "view_count": "3891719",
-          "description": "Is Japan cooked? Are things really getting worse? \n🍿 Support our Documentary Work: https://www.patreon.com/c/abroadinjapan\n\n**FOLLOW THE ADVENTURE**\n► Facebook: https://www.facebook.com/abroadinjapan/\n► Twitter: https://twitter.com/AbroadInJapan\n► Instagram: @abroadinjapan\n\nBusiness Enquiries: hello@abroadinjapan.com",
-          "is_wildcard": false
-        },
-        {
-          "source": "youtube",
-          "video_id": "aHnfV9Sqgmg",
-          "title": "A BREAKDOWN of EVERY Theme, Symbol, and Social Commentary in After The Hunt | EXPLAINED",
+          "video_id": "dQNyGXp5Sys",
+          "title": "THE REAL-LIFE INSPIRATION for the Christmas Adventurers Club in One Battle After Another | EXPLAINED",
           "channel_id": "UCXcTkcC_H4XeDGfJ7rQGJaw",
           "channel_title": "Lucas Blue",
-          "published_at": "2025-10-23T00:54:06Z",
-          "url": "https://www.youtube.com/watch?v=aHnfV9Sqgmg",
-          "duration_seconds": 966,
-          "view_count": "32491",
-          "description": "In this After the Hunt Explained / After the Hunt Ending Explained and Analysis, I take a deep dive into the new Luca Guadagnino movie, starring Julia Roberts, Andrew Garfield, Ayo Edebiri, Michael Stuhlbarg, and Chloe Sevigny. The film is a perfect blend of drama, political thriller, and suspense, exploring themes of ‘cancel culture’, prejudice, and philosophy. I believe this film is excellent in capturing the history and major themes of historical philosophy and generational divide through gre",
-          "is_wildcard": false
-        },
-        {
-          "source": "youtube",
-          "video_id": "FjV3tkrCYIY",
-          "title": "We've Forgotten how to Travel",
-          "channel_id": "UCs7nPQIEba0T3tGOWWsZpJQ",
-          "channel_title": "Like Stories of Old",
-          "published_at": "2025-10-18T13:58:53Z",
-          "url": "https://www.youtube.com/watch?v=FjV3tkrCYIY",
-          "duration_seconds": 1941,
-          "view_count": "722947",
-          "description": "Want to restore the planet’s ecosystems and see your impact in monthly videos? The first 100 people to join Planet Wild with my code STORIES210 will get the first month for free at: https://planetwild.com/r/likestoriesofold/join/210\nIf you want to get to know them better first, check out their project protecting one of Europe’s last ancient forests: https://planetwild.com/r/likestoriesofold/m31/210\n\nIt's 2004, and two men set out on a trip not knowing they were about to create one of the last po",
+          "published_at": "2025-10-11T15:01:09Z",
+          "url": "https://www.youtube.com/watch?v=dQNyGXp5Sys",
+          "duration_seconds": 667,
+          "view_count": "73465",
+          "description": "In this PTA One Battle After Another Explained Analysis / Christmas Adventurers Club Explained, I take a deep dive into the new Paul Thomas Anderson movie, starring Leonardo DiCaprio, Teyana Taylor, Sean Penn, Chase Infiniti, Benicio Del Toro, and Regina Hall. The film is a perfect blend of drama, political thriller, and suspense, exploring themes of immigration, prejudice, and humanity. I believe this film is excellent in capturing the history and major themes of activism and counterculture thr",
           "is_wildcard": false
         }
       ]
     },
     {
-      "name": "Roots & Rooftops",
-      "emoji": "🌱",
-      "tagline": "Planting seeds, fixing châteaux, and welcoming wild creatures — life is better when you're tending something.",
+      "name": "Big Brain Hours",
+      "emoji": "🧠",
+      "tagline": "Science, math, and language served so beautifully you'll forget you're learning.",
       "items": [
         {
           "source": "youtube",
-          "video_id": "A9OLdnWuA5U",
-          "title": "The 5 Seeds You MUST Start in August",
-          "channel_id": "UC9r61qohBg1qgGty4_WzojA",
-          "channel_title": "GrowVeg",
-          "published_at": "2026-07-25T14:45:37Z",
-          "url": "https://www.youtube.com/watch?v=A9OLdnWuA5U",
-          "duration_seconds": 781,
-          "view_count": "1532",
-          "description": "Enjoy a no-obligation, completely free trial of the Garden Planner here: \nhttps://www.GrowVeg.com/grow-planner-free\n\nAnd for your completely free abridged version of Ben's book, click here:\nhttps://www.growveg.com/grow-book-download\n\nTo see the full video on putting together that rather handsome raised bed planter seen in this video: https://youtu.be/G7ywpYiTVvA?si=WpfZhDvYrvqHfwbO\n\nIt's the beginning of the end - for summer that is! But if you thought that meant hanging up your gardening hat...",
+          "video_id": "QyOfx-LYYNs",
+          "title": "what if Disney films were scientifically accurate? (PART 2!)",
+          "channel_id": "UCH4BNI0-FOK2dMXoFtViWHw",
+          "channel_title": "Be Smart",
+          "published_at": "2026-01-09T18:58:34Z",
+          "url": "https://www.youtube.com/watch?v=QyOfx-LYYNs",
+          "duration_seconds": 179,
+          "view_count": "236716",
+          "description": "Another YouTube #shorts from Dr. Joe! Subscribe for more fun science stories.\n\nJoin us on Patreon! \nhttps://patreon.com/itsokaytobesmart\n\nInstagram \nhttp://www.instagram.com/DrJoeHanson \nhttp://www.instagram.com/okaytobesmart \n\nFacebook\nhttps://www.facebook.com/itsokaytobesmartpbs/",
           "is_wildcard": false
         },
         {
           "source": "youtube",
-          "video_id": "DQ32K1saP68",
-          "title": "We're Moving Out (No Clickbait)",
+          "video_id": "iYwufaWCZbQ",
+          "title": "Eunoia",
+          "channel_id": "UC6nSFpj9HTCZ5t-N3Rm3-HA",
+          "channel_title": "Vsauce",
+          "published_at": "2025-10-16T23:28:39Z",
+          "url": "https://www.youtube.com/watch?v=iYwufaWCZbQ",
+          "duration_seconds": 144,
+          "view_count": "1860762",
+          "description": "\"Eunoia\" by Christian Bök\nA book of constrained poetry where each poem can use as many vowels as it wants so long as it's always the same vowel: A, E, I, O, U, or (sometimes) Y. #poetry  #language #art #book #writing #yokoono",
+          "is_wildcard": false
+        },
+        {
+          "source": "youtube",
+          "video_id": "j0wJBEZdwLs",
+          "title": "But what is a Laplace Transform?",
+          "channel_id": "UCYO_jab_esuFRV4b17AJtAw",
+          "channel_title": "3Blue1Brown",
+          "published_at": "2025-10-12T11:19:53Z",
+          "url": "https://www.youtube.com/watch?v=j0wJBEZdwLs",
+          "duration_seconds": 2081,
+          "view_count": "1786796",
+          "description": "Visualizing the most important tool for differential equations.\nPrevious chapter: https://youtu.be/-j8PzkZ70Lg\nInstead of sponsored ad reads, these lessons are funded directly by viewers: https://3b1b.co/support\nAn equally valuable form of support is to simply share the videos.\nHome page: https://www.3blue1brown.com\n\nPi creature car artwork by Kurt Bruns\n\nEngine animation borrowed with permission from this (excellent) blog: https://ciechanow.ski/internal-combustion-engine/\n\nTimestamps:\n0:00 - Un",
+          "is_wildcard": false
+        }
+      ]
+    },
+    {
+      "name": "Building Something Beautiful",
+      "emoji": "🏚️",
+      "tagline": "Phantom sets in barns, asbestos roofs in France, and a mountain cabin above the clouds — making a place feel like home is always an adventure.",
+      "items": [
+        {
+          "source": "youtube",
+          "video_id": "LzX9bMM0gRc",
+          "title": "Building a \"Phantom of the Opera\" Set *cuz ai sucks*",
+          "channel_id": "UCJI86v9et-IZd1KJSfahN8g",
+          "channel_title": "Rachel Maksy",
+          "published_at": "2025-10-17T23:01:22Z",
+          "url": "https://www.youtube.com/watch?v=LzX9bMM0gRc",
+          "duration_seconds": 1568,
+          "view_count": "271389",
+          "description": "H'YELLOOO and Happy Mid-October! Your girl is in survival mode because she chose to do ten costumes this month, SOOO I'm gonna take you along the process of building a set in my barn! This one specifically is for my Christine Daae from \"Phantom of the Opera\" costume, where I wanted to recreate the Phantom's angsty-boy lair.\nMakin' stuff out of foam and paper, slappin' paint around, and playing with makeup. All in a week's work of a chaotic content creator.\nI hope you have fun and I love you all ",
+          "is_wildcard": false
+        },
+        {
+          "source": "youtube",
+          "video_id": "aioTL3yHgj8",
+          "title": "I'm Removing the ASBESTOS Roof Of The Chateau Barrel House",
           "channel_id": "UCEqU-Ts-hxmpnlWgRMgd2MQ",
           "channel_title": "How To Renovate A Chateau",
-          "published_at": "2025-10-19T18:30:08Z",
-          "url": "https://www.youtube.com/watch?v=DQ32K1saP68",
-          "duration_seconds": 981,
-          "view_count": "669124",
-          "description": "We have a lot to tell you. \nAD: Go to https://surfshark.com/chateau or use code CHATEAU at  checkout to get 4 extra months of Surfshark VPN!\n🏰🕯️ Discover our Chateau Candle Collection here https://www.lefleur.fr/\nAnd follow us on instagram: https://www.instagram.com/le_fleur_honfleur\n\nBonus videos and exclusive live streams every month! Check out our Patreon page for all the latest from us: https://www.patreon.com/Howtorenovateachateau",
+          "published_at": "2025-10-12T18:30:08Z",
+          "url": "https://www.youtube.com/watch?v=aioTL3yHgj8",
+          "duration_seconds": 1367,
+          "view_count": "146139",
+          "description": "AD: https://www.squarespace.com/howtorenovateachateau to save 10% off your first purchase of a website or domain using code HOWTORENOVATEACHATEAU Check out our Patreon page for all the latest from us: https://www.patreon.com/Howtorenovateachateau\n🏰🕯️ Discover our Chateau Candle Collection here https://www.lefleur.fr/\nAnd follow us on instagram: https://www.instagram.com/le_fleur_honfleur\n\nBonus videos and exclusive live streams every month! Check out our Patreon page for all the latest from us: ",
           "is_wildcard": false
         },
         {
           "source": "youtube_trending",
-          "video_id": "DAoWFXOTm78",
-          "title": "NEW ANIMAL Joins the ZOO!",
-          "channel_id": "UCLiU3BzWeBoQjCgeu1kL8Bw",
-          "channel_title": "Chandler's Wild Life",
-          "published_at": "2026-07-24T18:16:04Z",
-          "url": "https://www.youtube.com/watch?v=DAoWFXOTm78",
-          "duration_seconds": 1620,
-          "view_count": "70582",
-          "description": "In today’s episode, we reveal a new mystery animal that joins the facility! Then we go take care of Justina, the infamous female King Cobra🐍, that rules the serpentarium! Afterwards we go and feed some of our critically, endangered crocs and our favorite croc of them all, Ziggy! We also check up on the albino snapping turtle cheese, and of course, the threatened native alligator snapping turtle Fiona for a nice scrub down and clean to get their shells looking pretty! We end the episode with a di",
+          "video_id": "PYvkskmGcaw",
+          "title": "Nag Overnight Kami sa Cabin na May EPIC Mountain View at Sea of clouds! | CUKTECH 25 SE Power Bank",
+          "channel_id": "UChR_LGsh2sTJsQjixN6aJHQ",
+          "channel_title": "J4",
+          "published_at": "2026-07-25T11:03:19Z",
+          "url": "https://www.youtube.com/watch?v=PYvkskmGcaw",
+          "duration_seconds": 3233,
+          "view_count": "114570",
+          "description": "The CUKTECH 25 SE Power Bank features a 25,000mAh battery capacity, up to 120W Max output, a built-in USB-C cable, and 100W Max self-charging—perfect for travel, camping, and everyday use.\n\nGet yours here:\n\nhttps://shopee.ph/-New-Arrival-Offer-CUKTECH-120W-25000mAh-Powerbank-Fast-Charging-100W-Recharging-with-Built-in-Cable-LED-Display-(25-Power-Bank-SE)-i.1412315058.45856176247?extraParams=%7B%22display_model_id%22%3A420559407246%2C%22model_selection_logic%22%3A3%7D\n\n#cuktechphilippines\n\n@CUKTE",
           "is_wildcard": true
         }
       ]
@@ -169,23 +169,78 @@
     {
       "source": "music",
       "source_name": "NPR Music",
-      "title": "Seattle Alt-Rock meets Louisiana funk in King Youngblood's new Tiny Desk entry",
-      "snippet": "Cameron Lavi-Jones of the Seattle-based band King Youngblood used his band's entry into this year's Tiny Desk Contest to highlight two generations of Black musicians.",
-      "url": "https://www.npr.org/2026/07/25/nx-s1-5901074/seattle-alt-rock-meets-louisiana-funk-in-king-youngbloods-new-tiny-desk-entry",
+      "title": "Country star Margo Price delves into America's protest songbook with \"Days of Unrest\"",
+      "snippet": "NPR's Debbie Elliot speaks with country music star Margo Price, about her new record Days of Unrest.",
+      "url": "https://www.npr.org/2026/07/25/nx-s1-5904529/country-star-margo-price-delves-into-americas-protest-songbook-with-days-of-unrest",
       "genre": "",
-      "vibe_check": "Like watching two rivers collide into something unexpectedly funky — your foot starts tapping before you even realize it.",
+      "vibe_check": "Dust-road defiance set to a twang, for anyone who's ever wanted to scream something true into an open field.",
       "cover_url": "https://media.npr.org/include/images/facebook-default-wide-s1400-c85.jpg",
       "embed_url": null
     },
     {
       "source": "music",
       "source_name": "Stereogum",
-      "title": "Hayley Williams Brings Out Wednesday, This Is Lorelei, Jack Antonoff, & More At Newport Folk Festival",
-      "snippet": "No one is tapped in quite like Hayley Williams. That woman has taste. She brought Water From Your Eyes and Snuggle with her on her first solo tour, and there were many great guests, like Snooper, Julien Baker, and more. Last night she played the Newport Folk Festival and brought out Wednesday, This ",
-      "url": "https://stereogum.com/2506269/hayley-williams-brings-out-wednesday-this-is-lorelei-jack-antonoff-more-at-newport-folk-festival/news/",
+      "title": "Lucy Dacus Brings Out Brandon Flowers, Hayley Williams, & More At Newport Folk Festival",
+      "snippet": "Lucy Dacus has been in collab mode as of late, featuring on songs by her boygenius bandmate Phoebe Bridgers, Smidley, Madi Diaz, and more. Last night she played the Newport Folk Festival, and she wasn't without guests. \nThe post Lucy Dacus Brings Out Brandon Flowers, Hayley Williams, &amp; More At N",
+      "url": "https://stereogum.com/2506313/lucy-dacus-brings-out-brandon-flowers-hayley-williams-more-at-newport-folk-festival/news/",
       "genre": "",
-      "vibe_check": "The feeling of stumbling into a backyard party where every person who walks through the gate is someone you've been dying to see.",
-      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/07/Screenshot-2026-07-25-at-9.29.36-AM.png",
+      "vibe_check": "The kind of magical, once-in-a-lifetime summer night that feels like it was written just for the people lucky enough to be there.",
+      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/07/Screenshot-2026-07-25-at-1.15.11-PM.png",
+      "embed_url": null
+    },
+    {
+      "source": "music",
+      "source_name": "Stereogum",
+      "title": "Michael Stipe – “Hum Desiderata”",
+      "snippet": "In April, Michael Stipe appeared on The Late Show With Stephen Colbert to debut a new song called \"The Rest Of Ever\" and reveal that he's readying his debut solo album. Now, the former R.E.M. frontman is sharing another preview titled \"Hum Desiderata.\"\nThe post Michael Stipe &#8211; &#8220;Hum Desid",
+      "url": "https://stereogum.com/2506306/michael-stipe-hum-desiderata/music/",
+      "genre": "",
+      "vibe_check": "Quietly yearning and cerebral, like a late-night letter you write but aren't sure you'll send.",
+      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/07/Image-768x1024-copy.jpeg",
+      "embed_url": null
+    },
+    {
+      "source": "music",
+      "source_name": "Stereogum",
+      "title": "Bon Dylan: Justin Vernon Plays Bob Dylan Covers Set At Eaux Claires 2026",
+      "snippet": "This year's Eaux Claires lineup included an interesting name: Bon Dylan. In April, we discovered it was Bon Iver doing a Bob Dylan covers set. That went down last night, which was the first day of the Wisconsin music festival at Carson Park.\nThe post Bon Dylan: Justin Vernon Plays Bob Dylan Covers S",
+      "url": "https://stereogum.com/2506289/bon-dylan-justin-vernon-plays-bob-dylan-covers-set-at-eaux-claires-2026/news/",
+      "genre": "",
+      "vibe_check": "A campfire séance where the ghost of folk past speaks through the throats of the present.",
+      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/07/755867977_18607517926034566_15879497740615125_n.jpg",
+      "embed_url": null
+    },
+    {
+      "source": "music",
+      "source_name": "Consequence",
+      "title": "How to Get Tickets to The Eagles’ Concerts at The Sphere in Vegas",
+      "snippet": "The \"Hotel California\" rockers are bringing their farewell tour to Sphere. Learn how to get tickets here.\nHow to Get Tickets to The Eagles&#8217; Concerts at The Sphere in Vegas\nJonah Krueger",
+      "url": "https://consequence.net/2026/07/the-eagles-sphere-how-to-get-tickets/",
+      "genre": "",
+      "vibe_check": "Stadium-rock nostalgia wrapped in neon spectacle, for people who want their rock and roll to feel like a Vegas fever dream.",
+      "cover_url": "https://consequence.net/wp-content/uploads/2024/06/Big-Lebowski.jpg",
+      "embed_url": null
+    },
+    {
+      "source": "music",
+      "source_name": "Consequence",
+      "title": "Bon Iver Plays Full Bob Dylan Covers Set as Bon Dylan at Eaux Claires Festival",
+      "snippet": "Justin Vernon also played a last-minute solo set as Bon to fill in for Kevin Morby.\nBon Iver Plays Full Bob Dylan Covers Set as Bon Dylan at Eaux Claires Festival\nTravis Bland",
+      "url": "https://consequence.net/2026/07/bon-iver-do-bob-dylan-at-eaux-claires/",
+      "genre": "",
+      "vibe_check": "The spontaneous, slightly unhinged joy of watching someone you love do something they were never supposed to do — and nail it.",
+      "cover_url": "https://consequence.net/wp-content/uploads/2026/07/Bon-Dylan.jpeg",
+      "embed_url": "https://www.youtube.com/embed/i48I9TNcNpg"
+    },
+    {
+      "source": "music",
+      "source_name": "JazzTimes",
+      "title": "Ravi Coltrane Quartet Rings in Coltrane 100: Legacy with the Philadelphia Orchestra",
+      "snippet": "No one could ever sound like John Coltrane.” That’s what Ravi Coltrane told me around the time of the 2021 reissue of Giant Steps, the &#8230; Read More \"Ravi Coltrane Quartet Rings in Coltrane 100: Legacy with the Philadelphia Orchestra\"\nThe post Ravi Coltrane Quartet Rings in Coltrane 100: Legacy ",
+      "url": "https://www.jazztimes.com/reviews/live/ravi-coltrane-quartet-rings-in-coltrane-100-legacy-with-the-philadelphia-orchestra/",
+      "genre": "",
+      "vibe_check": "A sacred, shiver-inducing reckoning with musical legacy, played in a hall that finally feels big enough to hold it.",
+      "cover_url": "https://www.jazztimes.com/wp-content/uploads/2026/07/4K0A9741.jpg",
       "embed_url": null
     }
   ],
@@ -193,78 +248,104 @@
     {
       "source": "good_news",
       "source_name": "Good News Network",
-      "title": "Your Weekly Horoscope – ‘Free Will Astrology’ by Rob Brezsny",
-      "url": "https://www.goodnewsnetwork.org/horoscope-from-rob-brezsnys-free-will-astrology-7-25-2026/",
-      "snippet": "Our partner Rob Brezsny, whose latest book is Astrology Is Real: Revelations from My Life as an Oracle, provides his weekly wisdom to enlighten our thinking and motivate our mood. Rob’s Free Will Astrology, is a syndicated weekly column appearing in over a hundred publications. He is also the author of Pronoia Is the Antidote for Paranoia: […] The post Your Weekly Horoscope – ‘Free Will Astrology’ by Rob Brezsny appeared first on Good News Network .",
-      "cover_url": "https://www.goodnewsnetwork.org/wp-content/uploads/2020/10/Freewill-Astrology-horoscope-logo.jpg",
-      "reason": "A gentle reminder that people across the world still seek out moments of reflection and self-understanding, finding meaning in the rhythm of the weeks as they pass."
-    }
-  ],
-  "discovery_articles": [
-    {
-      "source": "discovery",
-      "source_name": "Smithsonian",
-      "title": "Is This Giant Celestial Body a Moon, a Planet or Something in Between? The Strange Object Calls Astronomical Labels Into Question",
-      "url": "https://www.smithsonianmag.com/smart-news/is-this-giant-celestial-body-a-moon-a-planet-or-something-in-between-the-strange-object-calls-astrononomical-labels-into-question-180989183/",
-      "snippet": "The newly found object, estimated to be roughly as massive as Jupiter, orbits a brown dwarf—a \"failed star\"—which in turn circles a small star. For now, researchers are calling the puzzling body an \"exosatellite\"",
-      "category": "history",
-      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/uggrI1a1jyCglPhFdhQK8EPRyPY=/fit-in/1600x0/filters:focal(640x384:641x385)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/fa/9b/fa9b4b1c-b645-4c49-89ff-2292e66f4e6d/eso2610a.jpg",
-      "ferns_note": "A Jupiter-sized world orbiting a failed star that itself orbits a real star — it's a cosmic nesting doll that quietly breaks every category we thought we had for planets and moons. The universe, as ever, did not consult our textbooks."
+      "title": "Heatwave Reveals ‘Lost’ 17th Century Garden Design Under Parched Grass",
+      "url": "https://www.goodnewsnetwork.org/heatwave-reveals-lost-17th-century-garden-under-parched-grass/",
+      "snippet": "The outline of a ‘lost’ 17th century garden has been revealed at a stately British home following the record heatwave and long drought. Beneath the parched grass was an ornate garden design being rediscovered after more than 350 years at Chatsworth House in Derbyshire. It turns out, the ornamental arrangement of flower beds and paths […] The post Heatwave Reveals ‘Lost’ 17th Century Garden Design Under Parched Grass appeared first on Good News Network .",
+      "cover_url": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/07/Heatwave-reveals-historic-garden-design-Chatsworth-House-SWNS.jpeg",
+      "reason": "Even a brutal heatwave can yield something wonderful — parched grass acting like a natural time machine to reveal a hidden garden that's been quietly waiting beneath our feet for 400 years. It's a reminder that history is never entirely lost, just sometimes out of sight."
     },
     {
-      "source": "discovery",
-      "source_name": "Smithsonian",
-      "title": "A Brief History of Hold Music, From Early Patents to the Soundtrack of Customer-Service Purgatory",
-      "url": "https://www.smithsonianmag.com/innovation/a-brief-history-of-hold-music-from-early-patents-to-the-soundtrack-of-customer-service-purgatory-180989185/",
-      "snippet": "Sixty years ago, Alfred A. Levy patented his “telephone hold program system.” Little did he know a teenager’s unearthed New Age practice tape would become its enduring anthem",
-      "category": "history",
-      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/Pi8ADIawmM9hndz8xTNLeAF4hDs=/fit-in/1600x0/filters:focal(1040x723:1041x724)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/e8/ff/e8ff034e-57b6-415a-add7-01e4dc96dc46/gettyimages-116782098.jpg",
-      "ferns_note": "The hold music most of us have seethed through for decades turns out to be a teenager's forgotten New Age practice tape, discovered almost by accident and somehow never dethroned. There's a melancholy poetry in the fact that our collective waiting soundtrack was never meant for us at all."
+      "source": "good_news",
+      "source_name": "Upworthy",
+      "title": "A chance 2008 encounter with a wounded warrior led John Mayer to raise $13 million for veterans",
+      "url": "https://www.upworthy.com/a-chance-2008-encounter-with-a-wounded-warrior-led-john-mayer-to-raise-13-million-for-veterans/",
+      "snippet": "Mayer founded The Heart and Armor Foundation in 2019. The post A chance 2008 encounter with a wounded warrior led John Mayer to raise $13 million for veterans appeared first on Upworthy .",
+      "cover_url": "https://www.upworthy.com/wp-content/uploads/sites/2/2026/07/Untitled-1200-x-640-px-10.jpg",
+      "reason": "A single, unplanned moment of human connection in 2008 quietly grew into $13 million of support for wounded veterans — proof that showing up with genuine care, even once, can ripple far beyond anything you could have planned."
     }
   ],
+  "discovery_articles": [],
   "featured_read": {
     "source": "reads",
     "source_name": "The Marginalian",
-    "title": "How to Stop Waiting and Start Living: A Jolt from Henry James",
-    "url": "https://www.themarginalian.org/2026/07/24/henry-james-the-beast-in-the-jungle/",
-    "snippet": "\"It wouldn't have been failure to be bankrupt, dishonoured, pilloried, hanged; it was failure not to be anything.\"",
-    "cover_url": "https://www.themarginalian.org/wp-content/uploads/2021/08/DiscusChronologicus_xs.jpg?fit=1200%2C630&ssl=1",
-    "blurb": "Henry James's sharpest line cuts straight to the quiet dread most of us carry: that the real catastrophe isn't losing, but the half-lived life spent waiting for conditions to be right. This one is worth reading slowly, with the lights low and your excuses set aside."
+    "title": "Kahlil Gibran on the Art of Becoming Yourself Across the Sweep of Life",
+    "url": "https://www.themarginalian.org/2026/07/24/youth-and-age-kahlil-gibran/",
+    "snippet": "A roadmap to the fulfilled belonging on the other side of \"the great aloneness which knows not what is far and what is near, nor what is small nor great.\"",
+    "cover_url": "https://www.themarginalian.org/wp-content/uploads/2023/04/KahlilGibran_TheMarginalian1.jpg?fit=1200%2C630&ssl=1",
+    "blurb": "Gibran believed that becoming yourself is less a single awakening than a slow, lifelong crossing through solitude — and this essay traces exactly how he mapped that passage. Set aside the quiet half-hour to sit with his idea that belonging to yourself must come before belonging to anything else."
   },
   "garden_note": {
-    "note": "High summer settles over Zürich with that particular richness it saves for late July — the linden blossom scent fading now but the kitchen garden absolutely bursting, and the long evenings still warm enough to linger outside long after supper. Tonight the light holds beautifully; dusk doesn't fully arrive until 21:45, so there's no rush to come indoors.",
+    "note": "First light crept over the Zürichberg at 05:20 this morning, and the garden is already humming — dahlias shouldering open, the sweet-sharp scent of ripening tomatoes warming in air that won't stay cool for long. High summer in the Swiss Mittelland means the work begins early and the rewards are extravagant.",
     "in_season": [
-      "Tomatoes ripening on the vine",
-      "Zucchini (harvest before they become marrows)",
-      "Echinacea and rudbeckia in full bloom",
-      "Deadhead roses to encourage a late flush"
+      "Dahlias coming into full bloom",
+      "Outdoor tomatoes and courgettes ready to harvest",
+      "Deadhead roses for a late-summer flush",
+      "Sow quick-maturing lettuce for an autumn cut"
     ],
-    "sky_tonight": "A fat waxing gibbous moon rises in the southeast — bright enough to cast shadows in the garden; look nearby for Saturn glowing steadily to the moon's upper left.",
-    "sun_times": "First light crept in at 05:18 this morning, and the sun slips away tonight at 21:10 — savour every last minute.",
+    "sky_tonight": "A nearly full waxing gibbous moon rises in the east as dusk fades — bright enough to cast soft shadows across the garden beds by 22:00.",
+    "sun_times": "First light at 05:20, sunrise at 05:55 — and the long day stretches all the way to sunset at 21:09, with dusk lingering until 21:44.",
     "moon_label": "Waxing gibbous",
-    "illum_pct": 84,
-    "sun_range": "05:53–21:10"
+    "illum_pct": 88,
+    "sun_range": "05:55–21:09"
   },
   "puzzle": {
-    "kind": "anagram",
-    "label": "Fern's Morning Anagram",
-    "prompt": "Rearrange the letters of HEART to make a different common word.",
-    "answer": "Earth (also Hater)",
-    "hint": "There are 2 words hiding in these letters.",
-    "source": "wordsmith.org",
-    "source_id": "heart"
+    "kind": "riddle",
+    "label": "Fern's Morning Riddle",
+    "prompt": "I am six letters. When you take one away I am twelve. What am I?",
+    "answer": "The word Dozens",
+    "hint": "",
+    "source": "riddles.com",
+    "source_id": "Riddle-312"
   },
   "previous_puzzle": {
-    "label": "The Morning Haiku",
-    "prompt": "summer shakespeare\nlady macbeth ____\nat the car alarm\n\n(Fill in the missing word.)",
-    "answer": "glowers"
+    "label": "Fern's Morning Anagram",
+    "prompt": "Rearrange the letters of HEART to make a different common word.",
+    "answer": "Earth (also Hater)"
   },
   "larder": {
-    "news": [],
-    "recipe": {}
+    "news": [
+      {
+        "source": "food",
+        "source_name": "The Kitchn",
+        "title": "Don’t Slice That Watermelon: Make This 2-Ingredient Frozen Treat Instead",
+        "url": "https://www.thekitchn.com/2-ingredient-watermelon-ice-cream-23791498?utm_source=RSS&utm_medium=feed&utm_campaign=Category%2FChannel%3A+main",
+        "snippet": "Creamy and sweet. READ MORE...",
+        "cover_url": "",
+        "blurb": "A two-ingredient frozen watermelon treat that's basically summer distilled into something you can eat with one hand — worth a click before the heatwave hits."
+      },
+      {
+        "source": "food",
+        "source_name": "The Guardian",
+        "title": "Lennox. Manchester: ‘A boot camp of flavours’ – restaurant review",
+        "url": "https://www.theguardian.com/food/2026/jul/26/lennox-manchester-grace-dent-restaurant-review",
+        "snippet": "You’ll leave fed, challenged and gastronomically punch-drunk Nico Simeone is the Scottish-Italian chef behind the Six by Nico restaurant empire, and Lennox, in Spring Gardens, Manchester, is his new baby. If you are unfamiliar with Six by Nico, it’s a fever-dream version of fine dining: Simeone conjured up themes such as “The Chippie”, “ Italian Road Trip ” and “ Ancient Rome ”, then served six courses in homage to them. Tokyo!",
+        "cover_url": "https://i.guim.co.uk/img/media/84c812f6fb6984aab7021c7f0c0baeb09cd6c7b3/0_0_6618_5295/master/6618.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=f2a900ea50f60490dcdd90c1659ee869",
+        "blurb": "A restaurant review that promises to leave you pleasantly disoriented, which is frankly the highest compliment one can pay a dining experience."
+      },
+      {
+        "source": "food",
+        "source_name": "Saveur",
+        "title": "Sonoran Dogs",
+        "url": "https://www.saveur.com/recipes/sonoran-dogs/",
+        "snippet": "Photo: Murray Hall • Food Styling: Jason Schreiber Wrapped in bacon, topped with beans and veggies, and drizzled with mayo, mustard, and jalapeño sauce, these loaded wieners are an Arizona icon. The post Sonoran Dogs appeared first on Saveur .",
+        "cover_url": "https://www.saveur.com/uploads/2026/07/photo-murray-hall_food-styling-jason-schreiber_02-250528-mhall-saveur-sonoran-dogs-019-scaled.jpg?auto=webp&width=1600&height=2000",
+        "blurb": "Bacon-wrapped, bean-topped, sauce-drizzled — the Sonoran Dog is the kind of regional American icon that deserves far more passport stamps than it gets."
+      }
+    ],
+    "recipe": {
+      "source": "recipe",
+      "source_name": "101 Cookbooks",
+      "title": "Oat Recipes: 25+ Favorite Ways to Cook with Oats",
+      "url": "https://www.101cookbooks.com/oat-recipes/",
+      "snippet": "If you have a bag of oats you want to put to good use, start here. This page shares my favorite oat recipes from 101 Cookbooks over the years. Baked oatmeal, granola, muffins, cookies, pancakes, crackers, breads, crumbles, and bite-sized snacks all represent and show just how diverse and delicious oats can be.",
+      "is_recipe": true,
+      "cover_url": "https://images.101cookbooks.com/best-oat-recipes-h.jpg?w=680",
+      "blurb": "A cozy, endlessly useful collection of oat recipes — from baked oatmeal to granola to cookies — that turns that overlooked bag in your pantry into the most hardworking ingredient of the season."
+    },
+    "seasonal_note": "Zürich's Tuesday and Saturday markets at Bürkliplatz are brimming with Zürcher Oberland cherries right now — buy a bag, eat half on the tram home, and turn the rest into a lazy clafoutis for a slow summer morning."
   },
   "fern_data": {
-    "greeting": "The day is folding up like a letter no one finished writing — which feels appropriate for an evening that holds Leonidas at Thermopylae, a queer love story buried in Hampton Court's archives, and Henry James delivering the kind of jolt you didn't ask for but probably needed.",
-    "top_pick_title": "Unfinished Letters & Ancient Noise"
+    "greeting": "The heatwave has done something strange and generous — burned away the grass to reveal a ghost garden, 17th century hedgerows and all, hiding in plain sight — which feels like the right omen for a morning that also holds Maria Theresa fighting half a continent and Justin Vernon becoming Bob Dylan at Eaux Claires.",
+    "top_pick_title": "Ghost Gardens & Borrowed Voices"
   }
 }
