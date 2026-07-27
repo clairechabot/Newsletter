@@ -1,165 +1,165 @@
 {
-  "fetched_at": "2026-07-26T17:35:09.563137+02:00",
-  "is_am_email": false,
+  "fetched_at": "2026-07-27T08:46:19.284392+02:00",
+  "is_am_email": true,
   "audit_summary": {
     "youtube_videos": 10,
     "themes": 3,
-    "music_articles": 1,
-    "good_news_articles": 1,
-    "discovery_articles": 0,
+    "music_articles": 4,
+    "good_news_articles": 3,
+    "discovery_articles": 1,
     "featured_read": 1,
     "garden": 1,
     "puzzle": 1,
-    "larder": 0
+    "larder": 3
   },
   "themes": [
     {
-      "name": "From the Archives, With Appetite",
-      "emoji": "🍖",
-      "tagline": "History tastes better when it's weird, royal, or served with a side of scandal.",
+      "name": "Rabbit Holes Through Time",
+      "emoji": "🏺",
+      "tagline": "From Bronze Age sky disks to Tudor playlists — history is stranger and richer than any textbook let on.",
       "items": [
         {
           "source": "youtube",
-          "video_id": "TmrgwUoGcZk",
-          "title": "Weird Fast Food Items From Around The World",
-          "channel_id": "UCNaq5Jh4SQ1oBAjhQ0KPhoA",
-          "channel_title": "Weird History Food",
-          "published_at": "2026-07-26T14:15:34Z",
-          "url": "https://www.youtube.com/watch?v=TmrgwUoGcZk",
-          "duration_seconds": 879,
-          "view_count": "3019",
-          "description": "Think you know your favorite fast food chains? Think again. Around the world, restaurants like Domino's, McDonald's, Burger King, and others serve some of the strangest menu items you could possibly imagine. From a snake pizza to burgers topped with chocolate sauce, these international fast food creations prove that every country truly has its own unique take on comfort food.\n\nIn this episode of Weird History Food, we explore the weirdest fast food menu items from around the world, uncovering bi",
-          "is_wildcard": false
-        },
-        {
-          "source": "youtube",
-          "video_id": "2XBd-kNFwso",
-          "title": "How To Make a 17th Century Stew",
-          "channel_id": "UCdlktQvYRPgMVyvf_u-uZxA",
-          "channel_title": "Historic Royal Palaces",
-          "published_at": "2026-02-04T14:00:00Z",
-          "url": "https://www.youtube.com/watch?v=2XBd-kNFwso",
-          "duration_seconds": 493,
-          "view_count": "65663",
-          "description": "Stews are ubiqitous around the world and throughout history. We might think of them as an easy or low status recipe, but this stew is known as 'Queen's Hotchpot'. It may have been served to Queen Henrietta Maria, the Queen Mother of Charles II. \n\nIn this video, our Historic Kitchens Team follow the recipe of a 17th Century chef, recorded in 'The Closet of Sir Kenelm Digby Opened'. \n\nYou can follow the recipe and try the stew for yourself here: https://www.gutenberg.org/files/16441/16441-h/16441-",
-          "is_wildcard": false
-        },
-        {
-          "source": "youtube",
-          "video_id": "El4sh3gg498",
-          "title": "Who Was Herodotus?",
+          "video_id": "sTg6VcS8_jo",
+          "title": "The Impressive Bronze Age 'Nebra Sky Disk'",
           "channel_id": "UC2J29LPhS9vMiWyYEqBRB0w",
           "channel_title": "The Ancients",
-          "published_at": "2026-03-15T07:00:18Z",
-          "url": "https://www.youtube.com/watch?v=El4sh3gg498",
-          "duration_seconds": 2979,
-          "view_count": "55394",
-          "description": "Roel Konijnendijk is on this new episode of The Ancients with Tristian Hughes about Herodotus. \n\nWhat drove Herodotus to write the first great story of history? Tristan Hughes speaks with Dr. Roel Konijnendijk to uncover the world of Herodotus of Halicarnassus—the traveler, investigator, and storyteller behind The Histories. \n\nFrom Persian kings to Greek heroes, they explore his methods, digressions, and the quest to explain why empires rose, wars raged, and memory became history.\n\n0:00 Introduc",
+          "published_at": "2026-03-08T07:00:55Z",
+          "url": "https://www.youtube.com/watch?v=sTg6VcS8_jo",
+          "duration_seconds": 3021,
+          "view_count": "25070",
+          "description": "Discover the Ancient Bronze Age Nebra Sky Disk with Raven Todd DaSilva and Tristan Hughes in this full episode of the Ancient podcast. \n\nIn 1999, a mysterious bronze disc buried for millennia in central Europe transformed how we see the prehistoric world. The Nebra Sky Disk - forged 3,600 years ago - is the oldest known depiction of the night sky.\n\nIn this episode of The Ancients, Tristan Hughes is joined, once again, by archaeologist  Raven Todd DaSilva to uncover the remarkable story of this B",
           "is_wildcard": false
         },
         {
           "source": "youtube",
-          "video_id": "kOuer8-sIzQ",
-          "title": "The Scientific Lie That Damaged Generations of Men",
+          "video_id": "a7KwDitpEsM",
+          "title": "What Music Did Henry VIII Listen To?",
+          "channel_id": "UCdlktQvYRPgMVyvf_u-uZxA",
+          "channel_title": "Historic Royal Palaces",
+          "published_at": "2026-01-21T13:00:00Z",
+          "url": "https://www.youtube.com/watch?v=a7KwDitpEsM",
+          "duration_seconds": 288,
+          "view_count": "8051",
+          "description": "Music was a huge part of life at the Tudor Court. Henry VIII composed music and played with his wives. Elizabeth I was also a musician! \n\nPeople listened to both secular and sacred music in the 16th Century, but these styles were very different. In this video, Tudor historian Tracy Borman talks to previous Director of Music at HM Chapel Royal, Carl Jackson, to learn more about the types of music enjoyed by the Tudors and Elizabethans. They also discuss key historical events that took place in th",
+          "is_wildcard": false
+        },
+        {
+          "source": "youtube",
+          "video_id": "IYb3duBY_IE",
+          "title": "Inside the Vault Where They Keep the Dinosaur Apocalypse",
           "channel_id": "UCH4BNI0-FOK2dMXoFtViWHw",
           "channel_title": "Be Smart",
-          "published_at": "2025-12-18T16:22:29Z",
-          "url": "https://www.youtube.com/watch?v=kOuer8-sIzQ",
-          "duration_seconds": 1281,
-          "view_count": "1519009",
-          "description": "Use code 10BESMART for 10% off → https://amazon.com/dp/B0CJCKGRW1. The Book: The Ultimate Guide to Rebuilding Civilization: survival & rebuilding strategies revealed. Fast delivery for Xmas.\n↓↓↓ More info and sources below ↓↓↓\n\nThis idea of “alpha males” has dominated pop culture for a while now. But here’s the thing–it’s built on bad science. What the real science shows is that, from wolves to chimpanzees to humans, power and success isn’t about aggression or dominance. It’s about relationships",
-          "is_wildcard": false
-        }
-      ]
-    },
-    {
-      "name": "Petticoats & Powdered Wigs",
-      "emoji": "👗",
-      "tagline": "Corsets, controversy, and the surprisingly juicy lives of women who wore a lot of layers.",
-      "items": [
-        {
-          "source": "youtube",
-          "video_id": "371yhOs_mFA",
-          "title": "Throwback to 1800 When French Women Wore See-Through Gowns",
-          "channel_id": "UCSHtaUm-FjUps090S7crO4Q",
-          "channel_title": "Bernadette Banner",
-          "published_at": "2025-10-11T14:00:08Z",
-          "url": "https://www.youtube.com/watch?v=371yhOs_mFA",
-          "duration_seconds": 1278,
-          "view_count": "553294",
-          "description": "👒🔍Download June’s Journey for free now using my link: https://woo.ga/axja20og\nDEERSTALKER WITCH HAT PATTERN: \nhttps://www.patreon.com/posts/140900520?pr=true&forSale=true\n\n⤠ REFERENCES ⤟\nThe Dress: https://www.kerrytaylorauctions.com/auction/lot/lot-13---a-rare-embroidered-linon-merveilleuse-gown-french-1796-1800/?lot=38644&so=0&st=&sto=0&au=144&ef=&et=&ic=False&sd=1&pp=96&pn=1&g=1 \n\"Patterns of Fashion 1: the content, cut, construction and context of Englishwomen’s dress c.1720-1860\", Janet Arn",
+          "published_at": "2025-12-04T16:51:13Z",
+          "url": "https://www.youtube.com/watch?v=IYb3duBY_IE",
+          "duration_seconds": 1434,
+          "view_count": "1725222",
+          "description": "Check out Henson Shaving: https://hensonshaving.com/besmart and use code besmart to get 100 blades for free with purchase of a Henson Razor  \n↓↓↓ More info and sources below ↓↓↓\n\nA giant asteroid impact ended the age of the dinosaurs 66 million years ago. How did this mass extinction play out, moment by moment? In this video we meet a geologist who has explored the asteroid crater and learn what the rocks tell us about the last days of the dinosaurs. It was pretty bad!\n\nReferences: https://sites",
           "is_wildcard": false
         },
         {
           "source": "youtube",
-          "video_id": "qUW-hTVmfsw",
-          "title": "S2 Ep16: The Private (?) Life of Marie Antoinette",
-          "channel_id": "UCNwZIGnHkzy6KpHPQtserzQ",
-          "channel_title": "Karolina Żebrowska",
-          "published_at": "2025-10-09T05:41:05Z",
-          "url": "https://www.youtube.com/watch?v=qUW-hTVmfsw",
-          "duration_seconds": 2461,
-          "view_count": "8528",
-          "description": "There is so much myth and speculation around who Marie Antoinette was as a person, that it’s really helpful to have historical texts from the era – like today’s “Memoirs of Madame Campan” - of people that really knew her. But how reliable are her observations? \n\n________________ \n\n\n\nIf you enjoy the podcast and want to support what I’m doing, check out my Patreon! \n\n\n\nhttps://www.patreon.com/textory ",
-          "is_wildcard": false
-        },
-        {
-          "source": "youtube",
-          "video_id": "CpsR93gEo7w",
-          "title": "We Discovered A Hidden Building Behind our French Chateau",
+          "video_id": "l_6ckjJ-nco",
+          "title": "Abandoned Coach House - Laying Bricks Like 200 Years Ago.",
           "channel_id": "UCEqU-Ts-hxmpnlWgRMgd2MQ",
           "channel_title": "How To Renovate A Chateau",
-          "published_at": "2025-10-05T18:30:07Z",
-          "url": "https://www.youtube.com/watch?v=CpsR93gEo7w",
-          "duration_seconds": 1111,
-          "view_count": "175956",
-          "description": "AD: Click here https://foreo.se/hcaa to shop FOREO’s FAQ 202 and other \nbestsellers. Don’t forget to use my code RNVT30 for an extra 30% off \nalmost all FOREO products. The code is stackable, so you’ll get an extra 30% \noff on discounted items as well!\n\n🏰🕯️ Discover our Chateau Wallpaper and Candle Collection here https://www.lefleur.fr/\nAnd follow us on instagram: https://www.instagram.com/le_fleur_honfleur\n\nBonus videos and exclusive live streams every month! Check out our Patreon page for all",
+          "published_at": "2025-09-28T18:30:07Z",
+          "url": "https://www.youtube.com/watch?v=l_6ckjJ-nco",
+          "duration_seconds": 1074,
+          "view_count": "127881",
+          "description": "AD: 🌍 Get an exclusive 15% discount on Saily data plans! Use code chateau at checkout. Download Saily app or go to https://saily.com/chateau ⛵️ \n🏰🕯️ Discover our Chateau Candle Collection here https://www.lefleur.fr/\nAnd follow us on instagram: https://www.instagram.com/le_fleur_honfleur\n\nBonus videos and exclusive live streams every month! Check out our Patreon page for all the latest from us: https://www.patreon.com/Howtorenovateachateau",
           "is_wildcard": false
         }
       ]
     },
     {
-      "name": "Big Brain Hours",
-      "emoji": "🧠",
-      "tagline": "Complex numbers, loneliness statistics, and the quiet thrill of understanding something difficult.",
+      "name": "Stories With a Secret Layer",
+      "emoji": "🎭",
+      "tagline": "Great films, books, and ARGs that reward anyone willing to dig past the surface.",
       "items": [
         {
           "source": "youtube",
-          "video_id": "-j8PzkZ70Lg",
-          "title": "The Physics of Euler's Formula | Laplace Transform Prelude",
-          "channel_id": "UCYO_jab_esuFRV4b17AJtAw",
-          "channel_title": "3Blue1Brown",
-          "published_at": "2025-10-05T13:53:28Z",
-          "url": "https://www.youtube.com/watch?v=-j8PzkZ70Lg",
-          "duration_seconds": 1669,
-          "view_count": "1089486",
-          "description": "The simple harmonic oscillator and the fundamental role of complex exponents for ODEs.\nNext chapter on the Laplace Transform video: https://youtu.be/j0wJBEZdwLs\nInstead of sponsored ad reads, these lessons are funded directly by viewers: https://3b1b.co/support\nAn equally valuable form of support is to simply share the videos.\nHome page: https://www.3blue1brown.com\n\nTimestamps:\n0:00 - Intro\n1:51 - Euler's formula explained dynamically\n9:27 - The harmonic oscillator\n21:08 - General linear equatio",
+          "video_id": "CJNhpxI2JQE",
+          "title": "A BREAKDOWN of EVERY Theme, Character, and Political Message in One Battle After Another | EXPLAINED",
+          "channel_id": "UCXcTkcC_H4XeDGfJ7rQGJaw",
+          "channel_title": "Lucas Blue",
+          "published_at": "2025-10-01T02:02:51Z",
+          "url": "https://www.youtube.com/watch?v=CJNhpxI2JQE",
+          "duration_seconds": 1185,
+          "view_count": "137786",
+          "description": "In this PTA One Battle After Another Explained / One Battle After Another Ending Explained and Analysis, I take a deep dive into the new Paul Thomas Anderson movie, starring Leonardo DiCaprio, Teyana Taylor, Sean Penn, Chase Infiniti, Benicio Del Toro, and Regina Hall. The film is a perfect blend of drama, political thriller, and suspense, exploring themes of immigration, prejudice, and humanity. I believe this film is excellent in capturing the history and major themes of activism and countercu",
           "is_wildcard": false
         },
         {
           "source": "youtube",
-          "video_id": "C4-uK6OTR8g",
-          "title": "How Many Americans Have No Friends?",
-          "channel_id": "UC6nSFpj9HTCZ5t-N3Rm3-HA",
-          "channel_title": "Vsauce",
-          "published_at": "2025-10-03T23:30:13Z",
-          "url": "https://www.youtube.com/watch?v=C4-uK6OTR8g",
-          "duration_seconds": 138,
-          "view_count": "9517950",
-          "description": "",
+          "video_id": "R5omhngdnvM",
+          "title": "The Disturbing ARG Banned from YouTube - Kepther e",
+          "channel_id": "UC3cpN6gcJQqcCM6mxRUo_dA",
+          "channel_title": "Wendigoon",
+          "published_at": "2025-09-30T16:20:28Z",
+          "url": "https://www.youtube.com/watch?v=R5omhngdnvM",
+          "duration_seconds": 4889,
+          "view_count": "4371645",
+          "description": "Use my link to get a FREE Frother with your first purchase of AGZ: https://drinkag1.com/wendigoon\n\n\nYouTube reupload: https://youtu.be/1qaR6Ei_ylE?si=PfBNIIL_u3LjUrL4\n\nInternet Archive: https://archive.org/details/51.-dv-100115/01.DV100133.mp4\n\n\nEditor: Nate de Oliveira\nThumbnail:  Elvan Putra (@elvandubz)\n\n\nWatch my videos on Spotify here!: https://open.spotify.com/show/2MDDT1opwKR0NF6upmhKKN?si=a46629ee693b4e54\n\n\nCheck out the podcasts here:\n\nCreepCast: @CreepPodcast \n\nThe Weird Bible Podcast:",
+          "is_wildcard": false
+        },
+        {
+          "source": "youtube",
+          "video_id": "_g1TK-TPW-0",
+          "title": "I Read \"No Country for Old Men\", Here's What the Movie Didn't Tell You:",
+          "channel_id": "UCs7nPQIEba0T3tGOWWsZpJQ",
+          "channel_title": "Like Stories of Old",
+          "published_at": "2025-09-30T15:02:17Z",
+          "url": "https://www.youtube.com/watch?v=_g1TK-TPW-0",
+          "duration_seconds": 1080,
+          "view_count": "478620",
+          "description": "Check out my 2nd channel: @LikeStoriesUntold \nJoin my Patreon film club: https://www.patreon.com/LikeStoriesofOld \n\nA comparison between Cormac McCarthy's No Country for Old Men and its movie adaptation by the Coen brothers\n\n0:00 a faithful adaptation?\n0:53 the missing hitchhiker story\n3:02 Llewelyn's tragic ending\n4:02 Carla Jean's confrontation with Chigurh\n5:56 sheriff Bell's missing backstory\n8:09 a character-revealing confession\n10:25 sheriff Bell's father\n11:47 final dream meaning \n13:56 a",
+          "is_wildcard": false
+        }
+      ]
+    },
+    {
+      "name": "Cozy Corners & Living Things",
+      "emoji": "🌿",
+      "tagline": "Gardens, miniature worlds, and wild rivalries — a love letter to the living, growing, thriving world.",
+      "items": [
+        {
+          "source": "youtube",
+          "video_id": "5XDrNB93EnQ",
+          "title": "Inside The Epic Scale of Obama's Presidential Garden",
+          "channel_id": "UCSbyncU597LMwb3HhnAI_4w",
+          "channel_title": "Epic Gardening",
+          "published_at": "2026-07-26T16:31:13Z",
+          "url": "https://www.youtube.com/watch?v=5XDrNB93EnQ",
+          "duration_seconds": 1199,
+          "view_count": "39549",
+          "description": "I'm stoked to announce an EPIC collab with @ObamaFoundation - a FULL tour of the new garden landscapes at the upcoming Obama Center and a conversation with President Obama!\n\nMyself and a few other awesome creators sat down with the President to speak about the philosophy behind the center, and of course I had a few questions about the garden spaces...\n\nFirst off, from a raw gardening approach, it's awesome to see a civic project put edible gardens front and center. The Eleanor Roosevelt Fruit & ",
+          "is_wildcard": false
+        },
+        {
+          "source": "youtube",
+          "video_id": "2X0ogPbarmc",
+          "title": "Making an \"Over the Garden Wall\" Book Nook!",
+          "channel_id": "UCJI86v9et-IZd1KJSfahN8g",
+          "channel_title": "Rachel Maksy",
+          "published_at": "2025-10-03T22:01:14Z",
+          "url": "https://www.youtube.com/watch?v=2X0ogPbarmc",
+          "duration_seconds": 1426,
+          "view_count": "360026",
+          "description": "Howdy, buckaroos! 👒🔍Download June’s Journey for free now using my link: https://woo.ga/v36g5sk5\nThank you so much June's Journey for sponsoring this video!!\n\nLET'S GET COZY!!!\nThis week I had an itch that only a book nook and a little guy could scratch.... That sounds not-quite-right but I DON'T CARE. Many of you are aware of \"Over the Garden Wall\" being my entire personality, so I wanted to try a second attempt at making a book nook! With lighting this time so it's not a massive black void.\nSo ",
           "is_wildcard": false
         },
         {
           "source": "youtube_trending",
-          "video_id": "Wnj7YOfT800",
-          "title": "Your Monthly Dose of Good News | July",
-          "channel_id": "UCdG5p24FH9cmpjQZeFsLpBg",
-          "channel_title": "Good News",
-          "published_at": "2026-07-26T11:50:56Z",
-          "url": "https://www.youtube.com/watch?v=Wnj7YOfT800",
-          "duration_seconds": 1482,
-          "view_count": "8610",
-          "description": "Want to restore the planet’s ecosystems and see your impact in monthly videos? The first 100 people to join Planet Wild with my code GOOD7 will get the first month paid for by me: https://planetwild.com/r/goodnews/join/7\n\nIf you want to get to know them better first, check out their wildlife crossings mission: https://planetwild.com/r/goodnews/m36/7\n\nSubscribe for more Good News!\n\nJoin my Free Newsletter for weekly Good News!\nhttps://www.good-news.io/\n\n0:00 Your Monthly Dose of Good News | July ",
+          "video_id": "IK7g0QVm-bs",
+          "title": "LION VS HYENA | Africa's Deadliest Rivalry for Survival (Full Episode) | Wild Animals",
+          "channel_id": "UCJjUlbs-ZEo4draiZzz66sQ",
+          "channel_title": "WILD NATURE - Nature animal documentary",
+          "published_at": "2026-07-26T09:36:52Z",
+          "url": "https://www.youtube.com/watch?v=IK7g0QVm-bs",
+          "duration_seconds": 11876,
+          "view_count": "44649",
+          "description": "LION VS HYENA | Africa's Deadliest Rivalry for Survival (Full Episode) | Wild Animals\n\nDiscover the hidden laws of the African savanna, where survival is not reserved for the strongest but for those who know how to build alliances. In this intense wildlife documentary, witness apex predators, massive herbivores, and even the smallest animals shaping one of nature's most complex survival networks.\n\nWe reveal the hidden alliances, shifting predator territory conflicts, and extraordinary survival s",
           "is_wildcard": true
         }
       ]
@@ -168,13 +168,46 @@
   "morning_soundtrack": [
     {
       "source": "music",
-      "source_name": "Consequence",
-      "title": "Roxette’s 40th Anniversary Tour in North America Canceled by Live Nation, Band Says",
-      "snippet": "The Swedish pop rock group may be the latest victim of \"Blue Dot Fever.\"\nRoxette&#8217;s 40th Anniversary Tour in North America Canceled by Live Nation, Band Says\nTravis Bland",
-      "url": "https://consequence.net/2026/07/roxettes-40th-anniversary-tour-canceled/",
+      "source_name": "Pitchfork",
+      "title": "Listen to Michael Stipe’s New Song “Hum Desiderata”",
+      "snippet": "The R.E.M. frontman’s debut solo album is in the works",
+      "url": "https://pitchfork.com/story/listen-to-michael-stipes-new-song-hum-desiderata/",
       "genre": "",
-      "vibe_check": "The bittersweet sting of a road trip that never happens, like finding an old mixtape with no tape deck to play it on.",
-      "cover_url": "https://consequence.net/wp-content/uploads/2026/07/Roxette.jpg",
+      "vibe_check": "Like finding an old journal entry you forgot you wrote — quiet, searching, and unexpectedly moving.",
+      "cover_url": "https://media.pitchfork.com/photos/6a66831dec4e2e442492642d/16:9/w_1280,c_limit/GettyImages-2282966801.jpg",
+      "embed_url": null
+    },
+    {
+      "source": "music",
+      "source_name": "Pitchfork",
+      "title": "Watch Hayley Williams Bring Out Wednesday’s Karly Hartzman, Jenny Lewis at Newport Folk Festival",
+      "snippet": "Jack Antonoff, Lucy Dacus, This Is Lorelei, Kelsey Lu, and Joy Oladokun also hopped onstage",
+      "url": "https://pitchfork.com/story/watch-hayley-williams-bring-out-wednesdays-karly-hartzman-jenny-lewis-at-newport-folk-festival/",
+      "genre": "",
+      "vibe_check": "The electric buzz of a summer festival crowd when someone unexpected walks onstage and the whole field holds its breath.",
+      "cover_url": "https://media.pitchfork.com/photos/6a667fc000c39d63996ba085/16:9/w_1280,c_limit/MixCollage-26-Jul-2026-05-41-PM-9436.jpg",
+      "embed_url": null
+    },
+    {
+      "source": "music",
+      "source_name": "JazzTimes",
+      "title": "Ray Charles’s Tangerine Label Bears New Fruit in 2026 and Beyond",
+      "snippet": "F ew could argue that what Ray Charles achieved at the Atlantic label between 1952 and 1958 was anything less that protean. Along with creating &#8230; Read More \"Ray Charles’s Tangerine Label Bears New Fruit in 2026 and Beyond\"\nThe post Ray Charles’s Tangerine Label Bears New Fruit in 2026 and Beyo",
+      "url": "https://www.jazztimes.com/features/special-feature/ray-charless-tangerine-label-bears-new-fruit-in-2026-and-beyond/",
+      "genre": "",
+      "vibe_check": "Like dusting off a leather-bound legacy and finding the ink still wet inside.",
+      "cover_url": "https://www.jazztimes.com/wp-content/uploads/2026/07/Copy-of-01000075.jpg",
+      "embed_url": "https://www.youtube.com/embed/QvFCpPTqop8"
+    },
+    {
+      "source": "music",
+      "source_name": "Fretboard Journal",
+      "title": "The Truth About Vintage Amps, Ep. 168",
+      "snippet": "﻿﻿﻿﻿ It&#8217;s the 167th episode of the Truth About Vintage Amps, the call-in show where amp tech Skip Simmons fields all of your tube amp and life questions. Our sponsors: Grez Guitars; Emerald City Guitars; and Amplified Parts / Mod Electronics. Some of the topics discussed this week: :00 Special",
+      "url": "https://www.fretboardjournal.com/podcasts/the-truth-about-vintage-amps-ep-168/?utm_source=rss&utm_medium=rss&utm_campaign=the-truth-about-vintage-amps-ep-168",
+      "genre": "",
+      "vibe_check": "The satisfying crackle of a warm tube amp in a cluttered garage where the answer to every question smells faintly of solder.",
+      "cover_url": "https://images.fretboardjournal.com/wp-content/uploads/2026/07/26114326/IMG_4683-scaled.jpeg",
       "embed_url": null
     }
   ],
@@ -182,57 +215,115 @@
     {
       "source": "good_news",
       "source_name": "Good News Network",
-      "title": "Good News in History, July 26",
-      "url": "https://www.goodnewsnetwork.org/events060726/",
-      "snippet": "134 years ago today, Dadabhai Naoroji was elected as the first Indian Member of Parliament in Britain. A merchant, scholar, writer, and political leader who served as a founding member of the Indian National Congress, Naoroji is particularly known for formulating the “drain theory,” which argued that economic exploitation under British rule led to the […] The post Good News in History, July 26 appeared first on Good News Network .",
-      "cover_url": "https://www.goodnewsnetwork.org/wp-content/uploads/2024/07/Dadabhai-Naoroji-in-the-year-he-was-elected-to-Parliament-public-domain.jpg",
-      "reason": "Every date on the calendar holds moments when humanity chose courage, kindness, or creativity — and revisiting those turning points reminds us that progress has always been possible, even in the hardest of times."
+      "title": "Hyundai Partners with Healthy Seas to Turn Scourge ‘GhostNets’ into Floor Mats for Cars",
+      "url": "https://www.goodnewsnetwork.org/hyundai-partners-with-healthy-seas-to-turn-ghostnets-into-car-floor-mats/",
+      "snippet": "Off the coast of Catalina Island for 15 years, the fishing vessel Midnight Hour has sat on the ocean floor—its sunken wreckage becoming a tangle of abandoned fishing nets, the kind that drift in the current while trapping debris—and marine life. Good News Network joined divers on the water for a mission to collect the […] The post Hyundai Partners with Healthy Seas to Turn Scourge ‘GhostNets’ into Floor Mats for Cars appeared first on Good News Network .",
+      "cover_url": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/07/Volunteers-recover-abandoned-fishing-nets-from-ocean-floor-near-Catalina-on-July-12-Credit-Ghost-Diving-USA-Hyundai-News-Release.jpeg",
+      "reason": "Abandoned fishing nets are one of the ocean's most persistent threats to marine life, so turning them into car floor mats is a beautifully practical example of industry and conservation working together. It proves that harmful waste can be genuinely rerouted into something useful, not just talked about."
+    },
+    {
+      "source": "good_news",
+      "source_name": "Upworthy",
+      "title": "We asked people what social rule they’d enforce during flights. One sweet answer dominated.",
+      "url": "https://www.upworthy.com/social-rule-for-flights-vote-ex1/",
+      "snippet": "If only we could actually make this an official rule. The post We asked people what social rule they’d enforce during flights. One sweet answer dominated.",
+      "cover_url": "https://www.upworthy.com/wp-content/uploads/sites/2/2025/10/origin_89ba7d.jpg",
+      "reason": "When given the chance, people default toward kindness rather than complaint — a quiet but real reminder that our shared instincts in close quarters lean toward consideration. It's a small, human story worth holding onto."
+    },
+    {
+      "source": "good_news",
+      "source_name": "The Optimist Daily",
+      "title": "Soft decluttering: the low-pressure method for a tidier home",
+      "url": "https://www.optimistdaily.com/2026/07/soft-decluttering-the-low-pressure-method-for-a-tidier-home/",
+      "snippet": "BY THE OPTIMIST DAILY EDITORIAL TEAM You know the feeling: you walk toward the hall closet with good intentions, reach for the handle, and stop. The coats are in there, somewhere. So are the shoes that were trendy two seasons ago, a bag you haven’t opened in months, and something that might be an umbrella.",
+      "cover_url": "https://www.optimistdaily.com/wp-content/uploads/Depositphotos_505437012_L.jpg",
+      "reason": "A gentler approach to decluttering means more people can actually start — and that a tidier, calmer home is within reach without the stress of an all-or-nothing overhaul. Small, sustainable changes tend to stick in ways that dramatic ones don't."
     }
   ],
-  "discovery_articles": [],
+  "discovery_articles": [
+    {
+      "source": "discovery",
+      "source_name": "Science News",
+      "title": "Spines of saber-toothed cats tell a tale of the doomed species",
+      "url": "https://www.sciencenews.org/article/spine-saber-toothed-cat-tumor-extinct",
+      "snippet": "Remains pulled from the La Brea Tar Pits revealed deformed vertebrae and rare tumors, possible signs of inbreeding among now-extinct saber-toothed cats.",
+      "category": "science",
+      "cover_url": "https://www.sciencenews.org/wp-content/uploads/sites/2/2026/07/072326_JB_saber-toothed-tumors_main.jpg",
+      "ferns_note": "The bones of these long-extinct predators aren't just fossils — they're a genetic confession, their twisted spines quietly recording the desperation of a population too small to save itself. There's something achingly human about reading a species' final chapter written in its own skeleton."
+    }
+  ],
   "featured_read": {
     "source": "reads",
     "source_name": "The Marginalian",
-    "title": "The One Hundred Milliseconds Between the World and You: Oliver Sacks on Perception",
-    "url": "https://www.themarginalian.org/2026/07/25/oliver-sacks-perception/",
-    "snippet": "“If the doors of perception were cleansed,” William Blake wrote, “everything would appear to man as it is, infinite.” But we are finite creatures, in time and in space, and there is a limit to how much reality we can bear — evolution gave us consciousness so that we may sieve the salient from the infinite, equipped it with attention so that we may narrow the aperture of perception to take in only what is relevant to us from the immense vista of now. The astonishing thing is that even though we all have more or less the same perceptual… read article",
-    "cover_url": "https://www.themarginalian.org/wp-content/uploads/2023/06/magritte.jpg?fit=1200%2C630&ssl=1",
-    "blurb": "Oliver Sacks pulls back the curtain on the hundred-millisecond delay between the world happening and you perceiving it — a quiet revelation that what you call 'now' is already a reconstruction, a story your brain finished editing before you knew it had begun. Pour something warm and sit with the unsettling, beautiful fact that consciousness is less a window than a darkroom."
+    "title": "How to Live a Miraculous Life",
+    "url": "https://www.themarginalian.org/2026/07/25/brian-doyle-humility-love/",
+    "snippet": "Suppose we agree that we are here to love anyway — to love even though the work is almost unbearably difficult, even though we know that everything alive is dying, that everything beautiful is perishable, that everything we love will eventually be taken from us by one form of entropy or another, culminating with life itself. Suppose we agree that, as Rilke so passionately insisted, “for one human being to love another… is perhaps the most difficult of all our tasks, the ultimate, the last test and proof, the work for which all other work is but preparation.” This, then,… read article",
+    "cover_url": "https://www.themarginalian.org/wp-content/uploads/2024/11/snakebird1.jpg?fit=1200%2C630&ssl=1",
+    "blurb": "This essay sits with Rilke's most demanding idea — that love is not a gift we receive but a practice we must repeatedly, exhaustingly choose — and asks what it actually looks like to keep choosing it anyway. A quiet half-hour with this one might feel less like reading and more like being steadied."
   },
   "garden_note": {
-    "note": "The long Zürich evening stretches its golden arms well past nine tonight — there's still time to deadhead the dahlias or snip a few stems of zucchini before the light finally concedes at dusk. High summer here means the kitchen garden is almost embarrassingly generous: stay on top of it, or the courgettes will quietly become marrows overnight.",
+    "note": "First light crept over the Zürichsee at 05:21 this morning, and by now the garden is already warm and humming — high summer in the Swiss Midtelland means dahlias nodding heavily with dew and the courgettes quietly becoming marrows overnight if you so much as blink. Step outside before the heat builds and enjoy the hour when everything still smells of earth rather than sun.",
     "in_season": [
-      "Dahlias coming into their own",
-      "Courgettes and summer squash (harvest daily)",
-      "Deadheading roses for a late flush",
-      "French beans ready to pick"
+      "Dahlias coming into full, opulent bloom",
+      "Courgettes and cucumbers — harvest daily before they escape you",
+      "Runner beans climbing their supports, pick while pods are still slender",
+      "Deadhead roses to coax one last flush before August"
     ],
-    "sky_tonight": "A near-full waxing gibbous moon rises in the east before dusk, bright enough to cast soft shadows across the garden — look for Saturn glowing steadily to its lower left as the sky deepens.",
-    "sun_times": "First light crept in at 05:20 this morning, and the sun won't slip away until 21:09 tonight, with dusk lingering until 21:44.",
+    "sky_tonight": "A near-full waxing gibbous moon rises early and floods the garden with silver light — look for Saturn gleaming steadily to its east in the late evening sky.",
+    "sun_times": "First light arrives at 05:21, sunrise at 05:56, with a long generous day stretching all the way to sunset at 21:08 and dusk at 21:43.",
     "moon_label": "Waxing gibbous",
-    "illum_pct": 91,
-    "sun_range": "05:55–21:09"
+    "illum_pct": 94,
+    "sun_range": "05:56–21:08"
   },
   "puzzle": {
-    "kind": "trivia",
-    "label": "The Evening Trivia",
-    "prompt": "The Andaman and Nicobar Islands in South East Asia are controlled by which country?\n\nIndia   ·   Indonesia   ·   Thailand   ·   Vietnam",
-    "answer": "India",
-    "hint": "Category: Geography",
-    "source": "opentdb.com",
-    "source_id": "330f965f32a7"
+    "kind": "anagram",
+    "label": "Fern's Morning Anagram",
+    "prompt": "Rearrange the letters of METEOR to make a different common word.",
+    "answer": "Remote",
+    "hint": "There is one other word hiding in it.",
+    "source": "wordsmith.org",
+    "source_id": "meteor"
   },
   "previous_puzzle": {
-    "label": "Fern's Morning Riddle",
-    "prompt": "I am six letters. When you take one away I am twelve. What am I?",
-    "answer": "The word Dozens"
+    "label": "The Evening Trivia",
+    "prompt": "The Andaman and Nicobar Islands in South East Asia are controlled by which country?\n\nIndia   ·   Indonesia   ·   Thailand   ·   Vietnam",
+    "answer": "India"
   },
   "larder": {
-    "news": [],
-    "recipe": {}
+    "news": [
+      {
+        "source": "food",
+        "source_name": "The Kitchn",
+        "title": "Monti Carlo’s Caribbean Cowboy Caviar",
+        "url": "https://www.thekitchn.com/caribbean-cowboy-caviar-recipe-review-23791557?utm_source=RSS&utm_medium=feed&utm_campaign=Category%2FChannel%3A+main",
+        "snippet": "A little spicy and a little sweet. READ MORE...",
+        "cover_url": "",
+        "blurb": "A Caribbean-cowboy mashup that brings a little heat and a little sweetness to your snack spread — Monti Carlo's twist on cowboy caviar is the kind of flavour collision worth reading about."
+      },
+      {
+        "source": "food",
+        "source_name": "The Guardian",
+        "title": "Vegan pho and Thai fishless cakes: Richard Makin’s southeast Asian-style tofu recipes",
+        "url": "https://www.theguardian.com/food/2026/jul/27/tofu-recipes-vegan-pho-thai-fishless-cakes-southeast-asian-style-richard-makin",
+        "snippet": "Fragrant, punchy vegan dishes that can be kept in the kept in the fridge or freezer for an easy midweek dinner Whether you love it or loathe it, tofu is one of the most versatile ingredients in any kitchen. For me, it’s the saviour of stressful dinner times, because it cooks in minutes, absorbs flavour like no other and packs a real nutritional punch. Here, it plays two very different roles: crisped until golden in a fragrant, spice-infused Vietnamese-style pho, and mashed to give body and bite to bold, punchy Thai-ish fishless cakes.",
+        "cover_url": "https://i.guim.co.uk/img/media/cef8f86846de5c0eef9a4636b848cf9fadb4f1e5/411_164_3279_2623/master/3279.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=6dca2878784428d98e7fdb1fd8f78228",
+        "blurb": "Richard Makin makes a compelling case for tofu with fragrant, freezer-friendly southeast Asian dishes that could genuinely convert even the most committed sceptic."
+      }
+    ],
+    "recipe": {
+      "source": "recipe",
+      "source_name": "David Lebovitz",
+      "title": "Strawberry Jam",
+      "url": "https://www.davidlebovitz.com/strawberry-jam-recipe/",
+      "snippet": "I was recently gifted an overload of strawberries: I bought four baskets from a vendor at the market, whose booth I shop at often, and he threw in two extra baskets for free, the equivalent of a carte de fidelité (loyalty card) in Paris. So I’ve spent the past few days washing, hulling, cutting and cooking my unexpected bounty. I’ve been making a number of...",
+      "is_recipe": true,
+      "cover_url": "https://www.davidlebovitz.com/wp-content/uploads/2015/05/Strawberry-Jam-recipe.jpg",
+      "blurb": "A beautiful way to capture the sweetness of peak-season strawberries, David Lebovitz's homemade jam is a gentle, rewarding kitchen project that turns a lucky glut of fruit into something you'll be spreading on toast for weeks."
+    },
+    "seasonal_note": "Zürich's Tuesday and Saturday markets at Bürkliplatz are brimming with Zürcher Unterland cherries right now — grab a bag of the dark, almost-jammy Kordia variety and, if you're feeling ambitious, fold them into a simple Kirschenkuchen before the afternoon heat sets in."
   },
   "fern_data": {
-    "greeting": "Still mid-thought from the afternoon, the lamp on, something simmering — tonight runs from Herodotus to a 17th-century stew to the hundred milliseconds Oliver Sacks says stand between you and everything you think you're seeing.",
-    "top_pick_title": "The Long Evening, Lamplit & Hungry"
+    "greeting": "The air at this hour has that particular high-summer weight — still almost cool, but with heat already coiled inside it, waiting. Enough to make Michael Stipe's new song feel exactly right, the Nebra Sky Disk feel ancient and urgent, and the question of how a species goes from apex predator to gone feel uncomfortably close to home.",
+    "top_pick_title": "Heat Coiled, Stars Mapped, Teeth Remembered"
   }
 }
