@@ -1,166 +1,173 @@
 {
-  "fetched_at": "2026-07-28T08:06:12.038046+02:00",
-  "is_am_email": true,
+  "fetched_at": "2026-07-28T18:17:01.543816+02:00",
+  "is_am_email": false,
   "audit_summary": {
     "youtube_videos": 10,
-    "themes": 3,
-    "music_articles": 4,
-    "good_news_articles": 3,
-    "discovery_articles": 7,
+    "themes": 4,
+    "music_articles": 13,
+    "good_news_articles": 1,
+    "discovery_articles": 11,
     "featured_read": 1,
     "garden": 1,
     "puzzle": 1,
-    "larder": 3
+    "larder": 0
   },
   "themes": [
     {
-      "name": "Bones, Skulls & Royal Dressing Gowns",
-      "emoji": "💀",
-      "tagline": "History isn't just in the books — it's buried in the ground, plastered on faces, and folded in wardrobes.",
+      "name": "Dust, Bones & Dead Languages",
+      "emoji": "🏺",
+      "tagline": "Dive into the ancient, the medieval, and the forgotten — history so vivid you can almost smell the parchment.",
       "items": [
         {
           "source": "youtube",
-          "video_id": "HoGsd44VY34",
-          "title": "Medieval Skeletons: BRUTAL Deaths Uncovered | Full Series",
-          "channel_id": "UCZwU2G-KVl-P-O-B35chZOQ",
-          "channel_title": "History Hit",
-          "published_at": "2026-07-27T18:00:30Z",
-          "url": "https://www.youtube.com/watch?v=HoGsd44VY34",
-          "duration_seconds": 7230,
-          "view_count": "9863",
-          "description": "Historian Matt Lewis meets archaeologist Dr Jo Buckberry to investigate the injuries suffered by medieval warriors. Together, they examine skeletons discovered beneath Stirling Castle, decapitated remains found on the fringes of an Anglo-Saxon cemetery, and the final moments of warriors brutally killed during the Battle of Visby.\n\n00:00:00 Anglo Saxons Executions \n00:46:49 Medieval Scotland Fallen Warriors \n01:33:18 The Battle of Visby Special \n\n#MedicalHistory #Archeology #Skeleton\n\nYou can now",
+          "video_id": "SjTbm0IHWJs",
+          "title": "Cooking for William the Conqueror's Army of 1066",
+          "channel_id": "UCsaGKqPZnGp_7N80hcHySGQ",
+          "channel_title": "Tasting History with Max Miller",
+          "published_at": "2026-07-28T15:00:03Z",
+          "url": "https://www.youtube.com/watch?v=SjTbm0IHWJs",
+          "duration_seconds": 1516,
+          "view_count": "18827",
+          "description": "Visit https://squarespace.syuh.net/tastinghistory to get a free trial and 10% off your first purchase of a website or domain.\n\nTRAVEL WITH ME - Paris (November 2026) & Colombia (March 2027): https://www.journeygoaltravel.com/tastinghistory\n\nHere's a link to my Bayeux Tapestry license plate frame - https://www.zazzle.com/bayeux_tapestry_king_harold_coronation_license_plate_frame-256304176780528864\n\nSupport the Channel with Patreon ► https://www.patreon.com/tastinghistory\n\nRecipe at https://www.ta",
           "is_wildcard": false
         },
         {
           "source": "youtube",
-          "video_id": "JCsMMSC5z3A",
-          "title": "The Mysterious Plastered Skulls of Jericho with Raven Todd Da Silva",
+          "video_id": "ZVJ_sz7JIEI",
+          "title": "THG Podcast: Counterfactuals - The Princeton Explosion",
+          "channel_id": "UC4sEmXUuWIFlxRIFBRV6VXQ",
+          "channel_title": "The History Guy: History Deserves to Be Remembered",
+          "published_at": "2026-07-28T12:00:14Z",
+          "url": "https://www.youtube.com/watch?v=ZVJ_sz7JIEI",
+          "duration_seconds": 3861,
+          "view_count": "956",
+          "description": "WATCH this episode of the THG Podcast, which posts in addition to regular History Guy content, after it releases on podcast services. Subscribe to the RSS feed for more: https://www.spreaker.com/show/6153862/episodes/feed\n\nWelcome to the History Guy Podcast: Counterfactuals. What is a counterfactual? At it’s most basic, it is a ‘what if’. It’s a way of understanding history as it is by discussing what it could have been.\n\nOn today’s episode we talk about the deadliest accident to ever strike a p",
+          "is_wildcard": false
+        },
+        {
+          "source": "youtube",
+          "video_id": "kELoypEdMs0",
+          "title": "Irving Finkel Writes In Ancient Cuneiform",
           "channel_id": "UC2J29LPhS9vMiWyYEqBRB0w",
           "channel_title": "The Ancients",
-          "published_at": "2026-02-15T07:00:23Z",
-          "url": "https://www.youtube.com/watch?v=JCsMMSC5z3A",
-          "duration_seconds": 3016,
-          "view_count": "30029",
-          "description": "In the depths of ancient Jericho, beneath layers of earth dating back 10,000 years, archaeologists uncovered something extraordinary: human skulls cast in plaster, their faces carefully reconstructed and their eyes set with shells. Who were these haunting figures meant to represent?\n\nIn this episode of The Ancients, Tristan Hughes is joined by archaeologist Raven Todd DeSilva to explore the mysterious plastered skulls of Jericho. Dating to the Neolithic period, these striking objects reveal comp",
+          "published_at": "2026-02-08T07:00:40Z",
+          "url": "https://www.youtube.com/watch?v=kELoypEdMs0",
+          "duration_seconds": 4445,
+          "view_count": "116867",
+          "description": "In this episode of The Ancients, Tristan Hughes is joined by Dr Irving Finkel to uncover how cuneiform actually worked and how you would write it yourself. \n\nMore than five thousand years ago, a revolutionary script emerged in the fertile lands of Mesopotamia that would transform how people counted, governed, worshipped and told stories. This was cuneiform, the world’s earliest known writing system.\n\nFrom humble beginnings as simple pictograms tracking beer and grain, to the wedge-shaped signs t",
           "is_wildcard": false
         },
         {
           "source": "youtube",
-          "video_id": "E2_L5ljRxiU",
-          "title": "A Rare Survivor From Prince Albert's Wardrobe",
+          "video_id": "7Mw-p37E0jE",
+          "title": "Getting Dressed as an Elizabethan Courtier",
           "channel_id": "UCdlktQvYRPgMVyvf_u-uZxA",
           "channel_title": "Historic Royal Palaces",
-          "published_at": "2025-12-31T16:28:04Z",
-          "url": "https://www.youtube.com/watch?v=E2_L5ljRxiU",
-          "duration_seconds": 300,
-          "view_count": "161026",
-          "description": "While we have many items of clothing belonging to Queen Victoria, few clothes survive from the wardrobe of her husband, Prince Albert. There is strong evidence to suggest that this dressing gown and shirt belonged to the Prince Consort. Victorian menswear is often thought to be dark coloured and sombre, but this colourful robe tells a different story. Items of clothing like this bring us closer to the people they belonged to, allowing us to imagine Albert and Victoria at home in a less formal se",
+          "published_at": "2025-12-24T12:00:19Z",
+          "url": "https://www.youtube.com/watch?v=7Mw-p37E0jE",
+          "duration_seconds": 679,
+          "view_count": "137033",
+          "description": "Under the rule of Elizabeth I, a new kind of courtier could be found in the royal court. Elite gentlemen trying to compete against each other to stand out for their queen. Men such as Robert Dudley, Robert Devereux, Walter Raleigh, and many others. Fashions moved on from the overt masculinity of Henry VIII's court where outrageous codpieces and shoulders indicated status. In the Elizabethan court, men's attire became more refined, with a focus on decoration... and a lot of leg. \n\nIn the lastest ",
           "is_wildcard": false
         }
       ]
     },
     {
-      "name": "The Examined Life",
-      "emoji": "🧠",
-      "tagline": "Science rewrites the rulebook, cinema rewrites your soul — prepare to question everything you thought you knew.",
+      "name": "Planet on the Move",
+      "emoji": "🌍",
+      "tagline": "From Arctic ice sheets to bee colonies to marathon migrations — the natural world never sits still.",
       "items": [
         {
           "source": "youtube",
-          "video_id": "fh9xTJQSFmE",
-          "title": "(Almost) Everything You Learned About Genetics Is Wrong",
+          "video_id": "52iu-nUIlaM",
+          "title": "The White Knight: Ice - Helen Czerski",
+          "channel_id": "UC1t6kKXoBvjdr8m9KJ2Fx7A",
+          "channel_title": "Gresham College",
+          "published_at": "2026-07-28T15:00:32Z",
+          "url": "https://www.youtube.com/watch?v=52iu-nUIlaM",
+          "duration_seconds": 3457,
+          "view_count": "82",
+          "description": "00:00 // Welcome to the Lecture\n00:41 // Fridtjof Nansen and the Mystery of the Arctic\n01:14 // Crossing Greenland: Nansen's First Expedition\n01:40 // The USS Jeannette and the Trans-Arctic Current Theory\n04:19 // Designing the Fram: A Ship Built Never to Be Crushed\n08:57 // Why the Arctic Is a Human Place, Not Just Wilderness\n09:58 // What's Coming: Physics, MOSAiC, and the Future of Ice\n10:19 // The Physics of Ice: Why Isn't It White?\n13:16 // Albedo: How Ice Reflects the Sun's Energy\n18:08 //",
+          "is_wildcard": false
+        },
+        {
+          "source": "youtube",
+          "video_id": "ySs-lwWuTGI",
+          "title": "This is the LONGEST non-stop journey in nature!",
           "channel_id": "UCH4BNI0-FOK2dMXoFtViWHw",
           "channel_title": "Be Smart",
-          "published_at": "2025-11-13T15:26:05Z",
-          "url": "https://www.youtube.com/watch?v=fh9xTJQSFmE",
-          "duration_seconds": 863,
-          "view_count": "682947",
-          "description": "Explore all of the projects KiwiCo has to offer at https://www.kiwico.com/besmart and use our code BESMART for 50% off your first monthly crate.\nTake the PBS Digital Studios annual survey: https://to.pbs.org/2025SurveyBeSmart\n↓↓↓ More info and sources below ↓↓↓\n\nThink traits like eye color or tongue-rolling are simple genetics? Think again. From Mendel’s peas to modern DNA science, let’s talk about why most human traits aren’t just “dominant” or “recessive.” Eye color, red hair, earlobes, even c",
-          "is_wildcard": false
-        },
-        {
-          "source": "youtube",
-          "video_id": "qJJzA-YWc3s",
-          "title": "Movie Monologues that Radicalized my Moral Philosophy",
-          "channel_id": "UCs7nPQIEba0T3tGOWWsZpJQ",
-          "channel_title": "Like Stories of Old",
-          "published_at": "2025-09-16T16:04:05Z",
-          "url": "https://www.youtube.com/watch?v=qJJzA-YWc3s",
-          "duration_seconds": 1410,
-          "view_count": "496375",
-          "description": "Start your free month of great cinema now at https://mubi.com/likestoriesofold \n\nTo act in this world is to put yourself in moral peril, to shake the foundations of your own philosophy, sometimes overwhelmingly so. In such times, when you're no longer sure which way is right, where do you go? Who do you become?\n\n0:00 In Pursuit of the Good\n3:12 Virtue Ethics\n5:02 Deontological Ethics\n7:42 Not a Resolution, but a Problem Definition\n10:34 Consequentialist Ethics\n13:47 A Problem of Metaphysics\n18:0",
-          "is_wildcard": false
-        },
-        {
-          "source": "youtube",
-          "video_id": "yYX3bY4E-eE",
-          "title": "A FULL BREAKDOWN of ALL Symbols, Themes, and the Ending of HIM | EXPLAINED",
-          "channel_id": "UCXcTkcC_H4XeDGfJ7rQGJaw",
-          "channel_title": "Lucas Blue",
-          "published_at": "2025-09-21T15:01:40Z",
-          "url": "https://www.youtube.com/watch?v=yYX3bY4E-eE",
-          "duration_seconds": 1156,
-          "view_count": "260173",
-          "description": "In this HIM Explained / HIM Ending Explained and Analysis, I deep-dive analyze HIM 2025, the Jordan Peele produced movie starring Tyriq Withers, Marlon Wayans, and Julia Fox. Directed by Justin Tipping, the film is a perfect blend of horror and psychological thriller, exploring themes of masculinity, obsession, and sports culture. I believe this film is excellent in capturing the major themes of athlete worship and sacrifice through great writing, acting, directing and filmmaking.\n\nFurthermore, ",
-          "is_wildcard": false
-        },
-        {
-          "source": "youtube",
-          "video_id": "M-MgQC6z3VU",
-          "title": "What was Euclid really doing? | Guest video by Ben Syversen",
-          "channel_id": "UCYO_jab_esuFRV4b17AJtAw",
-          "channel_title": "3Blue1Brown",
-          "published_at": "2025-09-18T14:13:05Z",
-          "url": "https://www.youtube.com/watch?v=M-MgQC6z3VU",
-          "duration_seconds": 2009,
-          "view_count": "770024",
-          "description": "What role were ruler and compass constructions really serving?\nCheck out Ben's channel: @bensyversen \nInterview with the author of this video: https://youtu.be/VohYM99j8e0\nSupporters get early views of new videos: https://3b1b.co/support\n\nWritten, produced, edited, and animated by Ben Syversen\nAdditional editing: Jack Saxon\n3d Blender model: Jan-Hendrik Müller\nAdditional Blender help: Thibaut Modrzyk (@Deepia)\nIllustrations: Alex Zepherin/DonDada Studio\nCamera: Giacomo Belletti\nDrums: Jeremy Gus",
-          "is_wildcard": false
-        }
-      ]
-    },
-    {
-      "name": "Slow Living, Sharp Aesthetic",
-      "emoji": "🧵",
-      "tagline": "Patchwork clothes, pale skin pride, and an 8K Swiss castle — the art of choosing beauty deliberately.",
-      "items": [
-        {
-          "source": "youtube",
-          "video_id": "jNC9gj_8cU8",
-          "title": "I Don't Tan and Here's Why - 10 Years Update",
-          "channel_id": "UCNwZIGnHkzy6KpHPQtserzQ",
-          "channel_title": "Karolina Żebrowska",
-          "published_at": "2025-09-20T17:13:52Z",
-          "url": "https://www.youtube.com/watch?v=jNC9gj_8cU8",
-          "duration_seconds": 508,
-          "view_count": "81986",
-          "description": "[AD] Download June's Journey here! https://cherrypick.gg/KarolinaZ2025 and participate in the spooky celebrations 🎃 [/AD]",
-          "is_wildcard": false
-        },
-        {
-          "source": "youtube",
-          "video_id": "Kt1gnJaNj1Y",
-          "title": "Sewing Patchwork Clothing is My New Personality",
-          "channel_id": "UCJI86v9et-IZd1KJSfahN8g",
-          "channel_title": "Rachel Maksy",
-          "published_at": "2025-09-19T23:59:01Z",
-          "url": "https://www.youtube.com/watch?v=Kt1gnJaNj1Y",
-          "duration_seconds": 1688,
-          "view_count": "496682",
-          "description": "It's been at least a few days since the last time something truly consumed every one of my brain cells, and this week it is: PATCHWORK CLOTHING!\nI've wanted to try this for so long, but was always too nervous, but let's frickin' go.\nMy fabric stash is embarrassingly bulging, so I grabbed some scraps, leftovers and thrifted fabric I never ended up using and got to WORK.\nDoes anyone actually read the descriptions?\nIf you're reading this, I appreciate you, go treat yourself with a pumpkin spiced tr",
+          "published_at": "2025-10-31T17:23:09Z",
+          "url": "https://www.youtube.com/watch?v=ySs-lwWuTGI",
+          "duration_seconds": 126,
+          "view_count": "138909",
+          "description": "Another YouTube #shorts from Dr. Joe! Subscribe for more fun science stories.\n\nIn this video, we'll compare the longest migrations of land, sea, and air animals and crown the animal kingdom's ultimate long-distance traveler.\n\nJoin us on Patreon! \nhttps://patreon.com/itsokaytobesmart\n\nInstagram \nhttp://www.instagram.com/DrJoeHanson \nhttp://www.instagram.com/okaytobesmart \n\nFacebook\nhttps://www.facebook.com/itsokaytobesmartpbs/",
           "is_wildcard": false
         },
         {
           "source": "youtube_trending",
-          "video_id": "-QAaJgY8E90",
-          "title": "Spiez Switzerland 8K | Castle Shores, Alpine Peaks & Timeless Beauty | Lake Thun's Hidden Gem",
-          "channel_id": "UCO0BURLQv23K-qQG4Xj1bdw",
-          "channel_title": "Timeless Travel 8K  ",
-          "published_at": "2026-07-27T10:46:13Z",
-          "url": "https://www.youtube.com/watch?v=-QAaJgY8E90",
-          "duration_seconds": 11921,
-          "view_count": "1416",
-          "description": "#Cinematic8K #SpiezSwitzerland8K #SwitzerlandNature 🏔️🇨🇭\n\nSpiez Switzerland 8K | Castle Shores, Alpine Peaks & Timeless Beauty | Lake Thun's Hidden Gem\n\n🏰 Discover the timeless charm of Spiez, Switzerland, where a medieval lakeside castle overlooks the turquoise waters of Lake Thun, elegant vineyards cascade down sunlit hillsides, and majestic Alpine peaks create one of Switzerland's most breathtaking panoramas in spectacular 8K Ultra HD cinematic beauty. Nestled along the northern shore of Lake",
+          "video_id": "Ltz-d0YD2Aw",
+          "title": "Honey Bees at Work | Day 51 Documentary #Bees #BeeSwarm #HoneyBee #Nature #Wildlife #Amazing",
+          "channel_id": "UCzABfccCwXeX2-o4pkxThDw",
+          "channel_title": "4Sea4K",
+          "published_at": "2026-07-28T10:10:32Z",
+          "url": "https://www.youtube.com/watch?v=Ltz-d0YD2Aw",
+          "duration_seconds": 8014,
+          "view_count": "140232",
+          "description": "Honey Bees at Work | Day 51Documentary #Bees #BeeSwarm #HoneyBee #Nature #Wildlife #Amazing",
           "is_wildcard": true
+        }
+      ]
+    },
+    {
+      "name": "The Art of the Audacious",
+      "emoji": "🎭",
+      "tagline": "Heists, hidden symbols, and stories too strange to be fiction — for the thrill-seekers and the deep-divers.",
+      "items": [
+        {
+          "source": "youtube",
+          "video_id": "LYPJBKuX1Lo",
+          "title": "Ex-FBI Agent Answers Heist Questions",
+          "channel_id": "UCftwRNsjfRo08xYE31tkiyw",
+          "channel_title": "WIRED",
+          "published_at": "2026-07-28T16:02:15Z",
+          "url": "https://www.youtube.com/watch?v=LYPJBKuX1Lo",
+          "duration_seconds": 1547,
+          "view_count": "782",
+          "description": "Former FBI Special Agent and member of the original FBI elite Art Crime Team Geoffrey Kelly joins WIRED to answer the internet’s burning heist questions. How do you rob The Louvre in broad daylight? Is it true that Picasso once stole the Mona Lisa? Why don’t people do bank heists anymore? Answers to these questions and many more await on Heist Support.\n\nWIRED recommends:\nhttps://youtu.be/5iTZ_jZ63_Q\nhttps://youtu.be/fWoR1wHRWYA\nhttps://youtu.be/1-QMRLXkdk8\n\nWatch more from WIRED | Tech Support: ",
+          "is_wildcard": false
+        },
+        {
+          "source": "youtube",
+          "video_id": "A5MCIhZlbys",
+          "title": "A FULL BREAKDOWN of the Symbols, Themes, and Ending of The Long Walk | EXPLAINED",
+          "channel_id": "UCXcTkcC_H4XeDGfJ7rQGJaw",
+          "channel_title": "Lucas Blue",
+          "published_at": "2025-09-13T15:05:42Z",
+          "url": "https://www.youtube.com/watch?v=A5MCIhZlbys",
+          "duration_seconds": 731,
+          "view_count": "103969",
+          "description": "In this The Long Walk Explained / The Long Walk Ending Explained and Analysis, I take a deep dive into the new Long Walk movie, starring David Jonsson, Cooper Hoffman, Mark and Hamill. This Stephen King story, directed by Francis Lawrence, is a perfect blend of drama, science fiction, and dystopian horror, exploring themes of false hope, systemic oppression, and diginity. I believe this film is excellent in capturing the major themes of rebellion and personal dignity through great writing, actin",
+          "is_wildcard": false
+        }
+      ]
+    },
+    {
+      "name": "Rooms That Remember",
+      "emoji": "🏰",
+      "tagline": "The spaces we inhabit shape us — and sometimes, a crumbling chateau has more to say than any therapist.",
+      "items": [
+        {
+          "source": "youtube",
+          "video_id": "GNusoxeirMw",
+          "title": "When a Dream No Longer Fits the House",
+          "channel_id": "UCEqU-Ts-hxmpnlWgRMgd2MQ",
+          "channel_title": "How To Renovate A Chateau",
+          "published_at": "2025-09-14T18:30:07Z",
+          "url": "https://www.youtube.com/watch?v=GNusoxeirMw",
+          "duration_seconds": 1024,
+          "view_count": "234971",
+          "description": "AD: Go to https://surfshark.com/chateau or use code CHATEAU at \ncheckout to get 4 extra months of Surfshark VPN!\n\n🏰🕯️ Discover our Chateau Candle Collection here https://www.lefleur.fr/\nAnd follow us on instagram: https://www.instagram.com/le_fleur_honfleur\n\nBonus videos and exclusive live streams every month! Check out our Patreon page for all the latest from us: https://www.patreon.com/Howtorenovateachateau",
+          "is_wildcard": false
         }
       ]
     }
@@ -169,222 +176,302 @@
     {
       "source": "music",
       "source_name": "NPR Music",
-      "title": "Why Finnish conductor Dalia Stasevska's heart is in Ukraine",
-      "snippet": "The rising young conductor's new album, Ukrainian Mixtape, is a introduction to composers even some Ukrainians don't know very well.",
-      "url": "https://www.npr.org/2026/07/24/nx-s1-5844677/dalia-stasevska-interview-new-album",
+      "title": "How did you become a Deadhead?",
+      "snippet": "Beginning Aug. 1, NPR Music will publish a week-long list of stories and podcast episodes exploring the legacy and future of the Grateful Dead. And we want to hear from you!",
+      "url": "https://www.npr.org/2026/07/27/nx-s1-5897507/how-did-you-become-a-deadhead",
       "genre": "",
-      "vibe_check": "Like holding a candle in a darkened concert hall for someone else's homeland.",
-      "cover_url": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/6417x3610+0+335/resize/1400/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Ffd%2F36%2F5a4ad2ef4dc7b016a3e4cf879d41%2F260220-platoon-daliastasevska-shot-02-0485.jpg",
-      "embed_url": "https://www.youtube.com/embed/RHUXYJKPGkk"
+      "vibe_check": "",
+      "cover_url": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/7233x4069+0+217/resize/1400/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F67%2F2b%2F84679ce84d789828fceaa8321db4%2Fdsc5301.jpg",
+      "embed_url": null
+    },
+    {
+      "source": "music",
+      "source_name": "NPR Music",
+      "title": "Sound artist Bill Fontana amplifies 'silent' bells at San Francisco's Grace Cathedral",
+      "snippet": "Sound artist Bill Fontana creates works that often show the hidden music of everyday environments. His new work amplifies still bells at the Grace Cathedral in San Francisco.",
+      "url": "https://www.npr.org/2026/07/25/nx-s1-5884070-e1/sound-artist-bill-fontana-amplifies-silent-bells-at-san-franciscos-grace-cathedral",
+      "genre": "",
+      "vibe_check": "",
+      "cover_url": "https://media.npr.org/include/images/facebook-default-wide-s1400-c85.jpg",
+      "embed_url": null
+    },
+    {
+      "source": "music",
+      "source_name": "Stereogum",
+      "title": "Bernie Taupin Announces First Solo Album In Nearly 40 Years",
+      "snippet": "Were you aware that Bernie Taupin has released multiple solo albums? Well, he has. Taupin is famous for being Elton John's prime songwriting partner over the decades. They've got a fascinating dynamic where Taupin writes the lyrics and John writes the music, and their partnership has led Taupin to c",
+      "url": "https://stereogum.com/2506486/bernie-taupin-announces-first-solo-album-in-nearly-40-years/music/",
+      "genre": "",
+      "vibe_check": "",
+      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/07/Bernie-Taupin-The-Sea-Has-No-Mercy.jpg",
+      "embed_url": "https://www.youtube.com/embed/gDiRKFl2e80"
+    },
+    {
+      "source": "music",
+      "source_name": "No Depression",
+      "title": "THROUGH THE LENS: The Blues Rule at the 2026 Briggs Farm & Winthrop Rhythm & Blues Festivals",
+      "snippet": "This week&#x2019;s column features a double dose of the blues: the Briggs Farm Blues Festival, Briggsville, Pennsylvania (July 9-11, 2026) and the Winthrop Rhythm &amp; Blues Festival, Winthrop, Washington (July 17-19, 2026).These two fests have become staples for the column. While ND photographer J",
+      "url": "https://nodepression.org/through-the-lens-the-blues-rule-at-the-2026-briggs-farm-winthrop-rhythm-blues-festivals/",
+      "genre": "",
+      "vibe_check": "",
+      "cover_url": "https://storage.ghost.io/c/18/d0/18d08e58-3b1b-4720-ae25-a31b44e69d4b/content/images/size/w1200/2026/07/20260718_southern_avenue_08.jpg",
+      "embed_url": null
+    },
+    {
+      "source": "music",
+      "source_name": "No Depression",
+      "title": "ALBUM REVIEW: The Family Plays Together and Stays Together on 'Delusions of Grandeur'",
+      "snippet": "What does it look like when the family business is music? In the case of The Family &#x2014; a kind of &#x201C;supergroup&#x201D; made up of singer-songwriter Dylan LeBlanc and his father James LeBlanc, stepmother Angela Hacker, and stepbrother Bay Simpson &#x2014; it&#x2019;s a little messy.",
+      "url": "https://nodepression.org/album-review-the-family-plays-together-and-stays-together-on-delusions-of-grandeur/",
+      "genre": "",
+      "vibe_check": "",
+      "cover_url": "https://storage.ghost.io/c/18/d0/18d08e58-3b1b-4720-ae25-a31b44e69d4b/content/images/size/w1200/2026/07/bananago_20260728_131937.jpg",
+      "embed_url": null
     },
     {
       "source": "music",
       "source_name": "Pitchfork",
-      "title": "Linda Perhacs Is Reported Missing",
-      "snippet": "Julia Holter and other musicians are asking for help finding the Parallelograms singer-songwriter",
-      "url": "https://pitchfork.com/story/linda-perhacs-is-reported-missing/",
+      "title": "Destroyer, Stephin Merritt to Headline Bazooka! Fest",
+      "snippet": "Times New Viking, Joanna Sternberg, Sad13, and Asher White round up the lineup",
+      "url": "https://pitchfork.com/story/destroyer-stephin-merritt-to-headline-bazooka-fest/",
       "genre": "",
-      "vibe_check": "The quiet dread of an unanswered phone ringing in an empty room.",
-      "cover_url": "https://media.pitchfork.com/photos/6a6836589530336b550b91f4/16:9/w_1280,c_limit/Linda%20Perhacs,%20photo%20by%20Kyle%20Safieh.png",
+      "vibe_check": "",
+      "cover_url": "https://media.pitchfork.com/photos/6a67b820d821265043d05d4f/16:9/w_1280,c_limit/MixCollage-27-Jul-2026-03-57-PM-4606.jpg",
+      "embed_url": null
+    },
+    {
+      "source": "music",
+      "source_name": "Pitchfork",
+      "title": "Prince’s Purple Rain Is Coming to Broadway",
+      "snippet": "Purify yourself at the Majestic Theatre in 2027",
+      "url": "https://pitchfork.com/story/prince-purple-rain-is-coming-to-broadway/",
+      "genre": "",
+      "vibe_check": "",
+      "cover_url": "https://media.pitchfork.com/photos/6a67838e1ad6fa9a6bac2e23/16:9/w_1280,c_limit/GettyImages-86103158.jpg",
+      "embed_url": null
+    },
+    {
+      "source": "music",
+      "source_name": "Aquarium Drunkard",
+      "title": "The Box Set: An Appreciation, Vol. 3",
+      "snippet": "The initial standard for a compact disc was 74 minutes. Legend has it the length was decided upon in order to fit all of Beethoven’s Ninth Symphony onto a single disc. In terms of format, the arrival and adoption of the CD in 1983 changed not only how we listen to recorded music, but how it’s presen",
+      "url": "https://aquariumdrunkard.com/2026/07/28/the-box-set-an-appreciation-vol-3/",
+      "genre": "",
+      "vibe_check": "",
+      "cover_url": "https://aquariumdrunkard.com/_newness/wp-content/uploads/2026/01/box-sets.jpeg",
       "embed_url": null
     },
     {
       "source": "music",
       "source_name": "Consequence",
-      "title": "Dolly Parton’s Brother Coy “Denver” Parton Dies At 82",
-      "snippet": "The brother of the iconic country singer was a crane operator and homestead farmer, an obituary said.\nDolly Parton&#8217;s Brother Coy &#8220;Denver&#8221; Parton Dies At 82\nTravis Bland",
-      "url": "https://consequence.net/2026/07/dolly-partons-brother-dies/",
+      "title": "Psychedelic Folk Singer Linda Perhacs Reported Missing",
+      "snippet": "Friends and longtime collaborators are seeking the public’s help in locating the influential 82-year-old musician.\nPsychedelic Folk Singer Linda Perhacs Reported Missing\nAlex Krinsky",
+      "url": "https://consequence.net/2026/07/linda-perhacs-reported-missing-psych-folk-singer/",
       "genre": "",
-      "vibe_check": "The bittersweet ache of a porch in the Tennessee hills going a little quieter.",
-      "cover_url": "https://consequence.net/wp-content/uploads/2026/07/Coy-and-Dolly-Parton.jpg",
+      "vibe_check": "",
+      "cover_url": "https://consequence.net/wp-content/uploads/2026/07/Linda-Perhacs-reported-missing.jpg",
       "embed_url": null
     },
     {
       "source": "music",
-      "source_name": "Consequence",
-      "title": "Roger Waters Hopes People Will Hear “Comfortably Numb” Remake With Palestinian Singer as “Prophetic”",
-      "snippet": "\"Comfortably Numb Re-Imagined\" is a collaboration between the Pink Floyd singer and Palestinian singer Mona Miari.\nRoger Waters Hopes People Will Hear &#8220;Comfortably Numb&#8221; Remake With Palestinian Singer as &#8220;Prophetic&#8221;\nTravis Bland",
-      "url": "https://consequence.net/2026/07/roger-waters-talks-about-comfotrably-numb-remake/",
+      "source_name": "JazzTimes",
+      "title": "Sweeps Week: Top July Jazz Releases, Amorosi Edition",
+      "snippet": "H ere are A.D. Amorosi’s monthly picks, coming to you the last Tuesday of the month. Ralph Alessi, A Sun That Never Sets (ECM Records) &#8230; Read More \"Sweeps Week: Top July Jazz Releases, Amorosi Edition\"\nThe post Sweeps Week: Top July Jazz Releases, Amorosi Edition appeared first on JazzTimes.",
+      "url": "https://www.jazztimes.com/reviews/albums/sweeps-week-top-july-jazz-releases-amorosi-edition-2/",
       "genre": "",
-      "vibe_check": "A distorted guitar solo echoing across a headline you wish wasn't real.",
-      "cover_url": "https://consequence.net/wp-content/uploads/2026/07/Roger-Waters-and-Mona-Miari.jpg",
-      "embed_url": "https://www.youtube.com/embed/WBmrT3uqmeM"
+      "vibe_check": "",
+      "cover_url": "https://www.jazztimes.com/wp-content/uploads/2026/07/collage-AD-July-26--scaled.jpg",
+      "embed_url": null
+    },
+    {
+      "source": "music",
+      "source_name": "PopMatters",
+      "title": "Aaron Lee Tasjan Holds a Funhouse Mirror to America",
+      "snippet": "Aaron Lee Tasjan wrestles with imposter syndrome and artificial intelligence on Get Over It, Underdog. Tasjan finds joy and pleasure where he can.",
+      "url": "https://www.popmatters.com/aaron-lee-tasjan-get-over-it",
+      "genre": "",
+      "vibe_check": "",
+      "cover_url": "",
+      "embed_url": null
+    },
+    {
+      "source": "music",
+      "source_name": "PopMatters",
+      "title": "Brazil’s Maria Luiza Jobim Opens New Doors with ‘Rosa No Céu’",
+      "snippet": "Like a mojito laced with absinthe, the sweet mixture packs a kick, reflecting the understated sophistication of Maria Luiza Jobim's latest album.",
+      "url": "https://www.popmatters.com/maria-luiza-jobim-rosa-no-ceu",
+      "genre": "",
+      "vibe_check": "",
+      "cover_url": "https://www.popmatters.com/wp-content/uploads/2026/07/Maria-Luiza-Jobim-Rosa-No-Ceu-social.webp",
+      "embed_url": "https://www.youtube.com/embed/Ajs_jL9QhSc"
+    },
+    {
+      "source": "music",
+      "source_name": "PopMatters",
+      "title": "The Best Song on KiKi Holli’s New EP Belongs to INXS",
+      "snippet": "KiKi Holli made her name interpreting Dusty Springfield on a New York stage. She is a superb interpreter. Her own writing hasn't quite caught up yet.",
+      "url": "https://www.popmatters.com/kiki-holli-something-about-you",
+      "genre": "",
+      "vibe_check": "",
+      "cover_url": "https://www.popmatters.com/wp-content/uploads/2026/07/KiKi-Holli-Something-About-You-social.webp",
+      "embed_url": "https://www.youtube.com/embed/KphscEISyhQ"
     }
   ],
   "global_silver_linings": [
     {
       "source": "good_news",
       "source_name": "Good News Network",
-      "title": "Odd Texas Ranch ‘Raises’ Telescopes to Provide Dark Sky Viewing for Stargazers in Cities Remotely",
-      "url": "https://www.goodnewsnetwork.org/unusual-texas-ranch-raises-telescopes-to-provide-remote-dark-sky-viewing-for-those-living-amid-light-pollution/",
-      "snippet": "Submitted By Jeff G. Rottman About 80 miles east of San Angelo, Texas, a young astrophotographer named Bray Falls is running one of the largest ‘telescope ranches’ on Earth. Stargazers from around the world ship their telescope gear to Bray, who hosts hundreds of them on his 40 acres of gently rolling terrain near Rockwood.",
-      "cover_url": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/07/Starfront-Observatories.telescopes-set-up-in-warehouse.jpeg",
-      "reason": "A Texas ranch is making the wonder of dark-sky stargazing accessible to city dwellers who may never escape light pollution, proving that the beauty of the universe doesn't have to belong only to the few. It's a reminder that human ingenuity can still carve out moments of genuine awe."
-    },
-    {
-      "source": "good_news",
-      "source_name": "Upworthy",
-      "title": "Good citizen 101: What do you do when you receive someone else’s mail?",
-      "url": "https://www.upworthy.com/good-citizen-101-what-do-you-do-when-you-receive-someone-elses-mail/",
-      "snippet": "All you need to do is leave a simple instruction for the postal worker. The post Good citizen 101: What do you do when you receive someone else’s mail? appeared first on Upworthy .",
-      "cover_url": "https://www.upworthy.com/wp-content/uploads/sites/2/2026/07/pexels-cottonbro-6916773-e1785196434770.jpg",
-      "reason": "Small acts of neighbourly honesty — like returning someone's misdelivered mail — quietly hold communities together, and stories like this remind us that everyday decency is still very much alive."
-    },
-    {
-      "source": "good_news",
-      "source_name": "The Optimist Daily",
-      "title": "Roadside milkweed is giving monarchs a new migration highway",
-      "url": "https://www.optimistdaily.com/2026/07/roadside-milkweed-is-giving-monarchs-a-new-migration-highway/",
-      "snippet": "BY THE OPTIMIST DAILY EDITORIAL TEAM Researchers have planted 9,000 milkweed plants along roads in six North Florida counties, with 6,000 more going in before 2029. Monarchs are already showing up at the sites. The work is part of a national effort led by the University of Illinois Chicago to turn road margins, power line […] The post Roadside milkweed is giving monarchs a new migration highway first appeared on The Optimist Daily: Making Solutions the News .",
-      "cover_url": "https://www.optimistdaily.com/wp-content/uploads/Depositphotos_269556048_L.jpg",
-      "reason": "Milkweed growing along roadsides is creating a vital corridor for monarch butterflies on their epic migration, showing that nature can find a foothold in unexpected places when we simply let it. This humble wildflant may be one of the most important conservation tools we have."
+      "title": "Internet Access Soars, Costs Plummet on Island Following the End its Federal Telecom Monopoly",
+      "url": "https://www.goodnewsnetwork.org/internet-access-soars-costs-plummet-on-island-following-the-end-its-federal-telecom-monopoly/",
+      "snippet": "Internet access has increased 20-fold and broadband costs have fallen by 99% on the archipelago of Micronesia thanks to the ending of government monopoly in the sector. Market liberalization has dropped the cost of internet to $65.00 per Mbps per month to just 78 cents, while more than 1,500 kilometers of undersea fiber optic cables […] The post Internet Access Soars, Costs Plummet on Island Following the End its Federal Telecom Monopoly appeared first on Good News Network .",
+      "cover_url": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/07/Fiber-optic-cables-being-installed-in-FSM-credit-Digital-FSM-Project-The-World-Bank-Group.jpg",
+      "reason": "When monopolies are broken up, real people benefit — faster, cheaper internet reaching an island community is a quiet but powerful reminder that structural change can genuinely improve everyday life. It's proof that better access to the wider world doesn't have to be a privilege."
     }
   ],
   "discovery_articles": [
     {
       "source": "discovery",
       "source_name": "Atlas Obscura",
-      "title": "Nostalgia Box in West Perth, Australia",
-      "url": "https://www.atlasobscura.com/places/nostalgia-box",
-      "snippet": "The museum has over 100 video game consoles on display. Dating from the 1970s, when video games were in their baby shoes, all the way to the early 2000s where we can see how much these games have grown, just like how you have done over the years. There is also an interactive section where you can get hands on with and play with many of the systems.",
+      "title": "The Living History Museum of Camping in Phelps, Wisconsin",
+      "url": "https://www.atlasobscura.com/places/the-living-history-museum-of-camping",
+      "snippet": "In Wisconsin's Northwoods, nobody ever went \"to the cabin\" — they went to the camp , whether that meant a canvas tent, a camper, or the family cottage on the lake. A resort on North Twin Lake has turned that whole tradition into America's first living history museum of camping — a museum where the exhibits have beds, and guests are encouraged to sleep in them. The collection spans a century, one decade per unit: two Prohibition-era luxury tents named for Al Capone and John Dillinger, who genuinely vacationed (and hid) in these woods — Dillinger's famous FBI shootout happened one lake chain over.",
       "category": "history",
-      "cover_url": "https://img.atlasobscura.com/Vfiay4qOlQ0QxRgwXlsXyM1duB2ps_6J5ZdjAs_YrLg/rt:fit/w:600/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy82M2Uy/OTExZC03YTZlLTQz/NTEtYmE4MC1hYjg2/OTFjN2QxNzZhYjc4/MmJlMjRhODM4MjU4/NDZfSU1HXzUxMzcu/anBlZw.jpg",
-      "ferns_note": "There's something quietly poignant about a museum dedicated to consoles most people remember as childhood furniture — the Nostalgia Box treats a Atari joystick with the same reverence usually reserved for Roman coins. It's a reminder that 'ephemeral' and 'historic' are often the same thing, just decades apart."
+      "cover_url": "https://img.atlasobscura.com/OVTVXBagEtjYbeJz-w0hFGrl49NG5XEVUHnpHh0LBO0/rt:fit/w:600/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy83NDM4/NTVkNC03NzEwLTRm/OTktYTQ0MS01MzU4/YjA4ZjU3NGVkYThm/NmVmNTI5NjA5ZDcx/NjhfTGlnaHRob3Vz/ZSBWaW50YWdlIENh/bXBlci5qcGc.jpg"
     },
     {
       "source": "discovery",
       "source_name": "Atlas Obscura",
-      "title": "Museo d'Arte Sacra di Catania in Catania, Italy",
-      "url": "https://www.atlasobscura.com/places/museo-darte-sacra-di-catania",
-      "snippet": "Most visitors experience Saint Agatha in February, when hundreds of thousands of people flood Catania's streets for one of Europe's largest religious festivals. Hidden beside the cathedral, however, is the place where the city's devotion quietly waits for the rest of the year. The Museo d'Arte Sacra is less an art museum than a journey through the objects that have shaped Catania's religious identity for centuries.",
+      "title": "Schwarzer Turm in Mödling, Austria",
+      "url": "https://www.atlasobscura.com/places/schwarzer-turm",
+      "snippet": "This (more gray than) \"black tower\" is part of a whole series of picturesque viewpoints constructed in and around the small town Mödling commissioned by Johann I., Prince of Liechtenstein. It was built in 1809 and 1810 according to the plans of the architect Joseph Hardtmuth. It was most likely originally intended as an observation tower and was later also used as a forester’s residence.",
       "category": "history",
-      "cover_url": "https://img.atlasobscura.com/Sji8PQBvuf96lrZyjUnalI168NS5cHgfFhkhDhXWD3E/rt:fit/w:600/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy84NDli/OTA2Yy00ZWU3LTQx/N2YtYWFjYS00MTM4/YTQ4NjFlOGMyZWNk/YjFiMjc3NTg5MTFl/YWRfMi5qcGVn.jpg",
-      "ferns_note": "While the February festival draws hundreds of thousands into Catania's streets in a fever of devotion, this small museum tucked beside the cathedral holds the quieter truth — the relics, vestments, and votive objects that sustain a city's faith when no one is watching. It's the difference between the performance and the prayer."
+      "cover_url": "https://img.atlasobscura.com/VicLd_geUetCNU-aHXJtlEl2Rc87ZcVNY61RAidUulM/rt:fit/w:600/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy9kMzBl/OGU4Ny1jM2UyLTQz/ZjktODMyMy03ZWRl/NGEyMGFiZDYyNDU2/NGM3NjU5YzkyNDc5/YzVfTW_MiGRsaW5n/Xy1fU2Nod2FyemVy/X1R1cm1fMi5qcGc.jpg"
     },
     {
       "source": "discovery",
       "source_name": "Smithsonian",
-      "title": "Ancient Fossil Footsteps Found in Kenya May Hint That an Early Human Relative Was Larger Than Previously Thought",
-      "url": "https://www.smithsonianmag.com/smithsonian-institution/ancient-fossil-footsteps-found-in-kenya-may-hint-that-an-early-human-relative-was-larger-than-previously-thought-180989206/",
-      "snippet": "The trackway sheds light on how some hominins moved around their environments and with one another",
+      "title": "See a Rare Ceiling Fresco From Pompeii That Archaeologists Are Carefully Reassembling, Piece by Piece, Like an Ancient Puzzle",
+      "url": "https://www.smithsonianmag.com/smart-news/see-a-rare-ceiling-fresco-from-pompeii-that-archaeologists-are-carefully-reassembling-piece-by-piece-like-an-ancient-puzzle-180989209/",
+      "snippet": "Located in the banquet hall of a home with an adjoining bakery, the fresco shows the mythological romance of Dionysus, the god of revelry and wine, and Ariadne, the Cretan princess",
       "category": "history",
-      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/E5lT_yFJlgctEJmlrcGRAjQwvmU=/fit-in/1600x0/filters:focal(457x376:458x377)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/08/4a/084ae64f-ccc0-4d80-84d4-3c763b367b47/et_gaji10_2023_with_k_hatala.jpg",
-      "ferns_note": "Fossilized footprints are one of archaeology's most intimate artifacts — not tools, not bones, but the actual pressure of a body moving through a moment in time. These Kenyan tracks suggest the hominin who left them was bigger than we assumed, quietly rewriting the silhouette of our family tree."
+      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/GvaETt3oeYSSrcXzxBW2WSD6RQY=/fit-in/1600x0/filters:focal(596x510:597x511)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/23/1a/231a3df2-a7e7-4ef8-9039-1a7fb2f22c01/soffitto-casa-panificio-regio-ix-9-1-1191x1024.jpg"
     },
     {
       "source": "discovery",
       "source_name": "Smithsonian",
-      "title": "Art Sleuths Discovered a Lost and ‘Enormously Important’ Portrait of an Elite Indian Woman by This Pioneering Scottish Painter",
-      "url": "https://www.smithsonianmag.com/smart-news/art-sleuths-discovered-a-long-lost-and-enormously-important-portrait-of-an-elite-indian-woman-by-this-pioneering-scottish-painter-180989201/",
-      "snippet": "Katherine Read was one of the most fashionable portrait creators in London before she moved to India. She found success portraying women and children",
+      "title": "An Endangered Kemp's Ridley Sea Turtle Named Pancake Makes a Triumphant Return to the Ocean After Months of Rehabilitation",
+      "url": "https://www.smithsonianmag.com/smart-news/an-endangered-kemps-ridley-sea-turtle-named-pancake-makes-a-triumphant-return-to-the-ocean-after-months-of-rehabilitation-180989205/",
+      "snippet": "The cold-stunned turtle was rescued last fall on Cape Cod and has since made a full recovery. The reptile, whose sex remains unknown, is estimated to be between 2 and 5 years old and weighed 11 pounds at the time of release",
       "category": "history",
-      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/vN-THdbxDVNljdppDgQodzu-568=/fit-in/1600x0/filters:focal(600x314:601x315)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/d5/97/d5974844-5690-4183-b8c5-d98a7333cd42/read_portrait_long.jpg",
-      "ferns_note": "Katherine Read was celebrated in London's most fashionable drawing rooms, then vanished from art history almost entirely — so the recovery of a lost portrait she painted of an elite Indian woman feels less like a footnote and more like two forgotten women finding each other across centuries."
+      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/2g3bXWKLJIsxqvNsINOs194bWMM=/fit-in/1600x0/filters:focal(800x602:801x603)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/0b/4c/0b4c5c07-6f4e-41b1-9e45-40d5b79cac11/pancake_release_-_credit_mary_dixon_wcs_2.jpeg"
     },
     {
       "source": "discovery",
       "source_name": "Smithsonian",
-      "title": "How Does a Bilingual Speaker's Brain Process Two Languages? New Research Suggests That Both Rely on the Same Neural Wiring",
-      "url": "https://www.smithsonianmag.com/smart-news/how-does-a-bilingual-speakers-brain-process-two-languages-new-research-suggests-that-both-rely-on-the-same-neural-wiring-180989202/",
-      "snippet": "Scientists have long wondered whether different neural mechanisms govern each language within a bilingual speaker’s brain. A recent study of people who speak both English and Spanish hints at a single \"grammatical engine\"",
+      "title": "This 1863 Massacre Was the Deadliest Slaughter of Native Americans in U.S. History. Now, the Shoshone Are Restoring the Site of the Attack",
+      "url": "https://www.smithsonianmag.com/history/this-1863-massacre-was-the-deadliest-slaughter-of-native-americans-in-us-history-now-the-shoshone-are-restoring-the-site-of-the-attack-180989200/",
+      "snippet": "Amid mounting tensions between white settlers and the Shoshone, Union soldiers killed an estimated 250 to 500 Shoshone. Today, the Indigenous nation is working to bring \"nature back into balance\"",
       "category": "history",
-      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/fWvHarr9booJu01Rjdv_cdznrjY=/fit-in/1600x0/filters:focal(2736x1824:2737x1825)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/1b/be/1bbe526e-c980-4aff-a1b7-817d1613a36d/language-grammatical-engine.jpg",
-      "ferns_note": "The idea that a bilingual brain doesn't juggle two separate grammatical systems but runs both languages through a single shared engine quietly dismantles the notion that learning a second language means building a second mind — it turns out you were already wired for more than one world."
+      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/qdHphGT4s6kAlYagV_PyxvAbVaY=/fit-in/1600x0/filters:focal(1128x752:1129x753)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/7c/51/7c51535e-f62b-4688-80a7-40a744294846/2m5hrrj.jpg"
     },
     {
       "source": "discovery",
       "source_name": "Smithsonian",
-      "title": "French Customs Detained This Marc Chagall Etching for Two Decades After an Attempted Border Crossing. Now It's Headed for Public Display",
-      "url": "https://www.smithsonianmag.com/smart-news/french-customs-detained-this-marc-chagall-etching-for-two-decades-after-an-attempted-border-crossing-now-its-headed-for-public-display-180989204/",
-      "snippet": "An acrobat perches on a violin in the absurd scene, which draws on the Russian artist's favored motifs",
+      "title": "Predatory Sharks Grew to Enormous Sizes in Prehistoric Times. These Five Strategies Helped Them Get So Big",
+      "url": "https://www.smithsonianmag.com/science-nature/predatory-sharks-grew-to-enormous-sizes-in-prehistoric-times-these-five-strategies-helped-them-get-so-big-180989199/",
+      "snippet": "By cannibalizing their siblings in the womb or avoiding meat-eating pliosaurs, fearsome carnivores like the megalodon ballooned to proportions that would dwarf any shark alive today",
       "category": "history",
-      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/b4OnQ0faDv8go0Lb1ezVmVkwlKM=/fit-in/1600x0/filters:focal(600x314:601x315)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/a7/03/a7032901-b619-4425-8bef-d243477118ea/chagall_long.jpg",
-      "ferns_note": "A Chagall etching spent twenty years in French customs limbo after a failed border crossing — which is either a Kafkaesque nightmare or, given Chagall's love of surreal suspension, almost too fitting for a scene featuring an acrobat balanced on a violin."
+      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/dNi2bsZm2qHGRrkCHpuH7W_lpa8=/fit-in/1600x0/filters:focal(800x602:801x603)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/3e/c2/3ec2180a-a238-4b81-8841-2285409305be/img_2825.jpg"
+    },
+    {
+      "source": "discovery",
+      "source_name": "Science News",
+      "title": "‘Forever chemicals’ could be aging dolphins beyond their years",
+      "url": "https://www.sciencenews.org/article/forever-chemicals-aging-dolphins",
+      "snippet": "Common dolphins in New Zealand are biologically older than their calendar ages. Trace metals and “forever chemicals” may be to blame.",
+      "category": "science",
+      "cover_url": "https://www.sciencenews.org/wp-content/uploads/sites/2/2026/07/072026_LR_dolphin-aging_feat.jpg"
+    },
+    {
+      "source": "discovery",
+      "source_name": "Science News",
+      "title": "New images reveal Betelgeuse’s buddy star",
+      "url": "https://www.sciencenews.org/article/new-images-betelgeuse-star",
+      "snippet": "A century of hints has suggested the famed red supergiant had a star pal but seeing it amid Betelgeuse’s brightness has been hard — until now.",
+      "category": "science",
+      "cover_url": "https://www.sciencenews.org/wp-content/uploads/sites/2/2026/07/072726_LG_Betelgeusebuddy_main.jpg"
+    },
+    {
+      "source": "discovery",
+      "source_name": "Aeon",
+      "title": "The light narrows",
+      "url": "https://aeon.co/essays/what-kind-of-strength-did-i-chase-with-a-cojones-cheat-code",
+      "snippet": "My father’s death sent me to the jiu-jitsu mat. Then came defeat, low testosterone and the lure of a chemical cheat code - by Wes Brown Read on Aeon",
+      "category": "science",
+      "cover_url": ""
+    },
+    {
+      "source": "discovery",
+      "source_name": "JSTOR Daily",
+      "title": "How a Murder Fueled Racial Terror in Florida",
+      "url": "https://daily.jstor.org/how-a-murder-fueled-racial-terror-in-florida/",
+      "snippet": "The hunt for Charlie Wright exposed how convict leasing, labor tensions, and white supremacy shaped rural life in the Jim Crow South. The post How a Murder Fueled Racial Terror in Florida appeared first on JSTOR Daily .",
+      "category": "history",
+      "cover_url": "https://daily.jstor.org/wp-content/uploads/2026/07/how_a_murder_fueled_racial_terror_in_florida_1050x700.jpg"
     },
     {
       "source": "discovery",
       "source_name": "Colossal",
-      "title": "‘Colorstruck!’ Examines the Connection Between Race and Chromatic Expression",
-      "url": "https://www.thisiscolossal.com/2026/07/richard-j-powell-black-american-art-colorstruck/",
-      "snippet": "'Colorstruck! Painting, Pigment, Affect' delves into the ways that color and social, political, and cultural forces intersect in Black American art. Do stories and artists like this matter to you?",
+      "title": "Nature or Culture? Europeans Can Vote on the New Banknote Design",
+      "url": "https://www.thisiscolossal.com/2026/07/euro-banknote-design-central-bank/",
+      "snippet": "Birds or figures? These are the ten design proposals for a new European banknote. Do stories and artists like this matter to you?",
       "category": "history",
-      "cover_url": "https://www.thisiscolossal.com/wp-content/uploads/2026/07/colorstruck-2.jpg",
-      "ferns_note": "'Colorstruck!' asks a question that turns out to be surprisingly complex: when Black American artists reach for pigment, what histories and pressures are already baked into the color itself? It reframes the painter's palette as a site of both freedom and contested meaning."
+      "cover_url": "https://www.thisiscolossal.com/wp-content/uploads/2026/07/euro-3.jpeg"
     }
   ],
   "featured_read": {
     "source": "reads",
     "source_name": "The Marginalian",
-    "title": "The Donkey and the Meaning of Life",
-    "url": "https://www.themarginalian.org/2026/07/26/platero-and-i/",
-    "snippet": "\"Come with me. I'll teach you the flowers and the stars.\"",
-    "cover_url": "https://www.themarginalian.org/wp-content/uploads/2023/07/HealerOnADonkey_Pirosmani0.jpg?fit=1000%2C525&ssl=1",
-    "blurb": "A donkey, of all creatures, becomes the unlikely philosopher asking whether a life of burden can still hold beauty — and whether wonder, not purpose, might be the closer thing to meaning. Come for the flowers and the stars; stay because you'll recognize yourself somewhere in the question."
+    "title": "The Bird in You, the World in You, and the Art of Trusting Time: A Ceramics and Serpentine Raffle",
+    "url": "https://www.themarginalian.org/2026/07/27/serpentine-birdworlds/",
+    "snippet": "One December afternoon, I arrived in Patagonia with a big blue backpack, a small bilingual edition of Pablo Neruda’s love poems, and a broken heart. (Though a heart, of course, never breaks.) The moment I stepped out of the airplane, the Andes towered over me like the stone thrones of gods, snow-capped over the oracle eye of the glacial lake, blue as Uranus, their scale so incomprehensible you are no longer a person but a particle, a mote of dust in the eye of eternity; the trees are no longer trees but moss carpeting the slopes all the way down… read article",
+    "cover_url": "https://www.themarginalian.org/wp-content/uploads/2026/07/serpentine_birdworld_trusttime00.jpg?fit=1200%2C630&ssl=1",
+    "blurb": "This essay asks what happens to grief when you carry it somewhere vast enough to dwarf it — arriving in Patagonia with a broken heart and Neruda, the writer discovers that scale itself can be a kind of medicine. Set aside the half-hour for the moment the Andes turn a person back into a particle, and what quietly grows in that reduction."
   },
   "garden_note": {
-    "note": "High summer settles over Zürich with the confidence of a well-ripened tomato — the garden is at full stretch now, borders brimming with echinacea and zucchini threatening to become marrows overnight. Step out just after first light at 05:22 and you'll catch the air still cool, the spiders' webs jewelled with dew before the heat climbs.",
+    "note": "Tonight the full moon rises over Zürich with an almost theatrical confidence, washing the garden in silver light just as the last warmth lifts from the soil — the kind of evening that makes deadheading dahlias feel like a ceremony rather than a chore. High summer is at its fullest here: savour it slowly.",
     "in_season": [
-      "Echinacea in full bloom — deadhead spent flowers to extend the flush",
-      "Courgettes & zucchini: harvest every other day before they outgrow you",
-      "Runner beans at their peak — pick generously to keep the plants producing",
-      "Lavender ready to cut and dry before the flowers fully open"
+      "Dahlias in first flush",
+      "Runner beans ready to pick",
+      "Lavender at peak bloom — harvest before it drops",
+      "Sow Swiss chard for autumn"
     ],
-    "sky_tonight": "Tonight's full moon rises nearly opposite the sunset — look southeast after dusk for a luminous, low-riding orb that will flood the garden in silver all night long.",
-    "sun_times": "First light arrives at 05:22 this morning, and the sun lingers until 21:07 — savour every minute of this long Swiss summer day.",
+    "sky_tonight": "The Full Moon dominates the sky all night — look for Saturn rising in the south-east by late evening, a steady golden point below it",
+    "sun_times": "First light crept in at 05:22 this morning, and the sun slips away tonight at 21:07 — dusk lingers until 21:41",
     "moon_label": "Full moon",
-    "illum_pct": 98,
+    "illum_pct": 99,
     "sun_range": "05:57–21:07"
   },
   "puzzle": {
-    "kind": "haiku riddle",
-    "label": "The Morning Haiku",
-    "prompt": "anniversary moon\nmy hand falls to the ____\nside of the bed\n\n(Fill in the missing word.)",
-    "answer": "empty",
-    "hint": "a feeling as much as a description",
-    "source": "tinywords.com",
-    "source_id": "https://tinywords.com/?p=49697",
-    "credit": "Haiku by Nitu Yumnam, via tinywords.com"
+    "kind": "anagram",
+    "label": "Fern's Morning Anagram",
+    "prompt": "Rearrange the letters of WINTER to make a different common word.",
+    "answer": "Twiner",
+    "hint": "There is one other word hiding in it.",
+    "source": "wordsmith.org",
+    "source_id": "winter"
   },
   "previous_puzzle": {
-    "label": "Fern's Morning Riddle",
-    "prompt": "I run in and out of town all day and night. What am I?",
-    "answer": "A road"
+    "label": "The Morning Haiku",
+    "prompt": "anniversary moon\nmy hand falls to the ____\nside of the bed\n\n(Fill in the missing word.)",
+    "answer": "empty"
   },
   "larder": {
-    "news": [
-      {
-        "source": "food",
-        "source_name": "The Kitchn",
-        "title": "Costco vs. Sam’s Club: We Compared Membership Fees, Return Policies, Prices, and Even Food Courts",
-        "url": "https://www.thekitchn.com/costco-vs-sams-club-23581642?utm_source=RSS&utm_medium=feed&utm_campaign=Category%2FChannel%3A+main",
-        "snippet": "PSA for card-carrying members. READ MORE...",
-        "cover_url": "",
-        "blurb": "Whether you're a devoted Costco devotee or a Sam's Club curious, this side-by-side breakdown is the sensible read your wallet has been quietly requesting."
-      },
-      {
-        "source": "food",
-        "source_name": "The Guardian",
-        "title": "Grilled prawns, red rice, boozy baked peaches: Thomasina Miers’ Spanish-style summer lunch recipes | Sunday Best",
-        "url": "https://www.theguardian.com/food/2026/jul/28/spanish-summer-recipes-grilled-prawns-red-rice-boozy-baked-peaches-thomasina-miers",
-        "snippet": "An indulgent and satisfying summer lunch: grilled prawns with red rice and allioli; and boozy baked peaches, amaretti biscuits and cold custard for dessert Large, scented tomatoes are beginning to flood the markets near me, and their presence brings back memories of Mexico. On a trip up north to Ensenada, a famous fishing port, I became obsessed with the Spanish-style arroz dishes studded with fresh shellfish and seafood of every shape and size. The clams!",
-        "cover_url": "https://i.guim.co.uk/img/media/93c29f617233fd2d889ae6ae619c711754f4fb68/4_104_4870_3894/master/4870.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=d93c8b11132647fd4d7033e17003dd90",
-        "blurb": "Thomasina Miers brings the languid warmth of a Spanish terrace straight to your Sunday table, and those boozy baked peaches alone are worth the price of admission."
-      }
-    ],
-    "recipe": {
-      "source": "recipe",
-      "source_name": "Smitten Kitchen",
-      "title": "strawberry chiffon shortcake, perfected",
-      "url": "https://smittenkitchen.com/2026/06/strawberry-chiffon-shortcake-perfected/",
-      "snippet": "In 2007, when this website was still in its infancy, I shared a recipe for a layered strawberry chiffon shortcake . I’d never made a chiffon cake before, but I brought it to a friend’s rooftop birthday BBQ, correctly assuming that no one would be unhappy with a towering, featherweight cake sandwiched with whipped cream and fresh strawberries, however inexpertly made. Read more »",
-      "is_recipe": true,
-      "cover_url": "https://i0.wp.com/smittenkitchen.com/wp-content/uploads/2026/06/strawberry-chiffon-shortcake-perfected-19-scaled.jpg?fit=1200%2C800&quality=89&ssl=1",
-      "blurb": "This perfected strawberry chiffon shortcake — light, layered, and built for peak-season berries — is the kind of celebratory bake that feels effortlessly special even if it's just a Tuesday."
-    },
-    "seasonal_note": "Zürich's Tuesday and Saturday Bürkliplatz market is flush with Goldband zucchini and the first fragrant Thurgau apricots right now — worth arriving early to snag a kilo of the apricots for a lazy Confiture that perfumes the whole kitchen by mid-morning."
+    "news": [],
+    "recipe": {}
   },
   "fern_data": {
-    "greeting": "Funny how Monday arrives with the confidence of someone who thinks they weren't expected. Worth noting: the plastered skulls of Jericho have better cheekbones than most of us, Prince Albert's dressing gown has survived longer than several empires, and the monarchs have quietly rerouted their entire migration without filing a single permit.",
-    "top_pick_title": "Good Bones & Better Instincts"
+    "greeting": "Something about a day that ends with Irving Finkel pressing ancient cuneiform into clay and a sea turtle named Pancake returning to the ocean makes the ordinary hours feel quietly miraculous — as if the world has been busy doing its best work while we weren't paying attention.",
+    "top_pick_title": "Clay, Wings & the Long Way Home"
   }
 }
