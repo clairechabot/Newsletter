@@ -1,165 +1,182 @@
 {
-  "fetched_at": "2026-08-01T17:32:51.435006+02:00",
-  "is_am_email": false,
+  "fetched_at": "2026-08-02T08:16:51.352388+02:00",
+  "is_am_email": true,
   "audit_summary": {
     "youtube_videos": 10,
-    "themes": 3,
-    "music_articles": 4,
+    "themes": 4,
+    "music_articles": 6,
     "good_news_articles": 2,
-    "discovery_articles": 2,
+    "discovery_articles": 0,
     "featured_read": 1,
     "garden": 1,
     "puzzle": 1,
-    "larder": 0
+    "larder": 3
   },
   "themes": [
     {
-      "name": "Dirt Under Your Fingernails",
-      "emoji": "🌿",
-      "tagline": "From Japanese rice paddies to backyard nettle brews — getting gloriously grubby with the natural world.",
+      "name": "When History Gets Messy",
+      "emoji": "🏛️",
+      "tagline": "Power, spin, and chaos — the ancient world was less different from ours than we'd like to admit.",
       "items": [
         {
           "source": "youtube",
-          "video_id": "BO7e53AsP0o",
-          "title": "He Quit His Job To Farm Rice In The Japanese Countryside | Grow & Tell",
-          "channel_id": "UCSbyncU597LMwb3HhnAI_4w",
-          "channel_title": "Epic Gardening",
-          "published_at": "2026-08-01T14:58:30Z",
-          "url": "https://www.youtube.com/watch?v=BO7e53AsP0o",
-          "duration_seconds": 1602,
-          "view_count": "474",
-          "description": "Brought to you by Shopify. Start your free trial at https://shopify.com/epicgardening\nGrow & Tell goes global! This might be one of my favorite farm tours yet. Join me as I explore rural Japan with a former corporate worker turned organic rice farmer. From mountain-fed paddies to the final meal, this was an unforgettable journey.\n\nIN THIS VIDEO\n\n→ \n\nSUPPORT EPIC GARDENING\n\n→ Shop: https://growepic.co/shop\n→ Seeds: https://growepic.co/botanicalinterests\n\nLEARN MORE\n\n→ All Our Channels: https://gr",
-          "is_wildcard": false
-        },
-        {
-          "source": "youtube",
-          "video_id": "z7LvjVRHojo",
-          "title": "Better than MiracleGro: Make Fertilizer from Nettles",
-          "channel_id": "UC9r61qohBg1qgGty4_WzojA",
-          "channel_title": "GrowVeg",
-          "published_at": "2026-08-01T14:45:22Z",
-          "url": "https://www.youtube.com/watch?v=z7LvjVRHojo",
-          "duration_seconds": 781,
-          "view_count": "552",
-          "description": "Enjoy a no-obligation, completely free trial of the Garden Planner here: \nhttps://www.GrowVeg.com/grow-planner-free\n\nAnd for your completely free abridged version of Ben's book, click here:\nhttps://www.growveg.com/grow-book-download\n\nMost gardeners spend a fortune on fertilizers, (often made with chemicals) while chopping down and throwing away the nettles that are growing in their gardens. So what if we told you that it is possible to make our own organic, chemical-free fertilizer using nettles",
-          "is_wildcard": false
-        },
-        {
-          "source": "youtube",
-          "video_id": "I9VkavI9l9I",
-          "title": "Inside The Bizarre Biology Of The Stegosaurs",
+          "video_id": "DC9_t2AePOY",
+          "title": "The Catiline Conspiracy: Overthrowing The Roman Republic",
           "channel_id": "UC2J29LPhS9vMiWyYEqBRB0w",
           "channel_title": "The Ancients",
-          "published_at": "2025-12-14T07:00:15Z",
-          "url": "https://www.youtube.com/watch?v=I9VkavI9l9I",
-          "duration_seconds": 2834,
-          "view_count": "67403",
-          "description": "Few dinosaurs are as instantly recognisable as the plated titan Stegosaurus - it's the Jurassic giant with a brain the size of a walnut and a tail that could kill.\n\nIn this episode of The Ancients, Tristan Hughes is joined by Dr Susannah Maidment of London’s Natural History Museum to uncover the secrets of its incredible armour, explore the latest theories behind its bizarre anatomy, and journey back to the Jurassic World it dominated to understand how this unique giant truly lived and fought. J",
+          "published_at": "2026-08-02T06:00:15Z",
+          "url": "https://www.youtube.com/watch?v=DC9_t2AePOY",
+          "duration_seconds": 3861,
+          "view_count": "58",
+          "description": "In 63 BC, Rome faced a conspiracy that threatened to tear the Roman Republic apart. At its centre stood two figures: Marcus Tullius Cicero, the grand old orator of Rome and Lucius Sergius Catilina, accused of plotting violence, rebellion and the overthrow of Rome’s political order. But was the danger as great as Cicero claimed?\n\nIn this episode of The Ancients, Tristan Hughes is joined by Professor Catharine Edwards to uncover the truth behind the Catiline Conspiracy. Did Cicero save the Roman R",
+          "why_watch": "This episode digs into one of Rome's most dramatic political crises — not just as a story of conspiracy, but as a question of prosecutorial spin: was Catilina genuinely dangerous, or did Cicero manufacture the threat for his own glory? A historian joins to interrogate the evidence, which makes this far more than a retelling. Good entry point if you've only ever heard Cicero's side.",
+          "is_wildcard": false
+        },
+        {
+          "source": "youtube",
+          "video_id": "UoMMhzWbQkY",
+          "title": "A Medieval Masterpiece | William the Conqueror's Tower of London",
+          "channel_id": "UCdlktQvYRPgMVyvf_u-uZxA",
+          "channel_title": "Historic Royal Palaces",
+          "published_at": "2025-08-27T15:20:06Z",
+          "url": "https://www.youtube.com/watch?v=UoMMhzWbQkY",
+          "duration_seconds": 806,
+          "view_count": "348590",
+          "description": "William the Conqueror's victory at the Battle of Hastings in 1066 secured his possession of the English throne, but the new King wasn’t out of danger yet. The north remained unconquered, and London could have risen up at any time. The construction of the White Tower in the heart of London in the late 11th century was intended to reinforce the new King's position. This was William I's masterpiece, a projection of his victory and his power. In this video, Buildings Curator Alfred Hawkins takes us ",
+          "why_watch": "In 13 focused minutes, Historic Royal Palaces makes a convincing case that the White Tower was less a fortress than a calculated psychological statement — built to intimidate a restless London population as much as to defend against outside attack. The architectural detail is specific and the production values are strong without being showy.",
+          "is_wildcard": false
+        },
+        {
+          "source": "youtube",
+          "video_id": "gcmrqIdJw3o",
+          "title": "The Horrors of Victorian Train Travel",
+          "channel_id": "UCSwwoUNvQWgZDC8a_O6Qs_A",
+          "channel_title": "Kaz Rowe",
+          "published_at": "2025-05-30T15:01:07Z",
+          "url": "https://www.youtube.com/watch?v=gcmrqIdJw3o",
+          "duration_seconds": 3357,
+          "view_count": "459382",
+          "description": "Get your copy of @HungryMindsArt's The Book here, and use my code KAZ at checkout for a gift! https://bit.ly/4iVH4hf \n#thebook #hungrymindsbooks #howtorebuildcivilization #hungryminds\n\n~~\nThe early days of train travel were NOT for the faint of heart. Come learn with me about what Victorian rail travel was like, what on and offboard dangers you could face, and explore my experience riding Amtrak across the country... TWICE... to see how things are different today!\n\n@NicoleRudolph's video: https:",
+          "why_watch": "Kaz Rowe covers early rail travel dangers with enough primary source detail — runaway carriages, open platforms, class-based carriage conditions — that it reads less like trivia and more like a window into how chaotic industrialization actually felt to live through. The Amtrak comparison thread running alongside the history is a nice structural touch.",
           "is_wildcard": false
         },
         {
           "source": "youtube_trending",
-          "video_id": "O1UFbKc_Kjk",
-          "title": "Resort na May Napakagandang View ng Sierra Madre at Pantabangan Lake!",
-          "channel_id": "UChR_LGsh2sTJsQjixN6aJHQ",
-          "channel_title": "J4",
-          "published_at": "2026-08-01T11:00:29Z",
-          "url": "https://www.youtube.com/watch?v=O1UFbKc_Kjk",
-          "duration_seconds": 2503,
-          "view_count": "15887",
-          "description": "",
+          "video_id": "mpH6HVwOv2M",
+          "title": "Community activism CANCELS plans for ICE warehouses! Positive Leftist News Roundup, July 2026",
+          "channel_id": "UC2jXeGiElzyMmW8NJt2ajfg",
+          "channel_title": "PLN",
+          "published_at": "2026-08-01T16:00:06Z",
+          "url": "https://www.youtube.com/watch?v=mpH6HVwOv2M",
+          "duration_seconds": 1567,
+          "view_count": "658",
+          "description": "Support the show! https://www.patreon.com/positiveleftistnews  \nOne-time Tip / Donation: https://www.paypal.me/MexieYT   \n*MeansTV Discount Link: https://means.tv/orders/customer_info?o=70845&d=MEXIE\n*MeansTV Discount Code: MEXIE\n\nSEND STORIES to mexie@protonmail.com\n______\n\nMexie: https://www.youtube.com/@Mexie \nKathrin: https://www.youtube.com/c/KathrinYTchannel \nJavi: https://javier-diablito.bandcamp.com/  \nCosmo: https://www.instagram.com/radical_cosmo/ \n\n______\n\nIntro 0:00\nFree Palestine 0:",
+          "why_watch": "With only 658 views and explicit political framing in the title, this one is unlikely to offer the balance or breadth that would make it a reliable news source — and the wildcard slot is better used on something more likely to repay your time. Skipping this one is a reasonable call.",
           "is_wildcard": true
         }
       ]
     },
     {
-      "name": "Corsets & Curiosities",
-      "emoji": "🪡",
-      "tagline": "What did people actually wear, own, and obsess over before modern times? Let's find out.",
+      "name": "Dressed in the Past",
+      "emoji": "🧵",
+      "tagline": "Petticoats, bedsheets, and a 19th-century ankle — fashion history is weirder and more revealing than any runway.",
       "items": [
         {
           "source": "youtube",
-          "video_id": "jQr0n3F7gZU",
-          "title": "Getting Dressed as a Medieval Queen",
-          "channel_id": "UCdlktQvYRPgMVyvf_u-uZxA",
-          "channel_title": "Historic Royal Palaces",
-          "published_at": "2025-09-10T14:53:38Z",
-          "url": "https://www.youtube.com/watch?v=jQr0n3F7gZU",
-          "duration_seconds": 509,
-          "view_count": "684351",
-          "description": "Medieval stories and fairy-tales show us long gowns, big sleeves, and tall conical hats for princesses. But how accurate is this? What did medieval women really wear?\n\nBurgundy was considered one of the most fashionable places in Europe in the 14th Century, and many medieval women in the 1500s wore the extravagant Burgundian gown. It is likely that some of the queens and noble women who stayed at the Tower of London dressed in this style.\n\nIn this video, historical interpreters go through all th",
-          "is_wildcard": false
-        },
-        {
-          "source": "youtube",
-          "video_id": "4J9utIHRDHU",
-          "title": "Using my impulse purchases to find out my unique personal aesthetic (An Overanalysis)",
-          "channel_id": "UCSHtaUm-FjUps090S7crO4Q",
-          "channel_title": "Bernadette Banner",
-          "published_at": "2025-07-12T14:00:05Z",
-          "url": "https://www.youtube.com/watch?v=4J9utIHRDHU",
-          "duration_seconds": 1776,
-          "view_count": "406052",
-          "description": "Sign up to Milanote for free with no time limit: https://milanote.com/bernadettebanner0725\n\n⤠ HOW TO SUPPORT ⤟\n♥️ PATREON for exclusive behind-the-scenes content! https://www.patreon.com/bernadettebanner\n⚝ NEBULA to see these videos ad- and sponsorship-free, + Original content! http://www.nebula.tv/bernadettebanner\n🦵MERCH https://store.dftba.com/collections/bernadette-banner\n\n⤠ START YOUR HAND SEWING JOURNEY ⤟\n📚 BOOK: “Make, Sew and Mend: Traditional Techniques to Sustainably Maintain and Refash",
-          "is_wildcard": false
-        },
-        {
-          "source": "youtube",
-          "video_id": "i2pnhxLH_PE",
-          "title": "S2 Ep10: Victorian House on a Budget",
+          "video_id": "Q9-Pqjaz274",
+          "title": "S2 Ep9: The Importance of an Ankle",
           "channel_id": "UCNwZIGnHkzy6KpHPQtserzQ",
           "channel_title": "Karolina Żebrowska",
-          "published_at": "2025-07-10T05:04:18Z",
-          "url": "https://www.youtube.com/watch?v=i2pnhxLH_PE",
-          "duration_seconds": 1809,
-          "view_count": "9446",
-          "description": "Ever wondered what decisions were behind Victorian home decorating? No? Well now you are! “Handbook of Housekeeping on a Small Income” from 1897 guides the reader through comfortably arranging your own house while keeping things (relatively) budget friendly. \n\n________________ \n\n\n\nIf you enjoy the podcast and want to support what I’m doing, check out my Patreon! \n\n\n\nhttps://www.patreon.com/textory ",
+          "published_at": "2025-06-26T05:14:50Z",
+          "url": "https://www.youtube.com/watch?v=Q9-Pqjaz274",
+          "duration_seconds": 1449,
+          "view_count": "8077",
+          "description": "We all know about Victorian obsession with ankles. But they didn’t just leave things to take their own course – as documented in this 1858 manual by Lola Montez on keeping your ankles (and other body parts) fresh and sexy. \n\n\n\n________________ \n\n\n\nIf you enjoy the podcast and want to support what I’m doing, check out my Patreon! \n\n\n\nhttps://www.patreon.com/textory ",
+          "why_watch": "Karolina uses an 1858 beauty manual by the genuinely fascinating Lola Montez as a primary source to explore what Victorian-era body anxiety actually looked like in print — specific, weird, and funnier than you'd expect. It's a good reminder that anxiety about appearance didn't begin with Instagram.",
           "is_wildcard": false
         },
         {
           "source": "youtube",
-          "video_id": "H2C4T88VqQM",
-          "title": "Exploring a 40,000 sq ft Antique Mall!",
+          "video_id": "9VVO0MLRrXQ",
+          "title": "Who Was Greensleeves? An Extraordinary Reconstruction of Her Clothes",
+          "channel_id": "UCSHtaUm-FjUps090S7crO4Q",
+          "channel_title": "Bernadette Banner",
+          "published_at": "2025-06-21T14:00:07Z",
+          "url": "https://www.youtube.com/watch?v=9VVO0MLRrXQ",
+          "duration_seconds": 2369,
+          "view_count": "771120",
+          "description": "For more on the Greensleeves Project, visit http://www.greensleevesproject.uk.\n\n⤠ HOW TO SUPPORT US ⤟\n♥️ PATREON for exclusive behind-the-scenes content! https://www.patreon.com/bernadettebanner\n⚝ NEBULA to see these videos ad- and sponsorship-free, + Original content! http://www.nebula.tv/bernadettebanner\n🦵MERCH https://store.dftba.com/collections/bernadette-banner\n\n⤠ START YOUR HAND SEWING JOURNEY ⤟\n📚 BOOK: “Make, Sew and Mend: Traditional Techniques to Sustainably Maintain and Refashion Your ",
+          "why_watch": "Bernadette Banner collaborates with the Greensleeves Project to reconstruct the clothing of a real, named historical woman based on documentary evidence — making this as much archival detective work as dressmaking. The specificity of the sourcing sets it apart from typical historical costume content.",
+          "is_wildcard": false
+        },
+        {
+          "source": "youtube",
+          "video_id": "ClqMD-9Fd5I",
+          "title": "Making the Clothes I want out of Bedsheets (again)",
           "channel_id": "UCJI86v9et-IZd1KJSfahN8g",
           "channel_title": "Rachel Maksy",
-          "published_at": "2025-06-27T23:19:46Z",
-          "url": "https://www.youtube.com/watch?v=H2C4T88VqQM",
-          "duration_seconds": 1528,
-          "view_count": "616290",
-          "description": "I hope ya LIKE DUST. And knickknacks. and cursed dolls.\nFor this week, we're gonna take it a little easy and have more casual, hang out video. Nick and I are off to explore a new-to-us antique mall in Lawrence, MA (Canal Street Antique Mall), and I wanted to take you with us!\nJust a fun little vlog looking at old stuff! And then showing you what old stuff I bought!\nI love you most ardently!\n\nTop is vintage, belt is French Meadows, skirt is Linnenaive\n\nPatreon: https://www.patreon.com/rachelmaksy",
+          "published_at": "2025-06-13T22:07:54Z",
+          "url": "https://www.youtube.com/watch?v=ClqMD-9Fd5I",
+          "duration_seconds": 1509,
+          "view_count": "449832",
+          "description": "Here ye, here ye: To check out Thrive Market, and get 30% off your first order AND a free gift, head to http://thrivemarket.com/RachelMaksy\nThank you so much Thrive Market for sponsoring this video!!\n\nOKAY, I've got the hankerin' again to make some clothing that I saw online, out of household items. This time it's bedsheets! Featuring an IKEA duvet cover that I bought ages ago and never used, oop. AND a newly thrifted sheet!\nI hope you enjoy and maybe get inspired to turn your own (or others') t",
+          "why_watch": "Rachel Maksy's approach is genuinely low-pressure — she's working with an IKEA duvet cover she never used and figuring it out as she goes, which makes the process feel accessible rather than aspirational. If you've ever thought 'I could probably make that,' this video will either confirm or productively complicate that instinct.",
           "is_wildcard": false
         }
       ]
     },
     {
-      "name": "The Rabbit Hole Report",
-      "emoji": "🕳️",
-      "tagline": "Deep dives into the weird, dark, and surprisingly fascinating corners of culture and history.",
+      "name": "Gloriously Human Moments",
+      "emoji": "😬",
+      "tagline": "Embarrassment, language fails, and the surprisingly moving business of trying to do better.",
       "items": [
         {
           "source": "youtube",
-          "video_id": "gD5X00UFAb4",
-          "title": "The Most Disturbing Shooter I've Ever Played - The Dark Lore of Ready or Not",
-          "channel_id": "UC3cpN6gcJQqcCM6mxRUo_dA",
-          "channel_title": "Wendigoon",
-          "published_at": "2025-06-30T16:01:17Z",
-          "url": "https://www.youtube.com/watch?v=gD5X00UFAb4",
-          "duration_seconds": 15230,
-          "view_count": "4036887",
-          "description": "Save 50% on your system and your first month is free when you sign up for professional monitoring. Visit https://www.SimpliSafe.com/wendigoon to customize yours! Try SimpliSafe risk-free. If you don’t love it, return it for a full refund within 60 days. Make sure to follow us on IG: @simplisafe TikTok: @simplisafe\n\nReady or Not: https://store.steampowered.com/app/1144200/Ready_or_Not/\n\nBellum: https://playbellum.com/\n\nVideos you should watch before you buy Bellum: https://youtu.be/MZQ6HWvK4qU?si",
+          "video_id": "vfweKty2iPk",
+          "title": "My Most HUMILIATING Moment in Japan in 10 Years.",
+          "channel_id": "UCHL9bfHTxCMi-7vfxQ-AYtg",
+          "channel_title": "Abroad in Japan",
+          "published_at": "2025-06-24T14:05:15Z",
+          "url": "https://www.youtube.com/watch?v=vfweKty2iPk",
+          "duration_seconds": 1439,
+          "view_count": "1139013",
+          "description": "Coming to Japan was a dream. Then it almost went very wrong.\n🌟Behind the Scenes Patreon:  https://www.patreon.com/c/abroadinjapan\n🇯🇵 Travelling to Japan? Grab your SUPER FAST JourneyJapan eSim: https://jjesim.com/\n🍻 Let's hang out at LOST Bar in Shibuya: https://maps.app.goo.gl/cYvpTR7xQdX733Ua7\n\nFilmed & Edited by Chris Broad\n🇨🇦 Thanks again to Martina for saving the day! @KingKogi \n\n🌟 THE BOOK! 🌟\n🇯🇵 Abroad in Japan: 10 Years in the Land of the Rising Sun (Book): https://amzn.to/3I8l5Ha\n\n🌟STOIC",
+          "why_watch": "Chris Broad has a genuine gift for turning personal embarrassment into a well-structured story, and this one — involving a language barrier, a very specific cultural misread, and a Canadian rescuer — is one of his better ones. It's also quietly instructive about the gap between loving a culture from the outside and actually living in it.",
           "is_wildcard": false
         },
         {
           "source": "youtube",
-          "video_id": "d4CHa_A5498",
-          "title": "The Surprisingly Strange History of the Renaissance Faire",
-          "channel_id": "UCSwwoUNvQWgZDC8a_O6Qs_A",
-          "channel_title": "Kaz Rowe",
-          "published_at": "2025-06-27T17:38:06Z",
-          "url": "https://www.youtube.com/watch?v=d4CHa_A5498",
-          "duration_seconds": 2044,
-          "view_count": "214900",
-          "description": "Use KAZROWE55 to get 55% off your first month at Scentbird https://sbird.co/4kMjwwM\n\nThis month I received... \n\nChocolate Queen by Navitus Parfums https://sbird.co/45Ef3rv\nBravi by Thameen London https://sbird.co/4kO3HWu\nOud Fool Roses by Montale https://sbird.co/43Jmxaf\nHeist by Curatrix https://sbird.co/456wReS \n\nIt's Renaissance Faire season once again! Walking through your local faire, have you ever wondered how it all began? Come learn with me about a community of artists fighting McCarthyi",
+          "video_id": "0BwRauAB6Zc",
+          "title": "How to Start Reading Again",
+          "channel_id": "UC2Kyj04yISmHr1V-UlJz4eg",
+          "channel_title": "Jared Henderson",
+          "published_at": "2025-06-27T13:11:23Z",
+          "url": "https://www.youtube.com/watch?v=0BwRauAB6Zc",
+          "duration_seconds": 1411,
+          "view_count": "478927",
+          "description": "Thank you Nolah for sponsoring! Click here https://nolahmattress.com/jaredhenderson and use CODE: JAREDHENDERSON to get an extra $50 off your mattress.\n\nToday, I wanted to do something a little more practical: share some tips on how to start reading. I also discuss the male reading crisis (with Jake from @ManCarryingThing ) and a few related topics. \n\nI run a book club on Substack! Join here: https://jaredhenderson.substack.com\n\nWatch my videos early on Nebula: https:go.nebula.tv/jaredhenderson\n",
+          "why_watch": "Rather than vague encouragement, Jared Henderson gets into concrete friction points — why people stop reading and what actually lowers the barrier to starting again. The detour into the 'male reading crisis' with a guest adds a sociological angle that keeps it from feeling like generic self-help.",
+          "is_wildcard": false
+        }
+      ]
+    },
+    {
+      "name": "Rabbit Holes Worth Falling Down",
+      "emoji": "🃏",
+      "tagline": "One card trick, one math insight — the kind of thing you'll think about (and show someone) before the week is out.",
+      "items": [
+        {
+          "source": "youtube",
+          "video_id": "d4xzmMuJTWs",
+          "title": "The 13 Trick",
+          "channel_id": "UC6nSFpj9HTCZ5t-N3Rm3-HA",
+          "channel_title": "Vsauce",
+          "published_at": "2025-06-24T17:26:29Z",
+          "url": "https://www.youtube.com/watch?v=d4xzmMuJTWs",
+          "duration_seconds": 180,
+          "view_count": "16341988",
+          "description": "Thanks, mom ❤️\nThis is a video I shared elsewhere a couple years ago before YouTube shorts could be more than a minute long. Today, they can't be more than 3 minutes, but with a few 'fast forwards' I was able to get it just under the limit and finally share it here!\n\nThe \"13 Trick\" is a self-working mathematical card trick where aces = 1, jacks = 11, queens = 12, and kings = 13.",
+          "why_watch": "A three-minute self-working card trick that holds up even when you understand the math behind it — which Vsauce explains cleanly. Worth it purely as something you can actually do at a table tonight with a standard deck.",
           "is_wildcard": false
         }
       ]
@@ -168,134 +185,164 @@
   "morning_soundtrack": [
     {
       "source": "music",
-      "source_name": "NPR Music",
-      "title": "Dead After Death",
-      "snippet": "This summer marks a moment of transition in the Grateful Dead's long, strange trip: the first in many years where there is no clear center of the band's universe. Where do Deadheads go from here?",
-      "url": "https://www.npr.org/2026/08/01/g-s1-134690/grateful-dead-after-death",
+      "source_name": "Stereogum",
+      "title": "New Radicals Quietly Release First New Song In 28 Years",
+      "snippet": "Gregg Alexander ended New Radicals after their lone album, 1998's acclaimed Maybe You've Been Brainwashed Too, but went on to become one of pop's most successful behind-the-scenes songwriters. He co-wrote hits like Sophie Ellis-Bextor's \"Murder On The Dancefloor,\" Santana and Michelle Branch's \"The ",
+      "url": "https://stereogum.com/2507092/new-radicals-quietly-release-first-new-song-in-28-years/music/",
       "genre": "",
-      "vibe_check": "The bittersweet feeling of watching the last embers of a bonfire fade while everyone wonders who'll strike the next match.",
-      "cover_url": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/2600x1463+0+1/resize/1400/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Fe5%2F3c%2F55daa19f4b3fab78cf26f31db13c%2Fdeadafterdeath2b.jpg",
-      "embed_url": null
+      "vibe_check": "The bittersweet rush of hearing a familiar voice you thought was gone forever, like finding a cassette you assumed was lost.",
+      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/08/new-radicals-2026.png",
+      "embed_url": "https://www.youtube.com/embed/1RiaDj8QXdU"
     },
     {
       "source": "music",
       "source_name": "Stereogum",
-      "title": "Phish Set 2,051-Show Bustout Record With XTC Cover",
-      "snippet": "Phish rang in 2026 with a salute to dairy. Now, halfway through the year, the definitive jam band is breaking their own records.\nThe post Phish Set 2,051-Show Bustout Record With XTC Cover appeared first on Stereogum.",
-      "url": "https://stereogum.com/2507066/phish-set-2051-show-bustout-record-with-xtc-cover/news/",
+      "title": "Tori Amos Covers The Swell Season In Tribute To Glen Hansard",
+      "snippet": "Earlier this week, Glen Hansard tragically passed away in a motorcycle crash at the age of 56. Bono paid tribute to the Oscar-winning Irish singer-songwriter and actor with heartfelt words on social media. Last night, Tori Amos commemorated him with a cover of the Swell Season's \"Falling Slowly\" at ",
+      "url": "https://stereogum.com/2507084/tori-amos-covers-the-swell-season-in-tribute-to-glen-hansard/news/",
       "genre": "",
-      "vibe_check": "The manic joy of a secret handshake only 10,000 people in a parking lot understand.",
-      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/08/Screenshot-2026-08-01-at-9.31.07-AM.png",
+      "vibe_check": "The kind of grief that spills over in a darkened concert hall, held together only by a borrowed song and someone else's trembling voice.",
+      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/08/Screenshot-2026-08-01-at-2.27.08-PM.png",
+      "embed_url": "https://www.youtube.com/embed/Y8rIAXct9HQ"
+    },
+    {
+      "source": "music",
+      "source_name": "Stereogum",
+      "title": "Olivia Rodrigo Joins The Smashing Pumpkins At Lollapalooza 2026",
+      "snippet": "At Lollapalooza last night, the Smashing Pumpkins brought out Olivia Rodrigo, Melissa Auf der Maur, and Yungblud. Rodrigo sang \"Thirty-Three,\" and it was only the second time the Pumpkins have played the Mellon Collie single since 2018 — the first was at their Lollapalooza aftershow at the Riviera o",
+      "url": "https://stereogum.com/2507062/olivia-rodrigo-joins-the-smashing-pumpkins-at-lollapalooza-2026/news/",
+      "genre": "",
+      "vibe_check": "That electrifying, once-in-a-lifetime festival moment you'll describe to people for the next decade whether they asked or not.",
+      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/08/Screenshot-2026-08-01-at-9.08.00-AM.png",
       "embed_url": null
+    },
+    {
+      "source": "music",
+      "source_name": "Pitchfork",
+      "title": "9 New Albums You Should Listen to Now: Ariana Grande, the Durutti Column, and More",
+      "snippet": "Stream new releases from Ariana Grande, the Durutti Column, and Arca",
+      "url": "https://pitchfork.com/story/9-new-albums-you-should-listen-to-now-ariana-grande-the-durutti-column-and-more/",
+      "genre": "",
+      "vibe_check": "A sprawling Saturday of sonic rabbit holes, from glossy pop confections to the kind of avant-garde that makes you question the room you're sitting in.",
+      "cover_url": "https://media.pitchfork.com/photos/6a690ffe0c7e97151edd295b/16:9/w_1280,c_limit/20260606_JULIAN_DAKDOUK_AG_OAKLAND_SHOW_ONE_STILLS_3316_Jun%2006%202026_kat.jpg",
+      "embed_url": "https://thedurutticolumn.bandcamp.com/album/renascent"
     },
     {
       "source": "music",
       "source_name": "Consequence",
-      "title": "Patti Smith Left Speechless Meeting Pope Leo Before “Spark Was Lit”",
-      "snippet": "Vatican official Antonio Spadaro described the moment as \"a conversation between two people discovering they were old friends.\"\nPatti Smith Left Speechless Meeting Pope Leo Before &#8220;Spark Was Lit&#8221;\nEddie Fu",
-      "url": "https://consequence.net/2026/07/patti-smith-pope-leo-xiv-meeting-vatican/",
+      "title": "Metric, Broken Social Scene, and Stars Bring the Right Kind of Nostalgia to Brooklyn Paramount: Review",
+      "snippet": "A triple bill that highlight what endures about all three bands -- and the relationships therein.\nMetric, Broken Social Scene, and Stars Bring the Right Kind of Nostalgia to Brooklyn Paramount: Review\nDan Caffrey",
+      "url": "https://consequence.net/2026/08/metric-broken-social-scene-stars-brooklyn-paramount/",
       "genre": "",
-      "vibe_check": "Two lightning rods meeting in a quiet room, the air humming before anything is even said.",
-      "cover_url": "https://consequence.net/wp-content/uploads/2026/07/patti-smith-pope-leo.jpg",
-      "embed_url": "https://www.youtube.com/embed/CI8Y6qAmMsQ"
+      "vibe_check": "Like running into your old indie-kid self at a reunion and realizing, with relief, that the music still holds up.",
+      "cover_url": "https://consequence.net/wp-content/uploads/2026/07/broken-social-scene-metric-brooklyn-paramount.jpg",
+      "embed_url": null
     },
     {
       "source": "music",
-      "source_name": "Fretboard Journal",
-      "title": "Luthier on Luthier: Paco Chorobo",
-      "snippet": "﻿﻿﻿﻿﻿ For episode 116, we&#8217;re joined by Spanish guitarmaker Paco Chorobo from Úbeda, Spain. Paco shares his journey from telecommunications engineer to full-time luthier and discusses his approach to building both classical and flamenco guitars while blending traditional hand craftsmanship with",
-      "url": "https://www.fretboardjournal.com/podcasts/luthier-on-luthier-paco-chorobo/?utm_source=rss&utm_medium=rss&utm_campaign=luthier-on-luthier-paco-chorobo",
+      "source_name": "JazzTimes",
+      "title": "Kalia Vandever’s Tender Touch of Mana",
+      "snippet": "E ver since Regrowth (New Amsterdam) in 2022, trombonist-composer Kalia Vandever has made annual full-length pilgrimages into warmly plush minimalism, droning tonality, loopy meditativeness and &#8230; Read More \"Kalia Vandever’s Tender Touch of Mana\"\nThe post Kalia Vandever’s Tender Touch of Mana a",
+      "url": "https://www.jazztimes.com/features/profiles/kalia-vandevers-tender-touch-of-mana/",
       "genre": "",
-      "vibe_check": "The meditative calm of sawdust settling in a sun-warmed workshop where time moves at the pace of a carefully drawn plane stroke.",
-      "cover_url": "https://images.fretboardjournal.com/wp-content/uploads/2026/07/31133412/P1040434.jpg",
-      "embed_url": null
+      "vibe_check": "The sound of late-afternoon light going amber while your thoughts unspool slowly, like smoke with nowhere urgent to be.",
+      "cover_url": "https://www.jazztimes.com/wp-content/uploads/2026/07/photo-by-Isabel-Gonzalez-1-scaled.jpg",
+      "embed_url": "https://www.youtube.com/embed/rv6FW4Sy4tw"
     }
   ],
   "global_silver_linings": [
     {
       "source": "good_news",
       "source_name": "Good News Network",
-      "title": "Your Weekly Horoscope – ‘Free Will Astrology’ by Rob Brezsny",
-      "url": "https://www.goodnewsnetwork.org/horoscope-from-rob-brezsnys-free-will-astrology-8-1-2026/",
-      "snippet": "Our partner Rob Brezsny, whose latest book is Astrology Is Real: Revelations from My Life as an Oracle, provides his weekly wisdom to enlighten our thinking and motivate our mood. Rob’s Free Will Astrology, is a syndicated weekly column appearing in over a hundred publications. He is also the author of Pronoia Is the Antidote for Paranoia: […] The post Your Weekly Horoscope – ‘Free Will Astrology’ by Rob Brezsny appeared first on Good News Network .",
-      "cover_url": "https://www.goodnewsnetwork.org/wp-content/uploads/2020/10/Freewill-Astrology-horoscope-logo.jpg",
-      "reason": "A weekly reminder that many people still seek out moments of reflection and playful self-examination — there's something quietly lovely about pausing to consider where you're headed. Whether or not you follow the stars, the habit of checking in with yourself is always time well spent."
+      "title": "Mars Rover Discovers Mysterious Field of Honeycomb Textures on Red Planet: ‘Took Our Breath Away’",
+      "url": "https://www.goodnewsnetwork.org/mars-rover-discovers-mysterious-field-of-honeycomb-textures-on-red-planet/",
+      "snippet": "As NASA’s Curiosity rover ascended the Martian valley named Valle Grande back in June, it sent back images of a landscape covered in honeycomb-like textures. “We’ve seen a lot of fascinating landscapes through Curiosity’s eyes, but this sea of polygons took our breath away,” said the mission’s project scientist, Ashwin Vasavada of NASA’s Jet Propulsion […] The post Mars Rover Discovers Mysterious Field of Honeycomb Textures on Red Planet: ‘Took Our Breath Away’ appeared first on Good News Network .",
+      "cover_url": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/08/honeycomb-on-Mars-Curiosity-rover-NASA.jpg",
+      "reason": "Mars is still full of surprises, and this unexpected honeycomb formation is a reminder that the universe has barely begun to reveal its secrets to us. Every discovery like this deepens our understanding of what worlds beyond our own can look like — and what might once have shaped them."
     },
     {
       "source": "good_news",
       "source_name": "Upworthy",
-      "title": "Millennial moms are embracing the ’90s ‘Butter Mom’ trend and comfy denim is so back",
-      "url": "https://www.upworthy.com/millennial-moms-are-embracing-the-90s-butter-mom-trend-and-comfy-denim-is-so-back/",
-      "snippet": "\"It feels like something we remember.\" The post Millennial moms are embracing the ’90s ‘Butter Mom’ trend and comfy denim is so back appeared first on Upworthy .",
-      "cover_url": "https://www.upworthy.com/wp-content/uploads/sites/2/2026/07/1200x640-3.jpg",
-      "reason": "There's a gentle comfort in watching a generation of parents choose ease and practicality over pressure — prioritising being present with their kids over keeping up appearances. Comfy clothes as a cultural statement might sound small, but it signals a real shift toward self-acceptance."
+      "title": "Video of two brothers Irish step dancing to Beyoncé’s country hit ‘Texas Hold ‘Em’ is pure delight",
+      "url": "https://www.upworthy.com/irish-brothers-step-dance-to-beyonce-video-ex1-2/",
+      "snippet": "The Gardiner Brothers and Queen Bey proving that music can unite us all. The post Video of two brothers Irish step dancing to Beyoncé’s country hit ‘Texas Hold ‘Em’ is pure delight appeared first on Upworthy .",
+      "cover_url": "https://www.upworthy.com/wp-content/uploads/sites/2/2025/05/origin-175.jpg",
+      "reason": "Two brothers blending Irish step dancing with country music is a small, joyful proof that traditions don't have to stay in their lanes — they can collide, evolve, and bring people together across cultures."
     }
   ],
-  "discovery_articles": [
-    {
-      "source": "discovery",
-      "source_name": "Smithsonian",
-      "title": "The Iconic Watts Towers in Los Angeles Will Get a $22 Million Campus Expansion Ahead of the 2028 Summer Olympics",
-      "url": "https://www.smithsonianmag.com/smart-news/the-iconic-watts-towers-in-los-angeles-will-get-a-22-million-campus-expansion-ahead-of-the-2028-summer-olympics-180989240/",
-      "snippet": "Five acres of green space will surround the 17-structure landmark, a folk art masterpiece that an Italian immigrant built over the course of three decades",
-      "category": "history",
-      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/cw569ifgeh6WlPXqTiq5mXKQguA=/fit-in/1600x0/filters:focal(1632x1228:1633x1229)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/58/60/5860f436-518c-44e8-8e30-4abdbdcd895d/watts_towers_arts_center.jpg",
-      "ferns_note": "Sabato Rodia, a tile setter with no formal art training, spent 33 years weaving broken glass, seashells, and ceramic shards into towers that now stand as one of America's most extraordinary folk art monuments — built entirely alone, then quietly deeded to a neighbor before he walked away and never returned. There's something achingly human about a man pouring three decades into a dream, then simply leaving it behind."
-    },
-    {
-      "source": "discovery",
-      "source_name": "Smithsonian",
-      "title": "Archaeologists Discover Two Thumbnail-Size Bird Sculptures Carved From Mammoth Ivory 40,000 Years Ago",
-      "url": "https://www.smithsonianmag.com/smart-news/archaeologists-discover-two-thumbnail-sized-bird-sculptures-carved-from-mammoth-ivory-40000-years-ago-180989239/",
-      "snippet": "Measuring less than an inch long, the figurines were buried beneath Germany's Hohle Fels Cave, where some of the world's oldest known figurative artworks have been found",
-      "category": "history",
-      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/MfAaS9j8tQKOr8d84_-jd96-O6s=/fit-in/1600x0/filters:focal(750x500:751x501)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/07/9b/079ba559-4697-4610-91c2-fe0ba5d9aa2e/birds.jpg",
-      "ferns_note": "Someone 40,000 years ago — before written language, before cities, before almost everything we call civilization — sat down and carved a bird smaller than your thumbnail from mammoth ivory with enough care to capture the curve of a wing. The urge to make something beautiful and precise is apparently as old as us."
-    }
-  ],
+  "discovery_articles": [],
   "featured_read": {
     "source": "reads",
     "source_name": "The Marginalian",
-    "title": "The Log from the Sea of Cortez: John Steinbeck’s Forgotten Masterpiece on How to Think and the Art of Seeing the Pattern Beyond the Particular",
-    "url": "https://www.themarginalian.org/2026/07/30/steinbeck-log-from-the-sea-of-cortez/",
-    "snippet": "\"Everything impinges on everything else... Everything is potentially everywhere.\"",
-    "cover_url": "https://www.themarginalian.org/wp-content/uploads/2015/05/johnsteinbeck3.jpg?fit=600%2C315&ssl=1",
-    "blurb": "Steinbeck, better known for Okies and dustbowls, turns out to have written one of the most quietly radical defenses of scientific wonder ever put to paper — and this essay traces exactly how he learned to look past the specimen in the jar to the living web it came from. Set aside the half-hour and let it rearrange the way you notice things."
+    "title": "Death and How to Be More Alive: Carl Jung on Immortality and the Rebirth of Middle Age",
+    "url": "https://www.themarginalian.org/2026/07/31/carl-jung-death-immortality/",
+    "snippet": "Once, I spent a year walking Brooklyn’s historic Green-Wood Cemetery daily, winding between the marble tombs engulfed by tree-roots and emblazoned with the surnames of the dead, each followed by a full stop to demarcate the terminus of life. It hovers there, so sure of itself, this punctuational emblem of an irrevocable end. And yet the surety of science about what happens when we die, like the surety of religion, is only speculative, for it is conceived by the living.",
+    "cover_url": "https://www.themarginalian.org/wp-content/uploads/2012/03/carljung.jpg?fit=640%2C360&ssl=1",
+    "blurb": "Jung believed that the second half of life isn't a slow surrender but a genuine rebirth — and this essay asks, with quiet urgency, what it might mean to stop treating death as a full stop and start reading it as a comma. Set aside the half-hour; it might reframe the one you're already in."
   },
   "garden_note": {
-    "note": "August slips in quietly over Zürich, the air still carrying the warmth of July long after the sun dips behind the Uetliberg — savour these long, honeyed evenings while the dahlias and late zucchini press on with cheerful determination. The garden is at that satisfying, slightly shaggy peak where abundance and gentle decline are perfectly intertwined.",
+    "note": "First light creeps over the Zürichberg just before half past five this morning, catching the heavy heads of dahlias and late sunflowers still jewelled with dew — late summer is showing off, and the garden knows it. Harvest beans and courgettes before the heat builds; they were almost certainly ready yesterday too.",
     "in_season": [
-      "Dahlias coming into their prime",
-      "Courgettes and runner beans to harvest daily",
-      "Deadhead roses for a last autumn flush",
-      "Sow spinach and winter lettuce now"
+      "Dahlias in full, extravagant bloom",
+      "French beans and courgettes ready to pick",
+      "Sweetcorn approaching harvest in warmer pockets",
+      "Deadheading echinacea to extend the flush"
     ],
-    "sky_tonight": "A waning gibbous moon rises in the east after 22:00 — bright enough to cast soft shadows; look for Saturn nearby in Aquarius, climbing steadily through the night.",
-    "sun_times": "Dusk lingers until 21:35 tonight, with sunset at 21:01 — plenty of golden light left for one last walk around the beds.",
+    "sky_tonight": "The waning gibbous moon rises well after midnight — look instead for Saturn in the southeast as dusk fades, glowing with its steady amber warmth.",
+    "sun_times": "First light at 05:29, sunrise at 06:03, and a long generous evening stretching to sunset at 21:00 with dusk lingering until 21:34.",
     "moon_label": "Waning gibbous",
-    "illum_pct": 90,
-    "sun_range": "06:02–21:01"
+    "illum_pct": 85,
+    "sun_range": "06:03–21:00"
   },
   "puzzle": {
-    "kind": "trivia",
-    "label": "The Evening Trivia",
-    "prompt": "Which of these words refers to something made, distributed, or sold illegally?\n\nBootblack   ·   Bootlace   ·   Bootleg   ·   Bootstrap",
-    "answer": "Bootleg",
-    "hint": "Category: General Knowledge",
-    "source": "opentdb.com",
-    "source_id": "510f7e9d41f8"
+    "kind": "anagram",
+    "label": "Fern's Morning Anagram",
+    "prompt": "Rearrange the letters of GARDEN to make a different common word.",
+    "answer": "Danger (also Ranged, Gander)",
+    "hint": "There are 3 words hiding in these letters.",
+    "source": "wordsmith.org",
+    "source_id": "garden"
   },
   "previous_puzzle": {
-    "label": "Fern's Morning Riddle",
-    "prompt": "What common English verb becomes its own past tense by rearranging its letters?",
-    "answer": "Eat and Ate"
+    "label": "The Evening Trivia",
+    "prompt": "Which of these words refers to something made, distributed, or sold illegally?\n\nBootblack   ·   Bootlace   ·   Bootleg   ·   Bootstrap",
+    "answer": "Bootleg"
   },
   "larder": {
-    "news": [],
-    "recipe": {}
+    "news": [
+      {
+        "source": "food",
+        "source_name": "The Kitchn",
+        "title": "My Honest Review of HexClad’s Hybrid Cookware Set for 2026",
+        "url": "https://www.thekitchn.com/hexclad-cookware-review-23837092?utm_source=RSS&utm_medium=feed&utm_campaign=Category%2FChannel%3A+main",
+        "snippet": "There’s almost nothing it can’t do. READ MORE...",
+        "cover_url": "",
+        "blurb": "Before you splurge on a full cookware overhaul, this refreshingly candid review of HexClad's hybrid set is worth a quiet read with your morning coffee."
+      },
+      {
+        "source": "food",
+        "source_name": "The Guardian",
+        "title": "Chez Rose, London W1: ‘One of the dining highlights of 2026’ – restaurant review",
+        "url": "https://www.theguardian.com/food/2026/aug/02/chez-rose-london-w1-grace-dent-restaurant-review",
+        "snippet": "Chez Rose offers a sort of hospitality that feels centuries old, but when done well, will never be old hat Chez Rose has just appeared on Pollen Street, Mayfair, but to the casual passerby, it looks as if it could have been established in 1974. This is, of course, poudre aux yeux ; until recently, this was Jason Atherton’s Little Social. Yet, with some strategically placed tables en terrasse , vintage mirrors, thoughtfully scattered doilies and, later, bread baskets, and what you have is France in the eye of the British beholder.",
+        "cover_url": "https://i.guim.co.uk/img/media/97cc6e068b75ffcd185777f7af32e98e81ec706c/0_0_3938_3150/master/3938.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=b348d2b68b4d8ca7ef5683d0d7c35f41",
+        "blurb": "A Mayfair newcomer that apparently conjures centuries of gracious hospitality from a single address — Chez Rose sounds like precisely the kind of place worth knowing about before everyone else does."
+      }
+    ],
+    "recipe": {
+      "source": "recipe",
+      "source_name": "David Lebovitz",
+      "title": "Summer Fruit Recipes",
+      "url": "https://www.davidlebovitz.com/summer-fruit-recipes-desserts-cobbler-crisp-ice-cream-sorbet-pie-frozen-yogurt-shortcake/",
+      "snippet": "It’s summer! Whether you’re in or outdoors, hopefully for all of you there are beautiful summer fruits and berries to be had, and I hope that you’re able to get your hands on as many of them as you can. I am loading (actually, overloading…) myself up at the market.",
+      "is_recipe": true,
+      "cover_url": "https://www.davidlebovitz.com/wp-content/uploads/2019/07/Mixed-berry-strawberry-shortcakes-recipe-7.jpg",
+      "blurb": "David Lebovitz reminds us that summer's fleeting bounty of fruits and berries deserves nothing more complicated than a little time and enthusiasm in the kitchen — a lovely, sun-lit read to inspire your next market haul."
+    },
+    "seasonal_note": "Zürich's Tuesday and Saturday markets at Bürkliplatz are flush with late-summer Berner Rosen apples and the first plump Zwetschgen plums right now — roast a panful with a splash of Pflümli and a knob of butter for a breakfast that smells like every good Swiss grandmother's kitchen."
   },
   "fern_data": {
-    "greeting": "The lamp is on, the kettle has just stopped its noise, and the window is doing that late-summer thing where the light refuses to fully leave — a good moment to learn why a Japanese man walked away from his desk to stand in a rice paddy, or to let Steinbeck talk you into seeing the world differently, or to consider that forty thousand years ago someone sat down and carved a bird the size of your thumbnail.",
-    "top_pick_title": "Ivory Birds & Muddy Hands"
+    "greeting": "A conspiracy that nearly swallowed Rome, a 28-year silence finally broken by the New Radicals, and the precise scandal of a Victorian ankle — sometimes a morning arrives already dressed for trouble.",
+    "top_pick_title": "Loose Threads & Old Conspiracies"
   }
 }
