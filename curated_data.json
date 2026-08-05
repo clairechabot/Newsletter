@@ -1,172 +1,165 @@
 {
-  "fetched_at": "2026-08-05T08:04:20.315337+02:00",
-  "is_am_email": true,
+  "fetched_at": "2026-08-05T18:13:31.374396+02:00",
+  "is_am_email": false,
   "audit_summary": {
     "youtube_videos": 10,
-    "themes": 4,
-    "music_articles": 11,
-    "good_news_articles": 4,
-    "discovery_articles": 8,
+    "themes": 3,
+    "music_articles": 8,
+    "good_news_articles": 3,
+    "discovery_articles": 13,
     "featured_read": 1,
     "garden": 1,
     "puzzle": 1,
-    "larder": 4
+    "larder": 0
   },
   "themes": [
     {
-      "name": "Dust, Bones & Lost Worlds",
-      "emoji": "🏺",
-      "tagline": "From Arctic ice to Tudor courts, history's strangest corners are calling.",
+      "name": "Dust & Dynasties",
+      "emoji": "🏛️",
+      "tagline": "From Roman emperors to Civil War ironclads — history's wildest characters and clashes, served fresh.",
       "items": [
         {
           "source": "youtube",
-          "video_id": "_8zFSg5k-Mw",
-          "title": "Ancient Arctic: How The Inuit Survived The Frozen Tundra | The Ancients",
+          "video_id": "lmcjf6vj9-o",
+          "title": "Confederate Ram Tennessee",
+          "channel_id": "UC4sEmXUuWIFlxRIFBRV6VXQ",
+          "channel_title": "The History Guy: History Deserves to Be Remembered",
+          "published_at": "2026-08-05T12:00:04Z",
+          "url": "https://www.youtube.com/watch?v=lmcjf6vj9-o",
+          "duration_seconds": 1453,
+          "view_count": "3106",
+          "description": "Of the vaunted ironclad warships of the US Civil War perhaps the mightiest and most terrifying was the confederate ram Tennessee. On August 5, 1864, she would be put to the test in the largest naval engagement of the war, an engagement that defined the divided loyalties of the War of the Rebellion. \n\nCheck out our new shop for fun The History Guy merchandise:\nhttps://thehistoryguy-shop.fourthwall.com/products/thg-history\n\nThis is original content based on research by The History Guy. Images in t",
+          "is_wildcard": false
+        },
+        {
+          "source": "youtube",
+          "video_id": "9IjSsTdJTdQ",
+          "title": "Who was Nero?",
           "channel_id": "UC2J29LPhS9vMiWyYEqBRB0w",
           "channel_title": "The Ancients",
-          "published_at": "2025-11-02T07:01:52Z",
-          "url": "https://www.youtube.com/watch?v=_8zFSg5k-Mw",
-          "duration_seconds": 2798,
-          "view_count": "18141",
-          "description": "Tristan Hughes and Raven Todd Dilva discuss Arctic archaeology, revealing the Thule Inuit, an ancient civilisation that mastered survival across northern Canada and Greenland. This episode explores the remarkable migration of the Thule Inuit from Alaska around 1000 CE, their eventual replacement of the earlier Dorset culture, and the development of their unique lifestyle. \n\nArchaeologist and author Raven Todd Dilva discusses how they engineered subterranean, multi-room winter homes with whale bo",
+          "published_at": "2025-11-02T07:00:06Z",
+          "url": "https://www.youtube.com/watch?v=9IjSsTdJTdQ",
+          "duration_seconds": 3949,
+          "view_count": "32164",
+          "description": "Tristan Hughes and Conn Iggulden talk all about Emperor Nero's traumatic rise to power in the Julio-Claudian dynasty, featuring Agrippina the Younger, Caligula, and Claudius in this episode of the Ancients.\n\nIn this in-depth ancient history podcast, host Tristan Hughes welcomes acclaimed historical fiction author Conn Iggulden to delve into the shocking and tumultuous early life of Emperor Nero. They explore the bloody family history, including the psychological damage from his chaotic childhood",
           "is_wildcard": false
         },
         {
           "source": "youtube",
-          "video_id": "_9gUAL2__js",
-          "title": "Getting Dressed as Anne Boleyn",
-          "channel_id": "UCdlktQvYRPgMVyvf_u-uZxA",
-          "channel_title": "Historic Royal Palaces",
-          "published_at": "2025-06-25T17:14:38Z",
-          "url": "https://www.youtube.com/watch?v=_9gUAL2__js",
-          "duration_seconds": 657,
-          "view_count": "1595922",
-          "description": "Anne Boleyn, Henry VIII's second queen, was a fashion icon of her time. Bringing the manners, etiquette, and wardrobe trends from the French court to England, she stood out amongst her peers and competitors. Anne is famously depicted wearing the French gown, a popular Henrician style, but how did Tudor women get dressed to achieve this look?\n\nIn this video, historical interpreters go through the stages of dressing in the Tudor French gown. They show the famous elements of Anne Boleyn's image, di",
-          "is_wildcard": false
-        },
-        {
-          "source": "youtube",
-          "video_id": "xWDumoLdPyU",
-          "title": "The Unsettling Truth About Nostradamus",
-          "channel_id": "UCSwwoUNvQWgZDC8a_O6Qs_A",
-          "channel_title": "Kaz Rowe",
-          "published_at": "2025-02-17T17:49:04Z",
-          "url": "https://www.youtube.com/watch?v=xWDumoLdPyU",
-          "duration_seconds": 1734,
-          "view_count": "200359",
-          "description": "👒🔍The Truth is your Destination in June's Journey. Download June’s Journey for free now using my link: https://woo.ga/k5pnnlqv\n\nNostradamus has always been known as an ancient prophet who apparently foretold events such as WW2, 9/11, and even COVID-19. But are his prophecies really what they seem? And who really was Nostradamus? Come learn with me!\n\nCheck out the new June's Journey Trailer: https://www.youtube.com/watch?v=UPVbwVd3e2w\n\nDonate to the Gerber/Hart LGBTQ+ Library and Archives: https:",
-          "is_wildcard": false
-        }
-      ]
-    },
-    {
-      "name": "Needles, Hems & Time Machines",
-      "emoji": "🧵",
-      "tagline": "Stitching the past back together, one gorgeous anachronism at a time.",
-      "items": [
-        {
-          "source": "youtube",
-          "video_id": "g0uOmf-wHag",
-          "title": "Sewing Two \"Mod-ieval\" Dresses! (get it? heh heh)",
-          "channel_id": "UCJI86v9et-IZd1KJSfahN8g",
-          "channel_title": "Rachel Maksy",
-          "published_at": "2025-03-22T00:06:10Z",
-          "url": "https://www.youtube.com/watch?v=g0uOmf-wHag",
-          "duration_seconds": 1540,
-          "view_count": "425360",
-          "description": "HUZZAHH! The first 500 people to use my link in the description will receive a one month free trial of Skillshare! Get started today! https://skl.sh/rachelmaksy03251\nThanks so much Skillshare for sponsoring this video!\n\nOKAY SO. I am apparently very picky in what kinds of styles I want to wear, lmao. I have always loved the brief period of time in the late 60's/early 70's called Medieval Revival. More specifically when applied to more Mod fashion. And so... Mod-ieval was born. Yes wow what a cle",
-          "is_wildcard": false
-        },
-        {
-          "source": "youtube",
-          "video_id": "yQxDXKqGVyo",
-          "title": "The Moulin Rouge Dress but make it actually 1890s",
-          "channel_id": "UCSHtaUm-FjUps090S7crO4Q",
-          "channel_title": "Bernadette Banner",
-          "published_at": "2025-02-22T15:01:26Z",
-          "url": "https://www.youtube.com/watch?v=yQxDXKqGVyo",
-          "duration_seconds": 1582,
-          "view_count": "1214055",
-          "description": "Sign up to Milanote for free with no time limit: https://milanote.com/bernadettebanner0225\nLowana's corsetmaking course for those intrigued :3 https://learncorsetmaking.com/ \n\n⤠ HOW TO SUPPORT ⤟\n♥️ PATREON for exclusive behind-the-scenes content! https://www.patreon.com/bernadettebanner\n⚝ NEBULA to see these videos ad- and sponsorship-free, + Original content! http://www.nebula.tv/bernadettebanner \n🦵MERCH https://store.dftba.com/collections/bernadette-banner \n\n⤠ START YOUR HAND SEWING JOURNEY ⤟\n",
-          "is_wildcard": false
-        }
-      ]
-    },
-    {
-      "name": "Rabbit Holes Worth Falling Down",
-      "emoji": "🕳️",
-      "tagline": "A haunted game, a tragic film, and the hidden shape of pi — your brain won't know what hit it.",
-      "items": [
-        {
-          "source": "youtube",
-          "video_id": "02Oh_rnNJF8",
-          "title": "Petscop - The Dark Story Hidden in a Haunted Game",
+          "video_id": "7UXr791jBD4",
+          "title": "The Bible Lore Iceberg",
           "channel_id": "UC3cpN6gcJQqcCM6mxRUo_dA",
           "channel_title": "Wendigoon",
-          "published_at": "2025-03-01T02:41:14Z",
-          "url": "https://www.youtube.com/watch?v=02Oh_rnNJF8",
-          "duration_seconds": 13638,
-          "view_count": "6803237",
-          "description": "Use code 50WENDIGOON to get 50% OFF plus free shipping on your first Factor box at https://bit.ly/3W8Zt1v\n\nGET THE CAMP WENDIGOON MERCH WHILE YOU CAN: https://wendigoon.shop/\n\nWatch the original series first: @Petscop \n\nComprehensive Progress Document: https://archive.org/details/petscop-comprehensive-progress-document/mode/2up\n\nEGMnow article with creator interview: https://egmnow.com/theres-something-hiding-in-petscop/\n\nCheck out the new podcasts here:\n\nThe Red Thread: @theofficialytchannel \n\n",
+          "published_at": "2025-02-17T16:19:43Z",
+          "url": "https://www.youtube.com/watch?v=7UXr791jBD4",
+          "duration_seconds": 7301,
+          "view_count": "5485845",
+          "description": "Try Rocket Money for free: https://RocketMoney.com/WENDIGOON\n\nCORRECTION: Near the end of the video when I mention the 144,000, I say that the Mormons believe only 144,000 live in the upper remnant of heaven with God. I was incorrect, I should have said it was the Jehovah Witnesses. My mistake and apologies.\n\nPlaylist for my previous Bible videos: https://youtube.com/playlist?list=PLfeWBGty_482AmaO6PC6ZE8MTiFZWkQSZ&si=PvdNKtiOxnCU2tlt\n\nTen Plagues Attack on Egyptian Gods further reading: https:/",
           "is_wildcard": false
         },
         {
           "source": "youtube",
-          "video_id": "E6PzkwmtVRE",
-          "title": "The Most Tragic Movie of the Decade",
-          "channel_id": "UCs7nPQIEba0T3tGOWWsZpJQ",
-          "channel_title": "Like Stories of Old",
-          "published_at": "2025-03-20T16:24:11Z",
-          "url": "https://www.youtube.com/watch?v=E6PzkwmtVRE",
-          "duration_seconds": 1471,
-          "view_count": "55837",
-          "description": "Get Nebula using my link for 40% off an annual subscription: https://nebula.tv/lsoo \nWatch my exclusive 90+ minute discussion with Jacob Geller about The Brutalist's many themes, meanings and controversies: https://nebula.tv/videos/lsoo-a-long-discussion-with-jacob-geller-about-the-brutalist\n\nThe Brutalist’s ending doesn’t just tie a neat bow around the structure that emerged over the course of the movie, instead it suddenly excavates the ground beneath it, shakes the foundation, and makes us go",
+          "video_id": "3ewjgMXCWUc",
+          "title": "We Made a Medieval Hair Cream!",
+          "channel_id": "UCdlktQvYRPgMVyvf_u-uZxA",
+          "channel_title": "Historic Royal Palaces",
+          "published_at": "2026-08-05T15:08:31Z",
+          "url": "https://www.youtube.com/watch?v=3ewjgMXCWUc",
+          "duration_seconds": 153,
+          "view_count": "169",
+          "description": "In this video, Historic Kitchens experts Natalie and Anya recreate a medieval hair cream from a 14th century recipe, using ingredients such as eggs and lard!",
           "is_wildcard": false
         },
         {
           "source": "youtube",
-          "video_id": "6dTyOl1fmDo",
-          "title": "Why colliding blocks compute pi",
-          "channel_id": "UCYO_jab_esuFRV4b17AJtAw",
-          "channel_title": "3Blue1Brown",
-          "published_at": "2025-03-13T15:36:52Z",
-          "url": "https://www.youtube.com/watch?v=6dTyOl1fmDo",
-          "duration_seconds": 1567,
-          "view_count": "6235863",
-          "description": "The physics behind one of the most surprising occurrences of pi\nNext video on Grover's Algorithm: https://youtu.be/RQWpF2Gb-gU\nInstead of sponsored ad reads, these lessons are funded directly by viewers: https://3b1b.co/support\nAn equally valuable form of support is to simply share the videos.\n\nNext video on Grover's Algorithm:\nhttps://youtu.be/RQWpF2Gb-gU\n\nThe original paper by Gregory Galperin:\nhttps://www.maths.tcd.ie/~lebed/Galperin.%20Playing%20pool%20with%20pi.pdf\n\nAdam Brown's paper on th",
-          "is_wildcard": false
-        },
-        {
-          "source": "youtube",
-          "video_id": "kWQxO8LutNg",
-          "title": "How students became customers",
-          "channel_id": "UC2Kyj04yISmHr1V-UlJz4eg",
-          "channel_title": "Jared Henderson",
-          "published_at": "2025-03-28T13:16:05Z",
-          "url": "https://www.youtube.com/watch?v=kWQxO8LutNg",
-          "duration_seconds": 1033,
-          "view_count": "332703",
-          "description": "Get Nebula using my link for 40% off an annual subscription: https://go.nebula.tv/jaredhenderson\n\nUniversities are more expensive than ever, student debt levels are rising, and majors are being cut at many institutions. What is happening at American universities?\n\nIf you want to read books with me and read my writing, check out my Substack: https://jaredhenderson.substack.com\n\nCheck out the Catherine Project: https://catherineproject.org/\n\n→ Sources\nhttps://educationdata.org/average-debt-for-a-b",
+          "video_id": "3vFgvK3TOZI",
+          "title": "Everything You Never Knew About Eating Fish | Compilation",
+          "channel_id": "UCNaq5Jh4SQ1oBAjhQ0KPhoA",
+          "channel_title": "Weird History Food",
+          "published_at": "2026-08-05T14:15:14Z",
+          "url": "https://www.youtube.com/watch?v=3vFgvK3TOZI",
+          "duration_seconds": 4541,
+          "view_count": "856",
+          "description": "Humans have been eating fish for eons. But, it was only recently that they have been conforming fish into nicely packaged, often pre-frozen, ready made fast food. We're talking Gorton's fish fingers, sushi, the McDona;d's Filet-o-Fish.... We have all eaten these at one point or another, but, is there really fish in these mass produced foods? If so, what kind of fish is it that's pressed itnto a square fish patty?  We get into these and and may other aspects of the history of fish in fast food fo",
           "is_wildcard": false
         }
       ]
     },
     {
-      "name": "Out There & On the Water",
-      "emoji": "🌊",
-      "tagline": "Sometimes the wild world is the best classroom — especially when it's trying to sink your boat.",
+      "name": "The Examined Life",
+      "emoji": "🪞",
+      "tagline": "Big questions about how we work, what we value, and whether the stories we tell ourselves hold up.",
       "items": [
         {
+          "source": "youtube",
+          "video_id": "BvGDdV83jnY",
+          "title": "How work took over our lives",
+          "channel_id": "UC2Kyj04yISmHr1V-UlJz4eg",
+          "channel_title": "Jared Henderson",
+          "published_at": "2025-02-22T17:23:56Z",
+          "url": "https://www.youtube.com/watch?v=BvGDdV83jnY",
+          "duration_seconds": 842,
+          "view_count": "314881",
+          "description": "The first 500 people to use my link in the description will receive a one month free trial of Skillshare! Get started today!” https://skl.sh/jaredhenderson02251\n\nWe work too much. Let's talk about why.\n\nIf you want to read books with me and read my writing, check out my Substack: https://jaredhenderson.substack.com\n\nWatch my videos early on Nebula: https://go.nebula.tv/jaredhenderson\n\n\nMy video on burnout and Byung-Chul Han: https://youtu.be/8ZU8nTC7zXs?si=j2bSu4Qlhcr-BNv4\n\n→ Sources\nhttps://www",
+          "is_wildcard": false
+        },
+        {
+          "source": "youtube",
+          "video_id": "XSfRSh4G8Cw",
+          "title": "The Worst Kind of Sequel",
+          "channel_id": "UCs7nPQIEba0T3tGOWWsZpJQ",
+          "channel_title": "Like Stories of Old",
+          "published_at": "2025-02-21T18:08:47Z",
+          "url": "https://www.youtube.com/watch?v=XSfRSh4G8Cw",
+          "duration_seconds": 1767,
+          "view_count": "100015",
+          "description": "Start your free month of great cinema now at https://mubi.com/likestoriesofold \n\nHow Gladiator 2 contradicts itself. Or; when you try to do something new but also want to hit the same comfortable beats of the beloved original.\n\nYou might also like:\nHow Gladiator Turns Violent Spectacle into a Meaningful Story - https://www.youtube.com/watch?v=B9QTRWFUI40\n\n0:00 The Sequel Problem\n0:38 How Gladiator 2 breaks Maximus\n3:05 What was it trying to do?\n8:32 Trouble in the Foundation\n9:30 A Non-Descript ",
+          "is_wildcard": false
+        },
+        {
+          "source": "youtube",
+          "video_id": "l9D2z-PMFtc",
+          "title": "The SYMBOLISM, TRUE STORY, and BEAUTY of I'm Still Here | Explained",
+          "channel_id": "UCXcTkcC_H4XeDGfJ7rQGJaw",
+          "channel_title": "Lucas Blue",
+          "published_at": "2025-02-13T00:30:34Z",
+          "url": "https://www.youtube.com/watch?v=l9D2z-PMFtc",
+          "duration_seconds": 650,
+          "view_count": "39458",
+          "description": "In this I'm Still Here Explained / Ending Explained, I share my video essay analysis of the new Brazilian film, I'm Still Here (2024), starring Fernanda Torres and Selton Mello, and directed by Walter Salles. Looking past all the academy awards controversy with Emilia Perez, this film is a perfect blend of historical drama and political commentary, exploring themes of freedom, feminism, and injustice. I believe this film is excellent in capturing the major themes of womanhood, heroism, and liber",
+          "is_wildcard": false
+        }
+      ]
+    },
+    {
+      "name": "Numbers Going Up",
+      "emoji": "🚀",
+      "tagline": "Rockets, ratios, and the elegant math hiding behind everything from ancient geometry to stock charts.",
+      "items": [
+        {
+          "source": "youtube",
+          "video_id": "9s0srZneJ38",
+          "title": "How Earth's size was computed by Eratosthenes",
+          "channel_id": "UCYO_jab_esuFRV4b17AJtAw",
+          "channel_title": "3Blue1Brown",
+          "published_at": "2025-02-12T15:00:17Z",
+          "url": "https://www.youtube.com/watch?v=9s0srZneJ38",
+          "duration_seconds": 127,
+          "view_count": "286050",
+          "description": "From this video: https://youtu.be/YdOXS_9_P4U",
+          "is_wildcard": false
+        },
+        {
           "source": "youtube_trending",
-          "video_id": "08Yaa_NV1T8",
-          "title": "This Lake Can SINK Bass Boats! - Lake Erie Travel Vlog",
-          "channel_id": "UC9DFFmEx3tYaCfbZhL3QRnw",
-          "channel_title": "AJ Fishing",
-          "published_at": "2026-08-04T12:00:15Z",
-          "url": "https://www.youtube.com/watch?v=08Yaa_NV1T8",
-          "duration_seconds": 1791,
-          "view_count": "6374",
-          "description": "",
+          "video_id": "sHiWUe7Dgcc",
+          "title": "SpaceX WILD RIDE UP MASSIVE; Tesla Continues Up. Bulls are Back",
+          "channel_id": "UCQW2mxSiyhvpiGDHBCgpTJA",
+          "channel_title": "Randy Kirk",
+          "published_at": "2026-08-04T18:05:18Z",
+          "url": "https://www.youtube.com/watch?v=sHiWUe7Dgcc",
+          "duration_seconds": 1332,
+          "view_count": "2380",
+          "description": "For more information about Rebellionaire, including its services and important disclosures, please visit Rebellionaire.com\n\nThe bulls are back and SpaceX is being propelled up with massive energy prop to the earnings. We look at what might happen later today. \n\nGuaranteed page turner exciting Elon Musk Bio. The Elon Musk Magic. Now in all formats includion Audiobooks.  \nhttps://www.amazon.com/dp/B0GN488B2S\n\nOptions Crash Course, designed for all levels. Yhttps://crashcourse.iagmethod.com/septemb",
           "is_wildcard": true
         }
       ]
@@ -176,326 +169,283 @@
     {
       "source": "music",
       "source_name": "NPR Music",
-      "title": "The Ripple Effect: The Grateful Dead's long, strange trip might keep going forever",
-      "snippet": "This summer marks a moment of transition in the Grateful Dead's long, strange trip: the first in many years where there is no clear center of the band's universe. Where do Deadheads go from here?",
-      "url": "https://www.npr.org/2026/08/01/g-s1-134690/grateful-dead-ripple-effect",
+      "title": "How Deadheads became rock and roll's greatest renewable resource",
+      "snippet": "Even as the band has changed and reinvented itself, the Grateful Dead's fanbase has proven to be uniquely and consistently renewable — a cosmic inheritance passed down from one generation to the next, welcoming younger Deadheads with open arms.",
+      "url": "https://www.npr.org/2026/08/05/nx-s1-5901997/grateful-dead-fanbase-keeps-growing",
       "genre": "",
-      "vibe_check": "Like following a river that has no clear source anymore — you just keep walking the bank, grateful for the current.",
-      "cover_url": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/2600x1463+0+1/resize/1400/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F86%2F18%2F1ffe865846c08ae8919f3e22c726%2Frippleeffect-landing2.jpg",
+      "vibe_check": "The feeling of recognizing a stranger's tie-dye shirt and knowing, without a word, that you're already friends.",
+      "cover_url": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/8256x4644+0+430/resize/1400/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F85%2F75%2F6d86fd8445cdbb23f36fb7ce9482%2Fdrf4046a.jpg",
       "embed_url": null
-    },
-    {
-      "source": "music",
-      "source_name": "Stereogum",
-      "title": "Hana Stretton – “From”",
-      "snippet": "Hana Stretton releases her second album tiarn this Friday. So far the British-Australian ambient-folk artist has unveiled \"Stove,\" \"Salt,\" \"Seagull Theory II,\" and \"As It Was Before This,\" and now she's back with another captivating preview called \"From.\"\nThe post Hana Stretton &#8211; &#8220;From&#",
-      "url": "https://stereogum.com/2507329/hana-stretton-from/music/",
-      "genre": "",
-      "vibe_check": "The feeling of standing barefoot on cool sand at the edge of something vast and unnamed.",
-      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/08/Hi-Res-Image-Hana-Stretton-by-Zoe-Karouzos.jpg",
-      "embed_url": "https://www.youtube.com/embed/81zA1JjIwkQ"
-    },
-    {
-      "source": "music",
-      "source_name": "Stereogum",
-      "title": "Told Slant – “Draw Blood”",
-      "snippet": "Last month Told Slant announced their new record What's Up and released the lead single \"Manhattan.\" Today the NYC indie mainstay is back with some more quintessential NYC indie, this time in the form of a beautiful yet bleak song called \"Draw Blood.\"\nThe post Told Slant &#8211; &#8220;Draw Blood&#8",
-      "url": "https://stereogum.com/2507322/told-slant-draw-blood/music/",
-      "genre": "",
-      "vibe_check": "Walking home alone through lower Manhattan at 2am, streetlights reflected in puddles, feeling everything too much.",
-      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/08/Told-Slant-by-Hannah-Pruzinsky-2.jpeg",
-      "embed_url": "https://www.youtube.com/embed/RwiM9NcSYo4"
-    },
-    {
-      "source": "music",
-      "source_name": "Stereogum",
-      "title": "Trashcan Sinatras’ John Douglas Dead At 63",
-      "snippet": "John Douglas, longtime guitarist for Scottish indie rock band Trashcan Sinatras, has passed away. The band shared the news in a social media post today, writing that Douglas passed away peacefully on Monday \"after a brief illness.\" Douglas was 63.\nThe post Trashcan Sinatras’ John Douglas Dead At 63 ",
-      "url": "https://stereogum.com/2507314/trashcan-sinatras-john-douglas-dead-at-63/news/",
-      "genre": "",
-      "vibe_check": "The quiet ache of learning someone gentle has left the room for good.",
-      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/08/John-Douglas.jpeg",
-      "embed_url": "https://www.youtube.com/embed/QezUx8jiOaI"
     },
     {
       "source": "music",
       "source_name": "No Depression",
-      "title": "ALBUM REVIEW: Margaret Glaspy Puts Fraught Relationships Under a Microscope on 'I Am Both'",
-      "snippet": "Interpersonal friction reaches alarming levels on I Am Both, the riveting fourth album from Margaret Glaspy. Hurt feelings, poor communication, and selfish urges inspire a memorable collection of vignettes that capture common relationship ills with unfiltered honesty. If Glaspy&#x2019;s unflinching ",
-      "url": "https://nodepression.org/album-review-margaret-glaspy-puts-fraught-relationships-under-a-microscope-on-i-am-both/",
+      "title": "ALBUM REVIEW: Charlie Worsham Shines on 'Once Upon a Second Time Around'",
+      "snippet": "On his new album Once Upon a Second Time Around, multi-instrumentalist, songwriter, and singer Charlie Worsham welcomes us to step onto his front porch, to sit a spell, tap our toes, clap our hands, and dance around. Swerving from rollicking bluegrass jams to quiet folk ballads, these 12 songs",
+      "url": "https://nodepression.org/album-review-charlie-worsham-shines-on-once-upon-a-second-time-around/",
       "genre": "",
-      "vibe_check": "The tense silence after a door slams somewhere down the hallway of a relationship falling apart.",
-      "cover_url": "https://storage.ghost.io/c/18/d0/18d08e58-3b1b-4720-ae25-a31b44e69d4b/content/images/size/w1200/2026/08/glaspy_cover.jpg",
+      "vibe_check": "Like an unhurried Saturday afternoon on a wooden porch, where the sweet tea never runs out and the fireflies show up right on cue.",
+      "cover_url": "https://storage.ghost.io/c/18/d0/18d08e58-3b1b-4720-ae25-a31b44e69d4b/content/images/size/w1200/2026/08/unnamed.jpeg",
       "embed_url": null
     },
     {
       "source": "music",
-      "source_name": "Pitchfork",
-      "title": "Trashcan Sinatras’ John Douglas Dies at 63",
-      "snippet": "The news arrives four days after the release of their new album Ever the Optimist",
-      "url": "https://pitchfork.com/story/trashcan-sinatras-john-douglas-dead-at-63/",
+      "source_name": "Aquarium Drunkard",
+      "title": "Transmissions :: Awake, My Soul",
+      "snippet": "Describing the sound of Sacred Harp singing can be difficult. Arcane, otherworldly, and overwhelming, it’s a unique a cappella form of shape note Christian hymn singing that was born in England in the 18th century, but took root in the American south. It’s not something you listen to so much somethi",
+      "url": "https://aquariumdrunkard.com/2026/08/05/transmissions-awake-my-soul/",
       "genre": "",
-      "vibe_check": "A bittersweet toast raised just days too late, glass still full.",
-      "cover_url": "https://media.pitchfork.com/photos/6a721cc66fb86ecfa7877bcb/16:9/w_1280,c_limit/John-Douglas%20-%20photo%204%20by%20Stephanie%20Gibson.jpg",
-      "embed_url": null
-    },
-    {
-      "source": "music",
-      "source_name": "Pitchfork",
-      "title": "Grouper’s Liz Harris Reunites Her Shoegaze Band Helen",
-      "snippet": "The trio of Harris, Scott Simmons, and Jed Bindeman will share their first album in a decade this fall",
-      "url": "https://pitchfork.com/story/groupers-liz-harris-reunites-her-shoegaze-band-helen/",
-      "genre": "",
-      "vibe_check": "Like finding a handwritten letter you'd forgotten you wrote, sealed and waiting in a decade-old drawer.",
-      "cover_url": "https://media.pitchfork.com/photos/6a720fc64585f0e2aff4cfeb/16:9/w_1280,c_limit/Helen.jpeg",
-      "embed_url": "https://grouper.bandcamp.com/album/lindas-head"
-    },
-    {
-      "source": "music",
-      "source_name": "Consequence",
-      "title": "Bruce Springsteen Reveals Wife Patti Scialfa Is in Cancer Remission After 8 Years",
-      "snippet": "The E Street Band member was diagnosed with the rare blood cancer in 2018 but didn't reveal it until 2024.\nBruce Springsteen Reveals Wife Patti Scialfa Is in Cancer Remission After 8 Years\nTravis Bland",
-      "url": "https://consequence.net/2026/08/bruce-springsteen-reveals-patti-scialfa-cancer-remission/",
-      "genre": "",
-      "vibe_check": "A long exhale after years of held breath, relief washing over like morning light.",
-      "cover_url": "https://consequence.net/wp-content/uploads/2026/08/Bruce-Springsteen-and-Patti-Scialfa.jpg",
+      "vibe_check": "The sound of a hundred voices dissolving the walls between the living and the dead, echoing off Georgia pine and red clay.",
+      "cover_url": "https://aquariumdrunkard.com/_newness/wp-content/uploads/2026/08/AwakeMySoul.jpg",
       "embed_url": null
     },
     {
       "source": "music",
       "source_name": "Consequence",
-      "title": "60th Anniversary Edition of Frank Zappa and The Mothers of Invention’s Freak Out! Will Feature 105 Tracks",
-      "snippet": "Freak Out!: 60th Anniversary will be released as a six disc version, five vinyl LP set and a colored double vinyl variant along with digital editions. \n60th Anniversary Edition of Frank Zappa and The Mothers of Invention&#8217;s Freak Out! Will Feature 105 Tracks\nTravis Bland",
-      "url": "https://consequence.net/2026/08/frank-zappa-and-the-mothers-of-inventions-freak-out-60th-anniversary/",
+      "title": "Glenn Hughes (Deep Purple, Black Sabbath) Announces Retirement from Live Performances",
+      "snippet": "The legendary singer-bassist must undergo another open-heart surgery.\nGlenn Hughes (Deep Purple, Black Sabbath) Announces Retirement from Live Performances\nLangdon Hickman",
+      "url": "https://consequence.net/2026/08/glenn-hughes-retirement/",
       "genre": "",
-      "vibe_check": "Chaos preserved in amber — 105 ways to prove that beautiful noise never really dies.",
-      "cover_url": "https://consequence.net/wp-content/uploads/2026/08/Zappa-3409WATERMILL-FLT-Photo-by-Ray-Leong.jpg",
-      "embed_url": "https://www.youtube.com/embed/idXGJCABRZw"
+      "vibe_check": "The bittersweet weight of a final bow taken not by choice, but by the body's quiet insistence on rest.",
+      "cover_url": "https://consequence.net/wp-content/uploads/2026/08/glenn-hughes.jpg",
+      "embed_url": null
     },
     {
       "source": "music",
       "source_name": "Consequence",
-      "title": "Lord Huron Announce “23 Nights at the Broken Bottle” Traveling Residency Tour",
-      "snippet": "The pared-down run will transform each stage into the Broken Bottle, the desert honky-tonk from the band's fictional universe.\nLord Huron Announce &#8220;23 Nights at the Broken Bottle&#8221; Traveling Residency Tour\nAlex Krinsky",
-      "url": "https://consequence.net/2026/08/lord-huron-announce-23-nights-at-the-broken-bottle-traveling-residency-tour/",
+      "title": "Phoebe Bridgers’ Lost Weekend Is a Lyrical Masterwork: Review",
+      "snippet": "Lost Weekend is an album of cycles, and an album of towering ambition.\nPhoebe Bridgers&#8217; Lost Weekend Is a Lyrical Masterwork: Review\nWren Graves",
+      "url": "https://consequence.net/2026/08/phoebe-bridgers-lost-weekend-review/",
       "genre": "",
-      "vibe_check": "Dust on your boots and neon in your eyes, somewhere between myth and midnight on an open desert highway.",
-      "cover_url": "https://consequence.net/wp-content/uploads/2026/08/Lord-huron-23-bottle-shows.jpg",
+      "vibe_check": "Sitting alone at 2 a.m. watching the same memory loop until it finally means something different.",
+      "cover_url": "https://consequence.net/wp-content/uploads/2026/08/phoebe-bridgers-lost-weekend-olof-grind.jpg",
       "embed_url": null
     },
     {
       "source": "music",
       "source_name": "PopMatters",
-      "title": "Heading Down the Same Bob Dylan Road",
-      "snippet": "Although How Many Roads isn’t an essential Bob Dylan biography, not all books have to be necessary to be effective and rewarding.",
-      "url": "https://www.popmatters.com/bob-dylan-scott-peeples",
+      "title": "Newport Folk Festival 2026: Rage, Serenity, and CMAT",
+      "snippet": "Considering the particularly turbulent year for the US, one could expect many Newport Folk performers to lean heavily into the political sphere.",
+      "url": "https://www.popmatters.com/newport-folk-festival-2026",
       "genre": "",
-      "vibe_check": "A comfortable armchair read for those who'd rather wander Dylan's back roads than race to any destination.",
-      "cover_url": "https://www.popmatters.com/wp-content/uploads/2026/08/Bob-Dylan-Scott-Peeples-fi.webp",
+      "vibe_check": "The cathartic exhale of a crowd that came needing to feel something — and left with their fists in the air and tears still drying.",
+      "cover_url": "https://www.popmatters.com/wp-content/uploads/2026/08/CMAT-SP-Newport-Folk-2026-by-Sachyn-Mital.webp",
       "embed_url": null
+    },
+    {
+      "source": "music",
+      "source_name": "PopMatters",
+      "title": "Shaboozey Is Still Pop’s Most Undefinable Outlaw",
+      "snippet": "Shaboozey's fourth album The Outlaw Cherie Lee &#038; Other Western Tales is an ambitious concept, combining storytelling with a country/hip-hop blend.",
+      "url": "https://www.popmatters.com/shaboozey-outlaw-cherie-lee",
+      "genre": "",
+      "vibe_check": "Dusty highway windows down, genre signs in the rearview, going exactly where no map can take you.",
+      "cover_url": "https://www.popmatters.com/wp-content/uploads/2026/08/Shaboozey-The-Outlaw-Cherie-Lee-social.webp",
+      "embed_url": "https://www.youtube.com/embed/lFlHO5AngLA"
+    },
+    {
+      "source": "music",
+      "source_name": "PopMatters",
+      "title": "Firas Zreik Is Enchanting with Modal Jazz on ‘Tarabesque’",
+      "snippet": "Firas Zreik is a much-acclaimed filmmaker, composer, and kanunist who draws on his Palestinian roots in his art. Tarabesque is a sparkling example of this work.",
+      "url": "https://www.popmatters.com/firas-zreik-tarabesque",
+      "genre": "",
+      "vibe_check": "Ancient strings and Mediterranean midnight air, pulling memory up from somewhere deeper than language.",
+      "cover_url": "https://www.popmatters.com/wp-content/uploads/2026/08/Firas-Zreik-Tarabesque-social.webp",
+      "embed_url": "https://www.youtube.com/embed/dBJyE9kntRM"
     }
   ],
   "global_silver_linings": [
     {
       "source": "good_news",
       "source_name": "Good News Network",
-      "title": "Self-Healing Contact Lenses Repair Scratches with Just 1 Hour of UV Light Exposure",
-      "url": "https://www.goodnewsnetwork.org/self-healing-contact-lenses-repair-scratches-with-just-1-hour-of-uv-light-exposure/",
-      "snippet": "A major, early-stage advancement in vision technology comes to us now from South Korea, where researchers created a contact lens that repairs scratches automatically when exposed to sunlight. A scratched lens can mean an expensive replacement, but the UV light-activated hydrogel can repair these small imperfections in under an hour. The technology also offers greater […] The post Self-Healing Contact Lenses Repair Scratches with Just 1 Hour of UV Light Exposure appeared first on Good News Network .",
-      "cover_url": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/08/credit-released-by-ACS.jpg",
-      "reason": "Scientists have developed contact lenses that repair their own scratches using just an hour of UV light — a small but elegant example of materials science working in harmony with the natural world's own regenerative principles. For the millions who rely on corrective lenses, this means less waste and longer-lasting care."
+      "title": "UN Summit on HIV/AIDS Shows Incredible Progress in Infection Rates, Deaths, Treatment Access",
+      "url": "https://www.goodnewsnetwork.org/un-summit-on-hiv-aids-shows-incredible-progress-in-infection-rates-deaths-treatment-access/",
+      "snippet": "New HIV infections and AIDS-related deaths are at their lowest levels in more than 30 years, a special report released by UNAIDS shows. Released in time for the 26th International AIDS Conference taking place in Rio de Janeiro, it also showed that 7 countries: Benin, Eswatini, Kenya, Lesotho, Nepal, Rwanda, and Zimbabwe, achieved an almost […] The post UN Summit on HIV/AIDS Shows Incredible Progress in Infection Rates, Deaths, Treatment Access appeared first on Good News Network .",
+      "cover_url": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/06/injection-needle-vaccine-unsplash.jpg",
+      "reason": "Decades of sustained global effort are paying off, with fewer people contracting HIV, fewer lives lost, and more people gaining access to life-saving treatment than ever before. This is what determined, coordinated human compassion looks like in action."
     },
     {
       "source": "good_news",
-      "source_name": "Upworthy",
-      "title": "Psychologists say only children aren’t ‘lonely’ and they have a skill other kids don’t",
-      "url": "https://www.upworthy.com/psychologists-say-only-children-arent-lonely-and-they-have-a-skill-other-kids-dont/",
-      "snippet": "Only child syndrome is a myth. The post Psychologists say only children aren’t ‘lonely’ and they have a skill other kids don’t appeared first on Upworthy .",
-      "cover_url": "https://www.upworthy.com/wp-content/uploads/sites/2/2026/08/Child-1200.jpg",
-      "reason": "New research is gently dismantling the old myth that only children are destined for loneliness, finding instead that they often develop a remarkable capacity for independent thinking and self-sufficiency. It's a reminder that family life comes in many shapes, and children tend to flourish in all of them."
+      "source_name": "Positive News",
+      "title": "How schools are winning children over to healthier lunches",
+      "url": "https://www.positive.news/society/how-schools-are-winning-children-over-to-healthier-lunches/",
+      "snippet": "The government is overhauling school food standards in England for the first time in more than a decade The post How schools are winning children over to healthier lunches appeared first on Positive News .",
+      "cover_url": "https://positivenews.kinsta.cloud/wp-content/uploads/2026/08/Henry-Cavendish-19th-May-2025-50-scaled.jpg",
+      "reason": "When schools make healthy food genuinely appealing rather than obligatory, children choose it — and that quiet shift in lunchrooms today shapes lifelong habits for the better."
     },
     {
       "source": "good_news",
       "source_name": "Reasons to be Cheerful",
-      "title": "America’s Second ‘Great Crime Decline’ Could Already Be Here",
-      "url": "https://reasonstobecheerful.world/americas-second-great-crime-decline/",
-      "snippet": "This story was originally published by The Trace, a nonprofit newsroom covering gun violence in America. Sign up for its newsletters here. Since most homicides in the U.S.",
-      "cover_url": "https://reasonstobecheerful.world/wp-content/uploads/2026/08/shutterstock_2463937195-scaled.jpg",
-      "reason": "Emerging data suggests violent and property crime across the U.S. may be falling significantly — not through a single fix, but through the quiet, compounding work of communities, policy, and prevention. That's the kind of slow, real progress worth paying attention to."
-    },
-    {
-      "source": "good_news",
-      "source_name": "The Optimist Daily",
-      "title": "3D-printed bone implants that release drugs as they heal",
-      "url": "https://www.optimistdaily.com/2026/08/3d-printed-bone-implants-that-release-drugs-as-they-heal/",
-      "snippet": "BY THE OPTIMIST DAILY EDITORIAL TEAM Czech researchers at the University of Chemistry and Technology in Prague are building titanium joint implants with a porous internal structure designed to hold medication and release it gradually after surgery. The project is a collaboration with surgeons at Motol University Hospital. The implants use laser powder bed fusion: […] The post 3D-printed bone implants that release drugs as they heal first appeared on The Optimist Daily: Making Solutions the News .",
-      "cover_url": "https://www.optimistdaily.com/wp-content/uploads/Depositphotos_11076259_L.jpg",
-      "reason": "Researchers have created 3D-printed bone implants that deliver targeted medication directly to the healing site, working with the body's own repair process rather than against it. This is medicine becoming genuinely smarter — reducing complications and giving patients a more natural path to recovery."
+      "title": "What We’re Reading: Building a Massive Wildlife Corridor From Fragmented Lands",
+      "url": "https://reasonstobecheerful.world/what-were-reading-building-wildlife-corridor-rockies/",
+      "snippet": "Welcome back to our weekly behind-the-scenes glimpse at what’s getting our team talking. Tell us what you’ve been reading at info@reasonstobecheerful.world and we just might feature it here. Crossing to safety Habitat loss is a major problem for wildlife.",
+      "cover_url": "https://reasonstobecheerful.world/wp-content/uploads/2026/08/shutterstock_1126796255-scaled.jpg",
+      "reason": "Stitching fragmented patches of land back into a single sweeping wildlife corridor gives animals room to roam, breed, and recover — proof that with enough vision and cooperation, we can genuinely reverse the damage done to wild habitats."
     }
   ],
   "discovery_articles": [
     {
       "source": "discovery",
       "source_name": "Atlas Obscura",
-      "title": "Cell of the Walled-In Women in Astorga, Spain",
-      "url": "https://www.atlasobscura.com/places/celda-de-las-emparedadas-the-cell-of-the-walled-in-women",
-      "snippet": "Squeezed between the Church of Santa Marta and the Chapel of San Esteban is an architectural secret you won’t find anywhere else in Spain: a tiny, irregular stone room known as the Celda de las Emparedadas (“The Cell of the Walled-In Women”). During the Middle Ages, some deeply devout women chose a life of extreme, self-imposed isolation. Rather than being forced, they voluntarily took a \"Vow of Darkness\" choosing to be permanently bricked inside this tiny stone space to dedicate their lives to prayer.",
+      "title": "Zantigo in St Paul, Minnesota",
+      "url": "https://www.atlasobscura.com/places/zantigo",
+      "snippet": "In the vast graveyard of fast food chains, sometimes there is a resurrection. Founded in Minneapolis 7 years after Taco Bell, Zantigo (named Zapato at that time) had a similar model of rearranging the same array of a few ingredients to fill out a menu of Mexican-American dishes. After growing to 82 restaurants by 1986, Zantigo's parent company merged with it's rival's and within 2 years, all remaining Zantigo locations had been closed or converted to Taco Bells.",
       "category": "history",
-      "cover_url": "https://img.atlasobscura.com/II5tmU6_I0XpdchLpvLdsNL-3bMlIY6WN7xBh95IxXo/rt:fit/w:600/c:1739:1159:nowe:462:1055/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy9iNGZl/MzQzOC02NWRhLTQ5/MmUtYjk3MS1mOTc1/ODRjYzIxZGIzMzA2/NTgzMjAzZjUxZGU2/ZTlfYXN0Y2VsZGFl/bXBhcmVkYWRhZGFz/LkpQRw.jpg",
-      "ferns_note": "These women didn't merely retreat from the world — they asked to be permanently sealed inside a stone cell, receiving food through a small slot and never stepping outside again. What strikes me most is that they called it a Vow of Darkness, and they lined up to take it."
+      "cover_url": "https://img.atlasobscura.com/uT7vz3iElxbN8W2ThXHVkKsl3dtm0wrNBY5iOvwEw2Q/rt:fit/w:600/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy9kZDRm/Y2IyMS03NzQxLTRi/OTktYjMxNi0wNjcx/NjBjYmY0Yjc2OTli/ZTM2NDJkOGJkOGU2/OTJfSU1HXzIwMDQu/anBlZw.jpg"
     },
     {
       "source": "discovery",
       "source_name": "Atlas Obscura",
-      "title": "Puerta de los Osos in Madrid, Spain",
-      "url": "https://www.atlasobscura.com/places/puerta-de-los-osos",
-      "snippet": "For centuries, bears have been intertwined with the identity of Madrid. The city’s coat of arms famously depicts a bear reaching up toward a strawberry tree, an image that appears on everything from official seals to souvenirs. Historians debate the exact origins of the symbol, but it likely reflects a time when forests and wildlife surrounded the medieval settlement.",
+      "title": "The Old Place at Sam Houston Park in Houston, Texas",
+      "url": "https://www.atlasobscura.com/places/the-old-place-at-sam-houston-park",
+      "snippet": "At the edge of downtown lies Sam Houston Park, a manicured green haven that doubles as a time capsule. While the park is home to the Houston Heritage Society Museum which includes several historic structures, none are older, or more resilient, than a humble, rough-hewn log structure known simply as The Old Place. Constructed around 1823, this cedar cabin is widely believed to be the oldest remaining structure in Harris County.",
       "category": "history",
-      "cover_url": "https://img.atlasobscura.com/EC6URT9isInbi43WY-wfQHn8o1_dJbV-e-NGYgA7_hY/rt:fit/w:600/c:2522:1681:nowe:169:1407/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy9lYjAx/ZjY3Ny1iZTQzLTRm/YTYtYTA0MC02MTdj/NzVhMWRmYmQzZmYx/NzUxZGUwNjczNTQw/YzFfSU1HXzc0MDQu/anBn.jpg",
-      "ferns_note": "Madrid's beloved bear-and-strawberry-tree emblem hints at a wilder, forgotten city — one where actual bears wandered the forests just beyond the city walls. The souvenir shops have no idea how feral their logo really is."
-    },
-    {
-      "source": "discovery",
-      "source_name": "Atlas Obscura",
-      "title": "Atlas Obscura’s Guide to Unique Romantic Getaways",
-      "url": "https://www.atlasobscura.com/articles/guide-to-romantic-getaways",
-      "snippet": "You’ve decided to go somewhere together. Maybe you just got married and you’re planning a honeymoon. Maybe you’re marking a decade together with an anniversary trip that actually means something.",
-      "category": "history",
-      "cover_url": "https://img.atlasobscura.com/WX0br7nUqB_iD97kL-o_dKPqThcwIipxmAgr9K7mxDE/rt:fit/w:1200/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL2Fzc2V0/cy9kNGZjZTBhZS0y/YWYyLTRkNzEtYmQ4/ZS1mNTY5OTA1YWFj/MWRjNzRlOTQwYWQz/Y2JmNjg5YTJfMlNB/SzFBQi5qcGc.jpg",
-      "ferns_note": "Sometimes the most romantic thing a travel guide can offer is permission to make a trip genuinely mean something, rather than just look good on a grid. Atlas Obscura, reliably, leans toward the weird and the memorable over the merely pretty."
+      "cover_url": "https://img.atlasobscura.com/Aoxt_ENGnf6vhyJgfdLqEKX043BNWWda7U1cm_mGgaw/rt:fit/w:600/c:3407:2271:nowe:406:349/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy84MzA1/NTIxYS03OWQ1LTQ0/MGUtODE3My0wMjcy/Y2M0YWU4OTM3ZGIw/MjY2YTRjYzcwMTU4/MjlfSU1HXzQ3ODUu/anBlZw.jpg"
     },
     {
       "source": "discovery",
       "source_name": "Smithsonian",
-      "title": "How Artist Nick Cave Memorializes His Ancestors Through ‘Mammoth’ Work",
-      "url": "https://www.smithsonianmag.com/smithsonian-institution/how-artist-nick-cave-memorializes-his-ancestors-through-mammoth-work-180989262/",
-      "snippet": "An exhibition at the Smithsonian American Art Museum spotlights how everyday objects can serve as the foundation for artistic expression",
+      "title": "Why Has History Forgotten World War II's Largest Prison Break, Which Claimed the Lives of More Than 200 Japanese POWs?",
+      "url": "https://www.smithsonianmag.com/history/why-has-history-forgotten-world-war-iis-largest-prison-break-which-claimed-the-lives-of-more-than-200-japanese-pows-180989246/",
+      "snippet": "During the 1944 Cowra breakout, over 900 prisoners attempted to escape from an Allied camp in Australia. The uprising resulted in the deaths of 234 Japanese men and 5 Australians",
       "category": "history",
-      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/N8Hmue07MZt3x-3kBlPwJT4V41Y=/fit-in/1600x0/filters:focal(1500x1000:1501x1001)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/99/0d/990dd160-ee95-423a-8461-6f7c19832a84/cave_in_his_studio_with_objects_included_in_a_lit_history.jpg",
-      "ferns_note": "Nick Cave transforms the castoffs of everyday life — bottle caps, buttons, found objects — into monumental works of mourning and memory, insisting that the ordinary has always carried the weight of the ancestors who touched it."
+      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/TnnemyS4Zw1RKkRWNCUnscEnA5s=/fit-in/1600x0/filters:focal(2492x1638:2493x1639)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/93/b2/93b2606a-1623-4018-8a40-5857fe0dd865/gettyimages-453574876.jpg"
     },
     {
       "source": "discovery",
       "source_name": "Smithsonian",
-      "title": "This American Pilot Downed 40 Enemy Aircraft During World War II. Researchers Discovered the Wreck of His Plane in a Pacific Jungle and Brought a Wing Back to His Home State",
-      "url": "https://www.smithsonianmag.com/smart-news/this-american-pilot-downed-4o-enemy-aircraft-during-world-war-ii-researchers-discovered-the-wreck-of-his-plane-in-a-pacific-jungle-and-brought-a-wing-back-to-his-home-state-180989259/",
-      "snippet": "Richard I. Bong, flying a plane decorated with a portrait of his future wife Marge, became America's highest-scoring \"ace\" and received a Medal of Honor",
+      "title": "A Serpentine Sculpture Inspired by Benjamin Franklin's 'Join, or Die' Call for Unity Is Taking Shape—Segment by Segment—in Philadelphia",
+      "url": "https://www.smithsonianmag.com/smart-news/a-serpentine-sculpture-inspired-by-benjamin-franklins-join-or-die-call-for-unity-is-taking-shape-segment-by-segment-in-philadelphia-180989263/",
+      "snippet": "Created by John Collins, the 46-foot-long granite artwork inspired by an 18th-century political cartoon is slated to be unveiled on Independence Mall sometime this fall",
       "category": "history",
-      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/DcrI06kzsVX_BYkQZVYMor2llgY=/fit-in/1600x0/filters:focal(3096x2064:3097x2065)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/f0/ef/f0ef846a-b1d4-4b29-acb2-dc837c845e76/pacific_wrecks_marge_2026-still_16.jpeg",
-      "ferns_note": "Richard Bong flew his most dangerous missions with a portrait of Marge painted on his cockpit — and decades after his death, researchers pulled a piece of that plane out of a Pacific jungle and carried it home to Wisconsin. Some love stories take seventy years to finish."
+      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/TyWW_kVXiiiaS8KfbJa229lMTTQ=/fit-in/1600x0/filters:focal(505x392:506x393)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/fc/50/fc50f59f-6822-4049-bc84-540251b460f8/6e31d14f-f410-4b5f-bbac-f807b38d46ddoriginal.webp"
     },
     {
       "source": "discovery",
       "source_name": "Smithsonian",
-      "title": "Two People Died After Getting Sick With Cyclosporiasis, Marking the First Known Deaths Linked to the Ongoing Multistate Outbreak",
-      "url": "https://www.smithsonianmag.com/smart-news/two-peope-died-after-getting-sick-with-cyclosporiasis-marking-the-first-known-deaths-linked-to-the-ongoing-multi-state-outbreak-180989256/",
-      "snippet": "Both patients, who were in Michigan, had underlying health conditions, according to state officials. The parasite-caused infection usually isn't life-threatening",
+      "title": "Flesh-Eating 'Superworms' Could Become a New Skeleton-Cleaning Crew for Museum and Research Specimens",
+      "url": "https://www.smithsonianmag.com/smart-news/flesh-eating-superworms-could-become-a-new-skeleton-cleaning-crew-for-museum-and-research-specimens-180989258/",
+      "snippet": "A new study hints that the critters would be a good alternative to traditional methods used to remove flesh from bones, including dermestid beetles, chemical treatments and boiling, which can cause damage or be time-consuming",
       "category": "history",
-      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/bNsja_n1IK4aaw3fx_Zt8bx_wBM=/fit-in/1600x0/filters:focal(2573x1715:2574x1716)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/ca/4b/ca4b0251-c164-46ac-b5e3-81148b1a2fe0/cyclospora.jpg",
-      "ferns_note": "Cyclosporiasis — caused by a parasite most people have never heard of — has quietly been spreading across multiple states, a reminder that the smallest organisms carry the most unsettling surprises. Worth knowing the name before it's in the headlines."
+      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/NHVjQ7dLbT1I7CP5L4ue67ya5dA=/fit-in/1600x0/filters:focal(1075x737:1076x738)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/92/1d/921dc374-286e-4958-af39-60fa2c33e07e/journalpone0349669g004.png"
     },
     {
       "source": "discovery",
       "source_name": "Smithsonian",
-      "title": "The Danube River Has Fallen to Record-Low Water Levels, Revealing Nazi Warships, Bombs and Woolly Mammoth Bones In Its Channel",
-      "url": "https://www.smithsonianmag.com/smart-news/the-danube-river-has-fallen-to-record-low-water-levels-revealing-nazi-warships-bombs-and-woolly-mammoth-bones-in-its-channel-180989255/",
-      "snippet": "Residents and researchers are finding historic and prehistoric relics of the past as Europe's second-longest river dries",
+      "title": "This Fall, Discover Williamsburg’s One-Of-A-Kind Haunted History",
+      "url": "https://www.smithsonianmag.com/sponsored/this-fall-discover-williamsburgs-one-of-a-kind-haunted-history-180989117/",
+      "snippet": "With nearly 400 years of history, Williamsburg, Virginia, is brimming with ghostly tales",
       "category": "history",
-      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/WummnaOethj4dLTa1TERrx0I-Hw=/fit-in/1600x0/filters:focal(810x540:811x541)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/a6/ed/a6edd465-75b5-40a0-ad71-ad4d1271eef2/river_i.jpg",
-      "ferns_note": "The Danube's record-low waters have turned a river into an accidental museum, laying bare Nazi warships alongside woolly mammoth bones in the same stretch of silt. It's a strange, sobering reminder that the earth keeps its own archive."
+      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/32SSqKv6eHFFlemoTeIiYxXqtGo=/fit-in/1600x0/filters:focal(2000x1410:2001x1411)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/2a/1d/2a1d8910-c46b-4446-8946-e3dbb2aaf9d3/hero.jpg"
+    },
+    {
+      "source": "discovery",
+      "source_name": "Science News",
+      "title": "These tiny swirls on the sun could trigger solar flares",
+      "url": "https://www.sciencenews.org/article/tiny-swirls-sun-trigger-solar-flares",
+      "snippet": "Scientists have finally seen a long-predicted motion on the sun, and it may help explain explosive solar activity.",
+      "category": "science",
+      "cover_url": "https://www.sciencenews.org/wp-content/uploads/sites/2/2026/08/080426_FI_solarswirls_main.jpg"
+    },
+    {
+      "source": "discovery",
+      "source_name": "Science News",
+      "title": "Bullfrogs may have an antidote to deadly shellfish poisoning",
+      "url": "https://www.sciencenews.org/article/bullfrog-antidote-shellfish-poisoning",
+      "snippet": "Researchers injected mice with a protein derived from frogs to save them from the same kind of shellfish poisoning that affects people.",
+      "category": "science",
+      "cover_url": "https://www.sciencenews.org/wp-content/uploads/sites/2/2026/07/072926_KZ_spongeproteins_main.jpg"
+    },
+    {
+      "source": "discovery",
+      "source_name": "Aeon",
+      "title": "The last ice age",
+      "url": "https://aeon.co/videos/as-glaciers-melt-a-writer-considers-what-stories-can-do-that-data-cannot",
+      "snippet": "Retracing his grandparents’ journey to Iceland’s Vatnajökull glacier, a writer draws on storytelling to grasp climate change - by Aeon Video Watch on Aeon",
+      "category": "science",
+      "cover_url": ""
+    },
+    {
+      "source": "discovery",
+      "source_name": "JSTOR Daily",
+      "title": "The Case for Aesthetic Education",
+      "url": "https://daily.jstor.org/the-case-for-aesthetic-education/",
+      "snippet": "Why Friedrich Schiller believed art belongs at the heart of education—and why it matters for equal opportunity today. The post The Case for Aesthetic Education appeared first on JSTOR Daily .",
+      "category": "history",
+      "cover_url": "https://daily.jstor.org/wp-content/uploads/2026/08/the_case_for_aesthetic_education_1050x700.jpg"
+    },
+    {
+      "source": "discovery",
+      "source_name": "Quanta Magazine",
+      "title": "Corals Spin Tiny Vortices to Get Oxygen, but Not if It’s Too Hot",
+      "url": "https://www.quantamagazine.org/corals-spin-tiny-vortices-to-get-oxygen-but-not-if-its-too-hot-20260805/",
+      "snippet": "New research is helping biologists understand how an overlooked aspect of coral physiology may affect their fate under climate change. The post Corals Spin Tiny Vortices to Get Oxygen, but Not if It’s Too Hot first appeared on Quanta Magazine",
+      "category": "science",
+      "cover_url": "https://www.quantamagazine.org/wp-content/uploads/2026/08/CoralCilia-crCesarPacharres-Social.jpg"
     },
     {
       "source": "discovery",
       "source_name": "Colossal",
-      "title": "Tiny Faces Surface Amid Sweeping Lines in En Iwamura’s Expressive Sculptures",
-      "url": "https://www.thisiscolossal.com/2026/08/en-iwamura-expressive-ceramic-sculptures/",
-      "snippet": "En Iwamura is interested in the ways we measure and understand the spaces between ourselves and others. Do stories and artists like this matter to you? Become a Colossal Member today and support independent arts publishing for as little as $7 per month.",
+      "title": "‘Bodega Cats of New York’ Advocates for the City’s Beloved Feline Shopkeepers",
+      "url": "https://www.thisiscolossal.com/2026/08/bodega-cats-of-new-york-dan-rimada-gulce-kilkis-book/",
+      "snippet": "A new book from Dan Rimada, with photos by Gulce Kilkis, is slated for release in November. Do stories and artists like this matter to you? Become a Colossal Member today and support independent arts publishing for as little as $7 per month.",
       "category": "history",
-      "cover_url": "https://www.thisiscolossal.com/wp-content/uploads/2026/08/iwamura-1.jpg",
-      "ferns_note": "En Iwamura hides tiny human faces inside the sweeping abstract lines of her sculptures — a quiet argument that no matter how grand the gesture, the intimate, personal scale is always lurking underneath. You have to slow down to find them."
+      "cover_url": "https://www.thisiscolossal.com/wp-content/uploads/2026/08/bcny-7.jpeg"
+    },
+    {
+      "source": "discovery",
+      "source_name": "Colossal",
+      "title": "Enigmatic Narratives Unfold in Aron Wiesenfeld’s Dreamy Oil Paintings",
+      "url": "https://www.thisiscolossal.com/2026/08/aron-wiesenfeld-oil-paintings-narratives/",
+      "snippet": "Wiesenfeld delves into the power of visibility and imagination. Do stories and artists like this matter to you? Become a Colossal Member today and support independent arts publishing for as little as $7 per month.",
+      "category": "history",
+      "cover_url": "https://www.thisiscolossal.com/wp-content/uploads/2026/08/wiesenfeld-5.jpg"
     }
   ],
   "featured_read": {
     "source": "reads",
     "source_name": "The Marginalian",
-    "title": "Trial, Triumph, and the Art of the Possible: The Remarkable Story Behind Beethoven’s “Ode to Joy”",
-    "url": "https://www.themarginalian.org/2026/08/04/beethoven-ode-to-joy/",
-    "snippet": "A hymn of rage, a hymn of redemption, and a timeless love letter to the possible.",
-    "cover_url": "https://www.themarginalian.org/wp-content/uploads/2022/05/odetojoy_Marginalian.jpg?fit=1200%2C630&ssl=1",
-    "blurb": "This essay traces how Beethoven composed his most jubilant music in total silence, asking what it means to celebrate joy you can no longer hear. It's a quiet argument that the possible is most fiercely loved by those who have lost the most to the actual."
+    "title": "What Makes You You Makes the Universe: Nobel Laureate Erwin Schrödinger on Quantum Physics, Vedanta, and the Ongoing Mystery of What We Are",
+    "url": "https://www.themarginalian.org/2026/08/03/erwin-shcrodinger-my-view-of-the-world/",
+    "snippet": "\"This life of yours which you are living is not merely a piece of the entire existence, but is in a certain sense the whole.\"",
+    "cover_url": "https://www.themarginalian.org/wp-content/uploads/2021/11/margaretcook_leavesofgrass000.jpg?fit=1200%2C630&ssl=1",
+    "blurb": "Schrödinger — the man who gave us the cat — spent his later years arguing, through quantum physics and ancient Vedantic philosophy, that individual consciousness isn't a fragment of the universe but somehow the whole thing, looking at itself. It's the kind of idea that sounds mystical until the math starts to agree with it."
   },
   "garden_note": {
-    "note": "First light steals into the Zürich sky at 05:34 this morning, gilding the bean rows and the last blush of summer roses before the city even stirs — late August is whispering its intentions, and the garden is listening with ripening ears of corn and heavy-headed sunflowers nodding in agreement.",
+    "note": "The evening air in Zürich carries that particular late-summer weight — warm and faintly dusty, with the sunflowers leaning gold against a sky that doesn't fully surrender until well past nine. This is the quiet pivot point of the season, when the garden asks you to harvest a little more urgently than you planted.",
     "in_season": [
-      "Runner beans to harvest daily",
       "Sunflowers in full bloom",
-      "Courgettes — check daily before they become marrows",
-      "Deadhead roses to coax one last flush"
+      "Courgettes and climbing beans to harvest daily",
+      "Deadhead dahlias to keep the flush coming",
+      "Sow spinach and lamb's lettuce for autumn"
     ],
-    "sky_tonight": "The waning Last Quarter moon rises near midnight — before then, look south for Saturn glowing steadily in Aquarius, a perfect steady gold against the darkening sky.",
-    "sun_times": "First light arrives at 05:34, with sunrise at 06:07 and a long, generous day stretching all the way to sunset at 20:56.",
+    "sky_tonight": "The Last Quarter Moon rises well after midnight, so the earlier hours of dusk offer a lovely dark canvas — look south for Scorpius low on the horizon and the unmistakable teapot of Sagittarius just above it.",
+    "sun_times": "Dusk lingers until 21:29 tonight, with the sun having set at 20:56 — a reminder that August evenings in Zürich are still generously long.",
     "moon_label": "Last quarter",
-    "illum_pct": 57,
+    "illum_pct": 53,
     "sun_range": "06:07–20:56"
   },
   "puzzle": {
-    "kind": "anagram",
-    "label": "Fern's Morning Anagram",
-    "prompt": "Rearrange the letters of NOTES to make a different common word.",
-    "answer": "Tones (also Stone, Steno, Onset)",
-    "hint": "There are 4 words hiding in these letters.",
-    "source": "wordsmith.org",
-    "source_id": "notes"
+    "kind": "riddle",
+    "label": "Fern's Morning Riddle",
+    "prompt": "What two things can you never eat for breakfast?",
+    "answer": "Lunch and dinner",
+    "hint": "",
+    "source": "riddles.com",
+    "source_id": "Riddle-210"
   },
   "previous_puzzle": {
-    "label": "The Evening Trivia",
-    "prompt": "Autosomal-dominant Compelling Helio-Ophthalmic Outburst syndrome is the need to do what when seeing the Sun?\n\nCough   ·   Hiccup   ·   Sneeze   ·   Yawn",
-    "answer": "Sneeze"
+    "label": "Fern's Morning Anagram",
+    "prompt": "Rearrange the letters of NOTES to make a different common word.",
+    "answer": "Tones (also Stone, Steno, Onset)"
   },
   "larder": {
-    "news": [
-      {
-        "source": "food",
-        "source_name": "The Kitchn",
-        "title": "Shoppers Are Buying This $14 Pantry Organizer in Multiples (It Can Hold Up to 30 Spice Jars!)",
-        "url": "https://www.thekitchn.com/invocoo-spice-rack-organizer-amazon-deal-august-2026-23837946?utm_source=RSS&utm_medium=feed&utm_campaign=Category%2FChannel%3A+main",
-        "snippet": "It’s also expandable! READ MORE...",
-        "cover_url": "",
-        "blurb": "A $14 pantry organiser that holds 30 spice jars *and* expands — consider your chaotic spice drawer officially out of excuses."
-      },
-      {
-        "source": "food",
-        "source_name": "The Guardian",
-        "title": "Angela Hartnett’s Italian summer recipes: grilled peaches, green beans and mozzarella, and gnudi in tomato sauce",
-        "url": "https://www.theguardian.com/food/2026/aug/05/angela-hartnett-italian-summer-recipes-grilled-peaches-green-beans-mozzarella-dumplings-tomato-sauce",
-        "snippet": "Two inspiring summer dishes to enjoy in the sunshine: grilled peaches with green beans and mozzarella, and gnudi in a roast tomato sauce At Cicoria , peaches, green beans and tomatoes are among our favourites ingredients right now, inspiring dishes that celebrate freshness and flavour. The restaurant is perched at the top of the Royal Opera House in London, so our dining room is flooded with sunlight throughout the day, which is just as well because these vibrant, simple dishes are best enjoyed in the sunshine. Continue reading...",
-        "cover_url": "https://i.guim.co.uk/img/media/3d5a45f121445da583b9568fa44d95fa68a93639/0_2050_5110_4088/master/5110.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=bd72de9019cd445cc8b9df5ccc7f8b81",
-        "blurb": "Angela Hartnett brings the Italian sun to your table with grilled peaches and gnudi that make a compelling case for cooking with peak-summer produce."
-      },
-      {
-        "source": "food",
-        "source_name": "Saveur",
-        "title": "Our 22 Most Succulent Sweet and Sour Cherry Recipes",
-        "url": "https://www.saveur.com/gallery/cherry-recipes/",
-        "snippet": "Photo: Heami Lee • Food Styling: Jessie YuChen Whether baked into pies, cooked into chutneys, or muddled in cocktails, these stone fruits don't disappoint. The post Our 22 Most Succulent Sweet and Sour Cherry Recipes appeared first on Saveur .",
-        "cover_url": "https://www.saveur.com/uploads/2021/06/cherries-on-ice_16x9.jpg?auto=webp",
-        "blurb": "Twenty-two reasons to make the most of cherry season — from bubbling pies to clever chutneys — before those fleeting stone fruits disappear."
-      }
-    ],
-    "recipe": {
-      "source": "recipe",
-      "source_name": "Smitten Kitchen",
-      "title": "snow pea salad with avocado",
-      "url": "https://smittenkitchen.com/2026/06/snow-pea-salad-with-avocado/",
-      "snippet": "One of my most exasperating traits — or, perhaps one that makes me ideally suited for this space I invented, coincidentally, to suit my collection of traits — is that I have a terrific amount of random ingredient preparation ideas in the overflowing file cabinet of my brain that will spill into conversations the second I hear the triggering keyword. Read more »",
-      "is_recipe": true,
-      "cover_url": "https://i0.wp.com/smittenkitchen.com/wp-content/uploads/2026/06/snow-pea-salad-with-avocado-6-scaled.jpg?fit=1200%2C800&quality=89&ssl=1",
-      "blurb": "Crisp snow peas and creamy avocado come together in a salad that's effortlessly light, perfectly suited to warm-weather lunches, and ready before you've even set the table."
-    },
-    "seasonal_note": "Zürich's Saturday markets at Bürkliplatz are flush with Zwetschgen right now — those dark, oblong Swiss plums that are worth seeking out simply halved and roasted with a little butter and vanilla, then spooned warm over Quark for a breakfast that feels quietly triumphant."
+    "news": [],
+    "recipe": {}
   },
   "fern_data": {
-    "greeting": "Wednesday has that particular mid-week smugness — convinced it's already Thursday — but today's digest has no interest in rushing: Anne Boleyn needs dressing, Nostradamus needs debunking, and somewhere in the background, the Grateful Dead are still, improbably, not finished.",
-    "top_pick_title": "Bones, Hems & the Long Strange Trip"
+    "greeting": "A day ends the way most do — not with a bang but with the quiet accumulation of everything you half-noticed. Tonight there's Nero to reconsider, a Phoebe Bridgers record that earns the word 'masterwork,' and Schrödinger asking what you actually are — which feels, honestly, like the right question for this hour.",
+    "top_pick_title": "Ash & Inquiry"
   }
 }
