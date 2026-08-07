@@ -1,12 +1,12 @@
 {
-  "fetched_at": "2026-08-06T08:08:02.690553+02:00",
+  "fetched_at": "2026-08-07T07:08:18.219291+02:00",
   "is_am_email": true,
   "audit_summary": {
     "youtube_videos": 10,
     "themes": 3,
-    "music_articles": 6,
-    "good_news_articles": 3,
-    "discovery_articles": 6,
+    "music_articles": 12,
+    "good_news_articles": 5,
+    "discovery_articles": 18,
     "featured_read": 1,
     "garden": 1,
     "puzzle": 1,
@@ -14,152 +14,152 @@
   },
   "themes": [
     {
-      "name": "Rabbit Holes Worth Falling Down",
-      "emoji": "🌀",
-      "tagline": "From one-dimensional geometry to the edge of the cosmos — your brain will hurt in the best way.",
+      "name": "Dust & Dynasties",
+      "emoji": "🏛️",
+      "tagline": "Empires rise, empires fall — and the drama never gets old.",
       "items": [
         {
           "source": "youtube",
-          "video_id": "4DaETxhoAxg",
-          "title": "One Dimensional Balls",
-          "channel_id": "UC6nSFpj9HTCZ5t-N3Rm3-HA",
-          "channel_title": "Vsauce",
-          "published_at": "2026-08-05T23:42:31Z",
-          "url": "https://www.youtube.com/watch?v=4DaETxhoAxg",
-          "duration_seconds": 162,
-          "view_count": "213559",
-          "description": "",
+          "video_id": "56Ye4YHdNfs",
+          "title": "Alice Roberts On The Origins of Christianity",
+          "channel_id": "UCZwU2G-KVl-P-O-B35chZOQ",
+          "channel_title": "History Hit",
+          "published_at": "2026-08-06T18:00:17Z",
+          "url": "https://www.youtube.com/watch?v=56Ye4YHdNfs",
+          "duration_seconds": 2601,
+          "view_count": "8044",
+          "description": "Dan is joined by author, broadcaster and historian Professor Alice Roberts to examine how Christianity out-organised and outlasted the Roman Empire.\n\nAround 50 CE, a small group of travellers began to preach that a Jewish man, crucified by the Romans, had risen from the dead. Teaching love, forgiveness and eternal life, this new faith quickly gained followers. By the early fourth century, it was thriving, and over the next hundred years, it exploded, spreading across the entire Roman Empire befo",
           "is_wildcard": false
         },
         {
           "source": "youtube",
-          "video_id": "YdOXS_9_P4U",
-          "title": "Terence Tao on the cosmic distance ladder",
-          "channel_id": "UCYO_jab_esuFRV4b17AJtAw",
-          "channel_title": "3Blue1Brown",
-          "published_at": "2025-02-08T13:35:15Z",
-          "url": "https://www.youtube.com/watch?v=YdOXS_9_P4U",
-          "duration_seconds": 1713,
-          "view_count": "5735461",
-          "description": "The Cosmic Distance Ladder: How we learned distances in the heavens.\nNext part: https://youtu.be/hFMaT9oRbs4\nPatreon supporters see early views of new videos: https://www.patreon.com/3blue1brown\n\nArtwork by Kurt Bruns\nThanks to Paul Dancstep for several animations, such as the powers of 10 zoom out and the simulations of shadows on the moon.\n\nTerry has kindly cataloged many of the added nuances, including a few corrections, in this post:\nhttps://terrytao.wordpress.com/2025/02/13/cosmic-distance-",
-          "is_wildcard": false
-        },
-        {
-          "source": "youtube",
-          "video_id": "iPj9D9LgK2A",
-          "title": "A Universal Theory of Brain Function",
-          "channel_id": "UCR2uRTQ53V_egXKFflMMaaw",
-          "channel_title": "Artem Kirsanov",
-          "published_at": "2025-01-22T02:45:30Z",
-          "url": "https://www.youtube.com/watch?v=iPj9D9LgK2A",
-          "duration_seconds": 1171,
-          "view_count": "236698",
-          "description": "Head to https://squarespace.com/artem to save 10% off your first purchase of a website or domain using code ARTEM\n\n=====\nMy name is Artem, I'm a neuroscience PhD student at Harvard University. \n🌎 Website and Social links: https://kirsanov.ai/\n📥 \"Receptive Field\" neuro-newsletter: https://artemkirsanov.substack.com/\n✨ Support me on Patreon to get access to Discord community: https://patreon.com/artemkirsanov\n=====\n\nIn this video explore Free Energy Principle – a powerful framework in neuroscience",
-          "is_wildcard": false
-        },
-        {
-          "source": "youtube",
-          "video_id": "_Hcpbd1yAsw",
-          "title": "Irish Myths: Uncovering Lost Prehistoric Legends | The Ancients",
+          "video_id": "3Gp_LEjW8VE",
+          "title": "What (Or WHO) Caused The Fall Of Babylon? | The Ancients",
           "channel_id": "UC2J29LPhS9vMiWyYEqBRB0w",
           "channel_title": "The Ancients",
-          "published_at": "2025-11-02T07:00:06Z",
-          "url": "https://www.youtube.com/watch?v=_Hcpbd1yAsw",
-          "duration_seconds": 4106,
-          "view_count": "29156",
-          "description": "Was the Eye of Sauron based on ancient Irish mythology? What can we know about these prehistoric legends and their effect on our stories today?\n\nTristan Hughes and ancient history expert Anthony Murphy dive deep into the written tales to uncover how the seemingly \"pagan\" stories, written down by Christian medieval monks, contain surprisingly accurate memories of Stone Age monuments and customs, including the astronomical alignment of Newgrange, the River Boyne, and the legendary Salmon of Knowle",
-          "is_wildcard": false
-        }
-      ]
-    },
-    {
-      "name": "The Fog of Modern Life",
-      "emoji": "🌫️",
-      "tagline": "Algorithms, disappearing rights, and history being rewritten — the unsettling stuff hiding in plain sight.",
-      "items": [
-        {
-          "source": "youtube",
-          "video_id": "gH3UAegUQEI",
-          "title": "Nobody Prepared Parents for This Digital Dilemma",
-          "channel_id": "UCDdi0yUyGW1PKzYXaIACnuA",
-          "channel_title": "Jessica Kellgren-Fozard",
-          "published_at": "2026-08-05T18:00:38Z",
-          "url": "https://www.youtube.com/watch?v=gH3UAegUQEI",
-          "duration_seconds": 2684,
-          "view_count": "6440",
-          "description": "We are the first generation of parents raising children while fully understanding how algorithms, persuasive technology and data harvesting work.\n\nAt the same time, schools are becoming increasingly digital, governments are considering restrictions on social media for young people, and many families are left wondering:\n\nHow do you raise children intentionally in a world built around screens?\n\nIn this video I explore:\n• Whether screen-free children really fall behind\n• What research says about te",
+          "published_at": "2025-11-01T07:00:06Z",
+          "url": "https://www.youtube.com/watch?v=3Gp_LEjW8VE",
+          "duration_seconds": 2871,
+          "view_count": "85697",
+          "description": "Ancient Babylon, Nebuchadnezzar, and the Persian Empire clash in this deep dive into the 539 BC conquest. Tristan Hughes and Reverend Professor Lloyd Llewellyn-Jones discuss the unexpected fall of the Neo-Babylonian Empire and the rise of Cyrus the Great's Achaemenid Persia. \n\nThey explore the pivotal moment when the ancient world's largest, most magnificent city, Babylon, capitulated without bloodshed, examining the critical role of its final king, Nabonidus, his son Belshazzar, and the politic",
           "is_wildcard": false
         },
         {
           "source": "youtube",
-          "video_id": "iK1ZZInYRHY",
-          "title": "Amazon removes your right to download Kindle books",
-          "channel_id": "UC2Kyj04yISmHr1V-UlJz4eg",
-          "channel_title": "Jared Henderson",
-          "published_at": "2025-02-18T02:10:49Z",
-          "url": "https://www.youtube.com/watch?v=iK1ZZInYRHY",
-          "duration_seconds": 373,
-          "view_count": "1175755",
-          "description": "On February 26, Amazon is removing your right to download Kindle books. \n\nSee The Verge for details: https://www.theverge.com/news/612898/amazon-removing-kindle-book-download-transfer-usb\n\n→ Links\nSubstack: https://jaredhenderson.substack.com\nNebula: https://go.nebula.tv/jaredhenderson",
-          "is_wildcard": false
-        },
-        {
-          "source": "youtube",
-          "video_id": "M65IYIWlqes",
-          "title": "AI History Content Slop is Lying to You",
+          "video_id": "TrC5lCETljw",
+          "title": "That Time Dracula Sued Nosferatu",
           "channel_id": "UCSwwoUNvQWgZDC8a_O6Qs_A",
           "channel_title": "Kaz Rowe",
-          "published_at": "2025-01-31T17:10:41Z",
-          "url": "https://www.youtube.com/watch?v=M65IYIWlqes",
-          "duration_seconds": 2684,
-          "view_count": "354133",
-          "description": "🐣 Download Hay Day for free and get 16 exclusive decorations to personalise your farm—worth $15.99! It's available until the 15th of February! #HayDay https://link.haydaygame.com/?action=voucher&code=04493209-0183-48f3-87d7-2e582db465b1\n\nIn recent years, the internet has been inundated with a huge amount of AI generated \"history\" videos with yassified portrayals of historical people and questionable-at-best information. What exactly are we up against, and how do these generative AI systems even ",
+          "published_at": "2025-01-17T17:44:57Z",
+          "url": "https://www.youtube.com/watch?v=TrC5lCETljw",
+          "duration_seconds": 1852,
+          "view_count": "150929",
+          "description": "Stop leaving yourself vulnerable to data breaches. Go to my sponsor https://aura.com/kazrowe to get a 14-day free trial and see if any of your data has been exposed! My partner Aura just launched their new \"Are you smarter than a scammer?\" quiz. Take the quiz and see if you’re as savvy as you think: https://bit.ly/aurasts\n\nEveryone is talking (and discoursing) about Robert Eggers' Nosferatu, but did you know this movie was almost never made? Back in the 1920s, the widow of Bram Stoker, author of",
           "is_wildcard": false
         },
         {
           "source": "youtube",
-          "video_id": "FQUo2r-ow-k",
-          "title": "The Unsolved Case That Still Haunts Me",
-          "channel_id": "UC3cpN6gcJQqcCM6mxRUo_dA",
-          "channel_title": "Wendigoon",
-          "published_at": "2025-02-03T18:40:48Z",
-          "url": "https://www.youtube.com/watch?v=FQUo2r-ow-k",
-          "duration_seconds": 3822,
-          "view_count": "4969926",
-          "description": "Check out AG1 to subscribe and save $20 off your first subscription of AG1 here: https://drinkag1.com/wendigoon\n\nBook about the murder: https://www.amazon.com/Hinterkaifeck-Terror-German-Countryside-Chadwick/dp/B0CMTL55YT\n\nWebsite full of archives: https://www.hinterkaifeck.net/\n\nCheck out the new podcasts here:\n\nThe Red Thread: @theofficialytchannel \n\nCreepCast: @CreepPodcast \n\nThe Weird Bible Podcast: @TheWeirdBible \n\n\nDISCLAIMER: This video is for educational purposes. The events described an",
+          "video_id": "xrCDxy8kR6c",
+          "title": "The Wildest Last Meals Ever Ordered on Death Row | Reheated",
+          "channel_id": "UCNaq5Jh4SQ1oBAjhQ0KPhoA",
+          "channel_title": "Weird History Food",
+          "published_at": "2026-08-06T14:15:22Z",
+          "url": "https://www.youtube.com/watch?v=xrCDxy8kR6c",
+          "duration_seconds": 645,
+          "view_count": "12301",
+          "description": "In most states, prisoners set to be executed, including infamous serial killers and convicted murderers, are usually entitled to request a last meal. Some have asked for steak, seafood, burgers, desserts, and gallons of ice cream, while others kept it surprisingly simple, and at least one inmate ordered a meal so excessive it convinced a whole state to stop honoring its long-standing tradition of last meal requests.\n\nWeird History: Reheated is a new series that gives you a chance to check out so",
           "is_wildcard": false
         }
       ]
     },
     {
-      "name": "Slow Down & Look Closer",
-      "emoji": "✈️",
-      "tagline": "Whether it's fabric quality or a birthday trip to Portugal, the art is in noticing the details.",
+      "name": "Rabbit Holes Worth Falling Down",
+      "emoji": "🕳️",
+      "tagline": "From cursed game lore to vampire lawsuits — the internet's weirdest deep dives, curated.",
       "items": [
         {
           "source": "youtube",
-          "video_id": "fuVU64m1sbw",
-          "title": "How to Identify Quality in Clothing (A Rant)",
+          "video_id": "d9n8-7dYOoo",
+          "title": "The Dark Story & Lore of Lethal Company",
+          "channel_id": "UC3cpN6gcJQqcCM6mxRUo_dA",
+          "channel_title": "Wendigoon",
+          "published_at": "2025-01-19T22:13:12Z",
+          "url": "https://www.youtube.com/watch?v=d9n8-7dYOoo",
+          "duration_seconds": 10232,
+          "view_count": "8615524",
+          "description": "Use code 50WENDIGOON to get 50% OFF plus free shipping on your first Factor box at https://bit.ly/3W8Zt1v\n\nGet Lethal Company here (if you haven't already, for some reason): https://store.steampowered.com/app/1966720/Lethal_Company/\n\nAlso, the editor REALLY wants you to know he used OBS for this video.\n\nCheck out the new podcasts here:\n\nThe Red Thread: @theofficialytchannel \n\nCreepCast: @CreepPodcast \n\nThe Weird Bible Podcast: @TheWeirdBible \n\n\nDISCLAIMER: This video is for educational purposes.",
+          "is_wildcard": false
+        },
+        {
+          "source": "youtube",
+          "video_id": "BfZ81yUtTC4",
+          "title": "How Amazon hurts writers (and you)",
+          "channel_id": "UC2Kyj04yISmHr1V-UlJz4eg",
+          "channel_title": "Jared Henderson",
+          "published_at": "2025-02-13T16:39:25Z",
+          "url": "https://www.youtube.com/watch?v=BfZ81yUtTC4",
+          "duration_seconds": 786,
+          "view_count": "57557",
+          "description": "Get Nebula using my link for 40% off an annual subscription: https://go.nebula.tv/jaredhenderson\n\nWatch Dracula's Ex-Girlfriend: https://go.nebula.tv/dex?ref=jaredhenderson\n\nToday, I'm taking a look at Amazon's relationship to the publishing (and self-publishing) industry. We'll look at how Amazon extracts more and more value from publishing, leaving less for authors.\n\nIf you want to read books with me and read my writing, check out my Substack: https://jaredhenderson.substack.com\n\nMy earlier vi",
+          "is_wildcard": false
+        },
+        {
+          "source": "youtube",
+          "video_id": "K-pGGb0f3tc",
+          "title": "The topology of two-note chords",
+          "channel_id": "UCYO_jab_esuFRV4b17AJtAw",
+          "channel_title": "3Blue1Brown",
+          "published_at": "2025-01-30T15:00:25Z",
+          "url": "https://www.youtube.com/watch?v=K-pGGb0f3tc",
+          "duration_seconds": 123,
+          "view_count": "1432976",
+          "description": "Based on a construction in this video: https://youtu.be/IQqtsm-bBRU",
+          "is_wildcard": false
+        }
+      ]
+    },
+    {
+      "name": "Slow Down, Look Up",
+      "emoji": "🌿",
+      "tagline": "Perspective shifts, cosy retreats, and solo adventures that remind you to breathe.",
+      "items": [
+        {
+          "source": "youtube",
+          "video_id": "2EtZHm-gs5o",
+          "title": "Jaleel White on the greatest perspective shift of his life",
+          "channel_id": "UCvQECJukTDE2i6aCoMnS-Vg",
+          "channel_title": "Big Think",
+          "published_at": "2026-08-06T13:00:39Z",
+          "url": "https://www.youtube.com/watch?v=2EtZHm-gs5o",
+          "duration_seconds": 574,
+          "view_count": "8265",
+          "description": "We created this video in partnership with Unlikely Collaborators. \n\nBecome a Big Think member to unlock expert classes, premium print issues, exclusive events and more: https://bigthink.com/membership/?utm_source=youtube&utm_medium=social&utm_campaign=yt_desc\n\nSubscribe to Big Think on YouTube ► https://www.youtube.com/channel/UCvQECJukTDE2i6aCoMnS-Vg?sub_confirmation=1\n\nFrom 50 commercials as a kid to nine seasons as one of the most recognizable characters on television, Jaleel White has always",
+          "is_wildcard": false
+        },
+        {
+          "source": "youtube",
+          "video_id": "o6eukDQLAdc",
+          "title": "Going on a cosy winter crafting retreat to fix my motivation",
           "channel_id": "UCSHtaUm-FjUps090S7crO4Q",
           "channel_title": "Bernadette Banner",
-          "published_at": "2025-02-08T15:00:57Z",
-          "url": "https://www.youtube.com/watch?v=fuVU64m1sbw",
-          "duration_seconds": 1456,
-          "view_count": "2459301",
-          "description": "Discover your new favourite game and download Midas Merge now using my link here: https://midasmerge.sng.link/Djplk/r7ep/ebev Thanks to Midas Merge for sponsoring this video!\n\n⤠ NOTES ⤟\n[1] https://www.wrap.ngo/resources/report/textiles-market-situation-report-2024#download-file (p4)\n[2] https://www.telegraph.co.uk/education/2017/06/12/sewing-skills-dying-deemed-sexist-teach-schoolgirls-sew-experts/ \n[3] https://single-market-economy.ec.europa.eu/sectors/textiles-ecosystem/eliit/learn/partnershi",
+          "published_at": "2025-01-04T15:00:56Z",
+          "url": "https://www.youtube.com/watch?v=o6eukDQLAdc",
+          "duration_seconds": 1083,
+          "view_count": "268359",
+          "description": "If ye fancy trying trainwell free for 14 days, tell them I sent you! (Guinea pig not included) https://go.trainwell.net/BernadetteBanner\n\n⤠ HOW TO SUPPORT ⤟\n♥️ PATREON for exclusive behind-the-scenes content! https://www.patreon.com/bernadettebanner\n⚝ NEBULA to see these videos ad- and sponsorship-free, + Original content! http://www.nebula.tv/bernadettebanner \n🦵MERCH https://store.dftba.com/collections/bernadette-banner \n\n⤠ START YOUR HAND SEWING JOURNEY ⤟\n📚 BOOK: “Make, Sew and Mend: Tradition",
           "is_wildcard": false
         },
         {
           "source": "youtube_trending",
-          "video_id": "AtQLXLoiHY0",
-          "title": "PORTUGAL TRAVEL VLOG: Afronation, Emirates business class, Birthday Shopping, Algarve & MORE!",
-          "channel_id": "UCff3FCCxtntnYDof0_SaOvg",
-          "channel_title": "Sithankosi Dayile",
-          "published_at": "2026-08-05T10:50:58Z",
-          "url": "https://www.youtube.com/watch?v=AtQLXLoiHY0",
-          "duration_seconds": 3683,
-          "view_count": "4173",
-          "description": "",
+          "video_id": "v8g8DCVS_hA",
+          "title": "First Time Solo Traveling Vlog | Evelyn Ha",
+          "channel_id": "UCNKWfWg41fKCYsVd8-dJHGA",
+          "channel_title": "Evelyn Ha",
+          "published_at": "2026-08-06T17:27:11Z",
+          "url": "https://www.youtube.com/watch?v=v8g8DCVS_hA",
+          "duration_seconds": 2243,
+          "view_count": "66686",
+          "description": "love u guys \n\nSocials: \nTT ://www.tiktok.com/@hjevelyn?_t=ZT-8unlHevk3Pq&_r=1\nIG http://instagram.com/hjevelyn",
           "is_wildcard": true
         }
       ]
@@ -169,234 +169,419 @@
     {
       "source": "music",
       "source_name": "NPR Music",
-      "title": "How Midwest doldrums became a gift for Kevin Morby",
-      "snippet": "Morby's Little Wide Open is a love letter to a part of the country he finds endlessly inspiring.",
-      "url": "https://www.npr.org/sections/world-cafe/2026/08/05/nx-s1-5921397/kevin-morby-album-little-wide-open",
+      "title": "For Grateful Dead devotees, the 'Days Between' honor the lessons the band taught",
+      "snippet": "To devotees of the Grateful Dead, the first nine days of August are known as the \"Days Between.\" This annual celebration commemorates the birth and death of guitarist Jerry Garcia.",
+      "url": "https://www.npr.org/2026/08/06/nx-s1-5914662-e1/for-grateful-dead-devotees-the-days-between-honor-the-lessons-the-band-taught",
       "genre": "",
-      "vibe_check": "The feeling of driving a flat highway at dusk with the windows down and nowhere urgent to be.",
-      "cover_url": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3840x2160+0+0/resize/1400/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Fb4%2Ff1%2F219f2b4143e0b89f2187aad169cb%2Fnpr-podcast-wide-71.jpg",
-      "embed_url": "https://www.youtube.com/embed/videoseries"
+      "vibe_check": "",
+      "cover_url": "https://media.npr.org/include/images/facebook-default-wide-s1400-c85.jpg",
+      "embed_url": null
+    },
+    {
+      "source": "music",
+      "source_name": "NPR Music",
+      "title": "Ella Langley leads a record-breaking country boom on the charts",
+      "snippet": "This week's Billboard Hot 100 chart is full of country-music crossovers. Stephen Thompson of NPR Music reports.",
+      "url": "https://www.npr.org/2026/08/06/nx-s1-5918490/ella-langley-leads-a-record-breaking-country-boom-on-the-charts",
+      "genre": "",
+      "vibe_check": "",
+      "cover_url": "https://media.npr.org/include/images/facebook-default-wide-s1400-c85.jpg",
+      "embed_url": null
+    },
+    {
+      "source": "music",
+      "source_name": "NPR Music",
+      "title": "Tiny Desk Radio: Carly Rae Jepsen, C. Tangana, Goo Goo Dolls",
+      "snippet": "We're still in summer mode, so we made y'all mixtape. In fact, NPR Music's Lars Gotrich coined a term that encapsulates the season's sounds and feels: roséwave. Look for Tiny Desk Radio on your local NPR station.",
+      "url": "https://www.npr.org/2026/08/06/g-s1-137433/tiny-desk-radio-carly-rae-jepsen-c-tangana-goo-goo-dolls",
+      "genre": "",
+      "vibe_check": "",
+      "cover_url": "https://media.npr.org/assets/img/2019/11/25/carlyrayjepsen-mshaw_wide-7c12d0f9e465d02dc24f9f534caaa8f6d19f4a0a.jpg?s=1400&c=85&f=jpeg",
+      "embed_url": "https://www.youtube.com/embed/NGsgb8m0Yns"
     },
     {
       "source": "music",
       "source_name": "Stereogum",
-      "title": "Alabama Shakes – “Garden”",
-      "snippet": "\"If you don't water your garden, I will/ If you don't show her you love her, I will/ She means more so much more to me than to you/ All of your hard work I'll surely do.\" So goes \"Garden,\" our latest preview from Alabama Shakes' comeback album I Must Be Dreaming. It's a soft and sultry Southern soul",
-      "url": "https://stereogum.com/2507415/alabama-shakes-garden/music/",
+      "title": "Grace Elizabeth Harvey Announces New EP Songs Of Devotion: Hear “The Dream Of Common Language”",
+      "snippet": "If you're in need of a little calm, a little introspection, a little Laura Marling or Joni Mitchell, then I highly recommend checking out the new single from Liverpool folk musician Grace Elizabeth Harvey. She's released the lovely track \"The Dream Of Common Language\" to announce her new EP Songs Of",
+      "url": "https://stereogum.com/2507473/grace-elizabeth-harvey-announces-new-ep-songs-of-devotion-hear-the-dream-of-common-language/music/",
       "genre": "",
-      "vibe_check": "Slow-burning and velvet-warm, like a porch confession spoken just above a whisper on a humid Southern night.",
-      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/08/Shakes_3444_BobbiRich@mamahotdog.jpg",
-      "embed_url": "https://www.youtube.com/embed/e3aPOt59vuY"
+      "vibe_check": "",
+      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/08/unnamed-31.jpg",
+      "embed_url": "https://www.youtube.com/embed/wbjbOJGe0ok"
     },
     {
       "source": "music",
       "source_name": "Stereogum",
-      "title": "CMAT Offers A Euro-Country Glossary For Americans",
-      "snippet": "Rhode Island's Newport Folk Festival went down a couple weeks ago, and CMAT stole the spotlight. Stereogum sat down with the Irish star and made her explain the cultural references that abound in her Mercury Prize-nominated album Euro-Country. Like, who is Cú Chulainn? Where is Dunboyne? What is Cal",
-      "url": "https://stereogum.com/2507398/cmat-offers-a-euro-country-glossary-for-americans/original-videos/",
+      "title": "Margo Cilker Announces New Album Little White Cross: Hear The Title Track",
+      "snippet": "Half a decade ago, Margo Cilker released her debut full-length Pohorylle, and we called it one of the best country albums of the year. Two years later, when Cilker released her sophomore LP Valley Of Heart's Delight, we named it Album Of The Week and, again, one of the best country albums of the yea",
+      "url": "https://stereogum.com/2507503/margo-cilker-announces-new-album-little-white-cross-hear-the-title-track/music/",
       "genre": "",
-      "vibe_check": "A delightfully chaotic cultural road trip through fields and folklore you didn't know you needed a map for.",
-      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/08/Screenshot-2026-08-05-at-2.22.01-PM.png",
-      "embed_url": "https://www.youtube.com/embed/tf6_k70aIxg"
+      "vibe_check": "",
+      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/08/unnamed-2026-08-06T120255.725.jpg",
+      "embed_url": "https://www.youtube.com/embed/RO1JCReMtnA"
     },
     {
       "source": "music",
       "source_name": "Stereogum",
-      "title": "The World’s Now Listening, But Sam And Louise Sullivan Were Going To Keep Making Awesome Records Either Way",
-      "snippet": "Love &#38; Devotion is one of the best albums of the year, but are we sure it’s from this year? The third LP from Philadelphia-based siblings Sam and Louise Sullivan plays like a lost treasure that has been collecting dust for decades and is now being reissued by Light In The Attic. Pulling inspirat",
-      "url": "https://stereogum.com/2507199/the-worlds-now-listening-but-sam-and-louise-sullivan-were-going-to-keep-making-awesome-records-either-way/interviews/qa/",
+      "title": "Westside Cowboy – “Dobro”",
+      "snippet": "Slowly but surely, the release date of Westside Cowboy's highly anticipated debut album It Goes On is approaching. Its two singles — \"Kick Stones (The Boys)\" and \"Pin Up Boys\" — both earned spots on our list of the best songs of the week. Now, the Manchester indie rockers are further building the hy",
+      "url": "https://stereogum.com/2507412/westside-cowboy-dobro/music/",
       "genre": "",
-      "vibe_check": "Like finding a perfectly preserved mixtape from 1974 tucked inside a thrift-store record sleeve.",
-      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/08/unnamed-2026-08-03T125540.020.jpg",
-      "embed_url": "https://historicnj.bandcamp.com/album/sweet-enough-3"
+      "vibe_check": "",
+      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/08/PRESS-SHOT-Portrait-Westside-Cowboy-August-2026-c-Clementine-Schneidermann.jpg",
+      "embed_url": "https://www.youtube.com/embed/J8BFaYLsJW4"
+    },
+    {
+      "source": "music",
+      "source_name": "No Depression",
+      "title": "“That’s What Hope is For” —Steve Earle, Songwriting, and Music that Changes the World",
+      "snippet": "Sometimes, Steve Earle worries people think he&#x2019;s stopped writing songs.At 71, Earle&#x2019;s one of the most prolific writers alive today &#x2014; best known for songs like his first hit, &#x201C;Guitar Town,&#x201D; his generational bootlegging outlaw ballad, &#x201C;Copperhead Road,&#x201D;",
+      "url": "https://nodepression.org/thats-what-hope-is-for-steve-earle-songwriting-and-music-that-changes-the-world/",
+      "genre": "",
+      "vibe_check": "",
+      "cover_url": "https://storage.ghost.io/c/18/d0/18d08e58-3b1b-4720-ae25-a31b44e69d4b/content/images/size/w1200/2026/08/Steve-Earle-x-Jalopy-2.jpg",
+      "embed_url": "https://www.youtube.com/embed/l3zNIy5Z3Ak"
+    },
+    {
+      "source": "music",
+      "source_name": "Consequence",
+      "title": "Guns N’ Roses Joined by Chris Stapleton for Rousing Rendition of “Knockin’ on Heaven’s Door”: Watch",
+      "snippet": "The country superstar lent his powerful pipes to the classic Bob Dylan song.\nGuns N&#8217; Roses Joined by Chris Stapleton for Rousing Rendition of &#8220;Knockin&#8217; on Heaven&#8217;s Door&#8221;: Watch\nSpencer Kaufman",
+      "url": "https://consequence.net/2026/08/guns-n-roses-chris-stapleton-knockin-on-heavens-door/",
+      "genre": "",
+      "vibe_check": "",
+      "cover_url": "https://consequence.net/wp-content/uploads/2026/08/Guns-N-Roses-with-Chris-Stapleton.jpg",
+      "embed_url": "https://www.youtube.com/embed/rMfC-pGGyto"
     },
     {
       "source": "music",
       "source_name": "JazzTimes",
-      "title": "Invisible Architecture: Multivalent Jazz Keyboardist John Beasley Pulls Off the Impossible, Repeatedly",
-      "snippet": "I n early September 2024, while conducting interviews for a feature-length documentary on jazz in Arabic musical culture, I had an opportunity to interview John &#8230; Read More \"Invisible Architecture: Multivalent Jazz Keyboardist John Beasley Pulls Off the Impossible, Repeatedly\"\nThe post Invisib",
-      "url": "https://www.jazztimes.com/features/special-feature/invisible-architecture-multivalent-jazz-keyboardist-john-beasley-pulls-off-the-impossible-repeatedly/",
+      "title": "X Marks the Spot: Fretless Bassist Percy Jones and Guitarist Tim Motzer Talk Classic Brand X, Plus PKT Trio with Drummer Kenny Grohowski",
+      "snippet": "O f all progressive jazz’s overlords of the fretless bass, Percy Jones is the master most interested in shattering its myths and methodologies throughout his &#8230; Read More \"X Marks the Spot: Fretless Bassist Percy Jones and Guitarist Tim Motzer Talk Classic Brand X, Plus PKT Trio with Drummer Ke",
+      "url": "https://www.jazztimes.com/features/profiles/x-marks-the-spot-fretless-bassist-percy-jones-and-guitarist-tim-motzer-talk-classic-brand-x-plus-pkt-trio-with-drummer-kenny-grohowski/",
       "genre": "",
-      "vibe_check": "The heady, disorienting pleasure of hearing two musical worlds fold into each other like overlapping dreams.",
-      "cover_url": "https://www.jazztimes.com/wp-content/uploads/2026/08/IJD-2023-Photo-credit-Steve-Mundinger-Herbie-Hancock-Institute-of-Jazz-800x533.jpg",
-      "embed_url": "https://www.youtube.com/embed/wfvxCTCLR9g"
+      "vibe_check": "",
+      "cover_url": "https://www.jazztimes.com/wp-content/uploads/2026/08/percy-jones-pkt-julie-slick-tim-motzer-duo.jfif_.jpeg",
+      "embed_url": "https://www.youtube.com/embed/H1QvxEZ9Y3A"
     },
     {
       "source": "music",
       "source_name": "PopMatters",
-      "title": "The Strokes’ ‘Reality Awaits’ Feels Quite Impersonal",
-      "snippet": "The Strokes' Reality Awaits doesn’t deliver the same charm or hit with the same immediacy fans have come to expect from them.",
-      "url": "https://www.popmatters.com/the-strokes-reality-awaits",
+      "title": "Rachael Sage Finds Hope in Harmony, Turning Tragedy Into Song",
+      "snippet": "For Rachael Sage, songs can do something few public conversations can. They create common ground before people retreat into fixed positions.",
+      "url": "https://www.popmatters.com/rachael-sage-interview-2026",
       "genre": "",
-      "vibe_check": "The musical equivalent of running into an old flame and realizing the spark just isn't there anymore.",
-      "cover_url": "https://www.popmatters.com/wp-content/uploads/2026/08/The-Strokes-2026-by-Johann-Rashid.webp",
-      "embed_url": "https://www.youtube.com/embed/4u3iI1WuU0k"
+      "vibe_check": "",
+      "cover_url": "https://www.popmatters.com/wp-content/uploads/2026/08/Rachael-Sage-2026-by-Anna-Azarov.webp",
+      "embed_url": "https://www.youtube.com/embed/Solvt_retxo"
+    },
+    {
+      "source": "music",
+      "source_name": "PopMatters",
+      "title": "John Prine’s Heartfelt Storytelling Made Him a National Treasure",
+      "snippet": "John Prine's songwriting blends down-home storytelling, thumbnail portraiture, deep compassion, bitter cynicism, absurdist humor, and offbeat rhymes.",
+      "url": "https://www.popmatters.com/john-prine-prime-prine",
+      "genre": "",
+      "vibe_check": "",
+      "cover_url": "https://www.popmatters.com/wp-content/uploads/2026/08/John-Prine-Prime-SP.webp",
+      "embed_url": "https://www.youtube.com/embed/qcevPzR_aLg"
+    },
+    {
+      "source": "music",
+      "source_name": "PopMatters",
+      "title": "DOMi & JD Beck Create a Brilliant, Jazzy Genre Mash-up",
+      "snippet": "Gen Z \"jazz\" duo DOMi &#038; JD Beck conjure the breathtaking sophomore release Who Asked?, which straddles jazz, classical, electronica, and pop.",
+      "url": "https://www.popmatters.com/domi-jd-beck-who-asked",
+      "genre": "",
+      "vibe_check": "",
+      "cover_url": "https://www.popmatters.com/wp-content/uploads/2026/08/DOMi-JD-Beck-Who-Asked-social.webp",
+      "embed_url": "https://www.youtube.com/embed/jrm127z58tI"
     }
   ],
   "global_silver_linings": [
     {
       "source": "good_news",
       "source_name": "Good News Network",
-      "title": "Used for Centuries as Poison, Larkspur, Wolfsbane May Become Medicine After Lab Breakthrough",
-      "url": "https://www.goodnewsnetwork.org/used-for-millennia-as-poison-larkspur-wolfsbane-could-become-medicine-after-laboratory-breakthrough/",
-      "snippet": "Two famously toxic plants—known also to treat pain, malaria, cancer, and pests—may have had those medicinal properties synthesized in a lab for the first time. The researchers behind the discovery believe “plants are the best chemists”—and their breakthrough demonstrates that next-generation drugs don’t need to come from chemists’ inventions. Centered on the plants wolfsbane and […] The post Used for Centuries as Poison, Larkspur, Wolfsbane May Become Medicine After Lab Breakthrough appeared first on Good News Network .",
-      "cover_url": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/08/A-larkspur-specimen-in-bloom-at-Beal-Botanical-Garden-credit-Paul-Henderson-released-by-MSU.jpg",
-      "reason": "Plants long feared as deadly poisons are now showing genuine medical promise, reminding us that nature's chemistry holds cures we haven't yet imagined. This breakthrough is a beautiful example of science looking at the natural world with fresh eyes."
+      "title": "Japanese Team Develops ‘Eco-Fireworks’ with Water-Soluble Shells to Cut Back on Debris",
+      "url": "https://www.goodnewsnetwork.org/japanese-team-develops-eco-fireworks-with-water-soluble-shells-to-cut-back-on-debris/",
+      "snippet": "When a man who loves things that go ‘boom’ met a men who loves things that go ‘bloom,’ they realized there was much to gain from an alliance. Hence, Ryukoku University professor Takahiko Nakaoki and president of Kakinoki Fireworks Industry Co. have created and brought to market what may be the world’s first water-soluble fireworks […] The post Japanese Team Develops ‘Eco-Fireworks’ with Water-Soluble Shells to Cut Back on Debris appeared first on Good News Network .",
+      "cover_url": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/08/fireworks-unsplash.jpg",
+      "reason": "Japanese researchers have created fireworks with water-soluble shells that dissolve rather than scatter debris across land and water, meaning the joy of a night sky display no longer has to come at the environment's expense. It's a small but genuinely clever step toward celebrations that leave nature as they found it."
+    },
+    {
+      "source": "good_news",
+      "source_name": "Positive News",
+      "title": "Life lessons: Joe Newman on what life so far has taught him",
+      "url": "https://www.positive.news/lifestyle/culture/life-lessons-joe-newman-on-what-life-so-far-has-taught-him/",
+      "snippet": "The British singer-songwriter and frontman of alt-J on capturing creative sparks and the rise of the far-right The post Life lessons: Joe Newman on what life so far has taught him appeared first on Positive News .",
+      "cover_url": "https://positivenews.kinsta.cloud/wp-content/uploads/2026/08/jjerome87-press-25_credit-Zachary-Gray.jpg",
+      "reason": "Lived wisdom shared honestly — without polish or pretension — reminds us that ordinary lives hold real lessons worth passing on. Stories like Joe's keep the quiet art of reflection alive in a noisy world."
     },
     {
       "source": "good_news",
       "source_name": "Upworthy",
-      "title": "The Rock hadn’t thought about her in decades. A mentalist said her name in under a minute.",
-      "url": "https://www.upworthy.com/pn-mentalist-dwayne-johnson-girlfriend-name/",
-      "snippet": "\"Man, I need a drink.\" The post The Rock hadn’t thought about her in decades. A mentalist said her name in under a minute. appeared first on Upworthy .",
-      "cover_url": "https://www.upworthy.com/wp-content/uploads/sites/2/2026/04/The-Rock.png",
-      "reason": "A spontaneous moment of human connection cut through decades of distance, proving that the people who shaped us are never truly forgotten. It's a quiet reminder of how deeply our earliest relationships are woven into who we become."
+      "title": "A school board tried to ban leggings and spandex. Then a 15-year-old grabbed the mic.",
+      "url": "https://www.upworthy.com/a-school-board-tried-to-ban-leggings-and-spandex-then-a-15-year-old-grabbed-the-mic/",
+      "snippet": "\"Girls' bodies are up for debate, and I want to end that cycle.\" The post A school board tried to ban leggings and spandex. Then a 15-year-old grabbed the mic. appeared first on Upworthy .",
+      "cover_url": "https://www.upworthy.com/wp-content/uploads/sites/2/2026/08/school_bans_leggings.jpg",
+      "reason": "A teenager using her voice calmly and confidently in a public forum is democracy working exactly as it should. Whatever the outcome, her willingness to speak up models something vital for everyone in that room."
+    },
+    {
+      "source": "good_news",
+      "source_name": "Reasons to be Cheerful",
+      "title": "The ‘Transplant Games’ Are About More Than Medals",
+      "url": "https://reasonstobecheerful.world/the-transplant-games-are-about-more-than-medals/",
+      "snippet": "Robert Lindemann is a 32-year-old accountant from Germany. He’s also had a heart transplant, a life-changing experience shared by just a few hundred people each year in his country. But at the Transplant Games, he doesn’t stand out — and that’s something of a relief.",
+      "cover_url": "https://reasonstobecheerful.world/wp-content/uploads/2026/08/Sportcompetitie-21-juni-Sebastiaan-Nederhoed-2.jpg",
+      "reason": "The Transplant Games are a vivid, moving reminder that organ donation doesn't just extend life — it restores the full, striving, competitive spirit of it. Every athlete on that field is a testament to the generosity of donors and the resilience of the human body."
     },
     {
       "source": "good_news",
       "source_name": "The Optimist Daily",
-      "title": "The robots kids build to preserve Native American languages",
-      "url": "https://www.optimistdaily.com/2026/08/the-robots-kids-build-to-preserve-native-american-languages/",
-      "snippet": "BY THE OPTIMIST DAILY EDITORIAL TEAM The U.S. Indian boarding school system spent decades trying to remove Native American languages from Native children. Kids were separated from their families and punished, sometimes violently, for speaking their mother tongues.",
-      "cover_url": "https://www.optimistdaily.com/wp-content/uploads/Depositphotos_835608338_L.jpg",
-      "reason": "Young people are using hands-on robotics to breathe new life into Indigenous languages that risk being lost forever — a heartening sign that technology, guided by cultural pride, can be a powerful tool for preservation rather than erasure."
+      "title": "Learning a new skill triggers both temporary cell swelling and lasting brain growth",
+      "url": "https://www.optimistdaily.com/2026/08/learning-a-new-skill-triggers-both-temporary-cell-swelling-and-lasting-brain-growth/",
+      "snippet": "BY THE OPTIMIST DAILY EDITORIAL TEAM Did you know that every time the brain learns something, it changes physically? A study in PLoS Biology is the first to track exactly what those changes are, and found two separate processes happening at different speeds and in different locations, and that the tool most researchers have been […] The post Learning a new skill triggers both temporary cell swelling and lasting brain growth first appeared on The Optimist Daily: Making Solutions the News .",
+      "cover_url": "https://www.optimistdaily.com/wp-content/uploads/Depositphotos_674000174_L.jpg",
+      "reason": "Science is confirming what curious minds have always sensed: picking up a new skill physically reshapes the brain, with benefits that last long after the learning stops. It's a compelling nudge to finally start that language, instrument, or craft you've been putting off."
     }
   ],
   "discovery_articles": [
     {
       "source": "discovery",
       "source_name": "Atlas Obscura",
-      "title": "Hidden Figures Monument in Dunbar, West Virginia",
-      "url": "https://www.atlasobscura.com/places/hidden-figures-monument-of-katherine-johnson-at-wvsu",
-      "snippet": "The Katherine Johnson Statue at West Virginia State University (WVSU) honors the legendary NASA mathematician whose brilliant calculations launched America into orbit. Unveiled on August 25, 2018—the eve of her 100th birthday—this life-sized bronze monument stands proudly at her alma mater to ensure her contributions to the Space Race are \"no longer hidden\". Katherine Johnson was one of the critical human \"computers\" at the National Advisory Committee for Aeronautics (NACA), which later became NASA.",
+      "title": "The Field of Lost Shoes in New Market, Virginia",
+      "url": "https://www.atlasobscura.com/places/the-field-of-lost-shoes",
+      "snippet": "In early 1864, Union General Ulysses S. Grant deployed forces led by General Franz Sigel down the Shenandoah Valley to target the strategically-important railroad junction at Staunton. In response, Confederate General John C.",
       "category": "history",
-      "cover_url": "https://img.atlasobscura.com/VYjToKLr18YReUXkC_MCGV-XHWBS30zqSh3x7R_eK6o/rt:fit/w:600/c:600:400:nowe:176:172/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy84ZDUy/YjUxYS1jZjBkLTRl/Y2ItYmZiZC0yOTM3/NTg4NzY0Y2E0ZGNl/MzQxNDE5NmVlYzQ0/OWZfSU1HXzQwOTgg/LSBFZGl0ZWQuanBn.jpg",
-      "ferns_note": "The statue was unveiled on the eve of Katherine Johnson's 100th birthday — a detail so perfectly timed it almost feels scripted, except her story was hidden for decades precisely because real life so rarely offered her that kind of grace. It's worth a pause to consider that she was still alive to see herself rendered in bronze at the place where it all began."
+      "cover_url": "https://img.atlasobscura.com/mznO0kIB3LA_xbZ2WX3s2TOMa6MD2sG_vfS-stY6-UU/rt:fit/w:600/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy9hMDY2/ZWZiYy03ZGZmLTQw/NWMtYjAwMy1mOTI0/Yzk3ZjYyMWY4Njg4/NzhlMWM2ZTE1YjY4/ZTRfZmllbGQuanBn.jpg"
     },
     {
       "source": "discovery",
       "source_name": "Atlas Obscura",
-      "title": "‘The Messenger’ in Vista, California",
-      "url": "https://www.atlasobscura.com/places/the-messenger",
-      "snippet": "\"The Messenger\" is a colorful street mural created in downtown Vista by world-renowned spray-paint artist Chor Boogie (Jason Hailey), who grew up in the area. The mural features a hummingbird and an ever-seeing eye, bringing spiritual meaning and bright life to the city's streets. In spiritual symbolism, a messenger usually refers to a guide or a bearer of good news.",
+      "title": "‘Tower of Figures’ in Issy-les-Moulineaux, France",
+      "url": "https://www.atlasobscura.com/places/la-tour-aux-figures-sculpture",
+      "snippet": "Standing proudly in the suburban landscape of Issy-les-Moulineaux, just outside Paris, the Tour aux Figures is an oversized explosion of artistic imagination brought to life by Jean Dubuffet, a celebrated French artist known for his eccentric and playful approach to art. This towering sculpture, completed in 1988, is a colorful, 78-foot-tall labyrinth of abstract forms and vibrant patterns that seems to have been plucked straight from a child’s dream—or perhaps an alien landscape. Dubuffet, who was fascinated by the raw and unfiltered creativity found in outsider art, envisioned the Tour aux Figures as a monumental “anti-monument.” Its winding shapes and bold palette defy architectural norms, inviting viewers to step away from the ordinary and into the extraordinary.",
       "category": "history",
-      "cover_url": "https://img.atlasobscura.com/N-5S3Ld0_8Ols9aKDWmPc3dv741VuNCkEZRLs0hU3RY/rt:fit/w:600/c:2349:1566:nowe:985:475/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy81MjIz/YjkxZi0zMWM0LTRl/NWUtYWVlYS1mZWQ1/YWM1MzFhZWY3OWU5/YTQzOWQxNzliMjk0/OTNfSU1HXzg3NTUu/anBn.jpg",
-      "ferns_note": "There's something quietly moving about a world-renowned spray-paint artist returning to his hometown streets to leave behind a hummingbird and an all-seeing eye — the universal symbols of messages delivered and received. It's less a mural than a love letter written in color."
+      "cover_url": "https://img.atlasobscura.com/nBFbYsghxW3qzXW3GwmK68DmPV1bKk7p_VFxcsj4-yU/rt:fit/w:600/c:1418:945:nowe:902:611/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy9iYjhj/MjU5Ni02YWM0LTQ1/MWMtOTE3Ny02OWU1/YzlhNDNiMzVlYTY2/ODg3YWM4NjljNTU2/MmRfUGFyY19kZV9s/J2nMgmxlX1NhaW50/LUdlcm1haW5fMDEu/anBn.jpg"
+    },
+    {
+      "source": "discovery",
+      "source_name": "Atlas Obscura",
+      "title": "Praça Ayrton Senna do Brasil in Paraíso, Brazil",
+      "url": "https://www.atlasobscura.com/places/praca-ayrton-senna-do-brasil",
+      "snippet": "The plaza serves as a pilgrimage site for motorsport and F1 fans. At the heart of the plaza is  the bronze monument \" Velocidade, Alma e Emoção \" (\"Speed, Soul, and Emotion\"), depicts Senna's  Formula 1 car racing  forward Etched directly into the pathways are some of his most profound and inspiring quotes, allowing visitors to literally walk alongside his words on determination, faith, and speed. The park provides a quiet, emotional retreat where fans can pay tribute to a man who transcended sports to become a symbol of Brazil's soul.",
+      "category": "history",
+      "cover_url": "https://img.atlasobscura.com/AyPSpl0sZoA9ZIQ6j_aSkbJ9pb8E03AQto7EJiQTI_M/rt:fit/w:600/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy8yMDg2/MmJjZi03ZmE1LTQy/NzAtOGIxZi05ZWUx/OWYzODAyODdhMzQ0/NDY4YThhNGIwY2Rm/MTVfSU1HXzA0NTYu/anBlZw.jpg"
+    },
+    {
+      "source": "discovery",
+      "source_name": "Atlas Obscura",
+      "title": "Statue of Unity in Almaty, Kazakhstan",
+      "url": "https://www.atlasobscura.com/places/statue-of-unity-rescuing-a-dog",
+      "snippet": "Imagine a raging concrete canal, a dog trapped in the torrent, and a desperate owner who jumped in to help—only to get stuck himself. Instead of just watching, a group of total strangers instantly linked arms to form a living, breathing human chain, risking their own safety to pull both to dry land. Today, that exact spot is marked by a powerful interactive sculpture that lets you grip the last bronze hand in line, instantly transforming a simple walk by the water into a physical connection with the ultimate act of human kindness.",
+      "category": "history",
+      "cover_url": "https://img.atlasobscura.com/to24xeMGY53X7qou-ca3wO-mZno3moE9FeTA12NVxEw/rt:fit/w:600/c:1083:722:nowe:185:46/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy83ZjVi/MTM0NC03NWVlLTQ3/ZTUtOWI1Ny1hNGE5/YTRlMzA3NTYwNTI4/YTRiNWY5ZTA2NzVm/NGJfSU1HXzA5MzIu/cG5n.png"
     },
     {
       "source": "discovery",
       "source_name": "Smithsonian",
-      "title": "A.I. Went to the Opera, Creating Images for an Anniversary Production of Wagner's 'Ring Cycle' at the Theater Where He First Staged the Masterpiece",
-      "url": "https://www.smithsonianmag.com/smart-news/ai-went-to-the-opera-projecting-images-for-an-anniversary-production-of-wagners-ring-cycle-at-the-theater-where-he-first-staged-the-masterpiece-180989270/",
-      "snippet": "It took Richard Wagner a quarter-century to complete the four-part opera. The new production, called \"10010110,\" uses generative artificial intelligence to explore the artwork’s evolution",
+      "title": "Why Does Antarctica's Blood Falls Spew Ruby Red Water? Microbes Offer New Clues About the Geologic Feature's Ancient Origins",
+      "url": "https://www.smithsonianmag.com/smart-news/why-does-antarcticas-blood-falls-spew-ruby-red-water-microbes-offer-new-clues-about-the-geologic-features-ancient-origins-180989271/",
+      "snippet": "The falls contain saltwater rich with iron, which oxidizes and turns red when exposed to air. A new study provides further evidence that the brine probably comes from ocean water trapped when flood waters retreated millions of years ago",
       "category": "history",
-      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/smrTjWxpD08W9Kr4iM9l4CL-Mdo=/fit-in/1600x0/filters:focal(721x542:722x543)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/23/cc/23cc4325-0370-4aab-9160-3f1e5dd3292a/droneshot-festspielhaus-c-corinna-weih.jpg",
-      "ferns_note": "Wagner spent twenty-five years writing the Ring Cycle, and now an AI has been handed that same canvas to reimagine — at the very theater where he first staged it, no less. Whether that feels like sacrilege or poetry probably says something true about you."
+      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/pxIZYx8_Oqvuj6BbvEUgxwdi1Lw=/fit-in/1600x0/filters:focal(1480x987:1481x988)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/ad/ff/adffb2ed-155a-4aa1-b7bb-f82917f559ca/screenshot_2026-08-05_at_174527.png"
     },
     {
       "source": "discovery",
       "source_name": "Smithsonian",
-      "title": "Neptune May Have Once Witnessed a Lunar Massacre That Turned Its Original Moons 'Inside Out'",
-      "url": "https://www.smithsonianmag.com/smart-news/neptune-may-have-once-witnessed-a-lunar-massacre-that-turned-its-original-moons-inside-out-180989266/",
-      "snippet": "A new study identifies an unexpected mineral in two of the planet’s inner moons, pointing to a destructive past in which a large object got pulled into the system and obliterated the former, larger satellites",
+      "title": "This Marine-Life Mosaic Discovered Near the Colosseum Offers a Surprising Clue—Its Building May Have Housed Firefighters in Ancient Rome",
+      "url": "https://www.smithsonianmag.com/smart-news/this-marine-life-mosaic-discovered-near-the-colosseum-offers-a-surprising-clue-its-building-may-have-housed-firefighters-in-ancient-rome-180989273/",
+      "snippet": "At the time of the structure's construction in the second century C.E., firefighting in ancient Rome was a formalized profession",
       "category": "history",
-      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/zsbAtco-H9BvsyNkS2O9Vgmrs38=/fit-in/1600x0/filters:focal(700x373:701x374)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/ec/10/ec10052e-b603-4a08-b51e-49e8ad05ac32/brown_mike-neptune-inner-moons-news-webmax-1400x800.jpg",
-      "ferns_note": "Neptune's inner moons may be the rubble of a lunar catastrophe — older, larger satellites smashed to pieces by an interloper pulled in by gravity, their guts literally turned inside out. The solar system's biography keeps getting darker and stranger the closer we read."
+      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/FfVe1m9V9kV37ScKDecymqWWQx0=/fit-in/1600x0/filters:focal(540x360:541x361)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/66/a7/66a732c7-00e8-4895-a849-9476887c52e5/villacelimontana_nuovescoperte_foto_07.jpg"
     },
     {
       "source": "discovery",
       "source_name": "Smithsonian",
-      "title": "A New Study Points to Two Origins of Life on Earth by Tracing Early Chemical Reactions in Single-Celled Organisms",
-      "url": "https://www.smithsonianmag.com/science-nature/a-new-study-points-to-two-origins-of-life-on-earth-by-tracing-early-chemical-reactions-in-single-celled-organisms-180989260/",
-      "snippet": "The work challenges the assumption that all life descended from one free-living cell. Instead, it suggests that two microbial lineages, the bacteria and archaea, evolved independently from a primordial, nonliving ancestor",
+      "title": "Notorious Feral Cat That Feasted on Rare New Zealand Ducks Captured After Three-Year Hunt",
+      "url": "https://www.smithsonianmag.com/smart-news/nine-lives-a-feral-cat-hunting-rare-ducks-in-new-zealand-has-been-caught-and-killed-after-three-years-180989267/",
+      "snippet": "The gray tabby, known as Nine Lives because it eluded capture so many times, had devastated efforts by conservationists to reintroduce the birds to the wild",
       "category": "history",
-      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/5crjn_PeBMETmZc1b4KQVIbkHSk=/fit-in/1600x0/filters:focal(252x438:253x439)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/e3/24/e324213d-fa26-4d47-8d3d-b1b644073b7c/ezgif-5b106ff19bd5d795.jpg",
-      "ferns_note": "The quiet earthquake buried in this research: life may not have one origin story but two, with bacteria and archaea arising independently from the same primordial soup like parallel experiments. It reframes the tree of life less as a single trunk and more as two roots reaching up to find each other."
+      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/rsy-vMtbH7theFxbWNBuuEZidfQ=/fit-in/1600x0/filters:focal(1105x758:1106x759)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/f4/58/f4588e77-e118-43cc-a6d1-dcf9efac50c2/9_lives_feb_2024.jpg"
+    },
+    {
+      "source": "discovery",
+      "source_name": "Smithsonian",
+      "title": "Big Waves Meet Biodiversity: Why Surfing Paradises Could Offer a Key Opportunity for Marine Conservation",
+      "url": "https://www.smithsonianmag.com/science-nature/big-waves-meet-biodiversity-why-surfing-paradises-could-offer-a-key-opportunity-for-marine-conservation-180989119/",
+      "snippet": "A recent mapping study examines places in northwestern Africa where coastal ecosystems overlap with surf breaks, highlighting areas that could support recreation, the environment and local economies, if protected",
+      "category": "history",
+      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/zmP98_-iC1T9HVE4Fgc3CPzJP44=/fit-in/1600x0/filters:focal(2671x1833:2672x1834)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/9f/90/9f9029db-fc9c-46d3-92b9-6559bc6c5ae8/d98c8b.jpg"
+    },
+    {
+      "source": "discovery",
+      "source_name": "Science News",
+      "title": "Here’s what the first mRNA flu vaccine could mean for flu season",
+      "url": "https://www.sciencenews.org/article/first-mrna-flu-vaccine-fall-season",
+      "snippet": "Compared with standard flu shots, Moderna’s mFlusiva generates stronger, longer-lasting immunity and is more effective at preventing infection, data show.",
+      "category": "science",
+      "cover_url": "https://www.sciencenews.org/wp-content/uploads/sites/2/2026/08/080626_CM_covid_MRNA_feat.jpg"
+    },
+    {
+      "source": "discovery",
+      "source_name": "Science News",
+      "title": "Sugar may have been a key ingredient in human evolution",
+      "url": "https://www.sciencenews.org/article/sugar-ingredient-human-evolution-fruit",
+      "snippet": "A sweet tooth for sugars from fruits and honey may have helped fuel brain growth in our primate cousins and early human ancestors, a new study suggests.",
+      "category": "science",
+      "cover_url": "https://www.sciencenews.org/wp-content/uploads/sites/2/2026/08/080626_JB_brainevolution_main.jpg"
+    },
+    {
+      "source": "discovery",
+      "source_name": "Science News",
+      "title": "Heat-trapping asteroid dust may have incinerated the dinosaurs within hours",
+      "url": "https://www.sciencenews.org/article/asteroid-dust-incinerated-dinosaurs",
+      "snippet": "Within minutes of impact, debris began heating Earth’s atmosphere. Fine dust trapped that heat, potentially killing the dinosaurs quickly.",
+      "category": "science",
+      "cover_url": "https://www.sciencenews.org/wp-content/uploads/sites/2/2026/08/073126_LR_dinodust_main.jpg"
+    },
+    {
+      "source": "discovery",
+      "source_name": "Aeon",
+      "title": "The great arc",
+      "url": "https://aeon.co/videos/pariss-business-district-boasts-imposing-art-but-who-is-it-for",
+      "snippet": "A striking meditation on inequality via the bold sculptures that sit amongst skyscrapers in Paris’s business district - by Aeon Video Watch on Aeon",
+      "category": "science",
+      "cover_url": ""
+    },
+    {
+      "source": "discovery",
+      "source_name": "Aeon",
+      "title": "Culture clash",
+      "url": "https://aeon.co/essays/at-the-heart-of-the-snow-leavis-two-cultures-clash",
+      "snippet": "C P Snow’s ‘Two Cultures’ lecture provoked a savage response from fellow critic F R Leavis. What was at the heart of it all? - by Sam Dresser Read on Aeon",
+      "category": "science",
+      "cover_url": ""
+    },
+    {
+      "source": "discovery",
+      "source_name": "JSTOR Daily",
+      "title": "The Many Lives of Libraries",
+      "url": "https://daily.jstor.org/we-love-libraries/",
+      "snippet": "These stories span centuries and continents, revealing how libraries have shaped culture, politics, and public life. The post The Many Lives of Libraries appeared first on JSTOR Daily .",
+      "category": "history",
+      "cover_url": "https://daily.jstor.org/wp-content/uploads/2025/08/how_libraries_stand_the_test_of_time_1050x700.jpg"
+    },
+    {
+      "source": "discovery",
+      "source_name": "Quanta Magazine",
+      "title": "How Does Touch Lead To Pain Or Pleasure?",
+      "url": "https://www.quantamagazine.org/how-does-touch-lead-to-pain-or-pleasure-20260806/",
+      "snippet": "Neuroscientist Ishmail Abdus-Saboor discusses efforts to understand how skin contact can be painful or pleasurable, and what touch-obsessed naked mole rats might teach us about human social behavior. The post How Does Touch Lead To Pain Or Pleasure? first appeared on Quanta Magazine",
+      "category": "science",
+      "cover_url": "https://www.quantamagazine.org/wp-content/uploads/2026/08/JOW-S5-E5-Social-LOGO.jpg"
     },
     {
       "source": "discovery",
       "source_name": "Colossal",
-      "title": "Monumental Painted Wood Carvings by Jiang Miao Center Mindfulness",
-      "url": "https://www.thisiscolossal.com/2026/08/jiang-miao-spiral-of-energy-exhibition-wood-carvings-acrylic-paintings/",
-      "snippet": "Whitestone Gallery in Seoul presents the artist's solo exhibition, 'Spiral of Energy.' Do stories and artists like this matter to you? Become a Colossal Member today and support independent arts publishing for as little as $7 per month. The article Monumental Painted Wood Carvings by Jiang Miao Center Mindfulness appeared first on Colossal .",
+      "title": "New York City’s Last Standing Wood Column Company Closes After 110 Years",
+      "url": "https://www.thisiscolossal.com/2026/08/american-wood-column-corporation-closes/",
+      "snippet": "\"Like anything else, everything changes,\" says owner Thomas Lupo. \"Time goes on.\" Do stories and artists like this matter to you? Become a Colossal Member today and support independent arts publishing for as little as $7 per month.",
       "category": "history",
-      "cover_url": "https://www.thisiscolossal.com/wp-content/uploads/2026/08/miao-1.jpg",
-      "ferns_note": "Jiang Miao carves monumentally into wood and then paints it — making stillness out of the most labor-intensive possible process, which is itself a kind of meditation on what mindfulness actually costs. The spiral, it turns out, is not just a motif but a method."
+      "cover_url": "https://www.thisiscolossal.com/wp-content/uploads/2026/08/americanwoodcolumncorp-13.jpg"
+    },
+    {
+      "source": "discovery",
+      "source_name": "Colossal",
+      "title": "The Winners of the 2026 Pure Street Photography Awards Invoke Happenstance and Commotion",
+      "url": "https://www.thisiscolossal.com/2026/08/pure-street-photography-awards-2026-contest-winners/",
+      "snippet": "Eight winners were selected from nearly 1,600 entries submitted by photographers in 50 countries. Do stories and artists like this matter to you? Become a Colossal Member today and support independent arts publishing for as little as $7 per month.",
+      "category": "history",
+      "cover_url": "https://www.thisiscolossal.com/wp-content/uploads/2026/08/pure-street-6.jpg"
+    },
+    {
+      "source": "discovery",
+      "source_name": "Colossal",
+      "title": "A Short Film Sheds Light on the Garfield Phones Washing Up on a French Beach Since the ’80s",
+      "url": "https://www.thisiscolossal.com/2026/08/silly-little-plastic-cat-short-film/",
+      "snippet": "Breton coastal residents grew up collecting parts of a 1984 Garfield-themed plastic telephone on the beach—and still do. Do stories and artists like this matter to you? Become a Colossal Member today and support independent arts publishing for as little as $7 per month.",
+      "category": "history",
+      "cover_url": "https://www.thisiscolossal.com/wp-content/uploads/2026/08/garfield-3.jpeg"
     }
   ],
   "featured_read": {
     "source": "reads",
     "source_name": "The Marginalian",
-    "title": "The Only Three Distinctions Between People",
-    "url": "https://www.themarginalian.org/2026/08/05/nathaniel-hawthorne-classification/",
-    "snippet": "It may be that consciousness evolved to sieve the relevant from the incomprehensible allness of all there is, to parse the world into concepts and find an organizing principle for the chaos of them. Our cognitive inheritance is a restless yearning to fathom how things cohere and where they belong, a yearning we have given shape to in laws and labels, weights and balances, hierarchies and categories. It has served us well, this instinct to categorize in order to contain, giving us music, the laws of planetary motion, and democracy.",
-    "cover_url": "https://www.themarginalian.org/wp-content/uploads/2026/06/CuevaDeLasManos_TheMarginalian_blue.jpg?fit=1200%2C630&ssl=1",
-    "blurb": "This essay asks whether our drive to sort and label the world — the same impulse that gave us musical scales and orbital mechanics — might also be the thing quietly narrowing us. A quiet hour with it will leave you rethinking every box you've ever put yourself, or someone else, inside."
+    "title": "Polyvagal Theory and the Neurobiology of Connection: The Science of Rupture, Repair, and Reciprocity",
+    "url": "https://www.themarginalian.org/2026/08/05/polyvagal-theory/",
+    "snippet": "\"The mind narrates what the nervous system knows. Story follows state.\"",
+    "cover_url": "https://www.themarginalian.org/wp-content/uploads/2024/05/thehumanbody_TheMarginalian_copyright.jpg?fit=1200%2C630&ssl=1",
+    "blurb": "Before you can explain why a single cold glance from someone you love can undo your whole afternoon, your nervous system has already filed its verdict — this piece traces exactly how that ancient wiring shapes every rupture and repair in your closest relationships. It's the kind of science that quietly reframes every awkward silence you've ever misread."
   },
   "garden_note": {
-    "note": "August in Zürich has that particular golden weight to it — the light at first light (05:35) arrives almost apologetically, soft and amber before the Alps catch it properly. The dahlias are hitting their stride now, zucchini is outpacing reason, and the evenings still carry enough warmth to sit outside with something cold.",
+    "note": "First light crept over the Zürichberg at 05:37 this morning, gilding the late-summer garden in that honeyed, slightly melancholy gold that tells you August is spending itself freely — savour every warm hour. The zucchini vines are at their most prolific and the air already carries the faint sweetness of ripening plums; this is the week to stay one step ahead of the harvest.",
     "in_season": [
-      "Dahlias in full, showy bloom",
-      "Courgettes and summer beans to harvest daily",
-      "Sow winter salad seedlings (lamb's lettuce, spinach) now",
-      "Ripe plums and early Bühler Zwetschgen on the branch"
+      "Zucchini & summer squash — pick daily before they become marrows",
+      "Early plums (Hauszwetschge) — watch for the first blush of ripeness",
+      "Rudbeckia (black-eyed Susan) — bold gold blooms at peak in borders",
+      "Sow autumn spinach & lamb's lettuce in a sheltered bed"
     ],
-    "sky_tonight": "The Last Quarter Moon rises well after midnight — leaving the earlier evening sky beautifully dark; look southeast for Saturn, gleaming steadily above the horizon.",
-    "sun_times": "First light arrives at 05:35 this morning, and the sun generously lingers until 20:54 tonight.",
+    "sky_tonight": "The Last Quarter Moon rises well after midnight, keeping early evening skies beautifully dark — look south for Saturn, glowing a steady warm yellow above the horizon.",
+    "sun_times": "First light arrives at 05:37, with sunrise at 06:10 and the long summer day finally closing at dusk around 21:26.",
     "moon_label": "Last quarter",
-    "illum_pct": 47,
-    "sun_range": "06:08–20:54"
+    "illum_pct": 37,
+    "sun_range": "06:10–20:53"
   },
   "puzzle": {
-    "kind": "haiku riddle",
-    "label": "The Morning Haiku",
-    "prompt": "midnight reservations—\n____\nin the restaurant dumpster\n\n(Fill in the missing word.)",
-    "answer": "raccoons",
-    "hint": "masked night diners who didn't need a reservation",
-    "source": "tinywords.com",
-    "source_id": "https://tinywords.com/?p=49383",
-    "credit": "Haiku by Anthony Lusardi, via tinywords.com"
+    "kind": "riddle",
+    "label": "Fern's Morning Riddle",
+    "prompt": "What has wheels and flies, but it is not an aircraft?",
+    "answer": "A garbage truck",
+    "hint": "",
+    "source": "riddles.com",
+    "source_id": "Riddle-1930"
   },
   "previous_puzzle": {
-    "label": "Fern's Morning Riddle",
-    "prompt": "What two things can you never eat for breakfast?",
-    "answer": "Lunch and dinner"
+    "label": "The Morning Haiku",
+    "prompt": "midnight reservations—\n____\nin the restaurant dumpster\n\n(Fill in the missing word.)",
+    "answer": "raccoons"
   },
   "larder": {
     "news": [
       {
         "source": "food",
         "source_name": "The Kitchn",
-        "title": "Our Favorite Savory Scented Candles, Including One That Smells Just Like Freshly Baked Bread",
-        "url": "https://www.thekitchn.com/best-savory-food-scented-candles-23838051?utm_source=RSS&utm_medium=feed&utm_campaign=Category%2FChannel%3A+main",
-        "snippet": "There’s even one that smells like bacon. READ MORE...",
+        "title": "11 Hidden Gems I Discovered at the Williams Sonoma Summer Clearance Sale (Including a Retiring Le Creuset Color!)",
+        "url": "https://www.thekitchn.com/williams-sonoma-summer-clearance-sale-2026-23838343?utm_source=RSS&utm_medium=feed&utm_campaign=Category%2FChannel%3A+main",
+        "snippet": "Plus, 10 more deals worth adding to cart. READ MORE...",
         "cover_url": "",
-        "blurb": "For those of us who can't have a loaf in the oven at all times, a freshly-baked-bread candle is the next best — and honestly, most devious — thing."
+        "blurb": "If the words 'retiring Le Creuset color' don't send you straight to the sale page, I genuinely cannot help you."
       },
       {
         "source": "food",
         "source_name": "The Guardian",
-        "title": "‘Intense, salty, foul’: the best (and worst) supermarket anchovies, tasted and rated",
-        "url": "https://www.theguardian.com/thefilter/2026/aug/01/best-worst-supermarket-tinned-anchovies-tasted-rated",
-        "snippet": "We put 10 tinned and jarred varieties to the test to see which anchovies are the best catch for your cash • The best supermarket tinned sardines To taste these anchovies, I invited a friend, the food journalist and author Sudi Pigott, to join me. Arriving with a packet of Pujadó Solano anchovies and her new book, Consider the Anchovy, in hand, she and I tasted 10 brands of anchovies straight from the tin or jar with sparkling water and cucumber to cleanse the palate. According to Pigott, the best anchovies are “juicy, plump and velvety, with a sweet, nutty taste of jamón!” The anchovy supply chain has been heavily affected by El Niño, which caused abnormal weather events in Peru, where the most economical anchovies in our test were fished, and a shortage severe enough to threaten global supply and push up prices.",
-        "cover_url": "https://i.guim.co.uk/img/media/692631c112c0ccc37ca10f825b6fc4780c9805cf/1711_710_5356_4287/master/5356.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvZmlsdGVyLXVrLnBuZw&enable=upscale&s=e7dda707f6dac4cb89eb60e278339803",
-        "blurb": "A rigorous, slightly chaotic anchovy taste-test so you never waste a precious tin on a disappointment again."
+        "title": "Côtes Catalanes: the wine with the renegade spirit",
+        "url": "https://www.theguardian.com/food/2026/aug/06/cotes-catalanes-the-wine-with-the-renegade-spirit",
+        "snippet": "From a wild corner of southern France, these crisp, minerally whites and silky red blends are unforgettable wines We all have our coming-of-age story: a transition to adulthood defined by emotional growth. I’ll let my friends be the judge of whether mine’s happened, but in wine terms, I can pinpoint my coming of age to the day I first tasted a white from Côtes Catalanes IGP . What was this nectar?",
+        "cover_url": "https://i.guim.co.uk/img/media/83a9915100c3127f9b20706c4cf48475812ca019/924_463_4100_3280/master/4100.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=43453af1f0f1667f8727e903e5c60f7a",
+        "blurb": "A corner of southern France quietly making renegade wines that are crisp, minerally, and full of the kind of character that makes you rethink your usual bottle — worth every sip of your reading time."
       },
       {
         "source": "food",
         "source_name": "Saveur",
-        "title": "Meggyleves (Chilled Sour Cherry Soup)",
-        "url": "https://www.saveur.com/article/recipes/hungarian-chilled-cherry-soup/",
-        "snippet": "Photo: Murray Hall • Food Styling: Jason Schreiber Starring jarred fruit, this version of the beloved Hungarian dish makes for a refreshingly cold and tangy dessert. The post Meggyleves (Chilled Sour Cherry Soup) appeared first on Saveur .",
-        "cover_url": "https://www.saveur.com/uploads/2012/07/photo-murray-hall_food-styling-jason-schreiber_07-250528-mhall-saveur-hungarian-chilled-cherry-soup-042-scaled.jpg?auto=webp&width=1600&height=2000",
-        "blurb": "This Hungarian chilled sour cherry soup is a quietly brilliant summer dessert — cool, tangy, and wonderfully unfussy with jarred fruit doing the heavy lifting."
+        "title": "Sour Cherry Cake",
+        "url": "https://www.saveur.com/article/recipes/hungarian-sour-cherry-cake/",
+        "snippet": "Photo: Murray Hall • Food Styling: Jason Schreiber Tart ruby-red fruit, a splash of kirsch, and a tender crumb make this Hungarian treat equally appropriate for breakfast or dessert. The post Sour Cherry Cake appeared first on Saveur .",
+        "cover_url": "https://www.saveur.com/uploads/2013/07/photo-murray-hall_food-styling-jason-schreiber_04-250528-mhall-saveur-hungarian-sour-cherry-cake-012-scaled.jpg?auto=webp&width=1600&height=2000",
+        "blurb": "Tart sour cherries, a splash of kirsch, and a beautifully tender crumb make this Hungarian cake the sort of thing you'll want to bake on a slow summer morning and eat shamelessly at both ends of the day."
       }
     ],
     "recipe": {},
-    "seasonal_note": "Zürich's Tuesday and Saturday markets at Bürkliplatz are brimming with Zwetschgen right now — those deep-purple Italian prunes that Zürchers fold into buttery Zwetschgenwähe, a custard-kissed tart worth making on a slow weekend morning while the air is still cool enough to have the oven on."
+    "seasonal_note": "Zürich's Saturday markets are piled with Berner Rose and Gravensteiner apples just now — tart, perfumed, and begging to be roasted with a little brown butter and thyme alongside a wedge of Raclette cheese for a quiet Sunday supper."
   },
   "fern_data": {
-    "greeting": "Pull up a chair — this one's for you, specifically, on a morning when Terence Tao is explaining cosmic distances and ancient Irish myths are quietly rewriting prehistory, and Kevin Morby somehow makes the Midwest doldrums sound like a gift worth accepting.",
-    "top_pick_title": "Depths Worth Diving, Songs Worth Staying"
+    "greeting": "What does a morning actually ask of you — to rush, or to linger long enough to notice that sugar may have shaped human evolution and Dracula once had his day in court?",
+    "top_pick_title": "Dust, Dynasties & Small Revelations"
   }
 }
