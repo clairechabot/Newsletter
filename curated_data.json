@@ -1,166 +1,166 @@
 {
-  "fetched_at": "2026-08-08T06:32:06.389883+02:00",
-  "is_am_email": true,
+  "fetched_at": "2026-08-08T16:55:03.487946+02:00",
+  "is_am_email": false,
   "audit_summary": {
     "youtube_videos": 10,
     "themes": 3,
-    "music_articles": 10,
-    "good_news_articles": 2,
-    "discovery_articles": 10,
+    "music_articles": 4,
+    "good_news_articles": 1,
+    "discovery_articles": 5,
     "featured_read": 1,
     "garden": 1,
     "puzzle": 1,
-    "larder": 2
+    "larder": 0
   },
   "themes": [
     {
-      "name": "Big Brain Hours",
-      "emoji": "🧠",
-      "tagline": "Strap in — these videos will rewire how you think about time, learning, and the future.",
+      "name": "Rabbit Holes Through Time",
+      "emoji": "🕰️",
+      "tagline": "From ancient gold thread to the origins of song — history is stranger and richer than they taught you.",
       "items": [
         {
           "source": "youtube",
-          "video_id": "iewm45atodE",
-          "title": "8 Predictions for the Era of Continual Learning",
-          "channel_id": "UCXl4i9dYBrFOabk0xGmbkRA",
-          "channel_title": "Dwarkesh Patel",
-          "published_at": "2026-08-07T17:33:15Z",
-          "url": "https://www.youtube.com/watch?v=iewm45atodE",
-          "duration_seconds": 518,
-          "view_count": "15056",
-          "description": "Read the essay here:\nhttps://www.dwarkesh.com/p/era-of-continual-learning",
+          "video_id": "MRkDtGu0ryQ",
+          "title": "I Learned the Ancient Art of Sewing with GOLD (and you can too!)",
+          "channel_id": "UCSHtaUm-FjUps090S7crO4Q",
+          "channel_title": "Bernadette Banner",
+          "published_at": "2024-12-14T19:00:17Z",
+          "url": "https://www.youtube.com/watch?v=MRkDtGu0ryQ",
+          "duration_seconds": 1348,
+          "view_count": "490114",
+          "description": "Head on over to Nebula for more awesome content, sans ads! It's just $36/year. 🥳 http://www.nebula.tv/bernadettebanner\nFancy a goldwork kit of your own? Let us know how it goes! https://handembroidery.com/collections/bernadette-banner-x-hand-lock\n\n⤠ HOW TO SUPPORT ⤟\n♥️ PATREON for exclusive behind-the-scenes content! https://www.patreon.com/bernadettebanner\n⚝ NEBULA to see these videos ad- and sponsorship-free, + Original content! http://www.nebula.tv/bernadettebanner \n🦵MERCH https://store.dftba",
           "is_wildcard": false
         },
         {
           "source": "youtube",
-          "video_id": "nOGTjQ6eCaY",
-          "title": "We Know More About Time Than You Think",
-          "channel_id": "UCftwRNsjfRo08xYE31tkiyw",
-          "channel_title": "WIRED",
-          "published_at": "2026-08-07T16:02:03Z",
-          "url": "https://www.youtube.com/watch?v=nOGTjQ6eCaY",
-          "duration_seconds": 1104,
-          "view_count": "27222",
-          "description": "Sir Isaac Newton claimed time flows universally. Albert Einstein said that time is relative to the observer. Theoretical physicist Professor Brian Greene rejoins WIRED to break down the emerging theories that tell us everything we know about time; from the impact of speed (special relativity) and gravity (general relativity) on time dilation to the role of entropy, Brian walks us through the mystery of time.\n\nStill haven’t subscribed to WIRED on YouTube? ►► http://wrd.cm/15fP7B7 \r\nListen to the ",
-          "is_wildcard": false
-        },
-        {
-          "source": "youtube",
-          "video_id": "8ZU8nTC7zXs",
-          "title": "We're burned out. Here's why.",
-          "channel_id": "UC2Kyj04yISmHr1V-UlJz4eg",
-          "channel_title": "Jared Henderson",
-          "published_at": "2024-12-18T16:10:16Z",
-          "url": "https://www.youtube.com/watch?v=8ZU8nTC7zXs",
-          "duration_seconds": 608,
-          "view_count": "751558",
-          "description": "Head to https://80000hours.org/jaredhenderson to start planning a career that is meaningful, fulfilling, and helps solve one of the world’s most pressing problems.\n\nWe all feel burnout. So let's take some time to look at the psychology, philosophy, and anthropology behind burnout. We'll talk about psychologists like Herbert Freudenberger and philosophers Bertrand Russell and Byung-Chul Han to get to the bottom of this.\n\n\n→ Sources\n\nAristotle, Nicomachean Ethics: https://bookshop.org/a/86121/9780",
-          "is_wildcard": false
-        },
-        {
-          "source": "youtube",
-          "video_id": "sfe0mExhnEg",
-          "title": "The key to better conversations | Charles Duhigg",
-          "channel_id": "UCvQECJukTDE2i6aCoMnS-Vg",
-          "channel_title": "Big Think",
-          "published_at": "2026-08-07T16:07:01Z",
-          "url": "https://www.youtube.com/watch?v=sfe0mExhnEg",
-          "duration_seconds": 139,
-          "view_count": "9796",
-          "description": "The key to better conversations | Charles Duhigg",
-          "is_wildcard": false
-        }
-      ]
-    },
-    {
-      "name": "Plot Twist",
-      "emoji": "🎭",
-      "tagline": "Culture, queerness, and cinema — the stories beneath the stories we thought we knew.",
-      "items": [
-        {
-          "source": "youtube",
-          "video_id": "-3A3-IpfVEE",
-          "title": "The Wizard of Oz and Wicked Have Always Been Gay",
+          "video_id": "yDVF_GTMCoY",
+          "title": "The Misunderstood History of Alchemy",
           "channel_id": "UCSwwoUNvQWgZDC8a_O6Qs_A",
           "channel_title": "Kaz Rowe",
-          "published_at": "2024-12-20T17:36:05Z",
-          "url": "https://www.youtube.com/watch?v=-3A3-IpfVEE",
-          "duration_seconds": 2571,
-          "view_count": "216705",
-          "description": "Empower yourself with access to diverse perspectives and stay informed on breaking news by subscribing through my link https://ground.news/kazrowe for 50% off unlimited access this month with the Vantage Subscription and be the change you want to see.\n\nThe 2024 Wicked film starring Ariana Grande and Cynthia Erivo has been a huge hit, especially due to the tangible romance between their characters Glinda and Elphaba. But did you know the queerness in Oz goes all the way back to L. Frank Baum's or",
+          "published_at": "2024-10-17T16:58:58Z",
+          "url": "https://www.youtube.com/watch?v=yDVF_GTMCoY",
+          "duration_seconds": 2157,
+          "view_count": "511817",
+          "description": "Thank you Birch Living for sponsoring! Click here http://birchliving.com/kaz to get 20% off your Birch mattress (plus two free Eco-Rest pillows!) during their Fall Into Bed Sale. Offers are subject to change. #birchliving\n\nWe've all heard of alchemy in the realm of sorcery and the occult, but the true history is a different story. Come learn with me about the ancient history of this misunderstood science, and some myths we can debunk!\n\nDonate to Feeding America: https://www.feedingamerica.org/\n\n",
           "is_wildcard": false
         },
         {
           "source": "youtube",
-          "video_id": "P5-9MTEtcfM",
-          "title": "The 10 Best Movies of 2024",
-          "channel_id": "UCs7nPQIEba0T3tGOWWsZpJQ",
-          "channel_title": "Like Stories of Old",
-          "published_at": "2024-12-18T13:55:57Z",
-          "url": "https://www.youtube.com/watch?v=P5-9MTEtcfM",
-          "duration_seconds": 2112,
-          "view_count": "422727",
-          "description": "Start your free month of great cinema now at https://mubi.com/likestoriesofold \n\nHelp me make more videos!\nSupport this channel: https://www.patreon.com/LikeStoriesofOld \nLeave a One-Time Donation: https://www.paypal.me/TomvanderLinden\n\nThe 50 most life-changing movies ever made: https://youtu.be/ZYp7EmEgxg0\n\nWatch this video on Nebula: https://nebula.tv/videos/lsoo-the-10-best-movies-of-2024\n\nFacebook: https://www.facebook.com/LikeStoriesofOld \nInstagram: https://www.instagram.com/tom.vd.linden",
+          "video_id": "3l3FlMIWd0I",
+          "title": "When did humans start making music?? || On the Origin of Song",
+          "channel_id": "UCnCk_o6ySiM_ZzxubCv899Q",
+          "channel_title": "fig tree",
+          "published_at": "2024-10-11T16:32:15Z",
+          "url": "https://www.youtube.com/watch?v=3l3FlMIWd0I",
+          "duration_seconds": 1390,
+          "view_count": "171209",
+          "description": "hope you didnt forget about me \n\nsources cited 2day\n\nBarnett, R.D. (1969) ‘New facts about musical instruments from ur’, *Iraq*, 31(2), p. 96. doi:10.2307/4199874. \n\nBelyk, M. and Brown, S. (2017) ‘The origins of the vocal brain in humans’, *Neuroscience &amp; Biobehavioral Reviews*, 77, pp. 177–193. doi:10.1016/j.neubiorev.2017.03.014. \n\nBrown, S. (1999) ‘The “Musilanguage” model of music evolution’, *The Origins of Music*, pp. 271–300. doi:10.7551/mitpress/5190.003.0022. \n\nConard, N.J., Malina",
           "is_wildcard": false
         },
         {
           "source": "youtube",
-          "video_id": "8tmZgCPK2tI",
-          "title": "12 Things in Japan That DON'T Make Sense",
-          "channel_id": "UCHL9bfHTxCMi-7vfxQ-AYtg",
-          "channel_title": "Abroad in Japan",
-          "published_at": "2024-12-24T21:06:50Z",
-          "url": "https://www.youtube.com/watch?v=8tmZgCPK2tI",
-          "duration_seconds": 1333,
-          "view_count": "1095327",
-          "description": "Japan is a land of contradictions. Here's 12 of the biggest.\n🗼 Get 3 months FREE on Express VPN! https://www.expressvpn.com/abroadinjapan\n🇯🇵 Travelling to Japan? Grab your SUPER FAST Journey Japan eSim: https://jjesim.com/\n\n► WEEKLY Podcast: http://hyperurl.co/nhgr30\n► BEHIND the scenes Patreon: https://goo.gl/NWEoQm\n\n**FOLLOW THE ADVENTURE**\n► Facebook: https://www.facebook.com/abroadinjapan/\n► Twitter: https://twitter.com/AbroadInJapan\n► Instagram: @abroadinjapan\n\n00:00 1) Propaganda Trucks\n02",
-          "is_wildcard": false
-        },
-        {
-          "source": "youtube",
-          "video_id": "yiQF_IHnZCM",
-          "title": "CEO tries naming employees",
-          "channel_id": "UC_-hYjoNe4PJNFa9iZ4lraA",
-          "channel_title": "Good Work",
-          "published_at": "2026-08-07T17:26:35Z",
-          "url": "https://www.youtube.com/watch?v=yiQF_IHnZCM",
-          "duration_seconds": 132,
-          "view_count": "126233",
-          "description": "#business #corporate #corporatelife",
+          "video_id": "EpQEslytUlo",
+          "title": "The Dumbest Legal Defense & Conspiracy Theory I've Ever Heard",
+          "channel_id": "UC3cpN6gcJQqcCM6mxRUo_dA",
+          "channel_title": "Wendigoon",
+          "published_at": "2024-12-06T00:41:30Z",
+          "url": "https://www.youtube.com/watch?v=EpQEslytUlo",
+          "duration_seconds": 2815,
+          "view_count": "4446776",
+          "description": "Head to my link at https://drinkag1.com/wendigoon to get your free welcome kit with your first subscription - this includes 5 free travel packs, a bottle of AG1’s vitamin D3K2, the shaker bottle, and more!\n\nJIMMYHERE CHARITY STREAM TOMORROW AT 1PM EST: https://www.twitch.tv/jimmyhere\nDONATE TO GAMERS OUTREACH BEFORE THE STREAM HERE: https://tiltify.com/+mana-impact/jimmyhere-versus-wendigoon-holiday-fundraiser\n\nGET THE MERCH WHILE YOU CAN (CRYPTIDS 4 CHARITY & LIMITED RETURN OF HAWAIIAN SHIRT): ",
           "is_wildcard": false
         }
       ]
     },
     {
-      "name": "Slow Down & Grow",
-      "emoji": "🍋",
-      "tagline": "From potted citrus to morning routines — the gentle art of tending to something real.",
+      "name": "The Examined Life",
+      "emoji": "🪞",
+      "tagline": "Movies, philosophy, and neurons — big questions about who we are and how to live well.",
       "items": [
         {
           "source": "youtube",
-          "video_id": "HBFNA-Evkag",
-          "title": "How To Grow PERFECT Citrus In Containers",
-          "channel_id": "UCSbyncU597LMwb3HhnAI_4w",
-          "channel_title": "Epic Gardening",
-          "published_at": "2026-08-07T16:53:19Z",
-          "url": "https://www.youtube.com/watch?v=HBFNA-Evkag",
-          "duration_seconds": 897,
-          "view_count": "12568",
-          "description": "Find FoxFarm Products Near You: https://foxfarm.com/find-a-dealer/\nGrow thriving citrus in pots with the right variety, soil, and care. Learn how to choose dwarf trees, prevent root rot, fertilize, and keep them producing for years.\n\nIN THIS VIDEO\n\n→ Grab citrus trees: https://shop.epicgardening.com/search?q=citrus\n\nSUPPORT EPIC GARDENING\n\n→ Shop: https://growepic.co/shop\n→ Seeds: https://growepic.co/botanicalinterests\n\nLEARN MORE\n\n→ All Our Channels: https://growepic.co/youtube\n→ Blog: https://",
+          "video_id": "ZYp7EmEgxg0",
+          "title": "The 50 Most Life-Changing Movies",
+          "channel_id": "UCs7nPQIEba0T3tGOWWsZpJQ",
+          "channel_title": "Like Stories of Old",
+          "published_at": "2024-11-21T21:25:19Z",
+          "url": "https://www.youtube.com/watch?v=ZYp7EmEgxg0",
+          "duration_seconds": 12518,
+          "view_count": "466604",
+          "description": "Start your free month of great cinema now at https://mubi.com/likestoriesofold \n\nHelp me make more videos!\nSupport this channel: https://www.patreon.com/LikeStoriesofOld \nLeave a One-Time Donation: https://www.paypal.me/TomvanderLinden\n\nWatch this video on Nebula: https://nebula.tv/videos/lsoo-the-50-most-lifechanging-movies-ever-made\n\nReview the list on Letterboxd: https://letterboxd.com/tomvanderlinden/list/like-stories-of-olds-50-most-life-changing/\n\nFacebook: https://www.facebook.com/LikeSto",
+          "is_wildcard": false
+        },
+        {
+          "source": "youtube",
+          "video_id": "GteRElF533Q",
+          "title": "Aristotle's guide to the good life | Nicomachean Ethics",
+          "channel_id": "UC2Kyj04yISmHr1V-UlJz4eg",
+          "channel_title": "Jared Henderson",
+          "published_at": "2024-10-30T14:56:30Z",
+          "url": "https://www.youtube.com/watch?v=GteRElF533Q",
+          "duration_seconds": 1759,
+          "view_count": "770154",
+          "description": "Check out 80,000 Hours: https://80000hours.org/jaredhenderson\n\nAristotle's Nicomachean Ethics is a classic work of philosophy, especially in virtue ethics. I hope this video can help guide you through the book and help you read it for yourself. Topics include Aristotle's influence, happiness, the virtues, friendship, and contemplation. \n\nI wrote a series of articles over the summer on this book, and you can find them (for free) on my Substack: https://jaredhenderson.substack.com/t/nicomachean-et",
+          "is_wildcard": false
+        },
+        {
+          "source": "youtube",
+          "video_id": "gLtGVEhMFN4",
+          "title": "Why Two Identical Neurons Behave Differently",
+          "channel_id": "UCR2uRTQ53V_egXKFflMMaaw",
+          "channel_title": "Artem Kirsanov",
+          "published_at": "2024-12-08T08:25:21Z",
+          "url": "https://www.youtube.com/watch?v=gLtGVEhMFN4",
+          "duration_seconds": 1605,
+          "view_count": "125600",
+          "description": "To try everything Brilliant has to offer—free—for a full 30 days, visit https://brilliant.org/ArtemKirsanov . You’ll also get 20% off an annual premium subscription\n\n=====\nMy name is Artem, I'm a neuroscience PhD student at Harvard University. \n🌎 Website and Social links: https://kirsanov.ai/\n📥 \"Receptive Field\" neuro-newsletter: https://artemkirsanov.substack.com/\n✨ Support me on Patreon to get access to Discord community: https://patreon.com/artemkirsanov\n=====\n\nIn this video, we explore how t",
           "is_wildcard": false
         },
         {
           "source": "youtube_trending",
-          "video_id": "hPBc2D5g998",
-          "title": "Good Morning San Antonio 6 a.m. : Aug 07, 2026",
-          "channel_id": "UCETE4rKzRRjqM0JaB7TlPpQ",
-          "channel_title": "KSAT 12",
-          "published_at": "2026-08-07T12:08:25Z",
-          "url": "https://www.youtube.com/watch?v=hPBc2D5g998",
-          "duration_seconds": 2455,
-          "view_count": "2533",
-          "description": "The KSAT 12 News Team provides a look at local, regional, statewide and national news events and the latest information on local traffic and weather issues.",
+          "video_id": "a3KTrWIRCK0",
+          "title": "Real-Life Hero Saves Mom & Child + More Good News | Infinite Hope #290",
+          "channel_id": "UCgU6rh5ZhdJGiBvpqDh_xAg",
+          "channel_title": "Nina Infinity",
+          "published_at": "2026-08-08T08:12:53Z",
+          "url": "https://www.youtube.com/watch?v=a3KTrWIRCK0",
+          "duration_seconds": 6780,
+          "view_count": "440",
+          "description": "Child + More Good News | Infinite Hope\n\nInfinite Hope Episode 290 for the week of 08/07/2026 \n\nWelcome, good humans, to Infinite Hope #290! 💙\n\nThis week I'm celebrating a very special milestone—Episode 290—and I'm thrilled to be joined by Michelle and Natalie from @ForceOfLightEntertainment \n\nWe'll celebrate together while sharing some of the most inspiring stories from around the world that remind us kindness, courage, and hope are still alive.\nIn this episode, we'll cover incredible real-life ",
           "is_wildcard": true
+        }
+      ]
+    },
+    {
+      "name": "A World on the Edge",
+      "emoji": "🌏",
+      "tagline": "Megaquakes, heat waves, and the quiet urgency of a planet sending us signals.",
+      "items": [
+        {
+          "source": "youtube",
+          "video_id": "FF0EsJGrd9A",
+          "title": "The Day Japan Fears The Most: $1 Trillion Megaquake",
+          "channel_id": "UCHL9bfHTxCMi-7vfxQ-AYtg",
+          "channel_title": "Abroad in Japan",
+          "published_at": "2024-12-19T16:24:40Z",
+          "url": "https://www.youtube.com/watch?v=FF0EsJGrd9A",
+          "duration_seconds": 2219,
+          "view_count": "1502950",
+          "description": "Japan lives in the shadow of an unthinkable existential event. How prepared is Tokyo really for the worst case scenario? We go in search of answers.\n🌟Funded by the Abroad in Japan Patreon Community: https://www.patreon.com/c/abroadinjapan\n\nThanks to the organisations who featured in this documentary:\n\n Tokyo Met Gov Disaster Preparedness Resources: \n■Tokyo Metropolitan Government Disaster Prevention X Account\nx.com/tokyo_bousai\n\n■TMG Disaster Prevention Information Homepage\nhttps://www.bousai.me",
+          "is_wildcard": false
+        },
+        {
+          "source": "youtube",
+          "video_id": "OGpeAIZSM2Y",
+          "title": "The Crops Smart Gardeners Grow as Summers Get Hotter",
+          "channel_id": "UC9r61qohBg1qgGty4_WzojA",
+          "channel_title": "GrowVeg",
+          "published_at": "2026-08-08T14:45:11Z",
+          "url": "https://www.youtube.com/watch?v=OGpeAIZSM2Y",
+          "duration_seconds": 649,
+          "view_count": "200",
+          "description": "Enjoy a no-obligation, completely free trial of the Garden Planner here: \nhttps://www.GrowVeg.com/grow-planner-free\n\nAnd for your completely free abridged version of Ben's book, click here:\nhttps://www.growveg.com/grow-book-download\n\nFor our recent video about harvesting rainwater see:\nhttps://youtu.be/qdJH0YkphHs\n\nSummers are getting hotter and our job as gardeners is to adapt. The great thing is that this warmer weather can offer us opportunities to grow exotic fruits and vegetables we had nev",
+          "is_wildcard": false
         }
       ]
     }
@@ -169,111 +169,45 @@
     {
       "source": "music",
       "source_name": "NPR Music",
-      "title": "Deadheads forever: The long legacy of the Grateful Dead's fan community",
-      "snippet": "As part of NPR Music's series The Ripple Effect, Isabella Gomez Sarmiento speaks with Deadheads young and old, including famous followers like reality TV host Andy Cohen, who saw his first Grateful Dead show as a teenager in 1986, and young fans just discovering the band -- and passing on their appr",
-      "url": "https://www.npr.org/2026/08/07/nx-s1-5914776/deadheads-forever-the-long-legacy-of-the-grateful-deads-fan-community",
+      "title": "How Jim James and Jeff Tweedy learned to love the Grateful Dead",
+      "snippet": "Jim James of My Morning Jacket and Jeff Tweedy of Wilco are two artists who've dipped their toes into the Grateful Dead extended universe through a singular experience: by sharing the stage with Bob Weir.",
+      "url": "https://www.npr.org/2026/08/08/nx-s1-5902068/grateful-dead-jim-james-jeff-tweedy",
       "genre": "",
-      "vibe_check": "The warm, worn feeling of a tie-dye shirt that's been washed a hundred times but never loses its color.",
-      "cover_url": "https://media.npr.org/include/images/facebook-default-wide-s1400-c85.jpg",
-      "embed_url": null
-    },
-    {
-      "source": "music",
-      "source_name": "NPR Music",
-      "title": "Pianist Jason Moran offers an innovative take on Duke Ellington",
-      "snippet": "Ellington's music has been a staple of jazz repertoire for decades. Now artists are building on his work and finding midway points between the legend and themselves. One striking example: Jason Moran Plays Duke Ellington.",
-      "url": "https://www.npr.org/2026/08/07/nx-s1-5924105/pianist-jason-moran-offers-an-innovative-take-on-duke-ellington",
-      "genre": "",
-      "vibe_check": "Like watching a master calligrapher rewrite a classic text in their own hand — reverent, precise, and quietly thrilling.",
-      "cover_url": "https://media.npr.org/include/images/facebook-default-wide-s1400-c85.jpg",
-      "embed_url": null
-    },
-    {
-      "source": "music",
-      "source_name": "NPR Music",
-      "title": "Why Andy Cohen is a Deadhead for life",
-      "snippet": "Over the last decade, reality TV mogul Andy Cohen has been spotted dancing at concerts for Dead & Company. But his ties to the Grateful Dead go much farther than that.",
-      "url": "https://www.npr.org/2026/08/07/nx-s1-5902067/andy-cohen-deadhead",
-      "genre": "",
-      "vibe_check": "The giddy, nostalgic rush of finding your old concert ticket stubs tucked inside a book you haven't opened in years.",
-      "cover_url": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/6300x3544+0+328/resize/1400/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Ff5%2Ff1%2Fe19aac614e4abc46c5bb1fbad5f7%2Fnup-211315-01314.JPG",
+      "vibe_check": "Two cosmic wanderers finally admitting they've been circling the same campfire all along.",
+      "cover_url": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/5500x3094+0+54/resize/1400/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Fda%2F41%2F54dc7cbb4a3fa9c0fa46dcc9e100%2Fvertical-dip-8.jpg",
       "embed_url": null
     },
     {
       "source": "music",
       "source_name": "Stereogum",
-      "title": "Maria Usbeck Announces New EP Canciones De Amor: Hear “Luz”",
-      "snippet": "Last year, The Ecuadorian-born, Brooklyn-based dream-pop artist Maria Usbeck returned from a long absence with Naturaleza, her first new album in six years. Yesterday, she announced plans to follow that record with Canciones De Amor, a new EP that she recorded with a team of musicians that includes ",
-      "url": "https://stereogum.com/2507667/maria-usbeck-announces-new-ep-canciones-de-amor-hear-luz/music/",
+      "title": "Foreseen Circumstances: Morrissey Cancels Next Week’s Vegas Residency",
+      "snippet": "Morrissey is once again canceling shows. In March, he canceled his show in Valencia, Spain, because he was too sleepy. Now, he's canceling next week's Vegas residency.\nThe post Foreseen Circumstances: Morrissey Cancels Next Week’s Vegas Residency appeared first on Stereogum.",
+      "url": "https://stereogum.com/2507691/foreseen-circumstances-morrissey-cancels-next-weeks-vegas-residency/news/",
       "genre": "",
-      "vibe_check": "Bougainvillea petals drifting through an open window on a late afternoon that smells like rain and something blooming.",
-      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/08/Maria-Usbeck.jpeg",
-      "embed_url": "https://www.youtube.com/embed/K3Nku1QSspE"
-    },
-    {
-      "source": "music",
-      "source_name": "Stereogum",
-      "title": "Sondre Lerche – “Love Is All”",
-      "snippet": "Sondre Lerche's new album Acrobats is imminent. So far the Norwegian singer-songwriter has shared the sprawling previews \"Little Kids\" and \"Follow The River,\" and now he's releasing the tender, heavenly slow-burner called \"Love Is All.\"\nThe post Sondre Lerche &#8211; &#8220;Love Is All&#8221; appear",
-      "url": "https://stereogum.com/2507654/sondre-lerche-love-is-all/music/",
-      "genre": "",
-      "vibe_check": "The ache of holding someone close at the end of a party when the playlist has finally slowed down to just this.",
-      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/08/unnamed-2026-08-07T142908.487.jpg",
-      "embed_url": "https://www.youtube.com/embed/R7jkm22UqcY"
-    },
-    {
-      "source": "music",
-      "source_name": "Stereogum",
-      "title": "Marissa Nadler & Milky Burgess – “Forever” (Buddy Killen Cover)",
-      "snippet": "Last year, before releasing the hauntingly beautiful album New Radiations, Marissa Nadler joined forces with Seattle musician Milky Burgess for a collaborative EP called The Bloody Gardener. Burgess also helped with instrumental arrangements plus recording and engineering on New Radiations, and now ",
-      "url": "https://stereogum.com/2507644/marissa-nadler-milky-burgess-forever-buddy-killen-cover/music/",
-      "genre": "",
-      "vibe_check": "Candlelight flickering in a room where someone has just left, and the air still holds the shape of them.",
-      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/08/a2724396150_10.jpg",
-      "embed_url": "https://marissanadler.bandcamp.com/album/the-bloody-gardener"
-    },
-    {
-      "source": "music",
-      "source_name": "No Depression",
-      "title": "BONUS TRACKS: Dolly Parton's AMERICANAFEST Award, New Sierra Ferrell Track, Bandcamp Friday, and More Roots Music News",
-      "snippet": "The Americana Music Association announced yesterday that Dolly Parton will be awarded with the Lifetime Achievement Award during the 2026 Americana Honors &amp; Awards. The ceremony will take place at the Ryman Auditorium in Nashville during this year&apos;s AMERICANAFEST and Parton will accept the ",
-      "url": "https://nodepression.org/bonus-tracks-dolly-partons-americanafest-award-new-sierra-ferrell-track-bandcamp-friday-and-more-roots-music-news/",
-      "genre": "",
-      "vibe_check": "Front-porch news delivered with a cold sweet tea in hand, somewhere between celebration and the satisfying hum of roots going deep.",
-      "cover_url": "https://storage.ghost.io/c/18/d0/18d08e58-3b1b-4720-ae25-a31b44e69d4b/content/images/2026/08/Dolly-Parton-2.jpg",
-      "embed_url": "https://www.youtube.com/embed/SR8ToeT1-a4"
-    },
-    {
-      "source": "music",
-      "source_name": "Pitchfork",
-      "title": "Neil Young and the Chrome Hearts Return With New Album Second Song",
-      "snippet": "The group’s Talkin to the Trees follow-up is out September 18",
-      "url": "https://pitchfork.com/story/neil-young-and-the-chrome-hearts-return-with-new-album-second-song/",
-      "genre": "",
-      "vibe_check": "The crunch of gravel under boots at dawn, heading somewhere remote with no signal and no apologies.",
-      "cover_url": "https://media.pitchfork.com/photos/6a7616459c71972df2cbd73b/16:9/w_1280,c_limit/NEIL_YOUNG_4.6.25_ROXX_3357.jpeg",
+      "vibe_check": "The weary sigh of someone who bought non-refundable tickets and really should have known better.",
+      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/08/SOCIAL_59f092.jpeg",
       "embed_url": null
     },
     {
       "source": "music",
       "source_name": "Consequence",
-      "title": "Stella Lefty: How to Get Tickets for Her Sold-Out Debut Headline Tour",
-      "snippet": "The pop-county singer-songwriter is hitting the road in support of her new album Long Way Home. Learn how to get last-minute tickets and deals there.\nStella Lefty: How to Get Tickets for Her Sold-Out Debut Headline Tour\nScoop Harrison",
-      "url": "https://consequence.net/2026/08/stella-lefty-lefty-live-tour-tickets/",
+      "title": "Morrissey Cancels Las Vegas Residency Due to “Unforeseen Logistical Challenges”",
+      "snippet": "News of the cancellation came with only a week's notice.\nMorrissey Cancels Las Vegas Residency Due to &#8220;Unforeseen Logistical Challenges&#8221;\nAlex Young",
+      "url": "https://consequence.net/2026/08/morrissey-cancels-las-vegas-residency-due-to-unforeseen-logistical-challenges/",
       "genre": "",
-      "vibe_check": "The breathless, last-minute scramble of grabbing your coat and running out the door because you refuse to miss this one.",
-      "cover_url": "https://consequence.net/wp-content/uploads/2026/08/Stella-Lefty.jpeg",
-      "embed_url": "https://www.youtube.com/embed/6VemlmFuP5k"
+      "vibe_check": "That sinking feeling of checking your email the week of a show you'd been looking forward to for months.",
+      "cover_url": "https://consequence.net/wp-content/uploads/2026/04/morrissey-2026-us-tour.jpg",
+      "embed_url": null
     },
     {
       "source": "music",
-      "source_name": "JazzTimes",
-      "title": "Fred Hersch Heard in Long-Lost Dialogue with the Late Mick Goodrick on Old/New ECM Release",
-      "snippet": "T he year 1988 was a good one for Fred Hersch. Along with nurturing his notoriety for richly harmonic chamber-jazz vibes and a lyrically sophisticated &#8230; Read More \"Fred Hersch Heard in Long-Lost Dialogue with the Late Mick Goodrick on Old/New ECM Release\"\nThe post Fred Hersch Heard in Long-Los",
-      "url": "https://www.jazztimes.com/features/profiles/fred-hersch-heard-in-long-lost-dialogue-with-the-late-mick-goodrick-on-old-new-ecm-release/",
+      "source_name": "PopMatters",
+      "title": "‘We Are the Beautiful Explores’ the Lasting Musical Vocabulary of Shoegaze",
+      "snippet": "By extending its scope across two decades, We Are the Beautiful showcases how shoegaze dissolved into the wider vocabulary of alternative music.",
+      "url": "https://www.popmatters.com/two-decades-of-shoegaze",
       "genre": "",
-      "vibe_check": "A conversation between two old souls finally unearthed, like finding love letters in a drawer no one had opened in decades.",
-      "cover_url": "https://www.jazztimes.com/wp-content/uploads/2026/08/Unknown-2-scaled.jpeg",
+      "vibe_check": "Like tracing a watermark through modern music — the ghost of distorted guitars and gauzy reverb quietly haunting everything you thought was something else.",
+      "cover_url": "https://www.popmatters.com/wp-content/uploads/2026/08/We-Are-the-Beautiful-Two-Decades-of-Shoegaze-SP.webp",
       "embed_url": null
     }
   ],
@@ -281,187 +215,108 @@
     {
       "source": "good_news",
       "source_name": "Good News Network",
-      "title": "The Tiger Returns to Kazakhstan in First-in-the-World Rewilding Project a Decade in the Making",
-      "url": "https://www.goodnewsnetwork.org/the-tiger-returns-to-kazakhstan-in-first-in-the-world-rewilding-project-a-decade-in-the-making/",
-      "snippet": "Kazakhstan has taken a massive step towards its long-held goal of re-establishing the tiger in the country by releasing a female Amur tiger into the Ile-Balkhash Nature Reserve. Established in 2018 for this exact purpose, what followed was a truly generational effort of reforestation and replenishing prey species of deer and antelope that the Caspian […] The post The Tiger Returns to Kazakhstan in First-in-the-World Rewilding Project a Decade in the Making appeared first on Good News Network .",
-      "cover_url": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/08/credit-Ministry-of-Ecology-of-Kazakhstan-e1786099963356.jpg",
-      "reason": "After being absent for over half a century, tigers are returning to Kazakhstan's vast wetlands through a painstaking, decade-long rewilding effort — proof that with enough patience and commitment, humans can genuinely reverse the damage we've done to wild places. This is the first project of its kind in the world, and it signals a new era of bold, large-scale wildlife restoration."
-    },
-    {
-      "source": "good_news",
-      "source_name": "Upworthy",
-      "title": "3 sisters sang ‘Landslide’ as kids. 9 years later, they sang it at their dad’s funeral.",
-      "url": "https://www.upworthy.com/3-sisters-sang-landslide-as-kids-9-years-later-they-sang-it-at-their-dads-funeral/",
-      "snippet": "\"It's been a special song for our family since the beginning.\" The post 3 sisters sang ‘Landslide’ as kids. 9 years later, they sang it at their dad’s funeral. appeared first on Upworthy .",
-      "cover_url": "https://www.upworthy.com/wp-content/uploads/sites/2/2026/08/top-image-1080-x-720-px-1200-x-640-px-2026-08-07T151837.725.jpg",
-      "reason": "Three sisters honouring their father with the same song they sang together as children is a quiet reminder that music can hold a family's whole history, turning grief into something tender and shared. It's the kind of story that reassures us love leaves a lasting shape in our lives."
+      "title": "Your Weekly Horoscope – ‘Free Will Astrology’ by Rob Brezsny",
+      "url": "https://www.goodnewsnetwork.org/horoscope-from-rob-brezsnys-free-will-astrology-8-8-2026/",
+      "snippet": "Our partner Rob Brezsny, whose latest book is Astrology Is Real: Revelations from My Life as an Oracle, provides his weekly wisdom to enlighten our thinking and motivate our mood. Rob’s Free Will Astrology, is a syndicated weekly column appearing in over a hundred publications. He is also the author of Pronoia Is the Antidote for Paranoia: […] The post Your Weekly Horoscope – ‘Free Will Astrology’ by Rob Brezsny appeared first on Good News Network .",
+      "cover_url": "https://www.goodnewsnetwork.org/wp-content/uploads/2020/10/Freewill-Astrology-horoscope-logo.jpg",
+      "reason": "A gentle weekly reminder that pausing to reflect on the bigger picture — wherever your inspiration comes from — can bring a quiet sense of direction and calm to even the busiest of weeks."
     }
   ],
   "discovery_articles": [
     {
       "source": "discovery",
       "source_name": "Atlas Obscura",
-      "title": "Post Office and Telecommunications Center in Skopje, North Macedonia",
-      "url": "https://www.atlasobscura.com/places/post-office-and-telecommunications-center",
-      "snippet": "The capital of North Macedonia is characterized by its pompous, classically styled buildings that line both sides of the Vardar River, further enhanced by numerous statues, some of them enormous. All of this has been built in recent years following independence from the former Yugoslavia. But just behind these grand buildings lies the typical city of the Communist era, with its gray, functional structures.",
+      "title": "Grand Gulch Mine in Littlefield, Arizona",
+      "url": "https://www.atlasobscura.com/places/grand-gulch-mine",
+      "snippet": "Copper, of course, has been known since antiquity, but it only became an important industrial metal in the latter 19th century with the rise of large-scale electrical technology. Previously copper deposits were worked only if cheap and accessible. When the Grand Gulch deposit, then called Adam's Lode and marked by brilliant blue and green copper-bearing pebbles on the ground surface, was discovered after the Civil War, the shifting economics of copper led to mining beginning in 1872.",
       "category": "history",
-      "cover_url": "https://img.atlasobscura.com/XhpLbjygDb_-XHY_CQCsiK_i0LWoCBq8L3cOOYalxAI/rt:fit/w:600/c:2517:1678:nowe:402:825/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy9kYTRl/OTg3YS1kMTJkLTQ4/NzktYjczOS0wMDYx/ODhiMDUxZGFlNmY1/OWFhMWZjNjJiYTU2/ZTBfUG_FoXRhX3Zv/X1Nrb3BqZSxfTWFj/ZWRvbmlhLmpwZw.jpg",
-      "ferns_note": "Skopje performed an audacious architectural sleight of hand — draping a brand-new ancient Rome over the bones of Soviet concrete, like history in a hurry. Step behind the colonnades, though, and the Communist city is still quietly waiting."
+      "cover_url": "https://img.atlasobscura.com/CEIZOJ95ooNe1RoUZjHgzM40Gt1a2RjCHfRjG36PtO8/rt:fit/w:600/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy9iMTMz/MDIzZC1hZjZiLTQ1/NjctYjQwNi1hNmVi/NGY2YzZiZjkwMjg0/MzYyMzM1MzFkZDg0/N2JfMjAyNTA5MDZf/MTQyODQ0LmpwZw.jpg",
+      "ferns_note": "Before electricity rewired the world, copper deposits like this one sat ignored — it took the industrial hunger of the late 1800s to make those brilliant blue and green pebbles on the Arizona ground suddenly worth bleeding for. The mine is a quiet monument to how civilization decides, almost overnight, what a resource is actually worth."
     },
     {
       "source": "discovery",
       "source_name": "Atlas Obscura",
-      "title": "Window Rock in West Wendover, Nevada",
-      "url": "https://www.atlasobscura.com/places/window-rock",
-      "snippet": "Lake Bonneville was an enormous Pleistocene lake that covered much of western Utah, extending into the edges of adjacent Nevada and Idaho, during the height of the last Ice Age. It reached its maximum extent and depth about 17.5 KYBP (thousand years before present). The lake eroded what's now called the Bonneville Shoreline at this level, around 5100 feet above present sea level.",
+      "title": "Backscatter Radar Site in Christmas Valley, Oregon",
+      "url": "https://www.atlasobscura.com/places/backscatter-radar-site",
+      "snippet": "By the 1980s the Cold War had been simmering for over three decades, and seemed likely to continue into the indefinite future. Technology had changed, however. Both sides still feared a surprise attack, but new possibilities had appeared.",
       "category": "history",
-      "cover_url": "https://img.atlasobscura.com/a0eLyU8cKeX3ZpVplyKMiy194hKduLTqoRxchavrRLM/rt:fit/w:600/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy80MWIy/MjNmZi04MDc5LTQw/MmUtYjEwNy1jZjg0/ZGU0MDFiZDU3YmQ4/ZjM3M2NlMGE1NzYx/NjhfMjAyNTA2MjJf/MTI0MjA3LmpwZw.jpg",
-      "ferns_note": "The rocky ridge you might absently lean against in the Nevada desert is actually a watermark left by a vast Ice Age sea — the Bonneville Shoreline, still legible on the landscape some 17,500 years later."
+      "cover_url": "https://img.atlasobscura.com/bdBDcui3oOlgrIrul7rgiAVyBnlsaAFqc3vPPE_93TE/rt:fit/w:600/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy9lMjg0/YTk5ZC1iODAxLTRk/NzQtOTJmMi02N2Y0/Y2Y1NmQwMjZkNjQz/N2Y0YWEzZmMxODlk/YjBfSU1HXzgwMzku/SlBH.jpg",
+      "ferns_note": "Tucked in the high desert of Oregon, this Cold War relic listened for threats that no one could quite see yet — a reminder that the most paranoid infrastructure is often the most architecturally strange. The landscape of Christmas Valley makes the whole thing feel less like history and more like a fever dream someone left behind."
     },
     {
       "source": "discovery",
       "source_name": "Atlas Obscura",
-      "title": "Diamond Creek in Peach Springs, Arizona",
-      "url": "https://www.atlasobscura.com/places/diamond-creek",
-      "snippet": "The Grand Canyon extends for some 278 miles along the Colorado River, from Lee's Ferry (River Mile 0) to the Grand Wash Cliffs just upstream of Pearce Ferry (River Mile 280). Automobiles can reach the river at Lee's Ferry and at Pearce Ferry, and those are common put-in and take-out points, respectively, for river trips down the Colorado through the Canyon. The north side of the Grand Canyon throughout this length is nearly all included in Grand Canyon National Park.",
+      "title": "Lenné-Dreieck in Berlin, Germany",
+      "url": "https://www.atlasobscura.com/places/lenne-dreieck",
+      "snippet": "On Potsdamer Platz stands one of many remnants of the Berlin Wall around the city, in this case preserving the graffiti and chewing gum from immediately after the wall's demise. However, the land to the west of that particular portion of the wall was actually in East Berlin, a de facto no man's land that lay barren for over 40 years. The Lenné-Dreieck (Lenné Triangle) actually exists thanks to a reorganization of Berlin's administrative districts in 1938.",
       "category": "history",
-      "cover_url": "https://img.atlasobscura.com/KXp8yl7OXsj1sfUOETYMNn8pQVy5TgifItq8kOLJ39g/rt:fit/w:600/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy8zYzQ2/OWRiOC0yNTZhLTQ3/ZjctOTliNi0wOWI4/ODJkMzgzYmZjNDU3/ODkxNTZlNWJlNDBm/NjJfMjAyNjAxMTFf/MTU1MDEzLmpwZw.jpg",
-      "ferns_note": "In 278 miles of one of Earth's most dramatic gorges, Diamond Creek Road represents one of the only places a car can actually reach the Colorado River — a small, quietly momentous crack in the canyon's armor."
+      "cover_url": "https://img.atlasobscura.com/NCehRI8iQBY15KK70Knyqb6wSOV8fON4j4mlWIX9uPM/rt:fit/w:600/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy8zMzkw/NzBmOC1jODliLTRi/NTAtYWZlOS1iNzIw/ZTY5ZTk2NGIwNTFj/YzhjY2JmNmJlZjgw/NjNfaW1hZ2UuanBl/Zw.jpg",
+      "ferns_note": "A bureaucratic border redraw in Nazi Germany in 1938 accidentally created a sliver of East Berlin that sat untouched for decades — technically socialist territory, practically invisible. When the Wall fell, that forgotten triangle briefly became a surreal squat for protesters before the lawyers caught up."
     },
     {
       "source": "discovery",
       "source_name": "Atlas Obscura",
-      "title": "AZ-NV-UT Tri-State Monument in Mesquite, Nevada",
-      "url": "https://www.atlasobscura.com/places/az-nv-ut-tri-state-monument",
-      "snippet": "Many political boundaries in the western US, as around the world, were drawn along lines of latitude or longitude. This was convenient for politicians looking at maps, but it's much easier to draw a line on the map than to establish that line on the ground—particularly with 19th-century technology. The mutual corner of Arizona, Utah, and Nevada is a case in point.",
+      "title": "Amanoya in Chiyoda City, Japan",
+      "url": "https://www.atlasobscura.com/places/amanoya",
+      "snippet": "Founded in 730 AD, Kanda Myojin is one of the most revered and historically significant Shinto shrines in Tokyo, as well as a popular tourist attraction thanks to its location near Akihabara Electric Town and Jimbocho Book Town. The main approach to the shrine, though hardly a shopping street, claims \"Myojin amazake\" as its specialty. Today, two sellers of amazake—fermented rice drink, literally meaning \"sweet sake\"—remain here today, both with a long history.",
       "category": "history",
-      "cover_url": "https://img.atlasobscura.com/vq0OkxPsmdLHEof8BAumNo-erUKNlZQ40G6uP6N4Ink/rt:fit/w:600/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy8xMjE0/ZjI0Yy0wZGM4LTQz/NzctODk4Ni1lNzdh/N2Y3ZGEzYzRlMTM4/YWIyMjJmNTU0OWU5/MmNfMjAyNTA5MTBf/MTY1NjAwX3JvdC5q/cGc.jpg",
-      "ferns_note": "Lines of latitude sound so precise on paper, yet the surveyors tasked with planting the AZ-NV-UT tri-state corner in the 19th century found the ground stubbornly, almost humorously, indifferent to politicians' tidiness."
+      "cover_url": "https://img.atlasobscura.com/sqqMUw56PTlyh_xY_sganBF2_8vJT5NQw3LAyqx_uVc/rt:fit/w:600/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy9hMTli/Yjc0OS1lYzIxLTRk/OWEtOTNiMi03ZjQ0/ZGYzMmNiNDMzNTU5/MTljNGI2YjY5NGRi/ZGNfRFNDXzA1NjRf/MS5qcGVn.jpg",
+      "ferns_note": "A shrine founded in 730 AD still has a specialty drink — and the same approach street still sells it, because some traditions are simply too quietly perfect to die. There's something deeply reassuring about a 1,300-year-old commute that ends with fermented rice."
     },
     {
       "source": "discovery",
       "source_name": "Smithsonian",
-      "title": "A British Museum Is Searching for a Rare 1940s Housecoat From a Fashion Brand That Dressed the Queen—and, on Special Occasions, Ordinary Women Too",
-      "url": "https://www.smithsonianmag.com/smart-news/a-british-museum-is-searching-for-a-rare-1940s-housecoat-from-a-fashion-brand-that-dressed-the-queen-and-ordinary-women-on-special-occasions-180989296/",
-      "snippet": "Patterned with a map of the British Isles, the housecoat was an early design by the pioneering brand Horrockses, which turned cotton cloth into whimsical women's wear after World War II",
+      "title": "Traces of Two Extinct 'Ghost' Ancestors Were Found Hiding in Modern Human DNA, Hinting at Our Extremely Complex Family Tree",
+      "url": "https://www.smithsonianmag.com/smart-news/traces-of-two-extinct-ghost-ancestors-were-found-hiding-in-modern-human-dna-hinting-at-our-extremely-complex-family-tree-180989250/",
+      "snippet": "Researchers used a new method to investigate past interbreeding with Homo sapiens that doesn't require ancient DNA. The technique identified areas of living humans' genomes that came from unknown hominins, including one from a 1.8-million-year-old lineage",
       "category": "history",
-      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/H8gsYxo0BCppQk7x54Yag-Edwdk=/fit-in/1600x0/filters:focal(702x298:703x299)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/c7/d2/c7d2b478-9a55-4465-a5ab-f093de9203b6/dress_womans_day_am_1996674-5.jpg",
-      "ferns_note": "A housecoat printed with a map of the British Isles — worn at home, presumably while making tea — is somehow both the most modest and most patriotic garment imaginable, and a museum wants it back."
-    },
-    {
-      "source": "discovery",
-      "source_name": "Smithsonian",
-      "title": "A SpaceX Rocket Part Just Slammed Into the Moon, Creating a Dust Plume and Crater. Here's What Some Scientific Instruments Saw",
-      "url": "https://www.smithsonianmag.com/smart-news/a-spacex-rocket-part-just-slammed-into-the-moon-creating-a-dust-plume-and-crater-heres-what-some-scientific-instruments-saw-180989299/",
-      "snippet": "The Korea Aerospace Research Institute captured before-and-after images of the impact site, and a telescope in Chile detected signs of the plume. However, no one was able to watch the collision live",
-      "category": "history",
-      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/Smq6_uY4vbOGqmklhHcE8Vxekho=/fit-in/1600x0/filters:focal(1500x643:1501x644)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/a6/97/a697ef66-129f-436e-ab62-74aa4a66d55d/hpbhqirbwaefbhu.jpeg",
-      "ferns_note": "A rocket stage silently struck the Moon and nobody watched it happen live — the crater and its dust plume were discovered only in the quiet aftermath, the way so many significant things are."
-    },
-    {
-      "source": "discovery",
-      "source_name": "Smithsonian",
-      "title": "This Amazing Archive of Animal Photography Reveals 18,000 Species and Counting. Here's How Joel Sartore Built His 'Photo Ark'",
-      "url": "https://www.smithsonianmag.com/science-nature/this-amazing-archive-of-animal-photography-reveals-18000-species-and-counting-heres-how-joel-sartore-built-his-photo-ark-180989282/",
-      "snippet": "For 20 years, the National Geographic photographer has showcased Earth’s animals in a series of striking images that make even the tiniest creatures look immense",
-      "category": "history",
-      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/5dhXboEib1zhNo9w-sfm5_fWGKQ=/fit-in/1600x0/filters:focal(2560x1707:2561x1708)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/83/76/837646bc-4431-4d99-843a-4df325ee157f/08_-_koalas_cr_joel_sartore-national_geographic_photo_ark_11481509.jpg",
-      "ferns_note": "Joel Sartore's trick is deceptively simple: a black or white backdrop that strips away habitat and habitat excuses, forcing you to meet a poison dart frog or a condor as an individual with a face worth remembering."
-    },
-    {
-      "source": "discovery",
-      "source_name": "Smithsonian",
-      "title": "One of Italy's Most Popular Attractions, the Uffizi Galleries in Florence, Reveals Plans for a Major Renovation Over the Next Two Years",
-      "url": "https://www.smithsonianmag.com/smart-news/one-of-italys-most-popular-attractions-the-uffizi-galleries-in-florence-reveals-plans-for-a-major-renovation-over-the-next-two-years-180989295/",
-      "snippet": "The collection of treasures, many of them connected to the Medici family, includes Italian Renaissance masterpieces, a palace and a courtly garden",
-      "category": "history",
-      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/60i2wdU-8QqBFL2VlzEwAgztwKs=/fit-in/1600x0/filters:focal(613x409:614x410)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/c4/1e/c41e4480-acae-4ab4-bebc-4a7140b2f42e/uffizi1.png",
-      "ferns_note": "The Uffizi is closing rooms to restore them — which means for a brief window, some of the world's most visited Renaissance masterpieces will be seen by almost no one, resting in rare institutional quiet."
-    },
-    {
-      "source": "discovery",
-      "source_name": "Science News",
-      "title": "Ancient Greek rings may have been forged with iron from meteorites",
-      "url": "https://www.sciencenews.org/article/bronze-age-greek-rings-iron-meteorites",
-      "snippet": "Chemical analysis of Bronze Age iron objects indicate that Greek nobles may have indulged in signet rings made with precious metal from the sky.",
-      "category": "science",
-      "cover_url": "https://www.sciencenews.org/wp-content/uploads/sites/2/2026/08/080426_TM_meteoriterings_main.jpg",
-      "ferns_note": "Greek nobles of the Bronze Age may have worn signet rings hammered from meteoritic iron — meaning their status symbols were, quite literally, forged in the sky and fallen to earth."
-    },
-    {
-      "source": "discovery",
-      "source_name": "Colossal",
-      "title": "Under Glass Cloches, Amber Cowan Nests Enchanting Flameworked Scenes",
-      "url": "https://www.thisiscolossal.com/2026/08/amber-cowan-glass-cloche-coupe-sculptures/",
-      "snippet": "Known for her lush assemblages of flameworked glass, Amber Cowan reimagines a ubiquitous medium. Do stories and artists like this matter to you? Become a Colossal Member today and support independent arts publishing for as little as $7 per month.",
-      "category": "history",
-      "cover_url": "https://www.thisiscolossal.com/wp-content/uploads/2026/08/cowan-7.jpg",
-      "ferns_note": "Amber Cowan places her flameworked glass menageries beneath bell jars, turning the gallery into something between a Victorian curiosity cabinet and a fever dream — fragile, luminous, and slightly too alive."
+      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/v_jTf2Xgiiq9wfOqXQ9FFfDOJgA=/fit-in/1600x0/filters:focal(1280x744:1281x745)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/34/e8/34e8ec6a-e29c-44fc-bd4b-046753d01071/updated_illustration_marohn-scaled.jpg",
+      "ferns_note": "Somewhere in living human DNA there's a ghost from a lineage 1.8 million years old — an ancestor we've never found a fossil of, identified only by the faint genetic shadow they left behind in us. Our family tree isn't a tree at all; it's more like a river delta, branching and merging in ways we're only beginning to read."
     }
   ],
   "featured_read": {
     "source": "reads",
     "source_name": "The Marginalian",
-    "title": "Thank You, Everything: An Illustrated Love Letter to the World",
-    "url": "https://www.themarginalian.org/2026/08/07/thank-you-everything-icinori/",
-    "snippet": "We forget that none of this had to exist — that we weren’t owed mountains and music by the universe. And maybe we have to forget — or we would be too stupefied with gratitude for every raindrop and every eyelash to get through the daily tasks punctuating the unbidden wonder of our lives. But it is good, every once in a while, to let ourselves be stupefied by gratitude, to cast upon ourselves a spell against indifference by moving through the world with an inner bow at every littlest thing that prevailed over the odds of otherwise in order… read article",
-    "cover_url": "https://www.themarginalian.org/wp-content/uploads/2024/12/thankyoueverything000.jpg?fit=972%2C511&ssl=1",
-    "blurb": "This is a quiet argument that the real miracle isn't any single extraordinary thing, but that anything at all exists to notice — mountains, music, eyelashes. Read it when you need a spell cast against the habit of taking the world for granted."
+    "title": "Yes to Life, in Spite of Everything: Viktor Frankl’s Lost Lectures on Moving Beyond Optimism and Pessimism to Find the Deepest Source of Meaning",
+    "url": "https://www.themarginalian.org/2026/08/07/yes-to-life-in-spite-of-everything-viktor-frankl/",
+    "snippet": "\"Everything depends on the individual human being, regardless of how small a number of like-minded people there is... on each person... creatively making the meaning of life a reality in his or her own being.\"",
+    "cover_url": "https://www.themarginalian.org/wp-content/uploads/2020/05/fog1.jpg?fit=1200%2C630&ssl=1",
+    "blurb": "Frankl's lost lectures propose something harder and more honest than optimism: that meaning isn't found in circumstances but forged in the irreducible act of each individual choosing how to inhabit their own life. A quiet hour with this one will leave you sitting differently in your chair."
   },
   "garden_note": {
-    "note": "First light arrives over Zürich at 05:38 this morning, gilding the late-summer garden in that particular amber that only August knows how to mix — step out early and you'll catch the dahlias and zucchini flowers at their most quietly extravagant. The nights are shortening perceptibly now, so savour each long evening before September begins its gentle dismantling.",
+    "note": "August in Zürich settles into that particular golden drowsiness — the Voralpen haze softens the last heat of the day, and the kitchen garden smells of warm tomato leaves and ripening plums. Step outside after supper; with a waning crescent barely a sliver, the darkness tonight is generous and deep.",
     "in_season": [
-      "Dahlias in full bloom",
-      "Courgettes and summer squash to harvest daily",
-      "Deadheading roses for a final flush",
-      "Sowing winter salad leaves (lamb's lettuce, spinach)"
+      "Tomatoes ripening on the vine",
+      "Zwetschgen (damson plums) ready to harvest",
+      "Deadhead dahlias to keep them flowering",
+      "Sow lamb's lettuce (Feldsalat) for autumn"
     ],
-    "sky_tonight": "The waning crescent moon rises in the small hours — a lovely window of true darkness this evening for spotting the Milky Way arching overhead.",
-    "sun_times": "First light at 05:38, sunrise at 06:11, sunset at 20:51, dusk lingers until 21:24.",
+    "sky_tonight": "With just 23% of the moon lit and rising late, look south for Saturn — steady and creamy against the dark canvas of Aquarius.",
+    "sun_times": "Dusk lingers until 21:24 tonight, with the sun having slipped away at 20:51.",
     "moon_label": "Waning crescent",
-    "illum_pct": 27,
+    "illum_pct": 23,
     "sun_range": "06:11–20:51"
   },
   "puzzle": {
-    "kind": "anagram",
-    "label": "Fern's Morning Anagram",
-    "prompt": "Rearrange the letters of CHORDS to make a different common word.",
-    "answer": "Schrod",
-    "hint": "There is one other word hiding in it.",
-    "source": "wordsmith.org",
-    "source_id": "chords"
+    "kind": "riddle",
+    "label": "Fern's Morning Riddle",
+    "prompt": "What can you hold in your right hand, but not in your left?",
+    "answer": "Your left hand!",
+    "hint": "",
+    "source": "riddles.com",
+    "source_id": "Riddle-6230"
   },
   "previous_puzzle": {
-    "label": "The Evening Trivia",
-    "prompt": "Roughly how many ingested apple seeds would it take to receive a fatal dose of cyanide?\n\n2,000   ·   20   ·   20,000   ·   200",
-    "answer": "200"
+    "label": "Fern's Morning Anagram",
+    "prompt": "Rearrange the letters of CHORDS to make a different common word.",
+    "answer": "Schrod"
   },
   "larder": {
-    "news": [
-      {
-        "source": "food",
-        "source_name": "The Kitchn",
-        "title": "The Gorgeous Nonstick Pan Our Editors Love Is On Serious Sale Today (It’s PFAS-Free!)",
-        "url": "https://www.thekitchn.com/always-pan-titanium-pro-sale-23838512?utm_source=RSS&utm_medium=feed&utm_campaign=Category%2FChannel%3A+main",
-        "snippet": "The handy 8.5-inch Titanium Always Pan Pro is on sale for as little as $85. READ MORE...",
-        "cover_url": "",
-        "blurb": "If you've been eyeing a PFAS-free upgrade for your kitchen, this sale on the beloved Titanium Always Pan Pro is worth a proper look."
-      },
-      {
-        "source": "food",
-        "source_name": "The Guardian",
-        "title": "Cocktail of the week: Half Cut Market’s peaches & cream – recipe | The good mixer",
-        "url": "https://www.theguardian.com/food/2026/aug/07/cocktail-of-the-week-half-cut-market-peaches-cream-recipe",
-        "snippet": "A frozen piña colada-style boozy drink/dessert A frozen drink and a classic dessert all rolled into one. Instead of piña coladas and getting caught in the rain, we’re whipping up these and manifesting a sunny summer. Jayma Voorheis, general manager, Half Cut Market , London N7 Continue reading...",
-        "cover_url": "https://i.guim.co.uk/img/media/62dcd4782fb2e6f6c94b4c642316e8d30d75fd40/635_594_2066_1653/master/2066.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=ba88e6c0a9a80fb8654a5b80708a7e65",
-        "blurb": "A frozen peaches-and-cream cocktail that moonlights as dessert — consider this your most elegant excuse to blend something icy and boozy before summer slips away."
-      }
-    ],
-    "recipe": {},
-    "seasonal_note": "Zürich's Saturday markets at Bürkliplatz are spilling over with Mirabellen right now — those small golden-blush plums that vanish almost as quickly as they appear — worth snapping up a kilo to simmer into a simple compote with a whisper of vanilla, perfect spooned over Quark at a slow morning breakfast."
+    "news": [],
+    "recipe": {}
   },
   "fern_data": {
-    "greeting": "Late summer is doing what it always does in the early hours — holding the heat just below the surface while the light stays low and honest, which makes it exactly the right moment to learn why time is stranger than you've been told, let tigers back into Kazakhstan, and let Marissa Nadler's voice do something slow and irreversible to your morning.",
-    "top_pick_title": "Heat Still Rising, Tigers Coming Home"
+    "greeting": "Late summer evenings have a specific character — that thick, amber-edged hour when the heat finally concedes but doesn't apologize — and tonight feels right for alchemy's rehabilitation, the ancient origins of song, and Viktor Frankl reminding us what meaning actually costs.",
+    "top_pick_title": "Gold Thread & Ghost Ancestors"
   }
 }
