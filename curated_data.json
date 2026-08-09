@@ -1,172 +1,165 @@
 {
-  "fetched_at": "2026-08-09T06:41:08.661370+02:00",
-  "is_am_email": true,
+  "fetched_at": "2026-08-09T16:57:47.217408+02:00",
+  "is_am_email": false,
   "audit_summary": {
     "youtube_videos": 10,
-    "themes": 4,
-    "music_articles": 4,
-    "good_news_articles": 2,
+    "themes": 3,
+    "music_articles": 5,
+    "good_news_articles": 1,
     "discovery_articles": 4,
     "featured_read": 1,
     "garden": 1,
     "puzzle": 1,
-    "larder": 2
+    "larder": 0
   },
   "themes": [
     {
-      "name": "Rabbit Holes Worth Falling Down",
-      "emoji": "🕳️",
-      "tagline": "History's weirdest crimes, ancient scripts, and mountain flood disasters — the internet's best deep divers went to work so you don't have to.",
+      "name": "Dead Civilizations & Living Legends",
+      "emoji": "🏛️",
+      "tagline": "From Persian conquerors to folkloric monsters — history is stranger than any fiction.",
       "items": [
         {
           "source": "youtube",
-          "video_id": "VW1ASkC2f2s",
-          "title": "Sorcerer Monks and Rat Lawyers: Wild Crimes in Historical Times",
-          "channel_id": "UCSwwoUNvQWgZDC8a_O6Qs_A",
-          "channel_title": "Kaz Rowe",
-          "published_at": "2024-10-05T16:10:05Z",
-          "url": "https://www.youtube.com/watch?v=VW1ASkC2f2s",
-          "duration_seconds": 1173,
-          "view_count": "154390",
-          "description": "Stop leaving yourself vulnerable to data breaches. Go to my sponsor\nhttps://aura.com/kazrowe to get a 14-day free trial and see if any of your data has been exposed.\n\nWelcome to Part 1 of Wild Crimes in Historical Times! Today we explore some of the silliest, and most grim, crimes of the Middle Ages. From Thieving Bakers, Skanky Mens fashion, and Witchy Monks to a man who defended rats in court, come learn with me!\n\nBuy my graphic novel, Liberated: The Radical Art and Life of Claude Cahun: https",
+          "video_id": "ST7x8IWaT_Y",
+          "title": "Shapur: The Persian King That Captured A Roman Emperor",
+          "channel_id": "UC2J29LPhS9vMiWyYEqBRB0w",
+          "channel_title": "The Ancients",
+          "published_at": "2026-08-07T20:00:23Z",
+          "url": "https://www.youtube.com/watch?v=ST7x8IWaT_Y",
+          "duration_seconds": 3496,
+          "view_count": "1109",
+          "description": "Few rulers humbled Rome quite like Shapur I. A King of Kings, he rebuilt the Sasanian Persian Empire, defeated Roman armies and captured Emperor Valerian in one of antiquity's most remarkable military triumphs.\n\nIn this episode of The Ancients, Tristan Hughes is joined by Eve MacDonald to explore the rise of Shapur the Great. Why did he find so much success against the ancient Roman behemoth? How did he help forge a new Persian superpower on the Empire’s eastern frontier? And is he worthy to sta",
           "is_wildcard": false
         },
         {
           "source": "youtube",
-          "video_id": "M1gdfWIIK_U",
-          "title": "deciphering hieroglyphs, the rosetta stone",
-          "channel_id": "UCnCk_o6ySiM_ZzxubCv899Q",
-          "channel_title": "fig tree",
-          "published_at": "2024-06-18T12:54:20Z",
-          "url": "https://www.youtube.com/watch?v=M1gdfWIIK_U",
-          "duration_seconds": 856,
-          "view_count": "183102",
-          "description": "https://sacred-texts.com/egy/trs/trs07.htm\n\ntoday we talk about the rosetta stone the key to understanding the ancient world and egyptian history. ✌️",
-          "is_wildcard": false
-        },
-        {
-          "source": "youtube",
-          "video_id": "ncxRAvchBpQ",
-          "title": "The Deadly Aftermath, Story, & Footage of a Flood in the Mountains",
+          "video_id": "7r4VSk4wEdA",
+          "title": "The Fearsome Critters of American Mythology",
           "channel_id": "UC3cpN6gcJQqcCM6mxRUo_dA",
           "channel_title": "Wendigoon",
-          "published_at": "2024-11-26T21:41:56Z",
-          "url": "https://www.youtube.com/watch?v=ncxRAvchBpQ",
-          "duration_seconds": 7311,
-          "view_count": "1190255",
-          "description": "Go to https://hensonshaving.com/wendigoon and use code \"WENDIGOON\" at checkout to get Henson's all-new shave cream for free.\n\nGET THE MERCH WHILE YOU CAN + IT'S A DONATION THIS TIME: https://wendigoon.shop/\n\nSecond channel video explaining the ARP: https://www.youtube.com/watch?v=zKpE1oa9r2s\n\nThe Appalachian Rebuild Project\nwebsite: https://www.appalachianrebuildproject.org/\nYouTube: ​⁠@AppalachianRebuildProject \nInstagram: https://www.instagram.com/appalachianrebuildproject/\nTwitter/X: https://",
-          "is_wildcard": false
-        }
-      ]
-    },
-    {
-      "name": "The Examined Screen",
-      "emoji": "🎬",
-      "tagline": "From Nolan's mind-bending filmography to a Netflix thriller's hidden symbols — cinema as a puzzle worth solving.",
-      "items": [
-        {
-          "source": "youtube",
-          "video_id": "twk5RpmhseY",
-          "title": "Every Christopher Nolan Movie Explained",
-          "channel_id": "UCs7nPQIEba0T3tGOWWsZpJQ",
-          "channel_title": "Like Stories of Old",
-          "published_at": "2024-10-16T15:31:00Z",
-          "url": "https://www.youtube.com/watch?v=twk5RpmhseY",
-          "duration_seconds": 15310,
-          "view_count": "77414",
-          "description": "Want even more Nolan content? Check out my tier list ranking of every movie of his, exclusively on Nebula: https://nebula.tv/videos/lsoo-every-christopher-nolan-movie-ranked?ref=lsoo \nWatch this video ad-free on Nebula: https://nebula.tv/videos/lsoo-christopher-nolan-the-ultimate-critique?ref=lsoo \n\nThe complete document of my extensive critical review and analysis of Christopher Nolan's entire filmography, repackaged and remastered from my former 3-part series on Nolan, and my later examination",
+          "published_at": "2024-10-02T18:47:10Z",
+          "url": "https://www.youtube.com/watch?v=7r4VSk4wEdA",
+          "duration_seconds": 6787,
+          "view_count": "3530298",
+          "description": "Get $5 off your next order through my link https://sponsr.is/magicspoon_wendigoon or use code WENDIGOON at checkout, or look for Magic Spoon on Amazon and in your nearest grocery store!\n\n Check out the original stories here: http://www.lumberwoods.org\n\n\nCheck out the new podcasts here:\n\nThe Red Thread: ​⁠@theofficialytchannel \n\nCreepCast: ​⁠@CreepPodcast \n\nThe Weird Bible Podcast: ​⁠@TheWeirdBible \n\n\nDISCLAIMER: This video is for educational purposes. The events described and shown are historica",
           "is_wildcard": false
         },
         {
           "source": "youtube",
-          "video_id": "L4tZ1d_CUvQ",
-          "title": "A BREAKDOWN of ALL Story Details, Plot-Holes, & Symbolism in The Last House EXPLAINED",
-          "channel_id": "UCXcTkcC_H4XeDGfJ7rQGJaw",
-          "channel_title": "Lucas Blue",
-          "published_at": "2026-08-09T01:22:26Z",
-          "url": "https://www.youtube.com/watch?v=L4tZ1d_CUvQ",
-          "duration_seconds": 635,
-          "view_count": "581",
-          "description": "In this Netflix The Last House Explained / The Last House Ending Explained and Analysis, I deep-dive analyze The Last House 2026, starring Greta Lee and Wagner Moura. This Netflix movie is a perfect blend of mystery, horror, and drama, exploring themes of family, social isolation, and environmentalism. I believe this film is excellent in capturing the major themes of nature and mankind through great writing, acting, directing and filmmaking.\n\nFurthermore, in this The Last House explained video (",
-          "is_wildcard": false
-        }
-      ]
-    },
-    {
-      "name": "The Attention Economy Blues",
-      "emoji": "📵",
-      "tagline": "Why we stopped reading, what influencer culture costs us, and the brain science quietly explaining all of it.",
-      "items": [
-        {
-          "source": "youtube",
-          "video_id": "A3wJcF0t0bQ",
-          "title": "Why everyone stopped reading.",
-          "channel_id": "UC2Kyj04yISmHr1V-UlJz4eg",
-          "channel_title": "Jared Henderson",
-          "published_at": "2024-10-17T14:56:04Z",
-          "url": "https://www.youtube.com/watch?v=A3wJcF0t0bQ",
-          "duration_seconds": 664,
-          "view_count": "3930544",
-          "description": "Colleges students are telling their professors they can't read whole books. Americans are reading fewer and fewer books each year. If we want to figure out why reading is declining, we need to look at how we teach reading and how we spend our time. \n\nIf you want to support this channel, support me on Substack: https://jaredhenderson.substack.com/\n\nFollow me on Twitter: https://x.com/jhendersonYT\n\n→ Sources\nhttps://www.theatlantic.com/magazine/archive/2024/11/the-elite-college-students-who-cant-r",
+          "video_id": "wkIwSMOjRg8",
+          "title": "The Gay History Behind Your Favorite Childhood Books",
+          "channel_id": "UCSwwoUNvQWgZDC8a_O6Qs_A",
+          "channel_title": "Kaz Rowe",
+          "published_at": "2024-09-05T16:41:53Z",
+          "url": "https://www.youtube.com/watch?v=wkIwSMOjRg8",
+          "duration_seconds": 2445,
+          "view_count": "259527",
+          "description": "Empower yourself with access to diverse perspectives and stay informed on breaking news by subscribing through my link https://ground.news/kazrowe for 40% off unlimited access this month with the Vantage Subscription and be the change you want to see.\n\nDid you know many of the authors who wrote some of history's most famous kid's books were gay? Come learn with me about some queer icons of youth literature, and the politics that kept them in the closet.\n\nOperation Olive Branch: https://www.insta",
           "is_wildcard": false
         },
         {
           "source": "youtube",
-          "video_id": "JqzrdPrE324",
-          "title": "The Awful Truth About Youtube's Biggest Influencers.",
-          "channel_id": "UCHL9bfHTxCMi-7vfxQ-AYtg",
-          "channel_title": "Abroad in Japan",
-          "published_at": "2024-12-12T16:29:57Z",
-          "url": "https://www.youtube.com/watch?v=JqzrdPrE324",
-          "duration_seconds": 700,
-          "view_count": "2101742",
-          "description": "The older I get, the more unsettling I find all this. It seems the only way is down.\n🍿 BEHIND the scenes Patreon: https://www.patreon.com/abroadinjapan\n🎧 Podcast: @AbroadInJapanPodcast \n📚Abroad in Japan Book: https://www.amazon.com/Abroad-Japan-Chris-Broad-ebook/dp/B0BPHC3K9S\n\nFilmed & edited by Chris Broad\n\n**FOLLOW THE ADVENTURE**\n► Facebook: https://www.facebook.com/abroadinjapan/\n► Twitter: https://twitter.com/AbroadInJapan\n► Instagram: @abroadinjapan\n\n**EQUIPMENT I USE**\n► MAIN Camera: http",
-          "is_wildcard": false
-        },
-        {
-          "source": "youtube",
-          "video_id": "zOmhHE2xctw",
-          "title": "The Core Equation Of Neuroscience",
-          "channel_id": "UCR2uRTQ53V_egXKFflMMaaw",
-          "channel_title": "Artem Kirsanov",
-          "published_at": "2024-11-02T01:04:36Z",
-          "url": "https://www.youtube.com/watch?v=zOmhHE2xctw",
-          "duration_seconds": 1395,
-          "view_count": "554714",
-          "description": "To try everything Brilliant has to offer—free—for a full 30 days, visit https://brilliant.org/ArtemKirsanov . You’ll also get 20% off an annual premium subscription\n\n=====\nMy name is Artem, I'm a neuroscience PhD student at Harvard University. \n🌎 Website and Social links: https://kirsanov.ai/\n📥 \"Receptive Field\" neuro-newsletter: https://artemkirsanov.substack.com/\n✨ Support me on Patreon to get access to Discord community: https://patreon.com/artemkirsanov\n=====\n\nIn this video, we explore the N",
-          "is_wildcard": false
-        }
-      ]
-    },
-    {
-      "name": "Slow Craft, Wild World",
-      "emoji": "🌿",
-      "tagline": "An 18th-century gown draped with meticulous hands, and a lion pride hunting on the open savanna — beauty that takes patience to make and witness.",
-      "items": [
-        {
-          "source": "youtube",
-          "video_id": "ZmEFRlw_rvE",
-          "title": "Using 18th Century Corsetry to Drape a Flowy Gown: The Harvest Moon Dress",
+          "video_id": "_1EJjg_GYpM",
+          "title": "Designing & Testing a Historically-Inspired Gown",
           "channel_id": "UCSHtaUm-FjUps090S7crO4Q",
           "channel_title": "Bernadette Banner",
-          "published_at": "2024-11-23T15:00:44Z",
-          "url": "https://www.youtube.com/watch?v=ZmEFRlw_rvE",
-          "duration_seconds": 1247,
-          "view_count": "385013",
-          "description": "🌎 Get an exclusive 15% discount on Saily eSIM data plans! Download Saily app and use code BERNADETTE at checkout ⛵ Thanks to Saily for sponsoring this video.\n✨🌙GOLDWORK COLLABORATION with HAND & LOCK 🌙✨ https://www.handembroideryshop.com/collections/bernadette-banner-x-hand-lock?mc_cid=6776aaa6dd \n\nOur tea is from The Good Store if ye fancy! http://www.good.store/bernadette\nTis an affiliate link but it also gets you a discount! All profits go to help fight Tuberculosis and medical inequality. :)",
+          "published_at": "2024-10-26T14:00:35Z",
+          "url": "https://www.youtube.com/watch?v=_1EJjg_GYpM",
+          "duration_seconds": 1103,
+          "view_count": "235509",
+          "description": "Sign up to Milanote for free with no time limit: https://milanote.com/bernadettebanner\n\n⤠ HOW TO SUPPORT ⤟\n♥️ PATREON for exclusive behind-the-scenes content! https://www.patreon.com/bernadettebanner\n⚝ NEBULA to see these videos ad- and sponsorship-free, + Original content! http://www.nebula.tv/bernadettebanner \n🦵MERCH https://store.dftba.com/collections/bernadette-banner \n\n⤠ START YOUR HAND SEWING JOURNEY ⤟\n📚 BOOK: “Make, Sew and Mend: Traditional Techniques to Sustainably Maintain and Refashio",
+          "is_wildcard": false
+        }
+      ]
+    },
+    {
+      "name": "Rabbit Holes Worth Falling Down",
+      "emoji": "🕳️",
+      "tagline": "Niche obsessions, forgotten artifacts, and the surprisingly deep lore behind everyday things.",
+      "items": [
+        {
+          "source": "youtube",
+          "video_id": "8iNME5G87x4",
+          "title": "What Happened to Flintstones Push Ups?",
+          "channel_id": "UCNaq5Jh4SQ1oBAjhQ0KPhoA",
+          "channel_title": "Weird History Food",
+          "published_at": "2026-08-09T14:15:35Z",
+          "url": "https://www.youtube.com/watch?v=8iNME5G87x4",
+          "duration_seconds": 875,
+          "view_count": "1349",
+          "description": "If you grew up in the '90s, chances are that one time or another you chased down the ice cream truck for a Flintstones Push-Up. With a cardboard tube, plastic push-up stick, and Flintstone character on the side, this frozen treat became one of the best loved childhood desserts of the decade. Then, almost overnight, it disappeared. So what happened?\n\nIn this episode of Weird History Food, we uncover the surprising story behind one of the most nostalgic frozen treats of the 1990s revealing why the",
+          "is_wildcard": false
+        },
+        {
+          "source": "youtube",
+          "video_id": "i_kYN7f8qUg",
+          "title": "12 Unspoken Rules NOT to Break in Japan",
+          "channel_id": "UCHL9bfHTxCMi-7vfxQ-AYtg",
+          "channel_title": "Abroad in Japan",
+          "published_at": "2024-10-10T18:20:43Z",
+          "url": "https://www.youtube.com/watch?v=i_kYN7f8qUg",
+          "duration_seconds": 1553,
+          "view_count": "3329667",
+          "description": "12 Things to Avoid Doing in Japan that are often overlooked and typically unspoken.\n🎃🍡 Use Code “ABROAD” to get $5 off your first #Sakuraco box https://team.sakura.co/abroadinjapan-SC2409\n🌟🇯🇵 Travelling to Japan? Grab your SUPER FAST Journey Japan eSim: https://jjesim.com/\n\nUse Code “PIKABOO” for exclusive Pokémon Merch with your first #TokyoTreat box: https://team.tokyotreat.com/abroadinjapan-TT2409\n\n🇯🇵 Travelling to Japan? Grab your SUPER FAST Journey Japan eSim: https://jjesim.com/\n\nEdited by",
+          "is_wildcard": false
+        },
+        {
+          "source": "youtube",
+          "video_id": "xwU5xkXj7Kw",
+          "title": "Kindle has a big problem, so I'm leaving it behind.",
+          "channel_id": "UC2Kyj04yISmHr1V-UlJz4eg",
+          "channel_title": "Jared Henderson",
+          "published_at": "2024-09-27T15:16:07Z",
+          "url": "https://www.youtube.com/watch?v=xwU5xkXj7Kw",
+          "duration_seconds": 878,
+          "view_count": "1171057",
+          "description": "To try everything Brilliant has to offer for free for a full 30 days, visit https://brilliant.org/jaredhenderson. You’ll also get 20% off an annual premium subscription.\n\n→ Description\nI have been using Amazon's Kindle for years; I love reading books on mine. But as I've been thinking about ownership, digital content, and the power that Amazon has, I've decided to stop buying (or licensing) Kindle books. I talk about some of the problems Kindle has – the ability to revoke content, edit books aft",
+          "is_wildcard": false
+        },
+        {
+          "source": "youtube",
+          "video_id": "LtgU_a1KB2o",
+          "title": "This YouTuber Won't Stop Plagiarizing",
+          "channel_id": "UCs7nPQIEba0T3tGOWWsZpJQ",
+          "channel_title": "Like Stories of Old",
+          "published_at": "2024-08-07T17:06:41Z",
+          "url": "https://www.youtube.com/watch?v=LtgU_a1KB2o",
+          "duration_seconds": 1717,
+          "view_count": "202828",
+          "description": "Support this channel: https://www.patreon.com/LikeStoriesofOld \nLeave a One-Time Donation: https://www.paypal.me/TomvanderLinden\n\nSocials:\nFacebook: https://www.facebook.com/LikeStoriesofOld \nInstagram: https://www.instagram.com/tom.vd.linden\nTwitter: https://twitter.com/Tom_LSOO \n\nCheck out:\nThomas Flight - @ThomasFlight \nThe Discarded Image - @TheDiscardedImage \nProof News article - https://www.proofnews.org/apple-nvidia-anthropic-used-thousands-of-swiped-youtube-videos-to-train-ai/\n\nContent:\n",
+          "is_wildcard": false
+        }
+      ]
+    },
+    {
+      "name": "Slow Down & Drift",
+      "emoji": "🌊",
+      "tagline": "Big ideas, quiet wonders, and the kind of content that makes your brain hum softly.",
+      "items": [
+        {
+          "source": "youtube",
+          "video_id": "vTTlzmCRwU4",
+          "title": "Differential Equations: The Language of Change",
+          "channel_id": "UCR2uRTQ53V_egXKFflMMaaw",
+          "channel_title": "Artem Kirsanov",
+          "published_at": "2024-10-08T06:14:18Z",
+          "url": "https://www.youtube.com/watch?v=vTTlzmCRwU4",
+          "duration_seconds": 1404,
+          "view_count": "183167",
+          "description": "To try everything Brilliant has to offer—free—for a full 30 days, visit https://brilliant.org/ArtemKirsanov . You’ll also get 20% off an annual premium subscription\n\n=====\nMy name is Artem, I'm a neuroscience PhD student at Harvard University. \n🌎 Website and Social links: https://kirsanov.ai/\n📥 \"Receptive Field\" neuro-newsletter: https://artemkirsanov.substack.com/\n✨ Support me on Patreon to get access to Discord community: https://patreon.com/artemkirsanov\n=====\n\nIn this video, we explore the f",
           "is_wildcard": false
         },
         {
           "source": "youtube_trending",
-          "video_id": "QzglFK3g_AM",
-          "title": "LION PRIDE | Hunting Africa's Deadliest Prey | FULL EPISODE | Wildlife Documentary",
-          "channel_id": "UC7R28A21ABhLnvY9bRed8MQ",
-          "channel_title": "Nature's Moments",
-          "published_at": "2026-08-08T10:02:17Z",
-          "url": "https://www.youtube.com/watch?v=QzglFK3g_AM",
-          "duration_seconds": 14011,
-          "view_count": "65633",
-          "description": "LION PRIDE | Hunting Africa's Deadliest Prey | FULL EPISODE | Wildlife Documentary is a breathtaking nature animal documentary that opens with a pride of lionesses taking on the tallest animal on Earth, then follows the same brutal law across the Atlantic into the Amazon: today's predator is tomorrow's prey.\n\nThrough cinematic 4K footage and educational storytelling, this documentary begins with a hunt almost no pride attempts. Eighteen feet tall and two thousand six hundred fifty pounds, a gira",
+          "video_id": "-AqtSZ0V0dY",
+          "title": "Deep Ocean Exploration | Amazing Marine Life",
+          "channel_id": "UCv2foulw2HlBT9mlx2N3u1g",
+          "channel_title": "DP & Relax",
+          "published_at": "2026-08-09T03:35:52Z",
+          "url": "https://www.youtube.com/watch?v=-AqtSZ0V0dY",
+          "duration_seconds": 6048,
+          "view_count": "143889",
+          "description": "Welcome to our underwater adventure! Explore the beauty of the ocean, encounter fascinating marine life, and experience the peaceful world beneath the waves. From colorful fish to breathtaking underwater landscapes, every moment offers a new discovery. Join us and enjoy the wonders of the sea from a unique perspective. 🌊🐠🐢",
           "is_wildcard": true
         }
       ]
@@ -176,174 +169,155 @@
     {
       "source": "music",
       "source_name": "Stereogum",
-      "title": "Martha Reeves Blames Backup Singers For Botched National Anthem, Attempts Solo Version On Detroit TV News",
-      "snippet": "Martha Reeves is eager to clear the air about her viral performance of \"The Star-Spangled Banner.\" In case you somehow didn't see, she offered a rather unlistenable version of the national anthem at the inaugural Women's Professional Baseball League last weekend, and now she's blaming the backup sin",
-      "url": "https://stereogum.com/2507717/martha-reeves-blames-backup-singers-for-botched-national-anthem-attempts-solo-version-on-detroit-tv-news/news/",
+      "title": "Fontaines D.C. Debut New Songs “Marianne” & “Six Shot Morning” In Cádiz Live Return",
+      "snippet": "Fontaines D.C. have been laying low since releasing and touring 2024’s Romance. In the meantime, they’ve contributed to several major projects, including the Peaky Blinders soundtrack and the War Child compilation HELP(2). Late last month, they also recorded the final BBC session at Maida Vale Studi",
+      "url": "https://stereogum.com/2507743/fontaines-d-c-debut-new-songs-marianne-six-shot-morning-in-cadiz-live-return/news/",
       "genre": "",
-      "vibe_check": "The awkward silence after someone hits a wrong note at a family gathering, stretched into a full news cycle.",
-      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/08/martha.jpeg",
-      "embed_url": "https://www.youtube.com/embed/C0u1ZloXB6o"
+      "vibe_check": "The restless energy of a band who can't stay quiet for long, surfacing from the shadows with new ghosts to unleash.",
+      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/08/Screenshot-2026-08-09-at-3.41.40-PM.png",
+      "embed_url": "https://www.youtube.com/embed/ZOYTr2aes3A"
     },
     {
       "source": "music",
-      "source_name": "Stereogum",
-      "title": "Billy Strings Wears Protective Headgear After Getting Hit By Object The Previous Night",
-      "snippet": "It's not easy being a performer these days. They have to worry about concertgoers shitting on the floor or throwing projectiles at them. On Thursday (Aug. 6), Billy Strings was playing a show in Fishers, Indiana, when he became the victim of a very skilled pitcher. He was in the middle of speaking w",
-      "url": "https://stereogum.com/2507707/billy-strings-wears-protective-headgear-after-getting-hit-by-object-the-previous-night/news/",
+      "source_name": "Pitchfork",
+      "title": "Meshell Ndegeocello and Cat Power Cover the Human League’s “Don’t You Want Me”",
+      "snippet": "A reggae spin on the synth-pop classic",
+      "url": "https://pitchfork.com/story/meshell-ndegeocello-and-cat-power-cover-the-human-leagues-dont-you-want-me/",
       "genre": "",
-      "vibe_check": "The defiant energy of someone who got knocked down and walked back onstage wearing it like a badge.",
-      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/08/BILLY-copy.png",
-      "embed_url": "https://www.youtube.com/embed/Y1-YVeOy0aU"
+      "vibe_check": "A slow-burning, sun-drenched reimagining that makes an '80s dancefloor hit feel like a late-night conversation on a Caribbean veranda.",
+      "cover_url": "https://media.pitchfork.com/photos/6a75e5d1d8e0e3d598a1d109/16:9/w_1280,c_limit/cat-power-meshell-new-song.jpeg",
+      "embed_url": null
     },
     {
       "source": "music",
-      "source_name": "Consequence",
-      "title": "Billy Strings Wears a Helmet at Concert After Getting Hit With a Thrown Object",
-      "snippet": "During a three-night stand at an Indiana venue, the bluegrass picker decided he needed some extra protection following the incident from night one.\nBilly Strings Wears a Helmet at Concert After Getting Hit With a Thrown Object\nTravis Bland",
-      "url": "https://consequence.net/2026/08/billy-strings-wears-helmet/",
+      "source_name": "Aquarium Drunkard",
+      "title": "Beverly Glenn-Copeland :: Light of the Heavens",
+      "snippet": "Recorded shortly after his 1986 cult classic, Keyboard Fantasies, “Light of the Heavens” is a nearly lost relic by Beverly Glenn-Copeland. Existing in the same mesmeric electronic sphere of that album, the track features rippling synths and heavenly chants, as Glenn-Copeland sings lovingly of our in",
+      "url": "https://aquariumdrunkard.com/2026/08/09/beverly-glenn-copeland-light-of-the-heavens/",
       "genre": "",
-      "vibe_check": "Scrappy and absurd, like a folk hero suiting up for battle in a barn.",
-      "cover_url": "https://consequence.net/wp-content/uploads/2026/08/Billy-Strings-in-helmet.jpg",
-      "embed_url": "https://www.youtube.com/embed/Y1-YVeOy0aU"
+      "vibe_check": "Like stumbling upon a forgotten cassette tape in a drawer and feeling the whole cosmos open up through the static.",
+      "cover_url": "https://aquariumdrunkard.com/_newness/wp-content/uploads/2026/08/Beverly-Glenn-Copeland-Light-Of-The-Heavens.jpg",
+      "embed_url": null
     },
     {
       "source": "music",
       "source_name": "JazzTimes",
-      "title": "Saxophonist Gary Bartz Marches Onward, Where Rivers Meet, with UK Group Your Brother’s Keeper",
-      "snippet": "T rying to contain all that Gary Bartz does, did and will do — and soon — is a fool’s errand. Blessed with a visionary &#8230; Read More \"Saxophonist Gary Bartz Marches Onward, Where Rivers Meet, with UK Group Your Brother’s Keeper\"\nThe post Saxophonist Gary Bartz Marches Onward, Where Rivers Meet, ",
-      "url": "https://www.jazztimes.com/features/profiles/saxophonist-gary-bartz-marches-onward-where-rivers-meet-with-uk-group-your-brothers-keeper/",
+      "title": "Nate Smith’s First Newport on the Books: Jazz Festival Joy in a Rainy Northeast",
+      "snippet": "The Newport Jazz Festival, with its storied legacy and iconic location, attracts those with a tradition of attending for years on end, as well as &#8230; Read More \"Nate Smith’s First Newport on the Books: Jazz Festival Joy in a Rainy Northeast\"\nThe post Nate Smith’s First Newport on the Books: Jazz",
+      "url": "https://www.jazztimes.com/reviews/live/nate-smiths-first-newport-on-the-books-jazz-festival-joy-in-a-rainy-northeast/",
       "genre": "",
-      "vibe_check": "Late-afternoon light on a river where two currents meet — unhurried, wise, and still full of places to go.",
-      "cover_url": "https://www.jazztimes.com/wp-content/uploads/2026/08/Unknown.png",
-      "embed_url": "https://www.youtube.com/embed/1oxj-pyBtuw"
+      "vibe_check": "The bittersweet warmth of rain falling on a festival crowd that refuses to go home, history soaking into every note.",
+      "cover_url": "https://www.jazztimes.com/wp-content/uploads/2026/08/4C9A7663-scaled.jpg",
+      "embed_url": null
+    },
+    {
+      "source": "music",
+      "source_name": "Fretboard Journal",
+      "title": "Excerpt: Bad Religion’s Brian Baker in the Fretboard Journal 60",
+      "snippet": "In our 60th issue of the Fretboard Journal (out now), John Drenning sits down with Brian Baker of Bad Religion/Minor Threat fame. The result is an 8,000-word interview that spans some 14 pages of our magazine. As a reader-supported publication, we seldom post stories online, but we thought we’d shar",
+      "url": "https://www.fretboardjournal.com/features/excerpt-bad-religions-brian-baker-in-the-fretboard-journal-60/?utm_source=rss&utm_medium=rss&utm_campaign=excerpt-bad-religions-brian-baker-in-the-fretboard-journal-60",
+      "genre": "",
+      "vibe_check": "The smell of amp circuits and old rehearsal spaces, told by someone who lived every loud, defiant minute of it.",
+      "cover_url": "https://images.fretboardjournal.com/wp-content/uploads/2026/08/06195618/IMG_7763-scaled.jpeg",
+      "embed_url": null
     }
   ],
   "global_silver_linings": [
     {
       "source": "good_news",
       "source_name": "Good News Network",
-      "title": "Once Gone From Ireland, Majestic Sea Eagles Continue Their Comeback with Rare New Chick",
-      "url": "https://www.goodnewsnetwork.org/once-gone-from-ireland-majestic-sea-eagles-continue-comeback/",
-      "snippet": "More than a century after the country’s largest bird of prey disappeared entirely from Ireland, a white-tailed sea eagle has been delivered—and the young fledgling became another success for conservationists to celebrate. Fota Wildlife Park in County Cork has announced the successful birth and fledging of a white-tailed sea eagle chick—the first chick of the […] The post Once Gone From Ireland, Majestic Sea Eagles Continue Their Comeback with Rare New Chick appeared first on Good News Network .",
-      "cover_url": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/08/White-tailed_eagle_Haliaeetus_albicilla-by-Andreas-Weith-CC-BY-SA-4.jpeg",
-      "reason": "After decades of absence, white-tailed sea eagles are reclaiming their place in Ireland's skies — and every new chick born is proof that patient, dedicated conservation work can genuinely reverse the losses of the past. Nature, given even half a chance, has a remarkable will to return."
-    },
-    {
-      "source": "good_news",
-      "source_name": "Upworthy",
-      "title": "Man shares how not getting a wedding invite made him end a 10-year friendship, and it struck a chord",
-      "url": "https://www.upworthy.com/man-shares-how-not-getting-a-wedding-invite-made-him-end-a-10-year-friendship-and-it-struck-a-chord-ex1/",
-      "snippet": "\"I went through so much with this person that I thought I had made the cut.\" The post Man shares how not getting a wedding invite made him end a 10-year friendship, and it struck a chord appeared first on Upworthy .",
-      "cover_url": "https://www.upworthy.com/wp-content/uploads/sites/2/2026/02/Screenshot-2026-02-23-at-2.16.17-PM.png",
-      "reason": "The story resonated widely because it speaks to something many quietly recognise: that healthy friendships are built on mutual respect, and knowing your own worth is the first step toward relationships that truly nourish you."
+      "title": "Blind Dressage Horse Wins Competitions By Using ‘Equine Braille’",
+      "url": "https://www.goodnewsnetwork.org/blind-dressage-horse-wins-competitions-by-using-equine-braille/",
+      "snippet": "Despite going blind, a remarkable horse is still on his way to becoming a dressage champion after adopting an extraordinary form of equine “braille”. The 15-year-old Appaloosa named Milo, has awed spectators since returning to the show ring last year despite losing sight in both eyes due to a devastating eye condition. The 16-hand gelding […] The post Blind Dressage Horse Wins Competitions By Using ‘Equine Braille’ appeared first on Good News Network .",
+      "cover_url": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/08/Appaloosa-Dressage-Horse-ridden-by-Megan-Share-SWNS.jpeg",
+      "reason": "A blind dressage horse competing — and winning — by responding to subtle tactile cues from his rider is a quiet, extraordinary testament to the depth of trust that can exist between human and animal. It's a reminder that limitation and grace can coexist in the most beautiful ways."
     }
   ],
   "discovery_articles": [
     {
       "source": "discovery",
       "source_name": "Atlas Obscura",
-      "title": "Feria de Madrid Mural in Madrid, Spain",
-      "url": "https://www.atlasobscura.com/places/feria-de-madrid-mural",
-      "snippet": "If you’ve ever taken the metro to or from Madrid airport, you’ve probably noticed the huge mural that adorns the platforms of the station closest to the airport, formerly called Campo de las Naciones and now Feria de Madrid. The Feria de Madrid station was renamed in 2017 to emphasize its importance during the IFEMA (which is the acronym for Institución Ferial de Madrid) events. The metro offers a convenient way to reach this strategic location, with ridership increasing from 3,898 on a normal day to 21,083 during major fairs such as FITUR (Madrid International Tourism Fair).",
+      "title": "Oshirado in Tōno City, Japan",
+      "url": "https://www.atlasobscura.com/places/oshirado",
+      "snippet": "Even in Japan, home of the Eight Million Gods, Oshira-sama is an oddity. A tutelary deity of silk, horses, and agriculture, the god continues to be worshipped mainly in rural villages in the northern regions and is typically represented by a pair of mulberry-wood dolls wearing rag hoods. According to the standard myth, Oshira-sama is a pair of male and female deities, the former often taking the form of a horse.",
       "category": "history",
-      "cover_url": "https://img.atlasobscura.com/wb3GoAdKDsjAn1ltwgzXmbqAvbwqSVnypLSJMsZpsng/rt:fit/w:600/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy81YjZi/NjNjNC05NDE4LTRj/ZDQtYTM4Ny01YWFk/Njk0MTAwZGU1N2Ex/ZmQ5NWMxNjVhOTE0/OTFfTXVyYWxfbWV0/cm9fRmVyaWFfZGVf/TWFkcmlkX01hZHJp/ZC5qcGc.jpg",
-      "ferns_note": "Hidden in plain sight beneath one of Europe's busiest airports is a mural so vast it transforms a daily commute into something approaching a gallery visit — yet most travelers rushing to catch flights never quite see it. On fair days, the station swells to five times its usual crowd, a temporary city materializing underground."
+      "cover_url": "https://img.atlasobscura.com/IpJu8b2A7aC-nC4II2NTIocoxmtv1OzWh7XGK7HYN3A/rt:fit/w:600/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy84NTky/ZjQxYi03OGM4LTRh/YzItOTIwNy0zYzNk/YmU1MjE1NDE3NGRi/NDBkNjc0ZGNiNDBk/ZTZfRFNDXzAyNjQu/anBlZw.jpg",
+      "ferns_note": "Oshira-sama is worshipped as a pair of mulberry-wood dolls dressed in layered rag hoods — each new cloth added by a devotee, never removed, so the dolls grow fatter with prayer over the years. In a country with eight million gods, this one is still considered strange."
     },
     {
       "source": "discovery",
       "source_name": "Atlas Obscura",
-      "title": "Kongo Gumi in Osaka, Japan",
-      "url": "https://www.atlasobscura.com/places/kongo-gumi",
-      "snippet": "Japan is home to about two dozen businesses over a thousand years old, including Keiunkan ( https://www.atlasobscura.com/places/nishiyama-onsen-keiunkan ) and Wasuke ( https://www.atlasobscura.com/places/ichimonjiya-wasuke ). Osaka-based construction company Kongo Gumi is the oldest of those, and the oldest company in the entire world. Its history goes all the way back to 578 AD.",
+      "title": "Puppet Center in Alcorcón, Spain",
+      "url": "https://www.atlasobscura.com/places/puppet-center",
+      "snippet": "The Puppet Center is located in Alcorcón (Madrid) and began its activity in December 2021. The center is managed by the Fundación el Arte del Títere, which is made up of professionals of recognized prestige in the universe of puppet, visual and object theater, and has the collaboration of the Alcorcón City Council. The El Arte del Títere Foundation is the founder and promoter of the Puppet Center.",
       "category": "history",
-      "cover_url": "https://img.atlasobscura.com/e8lrLBp_g2RDyWEiTn4OcUm7j2cJsdNYqcDHTC_W9g8/rt:fit/w:600/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy8wY2Ix/YTc2Yy00YjY4LTQ0/OTMtOWE0ZC1mODFk/NzlkNzI4ODI2MTg3/NDA3Y2UyYTljNmM2/YmZfRFNDXzA4NDgu/anBlZw.jpg",
-      "ferns_note": "Kongo Gumi was quietly building Buddhist temples in Osaka for over 1,400 years — outlasting empires, plagues, and world wars — before finally being absorbed by a larger company in 2006, which feels like the saddest possible ending for the world's oldest business."
+      "cover_url": "https://img.atlasobscura.com/n9r7d_nWyYV3frRe8uQd--H-vZ6lrvaDZB1sd1ffj54/rt:fit/w:600/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy8yNGY0/NGUxOC01MmIwLTRj/NTgtYjM2OS1kNzVh/OTA1YWNiZDkyNjc4/ZmM0NDQ2NDkwZTI0/OTNfNGU1NDQzMjkt/Njg4NC00MWQyLTkw/MDgtNzE0ZmM0Mjlj/YjUwLmpwZw.jpg",
+      "ferns_note": "A center dedicated entirely to the art of puppetry quietly opened in a Madrid suburb in 2021 — proof that the oldest form of theater is still finding new homes. Sometimes the most serious artists work with the smallest hands."
     },
     {
       "source": "discovery",
       "source_name": "Atlas Obscura",
-      "title": "The Torment of Saint Anthony in Fort Worth, Texas",
-      "url": "https://www.atlasobscura.com/places/the-torment-of-saint-anthony",
-      "snippet": "At twelve or thirteen years old, Michelangelo was already showing signs of being one of the greatest artists the world would ever know. Apprenticing under the prominent Florentine painter Domenico Ghirlandaio, he created a work so masterful that for centuries it was believed to be that of his master. The Torment of Saint Anthony, a religious scene painted around 1487, was based on a print by Martin Schöngauer.",
+      "title": "Humansdorp Museum in Humansdorp, South Africa",
+      "url": "https://www.atlasobscura.com/places/humansdorp-museum",
+      "snippet": "The Humansdorp Museum preserves everyday objects from the town’s early history, some dating back to its founding in 1849, when Matthys Gerhardus Human donated part of his farm Rheboksfontein for the construction of a Dutch Reformed Church. The collection focuses on domestic life rather than grand events. Visitors can grind coffee beans by hand, type a letter on a working typewriter, and browse household items from the late 19th and early 20th centuries.",
       "category": "history",
-      "cover_url": "https://img.atlasobscura.com/abUX47aMPWeQZgsb_yxPr5gAdpNQ2qcRFsX2fpUtNlQ/rt:fit/w:600/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy9hMzVm/OTViYy01ZmVlLTRh/NzMtOGJkMy05ZDhk/ZTEyYzk3MmE3N2Qw/MWM0M2U2MTZiZTIz/MWRfaW1hZ2UuanBl/Zw.jpg",
-      "ferns_note": "A boy of twelve painted something so technically astonishing that experts spent centuries insisting it must have been made by a grown master — which raises the quietly unsettling question of how many other child prodigies history has simply credited to the nearest adult."
+      "cover_url": "https://img.atlasobscura.com/mjN93YMLIIQefNP7yKootLPbIl4VMGboX29xDptp4fU/rt:fit/w:600/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy9hOGUw/MjNmMS01YmFkLTRh/MWItYjg1OS02MTk4/ZDE1MDZjMDU4NjQ0/YWE0YWExMjk5OWE5/M2ZfMTAwMDA4MTg0/Ny5qcGc.jpg",
+      "ferns_note": "A town named after a man who simply gave away part of his farm now preserves the quiet texture of the lives that followed — coffee grinders, typewriters, the unheroic stuff of daily existence. It's a museum that trusts ordinary things to carry the weight of history."
     },
     {
       "source": "discovery",
       "source_name": "Atlas Obscura",
-      "title": "Tousu at Tofuku-ji Temple in Kyoto, Japan",
-      "url": "https://www.atlasobscura.com/places/tousu-at-tofuku-ji",
-      "snippet": "The oldest surviving toilet in Japan can be found at Tofuku-ji, a major Zen temple in Higashiyama Ward, Kyoto. Dating back to the early Muromachi period (1336–1573), this historic restroom is over 500 years old. Known as tousu , this type of toilet is one of the seven facilities that comprise a Zen temple complex.",
+      "title": "Clifford Castle in Clifford, England",
+      "url": "https://www.atlasobscura.com/places/clifford-castle",
+      "snippet": "If you ever find yourself in western Herefordshire right by the Welsh border, you might chance upon an eerie, ruined castle on a massive mound known as a motte. The history of the castle is extensive, going back to a time when England was under Norman control. In 1070, William FitzOsbern, the 1st Earl of Hereford, constructed an early motte-and-bailey castle known today as Clifford Castle atop a cliff overlooking a ford on the River Wye.",
       "category": "history",
-      "cover_url": "https://img.atlasobscura.com/TS44J9BY4xBbCkDqPEdC7dsqKSvPE50jGE5mC2tYN9Q/rt:fit/w:600/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy8zNjk0/NWFhNy1jMTU5LTQ2/MGUtYmFjMS1kZDM2/Y2RiMzUxNzc3OGJm/MGRmODg3YjUwYmY0/MGVfRFNDXzI0NzEu/anBlZw.jpg",
-      "ferns_note": "Japan's oldest surviving toilet is not tucked away in a museum but still standing inside a functioning Zen temple, a quiet reminder that for medieval monks, answering nature's call was considered a spiritual practice worthy of sacred architecture."
+      "cover_url": "https://img.atlasobscura.com/fmmmnll7expFksPycUZg1RcFeWip0g-GdtJhPgis6JE/rt:fit/w:600/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy8wMzdl/MWU3Zi1iMjQ3LTRi/NmItOWI3Mi1iNDhl/NTc2MzNjMjBmMjdl/OGIwYjkzY2UwNjEy/YjRfQ2xpZmZvcmRf/Q2FzdGxlXy1fZ2Vv/Z3JhcGgub3JnLnVr/Xy1fNDAwNjc5MS5q/cGc.jpg",
+      "ferns_note": "Clifford Castle has been a ruin so long that it feels less like a collapsed building and more like something the hill itself grew. It's the kind of place where the border between England and Wales feels genuinely negotiable — as it once very dangerously was."
     }
   ],
   "featured_read": {
     "source": "reads",
     "source_name": "The Marginalian",
-    "title": "Hannah Arendt on Love and How to Live with the Fundamental Fear of Loss",
-    "url": "https://www.themarginalian.org/2026/08/08/love-and-saint-augustine-hannah-arendt/",
-    "snippet": "“Fearlessness is what love seeks… Such fearlessness exists only in the complete calm that can no longer be shaken by events expected of the future… Hence the only valid tense is the present, the Now.”",
-    "cover_url": "https://www.themarginalian.org/wp-content/uploads/2015/10/abzlove.jpg?fit=600%2C315&ssl=1",
-    "blurb": "Arendt argues that love isn't a feeling that conquers fear but a radical act of presence that renders the future irrelevant — which is either the most comforting or the most demanding idea you'll sit with all week. Pour something warm before you start."
+    "title": "Swimming and the Meaning of Life",
+    "url": "https://www.themarginalian.org/2026/08/08/roger-deakin-waterlog/",
+    "snippet": "One of my earliest and most vivid childhood memories is of swimming in a cool pool bounded by boulders in the middle of a river in the mountains of Bulgaria, the late-afternoon sun casting komorebi on the water through the rustling leaves. I can still hear the feeling-tone in my body, the strange and lovely simultaneity of absolute presence and absolute peace. I didn’t yet know the word for transcendence.",
+    "cover_url": "https://www.themarginalian.org/wp-content/uploads/2026/05/waterlong_deakin0.jpg?fit=776%2C407&ssl=1",
+    "blurb": "Maria Popova traces the thread from a childhood river in Bulgaria to the philosophy of transcendence, asking what it means that a body submerged in water can feel, before it has language for it, like the closest thing to eternity. Set aside a quiet half-hour and let this one get you a little wet."
   },
   "garden_note": {
-    "note": "First light creeps over the Zürichberg at 05:39 this August morning, catching the last of the lavender in a soft violet haze and coaxing the scent of ripening plums into the still air — late summer is doing her quiet, golden work. It's a fine hour to slip out with a basket before the heat settles in.",
+    "note": "August evenings in Zürich have that particular quality of warmth that lingers well past supper — the dahlias are coming into their own now, and the kitchen garden is at its most generous, heavy with courgettes you really should have picked yesterday. There's a gentle urgency to late summer: the light is still long, but you can feel it beginning to gather itself.",
     "in_season": [
-      "Zucchini harvest (pick before they become marrows)",
-      "Sunflowers in full bloom",
-      "Ripening mirabelle and Victoria plums",
-      "Deadheading dahlias to encourage a second flush"
+      "Dahlias in full flush",
+      "Courgettes and climbing beans to harvest",
+      "Sow lamb's lettuce for autumn",
+      "Deadhead roses for a last flush"
     ],
-    "sky_tonight": "With the crescent moon keeping a low profile, look southwest after dusk for Saturn rising steadily above the horizon — a steady amber-ish point that won't flicker like the stars around it.",
-    "sun_times": "First light at 05:39, sunrise at 06:12 — the days are still generous, with the sun not setting until 20:49 this evening.",
+    "sky_tonight": "With the moon a slim waning crescent, the Milky Way arches beautifully overhead after dusk — look south for the Teapot of Sagittarius pouring toward the horizon.",
+    "sun_times": "Dusk settles softly over the city at 21:22 tonight, with the sun already slipping away at 20:49.",
     "moon_label": "Waning crescent",
-    "illum_pct": 18,
+    "illum_pct": 15,
     "sun_range": "06:12–20:49"
   },
   "puzzle": {
-    "kind": "haiku riddle",
-    "label": "The Morning Haiku",
-    "prompt": "gallery opening\nthe ____\ngets all the oohs and ahs\n\n(Fill in the missing word.)",
-    "answer": "caterer",
-    "hint": "someone who brings the food and drinks",
-    "source": "tinywords.com",
-    "source_id": "https://tinywords.com/?p=49375",
-    "credit": "Haiku by Jean LeBlanc, via tinywords.com"
+    "kind": "anagram",
+    "label": "Fern's Morning Anagram",
+    "prompt": "Rearrange the letters of SINGER to make a different common word.",
+    "answer": "Signer (also Resign, Reigns)",
+    "hint": "There are 3 words hiding in these letters.",
+    "source": "wordsmith.org",
+    "source_id": "singer"
   },
   "previous_puzzle": {
-    "label": "Fern's Morning Riddle",
-    "prompt": "What can you hold in your right hand, but not in your left?",
-    "answer": "Your left hand!"
+    "label": "The Morning Haiku",
+    "prompt": "gallery opening\nthe ____\ngets all the oohs and ahs\n\n(Fill in the missing word.)",
+    "answer": "caterer"
   },
   "larder": {
-    "news": [
-      {
-        "source": "food",
-        "source_name": "The Kitchn",
-        "title": "Sicilian Pizza",
-        "url": "https://www.thekitchn.com/sicilian-pizza-recipe-23838099?utm_source=RSS&utm_medium=feed&utm_campaign=Category%2FChannel%3A+main",
-        "snippet": "Sicilian-style pizza is hard to pin down. In Sicily, it’s called sfincione. True Sicilian-style pizza is spongey, has a red sauce and breadcrumb topping, a light amount of cheese, and usually features anchovies.",
-        "cover_url": "https://cdn.apartmenttherapy.info/image/upload/f_auto,q_auto:eco,c_fill,g_auto,w_1500,ar_3:2/tk%2Fphoto%2F2026%2F07-2026%2F2026-07-sicilian-pizza%2Fsicilian-pizza-1894_1",
-        "blurb": "A delicious deep-dive into sfincione's spongy, sauce-laden soul — and why Sicilian pizza deserves far more than a footnote on your menu."
-      },
-      {
-        "source": "food",
-        "source_name": "The Guardian",
-        "title": "‘Lip-smackingly sour’: the best (and worst) supermarket cottage cheeses, tasted and rated",
-        "url": "https://www.theguardian.com/thefilter/2026/aug/08/best-supermarket-cottage-cheeses-tasted-rated",
-        "snippet": "Creamy, high-protein and all over our socials, cottage cheese is having a moment. We test the best … • The best supermarket vine tomatoes When I was growing up, cottage cheese was tasteless and mostly only eaten by dieters. Its recent revival in the UK, most likely driven by social media, has similar health reasons at its root – the current protein obsession in gym bros and weight watchers alike – but cottage cheese has become cool .",
-        "cover_url": "https://i.guim.co.uk/img/media/42ce58b0fa42e2bbdc26ea46e37adef138338a61/1373_380_6190_4955/master/6190.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvZmlsdGVyLXVrLnBuZw&enable=upscale&s=304b1a232cb2d86780e950c92e2f4df1",
-        "blurb": "Cottage cheese has quietly glow'd up from sad diet food to creamy, protein-rich staple, and The Guardian's tasting notes will tell you exactly which tub to reach for."
-      }
-    ],
-    "recipe": {},
-    "seasonal_note": "Zürich's Tuesday and Saturday markets at Bürkliplatz are brimming with golden Mirabellen right now — those small, sun-warmed plums that reward almost no effort at all, whether you simmer them into a quick compote for your Birchermüesli or simply eat them over the sink, juice running down your wrist."
+    "news": [],
+    "recipe": {}
   },
   "fern_data": {
-    "greeting": "Somewhere right now, a craftsperson is threading a needle before the rest of the house wakes — and that same quiet exactness runs through today's edition, from an 18th-century corset reimagined as a harvest gown to Hannah Arendt sitting with the fear of losing what we love.",
-    "top_pick_title": "Needles, Monks & Morning Quiet"
+    "greeting": "The kettle's done, the lamp is on, and the window has gone that particular shade of late-summer blue that makes you want to stay exactly where you are — which is fortunate, because tonight's edition has a Persian king who humiliated Rome, a blind dressage horse winning on instinct alone, and Cat Power doing something quietly devastating to a Human League song.",
+    "top_pick_title": "Embers, Emperors & the Deep Blue"
   }
 }
