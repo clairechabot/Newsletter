@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-08-10T08:24:55.382060+02:00",
+ "generated_at": "2026-08-10T08:35:06.568046+02:00",
  "moods": [
   "cozy",
   "curious",
@@ -32,6 +32,10 @@
   {
    "key": "featured_read",
    "label": "One Good Read"
+  },
+  {
+   "key": "reads",
+   "label": "The Reading Room"
   },
   {
    "key": "food",

@@ -1217,12 +1217,23 @@ FERMAT_LIBRARY_URL = "https://www.fermatslibrary.com/journal_club"
 FERMAT_PAPERS_PER_RUN = 1
 
 # One Good Read — a single reflective essay/longread per edition.
+# Essay sources for One Good Read + The Reading Room. All verified reachable
+# (200, valid RSS with items) from this environment. The Marginalian was dropped
+# (reader feedback: over-selected, style not landing).
 READS_FEEDS = [
-    {"url": "https://www.themarginalian.org/feed/", "source_name": "The Marginalian"},
-    {"url": "https://aeon.co/feed.rss",             "source_name": "Aeon"},
-    {"url": "https://nautil.us/feed/",              "source_name": "Nautilus"},
+    {"url": "https://aeon.co/feed.rss",                    "source_name": "Aeon"},
+    {"url": "https://nautil.us/feed/",                     "source_name": "Nautilus"},
+    {"url": "https://publicdomainreview.org/rss.xml",      "source_name": "The Public Domain Review"},
+    {"url": "https://psyche.co/feed",                      "source_name": "Psyche"},
+    {"url": "https://www.theparisreview.org/blog/feed/",   "source_name": "The Paris Review"},
+    {"url": "https://longreads.com/feed/",                 "source_name": "Longreads"},
+    {"url": "https://lithub.com/feed/",                    "source_name": "Literary Hub"},
+    {"url": "https://www.noemamag.com/feed/",              "source_name": "Noema"},
+    {"url": "https://3quarksdaily.com/feed",               "source_name": "3 Quarks Daily"},
 ]
-READS_CANDIDATES_PER_SOURCE = 4   # pull a few per feed, then keep the single best
+READS_SCAN_DEPTH = 25       # entries scanned per feed — digs into each feed's archive
+                            # as recent items get used up (never-repeat below)
+READS_SELECTION_SIZE = 6    # 1 featured (One Good Read) + the rest for The Reading Room
 
 # The Larder — food news/trends + one recipe pick. MORNING editions only.
 # All feeds verified reachable (200, non-Cloudflare) from GitHub runners.
@@ -1879,46 +1890,60 @@ def fetch_reads(
     seen_reads_urls: set[str],
 ) -> list[dict]:
     """
-    Fetch reflective essays/longreads from READS_FEEDS and return the SINGLE best
-    fresh one (this is one featured read, not a grid). Pulls a few candidates per
-    feed, dedups against seen_all_urls, and stops at the first unseen item.
-    Accepted URL is written to both seen_all_urls and seen_reads_urls.
-    Runs on both AM and PM emails.
+    Fetch reflective essays from READS_FEEDS and return the day's SELECTION
+    (up to READS_SELECTION_SIZE items, featured first). Each feed is scanned up
+    to READS_SCAN_DEPTH entries deep — so as recent items get used, the pick
+    digs further into each feed's archive. Candidates are interleaved
+    round-robin across sources (1st of each feed, then 2nd of each …) so no
+    prolific feed can dominate. EVERY selected URL is marked seen in both
+    seen_all_urls and seen_reads_urls — an essay is shown once (featured or in
+    The Reading Room) and never repeated. Runs on both AM and PM emails.
     """
-    print("[Reads] Fetching One Good Read feeds …")
+    print(f"[Reads] Fetching essays from {len(READS_FEEDS)} feeds …")
     session = _scraper_session()
 
-    chosen: dict | None = None
+    # Unseen candidates per feed, newest-first within each feed.
+    per_feed: list[list[dict]] = []
     for feed in READS_FEEDS:
         candidates = _fetch_rss_articles(
             feed["url"], feed["source_name"],
-            READS_CANDIDATES_PER_SOURCE, session,
+            READS_SCAN_DEPTH, session,
             source_tag="reads",
         )
-        for article in candidates:
-            url = article["url"]
-            if url in seen_all_urls:
-                continue
-            seen_all_urls.add(url)
-            seen_reads_urls.add(url)
-            chosen = article
-            break
-        if chosen:
-            break
+        fresh = [a for a in candidates if a["url"] not in seen_all_urls]
+        if fresh:
+            per_feed.append(fresh)
 
-    if not chosen:
-        print("[Reads] No fresh read found this run.")
+    # Round-robin interleave so the selection spans different voices.
+    selection: list[dict] = []
+    depth = 0
+    while len(selection) < READS_SELECTION_SIZE and any(depth < len(f) for f in per_feed):
+        for f in per_feed:
+            if depth < len(f) and len(selection) < READS_SELECTION_SIZE:
+                article = f[depth]
+                if article["url"] in seen_all_urls:
+                    continue
+                seen_all_urls.add(article["url"])
+                seen_reads_urls.add(article["url"])
+                selection.append(article)
+        depth += 1
+
+    if not selection:
+        print("[Reads] No fresh reads found this run.")
         return []
 
-    try:
-        _, cover = _find_embed_and_cover(chosen["url"], session)
-        chosen["cover_url"] = cover or ""
-    except Exception as exc:
-        print(f"  [warn] cover fetch failed for '{chosen.get('title','')[:50]}': {exc}")
-        chosen["cover_url"] = ""
+    for article in selection:
+        try:
+            _, cover = _find_embed_and_cover(article["url"], session)
+            article["cover_url"] = cover or ""
+        except Exception as exc:
+            print(f"  [warn] cover fetch failed for '{article.get('title','')[:50]}': {exc}")
+            article["cover_url"] = ""
 
-    print(f"[Reads] Selected: {chosen.get('title','')[:60]} ({chosen.get('source_name','')})")
-    return [chosen]
+    print(f"[Reads] Selected {len(selection)} essay(s) from "
+          f"{len({a['source_name'] for a in selection})} source(s); featured: "
+          f"{selection[0].get('title','')[:60]} ({selection[0].get('source_name','')})")
+    return selection
 
 
 # ---------------------------------------------------------------------------
