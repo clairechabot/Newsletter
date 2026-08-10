@@ -88,6 +88,7 @@ _ALWAYS_BLOCK = frozenset({
     "legislation", "sanctions", "tariff", "tariffs", "partisan", "liberal",
     "conservative", "geopolitical", "protest", "nato", "gaza", "israel", "iran",
     "ukraine", "russia", "ceasefire", "coup", "shooting",
+    "pakistan", "islamabad", "saudi", "arabia",
 })
 _CONFLICT_TERMS = frozenset({
     "war", "military", "missile", "nuclear", "bombing", "assassination",
@@ -111,6 +112,24 @@ def _is_political(title: str, description: str = "", allow_history: bool = False
         desc_words = set(re.findall(r'\w+', description.lower()))
         return bool(desc_words & blocked)
     return False
+
+
+# Channels the wildcard must never pick again (bad past picks).
+BLOCKED_CHANNEL_IDS = frozenset({
+    "UCzSA9H4H6ml52Ne5_PdWhkQ",  # Umar Daraz Gondal — Urdu political news
+})
+
+# Arabic-script Unicode ranges (covers Arabic, Urdu, Persian …). The wildcard
+# skips any video whose channel/title/description carries this script — the
+# newsletter is English-language and these picks were political news content.
+_ARABIC_RANGES = (
+    (0x0600, 0x06FF), (0x0750, 0x077F), (0x08A0, 0x08FF),
+    (0xFB50, 0xFDFF), (0xFE70, 0xFEFF),
+)
+
+
+def _has_arabic_script(text: str) -> bool:
+    return any(a <= ord(ch) <= b for ch in text for (a, b) in _ARABIC_RANGES)
 
 
 # Finance/investing hype — never wanted in the WILDCARD (a stock-analysis video
@@ -709,6 +728,16 @@ def fetch_trending_video(
                 if video.get("channel_id") in exclude_channel_ids:
                     print(f"  [skip/own-channel] wildcard {vid_id} — "
                           f"'{video.get('channel_title','')}' is already featured")
+                    continue
+                if video.get("channel_id") in BLOCKED_CHANNEL_IDS:
+                    print(f"  [skip/blocked-channel] wildcard {vid_id} — "
+                          f"'{video.get('channel_title','')}'")
+                    continue
+                if _has_arabic_script(video.get("channel_title", "")
+                                      + video["title"]
+                                      + video.get("description", "")):
+                    print(f"  [skip/non-english] wildcard {vid_id} — "
+                          f"Arabic-script text in channel/title/description")
                     continue
                 if video["duration_seconds"] < YOUTUBE_WILDCARD_MIN_SECONDS:
                     print(
