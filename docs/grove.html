@@ -140,7 +140,7 @@
 const $ = (s,r=document)=>r.querySelector(s);
 function esc(s){return String(s==null?'':s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
 function safeUrl(u){try{const p=new URL(u,location.href);return ['http:','https:','mailto:'].includes(p.protocol)?p.href:'#';}catch(e){return '#';}}
-const SECTION_LABEL={music:'Soundtrack',videos:'Worth Watching',good_news:'Good News',discovery:'From the Archives',featured_read:'One Good Read',food:'The Larder'};
+const SECTION_LABEL={music:'Soundtrack',videos:'Worth Watching',good_news:'Good News',discovery:'From the Archives',featured_read:'One Good Read',reads:'The Reading Room',food:'The Larder'};
 
 let ALL=[], MOODS=[], SECTIONS=[];
 let activeSection=null, activeMoods=new Set(), query='';

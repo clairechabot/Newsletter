@@ -1473,9 +1473,12 @@ def run_curation(raw_data: dict) -> dict:
     discovery_raw = raw_data.get("discovery_articles", [])
     discovery_articles = audit_discovery_articles(client, discovery_raw)
 
-    # 7. One Good Read — a single featured essay with Fern's blurb (every run)
+    # 7. One Good Read + The Reading Room — the day's essay selection, each with
+    # Fern's blurb. First is the featured read; the rest fill the Reading Room
+    # tab on the web edition (every run).
     reads_audited = audit_reads(client, raw_data.get("reads", []))
     featured_read = reads_audited[0] if reads_audited else {}
+    reading_room = reads_audited[1:]
 
     # 8. From the Garden — Fern's seasonal almanac note (every run)
     garden_note = generate_garden_note(client, raw_data.get("garden_seed", {}))
@@ -1533,6 +1536,7 @@ def run_curation(raw_data: dict) -> dict:
             "good_news_articles": len(global_silver_linings),
             "discovery_articles": len(discovery_articles),
             "featured_read": 1 if featured_read else 0,
+            "reading_room": len(reading_room),
             "garden": 1 if garden_note.get("note") else 0,
             "puzzle": 1 if puzzle else 0,
             "larder": len(larder.get("news", [])) + (1 if larder.get("recipe") else 0),
@@ -1542,6 +1546,7 @@ def run_curation(raw_data: dict) -> dict:
         "global_silver_linings": global_silver_linings,
         "discovery_articles": discovery_articles,
         "featured_read": featured_read,
+        "reading_room": reading_room,
         "garden_note": garden_note,
         "puzzle": puzzle,
         "previous_puzzle": raw_data.get("previous_puzzle") or {},
