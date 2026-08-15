@@ -1,174 +1,167 @@
 {
-  "fetched_at": "2026-08-15T05:58:40.572987+02:00",
-  "is_am_email": true,
+  "fetched_at": "2026-08-15T16:43:54.596705+02:00",
+  "is_am_email": false,
   "audit_summary": {
     "youtube_videos": 10,
-    "themes": 4,
-    "music_articles": 8,
-    "good_news_articles": 2,
-    "discovery_articles": 12,
+    "themes": 3,
+    "music_articles": 7,
+    "good_news_articles": 1,
+    "discovery_articles": 2,
     "featured_read": 1,
     "reading_room": 5,
     "garden": 1,
     "puzzle": 1,
-    "larder": 2
+    "larder": 0
   },
   "themes": [
     {
-      "name": "Rabbit Holes Worth Falling Down",
+      "name": "Rabbit Holes Through Time",
       "emoji": "🕳️",
-      "tagline": "From cryptid icebergs to logical traps — the internet's most gloriously nerdy deep dives await.",
+      "tagline": "From ancient mysteries to mythical beasts — history is stranger than you ever learned in school.",
       "items": [
         {
           "source": "youtube",
-          "video_id": "pdQD5cyUBHE",
-          "title": "The Cryptid Iceberg is Making Me Violent",
+          "video_id": "5MuCIqbTUXA",
+          "title": "The VERY Strange History of Unicorns",
+          "channel_id": "UCSwwoUNvQWgZDC8a_O6Qs_A",
+          "channel_title": "Kaz Rowe",
+          "published_at": "2023-09-29T14:55:27Z",
+          "url": "https://www.youtube.com/watch?v=5MuCIqbTUXA",
+          "duration_seconds": 2240,
+          "view_count": "633322",
+          "description": "👒🔍 Download June’s Journey for free now using my link: https://woo.ga/jiqiw5\n\nWho doesn't think unicorns are neat? Today they're a fantasy icon, but they weren't always that way. They were once seen as ferocious and very real beasts, and the lengths people went to capture them reached WILD heights. Come learn with me about this magical myth!\n\nBuy my graphic novel, Liberated: The Radical Art and Life of Claude Cahun: https://www.kazrowe.com/comics/cahun\nhttps://shop.getty.edu/products/liberated-t",
+          "is_wildcard": false
+        },
+        {
+          "source": "youtube",
+          "video_id": "kvAflDj2-EU",
+          "title": "the eleusinian mysteries || what happened inside the temple??",
+          "channel_id": "UCnCk_o6ySiM_ZzxubCv899Q",
+          "channel_title": "fig tree",
+          "published_at": "2023-04-07T13:05:21Z",
+          "url": "https://www.youtube.com/watch?v=kvAflDj2-EU",
+          "duration_seconds": 741,
+          "view_count": "55703",
+          "description": "just found this article with the absolute most wonderful visual reconstructions of the telesterion 4 ur viewing pleasure: \nhttps://www.anasynthesis.co.uk/index.php/articles/eleusis-the-telesterion\n\nalso look at this if u want more photos of me freaking out at ancient sites:\nhttps://instagram.com/watchingthewheelsgo?igshid=YjNmNGQ3MDY=",
+          "is_wildcard": false
+        },
+        {
+          "source": "youtube",
+          "video_id": "1y0Gq2pf5oc",
+          "title": "The Siege of Ruby Ridge - An American Standoff, Story, & Controversy",
           "channel_id": "UC3cpN6gcJQqcCM6mxRUo_dA",
           "channel_title": "Wendigoon",
-          "published_at": "2024-03-20T15:02:12Z",
-          "url": "https://www.youtube.com/watch?v=pdQD5cyUBHE",
-          "duration_seconds": 2728,
-          "view_count": "1466713",
-          "description": "Click my link to get a 1-year supply of immune-supporting Vitamin D3K2 & 10 travel packs FREE with your first purchase if you order this month! https://drinkag1.com/wendigoon\n\nGET THE MERCH BEFORE IT'S GONE: https://wendigoon.shop/\n\nIceberg Image: https://x.com/Wendigoon8/status/1735766109377224948?s=20\n\nSome of the sources for this absurd list of cryptids:\n\ncryptid archives: https://cryptidarchives.fandom.com/wiki/Category:Cryptids\n\ncryptid wiki: https://cryptidz.fandom.com/wiki/List_of_Cryptid",
+          "published_at": "2024-02-29T23:44:15Z",
+          "url": "https://www.youtube.com/watch?v=1y0Gq2pf5oc",
+          "duration_seconds": 6618,
+          "view_count": "6378112",
+          "description": "Use code WENDIGOON50 to get 50% OFF First Box and free wellness shots for life with any active subscription at  https://bit.ly/407Vu5D!\n\nGET THE T-SHIRT & BEANIE WHILE YOU CAN: https://wendigoon.shop\n\n\nMy Waco video: https://youtu.be/xZwFxWb0y7w?si=ixQ1mnnIv1j3TXRN\n\nInitial DOJ report regarding Ruby Ridge: https://www.justice.gov/sites/default/files/opr/legacy/2006/11/09/rubyreportcover_39.pdf\n\nFBI incident report: https://vault.fbi.gov/Ruby%20Ridge%20Incident/Ruby%20Ridge%20Incident%20Part%201%",
           "is_wildcard": false
         },
         {
           "source": "youtube",
-          "video_id": "IoBbcU7ofZc",
-          "title": "Logical Fallacies, Explained.",
-          "channel_id": "UC2Kyj04yISmHr1V-UlJz4eg",
-          "channel_title": "Jared Henderson",
-          "published_at": "2024-06-14T16:10:25Z",
-          "url": "https://www.youtube.com/watch?v=IoBbcU7ofZc",
-          "duration_seconds": 941,
-          "view_count": "82572",
-          "description": "To try everything Brilliant has to offer for free for a full 30 days, visit https://brilliant.org/jaredhenderson. You’ll also get 20% off an annual premium subscription.\n\nIf you want to support my work, subscribe on Substack: https://jaredhenderson.substack.com\n\nToday we're talking about logical fallacies. These are common patterns of reasoning cause us to make mistakes in how we argue or think about the world. Examples include: ad hominem, appeal to ignorance, and the gambler's fallacy.\n\nJoin m",
-          "is_wildcard": false
-        },
-        {
-          "source": "youtube",
-          "video_id": "W7H7qkg-pQ0",
-          "title": "I Bought Weird Seeds From eBay and Grew Them",
-          "channel_id": "UCSbyncU597LMwb3HhnAI_4w",
-          "channel_title": "Epic Gardening",
-          "published_at": "2026-08-14T22:01:15Z",
-          "url": "https://www.youtube.com/watch?v=W7H7qkg-pQ0",
-          "duration_seconds": 1380,
-          "view_count": "23574",
-          "description": "Find FoxFarm Products Near You: https://foxfarm.com/find-a-dealer/\nCurious which “weird” eBay seeds actually grew true to their listings? Watch the full experiment to see which were legit, which were scams, and which surprised us!\n\nIN THIS VIDEO\n\n→ \n\nSUPPORT EPIC GARDENING\n\n→ Shop: https://growepic.co/shop\n→ Seeds: https://growepic.co/botanicalinterests\n\nLEARN MORE\n\n→ All Our Channels: https://growepic.co/youtube\n→ Blog: https://growepic.co/blog\n→ Podcast: https://growepic.co/podcasts\n→ Discord:",
-          "is_wildcard": false
-        },
-        {
-          "source": "youtube",
-          "video_id": "_gVU2wTVOyI",
-          "title": "The extraordinary habits of the Chinese Fiddler crab | China Wild",
-          "channel_id": "UCCGtjLbNN7rtBRlAbnKOrBg",
-          "channel_title": "DOKBOX",
-          "published_at": "2023-12-01T12:43:32Z",
-          "url": "https://www.youtube.com/watch?v=_gVU2wTVOyI",
-          "duration_seconds": 161,
-          "view_count": "305",
-          "description": "Watch China Wild: Wetlands in full on DOKBOX:\n\nhttps://www.dokbox.tv/video/10929-china-wild/episode/0/3\n\n\n#wildlife #wildlifedocumentaries #crab #animalinstincts #china #wetland \n\n\nChina: a country with the world's most diverse ecosystems, teeming with an incredible array of wildlife. Showcasing the country's five largest habitats, from the Tibetan grasslands and the Yangtze's wetlands to its megacities, ancient forests and oceans, we reveal never-before-seen behaviours and rare animals in extra",
+          "video_id": "EyblzyQw6dM",
+          "title": "The Fall of the House of Usher by Edgar Allan Poe",
+          "channel_id": "UCbFLHoeA-X5qRUDmb9tRRqA",
+          "channel_title": "Classic Masterworks",
+          "published_at": "2023-05-23T06:39:16Z",
+          "url": "https://www.youtube.com/watch?v=EyblzyQw6dM",
+          "duration_seconds": 2406,
+          "view_count": "396",
+          "description": "\"The Fall of the House of Usher\" is a Gothic short story by Edgar Allan Poe. It revolves around the narrator's visit to the decaying mansion of his childhood friend, Roderick Usher. The story is filled with eerie atmosphere, supernatural elements, and psychological horror.\n\nThe narrator receives a letter from Roderick, expressing his distress and requesting his immediate presence. Upon arrival at the House of Usher, the narrator is struck by its gloomy appearance and the unsettling aura that sur",
           "is_wildcard": false
         }
       ]
     },
     {
-      "name": "The Long Way Around",
-      "emoji": "🚴",
-      "tagline": "Epic journeys on two wheels, open roads, and the wild landscapes that make the detour worth it.",
+      "name": "The Examined Life",
+      "emoji": "🧠",
+      "tagline": "Big questions about the mind, the self, and how we see the world — philosophy didn't die in ancient Greece.",
       "items": [
         {
           "source": "youtube",
-          "video_id": "cPrDYzUSNV4",
-          "title": "I Cycled 900km Across Japan for $555,000 | Feat. @CDawgVA",
-          "channel_id": "UCHL9bfHTxCMi-7vfxQ-AYtg",
-          "channel_title": "Abroad in Japan",
-          "published_at": "2024-03-30T17:10:30Z",
-          "url": "https://www.youtube.com/watch?v=cPrDYzUSNV4",
-          "duration_seconds": 4148,
-          "view_count": "1640287",
-          "description": "I teamed up with Connor to cycle around Kyushu in just over a week. It wasn't easy, but incredibly thanks to your support we raised $555,000 for the Immune Deficiency Foundation.\n⭐⭐Donate to the charity: https://primaryimmune.org/\n\nFeaturing @CDawgVA and @PremierTwo \nSpecial thanks to @PaulBallard for filming and editing this massive episode.\n\n\n00:00 PROLOGUE: Why So Late?\n03:09 Day 1 - Fukuoka\n10:20 Day 2 - Sasebo\n18:17 Day 3 - Nagasaki: Race to the Ferry\n27:09 Day 4 - Day of Disaster\n34:55 Day",
+          "video_id": "ggkd_uyDqz8",
+          "title": "Stoicism: An In-Depth Explanation",
+          "channel_id": "UC2Kyj04yISmHr1V-UlJz4eg",
+          "channel_title": "Jared Henderson",
+          "published_at": "2024-06-07T17:48:48Z",
+          "url": "https://www.youtube.com/watch?v=ggkd_uyDqz8",
+          "duration_seconds": 1884,
+          "view_count": "1541852",
+          "description": "Get 20% off DeleteMe US consumer plans when you go to https://joindeleteme.com/henderson and use promo code henderson20 at checkout.\n\nStoicism is an ancient school of philosophy which originated in Greece and flourished in the Roman Empire. Its effects are still felt to this day through its influences on early Christianity, the rise of the Modern Stoics who preach Stoicism as a kind of fix for modern life's ills, and on YouTube. \n\nBut what is Stoicism? What is its history? What do we leave out w",
+          "is_wildcard": false
+        },
+        {
+          "source": "youtube",
+          "video_id": "-4IB4wCZME4",
+          "title": "Can the Male Still Gaze?",
+          "channel_id": "UCs7nPQIEba0T3tGOWWsZpJQ",
+          "channel_title": "Like Stories of Old",
+          "published_at": "2026-08-15T11:55:21Z",
+          "url": "https://www.youtube.com/watch?v=-4IB4wCZME4",
+          "duration_seconds": 2511,
+          "view_count": "8261",
+          "description": "Get 50% off a year of Nebula and watch the original, uncensored version of this video:\nhttps://nebula.tv/videos/lsoo-can-the-male-still-gaze?ref=lsoo \nWatch Ro Mooknee's Politits: https://nebula.tv/taramooknee/politits?ref=lsoo\n\n0:00 Can the Male Still Gaze?\n3:09 Quick Note on YT Censorship\n3:48 On the Male Gaze\n9:24 Women Looking Back\n15:50 Men Gazing Inwards\n22:55 The Enigma of Desire\n30:43 This Flame in Us\n39:53 Politits: the Politics of, well...\n\nFemale stories on the male gaze:\nhttps://www.",
+          "is_wildcard": false
+        },
+        {
+          "source": "youtube",
+          "video_id": "cufOEzoVMVA",
+          "title": "Can We Build an Artificial Hippocampus?",
+          "channel_id": "UCR2uRTQ53V_egXKFflMMaaw",
+          "channel_title": "Artem Kirsanov",
+          "published_at": "2023-04-30T16:48:19Z",
+          "url": "https://www.youtube.com/watch?v=cufOEzoVMVA",
+          "duration_seconds": 1431,
+          "view_count": "263238",
+          "description": "To try everything Brilliant has to offer—free—for a full 30 days, visit http://brilliant.org/ArtemKirsanov/ \nThe first 200 of you will get 20% off Brilliant’s annual premium subscription.\n\n=====\nMy name is Artem, I'm a neuroscience PhD student at Harvard University. \n🌎 Website and Social links: https://kirsanov.ai/\n📥 \"Receptive Field\" neuro-newsletter: https://artemkirsanov.substack.com/\n✨ Support me on Patreon to get access to Discord community: https://patreon.com/artemkirsanov\n=====\n\nIn this ",
+          "is_wildcard": false
+        }
+      ]
+    },
+    {
+      "name": "Soft Landings",
+      "emoji": "🌿",
+      "tagline": "Unlikely friendships, flaky flatbread, and the gentle chaos of creatures being creatures — your palate cleanser is served.",
+      "items": [
+        {
+          "source": "youtube",
+          "video_id": "i4EKcAYpU5Y",
+          "title": "An Unusual Friendship: A Dog and a Tiger Cub | Dog's Best Friend",
+          "channel_id": "UCCGtjLbNN7rtBRlAbnKOrBg",
+          "channel_title": "DOKBOX",
+          "published_at": "2023-11-29T11:21:50Z",
+          "url": "https://www.youtube.com/watch?v=i4EKcAYpU5Y",
+          "duration_seconds": 260,
+          "view_count": "206",
+          "description": "Watch Dog's Best Friend in full on DOKBOX. The world's best documentaries, all in one place.\n\nhttps://www.dokbox.tv/search?q=dogs%20best%20friend&section=main&vid=7785\n\nDog's Best Friend is the original smash hit show that celebrates animal friendships across species. A viral pop culture phenomenon, this family-friendly show is packed with fun facts, dog psychology, and more.\nA high energy hound meets his match and finds the ideal playmate in a tiger cub named Thunder. \n\n#dogs #bengaltiger #beng",
+          "is_wildcard": false
+        },
+        {
+          "source": "youtube",
+          "video_id": "qEuk50GIofE",
+          "title": "Roti Canai: Secret to SOFT & FLAKY flatbread, just like in Malaysia",
+          "channel_id": "UC_8x1VmhDgsU72Yktd9Ukeg",
+          "channel_title": "sheldo's kitchen",
+          "published_at": "2022-04-10T19:57:35Z",
+          "url": "https://www.youtube.com/watch?v=qEuk50GIofE",
+          "duration_seconds": 886,
+          "view_count": "630063",
+          "description": "Here's the definitive guide to making one of my favourite foods ever: Roti Canai. This flaky flatbread hails from Malaysia but traces its roots back to South India's Parotta/Paratha. It's such a textural experience — the crisp flaky exterior shatters apart to reveal tender chewy layers inside.\n\nThe success of Roti Canai hinges on a perfectly strong yet extensible dough and careful technique. I tried so many recipes and was never able to make a good roti. So, I started experimenting. After going ",
           "is_wildcard": false
         },
         {
           "source": "youtube_trending",
-          "video_id": "py-w39Tjm4U",
-          "title": "Maribor to Trieste | One of Europe's Most Beautiful Drives 4K",
-          "channel_id": "UCBscY5rokyS2O9AimotcdcQ",
-          "channel_title": "Epic Scenic Drives",
-          "published_at": "2026-08-14T12:41:02Z",
-          "url": "https://www.youtube.com/watch?v=py-w39Tjm4U",
-          "duration_seconds": 3561,
-          "view_count": "4425",
-          "description": "Experience one of the most scenic drives from Slovenia to Italy, where rolling green hills, peaceful forests, charming villages, and breathtaking mountain landscapes come together to create an unforgettable journey. Join me on a relaxing drive from the vibrant city of Maribor to Trieste, following one of the most beautiful routes through Slovenia before crossing into Italy.\n\n🇸🇮🇮🇹 Scenic Drive from Maribor to Trieste | One of Europe's Most Beautiful Routes | 4K\n\nTravel through Slovenia's pictures",
+          "video_id": "b1a5nTcC2KU",
+          "title": "Air India News LIVE | Dope Test For All Air India Pilots After Captain Found Positive For Marijuana",
+          "channel_id": "UCZFMm1mMw0F81Z37aaEzTUA",
+          "channel_title": "NDTV",
+          "published_at": "2026-08-14T14:54:15Z",
+          "url": "https://www.youtube.com/watch?v=b1a5nTcC2KU",
+          "duration_seconds": 40961,
+          "view_count": "3851",
+          "description": "Air India has ordered a fresh mandatory dope test for all its pilots amid a row over a captain of its Phuket-Delhi flight testing positive for marijuana. The dope test is mandatory for both Air India and Air India Express pilots. The testing begins today and is mandatory for all pilots, as per the airline's formal letter sent to its employees.\n\n#AirIndia \n\n$MetaTags$1#TV Original2#Right & Centre3#Vishnu Som4#Nancy Negi$MetaTags$\n\nAbout NDTV (English news channel):\n\nNDTV is India's Most-Trusted N",
           "is_wildcard": true
-        }
-      ]
-    },
-    {
-      "name": "Rewriting the Record",
-      "emoji": "📜",
-      "tagline": "History isn't what you were taught — meet the empires, rebels, and lost figures who demand a second look.",
-      "items": [
-        {
-          "source": "youtube",
-          "video_id": "PusnwdLkEhM",
-          "title": "The Death of the Roman Republic? - Melissa Lane",
-          "channel_id": "UC1t6kKXoBvjdr8m9KJ2Fx7A",
-          "channel_title": "Gresham College",
-          "published_at": "2026-08-14T16:00:33Z",
-          "url": "https://www.youtube.com/watch?v=PusnwdLkEhM",
-          "duration_seconds": 2707,
-          "view_count": "494",
-          "description": "00:00 // Welcome and Introduction\n00:16 // Ovid's Claim: \"Caesar Is the Republic\"\n03:52 // Exile: The Danger of Writing Under Augustus\n04:17 // Tonight's Question: Charting Roman Autocracy\n05:30 // Tacitus and the Timeline of Roman History\n07:34 // Tacitism: Tacitus's Legacy in Early Modern Europe\n08:14 // Republic vs Empire: A Terminological Clarification\n09:01 // When Did the Roman Republic Really End?\n10:04 // Rethinking the Republic's \"Fall\"\n11:43 // Lecture Roadmap: Three Parts\n12:56 // Pri",
-          "is_wildcard": false
-        },
-        {
-          "source": "youtube",
-          "video_id": "OsSewag3xbs",
-          "title": "The Chevalier d'Eon: the Trans 18th Century Spy",
-          "channel_id": "UCSwwoUNvQWgZDC8a_O6Qs_A",
-          "channel_title": "Kaz Rowe",
-          "published_at": "2023-10-12T15:24:10Z",
-          "url": "https://www.youtube.com/watch?v=OsSewag3xbs",
-          "duration_seconds": 2016,
-          "view_count": "159871",
-          "description": "Head over to @wayfair and watch the new A Style is Born episode on Gothic style! https://astyleisborn.link/ASIBs2e4Kaz\n\nCheck out @pbsorigins Rogue History's Chevalier d'Eon episode: https://youtu.be/svIaHGCsRYQ\n\nThe Chevalier d'Eon was many things: an aristocrat, a swordfighting master, and a spy. They also became famous for the controversy surrounding the mystery of their \"true\" gender. Come learn with me about this trans icon and the questions they left us with!\n\nBuy my graphic novel, Liberat",
-          "is_wildcard": false
-        },
-        {
-          "source": "youtube",
-          "video_id": "INokIVWNASQ",
-          "title": "Manufactured Minoans: the archaeological excavations of Arthur Evans",
-          "channel_id": "UCnCk_o6ySiM_ZzxubCv899Q",
-          "channel_title": "fig tree",
-          "published_at": "2023-06-25T10:11:22Z",
-          "url": "https://www.youtube.com/watch?v=INokIVWNASQ",
-          "duration_seconds": 699,
-          "view_count": "64681",
-          "description": "this is a safe space for arthur evans hate",
-          "is_wildcard": false
-        }
-      ]
-    },
-    {
-      "name": "Feel Something, Actually",
-      "emoji": "🎞️",
-      "tagline": "One film, one essay, one quiet reminder that beauty and meaning are still worth chasing.",
-      "items": [
-        {
-          "source": "youtube",
-          "video_id": "kRybqfQ9zCE",
-          "title": "2023's Most Beautiful Movie About Love",
-          "channel_id": "UCs7nPQIEba0T3tGOWWsZpJQ",
-          "channel_title": "Like Stories of Old",
-          "published_at": "2023-10-12T16:17:05Z",
-          "url": "https://www.youtube.com/watch?v=kRybqfQ9zCE",
-          "duration_seconds": 1058,
-          "view_count": "241883",
-          "description": "AdamandEve.com. Use code: LSOO for 50% Off 1 Item + Free Shipping in the US & Canada. Some exclusions apply\n\nHelp me make more videos!\nSupport this channel: https://www.patreon.com/LikeStoriesofOld \nLeave a One-Time Donation: https://www.paypal.me/TomvanderLinden\n\nFacebook: https://www.facebook.com/LikeStoriesofOld \nInstagram: https://www.instagram.com/tom.vd.linden\nTwitter: https://twitter.com/Tom_LSOO \n\nAbout this video essay:\nAn analysis of Celine Song's Past Lives, and how it subverts the au",
-          "is_wildcard": false
         }
       ]
     }
@@ -176,325 +169,199 @@
   "morning_soundtrack": [
     {
       "source": "music",
-      "source_name": "Stereogum",
-      "title": "Anna St. Louis & Jarvis Taveniere Launch New Project Panamint With Post Malone Cover",
-      "snippet": "The LA-based singer-songwriter Anna St. Louis has long been a fixture of the greater Woodsist universe, a loose coalition of rootsy, artsy underground acts centered on the upstate New York psych-folk band Woods. Jarvis Taveniere is a core member of Woods who has collaborated with lots of great artis",
-      "url": "https://stereogum.com/2508384/anna-st-louis-jarvis-taveniere-launch-new-project-panamint-with-post-malone-cover/music/",
+      "source_name": "NPR Music",
+      "title": "Silvio Rodríguez: Singing Cuba's history from revolutionary triumphs to modern protests",
+      "snippet": "From its triumphant revolution to the decay of today, singer-songwriter Silvio Rodriguez has chronicled Cuba's history.",
+      "url": "https://www.npr.org/2026/08/15/nx-s1-5930424/silvio-rodriguez-singing-cubas-history-from-revolutionary-triumphs-to-modern-protests",
       "genre": "",
-      "vibe_check": "Like finding a worn-in flannel shirt at the back of a closet — familiar, surprising, and somehow perfect.",
-      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/08/859742666018_cover.jpg",
-      "embed_url": "https://www.youtube.com/embed/fqAwYvJOVn0"
-    },
-    {
-      "source": "music",
-      "source_name": "Stereogum",
-      "title": "Premature Evaluation: Phoebe Bridgers Lost Weekend",
-      "snippet": "The post Premature Evaluation: Phoebe Bridgers &lt;em&gt;Lost Weekend&lt;/em&gt; appeared first on Stereogum.",
-      "url": "https://stereogum.com/2508362/premature-evaluation-phoebe-bridgers-lost-weekend/reviews/premature-evaluation/",
-      "genre": "",
-      "vibe_check": "The emotional equivalent of sitting in a parked car long after the engine's off, not quite ready to go inside.",
-      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/06/unnamed-2026-06-25T204548.173.jpg",
-      "embed_url": "https://www.youtube.com/embed/4KXnboPN1p4"
-    },
-    {
-      "source": "music",
-      "source_name": "No Depression",
-      "title": "BONUS TRACKS: Reissues from The Chicks and The Bluegrass Album Band, New Music from Kaitlin Butts and St. Paul & The Broken Bones, and More Roots Music News",
-      "snippet": "The Chicks announced a 20th anniversary reissue of Taking the Long Way due out October 2 via Legacy Recordings. The reissue will be available as a triple-LP set and will include three previously unreleased demos and two rarities. The whole album, including the bonus tracks, will also be available",
-      "url": "https://nodepression.org/bonus-tracks-reissues-from-the-chicks-and-the-bluegrass-album-band-new-music-from-kaitlin-butts-and-st-paul-the-broken-bones-and-more-roots-music-news/",
-      "genre": "",
-      "vibe_check": "A dusty record crate rummaged through on a lazy afternoon, each find more satisfying than the last.",
-      "cover_url": "https://storage.ghost.io/c/18/d0/18d08e58-3b1b-4720-ae25-a31b44e69d4b/content/images/2026/08/260812-thechicks-og.jpg",
-      "embed_url": "https://www.youtube.com/embed/MOFr0iqPb-U"
-    },
-    {
-      "source": "music",
-      "source_name": "No Depression",
-      "title": "NO DEPRESSION SESSIONS at Hinterland: Waylon Wyatt",
-      "snippet": "Waylon Wyatt joined us at the Hinterland Music Festival in Saint Charles, Iowa for a two-song No Depression Session to help celebrate the release of his debut album Dustpiles. Flanked by pedal steel guitarist Jack McLoughlin, Wyatt shared a stripped-down version of &quot;Wishful Thinking&quot; from ",
-      "url": "https://nodepression.org/no-depression-sessions-at-hinterland-waylon-wyatt/",
-      "genre": "",
-      "vibe_check": "Wide-open prairie at dusk, pedal steel drifting across the air like smoke from a dying fire.",
-      "cover_url": "https://storage.ghost.io/c/18/d0/18d08e58-3b1b-4720-ae25-a31b44e69d4b/content/images/size/w1200/2026/08/MichelleZigler-hinterland26-WaylonWyatt-Resize.jpg",
-      "embed_url": "https://www.youtube.com/embed/fWUkIz7TwhE"
-    },
-    {
-      "source": "music",
-      "source_name": "Pitchfork",
-      "title": "Watch Julia Jacklin Cover Sugar Ray’s “Every Morning”",
-      "snippet": "“The song just makes me feel grateful to be alive”",
-      "url": "https://pitchfork.com/story/watch-julia-jacklin-cover-sugar-rays-every-morning/",
-      "genre": "",
-      "vibe_check": "Windows down on the highway, mid-2000s radio bliss filtered through the warm nostalgia of someone who knows better but doesn't care.",
-      "cover_url": "https://media.pitchfork.com/photos/6a7f3b0f642b7565f7855c44/16:9/w_1280,c_limit/Screenshot%202026-08-14%20at%2011.57.56%E2%80%AFAM.png",
-      "embed_url": "https://www.youtube.com/embed/pfslI1jC-5M"
-    },
-    {
-      "source": "music",
-      "source_name": "Consequence",
-      "title": "Frankie Valli, 92, Disputes Retirement Announcement",
-      "snippet": "Valli's brother previously announced his brother was done performing live.\nFrankie Valli, 92, Disputes Retirement Announcement\nAlex Young",
-      "url": "https://consequence.net/2026/08/frankie-valli-92-not-retired-some-reason/",
-      "genre": "",
-      "vibe_check": "The stubborn energy of a jukebox that refuses to unplug — charming, a little chaotic, and somehow still spinning.",
-      "cover_url": "https://consequence.net/wp-content/uploads/2026/08/frankie-valli-retired.jpg",
+      "vibe_check": "The weight of a nation's soul carried in a single acoustic guitar, felt most deeply in the quiet after the anthem fades.",
+      "cover_url": "https://media.npr.org/include/images/facebook-default-wide-s1400-c85.jpg",
       "embed_url": null
     },
     {
       "source": "music",
-      "source_name": "Consequence",
-      "title": "wilt Announce Debut Album when no one’s watching, Share Music Video for “dent”: Stream",
-      "snippet": "Los Angeles alt-rock quartet will finally drop their debut full-lenghth this fall.\nwilt Announce Debut Album when no one’s watching, Share Music Video for &#8220;dent&#8221;: Stream\nBen Kaye",
-      "url": "https://consequence.net/2026/08/wilt-when-no-ones-watching-debut-album-dent/",
+      "source_name": "NPR Music",
+      "title": "Phoebe Bridgers releases highly anticipated third solo studio album, 'Lost Weekend'",
+      "snippet": "A look inside Phoebe Bridgers' new album, \"Lost Weekend,\" and the lives she's lived since we heard from her last.",
+      "url": "https://www.npr.org/2026/08/15/nx-s1-5930259/phoebe-bridgers-releases-highly-anticipated-third-solo-studio-album-lost-weekend",
       "genre": "",
-      "vibe_check": "Late-night bedroom ceiling-staring with the kind of quiet dread that sounds surprisingly good through headphones.",
-      "cover_url": "https://consequence.net/wp-content/uploads/2026/08/wilt-when-no-ones-watching-debut-album-new-single-dent-stream-tracklist-album-art.jpg",
-      "embed_url": "https://www.youtube.com/embed/LUUbLX0KiXE"
+      "vibe_check": "The kind of album you listen to alone at 2am, finally ready to say the thing you've been swallowing for years.",
+      "cover_url": "https://media.npr.org/include/images/facebook-default-wide-s1400-c85.jpg",
+      "embed_url": null
     },
     {
       "source": "music",
-      "source_name": "JazzTimes",
-      "title": "Vocalist, Composer, Theater-Maker Somi Is in Full World-Jazz Bloom",
-      "snippet": "O n one hand, the Illinois-born, Rwandan-Ugandan-American vocalist renowned mononymously as Somi, with the rangy, lustrous, multi-octave voice and tonally explosive compositions, has been making &#8230; Read More \"Vocalist, Composer, Theater-Maker Somi Is in Full World-Jazz Bloom\"\nThe post Vocalist,",
-      "url": "https://www.jazztimes.com/features/profiles/vocalist-composer-theater-maker-somi-is-in-full-world-jazz-bloom/",
+      "source_name": "NPR Music",
+      "title": "Ravyn Lenae, viral success story, adjusts to the aftershock",
+      "snippet": "TikTok made \"Love Me Not\" a Top 10 hit, but its rise felt disembodied from the artist behind it. On Blue Island, Lenae responds to a career plot twist by stepping into the past.",
+      "url": "https://www.npr.org/2026/08/14/nx-s1-5923960/ravyn-lenae-blue-island-review-love-me-not",
       "genre": "",
-      "vibe_check": "The feeling of stepping off a plane into somewhere vast and unfamiliar, pulse quickening with beautiful disorientation.",
-      "cover_url": "https://www.jazztimes.com/wp-content/uploads/2026/08/1-LEAD-PRESS-IMAGE-___-MCA6995-_-by-Knoor-The-Luo.jpg",
-      "embed_url": "https://www.youtube.com/embed/Y6nwOSIcoik"
+      "vibe_check": "Like finding an old diary entry that explains everything the viral moment never could.",
+      "cover_url": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/5516x3103+0+699/resize/1400/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F39%2F01%2F6017f0064435ba37e46092c034e6%2Frl-third-press-photo-cairo-dipika.jpg",
+      "embed_url": "https://www.youtube.com/embed/ArriSoMu8xg"
+    },
+    {
+      "source": "music",
+      "source_name": "Stereogum",
+      "title": "Frankie Valli Denies He’s Retiring, Brother Bobby Apologizes For False Alarm",
+      "snippet": "Earlier this week, Frankie Valli made headlines when his brother Bobby said the 92-year-old doo-wop legend was retiring. But it looks like Frankie's career is continuing after all.\nThe post Frankie Valli Denies He&#8217;s Retiring, Brother Bobby Apologizes For False Alarm appeared first on Stereogum",
+      "url": "https://stereogum.com/2508420/frankie-valli-denies-hes-retiring-brother-bobby-apologizes-for-false-alarm/news/",
+      "genre": "",
+      "vibe_check": "The bittersweet relief of a farewell that wasn't — like catching your keys before they hit the floor.",
+      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/08/GettyImages-2151308221.jpg",
+      "embed_url": null
+    },
+    {
+      "source": "music",
+      "source_name": "Stereogum",
+      "title": "Twisted Teens – “toe”",
+      "snippet": "New Orleans duo Twisted Teens have become one of the breakout underground rock bands of the year thanks to two albums' worth of ragged, energetic, extremely catchy Southern-fried punk rock. They recently announced they'll have a third LP out this year to go along with Blame The Clown and Florida Wat",
+      "url": "https://stereogum.com/2508409/twisted-teens-toe/music/",
+      "genre": "",
+      "vibe_check": "Sweaty, loud, and gloriously trashy — the sound of a house party spilling into the street at midnight in July.",
+      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/08/mVP7-GrNlR0-HD.jpg",
+      "embed_url": "https://www.youtube.com/embed/mVP7-GrNlR0"
+    },
+    {
+      "source": "music",
+      "source_name": "Stereogum",
+      "title": "Smug Brothers Announce New Album Pinhole To Vortex: Hear “Extra All The Time” & “Bingo Diagram”",
+      "snippet": "The Dayton/Columbus quartet Smug Brothers plays a scrappy, classicist form of indie rock that shows plenty of influence from local heroes like Guided By Voices, who once counted Smugs drummer Don Thrasher among their ranks. Next month, they'll follow up last year's very fun Stuck On Beta with a new ",
+      "url": "https://stereogum.com/2508392/smug-brothers-announce-new-album-pinhole-to-vortex-hear-extra-all-the-time-bingo-diagram/music/",
+      "genre": "",
+      "vibe_check": "Basement-worn and proudly unglamorous, like a well-loved cassette tape that still somehow hits every time.",
+      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/08/a1714309275_10.jpg",
+      "embed_url": "https://smugbrothers.bandcamp.com/album/pinhole-to-vortex"
+    },
+    {
+      "source": "music",
+      "source_name": "Consequence",
+      "title": "Phil Collins Reveals He’s Been Sober for Three Years",
+      "snippet": "The Genesis drummer and singer said he's feeling the best he has felt in years.\nPhil Collins Reveals He&#8217;s Been Sober for Three Years\nTravis Bland",
+      "url": "https://consequence.net/2026/08/phil-collins-talks-alcoholism-sobriety-health-issues/",
+      "genre": "",
+      "vibe_check": "A quiet, hard-won stillness — the morning light of someone who finally chose themselves.",
+      "cover_url": "https://consequence.net/wp-content/uploads/2026/08/Phil-Collins-Concord.jpg",
+      "embed_url": null
     }
   ],
   "global_silver_linings": [
     {
       "source": "good_news",
       "source_name": "Good News Network",
-      "title": "97-Year-old is Overwhelmed to Attend Great-Granddaughter’s Graduation From Same Med School He Tackled 60 Years ago",
-      "url": "https://www.goodnewsnetwork.org/97-year-old-is-overwhelmed-returns-to-med-school-to-attend-great-granddaughters-graduation-60-years-later/",
-      "snippet": "97-year-old Westel Creager became determined to keep a promise he made years ago. When his great-granddaughter Haiden was going off to college, Westel told her that if she got into medical school, he’d be there when she graduated—and put on her first white coat. For her side of the bargain, Haiden Hauret made good on […] The post 97-Year-old is Overwhelmed to Attend Great-Granddaughter’s Graduation From Same Med School He Tackled 60 Years ago appeared first on Good News Network .",
-      "cover_url": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/08/Dr-Westel-Creager-and-granddaughter-Haiden-Hauret.jpeg",
-      "reason": "Four generations of dedication to medicine in one family is a quietly extraordinary thing — and watching a 97-year-old witness that legacy come full circle is a beautiful reminder that the choices we make echo far beyond our own lifetimes."
-    },
-    {
-      "source": "good_news",
-      "source_name": "Upworthy",
-      "title": "An Uber driver got a $32 tip on a $65 airport run. Then his passenger offered $1,500 for a much bigger job.",
-      "url": "https://www.upworthy.com/pn-uber-driver-1500-drive-mercedes-manhattan-miami/",
-      "snippet": "\"Bro $13 mil house was crazy I should've asked for $2500 lol\" The post An Uber driver got a $32 tip on a $65 airport run. Then his passenger offered $1,500 for a much bigger job. appeared first on Upworthy .",
-      "cover_url": "https://www.upworthy.com/wp-content/uploads/sites/2/2026/08/preview-5.png",
-      "reason": "A stranger's generous tip that grew into a life-changing opportunity is a heartening nudge that small acts of genuine kindness can open doors neither person saw coming."
+      "title": "Your Weekly Horoscope – ‘Free Will Astrology’ by Rob Brezsny",
+      "url": "https://www.goodnewsnetwork.org/horoscope-from-rob-brezsnys-free-will-astrology-8-15-2026/",
+      "snippet": "Our partner Rob Brezsny, whose latest book is Astrology Is Real: Revelations from My Life as an Oracle, provides his weekly wisdom to enlighten our thinking and motivate our mood. Rob’s Free Will Astrology, is a syndicated weekly column appearing in over a hundred publications. He is also the author of Pronoia Is the Antidote for Paranoia: […] The post Your Weekly Horoscope – ‘Free Will Astrology’ by Rob Brezsny appeared first on Good News Network .",
+      "cover_url": "https://www.goodnewsnetwork.org/wp-content/uploads/2020/10/Freewill-Astrology-horoscope-logo.jpg",
+      "reason": "Even in busy times, people are finding small rituals of reflection and self-awareness that help them pause, breathe, and reconnect with what matters most in their lives."
     }
   ],
   "discovery_articles": [
     {
       "source": "discovery",
       "source_name": "Atlas Obscura",
-      "title": "Murales del Borgo San Giuliano in Rimini, Italy",
-      "url": "https://www.atlasobscura.com/places/murales-del-borgo-san-giuliano",
-      "snippet": "Founded around the year 1000, Borgo San Giuliano, was originally the city's fishermen’s quarter. The tradition of painting murals that has made Borgo San Giuliano famous has deep roots. In 1979, the city council suggested demolishing the neighborhood to make way for a new residential development.",
+      "title": "Gloucester Sea Serpent Statue in Gloucester, Massachusetts",
+      "url": "https://www.atlasobscura.com/places/gloucester-sea-serpent-statue",
+      "snippet": "It's a beautiful summer day in a quiet seaside community. People are flocking to the water to enjoy the ocean breeze, splashing waves, shining sun, and the sound of gulls. However, beneath the waters, something monstrous lurks.",
       "category": "history",
-      "cover_url": "https://img.atlasobscura.com/JBmU2uMX4StG-WO1CWmtbgEjalk2cGFMa9SmNL4s3T4/rt:fit/w:600/c:3000:2000:nowe:0:729/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy8zODEz/ODI4NS00YTM2LTQ2/YTAtOWZiMy1hNWMw/YmZhZTI4OTdhNmYx/MGMxYzNjOWFiYTNm/ZjhfNTUwOTUuanBn.jpg"
-    },
-    {
-      "source": "discovery",
-      "source_name": "Atlas Obscura",
-      "title": "Fannie Bay Gaol in Fannie Bay, Australia",
-      "url": "https://www.atlasobscura.com/places/fannie-bay-gaol",
-      "snippet": "For nearly a century, Fannie Bay Gaol was the Northern Territory of Australia's principal prison, confining a range of prisoners from cattle rustlers and opium traffickers to political prisoners and condemned murderers. It was opened as Her Majesty's Gaol and Labour Prison in 1883 and remained in use until 1979. This made it one of Australia's longest operating frontier prisons.",
-      "category": "history",
-      "cover_url": "https://img.atlasobscura.com/YsyXRa1iwOeq37bWcMYiIhkvzvhKxEKFW_Oc3qu9tVY/rt:fit/w:600/c:2754:1836:nowe:18:864/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy85NDdh/Y2JlNi03OTY3LTRi/ZTEtOTY0NS1mZTYz/MzBmMThiNzM3NjUx/MDgzOTlkNzRhOTlk/NWFfSU1HXzUzMzEu/anBlZw.jpg"
-    },
-    {
-      "source": "discovery",
-      "source_name": "Atlas Obscura",
-      "title": "The Atlas Obscura Guide to the World's Strangest Christmas Traditions",
-      "url": "https://www.atlasobscura.com/articles/guide-to-strangest-christmas-traditions",
-      "snippet": "Every European Christmas market sells the same mulled wine out of the same wooden hut. This is not a criticism — it is a very good hut, and the wine is warm. But it is not a reason to choose one country over another, and the \"best Christmas markets\" lists that dominate December travel writing are, functionally, lists of interchangeable huts.",
-      "category": "history",
-      "cover_url": "https://img.atlasobscura.com/qRu6RZWdQibVtr8yxAsWlwqlRGOMf-avy_tDnBE_9I0/rt:fit/w:1200/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS8y/MDI2LzA4LzAzLzIw/LzU2LzM2LzM1N2My/NWVkLTU3NmMtNDlk/ZS05MGIxLTgwOWE2/ZTczZDI3Yy9rcmFt/cHVzLmpwZw.jpg"
-    },
-    {
-      "source": "discovery",
-      "source_name": "Atlas Obscura",
-      "title": "The Atlas Obscura Guide to Seeing the Northern Lights",
-      "url": "https://www.atlasobscura.com/articles/guide-to-northern-lights",
-      "snippet": "Here is the failure mode nobody warns you about. You book a week in a country you chose because it appeared on a list of the best places to see the northern lights. You arrive.",
-      "category": "history",
-      "cover_url": "https://img.atlasobscura.com/muYiJ3G1JdpM7MMbzQ2ogB0e8hJf72SLupQL3J4CKXc/rt:fit/w:1200/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS8y/MDI2LzA4LzAzLzE4/LzUyLzA4LzdhZWE3/NWY4LTU3ZTktNDll/OS1iOWYyLWFlMzFk/NjMyODJmOC9zaHV0/dGVyc3RvY2tfMjcz/MjkxMDI1Ny5qcGc.jpg"
+      "cover_url": "https://img.atlasobscura.com/ALaDzY4V63fNqtcUYGoyxP2vAx0FOZTi7xoGefjq8d4/rt:fit/w:600/c:2048:1365:nowe:0:0/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy8wYjM4/ZTFlMC00MmMyLTRh/YjMtOGU4Ni0wYmY0/MDJkOGRmOTA1Zjc3/YjJkZmE3MDljMmY2/MjZfMi5qcGc.jpg",
+      "ferns_note": "For over two centuries, the waters off Gloucester hosted so many credible sea serpent sightings that the Linnaean Society of New England launched a formal scientific investigation in 1817 — complete with sworn affidavits from dozens of witnesses. The monster was respectable enough to earn a Latin name before anyone decided, quietly, to stop looking."
     },
     {
       "source": "discovery",
       "source_name": "Smithsonian",
-      "title": "Historic Submarine Restoration Reveals a Hidden Connection to a Lost Sister Ship That Sank During World War II",
-      "url": "https://www.smithsonianmag.com/smart-news/historic-submarine-restoration-reveals-a-hidden-connection-to-a-lost-sister-ship-that-sank-during-world-war-ii-180989340/",
-      "snippet": "Experts working on the USS \"Silversides\" found a flood valve that appears to have been destined for its sister ship, the USS \"Trigger.\" The vessel sank in the East China Sea on March 28, 1945",
+      "title": "Astronomers Peered at the Early Universe and May Have Discovered a New Kind of Celestial Object: Black Hole Stars",
+      "url": "https://www.smithsonianmag.com/smart-news/astronomers-peered-at-the-early-universe-and-may-have-discovered-a-new-kind-of-celestial-object-black-hole-stars-180989334/",
+      "snippet": "Since the James Webb Space Telescope started collecting data in 2022, it has found puzzling objects dubbed little red dots. A new study suggests they might be giant black holes with some characteristics of stars",
       "category": "history",
-      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/GnsMhAVuAY4AuYJchTezq5l7xLA=/fit-in/1600x0/filters:focal(536x306:537x307)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/e0/8f/e08fd007-e068-45e9-8ddc-b6264a687719/fb_img_1784226986658.webp"
-    },
-    {
-      "source": "discovery",
-      "source_name": "Smithsonian",
-      "title": "Covid-19 Can Reawaken Dormant Viruses in the Body, Which Might Worsen Symptoms of the Respiratory Illness, Study Suggests",
-      "url": "https://www.smithsonianmag.com/smart-news/covid-19-can-reawaken-dormant-viruses-in-the-body-which-might-worsen-symptoms-of-the-respiratory-illness-study-suggests-180989322/",
-      "snippet": "Most people carry a sleeping virus in their bodies, such as the herpesvirus that causes mononucleosis, or the “kissing disease.” A new study hints that Covid-19 triggers their reactivation, which could worsen symptoms and increase the risk of long Covid",
-      "category": "history",
-      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/yendNMFtypVokKEy7i25CX32dL8=/fit-in/1600x0/filters:focal(400x312:401x313)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/aa/6b/aa6baee5-7e62-4341-8fb8-6a36ee00754b/49535193876_8ec9df4dc7_c.jpg"
-    },
-    {
-      "source": "discovery",
-      "source_name": "Smithsonian",
-      "title": "A Medieval Man's Injuries Reminded One Archaeologist of Modern-Day Car Crash Victims. They Turned Out to Be the Work of an English Trebuchet",
-      "url": "https://www.smithsonianmag.com/smart-news/a-medieval-mans-injuries-reminded-one-archaeologist-of-modern-day-car-crash-victims-they-turned-out-to-be-the-work-of-an-english-trebuchet-180989346/",
-      "snippet": "A skeleton unearthed in Scotland likely belongs to a soldier struck by a high-speed projectile during Edward I's 1304 siege of Stirling Castle. The man suffered more than 160 fractures",
-      "category": "history",
-      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/FGF2kOvgSDikaEKWT5Mr6XlT1nA=/fit-in/1600x0/filters:focal(750x500:751x501)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/40/c6/40c683bd-0e63-413a-84e0-9393057242ad/stirling-castle.png"
-    },
-    {
-      "source": "discovery",
-      "source_name": "Smithsonian",
-      "title": "Schlitz Beer, an Iconic Midwestern Pour, Runs Dry in Chicago After 177 Years. Its Legacy, However, Goes Far Beyond the Pint Glass",
-      "url": "https://www.smithsonianmag.com/smart-news/schlitz-beer-an-iconic-midwestern-pour-officially-runs-dry-in-chicago-after-177-years-180989342/",
-      "snippet": "With significant roles in the Great Chicago Fire, 1893 World’s Fair and modern-day architecture, the beer’s impact on the Windy City is undeniable",
-      "category": "history",
-      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/xPMaFgdWc5kqq2v6O_kk7mQlzpg=/fit-in/1600x0/filters:focal(3576x2793:3577x2794)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/db/a9/dba909cb-f988-490d-a55f-7fbb7196e0fe/south_branch_of_the_chicago_river_at_14th_street_1900_photochrom.jpg"
-    },
-    {
-      "source": "discovery",
-      "source_name": "Science News",
-      "title": "How a brutal drought may have helped unleash yellow fever in Brazil",
-      "url": "https://www.sciencenews.org/article/drought-yellow-fever-outbreak-brazil",
-      "snippet": "Animals searching for water brought the forest to the city, perhaps sparking Brazil’s first yellow fever outbreak in decades.",
-      "category": "science",
-      "cover_url": "https://www.sciencenews.org/wp-content/uploads/sites/2/2026/08/081426_EG_droughtoutbreak_main.jpg"
-    },
-    {
-      "source": "discovery",
-      "source_name": "Science News",
-      "title": "A light-based scan could detect deadly bowel disease in preterm babies",
-      "url": "https://www.sciencenews.org/article/light-scan-deadly-bowel-disease-babies",
-      "snippet": "Necrotizing enterocolitis strikes premature babies with almost no warning. A new approach aims to detect it early with a quick, low-risk scan.",
-      "category": "science",
-      "cover_url": "https://www.sciencenews.org/wp-content/uploads/sites/2/2026/08/080726_BP_NECdetection_main.jpg"
-    },
-    {
-      "source": "discovery",
-      "source_name": "Atlas Obscura",
-      "title": "The Atlas Obscura Guide to Winter Sun",
-      "url": "https://www.atlasobscura.com/articles/guide-to-winter-sun",
-      "snippet": "Not where it's warm. Where the northern winter is the only window. Every winter sun list is the same list.",
-      "category": "history",
-      "cover_url": "https://img.atlasobscura.com/UDfCKA6ntNUdUjrK0yuX5Tqur18X8gr5f-CTHTMaY68/rt:fit/w:1200/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS8y/MDI2LzA4LzA0LzE3/LzQyLzM1Lzk3NGVl/ZGE5LTZjZTAtNDBj/OS1hOGI2LTdkMWQz/NzIxMDdlZC9zYWxh/ci1kZS11eXVuaS5q/cGc.webp"
-    },
-    {
-      "source": "discovery",
-      "source_name": "Colossal",
-      "title": "A New Book Celebrates More Than 250 Trailblazing Women Photographers Across 200 Years",
-      "url": "https://www.thisiscolossal.com/2026/08/great-women-photographers/",
-      "snippet": "“If ‘greatness’ has long been defined by visibility and remembrance, then the continued documentation and celebration of women’s photographic practice is not only relevant but essential.” Do stories and artists like this matter to you? Become a Colossal Member today and support independent arts publishing for as little as $7 per month. The article A New Book Celebrates More Than 250 Trailblazing Women Photographers Across 200 Years appeared first on Colossal .",
-      "category": "history",
-      "cover_url": "https://www.thisiscolossal.com/wp-content/uploads/2026/08/greatwomenphotographers-1.jpg"
+      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/eNVMRb25_cVmMbqxo7Fm0m9lCsY=/fit-in/1600x0/filters:focal(450x300:451x301)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/7c/a4/7ca45b97-a5b6-4cdb-9391-d20dd31bd01d/mit-blackholestar-01-press_0.jpg",
+      "ferns_note": "The 'little red dots' spotted by the James Webb Space Telescope may be objects that shouldn't exist by our current understanding of physics — black holes so enormous they've essentially grown a stellar skin around themselves. If confirmed, they wouldn't just be a new discovery; they'd be a new category of existence."
     }
   ],
   "featured_read": {
     "source": "reads",
     "source_name": "Nautilus",
-    "title": "The Real “Mummy’s Curse” Lurks Online",
-    "url": "https://nautil.us/the-real-mummys-curse-lurks-online-1283802/",
-    "snippet": "A booming market for mummified remains poses health risks The post The Real “Mummy’s Curse” Lurks Online appeared first on Nautilus .",
-    "cover_url": "https://lede-admin.nautil.us/wp-content/uploads/sites/70/2026/08/Currie_HERO_7aeb5b.png"
+    "title": "Is This the World’s Oldest Image of a Mind‑altering Plant?",
+    "url": "https://nautil.us/is-this-the-worlds-oldest-image-of-a-mind%e2%80%91altering-plant-1283811/",
+    "snippet": "A painted panel deep in a Spanish cave may push the human relationship with mind-altering plants back thousands of years, earlier than anything previously known The post Is This the World’s Oldest Image of a Mind‑altering Plant? appeared first on Nautilus .",
+    "cover_url": "https://lede-admin.nautil.us/wp-content/uploads/sites/70/2026/08/Pothier_HERO.png"
   },
   "reading_room": [
     {
       "source": "reads",
       "source_name": "Psyche",
-      "title": "Climbing gives me a break from my brain",
-      "url": "https://psyche.co/notes-to-self/climbing-gives-me-a-much-needed-break-from-my-brain",
-      "snippet": "When I took up indoor climbing, I didn’t anticipate the special appeal it held for someone with ADHD - by Alizeh Kohari Read on Psyche",
+      "title": "How to enter a state of flow",
+      "url": "https://psyche.co/guides/how-to-enter-a-state-of-flow",
+      "snippet": "That moment of sweet immersion in the task at hand: that’s flow. With some strategy, you can experience it more often - by Susan A Jackson Read on Psyche",
       "cover_url": ""
     },
     {
       "source": "reads",
       "source_name": "The Paris Review",
-      "title": "In the Studio with Chad Fore, the Writer Behind “Lil Spooky”",
-      "url": "https://www.theparisreview.org/blog/2026/08/14/chad-fore-on-lil-spooky/",
-      "snippet": "“‘What are they rapping about?’ ‘Well, devil worship.’”",
-      "cover_url": "https://www.theparisreview.org/blog/wp-content/uploads/2026/08/chad-e1786552927331.jpg"
+      "title": "How Could I Forget Odysseus?",
+      "url": "https://www.theparisreview.org/blog/2026/07/21/the-paris-review-redux-how-could-i-forget-odysseus/",
+      "snippet": "“I loved that Odysseus could transition so easily from being somebody to being nobody, and back again.\"",
+      "cover_url": "https://www.theparisreview.org/blog/wp-content/uploads/2026/07/emily-wilson-odyssey-age-8-polyphemus-2.jpg"
     },
     {
       "source": "reads",
       "source_name": "Longreads",
-      "title": "The Top 5 Longreads of the Week",
-      "url": "https://longreads.com/2026/08/14/top-5-621/",
-      "snippet": "Recommending stories from Emi Nietfeld, Brendan Borrell, Boyce Upholt, Fernando Pinho, and Vann R. Newkirk II.",
-      "cover_url": "https://i0.wp.com/longreads.com/wp-content/uploads/2026/08/OLEKSII-KRIACHKO-Getty-Images.png?fit=2400%2C1400&quality=80&ssl=1"
+      "title": "Whose Babies Are These?",
+      "url": "https://longreads.com/2026/08/13/whose-babies-are-these/",
+      "snippet": "\"A Chinese man hired a Florida surrogate, then didn’t pick up his kids, sparking a custody battle that could upend the industry.\"",
+      "cover_url": ""
     },
     {
       "source": "reads",
       "source_name": "Literary Hub",
-      "title": "Before We Are Erased: Why I Founded Gaza Publications During the Genocide",
-      "url": "https://lithub.com/before-we-are-erased-why-i-founded-gaza-publications-during-the-genocide/",
-      "snippet": "During the early days of the genocide, I was in the city of Rafah, displaced, sleeping under a roof that I didn’t know would still be there by morning. Shells were falling around the building where I had taken refuge",
-      "cover_url": "https://s26162.pcdn.co/wp-content/uploads/2026/08/gaza-publications.jpg"
+      "title": "Lit Hub Weekly: August 10 – 14, 2026",
+      "url": "https://lithub.com/lit-hub-weekly-august-10-14-2026/",
+      "snippet": "When a wealthy university donor can silence one of the world’s leading genocide scholars, it exposes the problem with for-profit higher education. | Lit Hub Politics On The Catcher in the Rye at 75, Hemingway, and the influence of war",
+      "cover_url": "https://s26162.pcdn.co/wp-content/uploads/2026/08/EdnaFerber.jpg"
     },
     {
       "source": "reads",
       "source_name": "Noema",
-      "title": "AI Needs Public Feedback at Scale Before It’s Too Late",
-      "url": "https://www.noemamag.com/ai-needs-public-feedback-at-scale-before-its-too-late",
-      "snippet": "The post AI Needs Public Feedback at Scale Before It’s Too Late appeared first on NOEMA .",
-      "cover_url": "https://noemamag.imgix.net/2026/08/Noema_Color_V1-26-scaled.jpg?fit=crop&fm=pjpg&h=628&ixlib=php-3.3.1&w=1200&wpsize=noema-social-facebook&s=eb8d21dd42e73d048679e30abf678e55"
+      "title": "From The Trap Of Geopolitics To A Geo-Civilizational Paradigm",
+      "url": "https://www.noemamag.com/from-the-trap-of-geopolitics-to-a-geo-civilizational-paradigm",
+      "snippet": "The post From The Trap Of Geopolitics To A Geo-Civilizational Paradigm appeared first on NOEMA .",
+      "cover_url": "https://noemamag.imgix.net/2026/08/Feature_Color_V1-scaled.jpg?fm=pjpg&ixlib=php-3.3.1&s=756d6af8a23807efb529ded154d17140"
     }
   ],
   "garden_note": {
-    "note": "August in Zürich is all golden weight and abundance — the dahlias are pushing their full August faces toward the light, and the kitchen garden is almost embarrassingly generous right now. Step out before the dew lifts and you'll catch the courgettes doubling in size before your very eyes.",
+    "note": "August evenings in Zürich carry that particular late-summer warmth — the kind that lingers in the stone walls and the heavy heads of sunflowers long after the light fades. Step outside before 21:11 and you'll catch the last blush of dusk over the Uetliberg, the air thick with the scent of ripening tomatoes and sweet basil still holding the day's heat.",
     "in_season": [
-      "Dahlias in full late-summer bloom",
-      "Courgettes and climbing beans to harvest daily",
-      "Early apple varieties ripening on the branch",
-      "Sowing winter salad seedlings under cover"
+      "Sunflowers in full, glorious bloom",
+      "Tomatoes ripening on the vine — check for splits after warm days",
+      "Courgettes: harvest daily before they turn to marrows",
+      "Deadhead dahlias to keep the late-summer flush coming"
     ],
-    "sky_tonight": "A new moon means an ink-dark sky tonight — perfect for tracing the Milky Way arching through Cygnus and Aquila high overhead.",
-    "sun_times": "First light creeps in at 05:48, with sunrise at 06:20 — and the long August evening lingers until dusk at 21:11.",
-    "moon_label": "New moon",
-    "illum_pct": 4,
+    "sky_tonight": "A slender waxing crescent moon sets early in the southwest — look for it low in the twilight, then turn east to find Saturn rising steadily through the night.",
+    "sun_times": "Dusk settles over Zürich at 21:11 tonight, with the sun having slipped away at 20:39.",
+    "moon_label": "Waxing crescent",
+    "illum_pct": 6,
     "sun_range": "06:20–20:39"
   },
   "puzzle": {
-    "kind": "haiku riddle",
-    "label": "Fern's Morning Riddle",
-    "prompt": "dawn glass holds the sky\nsilver rings spread wide and gone\nstone skips, then forgets",
-    "answer": "A pond (or still water)",
-    "hint": "Think of a quiet surface that remembers nothing, yet shows everything."
+    "kind": "anagram",
+    "label": "Fern's Morning Anagram",
+    "prompt": "Rearrange the letters of SWALLOW to make a different common word.",
+    "answer": "Wallows",
+    "hint": "There is one other word hiding in it.",
+    "source": "wordsmith.org",
+    "source_id": "swallow"
   },
   "previous_puzzle": {
     "label": "Fern's Morning Riddle",
-    "prompt": "Which three letters can frighten a thief away?",
-    "answer": "I C U (I See You!)"
+    "prompt": "dawn glass holds the sky\nsilver rings spread wide and gone\nstone skips, then forgets",
+    "answer": "A pond (or still water)"
   },
   "larder": {
-    "news": [
-      {
-        "source": "food",
-        "source_name": "The Kitchn",
-        "title": "I Tried Nearly a Dozen Grocery Store Muffins — These Are the 3 Absolute Best",
-        "url": "https://www.thekitchn.com/best-grocery-store-muffins-23839114?utm_source=RSS&utm_medium=feed&utm_campaign=Category%2FChannel%3A+main",
-        "snippet": "One is a major deal. READ MORE...",
-        "cover_url": "",
-        "blurb": "Consider this your shortcut to the one grocery store muffin actually worth the basket space — no taste-testing required."
-      },
-      {
-        "source": "food",
-        "source_name": "The Guardian",
-        "title": "Cocktail of the week: Whiteley’s at Six Senses’ strawberry & basil margarita – recipe | The good mixer",
-        "url": "https://www.theguardian.com/food/2026/aug/14/strawberry-basil-margarita-recipe-cocktail-of-the-week-whiteleys-at-six-senses",
-        "snippet": "A vibrant and playful twist on the classic cocktail, with a bright, citrus kick and a subtle herbal note Fresh, vibrant and full of summer character, this is a playful twist on the classic. It’s juicy and refreshing, with a bright, citrus kick and a subtle, herbal note that keeps things light and balanced. It also works very well with non-alcoholic tequila.",
-        "cover_url": "https://i.guim.co.uk/img/media/69745c4d5a3e5c911f84a77caca3c8e23a67d507/377_674_2655_2124/master/2655.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=0ba5db6b91a2f6fc361daac8a3dd4201",
-        "blurb": "A strawberry and basil margarita that's equal parts garden party and golden hour — this is the summer cocktail your pitcher has been waiting for."
-      }
-    ],
-    "recipe": {},
-    "seasonal_note": "Zürich's Tuesday and Friday markets at Bürkliplatz are brimming right now with golden Mirabellen and the first Zwetschgen — those dark, oblong plums the Swiss quietly treasure — so do grab a punnet and roast them slowly with a little butter and vanilla for a breakfast compote that needs nothing more than good Quark alongside."
+    "news": [],
+    "recipe": {}
   },
   "fern_data": {
-    "greeting": "What does a morning actually ask of you — to slow down, or to go somewhere entirely? Today has an 18th-century spy who rewrote the rules of identity, a cyclist crossing Japan on a shoestring, and a 97-year-old who waited six decades to see his great-granddaughter walk the same stage he once did.",
-    "top_pick_title": "Miles Logged, Records Broken"
+    "greeting": "What if tonight you let the strange carry you somewhere — the secret rites of Eleusis, a dog who chose a tiger for a best friend, and the oldest known image of a psychedelic plant all waiting just past the hour you'd usually stop looking?",
+    "top_pick_title": "Rites, Roots & Soft Landings"
   }
 }
