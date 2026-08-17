@@ -1,160 +1,134 @@
 {
-  "fetched_at": "2026-08-16T16:44:16.387273+02:00",
-  "is_am_email": false,
+  "fetched_at": "2026-08-17T06:07:45.604366+02:00",
+  "is_am_email": true,
   "audit_summary": {
-    "youtube_videos": 9,
-    "themes": 4,
-    "music_articles": 3,
-    "good_news_articles": 2,
-    "discovery_articles": 0,
+    "youtube_videos": 7,
+    "themes": 3,
+    "music_articles": 6,
+    "good_news_articles": 3,
+    "discovery_articles": 2,
     "featured_read": 1,
     "reading_room": 5,
     "garden": 1,
     "puzzle": 1,
-    "larder": 0
+    "larder": 2
   },
   "themes": [
     {
-      "name": "Civilizations & Their Shadows",
-      "emoji": "🏛️",
-      "tagline": "Empires rise, cultures vanish, and the past always has something uncomfortable to say.",
+      "name": "Rabbit Holes Worth Falling Down",
+      "emoji": "🎬",
+      "tagline": "Long-form essays that reward every minute you give them — cinema, symbolism, and the art of making meaning.",
       "items": [
         {
           "source": "youtube",
-          "video_id": "Qbq8600MfVM",
-          "title": "How Slavery Built the Roman Empire",
-          "channel_id": "UC2J29LPhS9vMiWyYEqBRB0w",
-          "channel_title": "The Ancients",
-          "published_at": "2026-08-16T06:00:29Z",
-          "url": "https://www.youtube.com/watch?v=Qbq8600MfVM",
-          "duration_seconds": 3985,
-          "view_count": "2194",
-          "description": "Was the Roman Empire really made by conquest? Or was it powered by something much darker? \n\nFor centuries, millions of enslaved people sacrificed their lives and their labour on the altar of Roman progress, an integral cog in the grinding imperial machine. And so today on The Ancients, Tristan Hughes is joined by Dr Emma Southon, author of Servus: How Slavery Made The Roman World to bring their overlooked stories back into the limelight. From the mines and farms to the households of the imperial",
+          "video_id": "Ovq6ue4RE3s",
+          "title": "A BREAKDOWN of ALL Symbols, Themes, & the Ending of Teenage Sex and Death at Camp Miasma EXPLAINED",
+          "channel_id": "UCXcTkcC_H4XeDGfJ7rQGJaw",
+          "channel_title": "Lucas Blue",
+          "published_at": "2026-08-17T02:19:19Z",
+          "url": "https://www.youtube.com/watch?v=Ovq6ue4RE3s",
+          "duration_seconds": 956,
+          "view_count": "205",
+          "description": "In this MUBI Teenage Sex and Death at Camp Miasma Explained / Ending Explained and Analysis, I deep-dive video essay analyze the Teenage Sex & Death at Camp Miasma movie starring Hannah Einbinder and Gillian Anderson. Directed by Jane Schoenbrun, the film is a perfect blend of camp horror and comedy, exploring themes of gender identity and sexuality. I believe this film is excellent in capturing the major themes within the trans experience and queer film through great writing, acting, directing ",
+          "why_watch": "If you caught Jane Schoenbrun's MUBI film and left with questions, this 16-minute essay works through the layered symbolism around gender identity and camp horror with genuine care rather than surface-level plot recap. The creator draws specific connections between visual motifs and the film's thematic core, making it a useful companion piece. Best watched immediately after the film while it's still fresh.",
           "is_wildcard": false
         },
         {
           "source": "youtube",
-          "video_id": "XZGWMHRBXCU",
-          "title": "The Life of Agis by Plutarch",
-          "channel_id": "UCbFLHoeA-X5qRUDmb9tRRqA",
-          "channel_title": "Classic Masterworks",
-          "published_at": "2023-04-12T07:22:23Z",
-          "url": "https://www.youtube.com/watch?v=XZGWMHRBXCU",
-          "duration_seconds": 1974,
-          "view_count": "991",
-          "description": "In 245 B.C., Sparta, a once-great Greek city-state, had become corrupt and its citizens had forgotten the laws established by Lycurgus, including rules of dress and inheritance. Traditional Spartan citizens were only allowed to leave their property to their relatives, which had kept the economy stable and the people content. However, the laws were now being ignored, leading to wealth disparity and poverty.\n\nKing Agis attempted to reform Sparta by returning to the old ways, but he faced oppositio",
-          "is_wildcard": false
-        },
-        {
-          "source": "youtube",
-          "video_id": "MbnaOm_S6ws",
-          "title": "the phoenicians: a culture lost to time and the archeological record",
-          "channel_id": "UCnCk_o6ySiM_ZzxubCv899Q",
-          "channel_title": "fig tree",
-          "published_at": "2023-01-14T10:09:18Z",
-          "url": "https://www.youtube.com/watch?v=MbnaOm_S6ws",
-          "duration_seconds": 871,
-          "view_count": "139382",
-          "description": "i love these guys.\n\n0:00 intro\n0:40 who??\n2:22 what??\n4:16 the goods\n6:28 relationship with greece\n7:28 the evolution of language \n9:16 carthage \n10:22 the end of an era \n14:06 bye",
-          "is_wildcard": false
-        }
-      ]
-    },
-    {
-      "name": "The Daily Crust",
-      "emoji": "🍕",
-      "tagline": "From DIY pizza dreams to nook-and-cranny English muffins — comfort food with a story to tell.",
-      "items": [
-        {
-          "source": "youtube",
-          "video_id": "0B2qA3w2BvE",
-          "title": "What Happened To Build Your Own Pizza?",
-          "channel_id": "UCNaq5Jh4SQ1oBAjhQ0KPhoA",
-          "channel_title": "Weird History Food",
-          "published_at": "2026-08-16T14:15:35Z",
-          "url": "https://www.youtube.com/watch?v=0B2qA3w2BvE",
-          "duration_seconds": 928,
-          "view_count": "1061",
-          "description": "When it comes to pizza, everyone has a favorite topping. But for a while, some restaurant chains wondered if choosing toppings wasn't enough and dared to ask: What if customers could build every pizza from scratch? Inspired by the assembly-line success of brands like Subway and Chipotle, chains promised fresh dough, unlimited topping combinations, and blazing-fast ovens that could cook a personal pizza in just a few minutes. Make-your-own-pizza sounded like the future of fast casual dining. And ",
-          "is_wildcard": false
-        },
-        {
-          "source": "youtube",
-          "video_id": "ALR6ARxqyYY",
-          "title": "Homemade English Muffins are SO much better than storebought",
-          "channel_id": "UC_8x1VmhDgsU72Yktd9Ukeg",
-          "channel_title": "sheldo's kitchen",
-          "published_at": "2022-02-05T18:39:28Z",
-          "url": "https://www.youtube.com/watch?v=ALR6ARxqyYY",
-          "duration_seconds": 599,
-          "view_count": "626521",
-          "description": "You won't believe just how much better these English Muffins are than storebought. So darn moist and chewy, almost crumpet-like on the inside. Tons of nooks and crannies to soak up all the butter and jam. Makes for the perfect breakfast sandwich. Forget about Egg McMuffins! Make this recipe for yourself and level up your breakfast game.\n\nEnglish Muffins\n\nIngredients\n- 325mL water, room temperature\n- 167g (3/4 cup) Greek yogurt, room temperature\n- 40g (3 tbsp) oil\n- 3/4 tsp (3g) instant yeast (su",
-          "is_wildcard": false
-        }
-      ]
-    },
-    {
-      "name": "Deep Cuts & Big Ideas",
-      "emoji": "🧠",
-      "tagline": "From the neurons firing in your skull to the mind behind Inception — thought that rewards the curious.",
-      "items": [
-        {
-          "source": "youtube",
-          "video_id": "vwLb3XlPCB4",
-          "title": "Brain Criticality - Optimizing Neural Computations",
-          "channel_id": "UCR2uRTQ53V_egXKFflMMaaw",
-          "channel_title": "Artem Kirsanov",
-          "published_at": "2023-03-05T22:02:39Z",
-          "url": "https://www.youtube.com/watch?v=vwLb3XlPCB4",
-          "duration_seconds": 2225,
-          "view_count": "262766",
-          "description": "To try everything Brilliant has to offer—free—for a full 30 days, visit http://brilliant.org/ArtemKirsanov/. \nThe first 200 of you will get 20% off Brilliant’s annual premium subscription.\n\n=====\nMy name is Artem, I'm a neuroscience PhD student at Harvard University. \n🌎 Website and Social links: https://kirsanov.ai/\n📥 \"Receptive Field\" neuro-newsletter: https://artemkirsanov.substack.com/\n✨ Support me on Patreon to get access to Discord community: https://patreon.com/artemkirsanov\n=====\n\nIn this",
-          "is_wildcard": false
-        },
-        {
-          "source": "youtube",
-          "video_id": "5gPMoEG7i8s",
-          "title": "The Ultimate Christopher Nolan Analysis: The Breakout Years",
+          "video_id": "tJJaNIX_OUY",
+          "title": "The Ultimate Christopher Nolan Analysis: How a Director Rises",
           "channel_id": "UCs7nPQIEba0T3tGOWWsZpJQ",
           "channel_title": "Like Stories of Old",
-          "published_at": "2023-07-07T15:00:04Z",
-          "url": "https://www.youtube.com/watch?v=5gPMoEG7i8s",
-          "duration_seconds": 5171,
-          "view_count": "266664",
-          "description": "Get Nebula using my link for 40% off an annual subscription: https://go.nebula.tv/lsoo\nWatch the final episode of the Ultimate Nolan Retrospective right now: https://nebula.tv/videos/lsoo-the-ultimate-nolan-retrospective-road-to-oppenheimer\n\nWatch the previous episode: https://youtu.be/tJJaNIX_OUY\n\nHelp me make more videos!\nSupport this channel: https://www.patreon.com/LikeStoriesofOld \nLeave a One-Time Donation: https://www.paypal.me/TomvanderLinden\n\nFacebook: https://www.facebook.com/LikeStori",
+          "published_at": "2023-06-23T14:00:43Z",
+          "url": "https://www.youtube.com/watch?v=tJJaNIX_OUY",
+          "duration_seconds": 3753,
+          "view_count": "84800",
+          "description": "Get Nebula using my link for 40% off an annual subscription: https://go.nebula.tv/lsoo\nWatch the next episode of the Ultimate Nolan Retrospective right now: https://nebula.tv/videos/lsoo-the-ultimate-nolan-retrospective-an-auteur-begins\n\nHelp me make more videos!\nSupport this channel: https://www.patreon.com/LikeStoriesofOld \nLeave a One-Time Donation: https://www.paypal.me/TomvanderLinden\n\nFacebook: https://www.facebook.com/LikeStoriesofOld \nInstagram: https://www.instagram.com/tom.vd.linden\nTw",
+          "why_watch": "Like Stories of Old's Tom van der Linden approaches Nolan not as a fanboy or a contrarian but as someone genuinely curious about how a filmmaker's worldview shapes craft over time — and at 62 minutes, this feels more like a thoughtful book chapter than a YouTube video. The analysis traces Nolan's recurring obsessions (time, guilt, masculine stoicism) across his whole career rather than treating each film as isolated. If you've ever felt something was slightly off about Nolan's emotional register, this video probably articulates why.",
           "is_wildcard": false
         }
       ]
     },
     {
-      "name": "Wandering in Character",
-      "emoji": "🌍",
-      "tagline": "Whether you're dressing like a hobbit or flying across the world, the journey is always the point.",
+      "name": "Smarter Than We Thought",
+      "emoji": "🧠",
+      "tagline": "Ancient philosophers, Neanderthal families, and neurons that moonlight as neural networks — intelligence keeps surprising us.",
       "items": [
         {
           "source": "youtube",
-          "video_id": "eFMfeK3wf18",
-          "title": "Dressing like a hobbit for my own entertainment (& for Brandywine)",
-          "channel_id": "UCSHtaUm-FjUps090S7crO4Q",
-          "channel_title": "Bernadette Banner",
-          "published_at": "2026-08-16T14:00:20Z",
-          "url": "https://www.youtube.com/watch?v=eFMfeK3wf18",
-          "duration_seconds": 1520,
-          "view_count": "2151",
-          "description": "Tickets to the Brandywine festival! (Note I will be at the UK festival, NOT the USA one) https://burgschneider.com/en-uk/collections/brandywine-festival-weston-park?sca_ref=10955015.kZmRJuqjwl&sca_source=IG\nPregame Keats & Co Teas here (100% of profits go to charity, and we also get a lil affiliate commission for your purchase!): https://www.awin1.com/cread.php?awinmid=117955&awinaffid=2985655&ued=https%3A%2F%2Fgood.store%2Fcollections%2Fkeats-and-co-loose-leaf-tea-and-coffee\nBurgschneider smock",
+          "video_id": "ZIi-Z-Z1whU",
+          "title": "The Smartest People of Classical Antiquity",
+          "channel_id": "UCbFLHoeA-X5qRUDmb9tRRqA",
+          "channel_title": "Classic Masterworks",
+          "published_at": "2023-03-29T06:48:38Z",
+          "url": "https://www.youtube.com/watch?v=ZIi-Z-Z1whU",
+          "duration_seconds": 1386,
+          "view_count": "2265",
+          "description": "Who were the smartest people in the ancient world?\nClassical antiquity was a period spanning over several centuries and encompassing various cultures and civilizations, so it is difficult to identify a single person as the \"smartest.\" Moreover, intelligence can manifest itself in various forms and domains, such as philosophy, science, mathematics, literature, and politics, among others.\n\nThere were several notable figures in classical antiquity who made significant contributions to various field",
+          "why_watch": "This is a compact survey of intellectual giants across classical antiquity — philosophers, mathematicians, engineers — with the honest acknowledgment that 'smartest' means different things across domains and cultures. It won't replace a deep-dive into any single figure, but it works well as a map for deciding whose work you actually want to explore further. A solid 23 minutes if you're filling gaps in your ancient history mental model.",
+          "is_wildcard": false
+        },
+        {
+          "source": "youtube",
+          "video_id": "hmtQPrH-gC4",
+          "title": "Dendrites: Why Biological Neurons Are Deep Neural Networks",
+          "channel_id": "UCR2uRTQ53V_egXKFflMMaaw",
+          "channel_title": "Artem Kirsanov",
+          "published_at": "2023-01-29T20:23:03Z",
+          "url": "https://www.youtube.com/watch?v=hmtQPrH-gC4",
+          "duration_seconds": 1528,
+          "view_count": "276263",
+          "description": "Keep exploring at http://brilliant.org/ArtemKirsanov/\nGet started for free, and hurry—the first 200 people get 20% off an annual premium subscription.\n\n=====\nMy name is Artem, I'm a neuroscience PhD student at Harvard University. \n🌎 Website and Social links: https://kirsanov.ai/\n📥 \"Receptive Field\" neuro-newsletter: https://artemkirsanov.substack.com/\n✨ Support me on Patreon to get access to Discord community: https://patreon.com/artemkirsanov\n=====\n\nIn this video we will see why individual neur",
+          "why_watch": "The central argument here is genuinely surprising: individual biological neurons, thanks to the branching complexity of their dendrites, may themselves perform computations equivalent to a multi-layer neural network — meaning your brain could be far more powerful than standard neuroscience models suggest. Harvard PhD student Artem Kirsanov explains the underlying research clearly, with strong animations, without dumbing it down. This reframes how you think about the relationship between biological and artificial intelligence.",
+          "is_wildcard": false
+        },
+        {
+          "source": "youtube",
+          "video_id": "saKCjsTzTpY",
+          "title": "neanderthals were smarter than we think || a prehistoric family and how they went extinct",
+          "channel_id": "UCnCk_o6ySiM_ZzxubCv899Q",
+          "channel_title": "fig tree",
+          "published_at": "2023-01-04T23:00:27Z",
+          "url": "https://www.youtube.com/watch?v=saKCjsTzTpY",
+          "duration_seconds": 863,
+          "view_count": "57624",
+          "description": "i talk about a recent article published which gives us a look at a possible neanderthal family living all 2gether. also other stuff.",
+          "why_watch": "This video covers a recent study that identified what may be an actual Neanderthal family group from fossil evidence — father, daughters, cousins — giving a startlingly intimate window into their social lives. The creator, fig tree, has a relaxed, conversational style that makes the science feel approachable without losing the substance, and she's careful to distinguish what the evidence actually shows from speculation. It quietly dismantles the 'brutish caveman' stereotype with specifics rather than generalities.",
+          "is_wildcard": false
+        }
+      ]
+    },
+    {
+      "name": "Good Things, Loud & Warm",
+      "emoji": "✨",
+      "tagline": "Cloud-soft garlic rolls and gospel music on the red carpet — joy that hits you right in the chest.",
+      "items": [
+        {
+          "source": "youtube",
+          "video_id": "uKSSqKn-inw",
+          "title": "Garlic Cloud Rolls... the ultimate garlic bread?",
+          "channel_id": "UC_8x1VmhDgsU72Yktd9Ukeg",
+          "channel_title": "sheldo's kitchen",
+          "published_at": "2021-12-05T18:38:00Z",
+          "url": "https://www.youtube.com/watch?v=uKSSqKn-inw",
+          "duration_seconds": 675,
+          "view_count": "108367",
+          "description": "These garlic cloud rolls are light as air and rich in flavour. Infused with a triple garlic butter. The recipe uses science based techniques to create the ultra light texture and maximize garlic flavour. These are, without a doubt, the best garlic bread ever.\n\nSubscribe: https://www.youtube.com/sheldoskitchen?sub_confirmation=1\nInstagram: https://www.instagram.com/sheldoskitchen/\n\nGarlic Cloud Rolls Recipe\n\nTangzhong\n- 30g (3 tbsp) bread flour\n- 120g (1/2 cup) milk (or dairy-free substitute)\n\nDo",
+          "why_watch": "Sheldo's Kitchen doesn't just share a garlic roll recipe — he explains the food science behind achieving that cloud-like texture, including why a triple garlic butter (raw, roasted, and fried garlic combined) produces a layered flavor that single-preparation garlic bread can't match. The techniques are precise but clearly demonstrated and actually achievable at home. If garlic bread is your comfort food, this is the version worth the extra steps.",
           "is_wildcard": false
         },
         {
           "source": "youtube_trending",
-          "video_id": "8rUzCgn_zDY",
-          "title": "US Trip Begins! | USA Travel Vlog | Family Trip to America | Anu & Suppi",
-          "channel_id": "UCV4kLByQhQlpNzdwJtkjpOw",
-          "channel_title": "Anu & Supi",
-          "published_at": "2026-08-16T06:16:15Z",
-          "url": "https://www.youtube.com/watch?v=8rUzCgn_zDY",
-          "duration_seconds": 1513,
-          "view_count": "2124",
-          "description": "Our US Trip begins! Join Anu & Suppi as we travel from India to America for an exciting USA family trip.\n\nIn this USA Travel Vlog, we share our journey, airport moments, flight experience, family time and the beginning of our unforgettable trip to the United States.\n\nThis is just the beginning of our USA travel series, with many more exciting travel vlogs coming soon.\n\nWatch till the end and join us on our US adventure!\n\nAnu & Suppi\n\n#USTrip #USATravelVlog #FamilyTravelVlog\n #USA2026 #AmericaTri",
+          "video_id": "Z_4_e_MxatU",
+          "title": "A WBTV Special - Countdown to the Stellar Awards",
+          "channel_id": "UCXezD8l3_YFKIYlH5jBxvjA",
+          "channel_title": "WBTV News - Charlotte",
+          "published_at": "2026-08-16T14:00:48Z",
+          "url": "https://www.youtube.com/watch?v=Z_4_e_MxatU",
+          "duration_seconds": 1781,
+          "view_count": "1222",
+          "description": "The 2026 Stellar Awards took place in Charlotte on Saturday, Aug. 15. We counted down to the show with a look at the red carpet and more.\r\n\r\nFor more Local News from WBTV: https://www.wbtv.com/\r\nFor more YouTube Content: https://www.youtube.com/channel/UCXezD8l3_YFKIYlH5jBxvjA",
+          "why_watch": "This is a local news broadcast countdown special for the 2026 Stellar Awards in Charlotte — gospel music's major annual celebration — including red carpet coverage. If you follow gospel music or have a connection to the Charlotte area, it's a nice piece of event documentation. Outside of that specific context, there isn't a strong reason to seek it out.",
           "is_wildcard": true
         }
       ]
@@ -164,142 +138,225 @@
     {
       "source": "music",
       "source_name": "Stereogum",
-      "title": "Noah Kahan Brings Out Chappell Roan For “California” In California",
-      "snippet": "Last night, at Rose Bowl in Pasadena, California, Noah Kahan fans were greeted with a big surprise — and this time it was not shit or piss. Kahan brought out friend and \"generational GOAT\" Chappell Roan to sing her song \"California\" from her breakthrough debut album The Rise And Fall Of A Midwest Pr",
-      "url": "https://stereogum.com/2508437/noah-kahan-brings-out-chappell-roan-for-california-in-california/news/",
+      "title": "Fontaines D.C. Confirm New Album Dopamine Chamber, Bring Out Kurt Vile For Their Song He Inspired",
+      "snippet": "Fontaines D.C. are slowly coming back into the fold, ratcheting up the hype along the way. Last weekend they unveiled some new songs at their first show in nearly a year, and now the Dublin rockers have confirmed their fifth album, Dopamine Chamber, is coming soon. The news follows their performance",
+      "url": "https://stereogum.com/2508463/kurt-vile-joins-fontaines-d-c-at-la-route-du-rock/news/",
       "genre": "",
-      "vibe_check": "The kind of spontaneous, sun-drenched crowd moment that makes you wish you'd bought the ticket.",
-      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/08/Screenshot-2026-08-16-at-3.01.05-PM.png",
+      "vibe_check": "The slow-burn anticipation of a band crawling back into the light, dragging something darker and more electric behind them.",
+      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/08/Screenshot-2026-08-16-at-6.25.23-PM.png",
+      "embed_url": null
+    },
+    {
+      "source": "music",
+      "source_name": "Stereogum",
+      "title": "Felt Members Reunite As Feel For First Show In 37 Years",
+      "snippet": "Last night, indie pop event Glas-Goes Pop played host to a near-reunion of Felt, with three members of the influential jangle-pop band taking to the stage together for the first time in decades. They performed last night in Glasgow, Scotland at the indie pop music festival Glas-Goes Pop, which was h",
+      "url": "https://stereogum.com/2508456/felt-members-reunite-as-feel-for-first-show-in-37-years/news/",
+      "genre": "",
+      "vibe_check": "Like finding a mixtape you made in 1987 and realizing every song still hits exactly the same way.",
+      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/08/Screenshot-2026-08-16-at-5.22.07-PM.png",
+      "embed_url": null
+    },
+    {
+      "source": "music",
+      "source_name": "Pitchfork",
+      "title": "Dave Marsh, Veteran Rock Critic and Bruce Springsteen Biographer, Dies at 76",
+      "snippet": "In a statement, Springsteen called the former Creem editor “soulful, intelligent, heartfelt, opinionated, bruising and often fantastically argumentative”",
+      "url": "https://pitchfork.com/story/dave-marsh-veteran-rock-critic-and-biographer-dies-at-76/",
+      "genre": "",
+      "vibe_check": "The quiet weight of closing a dog-eared paperback you've carried for years, knowing some voices don't get replaced.",
+      "cover_url": "https://media.pitchfork.com/photos/6a81f367e044b7b661d6196e/16:9/w_1280,c_limit/davemarsh.jpg",
+      "embed_url": null
+    },
+    {
+      "source": "music",
+      "source_name": "Aquarium Drunkard",
+      "title": "Radio Free Aquarium Drunkard :: August 2026",
+      "snippet": "Freeform transmissions from Radio Free Aquarium Drunkard on dublab. Airing every third Sunday of the month, RFAD on dublab features the pairing of Tyler Wilcox’s Doom and Gloom from the Tomb and Chad DePasquale’s New Happy Gathering. This month, Tyler kicks things off with some sweet new digs for Au",
+      "url": "https://aquariumdrunkard.com/2026/08/16/radio-free-aquarium-drunkard-august-2026/",
+      "genre": "",
+      "vibe_check": "Late-night shortwave frequencies drifting through an open window somewhere between nostalgia and tomorrow.",
+      "cover_url": "https://aquariumdrunkard.com/_newness/wp-content/uploads/2026/08/IMG_1605.jpg",
       "embed_url": null
     },
     {
       "source": "music",
       "source_name": "Consequence",
-      "title": "Noah Kahan Brings Chappell Roan on Stage for “California” Performance: Watch",
-      "snippet": "“Noah always stands up for me,” Roan told the Pasadena crowd on Kahan's \"The Great Divide Tour.\"\nNoah Kahan Brings Chappell Roan on Stage for &#8220;California&#8221; Performance: Watch\nTravis Bland",
-      "url": "https://consequence.net/2026/08/noah-kahan-brings-chappell-roan-on-stage/",
+      "title": "Queens of the Stone Age Reveal New Album Title in Bloody Teaser Video: Watch",
+      "snippet": "The new LP is titled Perfecth, while the release date is suspect.\nQueens of the Stone Age Reveal New Album Title in Bloody Teaser Video: Watch\nSpencer Kaufman",
+      "url": "https://consequence.net/2026/08/queens-of-the-stone-age-new-album-title-release-date/",
       "genre": "",
-      "vibe_check": "A friendship worn like a badge under stadium lights, loud enough for the whole Rose Bowl to feel it.",
-      "cover_url": "https://consequence.net/wp-content/uploads/2026/08/Noah-Kahan-and-Chappell-Roan.jpeg",
-      "embed_url": "https://www.youtube.com/embed/ScNhjB-YtGs"
+      "vibe_check": "The creeping dread of something loud and dangerous sharpening its teeth just out of view.",
+      "cover_url": "https://consequence.net/wp-content/uploads/2026/08/Queens-of-the-Stone-Age.jpg",
+      "embed_url": "https://www.youtube.com/embed/jqXut-ppW34"
     },
     {
       "source": "music",
-      "source_name": "PopMatters",
-      "title": "The Past Is Prologue for the Family on ‘Delusions of Grandeur’",
-      "snippet": "The Family's Delusions of Grandeur is a portrait of the COVID era, from its beginning to the present, showing the future has already passed.",
-      "url": "https://www.popmatters.com/the-family-delusions-grandeur",
+      "source_name": "JazzTimes",
+      "title": "British Jazz Singer Sandra King, Called “A Phenomenal Sorceress of Song,” Dies at 75",
+      "snippet": "F rom 1969 through the late ’90s, listeners to jazz radio in England, Germany, Denmark, Holland and other European countries heard one of the most &#8230; Read More \"British Jazz Singer Sandra King, Called “A Phenomenal Sorceress of Song,” Dies at 75\"\nThe post British Jazz Singer Sandra King, Called",
+      "url": "https://www.jazztimes.com/features/tributes-and-obituaries/british-jazz-singer-sandra-king-called-a-phenomenal-sorceress-of-song-dies-at-75/",
       "genre": "",
-      "vibe_check": "Like flipping through a journal you forgot you kept, recognizing yourself in handwriting that feels both familiar and foreign.",
-      "cover_url": "https://www.popmatters.com/wp-content/uploads/2026/08/The-Family-Delusions-of-Grandeur-social.webp",
-      "embed_url": "https://www.youtube.com/embed/Kie83UByxMA"
+      "vibe_check": "A velvet voice dissolving into silence, leaving the room just slightly emptier than it was before.",
+      "cover_url": "https://www.jazztimes.com/wp-content/uploads/2026/08/Sandra-King-Peter-Simpkin-London-1970s2-scaled.jpg",
+      "embed_url": null
     }
   ],
   "global_silver_linings": [
     {
       "source": "good_news",
       "source_name": "Good News Network",
-      "title": "Two Hours of Sleep Restored in Alzheimer’s Brains in Research Breakthrough",
-      "url": "https://www.goodnewsnetwork.org/two-hours-of-sleep-restored-in-alzheimers-brains-in-research-breakthrough/",
-      "snippet": "[By Christian Honce | UK College of Medicine] Picture this: You find a small fire isolated in your kitchen. If you had the right tool, you might be able to put it out. But before you can, the sprinklers turn on and soak your entire house.",
-      "cover_url": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/08/Senior-sleeping-old-aging-eye-mask-sick-in-bed-by-A-C-For-Unsplash-pZVOgkmBM0Y.jpeg",
-      "reason": "Scientists have found a way to restore two hours of lost sleep in Alzheimer's-affected brains, a meaningful step toward easing one of the disease's most debilitating symptoms. For millions of families living with Alzheimer's, this kind of progress is a genuine reason to keep hoping."
+      "title": "Boyfriend Secretly Trains For Two Months To Surprise Girlfriend and Run Alongside Her in Dreaded First Half-Marathon",
+      "url": "https://www.goodnewsnetwork.org/boyfriend-secretly-trains-for-two-months-to-surprise-girlfriend-and-run-alongside-her-in-dreaded-first-half-marathon/",
+      "snippet": "As Emma Kessler headed to her first half marathon, her boyfriend’s running shoes were in the trunk, and a surprise was in the works. Kessler, a 22-year-old, had been anxious for weeks. Running 13 miles is no easy task—especially for a rookie.",
+      "cover_url": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/08/Jason-Burns-surprised-girlfriend-Emma-Kessler-running-with-her-on-marathon-selfies.jpg",
+      "reason": "Two months of quiet dedication just to make sure someone he loves didn't face a daunting milestone alone — proof that the most meaningful gestures are often the ones nobody sees coming. It's a small story, but it says something big about what it looks like to truly show up for someone."
     },
     {
       "source": "good_news",
       "source_name": "Upworthy",
-      "title": "On a plane, Emilia Clarke imagined she was a butterfly to reach her dying father. Then one was waiting in the house.",
-      "url": "https://www.upworthy.com/on-a-plane-emilia-clarke-imagined-she-was-a-butterfly-to-reach-her-dying-father-then-one-was-waiting-in-the-house/",
-      "snippet": "\"So I knew that he'd passed, and he passed at the time that I was having the dream.\" The post On a plane, Emilia Clarke imagined she was a butterfly to reach her dying father. Then one was waiting in the house. appeared first on Upworthy .",
-      "cover_url": "https://www.upworthy.com/wp-content/uploads/sites/2/2026/08/clarke.png",
-      "reason": "A butterfly waiting at the threshold of grief is a quiet reminder that the natural world can meet us in our most tender moments in ways we can't quite explain. Emilia Clarke's story resonates because it speaks to the comfort many find in nature when words simply aren't enough."
+      "title": "Relationship coach reveals 5 rules she and her wife ‘never break’ to still feel like newlyweds",
+      "url": "https://www.upworthy.com/relationship-coach-reveals-5-marriage-rules-ex1/",
+      "snippet": "\"Rule 5: A 30 second hug before any hard conversation.\" The post Relationship coach reveals 5 rules she and her wife ‘never break’ to still feel like newlyweds appeared first on Upworthy .",
+      "cover_url": "https://www.upworthy.com/wp-content/uploads/sites/2/2026/05/five_marriage_rules.png",
+      "reason": "Long-term love doesn't happen by accident, and a couples coach pulling back the curtain on her own relationship reminds us that strong partnerships are built on simple, repeatable habits anyone can try. Real, lasting connection is less mysterious than we think."
+    },
+    {
+      "source": "good_news",
+      "source_name": "The Optimist Daily",
+      "title": "Beard dandruff remedies dermatologists swear by",
+      "url": "https://www.optimistdaily.com/2026/08/beard-dandruff-remedies-dermatologists-swear-by/",
+      "snippet": "BY THE OPTIMIST DAILY EDITORIAL TEAM If you’ve put real time into growing and grooming your beard, discovering a film of flakes underneath it can feel so unfair. All that trimming, all those oils, and somehow your skin is staging a revolt. Here’s the thing though: beard dandruff usually isn’t a grooming problem at all.",
+      "cover_url": "https://www.optimistdaily.com/wp-content/uploads/Depositphotos_503247608_L-scaled.jpg",
+      "reason": "Practical, dermatologist-backed advice means a common source of discomfort is entirely manageable with the right knowledge. Small improvements to everyday wellbeing add up, and having clear answers where there was once only frustration is always worth celebrating."
     }
   ],
-  "discovery_articles": [],
+  "discovery_articles": [
+    {
+      "source": "discovery",
+      "source_name": "Atlas Obscura",
+      "title": "Rogue Creamery  in Central Point, Oregon",
+      "url": "https://www.atlasobscura.com/places/rogue-creamery",
+      "snippet": "The Rogue Creamery in Central Point, Oregon is worth a detour for fabulous world-class cheeses. The building in itself is cute enough to stop for a photo op with a vintage mural, blue neon sign, and old blue pickup truck advertising this cheese monger paradise. But what lays inside is a humble but extraordinary cheese selection ranging from cheese curds, wheels of Rogue Blue cheese (this is the world winning), and you can even order a decadent grilled cheese to enjoy patio-side.",
+      "category": "history",
+      "cover_url": "https://img.atlasobscura.com/1Af7XEgsZvrAL18PBUAM01R8SVc5Xj1kP9Zf014s9gQ/rt:fit/w:600/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy9iMjRi/NzY3My01YTc2LTRi/NWEtOWUxMC04Zjgx/NDJkY2U3ODJlYjM0/ZTdiYmI1ZGQxOTI1/YmNfMzc0MTMyMTU2/MTJfZGIxZjIxMDZi/MF9xLmpwZw.jpg",
+      "ferns_note": "Rogue Creamery's world-champion blue cheese is made just a short drive from the California border in a town most people pass straight through — proof that extraordinary things hide in the unhurried places. The vintage pickup truck out front is charming, but it's the cave-aged wheels inside that are genuinely worth pulling over for."
+    },
+    {
+      "source": "discovery",
+      "source_name": "Colossal",
+      "title": "Sly Foxes Emerge from Boxes and Under Bridges in Murals by Annatomix",
+      "url": "https://www.thisiscolossal.com/2026/08/annatomix-murals-foxes-animals/",
+      "snippet": "The street artist is known for her vivid geometric animal murals evocative of origami. Do stories and artists like this matter to you? Become a Colossal Member today and support independent arts publishing for as little as $7 per month.",
+      "category": "history",
+      "cover_url": "https://www.thisiscolossal.com/wp-content/uploads/2026/08/annatomix-6.jpg",
+      "ferns_note": "Annatomix folds the logic of origami into the lawless scale of a city wall, conjuring foxes that feel simultaneously ancient and architected. There's something quietly subversive about placing creatures of cunning folklore in the corners and underbellies of urban spaces."
+    }
+  ],
   "featured_read": {
     "source": "reads",
     "source_name": "Nautilus",
-    "title": "Female Treefrogs Get Overwhelmed by Too Many Noisy Male Suitors",
-    "url": "https://nautil.us/female-treefrogs-get-overwhelmed-by-too-many-noisy-male-suitors-1283821/",
-    "snippet": "Take it easy on the croaking, boys The post Female Treefrogs Get Overwhelmed by Too Many Noisy Male Suitors appeared first on Nautilus .",
-    "cover_url": "https://lede-admin.nautil.us/wp-content/uploads/sites/70/2026/08/Reese-HERO_597bb1.png"
+    "title": "The Conditions on a US Aircraft Carrier Sound Concerning",
+    "url": "https://nautil.us/the-conditions-on-a-us-aircraft-carrier-sound-concerning-1283806/",
+    "snippet": "Can science point the way toward designing environments to maximize mental health in such situations? The post The Conditions on a US Aircraft Carrier Sound Concerning appeared first on Nautilus .",
+    "cover_url": "https://lede-admin.nautil.us/wp-content/uploads/sites/70/2026/08/Grant_HERO.png"
   },
   "reading_room": [
     {
       "source": "reads",
       "source_name": "Psyche",
-      "title": "Teddy",
-      "url": "https://psyche.co/videos/birth-doulas-are-almost-exclusively-female-enter-teddy",
-      "snippet": "As a security guard and childbirth doula, Teddy challenges stereotypes of masculinity with knowledge, calm and care - Directed by Lauren Santucci Watch on Psyche",
+      "title": "Why we should learn to embrace the middlebrow",
+      "url": "https://psyche.co/ideas/why-we-should-learn-to-embrace-the-middlebrow",
+      "snippet": "Stranded between ‘low’ and ‘high’ art, the middlebrow is unfairly condemned. It’s a ‘both/and’ mode capable of greatness - by Aaron Meskin & Jonathan Weinberg Read on Psyche",
       "cover_url": ""
     },
     {
       "source": "reads",
       "source_name": "Longreads",
-      "title": "Here’s the Scoop: A Reading List on Ice Cream",
-      "url": "https://longreads.com/2026/08/13/reading-list-ice-cream-summer/",
-      "snippet": "Seven stories that celebrate the surprising influence of a humble dessert.",
-      "cover_url": "https://i0.wp.com/longreads.com/wp-content/uploads/2026/08/Copy-of-Untitled-Design-2.png?fit=1680%2C944&quality=80&ssl=1"
+      "title": "Colossal Biosciences Said It Cloned Red Wolves. Is It for Real?",
+      "url": "https://longreads.com/2026/08/07/texas-red-wolves-coyotes-cloning/",
+      "snippet": "\"The red wolf has long been a contentious species. The debate over its preservation got even messier last year, when Colossal said it had cloned the animal.\"",
+      "cover_url": ""
     },
     {
       "source": "reads",
       "source_name": "Literary Hub",
-      "title": "Lit Hub Daily: August 14, 2026",
-      "url": "https://lithub.com/lit-hub-daily-august-14-2026/",
-      "snippet": "“We were trapped within a single moment: always in danger, always waiting, and always struggling to survive.” Husam Maarouf on why he founded Gaza Publications.​| Lit Hub How following Octavia Butler’s advice guided Clarence A. Haynes to write a novel.",
-      "cover_url": "https://s26162.pcdn.co/wp-content/uploads/2026/08/leonardwoolf1.jpg"
+      "title": "What Should You Read Next? Here Are the Best Reviewed Books of the Week",
+      "url": "https://lithub.com/what-should-you-read-next-here-are-the-best-reviewed-books-of-the-week-8-13-2026/",
+      "snippet": "Chang-Rae Lee’s A Tender Age, Virginia Eubanks’s A Guide to Open Water Lifesaving, and Téa Obreht’s Sunrise all feature among the best reviewed books of the week. Brought to you by Book Marks, Lit Hub’s home for book reviews. * Fiction 1.",
+      "cover_url": "https://s26162.pcdn.co/wp-content/uploads/2026/08/Tender-age-cover_riverhead.png"
     },
     {
       "source": "reads",
       "source_name": "Noema",
-      "title": "How To Give Everyday People A Say In AI Governance",
-      "url": "https://www.noemamag.com/how-to-give-everyday-people-a-say-in-ai-governance",
-      "snippet": "The post How To Give Everyday People A Say In AI Governance appeared first on NOEMA .",
-      "cover_url": "https://noemamag.imgix.net/2026/07/Faces_Illustrations-03-scaled.jpg?fm=pjpg&ixlib=php-3.3.1&s=789008f5a20c87b99772d3d97914f705"
+      "title": "AI Has Entered The ‘Loss Of Control’ Transition",
+      "url": "https://www.noemamag.com/ai-has-already-entered-the-loss-of-control-transition",
+      "snippet": "The post AI Has Entered The ‘Loss Of Control’ Transition appeared first on NOEMA .",
+      "cover_url": "https://noemamag.imgix.net/2026/07/Feature_Color_V1-scaled.jpg?fit=crop&fm=pjpg&h=628&ixlib=php-3.3.1&rect=0%2C0%2C2044%2C1069&w=1200&wpsize=noema-social-facebook&s=23821bb55bc6f07134ee08e1cd96b792"
     },
     {
       "source": "reads",
       "source_name": "3 Quarks Daily",
-      "title": "Abbe Lane (1931 – 2026) Singer And Actress",
-      "url": "https://3quarksdaily.com/3quarksdaily/2026/08/abbe-lane-1931-2026-singer-and-actress.html",
-      "snippet": "Enjoying the content on 3QD? Help keep us going by donating now.",
+      "title": "Sunday Poem",
+      "url": "https://3quarksdaily.com/3quarksdaily/2026/08/sunday-poem-490.html",
+      "snippet": "Do not go gentle into that good night, Do not go gentle into that good night, Old age should burn and rave at close of day; Rage, rage against the dying of the light. Though wise men at their end know dark is right, Because their words had forked no lightning they Do not go…",
       "cover_url": ""
     }
   ],
   "garden_note": {
-    "note": "Late August is pressing its warm thumb gently on Zürich's gardens — the dahlias are having their moment, the tomatoes are finally blushing, and that particular golden slant of evening light has arrived to remind you that summer, lovely as it is, knows its own limits.",
+    "note": "First light arrives at 05:51 this morning, catching the dahlias mid-glow and the runner beans heavy on their poles — late summer in Zürich has that particular golden quality, where the garden feels both abundant and quietly aware that the turn is coming.",
     "in_season": [
-      "Dahlias in full flush",
-      "Tomatoes ripening on the vine",
-      "Harvest courgettes before they become marrows",
-      "Sow Oriental salad leaves for autumn"
+      "Dahlias in full bloom",
+      "Runner beans ready to harvest",
+      "Early windfall apples to gather",
+      "Deadhead roses to encourage a last flush"
     ],
-    "sky_tonight": "A slim waxing crescent moon sets early in the southwest — look for it low in the twilight before dusk closes in around 21:10, with Venus keeping quiet company not far off.",
-    "sun_times": "The sun slips away at 20:38 this evening, with dusk lingering until around 21:10.",
+    "sky_tonight": "After dusk, look west for the slim waxing crescent moon hanging low — just 16% lit, a delicate silver sliver worth stepping outside for.",
+    "sun_times": "First light steals in at 05:51 this morning, and the sun takes its leave at 20:36 tonight.",
     "moon_label": "Waxing crescent",
-    "illum_pct": 12,
-    "sun_range": "06:22–20:38"
+    "illum_pct": 16,
+    "sun_range": "06:23–20:36"
   },
   "puzzle": {
-    "kind": "trivia",
-    "label": "The Evening Trivia",
-    "prompt": "Who played the female lead in the 1933 film \"King Kong\"?\n\nFay Wray   ·   Jean Harlow   ·   Mae West   ·   Vivien Leigh",
-    "answer": "Fay Wray",
-    "hint": "Category: Entertainment: Film",
-    "source": "opentdb.com",
-    "source_id": "bd2745d20dea"
+    "kind": "anagram",
+    "label": "Fern's Morning Anagram",
+    "prompt": "Rearrange the letters of KITCHEN to make a different common word.",
+    "answer": "Thicken",
+    "hint": "There is one other word hiding in it.",
+    "source": "wordsmith.org",
+    "source_id": "kitchen"
   },
   "previous_puzzle": {
-    "label": "Fern's Morning Riddle",
-    "prompt": "I am wet when drying. What am I?",
-    "answer": "A towel"
+    "label": "The Evening Trivia",
+    "prompt": "Who played the female lead in the 1933 film \"King Kong\"?\n\nFay Wray   ·   Jean Harlow   ·   Mae West   ·   Vivien Leigh",
+    "answer": "Fay Wray"
   },
   "larder": {
-    "news": [],
-    "recipe": {}
+    "news": [
+      {
+        "source": "food",
+        "source_name": "The Kitchn",
+        "title": "The “Ingenious” $17 KitchenAid Stand Mixer Find That Makes It 10x Better",
+        "url": "https://www.thekitchn.com/guanqiao-bamboo-mixer-slider-product-review-23838835?utm_source=RSS&utm_medium=feed&utm_campaign=Category%2FChannel%3A+main",
+        "snippet": "“It’s truly a game-changer.” READ MORE...",
+        "cover_url": "",
+        "blurb": "A $17 accessory that makes your KitchenAid significantly more capable? Consider this required reading before your next baking project."
+      },
+      {
+        "source": "food",
+        "source_name": "The Guardian",
+        "title": "Kinz, London W11: ‘No bells, no whistles, just Lebanese food cooked with immense pride’ – restaurant review",
+        "url": "https://www.theguardian.com/food/2026/aug/16/kinz-london-w11-lebanese-food-grace-dent-restaurant-review",
+        "snippet": "Home cooking, but in the most complimentary sense Some developers would rip the soul out of a 1930s banking hall, but Kinz , a new all-day Lebanese brasserie housed in a former Lloyds Bank in Notting Hill, instead makes a feature of its chunky vault door. Where W11 residents once kept their cash, diners can now take a seat and sip Lebanese wine from the Bekaa valley . After all, what visit to the bank wouldn’t be improved by a cold glass of Chateau Musar Jeune ?",
+        "cover_url": "https://i.guim.co.uk/img/media/c162a60053577c8b162b091a4f71ba1e2e589d12/934_0_5417_4333/master/5417.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=7faf84063fac693c96c63926ec800716",
+        "blurb": "Lebanese food cooked with quiet conviction in a former bank — The Guardian's review of Kinz is a reminder that the best restaurants have nothing to prove and everything to offer."
+      }
+    ],
+    "recipe": {},
+    "seasonal_note": "Zürich's Tuesday and Saturday markets at Bürkliplatz are brimming right now with golden Mirabelle plums and the first Zwetschgen — those deep-purple damsons that beg to be halved and tucked into a buttery Zwetschgenwähe, ideally eaten still warm from the oven with your morning coffee before the week properly begins."
   },
   "fern_data": {
-    "greeting": "The late-summer sky tonight has that bruised-peach quality — still warm, already grieving — which makes it the right hour for Plutarch's doomed Spartan king, Phoenician ghosts, and a treefrog who knows exactly what it means to be outnumbered.",
-    "top_pick_title": "Bruised Peach Hours"
+    "greeting": "Somewhere right now, a person is pulling a pan of garlic rolls from the oven before anyone else in the house is awake — and that is, honestly, the most Fontaines D.C. thing imaginable. Today also asks whether Neanderthals were quietly brilliant and whether Christopher Nolan can be fully cracked open before noon.",
+    "top_pick_title": "Early Risers & Deep Thinkers"
   }
 }
