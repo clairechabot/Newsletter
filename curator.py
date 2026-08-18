@@ -768,23 +768,23 @@ def generate_garden_note(client: anthropic.Anthropic, garden_seed: dict) -> dict
 # lever against the "While the bread is still warm…" / "As the last light folds…"
 # repetition.
 AM_GREETING_ANGLES = [
-    "Open with a precise sensory detail of a morning in THIS season — the quality of the light, the temperature of the air, a specific sound or smell. Do NOT mention coffee or bread.",
+    "Open with ONE precise sensory detail of a morning in THIS season — the quality of the light, the temperature of the air, a specific sound. Do NOT mention coffee or bread.",
+    "Open on the single most surprising fact or idea sitting in today's items, stated plainly.",
+    "Open by drawing an unexpected line between two unrelated things in today's edition.",
+    "Open with a question one of today's pieces provokes, and leave it open.",
     "Open with a small, wry observation about the day, the week, or the world.",
-    "Open by speaking straight to the reader with a warm, specific invitation to begin.",
-    "Open with a gentle question the morning seems to pose.",
-    "Open by naming what the season and weather are doing right now, then turn toward the reading.",
-    "Open on a tiny ordinary scene unfolding somewhere at this early hour.",
-    "Open with an unexpected image or metaphor for starting the day.",
+    "Open on a scrap of history or science from today's content — a date, a name, a number that sticks.",
+    "Open by admitting what nearly didn't make today's edition, and why it did.",
     "Open mid-thought, unhurried, as if continuing a quiet conversation already underway.",
 ]
 PM_GREETING_ANGLES = [
-    "Open with a precise sensory detail of dusk in THIS season — the colour of the sky, the cooling air, a sound. Do NOT use 'the last light folds' or 'open tabs'.",
+    "Open with ONE precise sensory detail of dusk in THIS season — the colour of the sky, the cooling air, a sound. Do NOT use 'the last light folds' or 'open tabs'.",
+    "Open on the idea from today's edition most worth turning over before sleep.",
+    "Open by connecting two of tonight's items that have no business being related.",
+    "Open with a question suited to the evening, drawn from one of today's pieces.",
     "Open with a small reflective observation about the day now ending.",
-    "Open by speaking straight to the reader, inviting them to set the day down.",
-    "Open with a gentle question suited to the evening.",
-    "Open by naming tonight's sky or the season's particular evening mood.",
-    "Open on a tiny domestic evening scene — a lamp, a kettle, a window.",
-    "Open with an unexpected metaphor for the day's close.",
+    "Open on one concrete detail — a number, a date, a name — from tonight's content.",
+    "Open by naming what you reconsidered while putting this edition together.",
     "Open mid-thought, lamplit and unhurried, as if mid-exhale.",
 ]
 
@@ -808,13 +808,18 @@ FRESHNESS IS THE POINT. These notes have become repetitive, so:
 - Do NOT reuse the recurring crutches (they are worn out): "settle in", "the bread is
   still warm", any "the coffee [finds/earns/finding] its …", "the last light folds
   itself", "your open tabs", "today's canopy stretches from", "rabbit holes",
-  "come settle in".
+  "come settle in", and opening on the reader's local scenery.
 - If a RECENT NOTES list is given, your note must not echo their openings, images,
   rhythm, or structure. Pick a different entry point entirely.
 - Vary sentence shape: sometimes a single vivid line; sometimes a short one then a
   longer one; sometimes a direct address or a question. Not every note needs to list
   what's inside.
 - You may sign off "— Fern" occasionally, but not every time.
+
+PLACE IS NOT THE POINT. The reader's city, landscape, mountains, or local weather is
+never the subject of the note and never its opening hook. The season may show, but
+write about what is IN today's edition — the ideas, the stories, the oddities. A
+place name belongs here only if it belongs to one of today's items.
 
 Also write a short, original title for this edition — Fern's own name for today's
 digest, inspired by the themes and mood of the content. Evocative, slightly poetic,
@@ -874,7 +879,9 @@ def generate_fern_greeting(
         lines.append(
             f"\nThis edition goes to ONE reader: {recipient}. Address them by name, "
             f"warmly and naturally, within the note (not a stiff 'Dear {recipient},'). "
-            f"Weave the name into your opening while still following the angle above."
+            f"Weave the name in while still following the angle above. Personalise "
+            f"through what is IN today's edition — the ideas and stories below — "
+            f"NEVER through their city, landscape, or local weather."
         )
     if tone:
         lines.append(f"\nTONE ADJUSTMENT for this reader: {tone}")

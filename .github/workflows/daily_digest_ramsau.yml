@@ -27,7 +27,7 @@ jobs:
       TZ: Europe/Vienna
       EDITION_TZ: Europe/Vienna
       GARDEN_LOCALE: "Ramsau am Dachstein, Austria"
-      FERN_TONE: "Drier and more matter-of-fact; skip flowery warmth and superlatives (a light wry touch is fine). Do NOT gush about the Dachstein or the local scenery — mention local geography sparingly and vary it, never as the centerpiece."
+      FERN_TONE: "Drier and more matter-of-fact; skip flowery warmth and superlatives. A light wry touch is welcome; sentimentality is not."
 
     steps:
       - name: Checkout repository

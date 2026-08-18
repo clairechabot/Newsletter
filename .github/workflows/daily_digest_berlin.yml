@@ -1,26 +1,24 @@
 name: Berlin Edition
 
-# Regional re-send of the primary Curated Canopy for a reader in Berlin, Germany
-# (Central European Time). It does NOT re-fetch or re-curate — it reuses the primary
-# edition's committed curated_data.json, re-localizes "From the Garden", The Larder's
-# seasonal food note, and the local sun times, then emails it to the EMAIL_TO_BERLIN
-# list. No web publish, no history writes.
+# WEEKLY regional re-send of the primary Curated Canopy for a reader in Berlin,
+# Germany (Central European Time). Per the reader's request this edition goes out
+# ONCE A WEEK — Sunday morning — rather than twice daily. It does NOT re-fetch or
+# re-curate: it reuses the primary edition's committed curated_data.json,
+# re-localizes "From the Garden", The Larder's seasonal food note, and the local
+# sun times, then emails the EMAIL_TO_BERLIN list. No web publish, no history writes.
 #
-# Timing: Berlin shares the Zürich source's time zone, and the source content isn't
-# committed until ~06:15 UTC (~08:15 Berlin). So the morning fires 06:23 UTC — just
-# after the content is ready — landing ~08:30–10:00 local (a true 07:00 isn't
-# possible with the re-send model). Evening: 19:00 CEST = 17:00 UTC → fire 16:23 UTC,
-# after the ~15:55 UTC evening commit. Fixed-UTC cron means winter (CET) arrives ~1h earlier.
+# Timing: Berlin shares the Zürich source's time zone, and the morning content isn't
+# committed until ~06:15 UTC (~08:15 Berlin). So Sunday's send fires 06:23 UTC —
+# just after the content is ready — landing ~08:30–10:00 local.
 
 on:
   schedule:
-    - cron: "23 6 * * *"    # morning — just after the day's content commits
-    - cron: "23 16 * * *"   # ≈ 19:00 Berlin (evening)
+    - cron: "23 6 * * 0"    # Sunday morning — just after the day's content commits
   workflow_dispatch:
 
 jobs:
   berlin-edition:
-    name: Berlin re-send
+    name: Berlin weekly re-send
     runs-on: ubuntu-latest
     env:
       TZ: Europe/Berlin
