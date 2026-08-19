@@ -1,128 +1,135 @@
 {
-  "fetched_at": "2026-08-18T16:57:55.332289+02:00",
-  "is_am_email": false,
+  "fetched_at": "2026-08-19T06:03:53.268964+02:00",
+  "is_am_email": true,
   "audit_summary": {
-    "youtube_videos": 6,
-    "themes": 4,
-    "music_articles": 13,
+    "youtube_videos": 7,
+    "themes": 3,
+    "music_articles": 8,
     "good_news_articles": 3,
-    "discovery_articles": 7,
+    "discovery_articles": 11,
     "featured_read": 1,
     "reading_room": 5,
     "garden": 1,
-    "puzzle": 0,
-    "larder": 0
+    "puzzle": 1,
+    "larder": 3
   },
   "themes": [
     {
-      "name": "What If & What Was",
-      "emoji": "🎖️",
-      "tagline": "History examined from every angle — including the ones that never happened.",
+      "name": "Rabbit Holes Worth Falling Down",
+      "emoji": "🔬",
+      "tagline": "Science that refuses to behave — from water that breaks thermodynamics to brains you can learn to code.",
       "items": [
         {
           "source": "youtube",
-          "video_id": "qy16rKjWRCc",
-          "title": "THG Podcast: Counterfactuals - Confederate Espionage",
-          "channel_id": "UC4sEmXUuWIFlxRIFBRV6VXQ",
-          "channel_title": "The History Guy: History Deserves to Be Remembered",
-          "published_at": "2026-08-18T12:00:13Z",
-          "url": "https://www.youtube.com/watch?v=qy16rKjWRCc",
-          "duration_seconds": 3922,
-          "view_count": "477",
-          "description": "Listen to this episode of the THG Podcast, which posts in addition to regular History Guy content, after it releases on podcast services. Subscribe to the RSS feed for more: https://www.spreaker.com/show/6153862/episodes/feed\n\nNote: We are continuing to upload older audio podcasts that haven't been put on YouTube. As we did not record video for these they are audio-only. Video podcasts upload with each new podcasts every other week.\n\nOn today’s episode we talk about the little remembered espiona",
-          "why_watch": "The History Guy turns his attention to Confederate espionage through a counterfactual lens — a format that forces you to actually reckon with what spycraft did and didn't change the outcome of the Civil War. At 65 minutes, this is a slow-burn listen best treated as a podcast (which is exactly what it is). If you're already a THG follower, note that this is audio-only archival content, not a new production.",
+          "video_id": "KLmtn_xwgS4",
+          "title": "The Very Weird Reason Hot Water Freezes Faster",
+          "channel_id": "UCH4BNI0-FOK2dMXoFtViWHw",
+          "channel_title": "Be Smart",
+          "published_at": "2026-08-18T16:00:31Z",
+          "url": "https://www.youtube.com/watch?v=KLmtn_xwgS4",
+          "duration_seconds": 1034,
+          "view_count": "98618",
+          "description": "Visit https://displate.com/l/besmart and use discount code BESMART for up to 33% off high-resolution metal prints! Not valid on Limited Edition items.\n↓↓↓ More info and sources below ↓↓↓\n\nWhy can hot water sometimes freeze faster than cold water? In 1963, Erasto Mpemba noticed this while making ice cream, sparking a scientific mystery that still puzzles physicists. The Mpemba effect now appears in materials, magnets and quantum systems, revealing surprising connections between energy, equilibriu",
+          "why_watch": "The Mpemba effect — hot water sometimes freezing faster than cold — sounds like a simple pub trivia fact, but Be Smart digs into why physicists still can't fully agree on the mechanism after 60 years of investigation. The video walks through competing explanations (evaporation, dissolved gases, convection currents) without oversimplifying, so you leave with a genuinely richer understanding of the phenomenon rather than a tidy but false answer.",
           "is_wildcard": false
         },
         {
           "source": "youtube",
-          "video_id": "kA0sy1xZ7aM",
-          "title": "On the Fortune or the Virtue of Alexander by Plutarch",
-          "channel_id": "UCbFLHoeA-X5qRUDmb9tRRqA",
-          "channel_title": "Classic Masterworks",
-          "published_at": "2023-02-15T07:27:59Z",
-          "url": "https://www.youtube.com/watch?v=kA0sy1xZ7aM",
-          "duration_seconds": 4284,
-          "view_count": "3984",
-          "description": "Plutarch's \"On the Fortune or Virtue of Alexander the Great\" is not just a showcase of his rhetorical abilities, but also a revealing insight into his philosophical beliefs. During the Second Sophistic movement, Plutarch challenged traditional concepts of philosophy by questioning whether it was theory or practice that truly defined a philosopher. He used the life and reign of Alexander as a framework to analyze this question.\n\nIn addition to analyzing Alexander's life, Plutarch also cast him as",
-          "why_watch": "This is a close reading of a surprisingly underexamined Plutarch text — one where he uses Alexander the Great not as a historical subject but as a philosophical test case for whether virtue can exist without theory. The framing around the Second Sophistic movement gives useful context for why this debate mattered in Plutarch's own moment, not just antiquity. A good listen if you want ancient philosophy that feels genuinely argumentative rather than settled.",
+          "video_id": "GogFG5ci2KI",
+          "title": "Psychiatrist Answers Psychedelic Therapy Questions",
+          "channel_id": "UCftwRNsjfRo08xYE31tkiyw",
+          "channel_title": "WIRED",
+          "published_at": "2026-08-18T16:00:14Z",
+          "url": "https://www.youtube.com/watch?v=GogFG5ci2KI",
+          "duration_seconds": 941,
+          "view_count": "43180",
+          "description": "Professor David Nutt joins WIRED to answer the internet’s burning questions about psychedelic therapy. Do magic mushrooms combat depression? How does ketamine therapy work? What happened during Bryan Johnson’s 5-MeO-DMT livestream? Answers to these questions and many more await on Psychedelic Therapy Support.\n\nWIRED recommends:\nhttps://youtu.be/IBLnSl8Q1NQ\nhttps://youtu.be/WD6cYabx0nk\nhttps://youtu.be/Pjl8n8u9Xfw\n\nWatch more from WIRED | Tech Support: https://www.youtube.com/show/VLPLibNZv5Zd0dw",
+          "why_watch": "Professor David Nutt is one of the most credible and outspoken researchers in psychopharmacology, so his answers carry more weight than the usual psychedelics content online. The Q&A format moves efficiently through specific substances — psilocybin, ketamine, 5-MeO-DMT — addressing both therapeutic mechanisms and real-world cases, which makes it a useful orientation if you're trying to separate signal from hype in this space.",
+          "is_wildcard": false
+        },
+        {
+          "source": "youtube",
+          "video_id": "QU6-2MEfVOc",
+          "title": "Self-study computational neuroscience | Coding, Textbooks, Math",
+          "channel_id": "UCR2uRTQ53V_egXKFflMMaaw",
+          "channel_title": "Artem Kirsanov",
+          "published_at": "2022-06-06T15:06:03Z",
+          "url": "https://www.youtube.com/watch?v=QU6-2MEfVOc",
+          "duration_seconds": 1263,
+          "view_count": "182328",
+          "description": "Shortform link: \nhttps://shortform.com/artem\n\n=====\nMy name is Artem, I'm a neuroscience PhD student at Harvard University. \n🌎 Website and Social links: https://kirsanov.ai/\n📥 \"Receptive Field\" neuro-newsletter: https://artemkirsanov.substack.com/\n✨ Support me on Patreon to get access to Discord community: https://patreon.com/artemkirsanov\n=====\n\nThis video is based on the article https://medium.com/neurotechx/how-to-get-started-in-computational-neuroscience-dde4b1817ccd\n\nIn this video I share m",
+          "why_watch": "Artem Kirsanov is a Harvard neuroscience PhD student who built this guide for people who are serious about entering computational neuroscience without a formal program — and the specificity shows, with concrete textbook recommendations, coding prerequisites, and math foundations laid out in sequence. It's rare to get a genuine insider roadmap rather than a vague \"follow your curiosity\" pep talk.",
           "is_wildcard": false
         }
       ]
     },
     {
-      "name": "The Feeling You Can't Quite Name",
-      "emoji": "🌫️",
-      "tagline": "Memory, grief, and the strange emotional residue that art helps us finally locate.",
+      "name": "The Long Table",
+      "emoji": "🍞",
+      "tagline": "From medieval market stalls to fluffy potato buns — food as a portal through time and texture.",
       "items": [
         {
           "source": "youtube",
-          "video_id": "TC3flqZYLdk",
-          "title": "Aftersun, and the Pain of Broken Memories",
-          "channel_id": "UCs7nPQIEba0T3tGOWWsZpJQ",
-          "channel_title": "Like Stories of Old",
-          "published_at": "2023-04-02T14:00:25Z",
-          "url": "https://www.youtube.com/watch?v=TC3flqZYLdk",
-          "duration_seconds": 1339,
-          "view_count": "167541",
-          "description": "AFTERSUN is streaming exclusively on MUBI in many countries. Get 30 days free at https://mubi.com/likestoriesofold\n\nHelp me make more videos!\n▶ Support this channel: https://www.patreon.com/LikeStoriesofOld \n▶ Leave a One-Time Donation: https://www.paypal.me/TomvanderLinden\n\n▶ Facebook: https://www.facebook.com/LikeStoriesofOld \n▶ Instagram: https://www.instagram.com/tom.vd.linden\n▶ Twitter: https://twitter.com/Tom_LSOO \n\nAbout this video essay:\nAn in-depth analysis and examination of Charlotte ",
-          "why_watch": "Like Stories of Old uses the quietly devastating film Aftersun to explore how memory doesn't just fade — it actively distorts, filling gaps with feelings we couldn't name at the time. Tom van der Linden's specific insight is that the film's fragmentary structure mirrors how grief works retroactively, reshaping ordinary moments into ones that hurt. Whether or not you've seen the film, this essay will make you think differently about your own half-remembered summers.",
+          "video_id": "R45P-Yu_Mjw",
+          "title": "What Grocery Shopping Was Like in the Middle Ages",
+          "channel_id": "UCsaGKqPZnGp_7N80hcHySGQ",
+          "channel_title": "Tasting History with Max Miller",
+          "published_at": "2026-08-18T15:00:10Z",
+          "url": "https://www.youtube.com/watch?v=R45P-Yu_Mjw",
+          "duration_seconds": 1632,
+          "view_count": "187067",
+          "description": "Now is a great time to join Thrive Market! With their End of Summer Sale, get 25% off top products PLUS when you go to http://thrivemarket.com/MaxMiller you'll receive $20 off your first 3 orders and a free gift! #thrivemarketpartner\n\nSupport the Channel with Patreon ► https://www.patreon.com/tastinghistory\n\nRecipe at https://www.tastinghistory.com/recipes/medievalcherrycheesecake\n\nOrder the TASTING HISTORY COOKBOOK: https://amzn.to/42O10Lx\n\nMerch ► https://crowdmade.com/collections/tastinghisto",
+          "why_watch": "Max Miller doesn't just describe medieval food shopping in the abstract — he reconstructs what a specific market visit would have looked like, what goods were available, how they were sold, and what that meant for daily cooking. The cherry cheesecake recipe he makes along the way is a concrete anchor that keeps the history from feeling like a lecture.",
+          "is_wildcard": false
+        },
+        {
+          "source": "youtube",
+          "video_id": "IzcmDjpA-_A",
+          "title": "The SOFTEST Potato Buns: Leftover Mashed Potatoes Recipe (or from scratch!)",
+          "channel_id": "UC_8x1VmhDgsU72Yktd9Ukeg",
+          "channel_title": "sheldo's kitchen",
+          "published_at": "2021-11-06T20:31:18Z",
+          "url": "https://www.youtube.com/watch?v=IzcmDjpA-_A",
+          "duration_seconds": 691,
+          "view_count": "451111",
+          "description": "These potato buns are delightfully soft yet chewy at the same time, coated with a shiny honey butter glaze. They're the perfect way to use up any leftover mashed potatoes from the holidays. If you don't have leftover mash, I also show you a quick 5 minute mashed potato shortcut.\n\nThis dough is so versatile. Turn these into the best burger buns by skipping the honey glaze and adding sesame seeds.\n\nSay hi on Instagram! https://www.instagram.com/sheldoskitchen/\n\nThe Softest Potato Buns Recipe\n\nQuic",
+          "why_watch": "The practical hook here is real: leftover mashed potatoes make a notably softer, moister bread dough, and Sheldo demonstrates both the leftover version and a quick from-scratch shortcut so there's no excuse not to try it. At under 12 minutes, the video stays focused on technique — the honey butter glaze finish alone is worth noting for anyone who bakes burger buns regularly.",
+          "is_wildcard": false
+        }
+      ]
+    },
+    {
+      "name": "Emperors, Chaos & Bad Decisions",
+      "emoji": "🏛️",
+      "tagline": "Power is fleeting, hubris is eternal — ancient Rome's messiest moments, straight from the source.",
+      "items": [
+        {
+          "source": "youtube",
+          "video_id": "YNdsuNylOVs",
+          "title": "The Lives of the TWELVE CAESARS By C. Suetonius Tranquillus - Sergius Galba",
+          "channel_id": "UCbFLHoeA-X5qRUDmb9tRRqA",
+          "channel_title": "Classic Masterworks",
+          "published_at": "2023-01-31T09:52:47Z",
+          "url": "https://www.youtube.com/watch?v=YNdsuNylOVs",
+          "duration_seconds": 2034,
+          "view_count": "2437",
+          "description": "The Twelve Caesars, is a set of twelve biographies of Julius Caesar and the first 11 emperors of the Roman Empire written by Gaius Suetonius Tranquillus. The group are: Julius Caesar, Augustus, Tiberius, Caligula, Claudius, Nero, Galba, Otho, Vitellius, Vespasian, Titus, Domitian.\n\nThe work, written in AD 121 during the reign of the emperor Hadrian, was the most popular work of Suetonius, at that time Hadrian's personal secretary, and is the largest among his surviving writings. It was dedicated",
+          "why_watch": "Galba's brief, chaotic reign (68–69 AD) is one of the stranger chapters in Roman history — a severe, elderly general who seized power after Nero only to alienate nearly everyone within months. Suetonius's gossipy, detail-rich style makes this a surprisingly readable primary source, and an audiobook format means you can absorb it without sitting down at a screen.",
           "is_wildcard": false
         },
         {
           "source": "youtube_trending",
-          "video_id": "Uq-u-0qZres",
-          "title": "Scientists Just Found a Possible Sign of Life on Saturn's Moon Enceladus",
-          "channel_id": "UC4rlAVgAK0SGk-yTfe48Qpw",
-          "channel_title": "BRIGHT SIDE",
-          "published_at": "2026-08-18T00:00:21Z",
-          "url": "https://www.youtube.com/watch?v=Uq-u-0qZres",
-          "duration_seconds": 3581,
-          "view_count": "5089",
-          "description": "Enceladus may look like a frozen moon, but beneath its icy surface could be one of the most mysterious environments in the Solar System. In this video, we take a closer look at Saturn’s moon Enceladus, its strange surface, mysterious cracks, icy terrain, subsurface ocean, water plumes, and the scientific discoveries that continue to surprise researchers.\nWhy is Enceladus so unusual? What is hiding beneath its frozen crust? Could its underground ocean contain the chemical ingredients necessary fo",
-          "why_watch": "The underlying science — phosphine-like compounds and organic molecules detected in Enceladus's water plumes — is legitimately exciting, but at nearly 60 minutes, this Bright Side video stretches thin material with padding and broad-strokes narration rather than scientific depth. If Enceladus genuinely interests you, you'll get more from a 15-minute NASA explainer or a recent Nature paper summary than from this one.",
+          "video_id": "230fEQi_eOo",
+          "title": "Good Morning San Antonio 5 a.m. : Aug 18, 2026",
+          "channel_id": "UCETE4rKzRRjqM0JaB7TlPpQ",
+          "channel_title": "KSAT 12",
+          "published_at": "2026-08-18T11:07:27Z",
+          "url": "https://www.youtube.com/watch?v=230fEQi_eOo",
+          "duration_seconds": 2441,
+          "view_count": "2440",
+          "description": "The KSAT 12 News Team provides a look at local, regional, statewide and national news events and the latest information on local traffic and weather issues.",
+          "why_watch": "This is a local morning news broadcast from San Antonio — 40 minutes of regional traffic, weather, and news from August 2026. There's no particular reason to seek this out unless you have a specific connection to the area or the date; it's included here as a trending wildcard, but it doesn't offer much for a general audience.",
           "is_wildcard": true
-        }
-      ]
-    },
-    {
-      "name": "Beautiful Machinery",
-      "emoji": "🔬",
-      "tagline": "The hidden structures underneath reality, explained with elegance.",
-      "items": [
-        {
-          "source": "youtube",
-          "video_id": "jnxqHcObNK4",
-          "title": "Wavelets: a mathematical microscope",
-          "channel_id": "UCR2uRTQ53V_egXKFflMMaaw",
-          "channel_title": "Artem Kirsanov",
-          "published_at": "2022-08-15T19:50:42Z",
-          "url": "https://www.youtube.com/watch?v=jnxqHcObNK4",
-          "duration_seconds": 2069,
-          "view_count": "784475",
-          "description": "=====\nMy name is Artem, I'm a neuroscience PhD student at Harvard University. \n🌎 Website and Social links: https://kirsanov.ai/\n📥 \"Receptive Field\" neuro-newsletter: https://artemkirsanov.substack.com/\n✨ Support me on Patreon to get access to Discord community: https://patreon.com/artemkirsanov\n=====\n\nWavelet transform is an invaluable tool in signal processing, which has applications in a variety of fields - from hydrodynamics to neuroscience. This revolutionary method allows us to uncover stru",
-          "why_watch": "Artem Kirsanov does something genuinely difficult here: he explains why wavelet transforms outperform Fourier analysis for real-world signals by building the intuition from scratch, using crisp visuals that show what \"resolution in both time and frequency\" actually means. By the end, you'll understand why wavelets are used in JPEG 2000 compression and neuroscience spike detection — not just that they are. Strong recommend for anyone who nodded along in a signals course without fully believing they understood it.",
-          "is_wildcard": false
-        }
-      ]
-    },
-    {
-      "name": "Alchemy in the Kitchen",
-      "emoji": "🍯",
-      "tagline": "One unexpected ingredient, one very good reason to turn on the oven.",
-      "items": [
-        {
-          "source": "youtube",
-          "video_id": "ei0yhN0v5IU",
-          "title": "Miso Caramel Bars: Sweet & Salty & So Much More",
-          "channel_id": "UC_8x1VmhDgsU72Yktd9Ukeg",
-          "channel_title": "sheldo's kitchen",
-          "published_at": "2021-11-11T22:40:16Z",
-          "url": "https://www.youtube.com/watch?v=ei0yhN0v5IU",
-          "duration_seconds": 539,
-          "view_count": "25090",
-          "description": "If you like salted caramel, then you'll LOVE these Miso Caramel Bars. The miso adds a salty funky umami to the caramel, making it perfectly sweet & salty. People won't be able to tell that it's miso in there but they'll be going back for another piece. Buttery oat crumble base and dark chocolate rounds out this bar. It's an easy no mixer recipe, perfectly suited to make you the star of your next bake sale!\n\nMiso Caramel Bar Recipe\n\nMiso Caramel\n- 200g (1 cup) sugar\n- 60g (1/4 cup) water\n- 85g (1",
-          "why_watch": "The specific upgrade here is swapping standard salt for white miso in a caramel bar, which adds fermented depth that plain salted caramel doesn't have — funky and sweet in a way that's hard to identify but impossible to stop eating. The recipe is genuinely no-fuss (no mixer, no candy thermometer anxiety), and the oat crumble plus dark chocolate base makes this feel thought-through rather than trendy. A reliable bring-to-the-party recipe with a low-effort, high-impression ratio.",
-          "is_wildcard": false
         }
       ]
     }
@@ -131,324 +138,335 @@
     {
       "source": "music",
       "source_name": "Stereogum",
-      "title": "Holy Motors – “Hellishly Hot”",
-      "snippet": "In June, Holy Motors announced their third album Heaven's Night. So far the Estonian dream-pop/alt-rock band has shared the title track and \"Tough Crush,\" and now they're back with a sultry, enrapturing tune called \"Hellishly Hot.\"\nThe post Holy Motors &#8211; &#8220;Hellishly Hot&#8221; appeared fi",
-      "url": "https://stereogum.com/2508558/holy-motors-hellishly-hot/music/",
+      "title": "ZZ Top Drummer Frank Beard Dead At 77",
+      "snippet": "Frank Beard, the drummer who helmed the kit in ZZ Top for 56 years, has died. Beard was in hospice care when he died Monday at his ranch in Richmond, Texas with his family at his side, a rep confirmed to the Associated Press. He was 77.\nThe post ZZ Top Drummer Frank Beard Dead At 77 appeared first o",
+      "url": "https://stereogum.com/2508698/zz-top-drummer-frank-beard-dead-at-77/news/",
       "genre": "",
-      "vibe_check": "",
-      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/08/Hellishly-Hot_-Press-Photo-by-Anna-Maria-Vaskovskaja.jpg",
-      "embed_url": "https://www.youtube.com/embed/jk8Ti-8oDvQ"
+      "vibe_check": "The bittersweet ache of a Texas shuffle fading out for the last time, boots still on the floor.",
+      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/08/GettyImages-2212522291.jpg",
+      "embed_url": "https://www.youtube.com/embed/rG6b8gjMEkw"
     },
     {
       "source": "music",
       "source_name": "Stereogum",
-      "title": "Stef Chura – “Lovesick” & “Thunder And Lightning”",
-      "snippet": "Detroit indie rock fave Stef Chura is returning from a seven-year absence this fall with new album Dancing Alone On The Concrete. She made it in Athens, Georgia with Robert Schneider and his Elephant 6 associates, and half of R.E.M. played on the twangy, jangly lead single \"Danny.\" The same can't be",
-      "url": "https://stereogum.com/2508610/stef-chura-lovesick-thunder-and-lightning/music/",
+      "title": "Charley Crockett Says He’s Lost Respect For Jack White, Claims The White Stripes “Avoided Political Issues”",
+      "snippet": "Last month, Charley Crockett faced backlash after Twin Temple, an LA doo-wop duo slated to open for two of his shows, were dropped from the bill. Alexandra and Zachary James claimed their Satanic imagery was the reason for it, and Jack White invited them to open for him. The country legend reacted w",
+      "url": "https://stereogum.com/2508695/charley-crockett-says-he-lost-a-lot-of-respect-for-jack-white-claims-the-white-stripes-avoided-political-issues/news/",
       "genre": "",
-      "vibe_check": "",
-      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/08/unnamed-2026-08-18T100907.826.jpg",
-      "embed_url": "https://www.youtube.com/embed/hybN4GTZ7-E"
+      "vibe_check": "The uncomfortable static of a bar fight between old allies, all twang and bruised egos.",
+      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/08/charley-crockett-jack-white.png",
+      "embed_url": "https://www.youtube.com/embed/ggamiOeA4tM"
     },
     {
       "source": "music",
       "source_name": "Stereogum",
-      "title": "Album Of The Week: Westside Cowboy It Goes On",
-      "snippet": "The post Album Of The Week: Westside Cowboy &lt;em&gt;It Goes On&lt;/em&gt; appeared first on Stereogum.",
-      "url": "https://stereogum.com/2508517/album-of-the-week-westside-cowboy-it-goes-on/reviews/album-of-the-week/",
+      "title": "Jake Xerxes Fussell – “Boney” & “Boll Weevil”",
+      "snippet": "Last month, Jake Xerxes Fussell announced his new album The Old Beloved Path. He shared the lead single \"Rock Island Line,\" which was his take on the American traditional. Today, the folk singer-songwriter is back with \"Boney\" and \"Boll Weevil.\"\nThe post Jake Xerxes Fussell &#8211; &#8220;Boney&#822",
+      "url": "https://stereogum.com/2508691/jake-xerxes-fussell-boney-boll-weevil/music/",
       "genre": "",
-      "vibe_check": "",
-      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/08/Westside-Cowboy-It-Goes-On.jpg",
-      "embed_url": "https://www.youtube.com/embed/RRI0tuDiyy4"
-    },
-    {
-      "source": "music",
-      "source_name": "No Depression",
-      "title": "ALBUM REVIEW: Po’ Ramblin’ Boys Bring Contemporary Flair to the Bluegrass Playbook",
-      "snippet": "With their latest album, Po&#x2019; Ramblin&#x2019; Boys navigate another set chock-full of drawls, twangs, harmonies, and foot-stomping rhythms. Welcome to the Club, like previous projects, honors the quintet&#x2019;s heroes &#x2014; Bill Monroe and the Stanley Brothers, among others &#x2014; while",
-      "url": "https://nodepression.org/album-review-po-ramblin-boys-bring-contemporary-flair-to-the-bluegrass-playbook/",
-      "genre": "",
-      "vibe_check": "",
-      "cover_url": "https://storage.ghost.io/c/18/d0/18d08e58-3b1b-4720-ae25-a31b44e69d4b/content/images/size/w1200/2026/08/poramblinboysalbum.jpg",
-      "embed_url": "https://www.youtube.com/embed/ZusXLk6aHMY"
+      "vibe_check": "Dusty back-road Americana that feels like it was unearthed from a cedar chest, not written.",
+      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/08/unnamed-2026-08-18T151733.558.jpg",
+      "embed_url": "https://www.youtube.com/embed/tXAM9nVuFOw"
     },
     {
       "source": "music",
       "source_name": "Pitchfork",
-      "title": "Oasis Reunion Doc Gets First Trailer",
-      "snippet": "Oasis: Don’t Look Back in Anger comes to cinemas on September 11",
-      "url": "https://pitchfork.com/story/oasis-reunion-doc-gets-first-trailer/",
+      "title": "ZZ Top Drummer Frank Beard Dies at 77",
+      "snippet": "The Texas shuffle master played with the group for over 50 years",
+      "url": "https://pitchfork.com/story/zz-top-drummer-frank-beard-dies-at-77/",
       "genre": "",
-      "vibe_check": "",
-      "cover_url": "https://media.pitchfork.com/photos/6a846b48d4f3128997404b41/16:9/w_1280,c_limit/oasis-reunion-documentary.JPG",
-      "embed_url": null
-    },
-    {
-      "source": "music",
-      "source_name": "Pitchfork",
-      "title": "Fontaines D.C. Announce New Album Dopamine Chamber, Share Single",
-      "snippet": "“Marianne” leads the Irish band’s fifth LP ahead of its October release",
-      "url": "https://pitchfork.com/story/fontaines-dc-announce-new-album-dopamine-chamber-share-single/",
-      "genre": "",
-      "vibe_check": "",
-      "cover_url": "https://media.pitchfork.com/photos/6a83bbaa5eeaf65ef2de9d47/16:9/w_1280,c_limit/Fontaines%20D.C.,%20photo%20by%20Elizaveta%20Porodina.png",
+      "vibe_check": "A quiet tip of the hat to the man who kept the Texas groove rolling for half a century.",
+      "cover_url": "https://media.pitchfork.com/photos/6a84b792d4f312899740511b/16:9/w_1280,c_limit/GettyImages-2286536625.jpg",
       "embed_url": null
     },
     {
       "source": "music",
       "source_name": "Aquarium Drunkard",
-      "title": "Black Rock :: The Bar-Kays at Wattstax",
-      "snippet": "Known for their Stax/Volt session work and backing the likes of Isaac Hayes and Otis Redding, catch a glimpse of this electric set of Memphis-based The Bar-Kays at 1972's iconic Wattstax festival. Self-dubbed \"Black Rock\" like the name of their 1971 album the year prior, the band's guitar-driven sla",
-      "url": "https://aquariumdrunkard.com/2026/08/18/black-rock-the-bar-kays-at-wattstax/",
+      "title": "Nina Winder-Lind :: Wild Love",
+      "snippet": "On Wild Love, Nina Winder-Lind distills the elemental force of New Eves into an intimate, guitar-led set exploring artistic inheritance, self-discovery, and liberation. Deeply personal and quietly defiant.\nThe post Nina Winder-Lind :: Wild Love first appeared on Aquarium Drunkard.",
+      "url": "https://aquariumdrunkard.com/2026/08/18/nina-winder-lind-wild-love/",
       "genre": "",
-      "vibe_check": "",
-      "cover_url": "https://aquariumdrunkard.com/_newness/wp-content/uploads/2026/07/bar-kays_wattstax-1-6e15237c78b8527fe4a33e5ef4e55bf9504afa63.jpg",
+      "vibe_check": "Late-night confessional energy, like writing in a journal by the last lamp still on in the house.",
+      "cover_url": "https://aquariumdrunkard.com/_newness/wp-content/uploads/2026/07/Nina-Winder-Lind-Wild-Love.jpg",
       "embed_url": null
     },
     {
       "source": "music",
       "source_name": "Consequence",
-      "title": "Blondshell Offers New Song “Fur Elise”: Stream",
-      "snippet": "Violins, Blondshell's third album, is out on September 25th.\nBlondshell Offers New Song &#8220;Fur Elise&#8221;: Stream\nPaolo Ragusa",
-      "url": "https://consequence.net/2026/08/blondshell-fur-elise-new-song-stream/",
+      "title": "Charley Crockett Says He “Lost a Lot of Respect” For Jack White After Satanic Doo-Wop Group Controversy",
+      "snippet": "The country crooner also claimed it wasn't Twin Temple's Satanic imagery that made him remove them from his tour dates.\nCharley Crockett Says He “Lost a Lot of Respect” For Jack White After Satanic Doo-Wop Group Controversy\nTravis Bland",
+      "url": "https://consequence.net/2026/08/charley-crockett-loses-respect-for-jack-white/",
       "genre": "",
-      "vibe_check": "",
-      "cover_url": "https://consequence.net/wp-content/uploads/2026/08/Blondshell-New-Song-Fur-Elise-Stream.jpg",
-      "embed_url": "https://www.youtube.com/embed/m1pJ3WNwlCo"
-    },
-    {
-      "source": "music",
-      "source_name": "Consequence",
-      "title": "In Trailer for Oasis Reunion Documentary, a Priest Tells Gallaghers to Forgive: Watch",
-      "snippet": "The new documentary hits theaters on September 11th.\nIn Trailer for Oasis Reunion Documentary, a Priest Tells Gallaghers to Forgive: Watch\nPaolo Ragusa",
-      "url": "https://consequence.net/2026/08/oasis-documentary-dont-look-back-in-anger-new-trailer-watch/",
-      "genre": "",
-      "vibe_check": "",
-      "cover_url": "https://consequence.net/wp-content/uploads/2026/08/Oasis.jpeg",
+      "vibe_check": "The slow simmer of a country feud that spilled past the stage and into the comment section.",
+      "cover_url": "https://consequence.net/wp-content/uploads/2026/08/White-TT-Crockett.jpg",
       "embed_url": null
     },
     {
       "source": "music",
       "source_name": "Consequence",
-      "title": "The Allman Betts Band Announce “Allman Betts Family Revival” 10th Anniversary Tour",
-      "snippet": "The sons of Gregg Allman and Dickey Betts will be joined by a host of musicians for The Allman Brothers Band covers.\nThe Allman Betts Band Announce &#8220;Allman Betts Family Revival&#8221; 10th Anniversary Tour\nTravis Bland",
-      "url": "https://consequence.net/2026/08/the-allman-betts-band-announce-allman-betts-family-revival-10th-anniversary-tour/",
+      "title": "ZZ Top to Keep Touring in the Wake of Drummer Frank Beard’s Passing",
+      "snippet": "The legendary act will miss just two shows to mourn Beard's passing.\nZZ Top to Keep Touring in the Wake of Drummer Frank Beard&#8217;s Passing\nSpencer Kaufman",
+      "url": "https://consequence.net/2026/08/zz-top-to-keep-touring-frank-beard-passing/",
       "genre": "",
-      "vibe_check": "",
-      "cover_url": "https://consequence.net/wp-content/uploads/2026/08/DevonAllman_DuaneBetts_by_KaelanBarowsky-.jpg",
+      "vibe_check": "Grief wrapped in road dust — the show going on because stopping would hurt even more.",
+      "cover_url": "https://consequence.net/wp-content/uploads/2025/12/zz-top-2026-us-tour.jpg",
       "embed_url": null
     },
     {
       "source": "music",
-      "source_name": "JazzTimes",
-      "title": "Book Excerpt – Last of the Jazz Joints: An Incomplete History of the Village Vanguard",
-      "snippet": "E ditor’s Note: The following are excerpts from Last of the Jazz Joints: An Incomplete History of the Village Vanguard, by Deborah Gordon (with Jed &#8230; Read More \"Book Excerpt – Last of the Jazz Joints: An Incomplete History of the Village Vanguard\"\nThe post Book Excerpt – Last of the Jazz Joint",
-      "url": "https://www.jazztimes.com/features/special-feature/book-excerpt-last-of-the-jazz-joints-an-incomplete-history-of-the-village-vanguard/",
+      "source_name": "Consequence",
+      "title": "Frank Beard, Legendary ZZ Top Drummer, Dead at 77",
+      "snippet": "He stepped away from touring with the band earlier this summer while dealing with serious health issues.\nFrank Beard, Legendary ZZ Top Drummer, Dead at 77\nTravis Bland",
+      "url": "https://consequence.net/2026/08/frank-beard-zz-top-drummer-dead/",
       "genre": "",
-      "vibe_check": "",
-      "cover_url": "https://www.jazztimes.com/wp-content/uploads/2026/08/60sWALL-tall.jpg",
-      "embed_url": null
-    },
-    {
-      "source": "music",
-      "source_name": "PopMatters",
-      "title": "The Afghan Whigs Are in Command of Their Signature Sound",
-      "snippet": "Soft Control would be a great place to dig in if you're new to the Afghan Whigs, but it is also another rewarding collection for devotees.",
-      "url": "https://www.popmatters.com/the-afghan-whigs-soft-control",
-      "genre": "",
-      "vibe_check": "",
-      "cover_url": "https://www.popmatters.com/wp-content/uploads/2026/08/The-Afghan-Whigs-2026-by-Orlando-Perkins.webp",
-      "embed_url": "https://www.youtube.com/embed/lW3B6ZiCFRw"
-    },
-    {
-      "source": "music",
-      "source_name": "PopMatters",
-      "title": "Laura Veirs’ Short, Poetic New LP Embraces Beautiful Imperfections",
-      "snippet": "Recorded in her tiny backyard studio, Laura Veirs celebrates the personal for a public audience with Temple Songs.",
-      "url": "https://www.popmatters.com/laura-veirs-temple-songs",
-      "genre": "",
-      "vibe_check": "",
-      "cover_url": "https://www.popmatters.com/wp-content/uploads/2026/08/Laura-Veirs-Temple-Songs-social.webp",
-      "embed_url": "https://www.youtube.com/embed/CDou3sqmTB0"
+      "vibe_check": "The heavy silence between the last downbeat and the realization there won't be another.",
+      "cover_url": "https://consequence.net/wp-content/uploads/2026/08/Frank-Beard-1.jpg",
+      "embed_url": "https://www.youtube.com/embed/kyiAPuM9cUU"
     }
   ],
   "global_silver_linings": [
     {
       "source": "good_news",
       "source_name": "Good News Network",
-      "title": "Threatened Bird Species Given Tiny Foot Casts to Help Recovery After Hit by Car",
-      "url": "https://www.goodnewsnetwork.org/threatened-bird-species-given-tiny-foot-casts-to-help-recovery-after-hit-by-car/",
-      "snippet": "A bird that was hit by a car is undergoing a rather curious rehabilitation procedure. The animal hospital it was taken do designed a pair of specially-built casts made of cardboard and tape. It’s a bit makeshift, but the bird is said to be making good progress and will be released back into the wild […] The post Threatened Bird Species Given Tiny Foot Casts to Help Recovery After Hit by Car appeared first on Good News Network .",
-      "cover_url": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/08/The-whitethroat-injured-with-his-foot-casts-credit-Leicestershire-Wildlife-Hospital-via-SWNS.jpg",
-      "reason": "Veterinarians crafting tiny, custom foot casts for an injured threatened bird shows just how far dedicated wildlife care has come — every individual life counts when a species is fighting to survive. It's a small act of extraordinary tenderness with real conservation stakes."
+      "title": "Boston Aims to Tackle 100-year Flood Risks with $10 Billion in Infrastructure Projects",
+      "url": "https://www.goodnewsnetwork.org/boston-aims-to-tackle-100-year-flood-risks-with-10-billion-in-infrastructure-projects/",
+      "snippet": "Expected to see 10 to 18 inches of sea level rise over the next 25 years, the city of Boston and the US Army Corps of Engineers have released a feasibility study for 20 separate infrastructure projects to protect the historic city’s coastline. The study estimates that if nothing is done, costs to the city’s […] The post Boston Aims to Tackle 100-year Flood Risks with $10 Billion in Infrastructure Projects appeared first on Good News Network .",
+      "cover_url": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/08/A-panorama-of-Boston-credit-Rokker-CC-3.0-e1787050151382.jpg",
+      "reason": "Boston's ambitious $10 billion commitment to flood resilience shows that cities are taking long-term climate risks seriously rather than kicking the problem down the road. Thoughtful infrastructure investment today means safer, more livable neighborhoods for generations to come."
     },
     {
       "source": "good_news",
-      "source_name": "Positive News",
-      "title": "Can festivals leave the land better than they found it?",
-      "url": "https://www.positive.news/environment/can-festivals-leave-the-land-better-than-they-found-it/",
-      "snippet": "How music festivals are putting land restoration, community action and environmental change on the bill The post Can festivals leave the land better than they found it? appeared first on Positive News .",
-      "cover_url": "https://www.positive.news/wp-content/uploads/2026/08/aranxa-esteve-pOXHU0UEDcg-unsplash.jpeg",
-      "reason": "A growing movement of festival organisers is rethinking what it means to gather on the land, actively restoring soil and habitat rather than leaving damage behind. It's proof that collective joy and environmental responsibility don't have to be in conflict."
+      "source_name": "Upworthy",
+      "title": "Gen Xers ask women how they’re redrawing their life maps in their 50s. The answers are inspiring.",
+      "url": "https://www.upworthy.com/gen-xers-ask-women-how-theyre-redrawing-their-life-maps-in-their-50s-the-answers-are-inspiring/",
+      "snippet": "\"Gen X women were handed a map that turned out to be for someone else's life. So here we are. Drawing a new one.\" The post Gen Xers ask women how they’re redrawing their life maps in their 50s.",
+      "cover_url": "https://www.upworthy.com/wp-content/uploads/sites/2/2026/08/top-image-1080-x-720-px-1200-x-640-px-2026-08-17T134347.610.jpg",
+      "reason": "Women in their 50s are rewriting what midlife looks like — with clarity, courage, and hard-won wisdom — and their stories are a genuine reminder that reinvention has no expiry date."
     },
     {
       "source": "good_news",
-      "source_name": "Reasons to be Cheerful",
-      "title": "The “Sisterhood” Protecting Indonesia’s Coral Reefs",
-      "url": "https://reasonstobecheerful.world/saving-indonesias-coral-reefs-by-empowering-women/",
-      "snippet": "When she was 21, Gabriela Nathania H dove underwater with a cohort of four strangers off the coast of Gili Air. The tiny island is one of three that make up the Gili Islands, an archipelago that divers the world over admire for their incredible marine biodiversity. But on that...",
-      "cover_url": "https://reasonstobecheerful.world/wp-content/uploads/2026/08/Coral-Restoration.jpg",
-      "reason": "A community of women in Indonesia has taken it upon themselves to guard and restore their local coral reefs, blending traditional knowledge with grassroots action. When the people closest to the land become its fiercest protectors, nature stands a real chance."
+      "source_name": "The Optimist Daily",
+      "title": "Rage workouts don’t calm you down, research finds. Here’s what does.",
+      "url": "https://www.optimistdaily.com/2026/08/rage-workouts-dont-calm-you-down-research-finds-heres-what-does/",
+      "snippet": "BY THE OPTIMIST DAILY EDITORIAL TEAM Slamming tires with a sledgehammer, pummeling a punching bag, running yourself into the ground when you’re furious: the premise behind rage workouts is that intense physical exertion gives anger somewhere to go. A 2024 review of 154 studies covering more than 10,000 participants suggests it doesn’t work that way. […] The post Rage workouts don’t calm you down, research finds.",
+      "cover_url": "https://www.optimistdaily.com/wp-content/uploads/Depositphotos_164046178_L.jpg",
+      "reason": "Science is quietly steering us toward calmer, more sustainable ways to manage stress, and knowing what actually works is genuinely empowering. Small, evidence-backed shifts in how we handle difficult emotions can make a real difference in daily life."
     }
   ],
   "discovery_articles": [
     {
       "source": "discovery",
       "source_name": "Atlas Obscura",
-      "title": "Cinema Africa in Asmara, Eritrea",
-      "url": "https://www.atlasobscura.com/places/cinema-africa",
-      "snippet": "Built during the Italian colonial era, when Asmara boasted one of the highest concentrations of cinemas in the continent, Cinema Africa belonged to a city where going to the movies was as much a social ritual as an evening's entertainment. Now outside the sightseeing circuit that comprises Cinema Impero and Roma, this building is one of the largest cinemas in the country and a remarkable example of Art Deco architecture that remains largely undiscovered. It still houses a functioning café, accessible through the side entrance, on the ground floor where people gather over espresso and chatter, preserving the atmosphere that once made Asmara's cinemas as much about meeting friends as watching films.",
+      "title": "Kloster Eberbach in Eltville am Rhein, Germany",
+      "url": "https://www.atlasobscura.com/places/eberbach-abbey-kloster-eberbach",
+      "snippet": "Perched on a sun-drenched slope in Eltville am Rhein, Kloster Eberbach stands as a masterpiece of Cistercian architecture, founded in 1136 by twelve monks seeking isolation and spiritual rigor. The abbey is famous for its vast, column-free Romanesque grain barn and its historic wine cellars, which have been producing Rheingau Rieslings for nearly nine centuries, making it a pivotal site in the history of European viticulture. Its atmospheric stone corridors and vaulted halls became globally recognized as the setting for the 1986 film adaptation of Umberto Eco’s The Name of the Rose , starring Sean Connery, which utilized the abbey to depict the grim, intellectual world of a 14th-century Italian monastery.",
       "category": "history",
-      "cover_url": "https://img.atlasobscura.com/C6MvlZBEhugWi8DCHunk6X90l-vLN2YGDI_3gpBoHqY/rt:fit/w:600/c:4715:3143:nowe:871:406/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy8xNWJk/NmJmMC02NTYxLTQy/MWMtYjY4NC1lYmIw/NGEyYzY1NWJiYjQ0/ZjljZmU1M2M4OWM3/NTZfNEgxQTU1MTgu/SlBH.jpg",
-      "ferns_note": "Asmara once had more cinemas per capita than almost anywhere else on the continent — a colonial-era extravagance that left behind Art Deco gems most travelers still walk past without a glance. The fact that one of the largest still serves espresso through a side door, its social heartbeat quietly intact, feels like a secret the city is keeping just for those who look closely enough."
+      "cover_url": "https://img.atlasobscura.com/Icbq0Xam5Xp5xOr0HwRtFt7PCpbJ9Sh2tPj4siM_uSI/rt:fit/w:600/c:3266:2177:nowe:830:499/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy84NGRh/NDNmNC1mODYxLTRh/ZjAtYWUwYS1hMTVk/YTdlOWRjM2YzODVm/N2RjNzIxMTM0ODQw/Y2VfMTAwMDAzNDAy/NS5qcGc.jpg"
+    },
+    {
+      "source": "discovery",
+      "source_name": "Atlas Obscura",
+      "title": "Salubria in Stevensburg, Virginia",
+      "url": "https://www.atlasobscura.com/places/salubria",
+      "snippet": "Latin for \"healthful\" or \"good health,\" Salubria, unlike James Madison's nearby home, Montpelier, is a lesser-known gem of the Piedmont region. Salubria, c 1757, is currently preserved though not restored- the house has not been repainted or re-furnished in period attire inside. Much of the wood is original!",
+      "category": "history",
+      "cover_url": "https://img.atlasobscura.com/Iub7FbE-Dp6Bfj1bNl3Vf-e2D3r1YXmhmwXDyFyzGYA/rt:fit/w:600/c:2673:1782:nowe:327:1020/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy8zMGRj/Y2VhNy1iYjJhLTRi/OTgtODI5Yi0zYzVl/Mjc1ZjM3MDk5ZTg1/NDQ4OTQ0OTE1M2Uz/ODNfMjAyNjA3MjVf/MTM1NzQyLmpwZw.jpg"
+    },
+    {
+      "source": "discovery",
+      "source_name": "Atlas Obscura",
+      "title": "Tin Pan Theater  in Bend, Oregon",
+      "url": "https://www.atlasobscura.com/places/tin-pan-theater",
+      "snippet": "Tin Pan Theater is a beloved arthouse cinema owned by BendFilm in the historic district of Bend, Oregon. The intimate 28 seat theater is adorned with red velvet old-fashioned seats that can best be enjoyed with the best home-made popcorn you've ever had. The small in-room concessions also serve up other classic movie fare including candy, soda, and local beer and wine on tap!",
+      "category": "history",
+      "cover_url": "https://img.atlasobscura.com/vVXMUtPRzX-d7kbrlMeIX_64gXYyjQ0_kGXRdIiFwxU/rt:fit/w:600/c:3420:2280:nowe:1:2666/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy8xYWZm/ZmZhYy0zMGE4LTRl/OWYtYWEyMC1hYmJl/YmFkMjI5MzIyMDQy/ZGM3OWQwZmYzYmQx/ZTFfVGV6emEtNjA5/Ni5KUEc.jpg"
     },
     {
       "source": "discovery",
       "source_name": "Smithsonian",
-      "title": "These Coral Reefs Off West Africa Were Long Presumed Dead. Scientists Just Found Them Alive and Teeming With Life",
-      "url": "https://www.smithsonianmag.com/smart-news/these-coral-reefs-off-west-africa-were-long-presumed-dead-scientists-just-found-them-alive-and-teeming-with-life-180989350/",
-      "snippet": "Fish surveys in the 1960s detected what experts thought was a dead coral reef barrier off the country of Benin. Decades later, researchers set off in small fishing boats to investigate it using sonar mapping, underwater drone surveys and stationary video recorders",
+      "title": "Do Monkeys Keep Pets? Study Finds Widespread Primate Interactions With Other Animal Species, From Mice to Deer",
+      "url": "https://www.smithsonianmag.com/smart-news/do-monkeys-keep-pets-study-finds-widespread-primate-interactions-with-other-animal-species-from-mice-to-deer-180989356/",
+      "snippet": "This social behavior might reveal the evolutionary roots of traits that underlie pet-keeping in humans, scientists say, from caregiving to tolerance and curiosity. But it's not the same as a person keeping a cat or a dog",
       "category": "history",
-      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/dTBZvZJBp2aBSbDJC2bu53DW2aQ=/fit-in/1600x0/filters:focal(791x407:792x408)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/33/61/33616fe6-ca67-48ac-aef5-b6688f9adf93/e3a9deb0-b760-4205-844e-b0f2564d35e1.png",
-      "ferns_note": "For roughly sixty years, an entire reef ecosystem off the coast of Benin was written off as dead — filed away in the ledger of ecological loss — until researchers in fishing boats with sonar gear discovered it very much alive. It's a reminder that 'presumed dead' is not the same as gone, and that the ocean still holds corrections to our assumptions."
+      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/kmX34L3SSwXBVmM1vmYxfOpwtXA=/fit-in/1600x0/filters:focal(864x683:865x684)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/96/29/96293c84-c9d0-4e95-937e-0c025c80d88e/screenshot_2026-08-17_at_34552pm.png"
     },
     {
       "source": "discovery",
       "source_name": "Smithsonian",
-      "title": "Avoiding These Three Vascular Health Risk Factors in Midlife Can Help You Delay Dementia for About 13 Years, Study Suggests",
-      "url": "https://www.smithsonianmag.com/smart-news/avoiding-these-three-vascular-health-risk-factors-in-midlife-can-help-you-delay-dementia-for-about-13-years-study-suggests-180989354/",
-      "snippet": "High blood pressure, diabetes and smoking are three major modifiable risk factors of dementia. New research tracked more than 12,000 participants to quantify how many years of healthy cognitive function you can gain by evading some or all of them during middle age",
+      "title": "This Newly Approved Narcolepsy Drug Is the First to Target the Sleep Disorder's Root Cause Rather Than Its Symptoms",
+      "url": "https://www.smithsonianmag.com/smart-news/this-newly-approved-narcolepsy-drug-is-the-first-to-target-the-sleep-disorders-root-cause-rather-than-its-symptoms-180989362/",
+      "snippet": "The Food and Drug Administration just greenlit a medication called Orzeyful for the treatment of narcolepsy type 1 in adults. The condition is caused by the loss of brain cells that produce orexin, a chemical important for regulating the sleep-wake cycle",
       "category": "history",
-      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/HochCocWP1-UcmD9ykTbEqXJcvQ=/fit-in/1600x0/filters:focal(2926x1951:2927x1952)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/c4/7b/c47b94b6-a678-4fb2-be73-f04b3e171819/pexels-shvets-production-8900036.jpg",
-      "ferns_note": "Thirteen years of additional healthy cognitive function is not a small number — it's roughly the span between your early fifties and your mid-sixties, rewritten by choices made before the damage compounds. The quiet power of this study is that it puts dementia's timeline, at least partly, back in human hands."
+      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/OPkYSLkytQahfgvcx5Dvn4UHcfg=/fit-in/1600x0/filters:focal(3000x2000:3001x2001)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/47/fc/47fc814d-c7fd-46ae-b4d2-5f8be614e012/narcolepsy.jpg"
+    },
+    {
+      "source": "discovery",
+      "source_name": "Smithsonian",
+      "title": "Why Gen Z Is Learning to Paint Like 19th-Century Artists",
+      "url": "https://www.smithsonianmag.com/innovation/why-gen-z-is-learning-to-paint-like-19th-century-artists-180989359/",
+      "snippet": "Paint groups are popping up in parks. Art schools are seeing a surge in applications. The rise of A.I.",
+      "category": "history",
+      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/kmkXI3RHRq_spCGhPlXEBLgMi28=/fit-in/1600x0/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/8d/f7/8df74aee-1c67-4165-bf66-4a544d11500c/ambient_art_london_en_plein_air_painting.jpg"
+    },
+    {
+      "source": "discovery",
+      "source_name": "Smithsonian",
+      "title": "Earth's Organisms Developed Via Evolution. Some Theorists Wonder: What if the Entire Cosmos Did, Too?",
+      "url": "https://www.smithsonianmag.com/science-nature/earths-organisms-developed-via-evolution-some-theorists-wonder-what-if-the-entire-cosmos-did-too-180989338/",
+      "snippet": "The idea that universes evolve like organisms sat on the fringes of theoretical physics for decades. Then, a Substack post and a 2022 find by the James Webb Space Telescope boosted the concept",
+      "category": "history",
+      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/caoAxlTOLyoIxtlGTD-YZkM3bpU=/fit-in/1600x0/filters:focal(521x516:522x517)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/11/48/11487635-0fac-4b64-baa7-f7f3cb941e79/image_1.png"
     },
     {
       "source": "discovery",
       "source_name": "Science News",
-      "title": "What Spider-Man gets right — and wrong — about turning off superpowers",
-      "url": "https://www.sciencenews.org/article/spider-man-superpower-inhibitor-rna",
-      "snippet": "In 'Spider-Man: Brand New Day,' Peter Parker devises a superpower inhibitor based on a real therapy using RNA.",
+      "title": "Shrews’ noses grow in winter as their brains shrink",
+      "url": "https://www.sciencenews.org/article/shrews-winter-organ-mass-adaptation",
+      "snippet": "Long-clawed shrews’ snouts temporarily grow larger in the winter. This skull reshaping may be an extreme survival strategy in cold conditions.",
       "category": "science",
-      "cover_url": "https://www.sciencenews.org/wp-content/uploads/sites/2/2026/08/081726_TS_spiderman_main.jpg",
-      "ferns_note": "It turns out the comic-book writers weren't entirely making things up: the superpower inhibitor Peter Parker sketches out mirrors a real RNA-silencing therapy used in actual medicine. The gap between Marvel's fiction and the biology lab is, apparently, thinner than anyone thought to check."
+      "cover_url": "https://www.sciencenews.org/wp-content/uploads/sites/2/2026/08/081826_JB_shrew_main.jpg"
     },
     {
       "source": "discovery",
-      "source_name": "Aeon",
-      "title": "In praise of zealotry",
-      "url": "https://aeon.co/essays/polite-debate-has-privilege-the-marginalised-need-zealotry",
-      "snippet": "Early feminists like Mary Astell and Catharine Macaulay refused their male peers’ advice to remain polite in debate. Why? - by Geertje Bol Read on Aeon",
-      "category": "science",
-      "cover_url": "https://images.aeonmedia.co/images/7658e7b8-9c34-41ec-b558-2302dd610d06/essay-bm-265686001.jpg?width=1200&quality=75&format=jpeg",
-      "ferns_note": "Mary Astell and Catharine Macaulay were told, as women in early feminist debate, that politeness would earn them more ground — and they refused, loudly, on principle. The argument Geertje Bol makes is that their so-called zealotry wasn't a liability; it was the whole point."
-    },
-    {
-      "source": "discovery",
-      "source_name": "JSTOR Daily",
-      "title": "Neurodiversity in the Clinic",
-      "url": "https://daily.jstor.org/neurodiversity-in-the-clinic/",
-      "snippet": "Autism researcher Patrick Dwyer examines how the neurodiversity movement is influencing autism research and clinical decision-making. The post Neurodiversity in the Clinic appeared first on JSTOR Daily .",
+      "source_name": "Atlas Obscura",
+      "title": "The Most Remote Place on Earth Has Space Junk and a Sea Monster",
+      "url": "https://www.atlasobscura.com/articles/strange-maps-point-nemo",
+      "snippet": "Eerie things happen at Point Nemo. Q: What do sci-fi-pioneer Jules Verne, horror-writer H.P. Lovecraft, and the Russian space programme have in common?",
       "category": "history",
-      "cover_url": "https://daily.jstor.org/wp-content/uploads/2026/08/neurodiversity_in_the_clinic_1050x700.jpg",
-      "ferns_note": "The neurodiversity movement began largely outside clinical walls — in community spaces, online forums, and the lived experience of autistic people themselves — and it is only now reshaping the research and diagnostic frameworks that once excluded those voices entirely. That the clinic is catching up, rather than leading, says something worth sitting with."
+      "cover_url": "https://img.atlasobscura.com/w8MMB65by1mbWhnWQbTFqoFAedU6g5P08QQIJZqyAYU/rt:fit/w:1200/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL2Fzc2V0/cy80N2UyNTFjNS1m/YTZmLTQxYzItOGU0/ZS1jNzI4OTI1MzE2/YmU1NmNlNGQ1OWYz/MmUxZDJhNmJfT2Nl/YW5pY19wb2xlX29m/X2luYWNjZXNzaWJp/bGl0eS5wbmc.png"
     },
     {
       "source": "discovery",
       "source_name": "Colossal",
-      "title": "Julie Green’s ‘The Last Supper’ Memorializes Hundreds of People’s Final Meals While on Death Row",
-      "url": "https://www.thisiscolossal.com/2026/08/julie-green-last-supper-ceramic-plates-final-meals/",
-      "snippet": "Over a 22-year period, Green illustrated final requests ranging from pizzas and lobster to pies and KFC cartons. Do stories and artists like this matter to you? Become a Colossal Member today and support independent arts publishing for as little as $7 per month.",
+      "title": "Dark Emotions Evoke Growth in Alejandro Aguliar Canela’s Graphite Drawings",
+      "url": "https://www.thisiscolossal.com/2026/08/alejandro-aguliar-canela-graphite-drawings/",
+      "snippet": "\"It’s more about not discarding what might be considered unwanted, but instead finding some use for it,\" says the artist. Do stories and artists like this matter to you? Become a Colossal Member today and support independent arts publishing for as little as $7 per month.",
       "category": "history",
-      "cover_url": "https://www.thisiscolossal.com/wp-content/uploads/2026/08/green-8.jpg",
-      "ferns_note": "Over twenty-two years, Julie Green painted hundreds of last meal requests onto dinner plates — and the range is quietly devastating, from lobster to a simple KFC carton, each one a portrait of a person reducing their final wish to something recognizable and human. It is, somehow, both a memorial and an argument."
+      "cover_url": "https://www.thisiscolossal.com/wp-content/uploads/2026/08/canela-5.jpg"
+    },
+    {
+      "source": "discovery",
+      "source_name": "Colossal",
+      "title": "Glowing Paintings by Francesco Pirazzi Meditate on the Enigmas of Absence",
+      "url": "https://www.thisiscolossal.com/2026/08/francesco-pirazzi-paintings-landscapes-architecture-trees-mystery/",
+      "snippet": "\"For me, paintings represent an attempt to grasp a 'something' that for some reason deeply moves me, agitates me.\" Do stories and artists like this matter to you? Become a Colossal Member today and support independent arts publishing for as little as $7 per month. The article Glowing Paintings by Francesco Pirazzi Meditate on the Enigmas of Absence appeared first on Colossal .",
+      "category": "history",
+      "cover_url": "https://www.thisiscolossal.com/wp-content/uploads/2026/08/pirazzi-5.jpg"
     }
   ],
   "featured_read": {
     "source": "reads",
     "source_name": "Nautilus",
-    "title": "A Dazzling Image of a Dying Star, Featuring the Great Recycling System of the Cosmos",
-    "url": "https://nautil.us/a-dazzling-image-of-a-dying-star-featuring-the-great-recycling-system-of-the-cosmos-1283923/",
-    "snippet": "Ashes to ashes, stardust to stardust The post A Dazzling Image of a Dying Star, Featuring the Great Recycling System of the Cosmos appeared first on Nautilus .",
-    "cover_url": "https://lede-admin.nautil.us/wp-content/uploads/sites/70/2026/08/Nield_hero_26ae1c.png"
+    "title": "Why You Move Factors in to Whether It Protects You From Dementia",
+    "url": "https://nautil.us/why-you-move-factors-in-to-whether-it-protects-you-from-dementia-1283940/",
+    "snippet": "Movement for movement’s sake isn’t the safeguard you might think The post Why You Move Factors in to Whether It Protects You From Dementia appeared first on Nautilus .",
+    "cover_url": "https://lede-admin.nautil.us/wp-content/uploads/sites/70/2026/08/Currie_HERO_cbe7be.png"
   },
   "reading_room": [
     {
       "source": "reads",
       "source_name": "Psyche",
-      "title": "Don’t let nature slip out of reach",
-      "url": "https://psyche.co/notes-to-self/its-not-too-late-to-strengthen-your-ties-to-nature",
-      "snippet": "Research on the ‘extinction of experience’ suggests many of us are losing vital connections to the natural world - by Hannah Seo Read on Psyche",
-      "cover_url": "https://images.aeonmedia.co/images/568fce94-f106-4f39-97c9-478da4fba163/sz-liam-hans-ad2qiuro94u-unsplash.jpg?top=191&left=0&cropWidth=3664&cropHeight=2061&width=1200&quality=75&format=jpeg"
-    },
-    {
-      "source": "reads",
-      "source_name": "The Paris Review",
-      "title": "The Catalogue of Lost Things",
-      "url": "https://www.theparisreview.org/blog/2026/08/18/the-catalogue-of-lost-things/",
-      "snippet": "Some favorite passages from the many new releases that wound up on our desks this July and August.",
-      "cover_url": "https://www.theparisreview.org/blog/wp-content/uploads/2026/08/july-aug-bookmarks-header.jpg"
+      "title": "Glass eggs",
+      "url": "https://psyche.co/turning-points/the-grief-and-fragile-hope-of-deciding-to-freeze-my-eggs",
+      "snippet": "When the future I’d been planning lay shattered at my feet, freezing my eggs offered a fragile hope - by Matilda Hay Read on Psyche",
+      "cover_url": "https://images.aeonmedia.co/images/5e5bec38-4172-4aff-b300-2c364034d71d/diptych.jpg?top=263&left=2&cropWidth=2656&cropHeight=1494&width=1200&quality=75&format=jpeg"
     },
     {
       "source": "reads",
       "source_name": "Longreads",
-      "title": "Worm Munch Matters",
-      "url": "https://longreads.com/2026/08/18/underground-soil-sounds/",
-      "snippet": "\"The lives that slither and scurry beneath the soil’s surface are vital for ecological health: now we can listen in to them.\"",
+      "title": "There’s Something Dangerous About Sam Rockwell",
+      "url": "https://longreads.com/2026/08/18/sam-rockwell-white-lotus-wild-horse-nine/",
+      "snippet": "\"Ever since that monologue—you know the one—everyone knows who the legendary scene-stealer is. Still, his appetite for taking risks means he’ll never stop surprising us.\"",
       "cover_url": ""
     },
     {
       "source": "reads",
       "source_name": "Literary Hub",
-      "title": "Lit Hub Daily: August 18, 2026",
-      "url": "https://lithub.com/lit-hub-daily-august-18-2026/",
-      "snippet": "What Buffy the Vampire Slayer and Angel can teach us about grief, literature, and growing up. | Lit Hub TV Florence Hazrat explores the surprisingly controversial history of the parenthesis. | Lit Hub History Edwidge Danticat tells us why she",
-      "cover_url": "https://s26162.pcdn.co/wp-content/uploads/2026/08/lolita1.jpg"
+      "title": "The Maltese Version",
+      "url": "https://lithub.com/the-maltese-version/",
+      "snippet": "One day they were in love and the next, a manuscript appeared in his study, written in a language she didn’t speak. Ix-Xmara Mżerżqa. The papers were flopping off the edge of his desk, trembling in the breeze from the",
+      "cover_url": "https://s26162.pcdn.co/wp-content/uploads/2026/07/9780374619480.jpg"
     },
     {
       "source": "reads",
-      "source_name": "Noema",
-      "title": "The 2026 Berggruen Prize Essay Competition Topic: ‘A New Axial Age?’",
-      "url": "https://www.noemamag.com/the-2026-berggruen-prize-essay-competition-topic-a-new-axial-age",
-      "snippet": "The post The 2026 Berggruen Prize Essay Competition Topic: ‘A New Axial Age?’ appeared first on NOEMA .",
-      "cover_url": "https://noemamag.imgix.net/2026/07/NewAxialBanner.png?fit=crop&fm=png&h=628&ixlib=php-3.3.1&w=1200&wpsize=noema-social-facebook&s=6a2448b68bc1516fe9d4e903d58263ad"
+      "source_name": "3 Quarks Daily",
+      "title": "If we couldn’t make generalisations, we would be paralysed by the world’s complexity. Does that ever excuse stereotyping?",
+      "url": "https://3quarksdaily.com/3quarksdaily/2026/08/if-we-couldnt-make-generalisations-we-would-be-paralysed-by-the-worlds-complexity-does-that-ever-excuse-stereotyping.html",
+      "snippet": "Tom Ralston at Aeon: Overgeneralising has a bad rap. It seems an obvious, if understandable, mistake to generalise beyond what our evidence supports. A child playing in the park may assume, based on their experiences of their friendly pet golden retriever, that all dogs are friendly.",
+      "cover_url": ""
+    },
+    {
+      "source": "reads",
+      "source_name": "Nautilus",
+      "title": "The Wonders of the Male Human Pelvis",
+      "url": "https://nautil.us/the-wonders-of-the-male-human-pelvis-1283947/",
+      "snippet": "It’s all in the hips The post The Wonders of the Male Human Pelvis appeared first on Nautilus .",
+      "cover_url": "https://lede-admin.nautil.us/wp-content/uploads/sites/70/2026/08/Currie_HERO_15da91.png"
     }
   ],
   "garden_note": {
-    "note": "Late summer in Zürich has that particular golden weight to it — the Albis hills hold the warmth long after the sun dips behind them, and the garden smells faintly of warm earth and ripening tomatoes as the air begins to cool. Step outside before dusk at 21:06 and you may catch the last swifts wheeling overhead, fattening up before their long journey south.",
+    "note": "First light creeps over the Zürichberg just before six, and the garden is already humming — late-summer dahlias are at their most theatrical right now, and the runner beans are clamouring for one last heavy pick before the mornings cool in earnest.",
     "in_season": [
-      "Tomatoes ripening on the vine",
-      "Zucchini — harvest daily or face the consequences",
-      "Echinacea in full, rusty bloom",
-      "Deadhead dahlias to keep them flowering into September"
+      "Dahlias in full, extravagant bloom",
+      "Runner beans and courgettes to harvest daily",
+      "Sow lamb's lettuce (Feldsalat) for autumn",
+      "Deadhead echinacea to extend the flush"
     ],
-    "sky_tonight": "Look southwest after dusk for the waxing crescent moon — at 29% it sets relatively early, so catch it low and honey-coloured while you can; Saturn is rising in the southeast not far behind.",
-    "sun_times": "The sun slips away at 20:34 tonight, with dusk lingering gently until 21:06.",
-    "moon_label": "Waxing crescent",
-    "illum_pct": 29,
-    "sun_range": "06:24–20:34"
+    "sky_tonight": "The first-quarter Moon sits high in the south after dark — look for Saturn rising in Aquarius close by as evening deepens.",
+    "sun_times": "First light arrives at 05:54 this morning, with sunrise at 06:26 and the long August day closing at 20:32.",
+    "moon_label": "First quarter",
+    "illum_pct": 34,
+    "sun_range": "06:26–20:32"
   },
-  "puzzle": {},
+  "puzzle": {
+    "kind": "riddle",
+    "label": "Fern's Morning Riddle",
+    "prompt": "I have a thousand needles but I do not sew.\r\nWhat am I?",
+    "answer": "A Porcupine",
+    "hint": "",
+    "source": "riddles.com",
+    "source_id": "Riddle-1809"
+  },
   "previous_puzzle": {
     "label": "Fern's Morning Riddle",
     "prompt": "Late heat bends the road\na pool shimmers, always near\nstep close — it has fled",
     "answer": "A mirage"
   },
   "larder": {
-    "news": [],
-    "recipe": {}
+    "news": [
+      {
+        "source": "food",
+        "source_name": "The Kitchn",
+        "title": "Pepperidge Farm Just Launched a New Fall Cookie That’s So Good, I Can’t Believe",
+        "url": "https://www.thekitchn.com/new-spiced-orange-cranberry-chessmen-cookie-23839608?utm_source=RSS&utm_medium=feed&utm_campaign=Category%2FChannel%3A+main",
+        "snippet": "When I think of Pepperidge Farm, I normally just think of Milano cookies. But it turns out that this company makes many of my grocery go-tos: Goldfish crackers, puff pastry sheets, farmhouse thin-and-crispy cookies, and Chessmen cookies.I have always loved a classic buttery Chessmen cookie (especially paired with a hot cup of tea). READ MORE...",
+        "cover_url": "",
+        "blurb": "Pepperidge Farm has quietly been running the snack aisle this whole time, and this new fall cookie is the cozy proof."
+      },
+      {
+        "source": "food",
+        "source_name": "The Guardian",
+        "title": "Cool as a cucumber: recipes and tips to save you from cooking in a heatwave | Kitchen aide",
+        "url": "https://www.theguardian.com/food/2026/aug/18/no-cook-in-a-heatwave-recipes-tips-toast",
+        "snippet": "When ovens and stovetops just won’t do, turn to loaded toasts, open sandwiches, cold noodles and smashed cucumbers, say our no-cook experts It’s too hot to turn on the oven or stove. What can I make for dinner that’s still substantial? Mark, via email This sounds like a job for Lucy Carr-Ellison, of Tart London , who is fully functioning in a no-oven household.",
+        "cover_url": "https://i.guim.co.uk/img/media/2f2cac9743fc3a9d9d7c6835bf5a590fb822a897/29_877_3849_3080/master/3849.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=b0cfb92eb0286ab6de47782a27044b08",
+        "blurb": "A timely reminder that the best summer cooking is, delightfully, no cooking at all."
+      },
+      {
+        "source": "food",
+        "source_name": "Saveur",
+        "title": "Meet the Children’s Book Illustrator Who Sees the World Through Food",
+        "url": "https://www.saveur.com/culture/illustrator-sees-world-through-food/",
+        "snippet": "Photo and Illustration: Gaia Stella, used with permission of the publisher, Albin Michel Jeunesse Gaia Stella’s work bridges art and learning, encouraging kids to recognize patterns and possibilities. The post Meet the Children’s Book Illustrator Who Sees the World Through Food appeared first on Saveur .",
+        "cover_url": "https://www.saveur.com/uploads/2026/08/11-copia16x9crop-scaled.jpg?auto=webp&width=2000&height=1125",
+        "blurb": "Gaia Stella's illustrated world where food becomes art and education is the kind of creative intersection that makes you see your dinner plate a little differently."
+      }
+    ],
+    "recipe": {},
+    "seasonal_note": "Zürich's markets are flush with Zwetschgen right now — those slim, dusky-blue plums that ripen just for a few weeks and beg to be tucked into a buttery Zwetschgenwähe, the pastry-cream tart that every Swiss grandmother considers non-negotiable at this time of year. Seek them out at the Bürkliplatz Markt on Saturday morning while the season still holds."
   },
   "fern_data": {
-    "greeting": "The day has folded up like a letter no one finished — and into that pause come phosphine traces on Enceladus, a mathematician's microscope made of wavelets, and the particular ache of a film that remembers the way memory actually breaks.",
-    "top_pick_title": "Unfinished Letters & Deep Space Clues"
+    "greeting": "Still on the Mpemba effect, actually — because once you learn that hot water sometimes freezes faster than cold and nobody fully agrees why, Suetonius's Galba starts to feel less like ancient history and more like a case study in the same human talent for producing outcomes that should not logically occur.",
+    "top_pick_title": "Strange Laws & Softer Buns"
   }
 }
