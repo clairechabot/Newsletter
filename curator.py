@@ -14,6 +14,7 @@ Required environment variable:
 import json
 import os
 import re
+import collections
 import textwrap
 from pathlib import Path
 from typing import Any
@@ -816,6 +817,15 @@ FRESHNESS IS THE POINT. These notes have become repetitive, so:
   what's inside.
 - You may sign off "— Fern" occasionally, but not every time.
 
+SHAPE AND RHYTHM. These notes have drifted into one long comma-chain every single
+time. Vary the architecture:
+- Roughly one note in three should be a SINGLE short line under 120 characters. Let
+  it land and stop.
+- Never chain more than two comma clauses in a row.
+- Do NOT use the "X, or Y, or Z" triple-list construction to tease items — choose one
+  or two and be specific about them instead.
+- When you write two sentences, make them deliberately uneven: one short, one longer.
+
 PLACE IS NOT THE POINT. The reader's city, landscape, mountains, or local weather is
 never the subject of the note and never its opening hook. The season may show, but
 write about what is IN today's edition — the ideas, the stories, the oddities. A
@@ -838,6 +848,19 @@ Return ONLY valid JSON:
 
 Do not include any text outside the JSON object.
 """).strip()
+
+
+def _opening_habits(greetings: list[str], n: int = 3,
+                    min_count: int = 2, top: int = 6) -> list[tuple[str, int]]:
+    """Most-repeated opening n-grams across recent notes, fed back to Fern as habits
+    to break. Self-correcting: replaces the hand-maintained banned-phrase list, which
+    always lagged (\"settle in\" ran in 57 editions before anyone blocked it)."""
+    counts: collections.Counter = collections.Counter()
+    for g in greetings:
+        words = re.findall(r"[A-Za-z']+", g or "")[:n]
+        if len(words) == n:
+            counts[" ".join(words).lower()] += 1
+    return [(w, c) for w, c in counts.most_common(top) if c >= min_count]
 
 
 def generate_fern_greeting(
@@ -889,8 +912,15 @@ def generate_fern_greeting(
     recent_greetings = recent_greetings or []
     if recent_greetings:
         lines.append("\nRECENT NOTES (do NOT echo their openings, images, or structure):")
-        for g in recent_greetings[-6:]:
+        for g in recent_greetings[-12:]:
             lines.append(f"  - {g[:160]}")
+        habits = _opening_habits(recent_greetings)
+        if habits:
+            lines.append(
+                "\nYOUR CURRENT HABITS — these openings have hardened into formulas. "
+                "Do NOT begin with any of them, or a close variant:")
+            for phrase, count in habits:
+                lines.append(f"  - \"{phrase} …\" (used {count}x recently)")
 
     lines.append("\n## Content in today's digest:\n")
     for theme in themes:

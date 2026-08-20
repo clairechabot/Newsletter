@@ -754,6 +754,19 @@ def _subject_for(curated: dict) -> str:
     return f"{prefix} | {top_pick}" if top_pick else f"{prefix} · The Curated Canopy"
 
 
+def _recent_greetings() -> list:
+    """Recent Fern notes from the committed history, used as the regional editions'
+    anti-repetition avoid-list. Regional runners never write history back (six
+    schedules committing one file would collide), so this is read-only: it still
+    stops a regional note from echoing recent notes, which it previously had no
+    way to know about at all."""
+    try:
+        hist = json.loads((Path(__file__).parent / "history.json").read_text(encoding="utf-8-sig"))
+        return hist.get("recent_greetings") or []
+    except Exception:
+        return []
+
+
 def send_regional() -> None:
     """
     Regional re-send: reuse the primary edition's committed content, re-localize
@@ -851,12 +864,14 @@ def send_regional() -> None:
                 season=_season(now),
                 recipient=recipient,
                 tone=fern_tone,
+                recent_greetings=_recent_greetings(),
             )
             if fern.get("greeting"):
                 # keep the shared subject-line title; only swap the personalized note
                 fern["top_pick_title"] = curated.get("fern_data", {}).get("top_pick_title", fern.get("top_pick_title", ""))
                 curated["fern_data"] = fern
-                print(f"[regional] Personalized Fern's note for {recipient}.")
+                print(f"[regional] Personalized Fern's note for {recipient} "
+                      f"({GARDEN_LOCALE}): {fern['greeting']}")
         except Exception as exc:
             print(f"[regional] Greeting personalization skipped ({exc}).")
 
