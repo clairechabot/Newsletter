@@ -2144,7 +2144,7 @@ def main() -> dict:
     updated_greetings = None
     new_greeting = (curated.get("fern_data") or {}).get("greeting", "").strip()
     if new_greeting:
-        updated_greetings = (recent_greetings + [new_greeting])[-10:]
+        updated_greetings = (recent_greetings + [new_greeting])[-30:]
     save_history(seen_ids, seen_good_news_urls, seen_discovery_urls,
                  seen_reads_urls, seen_music_urls,
                  pending_puzzle=(
