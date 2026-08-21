@@ -1,106 +1,134 @@
 {
-  "fetched_at": "2026-08-20T17:00:48.881395+02:00",
-  "is_am_email": false,
+  "fetched_at": "2026-08-21T06:06:05.623922+02:00",
+  "is_am_email": true,
   "audit_summary": {
-    "youtube_videos": 5,
+    "youtube_videos": 7,
     "themes": 3,
-    "music_articles": 9,
+    "music_articles": 5,
     "good_news_articles": 3,
-    "discovery_articles": 11,
+    "discovery_articles": 10,
     "featured_read": 1,
     "reading_room": 5,
     "garden": 1,
     "puzzle": 1,
-    "larder": 0
+    "larder": 3
   },
   "themes": [
     {
-      "name": "The Accidental Kitchen",
-      "emoji": "🍪",
-      "tagline": "From a cattle lab to your cone, from browned butter to your soul — food is always stranger and better than you expect.",
+      "name": "Dead Empires & Living Legacies",
+      "emoji": "🏛️",
+      "tagline": "From Byzantine sieges to Oscar Wilde's bloodline — history keeps showing up uninvited and refusing to leave.",
       "items": [
         {
           "source": "youtube",
-          "video_id": "Tfdl2J6U-OQ",
-          "title": "Dippin' Dots Wasn't Supposed To Be Ice Cream...",
-          "channel_id": "UCNaq5Jh4SQ1oBAjhQ0KPhoA",
-          "channel_title": "Weird History Food",
-          "published_at": "2026-08-20T14:15:37Z",
-          "url": "https://www.youtube.com/watch?v=Tfdl2J6U-OQ",
-          "duration_seconds": 877,
-          "view_count": "865",
-          "description": "If you were a child of the 1990's then you probably had a soft spot for Dippin' Dots. Known as \"the ice cream of the future,\" the frozen dessert became ubiquitous at stadiums, theme parks and zoos. But despite their popularity, few realize that the science behind those tiny frozen beads was originally developed to create cattle feed. \n\nIn this episode of Weird History Food, we’re diving into the surprising story and science behind Dippin’ Dots to find out how they're made, what makes them differ",
-          "why_watch": "The origin story here is genuinely surprising: the flash-freezing technology behind Dippin' Dots was invented for agricultural use, not dessert. Weird History Food traces how a cattle-feed experiment ended up in theme park freezers across America. It's a tidy 14 minutes of food history with a satisfying 'how did that happen?' arc.",
+          "video_id": "7uTNkBvBFG0",
+          "title": "I time travelled to the Fall of Constantinople 1453! #history",
+          "channel_id": "UCZB1r1In9RfE7tpVrYgcjLQ",
+          "channel_title": "Chloe VS History",
+          "published_at": "2026-08-20T20:00:48Z",
+          "url": "https://www.youtube.com/watch?v=7uTNkBvBFG0",
+          "duration_seconds": 171,
+          "view_count": "24448",
+          "description": "",
+          "why_watch": "A tight three-minute historical vignette on the 1453 Ottoman siege that ended the Byzantine Empire — one of history's genuine turning points. Good for a fast, atmospheric refresh on an event that tends to get glossed over in broader history surveys.",
           "is_wildcard": false
         },
         {
           "source": "youtube",
-          "video_id": "qsMEKFzRaRM",
-          "title": "Chocolate Chip Cookie Upgrade: Crinkly, Chewy, Browned Butter | Easy No-Mixer Recipe",
-          "channel_id": "UC_8x1VmhDgsU72Yktd9Ukeg",
-          "channel_title": "sheldo's kitchen",
-          "published_at": "2021-10-14T20:24:56Z",
-          "url": "https://www.youtube.com/watch?v=qsMEKFzRaRM",
-          "duration_seconds": 893,
-          "view_count": "552570",
-          "description": "The ultimate Chocolate Chip Cookie recipe. Simple techniques turn the classic cookie we're all familiar with into something next level, loaded with texture and flavour. Plus, it's super easy to make. It all comes together in one bowl, with no mixer required.\n\nSay hi on insta: https://www.instagram.com/sheldoskitchen/\n\nHi! I'm Sheldon (aka Sheldo), an avid baker and cook. You may know me from season 4 of The Great Canadian Baking Show. Subscribe for more videos every week with delicious recipes y",
-          "why_watch": "This one earns its half-million views: Sheldo walks through three specific techniques — browned butter, resting the dough, and a particular pan-banging method — that together produce the crispy-edged, chewy-centered cookie most recipes only promise. No mixer, one bowl, and the 'why' behind each step is clearly explained so you can actually replicate the results.",
-          "is_wildcard": false
-        }
-      ]
-    },
-    {
-      "name": "Brainwave Hours",
-      "emoji": "🧠",
-      "tagline": "Sleep on it, argue about it, build civilizations with it — your mind has been doing wild things for millennia.",
-      "items": [
-        {
-          "source": "youtube",
-          "video_id": "NteHQv0ceN4",
-          "title": "Memory Consolidation: Time Machine of the Brain",
-          "channel_id": "UCR2uRTQ53V_egXKFflMMaaw",
-          "channel_title": "Artem Kirsanov",
-          "published_at": "2022-02-16T20:42:38Z",
-          "url": "https://www.youtube.com/watch?v=NteHQv0ceN4",
-          "duration_seconds": 671,
-          "view_count": "64129",
-          "description": "Visit https://brilliant.org/ArtemKirsanov/ to get started learning STEM for free, and the first 200 people will get 20% off their annual premium subscription.\n\n=====\nMy name is Artem, I'm a neuroscience PhD student at Harvard University. \n🌎 Website and Social links: https://kirsanov.ai/\n📥 \"Receptive Field\" neuro-newsletter: https://artemkirsanov.substack.com/\n✨ Support me on Patreon to get access to Discord community: https://patreon.com/artemkirsanov\n=====\n\nHow does sleep help us remember thing",
-          "why_watch": "Artem Kirsanov, a Harvard neuroscience PhD student, unpacks how the sleeping brain replays and stabilizes memories — explaining why pulling an all-nighter before an exam is a genuinely bad strategy, not just conventional wisdom. The 'time machine' framing makes the hippocampus-to-cortex transfer process unusually easy to visualize without dumbing it down.",
+          "video_id": "AfWFWntyqdI",
+          "title": "Interviewing Oscar Wilde's ONLY Grandson",
+          "channel_id": "UCZwU2G-KVl-P-O-B35chZOQ",
+          "channel_title": "History Hit",
+          "published_at": "2026-08-20T18:00:23Z",
+          "url": "https://www.youtube.com/watch?v=AfWFWntyqdI",
+          "duration_seconds": 4317,
+          "view_count": "4164",
+          "description": "Oscar Wilde was a famous Victorian queer icon for his writing, for fame itself but also for his scandals. Merlin Holland has studied the life of his grandfather and is meeting with Anthony Delaney and Maddy Pelling to talk about Wilde's legacy, trials, affairs, prison and the impact on his family.\n\nSubscribe to After Dark here: https://www.youtube.com/@AfterDarkHistoryHitsub_confirmation=1\nWatch A Very Victorian Scandal here: https://youtu.be/xoHA3OAAf9E \n\n0:00 Introduction\n1:40 Merlin Holland a",
+          "why_watch": "Merlin Holland is the last living direct link to Oscar Wilde, and he's spent decades correcting the record on his grandfather's life, trials, and legacy — including family details that rarely surface in standard biographies. At nearly 72 minutes it's a commitment, but Holland's perspective is genuinely irreplaceable rather than just adjacent.",
           "is_wildcard": false
         },
         {
           "source": "youtube",
-          "video_id": "eVznVMCj_A0",
-          "title": "Why Study Classics?",
+          "video_id": "8PMsH-x6hHI",
+          "title": "Histories of the Kings of Britain by Geoffrey of Monmouth - Book VII",
           "channel_id": "UCbFLHoeA-X5qRUDmb9tRRqA",
           "channel_title": "Classic Masterworks",
-          "published_at": "2022-12-30T22:36:16Z",
-          "url": "https://www.youtube.com/watch?v=eVznVMCj_A0",
-          "duration_seconds": 183,
-          "view_count": "6966",
-          "description": "Why do we study Classics?\n\nStudying classics, or the literature, history, and culture of ancient Greece and Rome, is important for a number of reasons. By studying classics, we can gain a deeper understanding of the history and development of Western civilization and the ways in which it has influenced the world we live in today.\n\nFirst and foremost, classics provide us with a rich and diverse cultural heritage. The ancient Greeks and Romans have left a lasting legacy on Western civilization, an",
-          "why_watch": "At just three minutes, this is less a lecture and more a compact case for why ancient Greek and Roman culture still shapes the way we argue, govern, and tell stories. It won't convert a skeptic, but it's a useful articulation of the 'so what' question that Classics students get asked at every dinner party.",
+          "published_at": "2022-12-30T14:29:56Z",
+          "url": "https://www.youtube.com/watch?v=8PMsH-x6hHI",
+          "duration_seconds": 1743,
+          "view_count": "543",
+          "description": "The History of the Kings of Britain (Historia regum Britanniae), originally called De gestis Britonum (On the Deeds of the Britons), is a pseudohistorical account of British history, written around 1136 by Geoffrey of Monmouth. It chronicles the lives of the kings of the Britons over the course of two thousand years, beginning with the Trojans founding the British nation and continuing until the Anglo-Saxons assumed control of much of Britain around the 7th century. It is one of the central piec",
+          "why_watch": "Book VII of Geoffrey of Monmouth's 12th-century chronicle is where the Arthurian mythology gets its most elaborate early scaffolding, including Merlin's prophecies. This is a clean audiobook-style reading suited for people who want the primary source rather than a modern retelling.",
           "is_wildcard": false
         }
       ]
     },
     {
-      "name": "Somewhere in Motion",
-      "emoji": "🚂",
-      "tagline": "Not all journeys have a destination — sometimes the track itself is the whole point.",
+      "name": "Slow & Deliberate",
+      "emoji": "🍵",
+      "tagline": "Matcha farms, linked notes, and the quiet art of doing one thing with serious intention.",
       "items": [
         {
+          "source": "youtube",
+          "video_id": "gFpFNLmnO_Y",
+          "title": "How Japanese Green Tea Is Made | Grow & Tell",
+          "channel_id": "UCSbyncU597LMwb3HhnAI_4w",
+          "channel_title": "Epic Gardening",
+          "published_at": "2026-08-20T21:58:55Z",
+          "url": "https://www.youtube.com/watch?v=gFpFNLmnO_Y",
+          "duration_seconds": 1807,
+          "view_count": "5741",
+          "description": "Back for another episode of Grow & Tell! This time, join me as I tour a 10-acre organic matcha farm in Kyoto and learn how traditional farming produces some of Japan’s finest tea. Come along as we go from tea fields to the final cup!\n\nIN THIS VIDEO\n\n→ \n\nSUPPORT EPIC GARDENING\n\n→ Shop: https://growepic.co/shop\n→ Seeds: https://growepic.co/botanicalinterests\n\nLEARN MORE\n\n→ All Our Channels: https://growepic.co/youtube\n→ Blog: https://growepic.co/blog\n→ Podcast: https://growepic.co/podcasts\n→ Disco",
+          "why_watch": "A ground-level tour of a 10-acre organic matcha farm in Kyoto that walks through the full production process, from cultivating shade-grown tea plants to processing the final powder. It's the kind of 'how is this actually made' video that earns its 30-minute runtime by showing work most matcha drinkers never think about.",
+          "is_wildcard": false
+        },
+        {
+          "source": "youtube",
+          "video_id": "D9ivU_IKO6M",
+          "title": "Zettelkasten workflow for research papers | Zotero & Obsidian link",
+          "channel_id": "UCR2uRTQ53V_egXKFflMMaaw",
+          "channel_title": "Artem Kirsanov",
+          "published_at": "2022-01-31T19:14:37Z",
+          "url": "https://www.youtube.com/watch?v=D9ivU_IKO6M",
+          "duration_seconds": 838,
+          "view_count": "174696",
+          "description": "Shortform link: \nhttps://shortform.com/artem\n\n=====\nMy name is Artem, I'm a neuroscience PhD student at Harvard University. \n🌎 Website and Social links: https://kirsanov.ai/\n📥 \"Receptive Field\" neuro-newsletter: https://artemkirsanov.substack.com/\n✨ Support me on Patreon to get access to Discord community: https://patreon.com/artemkirsanov\n=====\n\nIn this video I talk about how I use Zotero together with Obsidian to efficiently turn research papers into Zettelkasten notes.\n\nBetter BibText for Zot",
+          "why_watch": "A Harvard neuroscience PhD student lays out a concrete, replicable workflow connecting Zotero (for paper management) with Obsidian (for linked notes) using Zettelkasten principles — not the theory, but the actual folder structure, plugins, and note templates he uses daily. Useful if you've read about this system but stalled on implementation.",
+          "is_wildcard": false
+        }
+      ]
+    },
+    {
+      "name": "Rabbit Holes with a Two-Minute Warning",
+      "emoji": "🕳️",
+      "tagline": "Tiny concepts that detonate inside your brain and leave you questioning the word 'word'.",
+      "items": [
+        {
+          "source": "youtube",
+          "video_id": "dG7pemDgwmc",
+          "title": "Autoposograms",
+          "channel_id": "UC6nSFpj9HTCZ5t-N3Rm3-HA",
+          "channel_title": "Vsauce",
+          "published_at": "2026-08-21T00:44:31Z",
+          "url": "https://www.youtube.com/watch?v=dG7pemDgwmc",
+          "duration_seconds": 130,
+          "view_count": "143409",
+          "description": "",
+          "why_watch": "Vsauce tackles 'autoposograms' — a concept so niche the word itself is the puzzle — in just over two minutes, which is either the perfect length or deeply suspicious. If you enjoy having a small linguistic or perceptual idea dropped cleanly into your brain with no padding, this is exactly that.",
+          "is_wildcard": false
+        },
+        {
           "source": "youtube_trending",
-          "video_id": "-PLDD_yPPQQ",
-          "title": "13052 Netaji Express Journey Express food delivery in Kanpur  || Train ko alag kar k jodna pada*",
-          "channel_id": "UChfvOaELzzBqDW9oFLG_ztg",
-          "channel_title": "INDIAN RAILWAYS FAN CLUB -by SATYA",
-          "published_at": "2026-08-20T08:30:08Z",
-          "url": "https://www.youtube.com/watch?v=-PLDD_yPPQQ",
-          "duration_seconds": 4522,
-          "view_count": "24594",
-          "description": "Download Railrestro app\nAndroid: https://play.google.com/store/apps/details?id=railrestro.mobile.app\niOS: https://apps.apple.com/in/app/railrestro-food-in-train/id1211286459\n\nWeb : https://www.railrestro.com/\n\nFOLLOW MY LIFESTYLE VLOG CHANNEL : https://www.youtube.com/c/TheTrainGURU\n\nJOIN ON INSTAGRAM USING LINK BELOW: https://www.instagram.com/Thetrainguru/  \n\nGadgets i use in my journeys \nMy vlogging camera : https://amzn.to/3B2rJq0\nPhone : https://amzn.to/3vOBB6B\ntripod : https://amzn.to/3eS6",
-          "why_watch": "A 75-minute ride-along on India's Netaji Express, including a real-time train decoupling and recoupling event at Kanpur — the kind of operational moment most rail documentaries never catch. Best watched at 1.5x speed if you're curious about Indian Railways logistics but not committed to the full journey experience.",
+          "video_id": "MgZWVvOIMfw",
+          "title": "Good Morning San Antonio 6 a.m. : Aug 20, 2026",
+          "channel_id": "UCETE4rKzRRjqM0JaB7TlPpQ",
+          "channel_title": "KSAT 12",
+          "published_at": "2026-08-20T12:10:16Z",
+          "url": "https://www.youtube.com/watch?v=MgZWVvOIMfw",
+          "duration_seconds": 2482,
+          "view_count": "1193",
+          "description": "The KSAT 12 News Team provides a look at local, regional, statewide and national news events and the latest information on local traffic and weather issues.",
+          "why_watch": "This is a local morning news broadcast from San Antonio and there's no particular reason to watch it unless you're in San Antonio on August 20, 2026, checking traffic. Genuinely skippable for everyone else — we'd rather be honest than fill space.",
           "is_wildcard": true
         }
       ]
@@ -109,318 +137,302 @@
   "morning_soundtrack": [
     {
       "source": "music",
-      "source_name": "No Depression",
-      "title": "ALBUM REVIEW: ‘Reel 2 Reel 4 Real' Is Ray Wylie Hubbard as He Was Meant to Be Heard",
-      "snippet": "Ray Wylie Hubbard&#x2019;s latest album is alive.&#xA0;While the Texas music icon says it may be his last, throughout Reel 2 Reel 4 Real, chords shift and reshape, like restless muscles; rhythms snap, like bones into place; steel slithers and slinks, something awakening, yawning, stretching under th",
-      "url": "https://nodepression.org/album-review-reel-2-reel-4-real-is-ray-wylie-hubbard-as-he-was-meant-to-be-heard/",
+      "source_name": "NPR Music",
+      "title": "Tiny Desk Radio: Alex Isley, Madison McFerrin, Ravi Coltrane",
+      "snippet": "We showcase a new generation of artists with swag: Alex Isley, Madison McFerrin and Ravi Coltrane. All three of these Tiny Desks feature folks who come from legendary musical families. Look for Tiny Desk Radio on your local NPR station.",
+      "url": "https://www.npr.org/2026/08/20/g-s1-139480/tiny-desk-radio-alex-isley-madison-mcferrin-ravi-coltrane",
       "genre": "",
-      "vibe_check": "The sound of weathered leather and red Texas dust, alive like something ancient that refuses to lie down.",
-      "cover_url": "https://storage.ghost.io/c/18/d0/18d08e58-3b1b-4720-ae25-a31b44e69d4b/content/images/size/w1200/2026/08/RWH_Reel_A-FINAL-FRONT-.jpeg",
+      "vibe_check": "The kind of effortlessly cool Sunday session that makes you feel like you inherited good taste.",
+      "cover_url": "https://media.npr.org/assets/img/2017/06/23/ravicoltrane_charbage_wide-f649d088f01f9056ed4146d7fa390da0aff83384.jpg?s=1400&c=85&f=jpeg",
+      "embed_url": "https://www.youtube.com/embed/DqgdNk9DCck"
+    },
+    {
+      "source": "music",
+      "source_name": "Stereogum",
+      "title": "Jeff Tweedy – “Real Magic” (Star Moles Cover)",
+      "snippet": "It's been quite the glow-up lately for the Historic New Jersey collective, and Jeff Tweedy has been right in the middle of it. The Philadelphia friend group boasts rising talents like Rubber Band Gun, Star Moles, and Sam and Louise Sullivan, the eclectic retro-rocking sibling who Wilco featured at t",
+      "url": "https://stereogum.com/2509004/jeff-tweedy-real-magic-star-moles-cover/music/",
+      "genre": "",
+      "vibe_check": "A warm, slightly worn-in cover passed between friends like a favorite jacket nobody can quite claim.",
+      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/08/Jeff-Tweedy-Twilight-Override-Lou-Reed-by-Shervin-Lainez.jpg",
       "embed_url": null
     },
     {
       "source": "music",
-      "source_name": "Pitchfork",
-      "title": "Sen Morimoto Readies New Album Time Is on Your Side",
-      "snippet": "Join the versatile singer-songwriter in a woodsy video for single “Overthinker”",
-      "url": "https://pitchfork.com/story/sen-morimoto-readies-new-album-time-is-on-your-side/",
+      "source_name": "Stereogum",
+      "title": "Nicole Atkins – “Trippin’ On Teardrops”",
+      "snippet": "Nicole Atkins releases her new record Drama next month. The old-school pop revivalist has shared the singles \"When The Night Falls\" and \"Singing In The Mirror\" so far, and now she's back with the extravagant, lonesome album opener, \"Trippin' On Teardrops.\"\nThe post Nicole Atkins &#8211; &#8220;Tripp",
+      "url": "https://stereogum.com/2508983/nicole-atkins-trippin-on-teardrops/music/",
       "genre": "",
-      "vibe_check": "The feeling of walking barefoot through morning dew while your brain won't stop making lists.",
-      "cover_url": "https://media.pitchfork.com/photos/6a85e25ecf56144a2fd112ae/16:9/w_1280,c_limit/Sen-Morimoto-new-album.jpg",
-      "embed_url": null
-    },
-    {
-      "source": "music",
-      "source_name": "Aquarium Drunkard",
-      "title": "National Park :: Outside",
-      "snippet": "The brainchild of veteran Scottish musician John Hogarty (The Pastels, Telstar Ponies) from Glasgow's storied guitar-pop underground, outside marks the hybrid archival/modern debut of National Park. Collecting rare previously released singles and new home recordings, Hogart's collective outfit churn",
-      "url": "https://aquariumdrunkard.com/2026/08/20/national-park-outside/",
-      "genre": "",
-      "vibe_check": "Like finding a cassette tape in a thrift store jacket pocket and falling in love with whoever left it there.",
-      "cover_url": "https://aquariumdrunkard.com/_newness/wp-content/uploads/2026/08/National-Park.jpg",
-      "embed_url": null
-    },
-    {
-      "source": "music",
-      "source_name": "Aquarium Drunkard",
-      "title": "Julia Holter :: Materia",
-      "snippet": "Julia Holter revisits old ideas and pushes them forward on this seven track EP. “The Laugh Is In the Eyes,” a playful, boom-beating single from late 2024 kicks things off. Holter’s voice skitters over pulsing tone washes and reverberating thumps, more light-heartedly than you’d expect from the class",
-      "url": "https://aquariumdrunkard.com/2026/08/20/julia-holter-materia/",
-      "genre": "",
-      "vibe_check": "Strange and luminous, like light bending through a prism in a room you're not sure you've ever left.",
-      "cover_url": "https://aquariumdrunkard.com/_newness/wp-content/uploads/2026/08/Materia-.jpg",
-      "embed_url": null
-    },
-    {
-      "source": "music",
-      "source_name": "Consequence",
-      "title": "Breaking Down the Can’t-Miss Acts of Bourbon & Beyond 2026",
-      "snippet": "Led by headliners Foo Fighters, Mumford &#38; Sons, Chris Stapleton, and Dave Matthews Band, the musical programming for Bourbon &#38; Beyond 2026 is as extensive as it is exciting.\nBreaking Down the Can&#8217;t-Miss Acts of Bourbon &amp; Beyond 2026\nJonah Krueger",
-      "url": "https://consequence.net/2026/08/breaking-down-the-cant-miss-acts-of-bourbon-beyond-2026-lineup/",
-      "genre": "",
-      "vibe_check": "The anticipatory buzz of circling a festival lineup poster with a sharpie, bourbon already in hand.",
-      "cover_url": "https://consequence.net/wp-content/uploads/2026/08/BB-2026-lineup-breakdown.jpg",
-      "embed_url": null
-    },
-    {
-      "source": "music",
-      "source_name": "JazzTimes",
-      "title": "A Heady Brew: Miles Davis–Themed THC Cocktail Dedicated to Classic 1970 Electric Jazz Experiment",
-      "snippet": "I n this Miles Davis centennial year, we have witnessed all manner of tributes to the titanic trumpeter: cover-replicating reissues, conversations around his personal style, &#8230; Read More \"A Heady Brew: Miles Davis–Themed THC Cocktail Dedicated to Classic 1970 Electric Jazz Experiment\"\nThe post ",
-      "url": "https://www.jazztimes.com/features/profiles/a-heady-brew-miles-davis-themed-thc-cocktail-dedicated-to-classic-1970-electric-jazz-experiment/",
-      "genre": "",
-      "vibe_check": "Smoky, slow-burning, and cerebral — like sipping something illicit while Bitches Brew plays at a volume just too low to fully hear.",
-      "cover_url": "https://www.jazztimes.com/wp-content/uploads/2026/08/Unknown-4-671x800.png",
-      "embed_url": null
+      "vibe_check": "Heartbreak dressed in sequins, crying glamorously under a single spotlight.",
+      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/06/Nicole-Atkins-Drama.jpg",
+      "embed_url": "https://www.youtube.com/embed/KMWIH6Zs9j4"
     },
     {
       "source": "music",
       "source_name": "PopMatters",
-      "title": "The Music Never Stops with the Terrapin Roadshow",
-      "snippet": "Grahame Lesh and the Terrapin Family Band honor the past by rocking into the future at the Terrapin Roadshow. It's a sonic journey through time and space.",
-      "url": "https://www.popmatters.com/terrapin-roadshow-2026",
+      "title": "Patrick Haggerty and Andrew Sa Color Their Songs in Shades of Lavender",
+      "snippet": "If the song “A Boy Named Sue”, as a specter of queerness, haunts country music, Lavender Country’s Patrick Haggerty is country’s queer saint and Andrew Sa is a credible beneficiary of queer country’s legacy.",
+      "url": "https://www.popmatters.com/patrick-haggerty-andrew-femme-cowboys",
       "genre": "",
-      "vibe_check": "The warm, familiar ache of a show that feels like coming home to a house you've never lived in.",
-      "cover_url": "https://www.popmatters.com/wp-content/uploads/2026/08/Terrapin-Roadshow-2026-SP-by-Lisa-Miller.webp",
+      "vibe_check": "A dusty back-road ballad that quietly insists you've always belonged here.",
+      "cover_url": "https://www.popmatters.com/wp-content/uploads/2026/08/lavender-country-cowboy-hats-1.webp",
+      "embed_url": "https://bandcamp.com/EmbeddedPlayer/album=2511806226/size=large/bgcol=ffffff/linkcol=e99708/tracklist=false/artwork=small/track=1646684549/transparent=true/"
+    },
+    {
+      "source": "music",
+      "source_name": "PopMatters",
+      "title": "5 Essential Authors Who Are Rethinking Rock Music and Race",
+      "snippet": "These five contemporary authors rethink the relationship between rock music and race, challenging dominant narratives  through multiple strategies, genres, and arguments.",
+      "url": "https://www.popmatters.com/rock-music-and-race-authors",
+      "genre": "",
+      "vibe_check": "The intellectual electricity of a late-night argument that changes how you hear every song on the drive home.",
+      "cover_url": "https://www.popmatters.com/wp-content/uploads/2026/08/rock-music-and-race.webp",
       "embed_url": null
-    },
-    {
-      "source": "music",
-      "source_name": "PopMatters",
-      "title": "Lambchop’s ‘Punching the Clown’ Is Worth the 4-Year Wait",
-      "snippet": "With acoustic guitar and banjo, Lambchop return to their Nashville roots, while the choruses create yet another idiosyncratic background for musings on America.",
-      "url": "https://www.popmatters.com/lambchop-punching-the-clown",
-      "genre": "",
-      "vibe_check": "Porch-sitting music for a twilight that stretches longer than it should, full of quiet American unease.",
-      "cover_url": "https://www.popmatters.com/wp-content/uploads/2026/08/Lambchop-Punching-the-Clown-social.webp",
-      "embed_url": "https://bandcamp.com/EmbeddedPlayer/album=1351011352/size=large/bgcol=ffffff/linkcol=e99708/tracklist=false/artwork=small/transparent=true/"
-    },
-    {
-      "source": "music",
-      "source_name": "PopMatters",
-      "title": "Wild Pink Churn Out Some Swaggering Rock and Roll",
-      "snippet": "On Still Coming Down, the John Ross-fronted Wild Pink keep things crunchy and concise on a record meant to be played on repeat.",
-      "url": "https://www.popmatters.com/wild-pink-still-coming-down",
-      "genre": "",
-      "vibe_check": "Windows down, volume up, the kind of rock and roll that makes a parking lot feel like an arena.",
-      "cover_url": "https://www.popmatters.com/wp-content/uploads/2026/08/Wild-Pink-Still-Coming-Down-social.webp",
-      "embed_url": "https://www.youtube.com/embed/PabfG_z-upg"
     }
   ],
   "global_silver_linings": [
     {
       "source": "good_news",
       "source_name": "Good News Network",
-      "title": "Woman Gives $1 Million in ‘Life-Changing’ Bonuses to Teachers in Her School District",
-      "url": "https://www.goodnewsnetwork.org/woman-gives-1-million-in-life-changing-bonuses-to-teachers-in-her-school-district/",
-      "snippet": "When a local resident found out that her schools in an extremely wealthy Northern California county was at the bottom for state funding, she stepped up to make the difference. Maja Kristin asked the Ross Valley School District to organize a meeting of 100 teachers from their K-8 schools, with the special instruction that they […] The post Woman Gives $1 Million in ‘Life-Changing’ Bonuses to Teachers in Her School District appeared first on Good News Network .",
-      "cover_url": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/08/maxresdefault-4.jpg",
-      "reason": "A single person's generosity has directly transformed the lives of educators who pour themselves into their communities every day. It's a powerful reminder that individual action can create ripples far beyond what any one classroom can hold."
+      "title": "Experimental Drug Generates Immune Response Against Pancreatic Cancer in People at High Risk",
+      "url": "https://www.goodnewsnetwork.org/experimental-drug-generates-immune-response-against-pancreatic-cancer-in-people-at-high-risk/",
+      "snippet": "Researchers at Johns Hopkins report that an experimental drug targeting one of the most common genetic drivers of pancreatic cancer was safe in humans, and generated durable immune responses aimed at preventing the cancer in people at high risk. Pancreatic cancer has one of the lowest survival rates of any form, and the developers believe […] The post Experimental Drug Generates Immune Response Against Pancreatic Cancer in People at High Risk appeared first on Good News Network .",
+      "cover_url": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/08/An-image-of-pancreatic-cancer-credit-PLOS-ONE-113-DOI10.1371journal.pone_.0150338-CC-4.0.-Int.jpg",
+      "reason": "Pancreatic cancer is one of the hardest cancers to treat, so an experimental drug that successfully triggers an immune response in high-risk patients marks a genuinely significant step forward. Early promise like this can change survival odds for a disease that has long had very few options."
     },
     {
       "source": "good_news",
-      "source_name": "Positive News",
-      "title": "The mobile library bringing books to rural Syria",
-      "url": "https://www.positive.news/society/the-mobile-library-bringing-books-to-rural-syria/",
-      "snippet": "A brightly painted bus is bringing books, puppets and art workshops to children who have grown up with war The post The mobile library bringing books to rural Syria appeared first on Positive News .",
-      "cover_url": "https://www.positive.news/wp-content/uploads/2026/08/The-childrens-joy-when-the-third-bus-visited-their-camp-north-of-Idlib-1-scaled.jpg",
-      "reason": "Even in one of the world's most war-scarred regions, people are finding ways to bring stories and learning to children who need them most. A mobile library is a quiet act of defiance against despair — and proof that the human hunger for knowledge survives almost anything."
+      "source_name": "Upworthy",
+      "title": "In 1856, she became America’s first female super sleuth and thwarted an attempt on Lincoln’s life.",
+      "url": "https://www.upworthy.com/in-1856-a-woman-answered-an-ad-for-a-detective-she-became-americas-first-female-super-sleuth/",
+      "snippet": "Kate Warne even thwarted an assassination plot against Abraham Lincoln. The post In 1856, she became America’s first female super sleuth and thwarted an attempt on Lincoln’s life. appeared first on Upworthy .",
+      "cover_url": "https://www.upworthy.com/wp-content/uploads/sites/2/2026/08/WP-Heather-TOP-SPLASH-2026-08-20T152557.486.jpg",
+      "reason": "The rediscovery of Kate Warne's remarkable story reminds us that courage and intelligence have always defied the expectations placed on people — and that history still holds inspiring figures waiting to be found. Her legacy is a quiet but powerful testament to what one determined person can accomplish."
     },
     {
       "source": "good_news",
-      "source_name": "Reasons to be Cheerful",
-      "title": "The Spanish Town Doing Capitalism Better",
-      "url": "https://reasonstobecheerful.world/mondragon-cooperatives-spain/",
-      "snippet": "There are all kinds of enormous, impressive and, frankly, noisy machines at work across the 20,000 square meters of industrial warehouses at the headquarters of Fagor Arrasate, a manufacturing company in Spain’s northern Basque Country. Here, a team of engineers is constructing machines that can put together household appliances like... The post The Spanish Town Doing Capitalism Better appeared first on Reasons to be Cheerful .",
-      "cover_url": "https://reasonstobecheerful.world/wp-content/uploads/2026/08/1920px-San_Andres_y_Amboto_-_panoramio-1.jpg",
-      "reason": "A small Spanish town is showing that local economies can be built around people rather than profit, offering a practical, working model instead of just an ideal. Real-world proof that things can be done differently is often the most hopeful thing of all."
+      "source_name": "The Optimist Daily",
+      "title": "Maternal RSV vaccine cuts newborn ICU admissions in half",
+      "url": "https://www.optimistdaily.com/2026/08/maternal-rsv-vaccine-cuts-newborn-icu-admissions-in-half/",
+      "snippet": "BY THE OPTIMIST DAILY EDITORIAL TEAM Good news! In the UK, only 63 infants were admitted to intensive care with RSV infection last winter, which is down from 131 the year before. Same 20 hospitals, same surveillance system.",
+      "cover_url": "https://www.optimistdaily.com/wp-content/uploads/Depositphotos_357908776_L.jpg",
+      "reason": "A vaccine given during pregnancy that cuts newborn ICU admissions from RSV in half is the kind of straightforward, life-saving win that medicine works hardest to achieve. For families with vulnerable newborns, this means fewer frightening first weeks and more babies going home healthy."
     }
   ],
   "discovery_articles": [
     {
       "source": "discovery",
       "source_name": "Atlas Obscura",
-      "title": "Fyllingsdalstunnelen in Fyllingsdalen, Norway",
-      "url": "https://www.atlasobscura.com/places/fyllingsdalstunnelen",
-      "snippet": "Opened in 2023, this tunnel is 2.9 km long (about 1.8 miles). Very useful for pedestrians, bicyclists, various exercising in a city where it rains almost all year. Now also easily binding together two parts of the city that previously was parted by a mountain and took a long time to travel around.",
+      "title": "The World’s Oldest Living Things: 14 Ancient Organisms",
+      "url": "https://www.atlasobscura.com/articles/where-to-find-the-oldest-living-things-in-the-world",
+      "snippet": "All over the world, you can find ancient organisms that have existed for thousands, sometimes even millions, of years: living testaments of endurance and adaptation amidst changing climates and environmental degradation. Many of these organisms are trees—especially, massive, hulking ones whose branches burrow deep and widespread under the Earth. Others are clonal colonies: intricately designed natural systems in which an organism copies itself ad infinitum.",
       "category": "history",
-      "cover_url": "https://img.atlasobscura.com/ChSOJWMZFNM8nxAfG9Gu9vNwOqKrAvP1LencKVVRqlE/rt:fit/w:600/c:2057:1371:nowe:694:1513/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy85NDI5/OWRlNy01NWQ1LTQ2/MDUtODNmNy01NTJl/NzFiM2YwNGRkOWNh/M2E2YjM2MTYwZTE2/NDBfRnlsbGluZ2Rh/bHN0dW5uZWxlbjku/anBn.jpg"
+      "cover_url": "https://img.atlasobscura.com/krIUiRgcRqyI5i4C_6dX3A-3slEe2OOCO_bDraqqp5Y/rt:fit/w:1200/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL2Fzc2V0/cy84MWY5ZTBjNy03/NDFkLTQyNDAtYTFm/Yy05NGUzZjQ3MDhi/ZDM2ZTk1ZDZmOGM5/YmRkOWMzNTdfJ0xv/cmRfb2ZfdGhlX0Zv/cmVzdCdfVGFuZV9N/YWh1dGEuanBn.jpg",
+      "ferns_note": "Some of the oldest living things on Earth aren't grand solitary elders but clonal colonies — organisms that have quietly been copying themselves for thousands of years, hiding their age in plain sight. A forest, it turns out, can be a single creature."
+    },
+    {
+      "source": "discovery",
+      "source_name": "Atlas Obscura",
+      "title": "Volvo Island in Ottawa, Illinois",
+      "url": "https://www.atlasobscura.com/places/volvo-island",
+      "snippet": "In 2012, the owner of a local Ottawa, Illinois, repair shop towed a 2001 Volvo S80 onto a peninsula and then used an excavator to create a small, one-car island. He intended to run a contest asking people to guess how the Volvo got there. The contest never materialized, as there was some concern that people might try to cross the 40-foot-deep lake for a better look.",
+      "category": "history",
+      "cover_url": "https://img.atlasobscura.com/KTzO6pbn-IVYSzZvY-Ecs0CrFklLWCG2R43Olpvv_R4/rt:fit/w:600/c:1361:907:nowe:176:468/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy9kYjgx/NTViYS04OTFlLTRi/OGYtYWIxNy1mZTdj/NWY1M2FkZGFhNjY4/NDU5MTg5ZThjOWJi/MzBfNzYxOTEwMjc5/XzEwMTc1MDgzMTYw/NTE1MzAyXzI3ODQ3/MTU1Mjk5NTEwNjYz/MzZfbi5qcGc.jpg",
+      "ferns_note": "A man towed a Volvo onto a hand-dug island in 2012 just to run a guessing contest — and then never ran the contest, because he worried people might drown trying to cheat. The car is still there."
+    },
+    {
+      "source": "discovery",
+      "source_name": "Atlas Obscura",
+      "title": "‘The Missing’ Cabin in Jemez Springs, New Mexico",
+      "url": "https://www.atlasobscura.com/places/the-missing-cabin",
+      "snippet": "Located just off the main entrance road of New Mexico’s Valles Caldera–a 14-mile-wide circular depression created by a massive volcanic eruption 1.2 million years ago–it is hard to believe that this cabin could have gone missing. Instead, this cabin was built as part of the set of “The Missing,” a 2003 Western starring Tommy Lee Jones and Cate Blanchett. Since the National Park Service began managing the preserve in 2015, the scenic cabin has been left in place for visitors.",
+      "category": "history",
+      "cover_url": "https://img.atlasobscura.com/3GoHDdy-tkDq4uqVURuRNqzV8Vo1VHahfeXo5hR5W_Q/rt:fit/w:600/c:1800:1200:nowe:658:1091/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy8wZGY3/MWI4ZC00ZDdkLTQ2/ODAtODY1ZC0xZmQ4/OWNmZDQyZDc3NzEy/Y2Q4MTZlYjEzN2Qz/MDBfSU1HXzk3NjMu/SlBFRw.jpg",
+      "ferns_note": "A film set cabin built inside a 1.2-million-year-old volcanic crater was simply… left behind, and is now a legitimate landmark in a National Park. Hollywood's throwaway prop became a piece of accidental history."
+    },
+    {
+      "source": "discovery",
+      "source_name": "Atlas Obscura",
+      "title": "Isis Heiligtum (Isis and Magna Mater Temple) in Mainz, Germany",
+      "url": "https://www.atlasobscura.com/places/isis-heiligtum-isis-and-magna-mater-temple",
+      "snippet": "What do you do when you've built a shopping mall but you find an ancient Roman temple underneath part of it? If you are in Mainz, Germany, you build the mall up around it, but leave it in place to be a hidden museum to the past. This is the \"Isis-Heiligtum\" (Isis Temple) in Mainz, Germany, preserved in place beneath the Römerpassage shopping mall within an easy 10-minute walk from Mainz Hauptbahnhof train station.",
+      "category": "history",
+      "cover_url": "https://img.atlasobscura.com/W24NU63zc7thSuxuG3PsJIh363wAcIo69_YRpmmIIPQ/rt:fit/w:600/c:3344:2229:nowe:233:1764/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy80Yzk0/NTY3NS1iNjFmLTQ3/NWMtODliMS04OThh/YmIyZTBlYzQ5MmRh/MmFhODA1MjRjYzVi/ZTdfMjAyNi0wOC0w/MyAxMS4wOC41OCBj/b3B5LmpwZw.jpg",
+      "ferns_note": "Beneath a busy shopping mall in Mainz, Germany, a Roman temple to Isis sits preserved and hushed — a secret museum that shoppers walk directly above without a second thought. The ancient and the mundane, separated by a ceiling."
     },
     {
       "source": "discovery",
       "source_name": "Smithsonian",
-      "title": "Archaeologists Have Found Thousands of Intact Ancient Human Brains. Scientists Say They've Figured Out Why the Organs Don't Always Rot",
-      "url": "https://www.smithsonianmag.com/smart-news/archaeologists-have-found-thousands-of-intact-ancient-human-brains-scientists-say-theyve-figured-out-why-the-organs-dont-always-rot-180989370/",
-      "snippet": "Under the right conditions—wet and oxygen-deprived—the same chemical reactions that cause tissue to break down can instead have the opposite effect, according to a new study",
+      "title": "NASA-Funded Mission to Rescue a Falling Space Telescope Officially Ends in Failure",
+      "url": "https://www.smithsonianmag.com/smart-news/nasa-funded-mission-to-rescue-a-falling-space-telescope-officially-ends-in-failure-180989376/",
+      "snippet": "The commercial LINK spacecraft was supposed to give NASA's Swift observatory a boost, pushing it higher into orbit to extend its life. But after launch, LINK experienced several problems. Swift is expected to re-enter Earth's atmosphere and burn up by the end of this year",
       "category": "history",
-      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/Fw9S5Co_8An_GL8XNHax_Zv5Vd0=/fit-in/1600x0/filters:focal(430x418:431x419)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/d2/7f/d27fe3f3-d20b-4edc-a179-3f4c537d5546/banner_image_brain_0.png"
+      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/ZN5LvbLaV4_ODSb0lQW3YCsMgWY=/fit-in/1600x0/filters:focal(450x257:451x258)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/d5/77/d577c5f5-9e56-46b8-b772-eee37d2964f4/swift-over-earth-animation-2025.webp",
+      "ferns_note": "NASA's Swift telescope spent 20 years catching the universe's most violent explosions, and its final act will be a quiet, unglamorous burn-up over Earth's atmosphere — no rescue, no ceremony, just the end of a brilliant run."
     },
     {
       "source": "discovery",
       "source_name": "Smithsonian",
-      "title": "When an American Airplane Crashed Into a School in 1944, an English Village Lost Almost All of Its Youngest Children. Why Has WWII's Worst Civilian Aviation Accident Been Forgotten?",
-      "url": "https://www.smithsonianmag.com/history/when-american-airplane-crashed-into-school-1944-english-village-lost-almost-all-of-its-youngest-children-why-has-wwii-worst-civilian-aviation-accident-been-forgotten-180989341/",
-      "snippet": "On August 23, 1944, a test flight over the village of Freckleton, located in northwest England, ended in disaster, claiming the lives of 61 people, including 38 students between the ages of 4 and 6",
+      "title": "How Should the Bayeux Tapestry End? A New Competition Invites Children to Reimagine Its Missing Final Panel",
+      "url": "https://www.smithsonianmag.com/smart-news/how-should-the-bayeux-tapestry-end-new-a-competition-invites-childresn-to-reimagine-its-missing-final-panel-180989366/",
+      "snippet": "Some historians think the 230-foot-long artwork is missing its final panel, which may have once depicted William the Conqueror's coronation. As the tapestry goes on view in London, students will be drafting endings of their own",
       "category": "history",
-      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/guEhzbw7sQDy02avMmX5JMEcQeE=/fit-in/1600x0/filters:focal(750x500:751x501)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/bc/67/bc67e7cd-5e2c-4ce2-89ef-dbe16c632594/freckleton-coffins.png"
+      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/nitmv1eAH-wNxG6LrL7XxY-CCnw=/fit-in/1600x0/filters:focal(750x543:751x544)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/ed/c0/edc023fa-5a05-4e30-94bc-49e96c66a5c7/odo_bayeux_tapestry.png",
+      "ferns_note": "The Bayeux Tapestry — 230 feet of embroidered conquest — may simply stop mid-story, its final panel lost to nine centuries of silence. Now children are being asked to finish what history couldn't."
     },
     {
       "source": "discovery",
       "source_name": "Smithsonian",
-      "title": "Ireland's 'Kerry Cow' Bones Are Actually Wild Boar and Bear, Shaking Up the Story of Farming's Arrival on the Island",
-      "url": "https://www.smithsonianmag.com/smart-news/irelands-kerry-cow-bones-are-actually-wild-boar-and-bear-shaking-up-the-story-of-farmings-arrival-on-the-island-180989371/",
-      "snippet": "The bones were discovered on the Dingle Peninsula more than 30 years ago, but scientists recently decided to take another look at them, this time using modern techniques",
+      "title": "Narwhals Sport Iconic Straight, Spiraled Tusks. Scientists Just Uncovered Some of the Eye-Catching Feature's Structural Secrets",
+      "url": "https://www.smithsonianmag.com/smart-news/narwhals-sport-iconic-straight-spiraled-tusks-scientists-just-uncovered-some-of-the-eye-catching-features-structural-secrets-180989368/",
+      "snippet": "The Arctic whales are the only known animals with straight tusks, and ones that consistently twist to the left. New research reveals that the inner layer twists to the right and that the opposing spirals provide strength and help the tusks grow straight",
       "category": "history",
-      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/HoHjlBLqJvBJoA9h7HDsFb3UfjE=/fit-in/1600x0/filters:focal(967x732:968x733)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/2d/8b/2d8b867b-7d9b-4818-88ed-eaf99aea0aaa/brown_bear_ursus_arctos_arctos_running.jpg"
+      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/5lQkHUgato8yOAzG3Lt7HFwPRXw=/fit-in/1600x0/filters:focal(1467x992:1468x993)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/0d/b6/0db6a183-3e35-4b2e-9ad6-2489249044f4/narwhal-group.jpeg",
+      "ferns_note": "The narwhal's tusk is the only straight tusk in nature, and it stays straight precisely because its inner and outer layers spiral in opposite directions — a quiet structural argument happening inside the bone all along."
+    },
+    {
+      "source": "discovery",
+      "source_name": "Smithsonian",
+      "title": "Construction in Austria Revealed a Roman-Era Mass Grave Beneath a Soccer Field. New Research Suggests That the Men's Enemies Targeted Their 'Sensitive Areas'",
+      "url": "https://www.smithsonianmag.com/smart-news/construction-in-austria-revealed-roman-era-mass-grave-beneath-soccer-field-new-research-suggests-that-the-mens-enemies-targeted-their-sensitive-areas-180989372/",
+      "snippet": "No written records mention a fight in this specific part of Vienna at the time of the men's deaths. But the brutal nature of their injuries, particularly to the pelvis area, indicates that these individuals died on the battlefield",
+      "category": "history",
+      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/jyr09Aed2yUVBm-Pac99LHZYpBc=/fit-in/1600x0/filters:focal(750x500:751x501)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/d1/45/d14565f1-54d2-4d6d-9894-feabd8836ae5/aerial-view.png",
+      "ferns_note": "Beneath a Vienna soccer field, Roman-era soldiers were found with injuries so deliberate and targeted that researchers could read the cruelty of their enemies in the bones themselves — no written record needed."
     },
     {
       "source": "discovery",
       "source_name": "Science News",
-      "title": "Spikes, claws and stingers have no single best shape",
-      "url": "https://www.sciencenews.org/article/spike-claw-stinger-shape-piercing-tools",
-      "snippet": "A study of 143 piercing tools, from tusks to love darts, finds they trade off piercing ability for durability. And no one shape wins out.",
+      "title": "Why Epstein-Barr is the ‘everything virus’",
+      "url": "https://www.sciencenews.org/article/epstein-barr-virus-autoimmune",
+      "snippet": "The Epstein-Barr virus has taken a huge toll on global health. Understanding how it works could offer ways to combat multiple sclerosis, cancer and more.",
       "category": "science",
-      "cover_url": "https://www.sciencenews.org/wp-content/uploads/sites/2/2026/08/0926_scivis-pointy_main.png"
-    },
-    {
-      "source": "discovery",
-      "source_name": "Science News",
-      "title": "An unproven autism drug got a boost after a White House briefing",
-      "url": "https://www.sciencenews.org/article/kids-unproven-autism-drug-trump-brief",
-      "snippet": "In fall of 2025, the Trump administration touted the drug leucovorin for autism therapy without new evidence. Dispensing of the drug to kids rose.",
-      "category": "science",
-      "cover_url": "https://www.sciencenews.org/wp-content/uploads/sites/2/2026/08/081426_AC_autismdrug_main.jpg"
-    },
-    {
-      "source": "discovery",
-      "source_name": "Aeon",
-      "title": "A vocabulary for the future: touch",
-      "url": "https://aeon.co/videos/repulsion-at-the-core-of-attraction-on-the-paradox-of-touch",
-      "snippet": "A mesmerising blend of words and images make touch a doorway into the deepest questions in physics and philosophy - by Aeon Video Watch on Aeon",
-      "category": "science",
-      "cover_url": "https://images.aeonmedia.co/images/82a196ab-9e8c-4452-8c6d-319f97c0246d/a-vocabulary-for-the-future-touch-landscape-1.jpg?width=1200&quality=75&format=jpeg"
-    },
-    {
-      "source": "discovery",
-      "source_name": "Aeon",
-      "title": "Dolphins and other lovers",
-      "url": "https://aeon.co/essays/why-the-andoque-of-the-amazon-fear-the-seductive-dolphin",
-      "snippet": "The Andoque of the Amazon know what we have forgotten: the forest’s most beautiful creatures are also its most dangerous - by Eliran Arazi Read on Aeon",
-      "category": "science",
-      "cover_url": "https://images.aeonmedia.co/images/feb30884-154c-41ba-a04f-79e7037a973a/cj_aeon_boto.jpg?width=1200&quality=75&format=jpeg"
-    },
-    {
-      "source": "discovery",
-      "source_name": "JSTOR Daily",
-      "title": "The Culture Wars of The Phantom of the Opera",
-      "url": "https://daily.jstor.org/the-culture-wars-of-the-phantom-of-the-opera/",
-      "snippet": "The hit musical became a battleground for competing ideas about capitalism, artistic value, and commercial theater. The post The Culture Wars of <em>The Phantom of the Opera</em> appeared first on JSTOR Daily .",
-      "category": "history",
-      "cover_url": "https://daily.jstor.org/wp-content/uploads/2026/08/the_culture_wars_of_phantom_of_the_opera_1050x700.jpg"
-    },
-    {
-      "source": "discovery",
-      "source_name": "Quanta Magazine",
-      "title": "Are We Thinking Correctly About AI Intelligence?",
-      "url": "https://www.quantamagazine.org/are-we-thinking-correctly-about-ai-intelligence-20260820/",
-      "snippet": "Computer scientist Melanie Mitchell discusses why artificial intelligence doesn’t “think” or “reason” like humans, and how we can create better methods for measuring machine cognition. The post Are We Thinking Correctly About AI Intelligence? first appeared on Quanta Magazine",
-      "category": "science",
-      "cover_url": "https://www.quantamagazine.org/wp-content/uploads/2026/08/JOW-S5-E6-cr-Chanelle-Nibbelink-Social-LOGO.jpg"
+      "cover_url": "https://www.sciencenews.org/wp-content/uploads/sites/2/2026/08/0826_ebv_feat.jpg",
+      "ferns_note": "Epstein-Barr is the virus most of us caught in childhood and promptly forgot — but it may be quietly linked to multiple sclerosis, several cancers, and a startling range of chronic diseases, making it one of the most consequential passengers the human body carries."
     },
     {
       "source": "discovery",
       "source_name": "Colossal",
-      "title": "Sift Through Grace Baldwin’s Giant Junk Drawer Filled with Nostalgia",
-      "url": "https://www.thisiscolossal.com/2026/08/grace-baldwin-giant-junk-drawer-sculpture/",
-      "snippet": "\"I typically create giant nostalgic but functional pieces, mostly through woodworking,\" Baldwin says. Do stories and artists like this matter to you? Become a Colossal Member today and support independent arts publishing for as little as $7 per month.",
+      "title": "‘Stories in the Seams’ Showcases the Enduring Legacy of Black Quilts Across Centuries",
+      "url": "https://www.thisiscolossal.com/2026/08/stories-in-the-seams-quilts-sharbreon-plummer-book/",
+      "snippet": "From 18th-century hand-appliqué cotton bedcovers to contemporary narrative textile works, Black quilts tell innumerable stories. Do stories and artists like this matter to you? Become a Colossal Member today and support independent arts publishing for as little as $7 per month.",
       "category": "history",
-      "cover_url": "https://www.thisiscolossal.com/wp-content/uploads/2026/08/baldwin-2.jpg"
+      "cover_url": "https://www.thisiscolossal.com/wp-content/uploads/2026/08/stories-3.jpg",
+      "ferns_note": "Black quilts have functioned as diary, protest, memory, and map across centuries — textile works that hid entire worlds in their seams long before anyone thought to hang them on a gallery wall."
     }
   ],
   "featured_read": {
     "source": "reads",
     "source_name": "Nautilus",
-    "title": "No One Knows How Whale Sharks Give Birth—But This Neonatal Shark Discovery Provides Some Clues",
-    "url": "https://nautil.us/no-one-knows-how-whale-sharks-give-birth-but-this-neonatal-shark-discovery-provides-some-clues-1284017/",
-    "snippet": "A rare find on a fishing expedition The post No One Knows How Whale Sharks Give Birth—But This Neonatal Shark Discovery Provides Some Clues appeared first on Nautilus .",
-    "cover_url": "https://lede-admin.nautil.us/wp-content/uploads/sites/70/2026/08/Nield_HERO_ab077a.png"
+    "title": "Even Mussels Get Scared",
+    "url": "https://nautil.us/even-mussels-get-scared-1284061/",
+    "snippet": "And it could have dramatic consequences The post Even Mussels Get Scared appeared first on Nautilus .",
+    "cover_url": "https://lede-admin.nautil.us/wp-content/uploads/sites/70/2026/08/Currie_HERO_2811d3.png"
   },
   "reading_room": [
     {
       "source": "reads",
       "source_name": "Psyche",
-      "title": "Everything is going to be fine",
-      "url": "https://psyche.co/videos/youre-sure-that-society-is-spiralling-and-were-all-doomed-now-what",
-      "snippet": "What a classist, a psychologist and preppers have to say about the end of the world, and what you might do about it - Directed by Ryan Malloy Watch on Psyche",
-      "cover_url": "https://images.aeonmedia.co/images/737e3143-0725-4594-aaa6-7c4dd5d5d209/everything-is-going-to-be-fine-landscape-1.jpg?top=21&left=0&cropWidth=2000&cropHeight=1125&width=1200&quality=75&format=jpeg"
+      "title": "How to rediscover your purpose later in life",
+      "url": "https://psyche.co/guides/how-to-rediscover-your-purpose-later-in-life",
+      "snippet": "You don’t have to ‘reinvent’ yourself to live happily after 60. There’s a better approach grounded in lifespan psychology - by Denise Taylor Read on Psyche",
+      "cover_url": "https://images.aeonmedia.co/images/fc9ce543-4c3f-4448-9741-f519eb7135fc/nyc8443.jpg?top=55&left=0&cropWidth=1056&cropHeight=594&width=1200&quality=75&format=jpeg"
     },
     {
       "source": "reads",
       "source_name": "Longreads",
-      "title": "How Anti-ICE Protesters Became Prisoners in Trump’s War on Antifa",
-      "url": "https://longreads.com/2026/08/20/texas-prairieland-antifa/",
-      "snippet": "\"'We are not terrorists.'\"",
+      "title": "Where’s the Beef?",
+      "url": "https://longreads.com/2026/08/20/meat-alternatives-tech-food/",
+      "snippet": "\"The lab-grown-meat revolution that wasn’t.\"",
       "cover_url": ""
     },
     {
       "source": "reads",
       "source_name": "Literary Hub",
-      "title": "Here’s the winner of the the 2026 Inside Literary Prize.",
-      "url": "https://lithub.com/heres-the-winner-of-the-the-2026-inside-literary-prize/",
-      "snippet": "Today, the Inside Literary Prize, the US’s only literary prize judged by incarcerated readers, announced its 2026 winner: The Book Censor’s Library, by Bothayna Al-Essa, translated from the Arabic by Ranya Abdelrahman and Sawad Hussain. The Inside Literary Prize, which",
-      "cover_url": "https://s26162.pcdn.co/wp-content/uploads/2025/01/Social_Preview_ILP_Overview_Webpage-e1738353747972.png"
+      "title": "Tony Tulathimutte has won one America’s largest (and newest) literary prizes.",
+      "url": "https://lithub.com/tony-tulathimutte-has-won-one-americas-largest-and-newest-literary-prizes/",
+      "snippet": "Tony Tulathimutte, the dark wizard behind 2025’s seismic Rejection, has won a new (and massive!) literary prize. As the inaugural recipient of the Jack Galef Literary Arts Award, Tulathimutte will receive $150,000. The award is designated for graduates of Iowa’s prestigious",
+      "cover_url": "https://s26162.pcdn.co/wp-content/uploads/2016/01/tony-t.jpg"
     },
     {
       "source": "reads",
       "source_name": "3 Quarks Daily",
-      "title": "Disappearing Ink: Essays in Early Modern Philosophy",
-      "url": "https://3quarksdaily.com/3quarksdaily/2026/08/disappearing-ink-essays-in-early-modern-philosophy.html",
-      "snippet": "Karen Detlefsen at Notre Dame Philosophical Reviews: In his preface to this volume of Eileen O’Neill’s collected essays, Gary Ostertag notes two book projects that O’Neill discussed writing: one on occasional causation in early modern philosophy, and a second collecting her essays. This is that second project, essays gathered together by Ostertag. Even for one…",
+      "title": "Fifty Years of Dreams—Surrealism at the Frist",
+      "url": "https://3quarksdaily.com/3quarksdaily/2026/08/fifty-years-of-dreams-surrealism-at-the-frist.html",
+      "snippet": "Leann Davis Alspaugh at Acroteria: It is worth remembering that Surrealism was originally a literary movement, one, as Breton wrote, founded on “pure psychic automatism, by which one proposes to express—verbally, in writing, or in any other manner—the true function of thought, in the absence of control exerted by reason, and exempt from all aesthetic…",
       "cover_url": ""
     },
     {
       "source": "reads",
       "source_name": "Nautilus",
-      "title": "The Return of a Discredited Pseudoscience",
-      "url": "https://nautil.us/the-return-of-a-discredited-pseudoscience-1283873/",
-      "snippet": "Eugenics is rearing its ugly head again in today’s crucible of politics and culture The post The Return of a Discredited Pseudoscience appeared first on Nautilus .",
-      "cover_url": "https://lede-admin.nautil.us/wp-content/uploads/sites/70/2026/08/Falk_HERO.png"
+      "title": "You’re Not a Universal Mosquito Magnet",
+      "url": "https://nautil.us/youre-not-a-universal-mosquito-magnet-1284049/",
+      "snippet": "But you might be particularly enticing to different species The post You’re Not a Universal Mosquito Magnet appeared first on Nautilus .",
+      "cover_url": "https://lede-admin.nautil.us/wp-content/uploads/sites/70/2026/08/Currie_HERO_708cf6.png"
     }
   ],
   "garden_note": {
-    "note": "Late August in Zürich brings that bittersweet gilding to the evening light — the Voralpenhimmel deepening to amber well before the sun slips away at 20:31, while the dahlias and late sunflowers hold their colour almost defiantly against the shortening days. There's a gentle urgency now: the garden knows what's coming, even if we're not quite ready to admit it.",
+    "note": "First light crept over the Zürichberg at 05:57 this morning, catching the last of the summer dahlias in that particular gold that only August knows how to mix — drink it in, because the evenings are already shortening their hemlines. The courgettes will be plotting their next move overnight, so a pre-breakfast patrol is very much in order.",
     "in_season": [
-      "Dahlias in full, lavish bloom",
-      "Courgettes and late climbing beans to harvest",
-      "Early apple varieties ripening on the branch",
-      "Deadheading rudbeckia to extend the flush"
+      "Dahlias in full flush",
+      "Courgettes and runner beans to harvest",
+      "Sow hardy spinach for autumn",
+      "Deadhead and feed late summer annuals"
     ],
-    "sky_tonight": "The First Quarter Moon sits high and sharp-edged in the south after dusk — a perfect half-disc ideal for tracing the craters along the terminator line with binoculars.",
-    "sun_times": "First light arrived at 05:55 this morning, and the sun settled below the horizon at 20:31 tonight, with dusk lingering softly until around 21:02.",
+    "sky_tonight": "The First Quarter Moon rides high in the south after dusk — look for Saturn rising to its east in Aquarius as the sky darkens around 21:00.",
+    "sun_times": "First light at 05:57, sunrise at 06:28, sunset at 20:29, with dusk settling gently at 21:00.",
     "moon_label": "First quarter",
-    "illum_pct": 49,
-    "sun_range": "06:27–20:31"
+    "illum_pct": 55,
+    "sun_range": "06:28–20:29"
   },
   "puzzle": {
-    "kind": "riddle",
+    "kind": "haiku riddle",
     "label": "Fern's Morning Riddle",
-    "prompt": "George, Helen, and Steve are drinking coffee. Bert, Karen, and Dave are drinking soda. Using logic, is Elizabeth drinking coffee or soda?",
-    "answer": "Elizabeth is drinking coffee. The letter E appears twice in her name, as it does in the names of the others that are drinking coffee",
-    "hint": "",
-    "source": "riddles.com",
-    "source_id": "Riddle-754"
+    "prompt": "Amber rooms stacked high\neach sealed with six-sided doors\nwinter's borrowed sun",
+    "answer": "A honeycomb",
+    "hint": "Think of what bees build to store their sweetest work."
   },
   "previous_puzzle": {
-    "label": "The Evening Trivia",
-    "prompt": "In the Hellboy universe, what was Abe Sapien's birth name?\n\nLandis Pope   ·   Langdon Everett Caul   ·   Lord Baltimore   ·   Sir Edward Grey",
-    "answer": "Langdon Everett Caul"
+    "label": "Fern's Morning Riddle",
+    "prompt": "George, Helen, and Steve are drinking coffee. Bert, Karen, and Dave are drinking soda. Using logic, is Elizabeth drinking coffee or soda?",
+    "answer": "Elizabeth is drinking coffee. The letter E appears twice in her name, as it does in the names of the others that are drinking coffee"
   },
   "larder": {
-    "news": [],
-    "recipe": {}
+    "news": [
+      {
+        "source": "food",
+        "source_name": "The Kitchn",
+        "title": "Our Complete Guide to the Best Early Labor Day Kitchen Deals (Over 50!)",
+        "url": "https://www.thekitchn.com/best-labor-day-kitchen-sales-deals-2026-23839811?utm_source=RSS&utm_medium=feed&utm_campaign=Category%2FChannel%3A+main",
+        "snippet": "Savings up to 75% off! READ MORE...",
+        "cover_url": "",
+        "blurb": "If your kitchen wishlist has been patiently gathering dust, Labor Day weekend is its moment to shine — up to 75% off is not a drill."
+      },
+      {
+        "source": "food",
+        "source_name": "The Guardian",
+        "title": "When it comes to rosé, pink doesn’t have to mean Provence",
+        "url": "https://www.theguardian.com/food/2026/aug/20/pink-doesnt-have-to-mean-provence-when-it-comes-to-rose-mina-holland",
+        "snippet": "From Morocco to Monmouth, there’s a whole world of blushing rosé wines to discover Hello, from rosé season, the only time of year I order wine like a patriarchal septuagenarian. For this fleeting moment in the wine-drinking calendar, questions are out and assumptions are in; everyone’s happy to drink pink – specifically, pale, dry and berry-crisp Provence rosé. Blushing like cheeks in a summer romance, pale rosé captures something of the hazy holiday spirit: easy, fun, objectively delicious.",
+        "cover_url": "https://i.guim.co.uk/img/media/ecb1404b84da810fac91fa89d2b96cb0579de52d/422_353_4193_3356/master/4193.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=4b247a3487fe9d7d13a4dcbf8efeb5ec",
+        "blurb": "A lovely reminder that the world of rosé stretches far beyond the sun-bleached hills of Provence, and your glass is all the richer for it."
+      },
+      {
+        "source": "food",
+        "source_name": "Saveur",
+        "title": "Sweet Corn and Black Raspberry Ice Cream",
+        "url": "https://www.saveur.com/article/recipes/sweet-corn-and-black-raspberry-ice-cream/",
+        "snippet": "Photo: Murray Hall • Food Styling: Jason Schreiber Peak summer flavors come together in this rich and smooth frozen treat. The post Sweet Corn and Black Raspberry Ice Cream appeared first on Saveur .",
+        "cover_url": "https://www.saveur.com/uploads/2014/06/photo-murray-hall_food-styling-jason-schreiber_09-260730-MHALL-SAVEUR-SWEET-CORN-AND-BLACK-RASPBERRY-ICE-CREAM-099-1-scaled.jpg?auto=webp&width=1600&height=2000",
+        "blurb": "This dreamy pairing of sweet summer corn and tangy black raspberry churns into an ice cream that tastes exactly like peak August deserves to feel."
+      }
+    ],
+    "recipe": {},
+    "seasonal_note": "Zürich's Tuesday and Saturday markets at Bürkliplatz are piled with Mirabellen right now — those small golden-blushed plums that vanish almost as quickly as they appear, perfect halved and roasted over a little Zuger Kirsch with vanilla for a breakfast compote that tastes like August distilled."
   },
   "fern_data": {
-    "greeting": "The sky right now is that specific late-summer amber — not golden, just tired and warm, the colour of old varnish. Which makes it exactly the right hour to learn that Dippin' Dots was a livestock feed experiment before it was a fairground staple, and that preserved human brains have been turning up by the thousands, stubbornly intact, for reasons scientists are only now starting to untangle.",
-    "top_pick_title": "Happy Accidents & Stubborn Remains"
+    "greeting": "An experimental drug just triggered an immune response against pancreatic cancer in people who haven't developed it yet — which is the kind of sentence that deserves a moment before you move on to Oscar Wilde's only living grandson and the structural secrets of a narwhal's tusk.",
+    "top_pick_title": "Before the Disease, Before the Fall"
   }
 }
