@@ -1,120 +1,64 @@
 {
-  "fetched_at": "2026-08-22T06:00:27.986375+02:00",
-  "is_am_email": true,
+  "fetched_at": "2026-08-22T16:43:21.280643+02:00",
+  "is_am_email": false,
   "audit_summary": {
-    "youtube_videos": 6,
-    "themes": 3,
-    "music_articles": 1,
-    "good_news_articles": 2,
-    "discovery_articles": 10,
+    "youtube_videos": 3,
+    "themes": 1,
+    "music_articles": 15,
+    "good_news_articles": 1,
+    "discovery_articles": 1,
     "featured_read": 1,
     "reading_room": 5,
     "garden": 1,
     "puzzle": 1,
-    "larder": 4
+    "larder": 0
   },
   "themes": [
     {
-      "name": "Rabbit Holes Worth Falling Down",
-      "emoji": "🕳️",
-      "tagline": "Big ideas unpacked slowly — for people who like their curiosity properly fed.",
+      "name": "Pages & Pathways",
+      "emoji": "📖",
+      "tagline": "Classic stories and the systems we build to make sense of them.",
       "items": [
         {
           "source": "youtube",
-          "video_id": "iV-EMA5g288",
-          "title": "Place cells: How your brain creates maps of abstract spaces",
-          "channel_id": "UCR2uRTQ53V_egXKFflMMaaw",
-          "channel_title": "Artem Kirsanov",
-          "published_at": "2021-12-02T13:37:38Z",
-          "url": "https://www.youtube.com/watch?v=iV-EMA5g288",
-          "duration_seconds": 877,
-          "view_count": "123078",
-          "description": "=====\nMy name is Artem, I'm a neuroscience PhD student at Harvard University. \n🌎 Website and Social links: https://kirsanov.ai/\n📥 \"Receptive Field\" neuro-newsletter: https://artemkirsanov.substack.com/\n✨ Support me on Patreon to get access to Discord community: https://patreon.com/artemkirsanov\n=====\n\nIn this video, we will explore the positional system of the brain - hippocampal place cells. We will see how it relates to contextual memory and mapping of more abstract features.\n\n🕒 OUTLINE:\n00:00",
-          "why_watch": "Artem Kirsanov, a Harvard neuroscience PhD student, explains hippocampal place cells — the neurons that fire in specific locations to build your brain's internal map — and then makes the bigger, stranger claim: the same system may be how your brain maps abstract conceptual spaces, not just physical ones. The animation is genuinely clarifying rather than decorative, and the final implications for how we organize memory and thought are worth sitting with. One of the more rewarding 15-minute science videos around.",
-          "is_wildcard": false
-        },
-        {
-          "source": "youtube",
-          "video_id": "nkJ2PRbbdmM",
-          "title": "Music of Sleep and Dreams - Professor Milton Mermikides",
-          "channel_id": "UC1t6kKXoBvjdr8m9KJ2Fx7A",
-          "channel_title": "Gresham College",
-          "published_at": "2026-08-21T19:00:26Z",
-          "url": "https://www.youtube.com/watch?v=nkJ2PRbbdmM",
-          "duration_seconds": 2968,
-          "view_count": "281",
-          "description": "00:00 // Why Are Sleep & Music So Connected?\n03:18 // Ancient Myths Linking Music and Sleep\n05:30 // How Composers Create Dreamlike Music\n07:05 // Debussy's Secret to Dreamy Sound\n10:36 // The Hidden Power of Lullabies\n15:14 // What Lullabies Reveal About Culture\n17:08 // Does Music Exist While We Sleep?\n22:08 // Famous Songs Inspired by Dreams\n28:30 // Can We Recover Music From Dreams?\n29:45 // Turning Sleep Into Music with Science\n35:45 // Sleep, Creativity & Mental Health\n40:05 // Music as a ",
-          "why_watch": "Professor Milton Mermikides covers genuinely surprising ground here — from how Debussy engineered dreamlike sound through specific harmonic choices, to the neurological question of whether music continues to 'exist' for us during sleep. The section on lullabies as cultural artifacts and the tantalizing question of recovering music heard in dreams make this more than a standard musicology lecture. Nearly 50 minutes, but the chapter markers let you graze by topic.",
-          "is_wildcard": false
-        },
-        {
-          "source": "youtube",
-          "video_id": "5fmKYdJPZxc",
-          "title": "The History of the Decline and Fall of the Roman Empire by Edward Gibbon Volume I Chapter XII",
+          "video_id": "OFcW17mBVE0",
+          "title": "The Wonderful Wizard of Oz by L. Frank Baum - Chapter IV",
           "channel_id": "UCbFLHoeA-X5qRUDmb9tRRqA",
           "channel_title": "Classic Masterworks",
-          "published_at": "2022-11-29T08:25:29Z",
-          "url": "https://www.youtube.com/watch?v=5fmKYdJPZxc",
-          "duration_seconds": 4348,
-          "view_count": "1055",
-          "description": "The History of the Decline and Fall of the Roman Empire is a six-volume work by the English historian Edward Gibbon. The work traces Western civilization along with the Islamic and Mongolian conquests, from the height of the Roman Empire to the fall of Byzantium in the fifteenth century. \n\nGibbon's mammoth work is among the most magnificent and ambitious narratives in European literature. Its subject is the fate of one of the world's greatest civilizations over thirteen centuries - its rulers, w",
-          "why_watch": "This is an audiobook reading of Chapter XII of Gibbon's 'Decline and Fall' — not analysis, just the original text delivered cleanly for listening. At 72 minutes it's a commitment, but if you've been meaning to actually read Gibbon rather than read about him, this is a low-friction way to let one of history's great prose stylists wash over you on a walk or commute. Best approached as an audio experience rather than a video.",
-          "is_wildcard": false
-        }
-      ]
-    },
-    {
-      "name": "Make It Weird, Make It Work",
-      "emoji": "🐒",
-      "tagline": "Scraps, symbols, and cinematic deep-dives — creativity as a contact sport.",
-      "items": [
-        {
-          "source": "youtube",
-          "video_id": "QE_LHvlbNr4",
-          "title": "Making a Fully Poseable \"Jack the Monkey\" (out of scraps!)",
-          "channel_id": "UCJI86v9et-IZd1KJSfahN8g",
-          "channel_title": "Rachel Maksy",
-          "published_at": "2026-08-21T23:47:45Z",
-          "url": "https://www.youtube.com/watch?v=QE_LHvlbNr4",
-          "duration_seconds": 1665,
-          "view_count": "19406",
-          "description": "Hey kiddos! If you would like to check out Trade Coffee and start your Discovery Trial, head to: https://yt.link/3mbLOKK\nThank you so much Trade Coffee for sponsoring this video!\n\nIT IS TIME. \"Time for what?\" I hear you ask me, which I am surprised because you know as well as I do we are PAST DUE in making a Little Guy. This time, I'm making a companion to the Pirates of the Caribbean group cosplay that my friends and I have planned for Dragon Con! I have always wanted to make a little monkey, s",
-          "why_watch": "Rachel Maksy builds a fully poseable 'Jack the Monkey' from Pirates of the Caribbean entirely out of scrap materials, and the process is as inventive as the result — she figures out articulation and structure as she goes rather than following a pattern. If you've ever wondered how prop and costume makers problem-solve in real time, this is a warm, specific window into that creative scrappiness. The 'Little Guy' energy is genuine, not performed.",
+          "published_at": "2022-11-21T16:00:11Z",
+          "url": "https://www.youtube.com/watch?v=OFcW17mBVE0",
+          "duration_seconds": 505,
+          "view_count": "64",
+          "description": "The Wonderful Wizard of Oz is an American children's novel written by author L. Frank Baum. It is the first novel in the Oz series of books. A Kansas farm girl named Dorothy ends up in the magical Land of Oz after she and her pet dog Toto are swept away from their home by a tornado Upon her arrival in Oz, she learns she cannot return home until she has destroyed the Wicked Witch of the West.\n\nThe ground-breaking success of both the original 1900 novel and the 1902 Broadway musical prompted Baum ",
+          "why_watch": "This is a straightforward audiobook reading of Chapter IV of Baum's classic, useful if you're revisiting the original text alongside a child or refreshing your memory before a deeper read. With only 64 views, it's a quiet, no-frills recording — don't expect production polish. Best suited for listeners who want the source material without commentary or dramatization.",
           "is_wildcard": false
         },
         {
           "source": "youtube",
-          "video_id": "eHwvO1n6Akk",
-          "title": "A BREAKDOWN of ALL Symbols, Themes, & the Ending of It Ends EXPLAINED",
-          "channel_id": "UCXcTkcC_H4XeDGfJ7rQGJaw",
-          "channel_title": "Lucas Blue",
-          "published_at": "2026-08-22T01:09:26Z",
-          "url": "https://www.youtube.com/watch?v=eHwvO1n6Akk",
-          "duration_seconds": 912,
-          "view_count": "140",
-          "description": "In this NEON Alexander Ullom It Ends 2026 Explained / It Ends Ending Explained & Video Essay Analysis, I deep-dive analyze the It Ends movie starring Phinehas Yoon, Akira Jackson, Noah Toth, and Mitchell Cole. Directed by Gen Z filmmaker Alex Ullom, the film is a perfect blend of mystery, horror, and psychological thriller, exploring themes of youth, late-stage capitalism, and mental health. I believe this film is excellent in capturing the major themes of modern society and cultural detachment ",
-          "why_watch": "A close-read essay on a 2026 NEON indie film that's flying under the radar, breaking down its use of symbols and how it weaves Gen Z anxiety, late-stage capitalism, and mental health into its horror framework. At 15 minutes, it's a tight companion piece for anyone who just watched the film and felt like they caught something meaningful but couldn't quite name it. The creator argues it deserves serious attention — and lays out a specific case for why.",
+          "video_id": "E6ySG7xYgjY",
+          "title": "My simple note-taking setup | Zettelkasten in Obsidian | Step-by-step guide",
+          "channel_id": "UCR2uRTQ53V_egXKFflMMaaw",
+          "channel_title": "Artem Kirsanov",
+          "published_at": "2021-11-03T21:20:33Z",
+          "url": "https://www.youtube.com/watch?v=E6ySG7xYgjY",
+          "duration_seconds": 992,
+          "view_count": "814528",
+          "description": "=====\nMy name is Artem, I'm a neuroscience PhD student at Harvard University. \n🌎 Website and Social links: https://kirsanov.ai/\n📥 \"Receptive Field\" neuro-newsletter: https://artemkirsanov.substack.com/\n✨ Support me on Patreon to get access to Discord community: https://patreon.com/artemkirsanov\n=====\n\nIn this video I show you my simple yet powerful setup in Obsidian for taking Zettelkasten notes (which plugins I recommend using, my tagging system, etc). I also show a step-by-step guide how to se",
+          "why_watch": "Artem Kirsanov, a Harvard neuroscience PhD student, walks through his actual Zettelkasten setup in Obsidian with the kind of clarity that comes from someone who thinks rigorously about how knowledge compounds. What sets this apart from the crowded Obsidian tutorial space is his emphasis on the *why* behind each structural choice, not just the how. If you've been meaning to build a note-taking system that actually connects ideas rather than just archives them, this 16-minute walkthrough is a practical starting point.",
           "is_wildcard": false
-        }
-      ]
-    },
-    {
-      "name": "Plot Twist: Things Are Okay",
-      "emoji": "🌱",
-      "tagline": "Three quiet wins for humans, bodies, and maybe the planet — no doom required.",
-      "items": [
+        },
         {
           "source": "youtube_trending",
-          "video_id": "GS9bKF9VutM",
-          "title": "GOOD NEWS: Skin Cancer Vaccine, NY Moratorium on Data Centers, Sweden Abandons Technology in Schools",
-          "channel_id": "UCe0H0tHm6PPXfuAHZ1b7jFw",
-          "channel_title": "Meg V.",
-          "published_at": "2026-08-21T05:11:36Z",
-          "url": "https://www.youtube.com/watch?v=GS9bKF9VutM",
-          "duration_seconds": 1627,
-          "view_count": "46",
-          "description": "In today’s video, we’re taking a break from all the doom and gloom to talk about positive developments happening around the world.\n\nFrom promising advances in cancer treatment and mRNA vaccine research to changes happening in Sweden’s classrooms, there are some fascinating stories worth celebrating and discussing. \n\nSometimes the internet can make it feel like everything is going wrong, but good things are happening too and we’re going to shine a light on them!",
-          "why_watch": "A deliberately low-key good-news roundup covering a skin cancer mRNA vaccine update, New York's data center moratorium, and Sweden quietly reversing its all-technology classroom experiment — three stories that each push back against a dominant narrative in a different way. The channel is tiny and the production is simple, but the curation is thoughtful and the stories are real. A reasonable antidote to doom-scrolling, without any of the forced optimism.",
+          "video_id": "AQIgTK99h-I",
+          "title": "Good Morning San Antonio 6 a.m. Saturday : Aug 22, 2026",
+          "channel_id": "UCETE4rKzRRjqM0JaB7TlPpQ",
+          "channel_title": "KSAT 12",
+          "published_at": "2026-08-22T12:05:31Z",
+          "url": "https://www.youtube.com/watch?v=AQIgTK99h-I",
+          "duration_seconds": 2374,
+          "view_count": "1093",
+          "description": "The KSAT 12 News Team provides a look at local, regional, statewide and national news events and the latest information on local traffic and weather issues.",
+          "why_watch": "This is a live local news broadcast from San Antonio — traffic, weather, regional headlines, the works. Unless you're in the San Antonio area or tracking a specific local story from August 22, 2026, there's little here that will travel beyond its geography and timestamp. Skip it unless it's directly relevant to you.",
           "is_wildcard": true
         }
       ]
@@ -123,250 +67,277 @@
   "morning_soundtrack": [
     {
       "source": "music",
-      "source_name": "Stereogum",
-      "title": "Flower Face – “Bad Dream”",
-      "snippet": "Montreal musician Ruby McKinnon makes gauzy, dreamy music under the name Flower Face, and she became a Stereogum Artist To Watch on the strength of her 2024 album Girl Prometheus. Now, she's back with a hazy, glamorous, awfully pretty new song called \"Bad Dream.\" If Mazzy Star recorded a song specif",
-      "url": "https://stereogum.com/2509113/flower-face-bad-dream/music/",
+      "source_name": "NPR Music",
+      "title": "Remembering rock critic and Springsteen biographer Dave Marsh",
+      "snippet": "Marsh, who died Aug. 14, was one of rock's most influential voices. He edited The Rolling Stone Record Guide and wrote profiles of Bruce Springsteen and The Who. Originally broadcast in 1997.",
+      "url": "https://www.npr.org/2026/08/21/nx-s1-5940644/remembering-rock-critic-and-springsteen-biographer-dave-marsh",
       "genre": "",
-      "vibe_check": "Like falling back asleep into a dream you're not sure you want to leave, wrapped in velvet fog and faint, aching beauty.",
-      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/08/Flower-Face.jpeg",
-      "embed_url": "https://www.youtube.com/embed/CuwKhqeIee0"
+      "vibe_check": "",
+      "cover_url": "https://media.npr.org/include/images/facebook-default-wide-s1400-c85.jpg",
+      "embed_url": null
+    },
+    {
+      "source": "music",
+      "source_name": "NPR Music",
+      "title": "Jurors hear 'Keffe D' say his nephew fired fatal shots at Tupac Shakur in 1996 drive-by shooting",
+      "snippet": "Jurors on Thursday heard Duane \"Keffe D\" Davis tell detectives in 2008 that his nephew Orlando \"Baby Lane\" Anderson fired the shots that killed Tupac Shakur.",
+      "url": "https://www.npr.org/2026/08/21/nx-s1-5940538/jurors-hear-keffe-d-say-his-nephew-fired-fatal-shots-at-tupac-shakur-in-1996-drive-by-shooting",
+      "genre": "",
+      "vibe_check": "",
+      "cover_url": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/6667x3750+0+138/resize/1400/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F79%2F71%2F266227374ee79ee68085a563a6a2%2Fap26232798085668.jpg",
+      "embed_url": null
+    },
+    {
+      "source": "music",
+      "source_name": "NPR Music",
+      "title": "An art-rock illusionist rewrites pop in her own image",
+      "snippet": "Taja Cheek's psychedelic project L'Rain has always been tagged as experimental. On fata morgana, she asks what separates music like hers from the mainstream.",
+      "url": "https://www.npr.org/2026/08/20/nx-s1-5931854/lrain-fata-morgana-review",
+      "genre": "",
+      "vibe_check": "",
+      "cover_url": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/1800x1013+0+741/resize/1400/quality/85/format/png/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Fdb%2F55%2Fbef49a384428abb08f0906421ae6%2Fl-rain-fata-morgana-press-pic-007-mackai-sharp.png",
+      "embed_url": "https://www.youtube.com/embed/WJMJdU6ic50"
+    },
+    {
+      "source": "music",
+      "source_name": "Stereogum",
+      "title": "BigXthaPlug Arrested On One-Year Anniversary Of Last Arrest, Misses Festival Set",
+      "snippet": "On Aug. 21, 2025, BigXthaPlug was arrested for marijuana possession of less than two ounces, and unlawful possession of a firearm just hours before his album came out. On Aug. 21, 2026, BigXthaPlug was arrested again, this time for driving while intoxicated, marijuana possession of less than 2 ounce",
+      "url": "https://stereogum.com/2509144/bigxthaplug-arrested-on-one-year-anniversary-of-last-arrest-misses-festival-set/news/",
+      "genre": "",
+      "vibe_check": "",
+      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/08/GettyImages-2273008799.jpg",
+      "embed_url": null
+    },
+    {
+      "source": "music",
+      "source_name": "Stereogum",
+      "title": "Ethan Miller Expanded The Odyssey Cult Into A Psych Supergroup For New Album Vol. 3",
+      "snippet": "Everyone's talking about The Odyssey these days, but more people should be talking about the Odyssey Cult. The band is headed up by Ethan Miller (Comets On Fire, Howlin Rain, Heron Oblivion, etc.), who has assembled some serious firepower from the underground rock ranks to bring his expansive, fuzze",
+      "url": "https://stereogum.com/2509136/ethan-miller-expanded-the-odyssey-cult-into-a-psych-supergroup-for-new-album-vol-3/music/",
+      "genre": "",
+      "vibe_check": "",
+      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/08/a1166786015_10_4d9a21.jpg",
+      "embed_url": "https://odysseycult.bandcamp.com/album/vol-3"
+    },
+    {
+      "source": "music",
+      "source_name": "Stereogum",
+      "title": "Michael Jackson Movie Sequel Will Address Child Abuse Allegations From “His Point Of View,” Says Jaafar Jackson",
+      "snippet": "For a long time, the producers of Michael, the Michael Jackson biopic that came out earlier this year, reportedly planned to include a story arc about one of the many children who accused Jackson of sexual abuse. After filming an entire third arc about Jackson's decision to settle out of court with ",
+      "url": "https://stereogum.com/2509123/michael-jackson-movie-sequel-will-address-child-abuse-allegations-from-his-point-of-view-says-jaafar-jackson/news/",
+      "genre": "",
+      "vibe_check": "",
+      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/08/Michael.jpeg",
+      "embed_url": null
+    },
+    {
+      "source": "music",
+      "source_name": "Pitchfork",
+      "title": "Blackpink’s Jennie to Release New EP Next Friday",
+      "snippet": "Fallen Angel follows the K-pop group’s own comeback project, Deadline",
+      "url": "https://pitchfork.com/story/blackpinks-jennie-to-release-new-ep-next-friday/",
+      "genre": "",
+      "vibe_check": "",
+      "cover_url": "https://media.pitchfork.com/photos/6a88b9d9dbd121d3bb108a1c/16:9/w_1280,c_limit/Jennie.jpeg",
+      "embed_url": null
+    },
+    {
+      "source": "music",
+      "source_name": "Pitchfork",
+      "title": "Bonnaroo Is Taking 2027 Off",
+      "snippet": "The Tennessee festival will allow its storm-damaged grounds to recover before a 2028 return",
+      "url": "https://pitchfork.com/story/bonnaroo-is-taking-2027-off/",
+      "genre": "",
+      "vibe_check": "",
+      "cover_url": "https://media.pitchfork.com/photos/6a88887c72f49c487f51827c/16:9/w_1280,c_limit/Bonnaroo.jpeg",
+      "embed_url": null
+    },
+    {
+      "source": "music",
+      "source_name": "Pitchfork",
+      "title": "Listen to an Unreleased Song Off Mac Miler's The Divine Feminine",
+      "snippet": "It’s one of three unheard tracks off the upcoming 10th anniversary edition",
+      "url": "https://pitchfork.com/story/mac-millers-the-divine-feminine-gets-10th-anniversary-reissue/",
+      "genre": "",
+      "vibe_check": "",
+      "cover_url": "https://media.pitchfork.com/photos/6a88666e3ebe66b3901a13fb/16:9/w_1280,c_limit/MM-TDF-AP-0-GariAskew.JPG",
+      "embed_url": null
+    },
+    {
+      "source": "music",
+      "source_name": "Consequence",
+      "title": "ENHYPEN on How THE SIN : BLISS Is a New Sound for a New Beginning",
+      "snippet": "ENHYPEN on how their latest EP THE SIN : BLISS stretched them artistically and personally.\nENHYPEN on How THE SIN : BLISS Is a New Sound for a New Beginning\nChristine Terrisse",
+      "url": "https://consequence.net/2026/08/enhypen-new-album-the-sin-bliss-interview/",
+      "genre": "",
+      "vibe_check": "",
+      "cover_url": "https://consequence.net/wp-content/uploads/2026/08/enhypen-interview-sin.png",
+      "embed_url": "https://www.youtube.com/embed/MT-4Bk1Lw8g"
+    },
+    {
+      "source": "music",
+      "source_name": "Consequence",
+      "title": "West End Motel and Matt Pike Honor Mastodon’s Brent Hinds with New Song “Return of the Kid”: Stream",
+      "snippet": "The track was released on the one-year anniversary of the Mastodon guitarist's tragic passing.\nWest End Motel and Matt Pike Honor Mastodon&#8217;s Brent Hinds with New Song &#8220;Return of the Kid&#8221;: Stream\nLangdon Hickman",
+      "url": "https://consequence.net/2026/08/west-end-motel-matt-pike-brent-hinds-return-of-the-kid/",
+      "genre": "",
+      "vibe_check": "",
+      "cover_url": "https://consequence.net/wp-content/uploads/2025/03/Brent-Hinds.jpg",
+      "embed_url": "https://www.youtube.com/embed/gfrVf226Nk8"
+    },
+    {
+      "source": "music",
+      "source_name": "Consequence",
+      "title": "Heavy Song of the Week: Down Return with Masterpiece “Blood Oath”",
+      "snippet": "Down return after over a decade with the genuinely perfect Sabbathian doom metal track \"Blood Oath.\"\nHeavy Song of the Week: Down Return with Masterpiece &#8220;Blood Oath&#8221;\nLangdon Hickman",
+      "url": "https://consequence.net/2026/08/heavy-song-of-the-week-down-blood-oath/",
+      "genre": "",
+      "vibe_check": "",
+      "cover_url": "https://consequence.net/wp-content/uploads/2026/08/down-band-photo.jpg",
+      "embed_url": "https://www.youtube.com/embed/551y9o4NEiE"
+    },
+    {
+      "source": "music",
+      "source_name": "JazzTimes",
+      "title": "Editorial: MAGA Regime Wreaks Havoc on Arts & Culture, Jails Respected Musician",
+      "snippet": "Editor’s Note: Pritesh Walia was released not long after this editorial ran. We’ll continue to follow his story because it is not over, and there &#8230; Read More \"Editorial: MAGA Regime Wreaks Havoc on Arts &#038; Culture, Jails Respected Musician\"\nThe post Editorial: MAGA Regime Wreaks Havoc on A",
+      "url": "https://www.jazztimes.com/blog/editorial-maga-regime-wreaks-havoc-on-arts-culture-jails-respected-musician/",
+      "genre": "",
+      "vibe_check": "",
+      "cover_url": "https://www.jazztimes.com/wp-content/uploads/2026/08/images-2.jpeg",
+      "embed_url": null
+    },
+    {
+      "source": "music",
+      "source_name": "PopMatters",
+      "title": "Lee Scratch Perry Was at the Height of His Powers in 1973",
+      "snippet": "Lee Scratch Perry's Flashing Echo captures a seminal artist at the peak of his powers, just before those powers were transferred from one context to another.",
+      "url": "https://www.popmatters.com/lee-scratch-perry-flashing-echo",
+      "genre": "",
+      "vibe_check": "",
+      "cover_url": "https://www.popmatters.com/wp-content/uploads/2026/08/Lee-Scratch-Perry-Flashing-Echo-The-Jamaican-Upsetter-Singles-1973-Chapter-2-SP.webp",
+      "embed_url": null
+    },
+    {
+      "source": "music",
+      "source_name": "PopMatters",
+      "title": "Charli XCX Discovers the Antidote to Fame",
+      "snippet": "On Music, Fashion, Film, Charli XCX turns experimentation into self-deprecation, vindicating pop music's commercialism.",
+      "url": "https://www.popmatters.com/charli-xcx-music-fashion-2-2",
+      "genre": "",
+      "vibe_check": "",
+      "cover_url": "https://www.popmatters.com/wp-content/uploads/2026/07/Charli-XCX-Music-Fashion-Film-social.webp",
+      "embed_url": "https://www.youtube.com/embed/twLhSqabby0"
     }
   ],
   "global_silver_linings": [
     {
       "source": "good_news",
       "source_name": "Good News Network",
-      "title": "French Firm Switches On Africa’s Largest Renewable Energy/Storage Plant to Power 200K Houses",
-      "url": "https://www.goodnewsnetwork.org/french-firm-switches-on-africas-largest-renewable-energy-storage-plant-to-power-200k-houses/",
-      "snippet": "French energy supermajor TotalEnergies recently inaugurated the largest hybrid renewable energy project in Africa that will generate 400 gigawatt-hours of electricity in South Africa. Located in the Northern Cape province the Hydra Project combines a 216-MW solar photovoltaic plant with a 500 MWh battery energy storage system. Developed and built with partners Hydra Storage Holding […] The post French Firm Switches On Africa’s Largest Renewable Energy/Storage Plant to Power 200K Houses appeared first on Good News Network .",
-      "cover_url": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/08/TotalEnergies-Hydra-Project-credit-released.jpg",
-      "reason": "A landmark renewable energy plant now bringing clean, reliable power to 200,000 African households is a tangible sign that large-scale green energy is moving from promise to reality. It's the kind of infrastructure shift that quietly changes lives — and the trajectory of a continent."
-    },
-    {
-      "source": "good_news",
-      "source_name": "Upworthy",
-      "title": "Wendy’s iconic ’80s sunrooms weren’t just for looks. They served 5 purposes you probably didn’t know.",
-      "url": "https://www.upworthy.com/wendys-iconic-80s-sunrooms-werent-just-for-looks-they-served-5-purposes-you-probably-didnt-know/",
-      "snippet": "\"This was Wendy's attempt to go a little more upscale.\" The post Wendy’s iconic ’80s sunrooms weren’t just for looks. They served 5 purposes you probably didn’t know. appeared first on Upworthy .",
-      "cover_url": "https://www.upworthy.com/wp-content/uploads/sites/2/2026/08/Tsutomu-Yamaguchi-3.jpg",
-      "reason": "A closer look at the thoughtful design behind those beloved sunrooms is a small reminder that good ideas often serve more purposes than they first appear — and that warmth, both literal and communal, has always been worth building for."
+      "title": "Your Weekly Horoscope – ‘Free Will Astrology’ by Rob Brezsny",
+      "url": "https://www.goodnewsnetwork.org/horoscope-from-rob-brezsnys-free-will-astrology-8-22-2026/",
+      "snippet": "Our partner Rob Brezsny, whose latest book is Astrology Is Real: Revelations from My Life as an Oracle, provides his weekly wisdom to enlighten our thinking and motivate our mood. Rob’s Free Will Astrology, is a syndicated weekly column appearing in over a hundred publications. He is also the author of Pronoia Is the Antidote for Paranoia: […] The post Your Weekly Horoscope – ‘Free Will Astrology’ by Rob Brezsny appeared first on Good News Network .",
+      "cover_url": "https://www.goodnewsnetwork.org/wp-content/uploads/2020/10/Freewill-Astrology-horoscope-logo.jpg",
+      "reason": "Sometimes the most hopeful thing we can do is pause, reflect, and consider the bigger picture of our lives — and a thoughtful horoscope column has been inviting people to do exactly that for decades. There's quiet comfort in any practice that encourages self-awareness and a sense of possibility."
     }
   ],
   "discovery_articles": [
     {
       "source": "discovery",
-      "source_name": "Atlas Obscura",
-      "title": "Jingling Pot in England",
-      "url": "https://www.atlasobscura.com/places/jingling-pot",
-      "snippet": "Jingling Pot is one of the most popular vertical cave systems in the West Kingsdale area of Yorkshire. The cave, or as is known locally, pothole (pit cave in American English), is on the flanks of one of Yorkshires finest mountains, Wherneside. It is about 145 feet deep and explorers have the option of a direct abseil (rappel) descent down the main shaft or, a  traverse, a few feet from the top into the Lateral Cleft.",
-      "category": "history",
-      "cover_url": "https://img.atlasobscura.com/B8amVNVdg3_p4XrgUTz7mKUuCNfTL-_2E-Uw7yN1inI/rt:fit/w:600/c:800:533:nowe:0:29/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy81NDg5/MGIyZS1lZjEzLTRm/MTgtYjdhNi00Mzky/OGM0ZWIxNTYzMGYx/MDg4ZTdiMDU0ZTcy/NjZfMDAwMS5qcGc.jpg"
-    },
-    {
-      "source": "discovery",
-      "source_name": "Atlas Obscura",
-      "title": "North American Cryptid Museum in Plano, Texas",
-      "url": "https://www.atlasobscura.com/places/north-american-cryptid-museum",
-      "snippet": "Allen Hopps, owner and creator of the North American Cryptid Museum (NACM) in Plano, Texas, has a message he wants everyone to hear: Our world needs monsters! He is on a quest to bring you face-to-face with our homegrown North American monsters. As a kid who was afraid of the dark, he’s come a long way.",
-      "category": "history",
-      "cover_url": "https://img.atlasobscura.com/-Fir8rDlZO88F3EUYOg6maKnV61dZX5XCrsQbb35F74/rt:fit/w:600/c:4148:2765:nowe:574:507/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy80NTQ3/MGQyMi0yN2E3LTRh/M2QtYTYzMy05MzMy/MzRkNzYzMmQxZmEz/MGI5ZGM1Yzg0YTJh/ZGNfSU1HXzM5NDkg/KDEpLkpQRw.jpg"
-    },
-    {
-      "source": "discovery",
-      "source_name": "Atlas Obscura",
-      "title": "Bunski Kanal in Malo Polje, Bosnia and Herzegovina",
-      "url": "https://www.atlasobscura.com/places/bunski-kanal",
-      "snippet": "Tucked away just a few minutes from Mostar, Bunski Kanal is one of Bosnia and Herzegovina's most overlooked natural treasures. Here, the emerald-green Buna River squeezes through a narrow limestone channel before merging with the larger Neretva River, creating a striking display of swirling currents, vivid colors, and raw natural power. Despite its proximity to popular attractions like Mostar and Blagaj, surprisingly few travelers stop here.",
-      "category": "history",
-      "cover_url": "https://img.atlasobscura.com/-UCpTSRg_49FQWJ2F_jdZ7UTgPyuRIDPtR5hbCgx7Jc/rt:fit/w:600/c:3257:2171:nowe:648:246/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy9mOTE0/NDdiZC02NDc4LTQ2/ZmUtYjE0Yi1kODU0/ZWUxMGIyZmJhMjhj/N2MyMmIzMjQ0MWVh/NjFfMjAyNDA3Mjdf/MTUwOTQ4LmpwZw.jpg"
-    },
-    {
-      "source": "discovery",
-      "source_name": "Smithsonian",
-      "title": "A New Personalized Cancer Vaccine Could Keep Skin Cancer From Coming Back, Drugmakers Say",
-      "url": "https://www.smithsonianmag.com/smart-news/new-personalized-cancer-vaccine-could-keep-skin-cancer-from-coming-back-drugmakers-say-180989382/",
-      "snippet": "The results, announced this week by Moderna and Merck, could pave the way for a new generation of treatments tailored to individual tumors",
-      "category": "history",
-      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/U9HOjnyl8WpPy2eAGcHUmkkEAWU=/fit-in/1600x0/filters:focal(1061x707:1062x708)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/8f/51/8f519049-2d05-4f9a-8858-f58ed880bd57/gettyimages-1432941680.jpg"
-    },
-    {
-      "source": "discovery",
-      "source_name": "Smithsonian",
-      "title": "Shipwreck Hunters Discover the Ruins of a British Destroyer That Split in Half During a Tragic Peacetime Accident 118 Years Ago",
-      "url": "https://www.smithsonianmag.com/smart-news/shipwreck-hunters-discover-the-ruins-of-a-british-destroyer-that-split-in-half-during-a-tragic-peacetime-accident-118-years-ago-180989379/",
-      "snippet": "Minutes after it collided with a 10,000-ton cruiser, the HMS \"Tiger\" sank to the bottom of the English Channel. Divers and historians have spent the past four years searching for the Royal Navy vessel",
-      "category": "history",
-      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/xh0_iSzE9aQn7ZDPfw6-XjdOMcc=/fit-in/1600x0/filters:focal(810x540:811x541)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/d0/64/d064592c-d3fc-4ce4-a068-9252a84df55d/dr_steffen_g_scholz_credit_single_whitehead_torpedo_tube_locat-098ead67b3c8a8d78866627705003f89.jpeg"
-    },
-    {
-      "source": "discovery",
-      "source_name": "Smithsonian",
-      "title": "Scientists Gave Dogs MRIs and Learned That They're Surprisingly Good at Distinguishing Between Human Emotions, Even Some Negative Ones",
-      "url": "https://www.smithsonianmag.com/smart-news/scientists-gave-dogs-mris-and-learned-that-theyre-surprisingly-good-at-distinguishing-between-human-emotions-even-some-negative-ones-180989329/",
-      "snippet": "A recent study found that man’s best friend processes positive and negative human emotions differently and can distinguish between fearful faces and those showing sadness or anger",
-      "category": "history",
-      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/gWrzxgHUpybWedcgGaDegCgQ8Xk=/fit-in/1600x0/filters:focal(1426x1317:1427x1318)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/06/46/0646d94a-82ec-4948-87ef-b40f8d3de826/dogs-can-distinguish-b.jpg"
-    },
-    {
-      "source": "discovery",
-      "source_name": "Smithsonian",
-      "title": "When a Carpenter in California Found a Nugget of Gold, It Started a Rush Toward Nothing Less Than the Modern World",
-      "url": "https://www.smithsonianmag.com/history/when-carpenter-california-found-nugget-gold-started-rush-toward-nothing-less-modern-world-180989283/",
-      "snippet": "A new book by historian Nathaniel Philbrick makes the case that James Marshall’s 1848 discovery set in motion events from the Civil War to the rise of Silicon Valley",
-      "category": "history",
-      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/qwYzrMX1GtrOul7cnDd0c485utM=/fit-in/1600x0/filters:focal(960x704:961x705)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/9d/c7/9dc74015-d150-42ac-81a6-6af173b2c2fe/sia-98-4800.jpg"
-    },
-    {
-      "source": "discovery",
       "source_name": "Science News",
-      "title": "‘Thunderquakes’ do more than shake the ground — they map it",
-      "url": "https://www.sciencenews.org/article/thunderquakes-shake-ground-map-it",
-      "snippet": "Scientists used fiber-optic cables to turn “thunderquakes” into underground maps that could help reveal hidden hazards beneath cities.",
+      "title": "Mysteries of the commonplace",
+      "url": "https://www.sciencenews.org/article/ed-note-september-2026",
+      "snippet": "Editor in Chief Nancy Shute reviews new research in static electricity and other science revelations in our September magazine issue.",
       "category": "science",
-      "cover_url": "https://www.sciencenews.org/wp-content/uploads/sites/2/2026/08/082126_CG_thunderquake_main.jpg"
-    },
-    {
-      "source": "discovery",
-      "source_name": "Science News",
-      "title": "Plants under attack leave behind a surprising call for backup",
-      "url": "https://www.sciencenews.org/article/plants-backup-wasp-herbivore-pest",
-      "snippet": "Bacteria may build a memory of herbivore attack in the soil and coax new plants to attract wasps to rein in destructive pests.",
-      "category": "science",
-      "cover_url": "https://www.sciencenews.org/wp-content/uploads/sites/2/2026/08/082126_EG_wasps_main.jpg"
-    },
-    {
-      "source": "discovery",
-      "source_name": "Colossal",
-      "title": "An Inflatable Pool Party by Craig & Karl Fills a Dubai Atrium with Summer Fun",
-      "url": "https://www.thisiscolossal.com/2026/08/craig-and-karl-under-the-sun-dubai-installation/",
-      "snippet": "Craig & Karl's expressive inflatables infuse oft-overlooked architecture with play and whimsy. Do stories and artists like this matter to you? Become a Colossal Member today and support independent arts publishing for as little as $7 per month.",
-      "category": "history",
-      "cover_url": "https://www.thisiscolossal.com/wp-content/uploads/2026/08/craig-karl-1.jpg"
+      "cover_url": "https://www.sciencenews.org/wp-content/uploads/sites/2/2025/01/webfallback_dark.jpg",
+      "ferns_note": "Static electricity — the thing you've been casually blaming for bad hair days since childhood — turns out to harbor physics we still don't fully understand. There's something quietly humbling about science admitting the sock-and-carpet phenomenon isn't fully solved."
     }
   ],
   "featured_read": {
     "source": "reads",
     "source_name": "Nautilus",
-    "title": "The Remarkable Lives of 5-Year-Old Brain Organoids",
-    "url": "https://nautil.us/the-remarkable-lives-of-5-year-old-brain-organoids-1284120/",
-    "snippet": "The mini-brains are full of surprises The post The Remarkable Lives of 5-Year-Old Brain Organoids appeared first on Nautilus .",
-    "cover_url": "https://lede-admin.nautil.us/wp-content/uploads/sites/70/2026/08/Currie_HERO_715237.png"
+    "title": "A Peek Inside the Pompeii of Greece",
+    "url": "https://nautil.us/a-peek-inside-the-pompeii-of-greece-1284099/",
+    "snippet": "It’s a treasure trove of Minoan art and antiques The post A Peek Inside the Pompeii of Greece appeared first on Nautilus .",
+    "cover_url": "https://lede-admin.nautil.us/wp-content/uploads/sites/70/2026/08/Nield_HERO_96fc16.png"
   },
   "reading_room": [
     {
       "source": "reads",
       "source_name": "Longreads",
-      "title": "The End of the European Summer",
-      "url": "https://longreads.com/2026/08/21/climate-crisis-european-summer/",
-      "snippet": "\"As extreme heat overwhelms the Continent’s great cities, they are racing to transform themselves for a climate that they were never built to withstand.\"",
-      "cover_url": ""
+      "title": "The Longreads Questionnaire, Featuring Jaya Saxena",
+      "url": "https://longreads.com/2026/08/20/questionnaire-jaya-saxena/",
+      "snippet": "The former Eater correspondent has a new home—and a full plate. Here, she talks about growing up in NYC, favorite meals, and memorable reads.",
+      "cover_url": "https://i0.wp.com/longreads.com/wp-content/uploads/2026/08/Questionnaire-Jaya-Saxena.png?fit=2400%2C1400&quality=80&ssl=1"
     },
     {
       "source": "reads",
       "source_name": "Literary Hub",
-      "title": "Here’s what’s making us happy this week.",
-      "url": "https://lithub.com/heres-whats-making-us-happy-this-week-11/",
-      "snippet": "Summer isn’t over—in fact, we rue the hater who throws in the beach towel before Labor Day. But there is a definite wind down spirit to late August. Afternoon storms gather steam on a dime, scuttling picnic plans.",
-      "cover_url": "https://s26162.pcdn.co/wp-content/uploads/2026/08/Untitled-design-26.png"
-    },
-    {
-      "source": "reads",
-      "source_name": "Noema",
-      "title": "Introducing Noema Issue VII: The Next Axial Age",
-      "url": "https://www.noemamag.com/introducing-noema-issue-vii-the-next-axial-age",
-      "snippet": "The post Introducing Noema Issue VII: The Next Axial Age appeared first on NOEMA .",
-      "cover_url": "https://noemamag.imgix.net/2026/08/Noema_Issue7_Cover_3.jpg?fit=crop&fm=pjpg&h=628&ixlib=php-3.3.1&w=1200&wpsize=noema-social-facebook&s=f20f312e29d01ebb21cbb88fe3565cf5"
+      "title": "Lit Hub Weekly: August 17 – 21, 2026",
+      "url": "https://lithub.com/lit-hub-weekly-august-17-21-2026/",
+      "snippet": "What Buffy the Vampire Slayer and Angel can teach us about grief, literature, and growing up. | Lit Hub TV Why the tragedy of Jason Arday reflects a rigged game for today’s Black scholars. | Lit Hub Politics How environmentalism",
+      "cover_url": "https://s26162.pcdn.co/wp-content/uploads/2026/08/chopin1.jpg"
     },
     {
       "source": "reads",
       "source_name": "3 Quarks Daily",
-      "title": "The rise and fall of Carlos the Jackal, the notorious terrorist-for-hire",
-      "url": "https://3quarksdaily.com/3quarksdaily/2026/08/the-rise-and-fall-of-carlos-the-jackal-the-notorious-terrorist-for-hire.html",
-      "snippet": "Dwight Garner at the New York Times: Carlos the Jackal, the international terrorist, was vain. He wore nipped-waist suits, Italian loafers, fine neckties and sometimes, in a nod to his hero Che Guevara, designer berets. He was a good dancer.",
+      "title": "How do we model the future of work? It takes an AI village",
+      "url": "https://3quarksdaily.com/3quarksdaily/2026/08/how-do-we-model-the-future-of-work-it-takes-an-ai-village.html",
+      "snippet": "Christine Kozobarich at Asterisk: A little over a year ago, a group of researchers asked: What would happen if we created an AI society? If we gave different AI agents a shared goal, memory files, access to individual virtual computers, and the ability to communicate via a group chat, email, and Google Docs — what…",
       "cover_url": ""
     },
     {
       "source": "reads",
       "source_name": "Nautilus",
-      "title": "Are You in Danger of Becoming a Robot?",
-      "url": "https://nautil.us/are-you-in-danger-of-becoming-a-robot-1284114/",
-      "snippet": "How interacting with social chatbots could reduce your “personhood” The post Are You in Danger of Becoming a Robot? appeared first on Nautilus .",
-      "cover_url": "https://lede-admin.nautil.us/wp-content/uploads/sites/70/2026/08/French_HERO_d9a1ee.png"
+      "title": "Dolphins Eavesdrop on Their Prey—and Each Other",
+      "url": "https://nautil.us/dolphins-eavesdrop-on-their-prey-and-each-other-1284095/",
+      "snippet": "They strategically choose when to whistle or click The post Dolphins Eavesdrop on Their Prey—and Each Other appeared first on Nautilus .",
+      "cover_url": "https://lede-admin.nautil.us/wp-content/uploads/sites/70/2026/08/Currie_HERO_28cccc.png"
+    },
+    {
+      "source": "reads",
+      "source_name": "Longreads",
+      "title": "Bucking Expectations: A Conversation with Rachel Hartigan",
+      "url": "https://longreads.com/2026/08/18/bucking-expectations-rachel-hartigan/",
+      "snippet": "Oh, the places you'll go when you say yes.",
+      "cover_url": "https://i0.wp.com/longreads.com/wp-content/uploads/2026/08/Hartigan_D.png?fit=2400%2C1400&quality=80&ssl=1"
     }
   ],
   "garden_note": {
-    "note": "First light crept over the Zürichberg at 05:58 this morning, catching the late-summer dahlias mid-bloom and gilding everything with that particular amber the August garden does so well — rich and a little valedictory all at once. The nights are noticeably longer than they were a month ago, but the days still have muscle in them, so press them into service while you can.",
+    "note": "The dahlias are having their absolute moment right now in Zürich, their heavy heads nodding in the warm August dusk as the light softens to honey — go out and deadhead a few before the evening cools completely. Late summer here carries that bittersweet edge: the garden is lush and generous, yet you can just feel September waiting quietly in the wings.",
     "in_season": [
-      "Dahlias in full, glorious bloom",
-      "Runner beans ready for daily picking",
-      "Sow winter salad seedlings (lamb's lettuce, spinach) under cover",
-      "Harvest and dry the last of the lavender before it goes to seed"
+      "Dahlias in full bloom",
+      "Runner beans ready to pick",
+      "Sow autumn spinach now",
+      "Harvest ripening plums"
     ],
-    "sky_tonight": "The first-quarter Moon rides high in the south after dark — bright enough to cast soft shadows, and perfectly framed between Scorpius low on the horizon and the Summer Triangle overhead.",
-    "sun_times": "First light at 05:58, sunrise at 06:30; the long evening holds until sunset at 20:27, with dusk settling around 20:58.",
-    "moon_label": "First quarter",
-    "illum_pct": 65,
+    "sky_tonight": "A waxing gibbous moon rises in the southeast as darkness falls — look for it glowing near the Aquarius constellation after 21:00.",
+    "sun_times": "First light crept in at 05:58 this morning, and the sun slips away by 20:27 tonight, with dusk lingering until nearly 21:00.",
+    "moon_label": "Waxing gibbous",
+    "illum_pct": 70,
     "sun_range": "06:30–20:27"
   },
   "puzzle": {
-    "kind": "riddle",
-    "label": "Fern's Morning Riddle",
-    "prompt": "I reach for the sky, but clutch to the ground; sometimes I leave, but I am always around. What am I?",
-    "answer": "I am Tree",
-    "hint": "",
-    "source": "riddles.com",
-    "source_id": "Riddle-697"
+    "kind": "trivia",
+    "label": "The Evening Trivia",
+    "prompt": "Who created the \"Metal Gear\" Series?\n\nGunpei Yokoi   ·   Hideo Kojima   ·   Hiroshi Yamauchi   ·   Shigeru Miyamoto",
+    "answer": "Hideo Kojima",
+    "hint": "Category: Entertainment: Video Games",
+    "source": "opentdb.com",
+    "source_id": "013e3832e535"
   },
   "previous_puzzle": {
     "label": "Fern's Morning Riddle",
-    "prompt": "Amber rooms stacked high\neach sealed with six-sided doors\nwinter's borrowed sun",
-    "answer": "A honeycomb"
+    "prompt": "I reach for the sky, but clutch to the ground; sometimes I leave, but I am always around. What am I?",
+    "answer": "I am Tree"
   },
   "larder": {
-    "news": [
-      {
-        "source": "food",
-        "source_name": "The Kitchn",
-        "title": "Bartenders Say This Pink Italian Spritz Is the Real Drink of Summer",
-        "url": "https://www.thekitchn.com/what-is-a-sarti-spritz-23840002?utm_source=RSS&utm_medium=feed&utm_campaign=Category%2FChannel%3A+main",
-        "snippet": "I am a big fan of spritz season. I will take any excuse to drink a cold glass of crisp prosecco paired with a delicious aperitivo during the afternoon. Aperol, St.",
-        "cover_url": "",
-        "blurb": "Move over Aperol — bartenders are championing a rosy new Italian aperitivo, and this is your cue to get curious before everyone else does."
-      },
-      {
-        "source": "food",
-        "source_name": "The Guardian",
-        "title": "Cocktail of the week: Cafe Cùil’s Buckfast bloody Maìri – recipe | The good mixer",
-        "url": "https://www.theguardian.com/food/2026/aug/21/cocktail-of-the-week-cafe-cuils-buckfast-bloody-mairi-recipe",
-        "snippet": "The favourite spicy brunch cocktail gets a Scottish twist, complete with Buckfast and a slice of pickle for punch This is our take on the ultimate brunch cocktail, though of course we had to give it a Gaelic stamp of some kind, so have added a shot of Buckfast and renamed it Maìri. If you’re not familiar, Buckfast is a sweet tonic wine, apparently known for its “healing” properties, made in Devon by Benedictine monks, but that has been adopted by the Scots as our own. Clare Coghill, chef-owner, Café Cùil , Isle of Skye Continue reading...",
-        "cover_url": "https://i.guim.co.uk/img/media/047c37b213b47b65b4321d46d0704e6919e878fb/572_560_2185_1748/master/2185.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=7820cf9e1d3c0ac137f9310f25073c97",
-        "blurb": "A Bloody Mary with a distinctly Scottish soul, this Buckfast-laced brunch cocktail is the kind of gloriously unhinged twist that makes you genuinely glad someone thought of it."
-      },
-      {
-        "source": "food",
-        "source_name": "Saveur",
-        "title": "Green Tomato Carpaccio",
-        "url": "https://www.saveur.com/recipes/green-tomato-carpaccio/",
-        "snippet": "Photo: Tristan deBrauwere • Food Styling: Thu Buser • Props: Platter by Jono Pandolfi Topped with marinated cherry tomatoes, roasted corn relish, and old bay aïoli, this summer salad is a symphony of colors and flavors. The post Green Tomato Carpaccio appeared first on Saveur .",
-        "cover_url": "https://www.saveur.com/uploads/2026/08/photo-tristan-debrauwere_food-styling-Thu-Buser_TD_AUG26RECIPES_04_SHOT_GREEN_TOMATO_CARPACCIO_008-scaled.jpg?auto=webp&width=1601&height=2000",
-        "blurb": "Green tomato carpaccio with marinated cherry tomatoes, roasted corn relish, and Old Bay aïoli is proof that summer salads deserve to be taken seriously."
-      }
-    ],
-    "recipe": {
-      "source": "recipe",
-      "source_name": "101 Cookbooks",
-      "title": "Pan-Fried Tempeh Ponzu Balls",
-      "url": "https://www.101cookbooks.com/tempeh-ponzu-balls/",
-      "snippet": "These Pan-Fried Tempeh Ponzu Balls are a high-protein, veg-friendly addition to all sorts of meals. They’re golden-crusted, bite-sized, and an easy way to work more tempeh into your cooking. Give them a try!",
-      "is_recipe": true,
-      "cover_url": "https://images.101cookbooks.com/TEMPEH-PONZU-BALLS-h.jpg?w=680",
-      "blurb": "Golden-crusted, bite-sized, and finished with bright ponzu flavour, these pan-fried tempeh balls are the kind of easy, satisfying weeknight project that quietly becomes a regular in your rotation."
-    },
-    "seasonal_note": "Zürich's Tuesday and Saturday markets at Bürkliplatz are brimming with fat, sun-warmed Mirabellen right now — those small golden-amber plums that locals fold into Wähe or simply eat standing at the stall, juice running down their wrists before the morning properly begins."
+    "news": [],
+    "recipe": {}
   },
   "fern_data": {
-    "greeting": "Place cells — the neurons that map abstract space in your mind — and a skin cancer vaccine that trains your immune system to hunt a threat before it arrives: both are, at bottom, the same quiet miracle of a system learning to see what isn't there yet.",
-    "top_pick_title": "Maps of Things Not Yet Real"
+    "greeting": "A Zettelkasten note-taking system and a buried Greek city have no obvious business sharing a newsletter — except that both are about the same compulsion: finding the hidden connections before everything turns to ash.",
+    "top_pick_title": "Links in the Lava"
   }
 }
