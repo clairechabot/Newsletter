@@ -1,64 +1,92 @@
 {
-  "fetched_at": "2026-08-22T16:43:21.280643+02:00",
-  "is_am_email": false,
+  "fetched_at": "2026-08-23T06:06:11.093948+02:00",
+  "is_am_email": true,
   "audit_summary": {
-    "youtube_videos": 3,
-    "themes": 1,
-    "music_articles": 15,
-    "good_news_articles": 1,
+    "youtube_videos": 4,
+    "themes": 3,
+    "music_articles": 3,
+    "good_news_articles": 2,
     "discovery_articles": 1,
     "featured_read": 1,
     "reading_room": 5,
     "garden": 1,
     "puzzle": 1,
-    "larder": 0
+    "larder": 3
   },
   "themes": [
     {
-      "name": "Pages & Pathways",
-      "emoji": "📖",
-      "tagline": "Classic stories and the systems we build to make sense of them.",
+      "name": "Your Brain Called — It Has Notes",
+      "emoji": "🧠",
+      "tagline": "Smarter ways to read, think, and see things you've been staring at wrong this whole time.",
       "items": [
         {
           "source": "youtube",
-          "video_id": "OFcW17mBVE0",
-          "title": "The Wonderful Wizard of Oz by L. Frank Baum - Chapter IV",
-          "channel_id": "UCbFLHoeA-X5qRUDmb9tRRqA",
-          "channel_title": "Classic Masterworks",
-          "published_at": "2022-11-21T16:00:11Z",
-          "url": "https://www.youtube.com/watch?v=OFcW17mBVE0",
-          "duration_seconds": 505,
-          "view_count": "64",
-          "description": "The Wonderful Wizard of Oz is an American children's novel written by author L. Frank Baum. It is the first novel in the Oz series of books. A Kansas farm girl named Dorothy ends up in the magical Land of Oz after she and her pet dog Toto are swept away from their home by a tornado Upon her arrival in Oz, she learns she cannot return home until she has destroyed the Wicked Witch of the West.\n\nThe ground-breaking success of both the original 1900 novel and the 1902 Broadway musical prompted Baum ",
-          "why_watch": "This is a straightforward audiobook reading of Chapter IV of Baum's classic, useful if you're revisiting the original text alongside a child or refreshing your memory before a deeper read. With only 64 views, it's a quiet, no-frills recording — don't expect production polish. Best suited for listeners who want the source material without commentary or dramatization.",
+          "video_id": "4yOm4kklKIA",
+          "title": "How to read papers effectively | Research reading technique",
+          "channel_id": "UCR2uRTQ53V_egXKFflMMaaw",
+          "channel_title": "Artem Kirsanov",
+          "published_at": "2021-10-09T14:17:06Z",
+          "url": "https://www.youtube.com/watch?v=4yOm4kklKIA",
+          "duration_seconds": 688,
+          "view_count": "46443",
+          "description": "=====\nMy name is Artem, I'm a neuroscience PhD student at Harvard University. \n🌎 Website and Social links: https://kirsanov.ai/\n📥 \"Receptive Field\" neuro-newsletter: https://artemkirsanov.substack.com/\n✨ Support me on Patreon to get access to Discord community: https://patreon.com/artemkirsanov\n=====\n\nIn this video I talk about how to approach reading a research article, how papers are structured, in what order to read and how to highlight them.\n\n🕒 OUTLINE:\n00:00 Introduction\n1:06 Wrong approach",
+          "why_watch": "Harvard neuroscience PhD student Artem Kirsanov breaks down how academic papers are actually structured and why reading them front-to-back is usually the wrong approach. His method — understanding what each section is designed to do before deciding how deeply to engage with it — is immediately transferable whether you're a researcher or a curious non-specialist.",
           "is_wildcard": false
         },
         {
           "source": "youtube",
-          "video_id": "E6ySG7xYgjY",
-          "title": "My simple note-taking setup | Zettelkasten in Obsidian | Step-by-step guide",
-          "channel_id": "UCR2uRTQ53V_egXKFflMMaaw",
-          "channel_title": "Artem Kirsanov",
-          "published_at": "2021-11-03T21:20:33Z",
-          "url": "https://www.youtube.com/watch?v=E6ySG7xYgjY",
-          "duration_seconds": 992,
-          "view_count": "814528",
-          "description": "=====\nMy name is Artem, I'm a neuroscience PhD student at Harvard University. \n🌎 Website and Social links: https://kirsanov.ai/\n📥 \"Receptive Field\" neuro-newsletter: https://artemkirsanov.substack.com/\n✨ Support me on Patreon to get access to Discord community: https://patreon.com/artemkirsanov\n=====\n\nIn this video I show you my simple yet powerful setup in Obsidian for taking Zettelkasten notes (which plugins I recommend using, my tagging system, etc). I also show a step-by-step guide how to se",
-          "why_watch": "Artem Kirsanov, a Harvard neuroscience PhD student, walks through his actual Zettelkasten setup in Obsidian with the kind of clarity that comes from someone who thinks rigorously about how knowledge compounds. What sets this apart from the crowded Obsidian tutorial space is his emphasis on the *why* behind each structural choice, not just the how. If you've been meaning to build a note-taking system that actually connects ideas rather than just archives them, this 16-minute walkthrough is a practical starting point.",
+          "video_id": "i0mqdRGYgbU",
+          "title": "The Singularity Disc",
+          "channel_id": "UC6nSFpj9HTCZ5t-N3Rm3-HA",
+          "channel_title": "Vsauce",
+          "published_at": "2026-08-22T21:51:23Z",
+          "url": "https://www.youtube.com/watch?v=i0mqdRGYgbU",
+          "duration_seconds": 130,
+          "view_count": "242788",
+          "description": "Watch @SteveMould  talk about the design of the Singularity Disc: https://www.youtube.com/watch?v=ti2qiU_JTUQ\n\nGet your own: https://www.metmo.co.uk/collections/metmo-singularity",
+          "why_watch": "Vsauce's short showcase of the Singularity Disc is a 2-minute visual curiosity break — a precision-machined object that behaves in ways your eyes won't immediately trust. Think of it as an amuse-bouche: if it hooks you, Steve Mould's longer companion video dives into the physics behind why it moves the way it does.",
           "is_wildcard": false
-        },
+        }
+      ]
+    },
+    {
+      "name": "Root Cellar Wisdom",
+      "emoji": "🫙",
+      "tagline": "Old-school preservation instincts for the modern gardener who refuses to let August go to waste.",
+      "items": [
+        {
+          "source": "youtube",
+          "video_id": "r1Gpw7t41bk",
+          "title": "How Smart Gardeners Make One Harvest Last All Year",
+          "channel_id": "UC9r61qohBg1qgGty4_WzojA",
+          "channel_title": "GrowVeg",
+          "published_at": "2026-08-22T14:45:15Z",
+          "url": "https://www.youtube.com/watch?v=r1Gpw7t41bk",
+          "duration_seconds": 923,
+          "view_count": "9896",
+          "description": "Enjoy a no-obligation, completely free trial of the Garden Planner here: \nhttps://www.GrowVeg.com/grow-planner-free\n\nAnd for your completely free abridged version of Ben's book, click here:\nhttps://www.growveg.com/grow-book-download\n\nFor our video on water bath canning, watch:\nhttps://youtu.be/LoSngtBcPhw\n\nHarvest season is upon us and it's time to conserve and preserve as much of our produce as possible. In this week's episode Ben demonstrates all we need to know to get started in pressure cann",
+          "why_watch": "GrowVeg walks through the practical hierarchy of preservation methods — what to freeze, what to ferment, what to dry, and in what order — so your summer harvest doesn't quietly rot in the crisper drawer. The focus is on matching the right technique to the right crop, which is the piece most preservation guides skip entirely.",
+          "is_wildcard": false
+        }
+      ]
+    },
+    {
+      "name": "Dispatches From Somewhere Else",
+      "emoji": "📡",
+      "tagline": "A slow Saturday morning in San Antonio — proof that local news is its own strange, comforting genre.",
+      "items": [
         {
           "source": "youtube_trending",
-          "video_id": "AQIgTK99h-I",
-          "title": "Good Morning San Antonio 6 a.m. Saturday : Aug 22, 2026",
+          "video_id": "ZzHLOafWGLg",
+          "title": "Good Morning San Antonio 9 a.m. Saturday : Aug 22, 2026",
           "channel_id": "UCETE4rKzRRjqM0JaB7TlPpQ",
           "channel_title": "KSAT 12",
-          "published_at": "2026-08-22T12:05:31Z",
-          "url": "https://www.youtube.com/watch?v=AQIgTK99h-I",
-          "duration_seconds": 2374,
-          "view_count": "1093",
+          "published_at": "2026-08-22T15:05:29Z",
+          "url": "https://www.youtube.com/watch?v=ZzHLOafWGLg",
+          "duration_seconds": 2355,
+          "view_count": "2251",
           "description": "The KSAT 12 News Team provides a look at local, regional, statewide and national news events and the latest information on local traffic and weather issues.",
-          "why_watch": "This is a live local news broadcast from San Antonio — traffic, weather, regional headlines, the works. Unless you're in the San Antonio area or tracking a specific local story from August 22, 2026, there's little here that will travel beyond its geography and timestamp. Skip it unless it's directly relevant to you.",
+          "why_watch": "This is a local Saturday morning newscast from San Antonio — the wildcard pick this week. Honestly, unless you're in the greater San Antonio area or tracking a specific regional story, your 39 minutes are better spent elsewhere; we're including it for completeness, not as a genuine recommendation.",
           "is_wildcard": true
         }
       ]
@@ -68,276 +96,180 @@
     {
       "source": "music",
       "source_name": "NPR Music",
-      "title": "Remembering rock critic and Springsteen biographer Dave Marsh",
-      "snippet": "Marsh, who died Aug. 14, was one of rock's most influential voices. He edited The Rolling Stone Record Guide and wrote profiles of Bruce Springsteen and The Who. Originally broadcast in 1997.",
-      "url": "https://www.npr.org/2026/08/21/nx-s1-5940644/remembering-rock-critic-and-springsteen-biographer-dave-marsh",
+      "title": "Brennan Wedl explores heartache and unrequited love in self-titled album",
+      "snippet": "Americana singer-songwriter Brennan Wedl talks about her new self titled album, out August 21st.",
+      "url": "https://www.npr.org/2026/08/22/nx-s1-5935298/brennan-wedl-explores-heartache-and-unrequited-love-in-self-titled-album",
       "genre": "",
-      "vibe_check": "",
+      "vibe_check": "Like reading old letters you never sent, alone at a kitchen table in the blue hour before dawn.",
       "cover_url": "https://media.npr.org/include/images/facebook-default-wide-s1400-c85.jpg",
       "embed_url": null
     },
     {
       "source": "music",
-      "source_name": "NPR Music",
-      "title": "Jurors hear 'Keffe D' say his nephew fired fatal shots at Tupac Shakur in 1996 drive-by shooting",
-      "snippet": "Jurors on Thursday heard Duane \"Keffe D\" Davis tell detectives in 2008 that his nephew Orlando \"Baby Lane\" Anderson fired the shots that killed Tupac Shakur.",
-      "url": "https://www.npr.org/2026/08/21/nx-s1-5940538/jurors-hear-keffe-d-say-his-nephew-fired-fatal-shots-at-tupac-shakur-in-1996-drive-by-shooting",
-      "genre": "",
-      "vibe_check": "",
-      "cover_url": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/6667x3750+0+138/resize/1400/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F79%2F71%2F266227374ee79ee68085a563a6a2%2Fap26232798085668.jpg",
-      "embed_url": null
-    },
-    {
-      "source": "music",
-      "source_name": "NPR Music",
-      "title": "An art-rock illusionist rewrites pop in her own image",
-      "snippet": "Taja Cheek's psychedelic project L'Rain has always been tagged as experimental. On fata morgana, she asks what separates music like hers from the mainstream.",
-      "url": "https://www.npr.org/2026/08/20/nx-s1-5931854/lrain-fata-morgana-review",
-      "genre": "",
-      "vibe_check": "",
-      "cover_url": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/1800x1013+0+741/resize/1400/quality/85/format/png/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Fdb%2F55%2Fbef49a384428abb08f0906421ae6%2Fl-rain-fata-morgana-press-pic-007-mackai-sharp.png",
-      "embed_url": "https://www.youtube.com/embed/WJMJdU6ic50"
-    },
-    {
-      "source": "music",
-      "source_name": "Stereogum",
-      "title": "BigXthaPlug Arrested On One-Year Anniversary Of Last Arrest, Misses Festival Set",
-      "snippet": "On Aug. 21, 2025, BigXthaPlug was arrested for marijuana possession of less than two ounces, and unlawful possession of a firearm just hours before his album came out. On Aug. 21, 2026, BigXthaPlug was arrested again, this time for driving while intoxicated, marijuana possession of less than 2 ounce",
-      "url": "https://stereogum.com/2509144/bigxthaplug-arrested-on-one-year-anniversary-of-last-arrest-misses-festival-set/news/",
-      "genre": "",
-      "vibe_check": "",
-      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/08/GettyImages-2273008799.jpg",
-      "embed_url": null
-    },
-    {
-      "source": "music",
-      "source_name": "Stereogum",
-      "title": "Ethan Miller Expanded The Odyssey Cult Into A Psych Supergroup For New Album Vol. 3",
-      "snippet": "Everyone's talking about The Odyssey these days, but more people should be talking about the Odyssey Cult. The band is headed up by Ethan Miller (Comets On Fire, Howlin Rain, Heron Oblivion, etc.), who has assembled some serious firepower from the underground rock ranks to bring his expansive, fuzze",
-      "url": "https://stereogum.com/2509136/ethan-miller-expanded-the-odyssey-cult-into-a-psych-supergroup-for-new-album-vol-3/music/",
-      "genre": "",
-      "vibe_check": "",
-      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/08/a1166786015_10_4d9a21.jpg",
-      "embed_url": "https://odysseycult.bandcamp.com/album/vol-3"
-    },
-    {
-      "source": "music",
-      "source_name": "Stereogum",
-      "title": "Michael Jackson Movie Sequel Will Address Child Abuse Allegations From “His Point Of View,” Says Jaafar Jackson",
-      "snippet": "For a long time, the producers of Michael, the Michael Jackson biopic that came out earlier this year, reportedly planned to include a story arc about one of the many children who accused Jackson of sexual abuse. After filming an entire third arc about Jackson's decision to settle out of court with ",
-      "url": "https://stereogum.com/2509123/michael-jackson-movie-sequel-will-address-child-abuse-allegations-from-his-point-of-view-says-jaafar-jackson/news/",
-      "genre": "",
-      "vibe_check": "",
-      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/08/Michael.jpeg",
-      "embed_url": null
-    },
-    {
-      "source": "music",
-      "source_name": "Pitchfork",
-      "title": "Blackpink’s Jennie to Release New EP Next Friday",
-      "snippet": "Fallen Angel follows the K-pop group’s own comeback project, Deadline",
-      "url": "https://pitchfork.com/story/blackpinks-jennie-to-release-new-ep-next-friday/",
-      "genre": "",
-      "vibe_check": "",
-      "cover_url": "https://media.pitchfork.com/photos/6a88b9d9dbd121d3bb108a1c/16:9/w_1280,c_limit/Jennie.jpeg",
-      "embed_url": null
-    },
-    {
-      "source": "music",
-      "source_name": "Pitchfork",
-      "title": "Bonnaroo Is Taking 2027 Off",
-      "snippet": "The Tennessee festival will allow its storm-damaged grounds to recover before a 2028 return",
-      "url": "https://pitchfork.com/story/bonnaroo-is-taking-2027-off/",
-      "genre": "",
-      "vibe_check": "",
-      "cover_url": "https://media.pitchfork.com/photos/6a88887c72f49c487f51827c/16:9/w_1280,c_limit/Bonnaroo.jpeg",
-      "embed_url": null
-    },
-    {
-      "source": "music",
-      "source_name": "Pitchfork",
-      "title": "Listen to an Unreleased Song Off Mac Miler's The Divine Feminine",
-      "snippet": "It’s one of three unheard tracks off the upcoming 10th anniversary edition",
-      "url": "https://pitchfork.com/story/mac-millers-the-divine-feminine-gets-10th-anniversary-reissue/",
-      "genre": "",
-      "vibe_check": "",
-      "cover_url": "https://media.pitchfork.com/photos/6a88666e3ebe66b3901a13fb/16:9/w_1280,c_limit/MM-TDF-AP-0-GariAskew.JPG",
-      "embed_url": null
-    },
-    {
-      "source": "music",
       "source_name": "Consequence",
-      "title": "ENHYPEN on How THE SIN : BLISS Is a New Sound for a New Beginning",
-      "snippet": "ENHYPEN on how their latest EP THE SIN : BLISS stretched them artistically and personally.\nENHYPEN on How THE SIN : BLISS Is a New Sound for a New Beginning\nChristine Terrisse",
-      "url": "https://consequence.net/2026/08/enhypen-new-album-the-sin-bliss-interview/",
+      "title": "See the Setlist for Garth Brooks’ “Blame It All On My Roots” Arena Tour Kick-Off",
+      "snippet": "Brooks kicked off his arena return with two sold-out Indianapolis shows featuring deep cuts, fan favorites, and surprises from across his career.\nSee the Setlist for Garth Brooks&#8217; &#8220;Blame It All On My Roots&#8221; Arena Tour Kick-Off\nAlex Young",
+      "url": "https://consequence.net/2026/08/garth-brooks-blame-it-all-on-my-roots-arena-tour-setlist/",
       "genre": "",
-      "vibe_check": "",
-      "cover_url": "https://consequence.net/wp-content/uploads/2026/08/enhypen-interview-sin.png",
-      "embed_url": "https://www.youtube.com/embed/MT-4Bk1Lw8g"
-    },
-    {
-      "source": "music",
-      "source_name": "Consequence",
-      "title": "West End Motel and Matt Pike Honor Mastodon’s Brent Hinds with New Song “Return of the Kid”: Stream",
-      "snippet": "The track was released on the one-year anniversary of the Mastodon guitarist's tragic passing.\nWest End Motel and Matt Pike Honor Mastodon&#8217;s Brent Hinds with New Song &#8220;Return of the Kid&#8221;: Stream\nLangdon Hickman",
-      "url": "https://consequence.net/2026/08/west-end-motel-matt-pike-brent-hinds-return-of-the-kid/",
-      "genre": "",
-      "vibe_check": "",
-      "cover_url": "https://consequence.net/wp-content/uploads/2025/03/Brent-Hinds.jpg",
-      "embed_url": "https://www.youtube.com/embed/gfrVf226Nk8"
-    },
-    {
-      "source": "music",
-      "source_name": "Consequence",
-      "title": "Heavy Song of the Week: Down Return with Masterpiece “Blood Oath”",
-      "snippet": "Down return after over a decade with the genuinely perfect Sabbathian doom metal track \"Blood Oath.\"\nHeavy Song of the Week: Down Return with Masterpiece &#8220;Blood Oath&#8221;\nLangdon Hickman",
-      "url": "https://consequence.net/2026/08/heavy-song-of-the-week-down-blood-oath/",
-      "genre": "",
-      "vibe_check": "",
-      "cover_url": "https://consequence.net/wp-content/uploads/2026/08/down-band-photo.jpg",
-      "embed_url": "https://www.youtube.com/embed/551y9o4NEiE"
+      "vibe_check": "The electric thrill of 20,000 people singing every word they thought they'd forgotten.",
+      "cover_url": "https://consequence.net/wp-content/uploads/2026/08/Garth-Brooks-1.jpeg",
+      "embed_url": "https://www.youtube.com/embed/l5SQ2Z4SHq4"
     },
     {
       "source": "music",
       "source_name": "JazzTimes",
-      "title": "Editorial: MAGA Regime Wreaks Havoc on Arts & Culture, Jails Respected Musician",
-      "snippet": "Editor’s Note: Pritesh Walia was released not long after this editorial ran. We’ll continue to follow his story because it is not over, and there &#8230; Read More \"Editorial: MAGA Regime Wreaks Havoc on Arts &#038; Culture, Jails Respected Musician\"\nThe post Editorial: MAGA Regime Wreaks Havoc on A",
-      "url": "https://www.jazztimes.com/blog/editorial-maga-regime-wreaks-havoc-on-arts-culture-jails-respected-musician/",
+      "title": "Overdue Ovation: PRISM Saxophone Quartet",
+      "snippet": "J ust as a prism refracts and disperses beams of light into separate bands of color, PRISM Saxophone Quartet seeks to bend sound waves into &#8230; Read More \"Overdue Ovation: PRISM Saxophone Quartet\"\nThe post Overdue Ovation: PRISM Saxophone Quartet appeared first on JazzTimes.",
+      "url": "https://www.jazztimes.com/features/profiles/overdue-ovation-prism-saxophone-quartet/",
       "genre": "",
-      "vibe_check": "",
-      "cover_url": "https://www.jazztimes.com/wp-content/uploads/2026/08/images-2.jpeg",
-      "embed_url": null
-    },
-    {
-      "source": "music",
-      "source_name": "PopMatters",
-      "title": "Lee Scratch Perry Was at the Height of His Powers in 1973",
-      "snippet": "Lee Scratch Perry's Flashing Echo captures a seminal artist at the peak of his powers, just before those powers were transferred from one context to another.",
-      "url": "https://www.popmatters.com/lee-scratch-perry-flashing-echo",
-      "genre": "",
-      "vibe_check": "",
-      "cover_url": "https://www.popmatters.com/wp-content/uploads/2026/08/Lee-Scratch-Perry-Flashing-Echo-The-Jamaican-Upsetter-Singles-1973-Chapter-2-SP.webp",
-      "embed_url": null
-    },
-    {
-      "source": "music",
-      "source_name": "PopMatters",
-      "title": "Charli XCX Discovers the Antidote to Fame",
-      "snippet": "On Music, Fashion, Film, Charli XCX turns experimentation into self-deprecation, vindicating pop music's commercialism.",
-      "url": "https://www.popmatters.com/charli-xcx-music-fashion-2-2",
-      "genre": "",
-      "vibe_check": "",
-      "cover_url": "https://www.popmatters.com/wp-content/uploads/2026/07/Charli-XCX-Music-Fashion-Film-social.webp",
-      "embed_url": "https://www.youtube.com/embed/twLhSqabby0"
+      "vibe_check": "The sound of afternoon light splitting through a prism — precise, prismatic, and quietly dazzling.",
+      "cover_url": "https://www.jazztimes.com/wp-content/uploads/2026/08/MGL0218-PRISM-Quartet-scaled.jpg",
+      "embed_url": "https://www.youtube.com/embed/H3SlPtenuAE"
     }
   ],
   "global_silver_linings": [
     {
       "source": "good_news",
       "source_name": "Good News Network",
-      "title": "Your Weekly Horoscope – ‘Free Will Astrology’ by Rob Brezsny",
-      "url": "https://www.goodnewsnetwork.org/horoscope-from-rob-brezsnys-free-will-astrology-8-22-2026/",
-      "snippet": "Our partner Rob Brezsny, whose latest book is Astrology Is Real: Revelations from My Life as an Oracle, provides his weekly wisdom to enlighten our thinking and motivate our mood. Rob’s Free Will Astrology, is a syndicated weekly column appearing in over a hundred publications. He is also the author of Pronoia Is the Antidote for Paranoia: […] The post Your Weekly Horoscope – ‘Free Will Astrology’ by Rob Brezsny appeared first on Good News Network .",
-      "cover_url": "https://www.goodnewsnetwork.org/wp-content/uploads/2020/10/Freewill-Astrology-horoscope-logo.jpg",
-      "reason": "Sometimes the most hopeful thing we can do is pause, reflect, and consider the bigger picture of our lives — and a thoughtful horoscope column has been inviting people to do exactly that for decades. There's quiet comfort in any practice that encourages self-awareness and a sense of possibility."
+      "title": "‘Double Spiral’ Secret of Narwhal’s Twisted Tusk Revealed By High Tech X-Rays",
+      "url": "https://www.goodnewsnetwork.org/double-spiral-secret-of-narwhals-twisted-tusk-revealed-by-xray-tech/",
+      "snippet": "Hidden secrets of the narwhal’s twisted tusk have been revealed using the latest X-ray technology. Tusks of the species of whale native to the Arctic have long been the subject of myths—even being sold as ‘unicorn horns’ and believed to possess magical powers during the Middle Ages. Now, an international research team has solved the […] The post ‘Double Spiral’ Secret of Narwhal’s Twisted Tusk Revealed By High Tech X-Rays appeared first on Good News Network .",
+      "cover_url": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/08/Narwhals-in-ocean-Aarhus-University-SWNS.jpeg",
+      "reason": "Scientists have unlocked the hidden geometry inside one of nature's most mysterious structures, revealing that the narwhal's iconic tusk spirals in two directions at once — a reminder that the natural world still holds wonders we're only beginning to understand. Every discovery like this deepens our appreciation for the creatures we share the planet with."
+    },
+    {
+      "source": "good_news",
+      "source_name": "Upworthy",
+      "title": "A man called 911 but couldn’t speak, so his 5-year-old daughter heroically stepped in",
+      "url": "https://www.upworthy.com/5-year-old-calls-911-for-dad-ex1/",
+      "snippet": "\"Don't worry, Dad.\" The post A man called 911 but couldn’t speak, so his 5-year-old daughter heroically stepped in appeared first on Upworthy .",
+      "cover_url": "https://www.upworthy.com/wp-content/uploads/sites/2/2025/07/origin-325.jpg",
+      "reason": "A five-year-old calmly guided emergency services to her father when words failed him, proving that courage and presence of mind can live in the smallest of us. It's a quiet, powerful reminder of the instinct children have to show up for the people they love."
     }
   ],
   "discovery_articles": [
     {
       "source": "discovery",
-      "source_name": "Science News",
-      "title": "Mysteries of the commonplace",
-      "url": "https://www.sciencenews.org/article/ed-note-september-2026",
-      "snippet": "Editor in Chief Nancy Shute reviews new research in static electricity and other science revelations in our September magazine issue.",
-      "category": "science",
-      "cover_url": "https://www.sciencenews.org/wp-content/uploads/sites/2/2025/01/webfallback_dark.jpg",
-      "ferns_note": "Static electricity — the thing you've been casually blaming for bad hair days since childhood — turns out to harbor physics we still don't fully understand. There's something quietly humbling about science admitting the sock-and-carpet phenomenon isn't fully solved."
+      "source_name": "Colossal",
+      "title": "Estefania Ajcip’s Sculptural Paintings Unite the Memories of a Separated Family",
+      "url": "https://www.thisiscolossal.com/2026/08/estefania-ajcip-sculpture-paintings-folded-memories/",
+      "snippet": "Through vivid sculptural paintings, Estefania Ajcip peers in on the fractures families face when split apart. Do stories and artists like this matter to you? Become a Colossal Member today and support independent arts publishing for as little as $7 per month.",
+      "category": "history",
+      "cover_url": "https://www.thisiscolossal.com/wp-content/uploads/2026/08/ajcip-1.jpg",
+      "ferns_note": "Ajcip doesn't just paint separation — she builds it into the surface itself, letting texture carry the weight that words can't. There's something quietly devastating about art that insists on being felt before it's understood."
     }
   ],
   "featured_read": {
     "source": "reads",
     "source_name": "Nautilus",
-    "title": "A Peek Inside the Pompeii of Greece",
-    "url": "https://nautil.us/a-peek-inside-the-pompeii-of-greece-1284099/",
-    "snippet": "It’s a treasure trove of Minoan art and antiques The post A Peek Inside the Pompeii of Greece appeared first on Nautilus .",
-    "cover_url": "https://lede-admin.nautil.us/wp-content/uploads/sites/70/2026/08/Nield_HERO_96fc16.png"
+    "title": "How the Ancient Greeks Interpreted Their Dreams",
+    "url": "https://nautil.us/how-the-ancient-greeks-interpreted-their-dreams-1284046/",
+    "snippet": "Certain concepts such as metaphor may derive from early dream interpretation The post How the Ancient Greeks Interpreted Their Dreams appeared first on Nautilus .",
+    "cover_url": "https://lede-admin.nautil.us/wp-content/uploads/sites/70/2026/08/French_HERO_173669.png"
   },
   "reading_room": [
     {
       "source": "reads",
-      "source_name": "Longreads",
-      "title": "The Longreads Questionnaire, Featuring Jaya Saxena",
-      "url": "https://longreads.com/2026/08/20/questionnaire-jaya-saxena/",
-      "snippet": "The former Eater correspondent has a new home—and a full plate. Here, she talks about growing up in NYC, favorite meals, and memorable reads.",
-      "cover_url": "https://i0.wp.com/longreads.com/wp-content/uploads/2026/08/Questionnaire-Jaya-Saxena.png?fit=2400%2C1400&quality=80&ssl=1"
-    },
-    {
-      "source": "reads",
       "source_name": "Literary Hub",
-      "title": "Lit Hub Weekly: August 17 – 21, 2026",
-      "url": "https://lithub.com/lit-hub-weekly-august-17-21-2026/",
-      "snippet": "What Buffy the Vampire Slayer and Angel can teach us about grief, literature, and growing up. | Lit Hub TV Why the tragedy of Jason Arday reflects a rigged game for today’s Black scholars. | Lit Hub Politics How environmentalism",
-      "cover_url": "https://s26162.pcdn.co/wp-content/uploads/2026/08/chopin1.jpg"
+      "title": "Hello, Limerence",
+      "url": "https://lithub.com/hello-limerence/",
+      "snippet": "Nihao, New York I reluctantly fork out the exorbitant surcharge for my overweight luggage, whilst wondering what is the absolute limit to the weight a single plane can carry, and if the airlines take this into account when raking in",
+      "cover_url": "https://s26162.pcdn.co/wp-content/uploads/2026/07/hello-limerence.jpg"
     },
     {
       "source": "reads",
       "source_name": "3 Quarks Daily",
-      "title": "How do we model the future of work? It takes an AI village",
-      "url": "https://3quarksdaily.com/3quarksdaily/2026/08/how-do-we-model-the-future-of-work-it-takes-an-ai-village.html",
-      "snippet": "Christine Kozobarich at Asterisk: A little over a year ago, a group of researchers asked: What would happen if we created an AI society? If we gave different AI agents a shared goal, memory files, access to individual virtual computers, and the ability to communicate via a group chat, email, and Google Docs — what…",
+      "title": "The Philosophy Of Virginia Woolf’s ‘To the Lighthouse’",
+      "url": "https://3quarksdaily.com/3quarksdaily/2026/08/the-philosophy-of-virginia-woolfs-to-the-lighthouse-2.html",
+      "snippet": "Enjoying the content on 3QD? Help keep us going by donating now.",
       "cover_url": ""
     },
     {
       "source": "reads",
       "source_name": "Nautilus",
-      "title": "Dolphins Eavesdrop on Their Prey—and Each Other",
-      "url": "https://nautil.us/dolphins-eavesdrop-on-their-prey-and-each-other-1284095/",
-      "snippet": "They strategically choose when to whistle or click The post Dolphins Eavesdrop on Their Prey—and Each Other appeared first on Nautilus .",
-      "cover_url": "https://lede-admin.nautil.us/wp-content/uploads/sites/70/2026/08/Currie_HERO_28cccc.png"
+      "title": "The Secret Lives of Japanese Temple Frogs",
+      "url": "https://nautil.us/the-secret-lives-of-japanese-temple-frogs-1284039/",
+      "snippet": "Shrines and temples are urban amphibian hot spots The post The Secret Lives of Japanese Temple Frogs appeared first on Nautilus .",
+      "cover_url": "https://lede-admin.nautil.us/wp-content/uploads/sites/70/2026/08/Currie_HERO_07c29f.png"
     },
     {
       "source": "reads",
-      "source_name": "Longreads",
-      "title": "Bucking Expectations: A Conversation with Rachel Hartigan",
-      "url": "https://longreads.com/2026/08/18/bucking-expectations-rachel-hartigan/",
-      "snippet": "Oh, the places you'll go when you say yes.",
-      "cover_url": "https://i0.wp.com/longreads.com/wp-content/uploads/2026/08/Hartigan_D.png?fit=2400%2C1400&quality=80&ssl=1"
+      "source_name": "Literary Hub",
+      "title": "Jeff Jarvis on Mark Twain, America’s First Celebrity Author and Publisher",
+      "url": "https://lithub.com/jeff-jarvis-on-mark-twain-americas-first-celebrity-author-and-publisher/",
+      "snippet": "In the history of the invention of the typesetting machine and the consequent birth of mass media, Mark Twain is the Zelig of our tale, returning frequently as a typesetter in his brother’s ratty newspaper; as a tramp printer witnessing",
+      "cover_url": "https://s26162.pcdn.co/wp-content/uploads/2026/08/mark-twain-1.png"
+    },
+    {
+      "source": "reads",
+      "source_name": "3 Quarks Daily",
+      "title": "Sally Kohn: Why Economic Inequality Is the Biggest Threat to Democracy",
+      "url": "https://3quarksdaily.com/3quarksdaily/2026/08/sally-kohn-why-economic-inequality-is-the-biggest-threat-to-democracy.html",
+      "snippet": "﻿ Enjoying the content on 3QD? Help keep us going by donating now.",
+      "cover_url": ""
     }
   ],
   "garden_note": {
-    "note": "The dahlias are having their absolute moment right now in Zürich, their heavy heads nodding in the warm August dusk as the light softens to honey — go out and deadhead a few before the evening cools completely. Late summer here carries that bittersweet edge: the garden is lush and generous, yet you can just feel September waiting quietly in the wings.",
+    "note": "Late August in Zürich brings that particular golden weight to the morning air — the kind that makes you linger by the dahlias before the day insists on starting. First light arrives just after six, and the kitchen garden is heavy with the last real abundance of summer.",
     "in_season": [
-      "Dahlias in full bloom",
-      "Runner beans ready to pick",
-      "Sow autumn spinach now",
-      "Harvest ripening plums"
+      "Dahlias coming into their peak flush",
+      "Courgettes and climbing beans still cropping generously",
+      "Sweetcorn ready to harvest in the Mittelland plots",
+      "Deadheading and cutting back spent lavender"
     ],
-    "sky_tonight": "A waxing gibbous moon rises in the southeast as darkness falls — look for it glowing near the Aquarius constellation after 21:00.",
-    "sun_times": "First light crept in at 05:58 this morning, and the sun slips away by 20:27 tonight, with dusk lingering until nearly 21:00.",
+    "sky_tonight": "The waxing gibbous moon rises in the afternoon and will dominate the southeastern sky by evening — look for Saturn nearby in Aquarius, a steady golden point that won't twinkle.",
+    "sun_times": "First light at 06:00, sunrise at 06:31 this morning, and the day closes with sunset at 20:25 and dusk around 20:56.",
     "moon_label": "Waxing gibbous",
-    "illum_pct": 70,
-    "sun_range": "06:30–20:27"
+    "illum_pct": 75,
+    "sun_range": "06:31–20:25"
   },
   "puzzle": {
-    "kind": "trivia",
-    "label": "The Evening Trivia",
-    "prompt": "Who created the \"Metal Gear\" Series?\n\nGunpei Yokoi   ·   Hideo Kojima   ·   Hiroshi Yamauchi   ·   Shigeru Miyamoto",
-    "answer": "Hideo Kojima",
-    "hint": "Category: Entertainment: Video Games",
-    "source": "opentdb.com",
-    "source_id": "013e3832e535"
+    "kind": "anagram",
+    "label": "Fern's Morning Anagram",
+    "prompt": "Rearrange the letters of GREAVES to find something that spends its whole life reaching toward the light.",
+    "answer": "GRASSES",
+    "hint": "Think of the vast meadows that stirred Walt Whitman."
   },
   "previous_puzzle": {
-    "label": "Fern's Morning Riddle",
-    "prompt": "I reach for the sky, but clutch to the ground; sometimes I leave, but I am always around. What am I?",
-    "answer": "I am Tree"
+    "label": "The Evening Trivia",
+    "prompt": "Who created the \"Metal Gear\" Series?\n\nGunpei Yokoi   ·   Hideo Kojima   ·   Hiroshi Yamauchi   ·   Shigeru Miyamoto",
+    "answer": "Hideo Kojima"
   },
   "larder": {
-    "news": [],
-    "recipe": {}
+    "news": [
+      {
+        "source": "food",
+        "source_name": "The Kitchn",
+        "title": "The Tiny Tweak to Marcella Hazan's Famous Sauce I Always Do",
+        "url": "https://www.thekitchn.com/marcella-hazan-sauce-upgrade-23840153?utm_source=RSS&utm_medium=feed&utm_campaign=Category%2FChannel%3A+main",
+        "snippet": "No additional ingredients required. READ MORE...",
+        "cover_url": "",
+        "blurb": "A quiet, confident reminder that the best cooking secrets live not in extra ingredients, but in how you use what's already there."
+      },
+      {
+        "source": "food",
+        "source_name": "The Guardian",
+        "title": "Thomasina Miers’ recipes for spiced lamb-stuffed aubergine with aleppo chilli butter, and berry ripple ice-cream",
+        "url": "https://www.theguardian.com/food/2026/aug/18/spiced-lamb-stuffed-aubergine-aleppo-chilli-butter-recipe-thomasina-miers",
+        "snippet": "A meaty, Middle Eastern style stuffed vegetable feast finished off with an ice-cold berry dessert There’s something delightfully retro about stuffed vegetables. They take me back to Delia Smith’s iconic Summer Collection cookbook , which blew my tiny mind when it came out in my early teens. Too sheltered to know about the e rage that had inspired Delia, I delved into my mother’s vegetable crisper with reverence, stuffing courgettes, tomatoes and aubergines with a zeal that had escaped me at school.",
+        "cover_url": "https://i.guim.co.uk/img/media/f28016498c1aad5fa7a4247a2b47099f5f904bc0/0_2942_5216_4171/master/5216.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=f58a1fa0da7f5cd3c8e483098e1fa0a4",
+        "blurb": "Thomasina Miers brings warmth and a touch of Middle Eastern magic to the gloriously retro stuffed vegetable, then sends it off with a berry ripple bow — a feast worth lingering over."
+      },
+      {
+        "source": "food",
+        "source_name": "Saveur",
+        "title": "Black Raspberry Coffee Cake",
+        "url": "https://www.saveur.com/article/recipes/black-raspberry-coffee-cake/",
+        "snippet": "Photo: Murray Hall • Food Styling: Jason Schreiber Dark chocolate is the perfect foil for sweet-tart fruit in this simple bake. The post Black Raspberry Coffee Cake appeared first on Saveur .",
+        "cover_url": "https://www.saveur.com/uploads/2002/03/photo-murray-hall_food-styling-jason-schreiber_04-260730-MHALL-SAVEUR-BLACK-RASPBERRY-COFFEE-CAKE-009-1-scaled.jpg?auto=webp&width=1600&height=2000",
+        "blurb": "Dark chocolate and sweet-tart black raspberries tucked into a simple coffee cake: this is the kind of weekend bake that makes a slow morning feel like a small celebration."
+      }
+    ],
+    "recipe": {},
+    "seasonal_note": "Zürich's weekly markets — Bürkliplatz on Tuesdays and Saturdays especially — are flush right now with the brief, glorious overlap of late Randen (Swiss beetroot) and the first Zwetschgen plums, those dark, jammy little things that beg to be roasted with a knob of butter and served over Quark for a slow morning breakfast."
   },
   "fern_data": {
-    "greeting": "A Zettelkasten note-taking system and a buried Greek city have no obvious business sharing a newsletter — except that both are about the same compulsion: finding the hidden connections before everything turns to ash.",
-    "top_pick_title": "Links in the Lava"
+    "greeting": "Did the ancient Greeks lie awake parsing their dreams the way we parse our anxieties — or did the dream feel, to them, more like a letter that had actually been delivered? Today's edition has that question, plus a narwhal's tusk hiding a double spiral no one expected, and a root cellar's worth of harvest wisdom for the obsessively prepared.",
+    "top_pick_title": "Spiral Tusks & Borrowed Oracles"
   }
 }
