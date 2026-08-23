@@ -1,92 +1,78 @@
 {
-  "fetched_at": "2026-08-23T06:06:11.093948+02:00",
-  "is_am_email": true,
+  "fetched_at": "2026-08-23T16:45:32.527878+02:00",
+  "is_am_email": false,
   "audit_summary": {
-    "youtube_videos": 4,
+    "youtube_videos": 3,
     "themes": 3,
-    "music_articles": 3,
-    "good_news_articles": 2,
-    "discovery_articles": 1,
+    "music_articles": 4,
+    "good_news_articles": 1,
+    "discovery_articles": 0,
     "featured_read": 1,
     "reading_room": 5,
     "garden": 1,
     "puzzle": 1,
-    "larder": 3
+    "larder": 0
   },
   "themes": [
     {
-      "name": "Your Brain Called — It Has Notes",
-      "emoji": "🧠",
-      "tagline": "Smarter ways to read, think, and see things you've been staring at wrong this whole time.",
+      "name": "Creatures & Chaos",
+      "emoji": "🦅",
+      "tagline": "Nature's wildest experiments — from hook-beaked apex predators to the strange logic of evolution.",
       "items": [
         {
           "source": "youtube",
-          "video_id": "4yOm4kklKIA",
-          "title": "How to read papers effectively | Research reading technique",
+          "video_id": "qgstyLpsQIw",
+          "title": "Prehistoric Predators: The Bizarre Biology of Terror Birds",
+          "channel_id": "UC2J29LPhS9vMiWyYEqBRB0w",
+          "channel_title": "The Ancients",
+          "published_at": "2026-08-23T06:00:16Z",
+          "url": "https://www.youtube.com/watch?v=qgstyLpsQIw",
+          "duration_seconds": 2683,
+          "view_count": "2203",
+          "description": "What kind of predator needs no teeth to terrify its prey? The terror birds were enormous flightless hunters that ruled South America for millions of years, standing metres tall and built for a life of pursuit and slaughter.\n\nIn this episode, Tristan Hughes is joined by palaeontologist Dr Steve Brusatte to explore the world of the phorusrhacids. What were these extraordinary birds really like? How did they dominate an isolated South America after the extinction of the dinosaurs? And what ultimate",
+          "why_watch": "Palaeontologist Steve Brusatte joins the podcast to dig into the phorusrhacids — the giant, hook-beaked birds that dominated South American ecosystems for tens of millions of years without a single tooth. The conversation focuses on what their bone structure and fossil record actually tell us about how they hunted, rather than leaning on dramatized speculation. If you've ever wondered what apex predation looks like when it evolves in birds instead of mammals, this is a well-sourced, accessible answer.",
+          "is_wildcard": false
+        }
+      ]
+    },
+    {
+      "name": "Brain Architecture",
+      "emoji": "🧠",
+      "tagline": "How your mind actually stores, connects, and retrieves the world — and how to work with it, not against it.",
+      "items": [
+        {
+          "source": "youtube",
+          "video_id": "qic-4OTM9yI",
+          "title": "Mind mapping tutorial for students | Tips & Software",
           "channel_id": "UCR2uRTQ53V_egXKFflMMaaw",
           "channel_title": "Artem Kirsanov",
-          "published_at": "2021-10-09T14:17:06Z",
-          "url": "https://www.youtube.com/watch?v=4yOm4kklKIA",
-          "duration_seconds": 688,
-          "view_count": "46443",
-          "description": "=====\nMy name is Artem, I'm a neuroscience PhD student at Harvard University. \n🌎 Website and Social links: https://kirsanov.ai/\n📥 \"Receptive Field\" neuro-newsletter: https://artemkirsanov.substack.com/\n✨ Support me on Patreon to get access to Discord community: https://patreon.com/artemkirsanov\n=====\n\nIn this video I talk about how to approach reading a research article, how papers are structured, in what order to read and how to highlight them.\n\n🕒 OUTLINE:\n00:00 Introduction\n1:06 Wrong approach",
-          "why_watch": "Harvard neuroscience PhD student Artem Kirsanov breaks down how academic papers are actually structured and why reading them front-to-back is usually the wrong approach. His method — understanding what each section is designed to do before deciding how deeply to engage with it — is immediately transferable whether you're a researcher or a curious non-specialist.",
-          "is_wildcard": false
-        },
-        {
-          "source": "youtube",
-          "video_id": "i0mqdRGYgbU",
-          "title": "The Singularity Disc",
-          "channel_id": "UC6nSFpj9HTCZ5t-N3Rm3-HA",
-          "channel_title": "Vsauce",
-          "published_at": "2026-08-22T21:51:23Z",
-          "url": "https://www.youtube.com/watch?v=i0mqdRGYgbU",
-          "duration_seconds": 130,
-          "view_count": "242788",
-          "description": "Watch @SteveMould  talk about the design of the Singularity Disc: https://www.youtube.com/watch?v=ti2qiU_JTUQ\n\nGet your own: https://www.metmo.co.uk/collections/metmo-singularity",
-          "why_watch": "Vsauce's short showcase of the Singularity Disc is a 2-minute visual curiosity break — a precision-machined object that behaves in ways your eyes won't immediately trust. Think of it as an amuse-bouche: if it hooks you, Steve Mould's longer companion video dives into the physics behind why it moves the way it does.",
+          "published_at": "2021-09-18T18:58:58Z",
+          "url": "https://www.youtube.com/watch?v=qic-4OTM9yI",
+          "duration_seconds": 481,
+          "view_count": "40160",
+          "description": "=====\nMy name is Artem, I'm a neuroscience PhD student at Harvard University. \n🌎 Website and Social links: https://kirsanov.ai/\n📥 \"Receptive Field\" neuro-newsletter: https://artemkirsanov.substack.com/\n✨ Support me on Patreon to get access to Discord community: https://patreon.com/artemkirsanov\n=====\n\nIn this video I talk about what are mind maps, why they work and how to properly create one.\n\n🕒 OUTLINE:\n00:00 Introduction\n00:47 Why mind maps work\n02:49 What is a mind map?\n03:09 Rules for creati",
+          "why_watch": "Artem Kirsanov, a Harvard neuroscience PhD student, grounds mind mapping in how memory and association actually work in the brain — so the advice feels earned rather than productivity-guru generic. At just eight minutes, the video covers both the cognitive rationale and specific software recommendations without padding. Worth it if you've tried mind maps before and weren't sure you were using them in a way that actually sticks.",
           "is_wildcard": false
         }
       ]
     },
     {
-      "name": "Root Cellar Wisdom",
-      "emoji": "🫙",
-      "tagline": "Old-school preservation instincts for the modern gardener who refuses to let August go to waste.",
-      "items": [
-        {
-          "source": "youtube",
-          "video_id": "r1Gpw7t41bk",
-          "title": "How Smart Gardeners Make One Harvest Last All Year",
-          "channel_id": "UC9r61qohBg1qgGty4_WzojA",
-          "channel_title": "GrowVeg",
-          "published_at": "2026-08-22T14:45:15Z",
-          "url": "https://www.youtube.com/watch?v=r1Gpw7t41bk",
-          "duration_seconds": 923,
-          "view_count": "9896",
-          "description": "Enjoy a no-obligation, completely free trial of the Garden Planner here: \nhttps://www.GrowVeg.com/grow-planner-free\n\nAnd for your completely free abridged version of Ben's book, click here:\nhttps://www.growveg.com/grow-book-download\n\nFor our video on water bath canning, watch:\nhttps://youtu.be/LoSngtBcPhw\n\nHarvest season is upon us and it's time to conserve and preserve as much of our produce as possible. In this week's episode Ben demonstrates all we need to know to get started in pressure cann",
-          "why_watch": "GrowVeg walks through the practical hierarchy of preservation methods — what to freeze, what to ferment, what to dry, and in what order — so your summer harvest doesn't quietly rot in the crisper drawer. The focus is on matching the right technique to the right crop, which is the piece most preservation guides skip entirely.",
-          "is_wildcard": false
-        }
-      ]
-    },
-    {
-      "name": "Dispatches From Somewhere Else",
-      "emoji": "📡",
-      "tagline": "A slow Saturday morning in San Antonio — proof that local news is its own strange, comforting genre.",
+      "name": "Slow Down, You're Home",
+      "emoji": "🏡",
+      "tagline": "Unhurried moments, shared meals, and the radical act of just being somewhere together.",
       "items": [
         {
           "source": "youtube_trending",
-          "video_id": "ZzHLOafWGLg",
-          "title": "Good Morning San Antonio 9 a.m. Saturday : Aug 22, 2026",
-          "channel_id": "UCETE4rKzRRjqM0JaB7TlPpQ",
-          "channel_title": "KSAT 12",
-          "published_at": "2026-08-22T15:05:29Z",
-          "url": "https://www.youtube.com/watch?v=ZzHLOafWGLg",
-          "duration_seconds": 2355,
-          "view_count": "2251",
-          "description": "The KSAT 12 News Team provides a look at local, regional, statewide and national news events and the latest information on local traffic and weather issues.",
-          "why_watch": "This is a local Saturday morning newscast from San Antonio — the wildcard pick this week. Honestly, unless you're in the greater San Antonio area or tracking a specific regional story, your 39 minutes are better spent elsewhere; we're including it for completeness, not as a genuine recommendation.",
+          "video_id": "IkBoxY7NX7E",
+          "title": "Vlog: Seasons Resort | Cooking | Game Night | Family Time | Travel Vlog | Part 2",
+          "channel_id": "UC7K_GLs728ficG0jOOPqEkQ",
+          "channel_title": "Thabi M",
+          "published_at": "2026-08-23T07:00:06Z",
+          "url": "https://www.youtube.com/watch?v=IkBoxY7NX7E",
+          "duration_seconds": 2203,
+          "view_count": "1317",
+          "description": "Hey Faves 🌸 \n\nPlease spend time away with my family and I. \n\nI hope you will enjoy the vlog.\n\nPlease remember to Like, Share, Comment and Subscribe. \n\nSee you on the next one. \n\nXoxo❤️",
+          "why_watch": "A low-key family travel vlog from a resort stay — cooking together, a game night, and the kind of unhurried footage that's more about atmosphere than performance. With under 1,400 views, it has the intimate, unpolished feel of watching a friend's home video rather than a produced travel show. Best watched when you want something genuinely relaxed rather than aspirational.",
           "is_wildcard": true
         }
       ]
@@ -95,181 +81,145 @@
   "morning_soundtrack": [
     {
       "source": "music",
-      "source_name": "NPR Music",
-      "title": "Brennan Wedl explores heartache and unrequited love in self-titled album",
-      "snippet": "Americana singer-songwriter Brennan Wedl talks about her new self titled album, out August 21st.",
-      "url": "https://www.npr.org/2026/08/22/nx-s1-5935298/brennan-wedl-explores-heartache-and-unrequited-love-in-self-titled-album",
+      "source_name": "Pitchfork",
+      "title": "Big Thief Debut New Triple Album, Horsepower, Live in Nashville",
+      "snippet": "The 29-song album was performed in full at the Ryman Auditorium alongside special guests Lucinda Williams, Gillian Welch, Iris DeMent, and more",
+      "url": "https://pitchfork.com/story/big-thief-debut-new-triple-album-horsepower-live-in-nashville/",
       "genre": "",
-      "vibe_check": "Like reading old letters you never sent, alone at a kitchen table in the blue hour before dawn.",
-      "cover_url": "https://media.npr.org/include/images/facebook-default-wide-s1400-c85.jpg",
+      "vibe_check": "A pilgrimage to the altar of Americana, where 29 songs feel less like a tracklist and more like a long walk home through tall grass.",
+      "cover_url": "https://media.pitchfork.com/photos/6a8afc74a0fd1215650ce874/16:9/w_1280,c_limit/GettyImages-2281078650.jpg",
       "embed_url": null
     },
     {
       "source": "music",
       "source_name": "Consequence",
-      "title": "See the Setlist for Garth Brooks’ “Blame It All On My Roots” Arena Tour Kick-Off",
-      "snippet": "Brooks kicked off his arena return with two sold-out Indianapolis shows featuring deep cuts, fan favorites, and surprises from across his career.\nSee the Setlist for Garth Brooks&#8217; &#8220;Blame It All On My Roots&#8221; Arena Tour Kick-Off\nAlex Young",
-      "url": "https://consequence.net/2026/08/garth-brooks-blame-it-all-on-my-roots-arena-tour-setlist/",
+      "title": "Dolly Parton Avatar Performances in Development",
+      "snippet": "The country music icon said her avatar performances are in the early stages of development. \nDolly Parton Avatar Performances in Development\nTravis Bland",
+      "url": "https://consequence.net/2026/08/dolly-parton-avatar-performances-in-development/",
       "genre": "",
-      "vibe_check": "The electric thrill of 20,000 people singing every word they thought they'd forgotten.",
-      "cover_url": "https://consequence.net/wp-content/uploads/2026/08/Garth-Brooks-1.jpeg",
-      "embed_url": "https://www.youtube.com/embed/l5SQ2Z4SHq4"
+      "vibe_check": "The uncanny valley dressed in rhinestones, somewhere between nostalgia and a glitch in the honky-tonk matrix.",
+      "cover_url": "https://consequence.net/wp-content/uploads/2026/08/Dolly-Parton.jpg",
+      "embed_url": null
     },
     {
       "source": "music",
-      "source_name": "JazzTimes",
-      "title": "Overdue Ovation: PRISM Saxophone Quartet",
-      "snippet": "J ust as a prism refracts and disperses beams of light into separate bands of color, PRISM Saxophone Quartet seeks to bend sound waves into &#8230; Read More \"Overdue Ovation: PRISM Saxophone Quartet\"\nThe post Overdue Ovation: PRISM Saxophone Quartet appeared first on JazzTimes.",
-      "url": "https://www.jazztimes.com/features/profiles/overdue-ovation-prism-saxophone-quartet/",
+      "source_name": "Consequence",
+      "title": "Foo Fighters Play Rarities with Gustavo Dudamel and LA Philharmonic at One-Off Hollywood Bowl Show",
+      "snippet": "The blowout concert celebrated departing composer Gustavo Dudamel.\nFoo Fighters Play Rarities with Gustavo Dudamel and LA Philharmonic at One-Off Hollywood Bowl Show\nAlex Young",
+      "url": "https://consequence.net/2026/08/foo-fighters-la-philharmonic-concert-gustavo-dudamel/",
       "genre": "",
-      "vibe_check": "The sound of afternoon light splitting through a prism — precise, prismatic, and quietly dazzling.",
-      "cover_url": "https://www.jazztimes.com/wp-content/uploads/2026/08/MGL0218-PRISM-Quartet-scaled.jpg",
-      "embed_url": "https://www.youtube.com/embed/H3SlPtenuAE"
+      "vibe_check": "Stadium rock and symphony strings colliding like two freight trains in the best possible way, with the Hollywood Hills watching in stunned approval.",
+      "cover_url": "https://consequence.net/wp-content/uploads/2026/08/Foo-Fighters-LA-Philharmonic.jpeg",
+      "embed_url": "https://www.youtube.com/embed/V_tc4F78wOM"
+    },
+    {
+      "source": "music",
+      "source_name": "Consequence",
+      "title": "Kacey Musgraves Launches Lube, Hangs from Giant Disco Balls at Tour Kickoff",
+      "snippet": "The suggestive product launch arrived just days before Musgraves took the joke to arena scale in Chicago.\nKacey Musgraves Launches Lube, Hangs from Giant Disco Balls at Tour Kickoff\nAlex Krinsky",
+      "url": "https://consequence.net/2026/08/kacey-musgraves-sex-lube-disco-balls-tour-kickoff/",
+      "genre": "",
+      "vibe_check": "Sequined chaos energy at arena scale — the kind of night where the joke is the spectacle and the spectacle is the point.",
+      "cover_url": "https://consequence.net/wp-content/uploads/2026/08/Kacey-Musgraves-scaled.jpg",
+      "embed_url": null
     }
   ],
   "global_silver_linings": [
     {
       "source": "good_news",
       "source_name": "Good News Network",
-      "title": "‘Double Spiral’ Secret of Narwhal’s Twisted Tusk Revealed By High Tech X-Rays",
-      "url": "https://www.goodnewsnetwork.org/double-spiral-secret-of-narwhals-twisted-tusk-revealed-by-xray-tech/",
-      "snippet": "Hidden secrets of the narwhal’s twisted tusk have been revealed using the latest X-ray technology. Tusks of the species of whale native to the Arctic have long been the subject of myths—even being sold as ‘unicorn horns’ and believed to possess magical powers during the Middle Ages. Now, an international research team has solved the […] The post ‘Double Spiral’ Secret of Narwhal’s Twisted Tusk Revealed By High Tech X-Rays appeared first on Good News Network .",
-      "cover_url": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/08/Narwhals-in-ocean-Aarhus-University-SWNS.jpeg",
-      "reason": "Scientists have unlocked the hidden geometry inside one of nature's most mysterious structures, revealing that the narwhal's iconic tusk spirals in two directions at once — a reminder that the natural world still holds wonders we're only beginning to understand. Every discovery like this deepens our appreciation for the creatures we share the planet with."
-    },
-    {
-      "source": "good_news",
-      "source_name": "Upworthy",
-      "title": "A man called 911 but couldn’t speak, so his 5-year-old daughter heroically stepped in",
-      "url": "https://www.upworthy.com/5-year-old-calls-911-for-dad-ex1/",
-      "snippet": "\"Don't worry, Dad.\" The post A man called 911 but couldn’t speak, so his 5-year-old daughter heroically stepped in appeared first on Upworthy .",
-      "cover_url": "https://www.upworthy.com/wp-content/uploads/sites/2/2025/07/origin-325.jpg",
-      "reason": "A five-year-old calmly guided emergency services to her father when words failed him, proving that courage and presence of mind can live in the smallest of us. It's a quiet, powerful reminder of the instinct children have to show up for the people they love."
+      "title": "Good-Humored Scientists Create ‘OnlyMarms’ Page to Boost Marmot Conservation and Donations",
+      "url": "https://www.goodnewsnetwork.org/good-humored-scientists-create-onlymarms-page-to-boost-marmot-conservation-and-donations/",
+      "snippet": "Desperate times call for desperate measures. With traditional funding sources facing cuts, The Rocky Mountain Biological Laboratory, which has spent the last 65 years studying yellow-bellied marmots, had to get creative. That soon led the Colorado researchers to the internet, where marmot videos have amassed millions of likes, with one especially hilarious Tik Tok video […] The post Good-Humored Scientists Create ‘OnlyMarms’ Page to Boost Marmot Conservation and Donations appeared first on Good News Network .",
+      "cover_url": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/08/OnlyMarms-and-Daniel-Blumstein-via-UCLA.jpeg",
+      "reason": "A team of wildlife researchers is proving that conservation doesn't have to be dry or distant — by launching a playful, pun-named platform to draw public attention and funding to marmot protection. When scientists meet people where they are with warmth and wit, it opens doors that earnest appeals alone sometimes can't."
     }
   ],
-  "discovery_articles": [
-    {
-      "source": "discovery",
-      "source_name": "Colossal",
-      "title": "Estefania Ajcip’s Sculptural Paintings Unite the Memories of a Separated Family",
-      "url": "https://www.thisiscolossal.com/2026/08/estefania-ajcip-sculpture-paintings-folded-memories/",
-      "snippet": "Through vivid sculptural paintings, Estefania Ajcip peers in on the fractures families face when split apart. Do stories and artists like this matter to you? Become a Colossal Member today and support independent arts publishing for as little as $7 per month.",
-      "category": "history",
-      "cover_url": "https://www.thisiscolossal.com/wp-content/uploads/2026/08/ajcip-1.jpg",
-      "ferns_note": "Ajcip doesn't just paint separation — she builds it into the surface itself, letting texture carry the weight that words can't. There's something quietly devastating about art that insists on being felt before it's understood."
-    }
-  ],
+  "discovery_articles": [],
   "featured_read": {
     "source": "reads",
-    "source_name": "Nautilus",
-    "title": "How the Ancient Greeks Interpreted Their Dreams",
-    "url": "https://nautil.us/how-the-ancient-greeks-interpreted-their-dreams-1284046/",
-    "snippet": "Certain concepts such as metaphor may derive from early dream interpretation The post How the Ancient Greeks Interpreted Their Dreams appeared first on Nautilus .",
-    "cover_url": "https://lede-admin.nautil.us/wp-content/uploads/sites/70/2026/08/French_HERO_173669.png"
+    "source_name": "Literary Hub",
+    "title": "How Talking About Death Helps Us Live a Fuller Life",
+    "url": "https://lithub.com/how-talking-about-death-helps-us-live-a-fuller-life/",
+    "snippet": "The first time I realized I was going to die I was cutting out an obituary for a project for my 6th grade class. I was working on the living room floor, as my father slouched nearby on the brown",
+    "cover_url": "https://s26162.pcdn.co/wp-content/uploads/2026/08/max-ritvo.png"
   },
   "reading_room": [
     {
       "source": "reads",
-      "source_name": "Literary Hub",
-      "title": "Hello, Limerence",
-      "url": "https://lithub.com/hello-limerence/",
-      "snippet": "Nihao, New York I reluctantly fork out the exorbitant surcharge for my overweight luggage, whilst wondering what is the absolute limit to the weight a single plane can carry, and if the airlines take this into account when raking in",
-      "cover_url": "https://s26162.pcdn.co/wp-content/uploads/2026/07/hello-limerence.jpg"
-    },
-    {
-      "source": "reads",
       "source_name": "3 Quarks Daily",
-      "title": "The Philosophy Of Virginia Woolf’s ‘To the Lighthouse’",
-      "url": "https://3quarksdaily.com/3quarksdaily/2026/08/the-philosophy-of-virginia-woolfs-to-the-lighthouse-2.html",
+      "title": "Frank Beard (1949 – 2026) ZZ Top Drummer",
+      "url": "https://3quarksdaily.com/3quarksdaily/2026/08/frank-beard-1949-2026-zz-top-drummer.html",
       "snippet": "Enjoying the content on 3QD? Help keep us going by donating now.",
       "cover_url": ""
     },
     {
       "source": "reads",
-      "source_name": "Nautilus",
-      "title": "The Secret Lives of Japanese Temple Frogs",
-      "url": "https://nautil.us/the-secret-lives-of-japanese-temple-frogs-1284039/",
-      "snippet": "Shrines and temples are urban amphibian hot spots The post The Secret Lives of Japanese Temple Frogs appeared first on Nautilus .",
-      "cover_url": "https://lede-admin.nautil.us/wp-content/uploads/sites/70/2026/08/Currie_HERO_07c29f.png"
-    },
-    {
-      "source": "reads",
       "source_name": "Literary Hub",
-      "title": "Jeff Jarvis on Mark Twain, America’s First Celebrity Author and Publisher",
-      "url": "https://lithub.com/jeff-jarvis-on-mark-twain-americas-first-celebrity-author-and-publisher/",
-      "snippet": "In the history of the invention of the typesetting machine and the consequent birth of mass media, Mark Twain is the Zelig of our tale, returning frequently as a typesetter in his brother’s ratty newspaper; as a tramp printer witnessing",
-      "cover_url": "https://s26162.pcdn.co/wp-content/uploads/2026/08/mark-twain-1.png"
+      "title": "A Literary Haunting: What the Ghost of Sylvia Plath Taught Me About Grief",
+      "url": "https://lithub.com/a-literary-haunting-what-the-ghost-of-sylvia-plath-taught-me-about-grief/",
+      "snippet": "Before the ghost of Sylvia Plath haunted the yellow house on the bluff in my novel White Rabbit, she haunted me. I was a twenty-four-year-old graduate student plagued by the loss of my father’s second wife, a woman who had",
+      "cover_url": "https://s26162.pcdn.co/wp-content/uploads/2026/08/sylvia-plath.jpg"
     },
     {
       "source": "reads",
       "source_name": "3 Quarks Daily",
-      "title": "Sally Kohn: Why Economic Inequality Is the Biggest Threat to Democracy",
-      "url": "https://3quarksdaily.com/3quarksdaily/2026/08/sally-kohn-why-economic-inequality-is-the-biggest-threat-to-democracy.html",
-      "snippet": "﻿ Enjoying the content on 3QD? Help keep us going by donating now.",
+      "title": "Pauline Clayden (1922 – 2026) Ballet Dancer",
+      "url": "https://3quarksdaily.com/3quarksdaily/2026/08/pauline-clayden-1922-2026-ballet-dancer.html",
+      "snippet": "Enjoying the content on 3QD? Help keep us going by donating now.",
+      "cover_url": ""
+    },
+    {
+      "source": "reads",
+      "source_name": "Literary Hub",
+      "title": "Television to the Rescue! Camille Acker on the Craft Potential of TV",
+      "url": "https://lithub.com/television-to-the-rescue-camille-acker-on-the-craft-potential-of-tv/",
+      "snippet": "This first appeared in Lit Hub’s Craft of Writing newsletter—sign up here. I have always loved television, but as a kid, television was the “idiot box.” According to experts, this device could rot my brain, influence me to commit immoral acts, and",
+      "cover_url": "https://s26162.pcdn.co/wp-content/uploads/2026/08/Untitled-design-2026-08-20T145838.615.png"
+    },
+    {
+      "source": "reads",
+      "source_name": "3 Quarks Daily",
+      "title": "Laura Claridge: Emily Post",
+      "url": "https://3quarksdaily.com/3quarksdaily/2026/08/laura-claridge-emily-post.html",
+      "snippet": "Enjoying the content on 3QD? Help keep us going by donating now.",
       "cover_url": ""
     }
   ],
   "garden_note": {
-    "note": "Late August in Zürich brings that particular golden weight to the morning air — the kind that makes you linger by the dahlias before the day insists on starting. First light arrives just after six, and the kitchen garden is heavy with the last real abundance of summer.",
+    "note": "The dahlias are at their theatrical best right now, holding court in the fading warmth of a Zürich late-summer evening — cut a few stems before the light goes and they'll last beautifully on the table. There's a creeping golden tinge to the linden leaves already, that first whispered rumour of September.",
     "in_season": [
-      "Dahlias coming into their peak flush",
-      "Courgettes and climbing beans still cropping generously",
-      "Sweetcorn ready to harvest in the Mittelland plots",
-      "Deadheading and cutting back spent lavender"
+      "Dahlias in full bloom",
+      "Runner beans to harvest daily",
+      "Early apples ripening (Klarapfel, Gravensteiner)",
+      "Sow winter spinach and lamb's lettuce"
     ],
-    "sky_tonight": "The waxing gibbous moon rises in the afternoon and will dominate the southeastern sky by evening — look for Saturn nearby in Aquarius, a steady golden point that won't twinkle.",
-    "sun_times": "First light at 06:00, sunrise at 06:31 this morning, and the day closes with sunset at 20:25 and dusk around 20:56.",
+    "sky_tonight": "The waxing gibbous moon rises in the southeast as dusk settles — bright enough to cast soft shadows; look just above it for Saturn, gleaming steadily in Pisces.",
+    "sun_times": "The sun slips away at 20:25 tonight, with dusk lingering gently until around 20:56.",
     "moon_label": "Waxing gibbous",
-    "illum_pct": 75,
+    "illum_pct": 79,
     "sun_range": "06:31–20:25"
   },
   "puzzle": {
-    "kind": "anagram",
-    "label": "Fern's Morning Anagram",
-    "prompt": "Rearrange the letters of GREAVES to find something that spends its whole life reaching toward the light.",
-    "answer": "GRASSES",
-    "hint": "Think of the vast meadows that stirred Walt Whitman."
+    "kind": "riddle",
+    "label": "Fern's Morning Riddle",
+    "prompt": "What has a foot on each side and one in the middle?",
+    "answer": "A yardstick",
+    "hint": "",
+    "source": "riddles.com",
+    "source_id": "Riddle-1376"
   },
   "previous_puzzle": {
-    "label": "The Evening Trivia",
-    "prompt": "Who created the \"Metal Gear\" Series?\n\nGunpei Yokoi   ·   Hideo Kojima   ·   Hiroshi Yamauchi   ·   Shigeru Miyamoto",
-    "answer": "Hideo Kojima"
+    "label": "Fern's Morning Anagram",
+    "prompt": "Rearrange the letters of GREAVES to find something that spends its whole life reaching toward the light.",
+    "answer": "GRASSES"
   },
   "larder": {
-    "news": [
-      {
-        "source": "food",
-        "source_name": "The Kitchn",
-        "title": "The Tiny Tweak to Marcella Hazan's Famous Sauce I Always Do",
-        "url": "https://www.thekitchn.com/marcella-hazan-sauce-upgrade-23840153?utm_source=RSS&utm_medium=feed&utm_campaign=Category%2FChannel%3A+main",
-        "snippet": "No additional ingredients required. READ MORE...",
-        "cover_url": "",
-        "blurb": "A quiet, confident reminder that the best cooking secrets live not in extra ingredients, but in how you use what's already there."
-      },
-      {
-        "source": "food",
-        "source_name": "The Guardian",
-        "title": "Thomasina Miers’ recipes for spiced lamb-stuffed aubergine with aleppo chilli butter, and berry ripple ice-cream",
-        "url": "https://www.theguardian.com/food/2026/aug/18/spiced-lamb-stuffed-aubergine-aleppo-chilli-butter-recipe-thomasina-miers",
-        "snippet": "A meaty, Middle Eastern style stuffed vegetable feast finished off with an ice-cold berry dessert There’s something delightfully retro about stuffed vegetables. They take me back to Delia Smith’s iconic Summer Collection cookbook , which blew my tiny mind when it came out in my early teens. Too sheltered to know about the e rage that had inspired Delia, I delved into my mother’s vegetable crisper with reverence, stuffing courgettes, tomatoes and aubergines with a zeal that had escaped me at school.",
-        "cover_url": "https://i.guim.co.uk/img/media/f28016498c1aad5fa7a4247a2b47099f5f904bc0/0_2942_5216_4171/master/5216.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=f58a1fa0da7f5cd3c8e483098e1fa0a4",
-        "blurb": "Thomasina Miers brings warmth and a touch of Middle Eastern magic to the gloriously retro stuffed vegetable, then sends it off with a berry ripple bow — a feast worth lingering over."
-      },
-      {
-        "source": "food",
-        "source_name": "Saveur",
-        "title": "Black Raspberry Coffee Cake",
-        "url": "https://www.saveur.com/article/recipes/black-raspberry-coffee-cake/",
-        "snippet": "Photo: Murray Hall • Food Styling: Jason Schreiber Dark chocolate is the perfect foil for sweet-tart fruit in this simple bake. The post Black Raspberry Coffee Cake appeared first on Saveur .",
-        "cover_url": "https://www.saveur.com/uploads/2002/03/photo-murray-hall_food-styling-jason-schreiber_04-260730-MHALL-SAVEUR-BLACK-RASPBERRY-COFFEE-CAKE-009-1-scaled.jpg?auto=webp&width=1600&height=2000",
-        "blurb": "Dark chocolate and sweet-tart black raspberries tucked into a simple coffee cake: this is the kind of weekend bake that makes a slow morning feel like a small celebration."
-      }
-    ],
-    "recipe": {},
-    "seasonal_note": "Zürich's weekly markets — Bürkliplatz on Tuesdays and Saturdays especially — are flush right now with the brief, glorious overlap of late Randen (Swiss beetroot) and the first Zwetschgen plums, those dark, jammy little things that beg to be roasted with a knob of butter and served over Quark for a slow morning breakfast."
+    "news": [],
+    "recipe": {}
   },
   "fern_data": {
-    "greeting": "Did the ancient Greeks lie awake parsing their dreams the way we parse our anxieties — or did the dream feel, to them, more like a letter that had actually been delivered? Today's edition has that question, plus a narwhal's tusk hiding a double spiral no one expected, and a root cellar's worth of harvest wisdom for the obsessively prepared.",
-    "top_pick_title": "Spiral Tusks & Borrowed Oracles"
+    "greeting": "What would it change if you talked about death the way scientists are talking about marmots — openly, a little irreverently, with genuine stakes? Tonight's edition holds that question, plus terror birds with hollow bones built for ambush and Big Thief debuting a triple album live in Nashville.",
+    "top_pick_title": "Predators, Marmots & Last Things"
   }
 }
