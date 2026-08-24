@@ -1,78 +1,78 @@
 {
-  "fetched_at": "2026-08-23T16:45:32.527878+02:00",
-  "is_am_email": false,
+  "fetched_at": "2026-08-24T06:11:03.609665+02:00",
+  "is_am_email": true,
   "audit_summary": {
     "youtube_videos": 3,
     "themes": 3,
-    "music_articles": 4,
-    "good_news_articles": 1,
+    "music_articles": 2,
+    "good_news_articles": 3,
     "discovery_articles": 0,
     "featured_read": 1,
     "reading_room": 5,
     "garden": 1,
     "puzzle": 1,
-    "larder": 0
+    "larder": 2
   },
   "themes": [
     {
-      "name": "Creatures & Chaos",
-      "emoji": "🦅",
-      "tagline": "Nature's wildest experiments — from hook-beaked apex predators to the strange logic of evolution.",
+      "name": "Spaces Worth Saving",
+      "emoji": "🏚️",
+      "tagline": "The slow, satisfying art of bringing forgotten places back to life.",
       "items": [
         {
           "source": "youtube",
-          "video_id": "qgstyLpsQIw",
-          "title": "Prehistoric Predators: The Bizarre Biology of Terror Birds",
-          "channel_id": "UC2J29LPhS9vMiWyYEqBRB0w",
-          "channel_title": "The Ancients",
-          "published_at": "2026-08-23T06:00:16Z",
-          "url": "https://www.youtube.com/watch?v=qgstyLpsQIw",
-          "duration_seconds": 2683,
-          "view_count": "2203",
-          "description": "What kind of predator needs no teeth to terrify its prey? The terror birds were enormous flightless hunters that ruled South America for millions of years, standing metres tall and built for a life of pursuit and slaughter.\n\nIn this episode, Tristan Hughes is joined by palaeontologist Dr Steve Brusatte to explore the world of the phorusrhacids. What were these extraordinary birds really like? How did they dominate an isolated South America after the extinction of the dinosaurs? And what ultimate",
-          "why_watch": "Palaeontologist Steve Brusatte joins the podcast to dig into the phorusrhacids — the giant, hook-beaked birds that dominated South American ecosystems for tens of millions of years without a single tooth. The conversation focuses on what their bone structure and fossil record actually tell us about how they hunted, rather than leaning on dramatized speculation. If you've ever wondered what apex predation looks like when it evolves in birds instead of mammals, this is a well-sourced, accessible answer.",
+          "video_id": "jRoS7DH8s4I",
+          "title": "A Farmhouse Renovation That Left Us Speechless",
+          "channel_id": "UCEqU-Ts-hxmpnlWgRMgd2MQ",
+          "channel_title": "How To Renovate A Chateau",
+          "published_at": "2026-08-23T18:30:06Z",
+          "url": "https://www.youtube.com/watch?v=jRoS7DH8s4I",
+          "duration_seconds": 1344,
+          "view_count": "38305",
+          "description": "AD: https://www.squarespace.com/howtorenovateachateau to save 10% off your first purchase of a website or domain using code HOWTORENOVATEACHATEAU \nCheck out the FOREO FAQ 202 LED Face Mask and their amazing deals here: https://foreo.se/vJ0sN. Don't forget to use my code RENOCHAT30 for an extra 30% off most products, stackable with sale items too! The 30% discount code is valid for a limited time only, after which the discount will drop to 10%.\n\nCheck out Tom's Felder Alpin Lodge here: https://ww",
+          "why_watch": "This channel documents the hands-on restoration of a French château, and this episode delivers the satisfying before/after reveal that renovation content lives and dies by. At 22 minutes it's long enough to show real process rather than just highlight cuts. If you're drawn to old buildings, craft, or the particular chaos of ambitious DIY projects, this is comfortable, unhurried viewing.",
           "is_wildcard": false
         }
       ]
     },
     {
       "name": "Brain Architecture",
-      "emoji": "🧠",
-      "tagline": "How your mind actually stores, connects, and retrieves the world — and how to work with it, not against it.",
+      "emoji": "🗂️",
+      "tagline": "How you organize your thoughts might be the most important system you ever build.",
       "items": [
         {
           "source": "youtube",
-          "video_id": "qic-4OTM9yI",
-          "title": "Mind mapping tutorial for students | Tips & Software",
+          "video_id": "4MxI68kg8to",
+          "title": "How to choose a note-taking app | Zettelkasten | Notion vs Roam vs Obsidian",
           "channel_id": "UCR2uRTQ53V_egXKFflMMaaw",
           "channel_title": "Artem Kirsanov",
-          "published_at": "2021-09-18T18:58:58Z",
-          "url": "https://www.youtube.com/watch?v=qic-4OTM9yI",
-          "duration_seconds": 481,
-          "view_count": "40160",
-          "description": "=====\nMy name is Artem, I'm a neuroscience PhD student at Harvard University. \n🌎 Website and Social links: https://kirsanov.ai/\n📥 \"Receptive Field\" neuro-newsletter: https://artemkirsanov.substack.com/\n✨ Support me on Patreon to get access to Discord community: https://patreon.com/artemkirsanov\n=====\n\nIn this video I talk about what are mind maps, why they work and how to properly create one.\n\n🕒 OUTLINE:\n00:00 Introduction\n00:47 Why mind maps work\n02:49 What is a mind map?\n03:09 Rules for creati",
-          "why_watch": "Artem Kirsanov, a Harvard neuroscience PhD student, grounds mind mapping in how memory and association actually work in the brain — so the advice feels earned rather than productivity-guru generic. At just eight minutes, the video covers both the cognitive rationale and specific software recommendations without padding. Worth it if you've tried mind maps before and weren't sure you were using them in a way that actually sticks.",
+          "published_at": "2021-09-10T18:19:17Z",
+          "url": "https://www.youtube.com/watch?v=4MxI68kg8to",
+          "duration_seconds": 644,
+          "view_count": "52406",
+          "description": "=====\nMy name is Artem, I'm a neuroscience PhD student at Harvard University. \n🌎 Website and Social links: https://kirsanov.ai/\n📥 \"Receptive Field\" neuro-newsletter: https://artemkirsanov.substack.com/\n✨ Support me on Patreon to get access to Discord community: https://patreon.com/artemkirsanov\n=====\n\nIn this video I discuss most popular applications for Zettelkasten note-taking, what I recommend to get started and how to approach any new application that might come out in the future \n\n🕒 OUTLINE",
+          "why_watch": "A Harvard neuroscience PhD student walks through Notion, Roam, and Obsidian specifically through the lens of Zettelkasten — the linked-note method borrowed from prolific scholar Niklas Luhmann. At under 11 minutes, it skips the app-review fluff and focuses on which tool's architecture actually matches how networked thinking works. Useful if you've tried these apps and still felt like something wasn't clicking.",
           "is_wildcard": false
         }
       ]
     },
     {
-      "name": "Slow Down, You're Home",
-      "emoji": "🏡",
-      "tagline": "Unhurried moments, shared meals, and the radical act of just being somewhere together.",
+      "name": "Quietly Somewhere Else",
+      "emoji": "🌊",
+      "tagline": "No itinerary, no hustle — just one person, a new city, and unhurried curiosity.",
       "items": [
         {
           "source": "youtube_trending",
-          "video_id": "IkBoxY7NX7E",
-          "title": "Vlog: Seasons Resort | Cooking | Game Night | Family Time | Travel Vlog | Part 2",
-          "channel_id": "UC7K_GLs728ficG0jOOPqEkQ",
-          "channel_title": "Thabi M",
-          "published_at": "2026-08-23T07:00:06Z",
-          "url": "https://www.youtube.com/watch?v=IkBoxY7NX7E",
-          "duration_seconds": 2203,
-          "view_count": "1317",
-          "description": "Hey Faves 🌸 \n\nPlease spend time away with my family and I. \n\nI hope you will enjoy the vlog.\n\nPlease remember to Like, Share, Comment and Subscribe. \n\nSee you on the next one. \n\nXoxo❤️",
-          "why_watch": "A low-key family travel vlog from a resort stay — cooking together, a game night, and the kind of unhurried footage that's more about atmosphere than performance. With under 1,400 views, it has the intimate, unpolished feel of watching a friend's home video rather than a produced travel show. Best watched when you want something genuinely relaxed rather than aspirational.",
+          "video_id": "vmfIUpFiuOg",
+          "title": "Solo Trip: Puerto Vallarta Diary | Travel Vlog PT 2",
+          "channel_id": "UCwEeQlVlvyPltiEUIMpQv6Q",
+          "channel_title": "Dr. Maylin U.",
+          "published_at": "2026-08-23T17:17:18Z",
+          "url": "https://www.youtube.com/watch?v=vmfIUpFiuOg",
+          "duration_seconds": 669,
+          "view_count": "6279",
+          "description": "Independent Pretty Girli Cozy Solo Living; regular girlie cozy vibes & content 🩷💕💞 \n\n❤️Business: ipgg@geeworkstx.org\n🩵Instagram: @maylin_dayy\n💜Ticktock: @dr.maylin",
+          "why_watch": "A low-key solo travel diary from Puerto Vallarta shot with a point-of-view that's more 'quiet day wandering' than 'look at this resort.' With just over 6,000 views, it hasn't been algorithmically smoothed into a highlight reel, which makes it a genuinely useful reference if you're planning a solo trip and want a realistic sense of pace and atmosphere. Think of it as borrowing a friend's trip notes rather than watching a tourism promo.",
           "is_wildcard": true
         }
       ]
@@ -81,46 +81,24 @@
   "morning_soundtrack": [
     {
       "source": "music",
-      "source_name": "Pitchfork",
-      "title": "Big Thief Debut New Triple Album, Horsepower, Live in Nashville",
-      "snippet": "The 29-song album was performed in full at the Ryman Auditorium alongside special guests Lucinda Williams, Gillian Welch, Iris DeMent, and more",
-      "url": "https://pitchfork.com/story/big-thief-debut-new-triple-album-horsepower-live-in-nashville/",
+      "source_name": "Stereogum",
+      "title": "Big Thief Debut Surprise New Triple Album Horsepower With Special Guests At The Ryman",
+      "snippet": "Adrianne Lenker wasted no time telling 2,400 Big Thief fans that this was not, in fact, the show they expected to see. “We have a special night for you,” she said as Big Thief took seats around a large wooden table onstage, then quipped: “If you had hopes of hearing songs you know, those can be disc",
+      "url": "https://stereogum.com/2509159/big-thief-debut-surprise-new-triple-album-horsepower-with-special-guests-at-the-ryman/reviews/concert-review/",
       "genre": "",
-      "vibe_check": "A pilgrimage to the altar of Americana, where 29 songs feel less like a tracklist and more like a long walk home through tall grass.",
-      "cover_url": "https://media.pitchfork.com/photos/6a8afc74a0fd1215650ce874/16:9/w_1280,c_limit/GettyImages-2281078650.jpg",
+      "vibe_check": "A candlelit gathering around a weathered table where the songs feel like secrets being told for the first time.",
+      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/08/big-thief-ryman1.jpg",
       "embed_url": null
     },
     {
       "source": "music",
       "source_name": "Consequence",
-      "title": "Dolly Parton Avatar Performances in Development",
-      "snippet": "The country music icon said her avatar performances are in the early stages of development. \nDolly Parton Avatar Performances in Development\nTravis Bland",
-      "url": "https://consequence.net/2026/08/dolly-parton-avatar-performances-in-development/",
+      "title": "Big Thief Play Setlist Made Entirely of Upcoming Triple Album, Horsepower",
+      "snippet": "The 29-song set featured guest spots by Americana luminaries such as Gillian Welch, Lucinda Williams, and Iris DeMent.\nBig Thief Play Setlist Made Entirely of Upcoming Triple Album, Horsepower\nTravis Bland",
+      "url": "https://consequence.net/2026/08/big-thief-horsepower-setlist/",
       "genre": "",
-      "vibe_check": "The uncanny valley dressed in rhinestones, somewhere between nostalgia and a glitch in the honky-tonk matrix.",
-      "cover_url": "https://consequence.net/wp-content/uploads/2026/08/Dolly-Parton.jpg",
-      "embed_url": null
-    },
-    {
-      "source": "music",
-      "source_name": "Consequence",
-      "title": "Foo Fighters Play Rarities with Gustavo Dudamel and LA Philharmonic at One-Off Hollywood Bowl Show",
-      "snippet": "The blowout concert celebrated departing composer Gustavo Dudamel.\nFoo Fighters Play Rarities with Gustavo Dudamel and LA Philharmonic at One-Off Hollywood Bowl Show\nAlex Young",
-      "url": "https://consequence.net/2026/08/foo-fighters-la-philharmonic-concert-gustavo-dudamel/",
-      "genre": "",
-      "vibe_check": "Stadium rock and symphony strings colliding like two freight trains in the best possible way, with the Hollywood Hills watching in stunned approval.",
-      "cover_url": "https://consequence.net/wp-content/uploads/2026/08/Foo-Fighters-LA-Philharmonic.jpeg",
-      "embed_url": "https://www.youtube.com/embed/V_tc4F78wOM"
-    },
-    {
-      "source": "music",
-      "source_name": "Consequence",
-      "title": "Kacey Musgraves Launches Lube, Hangs from Giant Disco Balls at Tour Kickoff",
-      "snippet": "The suggestive product launch arrived just days before Musgraves took the joke to arena scale in Chicago.\nKacey Musgraves Launches Lube, Hangs from Giant Disco Balls at Tour Kickoff\nAlex Krinsky",
-      "url": "https://consequence.net/2026/08/kacey-musgraves-sex-lube-disco-balls-tour-kickoff/",
-      "genre": "",
-      "vibe_check": "Sequined chaos energy at arena scale — the kind of night where the joke is the spectacle and the spectacle is the point.",
-      "cover_url": "https://consequence.net/wp-content/uploads/2026/08/Kacey-Musgraves-scaled.jpg",
+      "vibe_check": "Three generations of Americana voices converging like rivers into something vast and unhurried.",
+      "cover_url": "https://consequence.net/wp-content/uploads/2026/08/Big-Thief.jpg",
       "embed_url": null
     }
   ],
@@ -128,98 +106,134 @@
     {
       "source": "good_news",
       "source_name": "Good News Network",
-      "title": "Good-Humored Scientists Create ‘OnlyMarms’ Page to Boost Marmot Conservation and Donations",
-      "url": "https://www.goodnewsnetwork.org/good-humored-scientists-create-onlymarms-page-to-boost-marmot-conservation-and-donations/",
-      "snippet": "Desperate times call for desperate measures. With traditional funding sources facing cuts, The Rocky Mountain Biological Laboratory, which has spent the last 65 years studying yellow-bellied marmots, had to get creative. That soon led the Colorado researchers to the internet, where marmot videos have amassed millions of likes, with one especially hilarious Tik Tok video […] The post Good-Humored Scientists Create ‘OnlyMarms’ Page to Boost Marmot Conservation and Donations appeared first on Good News Network .",
-      "cover_url": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/08/OnlyMarms-and-Daniel-Blumstein-via-UCLA.jpeg",
-      "reason": "A team of wildlife researchers is proving that conservation doesn't have to be dry or distant — by launching a playful, pun-named platform to draw public attention and funding to marmot protection. When scientists meet people where they are with warmth and wit, it opens doors that earnest appeals alone sometimes can't."
+      "title": "Ethiopian Farmers Save Thousands by Switching to Solar Irrigation–While Cutting Emissions",
+      "url": "https://www.goodnewsnetwork.org/ethiopian-farmers-save-thousands-by-switching-to-solar-irrigation/",
+      "snippet": "Farmers in Ethiopia are slashing their growing costs, increasing food production, and protecting the environment thanks to solar-powered irrigation systems introduced through the Nature-based Solutions for Sustainable and Inclusive Development program led by the international nonprofit Farm Africa. In a country famous for its “13 months of sunshine”, Ethiopia has enormous potential to harness solar […] The post Ethiopian Farmers Save Thousands by Switching to Solar Irrigation–While Cutting Emissions appeared first on Good News Network .",
+      "cover_url": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/08/Solar-irrigation-by-Farm-Africa-released.jpeg",
+      "reason": "Ethiopian farmers are proving that sustainable agriculture and economic relief can go hand in hand, using solar-powered irrigation to protect their livelihoods while reducing their carbon footprint. It's a grounded, real-world example of clean energy making a tangible difference for the people who need it most."
+    },
+    {
+      "source": "good_news",
+      "source_name": "Upworthy",
+      "title": "I showed my Gen Z kids ‘Dead Poets Society’ and their angry reactions to it floored me",
+      "url": "https://www.upworthy.com/my-gen-z-kids-surprising-reaction-to-dead-poets-society-ex1/",
+      "snippet": "\"Inspiring\" apparently means different things to Gen X and Gen Z. The post I showed my Gen Z kids ‘Dead Poets Society’ and their angry reactions to it floored me appeared first on Upworthy .",
+      "cover_url": "https://www.upworthy.com/wp-content/uploads/sites/2/2025/07/origin-145.jpg",
+      "reason": "Young people engaging passionately — even angrily — with a decades-old film about free thought and conformity is a reminder that the next generation is paying close attention to the world they're inheriting. That kind of critical empathy is exactly what gives cause for optimism."
+    },
+    {
+      "source": "good_news",
+      "source_name": "The Optimist Daily",
+      "title": "Student Makers: teen volunteers are teaching STEM across three continents",
+      "url": "https://www.optimistdaily.com/2026/08/student-makers-teen-volunteers-are-teaching-stem-across-three-continents/",
+      "snippet": "BY THE OPTIMIST DAILY EDITORIAL TEAM In 2022, a group of high schoolers designed 150 LEGO-inspired airplane kits, 3D-printed them one by one, assembled them by hand, and shipped them to a school in Kenya. How is that for a nonprofit origin story? Student Makers was founded in California in 2019 and got its 501(c)(3) […] The post Student Makers: teen volunteers are teaching STEM across three continents first appeared on The Optimist Daily: Making Solutions the News .",
+      "cover_url": "https://www.optimistdaily.com/wp-content/uploads/E4FFDC9C-7916-4464-8326-9CD9120B7732_1_105_c.jpeg",
+      "reason": "Teenage volunteers crossing continents to share STEM knowledge with peers shows that curiosity and generosity don't need a diploma to make a real impact. These young makers are quietly building a more connected, skilled world from the ground up."
     }
   ],
   "discovery_articles": [],
   "featured_read": {
     "source": "reads",
     "source_name": "Literary Hub",
-    "title": "How Talking About Death Helps Us Live a Fuller Life",
-    "url": "https://lithub.com/how-talking-about-death-helps-us-live-a-fuller-life/",
-    "snippet": "The first time I realized I was going to die I was cutting out an obituary for a project for my 6th grade class. I was working on the living room floor, as my father slouched nearby on the brown",
-    "cover_url": "https://s26162.pcdn.co/wp-content/uploads/2026/08/max-ritvo.png"
+    "title": "What Should You Read Next? Here Are the Best Reviewed Books of the Week",
+    "url": "https://lithub.com/what-should-you-read-next-here-are-the-best-reviewed-books-of-the-week-12/",
+    "snippet": "Anjet Daanje’s The Song of Stork and Dromedary, Joby Warrick’s The Jackal, and Dorthe Nors’ Range all feature among the best reviewed books of the week. Brought to you by Book Marks, Lit Hub’s home for book reviews. * Fiction 1.",
+    "cover_url": "https://s26162.pcdn.co/wp-content/uploads/2026/08/the-jackal-9781668070550_hr.jpg"
   },
   "reading_room": [
     {
       "source": "reads",
       "source_name": "3 Quarks Daily",
-      "title": "Frank Beard (1949 – 2026) ZZ Top Drummer",
-      "url": "https://3quarksdaily.com/3quarksdaily/2026/08/frank-beard-1949-2026-zz-top-drummer.html",
-      "snippet": "Enjoying the content on 3QD? Help keep us going by donating now.",
+      "title": "City of Sweat",
+      "url": "https://3quarksdaily.com/3quarksdaily/2026/08/city-of-sweat.html",
+      "snippet": "Aruna Chandrasekhar in Equator: For anyone maintaining an extreme weather checklist, Mumbai’s got it all. We have catastrophic urban flooding, with every monsoon bringing old and new horrors: landslides killing dozens, people wading miles in waist-deep water in the dark with only phone torches to guide them home. In winter, Mumbai now clocks bad air…",
       "cover_url": ""
     },
     {
       "source": "reads",
       "source_name": "Literary Hub",
-      "title": "A Literary Haunting: What the Ghost of Sylvia Plath Taught Me About Grief",
-      "url": "https://lithub.com/a-literary-haunting-what-the-ghost-of-sylvia-plath-taught-me-about-grief/",
-      "snippet": "Before the ghost of Sylvia Plath haunted the yellow house on the bluff in my novel White Rabbit, she haunted me. I was a twenty-four-year-old graduate student plagued by the loss of my father’s second wife, a woman who had",
-      "cover_url": "https://s26162.pcdn.co/wp-content/uploads/2026/08/sylvia-plath.jpg"
+      "title": "Ways of Connecting: On Writing That Marries the Psychological, the Personal and the Political",
+      "url": "https://lithub.com/ways-of-connecting-on-writing-that-marries-the-psychological-the-personal-and-the-political/",
+      "snippet": "Damon Galgut is the most generous-spirited, profoundly gifted and oddly approachable human. I am indebted in ways I can’t count for the critique, the encouragement, the consideration, the commiseration and the line edits (yes, he won the Booker Prize and",
+      "cover_url": "https://s26162.pcdn.co/wp-content/uploads/2026/08/cape-town.png"
     },
     {
       "source": "reads",
       "source_name": "3 Quarks Daily",
-      "title": "Pauline Clayden (1922 – 2026) Ballet Dancer",
-      "url": "https://3quarksdaily.com/3quarksdaily/2026/08/pauline-clayden-1922-2026-ballet-dancer.html",
-      "snippet": "Enjoying the content on 3QD? Help keep us going by donating now.",
+      "title": "The Thesis of Political Capitalism",
+      "url": "https://3quarksdaily.com/3quarksdaily/2026/08/the-thesis-of-political-capitalism.html",
+      "snippet": "Dylan Riley in The Ideas Letter: It is as if the open theft, the corruption, the orgiastic excesses of the elite were so brazen that it would seem superficial, non-scientific, pre-theoretical to take them seriously. Surely, this line of thinking says, the real action lies elsewhere, behind the Technicolored phantasmagoria of the political scene, with…",
       "cover_url": ""
     },
     {
       "source": "reads",
-      "source_name": "Literary Hub",
-      "title": "Television to the Rescue! Camille Acker on the Craft Potential of TV",
-      "url": "https://lithub.com/television-to-the-rescue-camille-acker-on-the-craft-potential-of-tv/",
-      "snippet": "This first appeared in Lit Hub’s Craft of Writing newsletter—sign up here. I have always loved television, but as a kid, television was the “idiot box.” According to experts, this device could rot my brain, influence me to commit immoral acts, and",
-      "cover_url": "https://s26162.pcdn.co/wp-content/uploads/2026/08/Untitled-design-2026-08-20T145838.615.png"
+      "source_name": "3 Quarks Daily",
+      "title": "Laura Kipnis reviews Against Affect",
+      "url": "https://3quarksdaily.com/3quarksdaily/2026/08/laura-kipnis-reviews-against-affect.html",
+      "snippet": "Laura Kipnis in Critical Inquiry: Lisa Downing’s program in her equable polemic Against Affect is to rescue and redistribute reason, if not necessarily to the masses then to those in the academic humanities who made the affective turn in the mid-1990s and haven’t found their way back. Focusing on emotions, the body, and experience, affect theory has…",
+      "cover_url": ""
     },
     {
       "source": "reads",
       "source_name": "3 Quarks Daily",
-      "title": "Laura Claridge: Emily Post",
-      "url": "https://3quarksdaily.com/3quarksdaily/2026/08/laura-claridge-emily-post.html",
-      "snippet": "Enjoying the content on 3QD? Help keep us going by donating now.",
+      "title": "Where’s The Beef? The lab-grown-meat revolution that wasn’t",
+      "url": "https://3quarksdaily.com/3quarksdaily/2026/08/wheres-the-beef-the-lab-grown-meat-revolution-that-wasnt.html",
+      "snippet": "Erin Somers in Harper’s Magazine: On August 5, 2013, a man and a woman ate a burger. Not just any burger: a world-historical burger, made from cattle cells grown in a lab by Mark Post, a professor of vascular physiology at Maastricht University in the Netherlands. The burger had taken two years to produce and cost…",
       "cover_url": ""
     }
   ],
   "garden_note": {
-    "note": "The dahlias are at their theatrical best right now, holding court in the fading warmth of a Zürich late-summer evening — cut a few stems before the light goes and they'll last beautifully on the table. There's a creeping golden tinge to the linden leaves already, that first whispered rumour of September.",
+    "note": "First light arrives over the Zürichsee just after six, and the dahlias along the south-facing borders are already holding their breath before the bees find them — late August in Zürich means the garden is lush but quietly aware that September is listening at the gate.",
     "in_season": [
       "Dahlias in full bloom",
-      "Runner beans to harvest daily",
-      "Early apples ripening (Klarapfel, Gravensteiner)",
-      "Sow winter spinach and lamb's lettuce"
+      "Runner beans ready to harvest",
+      "Zucchini — pick before they outgrow their welcome",
+      "Deadhead echinacea to extend the show"
     ],
-    "sky_tonight": "The waxing gibbous moon rises in the southeast as dusk settles — bright enough to cast soft shadows; look just above it for Saturn, gleaming steadily in Pisces.",
-    "sun_times": "The sun slips away at 20:25 tonight, with dusk lingering gently until around 20:56.",
+    "sky_tonight": "The waxing gibbous moon rises in the east by early evening, bright enough to cast shadows — look for Saturn nearby in Aquarius, gleaming a steady golden yellow.",
+    "sun_times": "First light brushes the garden at 06:01, with sunrise at 06:32 and a generous dusk lingering until 20:54.",
     "moon_label": "Waxing gibbous",
-    "illum_pct": 79,
-    "sun_range": "06:31–20:25"
+    "illum_pct": 84,
+    "sun_range": "06:32–20:23"
   },
   "puzzle": {
-    "kind": "riddle",
+    "kind": "haiku riddle",
     "label": "Fern's Morning Riddle",
-    "prompt": "What has a foot on each side and one in the middle?",
-    "answer": "A yardstick",
-    "hint": "",
-    "source": "riddles.com",
-    "source_id": "Riddle-1376"
+    "prompt": "Born in fire's mouth\nI harden as the years pass\nstone remembers heat",
+    "answer": "Obsidian",
+    "hint": "Volcanoes produce it, and ancient peoples prized its razor-sharp edge."
   },
   "previous_puzzle": {
-    "label": "Fern's Morning Anagram",
-    "prompt": "Rearrange the letters of GREAVES to find something that spends its whole life reaching toward the light.",
-    "answer": "GRASSES"
+    "label": "Fern's Morning Riddle",
+    "prompt": "What has a foot on each side and one in the middle?",
+    "answer": "A yardstick"
   },
   "larder": {
-    "news": [],
-    "recipe": {}
+    "news": [
+      {
+        "source": "food",
+        "source_name": "The Kitchn",
+        "title": "Chefs Agree: This Is the Absolute Best Boxed Cake Mix Brand You Can Buy",
+        "url": "https://www.thekitchn.com/best-store-bought-cake-mix-brand-chefs-23839869?utm_source=RSS&utm_medium=feed&utm_campaign=Category%2FChannel%3A+main",
+        "snippet": "It yields a “soft, plush cake.” READ MORE...",
+        "cover_url": "",
+        "blurb": "A chef-approved shortcut to 'soft, plush' perfection — because knowing which boxed cake mix earns professional respect is the kind of intel that quietly elevates your weeknight baking."
+      },
+      {
+        "source": "food",
+        "source_name": "The Guardian",
+        "title": "How to make the perfect zaru soba, or cold soba noodles – recipe | Felicity Cloake's How to make the perfect",
+        "url": "https://www.theguardian.com/food/2026/aug/23/how-to-make-zaru-soba-cold-soba-noodles-recipe-felicity-cloake",
+        "snippet": "Hot days call for cool dinners, and these are Japan’s nutty, salty and sweet solution. Fiery or pickled accompaniments optional Although every culture craves something different in hot weather – chilled beetroot soup in Lithuania, cooling buttermilk drinks in India, gazpacho in Spain – what many of these dishes have in common is a certain soothing silkiness as they slide down the throat, plus a decent helping of salt. Japan’s zaru soba , which Namiko Hirasawa Chen of Just One Cookbook describes as her family’s “go-to meal when the summer heat and humidity soar”, is no exception.",
+        "cover_url": "https://i.guim.co.uk/img/media/a5a9343d77dfb8dc9ef1584b284ad44ffb508f12/509_2763_3829_3064/master/3829.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=5d39324ef0229a208a6b89c57b88de18",
+        "blurb": "Felicity Cloake unravels the art of zaru soba — those cool, nutty buckwheat noodles that make a sweltering day feel suddenly, elegantly manageable."
+      }
+    ],
+    "recipe": {},
+    "seasonal_note": "Zürich's Tuesday and Saturday markets at Bürkliplatz are brimming with Zwetschgen right now — those deep violet Swiss plums that practically beg to be halved, sugared, and tucked into a buttery Zwetschgenwähe for a slow Sunday morning that stretches well past ten."
   },
   "fern_data": {
-    "greeting": "What would it change if you talked about death the way scientists are talking about marmots — openly, a little irreverently, with genuine stakes? Tonight's edition holds that question, plus terror birds with hollow bones built for ambush and Big Thief debuting a triple album live in Nashville.",
-    "top_pick_title": "Predators, Marmots & Last Things"
+    "greeting": "Mondays have a PR problem they've never quite recovered from. Big Thief apparently disagree — they walked into the Ryman and played a triple album nobody had heard yet, which is either the most confident thing in music right now or the most generous, possibly both.",
+    "top_pick_title": "Ryman, Roam & the Long Way Round"
   }
 }
