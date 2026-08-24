@@ -1,78 +1,78 @@
 {
-  "fetched_at": "2026-08-24T06:11:03.609665+02:00",
-  "is_am_email": true,
+  "fetched_at": "2026-08-24T17:06:20.130430+02:00",
+  "is_am_email": false,
   "audit_summary": {
     "youtube_videos": 3,
     "themes": 3,
-    "music_articles": 2,
+    "music_articles": 8,
     "good_news_articles": 3,
-    "discovery_articles": 0,
+    "discovery_articles": 9,
     "featured_read": 1,
     "reading_room": 5,
     "garden": 1,
-    "puzzle": 1,
-    "larder": 2
+    "puzzle": 0,
+    "larder": 0
   },
   "themes": [
     {
-      "name": "Spaces Worth Saving",
-      "emoji": "🏚️",
-      "tagline": "The slow, satisfying art of bringing forgotten places back to life.",
+      "name": "Rabbit Holes Worth Falling Down",
+      "emoji": "🕳️",
+      "tagline": "Obscure, forgotten, and quietly fascinating — history's footnotes deserve the spotlight.",
       "items": [
         {
           "source": "youtube",
-          "video_id": "jRoS7DH8s4I",
-          "title": "A Farmhouse Renovation That Left Us Speechless",
-          "channel_id": "UCEqU-Ts-hxmpnlWgRMgd2MQ",
-          "channel_title": "How To Renovate A Chateau",
-          "published_at": "2026-08-23T18:30:06Z",
-          "url": "https://www.youtube.com/watch?v=jRoS7DH8s4I",
-          "duration_seconds": 1344,
-          "view_count": "38305",
-          "description": "AD: https://www.squarespace.com/howtorenovateachateau to save 10% off your first purchase of a website or domain using code HOWTORENOVATEACHATEAU \nCheck out the FOREO FAQ 202 LED Face Mask and their amazing deals here: https://foreo.se/vJ0sN. Don't forget to use my code RENOCHAT30 for an extra 30% off most products, stackable with sale items too! The 30% discount code is valid for a limited time only, after which the discount will drop to 10%.\n\nCheck out Tom's Felder Alpin Lodge here: https://ww",
-          "why_watch": "This channel documents the hands-on restoration of a French château, and this episode delivers the satisfying before/after reveal that renovation content lives and dies by. At 22 minutes it's long enough to show real process rather than just highlight cuts. If you're drawn to old buildings, craft, or the particular chaos of ambitious DIY projects, this is comfortable, unhurried viewing.",
+          "video_id": "YG1Q1Asiq9E",
+          "title": "Explosion at the Yorktown Navy Mine Depot: 1943",
+          "channel_id": "UC4sEmXUuWIFlxRIFBRV6VXQ",
+          "channel_title": "The History Guy: History Deserves to Be Remembered",
+          "published_at": "2026-08-24T12:00:02Z",
+          "url": "https://www.youtube.com/watch?v=YG1Q1Asiq9E",
+          "duration_seconds": 1031,
+          "view_count": "2879",
+          "description": "In 1943 the Yorktown, Virginia, Naval Mine Depot manufactured explosive ordnance and loaded it onto ships in the York River bound for the battlefields of WWII.  On November 16th, a massive explosion rocked the Depot, leaving enormous craters and shattering glass for miles around. \n\nCheck out our new shop for fun The History Guy merchandise:\nhttps://thehistoryguy-shop.fourthwall.com/products/thg-history\n\nThis is original content based on research by The History Guy. Images in the Public Domain ar",
+          "why_watch": "The History Guy digs up a genuinely obscure WWII home-front disaster — a 1943 munitions explosion at a Virginia naval depot that shattered windows for miles yet barely made history books. It's a tight 17 minutes on the industrial dangers behind the war effort, the kind of story that reminds you how much happened stateside that never got commemorated. If you like history that feels newly discovered rather than retold, this is that.",
           "is_wildcard": false
         }
       ]
     },
     {
-      "name": "Brain Architecture",
-      "emoji": "🗂️",
-      "tagline": "How you organize your thoughts might be the most important system you ever build.",
+      "name": "The Shape of Thought",
+      "emoji": "🧠",
+      "tagline": "Where science gets beautifully weird — exploring the hidden geometry of how minds work.",
       "items": [
         {
           "source": "youtube",
-          "video_id": "4MxI68kg8to",
-          "title": "How to choose a note-taking app | Zettelkasten | Notion vs Roam vs Obsidian",
+          "video_id": "QHj9uVmwA_0",
+          "title": "Neural manifolds - The Geometry of Behaviour",
           "channel_id": "UCR2uRTQ53V_egXKFflMMaaw",
           "channel_title": "Artem Kirsanov",
-          "published_at": "2021-09-10T18:19:17Z",
-          "url": "https://www.youtube.com/watch?v=4MxI68kg8to",
-          "duration_seconds": 644,
-          "view_count": "52406",
-          "description": "=====\nMy name is Artem, I'm a neuroscience PhD student at Harvard University. \n🌎 Website and Social links: https://kirsanov.ai/\n📥 \"Receptive Field\" neuro-newsletter: https://artemkirsanov.substack.com/\n✨ Support me on Patreon to get access to Discord community: https://patreon.com/artemkirsanov\n=====\n\nIn this video I discuss most popular applications for Zettelkasten note-taking, what I recommend to get started and how to approach any new application that might come out in the future \n\n🕒 OUTLINE",
-          "why_watch": "A Harvard neuroscience PhD student walks through Notion, Roam, and Obsidian specifically through the lens of Zettelkasten — the linked-note method borrowed from prolific scholar Niklas Luhmann. At under 11 minutes, it skips the app-review fluff and focuses on which tool's architecture actually matches how networked thinking works. Useful if you've tried these apps and still felt like something wasn't clicking.",
+          "published_at": "2021-08-22T17:42:58Z",
+          "url": "https://www.youtube.com/watch?v=QHj9uVmwA_0",
+          "duration_seconds": 1397,
+          "view_count": "321739",
+          "description": "=====\nMy name is Artem, I'm a neuroscience PhD student at Harvard University. \n🌎 Website and Social links: https://kirsanov.ai/\n📥 \"Receptive Field\" neuro-newsletter: https://artemkirsanov.substack.com/\n✨ Support me on Patreon to get access to Discord community: https://patreon.com/artemkirsanov\n=====\n\nThis video is my take on 3B1B's Summer of Math Exposition (SoME) competition. It explains in pretty intuitive terms how ideas from topology (or \"rubber geometry\") can be used in neuroscience, to he",
+          "why_watch": "Neuroscience PhD student Artem Kirsanov explains how the brain encodes behavior not as scattered neural firing, but as low-dimensional geometric shapes — 'manifolds' — embedded in high-dimensional activity space. The visual approach, inspired by 3Blue1Brown's style, makes an genuinely abstract concept feel intuitive without dumbing it down. If you've ever wondered how a brain that fires billions of neurons still produces structured, predictable behavior, this video offers a real answer.",
           "is_wildcard": false
         }
       ]
     },
     {
-      "name": "Quietly Somewhere Else",
-      "emoji": "🌊",
-      "tagline": "No itinerary, no hustle — just one person, a new city, and unhurried curiosity.",
+      "name": "Soft Landing",
+      "emoji": "🌅",
+      "tagline": "Wind down, drift off, and let someone else do the imagining for once.",
       "items": [
         {
           "source": "youtube_trending",
-          "video_id": "vmfIUpFiuOg",
-          "title": "Solo Trip: Puerto Vallarta Diary | Travel Vlog PT 2",
-          "channel_id": "UCwEeQlVlvyPltiEUIMpQv6Q",
-          "channel_title": "Dr. Maylin U.",
-          "published_at": "2026-08-23T17:17:18Z",
-          "url": "https://www.youtube.com/watch?v=vmfIUpFiuOg",
-          "duration_seconds": 669,
-          "view_count": "6279",
-          "description": "Independent Pretty Girli Cozy Solo Living; regular girlie cozy vibes & content 🩷💕💞 \n\n❤️Business: ipgg@geeworkstx.org\n🩵Instagram: @maylin_dayy\n💜Ticktock: @dr.maylin",
-          "why_watch": "A low-key solo travel diary from Puerto Vallarta shot with a point-of-view that's more 'quiet day wandering' than 'look at this resort.' With just over 6,000 views, it hasn't been algorithmically smoothed into a highlight reel, which makes it a genuinely useful reference if you're planning a solo trip and want a realistic sense of pace and atmosphere. Think of it as borrowing a friend's trip notes rather than watching a tourism promo.",
+          "video_id": "Gu4nY4Boi-8",
+          "title": "The Sunset Cabin | Guided Sleep Story (The Haven) | Deep Sleep",
+          "channel_id": "UC4jWo5kiyOCt4PnvF4jbaLg",
+          "channel_title": "The Honest Guys - Meditations - Relaxation",
+          "published_at": "2026-08-23T17:00:14Z",
+          "url": "https://www.youtube.com/watch?v=Gu4nY4Boi-8",
+          "duration_seconds": 1184,
+          "view_count": "2032",
+          "description": "A calming, high-quality sleep talk‑down set in a cozy sunset cabin the peace of The Haven. Designed to help you unwind, relax, and fall into deep sleep with soothing nature imagery, soothing music and a real human‑spoken narration. \nTravel through the Haven to a cosy hilltop cabin overlooking the sea, where a glowing sunset, warm lamplight and complete safety gently carry you into deep sleep.\n\nThis guided sleep meditation story can help you reach a state of deep relaxation and fall asleep fast. ",
+          "why_watch": "The Honest Guys have been making sleep narrations for over a decade, and this cabin-at-sunset entry showcases exactly why they have a loyal following — unhurried pacing, specific sensory detail (warm lamplight, sea view, the Haven's quiet), and a voice that treats rest as the actual goal rather than a side effect of content. It's a functional sleep tool, not ambient filler, and at under 20 minutes it won't outlast your ability to stay awake.",
           "is_wildcard": true
         }
       ]
@@ -82,158 +82,280 @@
     {
       "source": "music",
       "source_name": "Stereogum",
-      "title": "Big Thief Debut Surprise New Triple Album Horsepower With Special Guests At The Ryman",
-      "snippet": "Adrianne Lenker wasted no time telling 2,400 Big Thief fans that this was not, in fact, the show they expected to see. “We have a special night for you,” she said as Big Thief took seats around a large wooden table onstage, then quipped: “If you had hopes of hearing songs you know, those can be disc",
-      "url": "https://stereogum.com/2509159/big-thief-debut-surprise-new-triple-album-horsepower-with-special-guests-at-the-ryman/reviews/concert-review/",
+      "title": "Foo Fighters Play Live Rarities With The Los Angeles Philharmonic",
+      "snippet": "Foo Fighters have spent much of the summer on a stadium tour with Queens Of The Stone Age and Mannequin Pussy, but over the weekend they made their way to the Southern California for something different. Saturday night, the band headlined the Hollywood Bowl backed by the Los Angeles Philharmonic, an",
+      "url": "https://stereogum.com/2509200/foo-fighters-play-live-rarities-with-the-los-angeles-philharmonic/news/",
       "genre": "",
-      "vibe_check": "A candlelit gathering around a weathered table where the songs feel like secrets being told for the first time.",
-      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/08/big-thief-ryman1.jpg",
+      "vibe_check": "The feeling of watching fireworks burst over a canyon while something orchestral swells beneath your chest.",
+      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/08/Screenshot-2026-08-24-at-10.19.56-AM.png",
+      "embed_url": "https://www.youtube.com/embed/yGQrI_EJ-yE"
+    },
+    {
+      "source": "music",
+      "source_name": "Stereogum",
+      "title": "Neil Young & The Chrome Hearts Share New Version Of “Casting Me Away From You,” A Song He Wrote Over 60 Years Ago",
+      "snippet": "In the early '60s, back when he actually was young, Neil Young was a member of a Winnepeg band called the Squires. Next month, Young and his new band the Chrome Hearts will release their new album Second Song; we have already posted the title track. As previously reported, the new LP includes a few ",
+      "url": "https://stereogum.com/2509195/neil-young-the-chrome-hearts-share-new-version-of-casting-me-away-from-you-a-song-he-wrote-over-60-years-ago/music/",
+      "genre": "",
+      "vibe_check": "A letter found in an attic, written in young handwriting, finally read aloud by an old voice.",
+      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/08/Neil-Young-1.jpeg",
+      "embed_url": "https://www.youtube.com/embed/TPOd7JYHvKc"
+    },
+    {
+      "source": "music",
+      "source_name": "Stereogum",
+      "title": "The Alternative Number Ones: Matchbox 20’s “Push”",
+      "snippet": "The post The Alternative Number Ones: Matchbox 20&#8217;s &#8220;Push&#8221; appeared first on Stereogum.",
+      "url": "https://stereogum.com/2508662/the-alternative-number-ones-matchbox-20s-push/columns/the-alternative-number-ones/",
+      "genre": "",
+      "vibe_check": "The specific ache of a mid-90s parking lot at dusk, someone's radio bleeding through a cracked car window.",
+      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/08/Matchbox-20.jpg",
+      "embed_url": "https://www.youtube.com/embed/HAkHqYlqops"
+    },
+    {
+      "source": "music",
+      "source_name": "No Depression",
+      "title": "Trouble the Water: The Birth of the Spirituals",
+      "snippet": "Editor&apos;s Note: Santi Elijah Holley has been awarded one of two No Depression Reporting Fellowships to write four in-depth features on a topic deeply impacting roots music today. The Reporting Fellowships kick off with this historical piece introducing spirituals as a foundational form of Americ",
+      "url": "https://nodepression.org/trouble-the-water-the-birth-of-the-spirituals/",
+      "genre": "",
+      "vibe_check": "The weight of collective memory carried in song, heavy and holy as river water.",
+      "cover_url": "https://storage.ghost.io/c/18/d0/18d08e58-3b1b-4720-ae25-a31b44e69d4b/content/images/size/w1200/2026/08/Untitled-design.png",
+      "embed_url": "https://www.youtube.com/embed/rBQmLiBWD4g"
+    },
+    {
+      "source": "music",
+      "source_name": "Aquarium Drunkard",
+      "title": "The Lagniappe Sessions :: Lau Ro",
+      "snippet": "On this summer's introspective solo record Lau, multi-instrumentalist Lau Ro crafted an enduring cycle of radiance. Starkly original, yet lovingly recalling the atmosphere and sunny, layered undercurrents of formidable works from the worlds of Brazilian MPB, bossa nova and beyond. For the São Paulo-",
+      "url": "https://aquariumdrunkard.com/2026/08/24/the-lagniappe-sessions-lau-ro/",
+      "genre": "",
+      "vibe_check": "Barefoot on warm tile, late afternoon São Paulo light pooling through half-shuttered windows.",
+      "cover_url": "https://aquariumdrunkard.com/_newness/wp-content/uploads/2026/08/Lagniappe-LauRo_a.jpg",
       "embed_url": null
     },
     {
       "source": "music",
-      "source_name": "Consequence",
-      "title": "Big Thief Play Setlist Made Entirely of Upcoming Triple Album, Horsepower",
-      "snippet": "The 29-song set featured guest spots by Americana luminaries such as Gillian Welch, Lucinda Williams, and Iris DeMent.\nBig Thief Play Setlist Made Entirely of Upcoming Triple Album, Horsepower\nTravis Bland",
-      "url": "https://consequence.net/2026/08/big-thief-horsepower-setlist/",
+      "source_name": "Aquarium Drunkard",
+      "title": "John Foxx & Harold Budd :: Translucence + Drift Music",
+      "snippet": "Music to listen to with your eyes closed. Harold Budd had an uncanny gravitational pull, drawing unlikely figures into his orbit. Long before his collaboration with John Foxx, he found himself entwined with the Cocteau Twins, yielding the luminous The Moon and the Melodies. On paper, Foxx, whose own",
+      "url": "https://aquariumdrunkard.com/2026/08/24/john-foxx-harold-budd-translucence-drift-music/",
       "genre": "",
-      "vibe_check": "Three generations of Americana voices converging like rivers into something vast and unhurried.",
-      "cover_url": "https://consequence.net/wp-content/uploads/2026/08/Big-Thief.jpg",
+      "vibe_check": "The ambient hush of a cathedral after everyone has left, light still catching the stained glass.",
+      "cover_url": "https://aquariumdrunkard.com/_newness/wp-content/uploads/2026/08/budd-foxx-drift.jpg",
       "embed_url": null
+    },
+    {
+      "source": "music",
+      "source_name": "JazzTimes",
+      "title": "Sweeps Week: Top August Jazz Releases, Monday Mix Edition",
+      "snippet": "W e wrap August with another Sweeps Week, featuring top editorial picks of the month. Sullivan Fortner, Leave That in There (Artwork Records) Last year, &#8230; Read More \"Sweeps Week: Top August Jazz Releases, Monday Mix Edition\"\nThe post Sweeps Week: Top August Jazz Releases, Monday Mix Edition ap",
+      "url": "https://www.jazztimes.com/reviews/albums/sweeps-week-top-august-jazz-releases-monday-mix-edition/",
+      "genre": "",
+      "vibe_check": "Late-summer sophistication, like lingering over the last cold drink on a rooftop before the season turns.",
+      "cover_url": "https://www.jazztimes.com/wp-content/uploads/2026/08/collage-monday-Aug-2026-scaled.jpg",
+      "embed_url": "https://ben-goldberg--bag-production-records.bandcamp.com/album/ben-goldberg-8-x-8"
+    },
+    {
+      "source": "music",
+      "source_name": "PopMatters",
+      "title": "Joan As Police Woman Reimagines the Past and Present",
+      "snippet": "Joan As Police Woman revisits her 2009 debut Real Life with warm, retro-modern arrangements, showcasing her skill as a songwriter and producer.",
+      "url": "https://www.popmatters.com/joan-as-police-woman-real-life",
+      "genre": "",
+      "vibe_check": "Revisiting an old journal entry and finding it still has the power to make you catch your breath.",
+      "cover_url": "https://www.popmatters.com/wp-content/uploads/2026/08/Joan-as-Police-Woman-Real-Life-Evolution-social.webp",
+      "embed_url": "https://www.youtube.com/embed/h9AORzcT7qQ"
     }
   ],
   "global_silver_linings": [
     {
       "source": "good_news",
       "source_name": "Good News Network",
-      "title": "Ethiopian Farmers Save Thousands by Switching to Solar Irrigation–While Cutting Emissions",
-      "url": "https://www.goodnewsnetwork.org/ethiopian-farmers-save-thousands-by-switching-to-solar-irrigation/",
-      "snippet": "Farmers in Ethiopia are slashing their growing costs, increasing food production, and protecting the environment thanks to solar-powered irrigation systems introduced through the Nature-based Solutions for Sustainable and Inclusive Development program led by the international nonprofit Farm Africa. In a country famous for its “13 months of sunshine”, Ethiopia has enormous potential to harness solar […] The post Ethiopian Farmers Save Thousands by Switching to Solar Irrigation–While Cutting Emissions appeared first on Good News Network .",
-      "cover_url": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/08/Solar-irrigation-by-Farm-Africa-released.jpeg",
-      "reason": "Ethiopian farmers are proving that sustainable agriculture and economic relief can go hand in hand, using solar-powered irrigation to protect their livelihoods while reducing their carbon footprint. It's a grounded, real-world example of clean energy making a tangible difference for the people who need it most."
+      "title": "Inventor Envisioned a Waterless Toilet for Astronauts, Realized it Could Solve a Global Sanitation Crisis Instead",
+      "url": "https://www.goodnewsnetwork.org/inventor-envisioned-a-waterless-toilet-for-astronauts-realized-it-could-solve-a-global-sanitation-crisis-instead/",
+      "snippet": "An inventor and serial entrepreneur has created a non-flushing, waterless toilet that’s already making sanitation safer and accessible for some 20,000 households, Deployed in Uganda, Panama, and the United States, the ‘iThrone’ was created when Diana Yousef was working at NASA on spaceborne sanitation. While brainstorming bathrooms on board space stations, Yousef realized that the […] The post Inventor Envisioned a Waterless Toilet for Astronauts, Realized it Could Solve a Global Sanitation Crisis Instead appeared first on Good News Network .",
+      "cover_url": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/08/The-iThrone-waterless-toilet-credit-change-WATER-e1787553812227.jpg",
+      "reason": "A technology born from space exploration is finding its true purpose closer to home, offering a practical, waterless sanitation solution to communities where clean facilities remain out of reach. It's a reminder that the best inventions often find their most important calling by accident."
     },
     {
       "source": "good_news",
-      "source_name": "Upworthy",
-      "title": "I showed my Gen Z kids ‘Dead Poets Society’ and their angry reactions to it floored me",
-      "url": "https://www.upworthy.com/my-gen-z-kids-surprising-reaction-to-dead-poets-society-ex1/",
-      "snippet": "\"Inspiring\" apparently means different things to Gen X and Gen Z. The post I showed my Gen Z kids ‘Dead Poets Society’ and their angry reactions to it floored me appeared first on Upworthy .",
-      "cover_url": "https://www.upworthy.com/wp-content/uploads/sites/2/2025/07/origin-145.jpg",
-      "reason": "Young people engaging passionately — even angrily — with a decades-old film about free thought and conformity is a reminder that the next generation is paying close attention to the world they're inheriting. That kind of critical empathy is exactly what gives cause for optimism."
+      "source_name": "Positive News",
+      "title": "How rewilding could help stop the spread of Britain’s wildfires",
+      "url": "https://www.positive.news/society/how-rewilding-could-help-stop-the-spread-of-britains-wildfires/",
+      "snippet": "Why rewilding is one of the best solutions we have to the concerning rise of wildfires The post How rewilding could help stop the spread of Britain’s wildfires appeared first on Positive News .",
+      "cover_url": "https://www.positive.news/wp-content/uploads/2026/08/kylli-kittus-qyt0cPByJjs-unsplash.jpeg",
+      "reason": "Rewilding isn't just about bringing back lost wildlife — restoring wetlands, bogs, and native vegetation can act as a natural firebreak, quietly protecting communities while nature heals itself. This is the kind of joined-up thinking that gives real grounds for optimism."
     },
     {
       "source": "good_news",
-      "source_name": "The Optimist Daily",
-      "title": "Student Makers: teen volunteers are teaching STEM across three continents",
-      "url": "https://www.optimistdaily.com/2026/08/student-makers-teen-volunteers-are-teaching-stem-across-three-continents/",
-      "snippet": "BY THE OPTIMIST DAILY EDITORIAL TEAM In 2022, a group of high schoolers designed 150 LEGO-inspired airplane kits, 3D-printed them one by one, assembled them by hand, and shipped them to a school in Kenya. How is that for a nonprofit origin story? Student Makers was founded in California in 2019 and got its 501(c)(3) […] The post Student Makers: teen volunteers are teaching STEM across three continents first appeared on The Optimist Daily: Making Solutions the News .",
-      "cover_url": "https://www.optimistdaily.com/wp-content/uploads/E4FFDC9C-7916-4464-8326-9CD9120B7732_1_105_c.jpeg",
-      "reason": "Teenage volunteers crossing continents to share STEM knowledge with peers shows that curiosity and generosity don't need a diploma to make a real impact. These young makers are quietly building a more connected, skilled world from the ground up."
+      "source_name": "Reasons to be Cheerful",
+      "title": "Horizontal Levees Are Spreading Across the Bay Area",
+      "url": "https://reasonstobecheerful.world/bay-area-living-levees/",
+      "snippet": "This story was originally published by Grist. Sign up for Grist’s weekly newsletter here. Visitors to the Palo Alto Baylands Nature Preserve, captivated by gliding birds overhead and golden hills across the Bay waters, could be forgiven for failing to notice that the preserve is also home to the Bay’s...",
+      "cover_url": "https://reasonstobecheerful.world/wp-content/uploads/2026/08/horizontal-levee-featured.webp",
+      "reason": "Horizontal levees blend flood protection with thriving coastal marshland, giving nature and neighbourhoods a fighting chance against rising seas at the same time. It's heartening to see engineers and ecologists working with the land rather than against it."
     }
   ],
-  "discovery_articles": [],
+  "discovery_articles": [
+    {
+      "source": "discovery",
+      "source_name": "Smithsonian",
+      "title": "How Did Medieval Builders Construct Complex Cathedrals Before Advanced Mathematics? And More Questions From Our Readers",
+      "url": "https://www.smithsonianmag.com/smithsonian-institution/how-did-medieval-builders-construct-complex-cathedrals-before-advanced-mathematics-and-more-questions-from-our-readersyouve-got-questions-weve-got-experts-180989286/",
+      "snippet": "You’ve got questions. We’ve got experts",
+      "category": "history",
+      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/Gzj5Fb0m_dlWBWlQgQA4lRDzYkw=/fit-in/1600x0/filters:focal(388x292:389x293)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/cf/b6/cfb6ae11-9dcd-48f1-8228-324824ab8aa5/ask.jpg"
+    },
+    {
+      "source": "discovery",
+      "source_name": "Smithsonian",
+      "title": "This 18th-Century British Queen Turned King Arthur Into a P.R. Strategy, Drawing on Myth to Promote Her Dynasty's Claim to the Throne",
+      "url": "https://www.smithsonianmag.com/history/this-18th-century-british-queen-turned-king-arthur-into-a-pr-strategy-drawing-on-myth-to-promote-her-dynastys-claim-to-the-throne-180989367/",
+      "snippet": "In 1735, Caroline of Brandenburg-Ansbach commissioned a cottage called Merlin's Cave, which linked the German House of Hanover to both Britain’s ancient heritage and its future success",
+      "category": "history",
+      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/X0ARyb8wfvdjgP-iBWd3MGMFGMw=/fit-in/1600x0/filters:focal(750x500:751x501)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/13/70/1370f852-7dce-4a95-839d-a51ca90c6d55/merlins-garden.png"
+    },
+    {
+      "source": "discovery",
+      "source_name": "Smithsonian",
+      "title": "Stunning Antiquities and Frida Kahlo’s Home Are Just Some of the Offerings That Have Bolstered Mexico City’s Fantastic Array of Museums",
+      "url": "https://www.smithsonianmag.com/travel/frida-kahlo-home-stunning-antiquities-just-some-offerings-bolstered-mexico-citys-fantastic-museums-180989293/",
+      "snippet": "The ancient capital has plenty of artwork and fossils, if that’s what you like. Or tour the writing rooms of a Nobel winner, the fortified home of an exiled Russian revolutionary and towers of skulls",
+      "category": "history",
+      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/T9MyEcKBm8JRq_FJYPu6Dm9r1Qs=/fit-in/1600x0/filters:focal(575x386:576x387)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/b3/9b/b39ba286-5127-44b6-98cf-151355238571/anahucalli-013_copy.jpg"
+    },
+    {
+      "source": "discovery",
+      "source_name": "Science News",
+      "title": "Heat therapy for sick frogs lowers sperm levels",
+      "url": "https://www.sciencenews.org/article/infection-treatment-lowers-frog-sperm",
+      "snippet": "Scientists often use thermal treatment to combat fatal fungal infection in frogs, but it may come at a cost.",
+      "category": "science",
+      "cover_url": "https://www.sciencenews.org/wp-content/uploads/sites/2/2026/08/081726_PR_frogs_main.jpg"
+    },
+    {
+      "source": "discovery",
+      "source_name": "Science News",
+      "title": "Personalized brain stimulation can ease chronic pain",
+      "url": "https://www.sciencenews.org/article/brain-stimulation-chronic-pain",
+      "snippet": "A week-long brain mapping session can lead to lasting relief, a case series of three pain patients shows.",
+      "category": "science",
+      "cover_url": "https://www.sciencenews.org/wp-content/uploads/sites/2/2026/08/081326_LS_brainstimulation_main.jpg"
+    },
+    {
+      "source": "discovery",
+      "source_name": "Science News",
+      "title": "Motor neurons don’t just move muscles. They may direct that motion too",
+      "url": "https://www.sciencenews.org/article/motor-neurons-muscles-motion",
+      "snippet": "A fruit fly study shows motor neurons do more than relay commands: They send signals back to the brain and organize movement sequences.",
+      "category": "science",
+      "cover_url": "https://www.sciencenews.org/wp-content/uploads/sites/2/2026/08/082026_YH_neuron_main.jpg"
+    },
+    {
+      "source": "discovery",
+      "source_name": "JSTOR Daily",
+      "title": "The Logistics That Powered the Vietnam War",
+      "url": "https://daily.jstor.org/the-logistics-that-powered-the-vietnam-war/",
+      "snippet": "The Vietnam War became a testing ground for private contractors and military systems that still shape conflict today. The post The Logistics That Powered the Vietnam War appeared first on JSTOR Daily .",
+      "category": "history",
+      "cover_url": "https://daily.jstor.org/wp-content/uploads/2026/08/the_logistics_that_powered_the_vietnam_war_1050x700.jpg"
+    },
+    {
+      "source": "discovery",
+      "source_name": "Quanta Magazine",
+      "title": "A New Framework for How the Brain Compresses Our Noisy World",
+      "url": "https://www.quantamagazine.org/a-new-framework-for-how-the-brain-compresses-our-noisy-world-20260824/",
+      "snippet": "An updated view of categorization reflects the modern understanding that the nervous system is more of a prediction engine than a filing cabinet. The post A New Framework for How the Brain Compresses Our Noisy World first appeared on Quanta Magazine",
+      "category": "science",
+      "cover_url": "https://www.quantamagazine.org/wp-content/uploads/2026/08/Predictive-Categorization-cr-Zara-Picken-Social.jpg"
+    },
+    {
+      "source": "discovery",
+      "source_name": "Colossal",
+      "title": "Nosheen Iqbal Translates Islamic Ornament into Meticulous Wood-and-Thread Patterns",
+      "url": "https://www.thisiscolossal.com/2026/08/nosheen-iqbal-inherited-forms-wooden-patterns-thread-reliefs/",
+      "snippet": "The Dallas-based artist draws on her background in product design and illustration. Do stories and artists like this matter to you? Become a Colossal Member today and support independent arts publishing for as little as $7 per month.",
+      "category": "history",
+      "cover_url": "https://www.thisiscolossal.com/wp-content/uploads/2026/08/iqbal-10.jpg"
+    }
+  ],
   "featured_read": {
     "source": "reads",
-    "source_name": "Literary Hub",
-    "title": "What Should You Read Next? Here Are the Best Reviewed Books of the Week",
-    "url": "https://lithub.com/what-should-you-read-next-here-are-the-best-reviewed-books-of-the-week-12/",
-    "snippet": "Anjet Daanje’s The Song of Stork and Dromedary, Joby Warrick’s The Jackal, and Dorthe Nors’ Range all feature among the best reviewed books of the week. Brought to you by Book Marks, Lit Hub’s home for book reviews. * Fiction 1.",
-    "cover_url": "https://s26162.pcdn.co/wp-content/uploads/2026/08/the-jackal-9781668070550_hr.jpg"
+    "source_name": "Nautilus",
+    "title": "New Species of Groundsnake Named After Guns N’ Roses Guitarist and Noted Herpephile Slash",
+    "url": "https://nautil.us/new-species-of-groundsnake-named-after-guns-n-roses-guitarist-and-noted-herpephile-slash-1284130/",
+    "snippet": "It likes the nightlife The post New Species of Groundsnake Named After Guns N’ Roses Guitarist and Noted Herpephile Slash appeared first on Nautilus .",
+    "cover_url": "https://lede-admin.nautil.us/wp-content/uploads/sites/70/2026/08/Currie_hero_dcdd74.png"
   },
   "reading_room": [
     {
       "source": "reads",
-      "source_name": "3 Quarks Daily",
-      "title": "City of Sweat",
-      "url": "https://3quarksdaily.com/3quarksdaily/2026/08/city-of-sweat.html",
-      "snippet": "Aruna Chandrasekhar in Equator: For anyone maintaining an extreme weather checklist, Mumbai’s got it all. We have catastrophic urban flooding, with every monsoon bringing old and new horrors: landslides killing dozens, people wading miles in waist-deep water in the dark with only phone torches to guide them home. In winter, Mumbai now clocks bad air…",
+      "source_name": "Longreads",
+      "title": "What if America Went Completely Dark?",
+      "url": "https://longreads.com/2026/08/24/what-if-america-went-completely-dark/",
+      "snippet": "\"The power grid relies on thousands of aging, hand-built transformers. If enough fail, the blackout could last years.\"",
       "cover_url": ""
     },
     {
       "source": "reads",
       "source_name": "Literary Hub",
-      "title": "Ways of Connecting: On Writing That Marries the Psychological, the Personal and the Political",
-      "url": "https://lithub.com/ways-of-connecting-on-writing-that-marries-the-psychological-the-personal-and-the-political/",
-      "snippet": "Damon Galgut is the most generous-spirited, profoundly gifted and oddly approachable human. I am indebted in ways I can’t count for the critique, the encouragement, the consideration, the commiseration and the line edits (yes, he won the Booker Prize and",
-      "cover_url": "https://s26162.pcdn.co/wp-content/uploads/2026/08/cape-town.png"
+      "title": "Lit Hub Daily: August 24, 2026",
+      "url": "https://lithub.com/lit-hub-daily-august-24-2026/",
+      "snippet": "How surveillance technology infuses policing with even more racial bias. | Lit Hub Politics Why studying Goldilocks can help us write emotionally resonant fiction. | Lit Hub Craft Claire Boyles considers the impact of the American West’s water crisis on her",
+      "cover_url": "https://s26162.pcdn.co/wp-content/uploads/2026/08/borges1.jpg"
     },
     {
       "source": "reads",
       "source_name": "3 Quarks Daily",
-      "title": "The Thesis of Political Capitalism",
-      "url": "https://3quarksdaily.com/3quarksdaily/2026/08/the-thesis-of-political-capitalism.html",
-      "snippet": "Dylan Riley in The Ideas Letter: It is as if the open theft, the corruption, the orgiastic excesses of the elite were so brazen that it would seem superficial, non-scientific, pre-theoretical to take them seriously. Surely, this line of thinking says, the real action lies elsewhere, behind the Technicolored phantasmagoria of the political scene, with…",
+      "title": "Muscle Isn’t Vanity. Gabrielle Lyon Says It’s Preventive Medicine",
+      "url": "https://3quarksdaily.com/3quarksdaily/2026/08/muscle-isnt-vanity-gabrielle-lyon-says-its-preventive-medicine.html",
+      "snippet": "Angela Haupt in Time Magazine: For decades, muscle has been treated as something to sculpt, strengthen, or show off. Dr. Gabrielle Lyon wants people to think of it differently: as one of the body’s most important organs—and one of the strongest predictors of how well we’ll age.",
       "cover_url": ""
     },
     {
       "source": "reads",
-      "source_name": "3 Quarks Daily",
-      "title": "Laura Kipnis reviews Against Affect",
-      "url": "https://3quarksdaily.com/3quarksdaily/2026/08/laura-kipnis-reviews-against-affect.html",
-      "snippet": "Laura Kipnis in Critical Inquiry: Lisa Downing’s program in her equable polemic Against Affect is to rescue and redistribute reason, if not necessarily to the masses then to those in the academic humanities who made the affective turn in the mid-1990s and haven’t found their way back. Focusing on emotions, the body, and experience, affect theory has…",
-      "cover_url": ""
+      "source_name": "Nautilus",
+      "title": "Here’s Where Our Memories Go as We Age",
+      "url": "https://nautil.us/heres-where-our-memories-go-as-we-age-1284123/",
+      "snippet": "It’s more nuanced than you think The post Here’s Where Our Memories Go as We Age appeared first on Nautilus .",
+      "cover_url": "https://lede-admin.nautil.us/wp-content/uploads/sites/70/2026/08/Currie_HERO_2e1d47.png"
     },
     {
       "source": "reads",
-      "source_name": "3 Quarks Daily",
-      "title": "Where’s The Beef? The lab-grown-meat revolution that wasn’t",
-      "url": "https://3quarksdaily.com/3quarksdaily/2026/08/wheres-the-beef-the-lab-grown-meat-revolution-that-wasnt.html",
-      "snippet": "Erin Somers in Harper’s Magazine: On August 5, 2013, a man and a woman ate a burger. Not just any burger: a world-historical burger, made from cattle cells grown in a lab by Mark Post, a professor of vascular physiology at Maastricht University in the Netherlands. The burger had taken two years to produce and cost…",
+      "source_name": "Longreads",
+      "title": "The Children a Scientist Took Home",
+      "url": "https://longreads.com/2026/08/24/carleton-gajdusek-abuse/",
+      "snippet": "Carleton Gajdusek won the Nobel Prize for his work on a disease in Papua New Guinea. But his biggest experiment was on the children he took from the field to the US—many of whom he sexually molested, with the knowledge and, in some cases, approval of his professional peers and colleagues: In his journals and […]",
       "cover_url": ""
     }
   ],
   "garden_note": {
-    "note": "First light arrives over the Zürichsee just after six, and the dahlias along the south-facing borders are already holding their breath before the bees find them — late August in Zürich means the garden is lush but quietly aware that September is listening at the gate.",
+    "note": "Late August in Zürich brings that particular golden-hour quality where the dahlias glow almost amber and the first hazelnuts are starting to weigh their branches — summer is still very much here, but the garden knows something you don't quite yet.",
     "in_season": [
-      "Dahlias in full bloom",
-      "Runner beans ready to harvest",
-      "Zucchini — pick before they outgrow their welcome",
-      "Deadhead echinacea to extend the show"
+      "Dahlias in full, saturated bloom",
+      "Hazelnuts ripening on the shrub",
+      "Runner beans for a final harvest",
+      "Deadheading roses for a last flush"
     ],
-    "sky_tonight": "The waxing gibbous moon rises in the east by early evening, bright enough to cast shadows — look for Saturn nearby in Aquarius, gleaming a steady golden yellow.",
-    "sun_times": "First light brushes the garden at 06:01, with sunrise at 06:32 and a generous dusk lingering until 20:54.",
+    "sky_tonight": "A near-full waxing gibbous moon rises bright and commanding in the east — almost too bright for stargazing, but worth stepping outside to watch it clear the Zürichberg treeline.",
+    "sun_times": "Dusk settles gently over the city at 20:54 tonight, with the sun already slipping away at 20:23 — savour those last long evenings while you can.",
     "moon_label": "Waxing gibbous",
-    "illum_pct": 84,
+    "illum_pct": 87,
     "sun_range": "06:32–20:23"
   },
-  "puzzle": {
-    "kind": "haiku riddle",
-    "label": "Fern's Morning Riddle",
-    "prompt": "Born in fire's mouth\nI harden as the years pass\nstone remembers heat",
-    "answer": "Obsidian",
-    "hint": "Volcanoes produce it, and ancient peoples prized its razor-sharp edge."
-  },
+  "puzzle": {},
   "previous_puzzle": {
     "label": "Fern's Morning Riddle",
-    "prompt": "What has a foot on each side and one in the middle?",
-    "answer": "A yardstick"
+    "prompt": "Born in fire's mouth\nI harden as the years pass\nstone remembers heat",
+    "answer": "Obsidian"
   },
   "larder": {
-    "news": [
-      {
-        "source": "food",
-        "source_name": "The Kitchn",
-        "title": "Chefs Agree: This Is the Absolute Best Boxed Cake Mix Brand You Can Buy",
-        "url": "https://www.thekitchn.com/best-store-bought-cake-mix-brand-chefs-23839869?utm_source=RSS&utm_medium=feed&utm_campaign=Category%2FChannel%3A+main",
-        "snippet": "It yields a “soft, plush cake.” READ MORE...",
-        "cover_url": "",
-        "blurb": "A chef-approved shortcut to 'soft, plush' perfection — because knowing which boxed cake mix earns professional respect is the kind of intel that quietly elevates your weeknight baking."
-      },
-      {
-        "source": "food",
-        "source_name": "The Guardian",
-        "title": "How to make the perfect zaru soba, or cold soba noodles – recipe | Felicity Cloake's How to make the perfect",
-        "url": "https://www.theguardian.com/food/2026/aug/23/how-to-make-zaru-soba-cold-soba-noodles-recipe-felicity-cloake",
-        "snippet": "Hot days call for cool dinners, and these are Japan’s nutty, salty and sweet solution. Fiery or pickled accompaniments optional Although every culture craves something different in hot weather – chilled beetroot soup in Lithuania, cooling buttermilk drinks in India, gazpacho in Spain – what many of these dishes have in common is a certain soothing silkiness as they slide down the throat, plus a decent helping of salt. Japan’s zaru soba , which Namiko Hirasawa Chen of Just One Cookbook describes as her family’s “go-to meal when the summer heat and humidity soar”, is no exception.",
-        "cover_url": "https://i.guim.co.uk/img/media/a5a9343d77dfb8dc9ef1584b284ad44ffb508f12/509_2763_3829_3064/master/3829.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=5d39324ef0229a208a6b89c57b88de18",
-        "blurb": "Felicity Cloake unravels the art of zaru soba — those cool, nutty buckwheat noodles that make a sweltering day feel suddenly, elegantly manageable."
-      }
-    ],
-    "recipe": {},
-    "seasonal_note": "Zürich's Tuesday and Saturday markets at Bürkliplatz are brimming with Zwetschgen right now — those deep violet Swiss plums that practically beg to be halved, sugared, and tucked into a buttery Zwetschgenwähe for a slow Sunday morning that stretches well past ten."
+    "news": [],
+    "recipe": {}
   },
   "fern_data": {
-    "greeting": "Mondays have a PR problem they've never quite recovered from. Big Thief apparently disagree — they walked into the Ryman and played a triple album nobody had heard yet, which is either the most confident thing in music right now or the most generous, possibly both.",
-    "top_pick_title": "Ryman, Roam & the Long Way Round"
+    "greeting": "The day is almost done — which feels like the right moment to learn that motor neurons may be directing motion, not just executing it, or that a 1943 explosion in Yorktown left a story still worth unpacking eighty years on.",
+    "top_pick_title": "After Hours, Before Sleep"
   }
 }
