@@ -1,12 +1,12 @@
 {
-  "fetched_at": "2026-08-26T17:56:36.774299+02:00",
+  "fetched_at": "2026-08-27T16:21:11.635849+02:00",
   "is_am_email": false,
   "audit_summary": {
     "youtube_videos": 3,
-    "themes": 3,
-    "music_articles": 16,
-    "good_news_articles": 3,
-    "discovery_articles": 12,
+    "themes": 1,
+    "music_articles": 14,
+    "good_news_articles": 5,
+    "discovery_articles": 9,
     "featured_read": 1,
     "reading_room": 5,
     "garden": 1,
@@ -17,62 +17,48 @@
     {
       "name": "Rabbit Holes Worth Falling Down",
       "emoji": "🕳️",
-      "tagline": "Stranger-than-fiction stories that prove reality has always been unhinged.",
+      "tagline": "From barnyard origins to academic rabbit warrens — follow the trail and see where it leads.",
       "items": [
         {
           "source": "youtube",
-          "video_id": "sOe6MH_h3do",
-          "title": "1980 Harvey's Casino Bombing",
-          "channel_id": "UC4sEmXUuWIFlxRIFBRV6VXQ",
-          "channel_title": "The History Guy: History Deserves to Be Remembered",
-          "published_at": "2026-08-26T12:00:35Z",
-          "url": "https://www.youtube.com/watch?v=sOe6MH_h3do",
-          "duration_seconds": 1049,
-          "view_count": "3516",
-          "description": "On August 26, 1980, some men wearing jumpsuits drove up in a white Dodge van and rolled a large box into a Casino  in Stateline Nevada, saying that they were delivering a copy machine. It wasn’t a copy machine. Thus began what the Federal Bureau of Investigation described as “one of the most unusual cases” in the bureau’s history. \n\nCheck out our new shop for fun The History Guy merchandise:\nhttps://thehistoryguy-shop.fourthwall.com/products/thg-history\n\nThis is original content based on researc",
-          "why_watch": "In 1980, a man smuggled a 1,000-pound bomb into Harvey's Casino disguised as a copy machine — then sent a ransom note demanding $3 million and daring the FBI to disarm it. The History Guy walks through the remarkably specific engineering of the device and the FBI's agonizing decision about how to respond. It's a genuinely strange true-crime story that somehow never became a household name.",
+          "video_id": "-Q2OilagEvE",
+          "title": "How Chicken Took Over The American Diet",
+          "channel_id": "UCNaq5Jh4SQ1oBAjhQ0KPhoA",
+          "channel_title": "Weird History Food",
+          "published_at": "2026-08-27T14:15:00Z",
+          "url": "https://www.youtube.com/watch?v=-Q2OilagEvE",
+          "duration_seconds": 952,
+          "view_count": "124",
+          "description": "Americans eat about 103 pounds of chicken per person every year, which is roughly one chicken every five days. But how did chicken become such an important part of the American diet? The rise of the modern chicken industry involved thousands of years of history, wartime meat shortages, government-sponsored breeding contests, industrial farming, fast food, and even a bizarre Twitter feud.\n\nIn this episode of Weird History Food, we trace the surprising history of how chicken went from a relatively",
+          "why_watch": "This traces chicken's unlikely rise from barnyard afterthought to America's dominant protein — covering the 1940s government breeding contests that engineered the modern broiler, wartime rationing that pushed beef and pork off the table, and the fast food industry that sealed the deal. At under 16 minutes, it's a surprisingly rich piece of food-system history that reframes something you probably ate this week.",
           "is_wildcard": false
-        }
-      ]
-    },
-    {
-      "name": "Brain Architecture",
-      "emoji": "🧠",
-      "tagline": "How to think about thinking — tools and frameworks that actually respect your neurons.",
-      "items": [
+        },
         {
           "source": "youtube",
-          "video_id": "-r6fnC5lVfE",
-          "title": "Understanding note-taking | Zettelkasten",
+          "video_id": "Z9C4mPR0uI4",
+          "title": "A tool to discover research papers - Research Rabbit",
           "channel_id": "UCR2uRTQ53V_egXKFflMMaaw",
           "channel_title": "Artem Kirsanov",
-          "published_at": "2021-06-23T17:53:59Z",
-          "url": "https://www.youtube.com/watch?v=-r6fnC5lVfE",
-          "duration_seconds": 722,
-          "view_count": "136174",
-          "description": "=====\nMy name is Artem, I'm a neuroscience PhD student at Harvard University. \n🌎 Website and Social links: https://kirsanov.ai/\n📥 \"Receptive Field\" neuro-newsletter: https://artemkirsanov.substack.com/\n✨ Support me on Patreon to get access to Discord community: https://patreon.com/artemkirsanov\n=====\n\nIn this video I'll talk about a Zettelkasten note-taking system, invented by Niklas Luhmann and why it works, so that you can take inspiration from these principles and incorporate them into your o",
-          "why_watch": "A Harvard neuroscience PhD student explains Zettelkasten not as a productivity hack but through the lens of how the brain actually forms and connects ideas — which gives the system's design choices real logical weight. In 12 minutes, you'll understand why the method's insistence on atomic, linked notes isn't arbitrary, and you'll leave with a clear mental model for whether it fits how you actually think and work.",
+          "published_at": "2021-06-12T13:04:17Z",
+          "url": "https://www.youtube.com/watch?v=Z9C4mPR0uI4",
+          "duration_seconds": 630,
+          "view_count": "32225",
+          "description": "Referral code: WKELe4G\n\n=====\nMy name is Artem, I'm a neuroscience PhD student at Harvard University. \n🌎 Website and Social links: https://kirsanov.ai/\n📥 \"Receptive Field\" neuro-newsletter: https://artemkirsanov.substack.com/\n✨ Support me on Patreon to get access to Discord community: https://patreon.com/artemkirsanov\n=====\n\nIn this video I'll talk about Research Rabbit - a new tool which uses AI to help you discover relevant and interesting research articles, tailored specifically to your inter",
+          "why_watch": "ResearchRabbit is a free tool that maps academic papers visually — showing you what a key paper cites, what cites it, and clusters of related work you'd otherwise miss through keyword searches alone. Artem walks through a practical workflow rather than just demoing features, which makes this genuinely useful for anyone who regularly needs to get up to speed on an unfamiliar field or literature.",
           "is_wildcard": false
-        }
-      ]
-    },
-    {
-      "name": "Somewhere Warmer Than Here",
-      "emoji": "🌴",
-      "tagline": "Pack your bags or just live vicariously — either way, you deserve the escape.",
-      "items": [
+        },
         {
           "source": "youtube_trending",
-          "video_id": "ctI9CN2ITr0",
-          "title": "Our First Proper Day in Tenerife! | Costa Adeje Travel Vlog",
-          "channel_id": "UCePGJbQ-3KOYaOu2cUkMPXA",
-          "channel_title": "Kevin Chapman",
-          "published_at": "2026-08-25T17:00:16Z",
-          "url": "https://www.youtube.com/watch?v=ctI9CN2ITr0",
-          "duration_seconds": 2103,
-          "view_count": "5458",
-          "description": "AD: Order the HOLY Starter Set Deluxe, which includes sample flavours of Energy, Hydration and Ice tea here: http://uk.holy.com/kev\nUse discount code KEV5 for £5 off your first order and discount code KEV for 10% off any subsequent orders\n\nSubscribe 👉 http://bit.ly/subKevinChapman\nJoin 👉http://bit.ly/JoinKevinChapman\nFirst time here? 👉 http://bit.ly/NewToKevinChapman\n\nOur Tenerife adventure continues as we leave the hotel behind and head out to explore Costa Adeje!\n\nAfter showing you around the ",
-          "why_watch": "A 35-minute travel vlog of Costa Adeje is a slow-watch proposition, so be honest with yourself: this one works best if you're actively planning a Tenerife trip and want a ground-level look at the resort area's beaches, restaurants, and general vibe. Kevin's style is relaxed and unhurried, which makes it useful for trip research but probably skippable if you're just browsing.",
+          "video_id": "MAyNotJ_ZMo",
+          "title": "Good Morning San Antonio 6 a.m. : Aug 27, 2026",
+          "channel_id": "UCETE4rKzRRjqM0JaB7TlPpQ",
+          "channel_title": "KSAT 12",
+          "published_at": "2026-08-27T12:07:20Z",
+          "url": "https://www.youtube.com/watch?v=MAyNotJ_ZMo",
+          "duration_seconds": 2485,
+          "view_count": "886",
+          "description": "The KSAT 12 News Team provides a look at local, regional, statewide and national news events and the latest information on local traffic and weather issues.",
+          "why_watch": "This is a local morning news broadcast for San Antonio from a specific date — there's no broader insight or unique angle here that would make it worth your time unless you're looking for hyperlocal weather or traffic context from that day. Skip this one unless you have a specific regional reason to tune in.",
           "is_wildcard": true
         }
       ]
@@ -82,9 +68,20 @@
     {
       "source": "music",
       "source_name": "NPR Music",
-      "title": "Cécile McLorin Salvant's latest album is her most daring yet",
-      "snippet": "Even in an era of great young vocalists, McLorin Salvant stands apart. With Every Breath I Take showcases her unique vocal style and talent as a storyteller.",
-      "url": "https://www.npr.org/2026/08/26/nx-s1-5944956/cecile-mclorin-salvants-latest-album-is-her-most-daring-yet",
+      "title": "Dolly Parton contained multitudes. We're looking back on these beloved performances",
+      "snippet": "NPR critics remember some of their favorite Dolly performances — including a duet with Kermit the Frog and the twinkle in Dolly's eye singing with Linda Ronstadt and Emmylou Harris.",
+      "url": "https://www.npr.org/2026/08/27/nx-s1-5943583/dolly-parton-performances",
+      "genre": "",
+      "vibe_check": "",
+      "cover_url": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/5585x3140+0+417/resize/1400/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F7e%2Fa6%2F5bf5b9db45c48c7774fdc6eed391%2Fgettyimages-1489299114.jpg",
+      "embed_url": "https://www.youtube.com/embed/lN_VQ8GWEos"
+    },
+    {
+      "source": "music",
+      "source_name": "NPR Music",
+      "title": "Paramore's Hayley Williams talks about Dolly Parton's influence on her musically and personally",
+      "snippet": "NPR's Michel Martin speaks with Hayley Williams, lead singer of the band Paramore, about the influence Dolly Parton had on her musically and personally.",
+      "url": "https://www.npr.org/2026/08/26/nx-s1-5944563/paramores-hayley-williams-talks-about-dolly-partons-influence-on-her-musically-and-personally",
       "genre": "",
       "vibe_check": "",
       "cover_url": "https://media.npr.org/include/images/facebook-default-wide-s1400-c85.jpg",
@@ -92,393 +89,364 @@
     },
     {
       "source": "music",
-      "source_name": "NPR Music",
-      "title": "Dolly Parton lived her motto: 'More is more'",
-      "snippet": "\"I've always believed that a part of my magic, if there was any, was the fact that I look so artificial — but I am so totally real,\" Parton said in 2001.",
-      "url": "https://www.npr.org/2026/08/26/nx-s1-5944487/dolly-parton-fresh-air",
-      "genre": "",
-      "vibe_check": "",
-      "cover_url": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3000x1687+0+244/resize/1400/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F7a%2F02%2Fda9c300b4465b27c92ac724657b1%2Fgettyimages-467487959.jpg",
-      "embed_url": "https://www.youtube.com/embed/pW2TgGy5gjY"
-    },
-    {
-      "source": "music",
-      "source_name": "NPR Music",
-      "title": "Dolly Parton didn't just write hits — she created an American songbook",
-      "snippet": "Parton, who died at 80 on Tuesday, had charm, depth, beauty, wit and  radiant goodness. She was also a songwriter whose work told the story not just of country music but of the country itself.",
-      "url": "https://www.npr.org/2026/08/26/nx-s1-5944468/dolly-parton-legacy-songwriting",
-      "genre": "",
-      "vibe_check": "",
-      "cover_url": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3816x2147+0+227/resize/1400/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F09%2F86%2Fee147895478a8199466adfc5fe25%2Fgettyimages-86099039.jpg",
-      "embed_url": null
-    },
-    {
-      "source": "music",
       "source_name": "Stereogum",
-      "title": "Charley Crockett Goes Deep On Decision To Drop Twin Temple From Shows In New Interview",
-      "snippet": "All summer, the prolific traditionalist country star Charley Crockett has been embroiled in controversy stemming from his decision to drop the opening act from a pair of his shows. The band in question was Twin Temple, a Satanism-themed retro rock duo comprising married couple Alexandra and Zachary ",
-      "url": "https://stereogum.com/2509449/charley-crockett-goes-deep-on-decision-to-drop-twin-temple-from-shows-in-new-interview/news/",
+      "title": "THAO – “Catch As Catch Can” (Feat. Neko Case)",
+      "snippet": "THAO is getting ready to release her comeback album Show Me. So far she's shared \"Fossils\" and \"Sick Of The Times\" featuring Tune-Yards and the Linda Lindas. Now she's releasing the Neko Case collab \"Catch As Catch Can.\"\nThe post THAO &#8211; &#8220;Catch As Catch Can&#8221; (Feat. Neko Case) appear",
+      "url": "https://stereogum.com/2509520/thao-catch-as-catch-can-feat-neko-case/music/",
       "genre": "",
       "vibe_check": "",
-      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/08/Press-Photo.png",
-      "embed_url": null
-    },
-    {
-      "source": "music",
-      "source_name": "Stereogum",
-      "title": "The Beatles Unearth Audio Of “Day Tripper” Being Written",
-      "snippet": "Maybe the greatest moment of Peter Jackson's gigantic 2021 documentary The Beatles: Get Back is the scene where the cameras capture Paul McCartney writing the Beatles classic \"Get Back,\" seemingly on the fly. It's absolutely crazy to see this guy picking these notes and words out of the air, knowing",
-      "url": "https://stereogum.com/2509454/the-beatles-unearth-audio-of-day-tripper-being-written/music/",
-      "genre": "",
-      "vibe_check": "",
-      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/08/The-Beatles.jpeg",
-      "embed_url": "https://www.youtube.com/embed/1m1TFIhlCXg"
+      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/08/KRS862_CACC_SingleArt.jpg",
+      "embed_url": "https://www.youtube.com/embed/i0Tk7u5oTKs"
     },
     {
       "source": "music",
       "source_name": "No Depression",
-      "title": "ALBUM REVIEW: Riley Downing Makes the Moments Feel Real on 'Landfill Poetry'",
-      "snippet": "Riley Downing loved his grandparents.There is no mistaking the tenderness, the warmth, and the wonder he feels for the bond they shared. It drives &#x201C;Helen &amp; Gene,&#x201D; in which Downing turns family lore into a living, breathing narrative of two young people falling for each other. They",
-      "url": "https://nodepression.org/album-review-riley-downing-makes-the-moments-feel-real-on-landfill-poetry/",
+      "title": "In The Deep End With Brandon Flowers",
+      "snippet": "Country crossover albums are nothing new. Notably in that long tradition, there&#x2019;s Ray Charles&#x2019; Modern Sounds in Country and Western Music, The Pointer Sisters&#x2019; Fairytale, and Cyndi Lauper&#x2019;s Detour, and Bowling for Soup Frontman Jarret Reddick&#x2019;s Just Woke Up. Ringo ",
+      "url": "https://nodepression.org/in-the-deep-end-with-brandon-flowers/",
       "genre": "",
       "vibe_check": "",
-      "cover_url": "https://storage.ghost.io/c/18/d0/18d08e58-3b1b-4720-ae25-a31b44e69d4b/content/images/size/w1200/2026/08/bananago_20260826_132857.jpg",
+      "cover_url": "https://storage.ghost.io/c/18/d0/18d08e58-3b1b-4720-ae25-a31b44e69d4b/content/images/size/w1200/2026/08/BF2026HeroShot_ChrisPhelps.jpg",
+      "embed_url": "https://www.youtube.com/embed/Bbw9JxtLz8w"
+    },
+    {
+      "source": "music",
+      "source_name": "Pitchfork",
+      "title": "William Basinski Returns With Solo Piano Album",
+      "snippet": "Listen to an excerpt of the composer’s first solo LP in six years, Passing the Cup of Sorrows",
+      "url": "https://pitchfork.com/story/william-basinski-returns-with-solo-piano-album/",
+      "genre": "",
+      "vibe_check": "",
+      "cover_url": "https://media.pitchfork.com/photos/6a8f2d20e123525af647971f/16:9/w_1280,c_limit/william-basinski-new-album%20-%20social.png",
       "embed_url": null
     },
     {
       "source": "music",
       "source_name": "Pitchfork",
-      "title": "Watch Jack White Pay Tribute to Dolly Parton With “Jolene” Cover",
-      "snippet": "“Instant Sainthood,” he wrote in tribute to the late star, before reviving the White Stripes live staple for the first time in 19 years",
-      "url": "https://pitchfork.com/story/jack-white-pays-tribute-to-dolly-parton-with-jolene-cover/",
+      "title": "Miley Cyrus Pays Tribute to Godmother Dolly Parton: “I Have an Angel by My Side”",
+      "snippet": "“What I KNOW is Dolly would want me to feel it, write a song about it, and then continue on and be strong.”",
+      "url": "https://pitchfork.com/story/miley-cyrus-pays-tribute-to-godmother-dolly-parton-i-have-an-angel-by-my-side/",
       "genre": "",
       "vibe_check": "",
-      "cover_url": "https://media.pitchfork.com/photos/6a8efdca565c2e1489e66630/16:9/w_1280,c_limit/jack-white-dolly-parton-cover-jolene.jpeg",
-      "embed_url": "https://www.youtube.com/embed/6xSEStRIs88"
+      "cover_url": "https://media.pitchfork.com/photos/6a8df59884f30078af8161a3/16:9/w_1280,c_limit/Miley-Cyrus-Dolly-Parton.jpeg",
+      "embed_url": "https://www.youtube.com/embed/2tohbL9xlYA"
     },
     {
       "source": "music",
       "source_name": "Aquarium Drunkard",
-      "title": "Transmissions :: Jim James",
-      "snippet": "Since 1998, Jim James has led My Morning Jacket. In the early 2000s, the band's blend of Southern rock, psychedelia, dub, classic songcraft, loner country, and experimental folk put them on the forefront of festival stages. And now, James has a new solo album: Wowed Out. It’s his first solo music in",
-      "url": "https://aquariumdrunkard.com/2026/08/26/transmissions-jim-james/",
+      "title": "Jeffrey Silverstein :: Patchouli",
+      "snippet": "Sometimes Jeffrey Silverstein uses words, delivering them in a low, Bill Callahan-esque drawl. Other times, he let’s the music do the talking. The most recent single from Silverstein’s forthcoming LP Doggone, the languid “Patchouli,” is a case of the latter. The tune is a patient blend of swelling s",
+      "url": "https://aquariumdrunkard.com/2026/08/27/jeffrey-silverstein-patchouli/",
       "genre": "",
       "vibe_check": "",
-      "cover_url": "https://aquariumdrunkard.com/_newness/wp-content/uploads/2026/08/JimJames.jpg",
-      "embed_url": null
-    },
-    {
-      "source": "music",
-      "source_name": "Aquarium Drunkard",
-      "title": "Lambchop :: Punching the Clown",
-      "snippet": "Lambchop’s Kurt Wagner’s weathered voice typically brushes up against melody, rather than embracing it. He sings very simply, with feeling but not much artifice, and if we left it at that, Punching the Clown might be just another exercise in minimalist Americana. But instead, in the making of this 1",
-      "url": "https://aquariumdrunkard.com/2026/08/25/lambchop-punching-the-clown/",
-      "genre": "",
-      "vibe_check": "",
-      "cover_url": "https://aquariumdrunkard.com/_newness/wp-content/uploads/2026/07/Lambchop-Punching-the-Clown.jpg",
+      "cover_url": "https://aquariumdrunkard.com/_newness/wp-content/uploads/2026/08/a2681705438_10.jpg",
       "embed_url": null
     },
     {
       "source": "music",
       "source_name": "Consequence",
-      "title": "Boston’s Iconic Debut Album To Be Reissued with “Long Lost” Demos",
-      "snippet": "The 50th anniversary edition comes in SACD, a black double-LP, and a limited edition pearl gold double-LP.\nBoston&#8217;s Iconic Debut Album To Be Reissued with &#8220;Long Lost&#8221; Demos\nLangdon Hickman",
-      "url": "https://consequence.net/2026/08/boston-debut-50th-anniversary-reissue-demos/",
+      "title": "CoSign: Westside Cowboy Just Dropped One of the Best Debut Albums in Recent Memory",
+      "snippet": "We connect with the buzzy indie rock act to chat about their trademark \"Britainicana,\" community activism, and their great new album It Goes On. \nCoSign: Westside Cowboy Just Dropped One of the Best Debut Albums in Recent Memory\nJonah Krueger",
+      "url": "https://consequence.net/2026/08/westside-cowboy-it-goes-on-cosign-interview/",
       "genre": "",
       "vibe_check": "",
-      "cover_url": "https://consequence.net/wp-content/uploads/2026/08/Boston-50th-anniversary-Gold-Edition.jpg",
-      "embed_url": "https://www.youtube.com/embed/t4QK8RxCAwo"
+      "cover_url": "https://consequence.net/wp-content/uploads/2026/08/eastfront-horsegirl.jpg",
+      "embed_url": "https://www.youtube.com/embed/Hdx0uQR_Sro"
     },
     {
       "source": "music",
       "source_name": "Consequence",
-      "title": "Stevie Nicks Delivers Powerful Performance of “Stand Back” on Kimmel: Watch",
-      "snippet": "Nicks took the stage ahead of this weekend's appearance at Olivia Rodrigo's inaugural Daisy Chain Fields festival.\nStevie Nicks Delivers Powerful Performance of &#8220;Stand Back&#8221; on Kimmel: Watch\nEddie Fu",
-      "url": "https://consequence.net/2026/08/stevie-nicks-stand-back-kimmel/",
+      "title": "Vin Diesel Shares Tender Cover of “I Will Always Love You” in Dolly Parton Tribute",
+      "snippet": "The action star shared the cover following Parton's death at the age of 80.\nVin Diesel Shares Tender Cover of &#8220;I Will Always Love You&#8221; in Dolly Parton Tribute\nWren Graves",
+      "url": "https://consequence.net/2026/08/vin-diesel-i-will-always-love-you-dolly-parton/",
       "genre": "",
       "vibe_check": "",
-      "cover_url": "https://consequence.net/wp-content/uploads/2026/08/stevie-nicks-kimmel-stand-back.jpg",
-      "embed_url": "https://www.youtube.com/embed/WtMAJgH3bIY"
+      "cover_url": "https://consequence.net/wp-content/uploads/2026/08/dolly-parton-vin-diesel-cover-i-will-always-love-you.png",
+      "embed_url": null
     },
     {
       "source": "music",
       "source_name": "Consequence",
-      "title": "Orville Peck Covers “I Will Always Love You” in Honor of Dolly Parton: Watch",
-      "snippet": "Peck was overcome with emotion as he gave a heartfelt rendition of the country classic.\nOrville Peck Covers &#8220;I Will Always Love You&#8221; in Honor of Dolly Parton: Watch\nPaolo Ragusa",
-      "url": "https://consequence.net/2026/08/orville-peck-i-will-always-love-you-dolly-parton-cover-watch/",
+      "title": "Federal Judge Cites Dolly Parton While Striking Down Texas Drag Ban",
+      "snippet": "The ruling also pointed to Elvis impersonators, cosplay, and swimming as examples of performances that could be swept up by the law's vague language.\nFederal Judge Cites Dolly Parton While Striking Down Texas Drag Ban\nAlex Krinsky",
+      "url": "https://consequence.net/2026/08/dolly-parton-texas-drag-ban-ruling/",
       "genre": "",
       "vibe_check": "",
-      "cover_url": "https://consequence.net/wp-content/uploads/2026/08/Orville-Peck-I-Will-Always-Love-You-Dolly-Parton-Cover.jpg",
-      "embed_url": "https://www.youtube.com/embed/eD3g5CEnRJ0"
+      "cover_url": "https://consequence.net/wp-content/uploads/2026/08/Dolly-Parton-cited-by-texas-judge-in-drag-ruling.jpg",
+      "embed_url": null
     },
     {
       "source": "music",
       "source_name": "JazzTimes",
-      "title": "Sweeps Week: Top August Jazz Releases, Henkin Edition",
-      "snippet": "H ere are Andrey Henkin’s monthly picks, coming to you the last Wednesday of the month. Enneads, Enneads (Birdwatcher Records) On the one hand, Enneads &#8230; Read More \"Sweeps Week: Top August Jazz Releases, Henkin Edition\"\nThe post Sweeps Week: Top August Jazz Releases, Henkin Edition appeared fi",
-      "url": "https://www.jazztimes.com/reviews/albums/sweeps-week-top-august-jazz-releases-henkin-edition-2/",
+      "title": "The Good Life: Tony Bennett at 100 — A Rare Interview from 2018",
+      "snippet": "O f all the jazz centenary centurions we’ve celebrated in 2026 — Miles Davis, Oscar Peterson, John Coltrane — only one made it into the &#8230; Read More \"The Good Life: Tony Bennett at 100 — A Rare Interview from 2018\"\nThe post The Good Life: Tony Bennett at 100 — A Rare Interview from 2018 appeare",
+      "url": "https://www.jazztimes.com/features/profiles/the-good-life-tony-bennett-at-100-a-rare-interview-from-2018/",
       "genre": "",
       "vibe_check": "",
-      "cover_url": "https://www.jazztimes.com/wp-content/uploads/2026/08/collage-Weds-aug-26-scaled.jpg",
-      "embed_url": null
+      "cover_url": "https://www.jazztimes.com/wp-content/uploads/2026/08/Tony90BW2_large.jpg",
+      "embed_url": "https://www.youtube.com/embed/bj_bh4gXLJw"
     },
     {
       "source": "music",
       "source_name": "PopMatters",
-      "title": "With Dolly Parton, the Glitz Was Never Separate From the Genius",
-      "snippet": "In tribute to Dolly Parton, we celebrate her genius not only in songwriting and singing, but also in being the creative force behind her indelible image.",
-      "url": "https://www.popmatters.com/dolly-parton-tribute-2026",
+      "title": "The Jayhawks Remind Us to Celebrate Their Entire Output",
+      "snippet": "The Jayhawks' new LP veers too far into familiar classic rock territory but, as a player in the Americana scene, remind us how great they have always been and still can be.",
+      "url": "https://www.popmatters.com/the-jayhawks-sanctuary-park",
       "genre": "",
       "vibe_check": "",
-      "cover_url": "https://www.popmatters.com/wp-content/uploads/2026/08/Dolly-Parton-RCA-Press-Photo-1970.webp",
-      "embed_url": "https://www.youtube.com/embed/fV7tD0U0Yt0"
+      "cover_url": "https://www.popmatters.com/wp-content/uploads/2026/08/The-Jayhawks-Sanctuary-Park-social.webp",
+      "embed_url": "https://www.youtube.com/embed/sPJUGRmQR2A"
     },
     {
       "source": "music",
       "source_name": "PopMatters",
-      "title": "Americana’s Pieta Brown Is Dreamin’ in the Dark",
-      "snippet": "Pieta Brown sounds less like someone dreaming of somewhere else than someone who has learned how to stay awake inside the dream.",
-      "url": "https://www.popmatters.com/pieta-brown-interview-2026",
+      "title": "The Jazz Organ Trio Lives on Thanks to Larry Goldings et al.",
+      "snippet": "Rhombus is a strong album, and its choice of repertoire makes it unusually interesting to revisit multiple times. May the organ trio format live on!",
+      "url": "https://www.popmatters.com/rhombus-organ-trio-2026",
       "genre": "",
       "vibe_check": "",
-      "cover_url": "https://www.popmatters.com/wp-content/uploads/2026/08/Pieta-Brown-2026-by-Mei-Ling.webp",
-      "embed_url": "https://www.youtube.com/embed/DAhbzRWyCIA"
+      "cover_url": "https://www.popmatters.com/wp-content/uploads/2026/08/Peter-Bernstein-organ-trio-2026-via-Bandcamp.webp",
+      "embed_url": "https://www.youtube.com/embed/lqeFC0kRH44"
     },
     {
       "source": "music",
       "source_name": "PopMatters",
-      "title": "‘A Strange Light From the East’ Sounds Beautiful, Provokes Thought",
-      "snippet": "Strange Light explores many permutations of mostly English and American folk, rock, and pop, laced with modes, rhythms, and philosophies derived from the \"East\".",
-      "url": "https://www.popmatters.com/a-strange-light-from-the-east",
+      "title": "Laura Fisher Adds an Adventurous Entry to Her Discography",
+      "snippet": "Laura Fisher's new LP is a forward-thinking, futuristic journey that looks straight ahead while also evoking past musical trailblazers.",
+      "url": "https://www.popmatters.com/laura-fisher-the-sky-is",
       "genre": "",
       "vibe_check": "",
-      "cover_url": "https://www.popmatters.com/wp-content/uploads/2026/08/A-Strange-Light-from-the-East-Eastern-Influenced-Western-Music-1965-72-SP.webp",
-      "embed_url": "https://bandcamp.com/EmbeddedPlayer/album=2200645575/size=large/bgcol=ffffff/linkcol=e99708/tracklist=false/artwork=small/transparent=true/"
+      "cover_url": "https://www.popmatters.com/wp-content/uploads/2026/08/Laura-Fisher-THE-SKY-IS-A-WONDROUS-BEING-I-AM-LUCKY-TO-BE-INSIDE-social.webp",
+      "embed_url": "https://bandcamp.com/EmbeddedPlayer/album=1640331434/size=large/bgcol=ffffff/linkcol=e99708/tracklist=false/artwork=small/transparent=true/"
     }
   ],
   "global_silver_linings": [
     {
       "source": "good_news",
       "source_name": "Good News Network",
-      "title": "Resurrecting Plant Inspires ‘Fridge Free’ Vaccines That Could Save the Millions of Doses Wasted Annually",
-      "url": "https://www.goodnewsnetwork.org/resurrecting-plant-inspires-fridge-free-vaccines-that-could-save-the-millions-of-doses-wasted-annually/",
-      "snippet": "A new ‘fridge free’ production method for vaccines could create far more reliable immunizations for low and middle income countries, as well as cut back on waste. Currently, it’s estimated that a large percentage of all vaccine doses are thrown out because the “cold chain,” a strict process of temperature controlled storage from the moment […] The post Resurrecting Plant Inspires ‘Fridge Free’ Vaccines That Could Save the Millions of Doses Wasted Annually appeared first on Good News Network .",
-      "cover_url": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/08/Pleopeltis-polypodioides-or-the-resurrection-fern-is-a-plant-that-inspired-the-fridge-free-vaccines-credit-a.dombrowski-CC-BY-SA-2.0.jpg",
-      "reason": "A desert plant that survives complete desiccation has inspired vaccines that stay stable without refrigeration, which could prevent millions of wasted doses and finally bring life-saving medicine to the world's most remote communities. Nature, as ever, turns out to be the best engineer."
+      "title": "Pakistan Combines River Dolphin Sanctuaries Along the Indus River, Protecting 250 Miles of Habitat",
+      "url": "https://www.goodnewsnetwork.org/pakistan-combines-river-dolphin-sanctuaries-along-the-indus-river-protecting-250-miles-of-habitat/",
+      "snippet": "Pakistan has created a wildlife sanctuary along 123 miles of the Indus River where it’s estimated 440 of these extraordinary freshwater cetaceans live. The endangered Indus River Dolphin has seen large declines in the amount of river it’s able to access as Pakistan’s economic growth drove river infrastructure projects like dams and irrigation canals. Some […] The post Pakistan Combines River Dolphin Sanctuaries Along the Indus River, Protecting 250 Miles of Habitat appeared first on Good News Network .",
+      "cover_url": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/08/©-WWF-Pakistan-editorial-use-only.jpg",
+      "reason": "Pakistan has united its river dolphin sanctuaries into a continuous 250-mile protected corridor along the Indus, giving one of the world's rarest freshwater mammals a real fighting chance at recovery. It's a powerful reminder that governments can choose wildlife over short-term convenience."
     },
     {
       "source": "good_news",
       "source_name": "Positive News",
-      "title": "Putting slugs on the map: farmers pioneer precision crop protection",
-      "url": "https://www.positive.news/environment/putting-slugs-on-the-map-farmers-pioneer-precision-crop-protection/",
-      "snippet": "A new mapping tool pinpoints where slugs are likely to strike, helping farmers cut pesticide use while protecting crops The post Putting slugs on the map: farmers pioneer precision crop protection appeared first on Positive News .",
-      "cover_url": "https://www.positive.news/wp-content/uploads/2026/08/t-y-zQAUz4MmcZA-unsplash-scaled.jpg",
-      "reason": "Farmers are using precision mapping to track slug activity field by field, cutting pesticide use while protecting harvests — proof that working carefully with the land, rather than against it, produces smarter solutions for everyone."
+      "title": "Life after: oil",
+      "url": "https://www.positive.news/environment/life-after-oil/",
+      "snippet": "Former oil executive Samantha Cooper once helped power the industry. Now she’s fighting to end its hold on our future The post Life after: oil appeared first on Positive News .",
+      "cover_url": "https://positivenews.kinsta.cloud/wp-content/uploads/2026/08/Positive-News_Samantha-Cooper_Joanne-Crawford-47-copy-e1787131609870.jpg",
+      "reason": "Communities once defined by fossil fuel dependence are finding new identities and livelihoods on the other side of that transition, proving that economic reinvention is genuinely possible. These stories of resilience matter because they make the path forward feel less abstract."
+    },
+    {
+      "source": "good_news",
+      "source_name": "Upworthy",
+      "title": "An Ohio principal lost his job in 2024 for helping a homeless student. Then he adopted him.",
+      "url": "https://www.upworthy.com/an-ohio-principal-lost-his-job-in-2024-for-helping-a-homeless-student/",
+      "snippet": "The educator of 31 years and the student are finally sharing their side of the story. The post An Ohio principal lost his job in 2024 for helping a homeless student. Then he adopted him.",
+      "cover_url": "https://www.upworthy.com/wp-content/uploads/sites/2/2026/08/ANNIE-TOP-SPLASH-33.jpg",
+      "reason": "A principal who risked his career to support a homeless student didn't stop there — he opened his home and his family to him permanently. It's a quiet, radical act of love that shows one person's commitment can entirely change the course of a young life."
     },
     {
       "source": "good_news",
       "source_name": "Reasons to be Cheerful",
-      "title": "What We’re Reading: A Wheelchair Rugged Enough for National Park Trails",
-      "url": "https://reasonstobecheerful.world/what-were-reading-rugged-wheelchairs-national-parks/",
-      "snippet": "Welcome back to our weekly behind-the-scenes glimpse at what’s getting our team talking. Tell us what you’ve been reading at info@reasonstobecheerful.world and we just might feature it here. Rolling vistas Utah’s Zion National Park has long been a pioneer in visitor transportation: To reduce traffic, a shuttle system began operating...",
-      "cover_url": "https://reasonstobecheerful.world/wp-content/uploads/2026/08/shutterstock_2078529844-scaled.jpg",
-      "reason": "A rugged, trail-ready wheelchair means that wild, untamed landscapes are becoming genuinely accessible to more people — a quiet reminder that good design, done with care, can open up the natural world to those who've too often been kept at its edge."
+      "title": "Want to See a Tiger? Let These Women Be Your Guides",
+      "url": "https://reasonstobecheerful.world/want-to-see-a-tiger-let-these-women-be-your-guides/",
+      "snippet": "It is dawn in Tadoba-Andhari Tiger Reserve in the western Indian state of Maharashtra. Most of the tourists waiting to start their safari have come to see a tiger. Instead, another sight catches their attention: women in khaki uniforms climbing aboard the jeeps.",
+      "cover_url": "https://reasonstobecheerful.world/wp-content/uploads/2026/08/shutterstock_1219789288-scaled.jpg",
+      "reason": "Women from local communities are stepping up as tiger safari guides, bringing an intimate knowledge of the land that enriches the experience for visitors while securing meaningful work for themselves. Conservation and community empowerment rarely look this good together."
+    },
+    {
+      "source": "good_news",
+      "source_name": "The Optimist Daily",
+      "title": "The case for eating blueberries every day, according to a nutritionist",
+      "url": "https://www.optimistdaily.com/2026/08/the-case-for-eating-blueberries-every-day-according-to-a-nutritionist/",
+      "snippet": "BY THE OPTIMIST DAILY EDITORIAL TEAM There’s a specific kind of health advice that asks a lot of you: meal prep, supplements with confusing ingredient lists, routines that cost more than they should. Blueberries aren’t that. They can be inexpensive, they need almost no preparation, and the research keeps giving you more reasons to eat […] The post The case for eating blueberries every day, according to a nutritionist first appeared on The Optimist Daily: Making Solutions the News .",
+      "cover_url": "https://www.optimistdaily.com/wp-content/uploads/Depositphotos_287441778_L.jpg",
+      "reason": "It turns out one of the most effective things you can do for your long-term health is also one of the simplest and most delicious — a daily handful of blueberries packs a quietly impressive nutritional punch. Good news that's easy to act on is the best kind."
     }
   ],
   "discovery_articles": [
     {
       "source": "discovery",
-      "source_name": "Atlas Obscura",
-      "title": "12 Sculptures Made From Recycled Materials",
-      "url": "https://www.atlasobscura.com/articles/sculptures-made-from-recycled-materials",
-      "snippet": "For time immemorial, human beings have generated trash ... lots and lots of trash. And from the aqueducts and municipal dumps of ancient times to the massive landfills of today, we’ve tried all kinds of ways to get rid of it.",
+      "source_name": "Smithsonian",
+      "title": "A Brittle Coating on a 2,200-Year-Old Roman Shipwreck Reveals How Ancient Sailors Kept Their Ships Afloat",
+      "url": "https://www.smithsonianmag.com/smart-news/brittle-coating-on-2200-year-old-roman-shipwreck-revealing-how-ancient-soliders-kept-ships-afloat-180989394/",
+      "snippet": "Traces of pine tar and beeswax preserved on the vessel reveal the painstaking techniques shipbuilders millennia ago used to protect their ships from the briny deep",
       "category": "history",
-      "cover_url": "https://img.atlasobscura.com/WWv-hLRQx6VD3ljQSQaMzZ6vC9GVEHbERpV7CwgMdKg/rt:fit/w:1200/c:600:400:nowe:64:189/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL2Fzc2V0/cy85OTIwNDE1Mi03/ZWRkLTRkOTEtYThj/NC1mZmIwNTZiYzEw/MWEwZDA0ZWJjMGI5/YTNiMGRlMzVfZDQ2/N2M4ZDctNGY0ZS00/NWE1LTg3NjYtYjI0/YWUxZWYzYjlhYjk0/NzJiZjA5MGFkNjVk/YmExXzMwODY2NF8x/MDE1MDI5NjkwMjY1/MjkzOV8xNDUyODQ4/MzMxX24uanBn.jpg"
-    },
-    {
-      "source": "discovery",
-      "source_name": "Atlas Obscura",
-      "title": "Freedom Park in Williamsburg, Virginia",
-      "url": "https://www.atlasobscura.com/places/freedom-park-williamsburg",
-      "snippet": "At first glance, Freedom Park seems like simply a peaceful escape into nature. Mountain bikers weave through miles of trails. Families picnic beneath pine trees.",
-      "category": "history",
-      "cover_url": "https://img.atlasobscura.com/3QTGH-uHJlYdx9kaQq3_a7sqccQA6h1WgMcsbgK-j8U/rt:fit/w:600/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy84NzIx/M2I2ZjE5YzgyMmFh/OWZfRnJlZWRvbVBy/a19mYXRoZXImc29u/LkpQRw.jpg"
-    },
-    {
-      "source": "discovery",
-      "source_name": "Atlas Obscura",
-      "title": "Jolly's Mill Pond in Williamsburg, Virginia",
-      "url": "https://www.atlasobscura.com/places/jollys-mill-pond",
-      "snippet": "On a quiet stretch of water just outside Williamsburg, recipes, archives, and heirloom crops are revealing stories that conventional history has overlooked. Dating back to the late 18th century, Jolly’s Mill Pond has become an outdoor classroom where Black, Indigenous, agricultural, and culinary histories are explored together around a shared table. In the late 1700s, the pond and its dam were created to power a gristmill that served the surrounding community.",
-      "category": "history",
-      "cover_url": "https://img.atlasobscura.com/RADHvm4hP6pYjog3CLC3fQENfL8ho_GO0SXez-zlyQY/rt:fit/w:600/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy9lMjIx/NjU3NDdjNDYyMjlk/NDFfSU1HXzY2MDYu/SlBFRw.jpg"
+      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/OzeBo7xFXZ8E3E9Yw44Cll9uCMo=/fit-in/1600x0/filters:focal(666x448:667x449)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/4e/9f/4e9f0fe8-aa48-438a-b88f-3a29cd71107e/https___wwwfrontiersinorg_files_articles_1758862_xml-images_fmats-13-1758862-g001.jpeg",
+      "ferns_note": "Beeswax and pine tar — not iron or magic — are what kept Roman hulls from quietly dissolving into the Mediterranean over two millennia ago. There's something quietly astonishing about a thin, brittle crust outlasting empires to tell us exactly how sailors once coaxed wood into defying the sea."
     },
     {
       "source": "discovery",
       "source_name": "Smithsonian",
-      "title": "This Deadly Shellfish Poisoning Has No Antidote. A Protein Found in American Bullfrogs Could Change That",
-      "url": "https://www.smithsonianmag.com/smart-news/this-deadly-shellfish-poisoning-has-no-antidote-a-protein-found-in-american-bullfrogs-could-change-that-180989365/",
-      "snippet": "A study in mice found that a protein called saxiphilin acts like a sponge against a deadly toxin produced by algal blooms. The harmful agent, which accumulates in certain seafood, can cause a life-threatening illness called paralytic shellfish poisoning",
+      "title": "At Least One in Four Former NFL Players Who Died Between 2016 and 2021 Had the Progressive Brain Disease CTE, Study Suggests",
+      "url": "https://www.smithsonianmag.com/smart-news/at-least-one-in-four-former-nfl-players-who-died-between-2016-and-2021-had-the-progressive-brain-disease-cte-study-suggests-180989406/",
+      "snippet": "The true prevalence of the neurodegenerative disease—which is associated with repeated head injuries—among the deceased football players might be much higher. CTE affects other athletes too, including hockey players, soccer players and wrestlers",
       "category": "history",
-      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/z3YrHZOGqVGxSTYPHE01qyatvUs=/fit-in/1600x0/filters:focal(1143x893:1144x894)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/c4/48/c44861eb-ef7f-4042-9c7e-10b7a4a61e39/north-american-bullfrog1.jpg"
+      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/OM83TwBt5YXEuEYT8JzuGTzjKr4=/fit-in/1600x0/filters:focal(1500x843:1501x844)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/5a/36/5a3687f2-25d8-412e-86c3-ea56daf91ea6/nfl-cte.jpg",
+      "ferns_note": "One in four is already a staggering number — and researchers believe it's likely an undercount, since only players whose families suspected something was wrong tended to donate their brains for study. The disease we can only confirm after death may be far more common among the living than anyone wants to reckon with."
     },
     {
       "source": "discovery",
       "source_name": "Smithsonian",
-      "title": "A New Telescope Still Under Construction Accidentally Reveals How a Dying Star Returns Matter to Space",
-      "url": "https://www.smithsonianmag.com/smart-news/a-new-telescope-still-under-construction-accidentally-reveals-how-a-dying-star-returns-matter-to-space-180989349/",
-      "snippet": "Researchers captured an unprecedented image of the stellar recycling process while calibrating a Chile-based instrument called MOTHRA, which is expected to be complete by the end of 2026",
+      "title": "This American Commando Parachuted Behind Enemy Lines in Both the European and Pacific Theaters of World War II",
+      "url": "https://www.smithsonianmag.com/history/this-american-commando-parachuted-behind-enemy-lines-in-both-the-european-and-pacific-theaters-of-world-war-ii-180989396/",
+      "snippet": "A direct descendant of Thomas Jefferson, Francis Lowell Coolidge was an agent with the Office of Strategic Services, a predecessor to the CIA. Read his goodbye letter to his wife, published here for the first time",
       "category": "history",
-      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/N212gIiEs1p7pBLfOJQVGx-UR5k=/fit-in/1600x0/filters:focal(485x328:486x329)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/3f/55/3f5579c8-c4a7-43a5-bb54-6498478792fd/helix1940__fitmaxwzk3mcw2ntbd.jpg"
+      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/_Oza7jIwuizbk3U_2SDcnL7PRkk=/fit-in/1600x0/filters:focal(750x500:751x501)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/f8/c6/f8c6c426-628a-4133-beac-bc8e5dce1071/coolidge2.png",
+      "ferns_note": "A man who carried Thomas Jefferson's bloodline wrote a goodbye letter to his wife before parachuting behind enemy lines — not once, but in two entirely different theaters of the same war. That letter, unpublished for nearly eighty years, is the kind of document that makes history feel unbearably close."
     },
     {
       "source": "discovery",
       "source_name": "Smithsonian",
-      "title": "To Dismantle the Concept of Separate but Equal, Thurgood Marshall Methodically Devised a Winning Strategy: Divide and Conquer",
-      "url": "https://www.smithsonianmag.com/history/dismantle-concept-separate-equal-thurgood-marshall-methodically-devised-winning-strategy-divide-conquer-180989278/",
-      "snippet": "While other activists aimed to take down Jim Crow in one fell swoop, the future Supreme Court justice compiled a series of wins that ultimately added up to an undeniable resolution",
+      "title": "Tennis Matches Are Heating Up, Literally. Here’s How the Court Became a Living Laboratory for Managing Extreme Temperatures",
+      "url": "https://www.smithsonianmag.com/science-nature/tennis-matches-are-heating-up-literally-heres-how-the-court-became-a-living-laboratory-for-managing-extreme-temperatures-180989399/",
+      "snippet": "The sport’s hard-court surfaces can reach some 30 degrees hotter than the surrounding air. With elite players suffering heat illness on the world stage, athletes are following personalized cooling plans",
       "category": "history",
-      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/I3OpYr2l1XbawF98anvG-G_bQ9w=/fit-in/1600x0/filters:focal(4463x2639:4464x2640)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/eb/b9/ebb9b23f-99ad-4706-a17d-95319c5999a9/thurgood_marshall_final.jpg"
-    },
-    {
-      "source": "discovery",
-      "source_name": "Smithsonian",
-      "title": "'Hunger Stones' Resurface in Europe, Bringing Centuries-Old Warnings Back Into View as Rivers Hit Historic Lows",
-      "url": "https://www.smithsonianmag.com/smart-news/hunger-stones-resurface-europe-bringing-centuries-old-warnings-back-into-view-rivers-hit-historic-lows-180989387/",
-      "snippet": "As drought exposes stretches of riverbed in central Europe, markers carved by past generations to record low water levels are emerging once again",
-      "category": "history",
-      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/KuOoI2eF_pz8gywIC4_xBxo0rAA=/fit-in/1600x0/filters:focal(2736x1537:2737x1538)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/4e/07/4e079c86-562a-4a24-892c-038825b326ae/hungerstein_in_decin_21.jpeg"
+      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/6_MMSx-eQXhJPf0n73r5UkZ-92A=/fit-in/1600x0/filters:focal(1024x683:1025x684)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/d2/a4/d2a4a5b3-aa84-4c59-933c-2965aa312980/img_7337.jpeg",
+      "ferns_note": "Hard tennis courts can run thirty degrees hotter than the air above them, essentially turning elite athletes into subjects in an unplanned heat experiment watched by millions. The sport is quietly becoming one of the sharpest real-world laboratories we have for understanding how human bodies cope with a warming world."
     },
     {
       "source": "discovery",
       "source_name": "Science News",
-      "title": "Once upon a time, insects had 24 legs",
-      "url": "https://www.sciencenews.org/article/insects-fossil-record-24-legs",
-      "snippet": "A many-legged oddball from long ago helps fill a major gap in the fossil record — and hints at how insects ended up with just six legs.",
+      "title": "A space telescope was falling from orbit. Its rescue mission fell apart too",
+      "url": "https://www.sciencenews.org/article/swift-space-telescope-failed-rescue",
+      "snippet": "NASA’s attempt to save the falling Swift telescope failed, revealing the realities of the burgeoning field of satellite servicing.",
       "category": "science",
-      "cover_url": "https://www.sciencenews.org/wp-content/uploads/sites/2/2026/08/082526_ED_insectfossil_main.jpg"
+      "cover_url": "https://www.sciencenews.org/wp-content/uploads/sites/2/2026/08/082526_MK_SwiftObs_main.jpg",
+      "ferns_note": "NASA's Swift telescope had survived nearly two decades in orbit, only to face its quietest crisis: a slow, unglamorous fall back to Earth that a rescue mission couldn't stop. It's a sobering glimpse into how the promising new field of satellite servicing collides with the blunt realities of orbital physics and logistics."
     },
     {
       "source": "discovery",
       "source_name": "Science News",
-      "title": "Microbes might get freeze-dried on the moon’s south pole",
-      "url": "https://www.sciencenews.org/article/microbes-freeze-dried-moons-south-pole",
-      "snippet": "Artemis IV will put people on the moon’s surface for the first time in 50 years. NASA research reveals the microbes that might hitch a ride.",
+      "title": "Monkeys hunt small animals when fruit is scarce",
+      "url": "https://www.sciencenews.org/article/monkeys-hunt-small-animals-fruit-scarce",
+      "snippet": "Capuchins hunt and eat small vertebrates more often as plant foods wane. The behavior may help us learn more about humans’ early dietary evolution.",
       "category": "science",
-      "cover_url": "https://www.sciencenews.org/wp-content/uploads/sites/2/2026/08/082426_LR_microbes_main.jpg"
+      "cover_url": "https://www.sciencenews.org/wp-content/uploads/sites/2/2026/08/082526_JB_monkeys_main.jpg",
+      "ferns_note": "Capuchin monkeys don't just opportunistically snatch prey — they ramp up hunting with almost deliberate strategy when fruit runs low, mirroring a flexibility that may echo in our own deep evolutionary past. The implication is quietly radical: meat-eating in early humans may have been less a preference than a pantry problem."
     },
     {
       "source": "discovery",
       "source_name": "JSTOR Daily",
-      "title": "How Kudzu Was Supposed to Save the South",
-      "url": "https://daily.jstor.org/how-kudzu-was-supposed-to-save-the-south/",
-      "snippet": "Before it became a notorious invasive plant, kudzu was promoted as a solution to widespread soil erosion. The post How Kudzu Was Supposed to Save the South appeared first on JSTOR Daily .",
+      "title": "Back to School",
+      "url": "https://daily.jstor.org/editors-picks-back-school/",
+      "snippet": "Stories from JSTOR Daily about education, libraries, learning, and student life. The post Back to School appeared first on JSTOR Daily .",
       "category": "history",
-      "cover_url": "https://daily.jstor.org/wp-content/uploads/2026/08/how_kudzu_was_supposed_to_save_the_south_1050x700.jpg"
-    },
-    {
-      "source": "discovery",
-      "source_name": "Quanta Magazine",
-      "title": "In Hilbert Space, All Things Are Quantumly Possible",
-      "url": "https://www.quantamagazine.org/in-hilbert-space-all-things-are-quantumly-possible-20260826/",
-      "snippet": "To explore quantum phenomena, we must leave the familiar world and enter the abstract realm of Hilbert space. The post In Hilbert Space, All Things Are Quantumly Possible first appeared on Quanta Magazine",
-      "category": "science",
-      "cover_url": "https://www.quantamagazine.org/wp-content/uploads/2026/08/HilbertSpace-cr-Tommy-Parket-Social.jpg"
+      "cover_url": "https://daily.jstor.org/wp-content/uploads/2026/08/back_to_school_roundup_1050x700.jpg",
+      "ferns_note": "The ritual of going back to school has generated centuries of stories worth revisiting — from the architecture of libraries to the social dramas of student life. Consider this a quiet invitation to wander through JSTOR Daily's archive with a warm drink in hand."
     },
     {
       "source": "discovery",
       "source_name": "Colossal",
-      "title": "Wildlife Photographer of the Year Whittles More than 65,000 Entries to the Top 100",
-      "url": "https://www.thisiscolossal.com/2026/08/wildlife-photographer-of-the-year-2026-finalists/",
-      "snippet": "The prestigious contest showcases the world's diverse creatures and their habitats. Do stories and artists like this matter to you? Become a Colossal Member today and support independent arts publishing for as little as $7 per month.",
+      "title": "Lush Foliage Permeates Xanthe Burdett’s Delicate Portraiture",
+      "url": "https://www.thisiscolossal.com/2026/08/xanthe-burdett-foliage-portraits/",
+      "snippet": "For Xanthe Burdett, the boundary between humans and nature is thin, malleable, and always in flux. Do stories and artists like this matter to you? Become a Colossal Member today and support independent arts publishing for as little as $7 per month.",
       "category": "history",
-      "cover_url": "https://www.thisiscolossal.com/wp-content/uploads/2026/08/wpoty-1.jpg"
+      "cover_url": "https://www.thisiscolossal.com/wp-content/uploads/2026/08/burdett-5.jpg",
+      "ferns_note": "Xanthe Burdett paints faces the way forests actually feel — as though leaves and skin are simply two expressions of the same patient, growing thing. Her portraits don't place humans in nature so much as suggest we never quite left it."
+    },
+    {
+      "source": "discovery",
+      "source_name": "Colossal",
+      "title": "Mischievous Cats Rule in Minyoung Kim’s Affectionately Quirky Paintings",
+      "url": "https://www.thisiscolossal.com/2026/08/minyoung-kim-cats-paintings-humor/",
+      "snippet": "When it comes to felines, the artist revels in \"the contrast between how ordinary and how weird they are.\" Do stories and artists like this matter to you? Become a Colossal Member today and support independent arts publishing for as little as $7 per month. The article Mischievous Cats Rule in Minyoung Kim’s Affectionately Quirky Paintings appeared first on Colossal .",
+      "category": "history",
+      "cover_url": "https://www.thisiscolossal.com/wp-content/uploads/2026/08/kim-5.jpg",
+      "ferns_note": "Minyoung Kim captures the peculiar truth that cats manage to be utterly mundane and profoundly alien in the same languid stretch. Her paintings treat that contradiction not as a puzzle to solve but as the whole delightful point."
     }
   ],
   "featured_read": {
     "source": "reads",
     "source_name": "Nautilus",
-    "title": "What’s the Secret to Bats’ Super Longevity?",
-    "url": "https://nautil.us/whats-the-secret-to-bats-super-longevity-1284461/",
-    "snippet": "Multiples of immune proteins give them an edge in fixing cell damage The post What’s the Secret to Bats’ Super Longevity? appeared first on Nautilus .",
-    "cover_url": "https://lede-admin.nautil.us/wp-content/uploads/sites/70/2026/08/shutterstock_2671870889.jpg"
+    "title": "How Much of a Problem is AI’s Water Use?",
+    "url": "https://nautil.us/how-much-of-a-problem-is-ais-water-use-1284519/",
+    "snippet": "It depends. Though water consumption by data centers pales in comparison to that of some other industries, it’s a problem in water-stressed regions. Water-saving cooling technologies could help The post How Much of a Problem is AI’s Water Use?",
+    "cover_url": "https://lede-admin.nautil.us/wp-content/uploads/sites/70/2026/08/ai-and-water-1600x600-1.jpg",
+    "blurb": "The question isn't whether AI is thirsty — it's whether it's thirsty in the wrong places, and this piece traces exactly how geography turns a manageable industry habit into a genuine local crisis. A clear-eyed look at the gap between global statistics and the reality on the ground in water-stressed communities."
   },
   "reading_room": [
     {
       "source": "reads",
       "source_name": "Longreads",
-      "title": "AI Is Dead. Organoids Are Alive",
-      "url": "https://longreads.com/2026/08/26/human-brain-organoids/",
-      "snippet": "\"Mini human brains are being grown in labs all over the world. Soon, they could outthink neural networks.\"",
-      "cover_url": ""
+      "title": "The Seniors Against Senior Housing",
+      "url": "https://longreads.com/2026/08/27/seniors-affordability-housing-oakland/",
+      "snippet": "\"America’s elders need more places to live, but even in liberal enclaves that recognize the problem, developers are facing the fiercest foes of all: America’s elders.\"",
+      "cover_url": "",
+      "blurb": "The sharpest irony in American housing policy may be this: the generation most harmed by the shortage of senior homes is also the one showing up loudest to block new ones. A portrait of how self-interest, fear, and neighborhood identity collide in the most unexpected of NIMBY battles."
     },
     {
       "source": "reads",
       "source_name": "Literary Hub",
-      "title": "In lieu of flowers, Dolly Parton’s Imagination Library is accepting donations.",
-      "url": "https://lithub.com/in-lieu-of-flowers-dolly-partons-imagination-library-is-accepting-donations/",
-      "snippet": "The queen is dead, long live the queen! Dolly Parton—perhaps the most universally beloved American—died at 80 yesterday. She went peacefully, surrounded by family.",
-      "cover_url": "https://s26162.pcdn.co/wp-content/uploads/2026/08/The-Dolly-Parton.jpg"
+      "title": "Lit Hub Daily: August 27, 2026",
+      "url": "https://lithub.com/lit-hub-daily-august-27-2026/",
+      "snippet": "What do you do when your writing group thinks your story’s hilarious (when it’s not supposed to be)? | Lit Hub Advice If you have a free afternoon, try reading one of these novellas from cover to cover. | Lit",
+      "cover_url": "https://s26162.pcdn.co/wp-content/uploads/2026/08/CesarePavese.jpg",
+      "blurb": null
     },
     {
       "source": "reads",
       "source_name": "3 Quarks Daily",
-      "title": "Why Do We Diminish the Cultural Memory of the Wild as Mere ‘Instinct’?",
-      "url": "https://3quarksdaily.com/3quarksdaily/2026/08/why-do-we-diminish-the-cultural-memory-of-the-wild-as-mere-instinct.html",
-      "snippet": "From The Great Planet: The research of Whiten and his colleagues demonstrates that there is a flexible, cultural transmission network in the wild that transcends genetics, built entirely on social learning, observation, and apprenticeship. From bumblebees teaching one another new techniques to extract pollen from flowers, to Japanese macaques washing sweet potatoes in seawater and…",
-      "cover_url": ""
+      "title": "3QD Temporary Test Article Post 1: PLEASE IGNORE",
+      "url": "https://3quarksdaily.com/3quarksdaily/2026/08/3qd-temporary-test-article-post-1-please-ignore.html",
+      "snippet": "by Nigel Worthington A yearslong car theft epidemic in Canada has gotten so bad that, despite a police crackdown, thieves break into homes just to steal car keys. Thousands of cars vanish each year. The phenomenon, records and interviews show, is driven in part by an unexpected source: a booming black market for Western vehicles…",
+      "cover_url": "",
+      "blurb": null
     },
     {
       "source": "reads",
       "source_name": "Nautilus",
-      "title": "Volcanoes That Made History",
-      "url": "https://nautil.us/volcanoes-that-made-history-1284447/",
-      "snippet": "Long after the lava stopped flowing, enormous eruptions altered Earth’s climate and societies all over the globe The post Volcanoes That Made History appeared first on Nautilus .",
-      "cover_url": "https://lede-admin.nautil.us/wp-content/uploads/sites/70/2026/08/shutterstock_1267127266.jpg"
+      "title": "NASA Has Begun the Countdown to the Launch of the Nancy Grace Roman Space Telescope",
+      "url": "https://nautil.us/nasa-is-counting-down-to-the-launch-of-the-nancy-grace-roman-space-telescope-1284513/",
+      "snippet": "The new space telescope will help astronomers unravel the mysteries of the universe The post NASA Has Begun the Countdown to the Launch of the Nancy Grace Roman Space Telescope appeared first on Nautilus .",
+      "cover_url": "https://lede-admin.nautil.us/wp-content/uploads/sites/70/2026/08/54139838275_8dbdfb6821_o.jpg",
+      "blurb": "Named for a pioneering astronomer who was denied credit for her own discoveries, the Nancy Grace Roman Space Telescope carries both a corrected legacy and a genuinely staggering mission — this piece sets out what it's going to look for, and why the answers matter."
     },
     {
       "source": "reads",
       "source_name": "Longreads",
-      "title": "The Sound of Your Voice",
-      "url": "https://longreads.com/2026/08/26/perfectionism-bitter-southerner/",
-      "snippet": "\"The fact that I had song ideas, let alone a place where I was saving them, was significant. It had been 15 years since I’d last released an album.\"",
-      "cover_url": ""
+      "title": "You Can Never Go Home Again. But You Can Spend a Lifetime Trying",
+      "url": "https://longreads.com/2026/08/27/nyc-architect-design-legacy/",
+      "snippet": "'My father designed two of the houses I grew up in. Then he died. I’m still untangling where his taste ends and mine begins.\"",
+      "cover_url": "",
+      "blurb": "When your father was the architect of your childhood homes — literally — grief becomes a design problem: which corners of your taste are truly yours, and which are just his blueprints still running in the walls. A quietly devastating essay about inheritance, loss, and the rooms we can never quite leave."
     }
   ],
   "garden_note": {
-    "note": "August's last full moon hangs heavy and golden over the Zürichsee tonight, the kind of light that makes the kitchen garden look almost theatrical — dahlias casting long shadows, runner beans glowing at their tips. There's a ripeness to everything right now, an urgency to harvest before the season quietly turns its back.",
+    "note": "Late August in Zürich carries that bittersweet richness — the days are still generous, but the garden is beginning to exhale, heavy with harvest and a faint whisper of autumn in the evening air. Tonight, step outside after supper and let the full moon cast its silver light across the bean rows and ripening apples; it is one of summer's last truly luminous gifts.",
     "in_season": [
-      "Dahlias in full flush",
-      "Runner beans and courgettes to harvest daily",
-      "Early apple varieties ripening on the bough",
-      "Deadheading calendula to keep blooms coming"
+      "Tomatoes — pick the ripest before cooler nights slow them",
+      "Zucchini — harvest daily or risk a marrow the size of a small dog",
+      "Dahlias — deadhead spent blooms to keep the colour coming",
+      "Sow winter spinach — early September is closer than it feels"
     ],
-    "sky_tonight": "The full moon rises in Aquarius — so luminous it will wash out fainter stars, but Saturn sits close by and is bright enough to hold its own",
-    "sun_times": "Dusk settles gently over Zürich at 20:50 tonight, with sunset just before at 20:19",
+    "sky_tonight": "The Full Sturgeon Moon rides high and brilliant — look southeast after dusk for Saturn glowing steadily just to its left.",
+    "sun_times": "First light crept in at 06:06 this morning, and the sun slipped away at 20:18, leaving a soft dusk until around 20:48.",
     "moon_label": "Full moon",
-    "illum_pct": 98,
-    "sun_range": "06:35–20:19"
+    "illum_pct": 100,
+    "sun_range": "06:36–20:18"
   },
   "puzzle": {
-    "kind": "riddle",
-    "label": "Fern's Morning Riddle",
-    "prompt": "You can touch me,\r\nYou can break me,\r\nYou should win me if you want to be mine. What am I ?",
-    "answer": "A heart",
-    "hint": "",
-    "source": "riddles.com",
-    "source_id": "Riddle-2063"
+    "kind": "anagram",
+    "label": "Fern's Morning Anagram",
+    "prompt": "Rearrange the letters of CELARIN to find the instrument that gave Baroque orchestras their brightest voice.",
+    "answer": "CLARINET",
+    "hint": "It belongs to the woodwind family and is played with a single reed."
   },
   "previous_puzzle": {
-    "label": "The Evening Trivia",
-    "prompt": "In \"Call Of Duty: Zombies\", what is the name of Samantha Maxis' dog?\n\nBaxter   ·   Fido   ·   Fluffy   ·   Henry",
-    "answer": "Fluffy"
+    "label": "Fern's Morning Riddle",
+    "prompt": "You can touch me,\r\nYou can break me,\r\nYou should win me if you want to be mine. What am I ?",
+    "answer": "A heart"
   },
   "larder": {
     "news": [],
     "recipe": {}
   },
   "fern_data": {
-    "greeting": "I kept second-guessing whether the 1980 Harvey's Casino bombing belonged here — and then I remembered that the best rabbit holes are the ones you'd never have chosen for yourself. Cécile McLorin Salvant's new album is in here too, daring you to keep up with it.",
-    "top_pick_title": "Fuses, Freeze-Drying & Dolly"
+    "greeting": "Chicken conquered America quietly — no war, no decree, just decades of slow market pressure and a industry that knew exactly what it was doing. That story is in here, alongside a failed space telescope rescue and the surprisingly legal legacy of Dolly Parton.",
+    "top_pick_title": "Feathers, Frequencies & River Dolphins"
   }
 }
