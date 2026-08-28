@@ -1,120 +1,36 @@
 {
-  "fetched_at": "2026-08-28T17:30:06.857314+02:00",
-  "is_am_email": false,
+  "fetched_at": "2026-08-29T01:35:02.450473+02:00",
+  "is_am_email": true,
   "audit_summary": {
-    "youtube_videos": 6,
-    "themes": 3,
-    "music_articles": 10,
-    "good_news_articles": 4,
-    "discovery_articles": 10,
+    "youtube_videos": 1,
+    "themes": 1,
+    "music_articles": 11,
+    "good_news_articles": 3,
+    "discovery_articles": 9,
     "featured_read": 1,
     "reading_room": 5,
     "garden": 1,
     "puzzle": 1,
-    "larder": 0
+    "larder": 3
   },
   "themes": [
     {
-      "name": "Rabbit Holes Worth Falling Down",
-      "emoji": "🕳️",
-      "tagline": "Weird history, disputed origins, and the glorious oddballs who made it interesting.",
+      "name": "Suspended in the Sky",
+      "emoji": "🚡",
+      "tagline": "Breathtaking journeys where the destination is just an excuse — the view is the whole point.",
       "items": [
-        {
-          "source": "youtube",
-          "video_id": "samobMt1FCo",
-          "title": "The True Origin of the Piña Colada?",
-          "channel_id": "UCsaGKqPZnGp_7N80hcHySGQ",
-          "channel_title": "Tasting History with Max Miller",
-          "published_at": "2026-08-28T15:00:27Z",
-          "url": "https://www.youtube.com/watch?v=samobMt1FCo",
-          "duration_seconds": 876,
-          "view_count": "4904",
-          "description": "Start speaking a new language in 3 weeks with Babbel 🎉.  Get up to 20% OFF a Lifetime subscription! ➡️ Here: https://bit.ly/tastinghistroyaug26 \n\nSupport the Channel with Patreon ► https://www.patreon.com/tastinghistory\n\nRecipe at https://www.tastinghistory.com/recipes/pinacolada\n\nOrder the TASTING HISTORY COOKBOOK: https://amzn.to/42O10Lx\n\nMerch ► https://crowdmade.com/collections/tastinghistory \nInstagram ► https://www.instagram.com/tastinghistorywithmaxmiller/\nTwitter ► https://twitter.com/Ta",
-          "why_watch": "Max Miller digs into the disputed history of who actually invented the piña colada — a question with more legitimate competing claims than you'd expect. At 14 minutes, it's a tight deep-dive that treats a cocktail origin story with the same rigor usually reserved for more \"serious\" history. You'll finish with a recipe and a new go-to party fact.",
-          "is_wildcard": false
-        },
-        {
-          "source": "youtube",
-          "video_id": "7R3OTARA3mY",
-          "title": "Best of The History Guy : Weirdos",
-          "channel_id": "UC4sEmXUuWIFlxRIFBRV6VXQ",
-          "channel_title": "The History Guy: History Deserves to Be Remembered",
-          "published_at": "2026-08-28T12:00:06Z",
-          "url": "https://www.youtube.com/watch?v=7R3OTARA3mY",
-          "duration_seconds": 2787,
-          "view_count": "3327",
-          "description": "Some notable people in history are odd, some are eccentirc.  Some are just plain weird. Three classic The History Guy episodes on historically weird, and weirdly historical figures.\n\n00:00      Norton I, Emperor of the United States and Protector of Mexico\n11:48      Legendary Luck: Timothy Dexter\n29:23      Manuel Herrick: the \"Okie Jesus Congressman\"\n\nCheck out our new shop for fun The History Guy merchandise:\nhttps://thehistoryguy-shop.fourthwall.com/products/thg-history\n\nThis is original con",
-          "why_watch": "Three compact History Guy profiles of genuine American oddballs: a man who declared himself Emperor of the United States, a merchant whose spectacular bad luck somehow reversed into fortune, and a congressman who showed up to Capitol Hill channeling Jesus. Each story is self-contained and strange enough to feel invented, which is precisely why they're worth 46 minutes.",
-          "is_wildcard": false
-        }
-      ]
-    },
-    {
-      "name": "Big Brain Hours",
-      "emoji": "🧠",
-      "tagline": "From knot theory to number theory — math turns out to be everywhere, and these two will convince you it's beautiful.",
-      "items": [
-        {
-          "source": "youtube",
-          "video_id": "hX94cAh2SaI",
-          "title": "The Shape of Knots: From DNA to Shoestrings and Solar Flares - Alain Goriely",
-          "channel_id": "UC1t6kKXoBvjdr8m9KJ2Fx7A",
-          "channel_title": "Gresham College",
-          "published_at": "2026-08-28T15:00:18Z",
-          "url": "https://www.youtube.com/watch?v=hX94cAh2SaI",
-          "duration_seconds": 3273,
-          "view_count": "26",
-          "description": "00:00 I/ Introduction and welcome\n00:49 I/ Why study knots: history and everyday presence\n01:53 I/ Knots in nature, from microbes to solar flares\n03:29 I/ Helmholtz, vortex rings, and the birth of knot science\n04:34 I/ Lord Kelvin, Peter Tait, and the founding of knot theory\n05:56 I/ What is a knot? The mathematical definition\n07:06 I/ Ambient isotopy: when two knots are \"the same\"\n09:13 I/ Beyond knots: braids and links\n10:40 I/ Knot diagrams and the crossing number\n13:53 I/ Reidemeister moves:",
-          "why_watch": "Oxford mathematician Alain Goriely traces knot theory from Lord Kelvin's 19th-century atomic theory (knots as building blocks of matter — wrong, but productive) through to modern applications in DNA biology and solar physics. At nearly an hour, this is a proper Gresham College lecture, so come ready to think — but the payoff is a genuine sense of how a purely abstract mathematical field quietly explains the physical world.",
-          "is_wildcard": false
-        },
-        {
-          "source": "youtube",
-          "video_id": "OOMx2BHHWtE",
-          "title": "The world's greatest mathematician explains 6 essential concepts of math | Terence Tao",
-          "channel_id": "UCvQECJukTDE2i6aCoMnS-Vg",
-          "channel_title": "Big Think",
-          "published_at": "2026-08-28T13:00:34Z",
-          "url": "https://www.youtube.com/watch?v=OOMx2BHHWtE",
-          "duration_seconds": 5076,
-          "view_count": "5024",
-          "description": "Become a Big Think member to unlock expert classes, premium print issues, exclusive events and more: https://bigthink.com/membership/?utm_source=youtube&utm_medium=social&utm_campaign=membership&utm_content=bt-ytdesc-text-fi-tao-OOMx2BHHWtE\n\nSubscribe to Big Think on YouTube ► https://www.youtube.com/channel/UCvQECJukTDE2i6aCoMnS-Vg?sub_confirmation=1\nUp next, \nSean Carroll explains the biggest ideas in the universe | Full Interview ► https://www.youtube.com/watch?v=_TBNJyztai0\n\nTerence Tao has ",
-          "why_watch": "Terence Tao — arguably the greatest living mathematician — walks through six foundational mathematical concepts in a single sitting, which is a rare chance to hear someone at the absolute frontier of the field explain basics with total clarity and no condescension. The 84-minute runtime earns its length: Tao's explanations consistently illuminate *why* these concepts matter, not just what they are.",
-          "is_wildcard": false
-        }
-      ]
-    },
-    {
-      "name": "Eyes On You",
-      "emoji": "👓",
-      "tagline": "Privacy is eroding in real time — one video will make you paranoid, the other will make you feel watched anyway.",
-      "items": [
-        {
-          "source": "youtube",
-          "video_id": "PuoGqbLbRhc",
-          "title": "The perfect technology for creeps?",
-          "channel_id": "UC_-hYjoNe4PJNFa9iZ4lraA",
-          "channel_title": "Good Work",
-          "published_at": "2026-08-28T13:00:20Z",
-          "url": "https://www.youtube.com/watch?v=PuoGqbLbRhc",
-          "duration_seconds": 879,
-          "view_count": "41795",
-          "description": "Your data is being sold right now. My sponsor Aura will find the brokers selling it and remove you automatically. Try 14 days for free: https://aura.com/goodwork\n\nAre smart glasses a personal computing revolution set to replace everyone’s phones? Or are they simply goggles for dirty sickos? Dan “the Kaucasian Kronkite” Toomey investigates.\n\nFeaturing interviews with:\n\nJoanna Stern, independent tech reporter with a new YouTube show: https://www.youtube.com/@JoannaStern\n\nAlex Heath, independent te",
-          "why_watch": "This isn't another breathless smart-glasses explainer — Good Work comes at the privacy concerns with specific, reported detail, including what bystanders can actually do (and not do) when someone points Ray-Bans at them. The tone is dry and funny without letting the comedy deflate the genuine concern, which is a harder balance to strike than it looks.",
-          "is_wildcard": false
-        },
         {
           "source": "youtube_trending",
-          "video_id": "IGdXwSt6ysc",
-          "title": "home reset: 30a, workouts, starting solids, mom life, ocean swims, etc!",
-          "channel_id": "UCwf1EqcZDlXCypkTovI9Mjg",
-          "channel_title": "Brynley Joyner",
-          "published_at": "2026-08-28T10:17:45Z",
-          "url": "https://www.youtube.com/watch?v=IGdXwSt6ysc",
-          "duration_seconds": 1030,
-          "view_count": "2669",
-          "description": "HI FRIENDS, we're back home & it feels so good! Thank you to Vuori for sponsoring this video - performance apparel that’s built to move in and styled for life.  Head to https://vuori.yt.link/jDDXfsN",
-          "why_watch": "This is the wildcard pick, and honestly it's a pass unless slice-of-life family vlogging is already your genre. There's no particular hook beyond a pleasant coastal reset and some baby food milestones — perfectly fine content, but nothing that distinguishes it from hundreds of similar videos this week.",
+          "video_id": "OnZ8dTw0pvg",
+          "title": "Riding Through the Clouds on the Ngong Ping 360 Cable Car | Hong Kong",
+          "channel_id": "UCBkcw8h7epT_bK0QzuY2Bmg",
+          "channel_title": "ActionKid",
+          "published_at": "2026-08-28T12:00:06Z",
+          "url": "https://www.youtube.com/watch?v=OnZ8dTw0pvg",
+          "duration_seconds": 2863,
+          "view_count": "2587",
+          "description": "Experience a scenic ride on Hong Kong's Ngong Ping 360 Cable Car as the journey shifts from clear coastal views directly into thick, atmospheric mountain clouds.\n\nStarting from Tung Chung, this 5.7-kilometer (25-minute) aerial ride begins with clear visibility across Tung Chung Bay, Hong Kong International Airport, and the Hong Kong–Zhuhai–Macao Bridge. As the gondola climbs higher into the steep mountain peaks of North Lantau Country Park, the scenery transforms entirely, floating through dense",
+          "why_watch": "This isn't a tourist promo — it's a nearly real-time ride along a 5.7km cable car route that visibly transitions from crisp coastal panoramas (the airport, the Hong Kong–Zhuhai–Macao Bridge) into swallowing mountain cloud. If you've ever wondered what it actually feels like to ascend into a cloud bank rather than just see it from a plane, this 47-minute ride-along captures that slow, atmospheric shift honestly. Good background viewing or deliberate armchair travel, depending on your mood.",
           "is_wildcard": true
         }
       ]
@@ -124,328 +40,357 @@
     {
       "source": "music",
       "source_name": "Stereogum",
-      "title": "Hear Prince’s Previously Unreleased Song “Bestest Friend”",
-      "snippet": "It's been just over a decade since we lost Prince, and it feels like we're only scratching the surface of the famously prolific artist's vast archives of unheard music. Today, Prince's estate releases Timeless, a new collection of rare and previously unreleased Prince recordings spanning his earlies",
-      "url": "https://stereogum.com/2509669/hear-princes-previously-unreleased-song-bestest-friend/music/",
+      "title": "The Who Seemingly Rehire Zak Starkey After Messy Split",
+      "snippet": "Who is the drummer for the Who? It's complicated. Last year, they fired Zak Starkey for overplaying, rehired him, and then fired him again. Now, he's apparently back in the band.\nThe post The Who Seemingly Rehire Zak Starkey After Messy Split appeared first on Stereogum.",
+      "url": "https://stereogum.com/2509744/the-who-seemingly-rehire-zak-starkey-after-messy-split/news/",
       "genre": "",
-      "vibe_check": "Like finding a handwritten letter from someone beloved tucked inside a book you forgot you owned.",
-      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/08/Prince-Timeless.jpg",
-      "embed_url": "https://www.youtube.com/embed/IKm7mh6IqM0"
-    },
-    {
-      "source": "music",
-      "source_name": "Stereogum",
-      "title": "Gladys Knight Shares Statement After Onstage Behavior Sparks Concern",
-      "snippet": "The eternal soul legend Gladys Knight started her career in the late '50s, and she continues to tour regularly at the age of 82. In recent months, though there have been reports of her giving troubling performances, missing cues and wandering around the stage as if she's lost. It doesn't happen ever",
-      "url": "https://stereogum.com/2509662/gladys-knight-shares-statement-after-onstage-behavior-sparks-concern/news/",
-      "genre": "",
-      "vibe_check": "The bittersweet ache of watching a flame flicker that once lit up an entire era.",
-      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/08/Gladys-Knifht.jpeg",
+      "vibe_check": "",
+      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/08/GettyImages-824417736.jpg",
       "embed_url": null
     },
     {
       "source": "music",
       "source_name": "Stereogum",
-      "title": "Sturgill Simpson Makes Surprise Live Return With Latest Johnny Blue Skies Album, Talking Heads Cover",
-      "snippet": "Sturgill Simpson might have a complicated, contentious relationship with the Nashville country music industry, but he's not going to let that stop him from playing a wild surprise show in the town. Earlier this year, Simpson, working under his Johnny Blue Skies album, released the horny, exultant co",
-      "url": "https://stereogum.com/2509651/sturgill-simpson-makes-surprise-live-return-with-latest-johnny-blue-skies-album-talking-heads-cover/news/",
+      "title": "Julianna Barwick & Mary Lattimore Announce New Film Score: Hear Three Songs",
+      "snippet": "Earlier this year, Julianna Barwick and Mary Lattimore joined forces to release the collaborative album Tragic Magic. Now, two ambient artists are announcing its followup: a score for the Jessie Diggins documentary Threshold. Three songs from it are out today.\nThe post Julianna Barwick &amp; Mary La",
+      "url": "https://stereogum.com/2509737/julianna-barwick-mary-lattimore-announce-new-film-score-hear-three-songs/music/",
       "genre": "",
-      "vibe_check": "The reckless joy of someone who burned their bridge and then threw a party on the ashes.",
-      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/08/Sturgill.jpg",
-      "embed_url": null
+      "vibe_check": "",
+      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/08/881626821367_cover.jpg",
+      "embed_url": "https://juliannabarwick.bandcamp.com/album/threshold-original-motion-picture-score"
     },
     {
       "source": "music",
       "source_name": "No Depression",
-      "title": "Dolly Parton Has Died. Long Live Dolly Parton.",
-      "snippet": "Born January 19, 1946, Dolly Parton was 80 years old. Not that years or linear time seem the right measure when talking about her. When I texted my friend (and former No Depression editor) Stacy Chandler, she replied, &#x201C;I really thought Dolly was exempt from this.&#x201D;&#xA0; Didn&",
-      "url": "https://nodepression.org/dolly-parton-has-died-long-live-dolly-parton/",
+      "title": "RIP Dolly Parton and Tim Curry, Bonnaroo 2027 Canceled, Big Thief's Forthcoming Triple LP, and More Roots Music News",
+      "snippet": "This week was, quite simply, a horrible week in roots music and the world at large. We lost two icons, Dolly Parton and Tim Curry, whose artistry and character shaped the musical genres we cover and the musicians who carry the mantle for them today. We here at No Depression",
+      "url": "https://nodepression.org/rip-dolly-parton-and-tim-curry-bonnaroo-2027-canceled-big-thiefs-forthcoming-triple-lp-and-more-roots-music-news/",
       "genre": "",
-      "vibe_check": "The kind of grief that sits quietly beside you, holding your hand, because some losses feel like the sky itself came down a little.",
-      "cover_url": "https://storage.ghost.io/c/18/d0/18d08e58-3b1b-4720-ae25-a31b44e69d4b/content/images/size/w1200/2026/08/20160921_dolly_parton_23-1.jpg",
-      "embed_url": "https://www.youtube.com/embed/xfLtwQu0gBQ"
+      "vibe_check": "",
+      "cover_url": "https://storage.ghost.io/c/18/d0/18d08e58-3b1b-4720-ae25-a31b44e69d4b/content/images/2026/08/Big-Thief-8-4-23-C.-Elliott-Photography--22-.jpg",
+      "embed_url": "https://www.youtube.com/embed/DTrlFWMm_Uk"
     },
     {
       "source": "music",
-      "source_name": "No Depression",
-      "title": "ALBUM REVIEW: Two Runner’s ‘Porchlight’ Shines a Beacon of Hope",
-      "snippet": "Moving on tends to hurt. Even if it&#x2019;s good; even when it&#x2019;s necessary. From that inescapable ache Paige Anderson begins Two Runner&#x2019;s latest album, Porchlight: &#x201C;How many times have you left / A life you&#x2019;ve always known?&#x201D; The answer hangs in",
-      "url": "https://nodepression.org/album-review-two-runners-porchlight-shines-a-beacon-of-hope/",
+      "source_name": "Pitchfork",
+      "title": "Mac DeMarco Releases Four New Albums",
+      "snippet": "The projects were originally issued as physical-only CD-Rs on tour",
+      "url": "https://pitchfork.com/story/mac-demarco-releases-four-new-albums/",
       "genre": "",
-      "vibe_check": "Like driving away from a hometown you had to leave, watching the porch light shrink in the rearview mirror.",
-      "cover_url": "https://storage.ghost.io/c/18/d0/18d08e58-3b1b-4720-ae25-a31b44e69d4b/content/images/size/w1200/2026/08/Porchlight-Album-Cover.jpg",
+      "vibe_check": "",
+      "cover_url": "https://media.pitchfork.com/photos/6a91d8a30d5d57f537d66da4/16:9/w_1280,c_limit/GettyImages-2284078826.jpg",
       "embed_url": null
     },
     {
       "source": "music",
       "source_name": "Pitchfork",
-      "title": "U2 Cover the Pogues’ “Yeah Yeah Yeah Yeah Yeah”",
-      "snippet": "It’s the latest offering from an upcoming Shane MacGowan tribute album",
-      "url": "https://pitchfork.com/story/u2-cover-the-pogues-yeah-yeah-yeah-yeah-yeah/",
+      "title": "Julianna Barwick and Mary Lattimore Share Songs From New Film Score",
+      "snippet": "The duo reunited for Threshold, a documentary about Olympic skier Jessie Diggins",
+      "url": "https://pitchfork.com/story/julianna-barwick-and-mary-lattimore-shares-songs-from-new-film-score/",
       "genre": "",
-      "vibe_check": "A rowdy, tender wake where someone raises a glass too hard and spills it, and nobody minds.",
-      "cover_url": "https://media.pitchfork.com/photos/6a91a29009e7a373cf7f7c24/16:9/w_1280,c_limit/PHOTO%20CREDIT_%20Anton%20Corbijn.U2_AC_3-11+BonoU2_AC_3-10.jpeg",
+      "vibe_check": "",
+      "cover_url": "https://media.pitchfork.com/photos/6a91cfb95ffcafd34aa6a9fb/16:9/w_1280,c_limit/JuliannaBarwick&MaryLattimore-3_Rachael%20Cassells.jpg",
       "embed_url": null
     },
     {
       "source": "music",
       "source_name": "Aquarium Drunkard",
-      "title": "Stanley Turrentine & The Three Sounds :: Blue Hour (1961)",
-      "snippet": "Blue Hour (1961) by Stanley Turrentine &#038; The Three Sounds is a fleeting collaboration that’s perfectly captured by its title. Like the blue light that exists between day and night, Blue Hour captures a brief moment when four like-minded musicians’ paths intersected, seared brightly for a short ",
-      "url": "https://aquariumdrunkard.com/2026/08/28/stanley-turrentine-the-three-sounds-blue-hour-1961/",
+      "title": "Bondo :: Bondo",
+      "snippet": "Bondo’s self-titled third album resurrects the glacial, improvisatory spirit of ’90s slowcore and post-rock, channeling Codeine, early Mogwai, and Tortoise through a sound that is at once knotty, menacing, and unexpectedly melodic. The LA quartet lets its guitars wander, collide, and shimmer, turnin",
+      "url": "https://aquariumdrunkard.com/2026/08/27/bondo-bondo/",
       "genre": "",
-      "vibe_check": "The sonic equivalent of a city street at dusk — not quite day, not quite night, too beautiful to last.",
-      "cover_url": "https://aquariumdrunkard.com/_newness/wp-content/uploads/2026/08/BLUE-HOUR-STANLEY.jpg",
+      "vibe_check": "",
+      "cover_url": "https://aquariumdrunkard.com/_newness/wp-content/uploads/2026/08/Bondo-Bondo.jpg",
       "embed_url": null
     },
     {
       "source": "music",
       "source_name": "Consequence",
-      "title": "Andrew W.K. Surprise Releases New Jazz Album Temptation to Exist: Stream",
-      "snippet": "There's none of Andrew W.K.'s signature hard-partying aesthetic on Temptation to Exist, which features cinematic arrangements and meditative jazz.\nAndrew W.K. Surprise Releases New Jazz Album Temptation to Exist: Stream\nPaolo Ragusa",
-      "url": "https://consequence.net/2026/08/andrew-wk-temptation-to-exist-new-jazz-album-stream/",
+      "title": "Tennessee Gov. Officially Proposes Naming Nashville Airport After Dolly Parton",
+      "snippet": "A fan petition calling for the airport's renaming has amassed more than 150,000 signatures.\nTennessee Gov. Officially Proposes Naming Nashville Airport After Dolly Parton\nAlex Young",
+      "url": "https://consequence.net/2026/08/dolly-parton-airport-proposal-nashville/",
       "genre": "",
-      "vibe_check": "The morning after the all-night party, sitting alone in a dim room, surprisingly at peace.",
-      "cover_url": "https://consequence.net/wp-content/uploads/2026/08/Andrew-W.K.-New-Album-Temptation-to-Exist-Stream.jpg",
+      "vibe_check": "",
+      "cover_url": "https://consequence.net/wp-content/uploads/2026/08/dolly-parton-quotes-words-of-wisdom.png",
       "embed_url": null
     },
     {
       "source": "music",
       "source_name": "Consequence",
-      "title": "Bad Wolves Announce Cover of “Jolene” That Was Intended to Feature Dolly Parton",
-      "snippet": "The country superstar apparently was set to add her vocals to the metal version of her song.\nBad Wolves Announce Cover of &#8220;Jolene&#8221; That Was Intended to Feature Dolly Parton\nSpencer Kaufman",
-      "url": "https://consequence.net/2026/08/bad-wolves-cover-jolene-intended-to-feature-dolly-parton/",
+      "title": "Scott Weiland Live Album To Be Released on CD and Digitally for First Time",
+      "snippet": "His performance of Stone Temple Pilots' \"Interstate Love Song\" can be viewed now.\nScott Weiland Live Album To Be Released on CD and Digitally for First Time\nLangdon Hickman",
+      "url": "https://consequence.net/2026/08/scott-weiland-live-album-interstate-love-song/",
       "genre": "",
-      "vibe_check": "A collision of worlds that feels equal parts curiosity and eulogy, like flowers laid on an electric fence.",
-      "cover_url": "https://consequence.net/wp-content/uploads/2026/08/Bad-Wolves-Dolly-Parton.jpg",
-      "embed_url": null
+      "vibe_check": "",
+      "cover_url": "https://consequence.net/wp-content/uploads/2025/12/scott-weiland-unreleased-song-if-i-could-fly.jpg",
+      "embed_url": "https://www.youtube.com/embed/6R5X8ijswzg"
     },
     {
       "source": "music",
       "source_name": "Consequence",
-      "title": "U2 Release Cover of The Pogues’ “Yeah, Yeah, Yeah, Yeah, Yeah” for Shane MacGowan Tribute Album: Stream",
-      "snippet": "20th Century Paddy – The Songs of Shane MacGowan is scheduled for release November 13th.\nU2 Release Cover of The Pogues’ &#8220;Yeah, Yeah, Yeah, Yeah, Yeah&#8221; for Shane MacGowan Tribute Album: Stream\nTravis Bland",
-      "url": "https://consequence.net/2026/08/u2-unveil-the-pogues-cover/",
+      "title": "Clutch Unleash “The Drifter Returns,” First New Song in Four Years: Stream",
+      "snippet": "The veteran rock band will kick off a US tour in October.\nClutch Unleash &#8220;The Drifter Returns,&#8221; First New Song in Four Years: Stream\nSpencer Kaufman",
+      "url": "https://consequence.net/2026/08/clutch-the-drifter-returns/",
       "genre": "",
-      "vibe_check": "Big-stadium sincerity meeting barroom poetry — a send-off that's louder than a whiskey toast but just as heartfelt.",
-      "cover_url": "https://consequence.net/wp-content/uploads/2026/08/Shane-U2-1.jpeg",
-      "embed_url": "https://www.youtube.com/embed/uMdx-VNuAVU"
+      "vibe_check": "",
+      "cover_url": "https://consequence.net/wp-content/uploads/2026/08/Clutch.jpg",
+      "embed_url": "https://www.youtube.com/embed/bvcVeZgU67s"
+    },
+    {
+      "source": "music",
+      "source_name": "JazzTimes",
+      "title": "Saxophonist-Composer David Murray’s Back Pages, Upcoming Verses",
+      "snippet": "C alling David Murray prolific is like saying soup is wet. Beyond the numbers, then, what it is about the veteran tenor saxophonist, bass clarinetist &#8230; Read More \"Saxophonist-Composer David Murray’s Back Pages, Upcoming Verses\"\nThe post Saxophonist-Composer David Murray’s Back Pages, Upcoming ",
+      "url": "https://www.jazztimes.com/features/profiles/saxophonist-composer-david-murrays-back-pages-upcoming-verses/",
+      "genre": "",
+      "vibe_check": "",
+      "cover_url": "https://www.jazztimes.com/wp-content/uploads/2026/08/17jpmurray-jumbo.jpg",
+      "embed_url": "https://www.youtube.com/embed/W2i8Wg-U9YU"
+    },
+    {
+      "source": "music",
+      "source_name": "Fretboard Journal",
+      "title": "Luthier on Luthier: Jamie Gale",
+      "snippet": "﻿﻿﻿﻿﻿﻿ Jamie Gale is one of the most influential and forward-thinking voices in the guitar world. He is the founder of the Boutique Guitar Showcase, but his perspective goes far beyond guitars. His work has taken him into areas like artificial intelligence and robotics. For episode 117, we talk abou",
+      "url": "https://www.fretboardjournal.com/podcasts/luthier-on-luthier-jamie-gale/?utm_source=rss&utm_medium=rss&utm_campaign=luthier-on-luthier-jamie-gale",
+      "genre": "",
+      "vibe_check": "",
+      "cover_url": "https://images.fretboardjournal.com/wp-content/uploads/2026/08/28092735/JGM-Web-Headshot.jpeg",
+      "embed_url": null
     }
   ],
   "global_silver_linings": [
     {
       "source": "good_news",
       "source_name": "Good News Network",
-      "title": "Abu Dhabi Ice Cream Entrepreneur Uses Her National Crop to Make Healthier Soft Serve",
-      "url": "https://www.goodnewsnetwork.org/abu-dhabi-ice-cream-entrepreneur-uses-her-national-crop-to-make-healthier-soft-serve/",
-      "snippet": "An Arab entrepreneur has turned her country’s national crop into creative new ice cream recipes. It needed several years of experimentation, and she broke several ice cream machines before perfecting her soft-serve blends, but the result is a truly one-of-a-kind ice cream parlor. Amira Al Dosari is the founder and pioneer behind date-based soft serve […] The post Abu Dhabi Ice Cream Entrepreneur Uses Her National Crop to Make Healthier Soft Serve appeared first on Good News Network .",
-      "cover_url": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/08/credit-Ice-Station-supplied-to-CNN.jpg",
-      "reason": "A local entrepreneur rooting her business in her region's own harvest is a quiet reminder that innovation and sustainability can grow from the same soil. Choosing a native crop for a healthier product shows how food traditions and fresh thinking can nourish communities at once."
+      "title": "World’s Oldest Person Celebrates 117 Years of a ‘Nonconfrontational’ Approach to Life",
+      "url": "https://www.goodnewsnetwork.org/worlds-oldest-person-celebrates-117-years-of-a-nonconfrontational-approach-to-life/",
+      "snippet": "The world’s oldest person as acknowledged by the Guinness World Records turned 117 last Friday Ethel Caterham was born in the United Kingdom on August 21st, 1909, when the great-great grandfather of the current king was sitting on the nation’s throne. She was the 7th of 8 children, and told ABC News in an emailed […] The post World’s Oldest Person Celebrates 117 Years of a ‘Nonconfrontational’ Approach to Life appeared first on Good News Network .",
+      "cover_url": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/08/Oldest-person-in-the-world-Courtesy-of-Ethel-Caterham-Family.jpg",
+      "reason": "At 117, the world's oldest person offers a quiet but powerful reminder that a life built on calm and kindness is worth something lasting. There's real wisdom in the idea that peace — not hustle — might be one of our greatest longevity tools."
     },
     {
       "source": "good_news",
-      "source_name": "Positive News",
-      "title": "What went right this week: the good news that matters",
-      "url": "https://www.positive.news/society/good-news-stories-from-week-35-of-2026/",
-      "snippet": "A ‘historic’ fall in US violent crime, Europe’s right to repair law, and a conservation triumph for Kazakhstan, plus more The post What went right this week: the good news that matters appeared first on Positive News .",
-      "cover_url": "https://www.positive.news/wp-content/uploads/2026/08/iStock-891697992main.jpeg",
-      "reason": "In a news cycle that can feel relentlessly grim, a dedicated weekly roundup of genuinely good stories is a small but meaningful act of resistance — proof that progress is always happening somewhere, even when it goes unreported."
-    },
-    {
-      "source": "good_news",
-      "source_name": "Reasons to be Cheerful",
-      "title": "The Goat-Cow Is Spain’s Wildfire-Fighting Secret Weapon",
-      "url": "https://reasonstobecheerful.world/goat-cow-wildfire-prevention/",
-      "snippet": "“In Galicia, we have lots of rain and strong sun, so vegetation grows quickly and it’s hard to control,” shouts José Taboada, as we hurtle up a steep, rocky path in his rickety Land Rover. “In summer, when it dries, fires can start very easily.” Here, in Spain’s northwest, wildfires... The post The Goat-Cow Is Spain’s Wildfire-Fighting Secret Weapon appeared first on Reasons to be Cheerful .",
-      "cover_url": "https://reasonstobecheerful.world/wp-content/uploads/2026/08/5R5A9223-scaled.jpg",
-      "reason": "Spain is deploying herds of goat-cow hybrids to graze dry scrubland, turning a natural appetite into a firebreak — a beautifully low-tech solution to a growing wildfire crisis. It's a heartening example of working with animals and landscapes rather than against them."
+      "source_name": "Upworthy",
+      "title": "Mom shares ‘extreme $25 grocery budget’ to feed family of 4, 3 meals a day for a week",
+      "url": "https://www.upworthy.com/mom-shares-extreme-25-grocery-budget-to-feed-family-of-4-3-meals-a-day-for-a-week/",
+      "snippet": "Shopping for groceries these days is anything but inexpensive. The post Mom shares ‘extreme $25 grocery budget’ to feed family of 4, 3 meals a day for a week appeared first on Upworthy .",
+      "cover_url": "https://www.upworthy.com/wp-content/uploads/sites/2/2026/08/Mom-shares-extreme-grocery-budget.jpg",
+      "reason": "One mom's practical ingenuity with a tight grocery budget is a genuine act of community care, proving that creative, dignified solutions to financial pressure already exist and are being shared freely. Stories like hers remind us that everyday resourcefulness is its own quiet form of resilience."
     },
     {
       "source": "good_news",
       "source_name": "The Optimist Daily",
-      "title": "6 useful things to donate before back-to-school season this year",
-      "url": "https://www.optimistdaily.com/2026/08/6-useful-things-to-donate-before-back-to-school-season-this-year/",
-      "snippet": "BY THE OPTIMIST DAILY EDITORIAL TEAM Back-to-school season is a great time to donate. Kids have outgrown things. Backpacks didn’t survive the year.",
-      "cover_url": "https://www.optimistdaily.com/wp-content/uploads/Depositphotos_299181534_L.jpg",
-      "reason": "Back-to-school season opens a practical window to pass on what we no longer need to families who do, turning everyday clutter into real opportunity for children starting the year. Small acts of giving like these stitch neighbourhoods together in ways that quietly matter."
+      "title": "Podcast Transcript August 28th, 2026— Niger restored 5 million hectares without planting a single tree plus nine other things going right",
+      "url": "https://www.optimistdaily.com/2026/08/podcast-transcript-august-28th-2026-niger-restored-5-million-hectares-without-planting-a-single-tree-plus-nine-other-things-going-right/",
+      "snippet": "Episode Description: Karissa hosts solo this week while Arielle recovers, covering ten solutions including the world’s first wild bird flu vaccination program for Phillip Island’s little penguins, France making unsolicited telemarketing calls flat-out illegal, and what Baltimore is doing with $400 million in opioid settlement money. If you have questions, comments, feedback, suggestions, or just […] The post Podcast Transcript August 28th, 2026— Niger restored 5 million hectares without planting a single tree plus nine other things going right first appeared on The Optimist Daily: Making Solutions the News .",
+      "cover_url": "https://www.optimistdaily.com/wp-content/uploads/Podcast-Logo-3000-×-3000-px-2-13.png",
+      "reason": "Niger's restoration of 5 million hectares by working *with* nature rather than imposing on it — no planting required — shows that some of the most powerful environmental recoveries come from simply letting the land lead. It's a hopeful blueprint for regeneration that communities anywhere can learn from."
     }
   ],
   "discovery_articles": [
     {
       "source": "discovery",
       "source_name": "Atlas Obscura",
-      "title": "Ancient Underwater Wall of Nhon Hai in Quy Nhơn Đông, Vietnam",
-      "url": "https://www.atlasobscura.com/places/ancient-underwater-wall-of-nhon-hai",
-      "snippet": "At the coast of Nhon Hai in Quy Nhon, a mysterious wall lies partly submerged beneath the sea. The structure extends from the rocky coast of Hai Nam toward Hon Kho Island and becomes visible only when the tide recedes deeply. Local fishermen have long known about the structure, while its exact age and purpose remain unknown.",
+      "title": "Unusual Picnic Places Around the World",
+      "url": "https://www.atlasobscura.com/articles/unusual-picnic-places-around-the-world",
+      "snippet": "There’s nothing quite like a picnic surrounded by friends and family, soaking in the sun, sharing snacks, and enjoying the sounds of nature. Whether you prefer to use one big blanket, sit at a table with benches, or plop right onto the grass, it’s the perfect good-weather get together (and a great excuse to load up on delicious food). With this guide, you’ll find a picnic spot that’s guaranteed to impress your guests and spark envy in your enemies.",
       "category": "history",
-      "cover_url": "https://img.atlasobscura.com/uj4NLeJ9F27Oe3MOVMtoUJiKpJlUbklR6e7j89WcZ28/rt:fit/w:600/c:1080:720:nowe:0:1190/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy80MjEy/YmY0NS00MWU5LTRh/MjctYTI2NS02YWE5/MjgzYWZiYWIwYTc0/Mjk1ODM3MTRkYjc1/Y2ZfMTAwMDAxMDg2/Mi5qcGc.jpg"
+      "cover_url": "https://img.atlasobscura.com/uZ0P6sLo83F5XrBk7iL4eJ46zeu9VHEqp2Nl_w5K4nI/rt:fit/w:1200/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL2Fzc2V0/cy80ZWQ1ZDAxZS1i/OWQ3LTQ1M2UtYjE3/NC0zMTNhZDkyNTc0/MGRmYWM4YzMwYjNm/M2JiYmJkY2NfU2Ny/ZWVuc2hvdCAyMDI2/LTA4LTI3IGF0IDQu/MzQuNTMgUE0ucG5n.png",
+      "ferns_note": "The most interesting picnic spots in the world tend to share one quality: they were never meant for picnics at all. Sometimes the best table is a repurposed ruin."
+    },
+    {
+      "source": "discovery",
+      "source_name": "Atlas Obscura",
+      "title": "Cape Bear Lighthouse and Marconi Station in Murray Harbour, Prince Edward Island",
+      "url": "https://www.atlasobscura.com/places/cape-bear-lighthouse-and-marconi-station",
+      "snippet": "Cape  Bear Lighthouse has been in operation since 1881, and it's light can be seen up to 22km/14 mi away. For a small fee, take a tour of the lighthouse to learn about the history of it's keepers, and an opportunity to climb all the way up to the lantern room to see panoramic views of the Northumberland Strait and Nova Scotia. While Marconi Station ceased operations in 1922 and now serves as a family home, Marconi Station operator Thomas Bartlett was the first Canadian to receive the distress call from the Titanic on the night of April 14, 1912, as it was sinking off the coast of Newfoundland, which was not yet a part of Canada.",
+      "category": "history",
+      "cover_url": "https://img.atlasobscura.com/ZWTuepUQDSLKzaUwhFQ7r9gqVX9OBVOhFPYC7GzrFcM/rt:fit/w:600/c:1946:1297:nowe:322:976/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy81ZGIx/NGE4MC1jMzM3LTQ1/M2QtYTdkNC1jOTdm/MDcxMGUyZTI5MmEx/MDc4YmZhY2NjMjYy/NjJfUFhMXzIwMjYw/ODAzXzIwMDQwMzQ3/Ni5qcGc.jpg",
+      "ferns_note": "A small lighthouse on Prince Edward Island quietly holds one of history's most haunting footnotes — the Marconi operator there was the first Canadian to hear the Titanic's distress call, alone in the dark, as the ship went down. The station that received that signal is now someone's family home."
+    },
+    {
+      "source": "discovery",
+      "source_name": "Atlas Obscura",
+      "title": "Liberation Mural  in Indio, California",
+      "url": "https://www.atlasobscura.com/places/liberation-mural",
+      "snippet": "The artwork created by Mexican artist Hervey Garcia, draws from Eadweard Muybridge's 1878 motion photography The Horse in Motion. As vehicles drive past at speeds of 35 to 45 mph, the frames blend together creating and animated effect showing a galloping horse stretching, morphing into a winged Pegasus, and finally transforming into a bird soaring through a starry night sky.",
+      "category": "history",
+      "cover_url": "https://img.atlasobscura.com/xscDskzxnsCEqnRw8Khj_ozETIzxul7Ve-Iw2NCOK7w/rt:fit/w:600/c:1271:847:nowe:661:264/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy9iMWUw/YzM4OC1lNmQ5LTQ4/OGEtYTcwNi0zZWMy/NTQzY2YzYzA4ZWM3/YTRhYzc2NjU1ZDM4/YzZfSU1HXzcxNDcu/anBlZw.jpg",
+      "ferns_note": "A mural designed to be seen at 40 mph is quietly one of the most inventive public art stunts in America — borrowing a 19th-century photographic trick to animate a horse mid-gallop into pure myth, visible only to people moving too fast to stop."
+    },
+    {
+      "source": "discovery",
+      "source_name": "Atlas Obscura",
+      "title": "The Ring in Montreal, Quebec",
+      "url": "https://www.atlasobscura.com/places/the-ring-montreal",
+      "snippet": "Located at the intersection of McGill College Ave and Rue Cathcart, this piece of industrial artwork by Claude Cormier looks like a giant hula hoop, or a decommissioned star gate. The massive ring measures 30 metres in diameter and weighs around 50,000 pounds. Installed over the staircase of Place Ville Marie’s Esplanade, it demands attention while at the same time welcoming visitors to the area.",
+      "category": "history",
+      "cover_url": "https://img.atlasobscura.com/mt416Mcp8tQHJT4cU6z79TkXgsX5zlYJquSJkjOKcxw/rt:fit/w:600/c:2930:1953:nowe:426:68/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy84NGU4/YTA0Zi00NjE5LTRi/NmYtOThmNC1mMDQw/MzMxMmVkYmJlMjYz/YzZkN2M3MjdmYTNi/MDlfSU1HXzY0NDQu/anBlZw.jpg",
+      "ferns_note": "Fifty thousand pounds of steel shaped into a perfect circle, hovering above a Montreal staircase like a portal someone forgot to switch on — Claude Cormier's Ring is the rare public sculpture that earns its audacity."
     },
     {
       "source": "discovery",
       "source_name": "Smithsonian",
-      "title": "When Fruit Is Scarce, These Monkeys Hunt Animals. The Behavior May Offer Clues About the Origins of Humans' Meat-Eating Habits",
-      "url": "https://www.smithsonianmag.com/smart-news/when-fruit-is-scarce-these-monkeys-hunt-animals-the-behavior-may-offer-clues-about-the-origins-of-humans-meat-eating-habits-180989412/",
-      "snippet": "The bearded capuchins of northeastern Brazil typically eat plant-based foods, but they turn to small vertebrates when those sources are limited. Our ancestors may have done the same, eventually allowing predatory behaviors to be more frequently passed on in our lineage",
+      "title": "Forests Didn't Fare Well During an Ancient Global Warming Event, Offering a 'Cautionary' Tale About Today's Climate Change",
+      "url": "https://www.smithsonianmag.com/smart-news/forests-didnt-fare-well-during-an-ancient-global-warming-event-offering-a-cautionary-tale-about-todays-climate-change-180989353/",
+      "snippet": "An intense global warming event 56 million years ago caused a forest in modern-day Wyoming to lose around 60 percent of its canopy cover, and it took more than 100,000 years to bounce back, a study suggests",
       "category": "history",
-      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/x9ZOL3oIxuMkd9w6RBFVTSRCiGc=/fit-in/1600x0/filters:focal(1936x1309:1937x1310)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/09/db/09dba898-5ce8-4705-a26f-94aa75051dc6/capuchin_birdprey.jpg"
+      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/c2U8qw2TBf2w1zN-ZNID-5iB-Wk=/fit-in/1600x0/filters:focal(350x263:351x264)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/f9/a1/f9a1f6a6-893d-43dc-a48a-6386c8defe01/low-res_example_of_carbonaceous_shale_img_6878.jpg",
+      "ferns_note": "Sixty percent of a forest's canopy, gone — and it took over 100,000 years to grow back after an ancient warming event 56 million years ago, which puts our current timeline of concern into quietly devastating perspective."
     },
     {
       "source": "discovery",
       "source_name": "Smithsonian",
-      "title": "These Enchanting and Colorful Photos of Seashells and the Mollusks That Create Them Will Have You Marveling at the Natural World",
-      "url": "https://www.smithsonianmag.com/science-nature/enchanting-colorful-photos-seashells-mollusks-who-create-them-have-you-marveling-at-natural-world-180989291/",
-      "snippet": "Before they become sandy souvenirs, the baubles in the bubbles of the shoreline serve as a veritable fortress for creatures like clams, mussels and conchs",
+      "title": "Historical Pollution, Not Current Industrial Emissions, Damaged the World's Largest and Oldest Collection of Ancient Rock Art, Study Suggests",
+      "url": "https://www.smithsonianmag.com/smart-news/historical-pollution-not-current-industrial-emissions-damaged-worlds-largest-oldest-collection-ancient-rock-art-180989416/",
+      "snippet": "Researchers say that past exposure to sulfur dioxide is likely to blame for the increased porosity of the Murujuga rock art created by the Ngarda-Ngarli people tens of thousands of years ago",
       "category": "history",
-      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/t0dc7ODAloruECQEP2WPI6JJqlM=/fit-in/1600x0/filters:focal(2250x1500:2251x1501)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/f2/ec/f2ec020f-24c3-4f7a-9eb6-28bf60c38489/djm_5654.jpg"
+      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/VlGgkny4CVi-7BF02d8FFQ8C8Tk=/fit-in/1600x0/filters:focal(640x457:641x458)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/3f/8b/3f8ba94f-bec9-40c9-b0c7-1b63c5ebea39/1280px-ancient_and_modern_4000_years.jpg",
+      "ferns_note": "The world's largest collection of ancient rock art has been silently crumbling — not from today's industry, but from decades-old sulfur dioxide emissions that made the stone itself more porous, a kind of slow-motion wound long in the making."
     },
     {
       "source": "discovery",
       "source_name": "Smithsonian",
-      "title": "These 15 Photos of India, Saturated With Vibrant Color, Are Like Witnessing the Country Through a Kaleidoscope",
-      "url": "https://www.smithsonianmag.com/travel/these-15-photos-saturated-with-vibrant-color-are-like-seeing-india-through-a-kaleidoscope-180989375/",
-      "snippet": "Whether they signify spiritual connection or creative license, the bright, bold hues of the subcontinent often mean more than meets the eye",
+      "title": "Deep Inside a Spanish Cave, Roman Women May Have Worshipped a Mysterious Goddess",
+      "url": "https://www.smithsonianmag.com/smart-news/deep-inside-spanish-cave-roman-women-may-have-worshipped-mysterious-goddess-180989414/",
+      "snippet": "Best known for its Paleolithic art, Valencia’s Cova de les Dones also contains a Roman sanctuary where researchers say women appear to have played an active role in the worship of a female deity",
       "category": "history",
-      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/RhHQ9cmNLLJ5r2yUUtIahm47_go=/fit-in/1600x0/filters:focal(1794x1282:1795x1283)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/e1/b6/e1b6d8e2-2651-40d7-8c2d-205a79804a5d/1d4d8608-5703-44e4-9ce8-952b7bc9ee60.jpg"
+      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/6ac9gkUCfYN0NG579WBfaQJAOTE=/fit-in/1600x0/filters:focal(360x240:361x241)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/f8/2a/f82aae37-3a31-4995-b8f3-4be66db320c8/members_of_the_research_team_during_the_documentation_and_analysis_work.jpeg",
+      "ferns_note": "Hidden deep in a cave already famous for Paleolithic paintings, a Roman-era sanctuary suggests that women were gathering in secret — or perhaps in plain sight — to worship a goddess whose name we still don't know."
     },
     {
       "source": "discovery",
       "source_name": "Smithsonian",
-      "title": "A Historic Alabama Hotel Linked to the Civil Rights Movement Is Falling Apart. Can the Conservationists Fighting to Save It Turn the Tide?",
-      "url": "https://www.smithsonianmag.com/smart-news/historic-alabama-hotel-linked-civil-rights-movement-is-falling-apart-can-conservationists-fighting-to-save-it-turn-the-tide-180989407/",
-      "snippet": "Selma's Edistone Hotel has witnessed pivotal chapters in American history, from Reconstruction to \"Bloody Sunday.\" Now, after years of neglect and a recent wall collapse, the Conservation Fund is working to secure its future",
+      "title": "This Star Orbits Our Galaxy's Heart at a Record-Breaking Speed—and Could Help Uncover Secrets About the Behemoth Black Hole There",
+      "url": "https://www.smithsonianmag.com/smart-news/this-star-orbits-our-galaxys-heart-at-a-record-breaking-speed-and-could-help-uncover-secrets-about-the-behemoth-black-hole-there-180989393/",
+      "snippet": "The speedster travels at up to 56 million miles per hour, or about 8 percent the speed of light. It also gets very close to the supermassive black hole at the center of the Milky Way",
       "category": "history",
-      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/Tcm8e61zCSwZjdLx7EbIc6rfylA=/fit-in/1600x0/filters:focal(512x288:513x289)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/51/62/51625ade-c2d1-4eff-aec9-4262cb020a02/edistone-hotel_19-1024x575.jpg"
+      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/F9I9_Alty-qsjextwbJo_OqocrQ=/fit-in/1600x0/filters:focal(700x400:701x401)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/f0/fe/f0fe19e4-e68b-474d-b0a4-19c5beb9d19d/speedy-star.webp",
+      "ferns_note": "A star hurtling around the Milky Way's central black hole at 8 percent the speed of light is extraordinary enough — but the real story is what its orbit might finally tell us about the behemoth it's dancing so dangerously close to."
     },
     {
       "source": "discovery",
       "source_name": "Science News",
-      "title": "Your skin chemistry may affect which mosquitoes most want to bite you",
-      "url": "https://www.sciencenews.org/article/skin-chemistry-which-mosquitoes-bite",
-      "snippet": "Three species preferred different people based on their skin odor and bacteria. The findings could help make new microbe-based repellants.",
+      "title": "Free-falling atoms in space put a new twist on Galileo’s gravity test",
+      "url": "https://www.sciencenews.org/article/atoms-gravity-space-galileo-einstein",
+      "snippet": "Rubidium atoms on China’s Tiangong space station fell with the same acceleration, upholding a cornerstone of Einstein’s general theory of relativity.",
       "category": "science",
-      "cover_url": "https://www.sciencenews.org/wp-content/uploads/sites/2/2026/08/082026_SW_mosquito-bites_feat.jpg"
-    },
-    {
-      "source": "discovery",
-      "source_name": "Science News",
-      "title": "NASA’s new space telescope will reveal the universe like never before",
-      "url": "https://www.sciencenews.org/article/nasa-nancy-roman-space-telescope",
-      "snippet": "NASA’s new Nancy Grace Roman space telescope will tackle nearly every aspect of astrophysics, including dark matter, dark energy and alien planets.",
-      "category": "science",
-      "cover_url": "https://www.sciencenews.org/wp-content/uploads/sites/2/2026/08/082626_MB_NancyGrace_main.jpg"
-    },
-    {
-      "source": "discovery",
-      "source_name": "JSTOR Daily",
-      "title": "Why Is Leadership Riskier for Women?",
-      "url": "https://daily.jstor.org/why-is-leadership-riskier-for-women/",
-      "snippet": "Research shows that harsher penalties for failure can discourage women from pursuing top positions. The post Why Is Leadership Riskier for Women? appeared first on JSTOR Daily .",
-      "category": "history",
-      "cover_url": "https://daily.jstor.org/wp-content/uploads/2026/08/why_is_leadership_riskier_for_women_alt_1050x700.jpg"
-    },
-    {
-      "source": "discovery",
-      "source_name": "Quanta Magazine",
-      "title": "Does Computer Science Need Computers?",
-      "url": "https://www.quantamagazine.org/does-computer-science-need-computers-20260828/",
-      "snippet": "The theoretical side of the field doesn’t require computing machines. But many questions would never have been posed without them. The post Does Computer Science Need Computers?",
-      "category": "science",
-      "cover_url": "https://www.quantamagazine.org/wp-content/uploads/2026/08/Qualia_TheoreticalCS-crKristinaArmitage-Social.jpg"
-    },
-    {
-      "source": "discovery",
-      "source_name": "Colossal",
-      "title": "September 2026 Opportunities: Open Calls, Residencies, and Grants for Artists",
-      "url": "https://www.thisiscolossal.com/2026/08/september-2026-open-calls-residencies-artist-grants/",
-      "snippet": "Time to brush up that artist's statement! Do stories and artists like this matter to you? Become a Colossal Member today and support independent arts publishing for as little as $7 per month.",
-      "category": "history",
-      "cover_url": "https://www.thisiscolossal.com/wp-content/uploads/2026/08/yoshitora.jpg"
+      "cover_url": "https://www.sciencenews.org/wp-content/uploads/sites/2/2026/08/082826_EC_spaceatoms_main.jpg",
+      "ferns_note": "Galileo dropped cannonballs from a tower; China dropped rubidium atoms from orbit — and four centuries later, the answer is still the same, which is either deeply reassuring or the most elegant thing physics has ever done."
     }
   ],
   "featured_read": {
     "source": "reads",
     "source_name": "Nautilus",
-    "title": "Cyborg Roaches Could Be the Future of Triage Medicine",
-    "url": "https://nautil.us/cyborg-roaches-could-be-the-future-of-triage-medicine-1284583/",
-    "snippet": "The augmented insects could deliver life-saving care to disaster victims The post Cyborg Roaches Could Be the Future of Triage Medicine appeared first on Nautilus .",
-    "cover_url": "https://lede-admin.nautil.us/wp-content/uploads/sites/70/2026/08/eait-mda-2026-cyborg-cockroach-6.jpg"
+    "title": "Watch This Shrimp-Like Fish Walk Backwards",
+    "url": "https://nautil.us/watch-this-shrimp-like-fish-walk-backwards-1284607/",
+    "snippet": "A deep-sea denizen with an identity crisis The post Watch This Shrimp-Like Fish Walk Backwards appeared first on Nautilus .",
+    "cover_url": "https://lede-admin.nautil.us/wp-content/uploads/sites/70/2026/08/Screenshot-2026-08-28-at-4.43.07-PM.png"
   },
   "reading_room": [
     {
       "source": "reads",
       "source_name": "Longreads",
-      "title": "Africa’s Wild Dogs Are the Most Hated Carnivores on the Continent. Here’s Why Some Conservationists Are Saving Them Anyway",
-      "url": "https://longreads.com/2026/08/28/conservation-africa-wild-dogs-genetics/",
-      "snippet": "\"Meet the team that closely monitors the playful canines, which need help to form diverse packs and stop their numbers from dwindling.\"",
+      "title": "The Yarddogs of Northwest Arkansas",
+      "url": "https://longreads.com/2026/08/26/bentonville-arkansas-dogs-cyclists/",
+      "snippet": "\"What is never discussed in all of this hand-wringing is the fact that those dogs and their owners likely far predate the people riding their bikes here.\"",
       "cover_url": ""
     },
     {
       "source": "reads",
       "source_name": "Literary Hub",
-      "title": "An Ode to the Gleeful Terror of Tim Curry’s Pennywise",
-      "url": "https://lithub.com/an-ode-to-the-gleeful-terror-of-tim-currys-pennywise/",
-      "snippet": "Tim Curry, who died this week at 80, will probably always be best known for his performance as Dr. Frank-N-Furter in The Rocky Horror Picture Show, and not unreasonably. With his snug corset and unsubtle make-up and minuscule shorts to",
-      "cover_url": "https://s26162.pcdn.co/wp-content/uploads/2026/08/Untitled-design-2026-08-28T090236.006.png"
+      "title": "Helen Mirren is playing Patricia Highsmith?! Watch the trailer for  A Talent for Murder.",
+      "url": "https://lithub.com/helen-mirren-is-playing-patricia-highsmith-watch-the-trailer-for-a-talent-for-murder/",
+      "snippet": "This morning, fans of both Patricia Highsmith and Dame Helen Mirren have cause to rejoice. The trailer for Anton Corbijn’s new Ripley-adjacent film, A Taste for Murder, is out now. The film stars Alden Ehrenreich, Olivia Cooke, and an almost",
+      "cover_url": "https://s26162.pcdn.co/wp-content/uploads/2026/08/Helen-Mirren-and-Alden-Ehrenreich-in-A-TALENT-FOR-MURDER-Courtesy-Bleecker-Street-and-LD-Entertainment-1-1-e1787932150834.jpg"
+    },
+    {
+      "source": "reads",
+      "source_name": "Noema",
+      "title": "Subjective Perspective Makes Objective Reality ‘Everywhere Whole’",
+      "url": "https://www.noemamag.com/subjective-perspective-makes-objective-reality-everywhere-whole",
+      "snippet": "The post Subjective Perspective Makes Objective Reality ‘Everywhere Whole’ appeared first on NOEMA .",
+      "cover_url": "https://noemamag.imgix.net/2026/08/Noema_Feature_Color_V1-scaled.jpg?fit=crop&fm=pjpg&h=628&ixlib=php-3.3.1&w=1200&wpsize=noema-social-facebook&s=44b339e81f0d948c808559e8906d7d9d"
     },
     {
       "source": "reads",
       "source_name": "3 Quarks Daily",
-      "title": "Friday Poem",
-      "url": "https://3quarksdaily.com/3quarksdaily/2026/08/friday-poem-505.html",
-      "snippet": "Your Letter It said that, the truth be told, you were dead tired of classical music and that you wanted me the way fall leaves want the ground, that hard. Then I remembered the stoop of your shoulders, your wide nose and eyes, how your fingers curved, your Aristotelian grace. At first your desire worked.…",
+      "title": "Yascha Mounk: What I saw at the Robot Olympics in Beijing",
+      "url": "https://3quarksdaily.com/3quarksdaily/2026/08/yascha-mounk-what-i-saw-at-the-robot-olympics-in-beijing.html",
+      "snippet": "Yascha Mounk at his own website: For five days, robots have been competing in human sports from boxing to soccer and table tennis. They also competed in competitions that were a little less coy about the reasons for the massive investments that are currently being made into this technology: for example, robots also competed to…",
       "cover_url": ""
     },
     {
       "source": "reads",
       "source_name": "Nautilus",
-      "title": "The First Moon Spaceport Is Coming. But First We’ll Need Moon Traffic Control",
-      "url": "https://nautil.us/the-first-moon-spaceport-is-coming-but-first-well-need-moon-traffic-control-1284577/",
-      "snippet": "If we don’t manage air traffic well, we risk spacecraft being sent way off course—without the rocket fuel necessary to get back The post The First Moon Spaceport Is Coming. But First We’ll Need Moon Traffic Control appeared first on Nautilus .",
-      "cover_url": "https://lede-admin.nautil.us/wp-content/uploads/sites/70/2026/08/03-gateway.jpg"
-    },
-    {
-      "source": "reads",
-      "source_name": "Longreads",
-      "title": "The Top 5 Longreads of the Week",
-      "url": "https://longreads.com/2026/08/28/top-5-623/",
-      "snippet": "In this edition: Bad medicine, imperfect sound forever, know when to fold ’em, brainiacs, and a call of the wild.",
-      "cover_url": "https://i0.wp.com/longreads.com/wp-content/uploads/2026/08/BF_T5_623_1.png?fit=2400%2C1400&quality=80&ssl=1"
+      "title": "COVID Brain Fog May Not Be Irreversible",
+      "url": "https://nautil.us/covid-brain-fog-may-not-be-irreversible-1284604/",
+      "snippet": "At least for one variant The post COVID Brain Fog May Not Be Irreversible appeared first on Nautilus .",
+      "cover_url": "https://lede-admin.nautil.us/wp-content/uploads/sites/70/2026/08/shutterstock_2473527349.jpg"
     }
   ],
   "garden_note": {
-    "note": "Late August in Zürich brings that bittersweet edge to the warm evenings — the dahlias are still glorious, but there's a coolness creeping in after dark that whispers of September. Step outside tonight and let the full moon do what it does best: turn the garden silver.",
+    "note": "August's last full moon has barely faded from the sky as first light creeps over the Zürichberg at 06:08 — step outside and you may still catch her silver glow above the rooftops before the sun claims the morning at 06:39. The dahlias are at their absolute peak right now, heavy-headed and unapologetic, and the air carries that ripe, slightly fermenting sweetness that only late summer in a Swiss garden can produce.",
     "in_season": [
-      "Dahlias in full, extravagant bloom",
-      "Sweetcorn ready to harvest",
-      "Runner beans at their peak",
-      "Deadheading roses for a final autumn flush"
+      "Dahlias in full, glorious bloom",
+      "Runner beans ready for a final heavy pick",
+      "Early apple varieties beginning to drop — time to harvest",
+      "Sow lamb's lettuce (Feldsalat) for autumn salads"
     ],
-    "sky_tonight": "The full Sturgeon Moon rides high in Aquarius tonight — brilliant enough to cast shadows across your garden beds and dim all but the boldest stars.",
-    "sun_times": "",
+    "sky_tonight": "The Full Sturgeon Moon rises opposite the sunset — look east for her luminous, honey-tinged face climbing above the horizon after 20:14.",
+    "sun_times": "First light at 06:08, sunrise at 06:39, sunset at 20:14, dusk lingers until 20:44.",
     "moon_label": "Full moon",
-    "illum_pct": 100,
-    "sun_range": ""
+    "illum_pct": 99,
+    "sun_range": "06:39–20:14"
   },
   "puzzle": {
-    "kind": "trivia",
-    "label": "The Evening Trivia",
-    "prompt": "In Kingdom Hearts, how many members does Organization XIII have in total?\n\n10   ·   12   ·   13   ·   14",
-    "answer": "14",
-    "hint": "Category: Entertainment: Video Games",
-    "source": "opentdb.com",
-    "source_id": "7eec10e1a641"
+    "kind": "anagram",
+    "label": "Fern's Morning Anagram",
+    "prompt": "Rearrange the letters of TORCHPIE to find the sheltered outdoor space where late-summer evenings are best enjoyed.",
+    "answer": "PORTICHE (a portico) — the covered porch or entrance colonnade that invites you to sit just out of the last warm rain.",
+    "hint": "Think of columns framing a grand doorway."
   },
   "previous_puzzle": {
-    "label": "Fern's Morning Riddle",
-    "prompt": "What is the worst vegetable to have on a ship?",
-    "answer": "A leek (leak)"
+    "label": "The Evening Trivia",
+    "prompt": "In Kingdom Hearts, how many members does Organization XIII have in total?\n\n10   ·   12   ·   13   ·   14",
+    "answer": "14"
   },
   "larder": {
-    "news": [],
-    "recipe": {}
+    "news": [
+      {
+        "source": "food",
+        "source_name": "The Kitchn",
+        "title": "This Family-Owned New York Restaurant Just Launched a Gorgeous Dinnerware Collection After 112 Years",
+        "url": "https://www.thekitchn.com/west-elm-russ-and-daughters-collab-launch-23840996?utm_source=RSS&utm_medium=feed&utm_campaign=Category%2FChannel%3A+main",
+        "snippet": "Order now to have them before the High Holidays this fall! READ MORE...",
+        "cover_url": "",
+        "blurb": "A century-old New York institution finally lets you bring a little of its legacy home — and the timing, just ahead of the High Holidays, couldn't be more poetic."
+      },
+      {
+        "source": "food",
+        "source_name": "The Guardian",
+        "title": "Cocktail of the week: Legare’s mini bay leaf martini – recipe | The good mixer",
+        "url": "https://www.theguardian.com/food/2026/aug/28/mini-bay-leaf-martini-recipe-legare-bar-cocktail-of-the-week",
+        "snippet": "Make a batch of this vodka- and vermouth-infused tipple to keep fresh in the fridge and sip over the weeks ahead We came up with this when we were looking to create some fun, bespoke but easy-to-serve cocktails that we could pre-batch for busy services but that still had an edge. Vodka is an especially good base for infusions because it’s so neutral, while martinis are having a real moment right now, so this ended up ticking all our boxes, being something that’s recognisable but fun, and also noticeably our own. Alex Mammone, general manager, and Matt Beardmore, executive chef, Legare and Luna , London SE1 Continue reading...",
+        "cover_url": "https://i.guim.co.uk/img/media/b179907a4a5526d45c61a1f12b877b1ec0aa980f/497_618_2518_2013/master/2518.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=1bf6b0240c58d4dda79dba0ba271812a",
+        "blurb": "A bay leaf martini made in batches and quietly chilling in the fridge is exactly the kind of quiet sophistication a home bar deserves right now."
+      },
+      {
+        "source": "food",
+        "source_name": "Saveur",
+        "title": "Summer Pudding",
+        "url": "https://www.saveur.com/article/recipes/summer-pudding-1000060668/",
+        "snippet": "Photo: Murray Hall • Food Styling: Jason Schreiber This syrup-soaked, berry-laden English dessert makes the most of the season’s fruits—and looks stunning on the table. The post Summer Pudding appeared first on Saveur .",
+        "cover_url": "https://www.saveur.com/uploads/2008/05/photo-murray-hall_food-styling-jason-schreiber_09-250528-mhall-saveur-summer-pudding-082-scaled.jpg?auto=webp&width=1600&height=2000",
+        "blurb": "Summer Pudding is the rare dessert that does all the heavy lifting before it even hits the table — just ripe berries, a good soak, and something genuinely stunning to show for it."
+      }
+    ],
+    "recipe": {},
+    "seasonal_note": "Zürich's Saturday markets along the Bürkliplatz are piled with the last of the apricots from Valais right now — grab a bag and spend a slow morning making Marillenmarmelade, or simply halve them over porridge with a spoonful of Nidel cream while the city is still quiet."
   },
   "fern_data": {
-    "greeting": "The sky outside is doing that specific late-August thing — copper fading into grey — and inside, tonight's edition is warmer: a previously unheard Prince song surfaces, Spanish goats are quietly saving forests, and Terence Tao takes six minutes to make mathematics feel inevitable.",
-    "top_pick_title": "Copper Hour, Strange Gifts"
+    "greeting": "Niger restored 5 million hectares of forest without planting a single tree — and that sentence is doing real work this morning. It sits alongside free-falling atoms testing Galileo in orbit and a shrimp-like fish that walks backwards, which is either a punchline or a revelation depending on your mood.",
+    "top_pick_title": "Growing Without Planting"
   }
 }
