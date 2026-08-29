@@ -1,12 +1,12 @@
 {
-  "fetched_at": "2026-08-29T12:14:13.437468+02:00",
+  "fetched_at": "2026-08-29T19:45:31.347384+02:00",
   "is_am_email": false,
   "audit_summary": {
-    "youtube_videos": 1,
-    "themes": 1,
-    "music_articles": 4,
+    "youtube_videos": 3,
+    "themes": 3,
+    "music_articles": 8,
     "good_news_articles": 1,
-    "discovery_articles": 2,
+    "discovery_articles": 0,
     "featured_read": 1,
     "reading_room": 5,
     "garden": 1,
@@ -15,22 +15,64 @@
   },
   "themes": [
     {
-      "name": "Splash Zone",
-      "emoji": "🐙",
-      "tagline": "Dive into the deep blue with the little ones — ocean wonders served bite-sized.",
+      "name": "Roots & Rhythms",
+      "emoji": "🌱",
+      "tagline": "Getting your hands dirty — literally and historically — with the slow, satisfying work of making things grow.",
+      "items": [
+        {
+          "source": "youtube",
+          "video_id": "zJRfXM2QX3k",
+          "title": "The 7 Seeds You MUST Start in September",
+          "channel_id": "UC9r61qohBg1qgGty4_WzojA",
+          "channel_title": "GrowVeg",
+          "published_at": "2026-08-29T14:45:38Z",
+          "url": "https://www.youtube.com/watch?v=zJRfXM2QX3k",
+          "duration_seconds": 949,
+          "view_count": "4227",
+          "description": "Enjoy a no-obligation, completely free trial of the Garden Planner here: \nhttps://www.GrowVeg.com/grow-planner-free\n\nAnd for your completely free abridged version of Ben's book, click here:\nhttps://www.growveg.com/grow-book-download\n\nThink it's too late to start sowing this late in the season? Think again! Even though the growing season may be past its peak, there's still plenty to sow and grow now. In this week's episode Ben demonstrates his favorite late summer seeds to see us through the autu",
+          "why_watch": "If you've mentally written off your garden until spring, GrowVeg makes a concrete case for seven specific crops — think garlic, winter lettuce, and broad beans — that actually benefit from a September start. The video is paced around the logic of why each seed works now, not just a list to copy. Useful whether you have a full plot or just a few containers going into the cooler months.",
+          "is_wildcard": false
+        }
+      ]
+    },
+    {
+      "name": "Cloth, Character & Craft",
+      "emoji": "🪡",
+      "tagline": "The hidden decisions behind beautiful things — where fabric choices become storytelling and every seam has a reason.",
+      "items": [
+        {
+          "source": "youtube",
+          "video_id": "v3YgmKjz_JI",
+          "title": "Secrets of Designing Period Dramas with Costume Designer & Maker of \"MADFABULOUS\"",
+          "channel_id": "UCSHtaUm-FjUps090S7crO4Q",
+          "channel_title": "Bernadette Banner",
+          "published_at": "2026-08-29T14:00:12Z",
+          "url": "https://www.youtube.com/watch?v=v3YgmKjz_JI",
+          "duration_seconds": 1076,
+          "view_count": "16121",
+          "description": "Thank you Francisco and Sébastien for chatting! If you want to watch the full film: https://tv.apple.com/gb/movie/madfabulous/umc.cmc.1izyw1lip0w3blwfabcpdiv95 \nhttps://www.skystore.com/versions/7.4.9/product/madfabulous-2026/348ab904-dae8-4dad-87dd-e556d069cf06\n\n⤠ HOW TO SUPPORT ⤟\n♥️ PATREON for exclusive behind-the-scenes content! https://www.patreon.com/bernadettebanner\n⚝ NEBULA to see these videos ad- and sponsorship-free, + Original content! http://www.nebula.tv/bernadettebanner\n🦵MERCH http",
+          "why_watch": "Bernadette Banner sits down with the costume designer behind 'MADFABULOUS' to pull apart the specific decisions that make period drama clothing feel lived-in rather than costumed — fabric sourcing, aging techniques, the tension between historical accuracy and what reads on camera. It's a rare peek behind a production that most viewers only see from the front row. Even if you're not a maker yourself, the conversation reframes how you'll look at clothes on screen.",
+          "is_wildcard": false
+        }
+      ]
+    },
+    {
+      "name": "Against the Elements",
+      "emoji": "🌊",
+      "tagline": "What happens when humans engineer clever, unglamorous solutions to survive the places they really shouldn't be.",
       "items": [
         {
           "source": "youtube_trending",
-          "video_id": "JOMs_YjTubk",
-          "title": "Learn Sea Animals for Kids | Exciting Ocean Discovery & Educational Playtime for Toddlers",
-          "channel_id": "UChWlBc4BUjAwmXe3zjjC8lQ",
-          "channel_title": "Tiny Trail Thinkers",
-          "published_at": "2026-08-28T11:00:13Z",
-          "url": "https://www.youtube.com/watch?v=JOMs_YjTubk",
-          "duration_seconds": 340,
-          "view_count": "2432",
-          "description": "Learn Sea Animals for Kids is a fun and engaging educational video designed for toddlers, preschoolers, and young children. Kids will explore the amazing underwater world and discover fascinating sea animals through exciting ocean discovery and educational playtime. Colorful visuals and playful learning activities make learning about marine life fun, interactive, and easy to remember.\n\nIn this ocean animal learning adventure, children can discover amazing sea creatures such as sharks, dolphins, ",
-          "why_watch": "A short, visually driven introduction to ocean creatures aimed at toddlers and preschoolers, covering marine life through colorful scenes and playful repetition. At under six minutes, it's a manageable attention-span fit for young kids without overstaying its welcome. Best suited for parents looking for a low-stimulation, educational screen-time option rather than entertainment-first content.",
+          "video_id": "DLlv4_w-lBE",
+          "title": "How North Sea Trawler Crews Sleep in 50 Foot Waves",
+          "channel_id": "UCPBZi4fgqeGteT1jLkA6hzQ",
+          "channel_title": "Life at Sea",
+          "published_at": "2026-08-28T19:18:19Z",
+          "url": "https://www.youtube.com/watch?v=DLlv4_w-lBE",
+          "duration_seconds": 1196,
+          "view_count": "7091",
+          "description": "Step aboard and discover what it's really like to live, work, and survive on the open ocean—subscribe now for an inside look at life at sea! 🌊⛴️🧭\n\nhttps://www.youtube.com/channel/UCPBZi4fgqeGteT1jLkA6hzQ?sub_confirmation=1\n\nThis video was produced exclusively for Life at Sea. We created this content to provide an immersive look into the realities of maritime life, uncovering the daily routines, onboard systems, and human experiences that define existence aboard vessels navigating the world's tou",
+          "why_watch": "The central question — how do you actually sleep when your bunk is pitching through 50-foot swells — turns out to have genuinely clever, low-tech answers that the crew walks through on camera. Beyond the sleep logistics, the video builds an honest picture of what sensory and physical exhaustion looks like across a multi-day trawler shift. It's the kind of specific, unglamorous working-life documentation that's hard to find done this well.",
           "is_wildcard": true
         }
       ]
@@ -40,165 +82,188 @@
     {
       "source": "music",
       "source_name": "NPR Music",
-      "title": "How America celebrated and mourned Dolly Parton, in Nashville and beyond",
-      "snippet": "The great Dolly Parton died earlier this week and tributes have poured in from across the country. Fans are mourning the loss of a country music icon who not only changed the musical landscape but gave back to communities with her Imagination Library program and donations to develop the Moderna COVI",
-      "url": "https://www.npr.org/2026/08/29/g-s1-140345/dolly-parton-appreciation-remembrance-tribute",
+      "title": "Dolly's dream lives on: How Dollywood will keep the legend's spirit alive",
+      "snippet": "The Dollywood theme park in Tennessee is a tribute to the late singer and will go on without her.",
+      "url": "https://www.npr.org/2026/08/29/nx-s1-5944976/dollys-dream-lives-on-how-dollywood-will-keep-the-legends-spirit-alive",
       "genre": "",
-      "vibe_check": "The kind of collective grief that feels like a candlelight vigil under an open Tennessee sky, where strangers hold hands and sing along.",
-      "cover_url": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/5472x3078+0+285/resize/1400/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Fac%2F3f%2F5c06b4484c04b638d6731b657384%2Fgettyimages-1096271502.jpg",
+      "vibe_check": "The bittersweet ache of a rhinestone-studded legacy that refuses to dim, even in grief.",
+      "cover_url": "https://media.npr.org/include/images/facebook-default-wide-s1400-c85.jpg",
       "embed_url": null
     },
     {
       "source": "music",
-      "source_name": "NPR Music",
-      "title": "E.U.: Tiny Desk Concert",
-      "snippet": "E.U. is an OG of go-go music, a heavily syncopated funk that features a slow and steady groove. Naturally, we celebrate 50 years of the native D.C. music with an office party.",
-      "url": "https://www.npr.org/2026/08/27/g-s1-139808/e-u-tiny-desk-concert",
+      "source_name": "Stereogum",
+      "title": "Plan To Rename Nashville Airport After Dolly Parton Moves Forward",
+      "snippet": "It looks like Dolly Parton is getting her own airport. Since January, fans have been campaigning to rename Tennessee's Nashville International Airport after the American icon, who was born in Tennessee. Since the her death on Tuesday (Aug. 25), the movement has only gained momentum. On Friday (Aug. ",
+      "url": "https://stereogum.com/2509773/plan-to-rename-nashville-airport-after-dolly-parton-moves-forward/news/",
       "genre": "",
-      "vibe_check": "Block-party energy that makes your feet move before your brain even registers the music has started.",
-      "cover_url": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/2048x1152+0+0/resize/1400/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F4c%2Fbd%2F2d791f334cbf8904a849699f824d%2F20260806-eu-performs-a-tiny-desk-concert-at-npr-in-washington-d-c-vanessa-castillo-3-2-9.jpg",
+      "vibe_check": "The communal warmth of a whole state holding its breath, wanting to say one last thank-you out loud.",
+      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/08/dolly-airport.png",
       "embed_url": null
     },
     {
       "source": "music",
-      "source_name": "Pitchfork",
-      "title": "13 New Albums You Should Listen to Now: Turnstile, Erykah Badu and the Alchemist, and More",
-      "snippet": "Stream new releases from Turnstile, Erykah Badu and the Alchemist, Mike D, and Interpol",
-      "url": "https://pitchfork.com/story/13-new-albums-you-should-listen-to-now-turnstile-interpol-erykah-badu-billy-strings/",
+      "source_name": "Stereogum",
+      "title": "The Olivia Tremor Control – “Advice From The Oceans”",
+      "snippet": "Last month, Elephant 6 greats the Olivia Tremor Control announced their first new album in 27 years, The Same Place. The idiosyncratic psych-pop outfit shared \"The Same Place\" and \"Garden Of Light\" as the first previews, and now they're back with \"Advice From The Oceans,\" a jaunty ode to the sea. \nT",
+      "url": "https://stereogum.com/2509766/the-olivia-tremor-control-advice-from-the-oceans/music/",
       "genre": "",
-      "vibe_check": "A restless Friday-night flip through records where every pull from the crate hits different.",
-      "cover_url": "https://media.pitchfork.com/photos/6a8f15cc76617ed97a5854a7/16:9/w_1280,c_limit/20251121_INTERPOL_05_003_RT%20(1).jpg",
-      "embed_url": "https://interpol.bandcamp.com/album/this-mirror-weighs-a-ton"
+      "vibe_check": "Sun-bleached and salt-sprayed, like a carousel spinning at the edge of the world.",
+      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/08/760137225201.png",
+      "embed_url": "https://www.youtube.com/embed/E0UF4v0PW0w"
     },
     {
       "source": "music",
-      "source_name": "Fretboard Journal",
-      "title": "Podcast 560: Bryan Sutton",
-      "snippet": "﻿﻿﻿﻿﻿﻿﻿﻿ Bluegrass guitar hero Bryan Sutton joins us this week to talk about his brand-new album, From Roots to Branches, Vol. 1( Mountain Home Music Company). The album features Sutton in duos with a bevy of friends, including Tommy Emmanuel, Billy Strings, Joe Bonamassa, Sierra Hull, the late Doc ",
-      "url": "https://www.fretboardjournal.com/podcasts/podcast-560-bryan-sutton/?utm_source=rss&utm_medium=rss&utm_campaign=podcast-560-bryan-sutton",
+      "source_name": "Stereogum",
+      "title": "Sam Smith Regrets Not Responding To Tom Petty’s Letter Over “Stay With Me” Credit, But Maintains They’d Never Heard “I Won’t Back Down”",
+      "snippet": "Last year, Sam Smith did a 24-show residency at Brooklyn's small Warsaw. The singer used the opportunity to cover Tom Petty And The Heartbreakers' 1987 song \"It Will All Work Out\" and discuss their copyright dispute with the classic rock icon, revealing that Petty had written them a letter at the ti",
+      "url": "https://stereogum.com/2509751/sam-smith-regrets-not-responding-to-tom-pettys-letter-over-stay-with-me-credit-but-maintains-theyd-never-heard-i-wont-back-down/news/",
       "genre": "",
-      "vibe_check": "Like sitting on a porch at dusk with old friends, trading stories and licks as the fireflies come out.",
-      "cover_url": "https://images.fretboardjournal.com/wp-content/uploads/2026/08/28182541/BryanSutton_PromoPhoto_ByAliHasbach-scaled.jpg",
+      "vibe_check": "The quiet unease of an unsent letter sitting in a drawer, growing heavier with every passing year.",
+      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/08/sam-smith.jpg",
+      "embed_url": "https://www.youtube.com/embed/8m7I7d4Di-c"
+    },
+    {
+      "source": "music",
+      "source_name": "Consequence",
+      "title": "Kacey Musgraves Honors Dolly Parton with Two-Song Tribute in Boston",
+      "snippet": "Musgraves paired the songs with a slideshow and reflected on Parton's generosity, humanitarian work, and legacy beyond music.\nKacey Musgraves Honors Dolly Parton with Two-Song Tribute in Boston\nAlex Krinsky",
+      "url": "https://consequence.net/2026/08/kacey-musgraves-honors-dolly-parton-with-two-song-tribute-in-boston/",
+      "genre": "",
+      "vibe_check": "A candlelight vigil disguised as a concert, where the crowd cries and sings at the same time.",
+      "cover_url": "https://consequence.net/wp-content/uploads/2026/08/Kacey-honors-dolly-in-boston.jpg",
       "embed_url": null
+    },
+    {
+      "source": "music",
+      "source_name": "Consequence",
+      "title": "Stella Lefty Credits The Chicks on Another Familiar-Sounding Song",
+      "snippet": "The songwriting chatter comes just after Noah Kahan received a credit on \"Boston,\" while resurfaced videos showed Lefty repeatedly covering \"Stick Season\" before her breakout.\nStella Lefty Credits The Chicks on Another Familiar-Sounding Song\nAlex Krinsky",
+      "url": "https://consequence.net/2026/08/stella-lefty-credits-the-chicks-on-another-familiar-song/",
+      "genre": "",
+      "vibe_check": "The anxious flutter of a rising star realizing the shadows she's standing in are longer than she thought.",
+      "cover_url": "https://consequence.net/wp-content/uploads/2026/08/Stella-Lefty-lifts-the-Chicks.jpg",
+      "embed_url": null
+    },
+    {
+      "source": "music",
+      "source_name": "Consequence",
+      "title": "Ella Langley Covers “Jolene” in Tribute to Dolly Parton",
+      "snippet": "\"The gates of heaven just welcomed home a beautiful soul.\"\nElla Langley Covers &#8220;Jolene&#8221; in Tribute to Dolly Parton\nAlex Young",
+      "url": "https://consequence.net/2026/08/ella-langley-jolene-dolly-parton/",
+      "genre": "",
+      "vibe_check": "A single voice echoing through a cathedral of loss, the melody more prayer than performance.",
+      "cover_url": "https://consequence.net/wp-content/uploads/2026/08/Ella-Langley.jpeg",
+      "embed_url": null
+    },
+    {
+      "source": "music",
+      "source_name": "JazzTimes",
+      "title": "Saul Williams Connects with LA’s Unbound Jazz Community and Moor Mother on Leap Life",
+      "snippet": "S aul Williams was always something of an anomaly. The writer-rapper and singing spoken-word artist may have gained notoriety as a darling of the MTV &#8230; Read More \"Saul Williams Connects with LA’s Unbound Jazz Community and Moor Mother on Leap Life\"\nThe post Saul Williams Connects with LA’s Unb",
+      "url": "https://www.jazztimes.com/features/profiles/saul-williams-connects-with-las-unbound-jazz-community-and-moor-mother-on-leap-life/",
+      "genre": "",
+      "vibe_check": "Midnight improvisation in a converted warehouse where poetry, jazz, and raw nerve endings blur into one restless frequency.",
+      "cover_url": "https://www.jazztimes.com/wp-content/uploads/2026/08/Hi-Res-Image-Saul-Williams-by-Sam-Lee.jpeg",
+      "embed_url": "https://www.youtube.com/embed/qlZG0BOxpGo"
     }
   ],
   "global_silver_linings": [
     {
       "source": "good_news",
       "source_name": "Good News Network",
-      "title": "Your Weekly Horoscope – ‘Free Will Astrology’ by Rob Brezsny",
-      "url": "https://www.goodnewsnetwork.org/horoscope-from-rob-brezsnys-free-will-astrology-8-29-2026/",
-      "snippet": "Our partner Rob Brezsny, whose latest book is Astrology Is Real: Revelations from My Life as an Oracle, provides his weekly wisdom to enlighten our thinking and motivate our mood. Rob’s Free Will Astrology, is a syndicated weekly column appearing in over a hundred publications. He is also the author of Pronoia Is the Antidote for Paranoia: […] The post Your Weekly Horoscope – ‘Free Will Astrology’ by Rob Brezsny appeared first on Good News Network .",
-      "cover_url": "https://www.goodnewsnetwork.org/wp-content/uploads/2020/10/Freewill-Astrology-horoscope-logo.jpg",
-      "reason": "A gentle reminder that people are still finding space in their week to pause, reflect, and consider something bigger than their to-do list — and that's quietly worth celebrating."
+      "title": "Self-Taught Artist Carves Logs into Amazing Sculptures Using a Chainsaw",
+      "url": "https://www.goodnewsnetwork.org/artist-creates-huge-wood-sculptures-using-a-chainsaw/",
+      "snippet": "An artist is carving out a living by making amazingly-realistic wooden sculptures—after teaching himself how to use a chainsaw. The 53-year-old started carving with chainsaws 30 years ago and now makes thousands, selling his unique commission pieces across the UK. Simon Bogg usuallly spends up to three days working eight hour shifts to craft his […] The post Self-Taught Artist Carves Logs into Amazing Sculptures Using a Chainsaw appeared first on Good News Network .",
+      "cover_url": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/08/Simon-Bogg-with-his-wood-stag-and-elephant-sculpture-SWNS.jpg",
+      "reason": "A self-taught artist transforming fallen logs into chainsaw sculptures is a beautiful reminder that creativity needs no formal permission — just curiosity, patience, and a willingness to learn. It also means wood that might otherwise be discarded gets a second, stunning life."
     }
   ],
-  "discovery_articles": [
-    {
-      "source": "discovery",
-      "source_name": "Atlas Obscura",
-      "title": "Fir Street Cemetery in Cleveland, Ohio",
-      "url": "https://www.atlasobscura.com/places/fir-street-cemetery",
-      "snippet": "In the mid-nineteenth century, farmland west of Cleveland was purchased by real estate speculators and subdivided for development. The Fir Street Cemetery, as it is currently known, occupies just eight residential lots in what first became Brooklyn Township and is now incorporated within Cleveland. In spite of its small size, the burial ground is historically three separate graveyards.",
-      "category": "history",
-      "cover_url": "https://img.atlasobscura.com/5U6Uj3QMAZOeoPfkA1SGfRlUO5h0HQ6xcxiSZN1eo7E/rt:fit/w:600/c:1082:721:nowe:849:324/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy8xMTc4/ZmE3Ni1kYjNlLTQ3/NjctYTIzNC1kYTkw/NzdkOWQ3NTY1ZTli/ZTEzZGNhZDlmMjBi/YTRfMjAyNjA2MzBf/MTE0MjE4LmpwZw.jpg",
-      "ferns_note": "Three separate graveyards compressed into eight residential lots — the dead here have been quietly neighboring each other across denominations and decades, ignored by the city that grew up around them. There's something unsettling about the fact that Cleveland essentially forgot it was built on top of multiple burial grounds."
-    },
-    {
-      "source": "discovery",
-      "source_name": "Smithsonian",
-      "title": "A Landlord Found a Peculiar Print Hanging in a Vacant Apartment. It Turned Out to Be an Original Picasso That Had Been Missing for Eight Years",
-      "url": "https://www.smithsonianmag.com/smart-news/a-landlord-found-a-peculiar-print-hanging-in-a-vacant-apartment-it-turned-out-to-be-an-original-picasso-print-that-had-been-missing-for-eight-years-180989417/",
-      "snippet": "When \"Torero\" vanished from a Milwaukee art gallery in 2018, the owners didn't know whether they'd ever see it again. The man who found the etching turned it over to the police earlier this month",
-      "category": "history",
-      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/8hTIEev9R8ZrrFac4xh87zMVfXc=/fit-in/1600x0/filters:focal(750x500:751x501)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/e9/38/e938158b-f130-4222-9bc7-a6b11a5a8354/picasso_print.jpg",
-      "ferns_note": "A Picasso spent eight years hanging in a vacant apartment — not in a vault, not a collector's private study, but an empty room where no one was even looking. The most quietly surreal part: a landlord doing routine checks stumbled onto a missing masterpiece the way you'd stumble onto a forgotten umbrella."
-    }
-  ],
+  "discovery_articles": [],
   "featured_read": {
     "source": "reads",
     "source_name": "Nautilus",
-    "title": "Listen in on the Sounds of a Jurassic Period Forest",
-    "url": "https://nautil.us/listen-in-on-the-sounds-of-a-jurassic-period-forest-1284593/",
-    "snippet": "Behold the call of the katydid The post Listen in on the Sounds of a Jurassic Period Forest appeared first on Nautilus .",
-    "cover_url": "https://lede-admin.nautil.us/wp-content/uploads/sites/70/2026/08/AdobeStock_385189844.jpeg"
+    "title": "I’m Part of the Team Writing the Next Bible of Psychiatry—For the First Time, the DSM Will Use Biology to Understand Mental Disorders",
+    "url": "https://nautil.us/im-part-of-the-team-writing-the-next-bible-of-psychiatry-for-the-first-time-the-dsm-will-use-biology-to-understand-mental-disorders-1284613/",
+    "snippet": "Part of the challenge of finding a biomarker for mental illness is the environment’s significant influence The post I’m Part of the Team Writing the Next Bible of Psychiatry—For the First Time, the DSM Will Use Biology to Understand Mental Disorders appeared first on Nautilus .",
+    "cover_url": "https://lede-admin.nautil.us/wp-content/uploads/sites/70/2026/08/AdobeStock_520504873.jpeg"
   },
   "reading_room": [
     {
       "source": "reads",
       "source_name": "Longreads",
-      "title": "Dolphins and Other Lovers",
-      "url": "https://longreads.com/2026/08/26/dolphins-and-other-lovers/",
-      "snippet": "\"The Andoque of the Amazon know what we have forgotten: the forest’s most beautiful creatures are also its most dangerous.\"",
-      "cover_url": ""
+      "title": "The Top 5 Longreads of the Week",
+      "url": "https://longreads.com/2026/08/21/top-5-622/",
+      "snippet": "Showcasing stories from Andrew Fedorov, Shayla Love, Malcolm Johnston, Erin Somers, and  Chris Stanton.",
+      "cover_url": "https://longreads.com/wp-content/uploads/2026/08/T5-08-21-26-C.png"
     },
     {
       "source": "reads",
       "source_name": "Literary Hub",
-      "title": "Lit Hub Daily: August 28, 2026",
-      "url": "https://lithub.com/lit-hub-daily-august-28-2026/",
-      "snippet": "“He wrote sad songs but didn’t want to make anyone sad. He had the kind of shy, exaggerated empathy of someone who’s always afraid of hurting people but never afraid of hurting himself.” On loving Elliott Smith. | Lit Hub",
-      "cover_url": "https://s26162.pcdn.co/wp-content/uploads/2026/08/gothe.jpg"
+      "title": "Lit Hub Weekly: August 24 – 28, 2026",
+      "url": "https://lithub.com/lit-hub-weekly-august-24-28-2026/",
+      "snippet": "“Jason was not just hounded out of academia, he was hounded out of existence.” Steven Thrasher on the killing Jason Arday. ​| Lit Hub Politics Long live Dolly Parton, American icon, giver of books. | Lit Hub Biography Why Hieronymus",
+      "cover_url": "https://s26162.pcdn.co/wp-content/uploads/2026/08/JohnEdwardWilliams.jpg"
     },
     {
       "source": "reads",
       "source_name": "3 Quarks Daily",
-      "title": "Safety fears as scientists make first viruses designed by AI",
-      "url": "https://3quarksdaily.com/3quarksdaily/2026/08/safety-fears-as-scientists-make-first-viruses-designed-by-ai.html",
-      "snippet": "Ian Sample at The Guardian: Scientists have made the first viruses designed by artificial intelligence in a milestone that raises hopes for new medicines but also concerns over how to ensure the technology remains safe. The viruses are specific kinds known as bacteriophages, which only infect bacteria and are used around the world to treat…",
+      "title": "Are There Limits To What Physics Can Explain? Marcelo Gleiser & Brian Greene discussion",
+      "url": "https://3quarksdaily.com/3quarksdaily/2026/08/are-there-limits-to-what-physics-can-explain-marcelo-gleiser-brian-greene-discussion.html",
+      "snippet": "﻿ Enjoying the content on 3QD? Help keep us going by donating now.",
       "cover_url": ""
     },
     {
       "source": "reads",
       "source_name": "Nautilus",
-      "title": "The Gibbon’s Gaze: A Mirror Into the Human Mind",
-      "url": "https://nautil.us/the-gibbons-gaze-a-mirror-into-the-human-mind-1284595/",
-      "snippet": "What are you lookin’ at? The post The Gibbon’s Gaze: A Mirror Into the Human Mind appeared first on Nautilus .",
-      "cover_url": "https://lede-admin.nautil.us/wp-content/uploads/sites/70/2026/08/main-image-gibbon.jpg"
+      "title": "How to Think About Thinking",
+      "url": "https://nautil.us/how-to-think-about-thinking-1284587/",
+      "snippet": "A conversation with neuroscientist Adrian Owen about the importance of executive function The post How to Think About Thinking appeared first on Nautilus .",
+      "cover_url": "https://lede-admin.nautil.us/wp-content/uploads/sites/70/2026/08/AdobeStock_493717450.jpeg"
     },
     {
       "source": "reads",
-      "source_name": "Longreads",
-      "title": "Black and Blue in Cleveland",
-      "url": "https://longreads.com/2026/08/25/the-black-shield-wilbert-l-cooper/",
-      "snippet": "Both of Wilbert L. Cooper's parents were cops. In this excerpt from his memoir, Cooper recounts how his mother got into the force—and what the department did to try to keep her out.",
-      "cover_url": "https://longreads.com/wp-content/uploads/2026/08/Will-Cooper-The-Black-Shield.jpg"
+      "source_name": "Literary Hub",
+      "title": "Eight Simple Rules for Dating Your Historical Fiction",
+      "url": "https://lithub.com/eight-simple-rules-for-dating-your-historical-fiction/",
+      "snippet": "This first appeared in Lit Hub’s Craft of Writing newsletter—sign up here. Consider these opening lines. Their source is far from obscure, so there’s a good chance you’ll recognize them right away.",
+      "cover_url": "https://s26162.pcdn.co/wp-content/uploads/2026/08/Untitled-design-2026-08-26T152234.885.png"
     }
   ],
   "garden_note": {
-    "note": "Tonight Zürich's late-summer air carries the last warmth of August, heavy with the scent of ripening plums and cut grass — the kind of evening where the garden practically sighs with satisfaction. Step outside before dusk fades; the nearly full moon will be rising just as the sky deepens, and it's too beautiful to miss from the garden bench.",
+    "note": "The August full moon rises with an almost theatrical confidence tonight, flooding Zürich's gardens in silver just as the dahlias and late-summer zinnias hold their last warm colours before dusk swallows them. There is a particular stillness to the garden at this hour — the air still carrying the day's warmth, the nights beginning, ever so quietly, to hint at what September has in mind.",
     "in_season": [
-      "Dahlias in full, extravagant bloom",
-      "Harvesting late courgettes and climbing beans",
-      "Ripening Victoria plums and early apples",
-      "Sowing winter salads and spinach under glass"
+      "Dahlias in full, heavy bloom",
+      "Courgettes and late runner beans to harvest",
+      "Sow hardy spinach for autumn",
+      "Deadhead zinnias to coax the final flush"
     ],
-    "sky_tonight": "The Full Moon rises gloriously in the east after sunset — bright enough to cast soft shadows across the garden; look for Saturn keeping it quiet company nearby.",
-    "sun_times": "The sun slips away at 20:14 tonight, with dusk lingering gently until around 20:44.",
+    "sky_tonight": "The Full Sturgeon Moon dominates the sky tonight — look east as dusk settles around 20:44 and watch it climb above the Zürichberg, outshining everything around it.",
+    "sun_times": "The sun sets at 20:14 this evening, with dusk lingering warmly until 20:44.",
     "moon_label": "Full moon",
-    "illum_pct": 98,
+    "illum_pct": 97,
     "sun_range": "06:39–20:14"
   },
   "puzzle": {
     "kind": "riddle",
     "label": "Fern's Morning Riddle",
-    "prompt": "I have a heart that never beats, I have a home but I never sleep. I can take a man's house and build another, And I love to play games with my many brothers. I am a king among fools. Who am I ?",
-    "answer": "The King of Hearts in a deck of cards",
+    "prompt": "Which bird does not belong in this group? Finch, gull, eagle, ostrich, or sparrow?",
+    "answer": "The Ostrich. It's the only bird that doesn't fly",
     "hint": "",
     "source": "riddles.com",
-    "source_id": "Riddle-42"
+    "source_id": "Riddle-164"
   },
   "previous_puzzle": {
-    "label": "Fern's Morning Anagram",
-    "prompt": "Rearrange the letters of TORCHPIE to find the sheltered outdoor space where late-summer evenings are best enjoyed.",
-    "answer": "PORTICHE (a portico) — the covered porch or entrance colonnade that invites you to sit just out of the last warm rain."
+    "label": "Fern's Morning Riddle",
+    "prompt": "I have a heart that never beats, I have a home but I never sleep. I can take a man's house and build another, And I love to play games with my many brothers. I am a king among fools. Who am I ?",
+    "answer": "The King of Hearts in a deck of cards"
   },
   "larder": {
     "news": [],
     "recipe": {}
   },
   "fern_data": {
-    "greeting": "A Jurassic forest — full of creatures who never knew they were ancient — is waiting to be heard tonight. That's the one worth sitting with before you sleep.",
-    "top_pick_title": "Deep Time & Found Things"
+    "greeting": "The one worth carrying into sleep: psychiatry is finally cracking open its own foundations, rewriting the DSM with biology instead of committees and consensus. That sits differently at night than it does at noon.",
+    "top_pick_title": "Rewired From the Inside Out"
   }
 }
