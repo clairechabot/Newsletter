@@ -1,78 +1,57 @@
 {
-  "fetched_at": "2026-08-29T19:45:31.347384+02:00",
-  "is_am_email": false,
+  "fetched_at": "2026-08-30T11:21:01.513600+02:00",
+  "is_am_email": true,
   "audit_summary": {
-    "youtube_videos": 3,
-    "themes": 3,
-    "music_articles": 8,
+    "youtube_videos": 2,
+    "themes": 2,
+    "music_articles": 17,
     "good_news_articles": 1,
     "discovery_articles": 0,
     "featured_read": 1,
     "reading_room": 5,
     "garden": 1,
     "puzzle": 1,
-    "larder": 0
+    "larder": 2
   },
   "themes": [
     {
-      "name": "Roots & Rhythms",
+      "name": "Rabbit Holes Worth Falling Down",
+      "emoji": "🔍",
+      "tagline": "For the obsessives who need to know exactly what just happened — and why it matters.",
+      "items": [
+        {
+          "source": "youtube",
+          "video_id": "JwX8NVeMmk0",
+          "title": "A BREAKDOWN of ALL Symbols, Easter Eggs, & the Ending of Buddy EXPLAINED",
+          "channel_id": "UCXcTkcC_H4XeDGfJ7rQGJaw",
+          "channel_title": "Lucas Blue",
+          "published_at": "2026-08-30T05:08:50Z",
+          "url": "https://www.youtube.com/watch?v=JwX8NVeMmk0",
+          "duration_seconds": 980,
+          "view_count": "4274",
+          "description": "In this Casper Kelly Buddy 2026 Explained / Buddy Ending Explained & Video Essay, I deep-dive analyze the Buddy movie starring Keegan-Michael Key, Cristin Milioti, Delaney Quinn, and Topher Grace. Directed by Adult Swim Too Many Cooks Creator Casper Kelly, the film is a perfect blend of comedy, horror, and psychological thriller, exploring themes of family, nostalgia, and challenging social norms. I believe this film is excellent in capturing the atmosphere of 90s kids tv shows through great wri",
+          "why_watch": "If you've seen Casper Kelly's 'Too Many Cooks' and wondered what he'd do with a feature-length canvas, this breakdown makes a strong case that 'Buddy' rewards close attention. Lucas Blue walks through specific symbols and structural choices rather than just summarizing the plot, so it functions as a genuine companion piece rather than a recap. Worth watching before or after the film if you're drawn to horror-comedy that embeds psychological subtext in domestic settings.",
+          "is_wildcard": false
+        }
+      ]
+    },
+    {
+      "name": "Actually Good News",
       "emoji": "🌱",
-      "tagline": "Getting your hands dirty — literally and historically — with the slow, satisfying work of making things grow.",
-      "items": [
-        {
-          "source": "youtube",
-          "video_id": "zJRfXM2QX3k",
-          "title": "The 7 Seeds You MUST Start in September",
-          "channel_id": "UC9r61qohBg1qgGty4_WzojA",
-          "channel_title": "GrowVeg",
-          "published_at": "2026-08-29T14:45:38Z",
-          "url": "https://www.youtube.com/watch?v=zJRfXM2QX3k",
-          "duration_seconds": 949,
-          "view_count": "4227",
-          "description": "Enjoy a no-obligation, completely free trial of the Garden Planner here: \nhttps://www.GrowVeg.com/grow-planner-free\n\nAnd for your completely free abridged version of Ben's book, click here:\nhttps://www.growveg.com/grow-book-download\n\nThink it's too late to start sowing this late in the season? Think again! Even though the growing season may be past its peak, there's still plenty to sow and grow now. In this week's episode Ben demonstrates his favorite late summer seeds to see us through the autu",
-          "why_watch": "If you've mentally written off your garden until spring, GrowVeg makes a concrete case for seven specific crops — think garlic, winter lettuce, and broad beans — that actually benefit from a September start. The video is paced around the logic of why each seed works now, not just a list to copy. Useful whether you have a full plot or just a few containers going into the cooler months.",
-          "is_wildcard": false
-        }
-      ]
-    },
-    {
-      "name": "Cloth, Character & Craft",
-      "emoji": "🪡",
-      "tagline": "The hidden decisions behind beautiful things — where fabric choices become storytelling and every seam has a reason.",
-      "items": [
-        {
-          "source": "youtube",
-          "video_id": "v3YgmKjz_JI",
-          "title": "Secrets of Designing Period Dramas with Costume Designer & Maker of \"MADFABULOUS\"",
-          "channel_id": "UCSHtaUm-FjUps090S7crO4Q",
-          "channel_title": "Bernadette Banner",
-          "published_at": "2026-08-29T14:00:12Z",
-          "url": "https://www.youtube.com/watch?v=v3YgmKjz_JI",
-          "duration_seconds": 1076,
-          "view_count": "16121",
-          "description": "Thank you Francisco and Sébastien for chatting! If you want to watch the full film: https://tv.apple.com/gb/movie/madfabulous/umc.cmc.1izyw1lip0w3blwfabcpdiv95 \nhttps://www.skystore.com/versions/7.4.9/product/madfabulous-2026/348ab904-dae8-4dad-87dd-e556d069cf06\n\n⤠ HOW TO SUPPORT ⤟\n♥️ PATREON for exclusive behind-the-scenes content! https://www.patreon.com/bernadettebanner\n⚝ NEBULA to see these videos ad- and sponsorship-free, + Original content! http://www.nebula.tv/bernadettebanner\n🦵MERCH http",
-          "why_watch": "Bernadette Banner sits down with the costume designer behind 'MADFABULOUS' to pull apart the specific decisions that make period drama clothing feel lived-in rather than costumed — fabric sourcing, aging techniques, the tension between historical accuracy and what reads on camera. It's a rare peek behind a production that most viewers only see from the front row. Even if you're not a maker yourself, the conversation reframes how you'll look at clothes on screen.",
-          "is_wildcard": false
-        }
-      ]
-    },
-    {
-      "name": "Against the Elements",
-      "emoji": "🌊",
-      "tagline": "What happens when humans engineer clever, unglamorous solutions to survive the places they really shouldn't be.",
+      "tagline": "Specific, measurable, real — proof that the world is quietly getting better if you know where to look.",
       "items": [
         {
           "source": "youtube_trending",
-          "video_id": "DLlv4_w-lBE",
-          "title": "How North Sea Trawler Crews Sleep in 50 Foot Waves",
-          "channel_id": "UCPBZi4fgqeGteT1jLkA6hzQ",
-          "channel_title": "Life at Sea",
-          "published_at": "2026-08-28T19:18:19Z",
-          "url": "https://www.youtube.com/watch?v=DLlv4_w-lBE",
-          "duration_seconds": 1196,
-          "view_count": "7091",
-          "description": "Step aboard and discover what it's really like to live, work, and survive on the open ocean—subscribe now for an inside look at life at sea! 🌊⛴️🧭\n\nhttps://www.youtube.com/channel/UCPBZi4fgqeGteT1jLkA6hzQ?sub_confirmation=1\n\nThis video was produced exclusively for Life at Sea. We created this content to provide an immersive look into the realities of maritime life, uncovering the daily routines, onboard systems, and human experiences that define existence aboard vessels navigating the world's tou",
-          "why_watch": "The central question — how do you actually sleep when your bunk is pitching through 50-foot swells — turns out to have genuinely clever, low-tech answers that the crew walks through on camera. Beyond the sleep logistics, the video builds an honest picture of what sensory and physical exhaustion looks like across a multi-day trawler shift. It's the kind of specific, unglamorous working-life documentation that's hard to find done this well.",
+          "video_id": "XaHRd7rhGKo",
+          "title": "Your Monthly Dose of Good News | August",
+          "channel_id": "UCdG5p24FH9cmpjQZeFsLpBg",
+          "channel_title": "Good News",
+          "published_at": "2026-08-29T14:56:55Z",
+          "url": "https://www.youtube.com/watch?v=XaHRd7rhGKo",
+          "duration_seconds": 1292,
+          "view_count": "134853",
+          "description": "Want to restore the planet's ecosystems and see your impact in monthly videos? The first 100 people to join Planet Wild with my code GOOD28 will get the first month paid for by me: https://planetwild.com/r/goodnews/join/28\n\nIf you want to get to know them better first, check out their mission restoring Australia's ancient landscapes: https://planetwild.com/r/goodnews/m40/28 (sponsored)\n\nYou can support my Berlin Marathon Project here 💚\nhttps://actionpanda.koalect.com/de-DE/project/good-news-for-",
+          "why_watch": "This monthly format earns its runtime by curating genuinely specific good-news stories rather than vague feel-good filler — think ecosystem restoration with measurable outcomes, not just heartwarming anecdotes. It's a reliable palette cleanser for news-fatigued readers who still want to stay loosely informed about what's going right in the world. The 21-minute length is about right for a lunch break when you want something low-stakes but substantive.",
           "is_wildcard": true
         }
       ]
@@ -82,188 +61,311 @@
     {
       "source": "music",
       "source_name": "NPR Music",
-      "title": "Dolly's dream lives on: How Dollywood will keep the legend's spirit alive",
-      "snippet": "The Dollywood theme park in Tennessee is a tribute to the late singer and will go on without her.",
-      "url": "https://www.npr.org/2026/08/29/nx-s1-5944976/dollys-dream-lives-on-how-dollywood-will-keep-the-legends-spirit-alive",
+      "title": "Mike D thought making music was behind him. Then came 'Thank You'",
+      "snippet": "His first solo album finds the Beastie Boys rapper making music with his sons and embracing the unpredictability of collaboration.",
+      "url": "https://www.npr.org/2026/08/28/nx-s1-5846842/mike-d-beastie-boys-thank-you-album",
       "genre": "",
-      "vibe_check": "The bittersweet ache of a rhinestone-studded legacy that refuses to dim, even in grief.",
-      "cover_url": "https://media.npr.org/include/images/facebook-default-wide-s1400-c85.jpg",
+      "vibe_check": "",
+      "cover_url": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3000x1688+0+285/resize/1400/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F87%2Fc1%2Fdf7b58c24d369df9695f9ffe5e14%2Fap20113630339745.jpg",
+      "embed_url": null
+    },
+    {
+      "source": "music",
+      "source_name": "NPR Music",
+      "title": "Saul Williams opens a portal between politics and possibility",
+      "snippet": "The unflinching multidisciplinary artist has long welcomed new challenges. With the release of a new album and a new book, he embraces the role his career has been building toward: investigative poet.",
+      "url": "https://www.npr.org/2026/08/28/nx-s1-5945135/saul-williams-opens-a-portal-between-politics-and-possibility",
+      "genre": "",
+      "vibe_check": "",
+      "cover_url": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/2048x1152+0+103/resize/1400/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F1d%2F3e%2F8a0f21414782b7a080cf64e6e9d9%2Fhi-res-image-saul-williams-by-sam-lee.jpeg",
+      "embed_url": "https://www.youtube.com/embed/fMZmflNltpE"
+    },
+    {
+      "source": "music",
+      "source_name": "NPR Music",
+      "title": "Before an emergency hearing, the Kennedy Center's board threatens to demolish it",
+      "snippet": "A lawsuit seeks to block President Trump's name from going back on the center. The center's board warns that if renovation plans don't go forward, it may be demolished.",
+      "url": "https://www.npr.org/2026/08/27/nx-s1-5945238/emergency-hearing-kennedy-center-demolish-threat",
+      "genre": "",
+      "vibe_check": "",
+      "cover_url": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/5637x3171+0+256/resize/1400/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Ff8%2F75%2F9fc1939246608fb4824442afd0a2%2Fgettyimages-2292011277.jpg",
       "embed_url": null
     },
     {
       "source": "music",
       "source_name": "Stereogum",
-      "title": "Plan To Rename Nashville Airport After Dolly Parton Moves Forward",
-      "snippet": "It looks like Dolly Parton is getting her own airport. Since January, fans have been campaigning to rename Tennessee's Nashville International Airport after the American icon, who was born in Tennessee. Since the her death on Tuesday (Aug. 25), the movement has only gained momentum. On Friday (Aug. ",
-      "url": "https://stereogum.com/2509773/plan-to-rename-nashville-airport-after-dolly-parton-moves-forward/news/",
+      "title": "Bad Wolves Dropped From Skillet Tour Over Singer’s OnlyFans, Guitarist Quits Over Dolly Parton Cover",
+      "snippet": "A lot is going on with Bad Wolves. The Los Angeles metal band lost its vocalist last year when D.L. Laskiewicz departed to play in Falling In Reverse. (Laskiewicz himself was a replacement for Tommy Vext, who left after his MAGA support contributed to a rift with Bad Wolves founder/drummer John Boec",
+      "url": "https://stereogum.com/2509777/bad-wolves-singer-speaks-out-after-band-is-dropped-from-skillet-tour-guitarist-quits-over-dolly-parton-cover/news/",
       "genre": "",
-      "vibe_check": "The communal warmth of a whole state holding its breath, wanting to say one last thank-you out loud.",
-      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/08/dolly-airport.png",
+      "vibe_check": "",
+      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/08/aaccd014-6777-40be-b2c7-146d80eba5b8_TABLET_LANDSCAPE_LARGE_16_9.jpg",
       "embed_url": null
     },
     {
       "source": "music",
       "source_name": "Stereogum",
-      "title": "The Olivia Tremor Control – “Advice From The Oceans”",
-      "snippet": "Last month, Elephant 6 greats the Olivia Tremor Control announced their first new album in 27 years, The Same Place. The idiosyncratic psych-pop outfit shared \"The Same Place\" and \"Garden Of Light\" as the first previews, and now they're back with \"Advice From The Oceans,\" a jaunty ode to the sea. \nT",
-      "url": "https://stereogum.com/2509766/the-olivia-tremor-control-advice-from-the-oceans/music/",
+      "title": "End It Frontman Commemorates Banana Man Saga With New Tattoo",
+      "snippet": "Do you remember the great Banana Man controversy of summer 2026? At the Baltimore hardcore band End It’s Toronto show in early June, frontman Akil Godsey called out a guy in the pit for “[wanting] attention” with his banana costume. \"You don't get rewarded for doing that shit,\" he told the crowd. \"H",
+      "url": "https://stereogum.com/2509761/end-it-frontman-commemorates-banana-man-saga-with-new-tattoo/news/",
       "genre": "",
-      "vibe_check": "Sun-bleached and salt-sprayed, like a carousel spinning at the edge of the world.",
-      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/08/760137225201.png",
-      "embed_url": "https://www.youtube.com/embed/E0UF4v0PW0w"
+      "vibe_check": "",
+      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/08/end-it-banana-man.jpg",
+      "embed_url": null
     },
     {
       "source": "music",
       "source_name": "Stereogum",
-      "title": "Sam Smith Regrets Not Responding To Tom Petty’s Letter Over “Stay With Me” Credit, But Maintains They’d Never Heard “I Won’t Back Down”",
-      "snippet": "Last year, Sam Smith did a 24-show residency at Brooklyn's small Warsaw. The singer used the opportunity to cover Tom Petty And The Heartbreakers' 1987 song \"It Will All Work Out\" and discuss their copyright dispute with the classic rock icon, revealing that Petty had written them a letter at the ti",
-      "url": "https://stereogum.com/2509751/sam-smith-regrets-not-responding-to-tom-pettys-letter-over-stay-with-me-credit-but-maintains-theyd-never-heard-i-wont-back-down/news/",
+      "title": "Big Church Festival Ends Early After Fatal Sign Collapse",
+      "snippet": "On Friday (Aug. 28), the first day of Big Church Festival in West Sussex commenced. However, the festival ended early after a large sign fell, leaving one dead and six injured.\nThe post Big Church Festival Ends Early After Fatal Sign Collapse appeared first on Stereogum.",
+      "url": "https://stereogum.com/2509760/big-church-festival-ends-early-after-fatal-sign-collapse/news/",
       "genre": "",
-      "vibe_check": "The quiet unease of an unsent letter sitting in a drawer, growing heavier with every passing year.",
-      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/08/sam-smith.jpg",
-      "embed_url": "https://www.youtube.com/embed/8m7I7d4Di-c"
+      "vibe_check": "",
+      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/08/601439871_1294150079415858_8498650875867943401_n.jpg",
+      "embed_url": null
     },
     {
       "source": "music",
-      "source_name": "Consequence",
-      "title": "Kacey Musgraves Honors Dolly Parton with Two-Song Tribute in Boston",
-      "snippet": "Musgraves paired the songs with a slideshow and reflected on Parton's generosity, humanitarian work, and legacy beyond music.\nKacey Musgraves Honors Dolly Parton with Two-Song Tribute in Boston\nAlex Krinsky",
-      "url": "https://consequence.net/2026/08/kacey-musgraves-honors-dolly-parton-with-two-song-tribute-in-boston/",
+      "source_name": "Pitchfork",
+      "title": "Watch Cardi B Have a Very New York Summer in “Ah Ha” Video",
+      "snippet": "It’s her first single since 2025’s Am I the Drama?",
+      "url": "https://pitchfork.com/story/cardi-b-new-song-ah-ha/",
       "genre": "",
-      "vibe_check": "A candlelight vigil disguised as a concert, where the crowd cries and sings at the same time.",
-      "cover_url": "https://consequence.net/wp-content/uploads/2026/08/Kacey-honors-dolly-in-boston.jpg",
+      "vibe_check": "",
+      "cover_url": "https://media.pitchfork.com/photos/6a6c1f6b8cfe18b908f050bb/16:9/w_1280,c_limit/3.jpg",
+      "embed_url": null
+    },
+    {
+      "source": "music",
+      "source_name": "Pitchfork",
+      "title": "Ice Spice and Lil Yachty Link Up for New Song “Out My Face (My Baby)”",
+      "snippet": "The beat-switching track also gets a bifurcated video directed by Yachty himself",
+      "url": "https://pitchfork.com/story/ice-spice-and-lil-yachty-link-up-for-new-song-out-my-face-my-baby/",
+      "genre": "",
+      "vibe_check": "",
+      "cover_url": "https://media.pitchfork.com/photos/6a9111fbaa37da17d039f2de/16:9/w_1280,c_limit/Lil-Yachty-Ice-Spice.jpeg",
+      "embed_url": "https://www.youtube.com/embed/gDb91xKfa4E"
+    },
+    {
+      "source": "music",
+      "source_name": "Pitchfork",
+      "title": "Listen to Floating Points’ New Album, a Ballet Score About Pandora’s Box",
+      "snippet": "“Pandora’s about bringing hell to Earth,” says Sam Shepherd. “She really represents curiosity and change”",
+      "url": "https://pitchfork.com/story/floating-points-surprise-releases-new-album-a-ballet-score-about-pandoras-box/",
+      "genre": "",
+      "vibe_check": "",
+      "cover_url": "https://media.pitchfork.com/photos/6a91a046aa37da17d039f760/16:9/w_1280,c_limit/floating-points-new-album.jpg",
+      "embed_url": null
+    },
+    {
+      "source": "music",
+      "source_name": "Aquarium Drunkard",
+      "title": "Black Duck with Elena Setién",
+      "snippet": "The songs are loose-jointed and exploratory, built on repetitive motifs but more than willing to jettison them. A bass-line snakes around glittering piano runs, the guitar picks out blues-shaded licks and eerie vibrations of slide, and above it all, a woman’s voice winds. “So be it, follow the river",
+      "url": "https://aquariumdrunkard.com/2026/08/28/black-duck-with-elena-setien/",
+      "genre": "",
+      "vibe_check": "",
+      "cover_url": "https://aquariumdrunkard.com/_newness/wp-content/uploads/2026/08/Elena-Setien.jpg",
+      "embed_url": null
+    },
+    {
+      "source": "music",
+      "source_name": "Aquarium Drunkard",
+      "title": "Bitchin Bajas :: Isle Peaks",
+      "snippet": "On Isle Peaks, Bitchin Bajas continue their long-running musical exploration of the unknown, turning three outtakes from the Inland See sessions into an immersive journey through imagined landscapes. From the shape-shifting “Ajami” to the wandering beauty and darker turn of “Isle Peaks” and the unse",
+      "url": "https://aquariumdrunkard.com/2026/08/26/bitchin-bajas-isle-peaks/",
+      "genre": "",
+      "vibe_check": "",
+      "cover_url": "https://aquariumdrunkard.com/_newness/wp-content/uploads/2026/08/Bitchin-Bajas-Isle-of-Peaks.jpg",
       "embed_url": null
     },
     {
       "source": "music",
       "source_name": "Consequence",
-      "title": "Stella Lefty Credits The Chicks on Another Familiar-Sounding Song",
-      "snippet": "The songwriting chatter comes just after Noah Kahan received a credit on \"Boston,\" while resurfaced videos showed Lefty repeatedly covering \"Stick Season\" before her breakout.\nStella Lefty Credits The Chicks on Another Familiar-Sounding Song\nAlex Krinsky",
-      "url": "https://consequence.net/2026/08/stella-lefty-credits-the-chicks-on-another-familiar-song/",
+      "title": "Tom Hardy Revives His Bane Voice on New Joint Czarface Album",
+      "snippet": "Released under Hardy's Frankie Pulitzer alias, the album features Busta Rhymes, Method Man, El-P, and Kendra Morris.\nTom Hardy Revives His Bane Voice on New Joint Czarface Album\nAlex Krinsky",
+      "url": "https://consequence.net/2026/08/tom-hardy-bane-voice-czarface-rap-album/",
       "genre": "",
-      "vibe_check": "The anxious flutter of a rising star realizing the shadows she's standing in are longer than she thought.",
-      "cover_url": "https://consequence.net/wp-content/uploads/2026/08/Stella-Lefty-lifts-the-Chicks.jpg",
+      "vibe_check": "",
+      "cover_url": "https://consequence.net/wp-content/uploads/2026/08/Tom-hardy-bane-rap.jpeg",
       "embed_url": null
     },
     {
       "source": "music",
       "source_name": "Consequence",
-      "title": "Ella Langley Covers “Jolene” in Tribute to Dolly Parton",
-      "snippet": "\"The gates of heaven just welcomed home a beautiful soul.\"\nElla Langley Covers &#8220;Jolene&#8221; in Tribute to Dolly Parton\nAlex Young",
-      "url": "https://consequence.net/2026/08/ella-langley-jolene-dolly-parton/",
+      "title": "Olivia Rodrigo Brings Back $25 Silver Star Tickets for “The Unraveled Tour”",
+      "snippet": "First introduced during the \"GUTS World Tour,\" the affordable-ticket program keeps seat locations secret until fans pick them up at the venue.\nOlivia Rodrigo Brings Back $25 Silver Star Tickets for &#8220;The Unraveled Tour&#8221;\nAlex Krinsky",
+      "url": "https://consequence.net/2026/08/olivia-rodrigo-25-silver-star-tickets-unraveled-tour/",
       "genre": "",
-      "vibe_check": "A single voice echoing through a cathedral of loss, the melody more prayer than performance.",
-      "cover_url": "https://consequence.net/wp-content/uploads/2026/08/Ella-Langley.jpeg",
+      "vibe_check": "",
+      "cover_url": "https://consequence.net/wp-content/uploads/2026/08/Olivia-Rodrigo-brings-back-silver-star-tickets.jpg",
       "embed_url": null
     },
     {
       "source": "music",
-      "source_name": "JazzTimes",
-      "title": "Saul Williams Connects with LA’s Unbound Jazz Community and Moor Mother on Leap Life",
-      "snippet": "S aul Williams was always something of an anomaly. The writer-rapper and singing spoken-word artist may have gained notoriety as a darling of the MTV &#8230; Read More \"Saul Williams Connects with LA’s Unbound Jazz Community and Moor Mother on Leap Life\"\nThe post Saul Williams Connects with LA’s Unb",
-      "url": "https://www.jazztimes.com/features/profiles/saul-williams-connects-with-las-unbound-jazz-community-and-moor-mother-on-leap-life/",
+      "source_name": "Consequence",
+      "title": "Everything We Know About Grand Theft Auto VI (Updating)",
+      "snippet": "All the details we know before it arrives on November 19th.\nEverything We Know About Grand Theft Auto VI (Updating)\nEddie Fu",
+      "url": "https://consequence.net/2026/08/gta-6-everything-we-know/",
       "genre": "",
-      "vibe_check": "Midnight improvisation in a converted warehouse where poetry, jazz, and raw nerve endings blur into one restless frequency.",
-      "cover_url": "https://www.jazztimes.com/wp-content/uploads/2026/08/Hi-Res-Image-Saul-Williams-by-Sam-Lee.jpeg",
-      "embed_url": "https://www.youtube.com/embed/qlZG0BOxpGo"
+      "vibe_check": "",
+      "cover_url": "https://consequence.net/wp-content/uploads/2026/08/GTA-6.jpeg",
+      "embed_url": "https://www.youtube.com/embed/tJbzMqJGH4k"
+    },
+    {
+      "source": "music",
+      "source_name": "PopMatters",
+      "title": "How Atmosphere’s Slug Invented “Old School” Emo Rap",
+      "snippet": "Nowadays, emo rap is seen as a hybrid genre, but at the turn of the millennium, Slug of Atmosphere was pioneering an alternative hip-hop aesthetic we call “old school” emo rap.",
+      "url": "https://www.popmatters.com/atmosphere-old-school-emo-rap",
+      "genre": "",
+      "vibe_check": "",
+      "cover_url": "https://www.popmatters.com/wp-content/uploads/2026/08/Atmosphere-Slug-God-Loves-Ugly.jpg",
+      "embed_url": "https://www.youtube.com/embed/8SI5tP8Fxok"
+    },
+    {
+      "source": "music",
+      "source_name": "PopMatters",
+      "title": "Physicist Christophe Galfard Takes on Who We Are in ‘This Is Life’",
+      "snippet": "With the techniques of a novelist, Christophe Galfard uses engaging prose, mastery of knowledge in many realms, and remarkable skills of synthesis to explain what is known about life on Earth and possibly elsewhere.",
+      "url": "https://www.popmatters.com/this-is-life-christophe-galfard",
+      "genre": "",
+      "vibe_check": "",
+      "cover_url": "https://www.popmatters.com/wp-content/uploads/2026/08/This-Is-Life-Christoph-Galfard-fi.webp",
+      "embed_url": null
+    },
+    {
+      "source": "music",
+      "source_name": "PopMatters",
+      "title": "Beartooth Capture Aggression and Pop on ‘Pure Ecstasy’",
+      "snippet": "Pure Ecstasy's highlight is Shomo's undeniable talent for pop songwriting; however, it also pushes Beartooth's heaviness into new directions.",
+      "url": "https://www.popmatters.com/beartooth-pure-ecstasy",
+      "genre": "",
+      "vibe_check": "",
+      "cover_url": "https://www.popmatters.com/wp-content/uploads/2026/08/Beartooth-Pure-Ecstasy-social.webp",
+      "embed_url": "https://www.youtube.com/embed/7VzCc7EWDeU"
     }
   ],
   "global_silver_linings": [
     {
       "source": "good_news",
       "source_name": "Good News Network",
-      "title": "Self-Taught Artist Carves Logs into Amazing Sculptures Using a Chainsaw",
-      "url": "https://www.goodnewsnetwork.org/artist-creates-huge-wood-sculptures-using-a-chainsaw/",
-      "snippet": "An artist is carving out a living by making amazingly-realistic wooden sculptures—after teaching himself how to use a chainsaw. The 53-year-old started carving with chainsaws 30 years ago and now makes thousands, selling his unique commission pieces across the UK. Simon Bogg usuallly spends up to three days working eight hour shifts to craft his […] The post Self-Taught Artist Carves Logs into Amazing Sculptures Using a Chainsaw appeared first on Good News Network .",
-      "cover_url": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/08/Simon-Bogg-with-his-wood-stag-and-elephant-sculpture-SWNS.jpg",
-      "reason": "A self-taught artist transforming fallen logs into chainsaw sculptures is a beautiful reminder that creativity needs no formal permission — just curiosity, patience, and a willingness to learn. It also means wood that might otherwise be discarded gets a second, stunning life."
+      "title": "Good News in History, August 30",
+      "url": "https://www.goodnewsnetwork.org/events060830/",
+      "snippet": "Happy 96th Birthday to Warren Buffett, the “Oracle of Omaha.” He rose from working in his father’s store and delivering newspapers to becoming a multi-billionaire and the most successful American investor of the 20th century, whose company Berkshire Hathaway is one of the few in the world valued at over $1 trillion. He only recently […] The post Good News in History, August 30 appeared first on Good News Network .",
+      "cover_url": "https://www.goodnewsnetwork.org/wp-content/uploads/2014/06/Warren_Buffett_Mark_Hirschey-CC.jpg",
+      "reason": "History is full of quiet turning points — moments of courage, discovery, and human decency — and pausing to remember them reminds us that progress, however slow, has always been possible and is still being made today."
     }
   ],
   "discovery_articles": [],
   "featured_read": {
     "source": "reads",
-    "source_name": "Nautilus",
-    "title": "I’m Part of the Team Writing the Next Bible of Psychiatry—For the First Time, the DSM Will Use Biology to Understand Mental Disorders",
-    "url": "https://nautil.us/im-part-of-the-team-writing-the-next-bible-of-psychiatry-for-the-first-time-the-dsm-will-use-biology-to-understand-mental-disorders-1284613/",
-    "snippet": "Part of the challenge of finding a biomarker for mental illness is the environment’s significant influence The post I’m Part of the Team Writing the Next Bible of Psychiatry—For the First Time, the DSM Will Use Biology to Understand Mental Disorders appeared first on Nautilus .",
-    "cover_url": "https://lede-admin.nautil.us/wp-content/uploads/sites/70/2026/08/AdobeStock_520504873.jpeg"
+    "source_name": "Literary Hub",
+    "title": "August’s Best Reviewed Nonfiction",
+    "url": "https://lithub.com/augusts-best-reviewed-nonfiction-2/",
+    "snippet": "Claire Stapleton’s Don’t Be Evil, Kimon de Greef’s The Ego Trip, and Dave Ziren’s The People’s Historian all feature among the best reviewed nonfiction titles of the month. Brought to you by Book Marks, Lit Hub’s home for book reviews. *",
+    "cover_url": "https://s26162.pcdn.co/wp-content/uploads/2026/08/egotrip.jpg",
+    "blurb": "A roundup rather than a single essay — better saved for browsing Book Marks directly if you want the full reviews."
   },
   "reading_room": [
     {
       "source": "reads",
-      "source_name": "Longreads",
-      "title": "The Top 5 Longreads of the Week",
-      "url": "https://longreads.com/2026/08/21/top-5-622/",
-      "snippet": "Showcasing stories from Andrew Fedorov, Shayla Love, Malcolm Johnston, Erin Somers, and  Chris Stanton.",
-      "cover_url": "https://longreads.com/wp-content/uploads/2026/08/T5-08-21-26-C.png"
+      "source_name": "3 Quarks Daily",
+      "title": "Not-Writing",
+      "url": "https://3quarksdaily.com/3quarksdaily/2026/08/not-writing.html",
+      "snippet": "by TJ Price I haven’t been writing lately. I’m fully aware that sometimes there are cycles to these things; that there’s no sense in feeling guilt or shame about it—and yet. An author said once in an interview that if they went too long without writing, they “turned into a bit of a jackass.” I…",
+      "cover_url": "",
+      "blurb": "TJ Price sits with the quiet dread of a writing life gone silent and asks what it costs — not professionally, but personally — when the words stop coming and you slowly start to recognize the person you're becoming without them."
     },
     {
       "source": "reads",
       "source_name": "Literary Hub",
-      "title": "Lit Hub Weekly: August 24 – 28, 2026",
-      "url": "https://lithub.com/lit-hub-weekly-august-24-28-2026/",
-      "snippet": "“Jason was not just hounded out of academia, he was hounded out of existence.” Steven Thrasher on the killing Jason Arday. ​| Lit Hub Politics Long live Dolly Parton, American icon, giver of books. | Lit Hub Biography Why Hieronymus",
-      "cover_url": "https://s26162.pcdn.co/wp-content/uploads/2026/08/JohnEdwardWilliams.jpg"
+      "title": "August’s Best Reviewed Fiction",
+      "url": "https://lithub.com/augusts-best-reviewed-fiction-2/",
+      "snippet": "Chang-Rae Lee’s A Tender Age, Téa Obreht’s Sunrise, and Paul Yoon’s Etna all feature among the best reviewed fiction titles of the month. Brought to you by Book Marks, Lit Hub’s home for book reviews. * 1.",
+      "cover_url": "https://s26162.pcdn.co/wp-content/uploads/2026/08/sunrise.jpg",
+      "blurb": "A roundup rather than a single essay — better explored over at Book Marks for the full critical conversation."
     },
     {
       "source": "reads",
       "source_name": "3 Quarks Daily",
-      "title": "Are There Limits To What Physics Can Explain? Marcelo Gleiser & Brian Greene discussion",
-      "url": "https://3quarksdaily.com/3quarksdaily/2026/08/are-there-limits-to-what-physics-can-explain-marcelo-gleiser-brian-greene-discussion.html",
-      "snippet": "﻿ Enjoying the content on 3QD? Help keep us going by donating now.",
-      "cover_url": ""
-    },
-    {
-      "source": "reads",
-      "source_name": "Nautilus",
-      "title": "How to Think About Thinking",
-      "url": "https://nautil.us/how-to-think-about-thinking-1284587/",
-      "snippet": "A conversation with neuroscientist Adrian Owen about the importance of executive function The post How to Think About Thinking appeared first on Nautilus .",
-      "cover_url": "https://lede-admin.nautil.us/wp-content/uploads/sites/70/2026/08/AdobeStock_493717450.jpeg"
+      "title": "As AI Lay Dying: Analog Adventures in the Old South",
+      "url": "https://3quarksdaily.com/3quarksdaily/2026/08/as-ai-lay-dying-analog-adventures-in-the-old-south.html",
+      "snippet": "by Sean Murphy i. While there is much to admire and recommend in the excellent documentary Jiro Dreams of Sushi, especially for young creatives or academics who want to better understand–and appreciate–mastery and what it involves and requires, there’s one sequence that has stayed with me. The apprentice chefs are on rice duty before they even…",
+      "cover_url": "",
+      "blurb": "Sean Murphy uses the rice-polishing apprentices of *Jiro Dreams of Sushi* as a doorway into a deeper question: what gets lost when we outsource the slow, unglamorous labor of mastery to machines that can only simulate having earned it."
     },
     {
       "source": "reads",
       "source_name": "Literary Hub",
-      "title": "Eight Simple Rules for Dating Your Historical Fiction",
-      "url": "https://lithub.com/eight-simple-rules-for-dating-your-historical-fiction/",
-      "snippet": "This first appeared in Lit Hub’s Craft of Writing newsletter—sign up here. Consider these opening lines. Their source is far from obscure, so there’s a good chance you’ll recognize them right away.",
-      "cover_url": "https://s26162.pcdn.co/wp-content/uploads/2026/08/Untitled-design-2026-08-26T152234.885.png"
+      "title": "Long Before Toy Story, It-Narratives Imagined the Inner Lives of Objects",
+      "url": "https://lithub.com/long-before-toy-story-it-narratives-imagined-the-inner-lives-of-objects/",
+      "snippet": "It’s nighttime in the playroom and the toys have gathered for a conference. For modern audiences, this scene likely evokes the imaginative world of Toy Story, the long-running film franchise about the secret lives of children’s toys, which launched to",
+      "cover_url": "https://s26162.pcdn.co/wp-content/uploads/2026/08/Untitled-design-2026-08-25T151850.745.png",
+      "blurb": "Long before Pixar, eighteenth-century writers were giving coins, corsets, and carriages an inner life — this piece recovers the strange, playful literary genre that first dared to ask what the world looks like from the perspective of a thing."
+    },
+    {
+      "source": "reads",
+      "source_name": "3 Quarks Daily",
+      "title": "What being a moderate means to me",
+      "url": "https://3quarksdaily.com/3quarksdaily/2026/08/what-being-a-moderate-means-to-me.html",
+      "snippet": "Matt Lutz at Humean Being: It often seems that there is no more despised creature than the political moderate. “Moderate,” and its synonym “centrist,” are often used as terms of abuse. The moderate, in the popular political imagination, is wishy-washy, an inveterate hair-splitter who stands for nothing, the kind of collaborator who would say that…",
+      "cover_url": "",
+      "blurb": "Matt Lutz mounts a quiet, careful defense of political moderation — not as the absence of conviction, but as a distinct and demanding intellectual stance that refuses the comfort of certainty at either extreme."
     }
   ],
   "garden_note": {
-    "note": "The August full moon rises with an almost theatrical confidence tonight, flooding Zürich's gardens in silver just as the dahlias and late-summer zinnias hold their last warm colours before dusk swallows them. There is a particular stillness to the garden at this hour — the air still carrying the day's warmth, the nights beginning, ever so quietly, to hint at what September has in mind.",
+    "note": "Late August in Zürich carries that particular golden heaviness — the linden trees have done their work, the allotment paths smell of warm earth and ripening tomatoes, and the first cool thread in the morning air hints that September is not far off. Step out early and you'll catch the garden still holding its dew, lit sideways by a sun that clears the horizon at 06:40.",
     "in_season": [
-      "Dahlias in full, heavy bloom",
-      "Courgettes and late runner beans to harvest",
-      "Sow hardy spinach for autumn",
-      "Deadhead zinnias to coax the final flush"
+      "Tomatoes ripening on the vine — check for any splitting after summer rains",
+      "Zucchini and late runner beans ready for a final harvest push",
+      "Dahlias hitting their late-summer peak in deep reds and ambers",
+      "Sow a row of winter spinach or lamb's lettuce before the month turns"
     ],
-    "sky_tonight": "The Full Sturgeon Moon dominates the sky tonight — look east as dusk settles around 20:44 and watch it climb above the Zürichberg, outshining everything around it.",
-    "sun_times": "The sun sets at 20:14 this evening, with dusk lingering warmly until 20:44.",
-    "moon_label": "Full moon",
-    "illum_pct": 97,
-    "sun_range": "06:39–20:14"
+    "sky_tonight": "The waning gibbous moon rises well after midnight, leaving the early evening clear enough to find Saturn low in the east among the stars of Aquarius.",
+    "sun_times": "First light arrives at 06:10, sunrise at 06:40, and the long summer day finally closes with dusk at 20:42.",
+    "moon_label": "Waning gibbous",
+    "illum_pct": 94,
+    "sun_range": "06:40–20:12"
   },
   "puzzle": {
-    "kind": "riddle",
+    "kind": "haiku riddle",
     "label": "Fern's Morning Riddle",
-    "prompt": "Which bird does not belong in this group? Finch, gull, eagle, ostrich, or sparrow?",
-    "answer": "The Ostrich. It's the only bird that doesn't fly",
-    "hint": "",
-    "source": "riddles.com",
-    "source_id": "Riddle-164"
+    "prompt": "Pale disc on still water\nNeither fish nor fallen leaf\nOpens at noon's call",
+    "answer": "A water lily",
+    "hint": "It roots in mud but floats in sunlight, and its bloom follows the hours."
   },
   "previous_puzzle": {
     "label": "Fern's Morning Riddle",
-    "prompt": "I have a heart that never beats, I have a home but I never sleep. I can take a man's house and build another, And I love to play games with my many brothers. I am a king among fools. Who am I ?",
-    "answer": "The King of Hearts in a deck of cards"
+    "prompt": "Which bird does not belong in this group? Finch, gull, eagle, ostrich, or sparrow?",
+    "answer": "The Ostrich. It's the only bird that doesn't fly"
   },
   "larder": {
-    "news": [],
-    "recipe": {}
+    "news": [
+      {
+        "source": "food",
+        "source_name": "The Kitchn",
+        "title": "This “So Buttery” Steakhouse-Cut Steak Is the Best I’ve Ever Tasted",
+        "url": "https://www.thekitchn.com/rastellis-sirloin-steak-qvc-sale-aug-2026-23841048?utm_source=RSS&utm_medium=feed&utm_campaign=Category%2FChannel%3A+main",
+        "snippet": "It's perfect for every type of entertaining. READ MORE...",
+        "cover_url": "",
+        "blurb": "A steakhouse cut so gloriously buttery it might just redefine your standards for entertaining — consider this your permission to go all in."
+      },
+      {
+        "source": "food",
+        "source_name": "The Guardian",
+        "title": "Kismet, London SE1: ‘The sort of beans that make you want to move to the sun’ – restaurant review",
+        "url": "https://www.theguardian.com/food/2026/aug/30/kismet-london-se1-restaurant-review-grace-dent",
+        "snippet": "The first genuinely cool thing to have happened in Borough Market for ages A Turkish-Cypriot meyhane , which translates roughly as “wine house”, has slotted in upstairs at the Globe Tavern in Borough Market , south London. Any cab driver worth his salt will bend your ear over the fact that this is “where Bridget Jones lives”, which might be a bit confusing if you’ve booked in to eat kuzu şiş (lamb neck kebabs) and to knock back a couple of rakis with a fermented turnip juice chaser. That Bridget Jones trivia, by the way, is completely true: the upstairs space at the Globe was used as the heroine’s gaff in that famous film franchise.",
+        "cover_url": "https://i.guim.co.uk/img/media/a232227fe0093633563f04f519dbf137725ad86e/473_0_6228_4981/master/6228.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=c8504ed61c973c627be2d56fb2cad298",
+        "blurb": "A Turkish-Cypriot wine house tucked above a Borough Market pub, serving beans so sun-drenched they've apparently earned their own passport — a restaurant review worth savouring."
+      }
+    ],
+    "recipe": {},
+    "seasonal_note": "Zürich's weekly markets are flush with Zwetschgen right now — those deep-violet Italian prunes that the Swiss take seriously enough to fold into everything from Wähe to butter-basted pork — so grab a kilo at the Bürkliplatz and plan for a slow Tuesday afternoon in the kitchen."
   },
   "fern_data": {
-    "greeting": "The one worth carrying into sleep: psychiatry is finally cracking open its own foundations, rewriting the DSM with biology instead of committees and consensus. That sits differently at night than it does at noon.",
-    "top_pick_title": "Rewired From the Inside Out"
+    "greeting": "Mike D thought his music days were finished — and Floating Points wrote an entire ballet about a box nobody was supposed to open. Both of them, it turns out, were wrong about endings.",
+    "top_pick_title": "Wrong About Endings"
   }
 }
