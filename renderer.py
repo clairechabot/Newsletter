@@ -22,6 +22,7 @@ Required environment variables:
 """
 
 import os
+import re
 import json
 import smtplib
 import datetime
@@ -587,25 +588,60 @@ def _env_recipient_pairs() -> list[tuple[str, str]]:
     return [(n.strip(), e.strip()) for (n, e) in getaddresses([raw_to]) if e.strip()]
 
 
+# Readers who get the newsletter ONCE A WEEK (Sunday morning) instead of twice
+# daily, by request. First names only — this repo is public, so no email addresses
+# here. Matched against the display name AND the email local part in EMAIL_TO, so
+# it works whether an entry is "Jacob Perner <...>", "Jacob <...>" or a bare
+# address. "hannah" is a no-op if she is not on the main list (she already receives
+# the Berlin edition weekly on its own schedule).
+WEEKLY_READERS = frozenset({"jacob", "hannah"})
+
+
+def _recipient_tokens(name: str, email: str) -> set:
+    """Every handle a recipient can be matched by: their full name and email, plus
+    the individual words of each. Splitting the email local part means a reader is
+    still recognised when EMAIL_TO carries no display name at all."""
+    name, email = (name or "").strip().lower(), (email or "").strip().lower()
+    tokens = {name, email} - {""}
+    tokens |= set(re.split(r"[^a-z0-9]+", name)) if name else set()
+    local = email.split("@")[0] if "@" in email else email
+    tokens |= set(re.split(r"[^a-z0-9]+", local)) if local else set()
+    return tokens - {""}
+
+
 def _filter_weekly_recipients(
     pairs: "list[tuple[str, str]]",
     weekly: "set[str]",
     is_am: bool,
     now: datetime.datetime,
 ) -> "list[tuple[str, str]]":
-    """Drop recipients marked weekly-only (matched case-insensitively by name OR
-    email against the WEEKLY_RECIPIENTS set) unless this send is the Sunday
-    MORNING edition — the one weekly readers do receive. Pure function (clock
-    passed in) so the cadence rule is unit-testable."""
+    """Drop weekly-only readers unless this is the Sunday MORNING edition — the one
+    send they do receive. Pure function (clock passed in) so the cadence rule is
+    unit-testable. Warns when a configured reader matches nobody: the previous
+    version failed silently for two weeks because its exact-match never hit."""
     if not weekly:
         return pairs
-    if now.weekday() == 6 and is_am:      # Sunday morning — everyone gets it
+    matched: set = set()
+    deferred: list = []
+    kept: list = []
+    for name, email in pairs:
+        hits = _recipient_tokens(name, email) & weekly
+        if hits:
+            matched |= hits
+            deferred.append((name, email))
+        else:
+            kept.append((name, email))
+
+    if now.weekday() == 6 and is_am:      # Sunday morning — weekly readers included
+        for name, email in deferred:
+            print(f"[render] Weekly reader receiving today's Sunday edition: {name or email}")
         return pairs
-    kept = [(n, e) for (n, e) in pairs
-            if n.lower() not in weekly and e.lower() not in weekly]
-    for n, e in pairs:
-        if (n, e) not in kept:
-            print(f"[render] Weekly reader deferred to Sunday morning: {n or e}")
+
+    for name, email in deferred:
+        print(f"[render] Weekly reader deferred to Sunday morning: {name or email}")
+    for miss in sorted(weekly - matched):
+        print(f"::warning::WEEKLY_READERS entry '{miss}' matched no one in EMAIL_TO "
+              f"— that reader is still getting every edition.")
     return kept
 
 
@@ -686,9 +722,10 @@ def main() -> None:
         pairs   = _env_recipient_pairs()
         # Weekly-only readers (WEEKLY_RECIPIENTS secret: names/emails, comma-
         # separated) are skipped on every send except Sunday's morning edition.
-        weekly = {w.strip().lower()
-                  for w in os.environ.get("WEEKLY_RECIPIENTS", "").split(",")
-                  if w.strip()}
+        weekly = set(WEEKLY_READERS) | {
+            w.strip().lower()
+            for w in os.environ.get("WEEKLY_RECIPIENTS", "").split(",")
+            if w.strip()}
         pairs = _filter_weekly_recipients(
             pairs, weekly, is_am, datetime.datetime.now(EDITION_TZ))
         if not pairs:
