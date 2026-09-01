@@ -1,93 +1,93 @@
 {
-  "fetched_at": "2026-09-01T10:46:12.159780+02:00",
-  "is_am_email": true,
+  "fetched_at": "2026-09-01T19:53:12.644016+02:00",
+  "is_am_email": false,
   "audit_summary": {
     "youtube_videos": 4,
     "themes": 3,
-    "music_articles": 8,
-    "good_news_articles": 4,
-    "discovery_articles": 4,
+    "music_articles": 6,
+    "good_news_articles": 3,
+    "discovery_articles": 14,
     "featured_read": 1,
     "reading_room": 5,
     "garden": 1,
-    "puzzle": 0,
-    "larder": 3
+    "puzzle": 1,
+    "larder": 0
   },
   "themes": [
     {
-      "name": "Rabbit Holes With No Bottom",
-      "emoji": "🕳️",
-      "tagline": "Clear your afternoon — these videos will swallow you whole and spit you out a different person.",
+      "name": "Creatures & Curiosities",
+      "emoji": "🐍",
+      "tagline": "One expert, a lot of questions, and the kind of answers that make you rethink everything you thought you knew.",
       "items": [
         {
           "source": "youtube",
-          "video_id": "sGiimUaXE-k",
-          "title": "The Depths of the Cryptid Iceberg",
-          "channel_id": "UC3cpN6gcJQqcCM6mxRUo_dA",
-          "channel_title": "Wendigoon",
-          "published_at": "2026-09-01T02:02:25Z",
-          "url": "https://www.youtube.com/watch?v=sGiimUaXE-k",
-          "duration_seconds": 8977,
-          "view_count": "286749",
-          "description": "Thank you Helix Sleep for sponsoring! Visit https://helixsleep.com/wendigoon to take advantage of their Labor Day Sale Exclusive Partner Offer and get 30% off select mattresses!\n\nGET THE BLUBERRY COBBLER FROM CTRL NOW (if u want): https://drinkctrl.com/wendigoon\n\nCryptid Iceberg playlist: https://www.youtube.com/watch?v=gRFtEI37x1Q&list=PLfeWBGty_483s4fyD1t-EOzTQV09vjhxu&pp=sAgC\n\nEditor: Nate de Olivera\nSummaries: Libby June\nThumbnail:  Elvan Putra ​⁠ \n\nCheck out the other channels here:\nScary s",
-          "why_watch": "Wendigoon goes deep on the cryptid iceberg, moving well past Bigfoot and Mothman into genuinely obscure regional folklore and stranger corners of cryptozoology. At 2.5 hours it's a commitment, but his research is thorough and his delivery keeps it from feeling like a Wikipedia recitation. Good for a long commute or a rainy afternoon if you enjoy mythology-adjacent rabbit holes.",
+          "video_id": "CsFP6amUgA4",
+          "title": "Herpetologist Answers Snake Questions",
+          "channel_id": "UCftwRNsjfRo08xYE31tkiyw",
+          "channel_title": "WIRED",
+          "published_at": "2026-09-01T16:02:01Z",
+          "url": "https://www.youtube.com/watch?v=CsFP6amUgA4",
+          "duration_seconds": 1525,
+          "view_count": "4452",
+          "description": "Reptile expert Frank Burbrink joins WIRED to answer the internet’s burning questions about snakes. What’s the most venomous snake? How do snakes hear? How accurate is _Snakes on a Plane?_ Answers to these questions and many more await on Snake Support.\n\nWIRED recommends:\nhttps://youtu.be/4kyBn6-WNTk\nhttps://youtu.be/y66Hw3sevuc\nhttps://youtu.be/2YquYkNcF7I\n\nWatch more from WIRED | Tech Support: https://www.youtube.com/show/VLPLibNZv5Zd0dwIx8baZGDdkoPNg6LHAPDi?sbp=QAE%3D\n\n#Snake #Reptiles #Cobra\n",
+          "why_watch": "Frank Burbrink is a working herpetologist at the American Museum of Natural History, so his answers carry real scientific weight rather than casual enthusiast knowledge. The format moves briskly through genuinely interesting questions — snake hearing mechanisms, venom rankings, and whether Hollywood gets anything right — without lingering too long on any one topic. If you've ever had a snake question you were too embarrassed to Google seriously, this covers it with good humor and actual expertise.",
+          "is_wildcard": false
+        }
+      ]
+    },
+    {
+      "name": "The Dusty Archive",
+      "emoji": "📜",
+      "tagline": "Fat seals, naval battles, and the roads not taken — history at its most deliciously nerdy.",
+      "items": [
+        {
+          "source": "youtube",
+          "video_id": "fK8I8b5NJHQ",
+          "title": "Potted Meat - How to Preserve Leftovers in the 18th Century",
+          "channel_id": "UCsaGKqPZnGp_7N80hcHySGQ",
+          "channel_title": "Tasting History with Max Miller",
+          "published_at": "2026-09-01T15:00:31Z",
+          "url": "https://www.youtube.com/watch?v=fK8I8b5NJHQ",
+          "duration_seconds": 1646,
+          "view_count": "45988",
+          "description": "Visit https://squarespace.syuh.net/tastinghistory to get a free trial and 10% off your first purchase of a website or domain.\n\nSupport the Channel with Patreon ► https://www.patreon.com/tastinghistory\n\nRecipe at https://www.tastinghistory.com/recipes\n\nOrder the TASTING HISTORY COOKBOOK: https://amzn.to/42O10Lx\n\nMerch ► https://crowdmade.com/collections/tastinghistory \nInstagram ► https://www.instagram.com/tastinghistorywithmaxmiller/\nTwitter ► https://twitter.com/TastingHistory1 \nTiktok ► Tastin",
+          "why_watch": "Max Miller traces potted meat back to 18th-century British preservation techniques, explaining the practical logic of fat sealing as a refrigeration substitute before anyone had refrigerators. He cooks a period-accurate recipe on camera, so you see exactly how the method works rather than just reading about it. It's a useful reframe for anyone interested in fermentation or preservation — these weren't desperate measures, they were deliberate, sophisticated food science.",
           "is_wildcard": false
         },
         {
+          "source": "youtube",
+          "video_id": "C5Lkf29B274",
+          "title": "THG Podcast: Counterfactuals - 1915 Battle of the Gulf of Riga",
+          "channel_id": "UC4sEmXUuWIFlxRIFBRV6VXQ",
+          "channel_title": "The History Guy: History Deserves to Be Remembered",
+          "published_at": "2026-09-01T12:00:04Z",
+          "url": "https://www.youtube.com/watch?v=C5Lkf29B274",
+          "duration_seconds": 3996,
+          "view_count": "5939",
+          "description": "Listen to this episode of the THG Podcast, which posts in addition to regular History Guy content, after it releases on podcast services. Subscribe to the RSS feed for more: https://www.spreaker.com/show/6153862/episodes/feed\n\nNote: We are continuing to upload older audio podcasts that haven't been put on YouTube. As we did not record video for these they are audio-only. Video podcasts upload with each new podcasts every other week.\n\nToday we talk about a little remembered battle that could have",
+          "why_watch": "This episode puts the 1915 Battle of the Gulf of Riga under a counterfactual lens — asking what a different outcome might have changed about the Eastern Front and WWI's broader trajectory. At over an hour it's a genuine deep-dive, better suited to a long walk than casual background listening. If you find the Eastern Front underexamined compared to the Western, this is exactly the kind of niche, thoughtful analysis that rewards the time investment.",
+          "is_wildcard": false
+        }
+      ]
+    },
+    {
+      "name": "Golden Hour, Somewhere Beautiful",
+      "emoji": "🌅",
+      "tagline": "Pack light, go slow, and let Sicily convince you that summer is a state of mind.",
+      "items": [
+        {
           "source": "youtube_trending",
-          "video_id": "oNsEOPoZGcc",
-          "title": "Aotearoa Tonight LIVE | 31/08/2026 |",
-          "channel_id": "UCzbA6jOZBLPquMw5jypLUpw",
-          "channel_title": "Aotearoa Tonight ",
-          "published_at": "2026-08-31T21:12:36Z",
-          "url": "https://www.youtube.com/watch?v=oNsEOPoZGcc",
-          "duration_seconds": 7851,
-          "view_count": "218",
-          "description": "I had a computer which thought it could paint. It now makes $300,000 a year and I have no job. Oh the humanity.\n\nAll that and more tonight in Aotearoa!\n\n-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------\nReactions to news and current events, served with a side of palate cleansers, memes, and positive news to brighten up your evening.\n\nWHERE TO WATCH",
-          "why_watch": "With 218 views and a description that reads more like a fever dream than a program guide, there's genuinely no way to know what you're getting here. The wildcard is real — skip it if you need to protect your evening, click it if you're in the mood for something completely unvetted from New Zealand.",
+          "video_id": "pgQPN5Tyhj4",
+          "title": "Sicily Travel Vlog 2026 | summer in Sicily, celebrating friends birthday & babymoon in Taormina!",
+          "channel_id": "UCkRmOr5e0crhFRwnNmNsEHA",
+          "channel_title": "Lois You 로이스",
+          "published_at": "2026-09-01T05:11:06Z",
+          "url": "https://www.youtube.com/watch?v=pgQPN5Tyhj4",
+          "duration_seconds": 1307,
+          "view_count": "8819",
+          "description": "A trip to remember. Sweet sweet July.\n\nConnect with me 💌\nInstagram: @Loisjyou https://www.instagram.com/Loisjyou\nTiktok: https://www.tiktok.com/@loisjyou\nLinktree: https://linktr.ee/Loisjyou\nLinks to my outfits: https://shopmy.us/loisjyou \n\nFTC: This video is not sponsored\nBusiness enquiries: Loisjyou@gmail.com",
+          "why_watch": "This is a warmly shot travel vlog centered on Taormina in high summer — birthdays, a babymoon, and the specific golden-hour light that makes Sicily look almost unreasonable. Lois films with a candid, unhurried eye rather than trying to produce a destination guide, so it reads more like a friend's holiday footage than a tourism ad. Worth opening if you're in early trip-planning mode for Sicily or just need 20 minutes of genuinely beautiful scenery.",
           "is_wildcard": true
-        }
-      ]
-    },
-    {
-      "name": "Your Brain Is Weirder Than You Think",
-      "emoji": "🧠",
-      "tagline": "Neuroscience and high-dimensional geometry collide to make you question how you do anything at all.",
-      "items": [
-        {
-          "source": "youtube",
-          "video_id": "gAm5Athct6Y",
-          "title": "The Hidden Dimensions Behind Every Move You Make",
-          "channel_id": "UCR2uRTQ53V_egXKFflMMaaw",
-          "channel_title": "Artem Kirsanov",
-          "published_at": "2026-08-31T21:37:29Z",
-          "url": "https://www.youtube.com/watch?v=gAm5Athct6Y",
-          "duration_seconds": 1316,
-          "view_count": "30349",
-          "description": "Try Brilliant's tutor for free: https://brilliant.org/ArtemKirsanov/ .\nYou’ll also get 20% off an annual Premium subscription.\n\n=====\nMy name is Artem, I'm a neuroscience PhD student at Harvard University. \n🌎 Website and Social links: https://kirsanov.ai/\n📥 \"Receptive Field\" neuro-newsletter: https://artemkirsanov.substack.com/\n✨ Support me on Patreon to get access to Discord community:   / artemkirsanov  \n=====\n\nIn this video, we explore a strange puzzle at the heart of movement: your motor cor",
-          "why_watch": "Artem Kirsanov, a Harvard neuroscience PhD student, breaks down the high-dimensional geometry underlying how the brain encodes movement — the kind of concept that usually lives behind paywalled papers. His visual explanations make manifold theory genuinely intuitive without dumbing it down. If you've ever been curious why neuroscientists talk about 'neural trajectories,' this is a clean 22-minute answer.",
-          "is_wildcard": false
-        }
-      ]
-    },
-    {
-      "name": "The Silicon Power Plays",
-      "emoji": "♟️",
-      "tagline": "The AI wars are getting messy — here's the strategic chess happening behind the press releases.",
-      "items": [
-        {
-          "source": "youtube",
-          "video_id": "u15N3l4RT80",
-          "title": "The OpenAI/Hugging Face attack, clearly explained",
-          "channel_id": "UCXl4i9dYBrFOabk0xGmbkRA",
-          "channel_title": "Dwarkesh Patel",
-          "published_at": "2026-08-31T20:49:34Z",
-          "url": "https://www.youtube.com/watch?v=u15N3l4RT80",
-          "duration_seconds": 1481,
-          "view_count": "139896",
-          "description": "This is a video version of a post I wrote. If you want to read the original you can check it out here: \n\nhttps://www.dwarkesh.com/p/openai-huggingface",
-          "why_watch": "Dwarkesh Patel lays out the strategic logic of OpenAI's reported move against Hugging Face — not just the what, but the competitive pressure and ecosystem dynamics driving it. It's a video adaptation of his written piece, so the argument is unusually structured and tight for a tech commentary video. Worth 25 minutes if you want to think clearly about open vs. closed AI infrastructure without wading through hot takes.",
-          "is_wildcard": false
         }
       ]
     }
@@ -95,278 +95,312 @@
   "morning_soundtrack": [
     {
       "source": "music",
-      "source_name": "Stereogum",
-      "title": "Iron Maiden & Christopher Cross Address Rising Canada–US Tensions At Toronto Shows",
-      "snippet": "Over the weekend, Iron Maiden kicked off their 50th anniversary North American tour in Toronto while Christopher Cross concluded his North American tour with Toto and the Romantics in the same city. Both the British heavy metal band and the American singer-songwriter used the opportunity to address ",
-      "url": "https://stereogum.com/2509945/iron-maiden-christopher-cross-address-rising-canada-us-tensions-at-toronto-shows/news/",
+      "source_name": "NPR Music",
+      "title": "Celebrating 100 years of jazz great John Coltrane",
+      "snippet": "Coltrane would have turned 100 on Sept. 23. We speak to his son Ravi, also a tenor saxophonist, and we revisit a 1998 interview with Elvin Jones, a drummer who performed and recorded with Coltrane.",
+      "url": "https://www.npr.org/2026/09/01/nx-s1-5951499/celebrating-100-years-of-jazz-great-john-coltrane",
       "genre": "",
-      "vibe_check": "The awkward energy of two very different uncles both trying to give the same toast at a politically charged dinner party.",
-      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/08/iron-maiden-cross.jpeg",
-      "embed_url": "https://www.youtube.com/embed/688Z1Key4BQ"
-    },
-    {
-      "source": "music",
-      "source_name": "Stereogum",
-      "title": "At What Comes After The Blues, Secretly Group Celebrates Its Three-Decade Journey To The Forefront Of Indie Music",
-      "snippet": "“It’s been a bit like a family reunion,” Ben Swanson said onstage at the Buskirk-Chumley Theater on Saturday night. “The good kind, not the kind where your weird uncle says mildly inappropriate things all night.”&#160;\nThe post At What Comes After The Blues, Secretly Group Celebrates Its Three-Decad",
-      "url": "https://stereogum.com/2509912/at-what-comes-after-the-blues-secretly-group-celebrates-its-three-decade-journey-to-the-forefront-of-indie-music/reviews/concert-review/",
-      "genre": "",
-      "vibe_check": "Like stumbling into a basement reunion show where everyone's a little older, a little wiser, and somehow the music hits harder for it.",
-      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/08/APD_20260827_Secretly30_Bluebird15.jpg",
-      "embed_url": "https://www.youtube.com/embed/wWJEqHXyKCc"
-    },
-    {
-      "source": "music",
-      "source_name": "Consequence",
-      "title": "Brittany Howard on Alabama Shakes’ Reunion, I Must Be Dreaming, and Finding Hope in a Fractured World: Podcast",
-      "snippet": "The singer talks about rediscovering the band, pushing through fear to write new music, and why anger gives her hope for what comes next.\nBrittany Howard on Alabama Shakes’ Reunion, I Must Be Dreaming, and Finding Hope in a Fractured World: Podcast\nKyle Meredith",
-      "url": "https://consequence.net/2026/08/alabama-shakes-i-must-be-dreaming-podcast/",
-      "genre": "",
-      "vibe_check": "The sound of someone finding their voice again after a long silence, raw and crackling with hard-won resolve.",
-      "cover_url": "https://consequence.net/wp-content/uploads/2026/08/Alabama-Shakes.jpg",
-      "embed_url": "https://www.youtube.com/embed/h0fmpoLkdZE"
-    },
-    {
-      "source": "music",
-      "source_name": "Consequence",
-      "title": "Malcolm Todd to Kick Off “Do That Again” Tour: How to Get Last-Minute Tickets",
-      "snippet": "The 38-date North American run includes stops at Radio City Music Hall, The Anthem, Mission Ballroom, and the Greek Theatre, with some get-in prices starting around $100.\nMalcolm Todd to Kick Off &#8220;Do That Again&#8221; Tour: How to Get Last-Minute Tickets\nAlex Krinsky",
-      "url": "https://consequence.net/2026/08/malcolm-todd-to-kick-off-do-that-again-tour-how-to-get-last-minute-tickets/",
-      "genre": "",
-      "vibe_check": "The breathless scramble of refreshing ticketing apps at midnight because missing this one simply isn't an option.",
-      "cover_url": "https://consequence.net/wp-content/uploads/2026/06/Malcolm-Todd.jpeg",
+      "vibe_check": "The kind of reverent, late-night listening that makes you feel the weight and wonder of a century passing like a held note.",
+      "cover_url": "https://media.npr.org/include/images/facebook-default-wide-s1400-c85.jpg",
       "embed_url": null
     },
     {
       "source": "music",
-      "source_name": "Consequence",
-      "title": "Bad Wolves’ Unveil Cover of Dolly Parton’s “Jolene” That Caused Guitarist to Quit: Stream",
-      "snippet": "The song has received a full blessing of Dolly's longtime manager.\nBad Wolves&#8217; Unveil Cover of Dolly Parton&#8217;s &#8220;Jolene&#8221; That Caused Guitarist to Quit: Stream\nLangdon Hickman",
-      "url": "https://consequence.net/2026/08/bad-wolves-cover-dolly-parton-jolene/",
+      "source_name": "NPR Music",
+      "title": "You never know who's going to show up at The Ruby Sessions",
+      "snippet": "Hear two up-and-coming Irish musicians perform for a special edition of The Ruby Sessions, one of Dublin's best musical showcases.",
+      "url": "https://www.npr.org/sections/world-cafe/2026/09/01/nx-s1-5950478/you-never-know-whos-going-to-show-up-at-the-ruby-sessions",
       "genre": "",
-      "vibe_check": "A band photo where someone's already out the door before the shutter clicks, but the song stays.",
-      "cover_url": "https://consequence.net/wp-content/uploads/2026/08/Bad-Wolves-Dolly-Parton.jpg",
-      "embed_url": "https://www.youtube.com/embed/JZTjws8Ps9E"
+      "vibe_check": "That electric, intimate buzz of stumbling into a candlelit back room just as something magical is about to happen.",
+      "cover_url": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3360x1890+0+0/resize/1400/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Fe4%2F9d%2F802634f049fd91d1fb913f87d3cb%2Fnpr-podcast-wide-87.jpg",
+      "embed_url": "https://www.youtube.com/embed/videoseries"
     },
     {
       "source": "music",
-      "source_name": "JazzTimes",
-      "title": "Impressions. Meditations. Expression. Thoughts on Coltrane: The Definitive Visual Celebration of the Legend",
-      "snippet": "W hen writing about this year’s centenary celebrations of Miles Davis and John Coltrane, it’s been fascinating to see how their respective work has been &#8230; Read More \"Impressions. Meditations. Expression. Thoughts on Coltrane: The Definitive Visual Celebration of the Legend\"\nThe post Impression",
-      "url": "https://www.jazztimes.com/reviews/books/impressions-meditations-expression-thoughts-on-coltrane-the-definitive-visual-celebration-of-the-legend/",
+      "source_name": "NPR Music",
+      "title": "Tune in to a mini-concert with Amble",
+      "snippet": "The Irish band performed songs from its upcoming album, Love and All Its Wares, for a special edition of The Ruby Sessions in Dublin.",
+      "url": "https://www.npr.org/sections/world-cafe/2026/09/01/nx-s1-5950479/tune-in-to-a-mini-concert-with-amble",
       "genre": "",
-      "vibe_check": "The reverent quiet of a museum room where the art makes you forget you're standing up.",
-      "cover_url": "https://www.jazztimes.com/wp-content/uploads/2026/08/Unknown-6.png",
-      "embed_url": "https://www.youtube.com/embed/8kmd0cpGfbo"
+      "vibe_check": "Tender and unhurried, like a love letter written slowly in a warm Dublin pub while rain taps the window.",
+      "cover_url": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3649x2053+0+1673/resize/1400/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Fc3%2F39%2Fd2a0970842d7863115cc3bbe4032%2Famble-press-shot-credit-adam-heffernan.jpg",
+      "embed_url": "https://www.youtube.com/embed/videoseries"
+    },
+    {
+      "source": "music",
+      "source_name": "No Depression",
+      "title": "THROUGH THE LENS: Dolly Parton, Jason Isbell, Buddy Guy, and More Photos of the Week",
+      "snippet": "",
+      "url": "https://nodepression.org/through-the-lens-dolly-parton-jason-isbell-buddy-guy-and-more-photos-of-the-week/",
+      "genre": "",
+      "vibe_check": "A week's worth of Americana captured in silver and shadow, legends and rising stars sharing the same grainy light.",
+      "cover_url": "https://storage.ghost.io/c/18/d0/18d08e58-3b1b-4720-ae25-a31b44e69d4b/content/images/size/w1200/2026/08/20260813_jason_isbell_02-1.jpg",
+      "embed_url": null
+    },
+    {
+      "source": "music",
+      "source_name": "Aquarium Drunkard",
+      "title": "Melô do Embaixador: Brazilian Soul, Funk & Disco Covers 1968-2015",
+      "snippet": "Forget the Beatles. Brazilians love covering the Fab Four in all the different styles (from bossa to Tropícalia and MPB), but some intrepid brasileiros prefer to explore other international trends. Melô do Embaixador digs deep into the country’s under-documented history of American soul, funk, and d",
+      "url": "https://aquariumdrunkard.com/2026/09/01/melo-do-embaixador-brazilian-soul-funk-disco-covers-1968-2015/",
+      "genre": "",
+      "vibe_check": "A sweaty, hip-swaying deep dive into a parallel universe where the funk never stopped and Rio never slept.",
+      "cover_url": "https://aquariumdrunkard.com/_newness/wp-content/uploads/2026/08/brazil-funk.jpg",
+      "embed_url": null
     },
     {
       "source": "music",
       "source_name": "PopMatters",
-      "title": "Nicola Miller Expertly Guides Her Jazz Combo on Fantastic LP",
-      "snippet": "Nicola Miller's SPIT! is a fun, exciting, boundary-smashing jazz experiment among five deeply talented musicians with an uncommon gift for musical telepathy.",
-      "url": "https://www.popmatters.com/nicola-miller-spit",
+      "title": "Dolly Parton’s Greatest Movie Role",
+      "snippet": "Dolly Parton’s small but revealing filmography shows that her carefully constructed persona was never an obstacle to acting, but its richest material.",
+      "url": "https://www.popmatters.com/dolly-parton-greatest-movie-role",
       "genre": "",
-      "vibe_check": "Five musicians finishing each other's sentences in a smoky room where the night has no particular curfew.",
-      "cover_url": "https://www.popmatters.com/wp-content/uploads/2026/08/Nicola-Miller-Spit-social.webp",
-      "embed_url": "https://bandcamp.com/EmbeddedPlayer/album=2162457587/size=large/bgcol=ffffff/linkcol=e99708/tracklist=false/artwork=small/transparent=true/"
-    },
-    {
-      "source": "music",
-      "source_name": "Fretboard Journal",
-      "title": "Wintergrass Sessions: Woody Platt and the Bluegrass Gentlemen",
-      "snippet": "At the 2026 Wintergrass festival in Bellevue, Washington, the Fretboard Journal teamed up with filmers I Know We Should to capture some of our favorite artists (and talk gear). In this session, we hear from Woody Platt and the Bluegrass Gentlemen. In this video, we get a rundown on the band&#8217;s ",
-      "url": "https://www.fretboardjournal.com/video/wintergrass-sessions-woody-platt-and-the-bluegrass-gentlemen/?utm_source=rss&utm_medium=rss&utm_campaign=wintergrass-sessions-woody-platt-and-the-bluegrass-gentlemen",
-      "genre": "",
-      "vibe_check": "Cold mountain air and callused fingers, the kind of picking that sounds like it grew straight out of the Pacific Northwest pines.",
-      "cover_url": "https://images.fretboardjournal.com/wp-content/uploads/2026/08/31211338/Screenshot-2026-08-31-at-9.11.00-PM-scaled.png",
-      "embed_url": "https://www.youtube.com/embed/NDWbWp8KbnQ"
+      "vibe_check": "Rhinestone-bright and unexpectedly tender, like realizing the most dazzling person in the room is also the most real.",
+      "cover_url": "https://www.popmatters.com/wp-content/uploads/2026/09/Dolly-Partons-Greatest-Movie-Role.webp",
+      "embed_url": "https://www.youtube.com/embed/qni6HOyPNBA"
     }
   ],
   "global_silver_linings": [
     {
       "source": "good_news",
       "source_name": "Good News Network",
-      "title": "Good News in History, September 1",
-      "url": "https://www.goodnewsnetwork.org/events060901/",
-      "snippet": "881 years ago today, Ibn Jubayir was born in Moorish Spain. This pilgrim and talented writer went on the Hajj to Mecca in 1183, and penned a valuable, beautiful, first-hand account of the places and people he saw, which included the Crusader states of Acre and the island of Sicily as controlled by the Norman […] The post Good News in History, September 1 appeared first on Good News Network .",
-      "cover_url": "https://www.goodnewsnetwork.org/wp-content/uploads/2024/09/Isle-of-Graia-public-domain.jpg",
-      "reason": "History is full of quiet milestones — breakthroughs, rescues, and acts of courage — that remind us progress has always been possible, even in difficult times. Looking back at what humanity has already overcome is a genuine source of strength for the days ahead."
+      "title": "Pokémon Fans Rally to Help Child After He Was Scammed Out of His Most Valuable Card",
+      "url": "https://www.goodnewsnetwork.org/pokemon-fans-rally-to-help-child-after-he-was-scammed-out-of-his-most-valuable-card/",
+      "snippet": "A heartwarming story of a community putting values above value comes from the convention floor of Pokémon XP. At the August 29th event in San Francisco, venture capitalist Eric Bahn shared that his son was scammed while trading Pokémon cards with an adult. “Lost his most valuable cards in a fraudulent trade by some guy […] The post Pokémon Fans Rally to Help Child After He Was Scammed Out of His Most Valuable Card appeared first on Good News Network .",
+      "cover_url": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/08/Pokeman-card-stolen-cropped-twitter.jpeg",
+      "reason": "When a child was taken advantage of, a whole community of strangers stepped up to make it right — a quiet reminder that kindness still travels fast. It's a small story with a big heart at its centre."
+    },
+    {
+      "source": "good_news",
+      "source_name": "Positive News",
+      "title": "London’s Ulez linked to healthier lung growth in children",
+      "url": "https://www.positive.news/environment/londons-ulez-linked-to-healthier-lung-growth-in-children/",
+      "snippet": "Seven years after London introduced its Ultra Low Emission Zone, researchers are measuring the impact on children's health The post London’s Ulez linked to healthier lung growth in children appeared first on Positive News .",
+      "cover_url": "https://www.positive.news/wp-content/uploads/2026/09/iStock-2206190697.jpg",
+      "reason": "Real-world evidence that cleaner air policies translate into healthier lungs for growing children is exactly the kind of result worth celebrating — proof that city-level decisions genuinely shape young lives for the better."
     },
     {
       "source": "good_news",
       "source_name": "Upworthy",
-      "title": "The most dramatic proof of our current climate catastrophe ever caught on camera",
-      "url": "https://www.upworthy.com/the-largest-proof-of-climate-catastrophe-ex1/",
-      "snippet": "It was the largest such event ever filmed. The post The most dramatic proof of our current climate catastrophe ever caught on camera appeared first on Upworthy .",
-      "cover_url": "https://www.upworthy.com/wp-content/uploads/sites/2/2025/05/origin-236.jpg",
-      "reason": "As difficult as it is to witness, footage that makes the reality of climate change undeniable is also what galvanizes communities, scientists, and policymakers to act with real urgency. Seeing clearly is the first step toward changing course."
-    },
-    {
-      "source": "good_news",
-      "source_name": "Reasons to be Cheerful",
-      "title": "Could Plastic-Eating Robots Clean Up Our Oceans?",
-      "url": "https://reasonstobecheerful.world/could-plastic-eating-robots-clean-up-our-oceans/",
-      "snippet": "This story has been co-published by Reasons to be Cheerful and the Outrider Foundation. In Los Angeles, in Mumbai, in Kuala Lumpur and in several other cities around the planet, autonomous plastic-eating robots are taking over the waterways. They are, in one form or other, chomping up and extracting masses of the...",
-      "cover_url": "https://reasonstobecheerful.world/wp-content/uploads/2026/08/0PHOTO-TheOceanCleanup_Jamaica-Tender-Guardian_trash-accumulation-scaled-1.jpg",
-      "reason": "Plastic-eating robots represent exactly the kind of creative, nature-conscious problem-solving our oceans desperately need — proof that innovators are taking marine pollution seriously enough to engineer bold new solutions. The fact that this idea is moving from concept toward reality is genuinely encouraging."
-    },
-    {
-      "source": "good_news",
-      "source_name": "The Optimist Daily",
-      "title": "Meet the Bioloon: the biodegradable balloon aiming for shelves by 2028",
-      "url": "https://www.optimistdaily.com/2026/09/meet-the-bioloon-the-biodegradable-balloon-aiming-for-shelves-by-2028/",
-      "snippet": "BY THE OPTIMIST DAILY EDITORIAL TEAM Balloons have always been made from natural latex, a material derived from rubber tree sap. Natural latex is biodegradable. The rubber tree has been producing it since before the first balloon was invented in 1824.",
-      "cover_url": "https://www.optimistdaily.com/wp-content/uploads/Depositphotos_400318604_L.jpg",
-      "reason": "Biodegradable balloons could quietly eliminate one of the most persistent — and overlooked — threats to birds and marine wildlife, simply by swapping out a material we never needed to make toxic in the first place. With a shelf date of 2028, this isn't wishful thinking; it's a practical fix already in motion."
+      "title": "Look for backchannels: The dead giveaway that someone isn’t listening while you’re speaking",
+      "url": "https://www.upworthy.com/look-for-backchannels-the-dead-giveaway-that-someone-isnt-listening-while-youre-speaking/",
+      "snippet": "It's the little signals that say a lot. The post Look for backchannels: The dead giveaway that someone isn’t listening while you’re speaking appeared first on Upworthy .",
+      "cover_url": "https://www.upworthy.com/wp-content/uploads/sites/2/2026/08/woman-looking-bored-on-a-date.jpg",
+      "reason": "Recognising the subtle signs of distraction in conversation is a small but meaningful step toward deeper, more present human connection — and awareness is always where change begins."
     }
   ],
   "discovery_articles": [
     {
       "source": "discovery",
-      "source_name": "Smithsonian",
-      "title": "See the Digitally Reconstructed Face of an Ancient Man Who Witnessed England’s Greatest Upheaval",
-      "url": "https://www.smithsonianmag.com/smart-news/see-the-digitally-reconstructed-face-of-an-ancient-man-who-witnessed-englands-greatest-upheaval-180989425/",
-      "snippet": "The so-called “Conquest Man” was buried in England in 1079, just over a decade into the reign of William the Conqueror. Researchers recently analyzed the skeleton’s DNA and teeth to learn more about him",
+      "source_name": "Atlas Obscura",
+      "title": "John Ford Statue in Portland, Maine",
+      "url": "https://www.atlasobscura.com/places/john-ford-statue",
+      "snippet": "If you asked John Ford what he did with his life, he'd tell you he made westerns. If you asked anyone else, they'd tell you he transformed the art of cinema. John Ford is a name as much as an idea.",
       "category": "history",
-      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/uqFdmAEIn8vx5RulBsQ1xo5R3jc=/fit-in/1600x0/filters:focal(1028x686:1029x687)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/72/23/72237884-a408-4fa1-9d75-fb7e3180300b/screenshot_2026-08-31_at_100523am.jpeg",
-      "ferns_note": "He lived through the Norman Conquest — one of history's most violent reshufflings of power — and now, nearly a thousand years later, his face looks back at us. There's something quietly haunting about meeting the gaze of a witness."
+      "cover_url": "https://img.atlasobscura.com/VUJhoIkafFWpUJSyZrNQ99HQyous9CatbkDxLowH1Z4/rt:fit/w:600/c:662:441:nowe:0:102/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy9kNjE5/NGZmZC1lNjQ5LTRi/MGEtOWUwYy00MzY0/YmQ0ZDM3ZmMxOWMw/NzkzMGZiMjk4YzNi/YjlfUFhMXzIwMjMw/OTI2XzE2MTgyNTkw/MS5qcGc.jpg"
+    },
+    {
+      "source": "discovery",
+      "source_name": "Atlas Obscura",
+      "title": "Must-Try Spots For Noodle Lovers",
+      "url": "https://www.atlasobscura.com/articles/spots-for-noodle-lovers-around-the-world",
+      "snippet": "Humans have been slurping and savoring noodles for centuries, with the first recorded noodle dish recorded during China’s Eastern Han period (25–220 CE). In fact, noodles would go on to become inextricable from ancient Chinese culture, with a wheat-based version emerging as a staple of the Han dynasty. Centuries later, noodle-making would hit Europe, transforming the cuisines of Italy during the Middle Ages and Germany in the early 18th century.",
+      "category": "history",
+      "cover_url": "https://img.atlasobscura.com/AIb20A2aUqbvi6S0MdGMEVSHzCaSe45LVs-lgofiWZ0/rt:fit/w:1200/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL2Fzc2V0/cy8xYzVkNWUzZi0y/Zjc1LTQ5MjYtYWRk/OC04NmM1YTVlOGMx/YWE3ODU4NjNhNjk0/YzI1MmFjYzdfU2Ny/ZWVuc2hvdCAyMDI2/LTA5LTAxIGF0IDEw/LjEwLjUwIEFNLnBu/Zw.png"
+    },
+    {
+      "source": "discovery",
+      "source_name": "Atlas Obscura",
+      "title": "Waldkunstpfad in Darmstadt, Germany",
+      "url": "https://www.atlasobscura.com/places/waldkunstpfad",
+      "snippet": "Hidden in the forest on the southern edge of Darmstadt, the Waldkunstpfad turns an ordinary woodland walk into something considerably more surreal. Along the trails, artworks emerge between the trees, lean against trunks, occupy clearings, or use the forest itself as part of the installation. Instead of entering a gallery, visitors simply follow the path and wait to see what the woods have decided to reveal.",
+      "category": "history",
+      "cover_url": "https://img.atlasobscura.com/hNCfP-3MepJXd74nlCPpDpFK-jO9QILwNFw-m4uni9c/rt:fit/w:600/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy9jMDg1/NThkOS1mMmQ3LTQ2/YzktOWYzNS02OGFk/NmJmM2RjZTYzM2Y4/MzkwN2NhZWViZjc4/OThfMTAwMDA4MDIz/Ni5qcGc.jpg"
+    },
+    {
+      "source": "discovery",
+      "source_name": "Atlas Obscura",
+      "title": "An Autumn in Sun Valley Is Unlike Any Other",
+      "url": "https://www.atlasobscura.com/articles/fall-activities-sun-valley-idaho",
+      "snippet": "Sun Valley is renowned for its winter ski slopes, drawing in thrill-seekers with its 3,400 vertical feet and over 2,500 acres of diverse, snowy terrain. Meanwhile, in summer, this pocket of Idaho comes alive with wildflowers, festivals, and. a slew of outdoor activities.",
+      "category": "history",
+      "cover_url": "https://img.atlasobscura.com/lyW-coaRtR_2K5023P1zpBOfD9ngpmPGu3Fsp8UaDjw/rt:fit/w:1200/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL2Fzc2V0/cy82YWQwODY2NC1i/YmUyLTQwNDMtYTQw/NC03MzE4Y2IyMDUx/ZmRmYmNjNDY0MmRi/NzMzN2NkYzJfR2Fk/ZF9SYXlfSl85NjlB/NzM1NS5qcGc.jpg"
     },
     {
       "source": "discovery",
       "source_name": "Smithsonian",
-      "title": "The Best Way to Explore Zagreb Might Just Be On Your Plate",
-      "url": "https://www.smithsonianmag.com/sponsored/the-best-way-to-explore-zagreb-might-just-be-on-your-plate-180989196/",
-      "snippet": "From bustling food markets and Michelin-starred restaurants to lively street food festivals, Croatia’s capital is emerging as one of central Europe’s most exciting culinary destinations",
+      "title": "This Ancient Insect Had 24 Legs—and Could Help Explain How the Ancestors of Modern-Day Bugs Took Over the Land",
+      "url": "https://www.smithsonianmag.com/smart-news/this-ancient-insect-had-24-legs-and-could-help-explain-how-the-ancestors-of-modern-day-bugs-took-over-the-land-180989420/",
+      "snippet": "A previously undescribed critter that lived 324 million years ago appears to have been a transitional species that lived between land and sea. It could help researchers fill an 80-million-year gap in the fossil record of how crustaceans evolved into insects",
       "category": "history",
-      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/h_etMP4wS33V9Zqaq8VrAEMWEUE=/fit-in/1600x0/filters:focal(2000x1400:2001x1401)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/79/6d/796dff5b-008a-47a9-9d71-f4b38eb87e2b/hero_-_v2_-_dolac_market_from_air_davor_rostuhar_2_1.jpg",
-      "ferns_note": "Zagreb has long been Europe's well-kept secret, and it turns out the best map of the city isn't drawn in streets but in flavors. From open-air markets to Michelin stars, the table here tells a story the guidebooks keep underselling."
+      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/SRmNSDU0AAllozNS2KvizHO3HLI=/fit-in/1600x0/filters:focal(2880x1646:2881x1647)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/cb/7b/cb7bd306-9a69-40e6-a11f-785d40ffd523/w020260827331834563059_origin.jpg"
     },
     {
       "source": "discovery",
       "source_name": "Smithsonian",
-      "title": "What Triggered the Devastating Floods in Nepal and Tibet, and Are We Due for More in the Future? Here's What Scientists Know So Far",
-      "url": "https://www.smithsonianmag.com/smart-news/what-triggered-the-devastating-floods-in-nepal-and-tibet-and-are-we-due-for-more-in-the-future-heres-what-scientists-know-so-far-180989426/",
-      "snippet": "Natural hazards researchers suspect that a landslide involving a glacier triggered the event, and they say more could happen because of human-caused climate change",
+      "title": "Stones From One of Henry VIII's Fortresses Spent More Than a Century Hidden in Plain Sight. New Research Suggests the Victorians Repurposed Them as Building Materials",
+      "url": "https://www.smithsonianmag.com/smart-news/stones-from-one-of-henry-viiis-fortresses-spent-more-than-a-century-hidden-in-plain-sight-new-research-suggests-the-victorians-repurposed-them-as-building-materials-180989427/",
+      "snippet": "Recently discovered archival records indicate that workers constructing an extension of the Constable's Gate at Dover Castle in the late 19th century reused fragments of the Tudor-era Sandown Castle",
       "category": "history",
-      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/dLG5s91CVICibzg9JLd4ZQ0Dvs8=/fit-in/1600x0/filters:focal(3788x2526:3789x2527)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/12/53/1253b4eb-dc8f-4d6e-8e25-1c7d614bf6ea/nepal-tibet-flood.jpg",
-      "ferns_note": "A glacier didn't just melt — it fell, and the catastrophe that followed is a preview of what an warming planet has quietly been scheduling for mountain communities downstream. The disaster in Nepal and Tibet is less an anomaly than an early arrival."
+      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/j-sgy-gcYKG3OxmNyIh9FJlLtVw=/fit-in/1600x0/filters:focal(2371x1852:2372x1853)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/bf/1b/bf1be1f3-1997-47c0-9261-53826fb66ee4/gettyimages-464412477.jpg"
     },
     {
       "source": "discovery",
       "source_name": "Smithsonian",
-      "title": "Would You Eat a Cookie Made From Upcycled Plastic? Scientists Propose a New Way to Deal With Waste and Provide Food in Extreme Environments",
-      "url": "https://www.smithsonianmag.com/smart-news/would-you-eat-a-cookie-made-from-upcycled-plastics-scientists-propose-a-new-way-to-deal-with-waste-and-provide-food-in-extreme-environments-180989413/",
-      "snippet": "A team of researchers programmed yeast to turn broken-down plastic and agricultural waste into sweet treats called µBites. They might come in handy during deep-space missions or in disaster zones, although some critics say the food is impractical",
+      "title": "A Frank Lloyd Wright House in L.A. Is in Danger of 'Demolition by Neglect,' Say Advocates",
+      "url": "https://www.smithsonianmag.com/smart-news/a-frank-lloyd-wright-house-in-la-is-in-danger-of-demolition-by-neglect-say-advocates-180989429/",
+      "snippet": "The visionary designed this two-bedroom, one-bathroom in his affordable Usonian style. It’s the only house of its kind in L.A.",
       "category": "history",
-      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/la8LgChuxbY9TEcPv6JA_e17lkA=/fit-in/1600x0/filters:focal(350x237:351x238)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/1a/72/1a72d8cc-970c-48cf-83f6-b16e605ff5c0/low-res_f26-plastic-cookies-hr.jpg",
-      "ferns_note": "The idea of eating a cookie born from a plastic bottle sounds like science fiction's least appetizing subplot, yet here we are — yeast reprogrammed to turn waste into food for astronauts and disaster survivors. Whether it ever tastes like a treat is, delightfully, still an open question."
+      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/0UmcWJ85rKlz4OXDGpUUClKZr1Q=/fit-in/1600x0/filters:focal(1435x963:1436x964)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/7a/a5/7aa542ff-6fe9-4884-b7be-9f2d434fef63/brentwood_heights_veduta_dinsieme_della_george_sturges_house.jpeg"
+    },
+    {
+      "source": "discovery",
+      "source_name": "Smithsonian",
+      "title": "Mars' Southern Half Is Weirdly Warm Underground. The 'Thermal Anomaly' Might Explain Why the Planet's Hemispheres Look So Different",
+      "url": "https://www.smithsonianmag.com/smart-news/mars-southern-half-is-weirdly-warm-underground-the-thermal-anomaly-might-explain-why-the-planets-hemispheres-look-so-different-180989424/",
+      "snippet": "Researchers used a novel technique to figure out what's going on inside the Red Planet. The work suggests that the interior of the southern hemisphere is hundreds of degrees hotter than that of the northern hemisphere and partially molten",
+      "category": "history",
+      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/RvkPifQKCTASP8jZHQb_8iJwoFM=/fit-in/1600x0/filters:focal(644x536:645x537)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/cf/76/cf765078-a38b-45cd-a0a4-f8fce65f01e3/image001_uzjyo2e16d0bafill-3200x1620-c100format-avif.jpg"
+    },
+    {
+      "source": "discovery",
+      "source_name": "Science News",
+      "title": "The universe may have been building rocky planets almost from the start",
+      "url": "https://www.sciencenews.org/article/universe-rocky-planets-formed-early",
+      "snippet": "Simulations suggest rocky planet building blocks could have formed just 100 million years after the Big Bang.",
+      "category": "science",
+      "cover_url": "https://www.sciencenews.org/wp-content/uploads/sites/2/2026/08/082426_MJG_rockyplanets_main.jpg"
+    },
+    {
+      "source": "discovery",
+      "source_name": "Science News",
+      "title": "Dark matter hunters may have finally spotted a hint of the particles",
+      "url": "https://www.sciencenews.org/article/dark-matter-particle-wimp-lz-experiment",
+      "snippet": "Shadowy dark matter has eluded scientists for decades. The LZ experiment may have spotted one particle, called a WIMP, but more data is needed to check.",
+      "category": "science",
+      "cover_url": "https://www.sciencenews.org/wp-content/uploads/sites/2/2026/09/083126_EC_darkmatter_main.jpg"
+    },
+    {
+      "source": "discovery",
+      "source_name": "Aeon",
+      "title": "More nothing now",
+      "url": "https://aeon.co/essays/play-is-doing-its-work-even-if-were-not-keeping-score",
+      "snippet": "We are most human when we play freely, imaginatively, pointlessly. Gamification risks atrophying that most precious capacity - by Justin Neuman Read on Aeon",
+      "category": "science",
+      "cover_url": "https://images.aeonmedia.co/images/e2cbb509-e695-4191-8ab0-d8a48f630ec2/essay-gettyimages-2257653140.jpg?width=1200&quality=75&format=jpeg"
+    },
+    {
+      "source": "discovery",
+      "source_name": "JSTOR Daily",
+      "title": "What Civics Class Is For",
+      "url": "https://daily.jstor.org/what-civics-class-is-for/",
+      "snippet": "Should schools tackle controversial political issues? A 1903 educator thought doing so was essential to preparing future voters. The post What Civics Class Is For appeared first on JSTOR Daily .",
+      "category": "history",
+      "cover_url": "https://daily.jstor.org/wp-content/uploads/2026/09/what_civics_class_is_for_alt_1050x700.jpg"
+    },
+    {
+      "source": "discovery",
+      "source_name": "Colossal",
+      "title": "Twelve Centuries of Documents Illuminate Humans’ Quest for Knowledge in ‘World Unfolding’",
+      "url": "https://www.thisiscolossal.com/2026/09/world-unfolding-book-human-knowledge-history-the-huntington/",
+      "snippet": "The five-volume tome features more than 625 illustrations from The Huntington's vast collection. Do stories and artists like this matter to you? Become a Colossal Member today and support independent arts publishing for as little as $7 per month.",
+      "category": "history",
+      "cover_url": "https://www.thisiscolossal.com/wp-content/uploads/2026/09/world-5.jpg"
+    },
+    {
+      "source": "discovery",
+      "source_name": "Colossal",
+      "title": "Watercolors by kelogsloops Traverse the Emotional Terrain of Love and Loss",
+      "url": "https://www.thisiscolossal.com/2026/09/kelogsloops-watercolors-fantasy-memento-mori-paintings/",
+      "snippet": "For Hieu Thien Nguyen, who works as kelogsloops, death is a constant reminder, but not something to fear. Do stories and artists like this matter to you? Become a Colossal Member today and support independent arts publishing for as little as $7 per month.",
+      "category": "history",
+      "cover_url": "https://www.thisiscolossal.com/wp-content/uploads/2026/09/kelogsloops-6.jpg"
     }
   ],
   "featured_read": {
     "source": "reads",
     "source_name": "Nautilus",
-    "title": "Memory Decline Starts Earlier Than You Might Think",
-    "url": "https://nautil.us/memory-decline-starts-earlier-than-you-might-think-1284669/",
-    "snippet": "Middle-age memory slips are a bit strange The post Memory Decline Starts Earlier Than You Might Think appeared first on Nautilus .",
-    "cover_url": "https://lede-admin.nautil.us/wp-content/uploads/sites/70/2026/08/shutterstock_2574092119.jpg"
+    "title": "Schizophrenia’s Cruel Roulette Wheel",
+    "url": "https://nautil.us/schizophrenias-cruel-roulette-wheel-1284681/",
+    "snippet": "Genetics and stress can combine in ways we don’t yet fully understand The post Schizophrenia’s Cruel Roulette Wheel appeared first on Nautilus .",
+    "cover_url": "https://lede-admin.nautil.us/wp-content/uploads/sites/70/2026/09/Halucinacii.jpg"
   },
   "reading_room": [
     {
       "source": "reads",
-      "source_name": "Longreads",
-      "title": "Why We Like Things",
-      "url": "https://longreads.com/2026/08/31/taste-ai-preference-openai-rick-rubin/",
-      "snippet": "\"What Silicon Valley gets wrong about taste.\"",
-      "cover_url": ""
+      "source_name": "Psyche",
+      "title": "Logistics underpins power – and logistics is female",
+      "url": "https://psyche.co/ideas/logistics-underpins-power-and-logistics-is-female",
+      "snippet": "A women’s history of logistics from the battlefields of 19th-century Europe to middle-class households and sex trafficking - by Susan Zieger Read on Psyche",
+      "cover_url": "https://images.aeonmedia.co/images/bae94660-e877-4281-8f9b-b8b683f7cd25/this-master-pnp-ppmsca-51700-51756a.jpg?top=212&left=9&cropWidth=2656&cropHeight=1494&width=1200&quality=75&format=jpeg"
     },
     {
       "source": "reads",
-      "source_name": "Literary Hub",
-      "title": "Marlon James, Chloe Benjamin, Emily Wilson, and more: 21 new books out today!",
-      "url": "https://lithub.com/marlon-james-chloe-benjamin-emily-wilson-and-more-21-new-books-out-today/",
-      "snippet": "September 1st marks, emotionally at least, the beginning of fall. And with it comes that reliable onslaught of literature for which we have been waiting all year. The month starts with a bang, delivering a new Marlon James, Chloe Benjamin,",
-      "cover_url": "https://s26162.pcdn.co/wp-content/uploads/2026/08/Screenshot-2026-08-24-at-1.08.56-PM.png"
+      "source_name": "Longreads",
+      "title": "Going Up and Going In",
+      "url": "https://longreads.com/2026/09/01/free-solo-climbing-risk-philosophy/",
+      "snippet": "A solo climber considers the outermost reaches of risk, and the unlikely ways in which they redefine us.",
+      "cover_url": "https://i0.wp.com/longreads.com/wp-content/uploads/2026/08/Laidlaw_Excerpt_Header.png?fit=2400%2C1400&quality=80&ssl=1"
+    },
+    {
+      "source": "reads",
+      "source_name": "Noema",
+      "title": "Optimized Offspring",
+      "url": "https://www.noemamag.com/optimized-offspring",
+      "snippet": "The post Optimized Offspring appeared first on NOEMA .",
+      "cover_url": "https://noemamag.imgix.net/2026/09/Noema_Babies_FINAL_LR.jpg?fit=crop&fm=pjpg&h=628&ixlib=php-3.3.1&w=1200&wpsize=noema-social-facebook&s=cfcd7e4e2762cb9aaee5f078a9e7f5da"
     },
     {
       "source": "reads",
       "source_name": "3 Quarks Daily",
-      "title": "Perceptions",
-      "url": "https://3quarksdaily.com/3quarksdaily/2026/09/perceptions-533.html",
-      "snippet": "Sughra Raza. Smokebush Blues. August 29, 2026.",
+      "title": "‘Robot Olympics’ reveal humanoids’ rapid progress — and flaws",
+      "url": "https://3quarksdaily.com/3quarksdaily/2026/09/robot-olympics-reveal-humanoids-rapid-progress-and-flaws.html",
+      "snippet": "Kaia Glickman in Nature: A human-sized robot sprinted faster than any human has before. Another jumped more than 3 metres in the air to break a record. And a third faced off against a human Olympian during a table-tennis showcase match.",
       "cover_url": ""
     },
     {
       "source": "reads",
       "source_name": "Nautilus",
-      "title": "New Test for Broken-Heart Syndrome Offers Insights into the Mysterious Disease",
-      "url": "https://nautil.us/new-test-for-broken-heart-syndrome-offers-insights-into-the-mysterious-disease-1284666/",
-      "snippet": "It could prevent unnecessary invasive procedures The post New Test for Broken-Heart Syndrome Offers Insights into the Mysterious Disease appeared first on Nautilus .",
-      "cover_url": "https://lede-admin.nautil.us/wp-content/uploads/sites/70/2026/08/shutterstock_2090614558.jpg"
-    },
-    {
-      "source": "reads",
-      "source_name": "Longreads",
-      "title": "Revolutions",
-      "url": "https://longreads.com/2026/08/31/cycling-now-voyager/",
-      "snippet": "\"Joël Kyaviro has overcome violence, poverty, and the Ebola crisis to become the best cyclist to emerge from the Democratic Republic of the Congo. How far can he go?\"",
-      "cover_url": ""
+      "title": "Your Ability to Cope with Stress Changes with the Seasons and Your Own Biological Clocks",
+      "url": "https://nautil.us/your-ability-to-cope-with-stress-changes-with-the-seasons-and-your-own-biological-clocks-1284678/",
+      "snippet": "Stress resilience is a dynamic balance rather than a fixed trait The post Your Ability to Cope with Stress Changes with the Seasons and Your Own Biological Clocks appeared first on Nautilus .",
+      "cover_url": "https://lede-admin.nautil.us/wp-content/uploads/sites/70/2026/08/AdobeStock_167403870.jpeg"
     }
   ],
   "garden_note": {
-    "note": "September slips into Zürich with that particular morning quality — the light arriving at 06:13 already carrying a faint amber warmth, as though the garden itself knows summer has quietly packed its bags. The dahlias are still magnificent, but there's urgency in the air: those bean pods thickening on the vine won't wait much longer.",
+    "note": "September arrives in Zürich with that particular golden-hour haze that makes the allotments along the Limmat look like oil paintings — the dahlias are at their most unapologetic, and the first windfalls are already scenting the grass beneath the apple trees. Step outside before the dew settles and listen: the swallows are quietly rehearsing their goodbyes.",
     "in_season": [
-      "Dahlias in full late bloom",
-      "Runner beans ready to harvest or dry",
-      "Apple thinning and early windfalls to collect",
-      "Sow winter salad leaves (lamb's lettuce, spinach)"
+      "Dahlias in full, extravagant bloom",
+      "Harvesting early apples and late courgettes",
+      "Sowing lamb's lettuce (Nüsslisalat) for autumn",
+      "Lifting and storing maincrop onions"
     ],
-    "sky_tonight": "The waning gibbous moon rises well after midnight — look east in the small hours for it floating above the Zürichberg, with Saturn still companionable nearby in Aquarius.",
-    "sun_times": "First light creeps in at 06:13 this morning, with the sun properly up by 06:43 and the day lasting until 20:08.",
+    "sky_tonight": "The waning gibbous moon rises a couple of hours after dark — bright enough to cast shadows — while Saturn lingers in Aquarius, a steady golden point well worth a moment on the terrace.",
+    "sun_times": "First light crept in at 06:13 this morning, and the sun slipped away at 20:08, leaving a gentle dusk until around 20:38.",
     "moon_label": "Waning gibbous",
-    "illum_pct": 81,
+    "illum_pct": 77,
     "sun_range": "06:43–20:08"
   },
-  "puzzle": {},
+  "puzzle": {
+    "kind": "riddle",
+    "label": "Fern's Morning Riddle",
+    "prompt": "What did the tree wear to the pool?",
+    "answer": "Swim trunks!",
+    "hint": "",
+    "source": "riddles.com",
+    "source_id": "Riddle-1633"
+  },
   "previous_puzzle": {
     "label": "The Evening Trivia",
     "prompt": "Which of these are the name of a famous marker brand?\n\nCofix   ·   Copic   ·   Dopix   ·   Marx",
     "answer": "Copic"
   },
   "larder": {
-    "news": [
-      {
-        "source": "food",
-        "source_name": "The Kitchn",
-        "title": "From Maine Lobster to Fresh Cider Donuts, These Top-Rated Gourmet Foods Are on Major Sale",
-        "url": "https://www.thekitchn.com/qvc-best-food-deals-aug-2026-23841157?utm_source=RSS&utm_medium=feed&utm_campaign=Category%2FChannel%3A+main",
-        "snippet": "There are even apple cider donuts for anyone already counting down the days until fall. READ MORE...",
-        "cover_url": "",
-        "blurb": "A timely reminder that gourmet treats — from briny Maine lobster to apple cider donuts — don't have to wait for autumn to arrive at full price."
-      },
-      {
-        "source": "food",
-        "source_name": "The Guardian",
-        "title": "Sami Tamimi’s recipes for musabaha (warm chickpea dip) and turmeric and nigella seed flatbreads",
-        "url": "https://www.theguardian.com/food/2026/sep/01/musabaha-warm-chickpeas-and-turmeric-and-nigella-seed-flatbreads-recipe-sami-tamimi",
-        "snippet": "This rubbly cousin of hummus is flavourful and satisfying at any time of day, served warm, topped with a colourful salad and just made to eat with homemade flatbreads Few things make me happier than a bowl of warm musabaha served with freshly baked bread straight from the pan. It’s a combination that shouts comfort, generosity and the simple pleasure of sharing food. Across the Levant, musabaha is a much-loved breakfast or brunch dish, though I’d happily eat it at any time of day.",
-        "cover_url": "https://i.guim.co.uk/img/media/dbb8109faae02168f241e5a39344b5f51ea2c380/530_2387_4650_3718/master/4650.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=42dbca1d144979c138fa39f77dae78c9",
-        "blurb": "Sami Tamimi's musabaha and turmeric flatbreads are the kind of deeply flavourful, convivial cooking that makes you want to clear the table and invite everyone over immediately."
-      },
-      {
-        "source": "food",
-        "source_name": "Saveur",
-        "title": "10 Essential Vietnamese Coffee Drinks and Where to Try Them in Saigon",
-        "url": "https://www.saveur.com/travel/essential-vietnamese-coffee-drinks-saigon/",
-        "snippet": "Alex Yem From slow-dripped cà phê sữa đá to tangy tamarind cold brew, these portable pick-me-ups showcase the dynamism of Vietnam’s ever-evolving café culture. The post 10 Essential Vietnamese Coffee Drinks and Where to Try Them in Saigon appeared first on Saveur .",
-        "cover_url": "https://www.saveur.com/uploads/2026/08/2026_0806_Hummingbird_Tamarind_38_Edited-scaled.jpg?auto=webp&width=2000&height=1125",
-        "blurb": "A gorgeous deep-dive into Vietnam's café culture that will make you rethink everything you thought you knew about iced coffee."
-      }
-    ],
-    "recipe": {},
-    "seasonal_note": "Zürich's markets are quietly celebrating the arrival of *Zwetschgen* — those deep-violet plum cousins worth seeking at the Bürkliplatz stalls right now — roast them with a little honey and tuck them into a warm *Grittibänz* dough for Sunday breakfast, or simply simmer them into a compote to spoon over your *Quark* in the cool morning hush."
+    "news": [],
+    "recipe": {}
   },
   "fern_data": {
-    "greeting": "Monday has the audacity to arrive as if you were ready for it. Today's edition has a cryptid iceberg, a plastic-eating robot, and a man whose reconstructed face just watched England fall — none of which will make Monday better, but all of which will make it stranger.",
-    "top_pick_title": "Strange Depths, Stranger Week"
+    "greeting": "The day is nearly spent. What's left of it deserves something good — maybe the Brazilian soul and funk buried in a 1968 São Paulo studio, or the dark matter hunters who may have finally, after decades, caught a glimpse of what the universe has been hiding.",
+    "top_pick_title": "Warm Light, Strange Matter"
   }
 }
