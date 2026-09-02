@@ -1,36 +1,64 @@
 {
-  "fetched_at": "2026-09-02T10:00:08.186553+02:00",
-  "is_am_email": true,
+  "fetched_at": "2026-09-02T19:57:14.722593+02:00",
+  "is_am_email": false,
   "audit_summary": {
-    "youtube_videos": 1,
+    "youtube_videos": 3,
     "themes": 1,
-    "music_articles": 7,
-    "good_news_articles": 4,
-    "discovery_articles": 9,
+    "music_articles": 5,
+    "good_news_articles": 3,
+    "discovery_articles": 13,
     "featured_read": 1,
     "reading_room": 5,
     "garden": 1,
-    "puzzle": 1,
-    "larder": 3
+    "puzzle": 0,
+    "larder": 0
   },
   "themes": [
     {
-      "name": "Paradise Lost",
-      "emoji": "🌺",
-      "tagline": "When the dream address becomes an economic trap — Hawaii's affordability crisis laid bare.",
+      "name": "Stranger Than Fiction",
+      "emoji": "🎩",
+      "tagline": "History's weirdest characters and most unexpected plot twists — truth really is stranger than fiction.",
       "items": [
         {
+          "source": "youtube",
+          "video_id": "BZxVls_eK0M",
+          "title": "The Surprisingly Strange History of Ice Cream | Compilation",
+          "channel_id": "UCNaq5Jh4SQ1oBAjhQ0KPhoA",
+          "channel_title": "Weird History Food",
+          "published_at": "2026-09-02T14:15:12Z",
+          "url": "https://www.youtube.com/watch?v=BZxVls_eK0M",
+          "duration_seconds": 4985,
+          "view_count": "2205",
+          "description": "I Scream! You Scream! We all scream for  ICE CREAM! We all know it, we all LOVE it! It has a long and storied history from its first creation to the incredible amount of variations that we can eat today! Come with us as we dive into all things ice cream! What is your favorite flavor? What is your best memory eating ice cream? Let us know in the comments! \n\nChapters:\n00:00:00 - The Death Of The Ice Cream Parlor\n00:11:43 - The Well-Deserved Death Of The Ice Cream Truck\n00:22:56 - The Ice Cold Deat",
+          "why_watch": "This compilation traces ice cream from its aristocratic origins — when harvesting and storing ice was a luxury industry unto itself — through the industrial and cultural shifts that made it a democratic pleasure. At 83 minutes it's a genuine deep dive, better suited to a lazy Sunday afternoon than a quick break. If you've ever wondered why so many ice cream origin stories feel contradictory, this is where the threads get untangled.",
+          "is_wildcard": false
+        },
+        {
+          "source": "youtube",
+          "video_id": "gq0f4WGkEmc",
+          "title": "A Very Odd Gangster: Monk Eastman",
+          "channel_id": "UC4sEmXUuWIFlxRIFBRV6VXQ",
+          "channel_title": "The History Guy: History Deserves to Be Remembered",
+          "published_at": "2026-09-02T12:00:39Z",
+          "url": "https://www.youtube.com/watch?v=gq0f4WGkEmc",
+          "duration_seconds": 973,
+          "view_count": "11905",
+          "description": "Like the city that was his home, Monk Eastman was a study in contradictions.  At one point he kept five hundred pigeons, and by some estimates more than 100 cats. He loved bicycles so much that cronies would rent them just to curry his favor. And he would kill a person for $100. \n\nCheck out our new shop for fun The History Guy merchandise:\nhttps://thehistoryguy-shop.fourthwall.com/products/thg-history\n\nThis is original content based on research by The History Guy. Images in the Public Domain are",
+          "why_watch": "Monk Eastman was one of New York's most feared gang leaders around 1900, yet he kept hundreds of pigeons and cats and was fiercely loyal to his bicycle-riding friends — details that make him genuinely strange rather than just menacing. The History Guy specializes in exactly this kind of figure: historically significant but somehow left out of the standard curriculum. In 16 minutes you'll come away with a vivid portrait of Gilded Age street power and one very contradictory man.",
+          "is_wildcard": false
+        },
+        {
           "source": "youtube_trending",
-          "video_id": "jrkg-nxKzz0",
-          "title": "Spotlight Now: Hawaii's $25,000 'price of paradise' earning gap is driving residents away",
-          "channel_id": "UCBnLE14tUHTDyDc8Xij9rAg",
-          "channel_title": "Hawaii News Now",
-          "published_at": "2026-09-02T05:35:32Z",
-          "url": "https://www.youtube.com/watch?v=jrkg-nxKzz0",
-          "duration_seconds": 1927,
-          "view_count": "479",
-          "description": "UHERO economist Carl Bonham warns that Hawaiʻi's $25,000 real earning power gap compared to the mainland will widen to $35,000 by 2035, fueling out-migration.\r\n\r\nFor more Local News from Hawaii News Now: https:/www.hawaiinewsnow.com\r\nFor more YouTube Content: https://www.youtube.com/channel/UCBnLE14tUHTDyDc8Xij9rAg",
-          "why_watch": "UHERO economist Carl Bonham lays out a specific, data-driven case for why Hawaii's cost-of-living gap isn't just painful now — it's structurally worsening, with real earning power projected to fall $10,000 further behind the mainland by 2035. If you've ever wondered why people actually leave paradise, this replaces the vague \"it's expensive\" narrative with hard numbers and economic mechanics. At 32 minutes it's a proper deep-dive, not a headline grab.",
+          "video_id": "K1TqNJ6TZEQ",
+          "title": "Josh James NZ travel VLOG #370 Duckshooting, deer hunt, Wanganui Inlet and some other stuff",
+          "channel_id": "UCynWet3zR-Yu7xUVHjFq6hA",
+          "channel_title": "Josh James KiwiBushman hunting fishing bushcraft ",
+          "published_at": "2026-09-02T06:52:18Z",
+          "url": "https://www.youtube.com/watch?v=K1TqNJ6TZEQ",
+          "duration_seconds": 2352,
+          "view_count": "12411",
+          "description": "Bit scattered this VLOG, had a few challenges and some ups and downs, thats life, but still managed to scrape together some content for your perusal!\n\n Whats been the highlight of your day?",
+          "why_watch": "Josh James is refreshingly unpolished — he admits upfront this vlog is scattered and imperfect, which paradoxically makes the New Zealand backcountry footage feel more authentic than most outdoor content. The Wanganui Inlet scenery alone justifies the watch, and the mix of duck shooting and deer hunting gives a honest look at how subsistence-style hunting actually fits into everyday rural NZ life. Worth it if you like outdoor content that doesn't oversell itself.",
           "is_wildcard": true
         }
       ]
@@ -39,79 +67,57 @@
   "morning_soundtrack": [
     {
       "source": "music",
-      "source_name": "NPR Music",
-      "title": "Mon Rovîa: Tiny Desk Concert",
-      "snippet": "In this moving performance, Mon Rovîa's soft, clear voice tackles difficult, yet poignant stories from his own life and the world.",
-      "url": "https://www.npr.org/2026/09/01/g-s1-139815/mon-rovia-tiny-desk-concert",
+      "source_name": "No Depression",
+      "title": "BEST OF THE BLUES: Keb’ Mo', Ruthie Foster, Mark Hummel, and Another Antone’s Compilation",
+      "snippet": "August is stuffed with outstanding blues releases. Keb&#x2019; Mo&#x2019; makes a couple of appearances, with a stripped-down acoustic album The Breakdown, as well as on the Morgan Freeman-curated Symphonic Blues Experience. Ruthie Foster is as magnificent as ever on her latest outing, Just Say Yes",
+      "url": "https://nodepression.org/best-of-the-blues-keb-mo-ruthie-foster-mark-hummel-and-another-antones-compilation/",
       "genre": "",
-      "vibe_check": "The kind of quiet, honest storytelling that makes you set down whatever you're doing and just listen.",
-      "cover_url": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/9500x5344+0+0/resize/1400/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F82%2F02%2Fbbc4cbba4e4fb63b70fd1638489a%2Fmonrovia-credit-egillis-35.jpg",
+      "vibe_check": "Front-porch wisdom and deep-delta soul for a slow afternoon that earns its sweat.",
+      "cover_url": "https://storage.ghost.io/c/18/d0/18d08e58-3b1b-4720-ae25-a31b44e69d4b/content/images/2026/09/Ruthie-Foster.jpg",
       "embed_url": null
     },
     {
       "source": "music",
-      "source_name": "Stereogum",
-      "title": "Jason Isbell, David Lowery, & More Sue Suno For Violating Rights Of Publicity",
-      "snippet": "Everyone hates Suno, except Mary J. Blige for some reason. Jason Isbell, David Lowery, and more musicians are now suing the AI music platform.\nThe post Jason Isbell, David Lowery, &amp; More Sue Suno For Violating Rights Of Publicity appeared first on Stereogum.",
-      "url": "https://stereogum.com/2510079/jason-isbell-david-lowery-more-sue-suno-for-violating-rights-of-publicity/news/",
+      "source_name": "No Depression",
+      "title": "The Jayhawks Mine Youth, Nostalgia, and New Places on New LP 'Sanctuary Park'",
+      "snippet": "Never mind Americana, here&#x2019;s Canadiana.Back in the late 1980s when the rootsy Toronto group Blue Rodeo arrived on the scene, Rolling Stone issued a provocative declaration: &#x201C;The best new American band may very well be Canadian.&#x201D; Just south of the border back then, a fledgling",
+      "url": "https://nodepression.org/the-jayhawks-mine-youth-nostalgia-and-new-places-on-new-lp-sanctuary-park/",
       "genre": "",
-      "vibe_check": "The industry-wide tension of watching something you love get strip-mined by a machine, distilled into a lawsuit.",
-      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/09/jason-isbell.jpg",
+      "vibe_check": "The bittersweet ache of flipping through an old yearbook while a highway unspools outside the window.",
+      "cover_url": "https://storage.ghost.io/c/18/d0/18d08e58-3b1b-4720-ae25-a31b44e69d4b/content/images/size/w1200/2026/09/unnamed.jpg",
+      "embed_url": "https://www.youtube.com/embed/-lXyA2bE4Gs"
+    },
+    {
+      "source": "music",
+      "source_name": "Aquarium Drunkard",
+      "title": "American Spring :: S/T (1972)",
+      "snippet": "Constantly meandering in copyright turmoil that renders it inaccessible, 1972's lone eponymous record by American Spring (sisters Marilyn Wilson and Diane Rovell, formerly of girl group The Honeys) is an obtusely captivating slice of baroque pop. A production of Marilyn's husband Brian Wilson along ",
+      "url": "https://aquariumdrunkard.com/2026/09/02/american-spring-s-t-1972/",
+      "genre": "",
+      "vibe_check": "Sunlit harmonies half-buried under sand, like finding a beautiful thing that was never meant to be found.",
+      "cover_url": "https://aquariumdrunkard.com/_newness/wp-content/uploads/2026/08/R-2844947-1303668590.jpg",
       "embed_url": null
     },
     {
       "source": "music",
-      "source_name": "Stereogum",
-      "title": "Susanna Hoffs & Rufus Wainwright – “Bad Case Of Loneliness”",
-      "snippet": "Last month, the Bangles' Susanna Hoffs announced a new solo album titled The List. So far she's shared  \"Casablanca\" and \"This Island,\" and now she's back with a weepy collaboration with Rufus Wainwright called \"Bad Case Of Loneliness.\"\nThe post Susanna Hoffs &amp; Rufus Wainwright &#8211; &#8220;Ba",
-      "url": "https://stereogum.com/2510045/susanna-hoffs-rufus-wainwright-bad-case-of-loneliness/music/",
+      "source_name": "Aquarium Drunkard",
+      "title": "Transmissions :: Sun Ra: Door of the Cosmos",
+      "snippet": "Welcome back to Aquarium Drunkard Transmissions with Jason P. Woodbury. This week, we’ve got something extra special: a behind the scenes look at the forthcoming documentary, Sun Ra: Door of the Cosmos, a sonic cinema odyssey through the life, work and philosophy of the surrealist composer and music",
+      "url": "https://aquariumdrunkard.com/2026/09/02/transmissions-sun-ra-door-of-the-cosmos/",
       "genre": "",
-      "vibe_check": "Velvet curtains, dim lighting, and the particular ache of missing someone who hasn't left yet.",
-      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/09/Susanna_Hoffs_-_Photo_2_by_Shervin_Lainez.png",
-      "embed_url": "https://www.youtube.com/embed/_4wBBH9oXq4"
-    },
-    {
-      "source": "music",
-      "source_name": "Pitchfork",
-      "title": "Jason Isbell Sues Suno",
-      "snippet": "A group of musicians led by the 400 Unit frontman accuse the company of using their work without permission",
-      "url": "https://pitchfork.com/story/jason-isbell-sues-suno/",
-      "genre": "",
-      "vibe_check": "The slow-burning frustration of an artist drawing a line in the sand with a quill pen against a bulldozer.",
-      "cover_url": "https://media.pitchfork.com/photos/6a973838a936876eec1cb196/16:9/w_1280,c_limit/GettyImages-2273215709.jpg",
+      "vibe_check": "A late-night transmission from the outer rings of Saturn, received through static you somehow understand.",
+      "cover_url": "https://aquariumdrunkard.com/_newness/wp-content/uploads/2026/09/SunRa.jpg",
       "embed_url": null
     },
     {
       "source": "music",
-      "source_name": "Consequence",
-      "title": "Kacey Musgraves Rides Disco Balls, Mourns Dolly Parton, and Remains Unbothered at MSG: Review + Setlist",
-      "snippet": "The country star's \"Middle of Nowhere Tour\" is warm, weird, and a prime example of what sets Musgraves apart.\nKacey Musgraves Rides Disco Balls, Mourns Dolly Parton, and Remains Unbothered at MSG: Review + Setlist\nPaolo Ragusa",
-      "url": "https://consequence.net/2026/09/kacey-musgraves-middle-of-nowhere-tour-msg-nyc-review-setlist/",
+      "source_name": "Aquarium Drunkard",
+      "title": "The Drin :: I Lost My Way for Centuries",
+      "snippet": "If you make it all the way through to track 21 (of 23), to “Sweet, Sweet Sickly Music”, you’ll hear a tortured guitar unspool against a beat obscured by fuzz. These are hooky songs rotted to phosphorescence, but plodding on nonetheless. The Drin’s tunes live furtively in fetid underground bunkers, w",
+      "url": "https://aquariumdrunkard.com/2026/08/31/the-drin-i-lost-my-way-for-centuries/",
       "genre": "",
-      "vibe_check": "Sequined and barefoot at midnight, dancing like nobody's watching but secretly knowing everyone is.",
-      "cover_url": "https://consequence.net/wp-content/uploads/2026/09/Kacey-Musgraves.jpeg",
-      "embed_url": null
-    },
-    {
-      "source": "music",
-      "source_name": "Consequence",
-      "title": "Jason Isbell Sues Suno Alleging AI System Is Using Musicians’ Identities Without Consent",
-      "snippet": "The lawsuit claims Suno intentionally created a system allowing a musician's name to be used as an AI prompt to generate music that lifts from the named musician.\nJason Isbell Sues Suno Alleging AI System Is Using Musicians’ Identities Without Consent\nTravis Bland",
-      "url": "https://consequence.net/2026/09/jason-isbell-sues-suno/",
-      "genre": "",
-      "vibe_check": "The cold, algorithmic unease of realizing a machine has learned to wear your favorite songwriter's face.",
-      "cover_url": "https://consequence.net/wp-content/uploads/2026/09/Jason-Isbell.jpg",
-      "embed_url": null
-    },
-    {
-      "source": "music",
-      "source_name": "Consequence",
-      "title": "Dolly Parton Became the World’s Most-Streamed Artist Following Her Death",
-      "snippet": "\"Jolene,\" \"9 to 5,\" and \"I Will Always Love You\" all saw massive jumps as listeners returned to Parton's catalog.\nDolly Parton Became the World&#8217;s Most-Streamed Artist Following Her Death\nAlex Krinsky",
-      "url": "https://consequence.net/2026/09/dolly-parton-became-the-worlds-most-streamed-artist-following-her-death/",
-      "genre": "",
-      "vibe_check": "The bittersweet surge of a world turning back to the music of someone irreplaceable, all at once, in grief.",
-      "cover_url": "https://consequence.net/wp-content/uploads/2026/09/Dolly-Parton.jpeg",
+      "vibe_check": "Music that glows faintly in the dark like something decomposing beautifully in a forgotten basement.",
+      "cover_url": "https://aquariumdrunkard.com/_newness/wp-content/uploads/2026/08/The-Drin.jpg",
       "embed_url": null
     }
   ],
@@ -119,243 +125,226 @@
     {
       "source": "good_news",
       "source_name": "Good News Network",
-      "title": "Good News in History September 2",
-      "url": "https://www.goodnewsnetwork.org/events060902/",
-      "snippet": "Happy 62nd Birthday to Keanu Reeves, the actor who might be called one of the nicest guys in show business. The Canadian started his career with humor and light-hearted films like Bill and Ted’s Excellent Adventure, before moving onto becoming an action star with his protagonist role as Neo in The Matrix trilogy, Point Break, and the […] The post Good News in History September 2 appeared first on Good News Network .",
-      "cover_url": "https://www.goodnewsnetwork.org/wp-content/uploads/2018/01/Keanu-Reeves-by-Nathan-Congleton-CC.jpg",
-      "reason": "History is rich with quiet turning points and human breakthroughs that remind us progress is always being made, even when it's hard to see. Looking back at what September 2nd has given the world is a gentle nudge that good things have always been possible."
-    },
-    {
-      "source": "good_news",
-      "source_name": "Positive News",
-      "title": "What Brazil’s supercentenarians can teach us about living to 120",
-      "url": "https://www.positive.news/society/what-brazils-supercentenarians-can-teach-us-about-living-to-120/",
-      "snippet": "While tech-moguls pour billions into trying to live longer, the answer might well be in the simple life The post What Brazil’s supercentenarians can teach us about living to 120 appeared first on Positive News .",
-      "cover_url": "https://positivenews.kinsta.cloud/wp-content/uploads/2026/08/sol-cotti-x-Positive-News-Brazils-supercentenarians-copy-1-scaled.jpg",
-      "reason": "Brazil's supercentenarians offer living proof that extreme longevity isn't just luck — it's woven into community, purpose, and daily habits we can all learn from. Their stories shift the conversation from merely surviving old age to genuinely thriving through it."
+      "title": "Stray Cat Nursed Back to Health by Train Staff, Climbs the Ranks to Become Stationmaster",
+      "url": "https://www.goodnewsnetwork.org/stray-cat-nursed-back-to-health-by-train-staff-climbs-the-ranks-to-become-stationmaster/",
+      "snippet": "Japan is nothing if not a servant to tradition; even if the tradition is a little strange. Admittedly a little less strange than the annual Kanamara Matsuri festival in Kawasaki (parental guidance suggested) the custom of railway lines promoting cats to the rank of stationmaster certainly raises eyebrows, but also spirits, it must be said. […] The post Stray Cat Nursed Back to Health by Train Staff, Climbs the Ranks to Become Stationmaster appeared first on Good News Network .",
+      "cover_url": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/09/Tama-the-stationmaster-of-Kishi-Station-in-2007-CC-3.0.-Sanpei-via-jp.wikipedia-e1788340593376.jpg",
+      "reason": "A stray cat rescued by compassionate railway workers didn't just find a home — she found a purpose, becoming a beloved stationmaster and a daily reminder that small acts of care can ripple outward in the most delightful ways."
     },
     {
       "source": "good_news",
       "source_name": "Upworthy",
-      "title": "Harvard psychiatrist reveals ‘the fastest way to change your life’ using just one Post-it note",
-      "url": "https://www.upworthy.com/harvard-psychiatrist-reveals-the-fastest-way-to-change-your-life-using-just-one-post-it-note/",
-      "snippet": "\"Thoughts and emotions are like clouds in the sky. You are the sky, itself.\" The post Harvard psychiatrist reveals ‘the fastest way to change your life’ using just one Post-it note appeared first on Upworthy .",
-      "cover_url": "https://www.upworthy.com/wp-content/uploads/sites/2/2026/09/looking-at-cloud.jpg",
-      "reason": "A Harvard psychiatrist cutting through the noise to offer one simple, tangible tool for change is a welcome reminder that transformation doesn't require an overhaul — just a small, honest commitment written down somewhere you'll actually see it."
+      "title": "Teacher lists the 10 basic skills she says 3rd graders no longer have, and it’s eye-opening",
+      "url": "https://www.upworthy.com/teacher-lists-10-skills-kids-dont-know-ex1/",
+      "snippet": "\"If y'all can help us out, we need to go back to basics.\" The post Teacher lists the 10 basic skills she says 3rd graders no longer have, and it’s eye-opening appeared first on Upworthy .",
+      "cover_url": "https://www.upworthy.com/wp-content/uploads/sites/2/2025/11/origin_08b287.jpg",
+      "reason": "A teacher openly naming what children are struggling with is a sign that educators are paying close attention and care enough to speak up — the first honest step toward building better support for kids."
     },
     {
       "source": "good_news",
-      "source_name": "The Optimist Daily",
-      "title": "Climate attribution science just changed the rules for fossil fuel lawsuits",
-      "url": "https://www.optimistdaily.com/2026/09/climate-attribution-science-just-changed-the-rules-for-fossil-fuel-lawsuits/",
-      "snippet": "BY THE OPTIMIST DAILY EDITORIAL TEAM Scientists can now draw a straight line from a single oil company’s emissions to a specific disaster. Not a rough estimate of the industry’s overall contribution, but a specific company, a specific event, a specific percentage. That’s what a new peer-reviewed study published in Earth’s Future has done, and […] The post Climate attribution science just changed the rules for fossil fuel lawsuits first appeared on The Optimist Daily: Making Solutions the News .",
-      "cover_url": "https://www.optimistdaily.com/wp-content/uploads/Depositphotos_457859896_L.jpg",
-      "reason": "Climate attribution science can now link specific extreme weather events directly to fossil fuel emissions, giving communities real legal footing to hold polluters accountable. This is a meaningful shift from moral argument to measurable evidence — and it could reshape how climate justice is pursued in courts worldwide."
+      "source_name": "Reasons to be Cheerful",
+      "title": "What We’re Reading: In Baltimore, 911 Now Has More Ways to Help",
+      "url": "https://reasonstobecheerful.world/what-were-reading-baltimore-911-crisis-support/",
+      "snippet": "Welcome back to our weekly behind-the-scenes glimpse at what’s getting our team talking. Tell us what you’ve been reading at info@reasonstobecheerful.world and we just might feature it here. Call and response In Baltimore, when someone calls 911 about a mental health crisis, mobile crisis teams have long been able to...",
+      "cover_url": "https://reasonstobecheerful.world/wp-content/uploads/2026/09/shutterstock_1015981087-scaled.jpg",
+      "reason": "Baltimore expanding what 911 can offer means fewer people falling through the cracks — proof that communities are rethinking old systems and finding smarter, more humane ways to respond to those in need."
     }
   ],
   "discovery_articles": [
     {
       "source": "discovery",
       "source_name": "Atlas Obscura",
-      "title": "‘Night of the Living Dead’ Grave Markers in Evans City, Pennsylvania",
-      "url": "https://www.atlasobscura.com/places/night-of-the-living-dead-grave-marker",
-      "snippet": "The filming location and featured grave markers from George A. Romero's 1968 horror masterpiece, “Night of the Living Dead.” Includes Nicholas Kramer's grave, a civil war veteran who's headstone is shown during the delivery of famous line \"They're coming to get you, Barbra!\" Also the Blair / Cole plot where Johnny and Barbra stop to honor their father. And finally, the grave of Clyde Lewis Meyers, where Johnny hits his head during his tussle with one of the zombies (ghouls).",
+      "title": "Art Exhibits at OAX Airport in San Juan Bautista la Raya, Mexico",
+      "url": "https://www.atlasobscura.com/places/art-exhibits-at-oax-airport",
+      "snippet": "The state of Oaxaca in Mexico's south is often considered one of the country's main artistic hubs. Its diversity in nature and indigenous cultures has created an atmosphere of inspiration for creative endavors. In the capital city of the same name, known fully as Oaxaca de Juárez , perhaps the clearest examples are its booming gastronomic and graphic arts scenes.",
       "category": "history",
-      "cover_url": "https://img.atlasobscura.com/4h7BkRhS1bLPGweO7d6skoEQgcZmE1oI1l8-u8zDh-Q/rt:fit/w:600/c:782:521:nowe:134:233/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy85MGI5/ZTIwOS03N2Y3LTRj/YjEtOTc1OC05ZDEw/NTg1NGNmYTNmNTM5/YjNjODQ0NTVlYjc5/ZDlfMTAwMDAxNTUw/NC5qcGc.jpg",
-      "ferns_note": "The gravestones in Romero's zombie classic belonged to real people — including a Civil War veteran whose headstone became the backdrop for one of horror cinema's most iconic lines. There's something quietly uncanny about the fact that Nicholas Kramer's actual resting place is now forever part of the undead canon."
+      "cover_url": "https://img.atlasobscura.com/C3AUgfwdNC23eYxsV5vz0rKNARoqtEDp9-dAf-ZINyg/rt:fit/w:600/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy8wYzBm/Njc0Mi04NjIxLTRi/YzItOTgyOC03YzA0/ZmU3MjNkZDhkYmQ2/YTQ3OWFkNDBmMTRk/MmZfb2F4ICgxMCku/anBn.jpg"
     },
     {
       "source": "discovery",
       "source_name": "Atlas Obscura",
-      "title": "The Birdhouse Tree of Riga in Rīga, Latvia",
-      "url": "https://www.atlasobscura.com/places/the-birdhouse-tree-of-riga",
-      "snippet": "In Riga’s elegant Esplanāde, one bare tree stands out from the surrounding greenery. Its trunk and branches are crowded with scores of small wooden birdhouses, painted in an assortment of greens, yellows, reds, pinks and natural tones. From below, the collection is so dense that the boxes can initially resemble an unusual lighting installation.",
+      "title": "Papier-Mâché Altarpiece at Plaza Capuchinas in Mexico City, Mexico",
+      "url": "https://www.atlasobscura.com/places/papier-mache-altarpiece-at-plaza-capuchinas",
+      "snippet": "Cartonería is one of the main forms of artes populares (folk art), also known as artesanías (handcrafts), to come out of Mexico City and its metropolitan area. The terms refers to cartón, what cardboard is called in Mexican Spanish, and cartonería works use a type of papier-mâché technique for their building. Cartonería is the original medium for judas (figures intended to be burned at celebrations) and alebrijes , and a yearly event called La Noche de los Alebrijes takes place in Mexico City, in which monumental figures are paraded and displayed.",
       "category": "history",
-      "cover_url": "https://img.atlasobscura.com/paslTaVrPz1tcCHYW6MtXxXpd2mG8_XnrNInDbmZ15I/rt:fit/w:600/c:1086:724:nowe:0:139/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy83YzIw/MDBmYS0xNjM1LTRj/MjUtYjU5NS0wMzdl/MzRmYmM0NTA3ZWU4/ZDczZTJkYmMzM2Iz/MjRfMTcwODFEREQt/RDQ4OC00OTRDLTkx/MjgtNDVCQjg0MTM5/OEU2LnBuZw.png",
-      "ferns_note": "A single leafless tree in a Latvian park has been so densely colonized by handmade birdhouses that visitors mistake it for a light installation — which feels like the most charming possible case of mistaken identity."
+      "cover_url": "https://img.atlasobscura.com/WVekBs5NSlXAoB-HpJYC6Iv3vBFGi6_6e7tHETbzQJc/rt:fit/w:600/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy9kNTI5/ZDA1Zi04NDVlLTQx/MzQtODRiYi0wYmI4/ZDM5NWY3OTZhYzE1/MjliZjYwZDgxODM0/MGZfcGFwICgzKS5q/cGc.jpg"
     },
     {
       "source": "discovery",
       "source_name": "Atlas Obscura",
-      "title": "Adam’s Gulch  in Ketchum, Idaho",
-      "url": "https://www.atlasobscura.com/places/adams-gulch",
-      "snippet": "Mountain bikers and hikers pour into Adam’s Gulch for its 33 miles of interconnected trails, but the gulch has a quieter claim to attention: more than a century ago, it was home to an early ranger station in what became the Ketchum Ranger District. After the Sawtooth National Forest was established in 1905, its territory was divided into ranger districts, with the first ranger’s station at Adam’s Gulch built in 1909. The district’s administrative center later moved elsewhere, leaving the gulch to become better known for recreation than bureaucracy.",
+      "title": "Antimonumentas and Antimonumentos in Mexico City, Mexico",
+      "url": "https://www.atlasobscura.com/places/antimonumentas-and-antimonumentos",
+      "snippet": "Considering that Mexican cities have been ranked among the ones with highest homicide rates, a large number of massacres committed by organized crime groups as well as human rights violations by authorities, the last century or so has been rough for Mexico. In this context, the country's civilian population has often taken matters into their own hands regarding self-defense and demands towards the government. This is where the multitude of antimonuments mainly found in the capital come in.",
       "category": "history",
-      "cover_url": "https://img.atlasobscura.com/B71V2tFpXkDOARBXdMQfoHLI7LVrIySkv2NdfHObtbE/rt:fit/w:600/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy8xMjVm/YTMwY2ZjYzE5ODVk/MTFfU2NyZWVuc2hv/dCAyMDI2LTA4LTEz/IGF0IDkuMTkuMzQg/QU0ucG5n.png",
-      "ferns_note": "Before mountain bikers claimed these Idaho trails as their own, the gulch quietly hosted one of the earliest ranger stations in a brand-new national forest — bureaucracy planted in wilderness, then politely forgotten."
+      "cover_url": "https://img.atlasobscura.com/h7xbeSChGfelSceMCHlKe7lMidVWaVa9s0Rt1_Uv0fk/rt:fit/w:600/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy8zZThk/NTY0ZC01NzE3LTQx/OTUtODc3MS1kZmE2/ZWVkN2ViOTM1Yjhh/NGIyOGJjNTMxM2I2/NzlfYW50aSAoNSku/anBn.jpg"
     },
     {
       "source": "discovery",
       "source_name": "Atlas Obscura",
-      "title": "Silver Creek Preserve in Bellevue, Idaho",
-      "url": "https://www.atlasobscura.com/places/silver-creek-preserve",
-      "snippet": "In the high desert near Picabo, Idaho, a cold, wildlife-filled stream winds through wetlands and grasslands, fed not primarily by mountain runoff but by water emerging from the ground. Water from the surrounding hills and nearby Big Wood River percolates underground through an aquifer before being forced back toward the surface near the Picabo Hills. Numerous springs feed seven large tributaries of Silver Creek.",
+      "title": "Ahuehuete del Centenario in Monterrey, Mexico",
+      "url": "https://www.atlasobscura.com/places/ahuehuete-del-centenario",
+      "snippet": "On 20 September 1596, Spanish colonist Don Diego de Montemayor founded the city of Nuestra Señora (Our Lady) of Monterrey, in honor of Gaspar de Zúñiga y Acevedo, Viceroy of Mexico at the time and who was also the Count of Monterrey. The settlement was intended to become the capital of the \"New Kingdom of León\" after the Spanish region. To date, the city has come to be known simply as Monterrey and it remains the capital of what is now the Mexican state of Nuevo León, it also anchors what in the early 2020s became the country's second most-populated metropolitan area (with Metro Mexico City at a very distant first place).",
       "category": "history",
-      "cover_url": "https://img.atlasobscura.com/EN2LoyucVg6XPRw_yBWjyFwA4eAaXSUZh-iyMXdq3vU/rt:fit/w:600/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy9jMWU5/OTgyZi1kYTRkLTQ5/OGMtYTgzOS0yOWZm/MmRkNjAxMmQ3Njg4/ZjI4MjFjZDBlZTg3/ODlfMzcxMDcwMzQz/M183Nzc3NmMyMTNh/X28uanBn.jpg",
-      "ferns_note": "Silver Creek doesn't run down from the mountains like a well-behaved stream; it wells up from below, pushed to the surface through an aquifer like a secret the land has been keeping."
+      "cover_url": "https://img.atlasobscura.com/VyTXvTqWHlX2zC6t_VXOvFO7xIbtbcth5i29cOO8ck0/rt:fit/w:600/c:3999:2666:nowe:1:110/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy9iZDNl/ZThkZS1jOWY3LTRi/ZTItOTc2ZS1jMjZh/OWZmOGU2NTJlMDQ5/YzhhNmI1OTUwOWYz/YTlfYWh1ICgyKS5q/cGc.jpg"
     },
     {
       "source": "discovery",
       "source_name": "Smithsonian",
-      "title": "Allergic to Dogs? These Gene-Edited Beagles Could Pave the Way to Your Dream Canine Companion That Won't Trigger Sniffles",
-      "url": "https://www.smithsonianmag.com/smart-news/allergic-to-dogs-these-gene-edited-beagles-could-pave-the-way-to-your-dream-canine-companion-that-wont-trigger-sniffles-180989303/",
-      "snippet": "Geneticists altered Alfie and Bailey’s DNA so that they don't produce a major allergen. However, canines like them are not currently commercially available, and some experts express ethical concerns about altering the animals' genes",
+      "title": "World War II Sugar Rationing Data Hints That Limiting Intake of the Sweet Stuff Early in Life Lowers the Risk of Dementia and Cancer",
+      "url": "https://www.smithsonianmag.com/smart-news/world-war-ii-sugar-rationing-data-hints-that-limiting-intake-of-the-sweet-stuff-early-in-life-lowers-the-risk-of-dementia-and-cancer-180989431/",
+      "snippet": "For roughly a decade leading up to September 1953, the United Kingdom limited sugar purchases. Scientists studied health outcomes in people born during the ration and right after",
       "category": "history",
-      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/qp4w-DLZIvcRBP7fJwSuykAX6hM=/fit-in/1600x0/filters:focal(750x500:751x501)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/b8/5e/b85ec0c4-468f-4a60-9021-4a6d41a63e39/alfie-bailey.png",
-      "ferns_note": "Two beagles named Alfie and Bailey have had a single allergen quietly snipped from their DNA — a small edit that could mean a great deal to the estimated 10–20% of people who love dogs from a wheezing distance."
+      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/sED8opqdWJZjrjExJYgrwqdXwnU=/fit-in/1600x0/filters:focal(4096x2750:4097x2751)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/32/32/3232b726-b4f1-43c1-98c6-7cdefc6b9ff4/sugar.jpg"
     },
     {
       "source": "discovery",
       "source_name": "Smithsonian",
-      "title": "This 91-Year-Old Man Fell 71 Times While Hiking the Appalachian Trail. He Just Became the Oldest Person to Complete the 2,190-Mile Trek",
-      "url": "https://www.smithsonianmag.com/smart-news/this-91-year-old-man-fell-71-times-while-hiking-appalachian-trail-he-just-became-oldest-person-complete-2190-mile-trek-180989428/",
-      "snippet": "Dale Sanders finished the hike in just under a year. Nicknamed \"Grey Beard,\" he's no stranger to age-defying feats of endurance",
+      "title": "Corals Reveal El Niño Events Have Become Stronger in Recent Decades, Probably Because Humans Have Been Heating Up the Planet",
+      "url": "https://www.smithsonianmag.com/smart-news/corals-reveal-el-nino-events-have-become-stronger-in-recent-decades-probably-because-humans-have-been-heating-up-the-planet-180989432/",
+      "snippet": "Researchers used elements trapped within Galápagos corals to understand natural swings in the climate over the past millennium. They hint that variability has gone up over the past 40 years compared to preindustrial times",
       "category": "history",
-      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/a3vYMbf2qqHXEzto7qt6I3YeEEY=/fit-in/1600x0/filters:focal(2559x1706:2560x1707)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/e2/e4/e2e47856-9811-44a2-bd74-2fe487b38d11/ap26243587996362.jpg",
-      "ferns_note": "Dale Sanders fell 71 times over 2,190 miles and still crossed the finish line at 91 — which suggests that 'Grey Beard' has a rather different relationship with the concept of stopping than most of us do."
+      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/VPuQv9e_MO74rsQcjDiNdTIWo5g=/fit-in/1600x0/filters:focal(1000x876:1001x877)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/95/51/9551ee70-228c-4dbe-9da9-47fdec6f5069/coral-underwater-sample.jpg"
     },
     {
       "source": "discovery",
       "source_name": "Smithsonian",
-      "title": "Female Treefrogs Experience 'Choice Overload' Amid Too Many Mating Calls From Males",
-      "url": "https://www.smithsonianmag.com/smart-news/female-treefrogs-experience-choice-overload-amid-too-many-mating-calls-from-males-180989411/",
-      "snippet": "Faced with a chorus of potential mates, female Cope’s gray treefrogs may be overwhelmed by the number of options and struggle to make a careful decision, a study suggests",
+      "title": "Spain’s White-Headed Ducks Have a Signature Color Right in the Name. And That Isn’t Even Their Most Remarkable Hue",
+      "url": "https://www.smithsonianmag.com/science-nature/spain-white-headed-ducks-signature-color-right-name-that-isnt-even-most-remarkable-hue-180989289/",
+      "snippet": "The first thing you’re likely to notice is the blue bill. But beyond appearances, the duck has an exciting story to tell about conservation and recovery",
       "category": "history",
-      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/J8b3lvXoz8O3BX01C2OmUq86BI0=/fit-in/1600x0/filters:focal(1440x1083:1441x1084)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/e5/b0/e5b0937c-4bba-4ace-9003-b19dc09f3f1e/when-male-suitors-abou.jpg",
-      "ferns_note": "It turns out female treefrogs suffer from the same paradox of choice that derails humans in streaming queues and restaurant menus — too many crooning options, and the careful decision simply doesn't get made."
+      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/ooIwZ6QvbE0MJJiC-6XZfImcIO4=/fit-in/1600x0/filters:focal(1350x900:1351x901)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/4b/ad/4bad4ddf-a163-43bb-a53b-b04d0329f13c/new_dsc3177_copia.jpg"
     },
     {
       "source": "discovery",
       "source_name": "Smithsonian",
-      "title": "We’ve Been Strapping Cargo to Our Backs for Millions of Years, but Backpack Innovation Really Took Off Around the Civil War",
-      "url": "https://www.smithsonianmag.com/innovation/weve-been-strapping-cargo-backs-millions-years-backpack-innovation-took-off-around-civil-war-180989280/",
-      "snippet": "Discover the origin story for an accessory being comfortably lugged by nearly every hiker and student, with about 450 million sold each year",
+      "title": "Reptiles Make a Surprising Amount of Noise. Here's What Those Sounds Might Mean, From Pops to Hoots to Bellows",
+      "url": "https://www.smithsonianmag.com/science-nature/reptiles-make-a-surprising-amount-of-noise-heres-what-those-sounds-might-mean-from-pops-to-hoots-to-bellows-180989422/",
+      "snippet": "Scientists are realizing that turtles, lizards and crocodilians communicate vocally more than they once thought",
       "category": "history",
-      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/5FVo3l8x3GMAxzet6BJ6Oul5Zs0=/fit-in/1600x0/filters:focal(750x500:751x501)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/ba/eb/baeb0773-8529-4ca5-a891-0a858e6094f1/smithmag-backpack-v3.jpg",
-      "ferns_note": "Humans have been slinging loads onto their backs for millions of years, yet the humble backpack as we know it didn't really find its form until soldiers needed a smarter way to carry their lives into battle during the Civil War."
+      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/s15EMDxX4OVWbH8ZDDj5tNVc9cM=/fit-in/1600x0/filters:focal(1024x688:1025x689)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/2d/e6/2de6b572-7cca-4578-a75e-9a792b3f697a/8501263358_87b6347c3a_k.jpg"
+    },
+    {
+      "source": "discovery",
+      "source_name": "Science News",
+      "title": "A massive study unveils the genetic underpinnings of fibromyalgia",
+      "url": "https://www.sciencenews.org/article/fibromyalgia-genetic-risk-factors-pain",
+      "snippet": "The biggest fibromyalgia genetics study yet zeroed in on 26 genetic risk factors for the pain disorder, including one in the Huntington's disease gene.",
+      "category": "science",
+      "cover_url": "https://www.sciencenews.org/wp-content/uploads/sites/2/2026/08/083126_MR_fibromyalgia_main.png"
+    },
+    {
+      "source": "discovery",
+      "source_name": "JSTOR Daily",
+      "title": "A Brief History of Women’s Underwear",
+      "url": "https://daily.jstor.org/a-brief-history-of-womens-underwear/",
+      "snippet": "The University of Wyoming’s Historic Clothing Collection offers a revealing look beneath the fashions of the past. The post A Brief History of Women’s Underwear appeared first on JSTOR Daily .",
+      "category": "history",
+      "cover_url": "https://daily.jstor.org/wp-content/uploads/2026/09/a_brief_history_of_womens_underwear_1050x700.jpg"
+    },
+    {
+      "source": "discovery",
+      "source_name": "Quanta Magazine",
+      "title": "Genome Duplication Is a Radical Evolutionary Gamble",
+      "url": "https://www.quantamagazine.org/genome-duplication-is-a-radical-evolutionary-gamble-20260902/",
+      "snippet": "By doubling their entire genome, organisms can evolve extremely rapidly — or they can lose it all. New studies reveal how to survive the high-risk, high-reward evolutionary event. The post Genome Duplication Is a Radical Evolutionary Gamble first appeared on Quanta Magazine",
+      "category": "science",
+      "cover_url": "https://www.quantamagazine.org/wp-content/uploads/2026/09/2XGenome-cr-Ada-Zejun-Shen-Social.jpg"
     },
     {
       "source": "discovery",
       "source_name": "Colossal",
-      "title": "Playful Patterns Adorn Ashley Percival’s Collections of Creatures",
-      "url": "https://www.thisiscolossal.com/2026/09/ashley-percival-animal-illustrations/",
-      "snippet": "Ashley Percival imagines fanciful menagerie in which poodles, rotund birds, and boot-wearing insects try on a vast array of vibrant costumes. Do stories and artists like this matter to you? Become a Colossal Member today and support independent arts publishing for as little as $7 per month.",
+      "title": "Avian Beauties and Rarities Top the 2026 Audubon Photography Awards",
+      "url": "https://www.thisiscolossal.com/2026/09/audubon-photography-awards-2026-birds/",
+      "snippet": "Audubon Photography Awards runs parallel opportunities for photographers in the U.S. and Canada and in Chile and Colombia. Do stories and artists like this matter to you?",
       "category": "history",
-      "cover_url": "https://www.thisiscolossal.com/wp-content/uploads/2026/09/percival-1.jpg",
-      "ferns_note": "Ashley Percival's boot-wearing insects and costumed poodles exist in that precise sweet spot where whimsy tips into something almost deadpan — creatures dressed for occasions no one has quite named yet."
+      "cover_url": "https://www.thisiscolossal.com/wp-content/uploads/2026/09/audubon-2.jpg"
+    },
+    {
+      "source": "discovery",
+      "source_name": "Colossal",
+      "title": "Dappled Light and Hazy Shadows Characterize Clio Sze To’s Dynamic Paintings",
+      "url": "https://www.thisiscolossal.com/2026/09/clio-sze-to-paris-paintings/",
+      "snippet": "Clio Sze To paints impressionistic pieces that capture the feeling of a contemplative hour spent on foot. Do stories and artists like this matter to you? Become a Colossal Member today and support independent arts publishing for as little as $7 per month.",
+      "category": "history",
+      "cover_url": "https://www.thisiscolossal.com/wp-content/uploads/2026/09/to-1.jpg"
     }
   ],
   "featured_read": {
     "source": "reads",
     "source_name": "Nautilus",
-    "title": "New Heart Attack Definitions Could Lead to Better Care for Women",
-    "url": "https://nautil.us/new-heart-attack-definitions-could-lead-to-better-care-for-women-1284697/",
-    "snippet": "Uncommon heart attack causes disproportionately affect them The post New Heart Attack Definitions Could Lead to Better Care for Women appeared first on Nautilus .",
-    "cover_url": "https://lede-admin.nautil.us/wp-content/uploads/sites/70/2026/09/shutterstock_2483140151.jpg"
+    "title": "How Music Sparks Imagination",
+    "url": "https://nautil.us/how-music-sparks-imagination-1284721/",
+    "snippet": "Songs are closely linked to narrative and language The post How Music Sparks Imagination appeared first on Nautilus .",
+    "cover_url": "https://lede-admin.nautil.us/wp-content/uploads/sites/70/2026/09/AdobeStock_288261269.jpeg"
   },
   "reading_room": [
     {
       "source": "reads",
+      "source_name": "The Paris Review",
+      "title": "“Laugh? I Thought I’d Die!!”: Richard Yates’s Unpublished Letters",
+      "url": "https://www.theparisreview.org/blog/2026/09/02/laugh-i-thought-id-die-richard-yatess-unpublished-letters/",
+      "snippet": "\"Here’s this month’s alimony, with all my love.\"",
+      "cover_url": "https://www.theparisreview.org/blog/wp-content/uploads/2026/08/yates-doorway.jpg"
+    },
+    {
+      "source": "reads",
       "source_name": "Longreads",
-      "title": "What Happens When a Kid’s Robot Best Friend Dies?",
-      "url": "https://longreads.com/2026/09/01/social-robotics-autism-therapy/",
-      "snippet": "\"AI companion toys for neurodivergent children promise connection and therapy, but can they deliver for the long haul?\"",
+      "title": "The 17 Minutes That Changed America",
+      "url": "https://longreads.com/2026/09/02/9-11-national-geographic/",
+      "snippet": "\"For the briefest of windows, September 11, 2001, wasn’t yet a calamity but merely a strange accident. And that pivotal span forever altered the way we look at disasters, at the sky, and at one another.\"",
       "cover_url": ""
     },
     {
       "source": "reads",
-      "source_name": "Literary Hub",
-      "title": "Enough! An Open Letter from Jewish Creatives and Thinkers in Defense of Mark Ruffalo",
-      "url": "https://lithub.com/enough-an-open-letter-from-jewish-creatives-and-thinkers-in-defense-of-mark-ruffalo/",
-      "snippet": "A group of Jewish artists, writers, creative professionals, faith leaders and thinkers—including Emma Seligman, Gabor Maté, Hannah Einbinder, Ilana Glazer, James Schamus, Larry Charles, Joel Coen, Miranda July, Molly Crabapple, Sarah Sherman, Tavi Gevinson, Todd Haynes, and Tony Kushner—have signed",
-      "cover_url": "https://s26162.pcdn.co/wp-content/uploads/2026/09/mark-ruffalo-oscars.jpg"
-    },
-    {
-      "source": "reads",
       "source_name": "3 Quarks Daily",
-      "title": "Catspeak",
-      "url": "https://3quarksdaily.com/3quarksdaily/2026/09/catspeak-483.html",
-      "snippet": "by Brooks Riley Enjoying the content on 3QD? Help keep us going by donating now.",
+      "title": "Should We Eradicate Mosquitoes?",
+      "url": "https://3quarksdaily.com/3quarksdaily/2026/09/should-we-eradicate-mosquitoes.html",
+      "snippet": "Tomas Pueyo at Uncharted Territories: They’re more than an annoyance. They cause over 700M infections and kill ~700k people every year. They’re by very far the most fatal animal to us.",
       "cover_url": ""
     },
     {
       "source": "reads",
       "source_name": "Nautilus",
-      "title": "Your Organs Age at Different Paces—And They’re Coordinating With Each Other",
-      "url": "https://nautil.us/your-organs-age-at-different-paces-and-theyre-coordinating-with-each-other-1284694/",
-      "snippet": "Your colon and prostate may have synchronized their watches The post Your Organs Age at Different Paces—And They’re Coordinating With Each Other appeared first on Nautilus .",
-      "cover_url": "https://lede-admin.nautil.us/wp-content/uploads/sites/70/2026/09/shutterstock_2475397629.jpg"
+      "title": "How Your Genes Shape Your Personality",
+      "url": "https://nautil.us/how-your-genes-shape-your-personality-1284718/",
+      "snippet": "A new study probes genetic variants linked to the big five personality traits The post How Your Genes Shape Your Personality appeared first on Nautilus .",
+      "cover_url": "https://lede-admin.nautil.us/wp-content/uploads/sites/70/2026/09/shutterstock_2753654359.jpg"
     },
     {
       "source": "reads",
       "source_name": "Longreads",
-      "title": "Rachel Entrekin Is Ready to Take What’s Hers",
-      "url": "https://longreads.com/2026/08/31/rachel-entrekin-ultramarathon-competition-women/",
-      "snippet": "\"She’s been winning races outright for nearly a decade. Why are we only now learning her name?\"",
+      "title": "A Mississippi Death Penalty Jury Was Seated. With One Black Juror.",
+      "url": "https://longreads.com/2026/09/02/mississippi-death-penalty-jury/",
+      "snippet": "\"The jury sentenced Pitchford to death.\"",
       "cover_url": ""
     }
   ],
   "garden_note": {
-    "note": "There's a particular quality to a September morning in Zürich — the light arrives a little softer now, golden rather than white, and the linden trees are quietly beginning their slow exhale. Step outside before breakfast; the garden holds the night's coolness a touch longer than it did in August, and that's your cue to savour it.",
+    "note": "The evenings are drawing in with that particular Swiss September tenderness — a coolness arriving just after dusk that reminds you to savour the last warmth before it's truly gone. The garden is easing into its amber chapter, dahlias still blazing while the apple boughs grow quietly heavier.",
     "in_season": [
-      "Dahlias in full, generous bloom",
-      "Autumn raspberries ripening on the cane",
-      "Harvesting the last courgettes before they quietly turn to marrows",
-      "Cutting back spent lavender stems"
+      "Dahlias at their peak",
+      "Autumn raspberries ripening",
+      "Harvest courgettes before they become marrows",
+      "Sow winter salad under cover"
     ],
-    "sky_tonight": "The waning gibbous moon rises well after midnight, leaving the early evening sky to Pegasus and the first hints of the autumn square climbing the east.",
-    "sun_times": "First light creeps in at 06:14 this morning, with sunrise following at 06:44 — and the day still stretches generously to a 20:06 sunset.",
-    "moon_label": "Waning gibbous",
-    "illum_pct": 72,
+    "sky_tonight": "The last quarter moon rises well after midnight — look instead for Saturn shining steadily in Pisces low in the southeast as dusk settles.",
+    "sun_times": "The sun slips away at 20:06 tonight, with dusk lingering softly until 20:36.",
+    "moon_label": "Last quarter",
+    "illum_pct": 68,
     "sun_range": "06:44–20:06"
   },
-  "puzzle": {
-    "kind": "haiku riddle",
-    "label": "Fern's Morning Riddle",
-    "prompt": "First breath of cold air\nSpiders remake the whole world\nGone by ten o'clock",
-    "answer": "Morning dew on a spiderweb",
-    "hint": "It vanishes as the sun climbs and the day warms."
-  },
+  "puzzle": {},
   "previous_puzzle": {
     "label": "Fern's Morning Riddle",
-    "prompt": "What did the tree wear to the pool?",
-    "answer": "Swim trunks!"
+    "prompt": "First breath of cold air\nSpiders remake the whole world\nGone by ten o'clock",
+    "answer": "Morning dew on a spiderweb"
   },
   "larder": {
-    "news": [
-      {
-        "source": "food",
-        "source_name": "The Kitchn",
-        "title": "My Honest Review of Misenware for 2026",
-        "url": "https://www.thekitchn.com/misenware-review-23841001?utm_source=RSS&utm_medium=feed&utm_campaign=Category%2FChannel%3A+main",
-        "snippet": "They're ultra-durable. READ MORE...",
-        "cover_url": "",
-        "blurb": "If you've ever wondered whether Misenware lives up to its sleek reputation, The Kitchn's honest 2026 review cuts through the noise so your cookware investment doesn't have to."
-      },
-      {
-        "source": "food",
-        "source_name": "The Guardian",
-        "title": "Poppy O’Toole’s midweek timesavers: spicy chicken and baked rice, and Thai-style lemongrass fishcakes – recipe",
-        "url": "https://www.theguardian.com/food/2026/sep/02/midweek-meals-recipes-spicy-chicken-baked-rice-thai-lemongrass-fishcakes-poppy-otoole",
-        "snippet": "You’ll thank yourself for making these batch-cooking beauties to store in the freezer until the next busy worknight I’ve called this spicy chicken and baked rice “midweek”, but you can enjoy this baby all week long. Juicy, spiced chicken, fluffy baked rice and enough flavour to make you bin that takeaway menu and raid your cupboards instead. Then some fragrant, delicate fishcakes with a lovely, bouncy texture, which are such a winner for the freezer.",
-        "cover_url": "https://i.guim.co.uk/img/media/b5e800230b55a0bb784cf9f35d114e14b227e102/499_3447_4433_3547/master/4433.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=ed0c1faf460ef4885011a93aaaf3e284",
-        "blurb": "Poppy O'Toole's batch-cooking philosophy — spicy chicken and baked rice alongside Thai-style lemongrass fishcakes tucked away in the freezer — is the kind of weeknight wisdom that makes future-you feel genuinely looked after."
-      },
-      {
-        "source": "food",
-        "source_name": "Saveur",
-        "title": "Vietnamese Iced Coffee",
-        "url": "https://www.saveur.com/vietnamese-iced-coffee-ca-phe-sua-da-recipe/",
-        "snippet": "Photo: Tristan deBrauwere • Food Styling: Thu Buser Potent phin-brewed coffee and sweetened condensed milk strike a perfect balance in this refreshing traditional drink. The post Vietnamese Iced Coffee appeared first on Saveur .",
-        "cover_url": "https://www.saveur.com/uploads/2019/04/photo-tristan-debrauwere_food-styling-Thu-Buser_TD_AUG26RECIPES_07_SHOT_VIET_ICED_COFFEE_013-scaled.jpg?auto=webp&width=1600&height=2000",
-        "blurb": "Saveur's Vietnamese iced coffee is a gorgeous reminder that a patient phin filter and a ribbon of sweetened condensed milk are all you need to turn an ordinary afternoon into something quietly luxurious."
-      }
-    ],
-    "recipe": {},
-    "seasonal_note": "Zürich's markets are quietly celebrating the arrival of Zwetschgen — those deep-purple Swiss plums with their dusty bloom — so pick up a kilo at the Bürkliplatz Markt this week and roast them with a little vanilla and red wine for a Zwetschgenkuchen that will make your whole flat smell like a very good idea."
+    "news": [],
+    "recipe": {}
   },
   "fern_data": {
-    "greeting": "Dolly Parton became the world's most-streamed artist after her death — which is the kind of fact that stops you mid-sip. It sits alongside Hawaii's $25,000 paradise gap and the Brazilian supercentenarians quietly outliving everyone's assumptions.",
-    "top_pick_title": "After the Curtain, Before the Reckoning"
+    "greeting": "Monk Eastman — gang lord, war hero, pigeon fancier — is tonight's strangest true thing. He shares the edition with a stray cat who worked her way up to stationmaster and the genetic puzzle of fibromyalgia finally giving up its secrets.",
+    "top_pick_title": "Odd Characters & Quiet Revelations"
   }
 }
