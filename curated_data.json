@@ -1,37 +1,107 @@
 {
-  "fetched_at": "2026-09-04T10:04:54.494531+02:00",
-  "is_am_email": true,
+  "fetched_at": "2026-09-04T19:40:26.143140+02:00",
+  "is_am_email": false,
   "audit_summary": {
-    "youtube_videos": 1,
-    "themes": 1,
-    "music_articles": 3,
+    "youtube_videos": 5,
+    "themes": 3,
+    "music_articles": 8,
     "good_news_articles": 4,
-    "discovery_articles": 8,
+    "discovery_articles": 9,
     "featured_read": 1,
     "reading_room": 5,
     "garden": 1,
-    "puzzle": 0,
-    "larder": 3
+    "puzzle": 1,
+    "larder": 0
   },
   "themes": [
     {
-      "name": "Myth Busters & Truth Seekers",
+      "name": "The Myth Busters' Lounge",
       "emoji": "🔍",
-      "tagline": "Because the real story is always stranger — and more important — than the legend.",
+      "tagline": "Everything you think you know is probably a little bit wrong — and that's the fun part.",
       "items": [
         {
           "source": "youtube",
-          "video_id": "jX_RENRrglo",
-          "title": "WW2 Expert Answers Hitler Questions",
-          "channel_id": "UCZwU2G-KVl-P-O-B35chZOQ",
-          "channel_title": "History Hit",
-          "published_at": "2026-09-03T18:00:32Z",
-          "url": "https://www.youtube.com/watch?v=jX_RENRrglo",
-          "duration_seconds": 1877,
-          "view_count": "124321",
-          "description": "Did Hitler fight in WW1? What happened in the bunker? Did Hitler have a micro penis? \n\nJoin historian Emma Craigie as she answers your questions about Adolf Hitler.\n\nEmma Craigie is the author of four books including the critically acclaimed novel 'Chocolate Cake with Hitler', and co-author of the Sunday Times best-seller 'Hitler's Last Day: Minute by Minute'\n\n00:00 Intro Highlights\n00:31 Introduction by Author Emma Craigie\n01:01 Was Hitler German or Austrian?\n01:24 Did Hitler have a bad childho",
-          "why_watch": "Historian Emma Craigie, co-author of 'Hitler's Last Day: Minute by Minute,' cuts through decades of myth and tabloid distortion to answer reader questions with actual archival grounding. The Q&A format means she tackles both serious historical questions (his WWI service, the bunker's final hours) and the more absurd ones with equal precision. If you've ever wanted a trustworthy corrective to the noise around this subject, this is a compact 31 minutes with a genuinely knowledgeable guide.",
+          "video_id": "HMJmhik-pok",
+          "title": "Anthropologist Fact Checks Stone Age Slop",
+          "channel_id": "UCftwRNsjfRo08xYE31tkiyw",
+          "channel_title": "WIRED",
+          "published_at": "2026-09-04T16:00:09Z",
+          "url": "https://www.youtube.com/watch?v=HMJmhik-pok",
+          "duration_seconds": 1620,
+          "view_count": "4381",
+          "description": "AI slop is littering your feed and spreading misinformation, so WIRED’s here to set the record straight. Join Anthropologist Agustín Fuentes as we fact check the internet, anthropology edition.\n\nWIRED recommends:\nhttps://youtu.be/iHn63hPS9sw\n\n#StoneAge #IceAge #Evolution\n\nStill haven’t subscribed to WIRED on YouTube? ►► http://wrd.cm/15fP7B7 \r\nListen to the Uncanny Valley podcast  ►► https://podcasts.apple.com/us/podcast/uncanny-valley-wired/id266391367\r\nWant more WIRED? Get the magazine ►► http",
+          "why_watch": "Anthropologist Agustín Fuentes goes through viral AI-generated Stone Age content and pinpoints exactly where it goes wrong — not just fact-checking, but explaining *why* these myths spread so easily. It's a useful exercise in recognizing how plausible-sounding misinformation works, with a real expert doing the correcting rather than a generalist.",
           "is_wildcard": false
+        },
+        {
+          "source": "youtube",
+          "video_id": "arte3arYBrU",
+          "title": "The myth of the self-made individual | Daniel Coyle: Full Interview",
+          "channel_id": "UCvQECJukTDE2i6aCoMnS-Vg",
+          "channel_title": "Big Think",
+          "published_at": "2026-09-04T13:00:34Z",
+          "url": "https://www.youtube.com/watch?v=arte3arYBrU",
+          "duration_seconds": 5117,
+          "view_count": "20367",
+          "description": "Become a Big Think member to unlock expert classes, premium print issues, exclusive events and more: https://bigthink.com/membership/?utm_source=youtube&utm_medium=social&utm_campaign=membership&utm_content=bt-ytdesc-text-fi-coyle-arte3arYBrU\n\nSubscribe to Big Think on YouTube ► https://www.youtube.com/channel/UCvQECJukTDE2i6aCoMnS-Vg?sub_confirmation=1\nUp next, \nThe blueprint for becoming an emotionally mature adult, in 68 minutes | Mark Manson: Full Interview ► https://www.youtube.com/watch?v=",
+          "why_watch": "Daniel Coyle, author of *The Talent Code*, pushes back on the mythology of individual genius by examining the hidden webs of mentorship, culture, and environment behind high achievement. At 85 minutes it's a long sit, but the full interview format lets him develop ideas that get flattened in shorter clips — worth it if you're drawn to questions about how skill and success actually develop.",
+          "is_wildcard": false
+        }
+      ]
+    },
+    {
+      "name": "Big Questions, No Easy Answers",
+      "emoji": "🌌",
+      "tagline": "Strap in — these ones will rearrange the furniture inside your brain.",
+      "items": [
+        {
+          "source": "youtube",
+          "video_id": "n98aYhZnsUI",
+          "title": "On the Nature of Time According to Modern Physics - Jim Al-Khalili",
+          "channel_id": "UC1t6kKXoBvjdr8m9KJ2Fx7A",
+          "channel_title": "Gresham College",
+          "published_at": "2026-09-04T15:00:17Z",
+          "url": "https://www.youtube.com/watch?v=n98aYhZnsUI",
+          "duration_seconds": 2762,
+          "view_count": "163",
+          "description": "0:00 // Introduction — five chapters on the nature of time\n2:08 // The philosophical problems — Parmenides vs Heraclitus\n5:29 // Physical time — time as number, dimension and arrow\n9:35 // What does it mean for time to flow?\n12:46 // Laplace's demon and why the future is unpredictable\n17:19 // Is time fundamental, emergent or just a measuring tool?\n21:37 // The block universe — all moments coexist in spacetime\n23:30 // Time dilation — GPS satellites, black holes and Interstellar\n28:15 // Quantum",
+          "why_watch": "Physicist Jim Al-Khalili walks through one of philosophy's hardest questions — what time actually *is* — with a clear chapter structure that moves from ancient philosophy to block universe theory without losing the thread. If you've ever bounced off dense treatments of this topic, his Gresham College style tends to be unusually accessible without sacrificing depth.",
+          "is_wildcard": false
+        }
+      ]
+    },
+    {
+      "name": "Forgotten Legends & Lost Roads",
+      "emoji": "🗺️",
+      "tagline": "The stories history almost swallowed whole — one ace pilot and one long-haul journey at a time.",
+      "items": [
+        {
+          "source": "youtube",
+          "video_id": "3d15TJKGMUs",
+          "title": "Ace in a Day: Henry Woollett",
+          "channel_id": "UC4sEmXUuWIFlxRIFBRV6VXQ",
+          "channel_title": "The History Guy: History Deserves to Be Remembered",
+          "published_at": "2026-09-04T12:00:09Z",
+          "url": "https://www.youtube.com/watch?v=3d15TJKGMUs",
+          "duration_seconds": 868,
+          "view_count": "10446",
+          "description": "They can't harm you, if they can't find you! Use code thehistoryguy at the link below and get 60% off an annual plan: https://incogni.com/thehistoryguy\n\nAmong the many aces of World War I, there were a few who stood above for one reason or another, and one of them was a British officer, twenty-two years old, who in a single day managed not just 5 victories, enough to be an “ace in a day”, but six, a feat accomplished and confirmed by only a handful of pilots in the whole war.\n\nVideo includes sce",
+          "why_watch": "Henry Woollett shot down six enemy aircraft in a single day in WWI — a feat obscure enough that most aviation history enthusiasts won't know his name. The History Guy does what he does best: rescues a specific, well-documented story from undeserved anonymity in a tight 14 minutes.",
+          "is_wildcard": false
+        },
+        {
+          "source": "youtube_trending",
+          "video_id": "bkPos57aUPY",
+          "title": "USA to India travel vlog|Japan airlines business class experience|Kannada vlog #youtube #vlog ",
+          "channel_id": "UCnOSeGkFYqtmoV4h9g-u9Zg",
+          "channel_title": "Samanvitha S",
+          "published_at": "2026-09-04T04:31:01Z",
+          "url": "https://www.youtube.com/watch?v=bkPos57aUPY",
+          "duration_seconds": 1394,
+          "view_count": "6913",
+          "description": "",
+          "why_watch": "A Kannada-language travel vlog covering a USA-to-India journey via Japan Airlines business class — niche, but genuinely useful if you're researching that specific routing or curious about the experience from a non-English-speaking traveler's perspective. The regional language angle gives it a warmth and specificity that polished travel channels often sand away.",
+          "is_wildcard": true
         }
       ]
     }
@@ -40,254 +110,297 @@
     {
       "source": "music",
       "source_name": "NPR Music",
-      "title": "Gloria Steinem helped shape the classic children's album 'Free to Be... You and Me'",
-      "snippet": "Through Ms. Magazine, the late activist and author Gloria Steinem was one of the driving forces behind one of the most classic children's albums, Free to Be... You and Me from 1972.",
-      "url": "https://www.npr.org/2026/09/03/nx-s1-5955465/gloria-steinem-helped-shape-the-classic-childrens-album-free-to-be-you-and-me",
+      "title": "Ireland courses through every song on Dermot Kennedy's latest album",
+      "snippet": "Plus, Kennedy performs an intimate set at Bewley's Cafe Theatre, tucked just off of Dublin's bustling Grafton Street.",
+      "url": "https://www.npr.org/sections/world-cafe/2026/09/04/nx-s1-5955790/ireland-courses-through-every-song-on-dermot-kennedys-latest-album",
       "genre": "",
-      "vibe_check": "The warm, idealistic glow of a 1970s living room where children's laughter and radical optimism were somehow the same thing.",
-      "cover_url": "https://media.npr.org/include/images/facebook-default-wide-s1400-c85.jpg",
+      "vibe_check": "Like standing on a windswept Irish cliff at dusk, aching with the kind of homesickness you feel even when you're already home.",
+      "cover_url": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3360x1890+0+0/resize/1400/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Fd7%2F4c%2F92f6948e4747802087a27a699377%2Fnpr-podcast-wide-89.jpg",
       "embed_url": null
     },
     {
       "source": "music",
       "source_name": "Stereogum",
-      "title": "Godflesh’s Justin Broadrick Has Another Phoebe Bridgers Collaboration On The Way",
-      "snippet": "Last month, Phoebe Bridgers unleashed her long-awaited, breathtaking Punisher followup Lost Weekend, whose list of collaborators raised eyebrows. The most interesting contributor was probably Justin Broadrick of Godflesh and Jesu. The industrial metal bandleader spoke of the experience in a new inte",
-      "url": "https://stereogum.com/2510277/godfleshs-justin-broadrick-has-another-phoebe-bridgers-collaboration-on-the-way/news/",
+      "title": "Slow Pulp Debut New Songs “Yellow And Green” & “Slip Away” On The Adam Friedland Show",
+      "snippet": "Slow Pulp's highly anticipated Yard followup Melodie comes out in exactly two weeks. So far the Chicago indie rock crew has shared \"Better Man,\" \"Not For Nothing,\" and \"Spill,\" and today they're debuting two new tracks on The Adam Friedland Show.\nThe post Slow Pulp Debut New Songs &#8220;Yellow And ",
+      "url": "https://stereogum.com/2510414/slow-pulp-debut-new-songs-yellow-and-green-slip-away-on-the-adam-friedland-show/news/",
       "genre": "",
-      "vibe_check": "The sound of velvet wrapped around rebar — delicate indie sadness welded to something crushing and industrial.",
-      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/09/justin-copy.png",
-      "embed_url": "https://www.youtube.com/embed/5fHXyqQOKL8"
+      "vibe_check": "The sound of late-summer restlessness — windows down, half-finished thoughts, nowhere specific to be.",
+      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/09/maxresdefault-38-1.jpg",
+      "embed_url": "https://www.youtube.com/embed/9rp1EKXtr2E"
+    },
+    {
+      "source": "music",
+      "source_name": "Stereogum",
+      "title": "Squeeze Cancel Virginia Show After Man Crushed To Death By Tour Bus",
+      "snippet": "British new wave legends Squeeze are currently on a North American tour with fellow '80s veterans Adam Ant and Haircut 100, but they had to cancel last night's Vienna, Virginia show for tragic reasons. Before the show, a tour bus collapsed on a man, killing him.\nThe post Squeeze Cancel Virginia Show",
+      "url": "https://stereogum.com/2510410/squeeze-cancel-virginia-show-after-man-crushed-by-tour-bus/news/",
+      "genre": "",
+      "vibe_check": "The hollow silence after the music stops, where grief swallows the setlist whole.",
+      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/09/Squeeze.jpeg",
+      "embed_url": null
+    },
+    {
+      "source": "music",
+      "source_name": "No Depression",
+      "title": "No Depression's Best of August 2026 Playlist",
+      "snippet": "More than half of 2026 is now behind us, and in case you missed it, No Depression&apos;s best albums of the year up until August can be found here. Still, August itself had lots more to offer.Spotlight artist Sera Cahoone returned with new solo music for the",
+      "url": "https://nodepression.org/no-depressions-best-of-august-2026-playlist/",
+      "genre": "",
+      "vibe_check": "A front-porch listen for the dog days winding down, roots music savored like the last warmth before the season turns.",
+      "cover_url": "https://storage.ghost.io/c/18/d0/18d08e58-3b1b-4720-ae25-a31b44e69d4b/content/images/size/w1200/2026/09/Best-of-the-Month-playlist.png",
+      "embed_url": null
+    },
+    {
+      "source": "music",
+      "source_name": "No Depression",
+      "title": "BONUS TRACKS: Jason Isbell and SOCAN Sue SUNO and More Roots Music News",
+      "snippet": "Two big names in the music industry announced they&apos;re suing SUNO, the most prominent musical AI company this week. Jason Isbell and his team filed a complaint on Monday (with news breaking on Tuesday) and Canadian music rights-management organization SOCAN announced its claim on Wednesday. Bill",
+      "url": "https://nodepression.org/bonus-tracks-jason-isbell-and-socan-sue-suno-and-more-roots-music-news/",
+      "genre": "",
+      "vibe_check": "The charged, unsettled energy of a genre defending its soul in a courtroom.",
+      "cover_url": "https://storage.ghost.io/c/18/d0/18d08e58-3b1b-4720-ae25-a31b44e69d4b/content/images/2026/09/Suno-AI-3-1024x361.png",
+      "embed_url": "https://www.youtube.com/embed/Wk1o2S_fQB0"
+    },
+    {
+      "source": "music",
+      "source_name": "No Depression",
+      "title": "ALBUM REVIEW: Lily Seabird Searches for Honesty in the Ugliness on 'Lightspheres on Their Way'",
+      "snippet": "There is a fly-on-the-wall intimacy in certain moments of Lily Seabird&#x2019;s third album, Lightspheres on Their Way, like watching someone quietly noodle before stumbling upon a profound golden thread, then following it to the end of the spool. Opening track &#x201C;The Pulley&#x201D; begins",
+      "url": "https://nodepression.org/album-review-lily-seabird-searches-for-honesty-in-the-ugliness-on-lightspheres-on-their-way/",
+      "genre": "",
+      "vibe_check": "Like eavesdropping on someone writing in a candlelit room at 2 a.m., catching beauty in the moment they don't know you're watching.",
+      "cover_url": "https://storage.ghost.io/c/18/d0/18d08e58-3b1b-4720-ae25-a31b44e69d4b/content/images/size/w1200/2026/09/LMO138_lilyseabird_lightspheresontheirway3000.jpg",
+      "embed_url": null
     },
     {
       "source": "music",
       "source_name": "Consequence",
-      "title": "Tony Iommi Spoke with Ozzy Osbourne Hours Before He Died: “It Was Really a Hell of a Shock”",
-      "snippet": "The guitarist recalls his final conversation with his late Black Sabbath bandmate.\nTony Iommi Spoke with Ozzy Osbourne Hours Before He Died: &#8220;It Was Really a Hell of a Shock&#8221;\nSpencer Kaufman",
-      "url": "https://consequence.net/2026/09/tony-iommi-spoke-with-ozzy-osbourne-hours-before-he-died/",
+      "title": "Violet Grohl Performs Stripped-Down Cover of The Cure’s “High” for Like a Version: Watch",
+      "snippet": "Grohl also described \"High\" as one of her favorite Cure songs: \"I love the childlike joy of the lyrics... it's such a cute love song,\" she said.\nViolet Grohl Performs Stripped-Down Cover of The Cure&#8217;s &#8220;High&#8221; for Like a Version: Watch\nPaolo Ragusa",
+      "url": "https://consequence.net/2026/09/violet-grohl-like-a-version-the-cure-high-cover-watch/",
       "genre": "",
-      "vibe_check": "The heavy, hollow silence after the phone call that changes everything.",
-      "cover_url": "https://consequence.net/wp-content/uploads/2022/07/Tony-Iommi-and-Ozzy-Osbourne.jpg",
-      "embed_url": "https://www.youtube.com/embed/mOB4oYJJMPs"
+      "vibe_check": "Tender and barefoot, like a love song hummed softly to yourself in an empty kitchen on a quiet afternoon.",
+      "cover_url": "https://consequence.net/wp-content/uploads/2026/09/Violet-Grohl-Like-a-Version-The-Cure-High-Cover.jpg",
+      "embed_url": "https://www.youtube.com/embed/pkxA3cf2d_A"
+    },
+    {
+      "source": "music",
+      "source_name": "JazzTimes",
+      "title": "Citizen Arts International Festival Brings Free Interdisciplinary Performance and Jazz to New York",
+      "snippet": "J ust in time for Mayor Zohran Mamdani’s first back-to-school September, the 2026 Citizen Arts International Festival debuts across New York’s five boroughs with free &#8230; Read More \"Citizen Arts International Festival Brings Free Interdisciplinary Performance and Jazz to New York\"\nThe post Citiz",
+      "url": "https://www.jazztimes.com/blog/citizen-arts-international-festival-brings-free-interdisciplinary-performance-and-jazz-to-new-york/",
+      "genre": "",
+      "vibe_check": "The electric hum of a city rediscovering itself through music spilling out of open parks into the September air.",
+      "cover_url": "https://www.jazztimes.com/wp-content/uploads/2026/09/Antoine_Le_Menestrel_HD_Cie-Lezards-Bleus_Service-a-tous-les-etages_2025_©Photo-Augustin-Le-Gall-scaled.jpg",
+      "embed_url": null
     }
   ],
   "global_silver_linings": [
     {
       "source": "good_news",
       "source_name": "Good News Network",
-      "title": "Indian Home Stays Cool Without A/C Through Clever Clay Architecture",
-      "url": "https://www.goodnewsnetwork.org/indian-home-stays-cool-without-a-c-through-clever-clay-architecture/",
-      "snippet": "Every summer it seems there’s a part of the world experiencing record temperatures, so perhaps it’s time for architects to design buildings designed to resist heat as easily as possible. GNN has reported, mostly in Asia, about firms that specialize in designing auto-cooling homes that leverage the laws of thermodynamics just as our ancestors did, […] The post Indian Home Stays Cool Without A/C Through Clever Clay Architecture appeared first on Good News Network .",
-      "cover_url": "https://www.goodnewsnetwork.org/wp-content/uploads/2025/09/credit-CoolAnt-Studio.jpg",
-      "reason": "A home that stays naturally cool using traditional clay architecture is a beautiful reminder that ancient building wisdom can quietly outperform modern energy-hungry technology. This kind of design, rooted in local materials and climate knowledge, points toward a more sustainable way of living that doesn't demand sacrifice."
-    },
-    {
-      "source": "good_news",
-      "source_name": "Positive News",
-      "title": "What went right this week: the good news that matters",
-      "url": "https://www.positive.news/society/good-news-stories-from-week-36-of-2026/",
-      "snippet": "A ‘superhuman’ tool to spot heart disease, France slows fast fashion, and a species comes back from the brink, plus more The post What went right this week: the good news that matters appeared first on Positive News .",
-      "cover_url": "https://www.positive.news/wp-content/uploads/2026/09/iStock-2166849864-2.jpeg",
-      "reason": "In a media landscape that amplifies what's broken, a weekly roundup of genuinely good news is a small act of editorial courage that helps readers stay engaged with the world rather than retreating from it."
+      "title": "Neighbors Get Swept Up in Man’s Viral Journey to Clean a NYC Street Block Every Day for 100 Days",
+      "url": "https://www.goodnewsnetwork.org/neighbors-gets-swept-up-in-mans-viral-journey-to-clean-1-nyc-street-block-every-day-for-100-days/",
+      "snippet": "In New York City, something magical has happened along the sidewalk in Washington Heights that can best be described in a metaphor. In the East, the lotus is not only a food source, an ornamental, and a religious symbol, it also serves as a convenient allegory—because it grows best in the dirtiest water. So it […] The post Neighbors Get Swept Up in Man’s Viral Journey to Clean a NYC Street Block Every Day for 100 Days appeared first on Good News Network .",
+      "cover_url": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/09/credit-trashtalk_nyc.jpg",
+      "reason": "One man's quiet, daily commitment to cleaning his block didn't just tidy a street — it sparked a neighbourhood into caring together, proving that small, consistent acts of service are genuinely contagious. This is community-building at its most unassuming and real."
     },
     {
       "source": "good_news",
       "source_name": "Upworthy",
-      "title": "A couple was browsing a random yard sale. Then the wife found a 19-year-old photo of her husband.",
-      "url": "https://www.upworthy.com/pn-man-finds-late-mothers-belongings-at-strangers-yard-sale/",
-      "snippet": "\"Why is the picture of my husband on this tote?\" The post A couple was browsing a random yard sale. Then the wife found a 19-year-old photo of her husband. appeared first on Upworthy .",
-      "cover_url": "https://www.upworthy.com/wp-content/uploads/sites/2/2026/09/garage-sale-find.jpg",
-      "reason": "A chance yard-sale photograph connecting strangers across nearly two decades is a quiet, joyful nudge that the world is more beautifully interconnected than we usually notice."
+      "title": "Every generation for millennia has criticized its youth. It’s been a misstep every time.",
+      "url": "https://www.upworthy.com/every-generation-for-millennia-has-criticized-its-youth-its-been-a-misstep-every-time/",
+      "snippet": "Perhaps we ought to purposely shift our perspective on young people. The post Every generation for millennia has criticized its youth. It’s been a misstep every time.",
+      "cover_url": "https://www.upworthy.com/wp-content/uploads/sites/2/2026/09/Young-people.jpg",
+      "reason": "History shows that every generation of young people has gone on to do remarkable things despite the doubts of their elders, and that long track record is a quiet but powerful reassurance about the humans coming up behind us."
+    },
+    {
+      "source": "good_news",
+      "source_name": "Reasons to be Cheerful",
+      "title": "The Spark: Your Laundromat Could Be a Library",
+      "url": "https://reasonstobecheerful.world/the-spark-laundromat-libraries/",
+      "snippet": "Welcome back to The Spark, our monthly celebration of how people just like you are creating positive change, one meaningful step at a time. The Spark is generously supported by Laura Rice. Sign up to Reasons to be Cheerful’s weekly newsletter here and you’ll get The Spark in your inbox...",
+      "cover_url": "https://reasonstobecheerful.world/wp-content/uploads/2026/09/shutterstock_501174550.jpg",
+      "reason": "Reimagining laundromats as neighbourhood libraries turns an ordinary errand into a chance for connection and discovery, showing how underused everyday spaces can quietly become anchors of community life."
     },
     {
       "source": "good_news",
       "source_name": "The Optimist Daily",
-      "title": "Why managers struggle with coaching and what the research says to do instead",
-      "url": "https://www.optimistdaily.com/2026/09/why-managers-struggle-with-coaching-and-what-the-research-says-to-do-instead/",
-      "snippet": "BY THE OPTIMIST DAILY EDITORIAL TEAM Ask any organization whether they invest in coaching, and you’ll almost certainly get a yes. It’s a stated priority, a line item in leadership development budgets, a topic in management training. And yet, when researchers go to measure how managers perform across a range of their responsibilities, coaching keeps […] The post Why managers struggle with coaching and what the research says to do instead first appeared on The Optimist Daily: Making Solutions the News .",
-      "cover_url": "https://www.optimistdaily.com/wp-content/uploads/Depositphotos_236789974_L.jpg",
-      "reason": "Research pushing back against ineffective management habits means real people in real workplaces may soon have more supportive, human experiences at work — and that ripples outward into healthier communities."
+      "title": "Podcast Transcript September 4th, 2026— AI music banned from Australia’s charts, Roman telescope launches, a biodegradable balloon and much more!",
+      "url": "https://www.optimistdaily.com/2026/09/podcast-transcript-september-4th-2026-ai-music-banned-from-australias-charts-roman-telescope-launches-a-biodegradable-balloon-and-much-more/",
+      "snippet": "Episode Description: Arielle and Karissa are reunited after a few weeks apart, covering a wide range of solutions this episode: a new telescope that survived two White House cancellation attempts, the decade-long trial that settles the statin-and-dementia debate once and for all, and a biodegradable balloon that took three years and hundreds of failed experiments […] The post Podcast Transcript September 4th, 2026— AI music banned from Australia’s charts, Roman telescope launches, a biodegradable balloon and much more! first appeared on The Optimist Daily: Making Solutions the News .",
+      "cover_url": "https://www.optimistdaily.com/wp-content/uploads/Podcast-Logo-3000-×-3000-px-2-13.png",
+      "reason": "A biodegradable balloon offers a small but meaningful step away from the plastic waste that harms wildlife and waterways, reminding us that designers are steadily finding gentler ways to bring joy without lasting environmental cost."
     }
   ],
   "discovery_articles": [
     {
       "source": "discovery",
-      "source_name": "Atlas Obscura",
-      "title": "Durham Town Hall in Durham, England",
-      "url": "https://www.atlasobscura.com/places/durham-town-hall",
-      "snippet": "The Town Hall has been central to Durham's history since 1350 and has opened its doors to the public following refurbishment work. Now everyone can discover its rich history and hidden stories. Audio guides, interactive information points and short films help you to explore this extraordinary building and the remarkable individuals who helped shape the city.",
+      "source_name": "Smithsonian",
+      "title": "Researchers Have Figured Out How to Spot Fake Ancient Pottery Using the Earth's Magnetic Field",
+      "url": "https://www.smithsonianmag.com/smart-news/researchers-determine-how-to-spot-fake-ancient-pottery-using-the-earths-magnetic-field-180989441/",
+      "snippet": "The magnetic North Pole has shifted over the millennia, leaving clues in the minerals that make up clay antiquities",
       "category": "history",
-      "cover_url": "https://img.atlasobscura.com/wy8689PaQBaea4RrTbfFn0Ya2hv7NTTKJYS99crV2bY/rt:fit/w:600/c:802:535:nowe:50:0/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy9mODBk/MmY4OC05ZWNiLTRi/MzYtOGQ4Yi01ODE2/YWE2OWQ0ZTAyNTFj/MzI2NzAwMTM0ZTQx/ZGRfSU1HXzE0NTIu/anBlZw.jpg"
-    },
-    {
-      "source": "discovery",
-      "source_name": "Atlas Obscura",
-      "title": "Liverpool’s First Enclosed Dock in Liverpool, England",
-      "url": "https://www.atlasobscura.com/places/liverpools-first-enclosed-dock",
-      "snippet": "In a subterranean chamber under the massive Liverpool ONE shopping centre is the infrastructure that turned Liverpool from a lacklustre port city into a global powerhouse of shipping. While the city got it's charter back in 1207 with the intention of it being a port city, it struggled to gain much success. It was overshadowed by nearby Chester and lacked decent infrastructure; Loading and unloading ships was very slow, sometimes taking weeks to unload, as ships would anchor in the deep water of the estuary while small boats would shuttle cargo between them and the city.",
-      "category": "history",
-      "cover_url": "https://img.atlasobscura.com/3j2Kcwgz_TmiZCDm0nFA2HnpBrT831ByVEXh5om-Nh4/rt:fit/w:600/c:3702:2468:nowe:218:0/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy9iMDk0/MTI5OC05ZDU5LTQ0/OWMtOGMxZS0wODQy/YzRiNDViMTVmNjNl/ZDVlNmZkNjI4MTBm/ZWVfMzMzOC5qcGc.jpg"
+      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/aFK7uibzz7Ph5pQe7YV-NFYIkN8=/fit-in/1600x0/filters:focal(750x500:751x501)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/cf/4d/cf4d3176-9efd-4c9f-b643-2bc4f16839b6/scripps_oceanography_geoscientist_lisa_tauxe_inserts_samples_i-32fad9c82902379b111b3658ab9c8a35.jpeg"
     },
     {
       "source": "discovery",
       "source_name": "Smithsonian",
-      "title": "Scientists Recreated the Long-Lost Chirps of Jurassic Insects. Listen to the Simulated Soundscape of 165 Million Years Ago",
-      "url": "https://www.smithsonianmag.com/smart-news/scientists-recreated-the-long-lost-chirps-of-jurassic-insects-listen-to-the-simulated-soundscape-of-165-million-years-ago-180989445/",
-      "snippet": "With artificial intelligence and careful modeling of fossilized wings, researchers reproduced how some extinct, katydid-like insects might have made noise",
+      "title": "GLP-1 Weight-Loss Drugs Can Slow Aging and Extend Life Span, Mouse Study Suggests",
+      "url": "https://www.smithsonianmag.com/smart-news/GLP-1-weight-loss-drugs-can-slow-aging-and-extend-lifespan-mouse-study-suggests-180989452/",
+      "snippet": "Older female mice—equivalent in age to 60-year-old women—given daily injections of the active ingredient in Ozempic lived about 12 percent longer than animals that didn't receive the drug",
       "category": "history",
-      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/3crrWBRKuYl0t0lWL-XvfyPB3WI=/fit-in/1600x0/filters:focal(2220x1597:2221x1598)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/28/5d/285d7d60-b85c-4680-a56d-670fdceb34d6/fork-tailed_bush_katydid_42143s.jpg"
+      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/HWbgpwGnqTOSsUbCg0cQtajEceY=/fit-in/1600x0/filters:focal(3840x2176:3841x2177)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/bc/df/bcdf38b1-5940-4466-8703-d20d1d334481/ozempic.jpg"
     },
     {
       "source": "discovery",
       "source_name": "Smithsonian",
-      "title": "A Lake in Canada Got a Mysterious New Island. Then, It Disappeared—and Now It's Back",
-      "url": "https://www.smithsonianmag.com/smart-news/a-lake-in-canada-got-a-mysterious-new-island-then-it-disappeared-and-now-its-back-180989442/",
-      "snippet": "The floating forest appeared in a well-mapped reservoir in British Columbia. Its presence and vanishing act have puzzled locals and officials at the power utility that operates the lake, but other similar islands exist elsewhere",
+      "title": "Why Does Rain Eat Through Protective Coatings on Metal Structures? Researchers Propose a New Idea: Electrically Charged Droplets",
+      "url": "https://www.smithsonianmag.com/smart-news/why-does-rain-eat-through-protective-coatings-on-metal-structures-researchers-propose-a-new-idea-electrically-charged-droplets-180989434/",
+      "snippet": "Scientists long attributed rain damage to physical abrasion and chemical degradation from acidic substances. A new study offers a third idea, which could help researchers develop longer-lasting coatings and preserve important objects",
       "category": "history",
-      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/RWfV_wJ7b-6Aq4Nfu5b6cMC0dFo=/fit-in/1600x0/filters:focal(2082x1427:2083x1428)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/46/f1/46f18bd2-beb5-4922-9fa0-6f5d63e35951/williston-lake.jpg"
+      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/VjHrW6X0vUxwFc9IBtpmVmC5lHg=/fit-in/1600x0/filters:focal(2250x1286:2251x1287)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/47/a8/47a8e50d-723c-4887-9823-98217843639a/golden-gate-bridge.jpg"
     },
     {
       "source": "discovery",
       "source_name": "Smithsonian",
-      "title": "A Mysterious Decagon Unexpectedly Appeared Around Saturn's South Pole. The Ten-Sided Shape Seems to Be a Wave in the Atmosphere",
-      "url": "https://www.smithsonianmag.com/smart-news/a-mysterious-decagon-unexpectedly-appeared-around-saturns-south-pole-the-ten-sided-shape-seems-to-be-a-wave-in-the-atmosphere-180989449/",
-      "snippet": "Decades ago, scientists found a hexagon around Saturn’s north pole. Now, recent images reveal a decagon in the planet’s southern hemisphere—and it seems to have recently formed",
+      "title": "Part of Your Personality Is Encoded in Your Genes. Huge Analysis Links Characteristics to More Than 1,200 Common Genetic Variants",
+      "url": "https://www.smithsonianmag.com/smart-news/part-of-your-ersonality-is-encoded-in-your-genes-huge-analysis-links-characteristics-to-more-than-1200-common-genetic-variants-180989450/",
+      "snippet": "A new meta-analysis pooled data from more than one million people to look at the crossover between DNA and the \"Big Five\" personality traits: openness to experience, conscientiousness, extroversion, agreeableness and neuroticism",
       "category": "history",
-      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/TwBqZRFi-pyxxtyqX67hZzzZU98=/fit-in/1600x0/filters:focal(750x500:751x501)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/9a/e4/9ae43ab0-03cb-4d82-bb5c-1f4a270e9fb3/smithsonian_feature_images_14.png"
-    },
-    {
-      "source": "discovery",
-      "source_name": "Smithsonian",
-      "title": "To Capture the Beauty and Wonder of Flight, These Celebrated Artists Created Spectacular Visions of Astronauts, Aviators, Rocket Launches and the Moon",
-      "url": "https://www.smithsonianmag.com/smithsonian-institution/to-capture-the-beauty-and-wonder-of-flight-these-celebrated-artists-created-spectacular-visions-of-astronauts-aviators-rocket-launches-and-the-moon-180989437/",
-      "snippet": "At the National Air and Space Museum, a recently opened gallery space features artworks by Norman Rockwell, Alma Thomas, Francisco Goya and other luminaries",
-      "category": "history",
-      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/yf1sNfglpmLXUjzpoiU5urRW_5o=/fit-in/1600x0/filters:focal(750x500:751x501)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/58/0a/580a77b9-7590-43c5-b70d-e3a590810348/smithmag-rockwell-edit.jpg"
+      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/QVIK-9wThGzqxuEMaBaInVv2u2A=/fit-in/1600x0/filters:focal(3000x2086:3001x2087)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/34/5d/345da7bc-77c2-4e35-af89-ccc2662f78c5/dna-personality.jpg"
     },
     {
       "source": "discovery",
       "source_name": "Science News",
-      "title": "AI agents aren’t ready to replace humans in behavioral research",
-      "url": "https://www.sciencenews.org/article/ai-agents-replace-humans-research",
-      "snippet": "A new study finds that digital twins don’t yet replicate the views of the individuals they are modeled after.",
+      "title": "Was the ‘American cheetah’ a cheetah at all?",
+      "url": "https://www.sciencenews.org/article/american-cheetah-puma-ancient-dna-diet",
+      "snippet": "Ancient DNA confirms Miracinonyx trumani was more closely related to modern pumas than cheetahs and had a more varied diet than previously thought.",
       "category": "science",
-      "cover_url": "https://www.sciencenews.org/wp-content/uploads/sites/2/2026/09/090226_SG_digitaltwin_main.jpg"
+      "cover_url": "https://www.sciencenews.org/wp-content/uploads/sites/2/2026/09/090326_EG_ancientcatDNA_main.jpg"
+    },
+    {
+      "source": "discovery",
+      "source_name": "Aeon",
+      "title": "Upend the trickle-down",
+      "url": "https://aeon.co/essays/why-western-democracy-is-ailing-and-how-to-fix-it",
+      "snippet": "Neoliberal policies have hollowed out democracies and spawned unchecked oligarchs. Grasping their structure points to a fix - by Les Coleman Read on Aeon",
+      "category": "science",
+      "cover_url": "https://images.aeonmedia.co/images/0104da2d-f55d-4db7-933e-ad6ea30d78a8/essay-gettyimages-1916677655.jpg?width=1200&quality=75&format=jpeg"
+    },
+    {
+      "source": "discovery",
+      "source_name": "JSTOR Daily",
+      "title": "The Chinese-Only Schools of the Jim Crow South",
+      "url": "https://daily.jstor.org/the-chinese-only-schools-of-the-jim-crow-south/",
+      "snippet": "A 1920s court battle over a Chinese American student exposed the complicated racial boundaries of school segregation. The post The Chinese-Only Schools of the Jim Crow South appeared first on JSTOR Daily .",
+      "category": "history",
+      "cover_url": "https://daily.jstor.org/wp-content/uploads/2026/09/the_chinese_only_schools_of_the_jim_crow_south_1050x700.jpg"
     },
     {
       "source": "discovery",
       "source_name": "Colossal",
-      "title": "Denizens of a Crowded City Populate Erin Milez’s Dense Paintings",
-      "url": "https://www.thisiscolossal.com/2026/09/erin-milez-everything-the-light-touches-city-paintings/",
-      "snippet": "Milez's new body of work goes on view this month in 'Everything the Light Touches' at Monya Rowe Gallery. Do stories and artists like this matter to you? Become a Colossal Member today and support independent arts publishing for as little as $7 per month.",
+      "title": "Go Behind the Scenes of Blackwing Pencils’ Ode to Analog Creativity",
+      "url": "https://www.thisiscolossal.com/2026/09/how-blackwing-pencils-are-made-video/",
+      "snippet": "The company shares how pencils are created in a multi-step process in factories in Japan and California. Do stories and artists like this matter to you? Become a Colossal Member today and support independent arts publishing for as little as $7 per month.",
       "category": "history",
-      "cover_url": "https://www.thisiscolossal.com/wp-content/uploads/2026/09/milez-7.jpg"
+      "cover_url": "https://www.thisiscolossal.com/wp-content/uploads/2026/09/blackwing-1.gif"
+    },
+    {
+      "source": "discovery",
+      "source_name": "Colossal",
+      "title": "‘Inploration’ Highlights Dozens of Artists Who Explore Space to Understand Earth",
+      "url": "https://www.thisiscolossal.com/2026/09/inploration-richelle-ellis-art-space-book/",
+      "snippet": "Nearly 100 artists, scientists, astronauts, futurists, and others explore how the cosmos teach us about ourselves. Do stories and artists like this matter to you? Become a Colossal Member today and support independent arts publishing for as little as $7 per month.",
+      "category": "history",
+      "cover_url": "https://www.thisiscolossal.com/wp-content/uploads/2026/09/inploration-7.jpg"
     }
   ],
   "featured_read": {
     "source": "reads",
     "source_name": "Nautilus",
-    "title": "Deadly Livestock Virus Found Lurking in Ancient Texts",
-    "url": "https://nautil.us/deadly-livestock-virus-found-lurking-in-ancient-texts-1284770/",
-    "snippet": "Take a look, it’s in a book The post Deadly Livestock Virus Found Lurking in Ancient Texts appeared first on Nautilus .",
-    "cover_url": "https://lede-admin.nautil.us/wp-content/uploads/sites/70/2026/09/Ovis_sheep_-_Der_naturen_bloeme_-_Jacob_van_Maerlant_-_KB_KA_16_-_066v_b1.jpg"
+    "title": "The Extinct “American Cheetah” Wasn’t a Cheetah After All",
+    "url": "https://nautil.us/the-extinct-american-cheetah-wasnt-a-cheetah-after-all-1284777/",
+    "snippet": "And, unlike African cheetahs, it was a flexible carnivore The post The Extinct “American Cheetah” Wasn’t a Cheetah After All appeared first on Nautilus .",
+    "cover_url": "https://lede-admin.nautil.us/wp-content/uploads/sites/70/2026/09/Picture-1.png"
   },
   "reading_room": [
     {
       "source": "reads",
+      "source_name": "Psyche",
+      "title": "Absence of presence and presence of absence",
+      "url": "https://psyche.co/notes-to-self/the-absence-of-presence-and-the-presence-of-absence",
+      "snippet": "Mindfulness experts teach us to be present in the moment. I suggest an antidote – a meditation that’s focused on absence - by Nigel Warburton Read on Psyche",
+      "cover_url": "https://images.aeonmedia.co/images/c34b2e1a-d283-42fa-871d-476545887190/sz-par213014.jpg?top=190&left=4&cropWidth=2496&cropHeight=1404&width=1200&quality=75&format=jpeg"
+    },
+    {
+      "source": "reads",
+      "source_name": "The Paris Review",
+      "title": "A Poem Is Full of Meat: Dorothea Lasky on Mother",
+      "url": "https://www.theparisreview.org/blog/2026/09/04/a-poem-is-full-of-meat-dorothea-lasky-on-mother/",
+      "snippet": "“The terms ‘mother’ and ‘father’ have the same dominant energy as ‘God’ or ‘the Devil’ in a poem.”",
+      "cover_url": "https://www.theparisreview.org/blog/wp-content/uploads/2026/09/lasky.jpg"
+    },
+    {
+      "source": "reads",
       "source_name": "Longreads",
-      "title": "The Anatomy of a Journalism Scandal",
-      "url": "https://longreads.com/2026/09/03/new-york-times-defamation-alabama/",
-      "snippet": "\"The first time 'The New York Times' had lost a defamation case in over half a century.\"",
+      "title": "The “Conformation Show” and the Pursuit of the Ideal Dog",
+      "url": "https://longreads.com/2026/09/04/dog-conformation-show-breed-standard/",
+      "snippet": "\"Just inside the Farm Bureau Center, the doormats were already covered in fur.\"",
       "cover_url": ""
     },
     {
       "source": "reads",
       "source_name": "Literary Hub",
-      "title": "A new font promises to hide your text from AI.",
-      "url": "https://lithub.com/a-new-font-promises-to-hide-your-text-from-ai/",
-      "snippet": "Can you read the text above? Because large language models can’t. The design and tech company Mixfont has created Decoy Font, which promises to hide your text from AI crawlers.",
-      "cover_url": "https://s26162.pcdn.co/wp-content/uploads/2026/09/decoy-font.jpg"
+      "title": "Lit Hub Daily: September 4, 2026",
+      "url": "https://lithub.com/lit-hub-daily-september-4-2026/",
+      "snippet": "Suzanne Roberts offers advice (and prompts!) for writing about sex. | Lit Hub Craft How does time actually work? Jim Al-Khalili explores the flow of physics.",
+      "cover_url": "https://s26162.pcdn.co/wp-content/uploads/2026/09/fitzgeraldthisisde.jpg"
     },
     {
       "source": "reads",
       "source_name": "3 Quarks Daily",
-      "title": "So Spin Me, Baby, One More Time!",
-      "url": "https://3quarksdaily.com/3quarksdaily/2026/09/so-spin-me-baby-one-more-time.html",
-      "snippet": "by Carlota Figueroa Have you ever heard of a particle’s spin before? If you have, I bet that the first time you were introduced to this concept you were told to imagine a ball that spins on its axis and to take this as an analogy for what a particle’s spin really is. Now, if…",
+      "title": "Zanny Minton Beddoes, The Economist’s editor-in-chief, interviews Yuval Noah Harari",
+      "url": "https://3quarksdaily.com/3quarksdaily/2026/09/zanny-minton-beddoes-the-economists-editor-in-chief-interviews-yuval-noah-harari.html",
+      "snippet": "﻿ Enjoying the content on 3QD? Help keep us going by donating now.",
       "cover_url": ""
-    },
-    {
-      "source": "reads",
-      "source_name": "Nautilus",
-      "title": "Your Home is Crawling With Microplastics",
-      "url": "https://nautil.us/your-home-is-crawling-with-microplastics-1284761/",
-      "snippet": "And vacuuming might make things worse The post Your Home is Crawling With Microplastics appeared first on Nautilus .",
-      "cover_url": "https://lede-admin.nautil.us/wp-content/uploads/sites/70/2026/09/shutterstock_1972889006.jpg"
-    },
-    {
-      "source": "reads",
-      "source_name": "Longreads",
-      "title": "The Longreads Questionnaire, Featuring Jon Ronson",
-      "url": "https://longreads.com/2026/09/03/longreads-questionnaire-jon-ronson/",
-      "snippet": "The author of The Castle likes his music in a time capsule and silence in his home—but definitely not in his stories.",
-      "cover_url": "https://i0.wp.com/longreads.com/wp-content/uploads/2026/08/Questionnaire-Template-JonRonson-1.png?fit=2400%2C1400&quality=80&ssl=1"
     }
   ],
   "garden_note": {
-    "note": "September in Zürich has a particular quality of light — golden, slightly slanted, arriving at 06:17 with the scent of dew on spent lavender and the first blush of colour creeping into the vine leaves along the Limmat. There's still warmth in the day, but the garden knows what's coming, and so do you.",
+    "note": "September is doing its quiet work in Zürich tonight — the linden trees are releasing the last of their warmth, and the kitchen garden smells of damp earth and ripening squash as the air turns genuinely cool after dark. There's a particular pleasure in this early-autumn hush, when the days are still generous but dusk arrives just early enough to remind you that the season is gently turning the page.",
     "in_season": [
-      "Damson plums and early apples to harvest before the wasps get there first",
-      "Zucchini flowers — last call before the plants finally exhaust themselves",
-      "Winter squash curing on the vine; check for that hollow knock when you tap them",
-      "Sow spinach and lamb's lettuce now for a November harvest"
+      "Butternut squash ripening on the vine",
+      "Dahlias at their peak — cut generously for the vase",
+      "Sow winter salad greens (lamb's lettuce, spinach) now",
+      "Harvest the last runner beans before the nights bite harder"
     ],
-    "sky_tonight": "The Last Quarter Moon rises around midnight in Gemini — look east in the small hours for its cold, precise half-face between Castor and Pollux.",
-    "sun_times": "First light breaks at 06:17 this morning, with sunset at 20:02 — savour these long evenings; they're already slipping away.",
+    "sky_tonight": "The last-quarter moon rises late, leaving the early evening beautifully dark — a fine moment to trace the great square of Pegasus climbing in the east.",
+    "sun_times": "First light crept in at 06:17 this morning; the sun slipped away at 20:02, with dusk lingering until 20:32.",
     "moon_label": "Last quarter",
-    "illum_pct": 51,
+    "illum_pct": 47,
     "sun_range": "06:47–20:02"
   },
-  "puzzle": {},
+  "puzzle": {
+    "kind": "riddle",
+    "label": "Fern's Morning Riddle",
+    "prompt": "I am not alive, but I grow; I don't have lungs, but I need air; I don't have a mouth, but water kills me. What am I ?",
+    "answer": "Fire",
+    "hint": "",
+    "source": "riddles.com",
+    "source_id": "Riddle-18"
+  },
   "previous_puzzle": {
     "label": "The Evening Riddle",
     "prompt": "I shrink as I am used,\nyet I leave my mark behind.\nI need no ink to write,\nbut water makes me blind.",
     "answer": "A bar of soap"
   },
   "larder": {
-    "news": [
-      {
-        "source": "food",
-        "source_name": "The Kitchn",
-        "title": "This Coffee Subscription Is Perfect for Picky Drinkers (and It’s on Sale Right Now)",
-        "url": "https://www.thekitchn.com/trade-coffee-labor-day-sale-2026-23841388?utm_source=RSS&utm_medium=feed&utm_campaign=Category%2FChannel%3A+main",
-        "snippet": "Level up your morning routine. READ MORE...",
-        "cover_url": "",
-        "blurb": "If your coffee order is a personality trait, this subscription piece is worth a quiet read over your first cup."
-      },
-      {
-        "source": "food",
-        "source_name": "The Guardian",
-        "title": "Helen Goh’s recipe for brown butter apple and blackberry bars | The sweet spot",
-        "url": "https://www.theguardian.com/food/2026/sep/04/brown-butter-apple-blackberry-bars-recipe-helen-goh",
-        "snippet": "A bar for the bountiful season, with a rubbly oat crust, a soft fruit filling and a crisp topping September is always a wistful time for me. Summer has all but slipped away, the days are noticeably shorter and the children are heading back to school. But there is comfort, too, in settling back into familiar routines.",
-        "cover_url": "https://i.guim.co.uk/img/media/95571a59ef785c844073b5da90f978026b358c08/94_1459_5048_4039/master/5048.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=5e2c1e76938819166634a03a6157e778",
-        "blurb": "A timely reminder that September's soft melancholy is best met with brown butter, hedgerow fruit, and something oat-topped cooling on the rack."
-      }
-    ],
-    "recipe": {
-      "source": "recipe",
-      "source_name": "101 Cookbooks",
-      "title": "High Summer Lunch Salad",
-      "url": "https://www.101cookbooks.com/high-summer-lunch-salad/",
-      "snippet": "This substantial lunch salad brings together peak summer tomatoes and pluots with protein-rich mung beans and a simple vinaigrette. Fried shallots and pistachios bring the crunch, while rings of banana pepper add a bit of kick and a pop of color! Continue reading High Summer Lunch Salad on 101 Cookbooks",
-      "is_recipe": true,
-      "cover_url": "https://images.101cookbooks.com/high-summer-lunch-salad-h.jpg?w=680",
-      "blurb": "A proper high-summer lunch that lets peak-season tomatoes and pluots shine alongside mung beans, pistachios, and fried shallots — substantial enough to feel celebratory, simple enough to actually make."
-    },
-    "seasonal_note": "Zürich's Saturday markets at Bürkliplatz are piling high with Zwetschgen right now — those deep-violet Swiss plums that beg to be halved and laid over a buttery Zwetschgenwähe, their tartness mellowing into something almost jammy in a hot oven on a cool morning."
+    "news": [],
+    "recipe": {}
   },
   "fern_data": {
-    "greeting": "A livestock virus hiding in ancient manuscripts, a yard sale photo that collapsed nineteen years of distance — sometimes truth arrives from exactly the direction you weren't watching.",
-    "top_pick_title": "Hidden in Plain Sight"
+    "greeting": "Something about tonight felt worth sitting with slowly — Jim Al-Khalili dismantling time itself, and then, almost as an antidote, a NYC man who just wanted a clean block and accidentally gathered a neighborhood around a broom.",
+    "top_pick_title": "The Long Way Around the Truth"
   }
 }
