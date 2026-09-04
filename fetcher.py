@@ -65,6 +65,12 @@ YOUTUBE_CHANNEL_IDS: list[str] = [
     "UCH4BNI0-FOK2dMXoFtViWHw",  # Be Smart
     "UCDz2F9qBLuUpI7ZIIcxEAEg",  # Mason Mignanelli
     "UC2J29LPhS9vMiWyYEqBRB0w",  # The Ancients
+    "UCGfFUc6eWxfbtjYeun6r9xg",  # FloatHeadPhysics (Mahesh Shenoy)
+    "UC3KV2kFy2YhjYvverIy2WnA",  # Dialect
+    "UC5eLPZi_RSh81523mrBzHNg",  # Mind & Soil
+    "UCFtCfZ4rtIZ7Hsq7ZNHoY1w",  # Computer & Electronics
+    "UCIZ5ZOeiXYbmKTl_85ghNPw",  # Physics Explained
+    "UCHnyfMqiRRG1u-2MsSQLbXA",  # Veritasium
 ]
 
 HISTORY_FILE = Path(__file__).parent / "history.json"
@@ -560,11 +566,11 @@ def fetch_channel_videos(
         newest-first cap) are left unseen and compete again next run;
       - only the videos actually returned are marked seen.
 
-    Quota cost breakdown (~35 channels):
+    Quota cost breakdown (~45 channels):
       - 1 call  to channels.list  for all IDs      →  1 unit
-      - 1 call  to playlistItems.list per channel  → 35 units (depth ≤50 is free)
+      - 1 call  to playlistItems.list per channel  → 45 units (depth ≤50 is free)
       - videos.list on fresh IDs, 1 unit per 50    → ~1-3 units
-      Total: ~40 units  (vs ~7,000 with the old search.list approach)
+      Total: ~50 units  (vs ~7,000 with the old search.list approach)
 
     If a quota-exceeded error is hit at any stage, the function returns
     whatever has been collected so far rather than crashing the whole run.
