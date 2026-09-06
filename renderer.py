@@ -83,16 +83,28 @@ def _esc(s: str) -> str:
 
 
 def _safe_url(u: str) -> str:
+    """Absolute URLs only. An email has no base document, so a root-relative href
+    like "/recipes/braised-fennel" resolves against mail.google.com, not the
+    publisher — the web renderer can accept those, this one can't."""
     u = (u or "").strip()
     low = u.lower()
-    if low.startswith(("http://", "https://", "mailto:")) or u.startswith(("/", "#")):
+    if low.startswith(("http://", "https://", "mailto:")):
         return _esc(u)
     return "#"
 
 
 def _clip(s: str, n: int = 96) -> str:
+    """Truncate on a word boundary. Must be applied to RAW text, never to escaped
+    HTML: slicing at a character index used to cut an entity in half and print
+    "Bees, Boats &am…" in the contents list."""
     s = (s or "").strip()
-    return s if len(s) <= n else s[: n - 1].rstrip() + "…"
+    if len(s) <= n:
+        return s
+    cut = s[: n - 1].rstrip()
+    space = cut.rfind(" ")
+    if space > n * 0.6:                       # don't strand a very short fragment
+        cut = cut[:space].rstrip(" ,;:—-")
+    return cut + "…"
 
 
 def _dedash(s: str) -> str:
@@ -107,9 +119,32 @@ def _dedash(s: str) -> str:
     return s.strip()
 
 
+def _unsubscribe_url() -> str:
+    """A working mailto: — href="#" is inert in a mail client and a dead
+    Unsubscribe is a deliverability liability, not just a display bug."""
+    sender = (os.environ.get("EMAIL_USER") or os.environ.get("SMTP_USER") or "").strip()
+    if not sender:
+        return _safe_url(EDITION_URL) if EDITION_URL else "#"
+    return _esc(f"mailto:{sender}?subject=Unsubscribe%20from%20The%20Curated%20Canopy")
+
+
+def _prefs_url() -> str:
+    sender = (os.environ.get("EMAIL_USER") or os.environ.get("SMTP_USER") or "").strip()
+    if not sender:
+        return _safe_url(EDITION_URL) if EDITION_URL else "#"
+    return _esc(f"mailto:{sender}?subject=Canopy%20preferences")
+
+
+def _plural(n: int, singular: str, plural: str = "") -> str:
+    """'1 Track' / '2 Tracks'. The units were hardcoded plurals, so a thin edition
+    rendered '1 Tracks' and '1 Films'."""
+    return f"{n} {singular if n == 1 else (plural or singular + 's')}"
+
+
 def _top_titles(items, n=2, key="title") -> str:
-    out = [(_esc(it.get(key, "")) or "").strip() for it in items[:n]]
-    return _clip(" · ".join(t for t in out if t), 78)
+    # Clip first, THEN escape — the other order sliced entities in half.
+    out = [(it.get(key, "") or "").strip() for it in items[:n]]
+    return _esc(_clip(" · ".join(t for t in out if t), 78))
 
 
 # ---------------------------------------------------------------------------
@@ -188,15 +223,32 @@ def _eyebrow(text: str, color: str) -> str:
     return f'{d}&nbsp;&nbsp;{text}&nbsp;&nbsp;{d}'
 
 
+_FERN_FALLBACK_NOTE = ("Today's gathering is a quiet one. Pour something warm, "
+                       "and take it at your own pace.")
+
+
+def _strip_fern_signature(greeting: str) -> str:
+    """Remove a trailing 'Fern' sign-off — the template adds 'Yours, Fern' itself."""
+    text = (greeting or "").strip()
+    for tail in ("Yours, Fern", "— Fern", "- Fern", "Fern"):
+        if text.endswith(tail):
+            text = text[: -len(tail)].rstrip(" ,—-").strip()
+            break
+    return text
+
+
 def _render_fern_note(greeting: str) -> str:
-    greeting = _dedash(greeting).strip()
+    # `or ""` matters: fern.get("greeting", "") returns None when the key exists
+    # with a null value, and _dedash passes None straight through — so this line
+    # raised AttributeError and NO EMAIL WAS SENT AT ALL, while the web edition
+    # published fine.
+    greeting = _dedash(greeting or "").strip()
+    greeting = _strip_fern_signature(greeting)
     if not greeting:
-        greeting = ("Today's gathering is a quiet one. Pour something warm, "
-                    "and take it at your own pace.")
-    for tail in ("Fern", "— Fern", "- Fern", "Yours, Fern"):
-        if greeting.endswith(tail):
-            greeting = greeting[: -len(tail)].rstrip(" ,—-").strip()
-    cap, rest = (greeting[:1] or "T"), greeting[1:]
+        # After stripping, not before: a greeting of just "— Fern" used to reduce
+        # to "" and render a lone 56px drop-cap "T" next to "Yours, Fern".
+        greeting = _FERN_FALLBACK_NOTE
+    cap, rest = greeting[:1], greeting[1:]
     return f"""
         <tr>
           <td class="px" style="padding:30px 32px 32px 32px; background-color:{SURFACE}; border-top:1px solid {LINE}; border-bottom:1px solid {LINE};">
@@ -220,8 +272,11 @@ def _render_hero(video: dict) -> str:
     vid     = video.get("video_id", "")
     href    = _safe_url(EDITION_URL) if EDITION_URL else _yt_embed(vid)
     kicker  = "Watch" + (f" &nbsp;&middot;&nbsp; {channel}" if channel else "")
+    # Gmail blocks remote images on first view from an unknown sender, so alt text
+    # is the reader's first impression of the hero.
+    hero_alt = _esc(_clip(video.get("title") or "Today's opening film", 90))
     if vid:
-        media = (f'<img src="{_safe_url(_yt_thumbnail(vid))}" alt="" width="536" '
+        media = (f'<img src="{_safe_url(_yt_thumbnail(vid))}" alt="{hero_alt}" width="536" '
                  f'style="display:block; width:100%; max-width:536px; height:auto;">')
     else:
         media = (
@@ -311,10 +366,13 @@ def _render_puzzle(puzzle: dict, prev: dict) -> str:
     the full edition's tap-to-reveal, plus the previous edition's answer inline."""
     puzzle = puzzle or {}
     prev = prev or {}
-    if not puzzle.get("prompt") and not prev.get("answer"):
+    # The web edition renders a puzzle only when it has BOTH prompt and answer.
+    # Gating on the prompt alone meant the email promised "reveal the answer in
+    # the full edition" and linked to a page with no puzzle on it.
+    if not (puzzle.get("prompt") and puzzle.get("answer")) and not prev.get("answer"):
         return ""
     rows = []
-    if puzzle.get("prompt"):
+    if puzzle.get("prompt") and puzzle.get("answer"):
         label = _esc(puzzle.get("label") or "Fern's Puzzle")
         prompt = _esc(_dedash(puzzle["prompt"])).replace("\n", "<br>")
         hint = _esc(_dedash(puzzle.get("hint", "")))
@@ -394,10 +452,11 @@ def _render_larder(larder: dict) -> str:
     blocks = []
     # Recipe card — cover image (if any) + label + title + blurb + link.
     if recipe.get("title"):
+        recipe_alt = _esc(_clip(recipe.get("title") or "Today's recipe", 90))
         href = _safe_url(recipe.get("url", "#"))
         cover = _safe_url(recipe.get("cover_url", "")) if recipe.get("cover_url") else ""
         img = (
-            f'<a href="{href}"><img src="{cover}" alt="" width="536" '
+            f'<a href="{href}"><img src="{cover}" alt="{recipe_alt}" width="536" '
             f'style="display:block; width:100%; max-width:536px; height:auto; '
             f'border:1px solid {BRASS}; margin-bottom:14px;"></a>'
         ) if cover else ""
@@ -432,10 +491,10 @@ def _render_contents(videos, music, good_news, discovery, read=None, is_am=True)
     href = _safe_url(EDITION_URL) if EDITION_URL else "#"
     soundtrack_label = "The Morning Soundtrack" if is_am else "The Evening Soundtrack"
     specs = [
-        (soundtrack_label,         music,     _top_titles(music),     "Tracks"),
-        ("Worth Watching",         videos,    _top_titles(videos),    "Films"),
-        ("Global Silver Linings",  good_news, _top_titles(good_news), "Stories"),
-        ("From the Archives",      discovery, _top_titles(discovery), "Finds"),
+        (soundtrack_label,         music,     _top_titles(music),     "Track"),
+        ("Worth Watching",         videos,    _top_titles(videos),    "Film"),
+        ("Global Silver Linings",  good_news, _top_titles(good_news), "Story"),
+        ("From the Archives",      discovery, _top_titles(discovery), "Find"),
     ]
     present = [(c, items, lead, unit) for c, items, lead, unit in specs if items]
     has_read = bool(read and read.get("title"))
@@ -446,11 +505,13 @@ def _render_contents(videos, music, good_news, discovery, read=None, is_am=True)
     for cat, items, lead, unit in present:
         n += 1
         rows.append(_toc_row(f"{n:02d}", cat, lead or "&nbsp;",
-                             f"{len(items)} {unit}", href, last=(n == total)))
+                             _plural(len(items), unit,
+                                     "Stories" if unit == "Story" else ""),
+                             href, last=(n == total)))
     if has_read:
         n += 1
         rows.append(_toc_row(f"{n:02d}", "One Good Read",
-                             _clip(_esc(read.get("title", "")), 78),
+                             _esc(_clip(read.get("title", ""), 78)),
                              _esc(read.get("source_name", "")) or "Essay", href, last=(n == total)))
     return f"""
         <tr>
@@ -487,14 +548,15 @@ def build_html(curated: dict) -> str:
         issue_html = ""
 
     counts = []
-    if music:  counts.append(f"{len(music)} tracks")
-    if videos: counts.append(f"{len(videos)} films")
+    if music:  counts.append(_plural(len(music), "track"))
+    if videos: counts.append(_plural(len(videos), "film"))
     extra = len(good_news) + len(discovery)
-    if extra:  counts.append(f"{extra} stories &amp; finds")
+    if extra:  counts.append(f"{extra} stories &amp; finds" if extra > 1
+                             else "1 story or find")
     sep = "&nbsp;&nbsp;&middot;&nbsp;&nbsp;"
     meta_line = sep.join([gathered] + counts)
 
-    preheader = _esc(_clip(_dedash(fern.get("greeting", "")) or
+    preheader = _esc(_clip(_dedash(fern.get("greeting") or "") or
                            "A quiet gathering, music, good news, and the natural world.", 110))
 
     hero_html   = _render_hero(videos[0]) if videos else ""
@@ -505,7 +567,7 @@ def build_html(curated: dict) -> str:
     toc_html    = _render_contents(videos, music, good_news, discovery, read, is_am=is_am)
 
     logo_html = (
-        f'<img src="{_safe_url(FERN_LOGO_URL)}" alt="" width="96" '
+        f'<img src="{_safe_url(FERN_LOGO_URL)}" alt="The Curated Canopy" width="96" '
         f'style="display:block; margin:0 auto 18px auto; max-width:96px; height:auto;">'
         if FERN_LOGO_URL else ""
     )
@@ -557,7 +619,7 @@ def build_html(curated: dict) -> str:
                   <div style="font-family:{DISPLAY}; font-style:italic; font-size:16px; color:{CREAM_MUTE}; padding-top:6px;">Gathered twice daily by Fern</div>
                   <div style="font-family:{SANS}; font-size:11px; color:{CREAM_MUTE}; line-height:1.8; padding-top:18px;">
                     You're receiving this because you asked for a quieter inbox.<br>
-                    <a href="#" style="color:{BRASS_SOFT}; text-decoration:none;">Preferences</a>&nbsp;&nbsp;&middot;&nbsp;&nbsp;<a href="#" style="color:{BRASS_SOFT}; text-decoration:none;">Unsubscribe</a>
+                    <a href="{_prefs_url()}" style="color:{BRASS_SOFT}; text-decoration:none;">Preferences</a>&nbsp;&nbsp;&middot;&nbsp;&nbsp;<a href="{_unsubscribe_url()}" style="color:{BRASS_SOFT}; text-decoration:none;">Unsubscribe</a>
                   </div>
                 </td>
               </tr>
@@ -715,7 +777,7 @@ def main() -> None:
     if smtp_ready:
         is_am    = curated.get("is_am_email", False)
         fern     = curated.get("fern_data", {})
-        top_pick = _dedash(fern.get("top_pick_title", "")).strip()
+        top_pick = _dedash(fern.get("top_pick_title") or "").strip()
         prefix   = "The Morning Rise" if is_am else "The Evening Wind-down"
         subject  = f"{prefix} | {top_pick}" if top_pick else f"{prefix} · The Curated Canopy"
 

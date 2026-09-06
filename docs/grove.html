@@ -65,6 +65,9 @@
   .card-link{display:block;color:inherit;}
   .cv{position:relative;width:100%;overflow:hidden;}
   .cv .ph{display:block;width:100%;}
+  /* Reserve the box so the masonry stops jumping as images resolve. */
+  .cv.photo{aspect-ratio:16/10;overflow:hidden;}
+  .cv.photo img{width:100%;height:100%;object-fit:cover;}
   .cv::after{content:"";position:absolute;inset:0;border:1px solid rgba(192,148,51,0);transition:border-color .2s ease;pointer-events:none;}
   .card:hover .cv::after{border-color:rgba(192,148,51,0.55);}
   .play{position:absolute;inset:0;margin:auto;width:50px;height:50px;border-radius:50%;border:1.5px solid rgba(247,242,230,0.92);background:rgba(22,35,19,0.24);display:flex;align-items:center;justify-content:center;}
