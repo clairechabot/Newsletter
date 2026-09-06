@@ -21,7 +21,6 @@ from pathlib import Path
 from zoneinfo import ZoneInfo
 
 import re
-import random
 import hashlib
 from html import unescape as _html_unescape
 from langdetect import detect, LangDetectException
@@ -75,19 +74,18 @@ YOUTUBE_CHANNEL_IDS: list[str] = [
 
 HISTORY_FILE = Path(__file__).parent / "history.json"
 CLAUDE_MODEL = "claude-sonnet-4-6"    # matches curator.CLAUDE_MODEL
-YOUTUBE_VIDEOS_PER_CHANNEL = 1        # 1 per channel conserves quota for wildcard search
+YOUTUBE_VIDEOS_PER_CHANNEL = 1        # 1 per channel keeps the edition spread across many voices
 CHANNEL_SCAN_DEPTH = 50               # uploads scanned back per channel for unseen videos (mines backlog, not just recent)
-MAX_VIDEOS_PER_EDITION = 10           # newest-first cap across all channels + wildcard
+MAX_VIDEOS_PER_EDITION = 10           # newest-first cap across all curated channels
 YOUTUBE_MIN_DURATION_SECONDS = 121    # ≥ 2 min — removes the 0–2 min band where Shorts cluster
-YOUTUBE_WILDCARD_MIN_SECONDS = 300    # wildcard must be ≥ 5 minutes
 
 # Content filter keywords, split into two tiers:
 #  - _ALWAYS_BLOCK: modern politics / partisanship / current geopolitics — never
 #    wanted, in any context.
 #  - _CONFLICT_TERMS: plain conflict vocabulary that is normal in HISTORY content
-#    (a Roman war, a medieval siege). Blocked for the untrusted wildcard, but
-#    allowed for the user's hand-picked channels (allow_history=True), so history
-#    videos aren't skipped just for saying "war" / "military" / "battle".
+#    (a Roman war, a medieval siege). Allowed for the user's hand-picked
+#    channels (allow_history=True), so history videos aren't skipped just for
+#    saying "war" / "military" / "battle".
 _ALWAYS_BLOCK = frozenset({
     "trump", "biden", "harris", "kamala", "maga", "election", "congress", "senate",
     "republican", "democrat", "whitehouse", "pentagon", "filibuster", "impeach",
@@ -120,45 +118,11 @@ def _is_political(title: str, description: str = "", allow_history: bool = False
     return False
 
 
-# Channels the wildcard must never pick again (bad past picks).
+# Channels that must never appear, even if added to YOUTUBE_CHANNEL_IDS by
+# mistake. Enforced in fetch_channel_videos.
 BLOCKED_CHANNEL_IDS = frozenset({
     "UCzSA9H4H6ml52Ne5_PdWhkQ",  # Umar Daraz Gondal — Urdu political news
 })
-
-# Arabic-script Unicode ranges (covers Arabic, Urdu, Persian …). The wildcard
-# skips any video whose channel/title/description carries this script — the
-# newsletter is English-language and these picks were political news content.
-_ARABIC_RANGES = (
-    (0x0600, 0x06FF), (0x0750, 0x077F), (0x08A0, 0x08FF),
-    (0xFB50, 0xFDFF), (0xFE70, 0xFEFF),
-)
-
-
-def _has_arabic_script(text: str) -> bool:
-    return any(a <= ord(ch) <= b for ch in text for (a, b) in _ARABIC_RANGES)
-
-
-# Finance/investing hype — never wanted in the WILDCARD (a stock-analysis video
-# once slipped in because the "good news" search matched "Massive News…").
-# Word-boundary matched like _is_political; hand-picked channels are unaffected.
-_FINANCE_HYPE = frozenset({
-    "stock", "stocks", "invest", "investing", "investor", "investors",
-    "investment", "investments", "crypto", "bitcoin", "ethereum", "trading",
-    "trader", "forex", "etf", "etfs", "nasdaq", "dividend", "dividends",
-    "portfolio", "ipo", "bullish", "bearish", "valuation",
-})
-
-
-def _is_finance_hype(title: str, description: str = "") -> bool:
-    """Return True if the title/description reads as finance/investing content."""
-    title_words = set(re.findall(r'\w+', title.lower()))
-    if title_words & _FINANCE_HYPE:
-        return True
-    if description:
-        desc_words = set(re.findall(r'\w+', description.lower()))
-        return bool(desc_words & _FINANCE_HYPE)
-    return False
-
 
 _CLICKBAIT_PHRASES = frozenset({
     "you won't believe",
@@ -191,24 +155,6 @@ def _is_clickbait(title: str) -> bool:
             return True
     return False
 
-
-WILDCARD_CATEGORIES = [
-    {
-        "name": "Nature",
-        "topic_id": "/m/06mf6",
-        "queries": ["wildlife", "ocean life"],
-    },
-    {
-        "name": "Travel",
-        "topic_id": "/m/019_rr",
-        "queries": ["travel vlog", "scenic journey"],
-    },
-    {
-        "name": "Good News",
-        "topic_id": "/m/098wr",
-        "queries": ["positive news", "restoring faith in humanity"],
-    },
-]
 
 # Music sources — RSS feeds preferred (never blocked); scrape fallback where no feed exists.
 MUSIC_SOURCES: list[dict] = [
@@ -591,6 +537,9 @@ def fetch_channel_videos(
     # Skip channels whose most-recent video is already in history — saves a videos.list call.
     fresh_ids_per_channel: dict[str, list[str]] = {}
     for ch_id in YOUTUBE_CHANNEL_IDS:
+        if ch_id in BLOCKED_CHANNEL_IDS:
+            print(f"  [skip/blocked-channel] {ch_id}")
+            continue
         playlist_id = uploads_map.get(ch_id)
         if not playlist_id:
             print(f"  [warn] No uploads playlist found for channel {ch_id}")
@@ -658,118 +607,6 @@ def fetch_channel_videos(
 
     print(f"[YouTube] Collected {len(all_results)} channel videos.")
     return all_results
-
-
-def fetch_trending_video(
-    youtube, seen_ids: set[str], exclude_channel_ids: "set[str] | None" = None
-) -> dict | None:
-    """
-    Pick ONE wildcard video by randomly selecting a category (Nature / Travel / Good News),
-    then searching with that category's topicId + one of its query strings.
-
-    Constraints:
-      - Published within the last 24 hours
-      - At least YOUTUBE_WILDCARD_MIN_SECONDS long (5 minutes) — no Shorts
-      - Not already in history (seen_ids deduplication)
-      - Not from a channel the newsletter already features (exclude_channel_ids) —
-        the wildcard is meant to be a discovery from OUTSIDE the subscribed channels,
-        so it never duplicates a video already in the edition's watch list.
-
-    Falls back through both query strings and all three categories before giving up.
-    """
-    exclude_channel_ids = exclude_channel_ids or set()
-    published_after = (
-        datetime.datetime.now(UTC) - datetime.timedelta(hours=24)
-    ).strftime("%Y-%m-%dT%H:%M:%SZ")
-
-    # Shuffle so we try a different category each run
-    categories = WILDCARD_CATEGORIES.copy()
-    random.shuffle(categories)
-
-    for category in categories:
-        for query in category["queries"]:
-            print(
-                f"[YouTube] Wildcard search — category: {category['name']!r}, "
-                f"query: {query!r} …"
-            )
-
-            search_resp = (
-                youtube.search()
-                .list(
-                    part="id",
-                    type="video",
-                    topicId=category["topic_id"],
-                    q=query,
-                    publishedAfter=published_after,
-                    order="viewCount",
-                    regionCode="US",
-                    relevanceLanguage="en",
-                    maxResults=20,
-                )
-                .execute()
-            )
-
-            candidate_ids = [
-                item["id"]["videoId"]
-                for item in search_resp.get("items", [])
-                if item["id"]["videoId"] not in seen_ids
-            ]
-
-            if not candidate_ids:
-                print(f"  [wildcard] No fresh candidates for query {query!r}.")
-                continue
-
-            details, processed_ids = _fetch_video_details(youtube, candidate_ids)
-            # Register only the candidates that were filtered out (Shorts, non-
-            # English, unavailable) — NOT the ones still eligible in `details`, or
-            # every wildcard would be marked seen and skipped before we can pick it.
-            eligible_ids = {v["video_id"] for v in details}
-            seen_ids |= processed_ids - eligible_ids
-
-            for video in details:
-                vid_id = video["video_id"]
-                if vid_id in seen_ids:
-                    print(f"  [skip/dup] wildcard {vid_id} already in history")
-                    continue
-                if video.get("channel_id") in exclude_channel_ids:
-                    print(f"  [skip/own-channel] wildcard {vid_id} — "
-                          f"'{video.get('channel_title','')}' is already featured")
-                    continue
-                if video.get("channel_id") in BLOCKED_CHANNEL_IDS:
-                    print(f"  [skip/blocked-channel] wildcard {vid_id} — "
-                          f"'{video.get('channel_title','')}'")
-                    continue
-                if _has_arabic_script(video.get("channel_title", "")
-                                      + video["title"]
-                                      + video.get("description", "")):
-                    print(f"  [skip/non-english] wildcard {vid_id} — "
-                          f"Arabic-script text in channel/title/description")
-                    continue
-                if video["duration_seconds"] < YOUTUBE_WILDCARD_MIN_SECONDS:
-                    print(
-                        f"  [skip/short] wildcard {vid_id} — "
-                        f"{video['duration_seconds']}s < {YOUTUBE_WILDCARD_MIN_SECONDS}s"
-                    )
-                    continue
-                if _is_political(video["title"], video.get("description", "")):
-                    print(f"  [skip/political] wildcard {vid_id} — '{video['title']}'")
-                    continue
-                if _is_finance_hype(video["title"], video.get("description", "")):
-                    print(f"  [skip/finance] wildcard {vid_id} — '{video['title']}'")
-                    continue
-                if _is_clickbait(video["title"]):
-                    print(f"  [skip/clickbait] wildcard {vid_id} — '{video['title']}'")
-                    continue
-
-                seen_ids.add(vid_id)
-                print(
-                    f"[YouTube] Wildcard pick ({category['name']} / {query!r}): "
-                    f"{video['title']}"
-                )
-                return {**video, "source": "youtube_trending"}
-
-    print("[YouTube] No wildcard video found after exhausting all categories.")
-    return None
 
 
 # ---------------------------------------------------------------------------
@@ -1181,15 +1018,13 @@ DISCOVERY_FEEDS = [
     },
     # Added for breadth + backlog so the Archive rarely runs dry (RSS is a
     # rolling window; more feeds = more headroom before everything is seen).
+    # NOTE: Aeon was removed from this list — it is an essay source and belongs
+    # in READS_FEEDS. Discovery runs first and shares seen_all_urls, so listing
+    # it here consumed every Aeon article before The Reading Room ever saw one.
     {
         "url":         "https://publicdomainreview.org/rss.xml",
         "source_name": "The Public Domain Review",
         "category":    "history",
-    },
-    {
-        "url":         "https://aeon.co/feed.rss",
-        "source_name": "Aeon",
-        "category":    "science",
     },
     {
         "url":         "https://daily.jstor.org/feed/",
@@ -1226,20 +1061,31 @@ FERMAT_PAPERS_PER_RUN = 1
 # Essay sources for One Good Read + The Reading Room. All verified reachable
 # (200, valid RSS with items) from this environment. The Marginalian was dropped
 # (reader feedback: over-selected, style not landing).
+# The Atlantic is pulled per SECTION, never /feed/all/ or /feed/best-of/ — those
+# carry the front-page politics. Each section feed is shallow (≈1-10 items), so
+# several are listed to give the archive-scan something to dig into.
+# Dropped: 3 Quarks Daily (a link-blog of excerpts, heavy on current affairs) and
+# The Public Domain Review (starved here by DISCOVERY_FEEDS, where it still runs).
 READS_FEEDS = [
-    {"url": "https://aeon.co/feed.rss",                    "source_name": "Aeon"},
-    {"url": "https://nautil.us/feed/",                     "source_name": "Nautilus"},
-    {"url": "https://publicdomainreview.org/rss.xml",      "source_name": "The Public Domain Review"},
-    {"url": "https://psyche.co/feed",                      "source_name": "Psyche"},
-    {"url": "https://www.theparisreview.org/blog/feed/",   "source_name": "The Paris Review"},
-    {"url": "https://longreads.com/feed/",                 "source_name": "Longreads"},
-    {"url": "https://lithub.com/feed/",                    "source_name": "Literary Hub"},
-    {"url": "https://www.noemamag.com/feed/",              "source_name": "Noema"},
-    {"url": "https://3quarksdaily.com/feed",               "source_name": "3 Quarks Daily"},
+    {"url": "https://aeon.co/feed.rss",                          "source_name": "Aeon"},
+    {"url": "https://nautil.us/feed/",                           "source_name": "Nautilus"},
+    {"url": "https://psyche.co/feed",                            "source_name": "Psyche"},
+    {"url": "https://www.theparisreview.org/blog/feed/",         "source_name": "The Paris Review"},
+    {"url": "https://longreads.com/feed/",                       "source_name": "Longreads"},
+    {"url": "https://lithub.com/feed/",                          "source_name": "Literary Hub"},
+    {"url": "https://www.noemamag.com/feed/",                    "source_name": "Noema"},
+    {"url": "https://www.theatlantic.com/feed/channel/ideas/",   "source_name": "The Atlantic"},
+    {"url": "https://www.theatlantic.com/feed/channel/books/",   "source_name": "The Atlantic"},
+    {"url": "https://www.theatlantic.com/feed/channel/science/", "source_name": "The Atlantic"},
+    {"url": "https://www.theatlantic.com/feed/channel/culture/", "source_name": "The Atlantic"},
+    {"url": "https://asteriskmag.com/feed",                      "source_name": "Asterisk"},
+    {"url": "https://www.damninteresting.com/feed/",             "source_name": "Damn Interesting"},
 ]
 READS_SCAN_DEPTH = 25       # entries scanned per feed — digs into each feed's archive
                             # as recent items get used up (never-repeat below)
 READS_SELECTION_SIZE = 6    # 1 featured (One Good Read) + the rest for The Reading Room
+READS_MAX_PER_SOURCE = 2    # slots one publication may take per edition (soft cap —
+                            # lifted only if too few feeds have fresh items)
 
 # The Larder — food news/trends + one recipe pick. MORNING editions only.
 # All feeds verified reachable (200, non-Cloudflare) from GitHub runners.
@@ -1920,19 +1766,38 @@ def fetch_reads(
         if fresh:
             per_feed.append(fresh)
 
-    # Round-robin interleave so the selection spans different voices.
+    # Rotate the starting feed each run. The interleave below fills all
+    # READS_SELECTION_SIZE slots at depth 0, so with more feeds than slots the
+    # tail of the list would otherwise almost never be reached. Keying the
+    # rotation on the size of the reads history keeps it deterministic (no
+    # random, no new history bucket) while giving every feed the front of the
+    # queue over successive editions.
+    if per_feed:
+        offset = len(seen_reads_urls) % len(per_feed)
+        per_feed = per_feed[offset:] + per_feed[:offset]
+
+    # Round-robin interleave so the selection spans different voices. Pass one
+    # honours READS_MAX_PER_SOURCE so a publication listed under several feeds
+    # (The Atlantic has four section feeds) can't take over the edition; pass two
+    # lifts the cap only to top the selection up if the pool ran dry.
     selection: list[dict] = []
-    depth = 0
-    while len(selection) < READS_SELECTION_SIZE and any(depth < len(f) for f in per_feed):
-        for f in per_feed:
-            if depth < len(f) and len(selection) < READS_SELECTION_SIZE:
-                article = f[depth]
-                if article["url"] in seen_all_urls:
-                    continue
-                seen_all_urls.add(article["url"])
-                seen_reads_urls.add(article["url"])
-                selection.append(article)
-        depth += 1
+    per_source: dict[str, int] = {}
+    for cap in (READS_MAX_PER_SOURCE, None):
+        depth = 0
+        while len(selection) < READS_SELECTION_SIZE and any(depth < len(f) for f in per_feed):
+            for f in per_feed:
+                if depth < len(f) and len(selection) < READS_SELECTION_SIZE:
+                    article = f[depth]
+                    if article["url"] in seen_all_urls:
+                        continue
+                    name = article.get("source_name", "")
+                    if cap is not None and per_source.get(name, 0) >= cap:
+                        continue
+                    seen_all_urls.add(article["url"])
+                    seen_reads_urls.add(article["url"])
+                    per_source[name] = per_source.get(name, 0) + 1
+                    selection.append(article)
+            depth += 1
 
     if not selection:
         print("[Reads] No fresh reads found this run.")
@@ -1985,33 +1850,11 @@ def main() -> dict:
     )
 
     # --- YouTube ---
-    # Wildcard runs on BOTH editions (2 × 100 quota units/day — fine within 10k).
-    # Channel videos are capped one below MAX so the wildcard fits inside it.
+    # Every video comes from a hand-picked channel; the full cap is theirs.
     youtube = build_youtube_client()
-    channel_videos = fetch_channel_videos(
-        youtube, seen_ids, max_videos=MAX_VIDEOS_PER_EDITION - 1
+    youtube_results = fetch_channel_videos(
+        youtube, seen_ids, max_videos=MAX_VIDEOS_PER_EDITION
     )
-    try:
-        # Exclude subscribed channels so the wildcard is a genuine outside
-        # discovery and can't duplicate a video already in this edition's list.
-        trending_video = fetch_trending_video(
-            youtube, seen_ids, exclude_channel_ids=set(YOUTUBE_CHANNEL_IDS)
-        )
-    except HttpError as exc:
-        if "quotaExceeded" in str(exc):
-            print("[YouTube] Quota exceeded during wildcard search — skipping trending video.")
-            trending_video = None
-        else:
-            raise
-
-    # Safety dedup: never let the wildcard repeat a channel pick's video id.
-    channel_ids = {v["video_id"] for v in channel_videos}
-    if trending_video and trending_video["video_id"] in channel_ids:
-        print(f"[YouTube] Wildcard {trending_video['video_id']} duplicates a channel "
-              f"video — dropping it.")
-        trending_video = None
-
-    youtube_results = channel_videos + ([trending_video] if trending_video else [])
 
     # --- Music (every run) ---
     music_articles: list[dict] = fetch_music_articles(seen_all_urls, seen_music_urls)
@@ -2104,8 +1947,7 @@ def main() -> dict:
     raw_file.write_text(json.dumps(raw_payload, indent=2, ensure_ascii=False), encoding="utf-8")
     print(
         f"\n[fetch] Raw data → {raw_file} "
-        f"({len(channel_videos)} channel videos | "
-        f"{'1 trending video' if trending_video else 'no trending video'} | "
+        f"({len(youtube_results)} channel videos | "
         f"{len(music_articles)} music articles | "
         f"{len(good_news_articles)} good news articles | "
         f"{len(discovery_articles)} discovery articles | "
