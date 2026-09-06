@@ -1,161 +1,128 @@
 {
-  "fetched_at": "2026-09-05T18:52:29.664974+02:00",
-  "is_am_email": false,
+  "fetched_at": "2026-09-06T09:59:45.012899+02:00",
+  "is_am_email": true,
   "audit_summary": {
-    "youtube_videos": 9,
-    "themes": 4,
-    "music_articles": 1,
-    "good_news_articles": 1,
+    "youtube_videos": 7,
+    "themes": 3,
+    "music_articles": 8,
+    "good_news_articles": 3,
     "discovery_articles": 0,
     "featured_read": 1,
     "reading_room": 5,
     "garden": 1,
     "puzzle": 1,
-    "larder": 0
+    "larder": 4
   },
   "themes": [
     {
-      "name": "Roots & Shoots",
-      "emoji": "🌱",
-      "tagline": "Get your hands dirty — these videos make growing things feel like a superpower.",
+      "name": "Rewriting the Rulebook",
+      "emoji": "📜",
+      "tagline": "The stories we thought were settled — about human origins, black holes, and relativity itself — are getting a serious second look.",
       "items": [
         {
           "source": "youtube",
-          "video_id": "slumMBWuOc0",
-          "title": "The Easiest Ways To Make Compost FASTER",
-          "channel_id": "UCSbyncU597LMwb3HhnAI_4w",
-          "channel_title": "Epic Gardening",
-          "published_at": "2026-09-05T16:00:10Z",
-          "url": "https://www.youtube.com/watch?v=slumMBWuOc0",
-          "duration_seconds": 847,
-          "view_count": "1284",
-          "description": "Your compost pile could be breaking down WAY faster. @jacquesinthegarden and I share 5 simple ways to speed things up, from the right greens-to-browns ratio to moisture, airflow, and turning.\n\nIN THIS VIDEO\n\n→ \n\nSUPPORT EPIC GARDENING\n\n→ Shop: https://growepic.co/shop\n→ Seeds: https://growepic.co/botanicalinterests\n\nLEARN MORE\n\n→ All Our Channels: https://growepic.co/youtube\n→ Blog: https://growepic.co/blog\n→ Podcast: https://growepic.co/podcasts\n→ Discord: https://growepic.co/discord\n→ Instagra",
-          "is_wildcard": false
+          "video_id": "EeZpp4mxfNQ",
+          "title": "Shocking New DNA Study: How Humans Really Evolved From Africa",
+          "channel_id": "UC2J29LPhS9vMiWyYEqBRB0w",
+          "channel_title": "The Ancients",
+          "published_at": "2026-09-06T06:00:21Z",
+          "url": "https://www.youtube.com/watch?v=EeZpp4mxfNQ",
+          "duration_seconds": 3488,
+          "view_count": "759",
+          "description": "Professor Chris Stringer is on the Ancients podcast to talk about recent discoveries, DNA, and migration patterns of early humans. \n\nThe story of human origins is often imagined as a simple journey from Africa, but is the truth actually much messier? Tristan Hughes and leading palaeoanthropologist Prof. Chris Stringer dismantle the traditional narrative, discussing how recent breakthroughs in fossils and ancient DNA reveal a complex, shifting history of multiple migrations and cross-breeding to ",
+          "why_watch": "Paleoanthropologist Chris Stringer — one of the scientists who literally shaped the 'Out of Africa' model — explains why that tidy story is now being complicated by fossil and DNA evidence. The conversation covers interbreeding with archaic human populations and multiple dispersal waves rather than one clean migration. If you last read about human origins in a textbook, most of what you learned has been revised."
         },
         {
           "source": "youtube",
-          "video_id": "BnaF0n-mZmk",
-          "title": "They said this would be impossible (week22)",
-          "channel_id": "UC5eLPZi_RSh81523mrBzHNg",
-          "channel_title": "Gardening Experiments with Mind & Soil",
-          "published_at": "2026-08-15T13:00:36Z",
-          "url": "https://www.youtube.com/watch?v=BnaF0n-mZmk",
-          "duration_seconds": 1033,
-          "view_count": "5493",
-          "description": "🌱🍅 Want to start feeding your family from your backyard? Join my FREE Weekly Newsletter for gardening tips & videos: https://forms.gle/SrwU1EjkSScgVTVy8\n\nEXPERIMENT VIDEOS\n💡 $30 vs $300 Grow Light: WATCH This Before Buying a Grow Light! https://youtu.be/_0EFGE9ZljY\n\n💡 I Tested Every Grow Light Height https://youtu.be/LGKlQ5iGbpY\n\n💡 6 Steps To Guarantee Thriving Seedlings https://youtu.be/X2nXwawGqXI \n\nPRODUCTS I USE & LOVE (try code mindandsoil or mindandsoil10 for discounts!)\nSproutbox Metal Ra",
-          "is_wildcard": false
-        }
-      ]
-    },
-    {
-      "name": "The Universe Is Weirder Than You Think",
-      "emoji": "🔭",
-      "tagline": "From pulsating stars to imaginary numbers — reality has some explaining to do.",
-      "items": [
-        {
-          "source": "youtube",
-          "video_id": "7DxR0NeUsLc",
-          "title": "The Secret Pattern in Pulsating Stars #physics #astronomy #universe #space #cepheids #science",
-          "channel_id": "UCIZ5ZOeiXYbmKTl_85ghNPw",
-          "channel_title": "Physics Explained",
-          "published_at": "2026-08-18T19:10:11Z",
-          "url": "https://www.youtube.com/watch?v=7DxR0NeUsLc",
-          "duration_seconds": 178,
-          "view_count": "24755",
-          "description": "Henrietta Swan Leavitt discovered a remarkable pattern in Cepheid variable stars, one that would give astronomers a way to measure vast distances across the cosmos.\nFull video on my Youtube channel.",
-          "is_wildcard": false
-        },
-        {
-          "source": "youtube",
-          "video_id": "wt4p2oalmRY",
-          "title": "Is spider web really stronger than steel?",
-          "channel_id": "UCHnyfMqiRRG1u-2MsSQLbXA",
-          "channel_title": "Veritasium",
-          "published_at": "2026-08-02T13:21:11Z",
-          "url": "https://www.youtube.com/watch?v=wt4p2oalmRY",
-          "duration_seconds": 1618,
-          "view_count": "8452744",
-          "description": "Can you really swing from spider silk? Sponsored by Henson Shaving - Head to https://hensonshaving.com/veritasium and use code “veritasium” for 100 free blades with any razor purchase. Just add both the razor and blades to your cart.\n\nLast year, we launched the Elements of Truth game on Kickstarter and were thrilled by the response. We’re now in the final stages of production, with Kickstarter rewards shipping soon. Pre-order the retail edition here: https://ve42.co/YTSpiderSilk\n\nIf you’re looki",
-          "is_wildcard": false
-        },
-        {
-          "source": "youtube",
-          "video_id": "3QU-_PSbKlo",
-          "title": "I finally understood why the universe needs imaginary numbers (My mind is blown!)",
+          "video_id": "lZrW5cGl1fU",
+          "title": "We were wrong about how time works inside a black hole! (My mind is blown)",
           "channel_id": "UCGfFUc6eWxfbtjYeun6r9xg",
           "channel_title": "FloatHeadPhysics",
-          "published_at": "2026-06-30T02:36:10Z",
-          "url": "https://www.youtube.com/watch?v=3QU-_PSbKlo",
-          "duration_seconds": 2677,
-          "view_count": "525098",
-          "description": "Try Brilliant's tutor for free:  https://brilliant.org/FloatHeadPhysics/ . You’ll also get 20% off an annual Premium subscription.\n\nGet the Schrödinger's equation T-shirt here\nhttps://floatheadphysics-shop.fourthwall.com/products/whats-the-matter-schroedingers-equation-tee\n\nJoin my exclusive community    / floatheadphysics   to see how I learn relativity, watch exclusive videos, and get early access to youtube episodes\n\n~Chapters~\n00:00 Where does the Schrödinger Equation come from?\n00:51 The hy",
-          "is_wildcard": false
+          "published_at": "2026-04-24T13:01:26Z",
+          "url": "https://www.youtube.com/watch?v=lZrW5cGl1fU",
+          "duration_seconds": 2725,
+          "view_count": "260268",
+          "description": "Click this link https://boot.dev/?promo=FLOATHEADPHYSICS and use my code FLOATHEADPHYSICS to get 25% off your first payment for boot.dev\n\nJoin my exclusive community  https://patreon.com/floatheadphysics to see how I learn relativity, watch exclusive videos, and get early access to youtube episodes\n\nLet's rediscover the real physics of black holes and answer some of the most burning questions I had about them. \n- Do you see the entire future of the universe as you enter the black hole? \n- Does i",
+          "why_watch": "FloatHeadPhysics works through a specific misconception: the popular idea that time 'stops' or 'freezes' at a black hole's event horizon, and why that framing breaks down when you actually apply general relativity carefully. The 45-minute runtime is earned — he builds the argument step by step rather than just asserting the correction."
         },
         {
           "source": "youtube",
-          "video_id": "sm9uevZnMmA",
-          "title": "Mastering Differential Geometry with the Covariant Derivative",
+          "video_id": "i8wuuuYz5k0",
+          "title": "Relativity Has Nothing to Do With Space or Time, Apparently",
           "channel_id": "UC3KV2kFy2YhjYvverIy2WnA",
           "channel_title": "Dialect",
-          "published_at": "2026-05-09T13:11:30Z",
-          "url": "https://www.youtube.com/watch?v=sm9uevZnMmA",
-          "duration_seconds": 1321,
-          "view_count": "63430",
-          "description": "The advanced mathematics of Differential Geometry relies on the concept of the Covariant Derivative, a tool for extending the results of ordinary differential calculus to the domain of arbitrary, curvilinear coordinate systems. Once mastered, this differential operator gives rise to precise formulations for concepts like the Geodesic Equation or the Riemannian Curvature Tensor, rendering the realm of abstract geometries far more concrete and tangible. Our journey towards mastering the formidable",
-          "is_wildcard": false
+          "published_at": "2026-02-07T14:25:59Z",
+          "url": "https://www.youtube.com/watch?v=i8wuuuYz5k0",
+          "duration_seconds": 1216,
+          "view_count": "25465",
+          "description": "Did you know that the Theory of Special Relativity has never made any claims about the nature of space and time? Us neither. We respond to some intense viewer gaslighting from a recent video on the One-Way Speed of Light Problem.\n\nWe express our deepest gratitude towards all our Patreons, who continue to make all our research and our videos here possible. https://www.patreon.com/dialect_philosophy\n\nFor further discussion on the topics presented here in this video, join our discord: https://disco",
+          "why_watch": "Dialect responds to viewer pushback with a genuinely philosophically interesting claim: that special relativity, as Einstein originally formulated it, is agnostic about whether space and time are 'real' things — it's a theory about measurement relationships, not ontology. Whether you agree or not, the argument forces you to think more carefully about what physics actually asserts versus what popularizers add."
+        }
+      ]
+    },
+    {
+      "name": "Hidden Patterns in the Noise",
+      "emoji": "🎲",
+      "tagline": "From jittery particles to heartbeats per lifetime, the universe's apparent chaos keeps revealing suspiciously tidy laws underneath.",
+      "items": [
+        {
+          "source": "youtube",
+          "video_id": "o9L4exW8lto",
+          "title": "Can Randomness Be Predicted?  #physics #science #einstein #brownianmotion",
+          "channel_id": "UCIZ5ZOeiXYbmKTl_85ghNPw",
+          "channel_title": "Physics Explained",
+          "published_at": "2026-08-14T19:00:22Z",
+          "url": "https://www.youtube.com/watch?v=o9L4exW8lto",
+          "duration_seconds": 180,
+          "view_count": "62498",
+          "description": "Einstein found a way to describe seemingly random motion using physics.\n\nWatch the full video on my channel.",
+          "why_watch": "A clean three-minute explainer on how Einstein's 1905 Brownian motion paper turned apparently random particle jitter into a predictable statistical model — and in doing so, helped prove atoms exist. Good as a quick refresher or an appetizer before the full video on the channel."
         },
         {
           "source": "youtube",
-          "video_id": "PHPGUNPwuic",
-          "title": "Data instruction - Scott CPU - Control Unit",
-          "channel_id": "UCFtCfZ4rtIZ7Hsq7ZNHoY1w",
-          "channel_title": "Computer&Electronics",
-          "published_at": "2025-05-21T14:27:51Z",
-          "url": "https://www.youtube.com/watch?v=PHPGUNPwuic",
-          "duration_seconds": 818,
-          "view_count": "176",
-          "description": "In this video we simulate the fetching, decoding and executing of the DATA instruction. For this purpose we have built a simulation circuit in circuiverse simulator. This is the simulation part of the «Instruction Code – LOAD and STORE and DATA instructions» video of the «How computers work – Building Scott’s CPU» youtube playlist. The links to the playlist and to the circuit are in the description. In Scott’s CPU, as in many other kind of CPUs, the ALU operates only with registers so we need so",
-          "is_wildcard": false
+          "video_id": "tL9Lw250spc",
+          "title": "Why does every mammal get 1 billion heartbeats in their life?",
+          "channel_id": "UCHnyfMqiRRG1u-2MsSQLbXA",
+          "channel_title": "Veritasium",
+          "published_at": "2026-07-25T17:29:09Z",
+          "url": "https://www.youtube.com/watch?v=tL9Lw250spc",
+          "duration_seconds": 2132,
+          "view_count": "5994878",
+          "description": "The hidden math that governs life. Sponsored by Brilliant - Try Brilliant for free, plus get 20% off an annual Premium subscription at https://brilliant.org/veritasium\n\nLast year, we launched the Elements of Truth game on Kickstarter and were thrilled by the response. We’re now in the final stages of production, with Kickstarter rewards shipping soon. Pre-order the retail edition here: https://elementsoftruth.game/\n\nIf you’re looking for a molecular modelling kit, try Snatoms, a kit I invented w",
+          "why_watch": "Veritasium digs into metabolic scaling — the biological law that explains why a shrew's heart races at 1,000 beats per minute while an elephant's plods at 30, yet both animals burn through roughly the same lifetime total of one billion beats. The video connects this to fractal network geometry and why larger animals live longer, turning what sounds like a quirky fact into a window on the hidden mathematics of life."
         }
       ]
     },
     {
-      "name": "Craft, Costume & Lore",
-      "emoji": "🧵",
-      "tagline": "History stitched into fabric, battles fought in handmade armor — creativity as a way of life.",
+      "name": "The Fine Print",
+      "emoji": "🔬",
+      "tagline": "Marketing claims and engineering trade-offs dissected — because the details are where the real story lives.",
       "items": [
         {
           "source": "youtube",
-          "video_id": "ColTUe0qv9M",
-          "title": "I Joined a Convent of Undead Seamstresses (ConQuest of Mythodea 2026)",
-          "channel_id": "UCSHtaUm-FjUps090S7crO4Q",
-          "channel_title": "Bernadette Banner",
-          "published_at": "2026-09-05T14:00:18Z",
-          "url": "https://www.youtube.com/watch?v=ColTUe0qv9M",
-          "duration_seconds": 1532,
-          "view_count": "13265",
-          "description": "Check out KiwiCo for engaging projects that inspire the next generation of crafters, scientists, and engineers! Go to http://kiwico.com/bernadette and use code BERNADETTE to get 50% off your first monthly crate\n\n⤠ HOW TO SUPPORT ⤟\n♥️ PATREON for exclusive behind-the-scenes content! https://www.patreon.com/bernadettebanner\n⚝ NEBULA to see these videos ad- and sponsorship-free, + Original content! http://www.nebula.tv/bernadettebanner\n🦵MERCH https://store.dftba.com/collections/bernadette-banner\n\n⤠",
-          "is_wildcard": false
-        }
-      ]
-    },
-    {
-      "name": "Slow Roads & Far Places",
-      "emoji": "🗾",
-      "tagline": "Pull up a window seat — the journey is the whole point.",
-      "items": [
+          "video_id": "f9dTn3rPatA",
+          "title": "Electric Composters: 6 Myths (Most Aren't Even Real Compost)",
+          "channel_id": "UC5eLPZi_RSh81523mrBzHNg",
+          "channel_title": "Gardening Experiments with Mind & Soil",
+          "published_at": "2026-08-01T13:00:23Z",
+          "url": "https://www.youtube.com/watch?v=f9dTn3rPatA",
+          "duration_seconds": 601,
+          "view_count": "36336",
+          "description": "Grab Your Reencle Composter & See What Giveaways Are Available! \n🇺🇸 USA Customers: https://reencle.co/\n🇨🇦 Canada Customers: Use the code MindSoilCAN15 to get 15% off!\nReencle Home Composter: https://reencle.co/\n\nEXPERIMENT VIDEOS\n💡 $30 vs $300 Grow Light: WATCH This Before Buying a Grow Light! https://youtu.be/_0EFGE9ZljY\n\n💡 I Tested Every Grow Light Height https://youtu.be/LGKlQ5iGbpY\n\n💡 6 Steps To Guarantee Thriving Seedlings https://youtu.be/X2nXwawGqXI \n\nPRODUCTS I USE & LOVE (try code minda",
+          "why_watch": "Electric composters are having a marketing moment, and this video cuts through it methodically: most of these machines produce a dried, heat-treated material that lacks the microbial life actual compost requires. The creator runs real experiments rather than relying on manufacturer claims, so the myth-busting is grounded rather than just contrarian."
+        },
         {
-          "source": "youtube_trending",
-          "video_id": "JiynxuDoY7o",
-          "title": "Driving Through Nagasaki's Volcanic Peninsula | Shimabara Scenic Drive 4K",
-          "channel_id": "UC12FUHVhwpC5lMYsMPMbmyg",
-          "channel_title": "Dashcam Roadshow",
-          "published_at": "2026-09-05T07:00:01Z",
-          "url": "https://www.youtube.com/watch?v=JiynxuDoY7o",
-          "duration_seconds": 6166,
-          "view_count": "4835",
-          "description": "Shimabara is located on the Shimabara Peninsula in Nagasaki Prefecture, western Kyushu, Japan, bounded by the Ariake Sea and dominated by the majestic Mount Unzen volcanic group.\n\nThis drive takes you from the historic Shimabara Castle via the winding Shimabara Mayuyama Road up to the Heisei Shinzan Nature Center to see Heisei Shinzan lava dome created by the powerful eruptions of the 1990s.\nThese eruptions caused a devastating pyroclastic flow in Shimabara City, tens of people died and thousand",
-          "is_wildcard": true
+          "source": "youtube",
+          "video_id": "anufC8cA2OY",
+          "title": "Segmented DAC - Digital to Analog Converter",
+          "channel_id": "UCFtCfZ4rtIZ7Hsq7ZNHoY1w",
+          "channel_title": "Computer&Electronics",
+          "published_at": "2025-04-15T09:31:51Z",
+          "url": "https://www.youtube.com/watch?v=anufC8cA2OY",
+          "duration_seconds": 501,
+          "view_count": "889",
+          "description": "In electronics, a digital-to-analog converter is a system that converts a digital signal into an analog signal. There are several DAC architectures; the suitability of a DAC for a particular application is determined by figures of merit including: resolution, maximum sampling frequency and others. In this video we see an example of a particular kind of DAC: the Segmented DAC, which allows us to save room cutting the number of resistors needed. \n\n555 iconic circuit : https://youtu.be/fOccVczstq0\n",
+          "why_watch": "A compact technical walkthrough of segmented DAC architecture, explaining how splitting a converter into coarse and fine sections reduces the number of matched components needed without sacrificing linearity. Useful if you're studying converter design or want a concrete example of how real-world hardware trades off precision against component count."
         }
       ]
     }
@@ -163,110 +130,251 @@
   "morning_soundtrack": [
     {
       "source": "music",
-      "source_name": "Pitchfork",
-      "title": "M83 Announces New Album I Wrote You a Letter",
-      "snippet": "Out September 25 via Anthony Gonzalez’s own Other Suns label",
-      "url": "https://pitchfork.com/story/m83-announces-new-album-i-wrote-you-a-letter/",
+      "source_name": "Stereogum",
+      "title": "Phoebe Bridgers Earns Acclaim For Primetime, Contributes New Song To End Credits",
+      "snippet": "Phoebe Bridgers has been busy. Last month, she shared her highly anticipated new album Lost Weekend and struggled to celebrate the release thanks to appendicitis . Now, she's making her acting debut in Lance Oppenheim's Primetime , which premiered Friday (Sept.",
+      "url": "https://stereogum.com/2510486/phoebe-bridgers-earns-acclaim-for-primetime-contributes-new-song-to-end-credits/news/",
       "genre": "",
-      "vibe_check": "The feeling of finding a handwritten note tucked inside a library book — nostalgic, cinematic, and quietly enormous.",
-      "cover_url": "https://media.pitchfork.com/photos/6a60d6209c3af51a33e26477/16:9/w_1280,c_limit/m83-new-album.jpg",
+      "vibe_check": "The kind of quietly devastating music you put on when you're recovering from something, wrapped in a blanket you didn't choose to leave.",
+      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/09/phoebe.jpg?w=564",
       "embed_url": null
+    },
+    {
+      "source": "music",
+      "source_name": "Stereogum",
+      "title": "Mike Watt Announces New Album With Thresher, New Supergroup With Mike Baggetta & John Herndon",
+      "snippet": "Earlier this year, Mike Watt joined forces with J Mascis to cover each other's bands on a split . The Minutemen cofounder has stayed active since then; most recently, he announced a collaborative album with Ontario experimental noise rock band Thresher. It's called Beekeeper , and it arrives next week.",
+      "url": "https://stereogum.com/2510428/mike-watt-announces-new-album-with-thresher-new-supergroup-with-mike-baggetta-john-herndon/news/",
+      "genre": "",
+      "vibe_check": "The sound of rusted machinery coming back to life in an abandoned warehouse, somehow thrilling rather than frightening.",
+      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/09/a3313907094_10.jpg?w=564",
+      "embed_url": "https://bigcirclemusic.bandcamp.com/album/big-circle-ep"
+    },
+    {
+      "source": "music",
+      "source_name": "Stereogum",
+      "title": "Steady Holiday Announces New Album It’s Your Trip: Hear “New Generation”",
+      "snippet": "It's been a few years since Steady Holiday, the one-woman project from LA musician Dre Babinski, released the album Newfound Oxygen . Babinski followed that LP with last year's one-off single \" Seasonal Optimism .\" Later this fall, she'll come out with It's Your Trip , a new album inspired by brain-altering experience of becoming a parent.",
+      "url": "https://stereogum.com/2510389/steady-holiday-announces-new-album-its-your-trip-hear-new-generation/music/",
+      "genre": "",
+      "vibe_check": "The bittersweet glow of watching someone sleep and realizing your whole world has quietly rearranged itself around them.",
+      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/09/Steady-Holiday-Its-Your-Trip.jpg?w=564",
+      "embed_url": "https://www.youtube.com/embed/JHbnUcWxktA"
+    },
+    {
+      "source": "music",
+      "source_name": "Pitchfork",
+      "title": "9 Albums You Should Listen to Now: Chat Pile, Melissa Auf der Maur, and More",
+      "snippet": "Stream new releases from Chat Pile, Melissa Auf der Maur, and Beyoncé",
+      "url": "https://pitchfork.com/story/9-new-albums-you-should-listen-to-now-chat-pile-melissa-auf-der-maur-and-more/",
+      "genre": "",
+      "vibe_check": "A deliberate Saturday afternoon spent chasing down sounds that scrape, shimmer, and strut in equal measure.",
+      "cover_url": "https://media.pitchfork.com/photos/6a95f1cc9b5978355a5abcdd/master/pass/170826_ChatPile_PressShots_London_MASTER_12.jpg",
+      "embed_url": "https://chatpile.bandcamp.com/album/who-loves-the-sun"
+    },
+    {
+      "source": "music",
+      "source_name": "Pitchfork",
+      "title": "Yeah Yeah Yeahs Release New Live Album and Short Film",
+      "snippet": "Hidden in Pieces Live at the Royal Albert Hall is out now",
+      "url": "https://pitchfork.com/story/yeah-yeah-yeahs-release-new-live-album-and-short-film/",
+      "genre": "",
+      "vibe_check": "The electricity of a night you swore you'd remember forever, finally preserved in amber.",
+      "cover_url": "https://media.pitchfork.com/photos/6a96d597573253431d5142e9/master/pass/Yeah%20Yeah%20Yeahs%20live%20album.jpeg",
+      "embed_url": null
+    },
+    {
+      "source": "music",
+      "source_name": "Pitchfork",
+      "title": "Kali Malone Readies New Album Burning Song",
+      "snippet": "Stephen O’Malley and Lucy Railton join Malone for the LP, led by “Heavy With Fruit”",
+      "url": "https://pitchfork.com/story/kali-malone-readies-new-album-burning-song/",
+      "genre": "",
+      "vibe_check": "Slow-burning and cavernous, like standing inside a cathedral that's slowly exhaling.",
+      "cover_url": "https://media.pitchfork.com/photos/6a96ca9159fd204d41fb1975/master/pass/Kali-Malone-new-album.jpg",
+      "embed_url": null
+    },
+    {
+      "source": "music",
+      "source_name": "Nextbop",
+      "title": "Stream Mark Guiliana’s New Album MARK",
+      "snippet": "",
+      "url": "https://nextbop.com/blog/mark-guilianas-album-mark",
+      "genre": "",
+      "vibe_check": "Late-night headphone music that pulses with the quiet confidence of someone who knows exactly who they are.",
+      "cover_url": "https://i0.wp.com/nextbop.com/wp-content/uploads/2024/07/mark-guiliana-mark-album-2024.jpg",
+      "embed_url": "https://www.youtube.com/embed/ERjdnjrlCpA"
+    },
+    {
+      "source": "music",
+      "source_name": "JazzTimes",
+      "title": "Saxophonist-Composer Andy Sheppard Talks New ECM Release, Long History with Carla Bley and Steve Swallow",
+      "snippet": "D espite having played in the big bands of Gil Evans, George Russell and most famously Carla Bley, soprano and tenor saxophonist-composer Andy Sheppard is …",
+      "url": "https://www.jazztimes.com/features/profiles/saxophonist-composer-andy-sheppard-talks-new-ecm-release-long-history-with-carla-bley-and-steve-swallow/",
+      "genre": "",
+      "vibe_check": "The warm, unhurried pleasure of a decades-long musical conversation finally committed to tape.",
+      "cover_url": "https://www.jazztimes.com/wp-content/uploads/2026/09/2856_press-photo-1_Andy-Sheppard.jpg",
+      "embed_url": "https://www.youtube.com/embed/hgmVPIRY81M"
     }
   ],
   "global_silver_linings": [
     {
       "source": "good_news",
       "source_name": "Good News Network",
-      "title": "Your Weekly Horoscope – ‘Free Will Astrology’ by Rob Brezsny",
-      "url": "https://www.goodnewsnetwork.org/horoscope-from-rob-brezsnys-free-will-astrology-9-5-2026/",
-      "snippet": "Our partner Rob Brezsny, whose latest book is Astrology Is Real: Revelations from My Life as an Oracle, provides his weekly wisdom to enlighten our thinking and motivate our mood. Rob’s Free Will Astrology, is a syndicated weekly column appearing in over a hundred publications. He is also the author of Pronoia Is the Antidote for Paranoia: […] The post Your Weekly Horoscope – ‘Free Will Astrology’ by Rob Brezsny appeared first on Good News Network .",
-      "cover_url": "https://www.goodnewsnetwork.org/wp-content/uploads/2020/10/Freewill-Astrology-horoscope-logo.jpg",
-      "reason": "Sometimes the most hopeful thing we can do is pause, reflect, and consider that we have more agency in our lives than we think — a quiet reminder that each week brings a fresh chance to choose differently."
+      "title": "Good News in History, September 6",
+      "url": "https://www.goodnewsnetwork.org/events060906/",
+      "snippet": "31 years ago today, Cal Ripken Jr. broke Lou Gehrig’s baseball record when he played in his 2,131st consecutive game. Once considered a near-impossible feat, “the streak,” which continued for 2,632 games, earned Cal the nickname, Iron Man. The televised game, between the Orioles and the California Angels, still ranks as one of the most […]",
+      "cover_url": "https://www.goodnewsnetwork.org/wp-content/uploads/2014/09/Cal_Ripken_Jr._in_1993-CC-Rdikeman.jpg",
+      "reason": "A quiet reminder that history is threaded with breakthroughs, acts of courage, and turning points worth remembering — proof that humans have navigated hard times before and come out wiser. Pausing to honour those moments keeps perspective alive."
+    },
+    {
+      "source": "good_news",
+      "source_name": "Upworthy",
+      "title": "Neuroscientist debunks the idea that living in the past is bad. It’s great for mental health.",
+      "url": "https://www.upworthy.com/remember-the-good-times-ex1/",
+      "snippet": "“It’s really a way to celebrate their lives with people.”",
+      "cover_url": "https://www.upworthy.com/wp-content/uploads/sites/2/2025/09/origin_356e28.png",
+      "reason": "Science is gently challenging the guilt we feel about nostalgia, finding that revisiting meaningful memories can actually anchor us and boost wellbeing. It's a warm vindication for anyone who finds comfort in the past."
+    },
+    {
+      "source": "good_news",
+      "source_name": "The Optimist Daily",
+      "title": "Statins reduce heart attack risk in healthy adults over 70, decade-long trial confirms",
+      "url": "https://www.optimistdaily.com/2026/09/statins-reduce-heart-attack-risk-in-healthy-adults-over-70-decade-long-trial-confirms/",
+      "snippet": "BY THE OPTIMIST DAILY EDITORIAL TEAM A decade-long clinical trial of nearly 10,000 adults aged 70 and over has found that daily statins reduce the risk of a first major cardiac event by 30 percent, with no significant increase in serious side effects. The study was published in the New England Journal of Medicine and […] The post Statins reduce heart attack risk in healthy adults over 70, decade-long trial confirms first appeared on The Optimist Daily: Making Solutions the News .",
+      "cover_url": "https://www.optimistdaily.com/wp-content/uploads/Depositphotos_227019636_L.jpg",
+      "reason": "A decade-long trial gives older adults and their families real, evidence-backed reassurance that heart attack risk can be meaningfully reduced well into later life. That kind of rigorous, patient science translates directly into longer, healthier years for millions of people."
     }
   ],
   "discovery_articles": [],
   "featured_read": {
     "source": "reads",
     "source_name": "Nautilus",
-    "title": "Your Boss Is Watching You",
-    "url": "https://nautil.us/your-boss-is-watching-you-1284806/",
-    "snippet": "Assisted by AI, companies have more options than ever to track employees, minute by minute, keystroke by keystroke. Does this have the desired effect? The post Your Boss Is Watching You appeared first on Nautilus .",
-    "cover_url": "https://lede-admin.nautil.us/wp-content/uploads/sites/70/2026/09/AdobeStock_1096174570.jpeg"
+    "title": "Chimps Have Accents, Too",
+    "url": "https://nautil.us/chimps-have-accents-too-1284795/",
+    "snippet": "And they could shed light on our own language acquisition",
+    "cover_url": "https://lede-admin.nautil.us/wp-content/uploads/sites/70/2026/09/shutterstock_509385718.jpg",
+    "blurb": "Chimpanzees in different communities pronounce the same calls in distinctly different ways — and what that accent gap reveals about how human language may have bootstrapped itself into existence is quietly astonishing. A short read that will change how you listen the next time you're in a crowd."
   },
   "reading_room": [
     {
       "source": "reads",
       "source_name": "Literary Hub",
-      "title": "Lit Hub Weekly: August 31 – September 4, 2026",
-      "url": "https://lithub.com/lit-hub-weekly-august-31-september-4-2026/",
-      "snippet": "Marlon James tells Eric Olson about (finally!) writing a novel that draws from his life. | Lit Hub In Conversation “Terror wasn’t the only weapon the Nazis used against the American prisoners. Sometimes, they used propagandistic persuasion as well.” On",
-      "cover_url": "https://s26162.pcdn.co/wp-content/uploads/2026/09/harrietewilson.jpg"
+      "title": "How to Get Over the Hump of Writing Sex",
+      "url": "https://lithub.com/how-to-get-over-the-hump-of-writing-sex/",
+      "snippet": "This first appeared in Lit Hub’s Craft of Writing newsletter—sign up here. Only trouble is interesting, and what causes more trouble for us humans than our love lives? With love, we’re leaping into the unknown, and it’s thrilling, surprising, scary, overwhelming (and",
+      "cover_url": "https://s26162.pcdn.co/wp-content/uploads/2026/09/priscilla-du-preez-R2uNyGmeM4-unsplash-1.jpg",
+      "blurb": "Writing a sex scene terrifies most fiction writers not because the subject is too hot, but because it demands the kind of emotional nakedness the rest of the prose lets you dodge — this essay argues that's exactly the point. If you've ever flinched away from a blank page, this is the craft talk you didn't know you needed."
     },
     {
       "source": "reads",
-      "source_name": "3 Quarks Daily",
-      "title": "The 17 minutes that changed America",
-      "url": "https://3quarksdaily.com/3quarksdaily/2026/09/the-17-minutes-that-changed-america.html",
-      "snippet": "Garrett M. Graff at National Geographic: On September 11, 2001, 17 minutes was the length of time from when American Airlines Flight 11 crashed into the North Tower of the World Trade Center, at 8:46 a.m., to when United Airlines Flight 175 entered the right-hand side of millions of TV screens, at 9:03 a.m., and plowed into…",
-      "cover_url": ""
+      "source_name": "The Atlantic",
+      "title": "Why I Want More AI at Dartmouth",
+      "url": "https://www.theatlantic.com/ideas/2026/09/universities-prohibiting-ai-classroom/688509/?utm_source=feed",
+      "snippet": "Universities that hide from the technology will merely secure their irrelevance.",
+      "cover_url": "https://cdn.theatlantic.com/thumbor/2RJCyVZ_tw2syS0ic0O32tSt5c8=/0x317:4023x2412/1200x625/media/img/mt/2026/09/ai_classroom5/original.jpg",
+      "blurb": "A Dartmouth professor makes the unfashionable case that refusing AI in the classroom is itself a pedagogical choice — and not a neutral one — by asking what universities are actually for in the first place. Whether you agree or not, the argument is too precisely put to dismiss."
     },
     {
       "source": "reads",
-      "source_name": "Nautilus",
-      "title": "Can Nature Benefit You If You’re Already Well?",
-      "url": "https://nautil.us/can-nature-benefit-you-if-youre-already-well-1284801/",
-      "snippet": "A conversation with a neuroscientist about how nature can fortify the strong and support resilience The post Can Nature Benefit You If You’re Already Well? appeared first on Nautilus .",
-      "cover_url": "https://lede-admin.nautil.us/wp-content/uploads/sites/70/2026/09/AdobeStock_132250017.jpeg"
+      "source_name": "The Atlantic",
+      "title": "What Tech Titans Don’t Understand About Sci-Fi",
+      "url": "https://www.theatlantic.com/newsletters/2026/09/the-books-briefing-tech-titans-sci-fi-asimov-lepore/688525/?utm_source=feed",
+      "snippet": "The genre frequently exposes the rot within supposedly perfect futures.",
+      "cover_url": "https://cdn.theatlantic.com/thumbor/dd7xS75-V5URMcVcrHfplzwRrUU=/0x140:6564x3559/1200x625/media/img/mt/2026/09/2026_09_04_The_Books_Briefing_Sci_Fi_Utopia_and_UBI/original.jpg",
+      "blurb": "The tech billionaires who name-drop Asimov and Gibson tend to have missed the point: science fiction's most enduring tradition is dismantling utopias from the inside, not blueprinting them. This essay traces the gap between what the genre actually warns and what its loudest fans choose to hear."
     },
     {
       "source": "reads",
-      "source_name": "Literary Hub",
-      "title": "Is Time Even Real? Does It Even Flow?",
-      "url": "https://lithub.com/is-time-even-real-does-it-even-flow/",
-      "snippet": "You might consider time to be such a fundamental feature of our existence that there really is nothing profound or meaningful that we can say about it. Maybe time, like space, simply is. Many have even argued time out of",
-      "cover_url": "https://s26162.pcdn.co/wp-content/uploads/2026/08/right-sidebar-banner-images-2026-08-28T153022.939.png"
+      "source_name": "Asterisk",
+      "title": "Boarding China’s Last Bus",
+      "url": "https://asteriskmag.com/issues/15/chinas-last-bus",
+      "snippet": "China’s AI enthusiasm seems real. But for a population that lived through the mass layoffs of the 1990s, optimism and fear can look identical from the outside.",
+      "cover_url": "https://asteriskmag.com/media/pages/issues/15/chinas-last-bus/dc6a9045aa-1779212603/chinas-last-bus-zilan-qian-1600x900-crop-sharpen50.png",
+      "blurb": "On the ground in China, AI optimism and economic dread have fused into something almost indistinguishable — particularly for a generation that already watched the state remake their working lives once before. A reported essay that earns its ambivalence."
     },
     {
       "source": "reads",
-      "source_name": "3 Quarks Daily",
-      "title": "Gloria Steinem Brought Women Together to Change the World",
-      "url": "https://3quarksdaily.com/3quarksdaily/2026/09/gloria-steinem-brought-women-together-to-change-the-world.html",
-      "snippet": "Meg Wolitzer in Time Magazine: In the beginning, there was the famous story about the young journalist Gloria Steinem, going undercover in 1963 as a Playboy Bunny, all décolletage and rabbit ears, in order to expose a culture of degradation and misogyny. The Bunny episode is certainly the Steinem anecdote most often cited, but it’s such an early story…",
-      "cover_url": ""
+      "source_name": "Damn Interesting",
+      "title": "A Possible Future",
+      "url": "https://www.damninteresting.com/a-possible-future/",
+      "snippet": "A Possible Future : Current donations: $20,101 of $40,000 goal Alan Bellows here, founder of Damn Interesting. For the better part of twenty years, I kept this project afloat by working part-time engineering jobs to pay the bills, and spending the other halves of my work days researching, writing, editing, and podcasting. But in recent years, the landscape has […]",
+      "cover_url": "https://damn-8791.kxcdn.com/wp-content/uploads/2026/06/cover.jpg",
+      "blurb": "The founder of one of the internet's most quietly beloved long-form curiosity sites steps out from behind the curtain to explain, with characteristic precision, what it actually costs to keep a place like this alive. A rare and honest look at what sustains independent writing when the algorithms have moved on."
     }
   ],
   "garden_note": {
-    "note": "The evenings are beginning to carry that unmistakable edge of September — cool enough for a cardigan on the terrace, still warm enough to linger with a glass of something amber. In Zürich's gardens right now, the dahlias are giving their most generous flush before the first frost puts an end to the party.",
+    "note": "September in Zürich arrives with that particular golden-cool light that makes the garden look almost too beautiful to touch — the Dahlias are still holding court while the first fallen leaves gather quietly beneath the apple trees. Step out early this morning; the air carries that unmistakable note of dew on ripening fruit that only comes for a few weeks each year.",
     "in_season": [
       "Dahlias in full late-summer bloom",
-      "Apples and early pears ripening on the branch",
-      "Sowing lamb's lettuce for autumn harvest",
-      "Cutting back faded perennials and composting the trimmings"
+      "Apples and early pears ready to harvest",
+      "Sow lamb's lettuce (Feldsalat) for autumn crops",
+      "Cut back spent perennials and collect seed heads"
     ],
-    "sky_tonight": "The Last Quarter moon rises well after midnight, so the early dark hours belong to the stars — look south for the Square of Pegasus climbing steadily into view.",
-    "sun_times": "Dusk settles gently over Zürich at 20:30 tonight, with the sun having slipped away at 20:00.",
-    "moon_label": "Last quarter",
-    "illum_pct": 37,
-    "sun_range": "06:48–20:00"
+    "sky_tonight": "A slim waning crescent moon rises in the small hours before dawn — look east around 04:00 for its delicate sliver low on the horizon.",
+    "sun_times": "First light creeps in at 06:20 this morning, with sunrise following at 06:49 — a gentle reminder that the days are shortening steadily now.",
+    "moon_label": "Waning crescent",
+    "illum_pct": 31,
+    "sun_range": "06:49–19:58"
   },
   "puzzle": {
-    "kind": "anagram",
-    "label": "Fern's Morning Anagram",
-    "prompt": "Unscramble DELFUTI — clue: the air holds a certain quality come September, when the light goes golden and nothing feels quite urgent.",
-    "answer": "DULCET — meaning sweet and soothing, like the soft sounds and amber light of early autumn evenings.",
-    "hint": "Think of a word that describes a gentle, melodious tone. The D and the T stay close to where you might expect them."
+    "kind": "riddle",
+    "label": "Fern's Morning Riddle",
+    "prompt": "Mr. and Mrs. Mustard have six daughters and each daughter has one brother. How many people are in the Mustard family?",
+    "answer": "There are nine Mustards in the family. Since each daughter shares the same brother, there are six girls, one boy, and Mr. and Mrs. Mustard",
+    "hint": "",
+    "source": "riddles.com",
+    "source_id": "Riddle-377"
   },
   "previous_puzzle": {
-    "label": "Fern's Morning Riddle",
-    "prompt": "Green all summer long\nOne cold night and I confess\nEvery secret flame",
-    "answer": "A turning leaf (autumn foliage)"
+    "label": "Fern's Morning Anagram",
+    "prompt": "Unscramble DELFUTI — clue: the air holds a certain quality come September, when the light goes golden and nothing feels quite urgent.",
+    "answer": "DULCET — meaning sweet and soothing, like the soft sounds and amber light of early autumn evenings."
   },
   "larder": {
-    "news": [],
-    "recipe": {}
+    "news": [
+      {
+        "source": "food",
+        "source_name": "The Kitchn",
+        "title": "For the Crispiest Breaded Chicken, I Skip the 3-Step Breading Method",
+        "url": "https://www.thekitchn.com/mayo-for-crispy-chicken-cutlets-review-23841931?utm_source=RSS&utm_medium=feed&utm_campaign=Category%2FChannel%3A+main",
+        "snippet": "While I have never tried my hand at cooking traditional Southern fried chicken, I used to think breading and frying chicken in any form was intimidating. That hot oil and multi-step breading process just seemed like something I needed to leave to the professionals. But as I’ve gotten more comfortable in the kitchen, I’ve learned to love casually frying up chicken cutlets when I want a break from my usual grilled chicken.",
+        "cover_url": "",
+        "blurb": "A genuinely useful tip for anyone who's ever stared nervously at a pot of hot oil — this shortcut to shatteringly crisp breaded chicken is worth bookmarking immediately."
+      },
+      {
+        "source": "food",
+        "source_name": "Eater",
+        "title": "Steal My Food Itinerary: A Long Weekend in Upstate New York",
+        "url": "https://www.eater.com/dining-out/984656/steal-my-food-itinerary-upstate-new-york",
+        "snippet": "I love New York City in the summer, especially this past one, but I grew up in the shadow of the Rocky Mountains. I’m in my late 20s, I rock climb, and I live in Brooklyn, so of course I have an upstate New York itinerary for you. My partner’s mom’s partner (yes) has a […]",
+        "cover_url": "https://platform.eater.com/wp-content/uploads/sites/2/2026/09/Panzanella.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
+        "blurb": "A well-worn food itinerary from someone who clearly eats with intention — ideal for anyone plotting a leafy, long-weekend escape from the city."
+      },
+      {
+        "source": "food",
+        "source_name": "The Guardian",
+        "title": "Kintsu, Colchester, Essex: ‘Style as well as substance’ – restaurant review",
+        "url": "https://www.theguardian.com/food/2026/sep/06/kintsu-colchester-essex-restaurant-review-grace-dent",
+        "snippet": "Thoughtful, clever cooking that errs on the side of tasty Amid all the bunting and hoopla of the platinum jubilee back in 2022, you may well have missed that Colchester, Britain’s oldest recorded settlement, got an upgrade from town to city status. And, as we all know, no true city is complete without at least one fancy restaurant that serves the likes of duck liver mousse on lattice tuiles. Well, in Colchester, Kintsu takes that slot.",
+        "cover_url": "https://i.guim.co.uk/img/media/023960d27c200cb4527f2f4a5fc1b63aa737c58f/877_0_5417_4333/master/5417.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=e6585d083af13abfdae7e7448d48a18a",
+        "blurb": "Thoughtful cooking with real substance in an unexpected postcode — this review is a quiet reminder that destination dining doesn't always require a passport."
+      }
+    ],
+    "recipe": {
+      "source": "recipe",
+      "source_name": "101 Cookbooks",
+      "title": "Chili Crisp Corn",
+      "url": "https://www.101cookbooks.com/chili-crisp-corn/",
+      "snippet": "If you have a jar of chili crisp and some fresh ears of corn you’re well on your way to this summer-maxxing salad. Sweet corn, plenty of herbs, creamy dollops of goat cheese, and toasted pepitas come together in a spicy, crunchy way that disappears fast.",
+      "is_recipe": true,
+      "cover_url": "https://images.101cookbooks.com/CHILI-CRISP-CORN-RECIPE-h.jpg?w=680",
+      "blurb": "Peak summer in a bowl: this chili crisp corn salad asks very little of you and rewards every bit of that ease with sweet, herby, creamy, just-the-right-amount-of-heat perfection."
+    },
+    "seasonal_note": "Zürich's Tuesday and Saturday markets at Bürkliplatz are piling up with Zwetschgen right now — those dusky violet plums that locals turn into Zwetschgenwähe, a custardy open tart that makes the whole kitchen smell like a quiet orchard. Pick up a kilo this week before the first cold snap softens them past their best."
   },
   "fern_data": {
-    "greeting": "Somewhere between dusk and dark, the air turns thin and carries that specific early-autumn chill — the kind that makes you want something worth your full attention. Tonight that's Cepheid stars with a secret rhythm, a convent of undead seamstresses, and the volcanic coastline of Shimabara at four thousand pixels wide.",
-    "top_pick_title": "Strange Orbits & Slow Roads"
+    "greeting": "Every mammal alive — shrew, elephant, you — gets almost exactly one billion heartbeats, then stops. That biological contract sits at the center of today's edition, next to the physicists quietly dismantling what relativity is actually about.",
+    "top_pick_title": "A Billion Beats & Broken Rules"
   }
 }
