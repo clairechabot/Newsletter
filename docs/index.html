@@ -74,14 +74,6 @@
   .fern p.lead::first-letter{font-family:var(--display);font-weight:600;font-size:3.9em;line-height:0.8;float:left;color:var(--brass-deep);margin:0.04em 0.11em 0 0;}
   .fern .sign{font-family:var(--display);font-style:italic;font-size:1.15em;color:var(--forest);}
 
-  /* ---- almanac ---- */
-  .almanac{max-width:740px;margin:0 auto;padding:26px 40px 4px;}
-  .almanac .eyebrow{margin-bottom:12px;}
-  .almanac p{font-family:var(--serif);font-size:18px;line-height:1.62;color:var(--ink-soft);}
-  .almanac-sky{font-family:var(--serif);font-style:italic;font-size:16px;line-height:1.55;color:var(--ink-mute);margin-top:10px;}
-  .almanac-foot{display:flex;flex-wrap:wrap;align-items:center;gap:12px 22px;margin-top:18px;}
-  .almanac-meta{display:flex;flex-wrap:wrap;align-items:center;gap:8px 12px;font-size:11px;letter-spacing:0.15em;text-transform:uppercase;color:var(--ink-mute);}
-  .almanac-meta .dot{width:4px;height:4px;border-radius:50%;background:var(--brass);}
   .history-link{display:inline-block;clear:both;margin-top:18px;font-family:var(--sans);font-size:11px;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:var(--clay-deep);}
 
   /* ---- Fern's daily puzzle ---- */
@@ -210,7 +202,6 @@
   @media (max-width:600px){
     .wrap,.tabbar-inner{padding-left:22px;padding-right:22px;}
     .cover{padding:48px 22px 40px;} .fern{padding:0 22px;gap:16px;} .fern p{font-size:18px;}
-    .almanac{padding:20px 22px 4px;} .almanac p{font-size:16.5px;}
     .panel{padding-top:40px;} .grid{gap:18px;}
     .grid.music .card{width:160px;}
     .grid.watch .card{width:280px;}
@@ -256,11 +247,11 @@
   <div class="rule-flr"><span class="flr" aria-hidden="true"><svg viewBox="0 0 200 20" width="190" height="19"><g fill="none" stroke="currentColor" stroke-width="1.1" stroke-linecap="round"><path d="M100 10 C84 10 78 3.5 64 3.5 C52 3.5 48 10 38 10"/><path d="M100 10 C116 10 122 3.5 136 3.5 C148 3.5 152 10 162 10"/><path d="M38 10 H10"/><path d="M162 10 H190"/></g><g fill="currentColor"><path d="M100 4 l4.5 6 l-4.5 6 l-4.5 -6 z"/><circle cx="10" cy="10" r="1.6"/><circle cx="190" cy="10" r="1.6"/><circle cx="64" cy="3.5" r="1.7"/><circle cx="136" cy="3.5" r="1.7"/></g></svg></span></div>
 
   <div class="wrap hero" id="hero-wrap" style="display:none;">
-    <a class="hero-grid" id="hero" href="#"></a>
+    <a class="hero-grid" id="hero" href="#" target="_blank" rel="noopener"></a>
   </div>
 
   <div class="wrap" id="read-wrap" style="display:none;">
-    <a class="feature-read" id="read" href="#" target="_blank"></a>
+    <a class="feature-read" id="read" href="#" target="_blank" rel="noopener"></a>
   </div>
 
   <nav class="tabbar" id="tabbar">
@@ -329,9 +320,27 @@ function safeUrl(u){try{const p=new URL(u,location.href);return ['http:','https:
 function ytThumb(id){return 'https://img.youtube.com/vi/'+id+'/mqdefault.jpg';}
 function ytWatch(id){return 'https://www.youtube.com/watch?v='+id;}
 
+// Swap a broken cover for the tinted placeholder. Publisher covers rot, and the
+// placeholder was only ever reachable when the URL was EMPTY — a present-but-404
+// URL showed the browser's broken-image glyph inside a gilt-bordered card.
+// Deliberately a named function called from onerror="imgFail(this)": the last
+// attempt at this put an escaped quote inside a JS string inside this Python
+// template, which broke the whole inline script and blanked every edition.
+function imgFail(img){
+  var box = img.parentNode;
+  if(!box) return;
+  var tone = img.getAttribute('data-tone') || '0';
+  var label = img.getAttribute('data-label') || '';
+  var play = box.querySelector('.play');
+  box.className = 'cv img t' + tone;
+  box.setAttribute('data-label', label);
+  box.innerHTML = play ? '<span class="play"></span>' : '';
+}
+
 function cover(url,tone,label,play){
   const p = play?'<span class="play"></span>':'';
-  if(url) return '<div class="cv photo"><img src="'+esc(safeUrl(url))+'" alt="" loading="lazy">'+p+'</div>';
+  if(url) return '<div class="cv photo"><img src="'+esc(safeUrl(url))+'" alt="" loading="lazy"'
+    +' data-tone="'+esc(String(tone))+'" data-label="'+esc(label)+'" onerror="imgFail(this)">'+p+'</div>';
   return '<div class="cv img t'+tone+'" data-label="'+label+'">'+p+'</div>';
 }
 
@@ -339,12 +348,23 @@ function cover(url,tone,label,play){
 (function(){
   const bits=[];
   bits.push(DATA.is_am?'Gathered at dawn':'Gathered at dusk');
-  if(DATA.music.length) bits.push(DATA.music.length+' tracks');
-  if(DATA.videos.length) bits.push(DATA.videos.length+' films');
+  // '1 tracks' / '1 films' — build_grove already gets this right.
+  if(DATA.music.length) bits.push(DATA.music.length+(DATA.music.length===1?' track':' tracks'));
+  if(DATA.videos.length) bits.push(DATA.videos.length+(DATA.videos.length===1?' film':' films'));
   const extra=DATA.good_news.length+DATA.discovery.length;
   if(extra) bits.push(extra+' stories &amp; finds');
   $('#meta').innerHTML = bits.map((b,i)=>(i?'<span class="dot"></span>':'')+'<span>'+b+'</span>').join('');
-  if(DATA.greeting){ $('#greeting').textContent = DATA.greeting; $('#fern').style.display=''; }
+  if(DATA.greeting){
+    // The template already prints "Yours, Fern", so a greeting that signs itself
+    // off read "…take it slowly, Fern Yours, Fern" on the web while the email
+    // (which strips it) read correctly.
+    var g = String(DATA.greeting).trim();
+    ['Yours, Fern','— Fern','- Fern','Fern'].some(function(t){
+      if(g.slice(-t.length) === t){ g = g.slice(0, -t.length).replace(/[\s,—-]+$/,''); return true; }
+      return false;
+    });
+    if(g){ $('#greeting').textContent = g; $('#fern').style.display=''; }
+  }
   // Morning-only, live edition only: reveal the self-updating "This day in history"
   // link. Hidden on archived /editions/ pages so old editions don't link to *today*.
   if(DATA.is_am && !/\/editions\//.test(location.pathname)) $('#history-link').style.display='';
@@ -377,7 +397,9 @@ function cover(url,tone,label,play){
 (function(){
   const v = DATA.videos[0]; if(!v) return;
   const kick = "Today's opening" + (v.channel?' &nbsp;&middot;&nbsp; '+esc(v.channel):'');
-  $('#hero').href = v.video_id?esc(safeUrl(ytWatch(v.video_id))):'#';
+  // A property assignment, not markup: esc() here turns & into &amp; and the
+  // browser does not decode it back, corrupting any URL with a query string.
+  $('#hero').href = v.video_id?safeUrl(ytWatch(v.video_id)):'#';
   $('#hero').innerHTML =
     '<div class="cell">'+(v.video_id
         ? '<div class="photo" style="height:100%"><img src="'+esc(safeUrl(ytThumb(v.video_id)))+'" alt=""><span class="play"></span></div>'
@@ -390,7 +412,7 @@ function cover(url,tone,label,play){
 // One Good Read = a single featured essay
 (function(){
   const r = DATA.featured_read; if(!r || !r.title) return;
-  $('#read').href = esc(safeUrl(r.url));
+  $('#read').href = safeUrl(r.url);   // property, not markup — no esc()
   $('#read').innerHTML =
     '<div class="cell read-cover">'+(r.cover
         ? '<div class="photo" style="height:100%"><img src="'+esc(safeUrl(r.cover))+'" alt="" loading="lazy"></div>'
@@ -432,28 +454,28 @@ function renderGenres(){
 function renderMusic(){
   const items=activeGenre?DATA.music.filter(m=>m.genre===activeGenre):DATA.music;
   $('#music-grid').innerHTML=items.length?items.map((m,i)=>
-    '<a class="card music" href="'+esc(safeUrl(m.url))+'" target="_blank">'+cover(m.cover,i%4,'Album cover',false)
+    '<a class="card music" href="'+esc(safeUrl(m.url))+'" target="_blank" rel="noopener">'+cover(m.cover,i%4,'Album cover',false)
     +'<div class="meta-line"><span>'+esc(m.source||'Music')+'</span>'+(m.genre?'<span class="sep">&middot;</span><span>'+esc(m.genre)+'</span>':'')+'</div>'
     +'<h4>'+esc(m.title)+'</h4><div class="note">'+esc(m.note)+'</div><span class="go">Listen '+ARR+'</span></a>').join('')
     :'<div class="empty">No tracks in this edition.</div>';
 }
 $('#watch-grid').innerHTML=DATA.videos.length?DATA.videos.map((v,i)=>
-  '<a class="card watch" href="'+(v.video_id?esc(safeUrl(ytWatch(v.video_id))):'#')+'" target="_blank">'+cover(v.video_id?ytThumb(v.video_id):'',i%4,'Video still',true)
+  '<a class="card watch" href="'+(v.video_id?esc(safeUrl(ytWatch(v.video_id))):'#')+'" target="_blank" rel="noopener">'+cover(v.video_id?ytThumb(v.video_id):'',i%4,'Video still',true)
   +'<div class="meta-line"><span>'+esc(v.channel||'Video')+'</span></div>'
   +'<h4>'+esc(v.title)+'</h4><div class="note">'+esc(v.note)+'</div><span class="go">Watch '+ARR+'</span></a>').join('')
   :'<div class="empty">No films in this edition.</div>';
 $('#good_news-grid').innerHTML=DATA.good_news.length?DATA.good_news.map((g,i)=>
-  '<a class="card read" href="'+esc(safeUrl(g.url))+'" target="_blank">'+cover(g.cover,i%4,'Feature image',false)
+  '<a class="card read" href="'+esc(safeUrl(g.url))+'" target="_blank" rel="noopener">'+cover(g.cover,i%4,'Feature image',false)
   +'<div class="meta-line"><span>'+esc(g.source||'Good News')+'</span></div>'
   +'<h4>'+esc(g.title)+'</h4><div class="note">'+esc(g.note)+'</div><span class="go">Read the story '+ARR+'</span></a>').join('')
   :'<div class="empty">Nothing here in this edition.</div>';
 $('#discovery-grid').innerHTML=DATA.discovery.length?DATA.discovery.map((d,i)=>
-  '<a class="card read" href="'+esc(safeUrl(d.url))+'" target="_blank">'+cover(d.cover,i%4,'Feature image',false)
+  '<a class="card read" href="'+esc(safeUrl(d.url))+'" target="_blank" rel="noopener">'+cover(d.cover,i%4,'Feature image',false)
   +'<div class="meta-line">'+(d.cat?'<span class="badge">'+esc(d.cat)+'</span>':'')+'<span>'+esc(d.source||'')+'</span></div>'
   +'<h4>'+esc(d.title)+'</h4><div class="note">'+esc(d.note)+'</div><span class="go">Read the story '+ARR+'</span></a>').join('')
   :'<div class="empty">Nothing here in this edition.</div>';
 $('#reads-grid').innerHTML=(DATA.reads&&DATA.reads.length)?DATA.reads.map((r,i)=>
-  '<a class="card read" href="'+esc(safeUrl(r.url))+'" target="_blank">'+cover(r.cover,i%4,'Essay image',false)
+  '<a class="card read" href="'+esc(safeUrl(r.url))+'" target="_blank" rel="noopener">'+cover(r.cover,i%4,'Essay image',false)
   +'<div class="meta-line"><span>'+esc(r.source||'Essay')+'</span></div>'
   +'<h4>'+esc(r.title)+'</h4><div class="note">'+esc(r.note)+'</div><span class="go">Read the essay '+ARR+'</span></a>').join('')
   :'<div class="empty">Nothing here in this edition.</div>';
@@ -466,7 +488,7 @@ $('#reads-grid').innerHTML=(DATA.reads&&DATA.reads.length)?DATA.reads.map((r,i)=
   (L.news||[]).forEach(n=>items.push(n));
   if(!items.length) return;
   $('#larder-grid').innerHTML=items.map((it,i)=>
-    '<a class="card read" href="'+esc(safeUrl(it.url))+'" target="_blank">'+cover(it.cover,i%4,'Food image',false)
+    '<a class="card read" href="'+esc(safeUrl(it.url))+'" target="_blank" rel="noopener">'+cover(it.cover,i%4,'Food image',false)
     +'<div class="meta-line">'+(it._recipe?'<span class="badge">Recipe</span>':'')+'<span>'+esc(it.source||'')+'</span></div>'
     +'<h4>'+esc(it.title)+'</h4><div class="note">'+esc(it.note)+'</div>'
     +'<span class="go">'+(it._recipe?'Get the recipe ':'Read ')+ARR+'</span></a>').join('');
