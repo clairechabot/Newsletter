@@ -45,6 +45,183 @@ def build_claude_client() -> anthropic.Anthropic:
 
 
 # ---------------------------------------------------------------------------
+# Shared Claude plumbing
+#
+# Every audit used to hand-roll its own fence-stripping and then fall back to
+# "return the input unchanged" on the first hiccup. That fallback is silent, and
+# it is why Fern's blurbs stopped being written for weeks: the reader simply got
+# the raw RSS description instead, boilerplate and all. These helpers make the
+# parsing tolerant, retry once, and — when a section really does ship without its
+# blurbs — say so loudly in the Actions log.
+# ---------------------------------------------------------------------------
+
+def _warn(message: str) -> None:
+    """Emit a GitHub Actions warning annotation (visible without opening logs)."""
+    print(f"::warning::{message}")
+
+
+def _extract_json_text(raw: str) -> str:
+    """Strip code fences / prose preamble and return the JSON substring."""
+    text = (raw or "").strip()
+    if "```" in text:                     # ```json … ```  /  ```JSON … ```  /  ``` … ```
+        parts = text.split("```")
+        if len(parts) >= 2:
+            text = parts[1]
+            if text[:4].lower() == "json":
+                text = text[4:]
+            text = text.strip()
+    starts = [i for i in (text.find("["), text.find("{")) if i != -1]
+    if starts:
+        text = text[min(starts):]
+    return text.strip()
+
+
+def _salvage_json_array(text: str) -> "list | None":
+    """Parse a truncated JSON array by trimming back to the last complete element.
+
+    A max_tokens cut used to cost the WHOLE section its blurbs; this keeps the
+    elements that did arrive."""
+    if not text.startswith("["):
+        return None
+    for cut in range(len(text) - 1, 0, -1):
+        if text[cut] != "}":
+            continue
+        try:
+            return json.loads(text[:cut + 1] + "]")
+        except json.JSONDecodeError:
+            continue
+    return None
+
+
+def _parse_claude_json(raw: str, expect: type = list, context: str = "") -> "Any | None":
+    """Best-effort parse of a Claude JSON response. Returns None on total failure.
+
+    Tolerates: code fences in any case, a prose preamble, a dict wrapper around an
+    expected array, and truncation mid-array."""
+    text = _extract_json_text(raw)
+    if not text:
+        return None
+    data = None
+    try:
+        data = json.loads(text)
+    except json.JSONDecodeError as exc:
+        if expect is list:
+            data = _salvage_json_array(text)
+            if data is not None:
+                print(f"  [recovered] {context}: salvaged {len(data)} item(s) from a "
+                      f"truncated response ({exc}).")
+        if data is None:
+            print(f"  [warn] {context}: could not parse JSON ({exc}).")
+            return None
+    # {"videos": [...]} / {"results": [...]} around an expected array
+    if expect is list and isinstance(data, dict):
+        for value in data.values():
+            if isinstance(value, list):
+                data = value
+                break
+    if not isinstance(data, expect):
+        print(f"  [warn] {context}: expected {expect.__name__}, got {type(data).__name__}.")
+        return None
+    return data
+
+
+def _index_map(results: "list", field: str) -> dict:
+    """Build {index: value} from an index-keyed Claude response, tolerating string
+    indices and malformed elements."""
+    out: dict = {}
+    for r in results:
+        if not isinstance(r, dict):
+            continue
+        idx = _as_index(r.get("index"))
+        if idx is not None:
+            out[idx] = r.get(field, "")
+    return out
+
+
+def _as_index(value: "Any") -> "int | None":
+    """Coerce an 'index' field to int. Claude may return \"0\" as a string, which
+    silently blanked every blurb in the section."""
+    if isinstance(value, bool):
+        return None
+    if isinstance(value, int):
+        return value
+    if isinstance(value, str) and value.strip().lstrip("-").isdigit():
+        return int(value.strip())
+    return None
+
+
+def _claude_json(
+    client: anthropic.Anthropic, *, system: str, user: str, max_tokens: int,
+    expect: type = list, context: str = "",
+) -> "Any | None":
+    """Make a Claude call and parse its JSON, retrying once. Never raises.
+
+    Returns None if both attempts fail, so callers degrade one section instead of
+    losing the whole edition."""
+    for attempt in (1, 2):
+        try:
+            message = client.messages.create(
+                model=CLAUDE_MODEL,
+                max_tokens=max_tokens,
+                system=system,
+                messages=[{"role": "user", "content": user}],
+            )
+        except Exception as exc:                       # API error, network, overload
+            print(f"  [warn] {context}: API call failed on attempt {attempt} ({exc}).")
+            continue
+        blocks = getattr(message, "content", None) or []
+        raw = ""
+        for block in blocks:
+            if getattr(block, "type", "text") == "text":
+                raw = getattr(block, "text", "") or ""
+                break
+        if not raw.strip():
+            print(f"  [warn] {context}: empty response on attempt {attempt}.")
+            continue
+        truncated = getattr(message, "stop_reason", None) == "max_tokens"
+        parsed = _parse_claude_json(raw, expect=expect, context=context)
+        if parsed is not None:
+            if truncated:
+                print(f"  [warn] {context}: response hit max_tokens; using what parsed.")
+            return parsed
+        if truncated:
+            print(f"  [warn] {context}: response hit max_tokens and would not parse.")
+    return None
+
+
+def _claude_text(
+    client: anthropic.Anthropic, *, system: str, user: str, max_tokens: int,
+    context: str = "",
+) -> str:
+    """Make a Claude call and return its text. Returns "" on failure; never raises."""
+    try:
+        message = client.messages.create(
+            model=CLAUDE_MODEL, max_tokens=max_tokens, system=system,
+            messages=[{"role": "user", "content": user}],
+        )
+    except Exception as exc:
+        print(f"  [warn] {context}: API call failed ({exc}).")
+        return ""
+    for block in getattr(message, "content", None) or []:
+        if getattr(block, "type", "text") == "text":
+            return (getattr(block, "text", "") or "").strip()
+    print(f"  [warn] {context}: empty response.")
+    return ""
+
+
+_REASONING_MARKERS = (
+    "let me", "actually,", "wait,", "hmm", " no,", "i think", "i'll ", "i will ",
+    "here's", "here is the", "as an ai", "sure,", "okay,", "let's",
+)
+
+
+def _looks_like_reasoning(text: str) -> bool:
+    """True if a generated string reads like the model narrating instead of writing."""
+    low = (text or "").strip().lower()
+    return any(low.startswith(m) or f" {m}" in low[:80] for m in _REASONING_MARKERS)
+
+
+# ---------------------------------------------------------------------------
 # YouTube Audit
 # ---------------------------------------------------------------------------
 
@@ -96,31 +273,26 @@ def audit_youtube_videos(client: anthropic.Anthropic, videos: list[dict]) -> lis
 
     print(f"[Audit/YouTube] Generating 'Why Watch' for {len(videos)} video(s) …")
 
-    message = client.messages.create(
-        model=CLAUDE_MODEL,
-        max_tokens=1024,
+    results = _claude_json(
+        client,
         system=_YOUTUBE_AUDIT_SYSTEM,
-        messages=[{"role": "user", "content": _build_youtube_audit_user_message(videos)}],
+        user=_build_youtube_audit_user_message(videos),
+        max_tokens=3000,
+        context="YouTube audit",
     )
-
-    raw = message.content[0].text.strip()
-    if raw.startswith("```"):
-        raw = raw.split("```")[1]
-        if raw.startswith("json"):
-            raw = raw[4:]
-        raw = raw.strip()
-
-    try:
-        results: list[dict] = json.loads(raw)
-    except json.JSONDecodeError as exc:
-        print(f"  [warn] JSON parse error in YouTube audit: {exc}. Returning videos as-is.")
+    if results is None:
+        _warn(f"Worth Watching shipped unenriched ({len(videos)} videos) — Fern's "
+              f"'Why Watch' is missing and readers see the raw YouTube description.")
         return videos
 
-    id_to_why = {r["video_id"]: r.get("why_watch", "") for r in results}
-    enriched = []
-    for v in videos:
-        enriched.append({**v, "why_watch": id_to_why.get(v["video_id"], "")})
-
+    id_to_why = {
+        str(r.get("video_id", "")): r.get("why_watch", "")
+        for r in results if isinstance(r, dict)
+    }
+    enriched = [{**v, "why_watch": id_to_why.get(v["video_id"], "")} for v in videos]
+    missing = [v["video_id"] for v in enriched if not v["why_watch"]]
+    if missing:
+        _warn(f"{len(missing)} of {len(videos)} videos came back without a 'Why Watch'.")
     return enriched
 
 
@@ -184,32 +356,17 @@ def cluster_content(
     """
     print(f"[Curator] Clustering {len(youtube_videos)} videos into {THEME_COUNT_MIN}–{THEME_COUNT_MAX} themes …")
 
-    message = client.messages.create(
-        model=CLAUDE_MODEL,
-        max_tokens=2048,
-        system=_CLUSTER_SYSTEM,
-        messages=[
-            {
-                "role": "user",
-                "content": _build_cluster_user_message(youtube_videos),
-            }
-        ],
+    cluster_data = _claude_json(
+        client, system=_CLUSTER_SYSTEM,
+        user=_build_cluster_user_message(youtube_videos),
+        max_tokens=4000, expect=dict, context="Clustering",
     )
-
-    raw = message.content[0].text.strip()
-    if raw.startswith("```"):
-        raw = raw.split("```")[1]
-        if raw.startswith("json"):
-            raw = raw[4:]
-        raw = raw.strip()
-
-    try:
-        cluster_data: dict = json.loads(raw)
-    except json.JSONDecodeError as exc:
-        print(f"  [warn] JSON parse error in clustering: {exc}. Returning flat list.")
+    if cluster_data is None:
+        _warn("Clustering failed — Worth Watching ships as one flat list.")
         return [
             {
                 "name": "This Week's Picks",
+                "emoji": "",
                 "tagline": "A curated mix of the best content.",
                 "items": youtube_videos,
             }
@@ -226,7 +383,8 @@ def cluster_content(
             full_item = youtube_map.get(item_id)
 
             if full_item is None:
-                print(f"  [warn] Could not resolve item_id '{item_id}' for theme '{theme['name']}'")
+                print(f"  [warn] Could not resolve item_id '{item_id}' for theme "
+                      f"'{theme.get('name', 'Untitled Theme')}'")
                 continue
             if item_id in used_ids:
                 print(f"  [skip/dup] video '{item_id}' already placed — not repeating it in '{theme['name']}'")
@@ -243,6 +401,20 @@ def cluster_content(
                 "items": resolved_items,
             }
         )
+
+    # Reconciliation: a video Claude omits from its themes JSON used to vanish
+    # silently — and save_history marks it seen, so it never came back. Anything
+    # unplaced goes into a final theme instead of being lost.
+    unplaced = [v for vid, v in youtube_map.items() if vid not in used_ids]
+    if unplaced:
+        _warn(f"Clustering left {len(unplaced)} of {len(youtube_map)} video(s) "
+              f"unplaced — recovered into 'Also Worth a Look'.")
+        themes.append({
+            "name": "Also Worth a Look",
+            "emoji": "",
+            "tagline": "A few more finds from today's channels.",
+            "items": unplaced,
+        })
 
     print(f"[Curator] Created {len(themes)} theme(s):")
     for t in themes:
@@ -302,32 +474,17 @@ def audit_music_articles(client: anthropic.Anthropic, articles: list[dict]) -> l
         )
     user_message = "\n\n".join(items_text)
 
-    message = client.messages.create(
-        model=CLAUDE_MODEL,
-        max_tokens=512,
-        system=_MUSIC_AUDIT_SYSTEM,
-        messages=[{"role": "user", "content": user_message}],
+    results = _claude_json(
+        client, system=_MUSIC_AUDIT_SYSTEM, user=user_message,
+        max_tokens=1200, context="Music audit",
     )
-
-    raw = message.content[0].text.strip()
-    if raw.startswith("```"):
-        raw = raw.split("```")[1]
-        if raw.startswith("json"):
-            raw = raw[4:]
-        raw = raw.strip()
-
-    try:
-        results: list[dict] = json.loads(raw)
-    except json.JSONDecodeError as exc:
-        print(f"  [warn] JSON parse error in Music audit: {exc}. Returning articles as-is.")
+    if results is None:
+        _warn(f"The Morning Soundtrack shipped unenriched ({len(articles)} tracks) — "
+              f"readers see the raw feed description instead of Fern's vibe check.")
         return articles
 
-    index_to_vibe = {r["index"]: r.get("vibe_check", "") for r in results}
-    enriched = []
-    for i, art in enumerate(articles):
-        enriched.append({**art, "vibe_check": index_to_vibe.get(i, "")})
-
-    return enriched
+    index_to_vibe = _index_map(results, "vibe_check")
+    return [{**a, "vibe_check": index_to_vibe.get(i, "")} for i, a in enumerate(articles)]
 
 
 # ---------------------------------------------------------------------------
@@ -376,27 +533,15 @@ def audit_good_news_articles(
         for i, a in enumerate(articles)
     )
 
-    message = client.messages.create(
-        model=CLAUDE_MODEL,
-        max_tokens=512,
-        system=_GOOD_NEWS_SYSTEM,
-        messages=[{"role": "user", "content": items_text}],
+    results = _claude_json(
+        client, system=_GOOD_NEWS_SYSTEM, user=items_text,
+        max_tokens=1000, context="Good News audit",
     )
-
-    raw = message.content[0].text.strip()
-    if raw.startswith("```"):
-        raw = raw.split("```")[1]
-        if raw.startswith("json"):
-            raw = raw[4:]
-        raw = raw.strip()
-
-    try:
-        results: list[dict] = json.loads(raw)
-    except json.JSONDecodeError as exc:
-        print(f"  [warn] JSON parse error in Good News audit: {exc}. Returning as-is.")
+    if results is None:
+        _warn(f"Reasons to be Hopeful shipped unenriched ({len(articles)} stories).")
         return articles
 
-    index_to_reason = {r["index"]: r.get("reason", "") for r in results}
+    index_to_reason = _index_map(results, "reason")
     return [{**a, "reason": index_to_reason.get(i, "")} for i, a in enumerate(articles)]
 
 
@@ -442,21 +587,15 @@ def audit_larder(client: anthropic.Anthropic, larder_raw: dict) -> dict:
             f"--- Item {i} ({kind}) ---\nSource: {it.get('source_name','')}\n"
             f"Title: {it.get('title','')}\nSnippet: {it.get('snippet','')[:200]}"
         )
-    try:
-        message = client.messages.create(
-            model=CLAUDE_MODEL, max_tokens=512, system=_LARDER_SYSTEM,
-            messages=[{"role": "user", "content": "\n\n".join(lines)}],
-        )
-        raw = message.content[0].text.strip()
-        if raw.startswith("```"):
-            raw = raw.split("```")[1]
-            raw = raw[4:] if raw.startswith("json") else raw
-            raw = raw.strip()
-        results = json.loads(raw)
-        idx_to_blurb = {r["index"]: r.get("blurb", "") for r in results}
-    except Exception as exc:
-        print(f"  [warn] Larder audit failed: {exc}. Passing items through.")
-        idx_to_blurb = {}
+    results = _claude_json(
+        client, system=_LARDER_SYSTEM, user="\n\n".join(lines),
+        max_tokens=1000, context="Larder audit",
+    )
+    if results is None:
+        _warn(f"The Larder shipped unenriched ({len(items)} items).")
+        idx_to_blurb: dict = {}
+    else:
+        idx_to_blurb = _index_map(results, "blurb")
 
     enriched = [{**it, "blurb": idx_to_blurb.get(i, "")} for i, it in enumerate(items)]
     out_news = enriched[:len(news)]
@@ -493,20 +632,15 @@ def generate_larder_note(client: anthropic.Anthropic, locale: str, season: str,
         f"Edition: {'morning' if is_am else 'evening'}"
         + (f"\nTONE ADJUSTMENT for this reader: {tone}" if tone else "")
     )
-    try:
-        message = client.messages.create(
-            model=CLAUDE_MODEL, max_tokens=256, system=_LARDER_NOTE_SYSTEM,
-            messages=[{"role": "user", "content": user_message}],
-        )
-        raw = message.content[0].text.strip()
-        if raw.startswith("```"):
-            raw = raw.split("```")[1]
-            raw = raw[4:] if raw.startswith("json") else raw
-            raw = raw.strip()
-        return (json.loads(raw).get("note") or "").strip()
-    except Exception as exc:
-        print(f"  [warn] Larder seasonal note failed for {locale}: {exc}")
+    data = _claude_json(
+        client, system=_LARDER_NOTE_SYSTEM, user=user_message,
+        max_tokens=400, expect=dict, context=f"Larder seasonal note ({locale})",
+    )
+    note = (str((data or {}).get("note") or "")).strip()
+    if _looks_like_reasoning(note):
+        print("  [warn] Larder note read as model narration — dropped.")
         return ""
+    return note
 
 
 # ---------------------------------------------------------------------------
@@ -558,27 +692,16 @@ def audit_discovery_articles(
         for i, a in enumerate(articles)
     )
 
-    message = client.messages.create(
-        model=CLAUDE_MODEL,
-        max_tokens=768,
-        system=_DISCOVERY_AUDIT_SYSTEM,
-        messages=[{"role": "user", "content": items_text}],
+    results = _claude_json(
+        client, system=_DISCOVERY_AUDIT_SYSTEM, user=items_text,
+        max_tokens=2000, context="Discovery audit",
     )
-
-    raw = message.content[0].text.strip()
-    if raw.startswith("```"):
-        raw = raw.split("```")[1]
-        if raw.startswith("json"):
-            raw = raw[4:]
-        raw = raw.strip()
-
-    try:
-        results: list[dict] = json.loads(raw)
-    except json.JSONDecodeError as exc:
-        print(f"  [warn] JSON parse error in Discovery audit: {exc}. Returning as-is.")
+    if results is None:
+        _warn(f"The Archive shipped unenriched ({len(articles)} finds) — readers see "
+              f"the raw RSS description instead of Fern's note.")
         return articles
 
-    index_to_note = {r["index"]: r.get("ferns_note", "") for r in results}
+    index_to_note = _index_map(results, "ferns_note")
     return [{**a, "ferns_note": index_to_note.get(i, "")} for i, a in enumerate(articles)]
 
 
@@ -623,28 +746,21 @@ def audit_reads(client: anthropic.Anthropic, articles: list[dict]) -> list[dict]
         for i, a in enumerate(articles)
     )
 
-    message = client.messages.create(
-        model=CLAUDE_MODEL,
-        max_tokens=384,
-        system=_READS_AUDIT_SYSTEM,
-        messages=[{"role": "user", "content": items_text}],
+    results = _claude_json(
+        client, system=_READS_AUDIT_SYSTEM, user=items_text,
+        max_tokens=1500, context="Reads audit",
     )
-
-    raw = message.content[0].text.strip()
-    if raw.startswith("```"):
-        raw = raw.split("```")[1]
-        if raw.startswith("json"):
-            raw = raw[4:]
-        raw = raw.strip()
-
-    try:
-        results: list[dict] = json.loads(raw)
-    except json.JSONDecodeError as exc:
-        print(f"  [warn] JSON parse error in Reads audit: {exc}. Returning as-is.")
+    if results is None:
+        _warn(f"One Good Read / The Reading Room shipped unenriched ({len(articles)} "
+              f"essays) — readers see the raw RSS description instead of Fern's blurb.")
         return articles
 
-    index_to_blurb = {r["index"]: r.get("blurb", "") for r in results}
-    return [{**a, "blurb": index_to_blurb.get(i, "")} for i, a in enumerate(articles)]
+    index_to_blurb = _index_map(results, "blurb")
+    enriched = [{**a, "blurb": index_to_blurb.get(i, "")} for i, a in enumerate(articles)]
+    missing = sum(1 for a in enriched if not a["blurb"])
+    if missing:
+        _warn(f"{missing} of {len(articles)} essays came back without a blurb.")
+    return enriched
 
 
 # ---------------------------------------------------------------------------
@@ -710,24 +826,12 @@ def generate_garden_note(client: anthropic.Anthropic, garden_seed: dict) -> dict
     )
 
     print("[Garden] Generating From the Garden note …")
-    message = client.messages.create(
-        model=CLAUDE_MODEL,
-        max_tokens=384,
-        system=_GARDEN_SYSTEM,
-        messages=[{"role": "user", "content": user_message}],
+    note = _claude_json(
+        client, system=_GARDEN_SYSTEM, user=user_message,
+        max_tokens=600, expect=dict, context="Garden note",
     )
-
-    raw = message.content[0].text.strip()
-    if raw.startswith("```"):
-        raw = raw.split("```")[1]
-        if raw.startswith("json"):
-            raw = raw[4:]
-        raw = raw.strip()
-
-    try:
-        note = json.loads(raw)
-    except json.JSONDecodeError as exc:
-        print(f"  [warn] JSON parse error in Garden note: {exc}. Using fallback.")
+    if note is None:
+        _warn("From the Garden shipped without Fern's almanac note.")
         return {
             "note": "",
             "in_season": [],
@@ -737,6 +841,13 @@ def generate_garden_note(client: anthropic.Anthropic, garden_seed: dict) -> dict
             "moon_label": moon_label,
             "illum_pct": moon.get("illum_pct", 0),
         }
+    # in_season must be a list — a bare string here made the renderer iterate
+    # characters and print "a · u · t · u · m · n".
+    if not isinstance(note.get("in_season"), list):
+        note["in_season"] = []
+    if _looks_like_reasoning(str(note.get("note", ""))):
+        print("  [warn] Garden note looked like model narration — dropped.")
+        note["note"] = ""
     # Force the BARE phase label (the model sometimes echoes "Waxing crescent
     # (21% illuminated)"; the render appends the % itself, so keep only the phase
     # to avoid a doubled "(NN% illuminated) (NN% illuminated)").
@@ -935,29 +1046,28 @@ def generate_fern_greeting(
         lines.append(f"  - [One Good Read] {featured_read.get('title', '')}")
 
     print(f"[Fern] Generating greeting (angle: {angle[:40]}…) and top pick …")
-    message = client.messages.create(
-        model=CLAUDE_MODEL,
-        max_tokens=320,
-        system=_FERN_GREETING_SYSTEM,
-        messages=[{"role": "user", "content": "\n".join(lines)}],
+    fallback = (
+        "Good morning! Fresh stories are waiting — let's dig in."
+        if is_am
+        else "The day is winding down. Let's close it with something worth reading."
     )
 
-    raw = message.content[0].text.strip()
-    if raw.startswith("```"):
-        raw = raw.split("```")[1]
-        if raw.startswith("json"):
-            raw = raw[4:]
-        raw = raw.strip()
-
-    try:
-        return json.loads(raw)
-    except json.JSONDecodeError:
-        fallback = (
-            "Good morning! Fresh stories are waiting — let's dig in."
-            if is_am
-            else "The day is winding down. Let's close it with something worth reading."
-        )
+    data = _claude_json(
+        client, system=_FERN_GREETING_SYSTEM, user="\n".join(lines),
+        max_tokens=600, expect=dict, context="Fern greeting",
+    )
+    if data is None:
+        _warn("Fern's opening note fell back to the generic greeting.")
         return {"greeting": fallback, "top_pick_title": ""}
+
+    greeting = str(data.get("greeting") or "").strip()
+    if not greeting or _looks_like_reasoning(greeting):
+        _warn("Fern's greeting was empty or read as model narration — using fallback.")
+        greeting = fallback
+    # The prompt asks for ≤50 chars; enforce it rather than trusting it, since this
+    # string goes into the email SUBJECT line.
+    top_pick = str(data.get("top_pick_title") or "").strip()[:50]
+    return {"greeting": greeting, "top_pick_title": top_pick}
 
 
 # ---------------------------------------------------------------------------
@@ -1014,31 +1124,22 @@ def tag_moods(client: anthropic.Anthropic, items: list[dict]) -> list[list[str]]
         for i, it in enumerate(items)
     )
 
-    message = client.messages.create(
-        model=CLAUDE_MODEL,
-        max_tokens=1500,
-        system=_MOOD_SYSTEM,
-        messages=[{"role": "user", "content": items_text}],
+    results = _claude_json(
+        client, system=_MOOD_SYSTEM, user=items_text,
+        max_tokens=2600, context="Grove mood tagging",
     )
-
-    raw = message.content[0].text.strip()
-    if raw.startswith("```"):
-        raw = raw.split("```")[1]
-        if raw.startswith("json"):
-            raw = raw[4:]
-        raw = raw.strip()
-
-    try:
-        results: list[dict] = json.loads(raw)
-    except json.JSONDecodeError as exc:
-        print(f"  [warn] JSON parse error in mood tagging: {exc}. Leaving items untagged.")
+    if results is None:
+        print("  [warn] Mood tagging failed — leaving this batch untagged.")
         return [[] for _ in items]
 
     allowed = set(GROVE_MOODS)
-    index_to_moods = {
-        r.get("index"): [m for m in (r.get("moods") or []) if m in allowed][:3]
-        for r in results
-    }
+    index_to_moods: dict = {}
+    for r in results:
+        if not isinstance(r, dict):
+            continue
+        idx = _as_index(r.get("index"))
+        if idx is not None:
+            index_to_moods[idx] = [m for m in (r.get("moods") or []) if m in allowed][:3]
     return [index_to_moods.get(i, []) for i in range(len(items))]
 
 
@@ -1259,13 +1360,14 @@ def _haiku_fallback_word(text: str) -> str:
 
 
 def _blank_word(text: str, word: str) -> str:
-    """Replace the first whole-word (case-insensitive) occurrence of `word` with a
-    blank of proportional length. Returns '' if the word isn't found."""
+    """Replace every whole-word (case-insensitive) occurrence of `word` with a
+    blank. Returns '' if the word isn't found."""
     pat = re.compile(rf"\b{re.escape(word)}\b", re.I)
     if not pat.search(text):
         return ""
-    blank = " " * 0 + "____"
-    return pat.sub(blank, text, count=1)
+    # All occurrences, not just the first: a haiku that repeats its key word
+    # used to ship as "____ … rain … rain", printing the answer in the puzzle.
+    return pat.sub("____", text)
 
 
 def _haiku_fill_puzzle(client: anthropic.Anthropic, haiku: dict) -> dict:
@@ -1423,24 +1525,12 @@ def generate_puzzle(client: anthropic.Anthropic, is_am: bool,
     )
 
     print(f"[Puzzle] Generating {label} ({kind}) …")
-    message = client.messages.create(
-        model=CLAUDE_MODEL,
-        max_tokens=512,
-        system=_PUZZLE_SYSTEM,
-        messages=[{"role": "user", "content": user_message}],
+    data = _claude_json(
+        client, system=_PUZZLE_SYSTEM, user=user_message,
+        max_tokens=800, expect=dict, context="Puzzle",
     )
-
-    raw = message.content[0].text.strip()
-    if raw.startswith("```"):
-        raw = raw.split("```")[1]
-        if raw.startswith("json"):
-            raw = raw[4:]
-        raw = raw.strip()
-
-    try:
-        data = json.loads(raw)
-    except json.JSONDecodeError as exc:
-        print(f"  [warn] JSON parse error in puzzle: {exc}. Skipping puzzle.")
+    if data is None:
+        _warn("The Puzzle Corner shipped empty — generation failed.")
         return {}
     if not data.get("prompt") or not data.get("answer"):
         print("  [warn] Puzzle missing prompt/answer. Skipping puzzle.")
@@ -1455,10 +1545,16 @@ def generate_puzzle(client: anthropic.Anthropic, is_am: bool,
     if len(answer) > 140 or "\n" in answer or any(m in low for m in _dump_markers):
         print("  [warn] Puzzle answer looks like a reasoning dump. Skipping puzzle.")
         return {}
+    # The prompt was never screened — only the answer was — so a narrated prompt
+    # ("Let me think of a good riddle…") shipped to the reader.
+    prompt = str(data["prompt"]).strip()
+    if _looks_like_reasoning(prompt):
+        print("  [warn] Puzzle prompt looks like a reasoning dump. Skipping puzzle.")
+        return {}
     return {
         "kind":   kind,
         "label":  label,
-        "prompt": data["prompt"],
+        "prompt": prompt,
         "answer": answer,
         "hint":   data.get("hint", ""),
     }
@@ -1520,7 +1616,7 @@ def run_curation(raw_data: dict) -> dict:
         _seed = raw_data.get("garden_seed", {})
         larder["seasonal_note"] = generate_larder_note(
             client, _seed.get("locale", "Zürich"), _seed.get("season", ""),
-            raw_data.get("is_am_email", True),
+            raw_data.get("is_am_email", False),
         )
 
     # 8b. Fern's daily puzzle (morning riddle / evening enigma). Best-effort:
