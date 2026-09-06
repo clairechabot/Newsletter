@@ -176,7 +176,9 @@ MUSIC_SOURCES: list[dict] = [
     {"name": "Sofar Sounds",   "url": "https://www.sofarsounds.com/blog"},  # no RSS — scrape
 ]
 MUSIC_ARTICLES_PER_SOURCE = 3          # post-filter cap per source
-MUSIC_CANDIDATES_PER_SOURCE = 8        # pull this many, then genre-filter down
+MUSIC_MAX_PER_EDITION = 12             # global cap — 11 sources × 3 could ship 30+
+MUSIC_CANDIDATES_PER_SOURCE = 20       # pull this many, then genre-filter down
+                                       # (was 8 — a slow feed was exhausted in ~2 days)
 
 # Genres the reader likes — music items are filtered to these by Claude.
 # Edit this list to retune taste.
@@ -211,7 +213,14 @@ def load_history() -> tuple[set[str], set[str], set[str], set[str], set[str], se
     food_urls) seen before. New buckets default to empty so older history.json
     files load."""
     if HISTORY_FILE.exists():
-        data = json.loads(HISTORY_FILE.read_text(encoding="utf-8-sig"))
+        try:
+            data = json.loads(HISTORY_FILE.read_text(encoding="utf-8-sig"))
+        except (json.JSONDecodeError, OSError) as exc:
+            # A truncated history.json (an interrupted write) used to crash at
+            # startup before a single section had run.
+            print(f"::warning::history.json unreadable ({exc}) — starting from empty. "
+                  f"Content already published may repeat once.")
+            data = {}
         return (
             set(data.get("video_ids", [])),
             set(data.get("good_news_urls", [])),
@@ -594,7 +603,7 @@ def fetch_channel_videos(
         if "quotaExceeded" in str(exc):
             print("[YouTube] Quota exceeded during video detail fetch — using partial results.")
         else:
-            raise
+            print(f"::warning::YouTube detail fetch failed ({exc}) — using partial results.")
 
     # Keep the newest `max_videos` across all channels; videos cut by the cap
     # remain unseen and compete again next run.
@@ -818,22 +827,48 @@ def _rss_music_items(src: dict, n: int, session: requests.Session) -> list[dict]
         print(f"  [{src['name']}] RSS parse error: {exc}")
         return []
     items = []
-    for item in root.findall(".//item")[:n]:
-        title = (item.findtext("title") or "").strip()
+    for item in _feed_entries(root):
+        if len(items) >= n:                 # cap AFTER filtering, not before, so a
+            break                           # feed with a malformed entry still fills
+        title = (item.findtext("title") or item.findtext(f"{_ATOM_NS}title") or "").strip()
         link  = (item.findtext("link") or "").strip()
-        desc  = re.sub(r"<[^>]+>", "", item.findtext("description") or "").strip()[:300]
+        if not link:
+            link_el = item.find(f"{_ATOM_NS}link")
+            if link_el is not None:
+                link = (link_el.get("href") or "").strip()
+        # This was the one RSS path that skipped BeautifulSoup, so character
+        # references inside CDATA survived and readers saw `Bad Bunny&#8217;s`.
+        raw_desc = (
+            item.findtext("description")
+            or item.findtext(f"{_ATOM_NS}summary")
+            or item.findtext(f"{_ATOM_NS}content")
+            or ""
+        )
+        desc = _clean_snippet(
+            BeautifulSoup(raw_desc, "html.parser").get_text(" ", strip=True)
+        )
         if not title or not link:
             continue
+        title = _clean_snippet(title, n=99)
         # Try to grab cover from enclosure or media:thumbnail/content
         cover = ""
         enc = item.find("enclosure")
         if enc is not None and (enc.get("type", "").startswith("image") or enc.get("url", "").endswith((".jpg", ".png", ".webp"))):
             cover = enc.get("url", "")
         if not cover:
-            for ns_prefix in ("media", "itunes"):
-                thumb = item.find(f"{{{ns_prefix}}}thumbnail") or item.find(f"{{{ns_prefix}}}image")
-                if thumb is not None:
-                    cover = thumb.get("url", "") or (thumb.text or "")
+            # Two bugs lived here: `{media}` is not a namespace URI (it must be the
+            # resolved mrss URL), and `bool(<empty Element>)` is False, so the `or`
+            # discarded a thumbnail it had actually found. Cover extraction from RSS
+            # was therefore dead code — hence 44% of cards shipping imageless.
+            for ns_uri in ("http://search.yahoo.com/mrss/",
+                           "http://www.itunes.com/dtds/podcast-1.0.dtd"):
+                for tag in ("thumbnail", "content", "image"):
+                    thumb = item.find(f"{{{ns_uri}}}{tag}")
+                    if thumb is not None:
+                        cover = (thumb.get("url") or thumb.text or "").strip()
+                        if cover:
+                            break
+                if cover:
                     break
         items.append({
             "source":      "music",
@@ -924,14 +959,33 @@ def fetch_music_articles(
         print("[Music] No fresh candidates — trying evergreen fallback.")
         return _evergreen_fallback(_seen, _register)
 
+    # Politics is not wanted here either: the music feeds regularly run
+    # politics-adjacent stories, and until now the filter ran on YouTube only.
+    apolitical = []
+    for art in candidates:
+        if _is_political(art.get("title", ""), art.get("snippet", "")):
+            print(f"  [skip/political] music — '{art.get('title','')[:60]}'")
+            continue
+        apolitical.append(art)
+    candidates = apolitical
+
     # Filter to the reader's taste, then cap per-source.
     from curator import build_claude_client  # reuses CLAUDE_API_KEY client
-    kept = _filter_music_by_genre(candidates, build_claude_client())
+    try:
+        kept = _filter_music_by_genre(candidates, build_claude_client())
+    except Exception as exc:
+        # build_claude_client() sat outside every guard: an auth/config error here
+        # killed the run before Good News, Discovery, Reads and the Larder ran.
+        print(f"  [warn] Music genre filter unavailable ({exc}) — keeping all candidates.")
+        kept = candidates
     print(f"[Music] {len(kept)}/{len(candidates)} candidate(s) match genres.")
 
     per_source: dict[str, int] = {}
+    seen_embeds: set[str] = set()
     selected: list[dict] = []
     for art in kept:
+        if len(selected) >= MUSIC_MAX_PER_EDITION:
+            break
         name = art.get("source_name", "")
         if per_source.get(name, 0) >= MUSIC_ARTICLES_PER_SOURCE:
             continue
@@ -946,6 +1000,17 @@ def fetch_music_articles(
         except Exception as exc:
             print(f"    [warn] enrich failed for '{art.get('title','')[:50]}': {exc}")
             embed_url, cover_url = None, None
+        # youtube.com/embed/videoseries with no list= is a dead player; it shipped
+        # three times. And two articles can point at the SAME embed, which put the
+        # identical player twice in one edition (8 editions did this).
+        if embed_url and ("embed/videoseries" in embed_url
+                          or embed_url.rstrip("/").endswith("/embed")):
+            embed_url = None
+        if embed_url and embed_url in seen_embeds:
+            print(f"    [skip/dup-embed] '{art.get('title','')[:50]}'")
+            embed_url = None
+        if embed_url:
+            seen_embeds.add(embed_url)
         art["embed_url"] = embed_url
         if not art.get("cover_url"):
             art["cover_url"] = cover_url or ""
@@ -972,7 +1037,8 @@ def _evergreen_fallback(seen, register) -> list[dict]:
 # Good News — RSS feeds (structured XML, never breaks on redesigns)
 # ---------------------------------------------------------------------------
 
-GOOD_NEWS_TOTAL = 3   # advisory only — fetch_good_news_articles pulls one per feed
+GOOD_NEWS_TOTAL = 3       # advisory only — fetch_good_news_articles pulls one per feed
+GOOD_NEWS_SCAN_DEPTH = 8  # entries scanned per feed before giving up on it
 
 GOOD_NEWS_FEEDS = [
     {
@@ -1095,13 +1161,19 @@ FOOD_FEEDS = [
     {"url": "https://www.theguardian.com/food/rss",   "source_name": "The Guardian"},
     {"url": "https://www.saveur.com/feed/",           "source_name": "Saveur"},
 ]
+# Three blogs scanned 5 deep, with never-repeat, ran dry: a recipe appeared in only
+# 2 of the last 8 mornings (21 of 25 AM editions had none). More sources, and each
+# scanned to its full feed depth. All verified reachable (200 with items).
 RECIPE_FEEDS = [
     {"url": "https://smittenkitchen.com/feed/",       "source_name": "Smitten Kitchen"},
     {"url": "https://www.101cookbooks.com/feed",      "source_name": "101 Cookbooks"},
     {"url": "https://www.davidlebovitz.com/feed/",    "source_name": "David Lebovitz"},
+    {"url": "https://alexandracooks.com/feed/",       "source_name": "Alexandra's Kitchen"},
+    {"url": "https://www.loveandlemons.com/feed/",    "source_name": "Love & Lemons"},
+    {"url": "https://www.budgetbytes.com/feed/",      "source_name": "Budget Bytes"},
 ]
 FOOD_NEWS_ITEMS = 3               # trend/news items shown alongside the recipe
-RECIPE_CANDIDATES_PER_SOURCE = 5
+RECIPE_CANDIDATES_PER_SOURCE = 20  # full feed depth — mines the backlog like reads
 
 _MYSTERY_KEYWORDS = {
     "mystery", "unknown", "discovery", "ancient", "secret",
@@ -1109,13 +1181,57 @@ _MYSTERY_KEYWORDS = {
 }
 
 
+# Trailing junk publishers append to their RSS excerpts. These reached the reader
+# verbatim — "The post X appeared first on Nautilus ." closed 88% of featured essays
+# — and were also fed to Claude, so Fern's blurbs were written partly about them.
+_BOILERPLATE_PATTERNS = [
+    re.compile(r"\s*The post\b.*?\bappeared first on\b.*$", re.I | re.S),
+    re.compile(r"\s*This (?:post|article|entry) (?:first )?appeared\b.*$", re.I | re.S),
+    re.compile(r"\s*(?:Continue reading|Read more|Read the full story)\b.*$", re.I | re.S),
+    re.compile(r"\s*Do stories and artists like this matter to you\?.*$", re.I | re.S),
+    re.compile(r"\s*Become a .{0,40}Member today\b.*$", re.I | re.S),
+    re.compile(r"\s*Sign up for it here\.?\s*$", re.I),
+    re.compile(r"\s*The article\b[^.]{0,80}\bwas (?:first )?published\b.*$", re.I | re.S),
+]
+
+# Don't treat an abbreviation as the end of a sentence — "J.R.R." used to truncate
+# a snippet mid-name.
+_ABBREVIATIONS = re.compile(
+    r"\b(?:[A-Z]\.){1,4}|\b(?:Mr|Mrs|Ms|Dr|Prof|St|Sr|Jr|vs|etc|e\.g|i\.e|No|Vol|Fig)\.",
+)
+
+
+def _clean_snippet(text: str, n: int = 3) -> str:
+    """Decode entities, strip publisher boilerplate, and trim on a sentence boundary.
+
+    Applied to every RSS path. `html.unescape` was previously reached only by the
+    trivia fetcher, so 11% of music blurbs rendered literally as `mid-&#x2018;70s`."""
+    if not text:
+        return ""
+    # Twice: some feeds double-encode inside CDATA (&amp;#8217; -> &#8217; -> ').
+    clean = _html_unescape(_html_unescape(text))
+    clean = clean.replace("\ufeff", "").replace("\xa0", " ")
+    clean = re.sub(r"\s+", " ", clean).strip()
+    for pattern in _BOILERPLATE_PATTERNS:
+        clean = pattern.sub("", clean)
+    return _first_sentences(clean.strip(), n)
+
+
 def _first_sentences(text: str, n: int = 3) -> str:
-    sentences = re.split(r'(?<=[.!?])\s+', text.strip())
-    return " ".join(sentences[:n])
+    """First `n` sentences, without splitting on abbreviations."""
+    text = (text or "").strip()
+    if not text:
+        return ""
+    # Mask abbreviations so their periods don't count as sentence ends.
+    masked = _ABBREVIATIONS.sub(lambda m: m.group(0).replace(".", "\x00"), text)
+    parts = re.split(r'(?<=[.!?])\s+', masked)
+    return " ".join(parts[:n]).replace("\x00", ".").strip()
 
 
 def _mystery_score(title: str) -> int:
-    return int(bool(_MYSTERY_KEYWORDS & set(title.lower().split())))
+    # \w+ rather than split(): "lost," / "ancient:" never matched before, so the
+    # priority sort was a partial no-op.
+    return int(bool(_MYSTERY_KEYWORDS & set(re.findall(r"\w+", title.lower()))))
 
 
 # ---------------------------------------------------------------------------
@@ -1188,7 +1304,9 @@ def _sun_times(locale: str, date: datetime.date) -> dict:
         f"?lat={lat}&lng={lng}&date={date.isoformat()}&formatted=0"
     )
     try:
-        resp = requests.get(url, timeout=15)
+        resp = _fetch_with_retry(url, _scraper_session())
+        if resp is None:
+            return {}
         resp.raise_for_status()
         payload = resp.json()
     except Exception as exc:  # network, JSON, non-200 — all non-fatal
@@ -1233,10 +1351,25 @@ _RSS_PROXY_BUILDERS = [
 ]
 
 
+_ATOM_NS = "{http://www.w3.org/2005/Atom}"
+
+
+def _feed_entries(root) -> list:
+    """Entries from an RSS <item> feed OR an Atom <entry> feed.
+
+    Eater is Atom-only: findall(".//item") returned 0 for it every single run, so it
+    never contributed a thing AND burned both read-through proxies before reporting a
+    false "all fetches failed"."""
+    items = root.findall(".//item")
+    if items:
+        return items
+    return root.findall(f".//{_ATOM_NS}entry")
+
+
 def _rss_item_count(content: bytes) -> int:
-    """Number of <item> elements in `content`, or -1 if it isn't parseable RSS."""
+    """Number of entries in `content` (RSS or Atom), or -1 if it isn't parseable."""
     try:
-        return len(ET.fromstring(content).findall(".//item"))
+        return len(_feed_entries(ET.fromstring(content)))
     except Exception:
         return -1
 
@@ -1285,13 +1418,22 @@ def _fetch_rss_articles(
         return []
 
     articles: list[dict] = []
-    for item in root.findall(".//item"):
-        title = (item.findtext("title") or "").strip()
-        url   = (item.findtext("link")  or "").strip()
+    for item in _feed_entries(root):
+        title = (item.findtext("title") or item.findtext(f"{_ATOM_NS}title") or "").strip()
+        url   = (item.findtext("link") or "").strip()
+        if not url:                                   # Atom: <link href="…"/>
+            link_el = item.find(f"{_ATOM_NS}link")
+            if link_el is not None:
+                url = (link_el.get("href") or "").strip()
         if not title or not url:
             continue
-        raw_desc = item.findtext("description") or ""
-        snippet  = _first_sentences(
+        raw_desc = (
+            item.findtext("description")
+            or item.findtext(f"{_ATOM_NS}summary")
+            or item.findtext(f"{_ATOM_NS}content")
+            or ""
+        )
+        snippet = _clean_snippet(
             BeautifulSoup(raw_desc, "html.parser").get_text(" ", strip=True)
         )
         articles.append(
@@ -1549,15 +1691,27 @@ def fetch_good_news_articles(
     results = []
 
     for feed in GOOD_NEWS_FEEDS:
-        fetched = _fetch_rss_articles(feed["url"], feed["source_name"], 1, session)
+        # Fetch a WINDOW and take the first unseen, matching fetch_reads. Pulling a
+        # single item meant a source whose newest story was already in history
+        # contributed nothing — so the PM edition routinely lost several sources,
+        # contradicting this function's own docstring.
+        fetched = _fetch_rss_articles(
+            feed["url"], feed["source_name"], GOOD_NEWS_SCAN_DEPTH, session
+        )
         for article in fetched:
             url = article["url"]
             if url in seen_all_urls:
-                print(f"  [skip/dup] Good News article already in history: {url}")
+                continue
+            if _is_political(article["title"], article.get("snippet", "")):
+                print(f"  [skip/political] good news — '{article['title'][:60]}'")
                 continue
             seen_all_urls.add(url)
             seen_good_news_urls.add(url)
             results.append(article)
+            break                       # one per source
+        else:
+            print(f"  [warn] {feed['source_name']}: nothing fresh in the newest "
+                  f"{GOOD_NEWS_SCAN_DEPTH}.")
 
     print(f"[GoodNews] Collected {len(results)} article(s).")
 
@@ -1631,6 +1785,9 @@ def fetch_discovery(
     session = _scraper_session()
     results = []
 
+    # Keyed on source_name, not on the feed: Atlas Obscura is listed twice, so a
+    # per-feed cap let it take 8 of the slots while the constant promises 4.
+    per_source: dict[str, int] = {}
     for feed in DISCOVERY_FEEDS:
         candidates = _fetch_rss_articles(
             feed["url"], feed["source_name"],
@@ -1639,18 +1796,20 @@ def fetch_discovery(
         )
         candidates.sort(key=lambda a: _mystery_score(a["title"]), reverse=True)
 
-        taken = 0
+        name = feed["source_name"]
         for article in candidates:
-            if taken >= DISCOVERY_ARTICLES_PER_SOURCE:
+            if per_source.get(name, 0) >= DISCOVERY_ARTICLES_PER_SOURCE:
                 break
             url = article["url"]
             if url in seen_all_urls:
-                print(f"  [skip/dup] Discovery article already in history: {url}")
+                continue
+            if _is_political(article["title"], article.get("snippet", "")):
+                print(f"  [skip/political] discovery — '{article['title'][:60]}'")
                 continue
             seen_all_urls.add(url)
             seen_discovery_urls.add(url)
             results.append({**article, "category": feed["category"]})
-            taken += 1
+            per_source[name] = per_source.get(name, 0) + 1
 
     # Fermat's Library — scrape the weekly annotated academic paper
     fermat_session = _scraper_session()
@@ -1754,9 +1913,15 @@ def fetch_reads(
     print(f"[Reads] Fetching essays from {len(READS_FEEDS)} feeds …")
     session = _scraper_session()
 
+    # Deterministic rotation over the FIXED feed list, keyed on the size of the
+    # reads history — no random, no new history bucket, and every feed reaches the
+    # front of the queue over successive editions.
+    offset = len(seen_reads_urls) % len(READS_FEEDS)
+    ordered_feeds = READS_FEEDS[offset:] + READS_FEEDS[:offset]
+
     # Unseen candidates per feed, newest-first within each feed.
     per_feed: list[list[dict]] = []
-    for feed in READS_FEEDS:
+    for feed in ordered_feeds:
         candidates = _fetch_rss_articles(
             feed["url"], feed["source_name"],
             READS_SCAN_DEPTH, session,
@@ -1768,13 +1933,11 @@ def fetch_reads(
 
     # Rotate the starting feed each run. The interleave below fills all
     # READS_SELECTION_SIZE slots at depth 0, so with more feeds than slots the
-    # tail of the list would otherwise almost never be reached. Keying the
-    # rotation on the size of the reads history keeps it deterministic (no
-    # random, no new history bucket) while giving every feed the front of the
-    # queue over successive editions.
-    if per_feed:
-        offset = len(seen_reads_urls) % len(per_feed)
-        per_feed = per_feed[offset:] + per_feed[:offset]
+    # tail of the list would otherwise almost never be reached.
+    #
+    # The rotation is applied to READS_FEEDS itself (above, before fetching), not
+    # to per_feed: per_feed only holds feeds that HAVE fresh items, so its length
+    # varies run to run and a modulus over it isn't a true rotation.
 
     # Round-robin interleave so the selection spans different voices. Pass one
     # honours READS_MAX_PER_SOURCE so a publication listed under several feeds
@@ -1980,13 +2143,14 @@ def main() -> dict:
     src = new_puzzle.get("source", "")
     sid = new_puzzle.get("source_id", "")
     if src == "riddles.com" and sid:
-        updated_riddle_ids = (seen_riddle_ids + [sid])[-400:]
+        updated_riddle_ids = (seen_riddle_ids + [sid])[-5000:]   # was -400: old
+                                                         # riddles resurfaced
     elif src == "wordsmith.org" and sid:
         updated_anagram_seeds = (seen_anagram_seeds + [sid])[-len(ANAGRAM_SEEDS):]
     elif src == "tinywords.com" and sid:
         updated_haiku_ids = (seen_haiku_ids + [sid])[-400:]
     elif src == "opentdb.com" and sid:
-        updated_trivia_ids = (seen_trivia_ids + [sid])[-600:]
+        updated_trivia_ids = (seen_trivia_ids + [sid])[-8000:]   # was -600:
     # Roll this edition's greeting into the anti-repetition memory (last 10) so
     # the next notes avoid echoing its opening, imagery, and structure.
     updated_greetings = None
