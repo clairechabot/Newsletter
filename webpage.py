@@ -74,7 +74,6 @@ def _payload(curated: dict) -> dict:
                 "note":     _dedash(v.get("why_watch", v.get("description", ""))),
                 "video_id": v.get("video_id", ""),
                 "channel":  v.get("channel_title", ""),
-                "wild":     bool(v.get("is_wildcard", False)),
             })
 
     music = [{
@@ -390,7 +389,6 @@ _PAGE = """<!DOCTYPE html>
   .card .go{margin-top:14px;font-size:11px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:var(--clay-deep);display:inline-flex;align-items:center;gap:7px;}
   .card .go .arr{transition:transform .2s ease;color:var(--brass-deep);} .card:hover .go .arr{transform:translateX(4px);}
   .badge{font-size:9.5px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;padding:3px 9px;border:1px solid var(--brass);color:var(--brass-deep);}
-  .badge.wildcard{border-color:var(--clay-deep);color:var(--clay-deep);background:rgba(152,68,23,0.07);}
   .empty{color:var(--ink-mute);font-style:italic;font-family:var(--serif);padding:30px 0;}
 
   /* ---- footer (forest) ---- */
@@ -640,7 +638,7 @@ function renderMusic(){
 }
 $('#watch-grid').innerHTML=DATA.videos.length?DATA.videos.map((v,i)=>
   '<a class="card watch" href="'+(v.video_id?esc(safeUrl(ytWatch(v.video_id))):'#')+'" target="_blank">'+cover(v.video_id?ytThumb(v.video_id):'',i%4,'Video still',true)
-  +'<div class="meta-line">'+(v.wild?'<span class="badge wildcard">Random Pick</span>':'')+'<span>'+esc(v.channel||'Video')+'</span></div>'
+  +'<div class="meta-line"><span>'+esc(v.channel||'Video')+'</span></div>'
   +'<h4>'+esc(v.title)+'</h4><div class="note">'+esc(v.note)+'</div><span class="go">Watch '+ARR+'</span></a>').join('')
   :'<div class="empty">No films in this edition.</div>';
 $('#good_news-grid').innerHTML=DATA.good_news.length?DATA.good_news.map((g,i)=>
@@ -951,7 +949,6 @@ _GROVE_PAGE = """<!DOCTYPE html>
   .meta-line{display:flex;align-items:center;gap:9px;font-size:9.5px;font-weight:600;letter-spacing:0.13em;text-transform:uppercase;color:var(--brass-deep);flex-wrap:wrap;}
   .meta-line .sep{color:var(--line);}
   .badge{font-size:8.5px;font-weight:700;letter-spacing:0.11em;text-transform:uppercase;padding:2px 8px;border:1px solid var(--brass);color:var(--brass-deep);}
-  .badge.wildcard{border-color:var(--clay-deep);color:var(--clay-deep);background:rgba(152,68,23,0.07);}
   .card h4{font-family:var(--display);font-weight:600;font-size:21px;line-height:1.16;color:var(--forest);margin-top:9px;letter-spacing:0.005em;}
   .note{font-family:var(--serif);font-size:14px;color:var(--ink-soft);margin-top:8px;line-height:1.52;}
   .moods{display:flex;flex-wrap:wrap;gap:9px;margin-top:11px;}
@@ -1051,7 +1048,7 @@ function cardHTML(it){
   return '<div class="card"><a class="card-link" href="'+esc(safeUrl(it.url))+'" target="_blank" rel="noopener">'
     + cv
     + '<div class="body">'
-    +   '<div class="meta-line">'+(it.wild?'<span class="badge wildcard">Random Pick</span>':'')+src+'<span>'+esc(SECTION_LABEL[it.section]||it.section)+'</span></div>'
+    +   '<div class="meta-line">'+src+'<span>'+esc(SECTION_LABEL[it.section]||it.section)+'</span></div>'
     +   '<h4>'+esc(it.title)+'</h4>'
     +   (it.note?'<div class="note">'+esc(it.note)+'</div>':'')
     +   (moods?'<div class="moods">'+moods+'</div>':'')
@@ -1148,7 +1145,7 @@ def _grove_entries(data: dict, d: datetime.date, is_am: bool) -> list[dict]:
     edition_file = f"{date_iso}-{ampm}.html"
     out: list[dict] = []
 
-    def add(section, title, note, url, image, source, genre="", wild=False):
+    def add(section, title, note, url, image, source, genre=""):
         if not title:
             return
         out.append({
@@ -1159,7 +1156,6 @@ def _grove_entries(data: dict, d: datetime.date, is_am: bool) -> list[dict]:
             "image":   image or "",
             "source":  source or "",
             "genre":   genre or "",
-            "wild":    bool(wild),
             "date":    date_iso,
             "ampm":    ampm,
             "edition": edition_file,
@@ -1174,7 +1170,7 @@ def _grove_entries(data: dict, d: datetime.date, is_am: bool) -> list[dict]:
         add("videos", v.get("title"), v.get("note"),
             f"https://www.youtube.com/watch?v={vid}" if vid else "#",
             f"https://img.youtube.com/vi/{vid}/mqdefault.jpg" if vid else "",
-            v.get("channel"), wild=v.get("wild", False))
+            v.get("channel"))
     for g in data.get("good_news", []):
         add("good_news", g.get("title"), g.get("note"), g.get("url"),
             g.get("cover"), g.get("source"))

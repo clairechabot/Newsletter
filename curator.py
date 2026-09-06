@@ -73,11 +73,9 @@ Do not include any text outside the JSON array.
 def _build_youtube_audit_user_message(videos: list[dict]) -> str:
     items = []
     for i, v in enumerate(videos, 1):
-        is_wildcard = v.get("source") == "youtube_trending"
-        label = " [WILDCARD — Trending Pick]" if is_wildcard else ""
         _dur = v.get("duration_seconds", 0)
         items.append(
-            f"--- Video {i}{label} ---\n"
+            f"--- Video {i} ---\n"
             f"ID: {v['video_id']}\n"
             f"Title: {v['title']}\n"
             f"Channel: {v['channel_title']}\n"
@@ -142,7 +140,6 @@ newsletter sections. The themes must be:
     "Cozy Corners", "Rabbit Holes Worth Falling Down") — NOT generic labels like
     "Food Content" or "Tech Videos".
   • THEMATICALLY COHERENT — items grouped by subject matter, mood, or angle.
-  • The item marked [WILDCARD] must be placed into whichever theme fits it best.
 
 Return ONLY valid JSON, exactly in this shape:
 {
@@ -154,8 +151,7 @@ Return ONLY valid JSON, exactly in this shape:
       "items": [
         {
           "item_id": "<video 'video_id'>",
-          "platform": "youtube",
-          "is_wildcard": <true | false>
+          "platform": "youtube"
         },
         ...
       ]
@@ -171,10 +167,8 @@ Do not include any text outside the JSON object.
 def _build_cluster_user_message(youtube_videos: list[dict]) -> str:
     lines = ["## YouTube Videos\n"]
     for v in youtube_videos:
-        is_wildcard = v.get("source") == "youtube_trending"
-        label = " [WILDCARD]" if is_wildcard else ""
         lines.append(
-            f"- ID: {v['video_id']}{label} | {v['channel_title']} | \"{v['title']}\"\n"
+            f"- ID: {v['video_id']} | {v['channel_title']} | \"{v['title']}\"\n"
             f"  Why Watch: {v.get('why_watch', v.get('description', ''))[:200]}"
         )
     return "\n".join(lines)
@@ -239,9 +233,7 @@ def cluster_content(
                 continue
             used_ids.add(item_id)
 
-            resolved_items.append(
-                {**full_item, "is_wildcard": ref.get("is_wildcard", False)}
-            )
+            resolved_items.append(dict(full_item))
 
         themes.append(
             {
