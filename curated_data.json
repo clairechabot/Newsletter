@@ -1,135 +1,128 @@
 {
-  "fetched_at": "2026-09-06T19:10:04.514532+02:00",
-  "is_am_email": false,
+  "fetched_at": "2026-09-07T10:28:42.789278+02:00",
+  "is_am_email": true,
   "audit_summary": {
     "youtube_videos": 7,
-    "themes": 4,
-    "music_articles": 5,
-    "good_news_articles": 3,
+    "themes": 3,
+    "music_articles": 1,
+    "good_news_articles": 4,
     "discovery_articles": 0,
     "featured_read": 1,
     "reading_room": 5,
     "garden": 1,
     "puzzle": 1,
-    "larder": 0
+    "larder": 4
   },
   "themes": [
     {
-      "name": "Light Speed, Strange Loops & Atomic Rabbit Holes",
-      "emoji": "⚛️",
-      "tagline": "Physics problems that broke smart people's brains — and might break yours too.",
-      "items": [
-        {
-          "source": "youtube",
-          "video_id": "MPyodHFaURM",
-          "title": "The RANDOM Motion That Proved Atoms Exist. #physics #science #einstein #atoms #brownianmotion",
-          "channel_id": "UCIZ5ZOeiXYbmKTl_85ghNPw",
-          "channel_title": "Physics Explained",
-          "published_at": "2026-08-12T19:30:07Z",
-          "url": "https://www.youtube.com/watch?v=MPyodHFaURM",
-          "duration_seconds": 167,
-          "view_count": "28167",
-          "description": "Einstein showed that the random jiggling of tiny particles was evidence of an invisible world of atoms and molecules. \n\nShort taken from my full video on YT: https://youtu.be/ZawOeUSzmY4?si=aZFb-zs4xR502cJ8",
-          "why_watch": "In under three minutes, this clip nails something textbooks often fumble: how Einstein used the observable randomness of pollen grains in water to mathematically confirm the existence of atoms nobody could yet see. It's a tight, satisfying explanation of how indirect evidence can settle a fundamental scientific debate. Worth it as a standalone bite or as a trailer for the full video."
-        },
-        {
-          "source": "youtube",
-          "video_id": "wIIX6bNnoNA",
-          "title": "I finally solved the paradox that split smart people 50/50! (It's wild)",
-          "channel_id": "UCGfFUc6eWxfbtjYeun6r9xg",
-          "channel_title": "FloatHeadPhysics",
-          "published_at": "2026-02-25T13:01:45Z",
-          "url": "https://www.youtube.com/watch?v=wIIX6bNnoNA",
-          "duration_seconds": 1438,
-          "view_count": "472873",
-          "description": "To try everything Brilliant has to offer—free—for a full 30 days, visit https://brilliant.org/FloatHeadPhysics. You’ll also get 20% off an annual premium subscription.\n\nSupport me   https://patreon.com/floatheadphysics   to see how I learn relativity, get sneak peaks, and early video access. \n\nTwo spaceships start accelerating at the same time and at the same rate, and they’re connected by a string. Will the string snap? This is one of the most confusing puzzles in relativity. A lot of physicist",
-          "why_watch": "Bell's Spaceship Paradox — two ships accelerating identically while connected by a string — has genuinely divided physicists because the intuitive answer and the correct answer feel irreconcilable. This video walks through the paradox carefully enough that you can follow exactly where the reasoning forks and why special relativity produces a result that feels wrong but isn't. It's a well-paced 24 minutes that earns its conclusion rather than just asserting it."
-        },
-        {
-          "source": "youtube",
-          "video_id": "Wst36uwM_iY",
-          "title": "How the One-Way Light Problem DISPROVES Einsteinian Relativity",
-          "channel_id": "UC3KV2kFy2YhjYvverIy2WnA",
-          "channel_title": "Dialect",
-          "published_at": "2026-01-24T13:56:11Z",
-          "url": "https://www.youtube.com/watch?v=Wst36uwM_iY",
-          "duration_seconds": 1370,
-          "view_count": "53266",
-          "description": "Here the One-Way Speed of Light Problem is examined in thorough detail, and its inarguable consequences for Einstein's Theory of Special Relativity -- as well as for our modern conceptions of space, time, and motion -- are finally spelled out. Join us as we purse what has and always will be our channel's one and only objective -- the truth. \n\nWe express our deepest gratitude towards all our Patreons, who continue to make all our research and our videos here possible. https://www.patreon.com/dial",
-          "why_watch": "The one-way speed of light is a real and under-discussed problem in physics: we can measure the round-trip speed of light precisely, but measuring it in a single direction requires synchronized clocks — which requires knowing the one-way speed of light to synchronize. This video takes that circularity seriously and traces its genuine implications for how we understand simultaneity and relativity. The channel's framing is pointed, but the underlying problem it's describing is philosophically legitimate and rarely explained this clearly."
-        }
-      ]
-    },
-    {
-      "name": "How Machines Actually Think",
-      "emoji": "🔌",
-      "tagline": "Peek under the hood of the circuits and diagrams that quietly run the world.",
-      "items": [
-        {
-          "source": "youtube",
-          "video_id": "GK2pZ_oVU1o",
-          "title": "The Scariest Chart in Electrical Engineering",
-          "channel_id": "UCHnyfMqiRRG1u-2MsSQLbXA",
-          "channel_title": "Veritasium",
-          "published_at": "2026-07-14T18:03:28Z",
-          "url": "https://www.youtube.com/watch?v=GK2pZ_oVU1o",
-          "duration_seconds": 2384,
-          "view_count": "5454886",
-          "description": "Why is the Smith Chart one of the scariest charts in electrical engineering? Sponsored by Incogni - use code veritasium at https://incogni.com/veritasium to get an exclusive 60% off your annual subscription.\n\nLast year, we launched the Elements of Truth game on Kickstarter and were thrilled by the response. We’re now in the final stages of production, with Kickstarter rewards shipping soon. Pre-order the retail edition here: https://elementsoftruth.game/\n\nIf you’re looking for a molecular modell",
-          "why_watch": "The Smith Chart is a tool engineers use to visualize complex impedance in RF and microwave circuits, and its reputation for being impenetrable is well-earned — Veritasium builds it up from first principles so the underlying geometry actually makes sense. At nearly 40 minutes it's a commitment, but it's the kind of video that makes a formerly opaque engineering concept feel genuinely navigable. Even if you're not an engineer, the section on how circular slide rules encode complex math is worth the time."
-        },
-        {
-          "source": "youtube",
-          "video_id": "Pzmc3mSS1nY",
-          "title": "LOAD and STORE instructions SIMULATION - Scott CPU - how computers work",
-          "channel_id": "UCFtCfZ4rtIZ7Hsq7ZNHoY1w",
-          "channel_title": "Computer&Electronics",
-          "published_at": "2025-03-25T12:59:29Z",
-          "url": "https://www.youtube.com/watch?v=Pzmc3mSS1nY",
-          "duration_seconds": 1178,
-          "view_count": "376",
-          "description": "In this video we simulate the fetching, decoding and executing of the LOAD and STORE instructions. For this purpose we have built a simulation circuit in circuiverse simulator. This is the simulation part of the «Instruction Code – LOAD and STORE and DATA instructions» video of the «How computers work – Building Scott’s CPU» youtube playlist. The links to the playlist and to the circuit are in the description. In Scott’s CPU, as in many other kind of CPUs, the ALU operates only with registers so",
-          "why_watch": "This is a step-by-step simulation of how LOAD and STORE instructions actually execute inside a simple CPU — fetch, decode, execute — using a visual circuit simulator rather than abstract diagrams. If you've ever wanted to see machine-level memory operations playing out in a real (simulated) circuit rather than described in prose, this is unusually concrete. Best approached as part of the accompanying playlist on building Scott's CPU rather than as a standalone."
-        }
-      ]
-    },
-    {
-      "name": "Dirt, Roots & Real Talk",
+      "name": "Hands In The Dirt",
       "emoji": "🌱",
-      "tagline": "No fluff, just soil — what actually happens when you grow things and start over.",
+      "tagline": "Getting real with soil, seeds, and centuries-old craftsmanship — because some things are worth doing slowly.",
       "items": [
         {
           "source": "youtube",
-          "video_id": "G15qbUDWykg",
-          "title": "Huge Summer Harvest & Flipping The Beds (Week 20)",
+          "video_id": "Y5VxI0Y2i-g",
+          "title": "We Saved This 200 Year Old Château Floor",
+          "channel_id": "UCEqU-Ts-hxmpnlWgRMgd2MQ",
+          "channel_title": "How To Renovate A Chateau",
+          "published_at": "2026-09-06T18:30:06Z",
+          "url": "https://www.youtube.com/watch?v=Y5VxI0Y2i-g",
+          "duration_seconds": 964,
+          "view_count": "76186",
+          "description": "AD: https://www.squarespace.com/howtorenovateachateau to save 10% off your first purchase of a website or domain using code HOWTORENOVATEACHATEAU\nDon't miss out on Anna's new limited Scarf Collection and Wallpaper: Here's the link to the waitlist: https://go.lefleur.fr/rose-collection\n\nAnd follow us on instagram: https://www.instagram.com/le_fleur_honfleur\n\nBonus videos and exclusive live streams every month! Check out our Patreon page for all the latest from us: https://www.patreon.com/Howtoren",
+          "why_watch": "The team walks through the painstaking process of diagnosing and restoring original 200-year-old floorboards in a French château — not replacing them, but actually saving them. If you've ever wondered what heritage restoration looks like in practice rather than in theory, this is a grounded, specific look at the decisions and techniques involved. The channel avoids renovation-show theatrics and focuses on the genuine problem-solving."
+        },
+        {
+          "source": "youtube",
+          "video_id": "fg62UtyU670",
+          "title": "The BIG Harvests Are Starting! (week 18)",
           "channel_id": "UC5eLPZi_RSh81523mrBzHNg",
           "channel_title": "Gardening Experiments with Mind & Soil",
-          "published_at": "2026-07-25T13:00:36Z",
-          "url": "https://www.youtube.com/watch?v=G15qbUDWykg",
-          "duration_seconds": 1252,
-          "view_count": "6204",
-          "description": "Japanese Made Forest Inc Pruning Shears\n🇺🇸 USA Order here: https://www.amazon.com/dp/B0D3G9MMSL?maas=maas_adg_232EEA3B1AB9E7DD16F39F2176B756FC_afap_abs&ref_=aa_maas&tag=maas\n🇨🇦 Canada Order here: https://www.amazon.ca/dp/B0D3G9MMSL?maas=maas_adg_222A1AC9D83086474081B3C04D7D8808_afap_abs&ref_=aa_maas&tag=maas\n🇬🇧 UK Ordere here: https://www.amazon.co.uk/dp/B0D3G9MMSL?maas=maas_adg_B417F7683D20115D53ACAF6061CB05ED_afap_abs&ref_=aa_maas&tag=maas\nForect Inc Page: http://www.amazon.com/forest_Original",
-          "why_watch": "This is a practical late-season garden diary that walks through a real summer harvest and the specific process of flipping and resetting raised beds for the next cycle. It's less inspirational fluff and more working documentation of what an active kitchen garden actually looks like at week 20. Useful if you're planning your own bed transitions and want to see the decisions made in real time."
+          "published_at": "2026-07-11T13:00:02Z",
+          "url": "https://www.youtube.com/watch?v=fg62UtyU670",
+          "duration_seconds": 1529,
+          "view_count": "4065",
+          "description": "Grab Your Reencle Composter!\n🇺🇸 USA Customers: $100 Off Until the End of the World Cup!\n🇨🇦 Canada Customers: Use the code MindSoilCAN15 to get 15% off!\nReencle Home Composter: https://reencle.co/\n\n🌱🍅 Want to start feeding your family from your backyard? Join my FREE Weekly Newsletter for gardening tips & videos: https://forms.gle/SrwU1EjkSScgVTVy8\n\nEXPERIMENT VIDEOS\n💡 $30 vs $300 Grow Light: WATCH This Before Buying a Grow Light! https://youtu.be/_0EFGE9ZljY\n\n💡 I Tested Every Grow Light Height h",
+          "why_watch": "Week 18 of a running garden experiment series, this episode documents what's actually coming in from a productive backyard plot — useful for anyone calibrating their own growing expectations against reality. The channel runs genuine comparisons (cheap vs. expensive gear, different soil approaches) rather than just posting highlight reels. Low production gloss, high practical signal."
+        },
+        {
+          "source": "youtube",
+          "video_id": "Xhl5TzKZbpw",
+          "title": "AD - Why are plants colder than their surroundings?",
+          "channel_id": "UCHnyfMqiRRG1u-2MsSQLbXA",
+          "channel_title": "Veritasium",
+          "published_at": "2026-07-07T13:04:35Z",
+          "url": "https://www.youtube.com/watch?v=Xhl5TzKZbpw",
+          "duration_seconds": 160,
+          "view_count": "2113309",
+          "description": "Plants can stay cooler than the air around them, even in full sun. How is that possible? We partnered with Anker to find out…\n\nPick up your Anker Prime Charger here:\nhttps://ankerfast.club/noagy5\n\n#AnkerTech #Anker #AnkerPrime",
+          "why_watch": "At under three minutes, this is a tightly packaged explanation of why plants often sit several degrees cooler than the surrounding air — a real phenomenon most people have never thought to question. Veritasium uses it to illustrate evaporative cooling and radiative heat loss in a way that sticks. Worth the two and a half minutes even if you're not chasing the sponsor product."
         }
       ]
     },
     {
-      "name": "From a Parking Lot to a Patrick Ewing Collab",
-      "emoji": "🥒",
-      "tagline": "Weird, wonderful origin stories of things that somehow became cultural moments.",
+      "name": "Reality, Rewritten",
+      "emoji": "⚡",
+      "tagline": "Everything you thought you understood about light, time, and motion is about to get a very polite correction.",
       "items": [
         {
           "source": "youtube",
-          "video_id": "h3BQHjjxato",
-          "title": "How A Homemade Pickle Recipe Became A $100M Lifestyle Brand",
-          "channel_id": "UCNaq5Jh4SQ1oBAjhQ0KPhoA",
-          "channel_title": "Weird History Food",
-          "published_at": "2026-09-06T14:15:21Z",
-          "url": "https://www.youtube.com/watch?v=h3BQHjjxato",
-          "duration_seconds": 930,
-          "view_count": "3340",
-          "description": "In 2008, an unemployed guy from Boston started selling pickles out of his car at baseball games. Just 11 years later, he’d built the #2 pickle brand in America with a sneaker collaboration with Patrick Ewing, a clothing line at Urban Outfitters, and even sponsorships in NASCAR; and it all started with a 100-year-old family pickle recipe.\n\nOn this episode of Weird History Food we take a look at the bizarre true story of how a homemade pickle recipe became a $100-million lifestyle brand and became",
-          "why_watch": "The trajectory here is genuinely surprising: pickles sold from a car at Fenway Park to a NASCAR sponsorship and a Patrick Ewing sneaker collab in just over a decade. The video traces exactly how a century-old family recipe became a cultural brand, not just a food product. If you're interested in scrappy entrepreneurship or brand-building from nothing, this is a concrete, well-documented case study."
+          "video_id": "4p7JJ6VPnTM",
+          "title": "Why Does Acceleration Create Light?",
+          "channel_id": "UCIZ5ZOeiXYbmKTl_85ghNPw",
+          "channel_title": "Physics Explained",
+          "published_at": "2026-07-30T19:00:20Z",
+          "url": "https://www.youtube.com/watch?v=4p7JJ6VPnTM",
+          "duration_seconds": 1655,
+          "view_count": "241077",
+          "description": "Download Matiks app now using my link: https://lr.matiks.org/?c=JRZpLC\n\nWhy does an accelerating electric charge produce light?\n\nIn this video, we follow the changing electric field around a charged particle and show how acceleration creates a disturbance that propagates outwards at the speed of light. Using intuitive animations and simple geometry, we derive the transverse radiation field, explore retarded time, and reveal how oscillating electric and magnetic fields become an electromagnetic w",
+          "why_watch": "This video tackles one of electromagnetism's more counterintuitive results — why an accelerating charge radiates light — and derives it geometrically rather than just asserting it. The animations trace how a kink in the electric field propagates outward at the speed of light, giving you an intuitive picture that most textbooks skip straight past. If you've accepted Maxwell's equations without really seeing where radiation comes from, this fills that gap cleanly."
+        },
+        {
+          "source": "youtube",
+          "video_id": "F_eVrN8Z8gM",
+          "title": "We were so wrong about time dilation (My mind is blown)",
+          "channel_id": "UCGfFUc6eWxfbtjYeun6r9xg",
+          "channel_title": "FloatHeadPhysics",
+          "published_at": "2025-12-27T13:00:26Z",
+          "url": "https://www.youtube.com/watch?v=F_eVrN8Z8gM",
+          "duration_seconds": 2472,
+          "view_count": "617556",
+          "description": "Learn for free on Brilliant for a full 30 days: https://brilliant.org/FloatHeadPhysics/ . You’ll also get 20% off an annual Premium subscription.\n\nMoving clocks never run slower. Gravity never slows down time. This the most misunderstood idea in all of relativity. Let's set the record straight. \n\n\n\n\n\nThis video was sponsored by Brilliant",
+          "why_watch": "The central claim here is pointed and genuinely surprising: the common framing of time dilation — moving clocks run slow, gravity slows time — is technically misleading, and the video explains exactly why in terms of spacetime geometry rather than popular metaphor. At 41 minutes it's a real sit-down commitment, but the argument builds carefully rather than just asserting contrarianism. Good for anyone who thought they already understood special relativity."
+        },
+        {
+          "source": "youtube",
+          "video_id": "eELR4WGHHP8",
+          "title": "Why Can't Matter Travel Faster Than Light? The Problem of Relativistic Mass.",
+          "channel_id": "UC3KV2kFy2YhjYvverIy2WnA",
+          "channel_title": "Dialect",
+          "published_at": "2025-11-08T13:01:22Z",
+          "url": "https://www.youtube.com/watch?v=eELR4WGHHP8",
+          "duration_seconds": 1266,
+          "view_count": "49861",
+          "description": "The inertia of a body increases with its speed -- but what causes this strange phenomenon? And what does it reveal to us about the ultimate reason behind the speed limit of matter? Join us as we dive deep into history, math and science to find out!\n\n*******************************************************\nLink to E = mc^2 video: https://youtu.be/xsL2nWsFgc4\n\nWe express our deepest gratitude towards all our Patreons, who continue to make all our research and our videos here possible. https://www.p",
+          "why_watch": "Rather than just stating that relativistic mass increases with speed, this video traces the historical and physical reasoning behind why inertia grows as objects approach light speed — and why the concept of 'relativistic mass' has since fallen out of favor among physicists. Dialect's approach is unusually historically grounded, connecting the math to the scientists who argued over it. A good companion to any special relativity intro that left you wanting more 'why.'"
+        }
+      ]
+    },
+    {
+      "name": "Deep In The Machine",
+      "emoji": "🔩",
+      "tagline": "One CPU instruction, a million tiny steps — down the rabbit hole of how computers actually think.",
+      "items": [
+        {
+          "source": "youtube",
+          "video_id": "fOyqJ7swihA",
+          "title": "Fetch - decode - execute an ALU instruction - Scott CPU",
+          "channel_id": "UCFtCfZ4rtIZ7Hsq7ZNHoY1w",
+          "channel_title": "Computer&Electronics",
+          "published_at": "2025-03-17T10:00:39Z",
+          "url": "https://www.youtube.com/watch?v=fOyqJ7swihA",
+          "duration_seconds": 1028,
+          "view_count": "447",
+          "description": "In this video we simulate the fetching, decoding and executing of an ALU instruction in the Scott’s CPU. For this purpose we have built a simulation circuit in circuiverse simulator. This is the simulation part of the «Instruction Code – ALU instruction» video of the «How computers work – Building Scott’s CPU» youtube playlist. The links to the playlist and to the circuit are in the description.\n\nLink to CircuitVerse simulator of \"How computers work - building Scott's CPU\" : https://circuitverse",
+          "why_watch": "This is a detailed simulation walkthrough of how a single ALU instruction moves through Scott's CPU — fetch, decode, execute — using a Circuitverse circuit you can follow along with. It's niche by design: squarely aimed at people working through 'But How Do It Know?' or similar build-a-CPU-from-scratch material who want to see the timing and signal flow made explicit. Not an intro, but a genuinely useful companion resource if you're in that learning stage."
         }
       ]
     }
@@ -137,57 +130,13 @@
   "morning_soundtrack": [
     {
       "source": "music",
-      "source_name": "Stereogum",
-      "title": "Alex Van Halen Gets Knighted, Reunites With David Lee Roth, Calls Sammy Hagar “A Complete Idiot”",
-      "snippet": "Van Halen had quite the summer. On Tuesday (Sept. 1), Alex Van Halen was knighted in the Netherlands.",
-      "url": "https://stereogum.com/2510534/alex-van-halen-gets-knighted-reunites-with-david-lee-roth-calls-sammy-hagar-a-complete-idiot/news/",
+      "source_name": "JazzTimes",
+      "title": "Concert Review: John Zorn’s Flatlands at Solar Myth, Philadelphia",
+      "snippet": "I f you had to credit/blame any one person for twisting the jazz idiom into something unclassifiable and beyond genre, with as many bands to …",
+      "url": "https://www.jazztimes.com/reviews/live/concert-review-john-zorns-flatlands-at-solar-myth-philadelphia/",
       "genre": "",
-      "vibe_check": "The chaotic energy of a rock hall reunion where someone always ends up throwing a drink.",
-      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/09/alex-van-halen-david-lee-roth.png?w=564",
-      "embed_url": null
-    },
-    {
-      "source": "music",
-      "source_name": "Stereogum",
-      "title": "Spirit Of Talk Talk Celebrates 40 Years Of The Colour Of Spring In London",
-      "snippet": "Last night, at the O2 Forum Kentish Town in London, a bunch of musicians gathered to celebrate the late Mark Hollis and the 40th anniversary of The Colour Of Spring , the third studio from British new wave group Talk Talk. The Spirit Of Talk Talk event featured original band members Simon Brenner, Phil Ramocon, and Ian Curnow. With the help of several special guests, they performed most of the classic LP plus tracks from across the band’s catalog.",
-      "url": "https://stereogum.com/2510498/spirit-of-talk-talk-celebrates-40-years-of-the-colour-of-spring-in-london/news/",
-      "genre": "",
-      "vibe_check": "Bittersweet and reverent, like lighting a candle for someone you loved but never got to say goodbye to properly.",
-      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/09/Screenshot-2026-09-06-at-2.41.57-PM.png?w=564",
-      "embed_url": "https://www.youtube.com/embed/73-NbZ8KcWs"
-    },
-    {
-      "source": "music",
-      "source_name": "Pitchfork",
-      "title": "Mouse on Mars’ Jan St. Werner Taps Justin Vernon and Sufjan Stevens for New Album",
-      "snippet": "Squares Will Fall lands on Thrill Jockey on November 13",
-      "url": "https://pitchfork.com/story/mouse-on-mars-jan-st-werner-taps-justin-vernon-and-sufjan-stevens-for-new-album/",
-      "genre": "",
-      "vibe_check": "Late-night headphones music that feels like two old friends whispering secrets through static and cathedral echoes.",
-      "cover_url": "https://media.pitchfork.com/photos/6a9d8ba8e26eb8b75e448191/master/pass/Jan%20St.%20Werner%20Silke%20Briel.jpeg",
-      "embed_url": null
-    },
-    {
-      "source": "music",
-      "source_name": "Consequence",
-      "title": "Ray LaMontagne Collapses Onstage in Nashville, Treated for Heat-Related Dehydration",
-      "snippet": "LaMontagne's team says the singer is \"doing well now\" and was still looking ahead to his next scheduled show in Louisville. Ray LaMontagne Collapses Onstage in Nashville, Treated for Heat-Related Dehydration Alex Krinsky",
-      "url": "https://consequence.net/2026/09/ray-lamontagne-collapses-onstage-nashville/",
-      "genre": "",
-      "vibe_check": "The heavy, sweltering weight of a midsummer night when the heat finally wins.",
-      "cover_url": "https://consequence.net/wp-content/uploads/2026/09/Ray-LaMontagne-collapses-in-nashville.jpg?quality=80",
-      "embed_url": null
-    },
-    {
-      "source": "music",
-      "source_name": "PopMatters",
-      "title": "Colour Conquers Blandness at a Vibrant Osheaga Festival 2026",
-      "snippet": "Osheaga 2026's diverse array of musical talent charmed festivalgoers with no shortage of musicianship, humanity, and most importantly, colour.",
-      "url": "https://www.popmatters.com/osheaga-festival-2026",
-      "genre": "",
-      "vibe_check": "Sunscreen and spontaneity, the feeling of stumbling onto a set you didn't plan to see and staying for every song.",
-      "cover_url": "https://www.popmatters.com/wp-content/uploads/2026/08/Osheaga-2026-poster.webp",
+      "vibe_check": "The musical equivalent of a fever dream in a dimly lit basement where every corner holds something stranger than the last.",
+      "cover_url": "https://www.jazztimes.com/wp-content/uploads/2026/09/Unknown-3.png",
       "embed_url": null
     }
   ],
@@ -195,122 +144,167 @@
     {
       "source": "good_news",
       "source_name": "Good News Network",
-      "title": "Debt-Stricken Single Mom Pays Off $25K Debt in 5 Months by Decluttering 410 Items",
-      "url": "https://www.goodnewsnetwork.org/debt-stricken-single-mom-paid-off-25k-in-5-months/",
-      "snippet": "A British mom who racked up £23,000 in debt ($31K) has paid back $25,000 (£19,000) in just five months by decluttering and selling 410 household items on Vinted, eBay, and Facebook Marketplace. 32-year-old Ellie says her debt began to “snowball” after she became a single mom in 2022 and she took out a short-term loan […]",
-      "cover_url": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/09/Ellie-Titmus-with-some-of-her-Vinted-stock-SWNS.jpeg",
-      "reason": "A reminder that small, deliberate actions — clearing out what no longer serves you — can compound into life-changing financial freedom. This story shows that resourcefulness and grit can cut through debt faster than most people dare to believe."
+      "title": "Good News in History, September 7",
+      "url": "https://www.goodnewsnetwork.org/events060907/",
+      "snippet": "90 years ago today, Buddy Holly was born into poverty in a musical family in Lubbock, Texas. In just 18 months, from his first #1 hit song, That’ll Be The Day, to when he died in a tragic plane crash at age 22, the prolific singer-songwriter topped the charts with more than a dozen Top […]",
+      "cover_url": "https://www.goodnewsnetwork.org/wp-content/uploads/2015/09/Buddy-Holly-publicity-photo-1958.jpg",
+      "reason": "History is full of quiet turning points and unsung breakthroughs, and taking a moment to remember them reminds us that progress has always been possible — even in difficult times. Looking back is a powerful way to find fuel for moving forward."
     },
     {
       "source": "good_news",
       "source_name": "Upworthy",
-      "title": "Nazis demanded to know if ‘The Hobbit’ author J.R.R. Tolkien was Jewish. His response was legendary.",
-      "url": "https://www.upworthy.com/tolkien-response-to-nazis-asking-if-he-was-jewish-ex1/",
-      "snippet": "J.R.R. Tolkien had no problem telling his German publishing house exactly what he thought.",
-      "cover_url": "https://www.upworthy.com/wp-content/uploads/sites/2/2025/07/origin-192.jpg",
-      "reason": "Tolkien's dignified, witty refusal to satisfy Nazi racial scrutiny is a masterclass in standing firm with grace under pressure. It's a timeless reminder that moral courage doesn't always require a grand gesture — sometimes a well-chosen sentence is enough."
+      "title": "Woman’s whimsical ‘Wheel of Fortune’ guess is so bad it made her an instant legend",
+      "url": "https://www.upworthy.com/wheel-of-fortune-bad-guess-instant-legend-ex1/",
+      "snippet": "People prefer her guess to the actual answer.",
+      "cover_url": "https://www.upworthy.com/wp-content/uploads/sites/2/2025/09/origin-34792.png",
+      "reason": "A gloriously wrong answer that brought strangers together in shared laughter is a reminder that our most human, unguarded moments are often the ones that connect us most. Joy doesn't have to be perfect to be real."
+    },
+    {
+      "source": "good_news",
+      "source_name": "Reasons to be Cheerful",
+      "title": "Beavers Are Having a Moment",
+      "url": "https://reasonstobecheerful.world/beavers-big-moment/",
+      "snippet": "Over the last 20 years, Oregon’s wilderness has suffered big time. Salmon have disappeared, wildfires have scoured the hills and drought has parched once-fertile soils. Years of small fixes — a little forest thinning here, a little fish-ladder installation there — have helped, but not nearly enough to keep up...",
+      "cover_url": "https://reasonstobecheerful.world/wp-content/uploads/2026/09/shutterstock_2510257487-scaled-e1788446549380.jpg",
+      "reason": "Beavers are natural engineers whose dam-building restores wetlands, slows floods, and revives ecosystems — and their growing comeback across rewilded landscapes shows that when we give nature a little room, it knows exactly what to do. This is conservation working quietly and beautifully."
     },
     {
       "source": "good_news",
       "source_name": "The Optimist Daily",
-      "title": "How to choose a fertility clinic: what reproductive endocrinologists look for",
-      "url": "https://www.optimistdaily.com/2026/09/how-to-choose-a-fertility-clinic-what-reproductive-endocrinologists-look-for/",
-      "snippet": "BY THE OPTIMIST DAILY EDITORIAL TEAM There’s a lot tangled up in choosing a fertility clinic. Some of it is practical: where is it, what does it cost, what are their numbers. Some of it is harder to put into words, like whether you feel genuinely seen and supported through a process that’s already emotionally […] The post How to choose a fertility clinic: what reproductive endocrinologists look for first appeared on The Optimist Daily: Making Solutions the News .",
-      "cover_url": "https://www.optimistdaily.com/wp-content/uploads/Depositphotos_206537916_L.jpg",
-      "reason": "Clearer, expert-led guidance on fertility care means more people can navigate a confusing and emotionally charged process with greater confidence. When specialist knowledge is made accessible, families have a better chance of finding the right support at the right time."
+      "title": "8 clever ways to reuse spice jars around the house",
+      "url": "https://www.optimistdaily.com/2026/09/8-clever-ways-to-reuse-spice-jars-around-the-house/",
+      "snippet": "BY THE OPTIMIST DAILY EDITORIAL TEAM Most spice jars get rinsed and recycled. A few get left on the counter until someone throws them away. Almost none get a second life, and professional organizers say that’s worth reconsidering.",
+      "cover_url": "https://www.optimistdaily.com/wp-content/uploads/Depositphotos_521547792_L.jpg",
+      "reason": "Reimagining something as small as an empty spice jar is a gentle, practical act of sustainability that anyone can do today. It's a good reminder that living thoughtfully doesn't require a grand gesture — just a little creativity."
     }
   ],
   "discovery_articles": [],
   "featured_read": {
     "source": "reads",
-    "source_name": "The Atlantic",
-    "title": "What’s the Matter With Moderation?",
-    "url": "https://www.theatlantic.com/ideas/2026/09/adam-hamilton-kansas-senate-race/688531/?utm_source=feed",
-    "snippet": "Hoping to break a 94-year losing streak, Kansas Democrats have turned to Adam Hamilton, a Methodist pastor whose mood may not match his party’s.",
-    "cover_url": "https://cdn.theatlantic.com/thumbor/KOuTxj-sROFjkzCIinMzWmDKZ4w=/0x61:2876x1559/1200x625/media/img/mt/2026/09/2026_08_09_AdamHamilton/original.jpg",
-    "blurb": "What does it mean to run as a moderate in a state that hasn't wanted one for nearly a century — and can a Methodist pastor's quiet sincerity actually change that math? This piece sits with the strange, stubborn hope of Adam Hamilton and asks what moderation even costs anymore."
+    "source_name": "Damn Interesting",
+    "title": "There Once Was a Man Called Curley",
+    "url": "https://www.damninteresting.com/there-once-was-a-man-called-curley/",
+    "snippet": "There Once Was a Man Called Curley : In the village of Bellewstown, about 15 miles north of Dublin, Ireland, they still talk about what Barney Curley did back in 1975. It all happened during a horse race on the Hill of Crockafotha. It was just an amateur jockey race on a lazy summer day in a sleepy, remote town; it wasn’t meant […]",
+    "cover_url": "https://damn-8791.kxcdn.com/wp-content/uploads/2025/08/damninteresting-102.jpg",
+    "blurb": "In 1975, a man named Barney Curley pulled off one of the most audacious cons in horse-racing history — and the village of Bellewstown has never quite recovered from the legend of it. This is a story about a lazy summer afternoon, a telephone box, and the precise architecture of a beautiful hustle."
   },
   "reading_room": [
     {
       "source": "reads",
-      "source_name": "The Atlantic",
-      "title": "Abstract",
-      "url": "https://www.theatlantic.com/magazine/2026/10/jane-hirshfield-abstract/688346/?utm_source=feed",
-      "snippet": "A poem",
-      "cover_url": "https://cdn.theatlantic.com/thumbor/r_M9YsMUcqHqc2FRgaBfdGzoUvU=/0x183:3503x2007/1200x625/media/img/2026/09/1026_Poem_Hirshfield/original.jpg",
-      "blurb": "A poem, which means it will ask something of you and give back twice as much — set aside two quiet minutes, or twenty, depending on how long you linger."
-    },
-    {
-      "source": "reads",
-      "source_name": "Asterisk",
-      "title": "What To Expect When You’re Expecting (A World of Multi-Agent Systems)",
-      "url": "https://asteriskmag.com/issues/15/what-to-expect-when-you-re-expecting-a-world-of-multi-agent-systems",
-      "snippet": "How do we model the future of work? It takes an AI village.",
-      "cover_url": "https://asteriskmag.com/media/pages/issues/15/what-to-expect-when-you-re-expecting-a-world-of-multi-agent-systems/cdd99ca2c6-1786991585/ai-village-christine-kozobarich-1600x900-crop-sharpen50.png",
-      "blurb": "When AI agents start collaborating with each other the way humans collaborate in offices, who — or what — is actually doing the work, and what does that mean for the rest of us? A clear-eyed, unsettling look at the economy that may already be assembling itself."
-    },
-    {
-      "source": "reads",
-      "source_name": "Damn Interesting",
-      "title": "Twenty",
-      "url": "https://www.damninteresting.com/twenty/",
-      "snippet": "Twenty : In 2005, YouTube, reddit, and Facebook were all still wet and screaming infants. Google, working under the motto “Don’t Be Evil,” had just dethroned Yahoo! as the planet’s most popular Internet search engine (AskJeeves was not available for comment).",
-      "cover_url": "https://damn-8791.kxcdn.com/wp-content/uploads/2025/09/damninteresting-261.jpg",
-      "blurb": "Twenty years ago the internet was a different creature entirely — naive, ambitious, slightly feral — and this piece uses that distance to ask what exactly we lost, and when we stopped noticing. A precise, melancholy inventory of the turn."
-    },
-    {
-      "source": "reads",
       "source_name": "Nautilus",
-      "title": "Many Space Missions Are Searching for Life Beyond Earth—But Are We Prepared for the Fallout If They Succeed?",
-      "url": "https://nautil.us/many-space-missions-are-searching-for-life-beyond-earth-but-are-we-prepared-for-the-fallout-if-they-succeed-1284812/",
-      "snippet": "Several space missions are searching for extraterrestrial life, which could come in the form of microbes",
-      "cover_url": "https://lede-admin.nautil.us/wp-content/uploads/sites/70/2026/09/AdobeStock_2002344146.jpeg",
-      "blurb": "The question isn't really whether we'll find microbial life beyond Earth — it's whether human civilization, philosophically and politically, is remotely ready for the answer to be yes. This piece sits with the fallout before the discovery even happens."
+      "title": "Astronomers Spot a Strange Atmospheric Wave Above Saturn’s South Pole",
+      "url": "https://nautil.us/astronomers-spot-a-strange-atmospheric-wave-above-saturns-south-pole-1284773/",
+      "snippet": "And it could stick around for decades",
+      "cover_url": "https://lede-admin.nautil.us/wp-content/uploads/sites/70/2026/09/01-saturn.jpg",
+      "blurb": "A mysterious atmospheric wave has appeared above Saturn's south pole, and astronomers think it may linger for decades — a reminder that the solar system is still capable of quiet, unhurried surprises."
     },
     {
       "source": "reads",
       "source_name": "Literary Hub",
-      "title": "10 Literary Science Fiction and Fantasy Novels That Offer Hope for the Future",
-      "url": "https://lithub.com/10-literary-science-fiction-and-fantasy-novels-that-offer-hope-for-the-future/",
-      "snippet": "During graduate school, I finished the novel that found me an agent—but when my agent submitted it to publishers, all twenty of them turned the manuscript down. Truthfully, it was closer to a collection of loosely-linked short stories, and the",
-      "cover_url": "https://s26162.pcdn.co/wp-content/uploads/2026/09/sci-fi-reading-list.png",
-      "blurb": "After twenty rejections, a novelist turned to the futures that science fiction imagines — and found that hope, in literary hands, is a far more demanding and specific thing than optimism. A reading list built from hard-won belief rather than easy comfort."
+      "title": "What Should You Read Next? Here Are the Best Reviewed Books of the Week",
+      "url": "https://lithub.com/what-should-you-read-next-here-are-the-best-reviewed-books-of-the-week-9-4-2026/",
+      "snippet": "Marlon James’ The Disappearers, Jon Ronson’s The Castle, Chloe Benjamin’s Under Story, and Emily Wilson’s Crossing the Wine Dark Sea all feature among the best reviewed books of the month. Brought to you by Book Marks, Lit Hub’s home for book reviews. * Fiction 1.",
+      "cover_url": "https://s26162.pcdn.co/wp-content/uploads/2026/09/crossingthewinedarksea.jpg",
+      "blurb": "From Marlon James to Emily Wilson, this roundup maps the week's most compelling new books through the honest lens of critics — a useful compass if your to-read pile needs a confident next addition."
+    },
+    {
+      "source": "reads",
+      "source_name": "The Atlantic",
+      "title": "Japan’s Strategic Turn",
+      "url": "https://www.theatlantic.com/ideas/2026/09/japan-defense-nuclear-threat/688517/?utm_source=feed",
+      "snippet": "The country is taking once-unthinkable steps to ensure its own defense.",
+      "cover_url": "https://cdn.theatlantic.com/thumbor/fodz5lgyRhni_8MKEQqJpCCDBsQ=/0x5:3994x2085/1200x625/media/img/mt/2026/09/2026_09_04_Japans_Strategic_Turn_Eliot_Cohen/original.jpg",
+      "blurb": "Japan is quietly dismantling decades of post-war pacifism and rearming with a seriousness that would have been unthinkable a generation ago — this piece untangles exactly what that shift means for the balance of power in Asia and beyond."
+    },
+    {
+      "source": "reads",
+      "source_name": "The Atlantic",
+      "title": "The Sexual Politics of the ‘Bed Trick’",
+      "url": "https://www.theatlantic.com/books/2026/09/sexual-deception-trial-the-bed-trick-izabella-scott-book-review/688510/?utm_source=feed",
+      "snippet": "A new book about an infamous trial asks how the stories we tell can define our relationships.",
+      "cover_url": "https://cdn.theatlantic.com/thumbor/-HzcYNLmqVVEUhMDkE5VwZqpDRo=/0x61:2876x1559/1200x625/media/img/mt/2026/09/2026_09_02_How_Do_You_Litigate_Sexual_Deception/original.jpg",
+      "blurb": "The 'bed trick' — the age-old plot device in which one person substitutes for another in the dark — turns out to be less a literary curiosity than a lens for examining who gets to define consent, deception, and desire. A new book uses an infamous historical trial to ask how the stories a culture tells quietly shape the rules it lives by."
+    },
+    {
+      "source": "reads",
+      "source_name": "Asterisk",
+      "title": "After Work, We’ll Have Each Other",
+      "url": "https://asteriskmag.com/issues/15/after-work-we-ll-have-each-other",
+      "snippet": "Once you realize what that means, you’ll be giving two cheers for the American work ethic.",
+      "cover_url": "https://asteriskmag.com/media/pages/issues/15/after-work-we-ll-have-each-other/49f82ec657-1788203208/after-work-clara-collier-1600x900-crop-sharpen50.png",
+      "blurb": "This essay takes the uncomfortable question of what we'd actually do with ourselves if work disappeared and turns it into a frank reckoning with why Americans, for all their complaints, may be clinging to their jobs for reasons that have nothing to do with money."
     }
   ],
   "garden_note": {
-    "note": "September settles over Zürich with that particular golden-hour softness — the linden trees are quieting, the dahlias are still holding court in the beds, and there's just enough chill after dark to remind you that the garden is beginning its long, graceful exhale.",
+    "note": "There's a quiet chill threading through Zürich's gardens this September morning — the kind that makes you pull your cardigan a little tighter before stepping out just after first light. The dahlias are still holding court with magnificent stubbornness, but the turning leaves on the cherry trees are whispering that summer's lease is nearly up.",
     "in_season": [
-      "Dahlias in full bloom",
-      "Apple and pear harvest beginning",
-      "Sowing winter salad greens (lamb's lettuce, spinach)",
-      "Clearing spent summer annuals"
+      "Dahlias in full late bloom",
+      "Harvesting winter squash and courgettes",
+      "Sowing lamb's lettuce (Feldsalat) for autumn",
+      "Clearing spent bean plants and composting"
     ],
-    "sky_tonight": "A slender waning crescent moon rises in the small hours — tonight the sky before midnight belongs to the Milky Way; look south for Sagittarius low on the horizon.",
-    "sun_times": "The light fades gently, with dusk settling in around 20:28 tonight.",
+    "sky_tonight": "The slender waning crescent moon rises well before dawn — look east in the early hours for its thin silver hook low on the horizon.",
+    "sun_times": "First light crept in at 06:21 this morning, with the sun rising properly at 06:51 — savour it; the days are shortening noticeably now.",
     "moon_label": "Waning crescent",
-    "illum_pct": 27,
-    "sun_range": "06:49–19:58"
+    "illum_pct": 21,
+    "sun_range": "06:51–19:56"
   },
   "puzzle": {
-    "kind": "trivia",
-    "label": "The Evening Trivia",
-    "prompt": "Which of these words means \"idle spectator\"?\n\nGongoozler   ·   Gossypiboma   ·   Jentacular   ·   Meupareunia",
-    "answer": "Gongoozler",
-    "hint": "Category: General Knowledge",
-    "source": "opentdb.com",
-    "source_id": "44f8004adfd5"
+    "kind": "anagram",
+    "label": "Fern's Morning Anagram",
+    "prompt": "Unscramble VANTHERE — clue: it shelters the weary traveler, and gives migratory birds a name for their winter refuge.",
+    "answer": "HAVEN — a place of safety and shelter, also echoed in the word \"overwintering haven\" used in ornithology.",
+    "hint": "Think of a harbor town in Connecticut, or simply somewhere safe to rest."
   },
   "previous_puzzle": {
-    "label": "Fern's Morning Riddle",
-    "prompt": "Mr. and Mrs. Mustard have six daughters and each daughter has one brother. How many people are in the Mustard family?",
-    "answer": "There are nine Mustards in the family. Since each daughter shares the same brother, there are six girls, one boy, and Mr. and Mrs. Mustard"
+    "label": "The Evening Trivia",
+    "prompt": "Which of these words means \"idle spectator\"?\n\nGongoozler   ·   Gossypiboma   ·   Jentacular   ·   Meupareunia",
+    "answer": "Gongoozler"
   },
   "larder": {
-    "news": [],
-    "recipe": {}
+    "news": [
+      {
+        "source": "food",
+        "source_name": "The Kitchn",
+        "title": "Made In’s Top-Rated Cast Iron Pan Is on Sale for the First Time Ever (Plus, 12 More Labor Day Deals We’re Shopping)",
+        "url": "https://www.thekitchn.com/made-in-labor-day-sale-2026-23842070?utm_source=RSS&utm_medium=feed&utm_campaign=Category%2FChannel%3A+main",
+        "snippet": "Our editors love its thoughtfully designed and high-performing frying pans and sauciers.",
+        "cover_url": "",
+        "blurb": "If you've been eyeing Made In's beloved cast iron but waiting for the universe to give you a sign, consider this sale your sign."
+      },
+      {
+        "source": "food",
+        "source_name": "Eater",
+        "title": "It’s Time to Take Ranch Dressing Seriously",
+        "url": "https://www.eater.com/dining-out/984279/ranch-dressing-history-world-cup-fine-dining",
+        "snippet": "You can tell a lot about someone by the way they talk about ranch dressing. Do they express Midwestern passion for the condiment, or coastal-elite distaste? Do they limit its usage to crisp iceberg lettuce salads, or do they become a jester of pairings, drizzling the sauce over steak, pasta, and even cereal?",
+        "cover_url": "https://platform.eater.com/wp-content/uploads/sites/2/2026/09/Ranch-Article-Lede.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
+        "blurb": "A thoughtful, slightly cheeky deep-dive into America's most divisive condiment — and why it deserves a seat at the grown-up table."
+      },
+      {
+        "source": "food",
+        "source_name": "The Guardian",
+        "title": "Cheese pie, seed crackers and prawn rolls: Ravinder Bhogal’s recipes for cooking with filo",
+        "url": "https://www.theguardian.com/food/2026/sep/07/filo-pastry-recipes-cheese-onion-pie-seed-crackers-prawn-rolls-ravinder-bhogal",
+        "snippet": "Making your own filo is notoriously faffy but, luckily, there are great ready-made versions out there that make these crunchy, golden savoury treats a doddle I love this gossamer-thin pastry for its lightness and crunch, not least because it can be used for both sweets and savouries. Once, on a trip to Athens, I learned how to make filo from scratch: it needs to be rolled very, very thin, so, unless you are skilled with a rolling pin, it’s hard and time-consuming. Luckily there are good ready-made varieties out there (if you’re using the frozen variety, make sure it’s fully defrosted).",
+        "cover_url": "https://i.guim.co.uk/img/media/79ca13f7666a325f7ad093dcd92dd6d59742a185/146_1639_5063_4050/master/5063.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=f6107ee441c8f9b80ac254e9c75b4d9d",
+        "blurb": "Ravinder Bhogal makes a compelling case that a packet of shop-bought filo and a little ambition are all you need for something gloriously golden and crunchy."
+      }
+    ],
+    "recipe": {
+      "source": "recipe",
+      "source_name": "101 Cookbooks",
+      "title": "Olive Oil Crackers",
+      "url": "https://www.101cookbooks.com/olive-oil-crackers/",
+      "snippet": "This olive oil cracker recipe makes thin, snappy, rustic crackers - sturdy enough to stand up to a hearty dip. The technique is simple and straightforward and utilizes just a few ingredients. The dough is a welcoming canvas to all manner of seeds, salts, cheeses, spices, or flavored oils that you might want to use as accents.",
+      "is_recipe": true,
+      "cover_url": "https://images.101cookbooks.com/cracker_recipe_08.jpg?w=680",
+      "blurb": "These thin, snappy olive oil crackers are the kind of simple, rustic bake that earns you quiet admiration at any cheese board, and they come together with barely any fuss at all."
+    },
+    "seasonal_note": "Zürich's weekly markets are heady with Zwetschgen right now — those deep-violet Italian prunes that beg to be halved and roasted with a little butter and cinnamon, then spooned warm over Quark for a breakfast that tastes like the Alps settling into September."
   },
   "fern_data": {
-    "greeting": "Sleep on this one: Einstein's proof that atoms exist came not from a telescope or a collider, but from watching dust drift in a glass of water. That quiet, almost accidental observation is tonight's best slow-burn — though Tolkien's reply to the Nazis runs a close second.",
-    "top_pick_title": "Dust, Drift & Defiance"
+    "greeting": "Beavers are having a moment, and so is the speed of light — today's edition somehow holds both, without apology.",
+    "top_pick_title": "Dams, Light Cones & Château Floors"
   }
 }
