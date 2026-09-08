@@ -1,141 +1,122 @@
 {
-  "fetched_at": "2026-09-07T20:46:53.405837+02:00",
-  "is_am_email": false,
+  "fetched_at": "2026-09-08T10:12:15.611914+02:00",
+  "is_am_email": true,
   "audit_summary": {
-    "youtube_videos": 8,
-    "themes": 3,
-    "music_articles": 3,
+    "youtube_videos": 6,
+    "themes": 4,
+    "music_articles": 12,
     "good_news_articles": 3,
-    "discovery_articles": 1,
+    "discovery_articles": 0,
     "featured_read": 1,
     "reading_room": 5,
     "garden": 1,
     "puzzle": 1,
-    "larder": 0
+    "larder": 4
   },
   "themes": [
     {
-      "name": "War Stories from the Margins",
-      "emoji": "🎖️",
-      "tagline": "The overlooked figures, forgotten aircraft, and behind-the-scenes decisions that quietly shaped history's biggest moments.",
+      "name": "The Physics Rabbit Hole",
+      "emoji": "🌀",
+      "tagline": "From the minus sign in spacetime to why the whole field might need a rethink — physics that actually messes with your head.",
       "items": [
         {
           "source": "youtube",
-          "video_id": "LdOGINMFa9Y",
-          "title": "'Pressure' Cast On Making The New D-Day Film",
-          "channel_id": "UCZwU2G-KVl-P-O-B35chZOQ",
-          "channel_title": "History Hit",
-          "published_at": "2026-09-07T18:00:30Z",
-          "url": "https://www.youtube.com/watch?v=LdOGINMFa9Y",
-          "duration_seconds": 1251,
-          "view_count": "659",
-          "description": "New film Pressure, starring Brendan Fraser, Andrew Scott and Damian Lewis follows the intense 72 hours leading up to D-Day, as Supreme Allied Commander Dwight D. Eisenhower and chief meteorologist James Stagg face the immense pressure of deciding whether the weather will allow the invasion to go ahead.\n\nAt the centre of this extraordinary story is Group Captain James Stagg, the Scottish meteorologist responsible for advising General Dwight D. Eisenhower on the weather.\n\nLuke Tomes speaks to the ",
-          "why_watch": "This interview pulls back the curtain on a genuinely underappreciated D-Day story: not the generals or the soldiers, but the Scottish meteorologist whose weather forecast determined whether the invasion happened at all. Hearing the cast — including Andrew Scott and Damian Lewis — discuss how they approached these real figures adds texture beyond the typical war-film promotion. If you've never thought much about James Stagg, this 20 minutes will make you want to."
-        },
-        {
-          "source": "youtube",
-          "video_id": "jIaoJduStEU",
-          "title": "The B-32 \"Dominator.\"",
-          "channel_id": "UC4sEmXUuWIFlxRIFBRV6VXQ",
-          "channel_title": "The History Guy: History Deserves to Be Remembered",
-          "published_at": "2026-09-07T12:00:24Z",
-          "url": "https://www.youtube.com/watch?v=jIaoJduStEU",
-          "duration_seconds": 1057,
-          "view_count": "42724",
-          "description": "Over 700 different aircraft models and designs reached active service and serial production worldwide during the Second World War. Some were quite famous, others much less so.  Among the latter was a nearly forgotten US super Heavy Bomber design, overshadowed by a far more famous plane, that ended up perhaps most remembered for a dubious distinction.\n\nCheck out our new shop for fun The History Guy merchandise:\nhttps://thehistoryguy-shop.fourthwall.com/products/thg-history\n\nThis is original conte",
-          "why_watch": "The B-32 Dominator was the B-29's lesser-known sibling — built as a backup in case the Superfortress failed — and it has the odd distinction of being involved in one of the last aerial dogfights of WWII, days after Japan's surrender. The History Guy does what he does best: rescuing a genuinely interesting machine from obscurity and explaining exactly why history forgot it. Compact, well-researched, no filler."
-        }
-      ]
-    },
-    {
-      "name": "Equations at the Edge",
-      "emoji": "🌌",
-      "tagline": "From cracking spacetime to cracking circuits — physics and math pushed to their strangest, most satisfying limits.",
-      "items": [
-        {
-          "source": "youtube",
-          "video_id": "1IljR87JBUI",
-          "title": "Can You ACTUALLY Break Spacetime?",
+          "video_id": "VCiSbQaanL8",
+          "title": "Faraday's Law Explained Visually #physics #electromagnetism #faradayslaw #maxwellsequations",
           "channel_id": "UCIZ5ZOeiXYbmKTl_85ghNPw",
           "channel_title": "Physics Explained",
-          "published_at": "2026-07-18T19:00:08Z",
-          "url": "https://www.youtube.com/watch?v=1IljR87JBUI",
-          "duration_seconds": 2692,
-          "view_count": "487115",
-          "description": "Visit https://hensonshaving.com/physicsexplained or use code physicsexplained to receive 100 free blades with the purchase of a razor.\n\nCan spacetime actually break? Starting with LIGO’s detection of gravitational waves, we explore how spacetime can be assigned an effective stiffness before pushing the analogy to its limit. By combining gravitational-wave physics, Griffith’s theory of fracture and the Planck scale, we ask how much force it might take to tear spacetime itself—and why the Planck f",
-          "why_watch": "Rather than hand-waving spacetime as an abstraction, this video borrows Griffith's fracture mechanics — the same physics used to study cracks in physical materials — and applies it to quantify whether spacetime itself could rupture under extreme conditions. The LIGO gravitational-wave detection serves as the jumping-off point, giving you real numbers to anchor the speculation. At 45 minutes it's a commitment, but the methodical build from concrete physics to genuinely wild territory is what makes it worthwhile."
+          "published_at": "2026-07-06T19:00:06Z",
+          "url": "https://www.youtube.com/watch?v=VCiSbQaanL8",
+          "duration_seconds": 148,
+          "view_count": "12729",
+          "description": "Faraday's Law relates the rate of change of magnetic flux to the induced EMF.  In this short, we build an intuitive, visual understanding of Faraday's Law by looking at several examples. This clip is taken from my latest video on Maxwell's Equations.\nWatch the full explanation here:https://youtu.be/wt1KJtD4Qh8?si=LeUgZIbRSL2JmRNB",
+          "why_watch": "A clean, visual walkthrough of Faraday's Law that prioritizes intuition over equations — useful if you've seen the math but never quite felt it click. At under 2.5 minutes, it's a low-cost way to test whether this channel's teaching style works for you before committing to the full Maxwell's Equations video."
         },
         {
           "source": "youtube",
-          "video_id": "dquI8khH1Zk",
-          "title": "AD - Why do I get this spark when I unplug my hair dryer?",
-          "channel_id": "UCHnyfMqiRRG1u-2MsSQLbXA",
-          "channel_title": "Veritasium",
-          "published_at": "2026-06-30T14:00:19Z",
-          "url": "https://www.youtube.com/watch?v=dquI8khH1Zk",
-          "duration_seconds": 142,
-          "view_count": "3792285",
-          "description": "Why does a charger sometimes spark when you unplug it, even when it's switched off at the wall? We partnered with Anker to find out…\n\nPick up your Anker Prime Charger here:\n\nhttps://ankerfast.club/noagy5\n\n#AnkerTech #Anker #AnkerPrime",
-          "why_watch": "In just over two minutes, Veritasium explains something most people have wondered about and immediately forgotten: why a switched-off appliance still sparks when unplugged. The answer involves inductance and the physics of collapsing magnetic fields — a genuinely satisfying explanation for an everyday mystery. Yes, it's sponsored, but the physics is real and the runtime respects your day."
+          "video_id": "TcOLyqfA5k8",
+          "title": "I finally understood why time even exists! (My mind is blown)",
+          "channel_id": "UCGfFUc6eWxfbtjYeun6r9xg",
+          "channel_title": "FloatHeadPhysics",
+          "published_at": "2025-09-26T13:00:59Z",
+          "url": "https://www.youtube.com/watch?v=TcOLyqfA5k8",
+          "duration_seconds": 1819,
+          "view_count": "612013",
+          "description": "To learn for free on Brilliant, go to https://brilliant.org/FloatHeadPhysics/ . You’ll also get 20% off an annual premium subscription.\n\nSupport me https://patreon.com/floatheadphysics to see how I learn relativity, get sneak peaks, and early video access. \n\nWhy does the spacetime interval have a minus sign? \n\nThe books I mentioned in this video: \nRelativity visualised by Lewis Epstein\nSpacetime Physics by Edwin Taylor\n\nThis video is sponsored by Brilliant",
+          "why_watch": "This video tackles a question most physics explainers sidestep entirely: why does the spacetime interval have a minus sign, and what does that actually tell us about the nature of time? FloatHead builds the argument carefully from first principles, making it accessible without stripping out the substance."
         },
         {
           "source": "youtube",
-          "video_id": "MRU2D6sLpU0",
-          "title": "Understanding Parallel Transport & Connections in Differential Geometry",
+          "video_id": "OibA-8TCp2o",
+          "title": "Can Physics be Fixed? The 2025 Conference for Physical & Mathematical Ontology",
           "channel_id": "UC3KV2kFy2YhjYvverIy2WnA",
           "channel_title": "Dialect",
-          "published_at": "2025-09-20T12:17:44Z",
-          "url": "https://www.youtube.com/watch?v=MRU2D6sLpU0",
-          "duration_seconds": 926,
-          "view_count": "45517",
-          "description": "To master Riemannian Curvature, one must first grasp the concepts of Parallel Transport & Connections, mathematical tools which function as the essential bridges between flat spaces and curved ones. Discover how these simple concepts give us powerful insight into the nature of Differential Geometry, while advancing us towards our ultimate goal of rendering concrete the notion of curved spacetime.  Plus, Jon Snow knows nothing -- except how to conduct Parallel Transport!\n\nPlease consider supporti",
-          "why_watch": "Parallel transport is one of those concepts that sounds abstract until someone shows you that it's really about asking how a vector changes as you slide it along a curved surface — and that's exactly what this video does, carefully and visually. Dialect builds toward Riemannian curvature without rushing, so the 15 minutes actually leaves you with something solid rather than a vague impression. A strong entry point if you're working toward understanding general relativity mathematically."
-        },
-        {
-          "source": "youtube",
-          "video_id": "RW2RSqcvmLk",
-          "title": "Widlar Current Mirror and Current Source",
-          "channel_id": "UCFtCfZ4rtIZ7Hsq7ZNHoY1w",
-          "channel_title": "Computer&Electronics",
-          "published_at": "2025-03-14T09:56:30Z",
-          "url": "https://www.youtube.com/watch?v=RW2RSqcvmLk",
-          "duration_seconds": 478,
-          "view_count": "1144",
-          "description": "This video explains the Widlar current mirror and source following the description Widlar himself gave in the paper «Some circuit design tecniques for linear integrated circuits».  In the early sixties the planar process and the integrated circuit were a recent achievement. It was clear to everyone that through integrated circuit you could pack a huge number of components in a small piece of silicon and that was the future, but designing for integrated circuit wasn’t like designing with discrete",
-          "why_watch": "This video goes straight to Widlar's original 1965 paper to explain how and why the Widlar current mirror works — a refreshingly primary-source approach that most circuit tutorials skip. The historical context of early integrated circuit constraints (few components, tight silicon real estate) makes clear why Widlar's elegant solution mattered so much. Compact and technically honest; best suited if you already know what a basic current mirror is."
+          "published_at": "2025-07-26T13:18:57Z",
+          "url": "https://www.youtube.com/watch?v=OibA-8TCp2o",
+          "duration_seconds": 1366,
+          "view_count": "17063",
+          "description": "The 2025 Conference for Physical and Mathematical Ontology took place at the end of June 2025, and saw a number of talented and independent thinkers from all across the globe converge in the city of Munich, Germany. Recognizing the need to restore the lost connection between physics and philosophy, and eschewing the overly-abstract interpretations of modern theories in favor of physically grounded, cause-and-effect models, these individuals set out to explore some of the deepest mysteries of our",
+          "why_watch": "A ground-level look at a conference deliberately pushing back against the philosophy-free, shut-up-and-calculate culture that has dominated theoretical physics — featuring independent researchers, not just institutional voices. If you've wondered whether the foundational questions in physics are being seriously revisited anywhere, this gives you a concrete answer."
         }
       ]
     },
     {
-      "name": "Slow Down, Think Better",
-      "emoji": "🌱",
-      "tagline": "A garden that keeps it real and a manifesto for actually learning things — because doing beats watching, every time.",
+      "name": "Trust, But Verify",
+      "emoji": "🔬",
+      "tagline": "What happens when the systems we rely on — courtrooms, consensus, institutions — were built on shakier ground than anyone admitted.",
       "items": [
         {
           "source": "youtube",
-          "video_id": "AxQU7uWxCyw",
-          "title": "Tough Week? Come Garden With Me! (week 18)",
-          "channel_id": "UC5eLPZi_RSh81523mrBzHNg",
-          "channel_title": "Gardening Experiments with Mind & Soil",
-          "published_at": "2026-07-04T13:00:38Z",
-          "url": "https://www.youtube.com/watch?v=AxQU7uWxCyw",
-          "duration_seconds": 1070,
-          "view_count": "3980",
-          "description": "🌱🍅 Want to start feeding your family from your backyard? Join my FREE Weekly Newsletter for gardening tips & videos: https://forms.gle/SrwU1EjkSScgVTVy8\n\nEXPERIMENT VIDEOS\n💡 $30 vs $300 Grow Light: WATCH This Before Buying a Grow Light! https://youtu.be/_0EFGE9ZljY\n\n💡 I Tested Every Grow Light Height https://youtu.be/LGKlQ5iGbpY\n\n💡 6 Steps To Guarantee Thriving Seedlings https://youtu.be/X2nXwawGqXI \n\nPRODUCTS I USE & LOVE (try code mindandsoil or mindandsoil10 for discounts!)\nSproutbox Metal Ra",
-          "why_watch": "This is a low-key, companionable garden update that doubles as honest documentation of what week 18 of a backyard food-growing experiment actually looks like — not a highlight reel. The channel's strength is treating the garden as a running experiment rather than a lifestyle aesthetic, so setbacks get the same airtime as wins. Good background viewing if you're in a similar season of your own growing."
-        },
+          "video_id": "mvcesPWvUIc",
+          "title": "We've Been Using The Wrong Science In Court For 50 years",
+          "channel_id": "UCHnyfMqiRRG1u-2MsSQLbXA",
+          "channel_title": "Veritasium",
+          "published_at": "2026-06-22T14:40:50Z",
+          "url": "https://www.youtube.com/watch?v=mvcesPWvUIc",
+          "duration_seconds": 1402,
+          "view_count": "2544055",
+          "description": "How accurate is modern forensics? Sponsored by Saily - Get an exclusive 15% discount on Saily data plans! Use code veritasium at checkout. Download the Saily app or go to https://saily.com/veritasium\n\nLast year, we launched the Elements of Truth game on Kickstarter and were thrilled by the response. We’re now in the final stages of production, with Kickstarter rewards shipping soon. If you missed the campaign, you can now pre-order the retail edition through our new website here - https://ve42.c",
+          "why_watch": "Veritasium examines how forensic techniques like bite-mark analysis and hair matching — long treated as courtroom gold standards — were adopted without rigorous scientific validation, and how that failure has contributed to wrongful convictions. It's a sobering look at what happens when the legal system mistakes expert confidence for empirical proof."
+        }
+      ]
+    },
+    {
+      "name": "Under The Hood",
+      "emoji": "⚙️",
+      "tagline": "For the tinkerers and the curious — what's really happening inside the machine, one instruction at a time.",
+      "items": [
         {
           "source": "youtube",
-          "video_id": "6rkSPPyz_Bo",
-          "title": "The most powerful way to learn anything (It's Brilliant)",
-          "channel_id": "UCGfFUc6eWxfbtjYeun6r9xg",
-          "channel_title": "FloatHeadPhysics",
-          "published_at": "2025-11-21T13:00:13Z",
-          "url": "https://www.youtube.com/watch?v=6rkSPPyz_Bo",
-          "duration_seconds": 809,
-          "view_count": "41682",
-          "description": "To learn for free on Brilliant, go to https://brilliant.org/BrilliantFloatHeadPhysics/  . You’ll also get 20% off an annual premium subscription.\n\n\nWant my T-shirt? \nhttps://floatheadphysics.com/products/i-am-sexy-i-know-it'\n\nThis video is sponsored by Brilliant",
-          "why_watch": "Strip away the Brilliant sponsorship and the core argument here is worth engaging with: that the most effective learning happens through active problem-solving rather than passive consumption, and the video makes a specific case for why physics in particular resists passive study. The creator uses their own learning journey as a concrete example rather than vague motivational advice. It's most useful if you're already trying to self-teach a technical subject and hitting a wall."
+          "video_id": "Kv2fPywX7EA",
+          "title": "ALU instruction SIMULATION - Control Unit - Scott's CPU - How computers work",
+          "channel_id": "UCFtCfZ4rtIZ7Hsq7ZNHoY1w",
+          "channel_title": "Computer&Electronics",
+          "published_at": "2025-03-08T11:20:09Z",
+          "url": "https://www.youtube.com/watch?v=Kv2fPywX7EA",
+          "duration_seconds": 1271,
+          "view_count": "340",
+          "description": "In this video we start to see the instruction code of the Scott’s CPU. In particular the ALU instruction. We see the control logic to drive the ALU instruction. This video is the simulation part of the theoretical video «Instruction code - ALU instruction» of the «How computers work – building Scott’s CPU» youtube playlist. The link to the playlist and the circuitVerse link are in description.\n\nHow Computers work playlist : https://youtube.com/playlist?list=PLnAxReCloSeTJc8ZGogzjtCtXl_eE6yzA&si=",
+          "why_watch": "A niche but genuinely useful video for anyone working through how CPUs execute instructions at the hardware level — specifically how the control unit decodes ALU opcodes in Scott's 8-bit CPU build. The simulation format makes the signal flow far easier to follow than a schematic alone would."
+        }
+      ]
+    },
+    {
+      "name": "Slow Grows The Garden",
+      "emoji": "🌱",
+      "tagline": "A refreshingly unfiltered look at growth — the kind that takes weeks, shows its failures, and keeps going anyway.",
+      "items": [
+        {
+          "source": "youtube",
+          "video_id": "-F6ELTELabQ",
+          "title": "We're not even close... (week 16)",
+          "channel_id": "UC5eLPZi_RSh81523mrBzHNg",
+          "channel_title": "Gardening Experiments with Mind & Soil",
+          "published_at": "2026-06-27T13:00:14Z",
+          "url": "https://www.youtube.com/watch?v=-F6ELTELabQ",
+          "duration_seconds": 1675,
+          "view_count": "4886",
+          "description": "🌱🍅 Want to start feeding your family from your backyard? Join my FREE Weekly Newsletter for gardening tips & videos: https://forms.gle/SrwU1EjkSScgVTVy8\n\nEXPERIMENT VIDEOS\n💡 $30 vs $300 Grow Light: WATCH This Before Buying a Grow Light! https://youtu.be/_0EFGE9ZljY\n\n💡 I Tested Every Grow Light Height https://youtu.be/LGKlQ5iGbpY\n\n💡 6 Steps To Guarantee Thriving Seedlings https://youtu.be/X2nXwawGqXI \n\nPRODUCTS I USE & LOVE (try code mindandsoil or mindandsoil10 for discounts!)\nSproutbox Metal Ra",
+          "why_watch": "A real-time gardening experiment update, not a highlight reel — which means you see what's struggling, not just what's thriving. If you follow along week-to-week, episode 16 continues honest documentation of what backyard food growing actually looks like mid-season."
         }
       ]
     }
@@ -144,168 +125,292 @@
     {
       "source": "music",
       "source_name": "NPR Music",
-      "title": "Rosanne Cash shares the list of music her dad, Johnny, insisted she know",
-      "snippet": "Rosanne Cash was 18 when her famous dad gave her a list of 100 essential country songs he thought she needed to know. She's since worked across many musical genres. Originally broadcast Oct.",
-      "url": "https://www.npr.org/2026/09/07/nx-s1-5957469/rosanne-cash-shares-the-list-of-music-her-dad-johnny-insisted-she-know",
+      "title": "Meet the alien math-rock duo selling out shows across the U.S.",
+      "snippet": "Angine de Poitrine wears giant masks, speaks an alien language and plays wildly complicated math rock. Manager Sebastien Collin talks about the rise of the enigmatic musical group.",
+      "url": "https://www.npr.org/2026/09/06/nx-s1-5897445/meet-the-alien-math-rock-duo-selling-out-shows-across-the-u-s",
       "genre": "",
-      "vibe_check": "Like finding a handwritten letter from someone wiser tucked inside an old record sleeve.",
+      "vibe_check": "Like stumbling into a fever dream at 2am where the band is definitely not human but you can't stop nodding your head.",
       "cover_url": "https://media.npr.org/include/images/facebook-default-wide-s1400-c85.jpg",
       "embed_url": null
     },
     {
       "source": "music",
-      "source_name": "Aquarium Drunkard",
-      "title": "Christer Bothen/Oren Ambarchi/Johan Berthling/Andreas Werliin :: Serpentine",
-      "snippet": "The Ghosted trio haven't changed much over the course of three albums, turning out sleek, skeletal jazz with deft regularity. With the addition of Swedish multi-instrumentalist Christer Bothen, guitarist Oren Ambarchi, bassist Johan Berthling and drummer Andreas Werliin deepen their groove while expanding their reach. Thanks to the addition of Bothen's bluesy bass clarinet and earthy donso n'goni, the Ghosted trio comes alive but stays haunted.",
-      "url": "https://aquariumdrunkard.com/2026/09/07/christer-bothen-oren-ambarchi-johan-berthling-andreas-werliin-serpentine/",
+      "source_name": "NPR Music",
+      "title": "Olivia Rodrigo has a lot on her mind. But she's still choosing joy",
+      "snippet": "Olivia Rodrigo is thinking about joy, falling madly in love and what pop music can do when the world feels overwhelming.",
+      "url": "https://www.npr.org/2026/09/03/nx-s1-5866797/olivia-rodrigo-daisy-chain-fields-new-album",
       "genre": "",
-      "vibe_check": "The sound of smoke curling through a dimly lit room where the music never quite resolves but you never want it to.",
-      "cover_url": "https://aquariumdrunkard.com/_newness/wp-content/uploads/2026/09/serpentine-oren.jpg",
+      "vibe_check": "Bubblegum optimism with a bruised heart underneath, like dancing alone in your room after crying.",
+      "cover_url": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/2459x1383+0+128/resize/1400/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F66%2F0b%2F17d08e564e049ad6abd657995f22%2Fgettyimages-2292649392.jpg",
       "embed_url": null
     },
     {
       "source": "music",
-      "source_name": "JazzTimes",
-      "title": "Good Trouble, Great Belief: Drummer Matt Wilson on Banding Together, in Music and Life",
-      "snippet": "I really believe in bands,” drummer Matt Wilson offers up with conviction. “Jazz is always presented through an individual’s contributions, but nobody does this by …",
-      "url": "https://www.jazztimes.com/features/profiles/good-trouble-great-belief-drummer-matt-wilson-on-banding-together-in-music-and-life/",
+      "source_name": "Stereogum",
+      "title": "Cell Rot Announce New Album Paradise: Hear “Paradise/Parasite II”",
+      "snippet": "The fast and nasty Oakland hardcore band Cell Rot put out an album called Parasite last year, the first half of a two-part project recorded with the iconic punk and metal producer Jack Shirley. Soon they'll drop the second half, Paradise . On opening track and lead single \"Paradise/Parasite II,\" they hammer home the resemblance between those two words and the relationship between the concepts.",
+      "url": "https://stereogum.com/2510590/cell-rot-announce-new-album-paradise-hear-paradise-parasite-ii/music/",
       "genre": "",
-      "vibe_check": "The warmth of a rehearsal space where everyone shows up not for the gig, but for each other.",
-      "cover_url": "https://www.jazztimes.com/wp-content/uploads/2026/09/14-Wilson_Good-Trouble_johnabbottphoto_185-scaled.jpg",
-      "embed_url": "https://www.youtube.com/embed/RtfEbGlYE8A"
+      "vibe_check": "The sound of something rotting beautifully, like a mosh pit in a condemned building.",
+      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/09/a4262297225_10.jpg?w=564",
+      "embed_url": "https://cellrothc.bandcamp.com/album/parasite"
+    },
+    {
+      "source": "music",
+      "source_name": "Stereogum",
+      "title": "American Motors Announce New Album Functional Music: Hear “No Horses”",
+      "snippet": "Lancaster, PA trio American Motors impressed us with their 2024 debut Content . Now they're back to announce another album of scraping, pounding, ominous underground rock music. For Functional Music , out in November, the band once again recorded with the legendary J Robbins at his Magpie Cage studio in Baltimore, so Alex Steward's drums thwack extra viscerally.",
+      "url": "https://stereogum.com/2510583/american-motors-announce-new-album-functional-music-hear-no-horses/music/",
+      "genre": "",
+      "vibe_check": "Concrete and rust given a pulse — music that feels like it was recorded inside a collapsing warehouse.",
+      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/09/unnamed-2026-09-07T105405.804.png?w=564",
+      "embed_url": "https://www.youtube.com/embed/hsgyy-FW-ko"
+    },
+    {
+      "source": "music",
+      "source_name": "Stereogum",
+      "title": "Pulp Break Out Deep Cuts They Hadn’t Played In Decades At End Of The Road 2026",
+      "snippet": "Pulp have been back at it for well over three years now, so it's probably too late to reflexively describe them as \"the reunited Pulp\" or \"the resurgent Pulp.\" But if it's no longer novel for Jarvis Cocker and friends to be playing shows and releasing new music again, there are still ways for the band to surprise and delight their fans.",
+      "url": "https://stereogum.com/2510580/pulp-break-out-deep-cuts-they-hadnt-played-in-decades-at-end-of-the-road-2026/news/",
+      "genre": "",
+      "vibe_check": "The warm shock of hearing a song you forgot you loved being played like it never went away.",
+      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/09/GettyImages-2284118676.jpg?w=564",
+      "embed_url": "https://www.youtube.com/embed/IS7Y6A1Y6vU"
+    },
+    {
+      "source": "music",
+      "source_name": "No Depression",
+      "title": "FOUNDERS KEEPERS: “Do Something…Even If It's Wrong”",
+      "snippet": "Somehow the pacifist child grew up loving pro wrestling, and the 12-inch black and white television didn't even enter the house until the summer of the Watergate hearings, when I had the chainsaw accident. This can now be rationalized as the careful study of how character can",
+      "url": "https://nodepression.org/founders-keepers-do-something-even-if-its-wrong/",
+      "genre": "",
+      "vibe_check": "Sun-worn and strange, like a story told on a porch by someone who's lived too many lives to keep them straight.",
+      "cover_url": "https://storage.ghost.io/c/18/d0/18d08e58-3b1b-4720-ae25-a31b44e69d4b/content/images/2026/08/Br549album.jpg",
+      "embed_url": null
+    },
+    {
+      "source": "music",
+      "source_name": "Pitchfork",
+      "title": "Radiohead Announce Australia and Japan Shows",
+      "snippet": "The band will play a total of 21 dates in 2027",
+      "url": "https://pitchfork.com/story/radiohead-announce-australia-and-japan-residencies/",
+      "genre": "",
+      "vibe_check": "The quiet electricity of circling a date on a calendar and already dreading how much it will mean.",
+      "cover_url": "https://media.pitchfork.com/photos/6a8da1c7ec136da2630cf098/master/pass/GettyImages-1400492183.jpg",
+      "embed_url": null
+    },
+    {
+      "source": "music",
+      "source_name": "Pitchfork",
+      "title": "Bad Bunny Wins His First Emmy Award",
+      "snippet": "The Puerto Rican star’s Super Bowl LX Halftime Show won all seven categories it was nominated in at the Creative Arts Emmys",
+      "url": "https://pitchfork.com/story/bad-bunny-wins-emmy-awards/",
+      "genre": "",
+      "vibe_check": "Confetti and a crown — the triumphant, bass-rattling energy of someone who showed up and swept the room.",
+      "cover_url": "https://media.pitchfork.com/photos/6a9d701547a47d2f33ab4c53/master/pass/GettyImages-2286553344.jpg",
+      "embed_url": null
+    },
+    {
+      "source": "music",
+      "source_name": "Pitchfork",
+      "title": "Here’s Everyone Kanye West Brought Out at His Homecoming Chicago Show",
+      "snippet": "Future, 2 Chainz, Twista, Young Thug, Travis Scott, and more appeared at the embattled rapper’s Windy City stint",
+      "url": "https://pitchfork.com/story/heres-everyone-kanye-west-brought-out-at-his-homecoming-chicago-show/",
+      "genre": "",
+      "vibe_check": "A hometown block party that somehow keeps escalating until half the city is on stage.",
+      "cover_url": "https://media.pitchfork.com/photos/6a9a5f7ea0231fdbbf6ee24a/master/pass/GettyImages-2292525127.jpg",
+      "embed_url": null
+    },
+    {
+      "source": "music",
+      "source_name": "Aquarium Drunkard",
+      "title": "Upper Wilds :: Mercury",
+      "snippet": "Dan Friel is having a summer, what with the surprise resurgence of aughts noise mainstays Parts & Labor and now a fourth album from guitar-centric, astronomy-centric Upper Wilds. Yet while the double disc Parts & Labor veered occasionally towards proggy excess Mercury runs a ferociously tight ship. It’s loud as fuck, but nothing’s wasted.",
+      "url": "https://aquariumdrunkard.com/2026/09/04/upper-wilds-mercury/",
+      "genre": "",
+      "vibe_check": "Staring directly into the sun through a guitar amp — blinding, relentless, and somehow clarifying.",
+      "cover_url": "https://aquariumdrunkard.com/_newness/wp-content/uploads/2026/08/upper-wilds.jpg",
+      "embed_url": null
+    },
+    {
+      "source": "music",
+      "source_name": "Consequence",
+      "title": "Macklemore Defends Pro-Palestine Remarks at Ed Sheeran Concert Following Criticism from P!NK, Boy George",
+      "snippet": "The rapper is standing by his remarks after his MetLife Stadium speech drew criticism and calls for his removal from Sheeran's tour. Macklemore Defends Pro-Palestine Remarks at Ed Sheeran Concert Following Criticism from P!NK, Boy George Alex Young",
+      "url": "https://consequence.net/2026/09/macklemore-palestine-ed-sheeran-remarks/",
+      "genre": "",
+      "vibe_check": "The charged, uncomfortable silence after someone grabs the mic and says what nobody at the party wanted to hear.",
+      "cover_url": "https://consequence.net/wp-content/uploads/2026/09/Macklemore.jpeg?quality=80",
+      "embed_url": null
+    },
+    {
+      "source": "music",
+      "source_name": "Consequence",
+      "title": "Jeff Arcuri on Netflix Stand-Up Special Nice to Meet You and Escaping the Crowd Work Box: Podcast",
+      "snippet": "The comedian reveals why he couldn’t watch the finished set for a month, how therapy helped him return to it, and what he’s writing next. Jeff Arcuri on Netflix Stand-Up Special Nice to Meet You and Escaping the Crowd Work Box: Podcast Kyle Meredith",
+      "url": "https://consequence.net/2026/09/jeff-arcuri-nice-to-meet-you-crowd-work/",
+      "genre": "",
+      "vibe_check": "The nervous laugh of finally watching back footage of yourself being completely vulnerable and realizing it was worth it.",
+      "cover_url": "https://consequence.net/wp-content/uploads/2026/09/Jeff-Arcuri-nice-to-meet-you-standup-comedy-special-interview-kyle-meredith-with-podcast.jpg?quality=80",
+      "embed_url": "https://www.youtube.com/embed/CN0cIvQS_W4"
     }
   ],
   "global_silver_linings": [
     {
       "source": "good_news",
       "source_name": "Good News Network",
-      "title": "22-yo with Down Syndrome Becomes Certified Fitness Instructor, Leads Class of 60 at Local Gym",
-      "url": "https://www.goodnewsnetwork.org/22-yo-with-down-syndrome-becomes-certified-fitness-instructor-leads-class-of-60-at-local-gym/",
-      "snippet": "A 22-year-old Utahan with Down Syndrome has just become a certified fitness instructor for the popular fitness program UpBeat Barre. UpBeat Barre instructor and co-owner of VASA Fitness in Kaysville, Jane Johnson, said she had kept her eye on Aubry Allbridge for some years, noticing how the young woman was exceptionally gifted in remembering the […]",
-      "cover_url": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/09/credit-Cindy-Allbridge.jpg",
-      "reason": "A 22-year-old with Down Syndrome earning his fitness instructor certification and leading a class of 60 people is a powerful reminder that when we raise our expectations, people rise to meet them. His achievement quietly reshapes what's considered possible for others who will follow his path."
-    },
-    {
-      "source": "good_news",
-      "source_name": "Positive News",
-      "title": "We’re likely to breach 1.5C. What happens next is still in our hands",
-      "url": "https://www.positive.news/environment/were-likely-to-breach-1-5c-what-happens-next-is-still-in-our-hands/",
-      "snippet": "Crossing the climate threshold now looks unavoidable, but temperatures are still shaped by the choices we make now",
-      "cover_url": "https://www.positive.news/wp-content/uploads/2026/09/ice.jpg",
-      "reason": "Acknowledging that we may breach 1.5°C is sobering, but the honest message here is that every fraction of a degree still matters — and the choices we make now genuinely shape how severe the consequences will be. That's not a reason for despair; it's a reason to keep going."
+      "title": "Good News in History, September 8",
+      "url": "https://www.goodnewsnetwork.org/events060908/",
+      "snippet": "60 years ago, the first episode of Star Trek, featuring “Space: the final frontier” and the USS Enterprise, began its three-year mission of exploration on TV screens across America. The science-fiction television show created by Gene Roddenberry was set in the 23rd century and starred William Shatner and Leonard Nimoy. The NBC show has since […]",
+      "cover_url": "https://www.goodnewsnetwork.org/wp-content/uploads/2015/09/Star-Trek-Shatner-and-Nimoy-2.jpg",
+      "reason": "History is full of quiet victories worth remembering — pausing to mark the good that has happened on this day reminds us that progress is real and has always been possible. These moments of reflection root us in a longer story of human resilience."
     },
     {
       "source": "good_news",
       "source_name": "Upworthy",
-      "title": "Fans gushed over Jessica Biel’s toned body in a white dress. Then she gave a reality check.",
-      "url": "https://www.upworthy.com/jessica-biel-toned-body-workout-routine-ex1/",
-      "snippet": "\"This kind of transparency is so important.\"",
-      "cover_url": "https://www.upworthy.com/wp-content/uploads/sites/2/2025/09/origin-77960.jpg",
-      "reason": "When a public figure uses her own spotlight to push back against unrealistic beauty standards, it chips away at the culture of comparison that quietly harms so many people. Small moments of honesty from visible voices can have an outsized ripple effect."
-    }
-  ],
-  "discovery_articles": [
+      "title": "Forget how your mom did it. There’s actually a right way to remove a tick.",
+      "url": "https://www.upworthy.com/forget-how-your-mom-did-it-theres-actually-a-right-way-to-remove-a-tick-ex1/",
+      "snippet": "No matches, alcohol, or Vaseline—and for good reason.",
+      "cover_url": "https://www.upworthy.com/wp-content/uploads/sites/2/2026/05/2_9fe337.jpg",
+      "reason": "Updated, evidence-based guidance on tick removal means fewer people are accidentally making a bad situation worse outdoors — a small but genuinely useful piece of knowledge that keeps families safer in the garden and on the trail."
+    },
     {
-      "source": "discovery",
-      "source_name": "JSTOR Daily",
-      "title": "The Nazi Car That Conquered the World",
-      "url": "https://daily.jstor.org/the-nazi-car-that-conquered-the-world/",
-      "snippet": "The Volkswagen Beetle helped symbolize Germany’s postwar rebirth, despite its origins in Hitler’s vision of a “people’s car.”",
-      "category": "history",
-      "cover_url": "https://daily.jstor.org/wp-content/uploads/2026/09/the_nazi_car_that_conquered_the_world_1050x700.jpg",
-      "ferns_note": "The car Hitler commissioned as a monument to National Socialist prosperity somehow became the mascot of 1960s counterculture — flower-painted and beloved by the very people most likely to reject everything it came from. History has a dark sense of humor."
+      "source": "good_news",
+      "source_name": "The Optimist Daily",
+      "title": "The neuroscience of motivation: what orexin neurons reveal about staying the course",
+      "url": "https://www.optimistdaily.com/2026/09/the-neuroscience-of-motivation-what-orexin-neurons-reveal-about-staying-the-course/",
+      "snippet": "BY THE OPTIMIST DAILY EDITORIAL TEAM Researchers at Nagoya University identified orexin-producing neurons as the brain’s apparent mechanism for deciding whether a reward is worth pursuing. Published in the Proceedings of the National Academy of Sciences, the study suggests these cells are doing something more specific than previously understood: not just regulating wakefulness and energy, but […] The post The neuroscience of motivation: what orexin neurons reveal about staying the course first appeared on The Optimist Daily: Making Solutions the News .",
+      "cover_url": "https://www.optimistdaily.com/wp-content/uploads/Depositphotos_77461184_L.jpg",
+      "reason": "Scientists are uncovering the specific brain circuits that help us push through difficulty, offering real insight into why motivation falters and how we might support it more effectively. Understanding the biology of perseverance is a meaningful step toward helping people live with more purpose and less unnecessary struggle."
     }
   ],
+  "discovery_articles": [],
   "featured_read": {
     "source": "reads",
-    "source_name": "Literary Hub",
-    "title": "How Fordism and Fascism Gave Birth to Modern Car Culture",
-    "url": "https://lithub.com/how-fordism-and-fascism-gave-birth-to-modern-car-culture/",
-    "snippet": "In 1934, writing from his prison cell, Antonio Gramsci reflected on the sweeping transformations reshaping industrial production in the United States. The rise of the automobile and the wider Fordist factory, he argued, signaled a new economic and moral order,",
-    "cover_url": "https://s26162.pcdn.co/wp-content/uploads/2026/08/Dagenham-photo-cars-one-assembly-line-pictures-1931-1.jpg",
-    "blurb": "Gramsci, writing from a fascist prison cell, saw something the rest of us missed: that the assembly line wasn't just making cars, it was making a new kind of human being. This essay traces the strange, troubling family tree that connects Fordist efficiency to authoritarian politics — and to the roads we still drive today."
+    "source_name": "Asterisk",
+    "title": "Why We Like Things",
+    "url": "https://asteriskmag.com/issues/15/why-we-like-things",
+    "snippet": "What Silicon Valley gets wrong about taste.",
+    "cover_url": "https://asteriskmag.com/media/pages/issues/15/why-we-like-things/9fd11856c5-1786382883/taste-celine-nguyen-1600x900-crop-sharpen50.png",
+    "blurb": "This essay picks a fight with the recommendation algorithm, arguing that Silicon Valley has confused preference data with taste—and that the difference matters more than we've admitted. A sharp, clarifying read for anyone who has felt vaguely betrayed by their own Spotify Wrapped."
   },
   "reading_room": [
     {
       "source": "reads",
-      "source_name": "The Atlantic",
-      "title": "AI Is Already Changing What It Means to Be Human",
-      "url": "https://www.theatlantic.com/ideas/2026/09/open-ai-consciousness-morality/688535/?utm_source=feed",
-      "snippet": "As we learn to think more and more highly of the bots, we will learn to think less and less highly of our fellow humans.",
-      "cover_url": "https://cdn.theatlantic.com/thumbor/qdJ5ouVHP6TTuy8HAzo0ees6bds=/0x35:2000x1077/1200x625/media/img/mt/2026/09/AnthropomorphismNew/original.png",
-      "blurb": "The quiet danger of AI may not be what it does to us directly, but what it quietly teaches us to feel about each other — this essay asks whether outsourcing thought and companionship to machines is slowly eroding the premium we place on being human."
-    },
-    {
-      "source": "reads",
-      "source_name": "The Atlantic",
-      "title": "What Howard Zinn Got Wrong",
-      "url": "https://www.theatlantic.com/books/2026/09/what-howard-zinn-got-wrong-david-zirin-biography-book-review/688476/?utm_source=feed",
-      "snippet": "The historian believed that empowering the people would improve society. History hasn’t always proved him right.",
-      "cover_url": "https://cdn.theatlantic.com/thumbor/uDQEOyw4VUKCn-q5d_xzc0UU0f8=/0x73:3420x1854/1200x625/media/img/mt/2026/08/2026_08_31_Howard_Zinn_Review/original.jpg",
-      "blurb": "Howard Zinn gave generations of readers a history told from the bottom up, but what happens when the people's will leads somewhere ugly? A sharp, honest reckoning with the limits of a beloved idea."
-    },
-    {
-      "source": "reads",
-      "source_name": "Asterisk",
-      "title": "Saving Academics from Themselves",
-      "url": "https://asteriskmag.com/issues/15/saving-academics-from-themselves",
-      "snippet": "The university will survive AI. That doesn’t mean we’ll like what it turns into.",
-      "cover_url": "https://asteriskmag.com/media/pages/issues/15/saving-academics-from-themselves/7b82183886-1787595087/saving-academics-kevin-munger-1600x900-crop-sharpen50.png",
-      "blurb": "The university won't be killed by AI — it will survive in a form its current inhabitants might not recognize or love, and this essay maps exactly how that slow transformation is already underway."
-    },
-    {
-      "source": "reads",
       "source_name": "Damn Interesting",
-      "title": "Omiword, a Word Game",
-      "url": "https://www.damninteresting.com/omiword/",
-      "snippet": "Omiword, a Word Game : In certain dialects of Chinese, Japanese, Korean, and Vietnamese, the word for ‘four’ sounds very similar to the word for ‘death’1. Consequently, the number 4 is considered by many people in East Asian nations to be unlucky. It is not unusual for buildings in that region to skip the number 4 when labeling floors, much […]",
-      "cover_url": "https://damn-8791.kxcdn.com/wp-content/uploads/2025/07/damninteresting-191.jpg",
-      "blurb": "What begins with the number four sounding like the word for death opens into a surprisingly rich meditation on how language shapes superstition, architecture, and the quiet logic of everyday fear across cultures."
+      "title": "Much Ado About Adenoids",
+      "url": "https://www.damninteresting.com/much-ado-about-adenoids/",
+      "snippet": "Much Ado About Adenoids : Edmund Lawall must have felt cursed. He’d brought his family to New York in the late 1800s to carry on his father’s business as a pharmacist, but fate—or perhaps the city itself—seemed determined to drive him back out again. Lawall’s health had been in decline since their arrival, and his wife’s kidney disease had worsened, […]",
+      "cover_url": "https://damn-8791.kxcdn.com/wp-content/uploads/2025/06/damninteresting-275.jpg",
+      "blurb": "One pharmacist's relentless health troubles in late-1800s New York become the unlikely entry point into a strange and forgotten chapter of medical history, where a single small piece of throat tissue was blamed for nearly everything wrong with the modern body. Curl up with this one if you enjoy the kind of story where medicine looks, in hindsight, like inspired guesswork."
     },
     {
       "source": "reads",
       "source_name": "Aeon",
-      "title": "The planet is… up to something",
-      "url": "https://aeon.co/videos/is-this-artemis-ii-timelapse-the-pale-blue-dot-for-our-times",
-      "snippet": "An astronaut’s image of Earth from the 2026 lunar flyby reveals not our profound smallness but our growing significance - by Aeon Video Watch on Aeon",
-      "cover_url": "https://images.aeonmedia.co/images/ecd022e4-779f-4b7c-8b20-8c8e3ebae780/this-planet-is-up-to-something-landscape-1.jpg?width=1200&quality=75&format=jpeg",
-      "blurb": "A single photograph from the 2026 lunar flyby reframes the oldest existential image we have: rather than confirming our smallness, it confronts us with our growing weight upon the world."
+      "title": "Continental divide",
+      "url": "https://aeon.co/essays/why-the-pan-american-highway-only-half-exists",
+      "snippet": "A century ago, the Pan-American road promised a new era of fraternity between the two continents. Did it succeed? - by Shawn Miller Read on Aeon",
+      "cover_url": "https://images.aeonmedia.co/images/7ceec72b-c3a7-478b-891f-6d9e32f1bbad/sz-final-essay-gettyimages-1151909862.jpg?width=1200&quality=75&format=jpeg",
+      "blurb": "The Pan-American Highway was sold as a ribbon of continental brotherhood stretching from Alaska to Patagonia—this essay asks what happened to that dream when rubber met the road, and why the gap in the Darién jungle tells a truer story than any ribbon-cutting ever did."
+    },
+    {
+      "source": "reads",
+      "source_name": "Nautilus",
+      "title": "What Archaeology Reveals About the Rise of All-Powerful Rulers",
+      "url": "https://nautil.us/what-archaeology-reveals-about-the-rise-of-all-powerful-rulers-1284855/",
+      "snippet": "Autocracy wasn’t inevitable in early civilizations—many were more egalitarian. But when riches were there to monopolize, strongmen and inequalities emerged",
+      "cover_url": "https://lede-admin.nautil.us/wp-content/uploads/sites/70/2026/09/shutterstock_2003300501.jpg",
+      "blurb": "Autocracy, it turns out, needed the right conditions to take root—and archaeologists are now reading its origin story in the soil. This is an unsettling and clarifying look at the precise moment, repeated across early civilizations, when surplus became leverage and one person figured out how to own both."
+    },
+    {
+      "source": "reads",
+      "source_name": "Psyche",
+      "title": "Is it morally wrong to not take care of yourself?",
+      "url": "https://psyche.co/ideas/is-it-morally-wrong-to-not-take-care-of-yourself",
+      "snippet": "The philosophical debate goes on. But our research on self-obligations suggests there’s a common, consequential view - by Laura K Soter & Fan Yang Read on Psyche",
+      "cover_url": "https://images.aeonmedia.co/images/bdc352d9-85f3-44b4-bcad-be060911b2fb/sz-beraud_-_trois_personnages_dans_un_cafe_vers_1890.jpg?top=163&left=0&cropWidth=2416&cropHeight=1359&width=1200&quality=75&format=jpeg",
+      "blurb": "Most ethical philosophy worries about what we owe each other, but this essay quietly presses on the neglected question of what we owe ourselves—and whether neglecting your own wellbeing is not just unwise but actually wrong. It's the kind of piece that stays with you the next time you skip the thing you know would do you good."
+    },
+    {
+      "source": "reads",
+      "source_name": "Longreads",
+      "title": "On Tour with the Eclipse Chasers",
+      "url": "https://longreads.com/2026/09/07/on-tour-with-the-eclipse-chasers/",
+      "snippet": "\"They spend their lives seeking seconds of darkness.\"",
+      "cover_url": "",
+      "blurb": "Eclipse chasers rearrange their entire lives around two minutes of totality—this piece gets close enough to understand why that trade feels not just reasonable, but necessary. A rare portrait of obsession that makes you want to book a flight instead of an appointment."
     }
   ],
   "garden_note": {
-    "note": "The vineyards on Zürich's hillsides are heavy with Pinot Noir clusters now, and that faint must in the evening air is your cue that harvest is very nearly here — savour it. Step outside after supper while the warmth still lingers; September has this lovely habit of feeling like summer's generous afterthought.",
+    "note": "There's a particular quality to early September mornings in Zürich — the air has that first cool edge, almost mineral, as the light arrives a little later each day and the lindens begin their quiet surrender. Step out around first light and you'll catch the garden at its most honest: dew on the late-summer chard, spiders at work on their dewy threads, and the first few leaves on the ornamental vines already blushing amber.",
     "in_season": [
-      "Grape harvest approaching — check ripeness daily",
-      "Dahlias at their peak flush of colour",
-      "Winter squash curing on the vine",
-      "Sow lamb's lettuce (Feldsalat) for autumn bowls"
+      "Dahlias at peak bloom — stake any heavy-headed varieties before the autumn gusts arrive",
+      "Swiss chard and kale ready for harvest; cut outer leaves to keep plants productive",
+      "Apple and early pear trees dropping their first windfalls — check daily and press or store promptly",
+      "Sow winter lamb's lettuce (Feldsalat) now for October pickings"
     ],
-    "sky_tonight": "A slender waning crescent moon rises in the small hours — tonight the sky before midnight is beautifully dark, perfect for tracing Pegasus climbing in the east",
-    "sun_times": "Dusk settles gently over the city at 20:26 tonight, with the sun itself gone since 19:56",
+    "sky_tonight": "With the waning crescent only 13% lit, the sky is beautifully dark tonight — a fine chance to pick out the Milky Way arching through Cygnus and Aquila in the south after dusk.",
+    "sun_times": "First light creeps in at 06:22 this morning, with sunrise following at 06:52 — and the day closes at 19:54, dusk lingering until 20:24.",
     "moon_label": "Waning crescent",
-    "illum_pct": 18,
-    "sun_range": "06:51–19:56"
+    "illum_pct": 13,
+    "sun_range": "06:52–19:54"
   },
   "puzzle": {
-    "kind": "riddle",
+    "kind": "haiku riddle",
     "label": "Fern's Morning Riddle",
-    "prompt": "What has 88 keys, but can't even open a single door?",
-    "answer": "A piano",
-    "hint": "",
-    "source": "riddles.com",
-    "source_id": "Riddle-2355"
+    "prompt": "Salt flat, no water\nEvery grain has traveled far\nTime ground to a dust",
+    "answer": "Sand (or desert sand)",
+    "hint": "Think of what remains when ancient seas and mountains are worn down to their smallest selves."
   },
   "previous_puzzle": {
-    "label": "Fern's Morning Anagram",
-    "prompt": "Unscramble VANTHERE — clue: it shelters the weary traveler, and gives migratory birds a name for their winter refuge.",
-    "answer": "HAVEN — a place of safety and shelter, also echoed in the word \"overwintering haven\" used in ornithology."
+    "label": "Fern's Morning Riddle",
+    "prompt": "What has 88 keys, but can't even open a single door?",
+    "answer": "A piano"
   },
   "larder": {
-    "news": [],
-    "recipe": {}
+    "news": [
+      {
+        "source": "food",
+        "source_name": "The Kitchn",
+        "title": "After Years of Use, I Swear by This $36 Space-Saving Spice Rack Organizer",
+        "url": "https://www.thekitchn.com/spaceaid-spice-rack-product-review-23841717?utm_source=RSS&utm_medium=feed&utm_campaign=Category%2FChannel%3A+main",
+        "snippet": "It comes with everything you need.",
+        "cover_url": "",
+        "blurb": "A spice rack that earns its keep after years of daily use is the kind of quiet kitchen wisdom worth a peek."
+      },
+      {
+        "source": "food",
+        "source_name": "Eater",
+        "title": "&#8216;Still or Sparkling&#8217; Must Be Stopped",
+        "url": "https://www.eater.com/dining-out/982697/still-sparkling-or-filtered-tap",
+        "snippet": "All this week, the Eater Today newsletter is dedicated to editor Hot Takes, a way to release the pressure valve of crankiness that comes with sweating your way through the end of summer. This story was previously published as part of that series. Subscribe to Eater Today to see more of our editors’ boldest opinions […]",
+        "cover_url": "https://platform.eater.com/wp-content/uploads/sites/2/2026/08/HotTakes_StillSparkling.gif?quality=90&strip=all&crop=0%2C10.717639621171%2C100%2C78.564720757659&w=1200",
+        "blurb": "Someone finally said it out loud, and honestly, the water ritual at restaurants deserves every word of this spirited takedown."
+      },
+      {
+        "source": "food",
+        "source_name": "The Guardian",
+        "title": "José Pizarro’s recipe for grilled sardines with blackberry escabeche",
+        "url": "https://www.theguardian.com/food/2026/sep/08/grilled-sardines-blackberry-escabeche-recipe-jose-pizarro",
+        "snippet": "A winning combination of oily fish, sweet berries and a sharp dressing One of my favourite summer memories is making collares de moras as a child in Extremadura, which involved threading wild blackberries on to a piece of straw to make little necklaces. We’d always eat some too, of course, as well as wearing them, and we’d always come home with stained hands and big smiles. At the time, I never imagined that one day I’d be cooking sardines and pairing them with those same wild berries, but that’s the magic of food.",
+        "cover_url": "https://i.guim.co.uk/img/media/53e4787aa7c1eda461138d23525fdce0a7f3bd29/68_967_4534_3626/master/4534.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=aface5387b5c962271b6da8a93316a9a",
+        "blurb": "Grilled sardines meet a blackberry escabeche in what sounds like the most poetic argument for eating seasonally at the tail end of summer."
+      }
+    ],
+    "recipe": {
+      "source": "recipe",
+      "source_name": "101 Cookbooks",
+      "title": "Fennel Mushrooms",
+      "url": "https://www.101cookbooks.com/fennel-mushrooms/",
+      "snippet": "A fennel mushroom recipe inspired by one of my vintage cookbooks, The Seasonal Kitchen by Perla Meyers. It's a simple, brilliant twist on everyday sauteed mushrooms with dill, chives, fresh fennel, and a kiss of creme fraiche.",
+      "is_recipe": true,
+      "cover_url": "https://images.101cookbooks.com/FENNEL-MUSHROOMS-26-h.jpg?w=680",
+      "blurb": "These fennel mushrooms — fragrant with fresh fennel, dill, and chives — are the kind of effortlessly elegant weeknight side that makes an ordinary Tuesday feel quietly special."
+    },
+    "seasonal_note": "Zürich's Tuesday and Saturday markets at Bürkliplatz are piled with Berner Rosen and Gravenstein apples right now — slice one thin over a warm Birchermüesli this morning, and the whole kitchen smells like the season turning."
   },
   "fern_data": {
-    "greeting": "The B-32 Dominator and differential geometry have no reason to share a page — and yet here they are, two forgotten things that almost broke the world they flew through. Tonight's edition is full of that kind of quiet collision.",
-    "top_pick_title": "Forgotten Forces, Slow Returns"
+    "greeting": "If the wrong forensic science has been steering courtrooms for fifty years, what else are we certain of that we shouldn't be? Today also has the neuroscience of why you want anything at all — which feels like a useful companion question.",
+    "top_pick_title": "Certainty & Its Cracks"
   }
 }
