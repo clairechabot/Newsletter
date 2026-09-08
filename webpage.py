@@ -17,6 +17,8 @@ import datetime
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
+import ad_filter    # shopping/affiliate content detector (shared with fetcher.py)
+
 BASE_DIR     = Path(__file__).parent
 CURATED_FILE = BASE_DIR / "curated_data.json"
 DOCS_DIR     = BASE_DIR / "docs"
@@ -1163,6 +1165,15 @@ def _grove_rank(entry: dict) -> tuple:
     return (entry["date"], 0 if entry["ampm"] == "morning" else 1)
 
 
+def _is_ad(item: dict) -> bool:
+    """True for a Larder item that's shopping content rather than food writing."""
+    return ad_filter.is_commerce(
+        item.get("title", ""), item.get("url", ""),
+        item.get("note", "") or item.get("snippet", ""),
+        item.get("categories"),
+    )
+
+
 def _grove_entries(data: dict, d: datetime.date, is_am: bool) -> list[dict]:
     """Flatten one edition payload into a list of feed entries."""
     date_iso = d.isoformat()
@@ -1209,12 +1220,18 @@ def _grove_entries(data: dict, d: datetime.date, is_am: bool) -> list[dict]:
     for r in data.get("reads", []):
         add("reads", r.get("title"), r.get("note"), r.get("url"),
             r.get("cover"), r.get("source"))
+    # The Larder's feeds carry shopping content (deal round-ups, clearance
+    # sales, affiliate "My Honest Review of <brand>" posts). It's filtered out
+    # at fetch time now, but The Grove is rebuilt from every saved edition on
+    # every run — so the same check here retires the ones already archived.
     ld = data.get("larder") or {}
     rec = ld.get("recipe")
-    if rec and rec.get("title"):
+    if rec and rec.get("title") and not _is_ad(rec):
         add("food", rec.get("title"), rec.get("note"), rec.get("url"),
             rec.get("cover"), rec.get("source"))
     for n in (ld.get("news") or []):
+        if _is_ad(n):
+            continue
         add("food", n.get("title"), n.get("note"), n.get("url"),
             n.get("cover"), n.get("source"))
     return out

@@ -32,6 +32,7 @@ from bs4 import BeautifulSoup
 from googleapiclient.discovery import build
 from googleapiclient.errors import HttpError
 
+import ad_filter       # shopping/affiliate content detector (shared with webpage.py)
 import http_fetch      # hardened HTTP (browser UA + retries), ported from daily-briefing
 import claude_fetch    # Claude web-fetch music extractor (real titles), ported from daily-briefing
 
@@ -1173,6 +1174,9 @@ RECIPE_FEEDS = [
     {"url": "https://www.budgetbytes.com/feed/",      "source_name": "Budget Bytes"},
 ]
 FOOD_NEWS_ITEMS = 3               # trend/news items shown alongside the recipe
+FOOD_NEWS_SCAN_DEPTH = 12         # entries scanned per food feed — deep enough to
+                                  # skip past a run of deal/shopping posts (see
+                                  # ad_filter) and still find real food writing
 RECIPE_CANDIDATES_PER_SOURCE = 20  # full feed depth — mines the backlog like reads
 
 _MYSTERY_KEYWORDS = {
@@ -1436,6 +1440,17 @@ def _fetch_rss_articles(
         snippet = _clean_snippet(
             BeautifulSoup(raw_desc, "html.parser").get_text(" ", strip=True)
         )
+        # Feed categories — The Kitchn labels its own commerce posts
+        # ("shopping", "sales & events", "product roundup"), which is a far more
+        # reliable ad signal than reading the headline. See ad_filter.
+        categories = [
+            cat for cat in (
+                # RSS puts the label in the text, Atom in a `term` attribute.
+                ((c.text or "").strip() or (c.get("term") or "").strip())
+                for c in list(item.findall("category"))
+                        + list(item.findall(f"{_ATOM_NS}category"))
+            ) if cat
+        ]
         articles.append(
             {
                 "source":      source_tag,
@@ -1443,6 +1458,7 @@ def _fetch_rss_articles(
                 "title":       title,
                 "url":         url,
                 "snippet":     snippet,
+                "categories":  categories,
             }
         )
         if len(articles) >= limit:
@@ -1851,14 +1867,33 @@ def fetch_larder(
     print("[Larder] Fetching food news + a recipe …")
     session = _scraper_session()
     news: list[dict] = []
+    skipped_ads = 0
 
+    def _is_ad(article: dict) -> bool:
+        """Shopping content (deals, clearance sales, affiliate reviews) — never
+        gathered. A skipped item is NOT marked seen, so if it's a false positive
+        it stays available should the filter later be loosened."""
+        nonlocal skipped_ads
+        if ad_filter.is_commerce(article.get("title", ""), article.get("url", ""),
+                                 article.get("snippet", ""), article.get("categories")):
+            skipped_ads += 1
+            print(f"  [ad] skipped '{article.get('title','')[:60]}'")
+            return True
+        return False
+
+    # A feed's first entries are often a run of deal posts, so scan deeper than
+    # the one item we need (FOOD_NEWS_SCAN_DEPTH) rather than losing the source
+    # for the day.
     for feed in FOOD_FEEDS:
         if len(news) >= FOOD_NEWS_ITEMS:
             break
-        for article in _fetch_rss_articles(feed["url"], feed["source_name"], 3, session,
+        for article in _fetch_rss_articles(feed["url"], feed["source_name"],
+                                            FOOD_NEWS_SCAN_DEPTH, session,
                                             source_tag="food"):
             url = article["url"]
             if url in seen_all_urls:
+                continue
+            if _is_ad(article):
                 continue
             seen_all_urls.add(url)
             seen_food_urls.add(url)
@@ -1873,6 +1908,8 @@ def fetch_larder(
         for cand in candidates:
             url = cand["url"]
             if url in seen_all_urls:
+                continue
+            if _is_ad(cand):
                 continue
             seen_all_urls.add(url)
             seen_food_urls.add(url)
@@ -1892,7 +1929,8 @@ def fetch_larder(
             item["cover_url"] = ""
 
     print(f"[Larder] Collected {len(news)} news item(s)"
-          f" + {'1 recipe' if recipe else 'no recipe'}.")
+          f" + {'1 recipe' if recipe else 'no recipe'}"
+          f"{f' ({skipped_ads} ad post(s) skipped)' if skipped_ads else ''}.")
     return {"news": news, "recipe": recipe}
 
 
