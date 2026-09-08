@@ -68,6 +68,11 @@ _COMMERCE_TEXT_RES = [
         r"\btop-rated\b",
         r"\btasted and rated\b",
         r"\bbest \(and worst\)\b",
+        # supermarket brand rankings — a taste test in the byline, a shopping
+        # list in the body ("I Tried Nearly a Dozen Grocery Store Muffins…")
+        r"\b(?:i|we) tried\b[^.]{0,80}\b(?:grocery|supermarket|store[- ]bought|brands?)\b",
+        r"\bbest\b[^.]{0,40}\b(?:grocery store|supermarket|store[- ]bought)\b",
+        r"\b(?:blind[- ])?taste[- ]test(?:ed|s)?\b",
         r"\bworth (?:the money|buying|the splurge)\b",
         r"\bwell worth (?:it|the)\b",
         # shopping language

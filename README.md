@@ -63,7 +63,8 @@ quiet days).
 ### No adverts — The Larder's shopping filter
 The food feeds mix real cooking writing with commerce: deal round-ups, clearance
 sales, sponsored product launches and affiliate "My Honest Review of *brand* for 2026"
-posts (plus The Guardian's affiliate vertical, *The Filter*). `ad_filter.py` recognises
+posts, supermarket brand taste-tests, and The Guardian's affiliate vertical, *The
+Filter*. `ad_filter.py` recognises
 them from the publisher's own RSS categories (`shopping`, `sales & events`,
 `product roundup`), the URL slug, and the headline. They're dropped in two places:
 
