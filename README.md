@@ -60,6 +60,20 @@ five buckets: `video_ids`, `good_news_urls`, `discovery_urls`, `reads_urls`,
 `music_urls`. The evergreen music fallback is intentionally exempt (it may recur on
 quiet days).
 
+### No adverts — The Larder's shopping filter
+The food feeds mix real cooking writing with commerce: deal round-ups, clearance
+sales, sponsored product launches and affiliate "My Honest Review of *brand* for 2026"
+posts, supermarket brand taste-tests, and The Guardian's affiliate vertical, *The
+Filter*. `ad_filter.py` recognises
+them from the publisher's own RSS categories (`shopping`, `sales & events`,
+`product roundup`), the URL slug, and the headline. They're dropped in two places:
+
+- **`fetcher.fetch_larder`** skips them while gathering, so they never reach an edition.
+  Each food feed is scanned `FOOD_NEWS_SCAN_DEPTH` entries deep so a run of deal posts
+  doesn't cost the source its slot for the day. A skipped item is *not* marked seen.
+- **`webpage.build_grove`** skips them while rebuilding The Grove from the saved
+  editions — which retires the ones already archived.
+
 ### Bot-blocked feeds — proxy fallback
 Some publishers (Atlas Obscura, Science News) are Cloudflare-fronted and 403 datacenter
 IPs like GitHub Actions runners. `fetcher.py` fetches feeds directly first and, only
@@ -133,6 +147,7 @@ fetcher.py        gather + dedup content, write curated_data.json
 curator.py        Claude audit + curation (voice, blurbs, themes, greeting)
 renderer.py       email (table-safe) + SMTP send + orchestration
 webpage.py        interactive web edition → docs/index.html
+ad_filter.py      shopping/affiliate detector (keeps adverts out of The Larder)
 http_fetch.py     hardened HTTP fetch (browser UA, retries)
 claude_fetch.py   Claude web-fetch music extractor
 history.json      seen-content memory (dedup)
