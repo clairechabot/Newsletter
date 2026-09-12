@@ -1,135 +1,148 @@
 {
-  "fetched_at": "2026-09-12T10:00:29.991001+02:00",
-  "is_am_email": true,
+  "fetched_at": "2026-09-12T19:17:38.820310+02:00",
+  "is_am_email": false,
   "audit_summary": {
-    "youtube_videos": 7,
+    "youtube_videos": 8,
     "themes": 4,
-    "music_articles": 6,
-    "good_news_articles": 3,
-    "discovery_articles": 8,
+    "music_articles": 7,
+    "good_news_articles": 2,
+    "discovery_articles": 1,
     "featured_read": 1,
     "reading_room": 5,
     "garden": 1,
     "puzzle": 1,
-    "larder": 4
+    "larder": 0
   },
   "themes": [
     {
-      "name": "The Fabric of Everything",
+      "name": "Minds That Blew Up The Universe",
       "emoji": "🌌",
-      "tagline": "From the quantum foam to the edge of the cosmos — physics that actually makes your brain hurt (in a good way).",
+      "tagline": "From the Big Bang to antimatter factories to the woman who cracked stellar chemistry — science that makes your brain pleasantly short-circuit.",
       "items": [
         {
           "source": "youtube",
-          "video_id": "pyEGbhwYOeo",
-          "title": "The Pattern Nobody Can Prove (But Everyone Believes)",
-          "channel_id": "UCIZ5ZOeiXYbmKTl_85ghNPw",
-          "channel_title": "Physics Explained",
-          "published_at": "2026-04-23T19:00:45Z",
-          "url": "https://www.youtube.com/watch?v=pyEGbhwYOeo",
-          "duration_seconds": 2759,
-          "view_count": "483790",
-          "description": "Go to https://sintra.ai/physics or use code PHYSICS to get an exclusive 72% off on all plans. 14-day money-back guarantee.\n\nIn this video, we explore one of the most beautiful and mysterious ideas in all of mathematics: the Riemann Hypothesis. Beginning with the harmonic series, the Basel problem, and Euler’s zeta function, we build step by step toward Riemann’s extraordinary conjecture about the hidden pattern of the non-trivial zeros of the zeta function. Along the way, we look at convergence,",
-          "why_watch": "This 46-minute build starts from the harmonic series and walks all the way to the Riemann Hypothesis without hand-waving the math — the Basel problem segment alone is worth the open. The pacing is patient enough for non-mathematicians but doesn't sacrifice precision, which is a genuinely rare balance in math YouTube. If you've heard the Hypothesis mentioned a hundred times and never felt you truly understood the stakes, this closes that gap."
-        },
-        {
-          "source": "youtube",
-          "video_id": "ZCx0AuRrpDU",
-          "title": "We never understood why the universe expands...until now!",
-          "channel_id": "UCGfFUc6eWxfbtjYeun6r9xg",
-          "channel_title": "FloatHeadPhysics",
-          "published_at": "2025-01-16T13:00:54Z",
-          "url": "https://www.youtube.com/watch?v=ZCx0AuRrpDU",
-          "duration_seconds": 1301,
-          "view_count": "138291",
-          "description": "🌏 Get exclusive NordVPN deal here ➵  https://NordVPN.com/floatheadphysics It’s risk free with Nord’s 30 day money-back guarantee!✌\n\nT shirts:\nLink to 'Don't be dx3/dt3 T-shirt' (Promo price)\nLight: https://floatheadphysics.com/products/dont-be-a-jerk-light\nDark: https://floatheadphysics.com/products/dont-be-a-jerk-dark\n\nHenrietta Swan Leavitt, an American astronomer hired as human computer made a startling discovery. Not only did it help humanity realise that the universe is teeming with billion",
-          "why_watch": "The video anchors the story of cosmic expansion in Henrietta Swan Leavitt's overlooked work with Cepheid variables, giving the physics a human throughline that most explainers skip. It then builds carefully to dark energy, explaining not just *what* expands but the observational logic that forced cosmologists to accept it. A good complement to drier textbook accounts of the same material."
-        },
-        {
-          "source": "youtube",
-          "video_id": "94EQpJ4d6YY",
-          "title": "How Superposition Causes Length Contraction -- And Explains the Principle of Relativity",
-          "channel_id": "UC3KV2kFy2YhjYvverIy2WnA",
-          "channel_title": "Dialect",
-          "published_at": "2024-06-08T12:00:13Z",
-          "url": "https://www.youtube.com/watch?v=94EQpJ4d6YY",
-          "duration_seconds": 1388,
-          "view_count": "125770",
-          "description": "What causes relativistic length contraction? Drawing inspiration from contemporary theories of wave mechanics, we tackle this problem in special relativity head-on. A long-overlooked formalism known as the method of the retarded potential provides a vital and intriguing clue -- ultimately leading to the resolution of a mystery 130 years in the making.\n\n*****************************************************\nAcknowledgments:\n\nThis work would not have been possible without the assistance rendered fr",
-          "why_watch": "Rather than treating length contraction as a geometric consequence of spacetime diagrams, this video digs into the wave-mechanical cause — specifically the retarded potential formalism — which gives the phenomenon an actual physical mechanism. It's a relatively obscure angle that changes how the result feels: less like a postulate, more like something that had to happen. Recommended if standard special relativity explanations have always left you with a nagging 'but why' feeling."
-        }
-      ]
-    },
-    {
-      "name": "How Machines Think",
-      "emoji": "🖥️",
-      "tagline": "Peek under the hood of the digital world — from silicon logic gates to the thieves exploiting your phone's blind spots.",
-      "items": [
-        {
-          "source": "youtube",
-          "video_id": "B24RXzcEPdg",
-          "title": "RAM Memory Simulation - how computers work - Building Scott's CPU part 3",
-          "channel_id": "UCFtCfZ4rtIZ7Hsq7ZNHoY1w",
-          "channel_title": "Computer&Electronics",
-          "published_at": "2025-01-18T17:27:47Z",
-          "url": "https://www.youtube.com/watch?v=B24RXzcEPdg",
-          "duration_seconds": 786,
-          "view_count": "1499",
-          "description": "This video simulates the RAM memory working. It is the simulation part of the third video of the «how computers work– building Scott’s CPU» youtube playlist. We use CircuitVerse simulator and the circuit is available in the link I leave in the description.\n\nHow Computers work playlist : https://youtube.com/playlist?list=PLnAxReCloSeTJc8ZGogzjtCtXl_eE6yzA&si=PQOPqnDWcwzDDCdR\n\nlink to CircuitVerse simulator of \"How computers work - building Scott's CPU\" : https://circuitverse.org/simulator/embed/h",
-          "why_watch": "Using the free CircuitVerse simulator, this video shows RAM memory behavior at the gate level rather than just describing it abstractly, making the read/write cycle genuinely visible. It's part of a from-scratch CPU build series, so it rewards sequential viewing, but the RAM segment stands on its own as a clear visual explainer. Useful if you've always wanted to see memory as a circuit rather than a black box."
-        },
-        {
-          "source": "youtube",
-          "video_id": "PPJ6NJkmDAo",
-          "title": "How easy is it to steal $10,000 from a locked phone?",
+          "video_id": "jjp3WC8Unj8",
+          "title": "What happens if you drop 0.125 grams of antimatter?",
           "channel_id": "UCHnyfMqiRRG1u-2MsSQLbXA",
           "channel_title": "Veritasium",
-          "published_at": "2026-04-15T16:40:38Z",
-          "url": "https://www.youtube.com/watch?v=PPJ6NJkmDAo",
-          "duration_seconds": 1544,
-          "view_count": "8728645",
-          "description": "How we hacked MKBHD! Sponsored by Incogni - Use code veritasium at https://incogni.com/veritasium to get an exclusive 60% off.\n\nIf you’re looking for a molecular modelling kit, try Snatoms, a kit I invented where the atoms snap together magnetically - https://ve42.co/SnatomsV   \n\nSign up for the Veritasium newsletter for weekly science updates - https://ve42.co/Newsletter\n\n▀▀▀\n0:00 Stealing $10,000 From MKBHD\n4:04 How The Hack Works\n8:29 High Value vs Low Value Transactions\n10:18 Tricking The Ca",
-          "why_watch": "Veritasium and MKBHD document an actual social-engineering and phone-exploit attempt — not a hypothetical walkthrough — showing the specific steps used to drain a locked device of $10,000. The practical takeaway is concrete: you'll finish knowing which settings and habits actually reduce your exposure. It's alarming in a productive way."
+          "published_at": "2026-04-05T20:07:08Z",
+          "url": "https://www.youtube.com/watch?v=jjp3WC8Unj8",
+          "duration_seconds": 3534,
+          "view_count": "11405846",
+          "description": "The factory that makes the world's most volatile substance. Sponsored by SoFi - Join SoFi Plus today and get more for your money! Visit https://sofi.com/veritasium \n\nIn 2025, we launched the Elements of Truth game on Kickstarter and were thrilled by the response. We’re now in the final stages of production, with Kickstarter rewards shipping soon. If you missed the campaign, you can now pre-order the retail edition through our new website here -https://ve42.co/AntimatterDesc\n\nIf you’re looking fo",
+          "why_watch": "Veritasium spent time inside CERN's antimatter factory to document how scientists actually produce, trap, and study antihydrogen — a substance that annihilates on contact with ordinary matter and exists in quantities measured in atoms. The specific hook is the title question: what 0.125 grams would actually do, which reframes the entire video as a slow build toward a genuinely startling answer."
+        },
+        {
+          "source": "youtube",
+          "video_id": "3qU-VHvZ_l8",
+          "title": "How Do We Actually Know the Big Bang Happened?",
+          "channel_id": "UCIZ5ZOeiXYbmKTl_85ghNPw",
+          "channel_title": "Physics Explained",
+          "published_at": "2026-03-29T17:00:04Z",
+          "url": "https://www.youtube.com/watch?v=3qU-VHvZ_l8",
+          "duration_seconds": 4021,
+          "view_count": "284779",
+          "description": "Head to https://squarespace.com/physicsexplained to save 10% off your first purchase of a website or domain using code PHYSICSEXPLAINED\n\nHow do we actually know the Big Bang happened?\n In this video, we follow the chain of evidence step by step, from measuring the distances to stars and galaxies, to redshift, cosmic expansion, and the discovery of the cosmic microwave background. This is the story of how light, physics, and careful observation revealed that the universe began in a hot, dense sta",
+          "why_watch": "Rather than asserting the Big Bang as settled fact, this video reconstructs the evidence chain from scratch — stellar distance measurement to redshift to the cosmic microwave background — so you understand *why* cosmologists are confident rather than just that they are. At 67 minutes it's a commitment, but the step-by-step epistemological approach makes it unusually satisfying for anyone who's wanted the actual reasoning, not just the conclusion."
+        },
+        {
+          "source": "youtube",
+          "video_id": "07YCJ6g4fBM",
+          "title": "The woman who solved the mystery of heavy elements!",
+          "channel_id": "UCGfFUc6eWxfbtjYeun6r9xg",
+          "channel_title": "FloatHeadPhysics",
+          "published_at": "2024-12-19T13:00:01Z",
+          "url": "https://www.youtube.com/watch?v=07YCJ6g4fBM",
+          "duration_seconds": 1235,
+          "view_count": "150868",
+          "description": "To try everything Brilliant has to offer—free—for a full 30 days, visit https://brilliant.org/FloatHeadPhysics. You’ll also get 20% off an annual premium subscription.\n\nT shirt:\nBlack: https://floatheadphysics.com/products/astronomers-periodic-table-black\nWhite: https://floatheadphysics.com/products/astronomers-periodic-table-white\nX-mass spl: https://floatheadphysics.com/products/astronomers-periodic-table-t-shirt-x-mass-special \n\nElements heavier than Iron are not created by Nuclear Fusion rea",
+          "why_watch": "This tells the story of Cecilia Payne, who in 1925 correctly identified hydrogen as the dominant element in stars — only to be pressured into walking back her own discovery by a senior astronomer who later took credit. The science of stellar nucleosynthesis is woven into a history-of-science story with a sharp edge to it."
+        },
+        {
+          "source": "youtube",
+          "video_id": "2V__naEkXVY",
+          "title": "An Introduction to Curvilinear Coordinates in Differential Geometry",
+          "channel_id": "UC3KV2kFy2YhjYvverIy2WnA",
+          "channel_title": "Dialect",
+          "published_at": "2024-04-13T11:58:54Z",
+          "url": "https://www.youtube.com/watch?v=2V__naEkXVY",
+          "duration_seconds": 1364,
+          "view_count": "109897",
+          "description": "The equations of General Relativity are written in the language of curvilinear coordinates, where mathematical objects like Basis Vectors, Metric Tensors, and Christoffel Symbols dominate the landscape. But where do these concepts come from and how can we connect them to our physical intuition? Join us to find out. Plus -- hotwheels!  (Note: some familiarity with vector calculus is highly recommended.)\n\nPlease consider helping support us on Patreon:\nhttps://www.patreon.com/dialect_philosophy\n\nJo",
+          "why_watch": "This video uses Hot Wheels tracks as a concrete, physical anchor for building intuition about curvilinear coordinates — the mathematical framework underlying General Relativity — before introducing basis vectors, metric tensors, and Christoffel symbols. It's aimed at people with some vector calculus background who've hit a wall with GR notation and need the concepts rebuilt from geometric intuition rather than pure formalism."
         }
       ]
     },
     {
-      "name": "Dirt, Data & Real Results",
+      "name": "Roots & Reboots",
       "emoji": "🌱",
-      "tagline": "One backyard garden tracking honest harvests, week by week — proof that small plots can punch above their weight.",
+      "tagline": "Growing things from scraps and rethinking what you're building — whether it's a garden or a creative practice.",
       "items": [
         {
           "source": "youtube",
-          "video_id": "UZwPK8fAQJs",
-          "title": "I've NEVER Harvested This Much in April!! (week 8)",
+          "video_id": "VkUPEWKGY1Y",
+          "title": "Grow FREE Plants from Kitchen Scraps",
+          "channel_id": "UC9r61qohBg1qgGty4_WzojA",
+          "channel_title": "GrowVeg",
+          "published_at": "2026-09-12T14:45:29Z",
+          "url": "https://www.youtube.com/watch?v=VkUPEWKGY1Y",
+          "duration_seconds": 1597,
+          "view_count": "1650",
+          "description": "Enjoy a no-obligation, completely free trial of the Garden Planner here: \nhttps://www.GrowVeg.com/grow-planner-free\n\nAnd for your completely free abridged version of Ben's book, click here:\nhttps://www.growveg.com/grow-book-download\n\nFor more about Simon Akeroyd, you can visit his website here:\nhttps://www.simonakeroyd.com\n\nEver wondered if you can grow from your kitchen scraps? If you're a gardener then you've probably seen all sorts of wild claims on the internet about growing from bizarre bit",
+          "why_watch": "GrowVeg walks through which kitchen scraps — think celery bases, garlic cloves, green onion roots — can realistically be regrown into productive plants versus which ones are more novelty than harvest. At 26 minutes it's thorough enough to actually change your composting habits, and the distinction between 'it'll sprout' and 'it'll feed you' is refreshingly honest."
+        },
+        {
+          "source": "youtube",
+          "video_id": "HIW1-1l4-J4",
+          "title": "My Last Month on Youtube (week 24)",
           "channel_id": "UC5eLPZi_RSh81523mrBzHNg",
           "channel_title": "Gardening Experiments with Mind & Soil",
-          "published_at": "2026-04-25T15:00:46Z",
-          "url": "https://www.youtube.com/watch?v=UZwPK8fAQJs",
-          "duration_seconds": 1463,
-          "view_count": "5462",
+          "published_at": "2026-09-12T13:00:09Z",
+          "url": "https://www.youtube.com/watch?v=HIW1-1l4-J4",
+          "duration_seconds": 1339,
+          "view_count": "1080",
           "description": "🌱🍅 Want to start feeding your family from your backyard? Join my FREE Weekly Newsletter for gardening tips & videos: https://forms.gle/SrwU1EjkSScgVTVy8\n\nEXPERIMENT VIDEOS\n💡 $30 vs $300 Grow Light: WATCH This Before Buying a Grow Light! https://youtu.be/_0EFGE9ZljY\n\n💡 I Tested Every Grow Light Height https://youtu.be/LGKlQ5iGbpY\n\n💡 6 Steps To Guarantee Thriving Seedlings https://youtu.be/X2nXwawGqXI \n\nPRODUCTS I USE & LOVE (try code mindandsoil or mindandsoil10 for discounts!)\nSproutbox Metal Ra",
-          "why_watch": "A genuine April harvest diary from a small backyard plot, useful for calibrating what's actually achievable in early spring rather than peak season. The creator tracks results week-by-week with specifics on varieties and yields, so it reads more like data than lifestyle content. Good reference if you're planning a kitchen garden and want honest benchmarks."
+          "why_watch": "This is a small creator's candid accounting of what a 24-week YouTube experiment actually looked like before deciding to step back — the kind of behind-the-scenes reflection that's rare because most people either quit quietly or pivot without explaining why. If you follow any independent gardening or creator channels, it's a grounding look at the sustainability math behind passion-project content."
         }
       ]
     },
     {
-      "name": "Raising Humans (Without Losing Yourself)",
-      "emoji": "🧡",
-      "tagline": "A two-minute reframe that might change how you parent forever — warmth and backbone aren't opposites.",
+      "name": "How The Machine Thinks",
+      "emoji": "⚙️",
+      "tagline": "One tiny latch, infinite implications — the satisfying rabbit hole of understanding what's actually happening inside your computer.",
       "items": [
         {
           "source": "youtube",
-          "video_id": "-2J9A3gSl8E",
-          "title": "Sturdy Parenting Not Gentle Parenting",
+          "video_id": "zxhSQVBBEQI",
+          "title": "NAND Data Latch SIMULATION - how computers work - Building Scott's CPU part 2",
+          "channel_id": "UCFtCfZ4rtIZ7Hsq7ZNHoY1w",
+          "channel_title": "Computer&Electronics",
+          "published_at": "2025-01-12T10:34:31Z",
+          "url": "https://www.youtube.com/watch?v=zxhSQVBBEQI",
+          "duration_seconds": 420,
+          "view_count": "556",
+          "description": "This video simulates the NAND latch we use to build a memory cell. It is the simulation part of the second video of the «how computers work– building Scott’s CPU» youtube playlist. We use CircuitVerse simulator and the circuit is available in the link I leave in the description. \n\nHow Computers work playlist : https://youtube.com/playlist?list=PLnAxReCloSeTJc8ZGogzjtCtXl_eE6yzA&si=PQOPqnDWcwzDDCdR\n\nlink to CircuitVerse simulator of \"How computers work - building Scott's CPU\" : https://circuitver",
+          "why_watch": "This 7-minute simulation video focuses on a single, foundational concept — the NAND latch as a memory cell — and walks through it interactively using CircuitVerse, so you can follow along in the linked circuit yourself. It's part of a series building up to a full CPU, which makes it a practical entry point if you've ever wanted to understand computer memory from first principles rather than metaphor."
+        }
+      ]
+    },
+    {
+      "name": "Famous People, Honest Answers",
+      "emoji": "🎙️",
+      "tagline": "The Ted Lasso cast vs. the internet's most burning questions — charming, chaotic, and surprisingly revealing.",
+      "items": [
+        {
+          "source": "youtube",
+          "video_id": "apcPejRT0Yc",
+          "title": "'Ted Lasso' Cast Answer The 50 Most Searched Questions",
           "channel_id": "UCftwRNsjfRo08xYE31tkiyw",
           "channel_title": "WIRED",
-          "published_at": "2026-09-11T21:24:57Z",
-          "url": "https://www.youtube.com/watch?v=-2J9A3gSl8E",
-          "duration_seconds": 126,
-          "view_count": "19971",
-          "description": "Clinical psychologist Dr. Becky Kennedy joins WIRED to answer the internet’s burning questions about parenting.\n\nStill haven’t subscribed to WIRED on YouTube? ►► http://wrd.cm/15fP7B7 \r\nListen to the Uncanny Valley podcast  ►► https://podcasts.apple.com/us/podcast/uncanny-valley-wired/id266391367\r\nWant more WIRED? Get the magazine ►► https://subscribe.wired.com/subscribe/splits/wired/WIR_YouTube?source=EDT_WIR_YouTube_0_Video_Description_ZZ\r\n\r\nFollow WIRED:\r\nInstagram ►►https://instagram.com/wir",
-          "why_watch": "In just two minutes, Dr. Becky Kennedy draws a sharp distinction between 'gentle parenting' (which she sees as conflict-avoidant) and 'sturdy parenting' (which pairs warmth with clear boundaries). It's a useful reframe if you've felt vaguely uneasy with how gentle parenting plays out in practice. Dense with substance for its runtime."
+          "published_at": "2026-09-12T16:04:02Z",
+          "url": "https://www.youtube.com/watch?v=apcPejRT0Yc",
+          "duration_seconds": 534,
+          "view_count": "1524",
+          "description": "WIRED tasks Hannah Waddingham (Rebecca Welton), Jason Sudeikis (Ted Lasso), Brendan Hunt (Coach Beard), Tanya Reynolds (Alice Chilton) and Jeremy Swift (Leslie Higgins) to answer the 50 most searched questions about _Ted Lasso._\n\n_Ted Lasso:_ Season 4 premiered globally August 5 on Apple TV. New episodes air weekly every Wednesday through October 7, 2026.\n\nWIRED recommends:\nhttps://youtu.be/eMg33JC5NUI\nhttps://youtu.be/GkM5zdUHcaQ\n\nWatch more from WIRED | 50 Most Searched: https://www.youtube.co",
+          "why_watch": "The full Ted Lasso cast — including Jason Sudeikis and Hannah Waddingham — work through WIRED's autocomplete interview format, which reliably surfaces the questions fans actually type into Google rather than polished press-tour softballs. It's a breezy 9 minutes that doubles as a low-commitment way to check in on the Season 4 cast dynamic before committing to the new episodes."
         }
       ]
     }
@@ -138,309 +151,203 @@
     {
       "source": "music",
       "source_name": "Stereogum",
-      "title": "Hear Bon Iver’s Jingle For Howard’s Meatloaf Dippers",
-      "snippet": "Bon Iver's Justin Vernon has always maintained close ties with his Upper Midwest homeland, including the founding of his April Base recording studio, the recent reboot of his Eaux Claires festival in his hometown of Eau Claire, Wisconsin, and Bon Iver's unique partnership with the WNBA's Minnesota Lynx . But he may have outdone himself in terms of charming local collabs.",
-      "url": "https://stereogum.com/2511224/hear-bon-ivers-new-jingle-for-minnesota-bars-meatloaf-dippers/news/",
+      "title": "Jeff Tweedy Covers Twisted Teens",
+      "snippet": "Twisted Teens are all the rage. The New Orleans band just announced their third album of the year, The Holy Cross Tigers , to follow February's Blame The Clown and July's Florida Water Blues . Yesterday, Jeff Tweedy covered Blame The Clown 's \"Wild Connection\" for his Substack.",
+      "url": "https://stereogum.com/2511264/jeff-tweedy-covers-twisted-teens/music/",
       "genre": "",
-      "vibe_check": "The wholesome, slightly surreal energy of a beloved local dive bar on a cold Wisconsin night, where everyone knows everyone and someone just did something unexpectedly delightful.",
-      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/09/bon_iver_meat_loaf.png?w=564",
+      "vibe_check": "The sound of a beloved mentor quietly tipping his hat to the scrappy new kids tearing up the neighborhood.",
+      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/09/unnamed-2026-09-12T115614.058.jpg?w=564",
+      "embed_url": "https://twistedteens.bandcamp.com/album/blame-the-clown"
+    },
+    {
+      "source": "music",
+      "source_name": "Stereogum",
+      "title": "Anna Butterss – “Ninths”",
+      "snippet": "Back in January we talked to Anna Butterss , the LA-based bassist with too many cool affiliations to keep track of. (SML, Jeff Parker's ETA IVtet, Makaya McCraven, Jason Isbell, boygenius, Neko Case, Flea... the list goes on.) Butterrs also makes solo albums, though as you might expect, they tend to feature a bunch of the other great musicians in their orbit.",
+      "url": "https://stereogum.com/2511215/anna-butterss-ninths/music/",
+      "genre": "",
+      "vibe_check": "Late-night jazz that breathes like a conversation between musicians who trust each other completely.",
+      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/09/a1464983620_10.jpg?w=564",
       "embed_url": null
     },
     {
       "source": "music",
-      "source_name": "No Depression",
-      "title": "BONUS TRACKS: Johnny Cash's Comic Book Reissue, Trey Anastasio and Billy Strings' Benefit Concerts, and More Roots Music News",
-      "snippet": "After 50 years, the original comic books written and self-funded by Johnny Cash are being reissued by Z2 Comics with the Estate of Johnny Cash . His intention at the time was to reach younger audiences though an different format, long before musicians began exploring comic books and graphic novels",
-      "url": "https://nodepression.org/bonus-tracks-johnny-cashs-comic-book-reissue-trey-anastasio-and-billy-strings-benefit-concerts-and-more-roots-music-news/",
+      "source_name": "Stereogum",
+      "title": "Slack Times Announce New Album Casting: Hear “Goodbye”",
+      "snippet": "Birmingham, Alabama might not be a place where you'd expect to find much shimmery indie-pop jangle, but the world is a rich and complicated place, and things that you might not expect happen all the time. Birmingham's Slack Times have been perfecting their brightly woozy indie pop for the past few years. Today they unveil their upcoming album Casting .",
+      "url": "https://stereogum.com/2511149/slack-times-announce-new-album-casting-hear-goodbye/music/",
       "genre": "",
-      "vibe_check": "Dusty americana nostalgia with the crinkle of old paper — like finding a treasure in a grandparent's attic that somehow still feels urgent.",
-      "cover_url": "https://storage.ghost.io/c/18/d0/18d08e58-3b1b-4720-ae25-a31b44e69d4b/content/images/2026/09/Cash-comics.png",
-      "embed_url": "https://www.youtube.com/embed/4vw4pGLGRlQ"
+      "vibe_check": "Sunshine filtered through net curtains in a town nobody visits, but maybe should.",
+      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/09/Slack-Times-Casting.jpg?w=564",
+      "embed_url": "https://slacktimes.bandcamp.com/album/up-here"
     },
     {
       "source": "music",
       "source_name": "Pitchfork",
-      "title": "Bon Iver Made a Jingle for a Local Bar’s Meatloaf Dippers",
-      "snippet": "Justin Vernon celebrates the breaded treats of Minnesota’s Howard’s Bar in a terrifically, terrifyingly jaunty tune",
-      "url": "https://pitchfork.com/story/bon-iver-made-a-jingle-for-a-local-bars-meatloaf-dippers/",
+      "title": "Bradford Cox Books First Show in Seven Years",
+      "snippet": "The Deerhunter maestro’s Atlas Sound project returns next weekend at Making Time ∞ festival",
+      "url": "https://pitchfork.com/story/bradford-cox-books-first-show-in-seven-years/",
       "genre": "",
-      "vibe_check": "The joyful cognitive dissonance of hearing a folk god earnestly serenade a breaded appetizer at last call.",
-      "cover_url": "https://media.pitchfork.com/photos/6aa46017764808ac85c7d082/master/pass/bon-iver-dips-meatloaf.jpg",
+      "vibe_check": "The electric anticipation of a ghost you thought was gone forever suddenly flickering back to life.",
+      "cover_url": "https://media.pitchfork.com/photos/6aa2f3f6e924830a6d5da7bd/master/pass/bradford-cox-first-show-atlas-sound.jpg",
       "embed_url": null
     },
     {
       "source": "music",
-      "source_name": "Pitchfork",
-      "title": "Dolly Parton Is Getting Her Own Airport",
-      "snippet": "Nashville International Airport is being renamed in honor of the late country icon",
-      "url": "https://pitchfork.com/story/dolly-parton-is-getting-her-own-airport/",
+      "source_name": "Consequence",
+      "title": "Brandon Flowers Covers Oasis With His Son at Salt Lake City Concert",
+      "snippet": "The Killers frontman sang \"Don't Look Back in Anger\" while his son played guitar. Brandon Flowers Covers Oasis With His Son at Salt Lake City Concert Travis Bland",
+      "url": "https://consequence.net/2026/09/brandon-flowers-and-son-cover-oasis/",
       "genre": "",
-      "vibe_check": "The warm, rhinestone-glittered pride of a community finally doing right by someone who always did right by them.",
-      "cover_url": "https://media.pitchfork.com/photos/6aa43d05cb9b95cbc44977c2/master/pass/Dolly-Parton.jpeg",
-      "embed_url": null
+      "vibe_check": "A spontaneous, slightly imperfect kitchen-table moment that somehow lands harder than any polished arena show.",
+      "cover_url": "https://consequence.net/wp-content/uploads/2026/09/Brandon-Flowers-and-son.jpg?quality=80",
+      "embed_url": "https://www.youtube.com/embed/uXX7bHzjkN4"
     },
     {
       "source": "music",
-      "source_name": "Pitchfork",
-      "title": "10 New Albums You Should Listen to Now: This Is Lorelei, Alex G, and More",
-      "snippet": "Stream new releases from This Is Lorelei, Alex G, Haruomi Hosono, and Sylvan Esso",
-      "url": "https://pitchfork.com/story/10-new-albums-you-should-listen-to-now-this-is-lorelei-alex-g-and-more/",
+      "source_name": "Consequence",
+      "title": "Bon Iver Sings About Meatloaf Dippers in a Jingle for Minnesota Restaurant",
+      "snippet": "With just one listen, you'll be singing Justin Vernon's tune about fried meatloaf sticks all day. Bon Iver Sings About Meatloaf Dippers in a Jingle for Minnesota Restaurant Travis Bland",
+      "url": "https://consequence.net/2026/09/bon-iver-meatloaf-dippers-jingle/",
       "genre": "",
-      "vibe_check": "A Friday-afternoon playlist rabbit hole that pulls you somewhere quiet and emotionally complicated before you even realize you've stopped working.",
-      "cover_url": "https://media.pitchfork.com/photos/6aa1b585b3d5e748ab16ac68/master/pass/This%20Is%20Lorelei%20by%20Eve%20Alpert%20-%203.jpg",
-      "embed_url": "https://thisislorelei.bandcamp.com/album/the-singer-in-my-band"
+      "vibe_check": "The most earnest earworm you never asked for, lodged somewhere between a fever dream and a diner menu.",
+      "cover_url": "https://consequence.net/wp-content/uploads/2026/09/Bon-Iver-meatloaf.jpeg?quality=80",
+      "embed_url": "https://lizzoandcarolinesmith.bandcamp.com/track/let-em-say"
     },
     {
       "source": "music",
-      "source_name": "Fretboard Journal",
-      "title": "Podcast 562: Nate Mercereau",
-      "snippet": "On today’s episode, guest host Ryan Richter sits down with multi-instrumentalist, composer, and producer Nate Mercereau. Renowned for pushing the boundaries of stringed instruments, Nate continues to redefine what it means to play and compose with the guitar as the centerpiece. In this conversation, Ryan and Nate dive into the making of Mercereau’s compelling The post Podcast 562: Nate Mercereau first appeared on Fretboard Journal .",
-      "url": "https://www.fretboardjournal.com/podcasts/podcast-562-nate-mercereau/?utm_source=rss&utm_medium=rss&utm_campaign=podcast-562-nate-mercereau",
+      "source_name": "JazzTimes",
+      "title": "Patrice Rushen: 2026 NEA Jazz Master",
+      "snippet": "E ditor’s Note: The NEA Jazz Masters 2026 Tribute Concert will be held on Tuesday, September 15, 2026, at 8:00 p.m. PT at Walt Disney …",
+      "url": "https://www.jazztimes.com/blog/patrice-rushen-2026-nea-jazz-master/",
       "genre": "",
-      "vibe_check": "Late-night studio tinkering with a glass of something strong — for the kind of listener who air-fingers chord shapes while zoning out on the drive home.",
-      "cover_url": "https://images.fretboardjournal.com/wp-content/uploads/2026/09/11183659/850687_0005-by-Alyssa-Mercereau-scaled.jpg",
-      "embed_url": null
+      "vibe_check": "The warm, ceremonial glow of a room full of people finally saying thank you loud enough for it to matter.",
+      "cover_url": "https://www.jazztimes.com/wp-content/uploads/2026/09/2026JM_Collage_Rushen-800x800.png",
+      "embed_url": "https://www.youtube.com/embed/moaQyc-kGn0"
     }
   ],
   "global_silver_linings": [
     {
       "source": "good_news",
       "source_name": "Good News Network",
-      "title": "Good News in History September 12",
-      "url": "https://www.goodnewsnetwork.org/events060912/",
-      "snippet": "2,516 years ago today was one of two days in the ancient era of world history that, if events had gone a different way, Western Civilization as we know it may never have sprouted. Athenian citizen soldiers, demonstrating superb athleticism and courage, ran a little over a mile in their heavy armor to smash a […]",
-      "cover_url": "https://www.goodnewsnetwork.org/wp-content/uploads/2024/09/Greek-troops-rushing-forward-at-the-Battle-of-Marathon-Georges-Rochegrosse-1859.jpg",
-      "reason": "History is full of quiet turning points worth remembering — pausing to mark them reminds us that progress, however slow, has always been possible. Knowing that good things have happened before makes it easier to believe they can happen again."
+      "title": "Your Weekly Horoscope – ‘Free Will Astrology’ by Rob Brezsny",
+      "url": "https://www.goodnewsnetwork.org/horoscope-from-rob-brezsnys-free-will-astrology-9-12-2026/",
+      "snippet": "Our partner Rob Brezsny, whose latest book is Astrology Is Real: Revelations from My Life as an Oracle, provides his weekly wisdom to enlighten our thinking and motivate our mood. Rob’s Free Will Astrology, is a syndicated weekly column appearing in over a hundred publications. He is also the author of Pronoia Is the Antidote for Paranoia: […]",
+      "cover_url": "https://www.goodnewsnetwork.org/wp-content/uploads/2020/10/Freewill-Astrology-horoscope-logo.jpg",
+      "reason": "A weekly reminder that people are still carving out space for reflection, wonder, and a little playful self-examination — small rituals that help us feel connected to something larger than the daily grind."
     },
     {
       "source": "good_news",
       "source_name": "Upworthy",
-      "title": "DIY barista goes viral showing how to make fancy Starbucks drinks with only Dollar Tree ingredients",
-      "url": "https://www.upworthy.com/diy-barista-goes-viral-showing-how-to-make-fancy-starbucks-drinks-with-only-dollar-tree-ingredients/",
-      "snippet": "Just in time for PSL season…",
-      "cover_url": "https://www.upworthy.com/wp-content/uploads/sites/2/2026/09/WP-Heather-TOP-SPLASH-2026-09-10T143121.540.jpg",
-      "reason": "One resourceful person sharing a simple, affordable trick with thousands of others is a small but genuine reminder that creativity and community don't require deep pockets. It's the kind of practical joy that travels far."
-    },
-    {
-      "source": "good_news",
-      "source_name": "The Optimist Daily",
-      "title": "Podcast Transcript September 11th, 2026— NYC bans AI for 500,000 students, and seven other solutions",
-      "url": "https://www.optimistdaily.com/2026/09/podcast-transcript-september-11th-2026-nyc-bans-ai-for-500000-students-and-seven-other-solutions/",
-      "snippet": "Episode Description: An approach to treating degenerative blindness has been in development for more than ten years across research institutions in Spain. The result is not a surgery, a gene therapy, or an implant. It is eye drops.",
-      "cover_url": "https://www.optimistdaily.com/wp-content/uploads/Podcast-Logo-3000-×-3000-px-2-13.png",
-      "reason": "A major city choosing to protect half a million students from over-reliance on AI signals that communities are willing to draw thoughtful boundaries around technology rather than simply surrendering to it. That kind of deliberate, human-first decision-making is exactly the kind of leadership worth celebrating."
+      "title": "Veterinarian shares 7 signs a cat loves you, even if it seems like they couldn’t care less",
+      "url": "https://www.upworthy.com/7-signs-cat-really-loves-you-ex1/",
+      "snippet": "Your cat really does love you.",
+      "cover_url": "https://www.upworthy.com/wp-content/uploads/sites/2/2026/01/origin.jpg",
+      "reason": "A veterinarian's insight into feline affection is a gentle nudge that love doesn't always look the way we expect — and that quiet, subtle bonds between people and their cats are more real and mutual than we might think."
     }
   ],
   "discovery_articles": [
     {
       "source": "discovery",
-      "source_name": "Atlas Obscura",
-      "title": "America’s Response Monument in New York, New York",
-      "url": "https://www.atlasobscura.com/places/america-responds-monument",
-      "snippet": "This is a statue memorializing the U.S. Army’s Green Berets and other Special Forces soldiers who gallantly brought the fight to the Taliban in Afghanistan in the early days after September 11th. During their action they spent time riding into combat on horseback along side their Afghan allies. The statue, by artist Douwe Blumberg, is 1 1/2 times life size and is a detailed version of a combat ready soldier on horseback.",
-      "category": "history",
-      "cover_url": "https://img.atlasobscura.com/1GKFZOslOG6NY4sf7ykQ3in_oNVt6OKA7ISFxaroFdA/rt:fit/w:600/c:1749:1166:nowe:444:1130/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy81N2Uy/YTgyZi0zNWIyLTQz/MDAtODIxMi1mODJj/ZTMxMzdlYTE2MjRi/YmNlN2YxYTAzNTdh/ZjJfRTUxMTEwOUEt/QUQ0My00MTRBLThE/NjAtQzE1N0NCQjM2/RjVDLmpwZWc.jpg",
-      "ferns_note": "In the mountains of Afghanistan, U.S. Special Forces did something almost cinematic: they rode into 21st-century combat on horseback, coordinating airstrikes from the saddle. The bronze captures that improbable, quietly astonishing moment for lower Manhattan passersby who may never know the full story."
-    },
-    {
-      "source": "discovery",
-      "source_name": "Atlas Obscura",
-      "title": "Ebenezer Scrooge’s Gravestone  in Shropshire, England",
-      "url": "https://www.atlasobscura.com/places/ebenezer-scrooges-gravestone",
-      "snippet": "“A Christmas Carol” starring George C Scott as Scrooge was filmed on location in Shrewsbury and broadcast on CBS in the United States and released in theaters in the UK in December 1984. An original gravestone, the details long weathered away, was used for the fictional memorial to Ebenezer Scrooge. It still lies just beyond the towering Yew Tree, in the graveyard beside St Chad's Church.",
-      "category": "history",
-      "cover_url": "https://img.atlasobscura.com/eY72Dubrn9WdLb-mpEHuZQ9jy_V7fIVy24byf6auqi4/rt:fit/w:600/c:965:643:nowe:621:235/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy82ODk1/YmJlMC04NDZjLTQw/ZmEtYjQ3Zi02MzQ1/NTNmZjRlMzIzMDY2/YmI5NWRjMWYyZmNi/MDhfRWJlbmV6ZXJT/Y3Jvb2dlR3JhdmUu/anBlZw.jpg",
-      "ferns_note": "Somewhere in a Shropshire churchyard, a real but nameless soul's weathered gravestone became the fictional resting place of literature's most famous miser — and it's still there, quietly playing the part. There's something deliciously recursive about a forgotten grave finding immortality by standing in for a character who feared being forgotten."
-    },
-    {
-      "source": "discovery",
       "source_name": "Smithsonian",
-      "title": "A Finnish Metal Detectorist Was Shocked to Unearth a Trove of Viking Age Silver in His Hometown. Then His Detector Went Off Again",
-      "url": "https://www.smithsonianmag.com/smart-news/a-finnish-metal-detectorist-was-shocked-to-unearth-a-trove-of-viking-age-silver-in-his-hometown-then-his-detector-went-off-again-180989487/",
-      "snippet": "Weighing a combined ten pounds, the artifacts are estimated to be 1,000 years old and constitute Finland’s largest coin hoard of the era",
+      "title": "These 15 Riveting Photos of Firefighters in Action Showcase the Strength and Courage They Need to Risk Their Lives to Save Others",
+      "url": "https://www.smithsonianmag.com/travel/these-15-riveting-photos-of-firefighters-in-action-showcase-the-strength-and-courage-they-need-to-risk-their-lives-to-save-others-180989444/",
+      "snippet": "On the 25th anniversary of the September 11 attacks, take in this collection of images pulled from the archives of the Smithsonian Magazine Photo Contest",
       "category": "history",
-      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/QFR5o7LqgqaxFLCyyEX3qdw6QWc=/fit-in/1600x0/filters:focal(1628x1085:1629x1086)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/ef/5b/ef5b9055-962e-483d-b70c-ed912c2a6481/viikinkaikainen_rahakatko.jpeg",
-      "ferns_note": "Finding one Viking silver hoard would be a life-defining moment; the detector going off a second time in the same hometown strains belief in a way that feels almost mythological. Ten pounds of thousand-year-old silver, twice — some people simply walk over the right ground."
-    },
-    {
-      "source": "discovery",
-      "source_name": "Smithsonian",
-      "title": "For Decades, Scientists Thought an 'American Cheetah' Once Roamed North America. Turns Out the Extinct Cat Wasn't a Cheetah",
-      "url": "https://www.smithsonianmag.com/smart-news/for-decades-scientists-thought-an-american-cheetah-once-roamed-north-america-ancient-turns-out-the-extinct-cat-wasnt-a-cheetah-180989465/",
-      "snippet": "Ancient DNA from fossils found in Wyoming and Canada's Yukon Territory suggests the wild cat more closely resembled modern pumas than modern cheetahs",
-      "category": "history",
-      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/90B1qHvGahlXPGzeXlY58FZsUdo=/fit-in/1600x0/filters:focal(1024x605:1025x606)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/73/ef/73ef9644-a9a8-4a1d-b560-c82236eb3bb5/miracinonyx-illustration-2048x1195.jpg",
-      "ferns_note": "For decades, textbooks confidently described a cheetah-like sprinter haunting the ancient American plains — a tidy story that ancient DNA has now quietly dismantled. The real animal was closer to a puma, which means the evolutionary pressure that made modern cheetahs fast may have had nothing to do with North America after all."
-    },
-    {
-      "source": "discovery",
-      "source_name": "Smithsonian",
-      "title": "Could Artificial Intelligence Help With Early Diagnosis of Schizophrenia?",
-      "url": "https://www.smithsonianmag.com/innovation/could-artificial-intelligence-help-with-early-diagnosis-of-schizophrenia-180989486/",
-      "snippet": "The tool may pick up subtle differences in the speech of people with the mental health condition better than human psychiatrists",
-      "category": "history",
-      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/QSE0UrBa33nS6EWiPcEQokdXb7I=/fit-in/1600x0/filters:focal(400x301:401x302)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/88/d6/88d6fbb6-defe-426c-89ae-ccf08716c590/ai-schizophrenia-main.jpg",
-      "ferns_note": "The idea that schizophrenia leaves a detectable fingerprint in speech — in pauses, word choices, the architecture of a sentence — is both poignant and a little eerie. That a machine might hear what a trained psychiatrist misses says something humbling about the limits of human attention."
-    },
-    {
-      "source": "discovery",
-      "source_name": "Smithsonian",
-      "title": "A Genetically Modified Pig Kidney Kept a Man Alive for a Record Nine Months, Allowing Him to Wait for a Donated Human Organ",
-      "url": "https://www.smithsonianmag.com/smart-news/a-genetically-modified-pig-kidney-kept-a-man-alive-for-a-record-nine-months-allowing-him-to-wait-for-a-donated-human-organ-180989466/",
-      "snippet": "The animal organ kept Tim Andrews off dialysis for 271 days and represents the first time a pig kidney has been used as a bridge to human organ transplantation",
-      "category": "history",
-      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/6cUzuoQPJHBvyHw1Q8csFUEKKpw=/fit-in/1600x0/filters:focal(424x279:425x280)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/e6/17/e6171671-6337-4fad-8224-8f4ce4e5f7f6/848_kidney_transplant_patient_and_doctors.jpg",
-      "ferns_note": "For 271 days, a pig kidney kept a man alive long enough to receive a human one — not as a permanent fix, but as a bridge, which is a medical and ethical threshold no one had crossed before. Tim Andrews is the quiet hinge point between science fiction and transplant medicine's next chapter."
-    },
-    {
-      "source": "discovery",
-      "source_name": "Science News",
-      "title": "A human set a new mathematical record. Then AI came for it",
-      "url": "https://www.sciencenews.org/article/human-math-record-twin-primes-openai",
-      "snippet": "OpenAI is at the center of another controversy over machines tackling big math problems. This one’s about the twin prime conjecture.",
-      "category": "science",
-      "cover_url": "https://www.sciencenews.org/wp-content/uploads/sites/2/2026/09/091026_DM_prime-gaps_featsocial.jpg",
-      "ferns_note": "A human mathematician sets a record on one of number theory's most tantalizing unsolved problems — and before the ink is dry, an AI edges past it. The twin prime conjecture has resisted proof for over 150 years, which makes the sudden computational footrace around it feel less like progress and more like a reckoning."
-    },
-    {
-      "source": "discovery",
-      "source_name": "Colossal",
-      "title": "Symmetry and Biomorphic Forms Characterize Roberta Gentry’s Sensual Paintings",
-      "url": "https://www.thisiscolossal.com/2026/09/roberta-gentry-blood-orange-acrylic-paintings/",
-      "snippet": "Roberta Gentry is interested in the relationship between the constructed and the natural, cultivating abstract, biomorphic forms.",
-      "category": "history",
-      "cover_url": "https://www.thisiscolossal.com/wp-content/uploads/2026/09/gentry-1.jpg",
-      "ferns_note": "Roberta Gentry works in the quietly charged territory where the body and the built world blur into each other, producing forms that feel simultaneously architectural and alive. It's the kind of painting that rewards a long, unhurried look."
+      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/QPKa0z8JIV81rYWBfRfbdSe7-lU=/fit-in/1600x0/filters:focal(1581x1054:1582x1055)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/db/bc/dbbcf3fe-7926-47ca-a253-34313c924297/1_-_9d1eb17b-3edd-4636-acd4-0172880de079.jpg",
+      "ferns_note": "Twenty-five years on, these archive images resist the flattening that memory does to catastrophe — each frame holds a specific, unrepeatable human second. There's something quietly devastating about photographs that were taken without knowing they would become history."
     }
   ],
   "featured_read": {
     "source": "reads",
-    "source_name": "The Atlantic",
-    "title": "Rules Designed to Create Chaos",
-    "url": "https://www.theatlantic.com/ideas/2026/09/mail-voting-usps-trump/688585/?utm_source=feed",
-    "snippet": "The Trump administration is hoping to put so many restrictions on mail-in balloting that people simply won’t be able to vote that way at all.",
-    "cover_url": "https://cdn.theatlantic.com/thumbor/es2qjsvu7lXkoq71tcvygezMezE=/0x43:2000x1085/1200x625/media/img/mt/2026/09/MailInBallotsEdit/original.png",
-    "blurb": "This piece maps the quiet machinery behind mail-in ballot restrictions — not as a single dramatic ban, but as a slow accumulation of friction designed to exhaust voters into giving up. The story of how bureaucratic complexity becomes the policy itself."
+    "source_name": "Aeon",
+    "title": "Medieval mental health",
+    "url": "https://aeon.co/essays/the-curio-cabinet-of-medieval-mental-health",
+    "snippet": "Saffron and ostrich liver were prescribed but so were exercise, gardens, animals, socialising, and music - by Katherine Harvey Read on Aeon",
+    "cover_url": "https://images.aeonmedia.co/images/f5b2d9a3-db7d-49c3-b79d-a14788da0cb0/essay-bathing.jpg?width=1200&quality=75&format=jpeg",
+    "blurb": "Medieval physicians had more in common with modern therapists than you might expect — this piece traces the surprisingly tender logic behind prescriptions of gardens, music, and good company for troubled minds. It's a corrective to the idea that compassionate mental healthcare is a recent invention."
   },
   "reading_room": [
     {
       "source": "reads",
-      "source_name": "The Atlantic",
-      "title": "The Spectacle of 1980s Hollywood",
-      "url": "https://www.theatlantic.com/newsletters/2026/09/the-books-briefing-jackie-collins-la-novelist/688595/?utm_source=feed",
-      "snippet": "Jackie Collins wrote flashy Hollywood thrillers, but isn’t often thought of as a canonical Los Angeles writer.",
-      "cover_url": "https://cdn.theatlantic.com/thumbor/OfUTUaXh7kOgC-K-tHgaGV_MNsY=/0x42:2000x1084/1200x625/media/newsletters/2026/09/BB_Jackie_Collins_LA/original.jpg",
-      "blurb": "Jackie Collins spent decades writing Los Angeles better than almost anyone, and this essay asks why literary culture kept looking away — an argument for taking seriously the authors we've been trained to dismiss as mere spectacle."
-    },
-    {
-      "source": "reads",
-      "source_name": "Asterisk",
-      "title": "All Work and No Play",
-      "url": "https://asteriskmag.com/issues/15/all-work-and-no-play",
-      "snippet": "Welcome to Issue 15.",
-      "cover_url": "https://asteriskmag.com/media/pages/issues/15/34173b487a-1784388742/asterisk15_cover-1600x900-crop-sharpen50.png",
-      "blurb": "A meditation on what we actually mean when we talk about play — and what quietly vanishes from a life organized entirely around productivity. Worth setting aside precisely the kind of unscheduled hour it asks you to defend."
-    },
-    {
-      "source": "reads",
-      "source_name": "Damn Interesting",
-      "title": "From Where the Sun Now Stands",
-      "url": "https://www.damninteresting.com/from-where-the-sun-now-stands/",
-      "snippet": "An American Indian man on horseback stood outlined against a steely sky past midday on 05 October 1877. Winter was already settling into the prairies of what would soon become the state of Montana. Five white men stood in the swaying grass on the other side of the field, watching the horse move closer.",
-      "cover_url": "https://damn-8791.kxcdn.com/wp-content/uploads/2023/04/003.jpg",
-      "blurb": "The story of Chief Joseph's surrender on a cold Montana field in 1877 — told close enough to the ground that you feel the particular weight of a man choosing his words at the end of everything. History as it actually feels from inside a single, irreversible moment."
-    },
-    {
-      "source": "reads",
-      "source_name": "Aeon",
-      "title": "Penchants of the polymaths",
-      "url": "https://aeon.co/essays/four-islamic-polymaths-prove-breadth-beats-specialisation",
-      "snippet": "The fathers of Islamic science hold lessons for students: breadth over specialisation, and never let constraints get in the way - by Mariam Sabri Read on Aeon",
-      "cover_url": "https://images.aeonmedia.co/images/1024a5cb-d702-4ff5-b6b1-6c3e993da1eb/essay-chronology-of-ancient-nations-biruni.jpg?width=1200&quality=75&format=jpeg",
-      "blurb": "The great polymaths of the Islamic Golden Age built entire fields of knowledge precisely because no one told them to stay in their lane — and this essay makes a quiet, persuasive case that their restlessness wasn't incidental to their genius, but the source of it."
-    },
-    {
-      "source": "reads",
       "source_name": "Nautilus",
-      "title": "The Giant Squids of the Jurassic Period",
-      "url": "https://nautil.us/the-giant-squids-of-the-jurassic-period-1285002/",
-      "snippet": "This belemnite swam in what used to be Wyoming seas",
-      "cover_url": "https://lede-admin.nautil.us/wp-content/uploads/sites/70/2026/09/1920_image6.illustrationofwyoteuthislinsterorumbyjasonpoole.jpg",
-      "blurb": "Beneath what is now the landlocked American West, ancient squid-like creatures once navigated a warm inland sea — and this piece uses their fossilized remains to pull the familiar landscape completely out from under you. Deep time as a form of vertigo."
+      "title": "Rope, Twine and Thread: Invisible Technologies of the Stone Age",
+      "url": "https://nautil.us/rope-twine-and-thread-invisible-technologies-of-the-stone-age-1284982/",
+      "snippet": "Missing from the archaeological record, fiber innovations like string played a huge role in the daily lives of our ancestors. Researchers are working to weave together new insights from the traces they left behind",
+      "cover_url": "https://lede-admin.nautil.us/wp-content/uploads/sites/70/2026/09/soft-archaeology-1600x600-1.jpg",
+      "blurb": "String, twine, and rope almost never survive the millennia, yet they may have been as transformative as the wheel — this is the quiet detective story of researchers reconstructing a Stone Age revolution from near-nothing. What we've been missing from prehistory turns out to be the very thread that held it together."
+    },
+    {
+      "source": "reads",
+      "source_name": "Psyche",
+      "title": "Impatience is an emotion, not a trait",
+      "url": "https://psyche.co/notes-to-self/why-it-helps-to-see-impatience-as-an-emotion-not-a-trait",
+      "snippet": "Watching Penelope’s heroic wait in The Odyssey made me lament my impatience. But maybe I’ve been thinking about it wrong - by Amy Arthur Read on Psyche",
+      "cover_url": "https://images.aeonmedia.co/images/bfb38aca-b015-4273-8896-8f9d34e045b5/penelope-waiting-detail.jpg?top=116&left=0&cropWidth=2208&cropHeight=1242&width=1200&quality=75&format=jpeg",
+      "blurb": "Amy Arthur uses Penelope's legendary, years-long wait to ask whether impatience is a character flaw we carry or simply an emotion that passes through us — and the distinction turns out to matter more than you'd think. A small reframe with surprisingly large consequences for how you treat yourself on a slow Tuesday."
+    },
+    {
+      "source": "reads",
+      "source_name": "Longreads",
+      "title": "Can Andre Agassi Enjoy Pickleball More Than He Hated Tennis?",
+      "url": "https://longreads.com/2026/09/10/andre-agassi-tennis-pickleball/",
+      "snippet": "\"After years of relative quiet, the public is meeting 'Andre 2.0' — a pickleball booster, an open book and a guy eager to build a less tortured relationship with competition.\"",
+      "cover_url": "",
+      "blurb": "André Agassi famously hated the sport that made him famous, and now he's back — in the unlikely arena of pickleball — trying to find out whether competition can feel like something other than punishment. It's really a story about whether a person can outrun their own psychology."
+    },
+    {
+      "source": "reads",
+      "source_name": "Literary Hub",
+      "title": "Lit Hub Weekly: September 7 – 11, 2026",
+      "url": "https://lithub.com/lit-hub-weekly-september-7-11-2026/",
+      "snippet": "A new season means new books. Here are 34 titles you need to read this fall. | Lit Hub Reading Lists Emily Wilson talks to Leanne Ogasawara about “the high stakes and complexities of translation,” complicated men, and her essay",
+      "cover_url": "https://s26162.pcdn.co/wp-content/uploads/2026/09/elizabethrobertbrowning-1.jpg",
+      "blurb": null
+    },
+    {
+      "source": "reads",
+      "source_name": "The Atlantic",
+      "title": "Trump Will Never Mail the $5,000 Checks",
+      "url": "https://www.theatlantic.com/ideas/2026/09/trump-5000-rebate-checks/688599/?utm_source=feed",
+      "snippet": "Deconstructing a policy proposal that makes no sense on any level",
+      "cover_url": "https://cdn.theatlantic.com/thumbor/TGnlzIqD6HwBHehxTk1ckteGQ7M=/0x0:2876x1498/1200x625/media/img/mt/2026/09/2026_09_11_5k_checks_18/original.jpg",
+      "blurb": null
     }
   ],
   "garden_note": {
-    "note": "September in Zürich has a particular quality of light — golden and slightly hazy — and this morning it arrives with first light around 06:28, catching the last dahlias and the heavy heads of autumn raspberries before the day fully wakes. The new moon means the sky last night was ink-dark, and the garden feels quietly reset, ready for the harvest push ahead.",
+    "note": "Tonight in Zürich the garden exhales into genuine autumn — dahlias still bold in the borders while the first leaves on the linden trees hint at gold to come. With the new moon keeping the sky gloriously dark, step outside after the dishes are done and let your eyes adjust to what the city rarely shows you.",
     "in_season": [
-      "Dahlias at their autumn peak — cut generously before the first frost threatens",
-      "Winter squash and pumpkins ripening on the vine — tap for a hollow sound",
-      "Sow lamb's lettuce (Feldsalat) directly now for winter harvests",
-      "Clear summer bedding and top-dress beds with compost ahead of planting"
+      "Dahlias in full late-summer bloom",
+      "Autumn raspberries ripening on the canes",
+      "Harvesting winter squash before the first frost",
+      "Sowing lamb's lettuce (Feldsalat) for autumn pickings"
     ],
-    "sky_tonight": "With the new moon absent from the sky, tonight is ideal for spotting Saturn low in the southeast — look for its steady golden glow after dusk.",
-    "sun_times": "First light breaks at 06:28, with sunrise at 06:57 and dusk settling gently at 20:15 this evening.",
+    "sky_tonight": "No moon to wash it out — look south for Saturn rising in Aquarius, steady and golden above the rooftops.",
+    "sun_times": "Dusk settles gently over Zürich at 20:15 tonight, with the sun having already slipped away at 19:46.",
     "moon_label": "New moon",
-    "illum_pct": 0,
+    "illum_pct": 1,
     "sun_range": "06:57–19:46"
   },
   "puzzle": {
-    "kind": "riddle",
-    "label": "Fern's Morning Riddle",
-    "prompt": "My life can be measured in hours, I serve by being devoured. Thin, I am quick. Fat, I am slow. Wind is my foe. What am I ?",
-    "answer": "I am a candle",
-    "hint": "",
-    "source": "riddles.com",
-    "source_id": "Riddle-70"
+    "kind": "trivia",
+    "label": "The Evening Trivia",
+    "prompt": "In most FPS video games such as Counter-Strike, shooting which part of the body does the highest damage?\n\nArm   ·   Chest   ·   Head   ·   Leg",
+    "answer": "Head",
+    "hint": "Category: Entertainment: Video Games",
+    "source": "opentdb.com",
+    "source_id": "b4032c771d72"
   },
   "previous_puzzle": {
     "label": "Fern's Morning Riddle",
-    "prompt": "First breath of cold air\nI bridge two worlds without words\nGlass holds the whole sky",
-    "answer": "A window"
+    "prompt": "My life can be measured in hours, I serve by being devoured. Thin, I am quick. Fat, I am slow. Wind is my foe. What am I ?",
+    "answer": "I am a candle"
   },
   "larder": {
-    "news": [
-      {
-        "source": "food",
-        "source_name": "The Kitchn",
-        "title": "40 Amazing Recipes for Canadian Thanksgiving",
-        "url": "https://www.thekitchn.com/best-canadian-thanksgiving-recipes-23843007?utm_source=RSS&utm_medium=feed&utm_campaign=Category%2FChannel%3A+main",
-        "snippet": "We've got all the classics.",
-        "cover_url": "https://cdn.apartmenttherapy.info/image/fetch/f_auto,q_auto:eco,c_fill,g_auto,w_1500,ar_3:2",
-        "blurb": "Whether you're hosting the full feast or just contributing a dish, forty recipes is a rather generous insurance policy against a bare Thanksgiving table."
-      },
-      {
-        "source": "food",
-        "source_name": "Eater",
-        "title": "The 12 Essential Kitchen Tools for Beginners, According to Cooking Instructors",
-        "url": "https://www.eater.com/24254397/best-kitchen-tools-utensils-beginner-cooks-essential",
-        "snippet": "Every time I see a meat tenderizer, I think of my mother. Specifically of the way in which she, as someone wary of emotional vulnerability yet full of affection (classic Boomer combo), decided to make Austrian pork schnitzel her love language — and the meat tenderizer her translator. In hindsight, that steel hammer was one […]",
-        "cover_url": "https://platform.eater.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/25653287/24.09_Beginner_Cooking_Tools.png?quality=90&strip=all&crop=0%2C3.4613147178592%2C100%2C93.077370564282&w=1200",
-        "blurb": "A quietly lovely reminder that the tools we cook with often carry more emotional weight than we'd care to admit — and that knowing which ones actually matter can transform your kitchen life."
-      },
-      {
-        "source": "food",
-        "source_name": "The Guardian",
-        "title": "Meera Sodha’s vegetarian recipe for mushroom claypot rice",
-        "url": "https://www.theguardian.com/food/2026/sep/12/meera-sodha-vegetarian-recipe-mushroom-claypot-rice-korean",
-        "snippet": "I’m taking a break to replenish my creative reserves. Until then, I leave you with this champion champignon number In the nine years that I’ve been writing this column, I’ve had two babies, a breakdown and very little time away from writing a weekly recipe. I love this column, and creating recipes for you makes me feel like the luckiest duck alive, but I don’t believe that anyone can be endlessly creative without occasionally filling up their own cup.",
-        "cover_url": "https://i.guim.co.uk/img/media/f1f6a2f4fc4f900a8494985bf062696d78998a1d/15_2563_4317_3451/master/4317.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=67ca02022ca6e1d48de39550e14e86d2",
-        "blurb": "Meera Sodha signs off with the kind of quiet, mushroom-scented generosity that makes you feel a columnist's nine years of love, chaos, and claypot wisdom all at once."
-      }
-    ],
-    "recipe": {
-      "source": "recipe",
-      "source_name": "101 Cookbooks",
-      "title": "Banana Pepper & Goat Cheese Tart",
-      "url": "https://www.101cookbooks.com/goat-cheese-tart/",
-      "snippet": "A golden, buttery tart layered with goat cheese, banana peppers and lots of scallions, then finished with basil, chives and zucchini blossoms. Simple and summery!",
-      "is_recipe": true,
-      "cover_url": "https://images.101cookbooks.com/GOAT-CHEESE-TART-RECIPE-h.jpg?w=680",
-      "blurb": "This golden, buttery tart — layered with tangy goat cheese, banana peppers, and scallions, then crowned with fresh basil, chives, and zucchini blossoms — is exactly the kind of effortless, sun-warmed thing you want to pull from the oven while summer still has a little breath left in it."
-    },
-    "seasonal_note": "Zürich's markets are quietly filling with the first *Zwetschgen* — those deep-purple Italian prunes from the Zürich Oberland — so seek them out at the Bürkliplatz markt this week and roast them with a little sugar and star anise for a compote that makes porridge feel like an occasion."
+    "news": [],
+    "recipe": {}
   },
   "fern_data": {
-    "greeting": "Still turning over the bit about superposition causing length contraction — it keeps pulling the floor out from under ordinary logic. There's also a Finnish detectorist who hit silver once, then hit it again, which is either a miracle or a very good argument for staying in your own backyard.",
-    "top_pick_title": "Patterns We Can't Prove & Silver in the Soil"
+    "greeting": "Still turning a thought over: that 0.125 grams of antimatter could do what it could do. Tonight also has the woman who cracked the mystery of heavy elements, and Bon Iver writing a jingle about meatloaf dippers — which is, somehow, the correct palate cleanser.",
+    "top_pick_title": "Antimatter & Other Gentle Catastrophes"
   }
 }
