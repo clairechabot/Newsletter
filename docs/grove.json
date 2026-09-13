@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-12T19:19:25.373983+02:00",
+ "generated_at": "2026-09-13T10:29:02.432362+02:00",
  "moods": [
   "cozy",
   "curious",
@@ -43,6 +43,354 @@
   }
  ],
  "items": [
+  {
+   "section": "music",
+   "title": "Celine Dion returns to the stage after battling rare illness",
+   "note": "The tearful, chest-clutching relief of watching someone you love walk back through a door you feared might stay closed forever.",
+   "url": "https://www.npr.org/2026/09/12/nx-s1-5967534/celine-dion-performance-paris",
+   "image": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3231x1817+0+0/resize/1400/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Fb3%2Fd1%2F12cb5e554d49be949447d540b0d6%2Fap26255714607289.jpg",
+   "source": "NPR Music",
+   "genre": "",
+   "date": "2026-09-13",
+   "ampm": "morning",
+   "edition": "2026-09-13-morning.html",
+   "moods": [
+    "Cheer Up!",
+    "Romantic"
+   ]
+  },
+  {
+   "section": "music",
+   "title": "Céline Dion Makes Triumphant Return to the Stage in Paris for First Concert in Six Years: Setlist + Videos",
+   "note": "Standing ovation energy, the kind where your hands hurt from clapping and you don't care one bit.",
+   "url": "https://consequence.net/2026/09/celine-dion-paris-residency-kickoff-setlist-videos/",
+   "image": "https://consequence.net/wp-content/uploads/2026/09/Celine-Dion.jpeg?quality=80",
+   "source": "Consequence",
+   "genre": "",
+   "date": "2026-09-13",
+   "ampm": "morning",
+   "edition": "2026-09-13-morning.html",
+   "moods": [
+    "Cheer Up!",
+    "Energize"
+   ]
+  },
+  {
+   "section": "videos",
+   "title": "Growing Peas, from Seed to Harvest (FULL GROW GUIDE)",
+   "note": "This isn't a vague overview, it walks you through specific variety choices, trellis setups, and the right harvest window, then carries you all the way to the kitchen. Jacques's structured format means you can jump directly to whichever stage of the grow you're at. Genuinely useful whether you're planting your first row or troubleshooting why last year's peas were stringy and starchy.",
+   "url": "https://www.youtube.com/watch?v=Csr1CkiUoaY",
+   "image": "https://img.youtube.com/vi/Csr1CkiUoaY/mqdefault.jpg",
+   "source": "Epic Gardening",
+   "genre": "",
+   "date": "2026-09-13",
+   "ampm": "morning",
+   "edition": "2026-09-13-morning.html",
+   "moods": [
+    "curious",
+    "Crafty / Creative"
+   ]
+  },
+  {
+   "section": "videos",
+   "title": "Come garden with me - early Spring growth & chores (week 7)",
+   "note": "A real-time early-spring garden walk from someone who documents outcomes honestly rather than just showing highlight reels. The \"week 7\" format means you're seeing cumulative decisions and their actual results, which is more instructive than standalone how-to clips. Good for gardeners who want to calibrate their own spring timeline against someone working through the same season.",
+   "url": "https://www.youtube.com/watch?v=ydPALXVKB9U",
+   "image": "https://img.youtube.com/vi/ydPALXVKB9U/mqdefault.jpg",
+   "source": "Gardening Experiments with Mind & Soil",
+   "genre": "",
+   "date": "2026-09-13",
+   "ampm": "morning",
+   "edition": "2026-09-13-morning.html",
+   "moods": [
+    "curious",
+    "cozy"
+   ]
+  },
+  {
+   "section": "videos",
+   "title": "Epic Sea Battles: The First Punic War",
+   "note": "Dr. Eve MacDonald brings specialist depth to a war that reshaped the ancient Mediterranean, Rome, a land power with no naval tradition, somehow defeating history's premier seafaring empire. The specific focus on the corvus (that \"lethal boarding bridge\") and the ambush tactics around Sicily makes this more tactically grounded than most ancient history content. If you've ever wondered how Rome became a naval superpower almost by accident, this is a well-sourced hour on exactly that.",
+   "url": "https://www.youtube.com/watch?v=UDFEKDk0NP0",
+   "image": "https://img.youtube.com/vi/UDFEKDk0NP0/mqdefault.jpg",
+   "source": "The Ancients",
+   "genre": "",
+   "date": "2026-09-13",
+   "ampm": "morning",
+   "edition": "2026-09-13-morning.html",
+   "moods": [
+    "curious",
+    "wonder"
+   ]
+  },
+  {
+   "section": "videos",
+   "title": "The Secret Spy Tech Inside Every Credit Card",
+   "note": "Veritasium goes well beyond \"chips are secure\" to show the actual cryptographic and physical engineering inside a modern payment card, including how the EMV chip negotiates a transaction and why magnetic stripes are still a liability. With nearly 6 million views it's clearly striking a nerve, and it earns those numbers by making the underlying cryptography genuinely followable without dumbing it down.",
+   "url": "https://www.youtube.com/watch?v=YSJY3DvnybE",
+   "image": "https://img.youtube.com/vi/YSJY3DvnybE/mqdefault.jpg",
+   "source": "Veritasium",
+   "genre": "",
+   "date": "2026-09-13",
+   "ampm": "morning",
+   "edition": "2026-09-13-morning.html",
+   "moods": [
+    "curious"
+   ]
+  },
+  {
+   "section": "videos",
+   "title": "Bandgap reference - LM109/309 - 5V - Voltage regulator - first monolithic high power regulator",
+   "note": "Bob Widlar's LM309 is one of those components that quietly underpins decades of electronics history, and this video explains why its bandgap reference design was such a leap over what came before. If you work with linear regulators and have ever wondered what's actually happening inside a three-terminal IC, the circuit-level walkthrough here is unusually clear. Niche subject, genuinely well-explained.",
+   "url": "https://www.youtube.com/watch?v=vWuispuKMEE",
+   "image": "https://img.youtube.com/vi/vWuispuKMEE/mqdefault.jpg",
+   "source": "Computer&Electronics",
+   "genre": "",
+   "date": "2026-09-13",
+   "ampm": "morning",
+   "edition": "2026-09-13-morning.html",
+   "moods": [
+    "curious"
+   ]
+  },
+  {
+   "section": "videos",
+   "title": "Why Do We ACTUALLY Believe Light Is a Particle?",
+   "note": "The real hook here is the correction of a widespread misconception: Einstein's Nobel Prize work on the photoelectric effect was not actually the origin of the photon concept, Planck's blackbody crisis came first and forced the idea. This video traces that intellectual lineage carefully, so by the end you understand not just what quantum mechanics says but why even reluctant physicists were cornered into accepting it.",
+   "url": "https://www.youtube.com/watch?v=3uJriCSlTF8",
+   "image": "https://img.youtube.com/vi/3uJriCSlTF8/mqdefault.jpg",
+   "source": "Physics Explained",
+   "genre": "",
+   "date": "2026-09-13",
+   "ampm": "morning",
+   "edition": "2026-09-13-morning.html",
+   "moods": [
+    "curious",
+    "wonder"
+   ]
+  },
+  {
+   "section": "videos",
+   "title": "We finally understood why radium is radioactive! (My mind is blown)",
+   "note": "The specific story here is George Gamow's quantum tunneling explanation for alpha decay, a case where a particle escapes a nucleus that classical physics says it has no business escaping. FloatHeadPhysics builds the intuition for this carefully, and the payoff is a real \"oh, that's why\" moment about why radium decays on the timescale it does rather than instantly or never. The enthusiasm is genuine and the math doesn't get hand-waved away.",
+   "url": "https://www.youtube.com/watch?v=MyVlldYiVbk",
+   "image": "https://img.youtube.com/vi/MyVlldYiVbk/mqdefault.jpg",
+   "source": "FloatHeadPhysics",
+   "genre": "",
+   "date": "2026-09-13",
+   "ampm": "morning",
+   "edition": "2026-09-13-morning.html",
+   "moods": [
+    "wonder",
+    "curious"
+   ]
+  },
+  {
+   "section": "videos",
+   "title": "Matrix Theory: Relativity Without Relative Space or Time",
+   "note": "Dialect takes a genuinely unconventional angle: rather than explaining relativity through spacetime geometry, it asks whether matrix-based relational structures might give a more physically grounded picture of what's actually happening. This is philosophy of physics done rigorously, not pop-science speculation, best suited to viewers who already have some relativity background and are frustrated by the \"but what does it mean\" gap that textbooks leave open.",
+   "url": "https://www.youtube.com/watch?v=B94o-P93ExU",
+   "image": "https://img.youtube.com/vi/B94o-P93ExU/mqdefault.jpg",
+   "source": "Dialect",
+   "genre": "",
+   "date": "2026-09-13",
+   "ampm": "morning",
+   "edition": "2026-09-13-morning.html",
+   "moods": [
+    "curious",
+    "wonder"
+   ]
+  },
+  {
+   "section": "good_news",
+   "title": "The Blackout of ‘65 Left 800K Trapped in NYC Subway – 6 Hours Later People Were Inspired by Each Other",
+   "note": "When a massive blackout plunged New York City into darkness, strangers trapped underground chose kindness over chaos, a reminder that human decency tends to surface precisely when conditions are hardest. Sixty years on, that story still matters because it's not an exception; it's a pattern worth remembering.",
+   "url": "https://www.goodnewsnetwork.org/the-massive-blackout-of-65-left-people-inspired-by-each-other/",
+   "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/09/New-York-City-Transit-Authority-poster-to-thank-subway-riders-for-their-response-to-blackout-of-1965-pubdomain-wikimedia.jpeg",
+   "source": "Good News Network",
+   "genre": "",
+   "date": "2026-09-13",
+   "ampm": "morning",
+   "edition": "2026-09-13-morning.html",
+   "moods": [
+    "Cheer Up!",
+    "Inspire"
+   ]
+  },
+  {
+   "section": "good_news",
+   "title": "A 19-yr-old built a beautiful tiny home on her parents’ property. More young people are following suit.",
+   "note": "A teenager turning a backyard plot into a handcrafted home shows that young people aren't just lamenting the housing crisis, they're quietly, practically solving it on a human scale. The growing movement toward small, intentional living spaces is as much about rootedness and creativity as it is about affordability.",
+   "url": "https://www.upworthy.com/a-19-year-old-built-a-beautiful-tiny-home-on-her-parents-property-ex1-2/",
+   "image": "https://www.upworthy.com/wp-content/uploads/sites/2/2026/06/tiny_house.png",
+   "source": "Upworthy",
+   "genre": "",
+   "date": "2026-09-13",
+   "ampm": "morning",
+   "edition": "2026-09-13-morning.html",
+   "moods": [
+    "Inspire",
+    "Crafty / Creative"
+   ]
+  },
+  {
+   "section": "featured_read",
+   "title": "America Has Forfeited Its Greatest Strength",
+   "note": "This essay traces a dark irony: that America's most dangerous wound may not have been inflicted by its enemies, but opened slowly from within. It asks whether the soft power that once made the U.S. genuinely feared and admired is gone, and who, exactly, finished the job.",
+   "url": "https://www.theatlantic.com/ideas/2026/09/september-11-trust-america/688580/?utm_source=feed",
+   "image": "https://cdn.theatlantic.com/thumbor/8VgEYOXqqhnWisDVClo2jkwUaIA=/68x88:1943x1065/1200x625/media/img/mt/2026/09/Soufan_1/original.jpg",
+   "source": "The Atlantic",
+   "genre": "",
+   "date": "2026-09-13",
+   "ampm": "morning",
+   "edition": "2026-09-13-morning.html",
+   "moods": [
+    "curious"
+   ]
+  },
+  {
+   "section": "reads",
+   "title": "Cormac McCarthy’s Midlife Crisis",
+   "note": "At 40, Cormac McCarthy drove west and shed whatever writer he'd been, this is the story of that shedding, and why the desert made him into someone capable of *Blood Meridian*. A quiet argument that the best creative reinventions look, from the outside, like a midlife unraveling.",
+   "url": "https://www.theatlantic.com/magazine/2026/10/cormac-mccarthy-biography-tracy-daugherty/688350/?utm_source=feed",
+   "image": "https://cdn.theatlantic.com/thumbor/CEy6sTOcYs1IFN-B6CqqMOMJnic=/0x631:1998x1672/1200x625/media/img/2026/08/CC_ODonnell_McCarthy/original.png",
+   "source": "The Atlantic",
+   "genre": "",
+   "date": "2026-09-13",
+   "ampm": "morning",
+   "edition": "2026-09-13-morning.html",
+   "moods": [
+    "Inspire",
+    "curious"
+   ]
+  },
+  {
+   "section": "reads",
+   "title": "We’re All One Crisis Away From Taking Unlicensed Research Peptides",
+   "note": "When medicine offers a dead end and the internet offers a peptide, what does a rational person actually do? This essay sits with the uncomfortable logic of people who decide the greater risk is *not* experimenting.",
+   "url": "https://asteriskmag.com/issues/14/we-re-all-one-crisis-away-from-taking-unlicensed-research-peptides",
+   "image": "https://asteriskmag.com/media/pages/issues/14/we-re-all-one-crisis-away-from-taking-unlicensed-research-peptides/a47fe84498-1780337733/peptides-elizabeth-van-nostrand-1600x900-crop-sharpen50.png",
+   "source": "Asterisk",
+   "genre": "",
+   "date": "2026-09-13",
+   "ampm": "morning",
+   "edition": "2026-09-13-morning.html",
+   "moods": [
+    "curious"
+   ]
+  },
+  {
+   "section": "reads",
+   "title": "Even 10 Minutes of “Slow Running” Can Give Your Brain a Boost",
+   "note": "It turns out the gentle nod of a slow jog may be doing something quietly remarkable to your brain, and the explanation is more elegant than anything involving a Fitbit. Ten minutes well spent, on and off the pavement.",
+   "url": "https://nautil.us/even-10-minutes-of-slow-running-can-give-your-brain-a-boost-1284996/",
+   "image": "https://lede-admin.nautil.us/wp-content/uploads/sites/70/2026/09/AdobeStock_167330932.jpeg",
+   "source": "Nautilus",
+   "genre": "",
+   "date": "2026-09-13",
+   "ampm": "morning",
+   "edition": "2026-09-13-morning.html",
+   "moods": [
+    "curious",
+    "Energize"
+   ]
+  },
+  {
+   "section": "reads",
+   "title": "How to be a word detective",
+   "note": "Etymology isn't dusty pedantry, it's a method for noticing the hidden threads stitching together languages, cultures, and the strangest bedfellow words. This is an invitation to become the kind of reader who can never look at an ordinary sentence the same way again.",
+   "url": "https://psyche.co/guides/how-to-be-a-word-detective",
+   "image": "https://images.aeonmedia.co/images/3df79fbc-cb65-400e-81d6-be1262952598/scribe.jpg?top=241&left=0&cropWidth=1648&cropHeight=927&width=1200&quality=75&format=jpeg",
+   "source": "Psyche",
+   "genre": "",
+   "date": "2026-09-13",
+   "ampm": "morning",
+   "edition": "2026-09-13-morning.html",
+   "moods": [
+    "curious",
+    "playful"
+   ]
+  },
+  {
+   "section": "reads",
+   "title": "Found Wanting: A Reading List on Measurement",
+   "note": "We've long known that measuring a thing distorts it, but this reading list turns the lens around and asks what all that quantifying has done to *us*, the ones holding the ruler. A slow, unsettling question dressed up as a bibliography.",
+   "url": "https://longreads.com/2026/09/10/measurement-kanya-kanchana/",
+   "image": "https://i0.wp.com/longreads.com/wp-content/uploads/2026/09/MeasurementRL-B.png?fit=2400%2C1400&quality=80&ssl=1",
+   "source": "Longreads",
+   "genre": "",
+   "date": "2026-09-13",
+   "ampm": "morning",
+   "edition": "2026-09-13-morning.html",
+   "moods": [
+    "curious",
+    "Calm Down"
+   ]
+  },
+  {
+   "section": "food",
+   "title": "Quick Ricotta Dumplings in Tomato Broth",
+   "note": "A bowl of pesto-ricotta dumplings nestled in a quick tomato broth is exactly the kind of cozy, clever weeknight supper that makes you feel like you've done something rather lovely with very little effort.",
+   "url": "https://www.101cookbooks.com/ricotta-dumplings/",
+   "image": "https://images.101cookbooks.com/ricotta-dumplings-26-h.jpg?w=680",
+   "source": "101 Cookbooks",
+   "genre": "",
+   "date": "2026-09-13",
+   "ampm": "morning",
+   "edition": "2026-09-13-morning.html",
+   "moods": [
+    "cozy",
+    "Crafty / Creative"
+   ]
+  },
+  {
+   "section": "food",
+   "title": "This $27 Tool Is the Meal-Prep Superhero Every Kitchen Needs — Over 7,000 Were Bought Last Month!",
+   "note": "A quietly useful read for anyone who suspects their meal-prep routine could do with a modest, well-priced upgrade.",
+   "url": "https://www.thekitchn.com/cambom-rotary-food-grater-amazon-23842820?utm_source=RSS&utm_medium=feed&utm_campaign=Category%2FChannel%3A+main",
+   "image": "",
+   "source": "The Kitchn",
+   "genre": "",
+   "date": "2026-09-13",
+   "ampm": "morning",
+   "edition": "2026-09-13-morning.html",
+   "moods": [
+    "curious",
+    "Crafty / Creative"
+   ]
+  },
+  {
+   "section": "food",
+   "title": "Rosina, London SW17: ‘Bella Italia in Bolton this is not’ – restaurant review",
+   "note": "A restaurant review with genuine wit and white linen, the kind that makes you want to book a table and a one-way ticket to SW17.",
+   "url": "https://www.theguardian.com/food/2026/sep/13/rosina-london-sw17-grace-dent-restaurant-review",
+   "image": "https://i.guim.co.uk/img/media/2be666ba1cc88d921697170cd10c88b7da19bd27/149_14_3889_3112/master/3889.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=a4497737572e066d75b370d76b765de9",
+   "source": "The Guardian",
+   "genre": "",
+   "date": "2026-09-13",
+   "ampm": "morning",
+   "edition": "2026-09-13-morning.html",
+   "moods": [
+    "playful",
+    "cozy"
+   ]
+  },
+  {
+   "section": "food",
+   "title": "Our 20 Favorite Rosh Hashana Recipes",
+   "note": "Whether you're marking Rosh Hashana or simply drawn to the promise of sweet-savory braises and streusel-topped apple cake, this collection is a beautiful excuse to cook with intention.",
+   "url": "https://www.saveur.com/best-rosh-hashanah-recipes/",
+   "image": "https://www.saveur.com/uploads/2017/09/tzimmes_16x9.jpg?auto=webp",
+   "source": "Saveur",
+   "genre": "",
+   "date": "2026-09-13",
+   "ampm": "morning",
+   "edition": "2026-09-13-morning.html",
+   "moods": [
+    "cozy",
+    "Crafty / Creative"
+   ]
+  },
   {
    "section": "music",
    "title": "Jeff Tweedy Covers Twisted Teens",

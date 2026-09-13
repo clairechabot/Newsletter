@@ -1,148 +1,148 @@
 {
-  "fetched_at": "2026-09-12T19:17:38.820310+02:00",
-  "is_am_email": false,
+  "fetched_at": "2026-09-13T10:25:26.469849+02:00",
+  "is_am_email": true,
   "audit_summary": {
     "youtube_videos": 8,
     "themes": 4,
-    "music_articles": 7,
+    "music_articles": 2,
     "good_news_articles": 2,
-    "discovery_articles": 1,
+    "discovery_articles": 0,
     "featured_read": 1,
     "reading_room": 5,
     "garden": 1,
-    "puzzle": 1,
-    "larder": 0
+    "puzzle": 0,
+    "larder": 4
   },
   "themes": [
     {
-      "name": "Minds That Blew Up The Universe",
-      "emoji": "🌌",
-      "tagline": "From the Big Bang to antimatter factories to the woman who cracked stellar chemistry — science that makes your brain pleasantly short-circuit.",
-      "items": [
-        {
-          "source": "youtube",
-          "video_id": "jjp3WC8Unj8",
-          "title": "What happens if you drop 0.125 grams of antimatter?",
-          "channel_id": "UCHnyfMqiRRG1u-2MsSQLbXA",
-          "channel_title": "Veritasium",
-          "published_at": "2026-04-05T20:07:08Z",
-          "url": "https://www.youtube.com/watch?v=jjp3WC8Unj8",
-          "duration_seconds": 3534,
-          "view_count": "11405846",
-          "description": "The factory that makes the world's most volatile substance. Sponsored by SoFi - Join SoFi Plus today and get more for your money! Visit https://sofi.com/veritasium \n\nIn 2025, we launched the Elements of Truth game on Kickstarter and were thrilled by the response. We’re now in the final stages of production, with Kickstarter rewards shipping soon. If you missed the campaign, you can now pre-order the retail edition through our new website here -https://ve42.co/AntimatterDesc\n\nIf you’re looking fo",
-          "why_watch": "Veritasium spent time inside CERN's antimatter factory to document how scientists actually produce, trap, and study antihydrogen — a substance that annihilates on contact with ordinary matter and exists in quantities measured in atoms. The specific hook is the title question: what 0.125 grams would actually do, which reframes the entire video as a slow build toward a genuinely startling answer."
-        },
-        {
-          "source": "youtube",
-          "video_id": "3qU-VHvZ_l8",
-          "title": "How Do We Actually Know the Big Bang Happened?",
-          "channel_id": "UCIZ5ZOeiXYbmKTl_85ghNPw",
-          "channel_title": "Physics Explained",
-          "published_at": "2026-03-29T17:00:04Z",
-          "url": "https://www.youtube.com/watch?v=3qU-VHvZ_l8",
-          "duration_seconds": 4021,
-          "view_count": "284779",
-          "description": "Head to https://squarespace.com/physicsexplained to save 10% off your first purchase of a website or domain using code PHYSICSEXPLAINED\n\nHow do we actually know the Big Bang happened?\n In this video, we follow the chain of evidence step by step, from measuring the distances to stars and galaxies, to redshift, cosmic expansion, and the discovery of the cosmic microwave background. This is the story of how light, physics, and careful observation revealed that the universe began in a hot, dense sta",
-          "why_watch": "Rather than asserting the Big Bang as settled fact, this video reconstructs the evidence chain from scratch — stellar distance measurement to redshift to the cosmic microwave background — so you understand *why* cosmologists are confident rather than just that they are. At 67 minutes it's a commitment, but the step-by-step epistemological approach makes it unusually satisfying for anyone who's wanted the actual reasoning, not just the conclusion."
-        },
-        {
-          "source": "youtube",
-          "video_id": "07YCJ6g4fBM",
-          "title": "The woman who solved the mystery of heavy elements!",
-          "channel_id": "UCGfFUc6eWxfbtjYeun6r9xg",
-          "channel_title": "FloatHeadPhysics",
-          "published_at": "2024-12-19T13:00:01Z",
-          "url": "https://www.youtube.com/watch?v=07YCJ6g4fBM",
-          "duration_seconds": 1235,
-          "view_count": "150868",
-          "description": "To try everything Brilliant has to offer—free—for a full 30 days, visit https://brilliant.org/FloatHeadPhysics. You’ll also get 20% off an annual premium subscription.\n\nT shirt:\nBlack: https://floatheadphysics.com/products/astronomers-periodic-table-black\nWhite: https://floatheadphysics.com/products/astronomers-periodic-table-white\nX-mass spl: https://floatheadphysics.com/products/astronomers-periodic-table-t-shirt-x-mass-special \n\nElements heavier than Iron are not created by Nuclear Fusion rea",
-          "why_watch": "This tells the story of Cecilia Payne, who in 1925 correctly identified hydrogen as the dominant element in stars — only to be pressured into walking back her own discovery by a senior astronomer who later took credit. The science of stellar nucleosynthesis is woven into a history-of-science story with a sharp edge to it."
-        },
-        {
-          "source": "youtube",
-          "video_id": "2V__naEkXVY",
-          "title": "An Introduction to Curvilinear Coordinates in Differential Geometry",
-          "channel_id": "UC3KV2kFy2YhjYvverIy2WnA",
-          "channel_title": "Dialect",
-          "published_at": "2024-04-13T11:58:54Z",
-          "url": "https://www.youtube.com/watch?v=2V__naEkXVY",
-          "duration_seconds": 1364,
-          "view_count": "109897",
-          "description": "The equations of General Relativity are written in the language of curvilinear coordinates, where mathematical objects like Basis Vectors, Metric Tensors, and Christoffel Symbols dominate the landscape. But where do these concepts come from and how can we connect them to our physical intuition? Join us to find out. Plus -- hotwheels!  (Note: some familiarity with vector calculus is highly recommended.)\n\nPlease consider helping support us on Patreon:\nhttps://www.patreon.com/dialect_philosophy\n\nJo",
-          "why_watch": "This video uses Hot Wheels tracks as a concrete, physical anchor for building intuition about curvilinear coordinates — the mathematical framework underlying General Relativity — before introducing basis vectors, metric tensors, and Christoffel symbols. It's aimed at people with some vector calculus background who've hit a wall with GR notation and need the concepts rebuilt from geometric intuition rather than pure formalism."
-        }
-      ]
-    },
-    {
-      "name": "Roots & Reboots",
+      "name": "Dirt Under Your Fingernails",
       "emoji": "🌱",
-      "tagline": "Growing things from scraps and rethinking what you're building — whether it's a garden or a creative practice.",
+      "tagline": "From seed packet to dinner plate — get your hands dirty with guides that actually tell you the whole truth.",
       "items": [
         {
           "source": "youtube",
-          "video_id": "VkUPEWKGY1Y",
-          "title": "Grow FREE Plants from Kitchen Scraps",
-          "channel_id": "UC9r61qohBg1qgGty4_WzojA",
-          "channel_title": "GrowVeg",
-          "published_at": "2026-09-12T14:45:29Z",
-          "url": "https://www.youtube.com/watch?v=VkUPEWKGY1Y",
-          "duration_seconds": 1597,
-          "view_count": "1650",
-          "description": "Enjoy a no-obligation, completely free trial of the Garden Planner here: \nhttps://www.GrowVeg.com/grow-planner-free\n\nAnd for your completely free abridged version of Ben's book, click here:\nhttps://www.growveg.com/grow-book-download\n\nFor more about Simon Akeroyd, you can visit his website here:\nhttps://www.simonakeroyd.com\n\nEver wondered if you can grow from your kitchen scraps? If you're a gardener then you've probably seen all sorts of wild claims on the internet about growing from bizarre bit",
-          "why_watch": "GrowVeg walks through which kitchen scraps — think celery bases, garlic cloves, green onion roots — can realistically be regrown into productive plants versus which ones are more novelty than harvest. At 26 minutes it's thorough enough to actually change your composting habits, and the distinction between 'it'll sprout' and 'it'll feed you' is refreshingly honest."
+          "video_id": "Csr1CkiUoaY",
+          "title": "Growing Peas, from Seed to Harvest (FULL GROW GUIDE)",
+          "channel_id": "UCSbyncU597LMwb3HhnAI_4w",
+          "channel_title": "Epic Gardening",
+          "published_at": "2026-09-12T21:34:14Z",
+          "url": "https://www.youtube.com/watch?v=Csr1CkiUoaY",
+          "duration_seconds": 1224,
+          "view_count": "40263",
+          "description": "Growing peas is pretty simple when you know what to look for. @jacquesinthegarden covers planting, trellising, harvesting, and cooking so you can grow better peas at home. Watch and learn how to grow peas from garden to table.\n\nIN THIS VIDEO\n\n→ Oregon Sugar Pod II Snow Pea Seeds: https://growepic.co/4raEk5A\n→ Mammoth Melting Snow Pea Seeds: https://growepic.co/4yzoZhk\n→ Progress #9 Shelling Pea Seeds: https://growepic.co/4r8DzcZ\n→ Wando Shelling Pea Seeds: https://growepic.co/4xqvd1T\n→ Little Ma",
+          "why_watch": "This isn't a vague overview — it walks you through specific variety choices, trellis setups, and the right harvest window, then carries you all the way to the kitchen. Jacques's structured format means you can jump directly to whichever stage of the grow you're at. Genuinely useful whether you're planting your first row or troubleshooting why last year's peas were stringy and starchy."
         },
         {
           "source": "youtube",
-          "video_id": "HIW1-1l4-J4",
-          "title": "My Last Month on Youtube (week 24)",
+          "video_id": "ydPALXVKB9U",
+          "title": "Come garden with me - early Spring growth & chores (week 7)",
           "channel_id": "UC5eLPZi_RSh81523mrBzHNg",
           "channel_title": "Gardening Experiments with Mind & Soil",
-          "published_at": "2026-09-12T13:00:09Z",
-          "url": "https://www.youtube.com/watch?v=HIW1-1l4-J4",
-          "duration_seconds": 1339,
-          "view_count": "1080",
+          "published_at": "2026-04-18T15:01:30Z",
+          "url": "https://www.youtube.com/watch?v=ydPALXVKB9U",
+          "duration_seconds": 1533,
+          "view_count": "5354",
           "description": "🌱🍅 Want to start feeding your family from your backyard? Join my FREE Weekly Newsletter for gardening tips & videos: https://forms.gle/SrwU1EjkSScgVTVy8\n\nEXPERIMENT VIDEOS\n💡 $30 vs $300 Grow Light: WATCH This Before Buying a Grow Light! https://youtu.be/_0EFGE9ZljY\n\n💡 I Tested Every Grow Light Height https://youtu.be/LGKlQ5iGbpY\n\n💡 6 Steps To Guarantee Thriving Seedlings https://youtu.be/X2nXwawGqXI \n\nPRODUCTS I USE & LOVE (try code mindandsoil or mindandsoil10 for discounts!)\nSproutbox Metal Ra",
-          "why_watch": "This is a small creator's candid accounting of what a 24-week YouTube experiment actually looked like before deciding to step back — the kind of behind-the-scenes reflection that's rare because most people either quit quietly or pivot without explaining why. If you follow any independent gardening or creator channels, it's a grounding look at the sustainability math behind passion-project content."
+          "why_watch": "A real-time early-spring garden walk from someone who documents outcomes honestly rather than just showing highlight reels. The \"week 7\" format means you're seeing cumulative decisions and their actual results, which is more instructive than standalone how-to clips. Good for gardeners who want to calibrate their own spring timeline against someone working through the same season."
         }
       ]
     },
     {
-      "name": "How The Machine Thinks",
-      "emoji": "⚙️",
-      "tagline": "One tiny latch, infinite implications — the satisfying rabbit hole of understanding what's actually happening inside your computer.",
+      "name": "Blood, Salt & Empire",
+      "emoji": "⚔️",
+      "tagline": "Before the internet, civilizations rewrote history with warships and audacity — here's how Rome pulled off the impossible.",
       "items": [
         {
           "source": "youtube",
-          "video_id": "zxhSQVBBEQI",
-          "title": "NAND Data Latch SIMULATION - how computers work - Building Scott's CPU part 2",
+          "video_id": "UDFEKDk0NP0",
+          "title": "Epic Sea Battles: The First Punic War",
+          "channel_id": "UC2J29LPhS9vMiWyYEqBRB0w",
+          "channel_title": "The Ancients",
+          "published_at": "2026-09-13T06:00:02Z",
+          "url": "https://www.youtube.com/watch?v=UDFEKDk0NP0",
+          "duration_seconds": 3634,
+          "view_count": "577",
+          "description": "How did the Romans ambush a massive Carthaginian fleet from behind a Sicilian island to win one of history's fiercest sea battles? For over 20 years, Rome and Carthage fought a brutal war for supremacy over Sicily. Tristan Hughes is joined by Carthage expert Dr. Eve MacDonald to explore the epic First Punic War; a conflict defined by titanic naval clashes, lethal boarding bridges, war elephants...sacred chickens!\n\n0:00 Introduction\n1:24 The scale of the First Punic War\n2:49 Carthage’s territory ",
+          "why_watch": "Dr. Eve MacDonald brings specialist depth to a war that reshaped the ancient Mediterranean — Rome, a land power with no naval tradition, somehow defeating history's premier seafaring empire. The specific focus on the corvus (that \"lethal boarding bridge\") and the ambush tactics around Sicily makes this more tactically grounded than most ancient history content. If you've ever wondered how Rome became a naval superpower almost by accident, this is a well-sourced hour on exactly that."
+        }
+      ]
+    },
+    {
+      "name": "Hidden Machinery",
+      "emoji": "🔬",
+      "tagline": "The invisible engineering running your wallet, your light, and your atoms — explained by people who actually went looking.",
+      "items": [
+        {
+          "source": "youtube",
+          "video_id": "YSJY3DvnybE",
+          "title": "The Secret Spy Tech Inside Every Credit Card",
+          "channel_id": "UCHnyfMqiRRG1u-2MsSQLbXA",
+          "channel_title": "Veritasium",
+          "published_at": "2026-03-26T17:47:09Z",
+          "url": "https://www.youtube.com/watch?v=YSJY3DvnybE",
+          "duration_seconds": 1723,
+          "view_count": "5987317",
+          "description": "How safe are the cards we use? Sponsored by Saily - Prepare for your next destination today! Download the Saily app now or go to https://saily.com/veritasium and use code ‘veritasium’ for 15% off. Share your referral code with friends and family to collect more credit for your next trip.\n\nIf you’re looking for a molecular modelling kit, try Snatoms, a kit I invented where the atoms snap together magnetically - https://ve42.co/SnatomsV   \n\nSign up for the Veritasium newsletter for weekly science ",
+          "why_watch": "Veritasium goes well beyond \"chips are secure\" to show the actual cryptographic and physical engineering inside a modern payment card — including how the EMV chip negotiates a transaction and why magnetic stripes are still a liability. With nearly 6 million views it's clearly striking a nerve, and it earns those numbers by making the underlying cryptography genuinely followable without dumbing it down."
+        },
+        {
+          "source": "youtube",
+          "video_id": "vWuispuKMEE",
+          "title": "Bandgap reference - LM109/309 - 5V - Voltage regulator - first monolithic high power regulator",
           "channel_id": "UCFtCfZ4rtIZ7Hsq7ZNHoY1w",
           "channel_title": "Computer&Electronics",
-          "published_at": "2025-01-12T10:34:31Z",
-          "url": "https://www.youtube.com/watch?v=zxhSQVBBEQI",
-          "duration_seconds": 420,
-          "view_count": "556",
-          "description": "This video simulates the NAND latch we use to build a memory cell. It is the simulation part of the second video of the «how computers work– building Scott’s CPU» youtube playlist. We use CircuitVerse simulator and the circuit is available in the link I leave in the description. \n\nHow Computers work playlist : https://youtube.com/playlist?list=PLnAxReCloSeTJc8ZGogzjtCtXl_eE6yzA&si=PQOPqnDWcwzDDCdR\n\nlink to CircuitVerse simulator of \"How computers work - building Scott's CPU\" : https://circuitver",
-          "why_watch": "This 7-minute simulation video focuses on a single, foundational concept — the NAND latch as a memory cell — and walks through it interactively using CircuitVerse, so you can follow along in the linked circuit yourself. It's part of a series building up to a full CPU, which makes it a practical entry point if you've ever wanted to understand computer memory from first principles rather than metaphor."
+          "published_at": "2025-01-09T14:25:15Z",
+          "url": "https://www.youtube.com/watch?v=vWuispuKMEE",
+          "duration_seconds": 1666,
+          "view_count": "909",
+          "description": "This video talks about the first monolithic high-power voltage regulator, designed by Bob Widlar at National Semicondactor, in 1969. This is a three terminals linear regulator providing a fixed 5 Volt output, with 200mA or 1A output current. This bipolar device was housed in a TO-5 or TO-3 Can package. In the late 1960s, many companies were designing IC voltage regulators and there was a perceived demand for a monolithic device. But the big problem was including the power transistor in the monol",
+          "why_watch": "Bob Widlar's LM309 is one of those components that quietly underpins decades of electronics history, and this video explains why its bandgap reference design was such a leap over what came before. If you work with linear regulators and have ever wondered what's actually happening inside a three-terminal IC, the circuit-level walkthrough here is unusually clear. Niche subject, genuinely well-explained."
         }
       ]
     },
     {
-      "name": "Famous People, Honest Answers",
-      "emoji": "🎙️",
-      "tagline": "The Ted Lasso cast vs. the internet's most burning questions — charming, chaotic, and surprisingly revealing.",
+      "name": "Reality, Negotiable",
+      "emoji": "🌀",
+      "tagline": "Particles that shouldn't escape do, prizes awarded for the wrong reasons, and spacetime itself up for renegotiation — physics at its most delightfully unsettled.",
       "items": [
         {
           "source": "youtube",
-          "video_id": "apcPejRT0Yc",
-          "title": "'Ted Lasso' Cast Answer The 50 Most Searched Questions",
-          "channel_id": "UCftwRNsjfRo08xYE31tkiyw",
-          "channel_title": "WIRED",
-          "published_at": "2026-09-12T16:04:02Z",
-          "url": "https://www.youtube.com/watch?v=apcPejRT0Yc",
-          "duration_seconds": 534,
-          "view_count": "1524",
-          "description": "WIRED tasks Hannah Waddingham (Rebecca Welton), Jason Sudeikis (Ted Lasso), Brendan Hunt (Coach Beard), Tanya Reynolds (Alice Chilton) and Jeremy Swift (Leslie Higgins) to answer the 50 most searched questions about _Ted Lasso._\n\n_Ted Lasso:_ Season 4 premiered globally August 5 on Apple TV. New episodes air weekly every Wednesday through October 7, 2026.\n\nWIRED recommends:\nhttps://youtu.be/eMg33JC5NUI\nhttps://youtu.be/GkM5zdUHcaQ\n\nWatch more from WIRED | 50 Most Searched: https://www.youtube.co",
-          "why_watch": "The full Ted Lasso cast — including Jason Sudeikis and Hannah Waddingham — work through WIRED's autocomplete interview format, which reliably surfaces the questions fans actually type into Google rather than polished press-tour softballs. It's a breezy 9 minutes that doubles as a low-commitment way to check in on the Season 4 cast dynamic before committing to the new episodes."
+          "video_id": "3uJriCSlTF8",
+          "title": "Why Do We ACTUALLY Believe Light Is a Particle?",
+          "channel_id": "UCIZ5ZOeiXYbmKTl_85ghNPw",
+          "channel_title": "Physics Explained",
+          "published_at": "2026-02-28T20:00:01Z",
+          "url": "https://www.youtube.com/watch?v=3uJriCSlTF8",
+          "duration_seconds": 2789,
+          "view_count": "357232",
+          "description": "Head to https://squarespace.com/physicsexplained to save 10% off your first purchase of a website or domain using code PHYSICSEXPLAINED\n\nEveryone is taught that Einstein introduced the idea of light quanta (photons) to explain the photoelectric effect, but that is not how the idea was born. This video starts with the blackbody radiation crisis and the ultraviolet catastrophe, then follows Planck’s quantisation and Einstein’s 1905 thermodynamic argument about what radiation entropy is really coun",
+          "why_watch": "The real hook here is the correction of a widespread misconception: Einstein's Nobel Prize work on the photoelectric effect was not actually the origin of the photon concept — Planck's blackbody crisis came first and forced the idea. This video traces that intellectual lineage carefully, so by the end you understand not just what quantum mechanics says but why even reluctant physicists were cornered into accepting it."
+        },
+        {
+          "source": "youtube",
+          "video_id": "MyVlldYiVbk",
+          "title": "We finally understood why radium is radioactive! (My mind is blown)",
+          "channel_id": "UCGfFUc6eWxfbtjYeun6r9xg",
+          "channel_title": "FloatHeadPhysics",
+          "published_at": "2024-11-28T13:00:23Z",
+          "url": "https://www.youtube.com/watch?v=MyVlldYiVbk",
+          "duration_seconds": 1404,
+          "view_count": "291447",
+          "description": "To try everything Brilliant has to offer—free—for a full 30 days, visit https://brilliant.org/FloatHeadPhysics . You’ll also get 20% off an annual premium subscription.\n\nAttributions:\n======================\nGeorge Gamow's photo: By not available - Original publication: not availableImmediate source: https://www.colorado.edu/physics/events/outreach/george-gamow-memorial-lecture-series, Fair use, https://en.wikipedia.org/w/index.php?curid=59519782\n======================\n\nChapters:\n00:00 Shouldn't ",
+          "why_watch": "The specific story here is George Gamow's quantum tunneling explanation for alpha decay — a case where a particle escapes a nucleus that classical physics says it has no business escaping. FloatHeadPhysics builds the intuition for this carefully, and the payoff is a real \"oh, that's why\" moment about why radium decays on the timescale it does rather than instantly or never. The enthusiasm is genuine and the math doesn't get hand-waved away."
+        },
+        {
+          "source": "youtube",
+          "video_id": "B94o-P93ExU",
+          "title": "Matrix Theory: Relativity Without Relative Space or Time",
+          "channel_id": "UC3KV2kFy2YhjYvverIy2WnA",
+          "channel_title": "Dialect",
+          "published_at": "2024-02-03T13:05:00Z",
+          "url": "https://www.youtube.com/watch?v=B94o-P93ExU",
+          "duration_seconds": 1546,
+          "view_count": "112018",
+          "description": "It's the question that brought you here: what is the physical meaning of Relativity? For well over a century the answer to this question has eluded physicists, thinkers and scientists alike, including even Einstein himself -- but at long last, from out of the canonical labyrinth of confusion, dogma, and mathematical abstraction, some real, tangible answers are finally emerging. But to understand them, you are going to have to first make a choice... math, or physics?\n\nFree your mind, and help sup",
+          "why_watch": "Dialect takes a genuinely unconventional angle: rather than explaining relativity through spacetime geometry, it asks whether matrix-based relational structures might give a more physically grounded picture of what's actually happening. This is philosophy of physics done rigorously, not pop-science speculation — best suited to viewers who already have some relativity background and are frustrated by the \"but what does it mean\" gap that textbooks leave open."
         }
       ]
     }
@@ -150,204 +150,168 @@
   "morning_soundtrack": [
     {
       "source": "music",
-      "source_name": "Stereogum",
-      "title": "Jeff Tweedy Covers Twisted Teens",
-      "snippet": "Twisted Teens are all the rage. The New Orleans band just announced their third album of the year, The Holy Cross Tigers , to follow February's Blame The Clown and July's Florida Water Blues . Yesterday, Jeff Tweedy covered Blame The Clown 's \"Wild Connection\" for his Substack.",
-      "url": "https://stereogum.com/2511264/jeff-tweedy-covers-twisted-teens/music/",
+      "source_name": "NPR Music",
+      "title": "Celine Dion returns to the stage after battling rare illness",
+      "snippet": "The Canadian singer opened up her 16-show residency in Paris at the Plenitude Arena. The entire series is sold out.",
+      "url": "https://www.npr.org/2026/09/12/nx-s1-5967534/celine-dion-performance-paris",
       "genre": "",
-      "vibe_check": "The sound of a beloved mentor quietly tipping his hat to the scrappy new kids tearing up the neighborhood.",
-      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/09/unnamed-2026-09-12T115614.058.jpg?w=564",
-      "embed_url": "https://twistedteens.bandcamp.com/album/blame-the-clown"
-    },
-    {
-      "source": "music",
-      "source_name": "Stereogum",
-      "title": "Anna Butterss – “Ninths”",
-      "snippet": "Back in January we talked to Anna Butterss , the LA-based bassist with too many cool affiliations to keep track of. (SML, Jeff Parker's ETA IVtet, Makaya McCraven, Jason Isbell, boygenius, Neko Case, Flea... the list goes on.) Butterrs also makes solo albums, though as you might expect, they tend to feature a bunch of the other great musicians in their orbit.",
-      "url": "https://stereogum.com/2511215/anna-butterss-ninths/music/",
-      "genre": "",
-      "vibe_check": "Late-night jazz that breathes like a conversation between musicians who trust each other completely.",
-      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/09/a1464983620_10.jpg?w=564",
-      "embed_url": null
-    },
-    {
-      "source": "music",
-      "source_name": "Stereogum",
-      "title": "Slack Times Announce New Album Casting: Hear “Goodbye”",
-      "snippet": "Birmingham, Alabama might not be a place where you'd expect to find much shimmery indie-pop jangle, but the world is a rich and complicated place, and things that you might not expect happen all the time. Birmingham's Slack Times have been perfecting their brightly woozy indie pop for the past few years. Today they unveil their upcoming album Casting .",
-      "url": "https://stereogum.com/2511149/slack-times-announce-new-album-casting-hear-goodbye/music/",
-      "genre": "",
-      "vibe_check": "Sunshine filtered through net curtains in a town nobody visits, but maybe should.",
-      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/09/Slack-Times-Casting.jpg?w=564",
-      "embed_url": "https://slacktimes.bandcamp.com/album/up-here"
-    },
-    {
-      "source": "music",
-      "source_name": "Pitchfork",
-      "title": "Bradford Cox Books First Show in Seven Years",
-      "snippet": "The Deerhunter maestro’s Atlas Sound project returns next weekend at Making Time ∞ festival",
-      "url": "https://pitchfork.com/story/bradford-cox-books-first-show-in-seven-years/",
-      "genre": "",
-      "vibe_check": "The electric anticipation of a ghost you thought was gone forever suddenly flickering back to life.",
-      "cover_url": "https://media.pitchfork.com/photos/6aa2f3f6e924830a6d5da7bd/master/pass/bradford-cox-first-show-atlas-sound.jpg",
+      "vibe_check": "The tearful, chest-clutching relief of watching someone you love walk back through a door you feared might stay closed forever.",
+      "cover_url": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3231x1817+0+0/resize/1400/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Fb3%2Fd1%2F12cb5e554d49be949447d540b0d6%2Fap26255714607289.jpg",
       "embed_url": null
     },
     {
       "source": "music",
       "source_name": "Consequence",
-      "title": "Brandon Flowers Covers Oasis With His Son at Salt Lake City Concert",
-      "snippet": "The Killers frontman sang \"Don't Look Back in Anger\" while his son played guitar. Brandon Flowers Covers Oasis With His Son at Salt Lake City Concert Travis Bland",
-      "url": "https://consequence.net/2026/09/brandon-flowers-and-son-cover-oasis/",
+      "title": "Céline Dion Makes Triumphant Return to the Stage in Paris for First Concert in Six Years: Setlist + Videos",
+      "snippet": "Dion's first concert since being diagnosed with stiff-person syndrome in 2022 took place at Paris' La Défense Arena on Saturday. Céline Dion Makes Triumphant Return to the Stage in Paris for First Concert in Six Years: Setlist + Videos Paolo Ragusa",
+      "url": "https://consequence.net/2026/09/celine-dion-paris-residency-kickoff-setlist-videos/",
       "genre": "",
-      "vibe_check": "A spontaneous, slightly imperfect kitchen-table moment that somehow lands harder than any polished arena show.",
-      "cover_url": "https://consequence.net/wp-content/uploads/2026/09/Brandon-Flowers-and-son.jpg?quality=80",
-      "embed_url": "https://www.youtube.com/embed/uXX7bHzjkN4"
-    },
-    {
-      "source": "music",
-      "source_name": "Consequence",
-      "title": "Bon Iver Sings About Meatloaf Dippers in a Jingle for Minnesota Restaurant",
-      "snippet": "With just one listen, you'll be singing Justin Vernon's tune about fried meatloaf sticks all day. Bon Iver Sings About Meatloaf Dippers in a Jingle for Minnesota Restaurant Travis Bland",
-      "url": "https://consequence.net/2026/09/bon-iver-meatloaf-dippers-jingle/",
-      "genre": "",
-      "vibe_check": "The most earnest earworm you never asked for, lodged somewhere between a fever dream and a diner menu.",
-      "cover_url": "https://consequence.net/wp-content/uploads/2026/09/Bon-Iver-meatloaf.jpeg?quality=80",
-      "embed_url": "https://lizzoandcarolinesmith.bandcamp.com/track/let-em-say"
-    },
-    {
-      "source": "music",
-      "source_name": "JazzTimes",
-      "title": "Patrice Rushen: 2026 NEA Jazz Master",
-      "snippet": "E ditor’s Note: The NEA Jazz Masters 2026 Tribute Concert will be held on Tuesday, September 15, 2026, at 8:00 p.m. PT at Walt Disney …",
-      "url": "https://www.jazztimes.com/blog/patrice-rushen-2026-nea-jazz-master/",
-      "genre": "",
-      "vibe_check": "The warm, ceremonial glow of a room full of people finally saying thank you loud enough for it to matter.",
-      "cover_url": "https://www.jazztimes.com/wp-content/uploads/2026/09/2026JM_Collage_Rushen-800x800.png",
-      "embed_url": "https://www.youtube.com/embed/moaQyc-kGn0"
+      "vibe_check": "Standing ovation energy — the kind where your hands hurt from clapping and you don't care one bit.",
+      "cover_url": "https://consequence.net/wp-content/uploads/2026/09/Celine-Dion.jpeg?quality=80",
+      "embed_url": null
     }
   ],
   "global_silver_linings": [
     {
       "source": "good_news",
       "source_name": "Good News Network",
-      "title": "Your Weekly Horoscope – ‘Free Will Astrology’ by Rob Brezsny",
-      "url": "https://www.goodnewsnetwork.org/horoscope-from-rob-brezsnys-free-will-astrology-9-12-2026/",
-      "snippet": "Our partner Rob Brezsny, whose latest book is Astrology Is Real: Revelations from My Life as an Oracle, provides his weekly wisdom to enlighten our thinking and motivate our mood. Rob’s Free Will Astrology, is a syndicated weekly column appearing in over a hundred publications. He is also the author of Pronoia Is the Antidote for Paranoia: […]",
-      "cover_url": "https://www.goodnewsnetwork.org/wp-content/uploads/2020/10/Freewill-Astrology-horoscope-logo.jpg",
-      "reason": "A weekly reminder that people are still carving out space for reflection, wonder, and a little playful self-examination — small rituals that help us feel connected to something larger than the daily grind."
+      "title": "The Blackout of ‘65 Left 800K Trapped in NYC Subway – 6 Hours Later People Were Inspired by Each Other",
+      "url": "https://www.goodnewsnetwork.org/the-massive-blackout-of-65-left-people-inspired-by-each-other/",
+      "snippet": "In November of 1965 a great blackout spread across the northeastern United States and parts of Canada. 30 million people were affected and Lynn Lowin was one of them. Now in her senior years, she wanted to finally tell her inspiring tale from 61 years ago, so reached out to Good News Network.",
+      "cover_url": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/09/New-York-City-Transit-Authority-poster-to-thank-subway-riders-for-their-response-to-blackout-of-1965-pubdomain-wikimedia.jpeg",
+      "reason": "When a massive blackout plunged New York City into darkness, strangers trapped underground chose kindness over chaos — a reminder that human decency tends to surface precisely when conditions are hardest. Sixty years on, that story still matters because it's not an exception; it's a pattern worth remembering."
     },
     {
       "source": "good_news",
       "source_name": "Upworthy",
-      "title": "Veterinarian shares 7 signs a cat loves you, even if it seems like they couldn’t care less",
-      "url": "https://www.upworthy.com/7-signs-cat-really-loves-you-ex1/",
-      "snippet": "Your cat really does love you.",
-      "cover_url": "https://www.upworthy.com/wp-content/uploads/sites/2/2026/01/origin.jpg",
-      "reason": "A veterinarian's insight into feline affection is a gentle nudge that love doesn't always look the way we expect — and that quiet, subtle bonds between people and their cats are more real and mutual than we might think."
+      "title": "A 19-yr-old built a beautiful tiny home on her parents’ property. More young people are following suit.",
+      "url": "https://www.upworthy.com/a-19-year-old-built-a-beautiful-tiny-home-on-her-parents-property-ex1-2/",
+      "snippet": "Accessory Dwelling Units, or ADUs, are exploding in popularity",
+      "cover_url": "https://www.upworthy.com/wp-content/uploads/sites/2/2026/06/tiny_house.png",
+      "reason": "A teenager turning a backyard plot into a handcrafted home shows that young people aren't just lamenting the housing crisis — they're quietly, practically solving it on a human scale. The growing movement toward small, intentional living spaces is as much about rootedness and creativity as it is about affordability."
     }
   ],
-  "discovery_articles": [
-    {
-      "source": "discovery",
-      "source_name": "Smithsonian",
-      "title": "These 15 Riveting Photos of Firefighters in Action Showcase the Strength and Courage They Need to Risk Their Lives to Save Others",
-      "url": "https://www.smithsonianmag.com/travel/these-15-riveting-photos-of-firefighters-in-action-showcase-the-strength-and-courage-they-need-to-risk-their-lives-to-save-others-180989444/",
-      "snippet": "On the 25th anniversary of the September 11 attacks, take in this collection of images pulled from the archives of the Smithsonian Magazine Photo Contest",
-      "category": "history",
-      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/QPKa0z8JIV81rYWBfRfbdSe7-lU=/fit-in/1600x0/filters:focal(1581x1054:1582x1055)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/db/bc/dbbcf3fe-7926-47ca-a253-34313c924297/1_-_9d1eb17b-3edd-4636-acd4-0172880de079.jpg",
-      "ferns_note": "Twenty-five years on, these archive images resist the flattening that memory does to catastrophe — each frame holds a specific, unrepeatable human second. There's something quietly devastating about photographs that were taken without knowing they would become history."
-    }
-  ],
+  "discovery_articles": [],
   "featured_read": {
     "source": "reads",
-    "source_name": "Aeon",
-    "title": "Medieval mental health",
-    "url": "https://aeon.co/essays/the-curio-cabinet-of-medieval-mental-health",
-    "snippet": "Saffron and ostrich liver were prescribed but so were exercise, gardens, animals, socialising, and music - by Katherine Harvey Read on Aeon",
-    "cover_url": "https://images.aeonmedia.co/images/f5b2d9a3-db7d-49c3-b79d-a14788da0cb0/essay-bathing.jpg?width=1200&quality=75&format=jpeg",
-    "blurb": "Medieval physicians had more in common with modern therapists than you might expect — this piece traces the surprisingly tender logic behind prescriptions of gardens, music, and good company for troubled minds. It's a corrective to the idea that compassionate mental healthcare is a recent invention."
+    "source_name": "The Atlantic",
+    "title": "America Has Forfeited Its Greatest Strength",
+    "url": "https://www.theatlantic.com/ideas/2026/09/september-11-trust-america/688580/?utm_source=feed",
+    "snippet": "Osama bin Laden wanted to eradicate faith in American power. Twenty-five years later, his dream is on the verge of coming true.",
+    "cover_url": "https://cdn.theatlantic.com/thumbor/8VgEYOXqqhnWisDVClo2jkwUaIA=/68x88:1943x1065/1200x625/media/img/mt/2026/09/Soufan_1/original.jpg",
+    "blurb": "This essay traces a dark irony: that America's most dangerous wound may not have been inflicted by its enemies, but opened slowly from within. It asks whether the soft power that once made the U.S. genuinely feared and admired is gone — and who, exactly, finished the job."
   },
   "reading_room": [
     {
       "source": "reads",
+      "source_name": "The Atlantic",
+      "title": "Cormac McCarthy’s Midlife Crisis",
+      "url": "https://www.theatlantic.com/magazine/2026/10/cormac-mccarthy-biography-tracy-daugherty/688350/?utm_source=feed",
+      "snippet": "Heading west at 40 transformed his writing—and American literature.",
+      "cover_url": "https://cdn.theatlantic.com/thumbor/CEy6sTOcYs1IFN-B6CqqMOMJnic=/0x631:1998x1672/1200x625/media/img/2026/08/CC_ODonnell_McCarthy/original.png",
+      "blurb": "At 40, Cormac McCarthy drove west and shed whatever writer he'd been — this is the story of that shedding, and why the desert made him into someone capable of *Blood Meridian*. A quiet argument that the best creative reinventions look, from the outside, like a midlife unraveling."
+    },
+    {
+      "source": "reads",
+      "source_name": "Asterisk",
+      "title": "We’re All One Crisis Away From Taking Unlicensed Research Peptides",
+      "url": "https://asteriskmag.com/issues/14/we-re-all-one-crisis-away-from-taking-unlicensed-research-peptides",
+      "snippet": "For health hackers, the risk is not experimenting.",
+      "cover_url": "https://asteriskmag.com/media/pages/issues/14/we-re-all-one-crisis-away-from-taking-unlicensed-research-peptides/a47fe84498-1780337733/peptides-elizabeth-van-nostrand-1600x900-crop-sharpen50.png",
+      "blurb": "When medicine offers a dead end and the internet offers a peptide, what does a rational person actually do? This essay sits with the uncomfortable logic of people who decide the greater risk is *not* experimenting."
+    },
+    {
+      "source": "reads",
       "source_name": "Nautilus",
-      "title": "Rope, Twine and Thread: Invisible Technologies of the Stone Age",
-      "url": "https://nautil.us/rope-twine-and-thread-invisible-technologies-of-the-stone-age-1284982/",
-      "snippet": "Missing from the archaeological record, fiber innovations like string played a huge role in the daily lives of our ancestors. Researchers are working to weave together new insights from the traces they left behind",
-      "cover_url": "https://lede-admin.nautil.us/wp-content/uploads/sites/70/2026/09/soft-archaeology-1600x600-1.jpg",
-      "blurb": "String, twine, and rope almost never survive the millennia, yet they may have been as transformative as the wheel — this is the quiet detective story of researchers reconstructing a Stone Age revolution from near-nothing. What we've been missing from prehistory turns out to be the very thread that held it together."
+      "title": "Even 10 Minutes of “Slow Running” Can Give Your Brain a Boost",
+      "url": "https://nautil.us/even-10-minutes-of-slow-running-can-give-your-brain-a-boost-1284996/",
+      "snippet": "It’s all in the head bob",
+      "cover_url": "https://lede-admin.nautil.us/wp-content/uploads/sites/70/2026/09/AdobeStock_167330932.jpeg",
+      "blurb": "It turns out the gentle nod of a slow jog may be doing something quietly remarkable to your brain — and the explanation is more elegant than anything involving a Fitbit. Ten minutes well spent, on and off the pavement."
     },
     {
       "source": "reads",
       "source_name": "Psyche",
-      "title": "Impatience is an emotion, not a trait",
-      "url": "https://psyche.co/notes-to-self/why-it-helps-to-see-impatience-as-an-emotion-not-a-trait",
-      "snippet": "Watching Penelope’s heroic wait in The Odyssey made me lament my impatience. But maybe I’ve been thinking about it wrong - by Amy Arthur Read on Psyche",
-      "cover_url": "https://images.aeonmedia.co/images/bfb38aca-b015-4273-8896-8f9d34e045b5/penelope-waiting-detail.jpg?top=116&left=0&cropWidth=2208&cropHeight=1242&width=1200&quality=75&format=jpeg",
-      "blurb": "Amy Arthur uses Penelope's legendary, years-long wait to ask whether impatience is a character flaw we carry or simply an emotion that passes through us — and the distinction turns out to matter more than you'd think. A small reframe with surprisingly large consequences for how you treat yourself on a slow Tuesday."
+      "title": "How to be a word detective",
+      "url": "https://psyche.co/guides/how-to-be-a-word-detective",
+      "snippet": "Etymology unravels the mysteries of language and the hidden webs that link people across the world. Here’s how to dive in - by Danny Bate Read on Psyche",
+      "cover_url": "https://images.aeonmedia.co/images/3df79fbc-cb65-400e-81d6-be1262952598/scribe.jpg?top=241&left=0&cropWidth=1648&cropHeight=927&width=1200&quality=75&format=jpeg",
+      "blurb": "Etymology isn't dusty pedantry — it's a method for noticing the hidden threads stitching together languages, cultures, and the strangest bedfellow words. This is an invitation to become the kind of reader who can never look at an ordinary sentence the same way again."
     },
     {
       "source": "reads",
       "source_name": "Longreads",
-      "title": "Can Andre Agassi Enjoy Pickleball More Than He Hated Tennis?",
-      "url": "https://longreads.com/2026/09/10/andre-agassi-tennis-pickleball/",
-      "snippet": "\"After years of relative quiet, the public is meeting 'Andre 2.0' — a pickleball booster, an open book and a guy eager to build a less tortured relationship with competition.\"",
-      "cover_url": "",
-      "blurb": "André Agassi famously hated the sport that made him famous, and now he's back — in the unlikely arena of pickleball — trying to find out whether competition can feel like something other than punishment. It's really a story about whether a person can outrun their own psychology."
-    },
-    {
-      "source": "reads",
-      "source_name": "Literary Hub",
-      "title": "Lit Hub Weekly: September 7 – 11, 2026",
-      "url": "https://lithub.com/lit-hub-weekly-september-7-11-2026/",
-      "snippet": "A new season means new books. Here are 34 titles you need to read this fall. | Lit Hub Reading Lists Emily Wilson talks to Leanne Ogasawara about “the high stakes and complexities of translation,” complicated men, and her essay",
-      "cover_url": "https://s26162.pcdn.co/wp-content/uploads/2026/09/elizabethrobertbrowning-1.jpg",
-      "blurb": null
-    },
-    {
-      "source": "reads",
-      "source_name": "The Atlantic",
-      "title": "Trump Will Never Mail the $5,000 Checks",
-      "url": "https://www.theatlantic.com/ideas/2026/09/trump-5000-rebate-checks/688599/?utm_source=feed",
-      "snippet": "Deconstructing a policy proposal that makes no sense on any level",
-      "cover_url": "https://cdn.theatlantic.com/thumbor/TGnlzIqD6HwBHehxTk1ckteGQ7M=/0x0:2876x1498/1200x625/media/img/mt/2026/09/2026_09_11_5k_checks_18/original.jpg",
-      "blurb": null
+      "title": "Found Wanting: A Reading List on Measurement",
+      "url": "https://longreads.com/2026/09/10/measurement-kanya-kanchana/",
+      "snippet": "We know that the act of measuring changes what is measured. Might it change us measurers, too?",
+      "cover_url": "https://i0.wp.com/longreads.com/wp-content/uploads/2026/09/MeasurementRL-B.png?fit=2400%2C1400&quality=80&ssl=1",
+      "blurb": "We've long known that measuring a thing distorts it — but this reading list turns the lens around and asks what all that quantifying has done to *us*, the ones holding the ruler. A slow, unsettling question dressed up as a bibliography."
     }
   ],
   "garden_note": {
-    "note": "Tonight in Zürich the garden exhales into genuine autumn — dahlias still bold in the borders while the first leaves on the linden trees hint at gold to come. With the new moon keeping the sky gloriously dark, step outside after the dishes are done and let your eyes adjust to what the city rarely shows you.",
+    "note": "September has pulled a soft grey cardigan over Zürich this morning, and the garden smells faintly of damp soil and ripening quince — that particular alchemy that only early autumn can manage. Step out before the commuters stir; first light arrives at 06:29, and the air at that hour belongs entirely to you and the blackbirds.",
     "in_season": [
-      "Dahlias in full late-summer bloom",
-      "Autumn raspberries ripening on the canes",
-      "Harvesting winter squash before the first frost",
-      "Sowing lamb's lettuce (Feldsalat) for autumn pickings"
+      "Quince ripening on the branch",
+      "Kale and chard ready for cutting",
+      "Plant spring bulbs — tulips and narcissi into the border now",
+      "Michaelmas daisies in full violet bloom"
     ],
-    "sky_tonight": "No moon to wash it out — look south for Saturn rising in Aquarius, steady and golden above the rooftops.",
-    "sun_times": "Dusk settles gently over Zürich at 20:15 tonight, with the sun having already slipped away at 19:46.",
+    "sky_tonight": "With tonight's new moon barely a sliver, the sky over the Limmat valley will be ink-dark — a fine chance to trace the Great Square of Pegasus rising in the east after dusk.",
+    "sun_times": "First light at 06:29, sunrise at 06:59 this morning; the day closes at 19:44, with dusk lingering until 20:13.",
     "moon_label": "New moon",
-    "illum_pct": 1,
-    "sun_range": "06:57–19:46"
+    "illum_pct": 3,
+    "sun_range": "06:59–19:44"
   },
-  "puzzle": {
-    "kind": "trivia",
+  "puzzle": {},
+  "previous_puzzle": {
     "label": "The Evening Trivia",
     "prompt": "In most FPS video games such as Counter-Strike, shooting which part of the body does the highest damage?\n\nArm   ·   Chest   ·   Head   ·   Leg",
-    "answer": "Head",
-    "hint": "Category: Entertainment: Video Games",
-    "source": "opentdb.com",
-    "source_id": "b4032c771d72"
-  },
-  "previous_puzzle": {
-    "label": "Fern's Morning Riddle",
-    "prompt": "My life can be measured in hours, I serve by being devoured. Thin, I am quick. Fat, I am slow. Wind is my foe. What am I ?",
-    "answer": "I am a candle"
+    "answer": "Head"
   },
   "larder": {
-    "news": [],
-    "recipe": {}
+    "news": [
+      {
+        "source": "food",
+        "source_name": "The Kitchn",
+        "title": "This $27 Tool Is the Meal-Prep Superhero Every Kitchen Needs — Over 7,000 Were Bought Last Month!",
+        "url": "https://www.thekitchn.com/cambom-rotary-food-grater-amazon-23842820?utm_source=RSS&utm_medium=feed&utm_campaign=Category%2FChannel%3A+main",
+        "snippet": "Safe and easy!",
+        "cover_url": "",
+        "blurb": "A quietly useful read for anyone who suspects their meal-prep routine could do with a modest, well-priced upgrade."
+      },
+      {
+        "source": "food",
+        "source_name": "The Guardian",
+        "title": "Rosina, London SW17: ‘Bella Italia in Bolton this is not’ – restaurant review",
+        "url": "https://www.theguardian.com/food/2026/sep/13/rosina-london-sw17-grace-dent-restaurant-review",
+        "snippet": "The weekly linen laundry bills alone must make the accountants weep Rosina is a serene, heavenly-white neighbourhood Italian restaurant just off Wandsworth Common, on the same stretch as the much-celebrated Chez Bruce . It is Adam Byatt ’s fifth place – he’s probably best known for Trinity , his Michelin-starred restaurant up the road in Clapham – and, lately, his very good, recipe-driven YouTube channel ran a Road to Rosina series in which he visits suppliers, eats pasta with nonnas and learns peak tiramisu skills from a woman called Pina (more of her tiramisu later). If any neighbourhood can stomach an achingly civilised, Emilia Romagna-influenced, candlelit trattoria where the cloakroom tags are actual Amalfi Coast pebbles engraved with numbers, it is Wandsworth Common, land of the hedge fund/interior design power couple who wouldn’t think twice about sipping a basil gimlet with a plate of melon with culatello di Zibello or gnocco fritto with mortadella.",
+        "cover_url": "https://i.guim.co.uk/img/media/2be666ba1cc88d921697170cd10c88b7da19bd27/149_14_3889_3112/master/3889.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=a4497737572e066d75b370d76b765de9",
+        "blurb": "A restaurant review with genuine wit and white linen — the kind that makes you want to book a table and a one-way ticket to SW17."
+      },
+      {
+        "source": "food",
+        "source_name": "Saveur",
+        "title": "Our 20 Favorite Rosh Hashana Recipes",
+        "url": "https://www.saveur.com/best-rosh-hashanah-recipes/",
+        "snippet": "Photo: David Malosh • Food Styling: Pearl Jones • Prop Styling: Sophie Strangio Celebrate the Jewish New Year with everything from a sweet-savory braise to a streusel-topped apple cake.",
+        "cover_url": "https://www.saveur.com/uploads/2017/09/tzimmes_16x9.jpg?auto=webp",
+        "blurb": "Whether you're marking Rosh Hashana or simply drawn to the promise of sweet-savory braises and streusel-topped apple cake, this collection is a beautiful excuse to cook with intention."
+      }
+    ],
+    "recipe": {
+      "source": "recipe",
+      "source_name": "101 Cookbooks",
+      "title": "Quick Ricotta Dumplings in Tomato Broth",
+      "url": "https://www.101cookbooks.com/ricotta-dumplings/",
+      "snippet": "A delightful bowl of quick dumplings made with potsticker wrappers filled with pesto-boosted ricotta cheese. It is ladled with a simple five-minute tomato broth for a weeknight win.",
+      "is_recipe": true,
+      "cover_url": "https://images.101cookbooks.com/ricotta-dumplings-26-h.jpg?w=680",
+      "blurb": "A bowl of pesto-ricotta dumplings nestled in a quick tomato broth is exactly the kind of cozy, clever weeknight supper that makes you feel like you've done something rather lovely with very little effort."
+    },
+    "seasonal_note": "Zürich's markets are quietly glorious right now — the first Berner Rosen apples and late-season Zwetschgen (those ink-dark Italian prunes) are piled at the Bürkliplatz stalls, begging to be roasted with a little butter and cinnamon for a slow weekend breakfast. This is the week to make Zwetschgenkuchen before they disappear."
   },
   "fern_data": {
-    "greeting": "Still turning a thought over: that 0.125 grams of antimatter could do what it could do. Tonight also has the woman who cracked the mystery of heavy elements, and Bon Iver writing a jingle about meatloaf dippers — which is, somehow, the correct palate cleanser.",
-    "top_pick_title": "Antimatter & Other Gentle Catastrophes"
+    "greeting": "That first-morning chill that makes you pull your sleeve down over your wrist — it's in the air today, and so is radium's long-kept secret and the spy tech that's been hiding inside your wallet this whole time.",
+    "top_pick_title": "Particles, Punic Wars & Small Houses"
   }
 }
