@@ -1,135 +1,161 @@
 {
-  "fetched_at": "2026-09-14T11:05:45.036794+02:00",
-  "is_am_email": true,
+  "fetched_at": "2026-09-14T21:29:45.487783+02:00",
+  "is_am_email": false,
   "audit_summary": {
-    "youtube_videos": 7,
+    "youtube_videos": 9,
     "themes": 4,
-    "music_articles": 1,
+    "music_articles": 12,
     "good_news_articles": 4,
-    "discovery_articles": 0,
+    "discovery_articles": 16,
     "featured_read": 1,
     "reading_room": 5,
     "garden": 1,
-    "puzzle": 1,
-    "larder": 4
+    "puzzle": 0,
+    "larder": 0
   },
   "themes": [
     {
-      "name": "Cozy Corners & Château Dreams",
-      "emoji": "🏰",
-      "tagline": "One grand renovation, one humble grow bag experiment — big transformations come in all sizes.",
+      "name": "Buried & Forgotten",
+      "emoji": "⚓",
+      "tagline": "History's strangest stories — from sunken warships to scandalous courtrooms — pulled back into the light.",
       "items": [
         {
           "source": "youtube",
-          "video_id": "wrdMkdT3q-c",
-          "title": "Building a Library Worthy of a Château",
-          "channel_id": "UCEqU-Ts-hxmpnlWgRMgd2MQ",
-          "channel_title": "How To Renovate A Chateau",
-          "published_at": "2026-09-13T18:30:06Z",
-          "url": "https://www.youtube.com/watch?v=wrdMkdT3q-c",
-          "duration_seconds": 1159,
-          "view_count": "78602",
-          "description": "Head to https://betterhelp.com/chateau to get 10% off your first month with\nour paid partner, BetterHelp. Better is personal. Therapy should be too. \nDon't miss out on Anna's new limited Scarf Collection and Wallpaper: Here's the link to the waitlist: https://go.lefleur.fr/rose-collection\n\n\n🏰🕯️ Discover our Chateau Candle Collection here https://www.lefleur.fr/\nAnd follow us on instagram: https://www.instagram.com/le_fleur_honfleur\n\nBonus videos and exclusive live streams every month! Check out ",
-          "why_watch": "Follow along as a couple transforms a bare château room into a proper library, making decisions about built-in shelving, wood finishes, and period-appropriate details in real time. What makes it engaging is how openly they work through the tension between historical authenticity and practical livability. Less a tutorial, more a thoughtful process document for anyone who loves spaces where books belong."
+          "video_id": "lgIyAOO6-i4",
+          "title": "NEW DISCOVERY: Royal Navy Shipwreck",
+          "channel_id": "UCZwU2G-KVl-P-O-B35chZOQ",
+          "channel_title": "History Hit",
+          "published_at": "2026-09-14T18:00:02Z",
+          "url": "https://www.youtube.com/watch?v=lgIyAOO6-i4",
+          "duration_seconds": 2285,
+          "view_count": "1549",
+          "description": "History Hit's Dan Snow dives on the incredibly well-preserved remains of the 18th-century warship. \n\nComplete with cannons, muskets and coils of rope, it's a discovery that's rewriting our understanding of the evolution of the Royal Navy. \n\nThe special film sees Dan on a personal mission to restore HMS Northumberland to her rightful place in the story of the Royal Navy, as one of the most iconic and important ships, the missing link between the Mary Rose and HMS Victory. Together with a team of ",
+          "why_watch": "Dan Snow dives in person on HMS Northumberland, an 18th-century Royal Navy wreck so well-preserved it still has muskets and coiled rope in place. The framing isn't just 'look at this cool wreck' — Snow is making a specific argument that Northumberland has been unfairly written out of naval history. If you care about maritime archaeology or the evolution of the Royal Navy, this is a rare combination of access and genuine historical stakes."
         },
         {
           "source": "youtube",
-          "video_id": "BSq_IO7Wr-4",
-          "title": "5 vs. 50 Gallon Potato Grow Bags: THIS Is the Best Size for Potatoes",
-          "channel_id": "UC5eLPZi_RSh81523mrBzHNg",
-          "channel_title": "Gardening Experiments with Mind & Soil",
-          "published_at": "2026-04-13T17:31:22Z",
-          "url": "https://www.youtube.com/watch?v=BSq_IO7Wr-4",
-          "duration_seconds": 1020,
-          "view_count": "26204",
-          "description": "Visit https://birchliving.com/MINDANDSOIL for 20% off site-wide and be sure to mention my channel in their post-purchase survey!\n\n🌱🍅 Want to start feeding your family from your backyard? Join my FREE Weekly Newsletter for gardening tips & videos: https://forms.gle/SrwU1EjkSScgVTVy8\n\nEXPERIMENT VIDEOS\n💡 $30 vs $300 Grow Light: WATCH This Before Buying a Grow Light! https://youtu.be/_0EFGE9ZljY\n\n💡 I Tested Every Grow Light Height https://youtu.be/LGKlQ5iGbpY\n\n💡 6 Steps To Guarantee Thriving Seedli",
-          "why_watch": "Rather than guessing which grow bag size is 'probably fine,' this channel ran a controlled side-by-side experiment across an entire growing season and measured actual yield differences. The verdict is specific and counterintuitive enough to change how you'd shop. If you're gardening in limited space and spending money on bags, this 17 minutes will pay for itself quickly."
+          "video_id": "RdgbawZpzMc",
+          "title": "The ENTIRE History of THE WAR OF 1812",
+          "channel_id": "UCAcoda6jlC-xpxGhwW7yFZw",
+          "channel_title": "Matt Reconstructs History",
+          "published_at": "2026-09-14T17:48:12Z",
+          "url": "https://www.youtube.com/watch?v=RdgbawZpzMc",
+          "duration_seconds": 1788,
+          "view_count": "218",
+          "description": "America invades Canada. \nBritain burns Washington. \nA battle fought after the peace treaty is signed makes Andrew Jackson a national hero.\n\nThis is the entire history of the War of 1812.\n\nWe reconstruct it using AI visuals informed by the historical record:\nthe sailors taken into British service,\nthe invasions of Canada that unravelled,\nthe warships that challenged the Royal Navy,\nTecumseh’s fight to hold Indigenous homelands together,\nthe bombardment that inspired America’s national anthem,\nand",
+          "why_watch": "This is a brisk, well-structured overview of a war that most people know only through punchlines — America invaded Canada, Britain burned the White House, Jackson won a battle after it was already over. The AI-assisted visuals are a modest production choice, but the narrative itself covers Tecumseh, the naval rivalry, and the diplomatic mess with enough specificity to actually clarify why this conflict matters. Good catch-up viewing if the War of 1812 is a gap in your knowledge."
+        },
+        {
+          "source": "youtube",
+          "video_id": "W5ZOOAxBPxY",
+          "title": "The World's Biggest Bigamist",
+          "channel_id": "UC4sEmXUuWIFlxRIFBRV6VXQ",
+          "channel_title": "The History Guy: History Deserves to Be Remembered",
+          "published_at": "2026-09-14T12:00:23Z",
+          "url": "https://www.youtube.com/watch?v=W5ZOOAxBPxY",
+          "duration_seconds": 1057,
+          "view_count": "19183",
+          "description": "In one of the strangest trials of the 1980s, Giovanni Vigliotto was credited with breaking an unlikley world's record. \n\nCheck out our new shop for fun The History Guy merchandise:\nhttps://thehistoryguy-shop.fourthwall.com/products/thg-history\n\nThis is original content based on research by The History Guy. Images in the Public Domain are carefully selected and provide illustration.  As very few images of the actual event are available in the Public Domain, images of similar objects and events ar",
+          "why_watch": "Giovanni Vigliotto married somewhere between 82 and 105 women across multiple decades — not for love, but as a systematic con. The History Guy focuses on the 1983 trial where prosecutors had to navigate the sheer logistical absurdity of the case, and the legal question of which state even had jurisdiction. It's a genuinely strange story that doubles as a window into gaps in record-keeping before the digital age."
         }
       ]
     },
     {
-      "name": "Mind-Bending Rabbit Holes",
-      "emoji": "🌀",
-      "tagline": "Problems that make smart people argue and paradoxes that make your brain fold in on itself.",
+      "name": "Reality Has a Bug Report",
+      "emoji": "🔬",
+      "tagline": "The universe's deepest assumptions — atoms, time, constants — turned inside out and put back together.",
       "items": [
         {
           "source": "youtube",
-          "video_id": "Ol18JoeXlVI",
-          "title": "This Paradox Splits Smart People 50/50",
-          "channel_id": "UCHnyfMqiRRG1u-2MsSQLbXA",
-          "channel_title": "Veritasium",
-          "published_at": "2026-03-09T16:02:39Z",
-          "url": "https://www.youtube.com/watch?v=Ol18JoeXlVI",
-          "duration_seconds": 1540,
-          "view_count": "9114267",
-          "description": "Two boxes, one choice, and $1,000,000. Sponsored by Brilliant -  To learn for free on Brilliant for a full 30 days, go to https://brilliant.org/veritasium. Our viewers also get 20% off an annual Premium subscription, which gives you unlimited daily access to everything on Brilliant.\n\nIn 2025, we launched the Elements of Truth game on Kickstarter and were thrilled by the response. We’re now in the final stages of production, with Kickstarter rewards shipping soon. If you missed the campaign, you ",
-          "why_watch": "Newcomb's Paradox — take one box or two when a near-perfect predictor has already made its choice — is one of those problems where both answers feel airtight and yet they contradict each other. Derek Muller lays out exactly why this splits decision theorists and philosophers down the middle, and the discomfort you feel by the end is the point. It's a rare case where a puzzle genuinely doesn't have a consensus answer, even among experts."
-        },
-        {
-          "source": "youtube",
-          "video_id": "mqgmKzRneic",
-          "title": "I finally understood why you can't add neutrons forever! (My mind is blown)",
-          "channel_id": "UCGfFUc6eWxfbtjYeun6r9xg",
-          "channel_title": "FloatHeadPhysics",
-          "published_at": "2024-10-24T13:01:05Z",
-          "url": "https://www.youtube.com/watch?v=mqgmKzRneic",
-          "duration_seconds": 1051,
-          "view_count": "649271",
-          "description": "Support me https://patreon.com/floatheadphysics to see how I learn relativity, get sneak peaks, and early video access. \n\nToo many neutrons make a nucleus unstable. But why? And how does this make Iron-56 one of the most stable elements in the universe. And how this element is actually responsible for life? Let's find out answers to all these.\n\nChapters:\n00:00 Why is iron responsible for life? \n02:31 Why do too many neutrons make nuclei unstable?\n04:02 Energy levels & Pauli's exclusion principle",
-          "why_watch": "The video starts with a question most people have never thought to ask — why can't you just keep adding neutrons to a nucleus indefinitely — and builds toward nuclear binding energy and iron-56's special place in the universe in a way that actually feels earned. The connection drawn between stellar nucleosynthesis and the existence of life on Earth is handled with genuine care rather than vague wonder. It's a good model of how to make quantum phenomena feel viscerally meaningful."
-        }
-      ]
-    },
-    {
-      "name": "The Universe Is Secretly Elegant",
-      "emoji": "✨",
-      "tagline": "Springs, curves, and coordinates — reality keeps revealing it was beautifully simple all along.",
-      "items": [
-        {
-          "source": "youtube",
-          "video_id": "SGUMC19IISY",
-          "title": "Why Almost Everything Is Actually a Spring",
+          "video_id": "ZawOeUSzmY4",
+          "title": "Why Do We ACTUALLY Believe Atoms Exist?",
           "channel_id": "UCIZ5ZOeiXYbmKTl_85ghNPw",
           "channel_title": "Physics Explained",
-          "published_at": "2026-01-24T20:00:30Z",
-          "url": "https://www.youtube.com/watch?v=SGUMC19IISY",
-          "duration_seconds": 2287,
-          "view_count": "153478",
-          "description": "Head to https://squarespace.com/physicsexplained to save 10% off your first purchase of a website or domain using code PHYSICSEXPLAINED\n\nIn this video, we build the Taylor (Maclaurin) series from scratch, starting from the idea of matching a function and its derivatives at a single point. We then apply this expansion to several concrete physics examples, showing how linear and quadratic approximations emerge naturally and why they are so widely used across physics.\n\n🤝 Support the channel Patreon",
-          "why_watch": "This video uses Taylor series not as an abstract math exercise but as the actual tool physicists reach for when real equations become unsolvable — showing concretely why pendulums, atomic bonds, and nearly every small-displacement problem in nature quietly reduce to spring behavior. The build from first principles is slow and patient, making it accessible even if your calculus is rusty. At 38 minutes it's a commitment, but it's the kind of video that reframes a concept you thought you already understood."
+          "published_at": "2026-01-10T20:00:23Z",
+          "url": "https://www.youtube.com/watch?v=ZawOeUSzmY4",
+          "duration_seconds": 2078,
+          "view_count": "425012",
+          "description": "Head to https://squarespace.com/physicsexplained to save 10% off your first purchase of a website or domain using code PHYSICSEXPLAINED\n\nIn 1905, Albert Einstein used the seemingly random motion of tiny particles suspended in a liquid to resolve a centuries-old question: are atoms real? By analysing Brownian motion statistically, Einstein showed that the wandering of a visible particle contains direct evidence for the existence of invisible molecules. In this video, we follow his original reason",
+          "why_watch": "Rather than just asserting atoms exist, this video reconstructs Einstein's 1905 statistical analysis of Brownian motion — the actual argument that finally convinced skeptical physicists. The specific insight is that the random jiggling of visible particles encodes measurable information about invisible ones, and Einstein showed exactly how to decode it. It's a satisfying example of how indirect evidence can be more rigorous than direct observation."
         },
         {
           "source": "youtube",
-          "video_id": "TvFvL_sMg4g",
-          "title": "Conceptualizing the Christoffel Symbols: An Adventure in Curvilinear Coordinates",
+          "video_id": "vPW0UYELfOg",
+          "title": "We finally understood where the Planck's constant actually comes from! (My mind is blown)",
+          "channel_id": "UCGfFUc6eWxfbtjYeun6r9xg",
+          "channel_title": "FloatHeadPhysics",
+          "published_at": "2024-10-03T13:44:45Z",
+          "url": "https://www.youtube.com/watch?v=vPW0UYELfOg",
+          "duration_seconds": 1541,
+          "view_count": "278184",
+          "description": "Head to https://squarespace.com/floatheadphysics to save 10% off your first purchase of a website or domain using code FLOATHEADPHYSICS\n\n00:00 \"I want to be a physicist\"\n02:30 But what led to the ultra violet catastrophe? \n04:40 Which classical assumption is wrong? (Hint: Option 3)\n06:22 How to figure out the new partition theorem? \n08:47 The new partition theorem!\n09:51 Transforming ideas into digital\n11:04 How quantisation fixes the problem!\n16:23 Rediscovering E = hf intuitively\n19:45 Solving",
+          "why_watch": "Most physics courses treat Planck's constant as a given; this video traces the specific reasoning Planck used to derive it — including which classical assumption he quietly discarded to make the math work with blackbody radiation. The presenter is clearly excited by the derivation itself, and that enthusiasm translates into an unusually clear walkthrough of why quantization wasn't an arbitrary choice but a logical necessity. It reframes the birth of quantum mechanics as a story about one man reluctantly breaking classical physics."
+        },
+        {
+          "source": "youtube",
+          "video_id": "eKkH4IH-zmw",
+          "title": "What Time Dilation ACTUALLY Is In Relativity (Hint: It has nothing to do with time)",
           "channel_id": "UC3KV2kFy2YhjYvverIy2WnA",
           "channel_title": "Dialect",
-          "published_at": "2023-10-07T11:51:27Z",
-          "url": "https://www.youtube.com/watch?v=TvFvL_sMg4g",
-          "duration_seconds": 1418,
-          "view_count": "229127",
-          "description": "What are the Christoffel Symbols, and why do we need them? Our exploration into the world of differential geometry continues, as we strive to lay bare the complex mathematical machinery behind General Relativity. Here we calculate the Christoffel symbols for the most common of curvilinear coordinates system — polar coordinates — in order to build a preliminary intuition for what these symbols represent and how they relate to the metric tensor. As a bonus, we unearth the meaning of concepts like ",
-          "why_watch": "Christoffel symbols are notoriously one of the places where general relativity courses lose students to symbol-shuffling without understanding, and this video works hard to anchor them geometrically in polar coordinates before touching the abstract machinery. The visual approach to showing why straight-line motion in curved coordinate systems requires correction terms makes the concept click in a way that textbook index notation rarely does. Worth it if you're building toward general relativity and want intuition, not just formulas."
+          "published_at": "2023-08-05T12:14:23Z",
+          "url": "https://www.youtube.com/watch?v=eKkH4IH-zmw",
+          "duration_seconds": 1006,
+          "view_count": "279468",
+          "description": "What causes Time Dilation? In the context of special relativity, where different observers disagree on basic facts about space and time, there has never been a clear consensus on this question, even among the experts. But an alternative interpretation known as Dynamical Relativity offers an entirely mechanistic explanation of the phenomenon, devoid of any mind-bending, space-and-time-altering pseudo-mysticism. What is this explanation exactly, and can it lead us to a deeper, more logically coher",
+          "why_watch": "The provocative claim here — that time dilation has nothing to do with time — is backed by a serious alternative called Dynamical Relativity, which reframes the phenomenon as a mechanical consequence of how matter interacts with fields rather than a fundamental property of spacetime geometry. It's not crankery; the video carefully distinguishes this interpretation from standard relativity while noting they make identical predictions. Worth watching if you've always felt that 'time stretches' explanations were more metaphor than mechanism."
         }
       ]
     },
     {
-      "name": "Deep in the Machine",
-      "emoji": "⚙️",
-      "tagline": "For the ones who want to know exactly what the computer is doing and why it could do it faster.",
+      "name": "The Infrastructure Is Showing",
+      "emoji": "🔧",
+      "tagline": "The hidden plumbing of the modern world — chips, code, and exploits — explained without hand-waving.",
       "items": [
         {
           "source": "youtube",
-          "video_id": "uMu-qZdtFWA",
-          "title": "Binary adder - Carry Look-Ahead Delay - CLA delay",
+          "video_id": "aoag03mSuXQ",
+          "title": "The Internet Was Weeks Away From Disaster And No One Knew",
+          "channel_id": "UCHnyfMqiRRG1u-2MsSQLbXA",
+          "channel_title": "Veritasium",
+          "published_at": "2026-02-25T20:28:23Z",
+          "url": "https://www.youtube.com/watch?v=aoag03mSuXQ",
+          "duration_seconds": 3180,
+          "view_count": "15654827",
+          "description": "How a single hack infected the world’s most important operating system. Sponsored by NordVPN - Get exclusive NordVPN deal here: https://NordVPN.com/veritasium It’s risk free with Nord’s 30 day money-back guarantee!\n\nIf you’re looking for a molecular modelling kit, try Snatoms, a kit I invented where the atoms snap together magnetically - https://ve42.co/SnatomsV \n\nSign up for the Veritasium newsletter for weekly science updates - https://ve42.co/Newsletter \n\n▀▀▀\n0:00 The Free Software Foundation",
+          "why_watch": "This is Veritasium's deep dive into the XZ Utils backdoor — a nearly successful attempt by a patient, sophisticated actor to embed a hidden exploit into the Linux infrastructure that underpins most of the internet's servers. What makes it gripping is the forensic reconstruction of how the attacker spent two years building trust in an open-source project before striking. It's a 53-minute case study in how open-source security actually works — and nearly failed."
+        },
+        {
+          "source": "youtube",
+          "video_id": "fOccVczstq0",
+          "title": "555 Integrated Circuit - Iconic IC - timer, oscillator, bistable",
           "channel_id": "UCFtCfZ4rtIZ7Hsq7ZNHoY1w",
           "channel_title": "Computer&Electronics",
-          "published_at": "2025-01-02T14:37:46Z",
-          "url": "https://www.youtube.com/watch?v=uMu-qZdtFWA",
-          "duration_seconds": 667,
-          "view_count": "1204",
-          "description": "Addition is the most commonly used arithmetic operation and it is also the speed-limiting element, while making faster VLSI processors. As the demand for higher performance processors grows, there is a continuing need to improve the performance and functionality of arithmetic units like adders. In this video we see quickly the carry ripple propagation problem and we calculate the delay of the standard Carry look-Aahead adder so in the next video we see the Manchester Carry Chain: a logic to spee",
-          "why_watch": "This is a focused, no-frills walkthrough of why carry-ripple propagation becomes a bottleneck in binary adders and how carry look-ahead logic cuts that delay mathematically. It's genuinely useful if you're studying computer architecture or VLSI design and want the delay calculation spelled out step by step rather than hand-waved. Narrow audience, but for that audience, it's exactly the reference clip you'd want."
+          "published_at": "2024-12-16T16:49:55Z",
+          "url": "https://www.youtube.com/watch?v=fOccVczstq0",
+          "duration_seconds": 2213,
+          "view_count": "1166",
+          "description": "The 555 timer IC is an integrated circuit used in a variety of timer, delay, pulse generation, and oscillator applications. It is one of the most popular timing ICs due to its flexibility and price. It was designed in 1970 by Hans R. Camenzind under contract to Signetics Corporation. Today – half a century later – it is still an immensely popular circuit building block. According to Camenzind the idea for the new IC came from the work he did at Signetics on the phase-locked loop. He had needed a",
+          "why_watch": "The 555 timer, designed in 1970, is still one of the best-selling ICs ever made, and this video walks through why — covering its three core operating modes (monostable, astable, bistable) with circuit-level explanation rather than just block diagrams. If you've used a 555 without really understanding what's happening inside it, this is a patient and thorough explainer. Good reference material for anyone doing hobby electronics."
+        }
+      ]
+    },
+    {
+      "name": "Honest Dirt",
+      "emoji": "🌱",
+      "tagline": "One backyard, six weeks in, and nothing is going according to plan — a refreshingly unglamorous dispatch from the garden.",
+      "items": [
+        {
+          "source": "youtube",
+          "video_id": "JfeBxyDAHi8",
+          "title": "So many problems in the garden already (week 6)",
+          "channel_id": "UC5eLPZi_RSh81523mrBzHNg",
+          "channel_title": "Gardening Experiments with Mind & Soil",
+          "published_at": "2026-04-11T15:00:36Z",
+          "url": "https://www.youtube.com/watch?v=JfeBxyDAHi8",
+          "duration_seconds": 1825,
+          "view_count": "6427",
+          "description": "🌱🍅 Want to start feeding your family from your backyard? Join my FREE Weekly Newsletter for gardening tips & videos: https://forms.gle/SrwU1EjkSScgVTVy8\n\nEXPERIMENT VIDEOS\n💡 $30 vs $300 Grow Light: WATCH This Before Buying a Grow Light! https://youtu.be/_0EFGE9ZljY\n\n💡 I Tested Every Grow Light Height https://youtu.be/LGKlQ5iGbpY\n\n💡 6 Steps To Guarantee Thriving Seedlings https://youtu.be/X2nXwawGqXI \n\nPRODUCTS I USE & LOVE (try code mindandsoil or mindandsoil10 for discounts!)\nSproutbox Metal Ra",
+          "why_watch": "This is an honest, unvarnished look at what week six of a backyard vegetable garden actually looks like — pests, disease, and decisions made under uncertainty rather than a tidy success reel. The channel's experiment-driven approach means problems get diagnosed methodically rather than glossed over, which makes it genuinely useful if you're troubleshooting your own early-season setbacks. Low glamour, high signal."
         }
       ]
     }
@@ -137,181 +163,419 @@
   "morning_soundtrack": [
     {
       "source": "music",
-      "source_name": "JazzTimes",
-      "title": "The Even Newer Cool: Forever Future-Forward Jazz Master Bob James Flies into the 21st Century with Tony Grey and Nostalgia",
-      "snippet": "I t’s not surprising that the guy who recorded The New Cool, pianist Bob James, is forever onto the next thing. As an architect of …",
-      "url": "https://www.jazztimes.com/features/profiles/the-even-newer-cool-forever-future-forward-jazz-master-bob-james-flies-into-the-21st-century-with-tony-grey-and-nostalgia/",
+      "source_name": "Stereogum",
+      "title": "CMAT Plays SNL UK, Stars In George Fouracres Sketch",
+      "snippet": "On Saturday, Sept. 12, SNL UK returned for its second season. Jeff Goldblum hosted, with CMAT as the musical guest.",
+      "url": "https://stereogum.com/2511345/cmat-plays-snl-uk-stars-in-george-fouracres-sketch/news/",
       "genre": "",
-      "vibe_check": "The kind of jazz that feels like city lights reflected in rain-slicked pavement at midnight, always moving, never looking back.",
-      "cover_url": "https://www.jazztimes.com/wp-content/uploads/2026/09/Attach0.jpg",
-      "embed_url": "https://www.youtube.com/embed/l4mtH9NCj18"
+      "vibe_check": "Chaotic, glittery Saturday-night energy that feels like stumbling into the best party you weren't invited to.",
+      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/09/Screenshot-2026-09-14-at-6.18.59-PM.png?w=564",
+      "embed_url": "https://www.youtube.com/embed/sDEMiRrB9TA"
+    },
+    {
+      "source": "music",
+      "source_name": "Stereogum",
+      "title": "Alanis Morissette Joins Brandi Carlile At Red Rocks",
+      "snippet": "Last year, Brandi Carlile released her latest LP Returning To Myself , and she's getting ready to share an expanded edition, amazingly titled Returning To Myself (Sad Gay Version) , next week. The singer-songwriter commenced a three-night stint at Colorado's Red Rocks on Friday (Sept. 11), and she brought out Alanis Morissette during the second show.",
+      "url": "https://stereogum.com/2511377/alanis-morissette-joins-brandi-carlile-at-red-rocks/news/",
+      "genre": "",
+      "vibe_check": "The kind of cathartic, fist-in-the-air moment under open skies that makes you feel twenty years of feelings all at once.",
+      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/09/Screenshot-2026-09-14-at-3.04.05-PM.png?w=564",
+      "embed_url": "https://www.youtube.com/embed/sDgGsIOK72M"
+    },
+    {
+      "source": "music",
+      "source_name": "Stereogum",
+      "title": "Sturgill Simpson Covers INXS",
+      "snippet": "Sturgill Simpson! Sturgill Simpson was standing! You were there!",
+      "url": "https://stereogum.com/2511368/sturgill-simpson-covers-inxs/news/",
+      "genre": "",
+      "vibe_check": "The delirious joy of an unexpected cover that makes the whole crowd lose their minds and each other.",
+      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/09/Sturgill.jpg?w=564",
+      "embed_url": "https://www.youtube.com/embed/qCgeGT2uw3g"
+    },
+    {
+      "source": "music",
+      "source_name": "No Depression",
+      "title": "THROUGH THE LENS: The Insider’s Guide to AMERICANAFEST 2026",
+      "snippet": "Of all the many Americana Music Association’s AMERICANAFEST extravaganzas I’ve attended I cannot recall one that I have been more excited about. The Association has outdone itself this year, the line-up is chock full of emerging talent on the verge of busting out to wider",
+      "url": "https://nodepression.org/through-the-lens-the-insiders-guide-to-americanafest-2026/",
+      "genre": "",
+      "vibe_check": "The restless anticipation of a music obsessive circling set times with a highlighter at midnight.",
+      "cover_url": "https://storage.ghost.io/c/18/d0/18d08e58-3b1b-4720-ae25-a31b44e69d4b/content/images/2026/09/_DSC5400.jpeg",
+      "embed_url": null
+    },
+    {
+      "source": "music",
+      "source_name": "No Depression",
+      "title": "Buddy Miller Mixes Country-Soul Classics With Fresh Originals on Self-Titled Return",
+      "snippet": "Buddy Miller has recorded music under his own name for the last 30 years, but his influence on roots music stretches far wider. He began playing in the ’70s in Austin, where he met his future wife Julie Griffin when they both were in a band called Partners in",
+      "url": "https://nodepression.org/buddy-miller-mixes-country-soul-classics-with-fresh-originals-on-self-titled-return/",
+      "genre": "",
+      "vibe_check": "Worn-in and warm, like a favorite denim jacket that somehow fits even better after thirty years.",
+      "cover_url": "https://storage.ghost.io/c/18/d0/18d08e58-3b1b-4720-ae25-a31b44e69d4b/content/images/2026/09/BuddyMillerPromoMichaelWilson.jpg",
+      "embed_url": null
+    },
+    {
+      "source": "music",
+      "source_name": "Pitchfork",
+      "title": "Ella Langley’s “Choosin’ Texas” Ties Record for Most Weeks at No. 1",
+      "snippet": "The country smash is a hair’s breadth from surpassing Mariah Carey’s “All I Want for Christmas Is You”",
+      "url": "https://pitchfork.com/story/ella-langleys-choosin-texas-ties-record-for-most-weeks-spent-at-no-1/",
+      "genre": "",
+      "vibe_check": "Dust-kicking, windows-down country swagger that apparently refuses to stop playing until the record books beg for mercy.",
+      "cover_url": "https://media.pitchfork.com/photos/6aa4548ecb9b95cbc4497817/master/pass/Ella-Langley.jpeg",
+      "embed_url": null
+    },
+    {
+      "source": "music",
+      "source_name": "Pitchfork",
+      "title": "Oasis Announce 2027 Tour",
+      "snippet": "The brothers Gallagher have set a slew of new dates in the U.S. and Europe, including a historic return to Knebworth Park",
+      "url": "https://pitchfork.com/story/oasis-announce-2027-tour/",
+      "genre": "",
+      "vibe_check": "The electric, slightly disbelieving buzz of a generation that swore this day would never come finally getting their moment.",
+      "cover_url": "https://media.pitchfork.com/photos/6aa6df17f84608eff23e0f55/master/pass/GettyImages-2293762428.jpg",
+      "embed_url": null
+    },
+    {
+      "source": "music",
+      "source_name": "Pitchfork",
+      "title": "Jeff Tweedy, Robert Glasper, Weyes Blood to Play Big Ears 2027",
+      "snippet": "Oneohtrix Point Never, Thundercat, Wednesday, Courtney Barnett, SML, Dinner Party, Sylvan Esso, and more will also perform at the Knoxville festival",
+      "url": "https://pitchfork.com/story/jeff-tweedy-robert-glasper-weyes-blood-to-play-big-ears-2027/",
+      "genre": "",
+      "vibe_check": "The feeling of circling a festival lineup poster on your wall like it's a treasure map to the best weekend of your life.",
+      "cover_url": "https://media.pitchfork.com/photos/6aa7fd490d8209284f1f587d/master/pass/Jeff-Tweedy-Robert-Glasper-Big-Ears.jpeg",
+      "embed_url": null
+    },
+    {
+      "source": "music",
+      "source_name": "Aquarium Drunkard",
+      "title": "Nick Jonah Davis :: Rose Delta Rising",
+      "snippet": "You might find yourself succumbing to shorthand hyperbole when trying to describe Rose Delta Rising , Nick Jonah Davis’ remarkable new album. Ry Cooder joining Pentangle? Peter Green playing on Bryter Layter?",
+      "url": "https://aquariumdrunkard.com/2026/09/14/nick-jonah-davis-rose-delta-rising/",
+      "genre": "",
+      "vibe_check": "Fingerpicked and timeless, like late-afternoon light slanting through an old window onto a well-loved acoustic guitar.",
+      "cover_url": "https://aquariumdrunkard.com/_newness/wp-content/uploads/2026/09/Nick-Jonah-Davis-Rose-Delta-Rising.jpg",
+      "embed_url": null
+    },
+    {
+      "source": "music",
+      "source_name": "Consequence",
+      "title": "Brit Floyd Announce 2027 North American “Animals 50” Tour",
+      "snippet": "The world's premier Pink Floyd tribute band will perform songs from the 1977 album and other favorites. Brit Floyd Announce 2027 North American “Animals 50” Tour Spencer Kaufman",
+      "url": "https://consequence.net/2026/09/brit-floyd-2027-north-american-animals-50-tour/",
+      "genre": "",
+      "vibe_check": "Smoky, stadium-sized nostalgia for a dystopian concept album that somehow feels more relevant every decade.",
+      "cover_url": "https://consequence.net/wp-content/uploads/2026/09/Brit-Floyd-2.jpg?quality=80",
+      "embed_url": null
+    },
+    {
+      "source": "music",
+      "source_name": "Consequence",
+      "title": "Paris Paloma Takes Personal Issue with “It’s Not That Deep” — and She’s Made an Album About It: Podcast",
+      "snippet": "The dark folk-pop artist's new album, The Fatal Flaw, addresses a culture that tells us not to feel too much. Paris Paloma Takes Personal Issue with “It’s Not That Deep” — and She’s Made an Album About It: Podcast Ben Kaye",
+      "url": "https://consequence.net/2026/09/paris-paloma-its-not-that-deep-interview/",
+      "genre": "",
+      "vibe_check": "Beautifully wounded dark-folk that dares to feel everything in a world that keeps telling you not to bother.",
+      "cover_url": "https://consequence.net/wp-content/uploads/2026/09/paris-paloma-going-there-with-dr-mike-podcast.jpg?quality=80",
+      "embed_url": null
+    },
+    {
+      "source": "music",
+      "source_name": "Consequence",
+      "title": "Stagecoach 2027: How to Get Tickets",
+      "snippet": "The annual country festival returns to Empire Polo Club on April 23rd-25th. Learn how to get tickets. Stagecoach 2027: How to Get Tickets Paolo Ragusa",
+      "url": "https://consequence.net/2026/09/stagecoach-2027-how-to-get-tickets/",
+      "genre": "",
+      "vibe_check": "Sun-scorched, boot-stomping anticipation for a desert weekend that hasn't happened yet but already lives rent-free in your head.",
+      "cover_url": "https://consequence.net/wp-content/uploads/2026/09/Stagecoach-2027-How-to-Get-Tickets.jpg?quality=80",
+      "embed_url": null
     }
   ],
   "global_silver_linings": [
     {
       "source": "good_news",
       "source_name": "Good News Network",
-      "title": "Good News in History September 14",
-      "url": "https://www.goodnewsnetwork.org/events060914/",
-      "snippet": "41 years ago today, the Penang Bridge officially opened connecting the Malay Peninsula with the island of Penang. Stretching 5.2 miles across the Penang Strait, it’s the second-longest bridge over water in Malaysia. Architects decided to use a cable-stayed suspension design similar to the Golden Gate Bridge rather than the steel-tied arch style of the […]",
-      "cover_url": "https://www.goodnewsnetwork.org/wp-content/uploads/2023/09/The-whole-span-of-the-Panang-Bridge-Leonard-Kong-CC-2.0.jpg",
-      "reason": "History is full of quiet turning points worth remembering — pausing to mark them reminds us that progress, however slow, has always been possible. These moments show that people before us kept going, and so can we."
+      "title": "Athens Is Turning its Old Airport into One of Europe’s Largest Parks",
+      "url": "https://www.goodnewsnetwork.org/athens-is-turning-its-old-airport-into-one-of-europes-largest-parks/",
+      "snippet": "A former Athens airport site is set to host one of the continent’s most ambitious urban greening projects. Called the Ellinikon Park, it won’t only add an unforgettable attraction to the birthplace of Democracy, but also a shaded refuge for residents of the continent’s hottest city. The park will stretch over 400 acres along the […]",
+      "cover_url": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/09/The-Ellinikon-design-concept-for-Athens-airport-rehab-The-Ellinikon.jpg",
+      "reason": "Athens is reclaiming a vast stretch of concrete coastline and transforming it into one of Europe's largest urban green spaces, giving the city's residents room to breathe and nature a foothold in the heart of a major capital. It's a powerful reminder that cities can genuinely reverse course and choose greenery over grey."
+    },
+    {
+      "source": "good_news",
+      "source_name": "Positive News",
+      "title": "How ‘housing first’ is helping people leave rough sleeping behind",
+      "url": "https://www.positive.news/society/how-housing-first-is-helping-people-leave-rough-sleeping-behind/",
+      "snippet": "A housing model that gives people a permanent home before asking them to tackle their other problems has achieved striking results",
+      "cover_url": "https://www.positive.news/wp-content/uploads/2026/09/insta_photos.jpg",
+      "reason": "The 'housing first' model — giving people a stable home before tackling other challenges — is proving that rough sleeping isn't inevitable, just a problem we hadn't properly committed to solving. Real results from real people make this one of the most quietly revolutionary social approaches of our time."
     },
     {
       "source": "good_news",
       "source_name": "Upworthy",
-      "title": "Neuroscientists share how to ‘revive’ memories that you thought you had forgotten forever",
-      "url": "https://www.upworthy.com/neuroscientist-shows-how-to-revive-forgotten-memories-ex1/",
-      "snippet": "A lot of the memories that you thought were gone forever can be retrieved.",
-      "cover_url": "https://www.upworthy.com/wp-content/uploads/sites/2/2025/08/origin-141.png",
-      "reason": "The idea that lost memories may not be gone forever is genuinely exciting, offering hope for people coping with aging or neurological challenges. It also deepens our appreciation for the remarkable resilience of the human mind."
-    },
-    {
-      "source": "good_news",
-      "source_name": "Reasons to be Cheerful",
-      "title": "With Adapted Sailing, the Sea Is for Everyone",
-      "url": "https://reasonstobecheerful.world/adapted-sailing-school/",
-      "snippet": "César Maquieira has always loved the sea. Born and raised in the northwest of Spain, much of which is bordered by the Atlantic Ocean, he would for years regularly go fishing and on boat trips, and he dabbled in scuba diving. There was something about the great expanse of azure...",
-      "cover_url": "https://reasonstobecheerful.world/wp-content/uploads/2026/09/Cesar-Maquieira-Credit-Monte-Real-Club.jpg",
-      "reason": "Adapted sailing programs are opening up the freedom and wonder of the open water to people who might never have thought it was possible for them. There's something deeply moving about the sea becoming a place of belonging for everyone, regardless of ability."
+      "title": "Frugal people share 25 things they stopped buying completely to save money",
+      "url": "https://www.upworthy.com/frugal-people-share-30-things-they-stopped-buying-completely-to-save-money-ex1/",
+      "snippet": "There's so much we buy and use simply out of habit.",
+      "cover_url": "https://www.upworthy.com/wp-content/uploads/sites/2/2025/06/origin-83.png",
+      "reason": "Everyday people are finding that buying less brings genuine freedom rather than deprivation, quietly pushing back against a culture built on endless consumption. There's something quietly radical about choosing enough."
     },
     {
       "source": "good_news",
       "source_name": "The Optimist Daily",
-      "title": "The gardening window most people miss: late summer and early fall weed control",
-      "url": "https://www.optimistdaily.com/2026/09/the-gardening-window-most-people-miss-late-summer-and-early-fall-weed-control/",
-      "snippet": "Image alt text: Close-up of dandelion seed heads and crabgrass growing between garden bed plants in late summer A single dandelion, left to finish its summer in the garden, can drop thousands of seeds. Those seeds can lie dormant in the soil for a long, long time. Basically, the weed you let go in August […] The post The gardening window most people miss: late summer and early fall weed control first appeared on The Optimist Daily: Making Solutions the News .",
-      "cover_url": "",
-      "reason": "Late summer is a golden window for gardeners to get ahead of next year's weeds naturally, working with the season rather than against it. Small, well-timed actions in the garden can make an outsized difference — a quiet reminder that patience and timing matter more than brute effort."
+      "title": "How Colombia’s outgoing president protected 42% of the country’s Amazon from mining",
+      "url": "https://www.optimistdaily.com/2026/09/how-colombias-outgoing-president-protected-42-of-the-countrys-amazon-from-mining/",
+      "snippet": "BY THE OPTIMIST DAILY EDITORIAL TEAM On August 4, 2026, three days before he left office, Colombian President Gustavo Petro signed a resolution placing 186,500 square miles of the Amazon off-limits to any new extraction. That means no new mining concessions, no new oil or gas contracts, and no environmental permits that would make either […] The post How Colombia’s outgoing president protected 42% of the country’s Amazon from mining first appeared on The Optimist Daily: Making Solutions the News .",
+      "cover_url": "https://www.optimistdaily.com/wp-content/uploads/Depositphotos_538179710_L.jpg",
+      "reason": "Placing 42% of Colombia's Amazon off-limits to mining is a landmark act of protection for one of the planet's most biodiverse and climate-critical ecosystems. It shows that determined political will can translate directly into real, lasting shelter for wild places and the communities that depend on them."
     }
   ],
-  "discovery_articles": [],
+  "discovery_articles": [
+    {
+      "source": "discovery",
+      "source_name": "Atlas Obscura",
+      "title": "Cryptid Tourism: The Best Museums, Destinations & Festivals Across America",
+      "url": "https://www.atlasobscura.com/articles/cryptid-tourism-across-america",
+      "snippet": "What is a cryptid? A cryptid is an animal whose existence has been suggested but not proven by science—creatures like Bigfoot, the Loch Ness Monster, the Chupacabra, and the Jersey Devil. The term comes from cryptozoology, the study of “hidden animals.” Quick Reference: Cryptid Destinations at a Glance Destination Location Cryptid Hours Admission Access Notes International Cryptozoology Museum Bangor, ME Multiple Check website Varies Reopened April 2026 at new location North American Cryptid Museum Plano, TX Multiple 11am-6pm (varies) $16-$47 NEW - opened June 2026 Mothman Museum Point Pleasant, WV Mothman 10am-5pm (6pm Fri-Sat) $4.50 adults, $1.50 kids Open daily except major holidays Skunk Ape Research Headquarters Ochopee, FL Skunk Ape Daylight hours Small fee #1 FL roadside attraction (USA Today 2024) Expedition Bigfoot Cherry Log, GA Bigfoot Check website Varies 4,000 sq ft of exhibits Flatwoods Monster Museum Sutton, WV Flatwoods Monster Mon-Fri 9am-5pm, Sat-Sun 10am-4pm Free At Braxton County Visitors Center Hours and admission current as of August 2026.",
+      "category": "history",
+      "cover_url": "https://img.atlasobscura.com/YclZcV1nOPceaVEOovgpuGnzmMxsAsgK2dM3VWh6-mc/rt:fit/w:1200/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS8y/MDI2LzA5LzE0LzE1/LzQxLzAyLzY4MzNj/Y2Q1LTFmNjctNGJl/NS1hZTYwLTZhZTY1/ZTE1ZGJkYi9TY3Jl/ZW5zaG90IDIwMjYt/MDktMTQgYXQgMTEu/MzkuMzcgQU0ucG5n.png",
+      "ferns_note": "America has quietly built an entire infrastructure of devotion to creatures that may not exist — complete with admission fees, gift shops, and, in Florida, a roadside headquarters ranked number one in the state. There is something deeply, wonderfully human about that."
+    },
+    {
+      "source": "discovery",
+      "source_name": "Atlas Obscura",
+      "title": "Gods of Olympus of La Ribota Park in Alcorcón, Spain",
+      "url": "https://www.atlasobscura.com/places/gods-of-olympus-of-la-ribota-park",
+      "snippet": "You don’t normally expect to encounter the gods of Olympus while strolling through a suburban park outside Madrid. But Alcorcón, a city better known for apartment blocks and shopping centers than classical mythology, has quietly created its own version of Mount Olympus—and it comes complete with a solar system. La Ribota Park, on the southern edge of the city, is an unassuming place: a pleasant patch of greenery where locals come to walk, relax, and escape the surrounding urban landscape.",
+      "category": "history",
+      "cover_url": "https://img.atlasobscura.com/K74ABiBMTjdYlmuzTozLsOOLFgBeEXZXyirXuTY_6Dw/rt:fit/w:600/c:3024:2016:nowe:0:484/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy9mMWMz/YjI0My1mMjY1LTRj/ZGItODJiNS0yZDY3/ZTBmOTVkMDJmOTY1/MTM1ZTUwNGUzYjRj/NmRfSU1HXzg3Mjgu/anBlZw.jpg",
+      "ferns_note": "Tucked between apartment blocks on the edge of Madrid, a suburban park has smuggled in the entire Greek pantheon — plus, somehow, the solar system — and most locals probably walk past it on their lunch break without a second glance."
+    },
+    {
+      "source": "discovery",
+      "source_name": "Atlas Obscura",
+      "title": "Linh Phong Pagoda in Cat Tien, Vietnam",
+      "url": "https://www.atlasobscura.com/places/linh-phong-pagoda",
+      "snippet": "Linh Phong Pagoda, widely known locally as Ong Nui Pagoda, stands as one of the most sacred and culturally significant spiritual landmarks in the region, dramatically positioned against the slopes of the rugged Ba Mountain range. Rooted in centuries of local heritage, the temple complex offers a deeply serene atmosphere where visitors embark on both a physical and spiritual journey by conquering a magnificent path of 600 stone steps leading up the mountainside. At the summit, the temple is renowned for housing a colossal white Buddha statue in deep meditation, gazing out toward the vast expanse of the open sea.",
+      "category": "history",
+      "cover_url": "https://img.atlasobscura.com/GRj4pZws9drz2J-SgmAz-iV8NEBkfWpLCl9Zz2spmV0/rt:fit/w:600/c:1022:681:nowe:36:759/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy80MGIw/MWYzNC1jNmQzLTRl/ZmEtYTVkNC0yOTE3/ZGUyZDdjNjMwYTI3/NDQ4MjUwNzg2OWMy/MGZfSU1HLTIwMjYw/OTAyLVdBMDAxMy5q/cGc.jpg",
+      "ferns_note": "Six hundred stone steps up a mountain range, and at the top, a colossal white Buddha sits in meditation gazing out to sea — a journey designed so the climb itself becomes part of the prayer."
+    },
+    {
+      "source": "discovery",
+      "source_name": "Atlas Obscura",
+      "title": "Intschi-Reuss Bridge in Gurtnellen, Switzerland",
+      "url": "https://www.atlasobscura.com/places/intschi-reuss-bridge",
+      "snippet": "A bridge not for the ones who are afraid of heights... The Intschi-Reuss bridge is mainly used as a railway bridge. In the end, there isn't much to connect on both sides of the bridge.",
+      "category": "history",
+      "cover_url": "https://img.atlasobscura.com/do6VwlW7PQGlU8svtFst1vCgcwlDWb9WnuFTK7opXuQ/rt:fit/w:600/c:4032:2688:nowe:0:135/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy8zOWQ5/MmI4OS1jOTM2LTRm/ZjMtYWYyZi0xYjkx/N2U0NTEyZTlkYTUw/N2JlODY4NDBjODY2/MWJfRm90byAzMC4w/Ny4yNiwgMTggMTgg/MDMuanBn.jpg",
+      "ferns_note": "A railway bridge built to connect two sides that have very little reason to be connected — there is something quietly poetic about engineering that exists mostly for its own sake, suspended above a gorge."
+    },
+    {
+      "source": "discovery",
+      "source_name": "Smithsonian",
+      "title": "Unsealed for the First Time in 600 Years, This Tomb in Peru Was Just Declared the 'Discovery of the Decade'",
+      "url": "https://www.smithsonianmag.com/smart-news/unsealed-for-the-first-time-in-600-years-this-tomb-in-peru-was-just-declared-the-discovery-of-the-decade-180989497/",
+      "snippet": "Archaeologists excavating Chan Chan, the capital of the pre-Inca Chimú civilization, found an undisturbed mausoleum that held the remains of at least 38 individuals, as well as a trove of rich funerary goods",
+      "category": "history",
+      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/489Np3X_5cX1RSCWolOikGMSuIw=/fit-in/1600x0/filters:focal(750x500:751x501)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/cb/f0/cbf09863-7b51-4a6e-9146-18afe0ba8b81/tomb2.png",
+      "ferns_note": "A mausoleum sealed for six centuries inside Chan Chan, the largest adobe city ever built, was opened to reveal 38 individuals and their funerary world entirely intact — the Chimú simply locked the door one day, and no one came back."
+    },
+    {
+      "source": "discovery",
+      "source_name": "Smithsonian",
+      "title": "A Rare Nazi-Looted Painting, Lost for Some 80 Years, Turned Up in a Real Estate Listing. Now, a Judge Has Ordered It Returned to Its Rightful Heirs",
+      "url": "https://www.smithsonianmag.com/smart-news/A-Rare-Nazi-Looted-Painting-lost-for-Some-80-Years-Turned-Up-in-a-Real-Estate-Listing-Now-a-Judge-Has-Ordered-It-Returned-to-Its-Rightful-Heirs-180989488/",
+      "snippet": "Missing since it was stolen in Amsterdam in 1945, Giacomo Ceruti’s ‘Portrait of a Lady’ will be restored to its true owners, a court in Argentina has ruled in a landmark decision",
+      "category": "history",
+      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/cdn9V5MYhRPlMQlNHXtdDNhWckI=/fit-in/1600x0/filters:focal(1890x1260:1891x1261)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/aa/7f/aa7f6ea3-397e-44d5-8a24-f6539bb8195b/gettyimages-2232924063.jpg",
+      "ferns_note": "A painting stolen in Amsterdam in 1945 spent the next eight decades hiding in plain sight, surfacing finally in — of all places — an Argentine real estate listing, as if it had simply been waiting to be found."
+    },
+    {
+      "source": "discovery",
+      "source_name": "Smithsonian",
+      "title": "Montana Built a $107 Million Museum. Its Smallest Room Says a Lot About the Thought That Went Into Designing the Space",
+      "url": "https://www.smithsonianmag.com/travel/montana-built-a-107-million-museum-its-smallest-room-says-a-lot-about-the-thought-that-went-into-designing-the-space-180989453/",
+      "snippet": "The Montana Heritage Center in Helena has a smudge room. It is open to the public and teaches non-Native visitors why a room dedicated to the burning of cleansing materials, a practice of many Indigenous cultures, is needed",
+      "category": "history",
+      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/1J40AaMOVB1WAGYlOSKLENJZwqo=/fit-in/1600x0/filters:focal(1000x667:1001x668)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/de/10/de107b2f-8565-4cb6-b29f-c9d45f3f1c79/montana-heritage-center-exterior-helena_credit-sarah-bolt-tempest-technologies_35.jpg",
+      "ferns_note": "Montana's $107 million heritage museum made room for a smudge ceremony space open to the public, which says something quietly radical: that honoring a culture sometimes means building a room where its practices can simply exist, unhurried and unexplained."
+    },
+    {
+      "source": "discovery",
+      "source_name": "Smithsonian",
+      "title": "See Nine Stunning Images from This Year's Ocean Photographer of the Year Contest That Show the Majesty of Marine Life",
+      "url": "https://www.smithsonianmag.com/smart-news/see-nine-stunning-images-from-this-years-ocean-photographer-of-the-year-contest-that-show-the-majesty-of-marine-life-180989489/",
+      "snippet": "From seahorse farewells to saving a stranded whale, the photos capture the diversity and beauty of sea creatures—but also the perils they face",
+      "category": "history",
+      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/CniksXNyPVoSZy08Cu9soNvwSCc=/fit-in/1600x0/filters:focal(960x640:961x641)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/79/a9/79a9dc1f-a513-461c-95b9-01f2517bf121/julien-anton-1920x1280.jpg",
+      "ferns_note": "A seahorse farewell and a stranded whale's rescue in the same contest — the ocean, it turns out, offers both elegy and reprieve in equal measure, and these photographers caught both."
+    },
+    {
+      "source": "discovery",
+      "source_name": "Science News",
+      "title": "Feeling nervous? Work the system",
+      "url": "https://www.sciencenews.org/article/nervous-system-stress-hormone-cortisol",
+      "snippet": "Scientists are exploring new ways to regain control of overactive nervous systems including humming, tapping on the skin and cold-water immersion.",
+      "category": "science",
+      "cover_url": "https://www.sciencenews.org/wp-content/uploads/sites/2/2026/09/090926_JD_nervoussystem_main.jpg",
+      "ferns_note": "The remarkable thing isn't that humming or cold water can calm a runaway nervous system — it's that ancient, instinctive behaviors are now being reverse-engineered by neuroscientists to explain why your grandmother's remedies actually worked."
+    },
+    {
+      "source": "discovery",
+      "source_name": "Science News",
+      "title": "These deep-sea spiders give off an otherworldly glow",
+      "url": "https://www.sciencenews.org/article/deep-sea-spiders-glow-bioluminescence",
+      "snippet": "An expedition of a deep-sea trench near Australia uncovered the eerie sea spider specimens, whose glow may have been chronicled in 19th century documents.",
+      "category": "science",
+      "cover_url": "https://www.sciencenews.org/wp-content/uploads/sites/2/2026/09/090826_JRL_glowingspiders_main.jpg",
+      "ferns_note": "Deep-sea spiders glowing in a trench near Australia is strange enough on its own — but the detail that makes it genuinely eerie is that 19th-century naturalists may have already documented that glow and simply had no framework for what they were seeing."
+    },
+    {
+      "source": "discovery",
+      "source_name": "Science News",
+      "title": "These neutrinos from the sun have the lowest energies ever seen",
+      "url": "https://www.sciencenews.org/article/neutrinos-sun-lowest-energies-xenonnt",
+      "snippet": "The XENONnT detector glimpsed the ethereal subatomic particles that are born from the main type of fusion reaction that powers the sun.",
+      "category": "science",
+      "cover_url": "https://www.sciencenews.org/wp-content/uploads/sites/2/2026/09/090426_EC_neutrinos_main.jpg",
+      "ferns_note": "These neutrinos were born in the sun's core and traveled 93 million miles only to pass through the Earth almost entirely undetected — catching even a whisper of them is less like observation and more like eavesdropping on the universe's quietest conversation."
+    },
+    {
+      "source": "discovery",
+      "source_name": "JSTOR Daily",
+      "title": "The Women Written Out of Mining History",
+      "url": "https://daily.jstor.org/the-women-written-out-of-mining-history/",
+      "snippet": "Women have mined for centuries, but laws barring them from the industry helped cement the idea that mining was men’s work.",
+      "category": "history",
+      "cover_url": "https://daily.jstor.org/wp-content/uploads/2026/09/the_women_written_out_of_mining_history_1050x700.jpg",
+      "ferns_note": "Women mined salt, coal, and gold for centuries before laws didn't just exclude them from the work — they methodically erased the evidence that the work had ever happened, turning absence into assumed truth."
+    },
+    {
+      "source": "discovery",
+      "source_name": "Quanta Magazine",
+      "title": "Black Holes or Black Hole Stars? Astronomers Spar Over Webb Telescope’s ‘Little Red Dots.’",
+      "url": "https://www.quantamagazine.org/black-holes-or-black-hole-stars-astronomers-spar-over-webb-telescopes-little-red-dots-20260914/",
+      "snippet": "The James Webb Space Telescope spots mysterious “little red dots” everywhere. A bold new theory suggests they’re suns dozens of times larger than our entire solar system. The post Black Holes or Black Hole Stars?",
+      "category": "science",
+      "cover_url": "https://www.quantamagazine.org/wp-content/uploads/2026/09/Black-Hole-Star-cr-Mark-Belan-Social-1.jpg",
+      "ferns_note": "The Webb telescope keeps finding these tiny red smudges scattered across the early universe, and astronomers are now seriously debating whether they might be stars so enormous that our entire solar system would fit inside them — which would require rewriting what we thought we knew about how the cosmos grew up."
+    },
+    {
+      "source": "discovery",
+      "source_name": "Colossal",
+      "title": "In ‘Ascent,’ Debra Baxter Explores the Power in Vulnerability, Mysticism, and Time",
+      "url": "https://www.thisiscolossal.com/2026/09/debra-baxter-ascent-sculptures/",
+      "snippet": "Baxter uses materials derived from the earth that are explicitly solid, evoking an intimate tension between vulnerability and strength.",
+      "category": "history",
+      "cover_url": "https://www.thisiscolossal.com/wp-content/uploads/2026/09/baxter-10.jpg",
+      "ferns_note": "Debra Baxter builds vulnerability out of stone — which shouldn't work, and yet the tension between those two ideas is precisely what makes you stop in front of it."
+    },
+    {
+      "source": "discovery",
+      "source_name": "Colossal",
+      "title": "Art History and Pop Culture Converge in Frederich Kunath’s ‘The Nearest Faraway Place’",
+      "url": "https://www.thisiscolossal.com/2026/09/frederich-kunath-nearest-faraway-place-exhibition-paintings/",
+      "snippet": "The artist describes that he aims to make his paintings “feel like songs.”",
+      "category": "history",
+      "cover_url": "https://www.thisiscolossal.com/wp-content/uploads/2026/09/kunath-6.jpeg",
+      "ferns_note": "Paintings that feel like songs is an ambition that could easily tip into pretension, but Kunath's blending of art history and pop culture suggests he's after something genuinely harder: the mood that lingers after both have ended."
+    },
+    {
+      "source": "discovery",
+      "source_name": "Colossal",
+      "title": "Houston Center for Contemporary Craft Celebrates 25th Anniversary With Silver Exhibition",
+      "url": "https://www.thisiscolossal.com/2026/09/houston-center-for-contemporary-craft-silver-exhibition/",
+      "snippet": "The most reflective element on Earth, silver has transformed the ways in which humans perceive, record, and understand the world",
+      "category": "history",
+      "cover_url": "https://www.thisiscolossal.com/wp-content/uploads/2026/09/3-Edward-Lane-McCartney_Heirloom-Impotence-Flayed-and-Flaccid.jpg",
+      "ferns_note": "Silver gave us mirrors, photographs, and the ability to see ourselves clearly for the first time in human history — an anniversary exhibition built around that single element turns out to be a quiet meditation on perception itself."
+    }
+  ],
   "featured_read": {
     "source": "reads",
-    "source_name": "Literary Hub",
-    "title": "The Legend of “The Legend of Sleepy Hollow”",
-    "url": "https://lithub.com/the-legend-of-the-legend-of-sleepy-hollow/",
-    "snippet": "“Rip van Winkle” begins with a description setting the scene between the Hudson River and the Catskill Mountains (“these fairy mountains,” which Irving so loved), then introduces us to the protagonist. Rip is a descendant of the Van Winkles who",
-    "cover_url": "https://s26162.pcdn.co/wp-content/uploads/2026/09/sleepy-hollow.jpg",
-    "blurb": "Washington Irving invented the American ghost story almost by accident, and this essay traces how a single foggy Hudson Valley hollow became the template for every haunted landscape that followed. It's a quiet thrill to learn how much deliberate craft hides inside what feels like folklore."
+    "source_name": "Asterisk",
+    "title": "The Mystery in the Medicine Cabinet",
+    "url": "https://asteriskmag.com/issues/14/the-mystery-in-the-medicine-cabinet",
+    "snippet": "Acetaminophen, ibuprofen, and what doctors probably want you to know.",
+    "cover_url": "https://asteriskmag.com/media/pages/issues/14/the-mystery-in-the-medicine-cabinet/ae48f6abf6-1776281832/dynomight-social-1600x900-crop-sharpen50.png",
+    "blurb": "Most of us have been reaching for the same two pills our entire lives without quite understanding why doctors recommend one over the other — this piece untangles the quiet pharmacology mystery sitting in your medicine cabinet. It turns out the answer is more interesting, and more useful, than the label ever bothered to tell you."
   },
   "reading_room": [
     {
       "source": "reads",
-      "source_name": "The Atlantic",
-      "title": "The Birth of the New Legal Right",
-      "url": "https://www.theatlantic.com/ideas/2026/09/federalist-society-conference-conservative-court/688555/?utm_source=feed",
-      "snippet": "Forty-four years ago, a conservative legal convention offered disaffected students an identity—and hope.",
-      "cover_url": "https://cdn.theatlantic.com/thumbor/0ddCOo-rDHtUBUCvwCy-PciVP18=/0x0:3994x2080/1200x625/media/img/mt/2026/09/2026_09_13_Book_excerpt_The_Three_Day_Conference_that_Changed_the_World_Alex_Wagner/original.jpg",
-      "blurb": "This is the origin story of the Federalist Society told not as triumph but as grievance — a handful of alienated law students who turned outsider identity into the most consequential legal movement of the past half-century. The question it leaves hanging is how much of American law was reshaped by a feeling."
-    },
-    {
-      "source": "reads",
-      "source_name": "The Atlantic",
-      "title": "The Sadness of Being the ‘Last Man’",
-      "url": "https://www.theatlantic.com/books/2026/09/francis-fukuyama-in-the-realm-of-the-last-man-memoir-book-review/688548/?utm_source=feed",
-      "snippet": "Francis Fukuyama has long been considered a naive triumphalist. He now wants to set the record straight.",
-      "cover_url": "https://cdn.theatlantic.com/thumbor/I8bSA-PKRHBLSyN0k9UKj-upkVM=/0x61:2876x1559/1200x625/media/img/mt/2026/09/2026_09_04_Fukuyamas_Self_Revision_1432891845/original.jpg",
-      "blurb": "Francis Fukuyama spent three decades being misquoted into a caricature of himself, and now he's finally explaining what 'the end of history' actually meant — and why its misreaders may have hastened the very chaos they claimed to predict. A rare chance to watch an idea get rescued from its own fame."
-    },
-    {
-      "source": "reads",
-      "source_name": "Asterisk",
-      "title": "These Wild Young People",
-      "url": "https://asteriskmag.com/issues/14/these-wild-young-people",
-      "snippet": "Gen Z are a bunch of cowards…or are they risking it all on crypto? The editors of The New Critic report on their generation’s Risk-geist.",
-      "cover_url": "https://asteriskmag.com/media/pages/issues/14/these-wild-young-people/2f0762f841-1778526443/these-wild-young-people-1600x900-crop-sharpen50.png",
-      "blurb": "Gen Z is either catastrophically risk-averse or recklessly betting everything on speculative assets, and this essay argues both things are true at once — which says something sharp about what it means to come of age when the safe path and the reckless one look nearly identical."
+      "source_name": "Aeon",
+      "title": "Once upon a screen: explosive paradox",
+      "url": "https://aeon.co/videos/are-we-ever-really-done-seeing-a-movie-on-platoon-and-memory",
+      "snippet": "Decades after seeing ‘Platoon’, Kevin recalls how the film stirred generational trauma in his family and racism at school - by Aeon Video Watch on Aeon",
+      "cover_url": "https://images.aeonmedia.co/images/bead947c-a6cf-4c98-97e3-1fb2364202af/once-upon-a-screen-explosive-paradox-landscape-1.jpg?width=1200&quality=75&format=jpeg",
+      "blurb": "A single film screening becomes the unlikely catalyst for surfacing years of family silence and schoolyard cruelty, asking how a war movie can crack open wounds that have nothing to do with Vietnam. Kevin's account is a reminder that what we watch together, we don't always survive the same way."
     },
     {
       "source": "reads",
       "source_name": "Nautilus",
-      "title": "Are Too Many Americans Taking Antidepressants?",
-      "url": "https://nautil.us/are-too-many-americans-taking-antidepressants-1284975/",
-      "snippet": "Rates of anxiety and depression have grown since the COVID-19 pandemic—as have prescriptions for antidepressants",
-      "cover_url": "https://lede-admin.nautil.us/wp-content/uploads/sites/70/2026/09/AdobeStock_191230440.jpeg",
-      "blurb": "This isn't a scare piece about overprescription — it's a genuinely uncomfortable sit with the question of whether we're medicating distress that might actually be a reasonable response to the world as it is. The kind of essay that makes you stare out the window for a while after."
+      "title": "Taylor Swift Drops New Insect Species",
+      "url": "https://nautil.us/taylor-swift-drops-new-insect-species-1285010/",
+      "snippet": "Thanks to a graduate student who is a “lifelong Swiftie”",
+      "cover_url": "",
+      "blurb": "A graduate student and devoted Swiftie has done the only logical thing with her obsession: named a newly discovered insect species after Taylor Swift, and the reasoning is more scientifically earnest than you'd expect. A small, genuinely delightful dispatch from the corner of taxonomy where fandom and fieldwork overlap."
     },
     {
       "source": "reads",
-      "source_name": "Longreads",
-      "title": "Ballroom Blitz",
-      "url": "https://longreads.com/2026/09/09/ballroom-blitz-white-house/",
-      "snippet": "\"Trump’s obsessive bid for architectural immortality is barreling toward completion.\"",
-      "cover_url": "",
-      "blurb": "Trump's renovation of the capital's architecture turns out to be a decades-long obsession with outlasting his critics in marble and gilding, and this essay reads those blueprints as a kind of psychological document. Grandiosity, it turns out, leaves a paper trail."
+      "source_name": "Psyche",
+      "title": "My name is Annabel",
+      "url": "https://psyche.co/videos/step-into-the-joyful-world-of-annabel-a-performer-with-down-syndrome",
+      "snippet": "A creative collaboration between participant and filmmaker explores how it feels to live and perform with Down syndrome - Directed by Ida Joglar Watch on Psyche",
+      "cover_url": "https://images.aeonmedia.co/images/58842924-d726-4cf8-a607-e6a3d032ff89/my-name-is-annabel-landscape-1.jpg?top=0&left=0&cropWidth=2560&cropHeight=1440&width=1200&quality=75&format=jpeg",
+      "blurb": "Annabel invites you into the texture of her inner life — not as a subject to be explained, but as a performer who knows exactly what she's doing on stage and off. This short film asks what it means to be seen on your own terms, and then quietly answers it."
+    },
+    {
+      "source": "reads",
+      "source_name": "Literary Hub",
+      "title": "Could this James Baldwin typewriter be an okay use of AI?",
+      "url": "https://lithub.com/could-this-james-baldwin-typewriter-be-an-okay-use-of-ai/",
+      "snippet": "A new interactive exhibition about the writing of James Baldwin features an AI programmed typewriter that directs users to writing drawn from Baldwin’s books, essays, and letters. If you, like me, are aghast that “AI” and “James Baldwin” are in",
+      "cover_url": "https://s26162.pcdn.co/wp-content/uploads/2026/09/baldwin-exhibit.jpg",
+      "blurb": "An AI-powered typewriter programmed with James Baldwin's own words sounds like the premise for an argument, and Literary Hub leans into exactly that tension — prodding at whether a tool can honor a writer's voice or only hollow it out. The question of what counts as respectful engagement with a literary giant turns out to have no clean answer."
+    },
+    {
+      "source": "reads",
+      "source_name": "Noema",
+      "title": "Conceding AI Danger Raises, Not Reduces, Public Anxiety",
+      "url": "https://www.noemamag.com/conceding-ai-danger-raises-not-reduces-public-anxiety",
+      "snippet": "",
+      "cover_url": "https://noemamag.imgix.net/2026/09/GettyImages-2263493968-scaled.jpg?fit=crop&fm=pjpg&h=628&ixlib=php-3.3.1&w=1200&wpsize=noema-social-facebook&s=be93e80e1bdd9a80febc406650a42c68",
+      "blurb": "There's a counterintuitive trap at the heart of honest AI safety communication: acknowledging real danger doesn't reassure the public, it amplifies dread in ways that may make thoughtful policy harder to build. This piece maps the uncomfortable gap between telling the truth and being heard usefully."
     }
   ],
   "garden_note": {
-    "note": "There's a cool, dewy hush over Zürich this morning — the kind that arrives when summer finally exhales and lets autumn in through the back gate. Step outside just after first light and you'll catch the dahlias still blazing against the mist, as if they haven't quite accepted the season's turning.",
+    "note": "September's cooler breath is settling over Zürich this evening, and the garden is leaning quietly into its golden exhale — dahlias are still putting on a show, but there's a new weight to the air that whispers of what's ahead.",
     "in_season": [
-      "Dahlias — peak bloom, deadhead generously",
-      "Apples and early pears — watch for windfalls at the base of the tree",
-      "Leeks — ready to lift as needed, hardy enough to leave in ground",
-      "Sow hardy lamb's lettuce (Feldsalat) for autumn harvest"
+      "Dahlias in full late-season bloom",
+      "Harvesting winter squash and pumpkins",
+      "Sowing lamb's lettuce (Feldsalat) for autumn salads",
+      "Collecting seed heads from marigolds and cosmos"
     ],
-    "sky_tonight": "A slim waxing crescent moon hangs low in the southwest after dusk — look for it near Venus if the evening sky clears.",
-    "sun_times": "First light arrives at 06:31 this morning, with the sun rising properly at 07:00 and setting at 19:42 tonight.",
+    "sky_tonight": "A slender waxing crescent moon hangs low in the southwest after dusk — look for it before it sets, and see if you can spot Venus nearby.",
+    "sun_times": "The sun slipped away at 19:42 this evening, with dusk lingering softly until around 20:11.",
     "moon_label": "Waxing crescent",
-    "illum_pct": 7,
+    "illum_pct": 10,
     "sun_range": "07:00–19:42"
   },
-  "puzzle": {
-    "kind": "haiku riddle",
-    "label": "Fern's Morning Riddle",
-    "prompt": "I curl without wind\nEach morning I fall away\nSteam forgets itself",
-    "answer": "Fog (or morning mist)",
-    "hint": "Think of what lingers low to the ground at dawn and vanishes as the sun rises."
-  },
+  "puzzle": {},
   "previous_puzzle": {
     "label": "Fern's Morning Riddle",
-    "prompt": "What can you catch but not throw?",
-    "answer": "A cold"
+    "prompt": "I curl without wind\nEach morning I fall away\nSteam forgets itself",
+    "answer": "Fog (or morning mist)"
   },
   "larder": {
-    "news": [
-      {
-        "source": "food",
-        "source_name": "The Kitchn",
-        "title": "Carla Hall’s Chicken Pot Pie Pop Tarts",
-        "url": "https://www.thekitchn.com/carla-hall-chicken-pot-pie-pop-tarts-recipe-review-23842949?utm_source=RSS&utm_medium=feed&utm_campaign=Category%2FChannel%3A+main",
-        "snippet": "Pot pie, but make it handheld.",
-        "cover_url": "",
-        "blurb": "Carla Hall has done what we didn't know we needed — tucked all the warmth of a Sunday pot pie into something you can eat standing at the kitchen counter, no fork required."
-      },
-      {
-        "source": "food",
-        "source_name": "The Guardian",
-        "title": "Hot and sour, vegetarian mapo and in spicy sauce: Fuchsia Dunlop’s tofu recipes",
-        "url": "https://www.theguardian.com/food/2026/sep/14/hot-sour-vegetarian-mapo-spicy-sauce-tofu-recipes-fuchsia-dunlop",
-        "snippet": "Wobblesome, firm or silken, tofu is a star ingredient in Chinese cooking. These dishes show why In the west, tofu is often viewed as a substitute for meat, which may explain why firmer types that can be cut into chunks and fried or grilled like meat have become so ubiquitous. In China, however, where tofu has been eaten for at least 1,000 years, it isn’t a substitute for anything; it’s simply a protein-rich ingredient that forms part of most people’s diets, can be cooked with meat and fish, and comes in myriad forms, from the tender, wobbly tofu used to make Sichuanese mapo tofu to firm smoked tofu, sheets of tofu “skin” and the silken tofu that can be as soft as creme caramel.",
-        "cover_url": "https://i.guim.co.uk/img/media/f52d70e6e9c1b4679f0f2bd78379f3d555c6c221/45_1954_5270_4216/master/5270.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=32f93873e134c87fe3ab348f3fd648e5",
-        "blurb": "Fuchsia Dunlop makes a compelling case that tofu deserves to be the star of the dish rather than a reluctant understudy, and these three recipes are the evidence."
-      },
-      {
-        "source": "food",
-        "source_name": "Saveur",
-        "title": "An Insider’s Guide to the Best Coffee Shops in Bogotá",
-        "url": "https://www.saveur.com/travel/best-coffee-shops-bogota/",
-        "snippet": "Juan Arredondo While old-school cafés still thrive, the Colombian capital is leaning into yuzu cold brews and single-origin pour-overs.",
-        "cover_url": "https://www.saveur.com/uploads/2026/09/BOGOTA_COFFEE_ARREDONDO_SAVEUR_194_01-scaled.jpg?auto=webp&width=2000&height=1125",
-        "blurb": "Bogotá's coffee scene is quietly becoming one of the most exciting in the world, and this guide is the perfect companion before — or instead of — booking a flight."
-      }
-    ],
-    "recipe": {
-      "source": "recipe",
-      "source_name": "Smitten Kitchen",
-      "title": "chicken salad for celery enthusiasts",
-      "url": "https://smittenkitchen.com/2026/05/chicken-salad-for-celery-enthusiasts/",
-      "snippet": "I’m not sure if this is a sign of hitting a certain age — like a sudden interest in bird feeders (check, and please tell me about yours), or beekeeping (well, in the TikTok sense, not sorry ), and animated conversations on the best pillows (I hate mine) — but I’ve found over the last year that I have very strong opinions on chicken salad and the correct way to make it, which, naturally, is my way. I hope I’m in the right place to release them into the world.",
-      "is_recipe": true,
-      "cover_url": "",
-      "blurb": "This chicken salad is a crisp, cool, no-fuss lunch that finally gives celery its long-overdue moment in the spotlight — lovely for a breezy afternoon when you want something satisfying without turning on the oven."
-    },
-    "seasonal_note": "Zürich's Tuesday and Saturday markets at Bürkliplatz are quietly glorious right now — hunt down the first Berner Rosen apples and a wedge of young Appenzeller to eat together on a bench by the lake, where the morning mist still hasn't fully lifted."
+    "news": [],
+    "recipe": {}
   },
   "fern_data": {
-    "greeting": "Almost everything — pendulums, atoms, bridges, heartbeats — is secretly a spring. That one sits in today's edition alongside a paradox that splits genuinely smart people straight down the middle, and the gothic pleasures of building a library worthy of a château.",
-    "top_pick_title": "Springs, Secrets & Sleepy Hollow"
+    "greeting": "Sleep on this one: time dilation has nothing to do with time. That realization — tucked inside tonight's physics section — is the kind that rearranges something quietly, the way the Internet nearly collapsing without anyone noticing should have, but didn't.",
+    "top_pick_title": "Buried Signals & Broken Clocks"
   }
 }
