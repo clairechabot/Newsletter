@@ -1,135 +1,135 @@
 {
-  "fetched_at": "2026-09-13T19:28:15.491669+02:00",
-  "is_am_email": false,
+  "fetched_at": "2026-09-14T11:05:45.036794+02:00",
+  "is_am_email": true,
   "audit_summary": {
     "youtube_videos": 7,
     "themes": 4,
-    "music_articles": 4,
-    "good_news_articles": 2,
+    "music_articles": 1,
+    "good_news_articles": 4,
     "discovery_articles": 0,
     "featured_read": 1,
     "reading_room": 5,
     "garden": 1,
     "puzzle": 1,
-    "larder": 0
+    "larder": 4
   },
   "themes": [
     {
-      "name": "Arrow of Time Club",
-      "emoji": "⏳",
-      "tagline": "Three videos walk into a bar — and none of them can agree on why they can't walk back out.",
+      "name": "Cozy Corners & Château Dreams",
+      "emoji": "🏰",
+      "tagline": "One grand renovation, one humble grow bag experiment — big transformations come in all sizes.",
       "items": [
         {
           "source": "youtube",
-          "video_id": "oW1swU54CiM",
-          "title": "Why Does Time Only Go One Way?",
-          "channel_id": "UCIZ5ZOeiXYbmKTl_85ghNPw",
-          "channel_title": "Physics Explained",
-          "published_at": "2026-02-14T20:00:35Z",
-          "url": "https://www.youtube.com/watch?v=oW1swU54CiM",
-          "duration_seconds": 2507,
-          "view_count": "492767",
-          "description": "Head to https://squarespace.com/physicsexplained to save 10% off your first purchase of a website or domain using code PHYSICSEXPLAINED\n\nWhy does time only go one way? Why do broken things never unbreak, and why does the universe remember the past but not the future? The laws of physics work just as well forwards as backwards in time—so where does the arrow of time really come from?\n\nIn this video, we follow entropy from simple coin tosses and mixing gases all the way to black holes and the Big ",
-          "why_watch": "This 42-minute deep dive earns its runtime by carefully building from thermodynamic basics to the real puzzle: the laws of physics are time-symmetric, so the arrow of time must come from somewhere else entirely — specifically, the improbably low-entropy initial conditions of the universe. It's one of the cleaner explanations of why the past hypothesis matters without requiring any prior physics background."
+          "video_id": "wrdMkdT3q-c",
+          "title": "Building a Library Worthy of a Château",
+          "channel_id": "UCEqU-Ts-hxmpnlWgRMgd2MQ",
+          "channel_title": "How To Renovate A Chateau",
+          "published_at": "2026-09-13T18:30:06Z",
+          "url": "https://www.youtube.com/watch?v=wrdMkdT3q-c",
+          "duration_seconds": 1159,
+          "view_count": "78602",
+          "description": "Head to https://betterhelp.com/chateau to get 10% off your first month with\nour paid partner, BetterHelp. Better is personal. Therapy should be too. \nDon't miss out on Anna's new limited Scarf Collection and Wallpaper: Here's the link to the waitlist: https://go.lefleur.fr/rose-collection\n\n\n🏰🕯️ Discover our Chateau Candle Collection here https://www.lefleur.fr/\nAnd follow us on instagram: https://www.instagram.com/le_fleur_honfleur\n\nBonus videos and exclusive live streams every month! Check out ",
+          "why_watch": "Follow along as a couple transforms a bare château room into a proper library, making decisions about built-in shelving, wood finishes, and period-appropriate details in real time. What makes it engaging is how openly they work through the tension between historical authenticity and practical livability. Less a tutorial, more a thoughtful process document for anyone who loves spaces where books belong."
         },
         {
           "source": "youtube",
-          "video_id": "qSGkJ_vsuUg",
-          "title": "The surprising reason why time doesn't flow backwards! (It's math. Not physics!)",
-          "channel_id": "UCGfFUc6eWxfbtjYeun6r9xg",
-          "channel_title": "FloatHeadPhysics",
-          "published_at": "2024-11-14T13:01:04Z",
-          "url": "https://www.youtube.com/watch?v=qSGkJ_vsuUg",
-          "duration_seconds": 1918,
-          "view_count": "369561",
-          "description": "Entropy is not a measure of disorder. Go to https://ground.news/floathead to think critically about the news you consume and be better informed. Subscribe through my link for 50% off unlimited access this month - their biggest discount of the year\n\n00:00 Why thinking of entropy as disorder causes problems\n01:25 The most fundamental question in all of physics\n03:25 A key non-intuitive statistical result\n07:14 A tool to help think critically\n08:54 Why doesn't a gas compress spontaneously? \n13:01 M",
-          "why_watch": "The video's core argument — that entropy is fundamentally a mathematical counting problem about accessible microstates, not a physical tendency toward \"disorder\" — reframes a concept most people learned incorrectly in school. The payoff is a clearer, less hand-wavy explanation of why time's arrow exists that doesn't rely on intuition-pumping analogies."
-        },
-        {
-          "source": "youtube",
-          "video_id": "ff0aofh6urU",
-          "title": "Einstein's Relativity contains a HUGE Loophole. Its Implications Can't Be Ignored.",
-          "channel_id": "UC3KV2kFy2YhjYvverIy2WnA",
-          "channel_title": "Dialect",
-          "published_at": "2023-11-18T13:11:07Z",
-          "url": "https://www.youtube.com/watch?v=ff0aofh6urU",
-          "duration_seconds": 1204,
-          "view_count": "298213",
-          "description": "An extraordinary misunderstanding lies at the heart of relativity, born in the overlooked distinction between the empirical verifiability of the two-way speed of light and the presumed isotropy of one-way light speed. What is this distinction exactly, and how might making it explicit shake the foundations of our entire paradigm of modern physics?\n\nThank you for watching and please consider supporting us on Patreon! https://www.patreon.com/dialect_philosophy\n\n\nReferences and Sources:\n\nEinstein, A",
-          "why_watch": "The specific loophole explored here is the one-way vs. two-way speed of light distinction: we've only ever measured light speed on a round trip, which means the assumption that light travels at the same speed in all directions is a convention, not an experimental fact. The video is careful not to overclaim, making it a genuinely thought-provoking look at what relativity actually proves versus what it assumes."
-        }
-      ]
-    },
-    {
-      "name": "How Does That Even Work?",
-      "emoji": "🔩",
-      "tagline": "Giant zippers, logic gates, and the beautiful machinery hiding inside everyday things.",
-      "items": [
-        {
-          "source": "youtube",
-          "video_id": "9szhjhO9epA",
-          "title": "We Made A Giant Zipper To Explain How It Works",
-          "channel_id": "UCHnyfMqiRRG1u-2MsSQLbXA",
-          "channel_title": "Veritasium",
-          "published_at": "2026-03-19T21:12:24Z",
-          "url": "https://www.youtube.com/watch?v=9szhjhO9epA",
-          "duration_seconds": 1245,
-          "view_count": "9365324",
-          "description": "How do zippers work? Sponsored by Hostinger. Host OpenClaw on a Hostinger VPS plan: https://www.hostinger.com/veritasiumopenclaw - and use code 'veritasium' for an extra discount.\n\nIf you’re looking for a molecular modelling kit, try Snatoms, a kit I invented where the atoms snap together magnetically - https://ve42.co/SnatomsV  \n\nSign up for the Veritasium newsletter for weekly science updates - https://ve42.co/Newsletter \n\n▀▀▀\nA huge thank you to Prof. Robert Friedel for his invaluable experti",
-          "why_watch": "Veritasium built a hand-sized zipper at roughly 50x scale so you can actually see the interlocking teeth mechanism in slow motion — and it turns out the physics of why zippers hold under tension is genuinely counterintuitive. Even if you think you know how zippers work, the molecular geometry explanation will likely surprise you."
-        },
-        {
-          "source": "youtube",
-          "video_id": "IjQznrdjH9s",
-          "title": "Logic Gates simulation - how computers work part 1 - Building Scott's CPU - NAND AND OR XOR-",
-          "channel_id": "UCFtCfZ4rtIZ7Hsq7ZNHoY1w",
-          "channel_title": "Computer&Electronics",
-          "published_at": "2025-01-05T17:38:14Z",
-          "url": "https://www.youtube.com/watch?v=IjQznrdjH9s",
-          "duration_seconds": 675,
-          "view_count": "1520",
-          "description": "This video shows the simulation part of the first video of the series  \"How computers work - building Scott’s CPU\". Here we use CircuitVerse, a free online simulator, to show the Logic Gates we saw in the first video. The simulated circuits are available in CircuitVerse. I leave the circuit link in the description. \nlink to CircuitVerse simulator of \"How computers work - building Scott's CPU\" : https://circuitverse.org/simulator/embed/how-computers-work-scott-s-cpu\n\nHow computers work buiding Sc",
-          "why_watch": "This is a companion simulation video to a CPU-building series, using the free CircuitVerse tool to let you watch NAND, OR, and XOR gates behave in real time rather than just reading about them. Best suited for beginners who learn better by seeing signals flow than by following static diagrams."
-        }
-      ]
-    },
-    {
-      "name": "Actually, Let's Test That",
-      "emoji": "🧪",
-      "tagline": "Controlled experiments and cold hard data — because vibes are not a methodology.",
-      "items": [
-        {
-          "source": "youtube",
-          "video_id": "a6EW3L8ylqM",
-          "title": "Straw vs No Straw: I Tested EVERY Variable (Weeds, Evaporation, Yield)",
+          "video_id": "BSq_IO7Wr-4",
+          "title": "5 vs. 50 Gallon Potato Grow Bags: THIS Is the Best Size for Potatoes",
           "channel_id": "UC5eLPZi_RSh81523mrBzHNg",
           "channel_title": "Gardening Experiments with Mind & Soil",
-          "published_at": "2026-04-16T22:59:47Z",
-          "url": "https://www.youtube.com/watch?v=a6EW3L8ylqM",
-          "duration_seconds": 996,
-          "view_count": "30101",
-          "description": "GET GARDENSTRAW THIS YEAR\n🇺🇸 Order online in USA: https://amzn.to/4sPkPig\n🇨🇦 Order online in Canada: https://amzn.to/4cqaHpO\nOr Find a Retailer Near You: https://healthistraw.com/shop/\n\nPRODUCTS I USE & LOVE (try code mindandsoil or mindandsoil10 for discounts!)\nSproutbox Metal Raised Beds: https://www.sproutboxgarden.com/\nVivosun LumaLight: https://amzn.to/4gb9zpO\nBC Greenhouse: https://www.bcgreenhouses.com/greenhouses/backyard-greenhouses/\nGardenStraw: https://healthistraw.com/gardenstraw/\nMu",
-          "why_watch": "Rather than just recommending straw mulch, this gardener actually ran controlled side-by-side beds and measured weed counts, soil moisture retention, and harvest yield across a full season. If you've wondered whether mulching is worth the effort and cost, the data here gives you a concrete answer rather than conventional wisdom."
+          "published_at": "2026-04-13T17:31:22Z",
+          "url": "https://www.youtube.com/watch?v=BSq_IO7Wr-4",
+          "duration_seconds": 1020,
+          "view_count": "26204",
+          "description": "Visit https://birchliving.com/MINDANDSOIL for 20% off site-wide and be sure to mention my channel in their post-purchase survey!\n\n🌱🍅 Want to start feeding your family from your backyard? Join my FREE Weekly Newsletter for gardening tips & videos: https://forms.gle/SrwU1EjkSScgVTVy8\n\nEXPERIMENT VIDEOS\n💡 $30 vs $300 Grow Light: WATCH This Before Buying a Grow Light! https://youtu.be/_0EFGE9ZljY\n\n💡 I Tested Every Grow Light Height https://youtu.be/LGKlQ5iGbpY\n\n💡 6 Steps To Guarantee Thriving Seedli",
+          "why_watch": "Rather than guessing which grow bag size is 'probably fine,' this channel ran a controlled side-by-side experiment across an entire growing season and measured actual yield differences. The verdict is specific and counterintuitive enough to change how you'd shop. If you're gardening in limited space and spending money on bags, this 17 minutes will pay for itself quickly."
         }
       ]
     },
     {
-      "name": "The Slow Collapse",
-      "emoji": "🏪",
-      "tagline": "When a brand that seemed immortal quietly starts falling apart — and the business decisions that got it there.",
+      "name": "Mind-Bending Rabbit Holes",
+      "emoji": "🌀",
+      "tagline": "Problems that make smart people argue and paradoxes that make your brain fold in on itself.",
       "items": [
         {
           "source": "youtube",
-          "video_id": "Sg0VKaFhqYA",
-          "title": "Is 7-Eleven In Trouble?",
-          "channel_id": "UCNaq5Jh4SQ1oBAjhQ0KPhoA",
-          "channel_title": "Weird History Food",
-          "published_at": "2026-09-13T14:15:20Z",
-          "url": "https://www.youtube.com/watch?v=Sg0VKaFhqYA",
-          "duration_seconds": 840,
-          "view_count": "4531",
-          "description": "Since its founding in 1927, the convenience store 7-Eleven has become an iconic part of American life, famous for its Slurpees and Big Gulps, being open 24/7 as well as the promise that no matter where you were, there was always one nearby. But recently, something feels different: there are fewer 7-Elevens than you remember. So what happened?\n\nIn this episode of Weird History, we’re digging into the strange history of 7-Eleven to explain how a small icehouse became one of the world’s most recogn",
-          "why_watch": "7-Eleven has quietly been closing stores at a notable rate, and this video traces the specific business decisions — from its Japanese parent company Ito-Yokado to the failed 2024 acquisition bid — that explain the decline. It's a tidy 14-minute retail autopsy that connects convenience store economics to broader shifts in how Americans actually shop now."
+          "video_id": "Ol18JoeXlVI",
+          "title": "This Paradox Splits Smart People 50/50",
+          "channel_id": "UCHnyfMqiRRG1u-2MsSQLbXA",
+          "channel_title": "Veritasium",
+          "published_at": "2026-03-09T16:02:39Z",
+          "url": "https://www.youtube.com/watch?v=Ol18JoeXlVI",
+          "duration_seconds": 1540,
+          "view_count": "9114267",
+          "description": "Two boxes, one choice, and $1,000,000. Sponsored by Brilliant -  To learn for free on Brilliant for a full 30 days, go to https://brilliant.org/veritasium. Our viewers also get 20% off an annual Premium subscription, which gives you unlimited daily access to everything on Brilliant.\n\nIn 2025, we launched the Elements of Truth game on Kickstarter and were thrilled by the response. We’re now in the final stages of production, with Kickstarter rewards shipping soon. If you missed the campaign, you ",
+          "why_watch": "Newcomb's Paradox — take one box or two when a near-perfect predictor has already made its choice — is one of those problems where both answers feel airtight and yet they contradict each other. Derek Muller lays out exactly why this splits decision theorists and philosophers down the middle, and the discomfort you feel by the end is the point. It's a rare case where a puzzle genuinely doesn't have a consensus answer, even among experts."
+        },
+        {
+          "source": "youtube",
+          "video_id": "mqgmKzRneic",
+          "title": "I finally understood why you can't add neutrons forever! (My mind is blown)",
+          "channel_id": "UCGfFUc6eWxfbtjYeun6r9xg",
+          "channel_title": "FloatHeadPhysics",
+          "published_at": "2024-10-24T13:01:05Z",
+          "url": "https://www.youtube.com/watch?v=mqgmKzRneic",
+          "duration_seconds": 1051,
+          "view_count": "649271",
+          "description": "Support me https://patreon.com/floatheadphysics to see how I learn relativity, get sneak peaks, and early video access. \n\nToo many neutrons make a nucleus unstable. But why? And how does this make Iron-56 one of the most stable elements in the universe. And how this element is actually responsible for life? Let's find out answers to all these.\n\nChapters:\n00:00 Why is iron responsible for life? \n02:31 Why do too many neutrons make nuclei unstable?\n04:02 Energy levels & Pauli's exclusion principle",
+          "why_watch": "The video starts with a question most people have never thought to ask — why can't you just keep adding neutrons to a nucleus indefinitely — and builds toward nuclear binding energy and iron-56's special place in the universe in a way that actually feels earned. The connection drawn between stellar nucleosynthesis and the existence of life on Earth is handled with genuine care rather than vague wonder. It's a good model of how to make quantum phenomena feel viscerally meaningful."
+        }
+      ]
+    },
+    {
+      "name": "The Universe Is Secretly Elegant",
+      "emoji": "✨",
+      "tagline": "Springs, curves, and coordinates — reality keeps revealing it was beautifully simple all along.",
+      "items": [
+        {
+          "source": "youtube",
+          "video_id": "SGUMC19IISY",
+          "title": "Why Almost Everything Is Actually a Spring",
+          "channel_id": "UCIZ5ZOeiXYbmKTl_85ghNPw",
+          "channel_title": "Physics Explained",
+          "published_at": "2026-01-24T20:00:30Z",
+          "url": "https://www.youtube.com/watch?v=SGUMC19IISY",
+          "duration_seconds": 2287,
+          "view_count": "153478",
+          "description": "Head to https://squarespace.com/physicsexplained to save 10% off your first purchase of a website or domain using code PHYSICSEXPLAINED\n\nIn this video, we build the Taylor (Maclaurin) series from scratch, starting from the idea of matching a function and its derivatives at a single point. We then apply this expansion to several concrete physics examples, showing how linear and quadratic approximations emerge naturally and why they are so widely used across physics.\n\n🤝 Support the channel Patreon",
+          "why_watch": "This video uses Taylor series not as an abstract math exercise but as the actual tool physicists reach for when real equations become unsolvable — showing concretely why pendulums, atomic bonds, and nearly every small-displacement problem in nature quietly reduce to spring behavior. The build from first principles is slow and patient, making it accessible even if your calculus is rusty. At 38 minutes it's a commitment, but it's the kind of video that reframes a concept you thought you already understood."
+        },
+        {
+          "source": "youtube",
+          "video_id": "TvFvL_sMg4g",
+          "title": "Conceptualizing the Christoffel Symbols: An Adventure in Curvilinear Coordinates",
+          "channel_id": "UC3KV2kFy2YhjYvverIy2WnA",
+          "channel_title": "Dialect",
+          "published_at": "2023-10-07T11:51:27Z",
+          "url": "https://www.youtube.com/watch?v=TvFvL_sMg4g",
+          "duration_seconds": 1418,
+          "view_count": "229127",
+          "description": "What are the Christoffel Symbols, and why do we need them? Our exploration into the world of differential geometry continues, as we strive to lay bare the complex mathematical machinery behind General Relativity. Here we calculate the Christoffel symbols for the most common of curvilinear coordinates system — polar coordinates — in order to build a preliminary intuition for what these symbols represent and how they relate to the metric tensor. As a bonus, we unearth the meaning of concepts like ",
+          "why_watch": "Christoffel symbols are notoriously one of the places where general relativity courses lose students to symbol-shuffling without understanding, and this video works hard to anchor them geometrically in polar coordinates before touching the abstract machinery. The visual approach to showing why straight-line motion in curved coordinate systems requires correction terms makes the concept click in a way that textbook index notation rarely does. Worth it if you're building toward general relativity and want intuition, not just formulas."
+        }
+      ]
+    },
+    {
+      "name": "Deep in the Machine",
+      "emoji": "⚙️",
+      "tagline": "For the ones who want to know exactly what the computer is doing and why it could do it faster.",
+      "items": [
+        {
+          "source": "youtube",
+          "video_id": "uMu-qZdtFWA",
+          "title": "Binary adder - Carry Look-Ahead Delay - CLA delay",
+          "channel_id": "UCFtCfZ4rtIZ7Hsq7ZNHoY1w",
+          "channel_title": "Computer&Electronics",
+          "published_at": "2025-01-02T14:37:46Z",
+          "url": "https://www.youtube.com/watch?v=uMu-qZdtFWA",
+          "duration_seconds": 667,
+          "view_count": "1204",
+          "description": "Addition is the most commonly used arithmetic operation and it is also the speed-limiting element, while making faster VLSI processors. As the demand for higher performance processors grows, there is a continuing need to improve the performance and functionality of arithmetic units like adders. In this video we see quickly the carry ripple propagation problem and we calculate the delay of the standard Carry look-Aahead adder so in the next video we see the Manchester Carry Chain: a logic to spee",
+          "why_watch": "This is a focused, no-frills walkthrough of why carry-ripple propagation becomes a bottleneck in binary adders and how carry look-ahead logic cuts that delay mathematically. It's genuinely useful if you're studying computer architecture or VLSI design and want the delay calculation spelled out step by step rather than hand-waved. Narrow audience, but for that audience, it's exactly the reference clip you'd want."
         }
       ]
     }
@@ -137,160 +137,181 @@
   "morning_soundtrack": [
     {
       "source": "music",
-      "source_name": "Stereogum",
-      "title": "Lala Lala Shares Surprise Piano Album Wall Tongue",
-      "snippet": "Earlier this year, Lillie West released the latest Lala Lala record, Heaven 2 . The nomadic indie artist likes to go on side quests; in 2024 she shared an instrumental album called if i were a real man i would be able to break the neck of a suffering bird . Now, she's back with a surprise piano LP called Wall Tongue .",
-      "url": "https://stereogum.com/2511271/lala-lala-shares-surprise-piano-album-wall-tongue/music/",
-      "genre": "",
-      "vibe_check": "Quiet, introspective keystrokes echoing through an empty apartment at 2am, when words feel too heavy to carry.",
-      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/09/a3586707434_10.jpg?w=564",
-      "embed_url": "https://lalabandlala.bandcamp.com/album/wall-tongue"
-    },
-    {
-      "source": "music",
-      "source_name": "Pitchfork",
-      "title": "Listen to Jeff Tweedy Cover Twisted Teens’ “Wild Connection”",
-      "snippet": "The Wilco frontman shared the cover of the Blame the Clown track to his Substack",
-      "url": "https://pitchfork.com/story/jeff-tweedy-twisted-teens-cover/",
-      "genre": "",
-      "vibe_check": "A warm, lived-in Saturday afternoon sound, like finding a great record at a garage sale you almost didn't stop at.",
-      "cover_url": "https://media.pitchfork.com/photos/6aa6b4023f5a3f6fe040eae0/master/pass/GettyImages-2290338970.jpg",
-      "embed_url": null
-    },
-    {
-      "source": "music",
-      "source_name": "Aquarium Drunkard",
-      "title": "Well Travelled :: Talk Talk’s Final Live Performances 40 Years On",
-      "snippet": "With In Another World: The Four Seasons of Talk Talk , music writer Graeme Thomson charts one of the most mystical trajectories ever undertaken by a one-time pop band. Today marks the 40th anniversary of the band's final live performance in Spain. To commemorate, we're pleased to share an edited extract from In Another World.",
-      "url": "https://aquariumdrunkard.com/2026/09/13/well-travelled-talk-talks-final-live-performances-40-years-on/",
-      "genre": "",
-      "vibe_check": "The bittersweet ache of standing at the edge of something legendary, knowing it's already over.",
-      "cover_url": "https://aquariumdrunkard.com/_newness/wp-content/uploads/2026/04/talk-talk-live-montreaux.jpeg",
-      "embed_url": null
-    },
-    {
-      "source": "music",
       "source_name": "JazzTimes",
-      "title": "Detroit Jazz Festival 2026: Contemporary Artists Highlight Centennial Honorees Randy Weston, John Coltrane, Miles Davis",
-      "snippet": "O n Labor Day weekend, downtown Detroit’s Hart Plaza overflowed with jazz fans eager to hear local and national musicians at the 47th annual Detroit …",
-      "url": "https://www.jazztimes.com/reviews/live/detroit-jazz-festival-2026-contemporary-artists-highlight-centennial-honorees-randy-weston-john-coltrane-miles-davis/",
+      "title": "The Even Newer Cool: Forever Future-Forward Jazz Master Bob James Flies into the 21st Century with Tony Grey and Nostalgia",
+      "snippet": "I t’s not surprising that the guy who recorded The New Cool, pianist Bob James, is forever onto the next thing. As an architect of …",
+      "url": "https://www.jazztimes.com/features/profiles/the-even-newer-cool-forever-future-forward-jazz-master-bob-james-flies-into-the-21st-century-with-tony-grey-and-nostalgia/",
       "genre": "",
-      "vibe_check": "Late-summer heat rising off concrete as the trumpet calls the crowd home one last time before autumn arrives.",
-      "cover_url": "https://www.jazztimes.com/wp-content/uploads/2026/09/ES5A8292-scaled.jpg",
-      "embed_url": null
+      "vibe_check": "The kind of jazz that feels like city lights reflected in rain-slicked pavement at midnight, always moving, never looking back.",
+      "cover_url": "https://www.jazztimes.com/wp-content/uploads/2026/09/Attach0.jpg",
+      "embed_url": "https://www.youtube.com/embed/l4mtH9NCj18"
     }
   ],
   "global_silver_linings": [
     {
       "source": "good_news",
       "source_name": "Good News Network",
-      "title": "Researchers Use Math to Ensure a Wordle Win 99% of the Time",
-      "url": "https://www.goodnewsnetwork.org/researchers-use-math-to-ensure-a-wordle-win-99-of-the-time/",
-      "snippet": "Millions of people playing their daily Wordle games will be eager to hear about this new research. Using information theory, the team of researchers from Binghamton University and State University of New York has developed a method to solve the game with a 99% success rate. In the The New York Times online game, players […]",
-      "cover_url": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/09/Wordle-on-phone-graphics-Credit-Binghamton-University-and-State-University-of-New-York.jpeg",
-      "reason": "It's quietly delightful that mathematicians are turning their skills toward something as joyful and communal as a daily word game. A reminder that serious tools can serve simple, human pleasures."
+      "title": "Good News in History September 14",
+      "url": "https://www.goodnewsnetwork.org/events060914/",
+      "snippet": "41 years ago today, the Penang Bridge officially opened connecting the Malay Peninsula with the island of Penang. Stretching 5.2 miles across the Penang Strait, it’s the second-longest bridge over water in Malaysia. Architects decided to use a cable-stayed suspension design similar to the Golden Gate Bridge rather than the steel-tied arch style of the […]",
+      "cover_url": "https://www.goodnewsnetwork.org/wp-content/uploads/2023/09/The-whole-span-of-the-Panang-Bridge-Leonard-Kong-CC-2.0.jpg",
+      "reason": "History is full of quiet turning points worth remembering — pausing to mark them reminds us that progress, however slow, has always been possible. These moments show that people before us kept going, and so can we."
     },
     {
       "source": "good_news",
       "source_name": "Upworthy",
-      "title": "Hospice nurse reveals the exact time people are most likely to die and it’s fascinating",
-      "url": "https://www.upworthy.com/hospice-nurse-reveals-exact-time-most-people-die-ex1/",
-      "snippet": "It's called the \"letting go hour.\"",
-      "cover_url": "https://www.upworthy.com/wp-content/uploads/sites/2/2025/11/origin_c9db45.png",
-      "reason": "Hospice nurses carry some of life's hardest knowledge, and when they share it openly, it helps the rest of us approach death with less fear and more understanding — a genuine gift to anyone facing loss."
+      "title": "Neuroscientists share how to ‘revive’ memories that you thought you had forgotten forever",
+      "url": "https://www.upworthy.com/neuroscientist-shows-how-to-revive-forgotten-memories-ex1/",
+      "snippet": "A lot of the memories that you thought were gone forever can be retrieved.",
+      "cover_url": "https://www.upworthy.com/wp-content/uploads/sites/2/2025/08/origin-141.png",
+      "reason": "The idea that lost memories may not be gone forever is genuinely exciting, offering hope for people coping with aging or neurological challenges. It also deepens our appreciation for the remarkable resilience of the human mind."
+    },
+    {
+      "source": "good_news",
+      "source_name": "Reasons to be Cheerful",
+      "title": "With Adapted Sailing, the Sea Is for Everyone",
+      "url": "https://reasonstobecheerful.world/adapted-sailing-school/",
+      "snippet": "César Maquieira has always loved the sea. Born and raised in the northwest of Spain, much of which is bordered by the Atlantic Ocean, he would for years regularly go fishing and on boat trips, and he dabbled in scuba diving. There was something about the great expanse of azure...",
+      "cover_url": "https://reasonstobecheerful.world/wp-content/uploads/2026/09/Cesar-Maquieira-Credit-Monte-Real-Club.jpg",
+      "reason": "Adapted sailing programs are opening up the freedom and wonder of the open water to people who might never have thought it was possible for them. There's something deeply moving about the sea becoming a place of belonging for everyone, regardless of ability."
+    },
+    {
+      "source": "good_news",
+      "source_name": "The Optimist Daily",
+      "title": "The gardening window most people miss: late summer and early fall weed control",
+      "url": "https://www.optimistdaily.com/2026/09/the-gardening-window-most-people-miss-late-summer-and-early-fall-weed-control/",
+      "snippet": "Image alt text: Close-up of dandelion seed heads and crabgrass growing between garden bed plants in late summer A single dandelion, left to finish its summer in the garden, can drop thousands of seeds. Those seeds can lie dormant in the soil for a long, long time. Basically, the weed you let go in August […] The post The gardening window most people miss: late summer and early fall weed control first appeared on The Optimist Daily: Making Solutions the News .",
+      "cover_url": "",
+      "reason": "Late summer is a golden window for gardeners to get ahead of next year's weeds naturally, working with the season rather than against it. Small, well-timed actions in the garden can make an outsized difference — a quiet reminder that patience and timing matter more than brute effort."
     }
   ],
   "discovery_articles": [],
   "featured_read": {
     "source": "reads",
-    "source_name": "Nautilus",
-    "title": "Gondwana Really Was a Supercontinent",
-    "url": "https://nautil.us/gondwana-really-was-a-supercontinent-1284991/",
-    "snippet": "And it helped kick‑start life on Earth",
-    "cover_url": "https://lede-admin.nautil.us/wp-content/uploads/sites/70/2026/09/AdobeStock_463806885.jpeg",
-    "blurb": "Before continents were landmarks, they were engines — and Gondwana, it turns out, may have been the engine that got life itself moving. This piece traces how a single ancient landmass quietly set the table for everything that followed."
+    "source_name": "Literary Hub",
+    "title": "The Legend of “The Legend of Sleepy Hollow”",
+    "url": "https://lithub.com/the-legend-of-the-legend-of-sleepy-hollow/",
+    "snippet": "“Rip van Winkle” begins with a description setting the scene between the Hudson River and the Catskill Mountains (“these fairy mountains,” which Irving so loved), then introduces us to the protagonist. Rip is a descendant of the Van Winkles who",
+    "cover_url": "https://s26162.pcdn.co/wp-content/uploads/2026/09/sleepy-hollow.jpg",
+    "blurb": "Washington Irving invented the American ghost story almost by accident, and this essay traces how a single foggy Hudson Valley hollow became the template for every haunted landscape that followed. It's a quiet thrill to learn how much deliberate craft hides inside what feels like folklore."
   },
   "reading_room": [
     {
       "source": "reads",
-      "source_name": "Psyche",
-      "title": "Lessons from Wyatt Earp country",
-      "url": "https://psyche.co/turning-points/my-father-absent-a-farmer-showed-me-what-it-was-to-be-a-man",
-      "snippet": "How does a man show up for his community? I learned from an old farmer on the edge of the desert - by Zeno Franco Read on Psyche",
-      "cover_url": "https://images.aeonmedia.co/images/0bb61557-1f19-466a-a4ab-e50c174d4e62/mentone.jpg?top=302&left=9&cropWidth=2864&cropHeight=1611&width=1200&quality=75&format=jpeg",
-      "blurb": "On the edge of Wyatt Earp country, a writer meets an old farmer and finds an unexpectedly quiet answer to a question men rarely ask aloud: what does it actually mean to show up? Bring your patience for the kind of wisdom that doesn't announce itself."
+      "source_name": "The Atlantic",
+      "title": "The Birth of the New Legal Right",
+      "url": "https://www.theatlantic.com/ideas/2026/09/federalist-society-conference-conservative-court/688555/?utm_source=feed",
+      "snippet": "Forty-four years ago, a conservative legal convention offered disaffected students an identity—and hope.",
+      "cover_url": "https://cdn.theatlantic.com/thumbor/0ddCOo-rDHtUBUCvwCy-PciVP18=/0x0:3994x2080/1200x625/media/img/mt/2026/09/2026_09_13_Book_excerpt_The_Three_Day_Conference_that_Changed_the_World_Alex_Wagner/original.jpg",
+      "blurb": "This is the origin story of the Federalist Society told not as triumph but as grievance — a handful of alienated law students who turned outsider identity into the most consequential legal movement of the past half-century. The question it leaves hanging is how much of American law was reshaped by a feeling."
+    },
+    {
+      "source": "reads",
+      "source_name": "The Atlantic",
+      "title": "The Sadness of Being the ‘Last Man’",
+      "url": "https://www.theatlantic.com/books/2026/09/francis-fukuyama-in-the-realm-of-the-last-man-memoir-book-review/688548/?utm_source=feed",
+      "snippet": "Francis Fukuyama has long been considered a naive triumphalist. He now wants to set the record straight.",
+      "cover_url": "https://cdn.theatlantic.com/thumbor/I8bSA-PKRHBLSyN0k9UKj-upkVM=/0x61:2876x1559/1200x625/media/img/mt/2026/09/2026_09_04_Fukuyamas_Self_Revision_1432891845/original.jpg",
+      "blurb": "Francis Fukuyama spent three decades being misquoted into a caricature of himself, and now he's finally explaining what 'the end of history' actually meant — and why its misreaders may have hastened the very chaos they claimed to predict. A rare chance to watch an idea get rescued from its own fame."
+    },
+    {
+      "source": "reads",
+      "source_name": "Asterisk",
+      "title": "These Wild Young People",
+      "url": "https://asteriskmag.com/issues/14/these-wild-young-people",
+      "snippet": "Gen Z are a bunch of cowards…or are they risking it all on crypto? The editors of The New Critic report on their generation’s Risk-geist.",
+      "cover_url": "https://asteriskmag.com/media/pages/issues/14/these-wild-young-people/2f0762f841-1778526443/these-wild-young-people-1600x900-crop-sharpen50.png",
+      "blurb": "Gen Z is either catastrophically risk-averse or recklessly betting everything on speculative assets, and this essay argues both things are true at once — which says something sharp about what it means to come of age when the safe path and the reckless one look nearly identical."
+    },
+    {
+      "source": "reads",
+      "source_name": "Nautilus",
+      "title": "Are Too Many Americans Taking Antidepressants?",
+      "url": "https://nautil.us/are-too-many-americans-taking-antidepressants-1284975/",
+      "snippet": "Rates of anxiety and depression have grown since the COVID-19 pandemic—as have prescriptions for antidepressants",
+      "cover_url": "https://lede-admin.nautil.us/wp-content/uploads/sites/70/2026/09/AdobeStock_191230440.jpeg",
+      "blurb": "This isn't a scare piece about overprescription — it's a genuinely uncomfortable sit with the question of whether we're medicating distress that might actually be a reasonable response to the world as it is. The kind of essay that makes you stare out the window for a while after."
     },
     {
       "source": "reads",
       "source_name": "Longreads",
-      "title": "The Extraordinary Untold Story of Freddie Mercury: Mary Austin on Her Best Friend–and Love of Her Life",
-      "url": "https://longreads.com/2026/09/09/queen-freddie-mercury-mary-austin/",
-      "snippet": "\"He was Queen’s flamboyant frontman. She was his shy girlfriend, dreaming of marriage until they both realised he preferred men.\"",
+      "title": "Ballroom Blitz",
+      "url": "https://longreads.com/2026/09/09/ballroom-blitz-white-house/",
+      "snippet": "\"Trump’s obsessive bid for architectural immortality is barreling toward completion.\"",
       "cover_url": "",
-      "blurb": "Mary Austin watched Freddie Mercury become a legend while quietly holding the part of him the world never saw — and this is her account of a love that didn't fit any category either of them had a name for. It's a portrait of devotion in the negative space of fame."
-    },
-    {
-      "source": "reads",
-      "source_name": "Literary Hub",
-      "title": "Lit Hub Daily: September 11, 2026",
-      "url": "https://lithub.com/lit-hub-daily-september-11-2026/",
-      "snippet": "Where does Harlan Coben get ideas? “Sometimes, it’s a simple ‘what-if.’” | Lit Hub Craft Phillip Lopate explores the lore and legacy of “The Legend of Sleepy Hollow.” | Lit Hub Biography Steven W. Thrasher reads No God But Us",
-      "cover_url": "https://s26162.pcdn.co/wp-content/uploads/2026/09/LoisLenskiCovey.jpg",
-      "blurb": "A roundup rather than a single essay, today's Lit Hub daily skips the longread invitation — but Phillip Lopate on the gothic fog of Sleepy Hollow is worth the detour if you have ten spare minutes."
-    },
-    {
-      "source": "reads",
-      "source_name": "The Atlantic",
-      "title": "The Property-Tax Revolution",
-      "url": "https://www.theatlantic.com/ideas/2026/09/florida-taxes-amendment/688594/?utm_source=feed",
-      "snippet": "States can’t afford these cuts.",
-      "cover_url": "https://cdn.theatlantic.com/thumbor/CZwVgpCDPCJ9Zc8oa3LR9TnEsYc=/0x43:2000x1085/1200x625/media/img/mt/2026/09/FloridaPropertyTax/original.png",
-      "blurb": "Property-tax cuts feel like relief until they become a slow structural collapse — this piece maps exactly how states are quietly sawing off the branch they're sitting on. The fiscal sleight-of-hand is more alarming, and more intimate, than the dry headline suggests."
-    },
-    {
-      "source": "reads",
-      "source_name": "The Atlantic",
-      "title": "Facing the Music",
-      "url": "https://www.theatlantic.com/magazine/2026/10/boris-dralyuk-facing-the-music/688345/?utm_source=feed",
-      "snippet": "A poem",
-      "cover_url": "https://cdn.theatlantic.com/thumbor/12pwe8q5KpX5H9WINdqDZEFsNIE=/0x43:2000x1085/1200x625/media/img/2026/09/facingthemusic/original.jpg",
-      "blurb": "A poem named 'Facing the Music' is already asking you to sit with something you've been putting off — set aside two minutes and let it ask the question properly."
+      "blurb": "Trump's renovation of the capital's architecture turns out to be a decades-long obsession with outlasting his critics in marble and gilding, and this essay reads those blueprints as a kind of psychological document. Grandiosity, it turns out, leaves a paper trail."
     }
   ],
   "garden_note": {
-    "note": "Early autumn has a particular kind of honesty about it in Zürich — the dahlias are still blazing, but the air after sunset carries that cool, faintly mineral edge that tells you summer is quietly folding its tent. Step outside before 20:13 and catch that last blush of dusk over the Uetliberg before the night settles in properly.",
+    "note": "There's a cool, dewy hush over Zürich this morning — the kind that arrives when summer finally exhales and lets autumn in through the back gate. Step outside just after first light and you'll catch the dahlias still blazing against the mist, as if they haven't quite accepted the season's turning.",
     "in_season": [
-      "Dahlias in full, defiant colour",
-      "Quince ripening on the branch",
-      "Cutting back spent perennials",
-      "Harvesting late-season courgettes and climbing beans"
+      "Dahlias — peak bloom, deadhead generously",
+      "Apples and early pears — watch for windfalls at the base of the tree",
+      "Leeks — ready to lift as needed, hardy enough to leave in ground",
+      "Sow hardy lamb's lettuce (Feldsalat) for autumn harvest"
     ],
-    "sky_tonight": "A whisper-thin waxing crescent moon sets early in the southwest — look for it low on the horizon just after sunset, with Venus likely keeping it company.",
-    "sun_times": "First light arrives at 06:29, sunrise at 06:59, and the sun slips away at 19:44 — dusk lingers until 20:13.",
+    "sky_tonight": "A slim waxing crescent moon hangs low in the southwest after dusk — look for it near Venus if the evening sky clears.",
+    "sun_times": "First light arrives at 06:31 this morning, with the sun rising properly at 07:00 and setting at 19:42 tonight.",
     "moon_label": "Waxing crescent",
-    "illum_pct": 4,
-    "sun_range": "06:59–19:44"
+    "illum_pct": 7,
+    "sun_range": "07:00–19:42"
   },
   "puzzle": {
-    "kind": "riddle",
+    "kind": "haiku riddle",
     "label": "Fern's Morning Riddle",
-    "prompt": "What can you catch but not throw?",
-    "answer": "A cold",
-    "hint": "",
-    "source": "riddles.com",
-    "source_id": "Riddle-1925"
+    "prompt": "I curl without wind\nEach morning I fall away\nSteam forgets itself",
+    "answer": "Fog (or morning mist)",
+    "hint": "Think of what lingers low to the ground at dawn and vanishes as the sun rises."
   },
   "previous_puzzle": {
-    "label": "The Evening Trivia",
-    "prompt": "In most FPS video games such as Counter-Strike, shooting which part of the body does the highest damage?\n\nArm   ·   Chest   ·   Head   ·   Leg",
-    "answer": "Head"
+    "label": "Fern's Morning Riddle",
+    "prompt": "What can you catch but not throw?",
+    "answer": "A cold"
   },
   "larder": {
-    "news": [],
-    "recipe": {}
+    "news": [
+      {
+        "source": "food",
+        "source_name": "The Kitchn",
+        "title": "Carla Hall’s Chicken Pot Pie Pop Tarts",
+        "url": "https://www.thekitchn.com/carla-hall-chicken-pot-pie-pop-tarts-recipe-review-23842949?utm_source=RSS&utm_medium=feed&utm_campaign=Category%2FChannel%3A+main",
+        "snippet": "Pot pie, but make it handheld.",
+        "cover_url": "",
+        "blurb": "Carla Hall has done what we didn't know we needed — tucked all the warmth of a Sunday pot pie into something you can eat standing at the kitchen counter, no fork required."
+      },
+      {
+        "source": "food",
+        "source_name": "The Guardian",
+        "title": "Hot and sour, vegetarian mapo and in spicy sauce: Fuchsia Dunlop’s tofu recipes",
+        "url": "https://www.theguardian.com/food/2026/sep/14/hot-sour-vegetarian-mapo-spicy-sauce-tofu-recipes-fuchsia-dunlop",
+        "snippet": "Wobblesome, firm or silken, tofu is a star ingredient in Chinese cooking. These dishes show why In the west, tofu is often viewed as a substitute for meat, which may explain why firmer types that can be cut into chunks and fried or grilled like meat have become so ubiquitous. In China, however, where tofu has been eaten for at least 1,000 years, it isn’t a substitute for anything; it’s simply a protein-rich ingredient that forms part of most people’s diets, can be cooked with meat and fish, and comes in myriad forms, from the tender, wobbly tofu used to make Sichuanese mapo tofu to firm smoked tofu, sheets of tofu “skin” and the silken tofu that can be as soft as creme caramel.",
+        "cover_url": "https://i.guim.co.uk/img/media/f52d70e6e9c1b4679f0f2bd78379f3d555c6c221/45_1954_5270_4216/master/5270.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=32f93873e134c87fe3ab348f3fd648e5",
+        "blurb": "Fuchsia Dunlop makes a compelling case that tofu deserves to be the star of the dish rather than a reluctant understudy, and these three recipes are the evidence."
+      },
+      {
+        "source": "food",
+        "source_name": "Saveur",
+        "title": "An Insider’s Guide to the Best Coffee Shops in Bogotá",
+        "url": "https://www.saveur.com/travel/best-coffee-shops-bogota/",
+        "snippet": "Juan Arredondo While old-school cafés still thrive, the Colombian capital is leaning into yuzu cold brews and single-origin pour-overs.",
+        "cover_url": "https://www.saveur.com/uploads/2026/09/BOGOTA_COFFEE_ARREDONDO_SAVEUR_194_01-scaled.jpg?auto=webp&width=2000&height=1125",
+        "blurb": "Bogotá's coffee scene is quietly becoming one of the most exciting in the world, and this guide is the perfect companion before — or instead of — booking a flight."
+      }
+    ],
+    "recipe": {
+      "source": "recipe",
+      "source_name": "Smitten Kitchen",
+      "title": "chicken salad for celery enthusiasts",
+      "url": "https://smittenkitchen.com/2026/05/chicken-salad-for-celery-enthusiasts/",
+      "snippet": "I’m not sure if this is a sign of hitting a certain age — like a sudden interest in bird feeders (check, and please tell me about yours), or beekeeping (well, in the TikTok sense, not sorry ), and animated conversations on the best pillows (I hate mine) — but I’ve found over the last year that I have very strong opinions on chicken salad and the correct way to make it, which, naturally, is my way. I hope I’m in the right place to release them into the world.",
+      "is_recipe": true,
+      "cover_url": "",
+      "blurb": "This chicken salad is a crisp, cool, no-fuss lunch that finally gives celery its long-overdue moment in the spotlight — lovely for a breezy afternoon when you want something satisfying without turning on the oven."
+    },
+    "seasonal_note": "Zürich's Tuesday and Saturday markets at Bürkliplatz are quietly glorious right now — hunt down the first Berner Rosen apples and a wedge of young Appenzeller to eat together on a bench by the lake, where the morning mist still hasn't fully lifted."
   },
   "fern_data": {
-    "greeting": "That particular blue of an early autumn dusk — somewhere between slate and bruise — is worth sitting inside for a moment. Tonight's edition moves through it with the arrow of time (turns out it's a math problem, not a physics one) and a hospice nurse's finding about the precise hour people tend to leave.",
-    "top_pick_title": "One Direction, No Exceptions"
+    "greeting": "Almost everything — pendulums, atoms, bridges, heartbeats — is secretly a spring. That one sits in today's edition alongside a paradox that splits genuinely smart people straight down the middle, and the gothic pleasures of building a library worthy of a château.",
+    "top_pick_title": "Springs, Secrets & Sleepy Hollow"
   }
 }
