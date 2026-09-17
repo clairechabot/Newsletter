@@ -1,115 +1,102 @@
 {
-  "fetched_at": "2026-09-16T20:15:30.440566+02:00",
-  "is_am_email": false,
+  "fetched_at": "2026-09-17T10:46:04.227520+02:00",
+  "is_am_email": true,
   "audit_summary": {
-    "youtube_videos": 6,
+    "youtube_videos": 5,
     "themes": 3,
     "music_articles": 12,
     "good_news_articles": 3,
-    "discovery_articles": 11,
+    "discovery_articles": 5,
     "featured_read": 1,
     "reading_room": 5,
     "garden": 1,
     "puzzle": 1,
-    "larder": 0
+    "larder": 4
   },
   "themes": [
     {
-      "name": "You Had to Be There",
-      "emoji": "🎞️",
-      "tagline": "History reconstructed frame by frame — the moments that slipped through the cracks of the official record.",
+      "name": "Rabbit Holes Worth Falling Down",
+      "emoji": "🕳️",
+      "tagline": "One obscure question, one satisfying answer, and a brain slightly more interesting than before.",
       "items": [
         {
           "source": "youtube",
-          "video_id": "QVrhPejQz3k",
-          "title": "I time travelled to Rome during La Dolce Vita #history",
-          "channel_id": "UCZB1r1In9RfE7tpVrYgcjLQ",
-          "channel_title": "Chloe VS History",
-          "published_at": "2026-09-16T14:41:41Z",
-          "url": "https://www.youtube.com/watch?v=QVrhPejQz3k",
-          "duration_seconds": 174,
-          "view_count": "2039",
+          "video_id": "4SKpHDjf6_Q",
+          "title": "Who Said The First Bad Word On The Moon?",
+          "channel_id": "UC6nSFpj9HTCZ5t-N3Rm3-HA",
+          "channel_title": "Vsauce",
+          "published_at": "2026-09-16T18:43:12Z",
+          "url": "https://www.youtube.com/watch?v=4SKpHDjf6_Q",
+          "duration_seconds": 136,
+          "view_count": "194866",
           "description": "",
-          "why_watch": "Chloe overlays archival footage and photos to reconstruct what Rome actually looked and felt like during the late 1950s 'sweet life' era — a quick but evocative visual time-slip. At under three minutes, it's less a documentary and more a mood piece that earns its runtime. Good palette cleanser if you have any fondness for Fellini-era Italy."
+          "why_watch": "A perfectly sized two-minute detour into a genuinely obscure historical footnote: who broke decorum first on the lunar surface. Vsauce treats it as a mini-mystery with a satisfying answer, and the constraint of the short format keeps it tight and fun."
         },
         {
           "source": "youtube",
-          "video_id": "y5PSqricp-U",
-          "title": "Daring 1944 PT Boat Rescue",
-          "channel_id": "UC4sEmXUuWIFlxRIFBRV6VXQ",
-          "channel_title": "The History Guy: History Deserves to Be Remembered",
-          "published_at": "2026-09-16T12:00:07Z",
-          "url": "https://www.youtube.com/watch?v=y5PSqricp-U",
-          "duration_seconds": 1082,
-          "view_count": "7802",
-          "description": "#sponsored Go to https://snhu.edu/thehistoryguy to explore over 200 degree programs and find your path forward. Accepts US students only.\n\nOn September 16, 1944 Ensign Harold A Thompson was flying in his FM-2  Wildcat, attacking Japanese barges off the island of Halmahera when his plane was struck by anti-aircraft fire.  He found himself wounded, afloat in a bay surrounded by enemy.  But the Japanese defending the island would find out the extent of the US Navy Combat Search and Rescue  ethos of",
-          "why_watch": "The History Guy reconstructs the September 1944 rescue of a downed Navy pilot stranded in a Japanese-controlled bay off Halmahera — a story that somehow never made it into the popular WWII canon. What makes it compelling is the specific tactical detail: how a PT boat crew improvised a rescue under fire in waters they had no business being in. Eighteen minutes that feel well-earned."
-        }
-      ]
-    },
-    {
-      "name": "Reality Has a Bug Report",
-      "emoji": "🌀",
-      "tagline": "The universe's weirdest edge cases — where physics stops answering and starts shrugging.",
-      "items": [
-        {
-          "source": "youtube",
-          "video_id": "f3jhbui5Cqs",
-          "title": "What ACTUALLY Happens at the Planck Length?",
-          "channel_id": "UCIZ5ZOeiXYbmKTl_85ghNPw",
-          "channel_title": "Physics Explained",
-          "published_at": "2025-11-01T20:00:36Z",
-          "url": "https://www.youtube.com/watch?v=f3jhbui5Cqs",
-          "duration_seconds": 1946,
-          "view_count": "1709430",
-          "description": "Thanks to Brilliant for sponsoring this video! Try everything Brilliant has to offer at https://brilliant.org/PhysicsExplained — and get 20% off an annual premium subscription.\n\nEach time we’ve built a new tool to look deeper into nature, we’ve uncovered hidden worlds — from cells and atoms to quarks and fields. But can we keep zooming in forever?\n\nAt first, shorter wavelengths mean finer detail. Yet if we push far enough, the energy required to probe smaller regions would collapse spacetime its",
-          "why_watch": "This video goes beyond the usual 'the Planck length is the smallest possible thing' shorthand and actually explains why that claim is misleading — it's about where our current physics equations break down, not a hard wall in nature. The channel does genuine mathematical legwork without losing the thread, and the 32 minutes feel structured rather than padded. Worth it if you've ever felt the pop-sci explanation left something out."
-        },
-        {
-          "source": "youtube",
-          "video_id": "6TXvaWX5OFk",
-          "title": "I finally understood why quantum particles are uncertain! (My mind is blown)",
+          "video_id": "ZbGxXyqlhbU",
+          "title": "Why is the speed of light 299,792,458 m/s? (and not 300,000 km/s)",
           "channel_id": "UCGfFUc6eWxfbtjYeun6r9xg",
           "channel_title": "FloatHeadPhysics",
-          "published_at": "2024-06-28T13:00:08Z",
-          "url": "https://www.youtube.com/watch?v=6TXvaWX5OFk",
-          "duration_seconds": 1283,
-          "view_count": "829297",
-          "description": "Support me https://patreon.com/floatheadphysics to see how I learn relativity, get sneak peaks, and early video access. \n\nTo try everything Brilliant has to offer—free—for a full 30 days, visit https://brilliant.org/FloatHeadPhysics . You’ll also get 20% off an annual premium subscription.\n\nI thought I had a pretty good grasp about the uncertainty principle. But, I was wrong. In this video let's try to rediscover what the uncertainty principle is really about, intuitvely!\n\nChapters:\n00:00 Common",
-          "why_watch": "FloatHeadPhysics starts from an honest admission — he thought he understood the uncertainty principle, then realized he'd been carrying the standard wave-packet explanation without grasping what actually constrains conjugate variables. The video builds the Fourier relationship between position and momentum from scratch in a way that makes the 'why' click rather than just the 'what.' A good corrective if your intuition on this has always felt slightly borrowed."
+          "published_at": "2024-06-14T13:00:37Z",
+          "url": "https://www.youtube.com/watch?v=ZbGxXyqlhbU",
+          "duration_seconds": 960,
+          "view_count": "147742",
+          "description": "To try everything Brilliant has to offer—free—for a full 30 days, visit https://brilliant.org/FloatHeadPhysics . You’ll also get 20% off an annual premium subscription\n\nLet's explore how the speed of light in vacuum is connected to the size of the earth!\n\nThis video was sponsored by Brilliant",
+          "why_watch": "The specific question here is sharper than it first appears: the speed of light is a defined constant, so why isn't it a round number? The answer ties the meter's historical definition to the size of the Earth, and the chain of reasoning is genuinely satisfying rather than trivia-level. A nice 16-minute reminder that unit systems carry hidden history."
         }
       ]
     },
     {
-      "name": "The Forbidden Loop",
-      "emoji": "🔁",
-      "tagline": "Paradoxes, self-reference, and the places where logic eats itself alive.",
+      "name": "Where Physics Gets Weird",
+      "emoji": "🌀",
+      "tagline": "The universe doesn't play by tidy rules — and these videos show exactly where the seams start to split.",
       "items": [
         {
           "source": "youtube",
-          "video_id": "5LWQPGjAs3M",
-          "title": "The Strengthened Liar and Paradoxes of Incompleteness",
-          "channel_id": "UC3KV2kFy2YhjYvverIy2WnA",
-          "channel_title": "Dialect",
-          "published_at": "2023-04-08T11:50:46Z",
-          "url": "https://www.youtube.com/watch?v=5LWQPGjAs3M",
-          "duration_seconds": 923,
-          "view_count": "35720",
-          "description": "The Liar's Statement is one the most infamous problems in logic, but less well-understood is this paradox's connection to the concept of formal incompleteness. Indeed a close examination of this relationship produces an unexpected connection, leading us to ask — are some of the most famous theorems that have come out of mathematics, logic, and computability over the last century nothing more than a trivial application of reasoning known as the Strengthened Liar?\n\nContent:\n00:00 - Intro\n00:57 - T",
-          "why_watch": "Dialect traces a specific, underappreciated thread: how the Liar's Paradox ('this statement is false') is structurally entangled with Gödel's incompleteness theorems and the halting problem — suggesting these landmark results may share a common logical skeleton. The argument is made carefully enough that it doesn't collapse into vague analogy. If you know the results but haven't seen them lined up this way, the 15 minutes reframe something you thought you already understood."
+          "video_id": "yTEPm5d6mrI",
+          "title": "Why Quantum Gravity Doesn't Work",
+          "channel_id": "UCIZ5ZOeiXYbmKTl_85ghNPw",
+          "channel_title": "Physics Explained",
+          "published_at": "2025-10-25T19:01:00Z",
+          "url": "https://www.youtube.com/watch?v=yTEPm5d6mrI",
+          "duration_seconds": 1762,
+          "view_count": "398102",
+          "description": "Try Opera Browser for free: https://opr.as/Opera-browser-physicsexplainedvideos\n\nQuantum mechanics and general relativity both describe nature with astonishing precision, but when we try to combine them using the same perturbative tools that work so well in quantum electrodynamics, the method breaks down.\n\nIn QED, the small value of the fine-structure constant ensures that higher-order corrections remain tiny, allowing us to make incredibly accurate predictions. For gravity, however, the effecti",
+          "why_watch": "This video pinpoints exactly why combining quantum mechanics and general relativity fails — not hand-waving about 'incompatibility,' but a precise explanation of why the perturbative math that works beautifully in QED produces unmanageable infinities when gravity enters the picture. At 29 minutes it's genuinely technical, but Physics Explained earns the runtime by building the argument step by step rather than retreating into metaphor."
         },
         {
           "source": "youtube",
-          "video_id": "o3Le0ek5W1s",
-          "title": "Sallen-Key Active Filter",
+          "video_id": "hFlzQvAyH7g",
+          "title": "The River Model of General Relativity",
+          "channel_id": "UC3KV2kFy2YhjYvverIy2WnA",
+          "channel_title": "Dialect",
+          "published_at": "2023-03-11T13:00:02Z",
+          "url": "https://www.youtube.com/watch?v=hFlzQvAyH7g",
+          "duration_seconds": 1174,
+          "view_count": "140243",
+          "description": "Does space \"flow\" like a river? There's an analogy in General Relativity positing exactly that, and which, astonishingly enough, conveys the sophistication of Einstein's theory via a few simple intuitions. But how truthful is such a view, and what would it imply about the most infamous of massive objects to inhabit our universe -- that of the black hole? Climb aboard our river-boat and find out! Plus -- Curious Edgar finds himself in more than one vertiginous predicament.\n\nCredit for the thumbna",
+          "why_watch": "The 'river model' of spacetime — where space itself flows inward toward a black hole like a current — is one of the more underexplored analogies in pop-physics, and Dialect takes it seriously enough to examine where it holds up and where it quietly breaks down. The black hole section alone makes it worth the 20 minutes, especially if Schwarzschild coordinates have ever left you cold."
+        }
+      ]
+    },
+    {
+      "name": "The Signal Behind the Static",
+      "emoji": "⚡",
+      "tagline": "Electrons, gaps, and the elegant logic hiding inside your circuit board.",
+      "items": [
+        {
+          "source": "youtube",
+          "video_id": "SfHEcOZId-I",
+          "title": "From capacitor to passive filters - impedance, reactance and high order filter issues",
           "channel_id": "UCFtCfZ4rtIZ7Hsq7ZNHoY1w",
           "channel_title": "Computer&Electronics",
-          "published_at": "2024-09-13T09:27:36Z",
-          "url": "https://www.youtube.com/watch?v=o3Le0ek5W1s",
-          "duration_seconds": 553,
-          "view_count": "4159",
-          "description": "This video talks about Sallen-Key active filters. This is a simple topology used to implement second order active filters. We see why you use active filters instead of the passive ones and the transfer function of this particular second order low-pass filter.\nFrom capacitor to passive filters: https://youtu.be/SfHEcOZId-I\nMiller Effect: https://youtu.be/TD3jhSzOdqI\nNegative Resistance: https://youtu.be/RuRQpavgOtM",
-          "why_watch": "A concise, no-frills walkthrough of the Sallen-Key topology — one of the most widely used second-order active filter designs — covering both the intuition for why you'd choose it over passive filters and the transfer function derivation. At nine minutes it respects your time and assumes you're already comfortable with basic circuit concepts. Useful as a focused reference rather than an intro."
+          "published_at": "2024-09-02T13:13:41Z",
+          "url": "https://www.youtube.com/watch?v=SfHEcOZId-I",
+          "duration_seconds": 995,
+          "view_count": "297",
+          "description": "This video talks about passive filters starting from the inner properties of capacitors to high order filters. We explains why current flows in a circuit although the presence of the capacitor and why this foundamental element is used to create filters allowing only some frequencies to pass. We approch filters of second order and the problem you face in building filter of high order. \nMiller effect made easy: https://youtu.be/TD3jhSzOdqI\nDifferential Amplifier : https://youtu.be/bongv60GqIY",
+          "why_watch": "A compact electronics primer that traces a clean line from capacitor fundamentals — why current flows despite the gap — through to the real-world headaches of building high-order passive filters, including the Miller effect. Worth bookmarking if you've ever followed a filter design tutorial without understanding why it actually works."
         }
       ]
     }
@@ -118,367 +105,343 @@
     {
       "source": "music",
       "source_name": "Stereogum",
-      "title": "The Church Announce New Album Lacuna: Hear “Western”",
-      "snippet": "Australian greats the Church have been making jangly, gauzy space-out music for nearly half a century now, and they were giants of the late-'80s college rock universe. I covered them in my Alternative Number Ones column a couple of years ago, and it wasn't even for \"Under The Milky Way Tonight.\" In that time, the Church have never stopped making new music, and they've just announced plans to follow 2024's Eros Zeta And The Perfumed Guitars with a new LP called Lacuna .",
-      "url": "https://stereogum.com/2511629/the-church-announce-new-album-lacuna-hear-western/music/",
+      "title": "Just Penelope – “Copenhagen”",
+      "snippet": "Just Penelope's debut EP Great Lake is out this Friday, and they're still heightening the anticipation. The Bloomington band has shared \" After \" (which made our list of the 5 best songs of the week ) and \" Sister ,\" but the latest single \"Copenhagen\" might be the best one yet.",
+      "url": "https://stereogum.com/2511688/just-penelope-copenhagen/music/",
       "genre": "",
-      "vibe_check": "Drift music for late nights staring at a ceiling that feels like the Milky Way.",
-      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/09/The-Church-Lacuna.jpeg?w=564",
-      "embed_url": "https://www.youtube.com/embed/V8dgaUcORqk"
+      "vibe_check": "The kind of song that makes you want to book a flight somewhere cold and beautiful just to feel something.",
+      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/09/download-25-3.jpeg?w=564",
+      "embed_url": "https://www.youtube.com/embed/NS9KxWNH0CI"
     },
     {
       "source": "music",
       "source_name": "Stereogum",
-      "title": "Sponge Announce Final Album Recuerda Tu Muerte: Hear “Self Inflicted Loss”",
-      "snippet": "Detroit alt-rockers Sponge were all over the radio in the years after they released their gold-selling 1994 debut album Rotting Piñata . They haven't been that prominent since then, but they've stuck around and continued to release music. In 2024, they released 1994 , an album that was just covers of songs from that year.",
-      "url": "https://stereogum.com/2511621/sponge-announce-final-album-recuerda-tu-muerte-hear-self-inflicted-loss/music/",
+      "title": "Song People – “The Cone”",
+      "snippet": "They call themselves Song People, and they're once again proving it today. The Philly band showed off their unique blend of jangle-pop, dream-pop, post-punk, and folk on \" Silver Flag ,\" the lead single from new album Tho I Seem Tame . Second single \"The Cone\" is out now, and it continues to make me imagine a timeline in which Fairport Convention were a C86 band.",
+      "url": "https://stereogum.com/2511684/song-people-the-cone/music/",
       "genre": "",
-      "vibe_check": "The bittersweet last call at a dive bar where the jukebox still plays 1994.",
-      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/09/Sponge-album.jpeg?w=564",
-      "embed_url": "https://www.youtube.com/embed/CHPjmpikOV0"
+      "vibe_check": "Autumnal jangle that sounds like flipping through a dog-eared paperback at a record fair in the drizzle.",
+      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/09/unnamed-2026-09-16T153918.893.jpg?w=564",
+      "embed_url": "https://songpeople.bandcamp.com/album/tho-i-seem-tame"
     },
     {
       "source": "music",
       "source_name": "Stereogum",
-      "title": "Snail Mail’s Lindsey Jordan Joins Liz Phair For “Go West” In Denver",
-      "snippet": "Before she started her Snail Mail project, Lindsey Jordan had a Liz Phair cover band called Lizard Phair. In 2018, Jordan and Phair did a Pitchfork interview together (with former Stereogummer Claire Lobenfeld, shout out) and Jordan said, \"I would have thought of something better if I knew I would have had to say it to your face.\" Right now, Phair is touring with fellow '90s indie greats Sleater-Kinney, and Snail Mail, coming off the release of her recent album Ricochet , is opening some of those shows. On Monday night, she got to perform a Liz Phair song with the real Liz Phair.",
-      "url": "https://stereogum.com/2511597/snail-mails-lindsey-jordan-joins-liz-phair-for-go-west-in-denver/news/",
+      "title": "Caroline Rose – “Calm” & “Hello Again, Jim”",
+      "snippet": "Gentling The Horse At The Walt Whitman Mall is going to be a trip. Caroline Rose has previewed the forthcoming album with bizarro bangers \" Yip Yip Yow \" and \" Chow Mein ,\" and now she's sharing \"Calm\" and \"Hello Again, Jim.\"",
+      "url": "https://stereogum.com/2511679/caroline-rose-calm-hello-again-jim/music/",
       "genre": "",
-      "vibe_check": "The giddy electricity of a superfan finally getting to sing their hero's words back at them, together.",
-      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/09/Snail-Mail-and-Liz-Phair.jpeg?w=564",
-      "embed_url": "https://www.youtube.com/embed/MkssHBwG6CY"
+      "vibe_check": "Delightfully unhinged art-pop for people who take their weirdness very seriously and their seriousness not at all.",
+      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/09/80357e06-2531-8ae4-c566-885b36e4f630.jpg?w=564",
+      "embed_url": "https://www.youtube.com/embed/gt_hdVQBZu4"
     },
     {
       "source": "music",
       "source_name": "No Depression",
-      "title": "Twenty-Five Years On, Gillian Welch’s 'Time (The Revelator)' Remains Timeless",
-      "snippet": "Editor's Note: Annie Zaleski has been awarded one of two No Depression Criticism Fellowships to write in-depth album reviews on roots music's most important albums. Read her previous review of Willie Nelson's Dream Chaser here , and stay tuned for",
-      "url": "https://nodepression.org/twenty-five-years-on-gillian-welchs-time-the-revelator-remains-timeless/",
+      "title": "CROWDFUNDING RADAR: Amber WEsterman, Tuatha Dea, Hitch & The Giddyup",
+      "snippet": "This month's crowdfunding radar rounds up three worthy campaigns with streaming at the core of their asks.",
+      "url": "https://nodepression.org/crowdfunding-radar-amber-westerman-tuatha-dea-hitch-the-giddyup/",
       "genre": "",
-      "vibe_check": "Sitting with an old letter you've read a hundred times and finding something new in it again.",
-      "cover_url": "https://storage.ghost.io/c/18/d0/18d08e58-3b1b-4720-ae25-a31b44e69d4b/content/images/2026/09/Untitled-design-1.png",
+      "vibe_check": "The warm, communal energy of passing a hat around a folk festival campfire for artists who still believe music is worth fighting for.",
+      "cover_url": "https://storage.ghost.io/c/18/d0/18d08e58-3b1b-4720-ae25-a31b44e69d4b/content/images/2026/09/Amber-Westerman-photo-by-Phillip-Guzman.jpg",
       "embed_url": null
     },
     {
       "source": "music",
       "source_name": "Pitchfork",
-      "title": "Listen to Dexter in the Newsagent’s New Song “Fantasy”",
-      "snippet": "The British singer-songwriter and producer’s first single of 2026",
-      "url": "https://pitchfork.com/story/listen-to-dexter-in-the-newsagent-new-song-fantasy/",
+      "title": "Porridge Radio’s Dana Margolin Launches Debut Solo Single",
+      "snippet": "The Brighton four-piece announced their breakup last year",
+      "url": "https://pitchfork.com/story/porridge-radios-dana-margolin-launches-debut-solo-single/",
       "genre": "",
-      "vibe_check": "Hazy and half-lit, like stepping out of a corner shop into an unexpectedly warm February afternoon.",
-      "cover_url": "https://media.pitchfork.com/photos/6aaac5a535654eafc66db2fd/master/pass/dexter-newsagent-fantasy-video.jpg",
-      "embed_url": "https://www.youtube.com/embed/6eL_U1b5D98"
-    },
-    {
-      "source": "music",
-      "source_name": "Pitchfork",
-      "title": "Kevin Morby Drops New Song “PBJ” and Van Leeuwen Ice Cream Flavor",
-      "snippet": "Joining him on the single are Justin Vernon, Aaron Dessner, and Andrew Barr",
-      "url": "https://pitchfork.com/story/kevin-morby-drops-new-song-pbj-and-van-leeuwen-ice-cream-flavor/",
-      "genre": "",
-      "vibe_check": "A lazy, sun-drenched afternoon in the backyard where nobody needs to be anywhere and the ice cream is already melting.",
-      "cover_url": "https://media.pitchfork.com/photos/6aaaabf903a570c68aaea26c/master/pass/%5BHi-Res%20Image%5D%20Kevin%20Morby%20by%20Chantal%20Anderson%204.jpg",
+      "vibe_check": "The bittersweet clarity of stepping out of a band's shadow and into your own uncertain, quietly electric morning.",
+      "cover_url": "https://media.pitchfork.com/photos/6aaac8b4bca8b6db9ea5f45b/master/pass/Dana-Margolin.jpeg",
       "embed_url": null
     },
     {
       "source": "music",
       "source_name": "Pitchfork",
-      "title": "Tom Petty’s Origins Explored in New 1970s-Era Box Set",
-      "snippet": "Watch a video for the unreleased “Parade of Loons,” from Petty and the Heartbreakers’ 5xLP Origins 1971-1978",
-      "url": "https://pitchfork.com/story/tom-pettys-origins-explored-in-new-1970s-era-box-set/",
+      "title": "M83, O Slow, Angela Autumn, and More: This Week’s Pitchfork Selects Playlist",
+      "snippet": "Our weekly playlist highlights songs that our writers, editors, and contributors are listening to on repeat",
+      "url": "https://pitchfork.com/story/m83-o-slow-angela-autumn-and-more-this-weeks-pitchfork-selects-playlist/",
       "genre": "",
-      "vibe_check": "Dusty Florida highway nostalgia unearthed from a box in someone's attic, still smelling like the '70s.",
-      "cover_url": "https://media.pitchfork.com/photos/6aaaa80938e0c07861703106/master/pass/tom-petty-heartbreakers-box-set.jpg",
+      "vibe_check": "A curated sonic mood board for the week's most restless, searching ears.",
+      "cover_url": "https://media.pitchfork.com/photos/6aa84d65d11dedcb180f9862/master/pass/P4K26-0914_Selects_2x1.gif",
+      "embed_url": null
+    },
+    {
+      "source": "music",
+      "source_name": "Aquarium Drunkard",
+      "title": "I Will Die In This Jean Jacket :: Hang From A Cloud",
+      "snippet": "Minneapolis lifer Jim Blaha goes it alone on Hang From A Cloud, a raw, bedroom-recorded set of wistful garage-psych and punk songs that crackle with romantic desperation. From the breathy “Some New Day” to the furious, sotto voce anthems of “D.O.A.,” Blaha distills decades in the underground into something intimate, ferocious, and beautifully unvarnished. The post I Will Die In This Jean Jacket :: Hang From A Cloud first appeared on Aquarium Drunkard .",
+      "url": "https://aquariumdrunkard.com/2026/09/16/i-will-die-in-this-jean-jacket-hang-from-a-cloud/",
+      "genre": "",
+      "vibe_check": "Late-night bedroom recordings that feel like a love letter written in shaky handwriting to no one and everyone at once.",
+      "cover_url": "https://aquariumdrunkard.com/_newness/wp-content/uploads/2026/09/jean-jacket.jpg",
       "embed_url": null
     },
     {
       "source": "music",
       "source_name": "Consequence",
-      "title": "Tom Morello’s Power to the People Festival Expands Lineup with Nathaniel Rateliff, Stephen Stills, Geezer Butler, and More",
-      "snippet": "Mike McCready, Scott Ian, State Radio, and The Last Internationale will also play the one-day festival on October 3rd. Tom Morello’s Power to the People Festival Expands Lineup with Nathaniel Rateliff, Stephen Stills, Geezer Butler, and More Paolo Ragusa",
-      "url": "https://consequence.net/2026/09/power-to-the-people-festival-expands-lineup-nathaniel-rateliff-stephen-stills-geezer-butler/",
+      "title": "The Heartbreakers Reunite Alongside Chris Stapleton at Americana Awards: Watch",
+      "snippet": "They performed \"American Girl,\" \"Breakdown,\" and \"You Wreck Me.\" The Heartbreakers Reunite Alongside Chris Stapleton at Americana Awards: Watch Alex Krinsky",
+      "url": "https://consequence.net/2026/09/heartbreakers-reunion-americana-awards/",
       "genre": "",
-      "vibe_check": "Fist-raised, sweat-soaked solidarity that makes you want to stand on something and yell.",
-      "cover_url": "https://consequence.net/wp-content/uploads/2026/09/Power-to-the-People-Expands-Lineup-Nathaniel-Rateliff-Stephen-Stills-Geezer-Butler.jpg?quality=80",
-      "embed_url": null
-    },
-    {
-      "source": "music",
-      "source_name": "Consequence",
-      "title": "David Byrne Releases Who Is the Sky? Deluxe Edition with Four Bonus Tracks: Stream",
-      "snippet": "The expanded edition celebrates the one-year anniversary of the original album's release in 2025. David Byrne Releases Who Is the Sky? Deluxe Edition with Four Bonus Tracks: Stream Karan Singh",
-      "url": "https://consequence.net/2026/09/david-byrne-who-is-the-sky-digital-deluxe-edition-stream/",
-      "genre": "",
-      "vibe_check": "Curious and wide-eyed, like wandering a museum after hours when the art finally gets to breathe.",
-      "cover_url": "https://consequence.net/wp-content/uploads/2026/09/David-Byrne-Who-Is-the-Sky-Digital-Deluxe-Edition-Four-Bonus-Tracks.jpg?quality=80",
-      "embed_url": null
-    },
-    {
-      "source": "music",
-      "source_name": "Consequence",
-      "title": "Tom Petty and the Heartbreakers Origins 1971-1978 Box Set Announced, Hear Previously Unreleased “Parade of Loons”: Stream",
-      "snippet": "The 50th anniversary collection includes five albums, a DVD, and an 88-page fanzine. Tom Petty and the Heartbreakers Origins 1971-1978 Box Set Announced, Hear Previously Unreleased “Parade of Loons”: Stream Ben Kaye",
-      "url": "https://consequence.net/2026/09/tom-petty-and-the-heartbreakers-origins-1971-1978/",
-      "genre": "",
-      "vibe_check": "The thrill of finding a photograph you never knew was taken of a moment you already loved.",
-      "cover_url": "https://consequence.net/wp-content/uploads/2026/09/Tom-Petty-box-set.jpg?quality=80",
-      "embed_url": "https://www.youtube.com/embed/o074UPAjFxc"
+      "vibe_check": "The chest-swelling warmth of an encore nobody knew they needed until the first chord hit and the room remembered who they were.",
+      "cover_url": "https://consequence.net/wp-content/uploads/2026/09/Heartbreakers.jpeg?quality=80",
+      "embed_url": "https://www.youtube.com/embed/kOkOkxeUoSY"
     },
     {
       "source": "music",
       "source_name": "JazzTimes",
-      "title": "Jazz Past and Future at the 2026 DC Jazz Festival",
-      "snippet": "J azz can’t afford to ignore its past, but neither can it afford to be trapped by it. One could observe this tension as the …",
-      "url": "https://www.jazztimes.com/reviews/live/jazz-past-and-future-at-the-2026-dc-jazz-festival/",
+      "title": "Is Burt Bacharach Jazz? Clarinetist Adrian Galante, vocalist John Pagano and writer Will Friedwald Answer in the Affirmative with Going Bacharach",
+      "snippet": "I f you walk past the 150-seat Marjorie S. Deane Little Theater on West 64th Street in New York, you’ll hear the humming, thrumming sound …",
+      "url": "https://www.jazztimes.com/features/profiles/is-burt-bacharach-jazz-clarinetist-adrian-galante-vocalist-john-pagano-and-writer-will-friedwald-answer-in-the-affirmative-with-going-bacharach/",
       "genre": "",
-      "vibe_check": "The charged anticipation of a musician pausing mid-solo to glance back at history before leaping forward.",
-      "cover_url": "https://www.jazztimes.com/wp-content/uploads/2026/09/collier-isaiah.jpg",
+      "vibe_check": "Velvet-curtained and candlelit, like a supper club where the cocktails arrive just as the melody you've always known finally makes sense.",
+      "cover_url": "https://www.jazztimes.com/wp-content/uploads/2026/09/7-Adrian-Galante-in-GOING-BACHARACH.-photo-by-Russ-Rowland.jpg",
+      "embed_url": "https://www.youtube.com/embed/97SvQANoqXg"
+    },
+    {
+      "source": "music",
+      "source_name": "PopMatters",
+      "title": "Drummer Matt Wilson’s Good Trouble Fight Power with Love",
+      "snippet": "Jazz drummer Matt Wilson's political outrage and resistance are present but come through an embrace of love, community, and gorgeous music.",
+      "url": "https://www.popmatters.com/matt-wilson-love-is-the-whole",
+      "genre": "",
+      "vibe_check": "Political fire wrapped in a bear hug — the sound of resistance that somehow still makes you want to dance with a stranger.",
+      "cover_url": "https://www.popmatters.com/wp-content/uploads/2026/09/Matt-Wilsons-Good-Trouble-Love-Is-the-Whole-Thing-We-Are-Only-Pieces-social.webp",
       "embed_url": null
     },
     {
       "source": "music",
       "source_name": "PopMatters",
-      "title": "Oasis’ ‘Don’t Look Back in Anger’ Makes the Case for Their Enduring Delight",
-      "snippet": "The new Oasis documentary surveying their 2025 comeback tour might be a touch exhausting, but Noel and Liam Gallagher are inexhaustible in buoying the soul.",
-      "url": "https://www.popmatters.com/oasis-dont-look-back-in-anger",
+      "title": "Wesley Stace Settles into a Stylish Vibe on ‘One Last Heist’",
+      "snippet": "Prolific singer-songwriter Wesley Stace continues to mine a delightful jazz-lounge groove on his latest beguiling record, One Last Heist .",
+      "url": "https://www.popmatters.com/wesley-stace-one-last-heist",
       "genre": "",
-      "vibe_check": "Arms around strangers, shouting words you've known forever, reminded that some anthems refuse to shrink.",
-      "cover_url": "https://www.youtube.com/embed/6z_0B_lyRTo",
-      "embed_url": "https://www.youtube.com/embed/6z_0B_lyRTo"
+      "vibe_check": "The sophisticated ease of a slow gin martini at a corner table, unhurried and entirely sure of itself.",
+      "cover_url": "https://www.youtube.com/embed/UuXKQ9rgukg",
+      "embed_url": "https://www.youtube.com/embed/UuXKQ9rgukg"
+    },
+    {
+      "source": "music",
+      "source_name": "PopMatters",
+      "title": "Matt B Goes Home and Lets the Ocean Do the Talking",
+      "snippet": "Matt B's ALKEBULAN III opens at a door in Ghana and ends with the Atlantic given a speaking voice. In between is the sound of a man learning a language his family had taken from them.",
+      "url": "https://www.popmatters.com/matt-b-alkebulan-iii",
+      "genre": "",
+      "vibe_check": "A deeply personal homecoming unfolding like tide — patient, ancestral, and carrying the weight of everything the water once swallowed.",
+      "cover_url": "https://www.youtube.com/embed/kpAC4xbCn78",
+      "embed_url": "https://www.youtube.com/embed/kpAC4xbCn78"
     }
   ],
   "global_silver_linings": [
     {
       "source": "good_news",
       "source_name": "Good News Network",
-      "title": "Scientists Determine Australia’s Vast Red Deserts Could Fuel a Hydrogen-Powered Energy Revolution",
-      "url": "https://www.goodnewsnetwork.org/scientists-determine-australias-vast-red-deserts-could-fuel-a-hydrogen-powered-energy-revolution/",
-      "snippet": "Scientists have revealed that Australia may hold the key to generating ample green energy while creating a major export industry, and that it’s buried underneath their feet. The breakthrough centers on magnetite, a mineral found in Western Australia’s vast iron ore deposits throughout the Pilbara region. Researchers at Edith Cowan University’s School of Engineering have […]",
-      "cover_url": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/09/Classic-Australian-Pilbara-region-banded-iron-formations-credit-Edith-Cowan-University-released.jpg",
-      "reason": "Australia's sun-baked outback, long seen as barren and remote, may hold the key to clean, abundant energy for the world — proof that nature's most overlooked landscapes can still surprise us. Harnessing that potential with hydrogen could mark a genuine turning point in the global shift away from fossil fuels."
+      "title": "Good News in History September 17",
+      "url": "https://www.goodnewsnetwork.org/events060917/",
+      "snippet": "Happy 41st birthday to The Great 8, Alexander Ovechkin. Playing left wing for the Washington Capitals since 2004, he is quite simply among the greatest goal scorers in the history of ice hockey. He has won the Hart Memorial Trophy for Most Valuable Player three times (in 2008, 2009, and 2013), the Lester B. Pearson Award […]",
+      "cover_url": "https://www.goodnewsnetwork.org/wp-content/uploads/2021/09/Alexander-Ovechkin-in-2018-Copy.jpg",
+      "reason": "Looking back at history's bright moments reminds us that humans have always found ways to solve problems, show courage, and make the world better — and that thread continues today."
     },
     {
       "source": "good_news",
       "source_name": "Upworthy",
-      "title": "Dad shares the hilarious conversations he has with 5-year-old daughter and folks are cracking up",
-      "url": "https://www.upworthy.com/dad-shares-funny-things-kids-say-ex1/",
-      "snippet": "\"Why do people congratulate you when Mom is making the baby?",
-      "cover_url": "https://www.upworthy.com/wp-content/uploads/sites/2/2025/07/origin-265.jpg",
-      "reason": "A reminder that the everyday magic of a child's curiosity and a parent paying close attention can bring real joy to strangers across the world — sometimes hope looks like a five-year-old's unfiltered logic making everyone laugh."
+      "title": "Millennials hilariously dissect why they made ‘duckface’ a thing in early 2000s photos",
+      "url": "https://www.upworthy.com/millennials-hilariously-dissect-why-they-made-duckface-a-thing-in-photos-ex1/",
+      "snippet": "\"We thought we were so cute.\"",
+      "cover_url": "https://www.upworthy.com/wp-content/uploads/sites/2/2025/08/origin-230.png",
+      "reason": "There's something quietly joyful about a generation laughing collectively at its own awkward past — shared self-awareness like this is the glue that keeps communities feeling human and connected."
     },
     {
       "source": "good_news",
       "source_name": "The Optimist Daily",
-      "title": "The world’s first solar ambulance just completed its first real-world test in rural Kenya",
-      "url": "https://www.optimistdaily.com/2026/09/the-worlds-first-solar-ambulance-just-completed-its-first-real-world-test-in-rural-kenya/",
-      "snippet": "BY THE OPTIMIST DAILY EDITORIAL TEAM The question most ambulances are designed to answer is how fast a patient can reach a hospital. In the Narok region of Kenya, where long distances and unreliable electricity make quality healthcare difficult to access, that question has no good answer. The hospitals are too far, the roads are […] The post The world’s first solar ambulance just completed its first real-world test in rural Kenya first appeared on The Optimist Daily: Making Solutions the News .",
-      "cover_url": "https://www.optimistdaily.com/wp-content/uploads/Depositphotos_23987521_L.jpg",
-      "reason": "In rural Kenya, where power outages can be a matter of life and death, a solar-powered ambulance completing its first real-world test is a quiet but profound breakthrough for communities that need it most. Clean energy meeting urgent human need in one vehicle is exactly the kind of practical, grounded progress worth celebrating."
+      "title": "8 low-cost hobbies that add hours of joy to your week",
+      "url": "https://www.optimistdaily.com/2026/09/8-low-cost-hobbies-that-add-hours-of-joy-to-your-week/",
+      "snippet": "Image alt text: Hands carefully pressing colorful flowers between the pages of an open book on a wooden table surrounded by dried botanicals and greenery Research has put a number on the value of a good hobby: eight hours. That is how much joy, defined as deep satisfaction, gratification, and accomplishment, studies suggest a person […] The post 8 low-cost hobbies that add hours of joy to your week first appeared on The Optimist Daily: Making Solutions the News .",
+      "cover_url": "",
+      "reason": "Joy doesn't have to be expensive, and rediscovering simple hobbies — whether it's growing something, making something, or learning something new — is a powerful reminder that a richer life is within almost everyone's reach."
     }
   ],
   "discovery_articles": [
     {
       "source": "discovery",
-      "source_name": "Smithsonian",
-      "title": "The Ruins of a Long-Lost Medieval Convent Have Been Discovered Just a Few Feet Beneath a Soccer Field",
-      "url": "https://www.smithsonianmag.com/smart-news/the-ruins-of-a-long-lost-medieval-convent-have-been-discovered-just-a-few-feet-beneath-a-soccer-field-180989506/",
-      "snippet": "St. Clare's Convent closed in the 16th century, and researchers assumed all traces of it had been lost. But a new ground-penetrating radar survey revealed surprisingly intact remains of pillars, rooms, cloisters, a courtyard and a church",
+      "source_name": "Atlas Obscura",
+      "title": "The Academy of Natural Sciences in Philadelphia, Pennsylvania",
+      "url": "https://www.atlasobscura.com/places/the-academy-of-natural-sciences",
+      "snippet": "The Academy of Natural Sciences is the oldest natural history museum in the country (and the Americas). It has everything the curious could hope for -- dinosaurs, ancient fish and birds, an emphasis on conservation, and a deep-seated appreciation for the natural world. Although many of the subjects have been in the museum for well over a century (the academy first opened its doors in 1812), they are well preserved, and their exhibits carefully crafted with hand painted scenes in the background.",
       "category": "history",
-      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/M9WLbElSQIrHo8UjS1a-SmWOvB0=/fit-in/1600x0/filters:focal(750x500:751x501)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/26/6d/266d0251-3017-4c0a-a88f-305c47e421b7/field.jpg",
-      "ferns_note": "For five centuries, an entire medieval convent — cloisters, courtyard, church and all — lay quietly preserved just beneath the turf of a soccer pitch, waiting for someone to think to look. The nuns who shuttered St. Clare's in the 1500s could not have imagined their home would outlast nearly everything built above it."
-    },
-    {
-      "source": "discovery",
-      "source_name": "Smithsonian",
-      "title": "This New Brain Map Shows Every Nerve Cell in an Adult Male Fruit Fly's Central Nervous System. Here's Why That Matters",
-      "url": "https://www.smithsonianmag.com/smart-news/this-new-brain-map-shows-every-nerve-cell-in-an-adult-male-fruit-flys-central-nervous-system-heres-why-that-matters-180989490/",
-      "snippet": "The recently released \"connectome\" joins a previously completed map of an adult female fruit fly’s brain. The digital 3D diagrams allow scientists to trace precise neural paths in the bugs’ brains, which can unlock secrets about the organ in humans",
-      "category": "history",
-      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/onr1JWBNS3IKgYGZcd3sExChook=/fit-in/1600x0/filters:focal(960x649:961x650)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/a6/ce/a6cea92b-eaa2-4db6-8548-7259a539330c/connectome-nervous-system.webp",
-      "ferns_note": "Scientists have now charted every single nerve cell in an adult male fruit fly's central nervous system — a map so precise you can trace the exact wiring behind a single decision to flee or feed. The humbling part: this tiny insect brain is considered a manageable starting point for eventually understanding our own."
+      "cover_url": "https://img.atlasobscura.com/zEa83VsJU2sRVp45wEFotmBoeGW6eW8hI47eahir9io/rt:fit/w:600/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy9lYTQ3/Mzc0ZC0zZGNhLTQz/ZTItOTUwNy04MDJk/ZGNlZmI1MzY3NjAy/MjZkZDMzZDA0MTdm/YWFfSU1HXzIxNTUu/anBlZw.jpg",
+      "ferns_note": "The oldest natural history museum in the Americas opened its doors in 1812 — when Napoleon was still a present tense problem and the word 'dinosaur' hadn't even been coined yet. Whatever curiosity built this place was ahead of its time in the most quietly magnificent way."
     },
     {
       "source": "discovery",
       "source_name": "Smithsonian",
-      "title": "Three Wild Dogs Made a Record-Breaking Trek Across Zambia, Traveling More Than 2,500 Miles in Search of Mates",
-      "url": "https://www.smithsonianmag.com/smart-news/three-wild-dogs-made-a-record-breaking-trek-across-zambia-traveling-more-than-2500-miles-in-search-of-mates-180989505/",
-      "snippet": "The canines achieved the longest recorded movement by any African mammal. Their journey highlights the importance of having protected corridors for wildlife",
+      "title": "A 66-Million-Year-Old Feather Trapped in Dinosaur Poop Might Help Explain Why Some Birds Survived Mass Extinction",
+      "url": "https://www.smithsonianmag.com/smart-news/a-66-million-year-old-feather-trapped-in-dinosaur-poop-might-help-explain-why-some-birds-survived-mass-extinction-180989496/",
+      "snippet": "Discovered in Montana in 2016, the cherry-size coprolite contains feathers, bones and evidence of the bird's last meal before the creature was eaten by a theropod",
       "category": "history",
-      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/NOTCIpSKxI8WKse83UY1enu1-Os=/fit-in/1600x0/filters:focal(1061x707:1062x708)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/ad/e8/ade838a5-53ad-49b0-af83-c3f1fa7593e2/gettyimages-1126919690.jpg",
-      "ferns_note": "Three African wild dogs — a species already stretched thin across a fragmented continent — quietly broke the all-time mammal distance record, covering over 2,500 miles simply looking for companionship. Their epic, unwitnessed journey is both a love story and a quiet indictment of how little room we've left for wildness."
+      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/NsyJiCH3WfkkiRrhP88luVjyB2g=/fit-in/1600x0/filters:focal(5020x3346:5021x3347)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/94/c9/94c976d9-9cd3-42b3-883c-3ccb289c9d62/hesper_nano.jpg",
+      "ferns_note": "A feather preserved inside dinosaur excrement for 66 million years is the most undignified — and illuminating — fossil imaginable, offering a snapshot of predator, prey, and last meal in a single cherry-sized time capsule. The bird that became lunch may hold clues to why its relatives survived an extinction that ended the world as it was."
     },
     {
       "source": "discovery",
       "source_name": "Smithsonian",
-      "title": "Mysteriously Stolen More Than 30 Years Ago, and Illicitly Transported to the U.S., This 300-Pound Sculpture Is Finally Back Home in France",
-      "url": "https://www.smithsonianmag.com/smart-news/mysteriously-stolen-more-than-30-years-ago-and-illicitly-transported-to-the-us-this-300-pound-sculpture-is-finally-back-home-in-france-180989507/",
-      "snippet": "Alfred Lepère’s hulking “Faune Chasseur” artwork is once again on display at the Musée de Picardie, in Amiens",
+      "title": "Some Fish in the Great Lakes Might Be More Than 400 Years Old, a Study Suggests, Outliving Around 15 Generations of Humans",
+      "url": "https://www.smithsonianmag.com/science-nature/some-fish-in-the-great-lakes-might-be-more-than-400-years-old-a-study-suggests-outliving-around-15-generations-of-humans-180989500/",
+      "snippet": "Lake sturgeon may be among the longest-living vertebrates, second only to Greenland sharks, according to recent research. However, scientists note that follow-up work is necessary to clarify the species’ lifespan",
       "category": "history",
-      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/ySOCPz4mxOaP9NVunfWizFnB21I=/fit-in/1600x0/filters:focal(1536x2048:1537x2049)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/f2/54/f2549862-c776-4c8d-886c-8ae438efbdc4/802777524_18348475594302071_4770168855678653748_n.jpg",
-      "ferns_note": "A 300-pound bronze faun spent over three decades in illicit American hands before finally being returned to the French museum it was stolen from — which raises the delicious question of how, exactly, one smuggles something the size of a refrigerator across an ocean. Some thefts are audacious precisely because they seem impossible."
+      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/GAXt4NaBV-SrgCOzQ8-OgCZGCUA=/fit-in/1600x0/filters:focal(512x385:513x386)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/14/c4/14c43964-f878-4613-99bf-1c76046c3dca/15813162892_742f224e67_o.jpg",
+      "ferns_note": "There may be lake sturgeon quietly gliding through the Great Lakes right now that were already old when the Mayflower crossed the Atlantic — living through 15 human generations without once being asked their opinion on any of it. Second only to Greenland sharks in longevity, they are the patient, silver elders of freshwater."
     },
     {
       "source": "discovery",
-      "source_name": "Science News",
-      "title": "These mice have human (nerve cells) on the brain",
-      "url": "https://www.sciencenews.org/article/mice-brain-human-organoid-cells",
-      "snippet": "Scientists have grown human brain tissue to fill most of a mouse’s cortex, creating a new model for studying brain disease and neural circuits.",
-      "category": "science",
-      "cover_url": "https://www.sciencenews.org/wp-content/uploads/sites/2/2026/09/091626_ED_organoids_main.jpg",
-      "ferns_note": "Researchers have filled the majority of a living mouse's cortex with functioning human brain cells — and the human tissue, true to form, grew faster and formed more connections than anyone anticipated. It's extraordinary science, and also the premise of at least three films we probably should have paid closer attention to."
-    },
-    {
-      "source": "discovery",
-      "source_name": "Science News",
-      "title": "The U.S. has weapons in space. Here’s what that could mean",
-      "url": "https://www.sciencenews.org/article/united-states-space-weapon-announcement",
-      "snippet": "A cryptic announcement raises questions about the type of weapons and how they could be used. We talked to an expert about the consequences.",
-      "category": "science",
-      "cover_url": "https://www.sciencenews.org/wp-content/uploads/sites/2/2026/09/091526_EC_spaceweapons_main.jpg",
-      "ferns_note": "The U.S. government's quiet confirmation that it has placed weapons in orbit is the kind of announcement that arrives with few details and enormous implications — because the rules governing warfare in space remain, to put it gently, a work in progress. What gets deployed up there may be far easier than figuring out what's allowed."
-    },
-    {
-      "source": "discovery",
-      "source_name": "Science News",
-      "title": "Alzheimer’s damage may begin outside the brain",
-      "url": "https://www.sciencenews.org/article/alzheimers-damage-brain-lymph-nodes",
-      "snippet": "Removing a type of immune cell from lymph nodes in mice reduced brain inflammation and cell damage in a model of Alzheimer’s-like disease.",
-      "category": "science",
-      "cover_url": "https://www.sciencenews.org/wp-content/uploads/sites/2/2026/09/091126_RJM_Alzheimers_main.jpg",
-      "ferns_note": "The most startling implication of this Alzheimer's research is the possibility that the brain may actually be a secondary crime scene — with immune cells in the lymph nodes quietly driving damage long before symptoms appear. Redirecting the search outside the skull could rewrite decades of treatment strategy."
-    },
-    {
-      "source": "discovery",
-      "source_name": "The Public Domain Review",
-      "title": "Veronese&#39;s Dogs",
-      "url": "https://publicdomainreview.org/essay/veroneses-dogs",
-      "snippet": "“Oh, if I could only pray”, Luther once said of his dog Tölpel, “the way this dog watches the meat”. Attending to attentive canine figures in half a dozen paintings by Paolo Veronese, Thomas W. Laqueur explores the work of an artist whose love of dogs landed him in hot water with the Inquisition.",
+      "source_name": "Smithsonian",
+      "title": "Tasmanian Devils Lived Alongside Humans in Northwestern Australia as Far Back as 45,000 Years Ago, Researchers Find",
+      "url": "https://www.smithsonianmag.com/smart-news/tasmanian-devils-lived-alongside-humans-in-northwestern-australia-as-far-back-as-45000-years-ago-researchers-find-180989503/",
+      "snippet": "Fossils and marked bones unearthed in a Juukan Gorge cave suggest that the marsupial species not only once lived in the region but may have been a “garbage compactor on four legs” for its human population",
       "category": "history",
-      "cover_url": "https://pdr-assets.b-cdn.net/essays/the-greatest-dog-lover-of-the-renaissance/veronese-dog-thumb.jpg",
-      "ferns_note": "Paolo Veronese painted dogs with such frank, reverent attention that the Inquisition grew suspicious — apparently holy scenes crowded with attentive hounds read, to certain 16th-century authorities, as irreverent at best and heretical at worst. Luther, meanwhile, simply envied his dog's capacity for pure, undivided focus."
-    },
-    {
-      "source": "discovery",
-      "source_name": "Quanta Magazine",
-      "title": "Ctenophores Aren’t Just Beautiful. They’re Biological Wonders.",
-      "url": "https://www.quantamagazine.org/ctenophores-arent-just-beautiful-theyre-biological-wonders-20260916/",
-      "snippet": "Comb jellies are helping answer fundamental questions in biology, from how the earliest nervous systems evolved to how bioluminescence works. The post Ctenophores Aren’t Just Beautiful. They’re Biological Wonders.",
-      "category": "science",
-      "cover_url": "https://www.quantamagazine.org/wp-content/uploads/2042/09/ImageGallery_CombJellies-crAlexanderSemenov_AquatilisExpedition-Social.webp",
-      "ferns_note": "Comb jellies may have evolved their own nervous systems entirely independently of every other animal on Earth — meaning the very idea of a neuron may have been invented more than once by life, almost as an inevitability. These shimmering, alien creatures are quietly rewriting the story of what it means to think."
+      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/USQxkWupHxyr-hJX8VxYgjqtX_A=/fit-in/1600x0/filters:focal(1077x718:1078x719)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/07/c7/07c76340-2db9-4c7c-a8d4-732053b0e7e0/sarcophilus_harrisii_taranna.jpeg",
+      "ferns_note": "Tasmanian devils — now clinging to existence on a single island — once roamed northwestern Australia alongside humans 45,000 years ago, apparently serving as the neighborhood's unofficial waste management. The marked bones suggest people knew exactly what these creatures were useful for, which is a strangely tender detail about a very ancient coexistence."
     },
     {
       "source": "discovery",
       "source_name": "Colossal",
-      "title": "The Largest Roman Mosaic Ever Excavated Opens to the Public in Rome",
-      "url": "https://www.thisiscolossal.com/2026/09/largest-roman-mosaic-museum-rome/",
-      "snippet": "The \"Great Mosaic\" may be the largest in the Roman world.",
+      "title": "Art by Humans, For Humans: A Letter from Our Editorial Director",
+      "url": "https://www.thisiscolossal.com/2026/09/art-by-humans-for-humans/",
+      "snippet": "Art is an act of faith in a world that can make hope feel impossible.",
       "category": "history",
-      "cover_url": "https://www.thisiscolossal.com/wp-content/uploads/2026/09/mosaic-1.jpg",
-      "ferns_note": "The largest Roman mosaic ever excavated has been hiding beneath Rome all along, and it is now open to the public — a floor so vast it challenges the imagination of what daily Roman opulence actually looked like at scale. Standing on the edge of it must feel less like sightseeing and more like vertigo."
-    },
-    {
-      "source": "discovery",
-      "source_name": "Colossal",
-      "title": "Pablo Luna Studio Takes Inspiration from Nature for Its Climate-Responsive Architecture",
-      "url": "https://www.thisiscolossal.com/2026/09/pablo-luna-studio-bamboo-climate-responsive-architecture/",
-      "snippet": "The Bali-based firm's designs blur the boundary between structure and environment.",
-      "category": "history",
-      "cover_url": "https://www.thisiscolossal.com/wp-content/uploads/2026/09/luna-1.jpg",
-      "ferns_note": "Pablo Luna Studio's Bali-based architecture doesn't just draw from nature for aesthetics — the buildings are designed to breathe, shift, and respond to the climate around them like living things. It's a quiet argument that the most sophisticated structures might be the ones that know when to get out of nature's way."
+      "cover_url": "https://www.thisiscolossal.com/wp-content/uploads/2026/09/marija.jpg",
+      "ferns_note": "In a single quiet line — 'art is an act of faith in a world that can make hope feel impossible' — an editorial director says the thing most manifestos spend a thousand words failing to land. Sometimes the most radical curatorial statement is just telling the truth."
     }
   ],
   "featured_read": {
     "source": "reads",
-    "source_name": "The Atlantic",
-    "title": "The AI Pandemic Isn’t On Its Way",
-    "url": "https://www.theatlantic.com/health/2026/09/ai-virus-nature-pandemic/688569/?utm_source=feed",
-    "snippet": "Yet plenty of others might be, thanks to evolution.",
-    "cover_url": "https://cdn.theatlantic.com/thumbor/sBB2iX4x9deDXRlyEXTiOJ2Gwws=/0x43:2000x1085/1200x625/media/img/mt/2026/09/2026_09_10_virus_mpg/original.jpg",
-    "blurb": "Before we lose sleep over AI-engineered plagues, this piece reminds us that evolution has been quietly perfecting the art of pandemic for billions of years — and it has no off switch. A bracing recalibration of where the real biological threat actually lives."
+    "source_name": "Psyche",
+    "title": "Terminal lucidity: when dying dementia patients regain awareness",
+    "url": "https://psyche.co/ideas/terminal-lucidity-when-dying-dementia-patients-regain-awareness",
+    "snippet": "The reports span centuries and cultures. If they’re real, memory and identity might be far more recoverable than we thought - by Ariel Zeleznikow-Johnston Read on Psyche",
+    "cover_url": "https://images.aeonmedia.co/images/bd355252-7815-4888-b3ba-e11d8508fce2/sz-panos_00285556.jpg?top=186&left=0&cropWidth=2192&cropHeight=1233&width=1200&quality=75&format=jpeg",
+    "blurb": "Across centuries and cultures, people with advanced dementia have returned to full clarity in their final hours — and if these accounts hold up, they quietly upend everything we think we know about where the self goes when memory dissolves. This is the piece to read slowly, in a quiet room."
   },
   "reading_room": [
     {
       "source": "reads",
+      "source_name": "The Paris Review",
+      "title": "On the “Chattanooga Choo Choo”",
+      "url": "https://www.theparisreview.org/blog/2026/09/16/on-the-chattanooga-choo-choo/",
+      "snippet": "“Lately, though, I have become fascinated by the so-called big bands on the SiriusXM station called ‘40s Junction.’ ”",
+      "cover_url": "https://www.theparisreview.org/blog/wp-content/uploads/2026/09/sun-valley-serenade-3.jpg",
+      "blurb": "A writer falls unexpectedly under the spell of big-band radio and finds, in the swinging geometry of the Chattanooga Choo Choo, a small argument for why certain music refuses to stay in the past. Consider this your permission to linger somewhere unhurried."
+    },
+    {
+      "source": "reads",
+      "source_name": "Longreads",
+      "title": "A True-Crime Producer Posed as an Heiress — Then Allegedly Stole $30 Million",
+      "url": "https://longreads.com/2026/09/16/mary-carole-mcdonnell-dirty-money-moves-podcast/",
+      "snippet": "\"Mary Carole McDonnell made low-budget crime shows, but her own story was built on deceptions fit for one of her series. Now, she’s on the FBI’s Most Wanted list and the target of a global manhunt.\"",
+      "cover_url": "",
+      "blurb": "Mary Carole McDonnell spent her career packaging other people's criminal audacity into tidy television narratives — until she apparently decided to live inside one herself, to the tune of thirty million dollars. The irony is almost too neat to be real, and yet here we are."
+    },
+    {
+      "source": "reads",
+      "source_name": "Literary Hub",
+      "title": "“Simple Recipes”",
+      "url": "https://lithub.com/simple-recipes/",
+      "snippet": "There is a simple recipe for making rice. My father taught it to me when I was a child. Back then, I used to sit up on the kitchen counter watching him, how he sifted the grains in his hands,",
+      "cover_url": "https://s26162.pcdn.co/wp-content/uploads/2026/08/9781324078678.jpg",
+      "blurb": "A bowl of rice becomes the quiet container for everything a father passes to a child without saying so directly — love, ritual, the particular weight of cultural inheritance. Madeleine Thien writes about cooking the way other people write about grief, because she understands they are often the same thing."
+    },
+    {
+      "source": "reads",
       "source_name": "The Atlantic",
-      "title": "The Knives Are Out for Bill Belichick",
-      "url": "https://www.theatlantic.com/culture/2026/09/bill-belichick-north-carolina-investigation/688648/?utm_source=feed",
-      "snippet": "The celebrated coach’s football program at the University of North Carolina is under investigation. It’s hard to know what is of substance—and what is noise.",
-      "cover_url": "https://cdn.theatlantic.com/thumbor/bS24yuBjmrE9wgoDb7AlQViymz8=/0x43:2000x1085/1200x625/media/img/mt/2026/09/BillB/original.png",
-      "blurb": "Bill Belichick's late-career reinvention as a college coach is unraveling in ways that are both very specific and oddly familiar, and this piece does the painstaking work of separating genuine scandal from the ambient noise of a man the sports world has decided to enjoy watching fall. A careful, unsatisfying portrait of accountability in a sport that rarely demands it."
+      "title": "Destroying Humanity Is Against the Law",
+      "url": "https://www.theatlantic.com/ideas/2026/09/ai-risk-criminal-law/688615/?utm_source=feed",
+      "snippet": "Don’t wait for a mass-extinction event before holding AI developers accountable.",
+      "cover_url": "https://cdn.theatlantic.com/thumbor/RumSSs0KujZtdsQOtX4I93VfIEE=/0x43:2000x1085/1200x625/media/img/mt/2026/09/2026_09_24_Destroying_Humanity_Is_Against_the_Law/original.jpg",
+      "blurb": "The argument here is bracingly simple: if we have laws against mass harm, why are they not being applied to the people building systems capable of it? This is the essay that will make you want to call your representative, or at least your lawyer."
     },
     {
       "source": "reads",
-      "source_name": "Asterisk",
-      "title": "Selling Abstraction",
-      "url": "https://asteriskmag.com/issues/14/selling-abstraction",
-      "snippet": "What global financial markets have in common with necromancers.",
-      "cover_url": "https://asteriskmag.com/media/pages/issues/14/selling-abstraction/298b9d5ef8-1779820727/selling-abstraction-leah-libresco-sargeant-1600x900-crop-sharpen50.png",
-      "blurb": "This essay asks what it actually means to trade something that doesn't exist — and finds that global finance and medieval sorcery share more than a taste for theatrical sleight of hand. A quietly vertiginous read about the stories we agree to believe so the economy keeps moving."
-    },
-    {
-      "source": "reads",
-      "source_name": "Aeon",
-      "title": "The meaning of fake marble",
-      "url": "https://aeon.co/videos/the-millennia-long-history-of-our-obsession-with-fake-marble",
-      "snippet": "From ancient Roman frescoes to modern kitchen benchtops, our desire to recreate marble is about more than cutting costs - by Aeon Video Watch on Aeon",
-      "cover_url": "https://images.aeonmedia.co/images/5e4de778-04e2-44c4-951a-fe51f8eb24ea/the-meaning-of-fake-marble-landscape-1.jpg?width=1200&quality=75&format=jpeg",
-      "blurb": "Humans have been faking marble since antiquity, and this piece argues our obsession with the imitation reveals something genuine: a longing to possess beauty we can't quite afford or earn. A short, satisfying meditation on aspiration written in stone."
-    },
-    {
-      "source": "reads",
-      "source_name": "Nautilus",
-      "title": "The Crescent Nebula: A Gas Bubble Surrounding a Violently Dying Star",
-      "url": "https://nautil.us/the-crescent-nebula-a-gas-bubble-surrounding-a-violently-dying-star-1285062/",
-      "snippet": "A light show that will get even more dramatic in time",
-      "cover_url": "https://lede-admin.nautil.us/wp-content/uploads/sites/70/2026/09/01-crescent.jpg",
-      "blurb": "The Crescent Nebula is a star slowly tearing itself apart and wrapping its own debris around itself like a burial shroud — and the light show, we're told, hasn't even reached its peak yet. A reminder that the universe's most violent acts are also its most patient ones."
-    },
-    {
-      "source": "reads",
-      "source_name": "Psyche",
-      "title": "A brief history of Viagra",
-      "url": "https://psyche.co/videos/viagra-has-its-upsides-sure-but-has-it-changed-sex-for-the-better",
-      "snippet": "Discovered by accident, it became the fastest-selling drug of the century. Did it revolutionise sex or reinforce old ideas? - Video by BBC Ideas, The Open University Watch on Psyche",
-      "cover_url": "https://images.aeonmedia.co/images/0965e5d9-0ab7-44b7-8bef-0bb732694bd6/how-viagra-changed-the-world-landscape-1.jpg?top=0&left=0&cropWidth=2560&cropHeight=1440&width=1200&quality=75&format=jpeg",
-      "blurb": "Viagra arrived as a happy accident and left as a cultural verdict on what we think male sexuality is for — this history traces how a pill meant to treat one thing quietly reshaped our assumptions about pleasure, performance, and who deserves a fix. A small drug, a surprisingly large argument."
+      "source_name": "The Atlantic",
+      "title": "What Comes After America",
+      "url": "https://www.theatlantic.com/magazine/2026/10/exit-party-emily-st-john-mandel/688349/?utm_source=feed",
+      "snippet": "Emily St. John Mandel’s latest work of science fiction considers the tenuousness of any possible future.",
+      "cover_url": "https://cdn.theatlantic.com/thumbor/S93Z2uM8W7aXoB6o703jtko7-4Y=/0x1851:2395x3098/1200x625/media/img/2026/08/1026_Begley/original.jpg",
+      "blurb": "Emily St. John Mandel has made a habit of imagining futures that feel more like warnings than predictions, and her latest asks the question that hums beneath all of them: what exactly are we trying to preserve, and for whom? A good one to sit with as the news does what the news does."
     }
   ],
   "garden_note": {
-    "note": "The evenings are drawing in around Zürich now, carrying that particular September coolness that makes you pull a cardigan from the hook — the dahlias are still blazing in the last warmth, but the linden trees are quietly letting go of their first leaves. Step outside before dusk at 20:07 and you'll catch the garden in its most golden, unhurried hour.",
+    "note": "There's a particular quality to early-autumn mornings in Zürich — the air carries that first real chill, and the dahlias in the border are suddenly the bravest things in the garden, blazing away while the maples hint at what's coming. Step outside around first light at 06:35 and you'll find the cobwebs jewelled with dew, every strand catching the pale gold that precedes sunrise.",
     "in_season": [
-      "Dahlias in full late-summer flush",
-      "Autumn raspberries ripening on the canes",
-      "Harvesting winter squash before first frost",
-      "Sowing lamb's lettuce (Nüsslichsalat) for autumn picking"
+      "Dahlias in full, extravagant bloom",
+      "Harvesting winter squash and pumpkins before the first hard frost",
+      "Sowing lamb's lettuce (Feldsalat) for autumn and winter salads",
+      "Raking and composting early fallen leaves"
     ],
-    "sky_tonight": "Look southwest after dusk for the waxing crescent Moon — its thin silver sliver will be hanging low, with Saturn nearby in Aquarius worth a second glance.",
-    "sun_times": "The sun sets at 19:38 this evening, with dusk lingering gently until 20:07.",
+    "sky_tonight": "Look southwest after dusk for Saturn, still bright and well-placed in Aquarius — a small telescope will reward you with those unmistakable rings.",
+    "sun_times": "First light arrives at 06:35, the sun rises at 07:04 and dusk settles gently at 20:05 this evening.",
     "moon_label": "Waxing crescent",
-    "illum_pct": 25,
-    "sun_range": "07:03–19:38"
+    "illum_pct": 31,
+    "sun_range": "07:04–19:36"
   },
   "puzzle": {
-    "kind": "riddle",
+    "kind": "haiku riddle",
     "label": "Fern's Morning Riddle",
-    "prompt": "Who is that with a neck and no head, two arms and no hands? What is it?",
-    "answer": "A shirt",
-    "hint": "",
-    "source": "riddles.com",
-    "source_id": "Riddle-817"
+    "prompt": "I wake before you\nSilent hands divide the dark\nNumbers never speak",
+    "answer": "A clock (or sundial face)",
+    "hint": "It measures something precious without ever saying a word."
   },
   "previous_puzzle": {
-    "label": "The Evening Trivia",
-    "prompt": "Which celebrity announced his presidency in 2015?\n\nDonald Trump   ·   Kanye West   ·   Leonardo DiCaprio   ·   Miley Cyrus",
-    "answer": "Kanye West"
+    "label": "Fern's Morning Riddle",
+    "prompt": "Who is that with a neck and no head, two arms and no hands? What is it?",
+    "answer": "A shirt"
   },
   "larder": {
-    "news": [],
-    "recipe": {}
+    "news": [
+      {
+        "source": "food",
+        "source_name": "The Kitchn",
+        "title": "This Gordon Ramsay-Approved Cookware Brand Just Dropped Its First-Ever Bakeware Set and They Feel So High Quality",
+        "url": "https://www.thekitchn.com/hexclad-bakeware-launch-23843507?utm_source=RSS&utm_medium=feed&utm_campaign=Category%2FChannel%3A+main",
+        "snippet": "It's worth the splurge.",
+        "cover_url": "",
+        "blurb": "If you've ever wanted cookware with Ramsay's seal of approval, this debut bakeware set sounds like the kind of splurge that quietly earns its place in your kitchen."
+      },
+      {
+        "source": "food",
+        "source_name": "Eater",
+        "title": "Hoy Is Bringing Night-Market Energy to NYC",
+        "url": "https://www.eater.com/pre-shift/986732/hoy-filipino-restaurant-nyc-design-pre-shift",
+        "snippet": "This excerpt was originally published in Pre Shift, our newsletter for the hospitality industry. Subscribe for more first-person accounts, advice, and interviews. This is the first installment of our series Getting on the Map, presented by Apple Maps.",
+        "cover_url": "https://platform.eater.com/wp-content/uploads/sites/2/2026/09/Hoy-Eater.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
+        "blurb": "NYC's night-market scene just got a compelling new chapter, and Hoy sounds like exactly the kind of electric, lived-in dining experience worth following closely."
+      },
+      {
+        "source": "food",
+        "source_name": "The Guardian",
+        "title": "How to turn excess olive brine into a lipsmacking salad dressing – recipe",
+        "url": "https://www.theguardian.com/food/2026/sep/16/excess-olive-brine-salad-dressing-recipe-zero-waste-food",
+        "snippet": "The liquid from a jar of olives is naturally chock-full of savoury flavour, so why should it go to waste? It’s perfect for sprucing up a salad Olive brine is a simple byproduct that has so much flavour, and it elevates a classic salade nicoise dressing while keeping things colourful, elegant and relatively simple.",
+        "cover_url": "https://i.guim.co.uk/img/media/0129531b6695b224d01029617f67ba90b69797f0/52_0_3431_2745/master/3431.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=5c956f57a8659f4e99554550b8e70228",
+        "blurb": "A gentle reminder that the brine pooling at the bottom of your olive jar is essentially free umami — and this piece makes a convincing case for never pouring it down the drain again."
+      }
+    ],
+    "recipe": {
+      "source": "recipe",
+      "source_name": "David Lebovitz",
+      "title": "Affogato",
+      "url": "https://www.davidlebovitz.com/affogato/",
+      "snippet": "Margot Lecarpentier is one of the best bartenders in Paris. At her bar, Combat, she shakes and stirs up cocktails – with and without alcohol – that are some of the best in the city. One a warm summer day, Margot stopped by to make an Affogato for us to enjoy in my backyard.",
+      "is_recipe": true,
+      "cover_url": "https://www.davidlebovitz.com/wp-content/uploads/2026/09/affogato-recipe-scaled.jpg",
+      "blurb": "An affogato is one of summer's most effortless pleasures — just a shot of espresso and good ice cream — and with a Paris bartender's touch guiding you, it feels like the most elegant thing you'll make all season."
+    },
+    "seasonal_note": "Zürich's Tuesday and Saturday Bürkliplatz market is flush with Zwetschgen right now — those dark, oblong Italian prune plums that beg to be halved and pressed into a buttery Zwetschgenwähe, the pastry filling your kitchen with the kind of spiced, jammy warmth that makes an early autumn morning feel entirely intentional."
   },
   "fern_data": {
-    "greeting": "What actually happens at the Planck length — where space itself stops making sense — is the kind of question that earns its place in an evening. Tonight also has wild dogs crossing 2,500 miles of Zambia and a time traveler's Rome shimmering somewhere underneath a soccer field.",
-    "top_pick_title": "Where the Map Runs Out"
+    "greeting": "Monday has the nerve to arrive anyway. Worth meeting it with the question of who swore first on the moon, a fish in Lake Superior that has outlived fifteen human generations, and the uncomfortable news that quantum gravity simply doesn't work.",
+    "top_pick_title": "Old Fish, Old Light, Old Questions"
   }
 }
