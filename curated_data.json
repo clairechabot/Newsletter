@@ -1,148 +1,89 @@
 {
-  "fetched_at": "2026-09-17T20:21:50.871770+02:00",
-  "is_am_email": false,
+  "fetched_at": "2026-09-18T10:21:53.186598+02:00",
+  "is_am_email": true,
   "audit_summary": {
-    "youtube_videos": 8,
-    "themes": 4,
+    "youtube_videos": 4,
+    "themes": 3,
     "music_articles": 12,
     "good_news_articles": 5,
-    "discovery_articles": 12,
+    "discovery_articles": 6,
     "featured_read": 1,
     "reading_room": 5,
     "garden": 1,
     "puzzle": 1,
-    "larder": 0
+    "larder": 4
   },
   "themes": [
     {
-      "name": "Rabbit Holes Worth Falling Down",
-      "emoji": "🕳️",
-      "tagline": "Curious little mysteries that start small and end with your brain somewhere unexpected.",
+      "name": "Infinity & Beyond",
+      "emoji": "♾️",
+      "tagline": "Where math breaks your brain and physics breaks reality — buckle up.",
       "items": [
         {
           "source": "youtube",
-          "video_id": "N_cPuTBre3g",
-          "title": "The Strange Disappearance Of Blue M&Ms",
-          "channel_id": "UCNaq5Jh4SQ1oBAjhQ0KPhoA",
-          "channel_title": "Weird History Food",
-          "published_at": "2026-09-17T14:15:21Z",
-          "url": "https://www.youtube.com/watch?v=N_cPuTBre3g",
-          "duration_seconds": 963,
-          "view_count": "3107",
-          "description": "In August 2026, Mars is changing the iconic M&M’s candy colors... and two familiar colors are disappearing. The new M&M’s lineup will be made without artificial dyes and will feature just four colors: red, orange, yellow, and green. So where did blue and brown M&M’s go?\n\nIn this episode of Weird History Food, we look over the strange history of the brand to determine why blue and brown will be missing from the new M&M’s and what the change reveals about America’s favorite candy.\n\nAre you a fan o",
-          "why_watch": "The real hook here isn't nostalgia — it's that Mars's 2026 reformulation is a direct consequence of the artificial dye regulatory wave, and blue M&Ms have a surprisingly contested origin story within that context. Weird History Food uses the color change as a lens to trace how corporate candy decisions intersect with food policy and consumer lobbying over decades. Tighter and more informative than the title suggests."
-        },
-        {
-          "source": "youtube",
-          "video_id": "U2l-Ty5yyU4",
-          "title": "Logic at its Limit: The Grelling-Nelson Paradox",
-          "channel_id": "UC3KV2kFy2YhjYvverIy2WnA",
-          "channel_title": "Dialect",
-          "published_at": "2023-01-14T12:57:43Z",
-          "url": "https://www.youtube.com/watch?v=U2l-Ty5yyU4",
-          "duration_seconds": 815,
-          "view_count": "408213",
-          "description": "Whoever said logic was infallible? Certainly not the German logicians who, in 1908, discovered this mind-bending paradox. Learn how they beat reason at its own game, all by asking a single question about two simple words. Don't skimp out or you'll miss the surprise twist at the end! Plus: a very brief, totally not copyright-infringing appearance by The Sorting Hat.\n\nEnjoy the video and please consider helping support us on Patreon -- https://www.patreon.com/dialect_philosophy\n\nContents:\n00:00 - ",
-          "why_watch": "The Grelling-Nelson paradox — asking whether the word 'heterological' is heterological — is a genuine crack in classical logic, and Dialect builds to it slowly enough that the contradiction lands with real force. The surprise twist in the final minutes reframes the whole thing in a way that connects it to broader questions about self-reference and formal systems. At 13 minutes it's one of the most efficient introductions to this corner of philosophy of language you'll find."
-        },
-        {
-          "source": "youtube",
-          "video_id": "5vEGc9U1gLE",
-          "title": "Rhett & Link Answer The Internet's Best Questions",
-          "channel_id": "UCftwRNsjfRo08xYE31tkiyw",
-          "channel_title": "WIRED",
-          "published_at": "2026-09-17T16:00:11Z",
-          "url": "https://www.youtube.com/watch?v=5vEGc9U1gLE",
-          "duration_seconds": 628,
-          "view_count": "6146",
-          "description": "This is the the WIRED A̶u̶t̶o̶*Complete* Interview. WIRED turns on dark mode as we hand-pick the very best Rhett & Link questions from the internet. Why is it “Rhett & Link” and not “Link & Rhett?” Why is Link even called Link in the first place? What do Rhett & Link think about fans approaching them in public? What are some of their favorite memories and the biggest laughs they’ve shared on and off the set? Tune in to find out the answers to the internet’s best questions. \n\n0:00 The Complete In",
-          "why_watch": "WIRED's dark-mode twist on the autocomplete format works here because Rhett and Link are genuinely candid — the explanation of how Link got his name alone is worth the runtime. It's a low-stakes, easy watch that reveals a bit more of the friendship dynamic behind 15+ years of Good Mythical Morning. Good for fans, and surprisingly watchable even if you're only casually familiar with them."
-        }
-      ]
-    },
-    {
-      "name": "The Universe Is Weirder Than You Thought",
-      "emoji": "🌌",
-      "tagline": "Physics that breaks your intuition and then politely puts it back together.",
-      "items": [
-        {
-          "source": "youtube",
-          "video_id": "XcNsvqEduJ8",
-          "title": "Why Supermassive Black Holes Are Actually Safe",
+          "video_id": "Jfk4_BsNn1g",
+          "title": "The Man Who Discovered the Laws of Infinity",
           "channel_id": "UCIZ5ZOeiXYbmKTl_85ghNPw",
           "channel_title": "Physics Explained",
-          "published_at": "2025-10-11T19:00:25Z",
-          "url": "https://www.youtube.com/watch?v=XcNsvqEduJ8",
-          "duration_seconds": 2146,
-          "view_count": "245227",
-          "description": "Donate to FarmKind at https://www.farmkind.giving/physicsexplained and get a 50% boost on your donation! Even a small contribution can help improve the lives of farmed animals.\n\n\nhttps://www.youtube.com/@PhysicsExplainedVideos?sub_confirmation=1\n\nWhat would really happen if you fell into a black hole?\nWould you be stretched into spaghetti — or glide silently through the event horizon? In this video, we explore the terrifying physics of tidal forces and discover why the smallest black holes are a",
-          "why_watch": "The central insight — that supermassive black holes are actually gentler at the event horizon than stellar-mass ones, because tidal forces scale inversely with size — runs counter to most people's intuition and is explained here with real care. The video takes the spaghettification myth seriously enough to dismantle it properly, walking through the actual physics of what crossing an event horizon would feel like. At 35 minutes it earns its length by not cutting corners."
+          "published_at": "2025-09-27T19:30:04Z",
+          "url": "https://www.youtube.com/watch?v=Jfk4_BsNn1g",
+          "duration_seconds": 2401,
+          "view_count": "257117",
+          "description": "Thanks to Lovable for sponsoring this video. Go to https://lovable.link/physicsexplainedyt to start building today and use my code PHYSICSYT20 for 20% off!\n\nSupport the channel on Patreon: https://www.patreon.com/physicsexplained\n\nThis video explores Georg Cantor’s groundbreaking discovery that some infinities are larger than others. We follow how he used one-to-one correspondence to compare infinite sets, showed that even numbers and rationals are still the same size as the counting numbers, an",
+          "why_watch": "This is a careful, 40-minute walkthrough of Georg Cantor's diagonal argument and the counterintuitive proof that infinity comes in different sizes — not just as a curiosity, but with real stakes for the foundations of mathematics. The channel earns its runtime by building the logic step by step rather than hand-waving the hard parts. If you've heard the claim that 'some infinities are bigger' but never quite believed it, this is where it clicks."
         },
         {
           "source": "youtube",
-          "video_id": "6p9i6lfNbmg",
-          "title": "Polarisation Energy Paradox! (This seems to create light energy)",
+          "video_id": "i88ipC8GebA",
+          "title": "I never understood what happens if you go faster than light...until now!",
           "channel_id": "UCGfFUc6eWxfbtjYeun6r9xg",
           "channel_title": "FloatHeadPhysics",
-          "published_at": "2024-05-23T13:00:10Z",
-          "url": "https://www.youtube.com/watch?v=6p9i6lfNbmg",
-          "duration_seconds": 1379,
-          "view_count": "66013",
-          "description": "To try everything Brilliant has to offer—free—for a full 30 days, visit https://brilliant.org/FloatHeadPhysics . You’ll also get 20% off an annual premium subscription.\n\nLet's explore the famous polarisation energy paradox which seems to create light energy. Like most paradoxes in physics, this is only apparent. Once we account for the fact that light is a transverse wave and can be polarised, energies will be accounted for.\n\nChapters:\n00:00 Polarisation paradox experiment\n01:37 Demonstrating tr",
-          "why_watch": "The paradox — that stacking polarizing filters seems to increase light transmission, appearing to create energy from nothing — is a genuine head-scratcher that FloatHeadPhysics resolves by carefully unpacking what polarization actually does to a transverse wave's energy components. The resolution isn't hand-wavy; it requires rethinking how you picture the relationship between wave direction and filter orientation. A satisfying physics puzzle with a real payoff."
-        },
+          "published_at": "2024-05-10T14:23:11Z",
+          "url": "https://www.youtube.com/watch?v=i88ipC8GebA",
+          "duration_seconds": 1708,
+          "view_count": "295093",
+          "description": "To try everything Brilliant has to offer—free—for a full 30 days, visit https://brilliant.org/FloatHeadPhysics . You’ll also get 20% off an annual premium subscription.\n\nLet's explore why faster than light signals reverse time and break causality. Why they can make effects occur before cause, causing time paradoxes. \n\nThis video is sponsored by Brilliant.",
+          "why_watch": "Rather than stopping at 'you can't go faster than light,' this video pushes into the specific logical consequence: why FTL signals don't just break the speed limit but actually reverse causality, letting effects precede their causes. FloatHeadPhysics uses spacetime diagrams to make the argument visual rather than purely abstract. It's one of the cleaner treatments of why the light-speed limit is really a rule about the structure of cause and effect."
+        }
+      ]
+    },
+    {
+      "name": "Geometry of the Cosmos",
+      "emoji": "🕳️",
+      "tagline": "Forget pretty space pictures — this is what curved spacetime actually looks like.",
+      "items": [
         {
           "source": "youtube",
-          "video_id": "UtCBjoeZ7bQ",
-          "title": "Log amplifier",
+          "video_id": "q6RufF4a6LM",
+          "title": "The Geometry of a Black Hole",
+          "channel_id": "UC3KV2kFy2YhjYvverIy2WnA",
+          "channel_title": "Dialect",
+          "published_at": "2022-12-17T13:26:43Z",
+          "url": "https://www.youtube.com/watch?v=q6RufF4a6LM",
+          "duration_seconds": 1111,
+          "view_count": "932375",
+          "description": "Gravity is said to be the curvature of space and time, but what does such curvature actually look like? In this video we explore the foremost solution to Einstein's equations -- the Schwarzschild solution -- in order to construct a concrete visualization of the spacetime manifold. Will this visualization grant us new insight into our higher-dimensional reality? The secrets of gravity are locked away... in The Geometry of a Black Hole.\n\nContents:\n00:00 - Intro\n00:50 - The Schwarzschild Metric\n02:",
+          "why_watch": "Dialect builds an actual geometric visualization of the Schwarzschild spacetime solution — not an artist's impression of a black hole, but a mathematically grounded picture of what curved spacetime looks like as a manifold. The video is careful to distinguish what the geometry represents versus what you'd physically observe, which keeps it honest. At under 19 minutes, it's one of the more rigorous yet accessible treatments of general relativity's most famous result."
+        }
+      ]
+    },
+    {
+      "name": "Hidden Architecture",
+      "emoji": "📡",
+      "tagline": "The invisible engineering holding your everyday technology together — finally explained.",
+      "items": [
+        {
+          "source": "youtube",
+          "video_id": "_qqGKMM3C0Y",
+          "title": "Phase Locked Loop - basic principle - Digital PLL",
           "channel_id": "UCFtCfZ4rtIZ7Hsq7ZNHoY1w",
           "channel_title": "Computer&Electronics",
-          "published_at": "2024-08-17T09:32:20Z",
-          "url": "https://www.youtube.com/watch?v=UtCBjoeZ7bQ",
-          "duration_seconds": 392,
-          "view_count": "1690",
-          "description": "This video talks about Logarithmic amplifier built with Op-Amps. A log amplifier is an amplifier in which the output voltage is the natural log of the input voltage. It is used in analog computer, audio synthesis methods and to perform mathematical operations such multiplication and the raising to the power.",
-          "why_watch": "A clean, no-frills six-minute explainer on how op-amp log amplifiers work and why the logarithmic relationship between input and output is useful for analog computation and audio synthesis. It won't replace a textbook, but it's a solid quick reference if you're brushing up on analog circuit fundamentals before a project or exam. Purely functional — watch it for the clarity, not the production."
-        }
-      ]
-    },
-    {
-      "name": "Walls That Talk",
-      "emoji": "🏰",
-      "tagline": "Places and ideas built by humans, layered with centuries of consequence.",
-      "items": [
-        {
-          "source": "youtube",
-          "video_id": "CAiGtjr6grg",
-          "title": "We Explored Most Defended Island in History",
-          "channel_id": "UCZwU2G-KVl-P-O-B35chZOQ",
-          "channel_title": "History Hit",
-          "published_at": "2026-09-17T18:00:24Z",
-          "url": "https://www.youtube.com/watch?v=CAiGtjr6grg",
-          "duration_seconds": 1253,
-          "view_count": "380",
-          "description": "It's the most fought over Island in history, but Why? \n\nJoin historian Dan Snow as he explores Malta’s extraordinary history of siege and survival. From the Ottoman Great Siege of 1565, through Napoleon’s invasion and Nelson's blockade, to the devastating Second World War bombing, discover how this small Mediterranean island became one of history’s greatest fortresses.\n\n0:00 Intro\n1:00 The Great Siege 1565\n8:22 The Napoleonic Siege 1798-1800\n16:31 WWII 1940-1943\n\nYou can now become a History Hit",
-          "why_watch": "Dan Snow walks you through Malta's actual fortifications and battle sites, making the island's layered history tangible rather than textbook. The video traces a clear thread from the Ottoman siege of 1565 to WWII bombing raids, showing why this tiny island kept drawing the world's most powerful armies. If you've ever wondered why Malta punches so far above its size in military history, this is a concise, grounded answer."
-        }
-      ]
-    },
-    {
-      "name": "The Machine Room",
-      "emoji": "🤖",
-      "tagline": "What happens when AI systems start building AI systems — and who's watching.",
-      "items": [
-        {
-          "source": "youtube",
-          "video_id": "6AgOfiZOWiY",
-          "title": "OpenAI researcher on agent swarms & recursive self-improvement",
-          "channel_id": "UCXl4i9dYBrFOabk0xGmbkRA",
-          "channel_title": "Dwarkesh Patel",
-          "published_at": "2026-09-17T15:58:24Z",
-          "url": "https://www.youtube.com/watch?v=6AgOfiZOWiY",
-          "duration_seconds": 4810,
-          "view_count": "9841",
-          "description": "New episode with Noam Brown.\n\nWe talk about multi-agent, Navier-Stokes, and what the current explosion of maths progress tells us about what happens once you automate AI research.\nAnd we also discuss how we will know if the models are actually aligned before we kick off RSI.\n\n𝐄𝐏𝐈𝐒𝐎𝐃𝐄 𝐋𝐈𝐍𝐊𝐒\n* Transcript: https://www.dwarkesh.com/p/noam-brown\n* Apple Podcasts: https://podcasts.apple.com/us/podcast/noam-brown-agent-swarms-alignment-recursive-self-improvement/id1516093381?i=1000790373289\n* Spotify: ",
-          "why_watch": "Noam Brown is one of the few people who can speak credibly about both the technical mechanics of multi-agent AI systems and the alignment questions that arise when those systems start automating research itself. Dwarkesh presses him specifically on how we'd even detect misalignment before recursive self-improvement kicks off — a question most AI coverage skates past. Dense but unusually honest about what researchers actually don't know yet."
+          "published_at": "2024-07-31T15:03:23Z",
+          "url": "https://www.youtube.com/watch?v=_qqGKMM3C0Y",
+          "duration_seconds": 992,
+          "view_count": "11261",
+          "description": "A phase locked loop is a device which generates a clock and sychronizes it with an input signal. The input signal can be data or another clock. A very common application is frequency synthesis. In frequency synthesis PLLs are used to generate a clock which is based on a clock already existing. Often the newly generated clock will be at a multiple of the original frequency and this is what the video is about: generating a clock that is a multiple of a reference clock.\nD Flip Flop https://youtu.be",
+          "why_watch": "Phase-locked loops show up everywhere — from FM radio to CPU clock generation — yet most explanations skip straight to the math and lose you immediately. This video earns points for grounding the concept in the concrete use case of frequency synthesis before introducing the feedback mechanism. It's a solid 16 minutes for anyone who works with electronics and has been quietly nodding along whenever PLLs come up in conversation."
         }
       ]
     }
@@ -151,133 +92,133 @@
     {
       "source": "music",
       "source_name": "NPR Music",
-      "title": "Watch Live: XPoNential Music Festival 2026",
-      "snippet": "The XPoNential Music Festival , presented by Subaru, returns to the Camden Waterfront this weekend.",
-      "url": "https://www.npr.org/sections/world-cafe/2026/09/17/nx-s1-5973121/watch-live-xponential-music-festival-2026",
+      "title": "The Latin Grammy nominations reflect the rise of folk music",
+      "snippet": "Alt.Latino 's Felix Contreras explains a surprising new trend in Latin music that's been bubbling for awhile.",
+      "url": "https://www.npr.org/2026/09/17/nx-s1-5971296/the-latin-grammy-nominations-reflect-the-rise-of-folk-music",
       "genre": "",
-      "vibe_check": "The smell of river air and cold beer while a stranger's favorite band becomes yours too.",
-      "cover_url": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/1124x632+26+0/resize/1400/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F8b%2Fb1%2F1d8015bf476285a77a5d1e7f7ece%2Fxponential-festival-2026.jpeg",
-      "embed_url": null
-    },
-    {
-      "source": "music",
-      "source_name": "NPR Music",
-      "title": "3 Dolly Parton hits showcase her unique takes on romance and heartbreak",
-      "snippet": "\"Don't Let It Trouble Your Mind\" is the prettiest kiss-off song you'll ever hear. Then there's \"Run That By Me One More Time,\" a rowdy novelty duet, and the story-song \"My Blue Ridge Mountain Boy.\"",
-      "url": "https://www.npr.org/2026/09/17/nx-s1-5973032/3-dolly-parton-hits-showcase-her-unique-takes-on-romance-and-heartbreak",
-      "genre": "",
-      "vibe_check": "A porch swing, a sweet smile, and a goodbye that somehow still sparkles.",
+      "vibe_check": "Like discovering your grandmother's handwritten recipe box and realizing it contains something urgent and alive.",
       "cover_url": "https://media.npr.org/include/images/facebook-default-wide-s1400-c85.jpg",
       "embed_url": null
     },
     {
       "source": "music",
       "source_name": "NPR Music",
-      "title": "Los Mirlos: Tiny Desk Concert",
-      "snippet": "For more than 50 years, Los Mirlos has cultivated its own Peruvian twist on cumbia, featuring reverb-heavy, surf-rock guitar.",
-      "url": "https://www.npr.org/2026/09/17/g-s1-141853/los-mirlos-tiny-desk-concert",
+      "title": "On new album 'Second Song,' Neil Young meditates on the passage of time",
+      "snippet": "Neil Young talks to NPR about his reflective 50th studio album, Second Song , out Sept. 18.",
+      "url": "https://www.npr.org/2026/09/17/nx-s1-5887549/neil-young-new-album-second-song",
       "genre": "",
-      "vibe_check": "Humid jungle air meeting ocean breeze, with a reverb-drenched guitar leading you somewhere you've never been but instantly recognize.",
-      "cover_url": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/2048x1152+0+0/resize/1400/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F80%2F61%2Ff48b7b3148d98027226dc0182599%2F20260728-los-mirlos-performs-a-tiny-desk-concert-at-npr-in-washington-d-c-vanessa-castillo-3-2-11.jpg",
+      "vibe_check": "The kind of album you put on while watching light shift slowly across an old photograph.",
+      "cover_url": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/8742x4917+0+738/resize/1400/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F33%2F63%2F2a71da70427d875766bf9db6c25a%2Fneil-young-4-6-25-roxx-3357-1.jpg",
+      "embed_url": "https://www.youtube.com/embed/JZnzpxrHM4M"
+    },
+    {
+      "source": "music",
+      "source_name": "NPR Music",
+      "title": "Sara Bareilles excavates loss in all its messy forms on new album 'Good Grief'",
+      "snippet": "Sara Bareilles talks to Morning Edition about grief, infertility and the experiences that shaped her new album.",
+      "url": "https://www.npr.org/2026/09/17/nx-s1-5885868/sara-bareilles-good-grief-album",
+      "genre": "",
+      "vibe_check": "Crying in a parked car, but eventually rolling the windows down.",
+      "cover_url": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/2976x1674+0+295/resize/1400/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F57%2Ffd%2F3f141a8f418a87f3f30dbe6e75d1%2Fgettyimages-2279912618.jpg",
       "embed_url": null
     },
     {
       "source": "music",
       "source_name": "Stereogum",
-      "title": "New Radicals Ready First New Album Since 1998",
-      "snippet": "In July, New Radicals quietly released \" One Night Only (Break Loose Break Free!) ,\" their first original song in 28 years. It was for the rom-com movie One Night Only , but it turns out that New Radicals have a lot more in store. In a new interview, Gregg Alexander revealed that a followup to 1998's acclaimed Maybe You've Been Brainwashed Too is on the way, and it's called Maybe You've Been Brainwashed TWO .",
-      "url": "https://stereogum.com/2511796/new-radicals-ready-first-new-album-since-1998/news/",
+      "title": "V.V. Lightbody – “Two Swans”",
+      "snippet": "V.V. Lightbody's third album Period Piece arrives next month, and so far she's shared \" Best Problem ,\" \" Practice Smiling ,\" and \" Dull Knife .\" The Chicago singer-songwriter is back today with the sweet new single \"Two Swans.\"",
+      "url": "https://stereogum.com/2511828/v-v-lightbody-two-swans/music/",
       "genre": "",
-      "vibe_check": "Like finding a mix CD from 1998 in your old jacket pocket and realizing it still slaps.",
-      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/09/GettyImages-1297492649.jpg?w=564",
-      "embed_url": null
+      "vibe_check": "Quiet and tender as two birds landing on the same branch without startling each other.",
+      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/09/unnamed-39-2.png?w=564",
+      "embed_url": "https://www.youtube.com/embed/mKFSyC8KuiE"
     },
     {
       "source": "music",
       "source_name": "Stereogum",
-      "title": "Johanna Warren – “Islamorada”",
-      "snippet": "Nobody does heartache like Johanna Warren. The Florida-born, Wales-based singer-songwriter has a knack for crushing ballads that communicate a kind of primal desperation, hitting its apex on 2020's gnarly \" Twisted .\" Now, after releasing \" brave & capable \" in May, she's back with \"Islamorada,\" another poignant tune that finds power in pleading.",
-      "url": "https://stereogum.com/2511786/johanna-warren-islamorada/music/",
+      "title": "Dirt Buyer – “My Life’s All Right” (Shira Small Cover)",
+      "snippet": "Earlier this year, Bayonet launched a series where artists from their roster cover a song from The Numero Group catalog. The fourth installment is out today and has Dirt Buyer putting an emo spin on Shira Small's 1974 jazz gem \"My Life's All Right.\"",
+      "url": "https://stereogum.com/2511813/dirt-buyer-my-lifes-all-right-shira-small-cover/music/",
       "genre": "",
-      "vibe_check": "The kind of ache you sit inside like a dark room, not yet ready to turn the lights back on.",
-      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/09/a0048789946_10.jpg?w=564",
-      "embed_url": "https://www.youtube.com/embed/R5gKLAyeNIk"
+      "vibe_check": "A bittersweet midnight drive where someone's old mixtape accidentally becomes yours.",
+      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/09/68709.jpg?w=564",
+      "embed_url": "https://www.youtube.com/embed/D0iB9fevTBg"
     },
     {
       "source": "music",
       "source_name": "Stereogum",
-      "title": "Ruby Gill – “Jamie”",
-      "snippet": "After releasing an album of live poetry back in June, Melbourne singer-songwriter Ruby Gill is building up to the release of her next musical collection, Fishing is not about fishing . In August, she released an early preview in the form of \"Carol / not carol,\" an engaging character sketch she wrote with her wife . \"Carol likes the way the light looks/ When it's heating up the dash,\" that one begins.",
-      "url": "https://stereogum.com/2511746/ruby-gill-jamie/music/",
+      "title": "Mildred – “Bird Laugh”",
+      "snippet": "Back in April, the Oakland alt-country band Mildred released their new album Fenceline . If you're into the booming cottage industry that is post-Pavement/Silver Jews 2020s slacker twang, you'll want to hear it. Mildred play with an easygoing looseness, even as lightweight melancholia hangs over everything, and their rotation of four singer-songwriters drawls with a tender melodic touch.",
+      "url": "https://stereogum.com/2511741/mildred-bird-laugh/music/",
       "genre": "",
-      "vibe_check": "Quiet observations about ordinary life that hit like a soft fist to the chest on a slow afternoon.",
-      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/09/a1967747785_10.jpg?w=564",
-      "embed_url": "https://rubygill.bandcamp.com/album/im-not-exaggerating-when-i-say-poems"
+      "vibe_check": "Porch-sitting music for a late afternoon that refuses to fully commit to being sad.",
+      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/09/mildred-selected-edit-1030070.jpg?w=564",
+      "embed_url": "https://www.youtube.com/embed/Q8Ix-iBwKgg"
     },
     {
       "source": "music",
-      "source_name": "No Depression",
-      "title": "Molly Tuttle, Tyler Childers, and More Win at 2026 Americana Music Association Awards",
-      "snippet": "Along with the heat, AMERICANAFEST 2026 returned to Nashville, Tennessee, the Americana Music Association gathered its members and fans at the Ryman Auditorium last night to hand out its Americana Honors & Awards. The Milk Carton Kids also returned to host the awards, which is always a great show packed",
-      "url": "https://nodepression.org/molly-tuttle-tyler-childers-and-more-win-at-2026-americana-music-association-awards/",
+      "source_name": "Pitchfork",
+      "title": "Hamilton Leithauser and Rostam to Tour I Had a Dream That You Were Mine",
+      "snippet": "Their first official run of dates together is a celebration of the duo’s 2016 album",
+      "url": "https://pitchfork.com/story/hamilton-leithauser-and-rostam-to-tour-i-had-a-dream-that-you-were-mine/",
       "genre": "",
-      "vibe_check": "Nashville sawdust and neon glow, the feeling of belonging to something rootsy and real.",
-      "cover_url": "https://storage.ghost.io/c/18/d0/18d08e58-3b1b-4720-ae25-a31b44e69d4b/content/images/2026/09/DSC_5836.jpeg",
+      "vibe_check": "The warm, wine-blurred feeling of revisiting a record you almost forgot changed everything.",
+      "cover_url": "https://media.pitchfork.com/photos/6aac27e2a6cb139c329cb684/master/pass/img-3381dfbd-9a3d-4d9b-a0d7-0f7e5c88f316.jpeg",
       "embed_url": null
     },
     {
       "source": "music",
-      "source_name": "No Depression",
-      "title": "ALBUM REVIEW: With 'The Old Beloved Path,' Jake Xerses Fussell Returns to a Minimalist Approach",
-      "snippet": "While Jake Xerses Fussell occasionally slips original tracks into his recordings, he mostly adapts traditional songs and instrumentals, giving obscure compositions a contemporary treatment. This is the case with his sixth album, The Old Beloved Path , as well. The significant shift from recent work is that he largely returns to",
-      "url": "https://nodepression.org/album-review-with-the-old-beloved-path-jake-xerses-fussell-returns-to-a-minimalist-approach/",
+      "source_name": "Pitchfork",
+      "title": "Soccer Mommy Returns With New Song “Rings of Saturn”",
+      "snippet": "Sophie Allison wrote her latest during “a difficult time when I would often take my telescope out into the yard to look at the moon or at planets”",
+      "url": "https://pitchfork.com/story/soccer-mommy-returns-with-new-song-rings-of-saturn/",
       "genre": "",
-      "vibe_check": "A lantern-lit walk down a dirt road you somehow remember from a life you never lived.",
-      "cover_url": "https://storage.ghost.io/c/18/d0/18d08e58-3b1b-4720-ae25-a31b44e69d4b/content/images/2026/09/Fussell-The-Old-Beloved-Path-front-cover.jpg",
-      "embed_url": null
-    },
-    {
-      "source": "music",
-      "source_name": "Aquarium Drunkard",
-      "title": "Nigeria 80: The Explosive Sound World of 1980s Nigeria",
-      "snippet": "The ’70s didn’t end. They just got more elastic. Strut’s Nigeria 80 catches Nigerian popular music in that beautiful, unruly stretch between Afrobeat’s explosion and whatever came next—juju, funk, highlife, reggae, proto-hip-hop, and plenty of glorious cross-pollination along the way.",
-      "url": "https://aquariumdrunkard.com/2026/09/17/nigeria-80-the-explosive-sound-world-of-1980s-nigeria/",
-      "genre": "",
-      "vibe_check": "A sweaty, joyful mess of rhythms that refuses to sit still or be categorized, like a party that spills into the street.",
-      "cover_url": "https://aquariumdrunkard.com/_newness/wp-content/uploads/2026/08/Nigeria-80.jpg",
-      "embed_url": null
-    },
-    {
-      "source": "music",
-      "source_name": "Aquarium Drunkard",
-      "title": "The Lagniappe Sessions :: Instrumentals (2016-2026)",
-      "snippet": "Aquarium Drunkard’s Lagniappe Sessions have been rolling along at a steady pace since 2011, bringing together a global lineup of artists to offer up cover versions of a few of their favorite tunes. Over the last 15 years, Lagniappe contributors have gone in all sorts of directions. There are no rules — the only boundaries are those of the imagination.",
-      "url": "https://aquariumdrunkard.com/2026/09/17/the-lagniappe-sessions-instrumentals-2016-2026/",
-      "genre": "",
-      "vibe_check": "A curiosity cabinet of sounds from everywhere and nowhere, best discovered with headphones and no particular plans.",
-      "cover_url": "https://aquariumdrunkard.com/_newness/wp-content/uploads/2026/08/AQUARIUM-DRUNKARD-2026-Lagniappe.jpeg",
+      "vibe_check": "Lying on your back in a dark yard, letting the cold grass anchor you while the sky feels dangerously infinite.",
+      "cover_url": "https://media.pitchfork.com/photos/6aab4bab263246885710ac69/master/pass/Soccer%20Mommy%20by%20Monica%20Murray.png",
       "embed_url": null
     },
     {
       "source": "music",
       "source_name": "Consequence",
-      "title": "Brad Paisley’s New Song “We Are South America” Played at End of South Park Season 29 Premiere: Stream",
-      "snippet": "The country superstar wrote and recorded the song specifically for the episode. Brad Paisley’s New Song “We Are South America” Played at End of South Park Season 29 Premiere: Stream Eddie Fu",
-      "url": "https://consequence.net/2026/09/brad-paisley-south-park-season-29-premiere-we-are-south-america/",
+      "title": "Beck Releases New Album Ride Lonesome: Stream",
+      "snippet": "It's the singer-songwriter's first studio album in seven years and his 15th overall. Beck Releases New Album Ride Lonesome: Stream Travis Bland",
+      "url": "https://consequence.net/2026/09/beck-releases-ride-lonesome/",
       "genre": "",
-      "vibe_check": "The cheerful bewilderment of a joke you're not entirely in on, but you're tapping your boot anyway.",
-      "cover_url": "https://consequence.net/wp-content/uploads/2026/09/brad-paisley-south-park.jpg?quality=80",
-      "embed_url": "https://www.youtube.com/embed/OdsaYel_UY0"
+      "vibe_check": "Dust on the dashboard, a long highway, and the particular relief of having nothing left to prove.",
+      "cover_url": "https://consequence.net/wp-content/uploads/2026/04/Beck.jpeg?quality=80",
+      "embed_url": null
     },
     {
       "source": "music",
       "source_name": "Consequence",
-      "title": "Hans Zimmer Sets 2027 North American Tour Dates",
-      "snippet": "The \"Hans Zimmer Live - The Next Level\" arena tour will stop in 30 cities. Hans Zimmer Sets 2027 North American Tour Dates Eddie Fu",
-      "url": "https://consequence.net/2026/09/hans-zimmer-2027-north-american-tour-dates/",
+      "title": "Miles Davis and John Coltrane’s Complete Columbia Recordings Box Set Gets Centennial Reissue",
+      "snippet": "The collection will be reissued in 9xLP and 6xCD sets containing 58 tracks with the jazz legends. Miles Davis and John Coltrane’s Complete Columbia Recordings Box Set Gets Centennial Reissue Travis Bland",
+      "url": "https://consequence.net/2026/09/miles-davis-and-john-coltrane-recordings-reissue/",
       "genre": "",
-      "vibe_check": "Cinematic grandeur filling an arena like a film score finally escaped from the screen.",
-      "cover_url": "https://consequence.net/wp-content/uploads/2026/09/hans-zimmer-2027-north-american-tour-dates.jpg?quality=80",
+      "vibe_check": "The sound of a city late at night when even the neon signs seem to be thinking.",
+      "cover_url": "https://consequence.net/wp-content/uploads/2026/09/Miles-Davis-and-John-Coltrane-reissue.jpg?quality=80",
+      "embed_url": null
+    },
+    {
+      "source": "music",
+      "source_name": "Consequence",
+      "title": "Folk Duo Buffalo Traffic Jam Sell Out Entire 25-Date Tour",
+      "snippet": "The breakout Montana folk duo are filling rooms averaging roughly 1,600 fans a night, including two-night stands at Irving Plaza and the Ogden Theatre. Folk Duo Buffalo Traffic Jam Sell Out Entire 25-Date Tour Alex Krinsky",
+      "url": "https://consequence.net/2026/09/buffalo-traffic-jam-sold-out-tour-2026/",
+      "genre": "",
+      "vibe_check": "That rare, giddy feeling of being part of something beautiful before the rest of the world finds out about it.",
+      "cover_url": "https://consequence.net/wp-content/uploads/2026/09/buffalo-traffic-jam-sell-out-25-date-tour.jpg?quality=80",
+      "embed_url": "https://www.youtube.com/embed/0mW30whjtNk"
+    },
+    {
+      "source": "music",
+      "source_name": "JazzTimes",
+      "title": "Skylar Tang, Miranda Agnew Play 24th Annual Festival of New Trumpet Music (FONT)",
+      "snippet": "T he Dave Douglas–founded FONT (Festival of New Trumpet) Music is spread across several New York venues through September 20, including Brooklyn Conservatory of Music, …",
+      "url": "https://www.jazztimes.com/reviews/live/skylar-tang-miranda-agnew-play-24th-annual-festival-of-new-trumpet-music-font/",
+      "genre": "",
+      "vibe_check": "A brass note bending through a cracked window into a New York evening that could go anywhere.",
+      "cover_url": "https://www.jazztimes.com/wp-content/uploads/2026/09/collage-Skylar-2--scaled.jpg",
       "embed_url": null
     }
   ],
@@ -285,259 +226,239 @@
     {
       "source": "good_news",
       "source_name": "Good News Network",
-      "title": "Scientists Solve Mystery Behind Snowfall That Dropped 695 Billion Tons of Ice on Antarctica",
-      "url": "https://www.goodnewsnetwork.org/scientists-solve-mystery-behind-snowfall-that-dropped-695-billion-tons-of-ice-on-antarctica/",
-      "snippet": "A warming pool of tropical ocean water has been shown to be the cause of immense snowstorms over East Antarctica which contributed to a net gain of 695 billion tons of ice between 2021 and 2023. To put that tonnage into perspective, it’s about 4 years of annual ice loss according to a 2 decade […]",
-      "cover_url": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/09/Matt-Palmer-via-Unsplash.jpg",
-      "reason": "Understanding the forces behind extreme Antarctic snowfall events helps scientists build more accurate climate models, bringing us closer to reliable predictions that can guide real conservation decisions. The fact that researchers can now decode a 695-billion-ton mystery is a quiet reminder of how steadily our grasp of Earth's complex systems is growing."
+      "title": "Good News in History, September 18",
+      "url": "https://www.goodnewsnetwork.org/events060918/",
+      "snippet": "188 years ago today, the Anti-Corn Law League was established in England by the economics-savvy liberals who understood that protectionism is immoral and useless in benefiting the economy. The League, led by Richard Cobden and heavily influenced by economist Daniel Riccardo, succeeded in seeing the Corn Laws of 1815 abolished, laying out the first laizzez-faire […]",
+      "cover_url": "https://www.goodnewsnetwork.org/wp-content/uploads/2024/09/A-meeting-of-the-Anti-Corn-Law-League.jpg",
+      "reason": "History is full of quiet turning points worth remembering — pausing to mark them reminds us that progress has always been possible, even in difficult times."
     },
     {
       "source": "good_news",
       "source_name": "Positive News",
-      "title": "51 ways to get the planet tipping the right way",
-      "url": "https://www.positive.news/society/51-ways-to-get-the-planet-tipping-the-right-way/",
-      "snippet": "Researchers have identified 51 environmental solutions to save the planet. Here are five of the most promising",
-      "cover_url": "https://www.positive.news/wp-content/uploads/2026/09/iStock-178586669.jpeg",
-      "reason": "Fifty-one concrete, actionable ideas in one place means the path to positive change feels far less overwhelming than the problem itself. This kind of practical optimism — grounded in what people can actually do — is exactly the fuel that turns concern into momentum."
+      "title": "What went right this week: the good news that matters",
+      "url": "https://www.positive.news/society/good-news-stories-from-week-38-of-2026/",
+      "snippet": "EU to ban social media for kids, England approves life-extending cancer drug, and reading linked to better health, plus more",
+      "cover_url": "https://positivenews.kinsta.cloud/wp-content/uploads/2026/09/iStock-2096480418.jpg",
+      "reason": "Amid the noise of daily news, a weekly roundup of genuinely good stories is a small act of resistance against despair — proof that meaningful change keeps happening whether or not it makes headlines."
     },
     {
       "source": "good_news",
       "source_name": "Upworthy",
-      "title": "Neo-Nazis slowly realize this small town brilliantly pranked them for a great charity",
-      "url": "https://www.upworthy.com/town-pranks-neo-nazis-for-charity-ex1/",
-      "snippet": "Truly a candidate for the Prank Hall of Fame.",
-      "cover_url": "https://www.upworthy.com/wp-content/uploads/sites/2/2025/08/origin-267.png",
-      "reason": "A small town turned hatred into generosity by channeling a neo-Nazi march into a charity fundraiser, proving that communities can respond to intimidation with creativity and humor rather than fear. It's a heartening blueprint for disarming division while doing genuine good."
+      "title": "Many French speakers are finding ChatGPT ‘extra surreal’ for one hilarious linguistic reason",
+      "url": "https://www.upworthy.com/many-french-speakers-are-finding-chatgpt-extra-surreal-for-one-hilarious-linguistic-reason/",
+      "snippet": "Excusez-moi? Your cat did what now?",
+      "cover_url": "https://www.upworthy.com/wp-content/uploads/sites/2/2026/09/cat-beret.jpg",
+      "reason": "Language is wonderfully alive, and the fact that a global AI tool is sparking laughter and cultural conversation among French speakers is a charming reminder that human quirks will always find a way through."
     },
     {
       "source": "good_news",
       "source_name": "Reasons to be Cheerful",
-      "title": "The World Is Getting Noisier — But We Can Change That",
-      "url": "https://reasonstobecheerful.world/rethinking-noise-pollution-protect-health-well-being/",
-      "snippet": "I spent years immersed in noise. Sometimes it was deafeningly loud, like the crescendo of horns and two-stroke motorcycles during rush hour in Mumbai. Other times it was simply maddening, like the parade of big-rig trucks in a dense Detroit neighborhood, belching fumes along with deep, chest-rattling rumbles and hydraulic...",
-      "cover_url": "https://reasonstobecheerful.world/wp-content/uploads/2026/09/shutterstock_2797378547-scaled.jpg",
-      "reason": "Acknowledging that noise pollution is a growing problem is itself a sign of progress — because naming it clearly means we're finally ready to address it. Research and advocacy around quieter environments point toward healthier communities, wildlife included, where the sounds of nature can actually be heard again."
+      "title": "In Remote Alaska, the Promise and Limits of Vertical Farming",
+      "url": "https://reasonstobecheerful.world/in-remote-alaska-the-promise-and-limits-of-vertical-farming/",
+      "snippet": "This story was originally published by Civil Eats. The town of Skagway, in southeast Alaska, is home to approximately 1,000 year-round residents and hosts more than 1.3 million summer cruise ship passengers. Isolated in the winter, and reliant on a barge system to bring food up from the Lower 48...",
+      "cover_url": "https://reasonstobecheerful.world/wp-content/uploads/2026/09/260817-3-in-remote-alaska-promise-limits-vertical-farming-skagway-brewing-co-molly-mccluskey.jpg",
+      "reason": "Communities in remote Alaska are experimenting with vertical farming to grow fresh food where supply chains are fragile — even the honest reckoning with its limits shows that local ingenuity is being taken seriously."
     },
     {
       "source": "good_news",
       "source_name": "The Optimist Daily",
-      "title": "Travel scams have gotten harder to spot. Here’s what changed and what to watch for.",
-      "url": "https://www.optimistdaily.com/2026/09/travel-scams-have-gotten-harder-to-spot-heres-what-changed-and-what-to-watch-for/",
-      "snippet": "BY THE OPTIMIST DAILY EDITORIAL TEAM The old cues for spotting a scam are becoming unreliable. Misspelled words, strange formatting, unfamiliar sender names, requests that arrive completely out of nowhere: those signals are fading. Scammers using artificial intelligence tools have learned to replicate legitimate correspondence closely enough that their messages no longer stand out from […] The post Travel scams have gotten harder to spot.",
-      "cover_url": "https://www.optimistdaily.com/wp-content/uploads/Depositphotos_269709364_L.jpg",
-      "reason": "Awareness is the first and most powerful line of defence, and stories that clearly explain emerging scam tactics put real knowledge into travellers' hands. An informed public is a harder target, and that shift in balance matters."
+      "title": "Berlin’s REWE supermarket: the grocery store with a working rooftop farm",
+      "url": "https://www.optimistdaily.com/2026/09/berlins-rewe-supermarket-the-grocery-store-with-a-working-rooftop-farm/",
+      "snippet": "BY THE OPTIMIST DAILY EDITORIAL TEAM The lettuce in REWE’s Lankwitz store in Berlin has had a short morning. Grown on the rooftop farm directly above, cut, packaged by hand, and carried downstairs before most shoppers walk in, the whole trip from farm to shelf is measured not in miles but in flights of stairs. […] The post Berlin’s REWE supermarket: the grocery store with a working rooftop farm first appeared on The Optimist Daily: Making Solutions the News .",
+      "cover_url": "https://www.optimistdaily.com/wp-content/uploads/Depositphotos_886578344_S.jpg",
+      "reason": "A Berlin supermarket growing real food on its own rooftop is a quietly radical idea made practical — shortening the distance from soil to shelf and showing that urban food production can be woven into everyday life."
     }
   ],
   "discovery_articles": [
     {
       "source": "discovery",
       "source_name": "Atlas Obscura",
-      "title": "The Warner Theatre  in Erie, Pennsylvania",
-      "url": "https://www.atlasobscura.com/places/the-warner-theatre",
-      "snippet": "This opulent cinema in downtown Erie, commissioned by Warner Bros. Studios and designed by Chicago-based architects Rapp & Rapp, first opened its doors in 1931. Built for $1.5 million (about $32.95 million today), the grand venue channeled French Renaissance style with its Persian marble archways, gold-backed mirrors, and intricate silver leaf gilding.",
+      "title": "The Grand Mesa in Cedaredge, Colorado",
+      "url": "https://www.atlasobscura.com/places/the-grand-mesa",
+      "snippet": "Rising high above the vibrant browns and reds of the westerner Colorado landscape, stand the Grand Mesa. Touted as the highest flat topped mountain in the world, the Grand Mesa spans roughly 500 acres and stretches 40 miles in Garfield, Grand and Delta counties. While much of the terrain does appear flat, the topography can be rugged in many places.",
       "category": "history",
-      "cover_url": "https://img.atlasobscura.com/YTSrpu3INO66THrTx9k2MvevyMEn5ts3ZlxzD71Q3tk/rt:fit/w:600/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy9hZWU2/NmViNTE4ZmVlYmRm/MjFfRURQLURvd250/b3duLURsaWdodHNf/MTA4IEdpYmJlbnMg/cmVzaXplICgxKS5q/cGc.jpg",
-      "ferns_note": "At a time when the Great Depression was gutting American pockets, Warner Bros. spent the equivalent of nearly $33 million on Persian marble and silver leaf gilding for a movie palace in Erie, Pennsylvania — because apparently escapism was worth every cent. There's something quietly radical about that kind of opulence built precisely for people who needed to forget."
-    },
-    {
-      "source": "discovery",
-      "source_name": "Atlas Obscura",
-      "title": "Where to Find the World’s Best Soup",
-      "url": "https://www.atlasobscura.com/articles/worlds-best-soup",
-      "snippet": "20,000 BC was a monumental year in history. Why? The first pot of soup was crafted in a cave in modern-day China.",
-      "category": "history",
-      "cover_url": "https://img.atlasobscura.com/AsmsHj3mx7AxjZRBliS2ORuJJN5GEckwqtSnL8jiAj4/rt:fit/w:1200/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL2Fzc2V0/cy8zNDUzMjk3MS0y/NTFjLTRlY2ItYjYw/Zi1kMzE3MGY2MWRl/M2NiMjI3MmE5YTBi/NjYzMzRjM2FfU2Ny/ZWVuc2hvdCAyMDI2/LTA5LTE3IGF0IDEw/LjI3LjQ3IEFNLnBu/Zw.png",
-      "ferns_note": "Someone in a cave in what is now China, twenty-two thousand years ago, decided that boiling things in a vessel was a good idea — and honestly, they weren't wrong. Every bowl of soup you've ever found comforting is a direct echo of that first experiment."
+      "cover_url": "https://img.atlasobscura.com/0Bx8LsUDJNwSReuj0K2MI3he14bCXTchdXgwabUNWbU/rt:fit/w:600/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy80MWMw/M2MxNi0yYmYyLTQz/NDUtOWI0OC1kYzZm/MjliYjExNzdlYzY5/Y2IwZjhmYWUzNzZh/ZDhfSU1HXzA5MDAu/anBlZw.jpg",
+      "ferns_note": "The Grand Mesa sits so improbably high and flat above the Colorado canyon country that early settlers reportedly mistook its summit meadows for the sky itself. At roughly 10,000 feet, it shelters over 300 lakes — a secret alpine world hiding in plain sight above the desert."
     },
     {
       "source": "discovery",
       "source_name": "Smithsonian",
-      "title": "Bought for $30 at an Estate Sale, This Long-Lost Gertrude Abercrombie Painting Could Now Fetch $250,000",
-      "url": "https://www.smithsonianmag.com/smart-news/bought-for-30-at-an-estate-sale-this-long-lost-gertrude-abercrombie-painting-could-now-fetch-250000-180989513/",
-      "snippet": "The Chicago-based Surrealist created the piece in 1951, then gave it to a doctor in exchange for medical services",
+      "title": "Scientists Created Mice With Half-Human Brains. The Hybrid Animals Could Revolutionize Our Understanding of Neurological Disorders",
+      "url": "https://www.smithsonianmag.com/smart-news/scientists-created-mice-with-half-human-brains-the-hybrid-animals-could-revolutionize-our-understanding-of-neurological-disorders-180989518/",
+      "snippet": "Our brains and their associated diseases are notoriously hard to study. So, researchers developed an animal model with a cortex—the brain’s outer layer—grown from human-derived cells",
       "category": "history",
-      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/MTusmSofuVl-RwPtiUhUmnpmXfc=/fit-in/1600x0/filters:focal(1920x1920:1921x1921)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/48/19/48190f1e-de82-463a-bf2a-7fd3e3155f6d/721f466e35c476988b66e2c10fe999d68acd58e2-4469x4469.png",
-      "ferns_note": "A Chicago Surrealist quietly paid her doctor not in cash but in canvas — and that painting spent decades lost before surfacing at an estate sale for $30, now worth a quarter of a million dollars. It's the kind of transaction that makes you wonder what other masterpieces are quietly settling old debts in someone's attic."
+      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/K_p5uj1nyZGsRnd3HidzcJbqgi0=/fit-in/1600x0/filters:focal(750x500:751x501)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/0a/75/0a75c260-fa9a-425c-bf5e-b90eaf93c0f5/mouse-brain.png",
+      "ferns_note": "Somewhere in a laboratory right now, a mouse is navigating the world with a cortex built from human cells — and that quiet, unsettling fact may be the closest we've ever come to holding a human brain disease in our hands. The ethical questions are enormous, but so is the promise for conditions that have defeated us for generations."
     },
     {
       "source": "discovery",
       "source_name": "Smithsonian",
-      "title": "A Rare Marble Sculpture by America’s First Professional Female Sculptor Sat Hidden in Plain Sight for Decades in an English Garden",
-      "url": "https://www.smithsonianmag.com/smart-news/a-rare-marble-sculpture-by-americas-first-professional-female-sculptor-sat-hidden-in-plain-sight-for-decades-in-english-garden-180989508/",
-      "snippet": "Until its discovery during a house appraisal, the debut bust by Harriet Goodhue Hosmer, a celebrated artist and feminist icon, had been mistaken for an ordinary garden ornament",
+      "title": "Pope Leo XIV Makes a Splash for His 71st Birthday, Announcing a Water-Themed Art Exhibition at the Vatican Library",
+      "url": "https://www.smithsonianmag.com/smart-news/pope-leo-xiv-makes-a-splash-for-his-71st-birthday-announcing-a-water-themed-art-exhibition-at-the-vatican-library-180989515/",
+      "snippet": "Contemporary sculptures, fish made from typographic elements, centuries-old treatises and historical global cookbooks will feature in the new ‘Catastrophe and Wonder’ art show",
       "category": "history",
-      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/o08WS2SZ978T_qORKsVb_-fyoFI=/fit-in/1600x0/filters:focal(960x786:961x787)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/9c/5b/9c5bfeca-f3a8-4724-be91-283cd6a9196e/harriet_goodhue_hosmer_in_the_courtyard_of_her_studio_rome_1-cafd51eb073d9308cc2ef37e8bcaec88.jpg",
-      "ferns_note": "For decades, a marble bust by one of America's most celebrated 19th-century sculptors sat in an English garden being rained on, mistaken for generic yard décor. It took a house appraisal — not a curator, not a scholar — to finally give Harriet Hosmer's work back its name."
+      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/u692jsh5uMEtNljLeZFvPDouPJY=/fit-in/1600x0/filters:focal(4032x3034:4033x3035)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/9a/c2/9ac2bb86-9c33-477c-baae-02e25a12fe67/diluvium_12_septembre_2026_19h36_vatican_2026_c_jr.jpg",
+      "ferns_note": "A pope choosing water — floods, wonder, catastrophe — as the theme for his birthday exhibition feels less like a celebration and more like a quiet warning tucked inside a party. Fish sculpted from typography swimming alongside centuries-old manuscripts is precisely the kind of Vatican strangeness that deserves a second look."
     },
     {
       "source": "discovery",
       "source_name": "Smithsonian",
-      "title": "A Tiny Town in the Italian Riviera Has Its Own Version of Focaccia, and Let This Be a Warning—It's Addictive",
-      "url": "https://www.smithsonianmag.com/travel/a-tiny-town-in-the-italian-riviera-has-its-own-version-of-focaccia-and-let-this-be-a-warning-its-addictive-180989514/",
-      "snippet": "Unlike the pillowy-soft focaccia that’s more widely known, focaccia di Recco is thin, crispy and filled with gooey cheese",
+      "title": "Researchers Have Analyzed the Roman Empire’s 190,000-Mile Network of Roads. Turns Out, Not All of Them Led to Rome",
+      "url": "https://www.smithsonianmag.com/smart-news/researchers-have-created-a-digital-map-of-the-roman-empires-190000-mile-network-of-roads-turns-out-not-all-of-them-led-to-rome-180989509/",
+      "snippet": "For a new study, archaeologists attempted to answer age-old questions about Rome’s roads, including how connected the capital was and whether current motorways trace Roman routes",
       "category": "history",
-      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/zE7CIIU1HdAJ2fvkILQ3iHeqSI4=/fit-in/1600x0/filters:focal(1061x707:1062x708)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/94/b5/94b559ec-2e96-4ec2-b75f-599585cefacd/gettyimages-1475006586.jpg",
-      "ferns_note": "Recco, a small town on the Italian Riviera, has been quietly making its own thin, cheese-molten, crackling version of focaccia for centuries — entirely unbothered by the fluffy variety the rest of the world swears by. Consider this your gentle warning that knowing about it will rearrange your priorities."
+      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/DTE3PljzXyv1ZjoLaXj_DCZbK2I=/fit-in/1600x0/filters:focal(1865x1231:1866x1232)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/1c/3e/1c3e74d5-2d79-46ae-9501-a872bef73b36/appian_way_explored_january_30_2014_-_flickr_-_trishhartmann_1.jpeg",
+      "ferns_note": "It turns out the famous saying was not only a cliché — it was geographically wrong: Rome's vast road network was far more regional than imperial mythology ever admitted. The more quietly remarkable finding is how many modern highways still trace those ancient lines, meaning millions of people commute along routes planned by Roman surveyors two millennia ago."
     },
     {
       "source": "discovery",
       "source_name": "Smithsonian",
-      "title": "Billions of Years Ago, Venus May Have Had a Moon—Which the Planet Promptly Gobbled Up, Study Suggests",
-      "url": "https://www.smithsonianmag.com/smart-news/billions-of-years-ago-venus-may-have-had-a-moon-which-the-planet-promptly-gobbled-up-study-suggests-180989510/",
-      "snippet": "Scientists have puzzled over why the planet dubbed \"Earth's twin\" doesn't have a moon. Computer simulations hint that if Venus ever did have one, it probably would've cannibalized its companion",
+      "title": "New Zealand Welcomes a Record 90 Kakapo Chicks, Helping the World's Chunkiest Parrot Species Rebound From the Brink of Extinction",
+      "url": "https://www.smithsonianmag.com/smart-news/new-zealand-welcomes-a-record-90-kakapo-chicks-helping-the-worlds-chunkiest-parrot-species-rebound-from-the-brink-of-extinction-180989511/",
+      "snippet": "Annual chick counts aren't confirmed until the youngest hatchling reaches 150 days old, a benchmark for independence. The population now stands at 325 birds, up from the 51 individuals that remained in 1995",
       "category": "history",
-      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/n6JnFg_065rZd7wZnh4pImGzkLM=/fit-in/1600x0/filters:focal(750x500:751x501)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/7d/96/7d96f65a-54d1-4d6e-932b-306ad87cb837/smithsonian_feature_images_23.png",
-      "ferns_note": "Venus may have once had a moon — and instead of keeping it, the planet gravitationally consumed it, which explains a great deal about why Earth's so-called twin turned out so differently. There's something almost mythological about a world that devoured its own companion and then kept spinning, alone."
+      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/Rn0lRrZF3aEmnXMFJiNowJcTkB0=/fit-in/1600x0/filters:focal(1024x575:1025x576)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/4b/d8/4bd8c063-0d36-4227-b393-be37d591c37f/8528623525_16f8be1b99_k.jpg",
+      "ferns_note": "In 1995 there were 51 kakapo left on Earth — a number so small you could have seated them all at a single dinner party and still had empty chairs. The fact that 90 chicks hatched in a single season means this wonderfully rotund, flightless parrot is, against all odds, choosing to stay."
     },
     {
       "source": "discovery",
       "source_name": "Science News",
-      "title": "Nepal’s deadly debris flow points to risks in other high mountain regions",
-      "url": "https://www.sciencenews.org/article/nepal-debris-flow-risk-mountain-climate",
-      "snippet": "As human-caused climate warming destabilizes high mountain regions, the threat of rock-ice avalanches and other glacial hazards grows.",
+      "title": "Big space mirrors could bring Earth on-demand light — and upend our night sky",
+      "url": "https://www.sciencenews.org/article/reflect-orbital-space-mirrors-satellite",
+      "snippet": "A space satellite that would offer light on demand has astronomers asking: Who controls the night sky?",
       "category": "science",
-      "cover_url": "https://www.sciencenews.org/wp-content/uploads/sites/2/2026/09/091726_NO_Nepalflooding_main.jpg",
-      "ferns_note": "The deadly debris flows threatening Nepal's high mountain communities aren't just natural disasters — they're accelerating as warming destabilizes the ancient marriage of rock and ice that holds these slopes together. What's quietly alarming is that the same threat is building, largely unseen, across mountain regions worldwide."
-    },
-    {
-      "source": "discovery",
-      "source_name": "Science News",
-      "title": "During menopause, brain changes surprisingly take a break",
-      "url": "https://www.sciencenews.org/article/menopause-brain-changes-surprise",
-      "snippet": "Major hormonal milestones in women’s lives are usually associated with changes in brain volume — but a new study shows menopause is an exception.",
-      "category": "science",
-      "cover_url": "https://www.sciencenews.org/wp-content/uploads/sites/2/2026/09/091626_BB_menopausebrain_main.jpg",
-      "ferns_note": "While major hormonal milestones like puberty and pregnancy visibly reshape the brain, a new study found that menopause — long assumed to do the same — is surprisingly when the brain seems to pause and hold steady. It's a small finding with large implications for how little we've actually understood about women's neurology."
-    },
-    {
-      "source": "discovery",
-      "source_name": "Science News",
-      "title": "When AI goes rogue, its human overseers may be to blame",
-      "url": "https://www.sciencenews.org/article/rogue-ai-agents-human-blame-safety",
-      "snippet": "When AI agents hack real systems, the bigger issue may be the human choices that gave them access, autonomy and too few safeguards.",
-      "category": "science",
-      "cover_url": "https://www.sciencenews.org/wp-content/uploads/sites/2/2026/09/091026_KH_AImodel_main.jpg",
-      "ferns_note": "When an AI agent goes rogue and starts hacking real systems, the instinct is to blame the machine — but researchers are increasingly pointing the finger at the humans who handed it the keys and walked away. Autonomy without guardrails turns out to be a human design choice, not an AI malfunction."
-    },
-    {
-      "source": "discovery",
-      "source_name": "JSTOR Daily",
-      "title": "Minimalist Fiction in Six Short Stories",
-      "url": "https://daily.jstor.org/minimalist-fiction-in-six-short-stories/",
-      "snippet": "The art of saying more with less, by Raymond Carver, Amy Hempel, Frederick Barthelme, Jayne Anne Phillips, Mary Robison, and Ann Beattie.",
-      "category": "history",
-      "cover_url": "https://daily.jstor.org/wp-content/uploads/2026/09/minimalist_fiction_in_six_short_stories_1050x700.jpg",
-      "ferns_note": "Minimalist fiction is the literary equivalent of an iceberg — Carver, Hempel, and their peers perfected the art of writing sentences so spare they somehow hold more weight than pages of elaboration. The white space, it turns out, is doing most of the work."
-    },
-    {
-      "source": "discovery",
-      "source_name": "Quanta Magazine",
-      "title": "Where Does the Quantum World End and Ours Begin?",
-      "url": "https://www.quantamagazine.org/where-does-the-quantum-world-end-and-ours-begin-20260917/",
-      "snippet": "Jonathan Halliwell explains how quantum decoherence is key to understanding how we transition from a world with a wave-like nature of matter and energy to the classical macroscopic world that we’re used to. The post Where Does the Quantum World End and Ours Begin? first appeared on Quanta Magazine",
-      "category": "science",
-      "cover_url": "https://www.quantamagazine.org/wp-content/uploads/2026/09/JOW-S5-E8-cr-Chanelle-Nibbelink-Social-LOGO.jpg",
-      "ferns_note": "Quantum decoherence is the process by which the strange, shimmering probability-world of quantum physics quietly collapses into the solid, predictable one we actually live in — and scientists still find its exact boundary genuinely elusive. The question of where the quantum ends and the everyday begins is, in the most literal sense, one of the deepest puzzles in physics."
-    },
-    {
-      "source": "discovery",
-      "source_name": "Colossal",
-      "title": "South Tyrol’s Bunkers Shoulder WWII History in Vincenzo Pagliuca’s Portraits",
-      "url": "https://www.thisiscolossal.com/2026/09/vincenzio-pagliuca-photography-bunker-book/",
-      "snippet": "The photographer explores unexpected architecture in the Italian Alps.",
-      "category": "history",
-      "cover_url": "https://www.thisiscolossal.com/wp-content/uploads/2026/09/pagliuca-6.jpg",
-      "ferns_note": "Scattered through the Italian Alps, squat concrete WWII bunkers still crouch in the mountain landscape, so assimilated into the terrain that they've almost become geology. Vincenzo Pagliuca's portraits remind you that history doesn't always announce itself — sometimes it just sits there, moss-covered and patient, waiting to be noticed."
+      "cover_url": "https://www.sciencenews.org/wp-content/uploads/sites/2/2026/09/1026_darksideoflight_main.jpg",
+      "ferns_note": "The prospect of on-demand sunlight beamed from orbit sounds like a utopian convenience until you realize it would effectively end humanity's shared claim to darkness — the same darkness that has oriented every civilization, myth, and midnight thought we've ever had. Who owns the night sky is not a small question."
     }
   ],
   "featured_read": {
     "source": "reads",
-    "source_name": "The Atlantic",
-    "title": "‘The Best Thing That Happened to Him Was Losing in 2020’",
-    "url": "https://www.theatlantic.com/books/2026/09/maggie-haberman-jonathan-swan-atlantic-festival/688665/?utm_source=feed",
-    "snippet": "Maggie Haberman and Jonathan Swan explain how the four years between Donald Trump’s first and second terms changed the presidency.",
-    "cover_url": "https://cdn.theatlantic.com/thumbor/5gKo7omruy63oAa03TEXFPQe1BQ=/0x41:1917x1039/1200x625/media/img/mt/2026/09/TAF26_TAF_Maggie_Haberman_Jonathan_Swan_with_Tim_Alberta/original.jpg",
-    "blurb": "Haberman and Swan argue that Trump's 2020 defeat wasn't a detour but the crucible that forged a far more disciplined and dangerous return to power — a genuinely unsettling reframe of a story you thought you already knew. Set aside the noise and read the actual argument."
+    "source_name": "Nautilus",
+    "title": "Humpback Whales Grieve for Lost Offspring, Video Evidence Shows",
+    "url": "https://nautil.us/humpback-whales-grieve-for-lost-offspring-video-evidence-shows-1285114/",
+    "snippet": "Behavior we’ve never seen before",
+    "cover_url": "https://lede-admin.nautil.us/wp-content/uploads/sites/70/2026/09/02-grieving.jpg",
+    "blurb": "A humpback whale carrying her dead calf through the ocean raises a question science has long skirted: what does grief look like when it belongs to someone who isn't us? This is the footage that makes the question impossible to ignore."
   },
   "reading_room": [
     {
       "source": "reads",
-      "source_name": "The Atlantic",
-      "title": "The Missing Ingredient of Modern Life",
-      "url": "https://www.theatlantic.com/magazine/2026/10/modern-life-maxxing-antidote/688344/?utm_source=feed",
-      "snippet": "Why we need wonder",
-      "cover_url": "https://cdn.theatlantic.com/thumbor/BkAF7dZxJPg3mY_N9TpOTSoYcOY=/0x43:2000x1085/1200x625/media/img/2026/09/1026_DIS_Bogost_Wonder/original.jpg",
-      "blurb": "This piece makes the case that wonder isn't a luxury emotion but a cognitive necessity — and that its quiet disappearance from modern life explains more of our collective malaise than any headline does. A gentle provocation worth sitting with."
-    },
-    {
-      "source": "reads",
-      "source_name": "Asterisk",
-      "title": "Rust in Numbers",
-      "url": "https://asteriskmag.com/issues/14/rust-in-numbers",
-      "snippet": "Why do manure spreaders have life cycles?",
-      "cover_url": "https://asteriskmag.com/media/pages/issues/14/rust-in-numbers/476697332e-1777850636/dan-bouk-rust-in-numbers-1600x900-crop-sharpen50.png",
-      "blurb": "Through the surprisingly philosophical question of why farm equipment has a lifespan, this essay uses rusting manure spreaders as a lens onto how we think — and mostly fail to think — about depreciation, rural economies, and the slow erosion of things we take for granted. Stranger and more tender than it sounds."
-    },
-    {
-      "source": "reads",
-      "source_name": "Aeon",
-      "title": "Animal eye",
-      "url": "https://aeon.co/videos/the-alien-worlds-beside-our-own-a-journey-into-animal-eyes",
-      "snippet": "Probing the biology, beauty and mystery of animal eyes, this short poetic documentary explores an alien world - by Aeon Video Watch on Aeon",
-      "cover_url": "https://images.aeonmedia.co/images/8d250757-dd90-4110-aa97-f8bf526db8b9/animal-eye-landscape-1-v2.jpg?width=1200&quality=75&format=jpeg",
-      "blurb": "This short documentary takes the eye — that organ you've looked through your entire life — and renders it suddenly, beautifully alien, asking what it means to see when every creature inhabits a different visual universe. A rare seven minutes that earns genuine awe."
-    },
-    {
-      "source": "reads",
-      "source_name": "Nautilus",
-      "title": "How Do You Read Ancient Charred Scrolls? Make Your Own",
-      "url": "https://nautil.us/how-do-you-read-ancient-charred-scrolls-make-your-own-1285098/",
-      "snippet": "A new technique could unlock the secrets of the Herculaneum scrolls",
-      "cover_url": "https://lede-admin.nautil.us/wp-content/uploads/sites/70/2026/09/scroll_thumb.jpg",
-      "blurb": "Scrolls carbonized by Vesuvius have sat unread for two millennia, and the key to unlocking them may be the peculiar act of making new ones — a story about how ingenuity sometimes requires going backward to go forward. Ancient history has rarely felt this immediate."
-    },
-    {
-      "source": "reads",
       "source_name": "Psyche",
-      "title": "Go ahead, jump on the bandwagon",
-      "url": "https://psyche.co/notes-to-self/why-we-should-embrace-fair-weather-fandom",
-      "snippet": "Rooting for a team and other collective experiences are opportunities to be seized – even if only once in a while - by Hannah Seo Read on Psyche",
-      "cover_url": "https://images.aeonmedia.co/images/43b0892b-4cdb-4e82-9243-166b7c0d7142/sz-2026-06-12t191731z_1566143353_rc24slaw256b_rtrmadp_3_soccer-worldcup-mexico.jpg?top=136&left=0&cropWidth=2592&cropHeight=1458&width=1200&quality=75&format=jpeg",
-      "blurb": "Hannah Seo mounts a quiet, convincing defense of joining in — arguing that the bandwagon, far from being a mark of shallowness, is one of the last reliable on-ramps to genuine collective feeling in an atomized world. It might make you reconsider what you've been sitting out."
+      "title": "How to uncover your blind spots",
+      "url": "https://psyche.co/guides/how-to-uncover-your-blind-spots",
+      "snippet": "We all have parts of ourselves others know but we don’t. Gain greater self-awareness by seeing yourself from the outside in - by Jennifer Farrell Read on Psyche",
+      "cover_url": "https://images.aeonmedia.co/images/d02fd481-d574-4739-a8a1-b25e9ff30f6f/priscilla-du-preez-_exjk18doue-unsplash.jpg?top=1425&left=0&cropWidth=1920&cropHeight=1080&width=1200&quality=75&format=jpeg",
+      "blurb": "Everyone around you holds a version of you that you've never met — this essay offers a quiet, practical method for finally making that introduction."
+    },
+    {
+      "source": "reads",
+      "source_name": "Longreads",
+      "title": "Shetland’s Most Wanted",
+      "url": "https://longreads.com/2026/09/17/shetlands-most-wanted/",
+      "snippet": "\"A series of encounters with an unlikely band of separatists.\"",
+      "cover_url": "",
+      "blurb": "In the wind-scoured edges of Shetland, a small and improbable independence movement is asking what it means to belong to a place the rest of the world barely knows exists."
+    },
+    {
+      "source": "reads",
+      "source_name": "Literary Hub",
+      "title": "Here are the winners of the 2026 Dayton Literary Peace Prize.",
+      "url": "https://lithub.com/here-are-the-winners-of-the-2026-dayton-literary-peace-prize/",
+      "snippet": "Today, the Dayton Literary Peace Prize Foundation, which celebrates “writers whose work demonstrates the power of the written word to foster peace,” announced the winners of the 2026 Dayton Literary Peace Prize (for books published in 2025). For fiction, the",
+      "cover_url": "https://s26162.pcdn.co/wp-content/uploads/2021/08/daytonliterary.png",
+      "blurb": "A moment to pause and honor the writers who still believe, against all evidence, that a carefully chosen sentence can move the world toward something gentler."
+    },
+    {
+      "source": "reads",
+      "source_name": "Noema",
+      "title": "The End Of Upward Mobility",
+      "url": "https://www.noemamag.com/the-end-of-upward-mobility",
+      "snippet": "",
+      "cover_url": "https://noemamag.imgix.net/2026/09/TheEndOfUpwardMobility-Illustration.jpg?fit=crop&fm=pjpg&h=628&ixlib=php-3.3.1&rect=0%2C0%2C945%2C495&w=1200&wpsize=noema-social-facebook&s=47e0f7d4b84d384e472d9b32d4ec71d8",
+      "blurb": "The promise that each generation would climb higher than the last is quietly expiring — this essay sits with what we lose, culturally and psychologically, when the ladder stops going up."
+    },
+    {
+      "source": "reads",
+      "source_name": "The Atlantic",
+      "title": "College Is Coming Apart",
+      "url": "https://www.theatlantic.com/ideas/2026/09/college-education-future-ai/688655/?utm_source=feed",
+      "snippet": "Successive, overlapping crises reveal that American higher education makes no sense.",
+      "cover_url": "https://cdn.theatlantic.com/thumbor/pCR-o4yu90wSntWXlBojVP3qC64=/0x43:2000x1085/1200x625/media/img/mt/2026/09/CollegeCooked/original.png",
+      "blurb": "American higher education is being pulled apart by funding cuts, political pressure, and a crisis of purpose all at once — and this essay makes a calm, damning case that the chaos isn't a disruption of the system, but a revelation of it."
     }
   ],
   "garden_note": {
-    "note": "The evenings are cooling beautifully in Zürich now, that particular early-autumn sharpness settling in as the linden trees begin their slow golden turn — a good time to linger outside with a warm drink before the dusk folds in around 20:05.",
+    "note": "There's a particular quality to September light in Zürich — golden and slightly slanted already by mid-morning, catching the first blush on the apple boughs and the dew still clinging to the dahlias. Early autumn is nudging its way in with quiet insistence, and the garden is listening.",
     "in_season": [
-      "Dahlias in full bloom",
-      "Autumn raspberries ripening",
-      "Winter squash ready to harvest",
-      "Sow lamb's lettuce (Feldsalat) now"
+      "Dahlias coming into their late-season glory",
+      "Apples and pears ready for harvesting before the wasps claim them",
+      "Squash and pumpkins curing on the vine",
+      "Cutting back spent perennials and gathering seed heads"
     ],
-    "sky_tonight": "The first-quarter Moon rides high in the south after sunset — look for ruddy Mars nearby in the constellation Sagittarius as the sky darkens.",
-    "sun_times": "Sunset tonight at 19:36, with dusk lingering until 20:05.",
+    "sky_tonight": "The first-quarter Moon rides high in the south after dusk — a crisp half-disc that sets well past midnight, with Saturn nearby in Aquarius worth a lingering look.",
+    "sun_times": "First light steals in at 06:36, with sunrise at 07:05 and the day folding gently closed at 19:34.",
     "moon_label": "First quarter",
-    "illum_pct": 35,
-    "sun_range": "07:04–19:36"
+    "illum_pct": 41,
+    "sun_range": "07:05–19:34"
   },
   "puzzle": {
-    "kind": "anagram",
-    "label": "Fern's Morning Anagram",
-    "prompt": "Unscramble ORFEST — it shelters more life per acre than almost any other place on earth.",
-    "answer": "FOREST",
-    "hint": "Think of the tallest trees you have ever stood beneath."
+    "kind": "riddle",
+    "label": "Fern's Morning Riddle",
+    "prompt": "How can you write down eight eights so that they add up to one thousand?",
+    "answer": "888 + 88 + 8 + 8 + 8 = 1000",
+    "hint": "",
+    "source": "riddles.com",
+    "source_id": "Riddle-3128"
   },
   "previous_puzzle": {
-    "label": "Fern's Morning Riddle",
-    "prompt": "I wake before you\nSilent hands divide the dark\nNumbers never speak",
-    "answer": "A clock (or sundial face)"
+    "label": "Fern's Morning Anagram",
+    "prompt": "Unscramble ORFEST — it shelters more life per acre than almost any other place on earth.",
+    "answer": "FOREST"
   },
   "larder": {
-    "news": [],
-    "recipe": {}
+    "news": [
+      {
+        "source": "food",
+        "source_name": "The Kitchn",
+        "title": "8 Canned Goods Chefs Stock Up On Every Fall",
+        "url": "https://www.thekitchn.com/best-canned-goods-for-fall-according-to-chefs-23843840?utm_source=RSS&utm_medium=feed&utm_campaign=Category%2FChannel%3A+main",
+        "snippet": "Fall is practically here, and with it comes cooler weather and the return of comforting, cozy meals. A great place to start, especially with grocery prices on the rise, is with some canned goods. I always have a few cans of beans, tomato sauces, and pumpkin purée on hand in the fall for when I feel like baking or making a quick and easy soup, stew, or pasta dish.",
+        "cover_url": "",
+        "blurb": "A savvy chef's pantry is half the battle, and this fall-ready round-up of canned essentials is the kind of practical wisdom that pays off at the dinner table."
+      },
+      {
+        "source": "food",
+        "source_name": "Eater",
+        "title": "This Restaurant Rocks (No, Literally)",
+        "url": "https://www.eater.com/food-culture/986070/new-york-city-restaurants-rock-boulder-trend-pizza-4ps",
+        "snippet": "A version of this post originally appeared in Eater Today, which spotlights the freshest news and stories from across the food world every day. Subscribe now. “There’s a rock in the sink!” That was the takeaway last winter after the East Coast contingent of the team that writes this newsletter met for brunch at Flynn McGarry’s […]",
+        "cover_url": "https://platform.eater.com/wp-content/uploads/sites/2/2026/09/Rocks_B.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
+        "blurb": "A restaurant built around actual geology is the kind of delightfully strange dining story that makes you want to book a table just to say you ate there."
+      },
+      {
+        "source": "food",
+        "source_name": "The Guardian",
+        "title": "Welcome to the age of the grown-up soft drink",
+        "url": "https://www.theguardian.com/food/2026/sep/17/welcome-to-the-age-of-the-grown-up-soft-drink",
+        "snippet": "There is now a wealth of less sugary, more sophisticated nonalcoholic options out there, with flavours clearly aimed at an adult market I have written recently about several families of nonalcoholic drinks that are having a moment: tonic water , flavoured sparkling water and wine substitutes . It stands to reason that soft drinks are enjoying their time in the sun. Quite literally, too: the heat of 2026 has demanded some serious refreshments and UK booze consumption is at a record low .",
+        "cover_url": "https://i.guim.co.uk/img/media/1b8e053ea80a7dce2383f848eab41d7a58995dd8/554_4029_4734_3783/master/4734.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=e6f0d8cd036e41dc5b936fb552b7400a",
+        "blurb": "The grown-up soft drink has quietly graduated from sad afterthought to something genuinely worth sipping, and this piece maps the sophisticated, less-sugary landscape beautifully."
+      }
+    ],
+    "recipe": {
+      "source": "recipe",
+      "source_name": "David Lebovitz",
+      "title": "Spring 2026 Book Tour news!",
+      "url": "https://www.davidlebovitz.com/spring-2026-book-tour-news/",
+      "snippet": "May 5th marks the release of The Great Book of Chocolate which is now available for pre-order from your local independent book seller as well as Bookshop, Amazon, and Barnes & Noble online. And I’m going on book tour! Due to global events, travel has become more challenging, especially internationally.",
+      "is_recipe": true,
+      "cover_url": "https://www.davidlebovitz.com/wp-content/uploads/2026/04/the-great-book-of-chocolate-235x300-1.webp",
+      "blurb": "If a deep dive into the world of chocolate from one of the most trusted voices in food writing sounds like your idea of a perfect evening, David Lebovitz's forthcoming book deserves a spot on your pre-order list right now."
+    },
+    "seasonal_note": "Zürich's Saturday markets along the Limmat are piling high with the first Zwetschgen right now — those dark, oblong plums that locals quietly consider superior to every other fruit — so pick up a kilo and roast them with a splash of Pflümli and brown sugar for a compote that turns Sunday morning porridge into something worth getting out of bed for."
   },
   "fern_data": {
-    "greeting": "The day has closed its hand around whatever it held. Tonight: a paradox that makes the word 'heterological' eat itself, and the surprisingly sinister origin story of a blue M&M.",
-    "top_pick_title": "Oddities with Excellent Posture"
+    "greeting": "Georg Cantor proved there are infinities larger than other infinities — and it nearly broke him. That proof sits in today's edition alongside the geometry of a black hole and humpback whales, who it turns out mourn their dead.",
+    "top_pick_title": "Larger Than Infinite"
   }
 }
