@@ -1,167 +1,115 @@
 {
-  "fetched_at": "2026-09-18T19:44:20.737737+02:00",
-  "is_am_email": false,
+  "fetched_at": "2026-09-19T10:09:48.725930+02:00",
+  "is_am_email": true,
   "audit_summary": {
-    "youtube_videos": 10,
+    "youtube_videos": 6,
     "themes": 3,
-    "music_articles": 12,
+    "music_articles": 5,
     "good_news_articles": 3,
-    "discovery_articles": 12,
+    "discovery_articles": 7,
     "featured_read": 1,
     "reading_room": 5,
     "garden": 1,
     "puzzle": 1,
-    "larder": 0
+    "larder": 4
   },
   "themes": [
     {
-      "name": "Rabbit Holes Worth Falling Down",
-      "emoji": "🕳️",
-      "tagline": "History's strangest footnotes — wolves, missiles, and monsters that were very, very real.",
+      "name": "Time Machines & Ghost Towns",
+      "emoji": "🏮",
+      "tagline": "What happens when a place — or a number — gets frozen in amber while the world moves on?",
       "items": [
         {
           "source": "youtube",
-          "video_id": "F-lGKOGfc8g",
-          "title": "Was There Really A Monster Terrorizing 18th Century Rural France?",
-          "channel_id": "UCSwwoUNvQWgZDC8a_O6Qs_A",
-          "channel_title": "Kaz Rowe",
-          "published_at": "2026-09-18T15:09:08Z",
-          "url": "https://www.youtube.com/watch?v=F-lGKOGfc8g",
-          "duration_seconds": 1570,
-          "view_count": "4761",
-          "description": "Want to restore the planet's ecosystems and see your impact in monthly videos? The first 100 people to join Planet Wild with my code KAZ9 will get the first month paid for by me: https://planetwild.com/r/kazrowe/join If you want to get to know them better first, check out their beaver mission: https://planetwild.com/r/kazrowe/m41\n\nIn the 18th century, a mysterious beast began killing French peasants of the Gévaudan region. A ton of peasants, in fact. The beast evaded all attempts to kill it and ",
-          "why_watch": "The Beast of Gévaudan — a real historical panic that killed dozens of people in rural 18th-century France — is one of those stories that sits perfectly at the intersection of folklore, fear, and forensic history. Kaz Rowe digs into what the creature actually might have been while treating the historical terror as genuinely serious rather than sensational. If you like unsolved mysteries with real archival weight behind them, this is a well-paced 26 minutes."
+          "video_id": "2d3NsFfWVGo",
+          "title": "Why this Japanese Town is Still Living in the 1980s",
+          "channel_id": "UCHL9bfHTxCMi-7vfxQ-AYtg",
+          "channel_title": "Abroad in Japan",
+          "published_at": "2026-09-19T00:18:55Z",
+          "url": "https://www.youtube.com/watch?v=2d3NsFfWVGo",
+          "duration_seconds": 1343,
+          "view_count": "186312",
+          "description": "We explore two Japanese towns with two very different ways of living.\n🇯🇵JAPAN'S Fastest, Most Reliable eSIM: https://jjesim.com/?utm_source=chris&utm_medium=youtube&utm_campaign=sept26video&utm_content=description\n🌟GRAB the Journey Across Japan Book! http://linktr.ee/abroadinjapanbook\n🍹 Drinks at LOST Bar, Shibuya: https://maps.app.goo.gl/2vh2aUtxyNr82QVq7\n🍿 MAKE this madness happen on Patreon: https://www.patreon.com/abroadinjapan\n\nSpecial thanks to Natsuki and Pete Donaldson for joining the tr",
+          "why_watch": "Chris from Abroad in Japan contrasts two towns to explore why some rural Japanese communities have held onto 1980s-era lifestyles — economically, architecturally, and culturally — while others have modernized. It's less a nostalgia trip and more a grounded look at what happens when a place gets left behind by Japan's economic tides. If you're curious about how a country's rapid development creates its own pockets of time-freeze, this one delivers."
         },
         {
           "source": "youtube",
-          "video_id": "azGt_Z1A8UI",
-          "title": "Searcy, Arkansas Missile Silo Fire: 1965",
-          "channel_id": "UC4sEmXUuWIFlxRIFBRV6VXQ",
-          "channel_title": "The History Guy: History Deserves to Be Remembered",
-          "published_at": "2026-09-18T12:00:18Z",
-          "url": "https://www.youtube.com/watch?v=azGt_Z1A8UI",
-          "duration_seconds": 1084,
-          "view_count": "10906",
-          "description": "Head to https://betterhelp.com/thehistoryguy to get 10% off your first month with our sponsor, BetterHelp. Therapy can be a meaningful space to reflect, grow, and create positive change in your life.\n\nThere are no good places for an uncontrolled fire, but if you were pressed to choose the worst, you might say inside the cramped spaces of a nuclear missile silo, with a fully fueled missile still inside.\n\nI've launched a trip to Rome for September 2027. Ifyou are interested, check out my trip page",
-          "why_watch": "In 1965, a fuel fire broke out inside a Titan II missile silo in Searcy, Arkansas — with a live nuclear warhead sitting right there. The History Guy reconstructs the event in careful detail, including the men who fought the fire and the institutional decisions that shaped the outcome. It's a reminder that the Cold War's most dangerous moments weren't always the ones that made the front page."
-        },
-        {
-          "source": "youtube",
-          "video_id": "x3VCBKlQABE",
-          "title": "What does SpaceX actually do?",
-          "channel_id": "UC_-hYjoNe4PJNFa9iZ4lraA",
-          "channel_title": "Good Work",
-          "published_at": "2026-09-18T13:00:10Z",
-          "url": "https://www.youtube.com/watch?v=x3VCBKlQABE",
-          "duration_seconds": 958,
-          "view_count": "108603",
-          "description": "Go to https://ground.news/goodwork to get 40% off unlimited access to the news tool we actually trust. It helps you cut through the noise and understand how stories are being reported across the spectrum. \n\nSpace. The final frontier. X. The 3rd-to-final letter. But when they’re combined, they create SpaceX, a company that does both space and whatever “X” is. We’re not sure, but goddamn it if Dan Toomey isn’t gonna launch into an investigation to find out.\n\nFeaturing interviews with: \n\nMicah Maid",
-          "why_watch": "Good Work cuts through the mythology around SpaceX with their signature dry humor and actually explains the business model: what the company builds, how it makes money, and why the reusable rocket economics matter. At 16 minutes it's tight, and it earns its laughs without sacrificing the substance. A solid explainer for anyone who's heard the name a thousand times but never gotten a clear picture of the operation."
-        },
-        {
-          "source": "youtube",
-          "video_id": "HdgKWKLNSMY",
-          "title": "Gardeners React to YOUR Garden Disasters",
-          "channel_id": "UCSbyncU597LMwb3HhnAI_4w",
-          "channel_title": "Epic Gardening",
-          "published_at": "2026-09-18T17:30:25Z",
-          "url": "https://www.youtube.com/watch?v=HdgKWKLNSMY",
-          "duration_seconds": 1121,
-          "view_count": "439",
-          "description": "Garden fails happen to all of us. @jacquesinthegarden and I read your wildest 2026 gardening disasters, from cooked seeds to mystery plants and hungry animals. Watch for the fails, lessons, and a few that are hard to believe.\n\nIN THIS VIDEO\n\n→ Small Modular Metal Raised Garden Bed - 29\" Tall: https://growepic.co/4hfxzuG\n\n→ Bring Home the Butterflies Flower Mix Seed Shaker: https://growepic.co/4hcCbSh\n\nTIMESTAMPS\n\n0:00 Intro\n0:23 Irrigation and Soil Fails\n2:59 Plant Growth and Crop Disasters\n7:06",
-          "why_watch": "Two experienced gardeners read through real viewer-submitted disasters from 2026 — cooked seeds, mystery plants, animal invasions — and unpack what actually went wrong. It's the kind of honest, commiserating format that makes you feel less alone about your own failures. The lessons are tucked inside the laughs, which makes them stick."
-        }
-      ]
-    },
-    {
-      "name": "The Deep End of the Pool",
-      "emoji": "🔭",
-      "tagline": "Big, beautiful ideas that reward the effort — physics, math, and the cosmos explained without flinching.",
-      "items": [
-        {
-          "source": "youtube",
-          "video_id": "Nbwv5wHQoj0",
-          "title": "The last IMO problem AI could not solve",
-          "channel_id": "UCYO_jab_esuFRV4b17AJtAw",
-          "channel_title": "3Blue1Brown",
-          "published_at": "2026-09-18T17:12:53Z",
-          "url": "https://www.youtube.com/watch?v=Nbwv5wHQoj0",
-          "duration_seconds": 3116,
-          "view_count": "9507",
-          "description": "A beautiful puzzle that eluded AI, and the intuition it requires.\nCheck out our virtual career fair: https://3b1b.co/talent\nSee new videos early: https://3b1b.co/support\nAn equally valuable form of support is to simply share the videos.\nHome page: https://www.3blue1brown.com\n\nEvan Chen also wrote up nice solution notes for this problem, along with all the others on that year's test.\nhttps://web.evanchen.cc/exams/IMO-2025-notes.pdf\n\nThe channel Dedekind Cuts has a video about this solution:\nhttps",
-          "why_watch": "3Blue1Brown takes the one IMO problem that current AI systems couldn't crack and walks through why it requires a kind of geometric intuition that resists brute-force reasoning. At nearly 52 minutes, it's a proper sit-down, but Grant's visual approach makes the mathematical structure genuinely beautiful rather than intimidating. If you've ever wondered where human mathematical thinking still has an edge over AI, this is a concrete, fascinating case study."
-        },
-        {
-          "source": "youtube",
-          "video_id": "npYo7ee_fr0",
-          "title": "What the Higgs Boson Actually Is (No Analogies)",
+          "video_id": "qoJacpk_OXo",
+          "title": "The 15-Year-Old Who Discovered the Law of Primes",
           "channel_id": "UCIZ5ZOeiXYbmKTl_85ghNPw",
           "channel_title": "Physics Explained",
-          "published_at": "2025-09-20T19:30:08Z",
-          "url": "https://www.youtube.com/watch?v=npYo7ee_fr0",
-          "duration_seconds": 2418,
-          "view_count": "653423",
-          "description": "Thanks to Hungry Minds for sponsoring this video. Use the code Physics10 to get 10% off The Book: The Ultimate Guide to Rebuilding a Civilization. Valid until 20 October 2025. \n👉 https://mdsh.io/physicsexplained\n\nSupport the channel on Patreon: https://www.patreon.com/physicsexplained\n\nIn 2012, the Higgs boson was discovered at CERN and hailed as the “God particle.” But the headlines left out the real story.\n\nThis video cuts through the hype to show what the Higgs boson actually is — and more im",
-          "why_watch": "Rather than reaching for the usual \"molasses\" analogy, Physics Explained builds up what the Higgs boson actually is from the mathematics of quantum field theory — slowly enough to follow, rigorously enough to satisfy. The payoff is a genuine understanding of why the Higgs field gives particles mass, not just a metaphor that collapses under scrutiny. At 40 minutes it demands attention, but it's genuinely one of the better physics explainers available at this level."
-        },
-        {
-          "source": "youtube",
-          "video_id": "VUJU6PjO5HE",
-          "title": "The Sky at Night, Tonight: A New View of the Changing Sky - Chris Lintott",
-          "channel_id": "UC1t6kKXoBvjdr8m9KJ2Fx7A",
-          "channel_title": "Gresham College",
-          "published_at": "2026-09-18T15:00:12Z",
-          "url": "https://www.youtube.com/watch?v=VUJU6PjO5HE",
-          "duration_seconds": 2961,
-          "view_count": "677",
-          "description": "00:00 // Welcome & Meet the Vera Rubin Observatory\n01:10 // First Look: Sloan vs Rubin's Stunning Images\n03:57 // Just How Big Is Rubin's View of the Sky?\n07:08 // The Old Way: Begging Telescopes for Time\n14:17 // The Sky Surveys That Paved the Way\n17:44 // Building a Billion-Dollar Telescope\n19:27 // Mirrors, Cameras & Engineering Marvels\n24:41 // Disaster Strikes: Storms in the Chilean Desert\n26:30 // First Discoveries: Asteroids, Comets & an Interstellar Visitor\n35:40 // Supernovae, Dark Matt",
-          "why_watch": "Chris Lintott gives a thorough, insider account of the Vera Rubin Observatory — what makes its camera and mirror design so radical, and why its all-sky survey approach represents a fundamental shift from how astronomy has traditionally been done. The section on how scientists used to beg for telescope time makes the new model feel genuinely revolutionary. Good for anyone who follows astronomy news and wants the context behind the headlines."
-        },
-        {
-          "source": "youtube",
-          "video_id": "R_KMatNBTkw",
-          "title": "Feedback stability  - feedback compensation - capacitor compensation",
-          "channel_id": "UCFtCfZ4rtIZ7Hsq7ZNHoY1w",
-          "channel_title": "Computer&Electronics",
-          "published_at": "2024-07-17T09:39:50Z",
-          "url": "https://www.youtube.com/watch?v=R_KMatNBTkw",
-          "duration_seconds": 619,
-          "view_count": "761",
-          "description": "In this video we continue to talk about feedback, covering the feedback stability and feedback compensation topic.\n\nfeedback amplifier and feedback advantages : https://youtu.be/gVrJmlx4yJw",
-          "why_watch": "This concise 10-minute video tackles feedback stability and capacitor compensation in amplifier circuits — specifically how and why feedback loops can become unstable, and the practical techniques used to fix that. It's dense with circuit theory but moves efficiently, making it useful as a refresher or a first introduction if you already have some electronics background. Practical and no-frills."
+          "published_at": "2025-08-23T19:00:43Z",
+          "url": "https://www.youtube.com/watch?v=qoJacpk_OXo",
+          "duration_seconds": 2825,
+          "view_count": "1131715",
+          "description": "Join FlexiSpot 9TH Anniversary Sales and enjoy the biggest discount! You also have the chance to win free orders. Use my code ''YTE7P50'' to get extra $50 off on the E7 Pro standing desk.\nFlexiSpot E7 Pro standing desk:https://bit.ly/462UeWx (US) https://bit.ly/41kepwA (CAN)\n\nYou can also support this channel via Patreon:\nhttps://www.patreon.com/physicsexplained\n\nPrimes are the indivisible building blocks of arithmetic, yet their distribution has puzzled mathematicians for over two thousand year",
+          "why_watch": "This nearly hour-long video traces the history of prime number theory from Euclid through Gauss and Riemann, anchored by the remarkable story of a 15-year-old Gauss intuiting the Prime Number Theorem from pure pattern observation. Physics Explained earns the runtime by building each idea carefully so the Riemann Hypothesis — when it finally arrives — feels genuinely consequential rather than just name-dropped. If you've bounced off number theory before, this is a patient and unusually well-structured entry point."
         }
       ]
     },
     {
-      "name": "How to Be a Better Human",
-      "emoji": "🧠",
-      "tagline": "Sharper arguments, harder questions, and the ethical fine print we usually skip.",
+      "name": "The Floor Is Actually the Ceiling",
+      "emoji": "🌀",
+      "tagline": "Reality is weirder than you think — and these videos will make sure you never sit still the same way again.",
       "items": [
         {
           "source": "youtube",
-          "video_id": "8vYZ5oQb4M8",
-          "title": "How to debate, from a 2x world champion | Bo Seo: Full Interview",
-          "channel_id": "UCvQECJukTDE2i6aCoMnS-Vg",
-          "channel_title": "Big Think",
-          "published_at": "2026-09-18T13:00:09Z",
-          "url": "https://www.youtube.com/watch?v=8vYZ5oQb4M8",
-          "duration_seconds": 4284,
-          "view_count": "18153",
-          "description": "Become a Big Think member to unlock expert classes, premium print issues, exclusive events and more: https://bigthink.com/membership/?utm_source=youtube&utm_medium=social&utm_campaign=membership&utm_content=bt-ytdesc-text-fi-seo-yzNzjg1c0V4\n\nSubscribe to Big Think on YouTube ► https://www.youtube.com/channel/UCvQECJukTDE2i6aCoMnS-Vg?sub_confirmation=1\nUp next, \nThe blueprint for becoming an emotionally mature adult, in 68 minutes | Mark Manson: Full Interview ► https://www.youtube.com/watch?v=8v",
-          "why_watch": "Two-time world debate champion Bo Seo spends over an hour unpacking the specific mechanics of good argumentation — not debate-club theatrics, but how to identify what a disagreement is actually about and respond to the strongest version of the opposing view. The interview format lets the conversation go deep on practical skills rather than staying at the level of platitudes. Worth bookmarking if you've ever walked away from an argument wishing you'd said something differently."
+          "video_id": "k5H7UwSjdek",
+          "title": "I never understood why black holes slow down time...until now!",
+          "channel_id": "UCGfFUc6eWxfbtjYeun6r9xg",
+          "channel_title": "FloatHeadPhysics",
+          "published_at": "2024-04-26T13:00:47Z",
+          "url": "https://www.youtube.com/watch?v=k5H7UwSjdek",
+          "duration_seconds": 1158,
+          "view_count": "1581488",
+          "description": "Support me https://patreon.com/floatheadphysics to see how I learn relativity, get sneak peaks, and early video access. \n\nParanormal Distribution T shirt (Dark): https://floatheadphysics.com/products/paranormal-distribution-dark (promo price)\nParanormal Distribution T shirt (Light): https://floatheadphysics.com/products/paranormal-distribution-light (promo price)\n\nTo try everything Brilliant has to offer—free—for a full 30 days, visit  https://brilliant.org/FloatHeadPhysics . You’ll also get 20%",
+          "why_watch": "FloatHeadPhysics builds an intuitive, visual explanation for gravitational time dilation by grounding it in the geometry of spacetime rather than just stating the math, making it click in a way most textbook treatments don't. The specific insight — that clocks near a massive object tick slower because of the curvature of time itself, not some mysterious force — is handled with refreshing care. At under 20 minutes, it's a genuinely efficient path to actually understanding something most people only think they understand."
         },
         {
           "source": "youtube",
-          "video_id": "RYQVcYU15Xg",
-          "title": "Who Owns a Disabled Child's Story?",
-          "channel_id": "UCDdi0yUyGW1PKzYXaIACnuA",
-          "channel_title": "Jessica Kellgren-Fozard",
-          "published_at": "2026-09-18T16:00:31Z",
-          "url": "https://www.youtube.com/watch?v=RYQVcYU15Xg",
-          "duration_seconds": 2561,
-          "view_count": "2185",
-          "description": "Take your personal data back with Incogni! Use code JESSICA at the link below and get 60% off an annual plan: https://incogni.com/jessica \n\nMy BRAND NEW MERCH store: https://jessicaoutofthecloset.myshopify.com/\n\nIf you'd like to send the twins a baby gift, please consider donating to their nappy stock- they're very grateful! https://ko-fi.com/jessicaoutofthecloset\n\nTIMESTAMPS\n00:00 Cold open\n05:38 The uncomfortable question… why parents share?\n18:50 The Child Who Doesn’t Get A Say (Lenny Clay, B",
-          "why_watch": "Jessica Kellgren-Fozard raises a question that doesn't get asked nearly enough: when parents document a disabled child's life online, whose story is it really? The video engages seriously with the ethics of consent, identity, and parental storytelling in the social media age. It's thoughtful rather than preachy, and the 42 minutes feel earned."
+          "video_id": "GuLL_upE4zk",
+          "title": "Why General Relativity (and Newton's Laws) tell us The Sky is Falling Up",
+          "channel_id": "UC3KV2kFy2YhjYvverIy2WnA",
+          "channel_title": "Dialect",
+          "published_at": "2022-11-05T12:00:51Z",
+          "url": "https://www.youtube.com/watch?v=GuLL_upE4zk",
+          "duration_seconds": 1360,
+          "view_count": "360485",
+          "description": "Understanding the Equivalence Principle is pretty straightforward -- so long as you're willing to throw out some basic intuitions about your everyday motion. Indeed, there is an astonishing truth about why objects actually \"fall\" at the surface of the earth that most people are completely oblivious to. Join us as we take to rocket ships, rooftops, cow pens, and other exotic settings in an attempt to expose it. Plus: plenty of monkey business along the way!\n\nSupport us on Patreon: https://www.pat",
+          "why_watch": "Dialect argues — correctly, and with good visual support — that from the perspective of General Relativity, you are being accelerated upward right now as you sit still, and that objects don't fall so much as the Earth rises to meet them. The Equivalence Principle is the engine of the whole argument, and this video is one of the clearest explanations of why it forces you to rethink what 'stationary' even means. It's the kind of reframe that makes Newtonian intuitions feel genuinely strange in a productive way."
+        },
+        {
+          "source": "youtube",
+          "video_id": "RuRQpavgOtM",
+          "title": "Negative resistance",
+          "channel_id": "UCFtCfZ4rtIZ7Hsq7ZNHoY1w",
+          "channel_title": "Computer&Electronics",
+          "published_at": "2024-06-16T10:05:46Z",
+          "url": "https://www.youtube.com/watch?v=RuRQpavgOtM",
+          "duration_seconds": 524,
+          "view_count": "4122",
+          "description": "This video talks about negative resistance. Static resistance determines the power dissipation in a component. Passive devices, which consume electric power, have positive static resistance; while active devices, which produce electric power, do not. But usually when in electronics you talk about negative resistance you mean negative differential resistance which can be found, for example, in the cross coupled pair. Negative differential resistance means that if you increase the voltage the curr",
+          "why_watch": "This compact 8-minute video draws a clean and important distinction between static resistance and differential resistance — the latter being what engineers actually mean when they say a component has 'negative resistance.' It's the kind of definitional clarity that prevents years of fuzzy thinking about tunnel diodes and oscillator circuits. Useful for anyone who's nodded along to the term without being quite sure what's physically happening."
+        }
+      ]
+    },
+    {
+      "name": "Scraps Into Magic",
+      "emoji": "🎃",
+      "tagline": "One person, a pile of unlikely materials, and an outcome that has absolutely no right to look that good.",
+      "items": [
+        {
+          "source": "youtube",
+          "video_id": "WyRsRkg0EB0",
+          "title": "Turning Old Curtains into a Pumpkin Pie Shirt!",
+          "channel_id": "UCJI86v9et-IZd1KJSfahN8g",
+          "channel_title": "Rachel Maksy",
+          "published_at": "2026-09-19T00:13:42Z",
+          "url": "https://www.youtube.com/watch?v=WyRsRkg0EB0",
+          "duration_seconds": 1625,
+          "view_count": "67892",
+          "description": "👒🔍Download June’s Journey for free now using my link https://liftpage.media/mb/rachelmaksy-junesjourney-sept26\nThank you so much June's Journey for sponsoring this video!\n\nH'YELLO and here's the official welcome to Crunchy Spicy Leaf Season (even though I'm still sweating). H-what better way to celebrate than to make a food-related clothing item out of other people's discarded linens?! Well HOORAH!\nThis week I'm going back to my \"making sleeves not boring\" origins. I was fascinated with the idea",
+          "why_watch": "Rachel Maksy takes a pile of discarded curtains and constructs an elaborate pumpkin pie-themed shirt, walking through every pattern-drafting and fabric-manipulation decision along the way. Her commentary is genuinely funny without ever burying the actual technique, so you come away both entertained and with real ideas for upcycling unlikely textiles. It's the rare crafting video where the process feels as satisfying to watch as the finished piece looks."
         }
       ]
     }
@@ -169,378 +117,287 @@
   "morning_soundtrack": [
     {
       "source": "music",
-      "source_name": "NPR Music",
-      "title": "Remembering jazz singer Cassandra Wilson",
-      "snippet": "Wilson, who died Sept. 1, spiced her singing with funk, hip-hop and blues. Kevin Whitehead offers an appreciation, and we listen back to Terry's 1988 interview with Wilson.",
-      "url": "https://www.npr.org/2026/09/18/nx-s1-5973262/remembering-jazz-singer-cassandra-wilson",
+      "source_name": "Consequence",
+      "title": "Brandy Clark Announces New Album the bird, 2027 Tour Dates",
+      "snippet": "Produced by Shooter Jennings, the 11-track album features Rosanne Cash and SistaStrings and arrives ahead of Clark’s extensive 2027 world tour. Brandy Clark Announces New Album the bird, 2027 Tour Dates Alex Krinsky",
+      "url": "https://consequence.net/2026/09/brandy-clark-announces-new-album-the-bird-2027-tour-dates/",
       "genre": "",
-      "vibe_check": "A smoke-filled room at closing time, honouring a voice that bent every genre it touched.",
-      "cover_url": "https://media.npr.org/include/images/facebook-default-wide-s1400-c85.jpg",
-      "embed_url": null
-    },
-    {
-      "source": "music",
-      "source_name": "Stereogum",
-      "title": "Matt Berninger Shares New Surprise EP Type It Up",
-      "snippet": "Over the summer, the National frontman Matt Berninger released the magnificently titled new solo track \" Martini Me Fatso .\" Though arriving in the long tail of last year's excellent Get Sunk , it seemed to exist outside of the frame of the album cycle, and now we know it was part of a new EP that seems like it will stand as a capstone on this era. Released by surprise today, Type It Up includes \"Martini Me Fatso,\" the new originals \"Type It Up\" and \"Ask For Water,\" and the previously released covers of New Order's \" Blue Monday \" and the Velvet Underground's \" Who Loves The Sun .\"",
-      "url": "https://stereogum.com/2511902/matt-berninger-shares-new-surprise-ep-type-it-up/music/",
-      "genre": "",
-      "vibe_check": "Late-night wine-stained notebook energy, the kind of music you put on when the party has whittled down to your two favourite people.",
-      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/09/a1915836679_10.jpg?w=564",
-      "embed_url": "https://www.youtube.com/embed/9ypzBs3ndaE"
-    },
-    {
-      "source": "music",
-      "source_name": "Stereogum",
-      "title": "Meshell Ndegeocello, Bill Callahan, & Chris Thile – “With God On Our Side” (Bob Dylan Cover)",
-      "snippet": "When I was talking to Bill Callahan early this year, he slipped me a little scoop : The veteran indie singer-songwriter had recorded a collaboration with Meshell Ndegeocello. Here's the backstory he provided:",
-      "url": "https://stereogum.com/2511871/meshell-ndegeocello-bill-callahan-chris-thile-with-god-on-our-side-bob-dylan-cover/music/",
-      "genre": "",
-      "vibe_check": "A hymn sung slowly in a half-lit chapel by people who've stopped believing but still feel the weight of the words.",
-      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/09/unnamed-2026-09-18T110646.387.jpg?w=564",
-      "embed_url": "https://www.youtube.com/embed/UNvJiWgxhlY"
-    },
-    {
-      "source": "music",
-      "source_name": "No Depression",
-      "title": "BONUS TRACKS: New Music From Brandy Clark, Meshell Ndegeocello Covers Bob Dylan, and More Roots Music News",
-      "snippet": "Brandy Clark has announced that her fifth studio album, the bird, will be released on Jan. 15, 2027 via Reprise Records. The 11-track LP is produced by Shooter Jennings and was recorded at Sunset Sound in Los Angeles with her road band ( Gabe Burdulia, Amanda McCoy and Erin Nelson",
-      "url": "https://nodepression.org/bonus-tracks-new-music-from-brandy-clark-meshell-ndegeocello-covers-bob-dylan-and-more-roots-music-news/",
-      "genre": "",
-      "vibe_check": "A quiet Saturday morning scrolling through music news with coffee going cold beside you.",
-      "cover_url": "https://storage.ghost.io/c/18/d0/18d08e58-3b1b-4720-ae25-a31b44e69d4b/content/images/2026/09/unnamed--1-.jpg",
+      "vibe_check": "Dust-road Americana with a restless heart, packing its bags for somewhere new.",
+      "cover_url": "https://consequence.net/wp-content/uploads/2026/09/brandy-clark-the-bird.jpg?quality=80",
       "embed_url": "https://www.youtube.com/embed/3CjQmiQEaZY"
     },
     {
       "source": "music",
-      "source_name": "No Depression",
-      "title": "ALBUM REVIEW: Orville Peck Turns the Worst Year of His Life Into the Best Album of His Career With 'Mule'",
-      "snippet": "Masked cowboys are, by definition, not great with vulnerability. Orville Peck has spent the majority of his career shrouded in mystery; it wasn't until last year that the incognito country singer showed his face publicly and revealed his true identity — Daniel Pitout — ahead of his Broadway",
-      "url": "https://nodepression.org/album-review-orville-peck-turns-the-worst-year-of-his-life-into-the-best-album-of-his-career-with-mule/",
-      "genre": "",
-      "vibe_check": "Dust-road catharsis at sundown, the kind of album that feels like finally pulling off the mask and breathing real air.",
-      "cover_url": "https://storage.ghost.io/c/18/d0/18d08e58-3b1b-4720-ae25-a31b44e69d4b/content/images/2026/09/bananago_20260917_125949.jpg",
-      "embed_url": null
-    },
-    {
-      "source": "music",
-      "source_name": "Pitchfork",
-      "title": "Duncan Sheik Dies at 56",
-      "snippet": "The musician was best known for his 1996 single “Barely Breathing” and his Tony-winning work on Broadway’s Spring Awakening",
-      "url": "https://pitchfork.com/story/duncan-sheik-dies-at-56/",
-      "genre": "",
-      "vibe_check": "The hollow ache of hearing a song from your teenage bedroom and realising the person who made it is gone.",
-      "cover_url": "https://media.pitchfork.com/photos/6aad4d149fd1f61e3dcef160/master/pass/GettyImages-85845341.jpg",
-      "embed_url": "https://www.youtube.com/embed/A-oh-tP6RvA"
-    },
-    {
-      "source": "music",
-      "source_name": "Pitchfork",
-      "title": "The National’s Matt Berninger Releases Type It Up EP and New Video",
-      "snippet": "“People were mishearing the lyric, ‘That would look good in a black letter font’ as ‘I would look good in a black leather thong,’ so I decided to swap the chorus,” he says of the title track",
-      "url": "https://pitchfork.com/story/the-nationals-matt-berninger-launches-type-it-up-ep-with-new-video/",
-      "genre": "",
-      "vibe_check": "The gently absurd joy of finding a typo that accidentally improves everything.",
-      "cover_url": "https://media.pitchfork.com/photos/6aad3e6a74a1d6209f3f9518/master/pass/Type%20It%20Up%20EP%20Matt%20Berninger.JPG",
-      "embed_url": null
-    },
-    {
-      "source": "music",
-      "source_name": "Pitchfork",
-      "title": "Bill Callahan Joins Meshell Ndegeocello to Cover Bob Dylan’s “With God on Our Side”",
-      "snippet": "Chris Thile also sings on the track from Ndegeocello’s duets album Synonym",
-      "url": "https://pitchfork.com/story/bill-callahan-joins-meshell-ndegeocello-to-cover-bob-dylans-with-god-on-our-side/",
-      "genre": "",
-      "vibe_check": "Three serious artists standing in a circle, passing a heavy old song between them like something fragile they're not sure how to hold.",
-      "cover_url": "https://media.pitchfork.com/photos/6aad2e7174a1d6209f3f930d/master/pass/meshell-bill-callahan-video.JPG",
-      "embed_url": null
-    },
-    {
-      "source": "music",
-      "source_name": "Consequence",
-      "title": "Gnarls Barkley Announce First Tour in 18 Years",
-      "snippet": "CeeLo Green and Danger Mouse will hit the road for a nine-date North American run following the release of their third and final album, Atlanta. Gnarls Barkley Announce First Tour in 18 Years Alex Krinsky",
-      "url": "https://consequence.net/2026/09/gnarls-barkley-announce-first-tour-in-18-years/",
-      "genre": "",
-      "vibe_check": "The electric jolt of a dormant thing suddenly, unexpectedly, back alive.",
-      "cover_url": "https://consequence.net/wp-content/uploads/2026/09/gnarls-barkley-first-tour-in-18-years.jpeg?quality=80",
-      "embed_url": null
-    },
-    {
-      "source": "music",
-      "source_name": "Consequence",
-      "title": "Neil Young Releases Second Song, the 50th Album in His Illustrious Career",
-      "snippet": "The second album recorded with his band The Chrome Hearts. Neil Young Releases Second Song, the 50th Album in His Illustrious Career Alex Young",
-      "url": "https://consequence.net/2026/09/neil-young-second-song-new-album-stream/",
-      "genre": "",
-      "vibe_check": "The steady, unhurried momentum of someone who has simply never stopped moving forward.",
-      "cover_url": "https://consequence.net/wp-content/uploads/2026/03/neil-young-trump-album-worst-president-eight-songs.png",
-      "embed_url": null
-    },
-    {
-      "source": "music",
-      "source_name": "Consequence",
-      "title": "Duncan Sheik Dead: “Barely Breathing” Singer and Spring Awakening Composer Was 56",
-      "snippet": "Sheik passed away from cardiac arrest, according to The New York Times. Duncan Sheik Dead: “Barely Breathing” Singer and Spring Awakening Composer Was 56 Alex Young",
-      "url": "https://consequence.net/2026/09/duncan-sheik-dead-spring-awakening-barely-breathing/",
-      "genre": "",
-      "vibe_check": "The quiet sadness of a nineties radio memory surfacing uninvited, now tinged with loss.",
-      "cover_url": "https://consequence.net/wp-content/uploads/2026/09/Duncan-Sheik.jpeg?quality=80",
-      "embed_url": null
-    },
-    {
-      "source": "music",
       "source_name": "JazzTimes",
-      "title": "The Thrak-Attack Post-Jazz of Stick Men: Inventive String Sounds from Tony Levin and Markus Reuter",
-      "snippet": "N either bassist Tony Levin nor guitarist Markus Reuter needs me to credit their jazz chops beyond their more populist day jobs with the likes …",
-      "url": "https://www.jazztimes.com/features/profiles/the-thrak-attack-post-jazz-of-stick-men-inventive-string-sounds-from-tony-levin-and-markus-reuter/",
+      "title": "The Powerhouse: Drummer-Composer Cindy Blackman Santana Finds Clarity with Coherence",
+      "snippet": "E ven if you’d never heard Cindy Blackman Santana play one note or compose one track, as she’s done, prodigiously and voluminously, on leader albums …",
+      "url": "https://www.jazztimes.com/features/profiles/the-powerhouse-drummer-composer-cindy-blackman-santana-finds-clarity-with-coherence/",
       "genre": "",
-      "vibe_check": "The cerebral thrill of music that sounds like it was assembled in zero gravity by people who find jazz too conventional.",
-      "cover_url": "https://www.jazztimes.com/wp-content/uploads/2026/09/Jeff-Myers-credit.jpg",
-      "embed_url": "https://www.youtube.com/embed/G5AHTGUaQ84"
+      "vibe_check": "The feeling of watching a thunderstorm roll in and realizing you're not afraid of it.",
+      "cover_url": "https://www.jazztimes.com/wp-content/uploads/2026/09/DT2_8962-scaled.jpg",
+      "embed_url": "https://www.youtube.com/embed/kxhPB0Juj6o"
+    },
+    {
+      "source": "music",
+      "source_name": "PopMatters",
+      "title": "Branford Marsalis and Dianne Reeves Pay Tribute to Coltrane",
+      "snippet": "Of all the John Coltrane tributes we'll likely hear in 2026, Branford Marsalis and Dianne Reeves' Dedicated to You will be the most heartfelt and authentic.",
+      "url": "https://www.popmatters.com/branford-marsalis-dianne-reeves",
+      "genre": "",
+      "vibe_check": "Late-night reverence in a half-lit room, honoring something too sacred to rush.",
+      "cover_url": "https://www.youtube.com/embed/GzDgVp9VBcs",
+      "embed_url": "https://www.youtube.com/embed/GzDgVp9VBcs"
+    },
+    {
+      "source": "music",
+      "source_name": "PopMatters",
+      "title": "John Hollenbeck’s Singular Voice Animates’ Peace and Justice’",
+      "snippet": "John Hollenbeck's music is as distinct as Gil Evans' or Oliver Nelson's. You immediately hear the colors he whips up in distinct ways. It's a prize for our ears.",
+      "url": "https://www.popmatters.com/john-hollenbeck-peace-justice",
+      "genre": "",
+      "vibe_check": "Like stumbling into a gallery where every color you've never named suddenly has one.",
+      "cover_url": "https://www.popmatters.com/wp-content/uploads/2026/09/John-Hollenbeck-Peace-and-Justice-social.webp",
+      "embed_url": "https://bandcamp.com/EmbeddedPlayer/album=3443623786/size=large/bgcol=ffffff/linkcol=e99708/tracklist=false/artwork=small/transparent=true/"
+    },
+    {
+      "source": "music",
+      "source_name": "Fretboard Journal",
+      "title": "Life on the Fretboard: Andy McKee",
+      "snippet": "Andy McKee exploded to prominence in 2006 with this video of his track “Drifting,” released on the nascent CandyRat record label. Twenty years later, Andy’s career has taken him to audiences around the world, with collaborations ranging from Dream Theater to Prince. I’ve been looking forward to sharing this episode of Life on the Fretboard The post Life on the Fretboard: Andy McKee first appeared on Fretboard Journal .",
+      "url": "https://www.fretboardjournal.com/podcasts/luthier-on-luthier-andy-mckee/?utm_source=rss&utm_medium=rss&utm_campaign=luthier-on-luthier-andy-mckee",
+      "genre": "",
+      "vibe_check": "The quiet wonder of watching someone coax an entire landscape out of six strings and two hands.",
+      "cover_url": "https://images.fretboardjournal.com/wp-content/uploads/2026/09/18094623/LOTFB-Andy-McKee.jpeg",
+      "embed_url": "https://www.youtube.com/embed/Ddn4MGaS3N4"
     }
   ],
   "global_silver_linings": [
     {
       "source": "good_news",
       "source_name": "Good News Network",
-      "title": "Unsealed for the First Time, This 600-yo Tomb in Peru Was Just Declared the ‘Discovery of the Decade’",
-      "url": "https://www.goodnewsnetwork.org/unsealed-for-the-first-time-this-600-yo-tomb-in-peru-was-just-declared-the-discovery-of-the-decade/",
-      "snippet": "An unspoiled, undiscovered tomb containing the remains of an elite society belong to a major Andean civilization has been uncovered in Peru. Located in the UNESCO World Heritage-listed site of Chan Chan, inside a palatial complex called Utzh An, its contents of 38 skeletons and a wealth of grave goods have remained undisturbed to our […]",
-      "cover_url": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/09/The-newly-discovered-tomb-seen-in-the-center-©-ANDINA-Editora-Peru.jpg",
-      "reason": "A pristine, untouched 600-year-old tomb reminds us that the earth still holds profound secrets waiting to deepen our understanding of ancient human cultures. Every such discovery is a gift — proof that history hasn't finished teaching us yet."
+      "title": "Company’s Textile Dyes Work Through Magnetism, Cutting Fashion’s Water-Use, Energy, and Pollution",
+      "url": "https://www.goodnewsnetwork.org/companys-textile-dyes-work-through-magnetism-cutting-fashions-water-use-energy-and-pollution/",
+      "snippet": "Hoping to tackle the 50% of textile emissions associated with the dyeing process, a vaunted French startup has created non-toxic dyes that require substantially less water to activate and last just as long. Additionally, they take hold electromagnetically at room temperature, rather than over long periods at boiling temperatures, and don’t require chemical fixatives. EverDye’s […]",
+      "cover_url": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/09/credit-EverDye-e1789761780757.jpg",
+      "reason": "A breakthrough in magnetic textile dyeing could dramatically reduce the fashion industry's notorious water waste and chemical pollution, tackling one of the planet's dirtiest trades at its source. It's a rare case where a practical, scalable solution is catching up to the scale of the problem."
     },
     {
       "source": "good_news",
       "source_name": "Upworthy",
-      "title": "Communication expert shares 3-2-1 trick to stop rambling when put on the spot",
-      "url": "https://www.upworthy.com/communication-expert-shares-3-2-1-trick-to-stop-rambling-ex1/",
-      "snippet": "How to sound clear, concise, and confident.",
-      "cover_url": "https://www.upworthy.com/wp-content/uploads/sites/2/2026/03/pexels-august-de-richelieu-4427882.jpg",
-      "reason": "Simple, practical tools for clearer communication mean more people can express themselves confidently and be truly heard. That small shift in how we connect with each other ripples outward in quietly meaningful ways."
+      "title": "Americans share 31 awesome things that can only be found here in the States",
+      "url": "https://www.upworthy.com/americans-share-31-awesome-things-only-found-in-the-united-states-ex1/",
+      "snippet": "\"Garbage disposals, apparently.\"",
+      "cover_url": "https://www.upworthy.com/wp-content/uploads/sites/2/2026/02/origin_cc97c7.png",
+      "reason": "Amid so much noise about division, everyday Americans pausing to celebrate the quirky, beautiful, and surprising things unique to their home is a quiet reminder that shared joy and local pride still run deep."
     },
     {
       "source": "good_news",
       "source_name": "The Optimist Daily",
-      "title": "Podcast Transcript September 18th, 2026— A 450-year map mistake gets corrected by 164 countries, plus nine more solutions",
-      "url": "https://www.optimistdaily.com/2026/09/podcast-transcript-september-18th-2026-a-450-year-map-mistake-gets-corrected-by-164-countries-plus-nine-more-solutions/",
-      "snippet": "Episode Description: Most world maps show Greenland and Africa as roughly the same size… which is kind of unbelievable considering Africa is 14 times larger! This error has been built into classrooms, boardrooms, and institutions since 1569. Last week, 164 countries finally voted to fix it.",
-      "cover_url": "https://www.optimistdaily.com/wp-content/uploads/Podcast-Logo-3000-×-3000-px-2-13.png",
-      "reason": "When 164 countries come together to correct a centuries-old cartographic error, it's a rare and powerful sign that collective honesty and cooperation can still win out — even over deeply entrenched convention."
+      "title": "The world’s largest battery-electric ferry just crossed an ocean",
+      "url": "https://www.optimistdaily.com/2026/09/the-worlds-largest-battery-electric-ferry-just-crossed-an-ocean/",
+      "snippet": "BY THE OPTIMIST DAILY EDITORIAL TEAM In 2019, a South American transport company ordered a diesel ferry. By the time it launched six years later, it had become the largest electric vehicle ever built, of any kind, on land or sea. Hull 096 is a 130-meter (427-foot) battery-electric ferry built by Tasmanian shipbuilder Incat in […] The post The world’s largest battery-electric ferry just crossed an ocean first appeared on The Optimist Daily: Making Solutions the News .",
+      "cover_url": "https://www.optimistdaily.com/wp-content/uploads/HSC_China_Zorrilla_at_Incat_June_2025_2.jpg",
+      "reason": "The world's largest battery-electric ferry completing an ocean crossing proves that clean maritime transport is no longer a distant dream but a working reality, opening the door to decarbonizing one of shipping's most stubborn sectors."
     }
   ],
   "discovery_articles": [
     {
       "source": "discovery",
       "source_name": "Atlas Obscura",
-      "title": "Holy Trinity Oak Tree Chapel in Čibukovac, Serbia",
-      "url": "https://www.atlasobscura.com/places/holy-trinity-oak-tree-chapel",
-      "snippet": "The Holy Trinity oak chapel in Čibukovac, a small village near Kraljevo, is built inside a pedunculate oak believed to be over 500 years old. It is thought to be the oldest oak in Serbia. The tree stands more than 30 metres tall, with a trunk circumference of about 8 metres and a diameter of roughly two and a half metres, wide enough that villager Mihailo Erotijević, with the help of Father Radojko and others, was able to hollow out its trunk and turn it into a small working chapel.",
+      "title": "The Mack Truck Museum  in Allentown, Pennsylvania",
+      "url": "https://www.atlasobscura.com/places/the-mack-truck-museum",
+      "snippet": "The Mack Museum was created in 1984 and commemorates Mack history through preserving truck build records, service and parts information, engineering drawings, photos, memorabilia and a collection of vintage Mack truck models. After being founded in Brooklyn, New York in 1900, the Mack Brothers Motor Company registered in Lehigh County, in Allentown PA. They kept the headquarters in Allentown for over 100 years until they moved it to North Carolina in 2009.",
       "category": "history",
-      "cover_url": "https://img.atlasobscura.com/QCfVZoUrtK3zk5zxzfhyH_0hRlJqS3phAP1CUD16liY/rt:fit/w:600/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy82M2Qx/MDYzZC0yOGIyLTQx/NjEtOWMxNi1hMDZk/MjdjYzE2MGQ1YmUy/MmJmZjdkOTU3NWI1/YmJfY2hhc292bnlh/MS02MDB4NDA1Lmpw/Zw.jpg",
-      "ferns_note": "Somewhere in a Serbian village, a tree that was already ancient when Columbus sailed has been quietly serving as a functioning Orthodox chapel for decades — congregation, candles, and all. The oak didn't just survive history; it absorbed it."
+      "cover_url": "https://images.atlasobscura.com/uploads/place_images/88850973-6f04-4fc4-925f-c53f7565b3c8f57f9e51298d600742_IMG_1646.webp",
+      "ferns_note": "A truck company born in Brooklyn quietly planted its roots in Pennsylvania and held them there for over a century — which makes the 2009 departure to North Carolina feel less like a relocation and more like a quiet farewell to an era. There's something unexpectedly melancholy about a museum dedicated to machines that always moved forward."
     },
     {
       "source": "discovery",
       "source_name": "Smithsonian",
-      "title": "The Ancient DNA of a Deadly Animal Virus Has Been Lurking in Medieval Manuscripts for Centuries, Researchers Find",
-      "url": "https://www.smithsonianmag.com/smart-news/medieval-manuscripts-preserved-traces-of-a-deadly-virus-for-centuries-180989522/",
-      "snippet": "A new analysis of teeth and parchment suggests that the devastating sheep pox virus has been infecting livestock for 3,700 years",
+      "title": "The Moon Just Got a Massive New Crater That's Wider Than Two End-to-End Football Fields. It's a 'Once-in-a-Lifetime Observation'",
+      "url": "https://www.smithsonianmag.com/smart-news/the-moon-just-got-a-massive-new-crater-thats-wider-than-two-end-to-end-football-fields-its-a-once-in-a-lifetime-observation-180989526/",
+      "snippet": "The impact crater was formed in 2024 when an object the size of a multistory building crashed into our lunar companion. The resulting divot is about 728 feet wide and 141 feet deep",
       "category": "history",
-      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/jS4OB0mIiNo-MUz09z1eD_jmgCk=/fit-in/1600x0/filters:focal(640x427:641x428)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/5f/6c/5f6c0f39-bd93-4c2a-9605-b518b8574158/irish_sheep_71088397.jpeg",
-      "ferns_note": "Researchers found traces of a devastating livestock virus hiding inside medieval parchment — which is, of course, made from sheepskin — meaning the very pages that recorded history were also quietly preserving the pathogen that shaped it. The manuscript was the victim and the archive simultaneously."
+      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/zZYRQEXgco1lTwMC1wppwXwU414=/fit-in/1600x0/filters:focal(512x512:513x513)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/07/f2/07f2373b-918c-4e19-8b22-9a2d4398bc64/mcgetchinobligueviewlrocnac.jpeg",
+      "ferns_note": "In 2024, we watched the Moon acquire a fresh scar in real time — a crater wider than two football fields, carved in an instant by something the size of a building falling from the void. It's a reminder that the solar system is still very much in motion, and the Moon is still taking notes."
     },
     {
       "source": "discovery",
       "source_name": "Smithsonian",
-      "title": "Centuries Ago, an Architect Characterized the Parthenon’s Curves as a Clever Optical Illusion. Now, a Mathematician Begs to Differ",
-      "url": "https://www.smithsonianmag.com/smart-news/centuries-ago-an-architect-characterized-the-parthenons-curves-as-a-clever-optical-illusion-now-a-mathematician-begs-to-differ-180989520/",
-      "snippet": "In the first century B.C.E., Vitruvius wrote that the Acropolis’ largest temple was horizontally bowed so that it didn't seem to sag, and that explanation persisted for millennia. New research suggests a different reason",
+      "title": "A Herd of 40 Life-Size Bison Puppets Will Stampede Through New York This Weekend to Honor Indigenous History and Resilience",
+      "url": "https://www.smithsonianmag.com/smart-news/a-herd-of-40-life-size-bison-puppets-will-stampede-through-new-york-this-weekend-to-honor-indigenous-history-and-resilience-180989525/",
+      "snippet": "The massive bovines, each maneuvered by three puppeteers, will roam through Lower Manhattan and Brooklyn",
       "category": "history",
-      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/OVbQ6qzOiEaeCxkgn5T6YONw-Wg=/fit-in/1600x0/filters:focal(1466x977:1467x978)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/ed/88/ed88a908-056c-40c6-bc7d-6fac7f2979f5/parthenon.jpeg",
-      "ferns_note": "For roughly two thousand years, we accepted Vitruvius's elegant optical-illusion explanation for the Parthenon's subtle curves — and it turns out we may have simply been trusting a very confident Roman with a theory. The most enduring architectural story in Western history might need a rewrite."
+      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/JkAMJ0hLZlCOP4NbphZUfewN80Y=/fit-in/1600x0/filters:focal(4128x2752:4129x2753)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/ee/af/eeaf8702-0ac4-473b-9399-aefed4f4c3ae/2026-08-26_return_of_the_buffalo_rush-10.jpg",
+      "ferns_note": "Forty life-size bison, each requiring three puppeteers to breathe into existence, will thunder through Lower Manhattan — streets that were once Indigenous land and later the site of a thriving bison trade. The stampede isn't spectacle so much as memory, made enormous and undeniable."
     },
     {
       "source": "discovery",
       "source_name": "Smithsonian",
-      "title": "Tyrannosaurus Rex Was a Warm-Blooded Dinosaur, With a Body Temperature Similar to That of Humans, Study Suggests",
-      "url": "https://www.smithsonianmag.com/smart-news/tyrannosaurus-rex-was-a-warm-blooded-dinosaur-with-a-body-temperature-similar-to-that-of-humans-study-suggests-180989519/",
-      "snippet": "A tooth analysis hints that the fearsome predator ran at a toasty 97 degrees Fahrenheit. Maintaining that internal temperature may have allowed it to inhabit a range stretching from modern-day Alaska to Mexico during the Cretaceous period",
+      "title": "From 22,000 Miles Up, This Satellite Tracks Airborne Health Threats Almost in Real Time",
+      "url": "https://www.smithsonianmag.com/innovation/from-22000-miles-up-this-satellite-tracks-airborne-health-threats-almost-in-real-time-180989523/",
+      "snippet": "The new instrument, called TEMPO, captures hourly snapshots of the pollutants swirling in the daytime atmosphere over North America—“chemical weather” reports that are helpful to public health researchers and government officials",
       "category": "history",
-      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/V6zzTjJnnpqV-ga5MnWnuV5O964=/fit-in/1600x0/filters:focal(1824x1372:1825x1373)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/f2/60/f2601472-df0b-4fa8-af14-660201e25d0c/nhm_t-rex_skull_dinosaur_institute_natural_history_museum_of_los_angeles_county.jpg",
-      "ferns_note": "T. rex apparently ran at a near-human 97°F, which reframes the creature less as a cold-blooded reptilian monster and more as something disturbingly warm and metabolically alive — the kind of detail that makes fossil skeletons feel suddenly less distant. It also explains how it ranged from Alaska to Mexico without missing a beat."
+      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/1snawFwI6rZmYXP-Igw7rBWYGF8=/fit-in/1600x0/filters:focal(1085x672:1086x673)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/d4/68/d4685b8a-3c7c-4949-be40-9a603106b3b3/gettyimages-2285809343.jpg",
+      "ferns_note": "TEMPO essentially gives us hourly weather reports for the invisible — the swirling cocktail of pollutants drifting over North America that most of us breathe without ever seeing. The quietly radical part: for the first time, researchers don't have to wait days for data that affects decisions made today."
     },
     {
       "source": "discovery",
       "source_name": "Smithsonian",
-      "title": "Five Ways the World of the Dinosaurs Looked Different From Ours, Beyond the Presence of the 'Terrible Lizards'",
-      "url": "https://www.smithsonianmag.com/science-nature/five-ways-the-world-of-the-dinosaurs-looked-different-from-ours-beyond-the-presence-of-the-terrible-lizards-180989521/",
-      "snippet": "Earth has changed dramatically since the Age of Dinosaurs, from its climate to geography and animal life",
+      "title": "The Founders of the 'New York Times' Pledged to Cover 'Every Subject of Public Importance.' 175 Years Later, the Paper Continues to Publish 'All the News That's Fit to Print'",
+      "url": "https://www.smithsonianmag.com/history/the-founders-of-the-new-york-times-pledged-to-cover-every-subject-of-public-importance-175-years-later-the-paper-continues-to-publish-all-the-news-thats-fit-to-print-180989512/",
+      "snippet": "Much has changed since the publication debuted on September 18, 1851. What hasn't changed, staff members say, is the paper's mission",
       "category": "history",
-      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/zAbu12WMZrnSUV8rMvQ02_N_0WI=/fit-in/1600x0/filters:focal(1061x707:1062x708)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/86/96/8696575f-21e0-4d7c-8edc-a86d1b808ee6/gettyimages-1402265692.jpg",
-      "ferns_note": "The dinosaurs didn't just share a planet with unfamiliar creatures — they lived on a fundamentally different Earth, one with alien geography and a climate we'd barely recognize. It's a useful reminder that \"prehistoric\" undersells just how thoroughly the world has been rebuilt."
-    },
-    {
-      "source": "discovery",
-      "source_name": "Science News",
-      "title": "Will the U.S. megadrought ever end?",
-      "url": "https://www.sciencenews.org/article/united-states-megadrought-climate",
-      "snippet": "For 27 years, the Southwest has been gripped by a historic drought. Scientists think it might be here to stay.",
-      "category": "science",
-      "cover_url": "https://www.sciencenews.org/wp-content/uploads/sites/2/2026/09/1026_drought_feat.jpg",
-      "ferns_note": "Twenty-seven years into a megadrought, scientists are no longer asking when it will end — they're asking whether the Southwest is simply reverting to its natural, arid baseline after an anomalously wet century that let millions of people settle there. The water didn't disappear; the brief window of abundance did."
-    },
-    {
-      "source": "discovery",
-      "source_name": "Science News",
-      "title": "This ‘anti-vampiric’ grave used two strategies to stop the undead",
-      "url": "https://www.sciencenews.org/article/ancient-anti-vampire-grave-undead",
-      "snippet": "A sickle across the throat and a padlock on the toe were likely meant to keep this 17th-century Polish teen from resurrecting.",
-      "category": "science",
-      "cover_url": "https://www.sciencenews.org/wp-content/uploads/sites/2/2026/09/091026_MT_grave_main_rev.jpg",
-      "ferns_note": "Whoever buried this 17th-century Polish teenager wasn't taking chances: a sickle at the throat to decapitate any resurrection attempt, a padlock on the toe for good measure — two entirely different anti-undead systems deployed on one anxious grave. The redundancy is almost touching in its thoroughness."
-    },
-    {
-      "source": "discovery",
-      "source_name": "Science News",
-      "title": "What’s behind ‘one of paleontology’s most enduring enigmas’?",
-      "url": "https://www.sciencenews.org/article/paleontology-enigma-honeycomb-fossil",
-      "snippet": "New research suggests that Paleodictyon — honeycomb-shaped formations perhaps sketched by da Vinci — are not made by soft-bodied creatures.",
-      "category": "science",
-      "cover_url": "https://www.sciencenews.org/wp-content/uploads/sites/2/2026/09/090826_MB_fossil_mainsocial.jpg",
-      "ferns_note": "Honeycomb-shaped formations on the ocean floor have puzzled scientists for so long that Leonardo da Vinci may have sketched them centuries before we had any idea what made them — and new research suggests we still don't fully know. Some mysteries get more elegant the longer they resist an answer."
-    },
-    {
-      "source": "discovery",
-      "source_name": "Science News",
-      "title": "Math puzzle: Shape-birding",
-      "url": "https://www.sciencenews.org/article/math-puzzle-shape-birding-polygons",
-      "snippet": "Solve the math puzzle from our October 2026 issue, in which a bird watcher seeks an indoor hobby.",
-      "category": "science",
-      "cover_url": "https://www.sciencenews.org/wp-content/uploads/sites/2/2026/09/0926_puzzle_main.jpg",
-      "ferns_note": "Sometimes the most elegant intellectual detour is a puzzle that asks you to look at familiar shapes as though you've never seen them before. Consider this your permission to spend twenty minutes thinking about geometry instead of whatever else was on your list."
-    },
-    {
-      "source": "discovery",
-      "source_name": "JSTOR Daily",
-      "title": "The Women Who Sold Books Door to Door",
-      "url": "https://daily.jstor.org/the-women-who-sold-books-door-to-door/",
-      "snippet": "Three nineteenth-century memoirs reveal the risks and rewards of life on the road as a traveling bookseller.",
-      "category": "history",
-      "cover_url": "https://daily.jstor.org/wp-content/uploads/2026/09/the_women_who_sold_books_door_to_door_1050x700.jpg",
-      "ferns_note": "Before Amazon, before bookshops on every corner, there were women walking door to door through 19th-century America with heavy bags of books and a pitch ready for whoever answered — a livelihood that was equal parts salesperson, adventurer, and quiet literary missionary. Their memoirs are the road-trip narratives nobody assigned in school."
-    },
-    {
-      "source": "discovery",
-      "source_name": "Quanta Magazine",
-      "title": "Mathematicians Build Long-Awaited Graph Sandwich",
-      "url": "https://www.quantamagazine.org/mathematicians-build-long-awaited-graph-sandwich-20260918/",
-      "snippet": "The proof of a decades-old conjecture has given researchers a new way to understand complex networks. The post Mathematicians Build Long-Awaited Graph Sandwich first appeared on Quanta Magazine",
-      "category": "science",
-      "cover_url": "https://www.quantamagazine.org/wp-content/uploads/2026/09/GraphSandwiches-crKristinaArmitage-Social.jpg",
-      "ferns_note": "A conjecture that sat unsolved for decades has finally yielded, and the proof gives mathematicians a genuinely new lens for understanding how complex networks — from the internet to social graphs — fit together. The \"sandwich\" in question is a structure elegant enough that it took this long to construct it rigorously."
+      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/U1GZLrrWwyTbxJWBgkFmRzpDwks=/fit-in/1600x0/filters:focal(2080x1340:2081x1341)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/43/c3/43c31d6b-0041-444c-a2b4-ffe1dfa01db4/gettyimages-2289911756_1.jpg",
+      "ferns_note": "When the New York Times launched in 1851, it cost a penny and competed with a dozen other New York dailies — most of which no one remembers now. The paper's longevity is less a story of triumph than of stubborn, unglamorous continuity in a business that chews up certainty for breakfast."
     },
     {
       "source": "discovery",
       "source_name": "Colossal",
-      "title": "Through Carved Wooden Assemblages, Daniel Minter Communes with the Spiritual",
-      "url": "https://www.thisiscolossal.com/2026/09/daniel-minter-wood-sculptures-haggerty/",
-      "snippet": "\"Do objects transmit spirituality? No, they remind us of our spirituality.\" —Daniel Minter",
+      "title": "Step Inside the Studios of 20 Contemporary Black Artists in ‘Another View’",
+      "url": "https://www.thisiscolossal.com/2026/09/another-view-the-vibrant-world-of-contemporary-black-artists/",
+      "snippet": "Featuring Nick Cave, Nina Chanel Abney, Hank Willis Thomas, Carrie Mae Weems, Kerry James Marshall, and many more.",
       "category": "history",
-      "cover_url": "https://www.thisiscolossal.com/wp-content/uploads/2026/09/minter-3.jpg",
-      "ferns_note": "Daniel Minter's carved assemblages don't claim to contain the sacred — they insist, quietly, that the sacred was always in us and objects are simply the mirrors we build to remember it. That's a theological position delivered entirely through woodwork, which feels exactly right."
+      "cover_url": "https://www.thisiscolossal.com/wp-content/uploads/2026/09/view-5.jpg",
+      "ferns_note": "There's something intimate and quietly radical about being let into an artist's studio — the place where the work is still becoming itself, before the world gets to decide what it means. 'Another View' offers twenty such thresholds, and that feels like a genuine privilege."
+    },
+    {
+      "source": "discovery",
+      "source_name": "Colossal",
+      "title": "Across Two Exhibitions, Jaume Plensa’s Monumental Sculptures Unite Scale and Material",
+      "url": "https://www.thisiscolossal.com/2026/09/jaume-plensa-beyond-silence/",
+      "snippet": "An exploration of the human figure, architectural materials, and the perception of space.",
+      "category": "history",
+      "cover_url": "https://www.thisiscolossal.com/wp-content/uploads/2026/09/plensa-10-1.jpg",
+      "ferns_note": "Jaume Plensa builds human figures at the scale of architecture, which has the strange effect of making viewers feel both monumental and miniature at once. His work doesn't depict the body so much as argue that presence itself is a kind of material."
     }
   ],
   "featured_read": {
     "source": "reads",
-    "source_name": "The Atlantic",
-    "title": "The Other Way AI Impairs Our Thinking",
-    "url": "https://www.theatlantic.com/ideas/2026/09/ai-apocalypse-despair-focus/688689/?utm_source=feed",
-    "snippet": "Suddenly the technology is sapping people’s concentration in a new way, one that abstaining from AI won’t fix.",
-    "cover_url": "https://cdn.theatlantic.com/thumbor/UPK0L3L_wAKbLF6uXaQCj0nDunE=/0x28:1400x757/1200x625/media/img/mt/2026/09/2026_09_17_brain_AI_mpg/original.gif",
-    "blurb": "AI doesn't just do our thinking for us — it turns out the very awareness that it *could* is quietly hollowing out our concentration, even when we put the tool down. This one asks what we lose when the option of offloading thought is always in the room."
+    "source_name": "Aeon",
+    "title": "Who will taste the cherries?",
+    "url": "https://aeon.co/essays/if-computers-count-all-the-petals-who-tastes-the-cherries",
+    "snippet": "The computist has one dream: to debug the subjectivity out of all of human knowledge, creating a pure, frictionless world - by Liam Spradlin Read on Aeon",
+    "cover_url": "https://images.aeonmedia.co/images/df3de1b9-0cd3-48a0-a054-36d0baf17bbe/essay-v1-.jpg?width=1200&quality=75&format=jpeg",
+    "blurb": "What happens when the desire to make knowledge perfectly objective quietly erases the person doing the knowing? This essay traces the quiet tyranny of the computist's dream—and asks who gets left out when subjectivity is treated as a bug to be fixed."
   },
   "reading_room": [
     {
       "source": "reads",
-      "source_name": "The Atlantic",
-      "title": "The Books You Should Read About the Bomb",
-      "url": "https://www.theatlantic.com/newsletters/2026/09/books-briefing-books-you-should-read-about-bomb/688704/?utm_source=feed",
-      "snippet": "The more we know about the world’s most powerful weapons, the better our chances of containing them.",
-      "cover_url": "https://cdn.theatlantic.com/thumbor/p-FSVasg-VvFENJ9sOoybB83QRo=/0x178:2937x1708/1200x625/media/newsletters/2026/09/2026_09_18_Books_Briefing_Nuclear_Books/original.jpg",
-      "blurb": "A guided reading list disguised as a quiet argument: that nuclear weapons remain the one subject where informed ignorance is genuinely dangerous. Consider this your invitation to finally close that gap."
-    },
-    {
-      "source": "reads",
-      "source_name": "Asterisk",
-      "title": "In Praise of Observational Evidence",
-      "url": "https://asteriskmag.com/issues/14/in-praise-of-observational-evidence",
-      "snippet": "Everyone knows RCTs are the gold standard of evidence. ….Right?",
-      "cover_url": "https://asteriskmag.com/media/pages/issues/14/in-praise-of-observational-evidence/a697a19981-1782768020/rcts-lennart-finke-1600x900-crop-sharpen50.png",
-      "blurb": "The randomized controlled trial has become science's sacred cow, but this essay makes a careful, confident case that we've been quietly discarding some of our best evidence in its name. A bracing read for anyone who thought they understood how we know what we know."
-    },
-    {
-      "source": "reads",
-      "source_name": "Aeon",
-      "title": "Cosmic amnesia",
-      "url": "https://aeon.co/essays/black-holes-ring-like-bells-what-happens-next-is-stranger",
-      "snippet": "A black hole rings like a struck bell, then settles into silence, forgetting almost everything about its history. Why? - by Richard Dyer Read on Aeon",
-      "cover_url": "https://images.aeonmedia.co/images/899acddb-5f08-456f-b901-015a75d5199e/essay-artgw250114_simonnet_2400.jpg?width=1200&quality=75&format=jpeg",
-      "blurb": "A black hole, after swallowing everything thrown at it, rings briefly like a bell and then goes perfectly, profoundly silent — and that silence turns out to be one of the deepest puzzles in physics. Richard Dyer finds the strange beauty in what the universe chooses to forget."
-    },
-    {
-      "source": "reads",
       "source_name": "Nautilus",
-      "title": "Muscle Loss is a Big Warning Sign of Dementia",
-      "url": "https://nautil.us/muscle-loss-is-a-big-warning-sign-of-dementia-1285125/",
-      "snippet": "But obesity has a more complicated relationship with the disease",
-      "cover_url": "https://lede-admin.nautil.us/wp-content/uploads/sites/70/2026/09/AdobeStock_709399353.jpeg",
-      "blurb": "The link between muscle loss and dementia is more specific — and more actionable — than the usual noise about lifestyle and brain health, and the twist about obesity makes the picture genuinely more interesting, not less. Worth the half-hour if your body and your future self are on speaking terms."
+      "title": "The Moon has a New Once-in-a-Century Crater",
+      "url": "https://nautil.us/the-moon-has-a-new-once-in-a-century-crater-1285140/",
+      "snippet": "The lunar surface is more dynamic than you might think",
+      "cover_url": "https://lede-admin.nautil.us/wp-content/uploads/sites/70/2026/09/McGetchinLRONAC.jpg",
+      "blurb": "A meteorite quietly rewrote the lunar surface within living memory, and scientists only just noticed—a reminder that the Moon we think we know is still capable of surprising us."
     },
     {
       "source": "reads",
-      "source_name": "Psyche",
-      "title": "Maxxing treats life as a problem when it’s a mystery",
-      "url": "https://psyche.co/ideas/maxxing-treats-life-as-a-problem-when-its-a-mystery",
-      "snippet": "The philosopher Gabriel Marcel offers the antidote to a grotesque new ideology: don’t fix existence, be open to it - by Håkon Evjemo Read on Psyche",
-      "cover_url": "https://images.aeonmedia.co/images/0032d749-8bec-4102-bd8f-d93cf3f23e96/sz-justo-bullrich-qwu_53jiade-unsplash.jpg?top=209&left=0&cropWidth=4000&cropHeight=2250&width=1200&quality=75&format=jpeg",
-      "blurb": "\"Maxxing\" — the relentless optimization of sleep, looks, status, and self — is the logical endpoint of treating your life as a bug to be fixed, and philosopher Gabriel Marcel had the antidote decades before the trend had a name. Håkon Evjemo makes the case for holding existence open rather than solved."
+      "source_name": "The Paris Review",
+      "title": "My Larval Roommates",
+      "url": "https://www.theparisreview.org/blog/2026/09/18/my-larval-roommates-sarah-nicole-prickett/",
+      "snippet": "“When holes appeared in my underwear, I knew that I had a case of moths.”",
+      "cover_url": "https://www.theparisreview.org/blog/wp-content/uploads/2026/09/moth-andt-three-butterflies-met-dp823963.jpg",
+      "blurb": "A moth infestation becomes an unexpectedly intimate meditation on cohabitation, disgust, and what it means to share your most private spaces with something entirely indifferent to you."
+    },
+    {
+      "source": "reads",
+      "source_name": "Longreads",
+      "title": "No, But",
+      "url": "https://longreads.com/2026/09/18/improv-performance-unpopular/",
+      "snippet": "\"What was improv?\"",
+      "cover_url": "",
+      "blurb": "Improv comedy turns out to be a surprisingly sharp lens for examining how we navigate consent, failure, and the terrifying freedom of saying yes—or no—in real time."
+    },
+    {
+      "source": "reads",
+      "source_name": "Literary Hub",
+      "title": "Here’s what’s making us happy this week.",
+      "url": "https://lithub.com/heres-whats-making-us-happy-this-week-sep1826/",
+      "snippet": "Happy Friday, readers. Your friendly neighborhood Lit Hub staff are getting our kicks this week from simple things. Like good gags, surprise fruit, and easily navigated research databases.",
+      "cover_url": "https://s26162.pcdn.co/wp-content/uploads/2026/09/Untitled-design-41.png",
+      "blurb": "This isn't a curated list so much as a window into the small, specific joys that keep literary people going on a Friday—the kind of reading that reminds you delight doesn't require grandeur."
+    },
+    {
+      "source": "reads",
+      "source_name": "The Atlantic",
+      "title": "Speak at Your Own Risk",
+      "url": "https://www.theatlantic.com/ideas/2026/09/trump-free-speech-media-banned/688713/?utm_source=feed",
+      "snippet": "Donald Trump’s attacks on the First Amendment",
+      "cover_url": "https://cdn.theatlantic.com/thumbor/jWyivD3PfMvzbCwMg2VRCKMjKqs=/0x43:2000x1085/1200x625/media/img/mt/2026/09/TrumpCNN/original.png",
+      "blurb": "The First Amendment has always had teeth, but this piece examines what it looks like when the pressure to stay silent comes from the very office sworn to protect speech."
     }
   ],
   "garden_note": {
-    "note": "The equinox is just days away, and Zürich's gardens are leaning into that golden, slightly melancholy light that makes late September feel like a gift you're already mourning — dahlias blazing their final colours, the air carrying the first real hint of woodsmoke. Step outside before dusk and notice how the afternoon has quietly shrunk around you.",
+    "note": "There's a particular quality to September light in Zürich — golden, slightly slanted, arriving at 06:38 with the kind of quiet authority that says summer is truly done negotiating. The dahlias are still holding court in the borders, but the apples are heavy now, and the garden has shifted its weight toward harvest.",
     "in_season": [
-      "Dahlias — deadhead to keep them flowering until the first frost",
-      "Apples and early pears — harvest is well underway in the Mittelland orchards",
-      "Winter squash — cure on the vine a little longer if skin holds firm",
-      "Garlic planting prep — begin conditioning beds for an October sowing"
+      "Dahlias in full late-summer bloom",
+      "Apples and pears ready to pick or windfall-check daily",
+      "Winter squash curing on the vine before first frosts",
+      "Sowing lamb's lettuce (Feldsalat) for autumn salads"
     ],
-    "sky_tonight": "The first-quarter moon sits high and sharp-edged in the south — a fine night to trace the great square of Pegasus rising in the east.",
-    "sun_times": "First light crept in at 06:36 this morning, and the sun slips away at 19:34 tonight, with dusk lingering gently until 20:03.",
+    "sky_tonight": "The first-quarter moon rides high in the south after sunset — look for it near the Sagittarius teapot as dusk settles in.",
+    "sun_times": "First light filters through at 06:38 this morning, and the sun takes its leave by 19:32 tonight.",
     "moon_label": "First quarter",
-    "illum_pct": 45,
-    "sun_range": "07:05–19:34"
+    "illum_pct": 51,
+    "sun_range": "07:07–19:32"
   },
   "puzzle": {
-    "kind": "trivia",
-    "label": "The Evening Trivia",
-    "prompt": "What is known as \"the brain\" of the Computer?\n\nCentral Processing Unit   ·   Graphics Processing Unit   ·   Keyboard   ·   Motherboard",
-    "answer": "Central Processing Unit",
-    "hint": "Category: Science: Computers",
-    "source": "opentdb.com",
-    "source_id": "a421e227a7fc"
+    "kind": "anagram",
+    "label": "Fern's Morning Anagram",
+    "prompt": "Unscramble REVHI — in early autumn, these creatures vanish into their winter quarters, and naturalists count the days until their return.",
+    "answer": "HIVE",
+    "hint": "Think of the colony, not the individual."
   },
   "previous_puzzle": {
-    "label": "Fern's Morning Riddle",
-    "prompt": "How can you write down eight eights so that they add up to one thousand?",
-    "answer": "888 + 88 + 8 + 8 + 8 = 1000"
+    "label": "The Evening Trivia",
+    "prompt": "What is known as \"the brain\" of the Computer?\n\nCentral Processing Unit   ·   Graphics Processing Unit   ·   Keyboard   ·   Motherboard",
+    "answer": "Central Processing Unit"
   },
   "larder": {
-    "news": [],
-    "recipe": {}
+    "news": [
+      {
+        "source": "food",
+        "source_name": "The Kitchn",
+        "title": "Sur la Table’s Anniversary Sale Includes Deals Up to 70% Off — Including Le Creuset, Staub, and More!",
+        "url": "https://www.thekitchn.com/sur-la-table-anniversary-sale-2026-23845595?utm_source=RSS&utm_medium=feed&utm_campaign=Category%2FChannel%3A+main",
+        "snippet": "It only happens once a year!",
+        "cover_url": "",
+        "blurb": "If your kitchen has been quietly eyeing a Dutch oven, this once-a-year sale is the universe's rather generous nudge to finally commit."
+      },
+      {
+        "source": "food",
+        "source_name": "Eater",
+        "title": "The 38 Best Restaurants in Lisbon, Portugal, According to a Local Expert",
+        "url": "https://www.eater.com/maps/best-lisbon-portugal-restaurants",
+        "snippet": "A food-loving visitor will quickly learn that sardines, cod, and the iconic pastel de nata are great, but the Lisbon restaurant scene can offer much more. Portuguese cuisine draws on global flavors from the country’s centuries of trade, and Lisbon’s restaurateurs have access to top-quality fish and seafood, unique cheeses, lovely wines, and vegetables from […]",
+        "cover_url": "https://platform.eater.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/25858015/Lisbon_Santa_Joana_at_Locke_by_Charlie_McKay.jpg?quality=90&strip=all&crop=0%2C15.095986038394%2C100%2C69.808027923211&w=1200",
+        "blurb": "Beyond the beloved pastel de nata lies a whole city eating extraordinarily well, and this local-guided list is your most delicious homework before booking that flight."
+      },
+      {
+        "source": "food",
+        "source_name": "The Guardian",
+        "title": "Henry Harris’ recipe for tomatoes, creme fraiche and herbs",
+        "url": "https://www.theguardian.com/food/2026/sep/19/tomatoes-creme-fraiche-herbs-recipe-henry-harris",
+        "snippet": "Sumptuous, late-summer tomatoes cooked with cream and served on toast? Supper is served in 10 … OK, maybe 15 minutes Forty years ago, an antiquarian bookseller recommended to me Edouard de Pomiane’s La cuisine en dix minutes , a selection of recipes that could be cooked at home in less than 10 minutes. A scientist and food lover, de Pomiane stripped back what was then viewed as a very complicated craft, and also gave the time-poor an opportunity to cook and enjoy a good meal made from good ingredients.",
+        "cover_url": "https://i.guim.co.uk/img/media/8dfc7ced62106b42cf513a519747555de95767b5/0_64_5214_4171/master/5214.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=ca535b905221fb909b1d4984506c5a4b",
+        "blurb": "A 15-minute supper of late-summer tomatoes, crème fraîche, and herbs on toast is the kind of quietly brilliant recipe that makes you wonder why you ever fussed."
+      }
+    ],
+    "recipe": {
+      "source": "recipe",
+      "source_name": "Smitten Kitchen",
+      "title": "tomato risotto with frizzled red onions",
+      "url": "https://smittenkitchen.com/2026/09/tomato-risotto-with-frizzled-red-onions/",
+      "snippet": "If you’re one of those people who gets irritated by the specter of pumpkin spice — or, gasp, Halloween decor — on an 85-degree week in September; if you understand that there are what will feel like infinite months left to spend shivering and longing for stew, and there’s no reason to beckon them any sooner; if you find yourself gritting out “but there’s another week of summer!” at your screen when confronted with ads for wool coats and other things you simply refuse to acknowledge before you must, come sit down . You’re among friends. Well, a single friend.",
+      "is_recipe": true,
+      "cover_url": "",
+      "blurb": "This tomato risotto crowned with frizzled red onions is a love letter to September's last great tomatoes — deeply comforting, weekend-worthy, and the most persuasive argument yet for staying firmly in summer a little longer."
+    },
+    "seasonal_note": "The first Berner Rosen apples and sweet Zwetschgen (prune plums) are appearing at Zürich's Bürkliplatz market right now — worth grabbing a bag of the latter to halve and nestle into a buttery Zwetschgenkuchen this weekend, the kind that perfumes the whole kitchen with something between jam and spice."
   },
   "fern_data": {
-    "greeting": "1965, Searcy, Arkansas: a missile silo caught fire and almost nobody heard about it. Tonight also has the math problem that broke every AI that tried it, and a 600-year-old Peruvian tomb opened for the first time.",
-    "top_pick_title": "Fires, Sealed Rooms & Unsolved Things"
+    "greeting": "The 15-year-old who discovered the law of primes nearly got cut — it felt too tidy, too triumphant. It stayed because triumph, when it's real, is a different animal entirely, and because it sits beside a Japanese town frozen in the 1980s and the physics reason the sky is technically falling up.",
+    "top_pick_title": "Frozen Clocks & Falling Skies"
   }
 }
