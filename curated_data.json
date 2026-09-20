@@ -1,102 +1,122 @@
 {
-  "fetched_at": "2026-09-20T10:42:10.414307+02:00",
-  "is_am_email": true,
+  "fetched_at": "2026-09-20T19:32:09.292935+02:00",
+  "is_am_email": false,
   "audit_summary": {
-    "youtube_videos": 5,
-    "themes": 3,
-    "music_articles": 6,
+    "youtube_videos": 6,
+    "themes": 4,
+    "music_articles": 4,
     "good_news_articles": 2,
     "discovery_articles": 0,
     "featured_read": 1,
     "reading_room": 5,
     "garden": 1,
     "puzzle": 1,
-    "larder": 4
+    "larder": 0
   },
   "themes": [
     {
-      "name": "Bones, Bogs & Dark Rites",
-      "emoji": "🦴",
-      "tagline": "Archaeology gets its hands dirty — what the ground actually tells us about the ancient dead.",
+      "name": "Reality Is Weirder Than You Think",
+      "emoji": "🌀",
+      "tagline": "From spinning particles to bent time — physicists keep discovering that the universe refuses to behave.",
       "items": [
         {
           "source": "youtube",
-          "video_id": "TixoRr5tXyY",
-          "title": "Human Sacrifice Rituals in Ancient Britain",
-          "channel_id": "UC2J29LPhS9vMiWyYEqBRB0w",
-          "channel_title": "The Ancients",
-          "published_at": "2026-09-20T06:00:33Z",
-          "url": "https://www.youtube.com/watch?v=TixoRr5tXyY",
-          "duration_seconds": 3617,
-          "view_count": "651",
-          "description": "When we picture human sacrifice in ancient Britain, the iconic, flaming Wicker Man often comes to mind. But how much of this is Roman propaganda, and what does the actual archaeology reveal? Tristan Hughes is joined by archaeologist Dr. Miles Russell to separate popular myth from gruesome reality. From perfectly preserved bog bodies in the north to mysterious grain pit burials down south, who were these victims and why did they die?\n\n0:00 Introduction\n2:00 Roman sources on Celtic human sacrifice",
-          "why_watch": "Rather than recycling the dramatic Wicker Man imagery, this episode brings in archaeologist Dr. Miles Russell to ground the discussion in actual physical evidence — bog bodies, grain pit burials, and what Roman sources were likely exaggerating for political effect. It's a clean example of how archaeology quietly dismantles a pop-history narrative. Good for anyone who enjoys the 'here's what we actually know' style of history."
-        }
-      ]
-    },
-    {
-      "name": "Spacetime Is Weirder Than You Think",
-      "emoji": "🌌",
-      "tagline": "From light-born black holes to the fabric of reality itself — physics content that earns your brain's trust.",
-      "items": [
-        {
-          "source": "youtube",
-          "video_id": "gDcWagTBbuU",
-          "title": "Can You Really Make a Black Hole Out of Light?",
+          "video_id": "piC8T2HnzrU",
+          "title": "This Particle Spins at 300× the Speed of Light",
           "channel_id": "UCIZ5ZOeiXYbmKTl_85ghNPw",
           "channel_title": "Physics Explained",
-          "published_at": "2026-09-19T19:00:23Z",
-          "url": "https://www.youtube.com/watch?v=gDcWagTBbuU",
-          "duration_seconds": 2149,
-          "view_count": "71188",
-          "description": "Thanks to Hungry Minds for sponsoring this video. Use the code PHYSICSEXPLAIN10 to get 10% off The Book: The Ultimate Guide to Rebuilding a Civilization.\n👉 https://mdsh.io/physicsexplain\n\n🤝 Support the channel Patreon → https://www.patreon.com/physicsexplained  \n🔗 Follow me Instagram → https://www.instagram.com/physics_explained_ig \nX (Twitter) → https://twitter.com/PhysicsExplain1\n\nCan a black hole be made entirely from light? General relativity suggests that, in principle, concentrating enough",
-          "why_watch": "The question sounds like clickbait but it isn't — this is a careful walkthrough of the kugelblitz concept, the theoretical construct where concentrated light forms a black hole through its own gravitational energy. Physics Explained earns its name by building up the relativistic logic step by step rather than just asserting the answer. At 35 minutes it asks for real attention, but the payoff is a genuine conceptual shift in how you think about mass and energy."
+          "published_at": "2025-07-26T19:00:47Z",
+          "url": "https://www.youtube.com/watch?v=piC8T2HnzrU",
+          "duration_seconds": 1636,
+          "view_count": "313075",
+          "description": "Go to https://groundnews.com/physics to stay fully informed about physics, other sciences, and more. Subscribe through my link to get 40% off the unlimited vantage plan, the same one I use, which breaks down to just $5/month with my discount.\n\nYou can help support this channel via the Physics Explained Patreon account: https://www.patreon.com/physicsexplained \n\nCan electrons really spin — or is that idea fundamentally flawed?\nIn this video, we break down a shocking paradox: if the electron were ",
+          "why_watch": "The headline sounds like clickbait but the physics here is legitimate: electron spin isn't actually rotation in any classical sense, and this video carefully unpacks what 'spin' really means as a quantum property — including why phase velocity can exceed light speed without violating relativity. At 27 minutes it earns its length by building intuition rather than just asserting conclusions."
         },
         {
           "source": "youtube",
-          "video_id": "S78h8zQwQe0",
-          "title": "The discovery that proved newton wrong (and revolutionised physics)",
+          "video_id": "OpOER8Eec2A",
+          "title": "I never understood why masses bend time...until now!",
           "channel_id": "UCGfFUc6eWxfbtjYeun6r9xg",
           "channel_title": "FloatHeadPhysics",
-          "published_at": "2024-03-29T13:00:31Z",
-          "url": "https://www.youtube.com/watch?v=S78h8zQwQe0",
-          "duration_seconds": 1252,
-          "view_count": "297290",
-          "description": "Head to https://squarespace.com/floatheadphysics to save 10% off your first purchase of a website or domain using code FLOATHEADPHYSICS\n\nEinstein's 1911 & 1915 papers below:\nhttps://archive.org/details/EinsteinOnTheInfluOfGravOnLight/page/n8/mode/1up?view=theater\nhttps://etienneklein.fr/wp-content/uploads/2016/01/Relativit%C3%A9-g%C3%A9n%C3%A9rale.pdf\n\nWhy do we think space is curved near the sun? Because we see Mercury's orbit precess. We thought it was due to gravitational effects of other pla",
-          "why_watch": "This video focuses on the 1919 Eddington solar eclipse expedition — the specific observational moment when light bending around the sun either confirmed or refuted general relativity — and explains why Newton's own gravity theory actually predicted a bending angle too, just the wrong one. FloatHeadPhysics is careful about the distinction between Einstein's 1911 prediction and his corrected 1915 value, which is a detail most popular accounts skip entirely. A tight 20 minutes that leaves you understanding why that expedition was genuinely decisive."
+          "published_at": "2024-03-15T13:00:32Z",
+          "url": "https://www.youtube.com/watch?v=OpOER8Eec2A",
+          "duration_seconds": 1192,
+          "view_count": "969251",
+          "description": "Support me https://patreon.com/floatheadphysics to see how I learn relativity, get sneak peaks, and early video access. \n\nCool Physics Tees (Unisex): https://floatheadphysics.com/collections/all\n\nTo try everything Brilliant has to offer—free—for a full 30 days, visit  https://brilliant.org/FloatHeadPhysics . You’ll also get 20% off an annual premium subscription.\n\nIn this video, we will explore why the curvature of time, and not the space, produces the illusion of gravity. We will also understan",
+          "why_watch": "FloatHeadPhysics builds genuine intuition for why mass curves spacetime by walking through the equivalence principle step by step, using visuals that make the conceptual leap feel earned rather than hand-wavy. If you've read the standard 'bowling ball on a rubber sheet' explanation and always felt cheated by it, this is the follow-up you were looking for."
         },
         {
           "source": "youtube",
-          "video_id": "neiJ1SLMrfM",
-          "title": "The Spacetime Metric",
+          "video_id": "PjT85AxTmI0",
+          "title": "The TRUE Cause of Gravity in General Relativity",
           "channel_id": "UC3KV2kFy2YhjYvverIy2WnA",
           "channel_title": "Dialect",
-          "published_at": "2022-09-02T14:50:23Z",
-          "url": "https://www.youtube.com/watch?v=neiJ1SLMrfM",
-          "duration_seconds": 1302,
-          "view_count": "87528",
-          "description": "In the (epic?) conclusion to our metric tensor trilogy, we dive a little deeper into the origins of the metric tensor in an attempt to bridge the conceptual gulf that lies between our ordinary, intuitive understanding of geometry and that abstracter comprehension of it required to master General Relativity's four-dimensional spacetime. Can we pave ourselves a path to clearer understanding in twenty minutes? Let us know in the comments.\n\nContents:\n00:00 - Intro / Describing Distance\n01:56 - Maps ",
-          "why_watch": "This is the third in Dialect's metric tensor series, and it's specifically tackling the conceptual leap from flat Euclidean geometry to the four-dimensional spacetime interval at the heart of general relativity. The channel's approach is to build intuition slowly rather than throw equations at you, so if you've bounced off GR before because the math felt unmoored from meaning, this is worth trying. Works best watched after the earlier two episodes, but the channel's production quality makes the backtrack worthwhile."
+          "published_at": "2022-06-18T12:48:37Z",
+          "url": "https://www.youtube.com/watch?v=PjT85AxTmI0",
+          "duration_seconds": 1552,
+          "view_count": "616168",
+          "description": "Alternatively titled, \"Physics Myth-Busters: why time dilation does NOT cause gravity\" this video explores an explanation of General Relativity whose monumental erroneousness is commensurate only to its popularity. What is this explanation, why is it so wrong, and how did so many high-profile YouTubers get suckered into promoting it? Prepare for a heavy dose of critical thinking, as we attempt to sift facts from falsehood and approach a deeper, more meaningful understanding of the actual nature ",
+          "why_watch": "Dialect takes direct aim at the popular YouTube explanation that 'time dilation causes gravity,' arguing it's not just incomplete but actively misleading — and names specific high-profile creators who spread it. Whether or not you find the counter-argument fully convincing, the critical thinking about how physics gets simplified into misinformation is worth the 26 minutes on its own."
         }
       ]
     },
     {
-      "name": "The Signals Room",
-      "emoji": "⚡",
-      "tagline": "For the engineers who want the real explanation, not the hand-wavy intro-course version.",
+      "name": "Rabbit Holes With a Philosophy Chaser",
+      "emoji": "🧪",
+      "tagline": "One diet soda warning label, one Vsauce spiral, and suddenly you're questioning the nature of existence itself.",
       "items": [
         {
           "source": "youtube",
-          "video_id": "TD3jhSzOdqI",
-          "title": "Miller effect made easy - Miller theorem - cascode amplifier",
+          "video_id": "Fob38Jo9F_k",
+          "title": "The Ontological Status of Phenylalanine In Sugar Free Sodas",
+          "channel_id": "UC6nSFpj9HTCZ5t-N3Rm3-HA",
+          "channel_title": "Vsauce",
+          "published_at": "2026-09-20T16:14:03Z",
+          "url": "https://www.youtube.com/watch?v=Fob38Jo9F_k",
+          "duration_seconds": 146,
+          "view_count": "89439",
+          "description": "",
+          "why_watch": "A classic Vsauce detour into whether phenylalanine — that ingredient flagged on every diet soda can — actually 'exists' in any meaningful philosophical sense. At under two and a half minutes, it's a genuinely strange little question that will change how you read a nutrition label."
+        }
+      ]
+    },
+    {
+      "name": "Rise, Stumble, Repeat",
+      "emoji": "🍗",
+      "tagline": "The cautionary tale of how a chicken sandwich conquered the internet — and what happened when the hype had to pay the rent.",
+      "items": [
+        {
+          "source": "youtube",
+          "video_id": "qszacQhJuR4",
+          "title": "What Went Wrong For Popeyes...",
+          "channel_id": "UCNaq5Jh4SQ1oBAjhQ0KPhoA",
+          "channel_title": "Weird History Food",
+          "published_at": "2026-09-20T14:15:25Z",
+          "url": "https://www.youtube.com/watch?v=qszacQhJuR4",
+          "duration_seconds": 993,
+          "view_count": "12460",
+          "description": "Popeyes won the fast food chicken sandwich wars and became one of the biggest stories in the restaurant industry. So how did the brand go from viral sensation to closing locations, reporting declining sales, and struggling to keep its biggest fans happy?\n\nIn this episode of Weird History, we trace the rise and fall of Popeyes’ chicken sandwich phenomenon and what happened after the hype faded. From explosive social media success to franchise closures and declining performance, the story reveals ",
+          "why_watch": "Weird History Food traces how Popeyes turned a single chicken sandwich into a cultural moment, then maps exactly where the wheels came off — declining sales, store closures, and a fanbase that felt burned. It's a tight post-mortem on what happens when a brand's identity gets swallowed by its own hype cycle."
+        }
+      ]
+    },
+    {
+      "name": "Under the Hood",
+      "emoji": "⚡",
+      "tagline": "For the rare and beautiful mind that wants to know exactly why the op-amp breaks down at high frequencies.",
+      "items": [
+        {
+          "source": "youtube",
+          "video_id": "bjErbEpGTzc",
+          "title": "Analog Comparator   high performance   Differential Amplifier",
           "channel_id": "UCFtCfZ4rtIZ7Hsq7ZNHoY1w",
           "channel_title": "Computer&Electronics",
-          "published_at": "2024-05-24T13:32:51Z",
-          "url": "https://www.youtube.com/watch?v=TD3jhSzOdqI",
-          "duration_seconds": 480,
-          "view_count": "8340",
-          "description": "This video talks about the Miller effect which is very important when you want to analize the frequency beahvior of a circuit. The Miller effect is a powerfull approximation you use when a capacitance is in the gain path of a circuit. When the gain is negative the capacitance is magnified so this metod makes easy to find the dominant poles simply by inspection. We see an example of Miller effect in the common emitter configuration and we see also why the cascode configuration improves the bandwi",
-          "why_watch": "The Miller effect is one of those topics that gets hand-waved in intro electronics courses but actually matters the moment you're designing anything that operates above audio frequencies. This eight-minute video shows specifically why a feedback capacitance gets multiplied by gain, and uses the cascode amplifier as a concrete example of engineering around it. Compact and precise — a useful reference even if you've seen the concept before."
+          "published_at": "2024-05-19T08:39:27Z",
+          "url": "https://www.youtube.com/watch?v=bjErbEpGTzc",
+          "duration_seconds": 793,
+          "view_count": "3831",
+          "description": "This video talks about analog comparators. Although the basic operational amplificator can be used as a voltage comparator in some less demanding low-frequency applications, we will discuss of a high-performance comparator where propagation delay and sensitivity are important. We will analyze each comparator stage in the clearest and simplest way possible.\nMaterial taken from the book of \"CMOS, circuit design, layout and simulation\" by J Baker, H. W. Li and D. E. Boyce\n\nbasics of current mirrors",
+          "why_watch": "A straightforward, circuit-level walkthrough of high-performance analog comparators — specifically why a basic op-amp breaks down at high frequencies and what design choices (propagation delay, sensitivity) matter when you build for speed. Best suited for electronics students or hobbyists who already know what an op-amp is and want to go one level deeper."
         }
       ]
     }
@@ -104,218 +124,158 @@
   "morning_soundtrack": [
     {
       "source": "music",
-      "source_name": "Stereogum",
-      "title": "Lizzy McAlpine Got Stella Lefty’d Over Nick Drake Soundalike On Her New Album",
-      "snippet": "Plagiarism in music is always a hot topic, and especially so since Stella Lefty's four ripoff allegations . Fellow young singer-songwriter Lizzy McAlpine just released her new album Angel , and she's opening up about accidentally copying a Nick Drake song.",
-      "url": "https://stereogum.com/2511966/lizzy-mcalpine-got-stella-leftyd-over-nick-drake-soundalike-on-her-new-album/news/",
+      "source_name": "NPR Music",
+      "title": "Billy Allen discusses recording a live album in Muscle Shoals, Alabama",
+      "snippet": "NPR's Debbie Elliott speaks to Billy Allen of Billy Allen + The Pollies about singing live and finding your voice on their new album, \"Live at Muscle Shoals Sound.\"",
+      "url": "https://www.npr.org/2026/09/20/nx-s1-5971215/billy-allen-discusses-recording-a-live-album-in-muscle-shoals-alabama",
       "genre": "",
-      "vibe_check": "The quiet anxiety of humming a melody you're certain is yours — until it isn't.",
-      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/09/unnamed-2026-09-19T145321.020.jpg?w=564",
-      "embed_url": "https://www.youtube.com/embed/6kIZrGRTV0Q"
-    },
-    {
-      "source": "music",
-      "source_name": "Stereogum",
-      "title": "Σtella – “Belinda”",
-      "snippet": "Σtella!!!! The Greek indie/pop artist Σtella returned this week with a new single for Sub Pop, co-produced by the tasteful and well-traveled Rodaidh McDonald. \"Belinda\" is a beautiful piece of work, carefully crafted but heartfelt, with lots of smart production choices to accentuate the music's power.",
-      "url": "https://stereogum.com/2511947/%cf%83tella-belinda/music/",
-      "genre": "",
-      "vibe_check": "Like catching a stranger's eye across a sun-drenched Athenian café and wondering what their story is.",
-      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/09/a1536289841_10-1.jpg?w=564",
-      "embed_url": "https://www.youtube.com/embed/DtzWzicTeD0"
-    },
-    {
-      "source": "music",
-      "source_name": "Stereogum",
-      "title": "Animal Collective Announce Additional Feels Shows After Ticketing Issues",
-      "snippet": "These days, the four members of Animal Collective are spread out across the world, and it's rare to get all of them back together. But the band's much-loved album Feels turned 20 last year , and they released a deluxe reissue and a live album MiniDisc to celebrate. Last week, the band announced plans to celebrate Feels a little further, playing the album in full at a pair of gigs in New York and Los Angeles.",
-      "url": "https://stereogum.com/2511920/animal-collective-announce-additional-feels-shows-after-ticketing-issues/news/",
-      "genre": "",
-      "vibe_check": "The bittersweet rush of revisiting a dog-eared diary from your most chaotic, alive-feeling year.",
-      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/09/Anco.jpeg?w=564",
+      "vibe_check": "Worn wooden floors, amber studio light, and a voice finding its truest self in the room where soul was born.",
+      "cover_url": "https://media.npr.org/include/images/facebook-default-wide-s1400-c85.jpg",
       "embed_url": null
     },
     {
       "source": "music",
-      "source_name": "Pitchfork",
-      "title": "11 New Albums You Should Listen to Now: Carly Rae Jepsen, Miley Cyrus, and More",
-      "snippet": "Stream new releases from Miley Cyrus, Carly Rae Jepsen, Team Dresch, and Empress Of",
-      "url": "https://pitchfork.com/story/11-new-albums-you-should-listen-to-now-carly-rae-jepsen-empress-of-miley-cyrus/",
+      "source_name": "Aquarium Drunkard",
+      "title": "Radio Free Aquarium Drunkard :: September 2026",
+      "snippet": "Freeform transmissions from Radio Free Aquarium Drunkard on dublab. Airing every third Sunday of the month, RFAD on dublab features the pairing of Tyler Wilcox’s Doom and Gloom from the Tomb and Chad DePasquale’s New Happy Gathering. This month, Chad kicks it off with a roundup of recent 2026 digs.",
+      "url": "https://aquariumdrunkard.com/2026/09/20/radio-free-aquarium-drunkard-september-2026/",
       "genre": "",
-      "vibe_check": "A Friday afternoon playlist that shifts moods like weather — bubblegum one minute, heartbreak the next.",
-      "cover_url": "https://media.pitchfork.com/photos/6aac3b11ff2de3826267dfd6/master/pass/4cb0c34e-806e-4244-b644-8fdc611de06f.jpeg",
-      "embed_url": "https://teamdresch.bandcamp.com/album/furthermore"
-    },
-    {
-      "source": "music",
-      "source_name": "Consequence",
-      "title": "Every Song in Grand Theft Auto VI Revealed So Far",
-      "snippet": "Rockstar has already featured Tom Petty, Sexyy Red, Depeche Mode, Phil Collins, the Pointer Sisters, and more ahead of GTA VI's release. Every Song in Grand Theft Auto VI Revealed So Far Alex Krinsky",
-      "url": "https://consequence.net/2026/09/grand-theft-auto-6-every-song-so-far/",
-      "genre": "",
-      "vibe_check": "Windows down, wanted level rising, the radio somehow always playing exactly the right song.",
-      "cover_url": "https://consequence.net/wp-content/uploads/2026/09/grand-theft-auto-6-songs-so-far.jpeg?quality=80",
+      "vibe_check": "Late-night shortwave radio drifting through the static, equal parts haunted and quietly euphoric.",
+      "cover_url": "https://aquariumdrunkard.com/_newness/wp-content/uploads/2026/09/IMG_7373.jpg",
       "embed_url": null
     },
     {
       "source": "music",
-      "source_name": "Consequence",
-      "title": "Sammy Hagar Responds to Alex Van Halen’s “Complete Idiot” Comment: “What’s Your Problem?”",
-      "snippet": "Hagar expressed frustration and confusion at the ongoing beef. Sammy Hagar Responds to Alex Van Halen’s “Complete Idiot” Comment: “What’s Your Problem?” Langdon Hickman",
-      "url": "https://consequence.net/2026/09/sammy-hagar-alex-van-halen-idiot-response/",
+      "source_name": "Aquarium Drunkard",
+      "title": "Bandcamping :: Autumn 2026",
+      "snippet": "Are things feeling autumnal at long last? Not quite. But maybe this selection of recommended sounds, old and new, can help usher in the cooler, crisper season.",
+      "url": "https://aquariumdrunkard.com/2026/09/18/bandcamping-autumn-2026/",
       "genre": "",
-      "vibe_check": "Two old rockers airing grievances in a parking lot while the rest of us watch awkwardly from the tour bus window.",
-      "cover_url": "https://consequence.net/wp-content/uploads/2024/12/Sammy-Hagar-Alex-Van-Halen.jpg?quality=80",
+      "vibe_check": "The musical equivalent of pulling on a flannel shirt before the leaves have fully committed to falling.",
+      "cover_url": "https://aquariumdrunkard.com/_newness/wp-content/uploads/2026/09/rez.jpg",
       "embed_url": null
+    },
+    {
+      "source": "music",
+      "source_name": "JazzTimes",
+      "title": "The Big Tree that Moved: A Celebration of the Life and Music of Sonny Rollins, Cathedral of Saint John the Divine",
+      "snippet": "O n September 19 the jazz community and members of the public gathered at the Cathedral of Saint John the Divine in New York to …",
+      "url": "https://www.jazztimes.com/reviews/live/the-big-tree-that-moved-a-celebration-of-the-life-and-music-of-sonny-rollins-cathedral-of-saint-john-the-divine/",
+      "genre": "",
+      "vibe_check": "Cathedral ceilings holding space for grief and reverence, where every note played feels like a bell still ringing after the hammer has lifted.",
+      "cover_url": "https://www.jazztimes.com/wp-content/uploads/2026/09/sonny-split-screen-scaled.jpg",
+      "embed_url": "https://www.youtube.com/embed/cdJSQF3AzX8"
     }
   ],
   "global_silver_linings": [
     {
       "source": "good_news",
       "source_name": "Good News Network",
-      "title": "New York City is Putting ‘The Park’ Back in Park Avenue – And Adding a Protected Bike Lane (LOOK)",
-      "url": "https://www.goodnewsnetwork.org/new-york-city-is-putting-the-park-back-in-park-avenue/",
-      "snippet": "Until the 1920s Park Avenue in Manhattan actually park running through it. Now, New York City has unveiled a new plan for transforming Park Avenue back into its original natural character, adding trees, benches, and a protected bike lane. Mayor Mamdani and the NYC Department of Transportation are updating 11 blocks of the wide street, […]",
-      "cover_url": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/09/Park-Avenue-redesign-in-NYC-Credit-Starr-Whitehouse-Landscape-Architects-and-Planners.jpeg",
-      "reason": "New York City is reclaiming one of its most iconic streets for people and greenery, proving that even dense urban spaces can be reimagined to prioritise nature, safety, and community. It's a quiet but meaningful sign that cities are learning to breathe again."
+      "title": "Good News in History September 20",
+      "url": "https://www.goodnewsnetwork.org/events060920/",
+      "snippet": "46 years ago today, Blizzard of Ozz, the debut solo album of the great and lately deceased metal singer Ozzy Osbourne, was released to moderate reviews and success. However it grew to become a staple of the genre, and was ranked as the ninth-greatest heavy metal album of all time by Rolling Stone. It includes […]",
+      "cover_url": "https://www.goodnewsnetwork.org/wp-content/uploads/2024/09/Blizzard-of-Ozz-cover-art-fair-use.jpg",
+      "reason": "History is full of quiet turning points worth remembering — pausing to reflect on past moments of courage, discovery, and kindness reminds us that progress has always been possible, even in difficult times."
     },
     {
       "source": "good_news",
       "source_name": "Upworthy",
-      "title": "Woman’s rare antique turned away from ‘Antique Roadshow’ for heart-wrenching reason",
-      "url": "https://www.upworthy.com/antiques-roadshow-refuses-bracelet-history-ex1/",
-      "snippet": "\"I just love you for bringing it in and thank you so much for making me so sad.\"",
-      "cover_url": "https://www.upworthy.com/wp-content/uploads/sites/2/2025/07/origin-94.jpg",
-      "reason": "Sometimes the most valuable things resist a price tag, and this story is a gentle reminder that the meaning held in an object can outweigh its market worth. It's a small but touching nudge to cherish what we inherit for reasons beyond the monetary."
+      "title": "A pilot gave this 5-year-old a training manual. Minutes later he spotted something adults miss.",
+      "url": "https://www.upworthy.com/pn-5-year-old-spots-discrepancy-southwest-training-manual-ex1/",
+      "snippet": "\"I discovered that two terrain monitors did not match. They did not match at all.\"",
+      "cover_url": "https://www.upworthy.com/wp-content/uploads/sites/2/2026/06/Preview-4.png",
+      "reason": "Children have a gift for noticing what grown-ups overlook, and this small moment between a pilot and a curious five-year-old is a beautiful reminder that nurturing young minds pays off in the most unexpected ways."
     }
   ],
   "discovery_articles": [],
   "featured_read": {
     "source": "reads",
-    "source_name": "Nautilus",
-    "title": "The “Most Complete” Mastodon Tooth Ever Found",
-    "url": "https://nautil.us/the-most-complete-mastodon-tooth-ever-found-1285135/",
-    "snippet": "Peering 10,000 years into the past",
-    "cover_url": "https://lede-admin.nautil.us/wp-content/uploads/sites/70/2026/09/01-tooth.jpg",
-    "blurb": "A single mastodon tooth becomes a portal into a world 10,000 years gone — this piece asks what one fragment of enamel can honestly tell us about a creature, and a moment, we will never fully recover. The answer is more than you'd expect, and stranger."
+    "source_name": "Literary Hub",
+    "title": "Lit Hub Daily: September 18, 2026",
+    "url": "https://lithub.com/lit-hub-daily-september-18-2026/",
+    "snippet": "When formal sex ed is insufficient, can romance novels pick up the slack? | Lit Hub Criticism Janet Manley interviews 2026 Astrid Lindgren Memorial Award Winner Jon Klassen: “I think having kids just really reaffirmed the validity of that time",
+    "cover_url": "https://s26162.pcdn.co/wp-content/uploads/2026/09/whatmasieknew.jpg",
+    "blurb": "A conversation with Jon Klassen about what happens when a picture-book artist becomes a parent — and finds that childhood, examined up close, only gets more serious and strange."
   },
   "reading_room": [
     {
       "source": "reads",
-      "source_name": "Longreads",
-      "title": "The Top 5 Longreads of the Week",
-      "url": "https://longreads.com/2026/09/18/top-5-625/",
-      "snippet": "Showcasing stories from J.B. MacKinnon, Daniel Kolitz, Daniel Shailer, Justin Neuman, and Hanif Abdurraqib.",
-      "cover_url": "https://i0.wp.com/longreads.com/wp-content/uploads/2026/09/T5-09-18-26-C.png?fit=2400%2C1400&quality=80&ssl=1",
-      "blurb": "Five writers, five rabbit holes — this week's selection from Longreads includes Hanif Abdurraqib, which is reason enough to clear your afternoon."
-    },
-    {
-      "source": "reads",
-      "source_name": "Literary Hub",
-      "title": "Sally Rooney just defeated a data center.",
-      "url": "https://lithub.com/sally-rooney-just-defeated-a-data-center/",
-      "snippet": "Here’s a rare piece of heartening tech news to buoy you toward the weekend: A West of Ireland data center objected to by novelist Sally Rooney has just had its planning permission overturned on the grounds that it breaches Irish",
-      "cover_url": "https://s26162.pcdn.co/wp-content/uploads/2026/09/Sally-Rooney-data-center.png",
-      "blurb": "In a news cycle that rarely offers this, here is a genuinely satisfying story: a novelist objected to a data center being built near her home, and then — remarkably — won. The details of how are worth savoring."
+      "source_name": "The Atlantic",
+      "title": "Trump’s Monumental Obsession",
+      "url": "https://www.theatlantic.com/ideas/2026/09/trumps-arch-arsenal/688723/?utm_source=feed",
+      "snippet": "The president fantasizes about a capital city full of memorials—to himself.",
+      "cover_url": "https://cdn.theatlantic.com/thumbor/xRSRVdSFADl8SQBCdRhoy3ZQ48c=/0x47:2234x1211/1200x625/media/img/mt/2026/09/2026_09_20_Arch/original.jpg",
+      "blurb": "This piece traces the president's hunger for monuments not as vanity footnote but as the organizing logic of his political imagination — stone and bronze as a form of argument."
     },
     {
       "source": "reads",
       "source_name": "The Atlantic",
-      "title": "The Data-Center Debate Is Divorced From the Facts",
-      "url": "https://www.theatlantic.com/ideas/2026/09/data-center-facts-effects/688670/?utm_source=feed",
-      "snippet": "All those scary numbers aren’t what they seem.",
-      "cover_url": "https://cdn.theatlantic.com/thumbor/aKYVoQbQseL_HNr_IAFWNRF7ghY=/0x0:2876x1498/1200x625/media/img/mt/2026/09/2026_09_15_AI_data_center_debate/original.jpg",
-      "blurb": "Before you accept the terrifying statistics about data centers at face value, this piece asks you to slow down and examine where those numbers actually come from — and whether the panic is as well-founded as it feels."
-    },
-    {
-      "source": "reads",
-      "source_name": "The Atlantic",
-      "title": "Hitler Could Have Been Stopped",
-      "url": "https://www.theatlantic.com/books/2026/09/the-lessons-of-hitlers-rise-for-the-trump-era/688687/?utm_source=feed",
-      "snippet": "Timothy W. Ryback explains the contemporary lessons of Hitler’s rise.",
-      "cover_url": "https://cdn.theatlantic.com/thumbor/IdZUotXFw6jnEgI_-jKLcPJLABs=/0x41:1917x1039/1200x625/media/img/mt/2026/09/TAF26_Tim_Rybeck/original.jpg",
-      "blurb": "Historian Timothy Ryback traces the specific, unhurried moments when Hitler's rise could have been interrupted by ordinary people making different choices — a question that is less about the past than it is an uncomfortable mirror for the present."
+      "title": "Pinballing",
+      "url": "https://www.theatlantic.com/books/2026/09/poem-jan-beatty-pinballing/688667/?utm_source=feed",
+      "snippet": "A poem",
+      "cover_url": "https://cdn.theatlantic.com/thumbor/0MEgmKkBd1Fr8jugEFHqc7fgylM=/0x1705:1717x2599/1200x625/media/img/mt/2026/09/2026_09_16_Pinballing_Poem/original.jpg",
+      "blurb": "A poem that moves the way its title promises — ricocheting between surfaces, never quite where you expect it to land."
     },
     {
       "source": "reads",
       "source_name": "Nautilus",
-      "title": "This Stray Cat Turned Out to Be the First New Cat Species Discovered in Over a Century",
-      "url": "https://nautil.us/this-stray-cat-turned-out-to-be-the-first-new-cat-species-discovered-in-over-a-century-1285132/",
-      "snippet": "It was living on a diet of rice, noodles, and eggs",
-      "cover_url": "https://lede-admin.nautil.us/wp-content/uploads/sites/70/2026/09/Tilcayo_tiger_cat_full_body-copy.jpg",
-      "blurb": "A stray cat living on rice and noodles in a village turned out to be the first new felid species discovered in over a hundred years — this is the story of how something extraordinary hides in plain sight, and the patient science it takes to see it."
+      "title": "Is This Massive New Study on the Benefits of Whole Grains Part of the “War on Protein” RFK Jr. is Ending?",
+      "url": "https://nautil.us/is-this-massive-new-study-on-the-benefits-of-whole-grains-part-of-the-war-on-protein-rfk-jr-is-ending-1285119/",
+      "snippet": "When it comes to whole grains and health, a new analysis suggests the more the better",
+      "cover_url": "https://lede-admin.nautil.us/wp-content/uploads/sites/70/2026/09/AdobeStock_277415593.jpeg",
+      "blurb": "Behind a headline about whole grains lies a quieter question: who gets to decide what counts as good nutrition, and what happens when that authority becomes political?"
+    },
+    {
+      "source": "reads",
+      "source_name": "Longreads",
+      "title": "Then They Came for the Ostriches",
+      "url": "https://longreads.com/2026/09/17/universal-ostrich-farms-protest-canada-cull-h5n1/",
+      "snippet": "\"Poultry and paranoia in the Great White North.\"",
+      "cover_url": "",
+      "blurb": "A dispatch from Canada's ostrich farms that uses poultry culls and bureaucratic overreach to ask something larger about whose livestock — and whose livelihood — the state deems worth saving."
+    },
+    {
+      "source": "reads",
+      "source_name": "Literary Hub",
+      "title": "How Romance Novels Filled in the Gaps Left by Sex Ed",
+      "url": "https://lithub.com/how-romance-novels-filled-in-the-gaps-left-by-sex-ed/",
+      "snippet": "Chewed up gum, unraveled yarn, a flower stripped of its petals. Like so many in my generation, my introduction to sex was in pro-abstinence talks with my church youth group and in my sterile health class in Georgia, where my",
+      "cover_url": "https://s26162.pcdn.co/wp-content/uploads/2026/09/Untitled-design-2026-09-11T150559.000.png",
+      "blurb": "This essay excavates the specific, lasting damage of abstinence-only education — chewed gum as metaphor, romance novels as unlikely remediation — and asks what we owe the people who had to teach themselves."
     }
   ],
   "garden_note": {
-    "note": "Early autumn has a particular quality in Zürich — the Uetliberg forests are just beginning to bronze at the edges, and the morning air carries that first real bite of September cool. Step outside before the dew lifts and you'll find the garden holding its breath between summer's last warmth and the turning.",
+    "note": "The equinox is almost breathing down your neck, Zürich — this evening carries that particular early-autumn stillness where the air smells faintly of damp leaves and the last warmth clings to the stone walls just a little longer than it should. Savour it; the balance tips in days.",
     "in_season": [
-      "Dahlias still in generous bloom — deadhead to extend the show",
-      "Apple and pear harvest underway; check windfalls daily",
-      "Kale and leeks coming into their prime for the kitchen",
-      "Sow winter spinach and lamb's lettuce before the month is out"
+      "Dahlias at their showy peak — cut generously to encourage a last flush",
+      "Quince ripening on the branch, turning from green to pale gold",
+      "Winter squash harvest — skin should resist a fingernail before storing",
+      "Sow hardy lamb's lettuce (Nüsslisalat) now for winter picking"
     ],
-    "sky_tonight": "The First Quarter Moon rides high in the south by nightfall — look for Saturn glowing steadily nearby in Aquarius, patient as ever.",
-    "sun_times": "First light creeps in at 06:39 this morning, with sunrise following at 07:08 and dusk settling softly around 19:59.",
+    "sky_tonight": "The first-quarter moon hangs in the south after dusk — look nearby for Saturn, a steady warm-golden glow just to its east in Aquarius.",
+    "sun_times": "First light crept in at 06:39 this morning, and the sun slipped away by 19:30 tonight, with dusk lingering softly until 19:59.",
     "moon_label": "First quarter",
-    "illum_pct": 62,
+    "illum_pct": 66,
     "sun_range": "07:08–19:30"
   },
   "puzzle": {
-    "kind": "haiku riddle",
-    "label": "Fern's Morning Riddle",
-    "prompt": "I blush before I fall\nAll summer I hid in green\nWind inherits me",
-    "answer": "A turning leaf (autumn leaf)",
-    "hint": "Think of what early autumn slowly reveals on the branches above you."
+    "kind": "anagram",
+    "label": "Fern's Morning Anagram",
+    "prompt": "Unscramble OSEOMCP — this person arranges silence and sound into something that outlives them.",
+    "answer": "COMPOSER",
+    "hint": "Bach, Beethoven, and Brahms all wore this title."
   },
   "previous_puzzle": {
     "label": "Fern's Morning Riddle",
-    "prompt": "Poor people have it. Rich people need it. If you eat it you die. What is it?",
-    "answer": "Nothing"
+    "prompt": "I blush before I fall\nAll summer I hid in green\nWind inherits me",
+    "answer": "A turning leaf (autumn leaf)"
   },
   "larder": {
-    "news": [
-      {
-        "source": "food",
-        "source_name": "The Kitchn",
-        "title": "Oven-Baked Pork Chops",
-        "url": "https://www.thekitchn.com/oven-baked-pork-chops-recipe-23845456?utm_source=RSS&utm_medium=feed&utm_campaign=Category%2FChannel%3A+main",
-        "snippet": "The trick is to treat them right.",
-        "cover_url": "",
-        "blurb": "A timely reminder that the humble pork chop deserves a little respect — and the oven is its best advocate."
-      },
-      {
-        "source": "food",
-        "source_name": "The Guardian",
-        "title": "Kid, London W1: ‘Fat, richness, sharpness, all in perfect balance’ – restaurant review",
-        "url": "https://www.theguardian.com/food/2026/sep/20/kid-london-w1-restaurant-review-grace-dent",
-        "snippet": "Our main course arrived heavy and somewhat intimidating, and left picked completely clean Earlier this month, a kind-of Turkish ocakbaşı opened on a corner in London’s Soho. The brains behind Kid are chef Sertaç Dirik and restaurateur David Carter, and I say “kind-of” because, yes, while it has a Turkish-influenced menu – sucuk with grilled peach, pide , börek , hummus, içli köfte with aged beef – and the whiff of live fire, nothing either of them does is ever remotely straightforward, hence the buzz around their new place. Carter founded Smokestak a decade ago in Shoreditch, a wild, Americana-tinged barbecue joint where, somehow, he made brisket in buns and peach cobbler old fashioneds London’s hottest ticket.",
-        "cover_url": "https://i.guim.co.uk/img/media/581d7f37e90a409c91471bde7ea57ebec8603943/658_0_6355_5084/master/6355.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=84f15077ac83bd8f38cb6d87e7e4aa76",
-        "blurb": "A Turkish ocakbaşı landing in Soho with the kind of fat-rich, sharply balanced cooking that leaves a plate — and a critic — utterly undone is exactly the restaurant story worth reading this week."
-      },
-      {
-        "source": "food",
-        "source_name": "Saveur",
-        "title": "These Immersive Coffee Tours Follow the Beans From Tree to Cup",
-        "url": "https://www.saveur.com/culture/coffee-tours-colombia-guatemala-tanzania/",
-        "snippet": "Courtesy True Colombia Travel Guided experiences around the globe offer a chance to meet the makers behind your single-origin roast.",
-        "cover_url": "https://www.saveur.com/uploads/2026/09/20170709-CafeCoconda-026413x2-1.jpg?auto=webp",
-        "blurb": "If your morning cup already feels like a ritual, imagine tracing it all the way back to the tree — these immersive coffee tours are the grown-up version of following your passion to its very roots."
-      }
-    ],
-    "recipe": {
-      "source": "recipe",
-      "source_name": "101 Cookbooks",
-      "title": "Macro Bowls",
-      "url": "https://www.101cookbooks.com/macro-bowls/",
-      "snippet": "The macro bowls featured in Joe Yonan's Mastering the Art of Plant-Based Cooking - nutty brown rice, a rainbow of vegetables, and a miso-tahini dressing you'll want to put on everything.",
-      "is_recipe": true,
-      "cover_url": "https://images.101cookbooks.com/macro-bowls-recipe-h.jpg?w=680",
-      "blurb": "Nutty brown rice, a bright tumble of vegetables, and a miso-tahini dressing destined to become a permanent fixture in your fridge — this is the kind of nourishing, unfussy bowl that makes eating well feel genuinely lovely."
-    },
-    "seasonal_note": "Zürich's markets are flush with Zwetschgen right now — those deep-purple Italian prunes that locals fold into buttery Wähe tarts or simply poach with a little cinnamon and star anise for breakfast. Seek out a tray at Helvetiaplatz or the Bürkliplatz market before they vanish; a slow Tuesday morning spent pitting plums is its own small ritual."
+    "news": [],
+    "recipe": {}
   },
   "fern_data": {
-    "greeting": "Still thinking about the mastodon tooth — 'most complete ever found' is the kind of phrase that stops you mid-sip. That's in here alongside the question of whether you can build a black hole purely from light, and the ancient British rituals that were, it turns out, far more deliberate than anyone wanted to believe.",
-    "top_pick_title": "Teeth, Light, & Old Dark Practices"
+    "greeting": "There's a particle in here spinning at three hundred times the speed of light — and that's not even today's strangest claim. The true cause of gravity, it turns out, has been quietly misunderstood, and Muscle Shoals is somehow involved in making sense of the evening.",
+    "top_pick_title": "Faster Than Sense Allows"
   }
 }
