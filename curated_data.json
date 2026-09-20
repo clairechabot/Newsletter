@@ -1,115 +1,102 @@
 {
-  "fetched_at": "2026-09-19T19:20:11.449008+02:00",
-  "is_am_email": false,
+  "fetched_at": "2026-09-20T10:42:10.414307+02:00",
+  "is_am_email": true,
   "audit_summary": {
-    "youtube_videos": 6,
+    "youtube_videos": 5,
     "themes": 3,
     "music_articles": 6,
     "good_news_articles": 2,
-    "discovery_articles": 1,
+    "discovery_articles": 0,
     "featured_read": 1,
     "reading_room": 5,
     "garden": 1,
     "puzzle": 1,
-    "larder": 0
+    "larder": 4
   },
   "themes": [
     {
-      "name": "Dirt Under Your Fingernails",
-      "emoji": "🌱",
-      "tagline": "Real decisions, real soil, real mistakes — gardening content that doesn't pretend it's easy.",
+      "name": "Bones, Bogs & Dark Rites",
+      "emoji": "🦴",
+      "tagline": "Archaeology gets its hands dirty — what the ground actually tells us about the ancient dead.",
       "items": [
         {
           "source": "youtube",
-          "video_id": "GAXGJEYq2zw",
-          "title": "Before You Buy a Greenhouse Watch This",
-          "channel_id": "UC9r61qohBg1qgGty4_WzojA",
-          "channel_title": "GrowVeg",
-          "published_at": "2026-09-19T14:45:05Z",
-          "url": "https://www.youtube.com/watch?v=GAXGJEYq2zw",
-          "duration_seconds": 931,
-          "view_count": "3617",
-          "description": "Enjoy a no-obligation, completely free trial of the Garden Planner here: \nhttps://www.GrowVeg.com/grow-planner-free\n\nAnd for your completely free abridged version of Ben's book, click here:\nhttps://www.growveg.com/grow-book-download\n\nIf you'd like to check out Rhino Greenhouses\nIn the UK go to:\nhttps://www.rhinogreenhouses.co.uk/\nor for the USA go to:\nhttps://www.rhinogreenhouses.com/\n\nBuying a greenhouse is a big commitment of money and space - and once it's set up it's not easy to reverse the ",
-          "why_watch": "Rather than a generic buying guide, this walks through the specific structural, glazing, and sizing decisions that most first-time greenhouse buyers get wrong. GrowVeg's practical orientation means the advice is grounded in actual growing outcomes, not just specs. Worth watching before you commit to anything over a few hundred dollars."
-        },
-        {
-          "source": "youtube",
-          "video_id": "3x9mnvzXhP4",
-          "title": "We're Close... But The Harvests Are Getting Smaller! (week 25)",
-          "channel_id": "UC5eLPZi_RSh81523mrBzHNg",
-          "channel_title": "Gardening Experiments with Mind & Soil",
-          "published_at": "2026-09-19T13:00:11Z",
-          "url": "https://www.youtube.com/watch?v=3x9mnvzXhP4",
-          "duration_seconds": 758,
-          "view_count": "1325",
-          "description": "🌱🍅 Want to start feeding your family from your backyard? Join my FREE Weekly Newsletter for gardening tips & videos: https://forms.gle/SrwU1EjkSScgVTVy8\n\nEXPERIMENT VIDEOS\n💡 $30 vs $300 Grow Light: WATCH This Before Buying a Grow Light! https://youtu.be/_0EFGE9ZljY\n\n💡 I Tested Every Grow Light Height https://youtu.be/LGKlQ5iGbpY\n\n💡 6 Steps To Guarantee Thriving Seedlings https://youtu.be/X2nXwawGqXI \n\nPRODUCTS I USE & LOVE (try code mindandsoil or mindandsoil10 for discounts!)\nSproutbox Metal Ra",
-          "why_watch": "Week 25 of a real backyard garden experiment means you're getting honest late-season data — declining harvests, what's still producing, and what the grower would do differently. It's the unglamorous second half of the gardening calendar that most channels skip. Useful for calibrating your own expectations heading into fall."
+          "video_id": "TixoRr5tXyY",
+          "title": "Human Sacrifice Rituals in Ancient Britain",
+          "channel_id": "UC2J29LPhS9vMiWyYEqBRB0w",
+          "channel_title": "The Ancients",
+          "published_at": "2026-09-20T06:00:33Z",
+          "url": "https://www.youtube.com/watch?v=TixoRr5tXyY",
+          "duration_seconds": 3617,
+          "view_count": "651",
+          "description": "When we picture human sacrifice in ancient Britain, the iconic, flaming Wicker Man often comes to mind. But how much of this is Roman propaganda, and what does the actual archaeology reveal? Tristan Hughes is joined by archaeologist Dr. Miles Russell to separate popular myth from gruesome reality. From perfectly preserved bog bodies in the north to mysterious grain pit burials down south, who were these victims and why did they die?\n\n0:00 Introduction\n2:00 Roman sources on Celtic human sacrifice",
+          "why_watch": "Rather than recycling the dramatic Wicker Man imagery, this episode brings in archaeologist Dr. Miles Russell to ground the discussion in actual physical evidence — bog bodies, grain pit burials, and what Roman sources were likely exaggerating for political effect. It's a clean example of how archaeology quietly dismantles a pop-history narrative. Good for anyone who enjoys the 'here's what we actually know' style of history."
         }
       ]
     },
     {
-      "name": "Things That Bend Your Brain",
-      "emoji": "🌀",
-      "tagline": "Physics and math that rewards the second look — where the popular explanation turns out to be the wrong one.",
+      "name": "Spacetime Is Weirder Than You Think",
+      "emoji": "🌌",
+      "tagline": "From light-born black holes to the fabric of reality itself — physics content that earns your brain's trust.",
       "items": [
         {
           "source": "youtube",
-          "video_id": "8MNcxa_Gk5U",
-          "title": "Electricity and Magnetism AREN'T the Same: Relativity & The Meaning of Lorentz Invariance",
-          "channel_id": "UC3KV2kFy2YhjYvverIy2WnA",
-          "channel_title": "Dialect",
-          "published_at": "2026-09-19T12:32:04Z",
-          "url": "https://www.youtube.com/watch?v=8MNcxa_Gk5U",
-          "duration_seconds": 1272,
-          "view_count": "3820",
-          "description": "Are Magnetism and Electricity the same thing? This idea, propounded by numerous YouTubers, physicists, and even many textbooks, relies on a rather fanciful mathematical trick involving the Lorentz transformations and the set-up of a current driven through a thin wire. But do the mathematics really hold up to scrutiny, and if not, what then do concepts like coordinate symmetries and invariances in the Theory of Special Relativity actual reveal to us about the nature of electricity and magnetism? ",
-          "why_watch": "This pushes back on the popular claim that electricity and magnetism are 'really the same thing' — a satisfying idea that turns out to rest on a shakier mathematical foundation than most explainers admit. Dialect is one of the few channels willing to challenge physics folklore rather than repeat it, and the argument here is careful and specific. Good viewing if you've ever felt slightly uneasy accepting that explanation."
-        },
-        {
-          "source": "youtube",
-          "video_id": "CC2DG391HmA",
-          "title": "The Simple Math Problem Nobody Could Solve",
+          "video_id": "gDcWagTBbuU",
+          "title": "Can You Really Make a Black Hole Out of Light?",
           "channel_id": "UCIZ5ZOeiXYbmKTl_85ghNPw",
           "channel_title": "Physics Explained",
-          "published_at": "2025-08-09T19:00:09Z",
-          "url": "https://www.youtube.com/watch?v=CC2DG391HmA",
-          "duration_seconds": 2308,
-          "view_count": "757226",
-          "description": "Thanks to Brilliant for sponsoring this video! Try everything Brilliant has to offer at https://brilliant.org/PhysicsExplained — and get 20% off an annual premium subscription.\n\nYou can also support this channel via Patreon:\nhttps://www.patreon.com/physicsexplained\n\nFor over half a century, the world’s greatest mathematicians — including Leibniz and the Bernoulli brothers — tried and failed to solve the Basel Problem, a question about the sum of the reciprocals of the square numbers. Along the w",
-          "why_watch": "This covers the Basel problem — the search for a closed form of the infinite sum 1 + 1/4 + 1/9 + 1/16... — which stumped mathematicians for decades until Euler cracked it with a genuinely surprising argument. At 38 minutes it's a commitment, but the payoff is a rare sense of watching a beautiful proof unfold at a pace that lets you actually follow the reasoning. The historical framing of who tried and failed makes the eventual solution land harder."
+          "published_at": "2026-09-19T19:00:23Z",
+          "url": "https://www.youtube.com/watch?v=gDcWagTBbuU",
+          "duration_seconds": 2149,
+          "view_count": "71188",
+          "description": "Thanks to Hungry Minds for sponsoring this video. Use the code PHYSICSEXPLAIN10 to get 10% off The Book: The Ultimate Guide to Rebuilding a Civilization.\n👉 https://mdsh.io/physicsexplain\n\n🤝 Support the channel Patreon → https://www.patreon.com/physicsexplained  \n🔗 Follow me Instagram → https://www.instagram.com/physics_explained_ig \nX (Twitter) → https://twitter.com/PhysicsExplain1\n\nCan a black hole be made entirely from light? General relativity suggests that, in principle, concentrating enough",
+          "why_watch": "The question sounds like clickbait but it isn't — this is a careful walkthrough of the kugelblitz concept, the theoretical construct where concentrated light forms a black hole through its own gravitational energy. Physics Explained earns its name by building up the relativistic logic step by step rather than just asserting the answer. At 35 minutes it asks for real attention, but the payoff is a genuine conceptual shift in how you think about mass and energy."
         },
         {
           "source": "youtube",
-          "video_id": "tyxhy7yZv6U",
-          "title": "I never understood why nothing can escape a black hole... until now!",
+          "video_id": "S78h8zQwQe0",
+          "title": "The discovery that proved newton wrong (and revolutionised physics)",
           "channel_id": "UCGfFUc6eWxfbtjYeun6r9xg",
           "channel_title": "FloatHeadPhysics",
-          "published_at": "2024-04-12T13:00:49Z",
-          "url": "https://www.youtube.com/watch?v=tyxhy7yZv6U",
-          "duration_seconds": 1117,
-          "view_count": "171432",
-          "description": "Go to https://ground.news/floathead to stay fully informed and access reliable information. Subscribe through my link to get 40% off unlimited access this month only.\n\nWhy nothing can ever enter a black hole in the first place (not even light). We always talk about escaping from black hole, but from a certain perspective, nothing even enters a black hole. \n\nThis video is sponsored by Ground News.",
-          "why_watch": "The reframe here is genuinely interesting: instead of asking how anything could escape a black hole, the video asks whether anything actually enters one at all — a question that becomes meaningful when you think carefully about time dilation near the event horizon. FloatHeadPhysics uses spacetime diagrams rather than hand-waving, so the argument has real structure behind it. It's one of those videos that leaves you seeing a familiar concept from a completely different angle."
+          "published_at": "2024-03-29T13:00:31Z",
+          "url": "https://www.youtube.com/watch?v=S78h8zQwQe0",
+          "duration_seconds": 1252,
+          "view_count": "297290",
+          "description": "Head to https://squarespace.com/floatheadphysics to save 10% off your first purchase of a website or domain using code FLOATHEADPHYSICS\n\nEinstein's 1911 & 1915 papers below:\nhttps://archive.org/details/EinsteinOnTheInfluOfGravOnLight/page/n8/mode/1up?view=theater\nhttps://etienneklein.fr/wp-content/uploads/2016/01/Relativit%C3%A9-g%C3%A9n%C3%A9rale.pdf\n\nWhy do we think space is curved near the sun? Because we see Mercury's orbit precess. We thought it was due to gravitational effects of other pla",
+          "why_watch": "This video focuses on the 1919 Eddington solar eclipse expedition — the specific observational moment when light bending around the sun either confirmed or refuted general relativity — and explains why Newton's own gravity theory actually predicted a bending angle too, just the wrong one. FloatHeadPhysics is careful about the distinction between Einstein's 1911 prediction and his corrected 1915 value, which is a detail most popular accounts skip entirely. A tight 20 minutes that leaves you understanding why that expedition was genuinely decisive."
+        },
+        {
+          "source": "youtube",
+          "video_id": "neiJ1SLMrfM",
+          "title": "The Spacetime Metric",
+          "channel_id": "UC3KV2kFy2YhjYvverIy2WnA",
+          "channel_title": "Dialect",
+          "published_at": "2022-09-02T14:50:23Z",
+          "url": "https://www.youtube.com/watch?v=neiJ1SLMrfM",
+          "duration_seconds": 1302,
+          "view_count": "87528",
+          "description": "In the (epic?) conclusion to our metric tensor trilogy, we dive a little deeper into the origins of the metric tensor in an attempt to bridge the conceptual gulf that lies between our ordinary, intuitive understanding of geometry and that abstracter comprehension of it required to master General Relativity's four-dimensional spacetime. Can we pave ourselves a path to clearer understanding in twenty minutes? Let us know in the comments.\n\nContents:\n00:00 - Intro / Describing Distance\n01:56 - Maps ",
+          "why_watch": "This is the third in Dialect's metric tensor series, and it's specifically tackling the conceptual leap from flat Euclidean geometry to the four-dimensional spacetime interval at the heart of general relativity. The channel's approach is to build intuition slowly rather than throw equations at you, so if you've bounced off GR before because the math felt unmoored from meaning, this is worth trying. Works best watched after the earlier two episodes, but the channel's production quality makes the backtrack worthwhile."
         }
       ]
     },
     {
-      "name": "The Signal Room",
+      "name": "The Signals Room",
       "emoji": "⚡",
-      "tagline": "One quiet, technical deep-dive for the engineers and the curious — no hype, just the clean logic of how things work.",
+      "tagline": "For the engineers who want the real explanation, not the hand-wavy intro-course version.",
       "items": [
         {
           "source": "youtube",
-          "video_id": "gVrJmlx4yJw",
-          "title": "feedback amplifier - negative feedback characteristics - feedback propriety",
+          "video_id": "TD3jhSzOdqI",
+          "title": "Miller effect made easy - Miller theorem - cascode amplifier",
           "channel_id": "UCFtCfZ4rtIZ7Hsq7ZNHoY1w",
           "channel_title": "Computer&Electronics",
-          "published_at": "2024-06-10T07:55:20Z",
-          "url": "https://www.youtube.com/watch?v=gVrJmlx4yJw",
-          "duration_seconds": 744,
-          "view_count": "1505",
-          "description": "This video talks about feedback, in particular negative feedback in amplifiers. Feedback is a very powerful concept and has numerous applications. By definition, feedback is the process of combining the output of a system with its input. it can be said that feedback stabilizes a system. However, not all types of feedback have this property. There are two types of feedback: positive and negative. Negative feedback stabilizes, while positive feedback has the opposite effect. Positive feedback occu",
-          "why_watch": "A no-frills technical explainer on negative feedback in amplifiers, covering how it stabilizes gain, reduces distortion, and affects bandwidth. Production is basic, but the conceptual progression is clear and methodical — useful if you're studying electronics or need a refresher before working with op-amp circuits. Skip if you're looking for intuitive analogies; this one works through the math directly."
+          "published_at": "2024-05-24T13:32:51Z",
+          "url": "https://www.youtube.com/watch?v=TD3jhSzOdqI",
+          "duration_seconds": 480,
+          "view_count": "8340",
+          "description": "This video talks about the Miller effect which is very important when you want to analize the frequency beahvior of a circuit. The Miller effect is a powerfull approximation you use when a capacitance is in the gain path of a circuit. When the gain is negative the capacitance is magnified so this metod makes easy to find the dominant poles simply by inspection. We see an example of Miller effect in the common emitter configuration and we see also why the cascode configuration improves the bandwi",
+          "why_watch": "The Miller effect is one of those topics that gets hand-waved in intro electronics courses but actually matters the moment you're designing anything that operates above audio frequencies. This eight-minute video shows specifically why a feedback capacitance gets multiplied by gain, and uses the cascode amplifier as a concrete example of engineering around it. Compact and precise — a useful reference even if you've seen the concept before."
         }
       ]
     }
@@ -118,192 +105,217 @@
     {
       "source": "music",
       "source_name": "Stereogum",
-      "title": "Eric Slick Announces New Album Bounce House: Hear “Mannequin” (Feat. Molly Martin & Jamie Lidell)",
-      "snippet": "Eric Slick is the longtime drummer of the Philadelphia band Dr. Dog, and he's also got an extensive history of backing up other artists on record and onstage — Taylor Swift on her 2021 Maren Morris collab \"You All Over Me,\" Waxahatchee and MJ Lenderman and Wilco's Sky Blue Sky fest earlier this year. Slick (what a cool name) also makes solo records, most recently 2024's New Age Rage . In March of 2027, Slick will return with Bounce House , his latest solo LP.",
-      "url": "https://stereogum.com/2511890/eric-slick-announces-new-album-bounce-house-hear-mannequin-feat-molly-martin-jamie-lidell/music/",
+      "title": "Lizzy McAlpine Got Stella Lefty’d Over Nick Drake Soundalike On Her New Album",
+      "snippet": "Plagiarism in music is always a hot topic, and especially so since Stella Lefty's four ripoff allegations . Fellow young singer-songwriter Lizzy McAlpine just released her new album Angel , and she's opening up about accidentally copying a Nick Drake song.",
+      "url": "https://stereogum.com/2511966/lizzy-mcalpine-got-stella-leftyd-over-nick-drake-soundalike-on-her-new-album/news/",
       "genre": "",
-      "vibe_check": "The kind of loose, collaborative energy that spills out of a late-night studio session into something unexpectedly joyful.",
-      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/09/Eric-Slick-Bounce-House.jpg?w=564",
-      "embed_url": "https://www.youtube.com/embed/nY2mdzMBQPc"
+      "vibe_check": "The quiet anxiety of humming a melody you're certain is yours — until it isn't.",
+      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/09/unnamed-2026-09-19T145321.020.jpg?w=564",
+      "embed_url": "https://www.youtube.com/embed/6kIZrGRTV0Q"
     },
     {
       "source": "music",
       "source_name": "Stereogum",
-      "title": "XTC’s Colin Moulding Shares Second-Ever Solo Release Want It Bad (The Pep Talks And Playing Fields Of Old England)",
-      "snippet": "Colin Moulding is not the frontman of the UK psychedelic new wave cult heroes XTC; that's Andy Partridge. But Moulding has played bass, and sometimes sung lead and written songs, for the band since they first formed in 1972, and he's responsible for some of their best-known songs, including \"Generals And Majors\" and \"Making Plans For Nigel.\" Moulding has also been in XTC side projects the Dukes Of Straosphear and TC&I. But Moulding does not make fully solo music very often. Today, he puts out the second solo release of his decades-long career.",
-      "url": "https://stereogum.com/2511872/xtcs-colin-moulding-shares-second-ever-solo-release-want-it-bad-the-pep-talks-and-playing-fields-of-old-england/music/",
+      "title": "Σtella – “Belinda”",
+      "snippet": "Σtella!!!! The Greek indie/pop artist Σtella returned this week with a new single for Sub Pop, co-produced by the tasteful and well-traveled Rodaidh McDonald. \"Belinda\" is a beautiful piece of work, carefully crafted but heartfelt, with lots of smart production choices to accentuate the music's power.",
+      "url": "https://stereogum.com/2511947/%cf%83tella-belinda/music/",
       "genre": "",
-      "vibe_check": "Like finding a handwritten letter tucked inside a library book — rare, unhurried, and quietly thrilling.",
-      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/09/Moulding-single.jpg?w=564",
-      "embed_url": "https://www.youtube.com/embed/X3X4vcRTFjk"
+      "vibe_check": "Like catching a stranger's eye across a sun-drenched Athenian café and wondering what their story is.",
+      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/09/a1536289841_10-1.jpg?w=564",
+      "embed_url": "https://www.youtube.com/embed/DtzWzicTeD0"
     },
     {
       "source": "music",
       "source_name": "Stereogum",
-      "title": "PUP, Wild Pink, Kevin Morby, & More Discuss Their Ratboys Covers For Singin’ To An Empty Chair Deluxe Edition Out Today",
-      "snippet": "Everyone loves Ratboys, including their esteemed indie rock peers. The tuneful, big-hearted Chicago quartet continued their streak of amazing albums with this year's Singin' To An Empty Chair , an album that backs some of Julia Steiner's most vulnerable lyrics yet with dynamic arrangements that suggest a band in full command of its powers.",
-      "url": "https://stereogum.com/2511785/pup-wild-pink-kevin-morby-more-discuss-their-ratboys-covers-for-singin-to-an-empty-chair-deluxe-edition-out-today/music/",
+      "title": "Animal Collective Announce Additional Feels Shows After Ticketing Issues",
+      "snippet": "These days, the four members of Animal Collective are spread out across the world, and it's rare to get all of them back together. But the band's much-loved album Feels turned 20 last year , and they released a deluxe reissue and a live album MiniDisc to celebrate. Last week, the band announced plans to celebrate Feels a little further, playing the album in full at a pair of gigs in New York and Los Angeles.",
+      "url": "https://stereogum.com/2511920/animal-collective-announce-additional-feels-shows-after-ticketing-issues/news/",
       "genre": "",
-      "vibe_check": "The warm, communal glow of a house show where everyone in the room already knows all the words.",
-      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/09/unnamed-2026-09-17T133052.470.jpg?w=564",
+      "vibe_check": "The bittersweet rush of revisiting a dog-eared diary from your most chaotic, alive-feeling year.",
+      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/09/Anco.jpeg?w=564",
       "embed_url": null
     },
     {
       "source": "music",
-      "source_name": "No Depression",
-      "title": "ALBUM REVIEW: Biita Houdei Crafts Soothing Lullabies on 'This Bed Was Made for Me'",
-      "snippet": "You know the feeling of being wrapped up in high thread count sheets, so high they’re silky, and a perfect furry blanket that isn’t a cheap synthetic but just the right mix of soft and plush? I suppose asking that is like asking if you know",
-      "url": "https://nodepression.org/album-review-biita-houdei/",
+      "source_name": "Pitchfork",
+      "title": "11 New Albums You Should Listen to Now: Carly Rae Jepsen, Miley Cyrus, and More",
+      "snippet": "Stream new releases from Miley Cyrus, Carly Rae Jepsen, Team Dresch, and Empress Of",
+      "url": "https://pitchfork.com/story/11-new-albums-you-should-listen-to-now-carly-rae-jepsen-empress-of-miley-cyrus/",
       "genre": "",
-      "vibe_check": "Music that feels like being tucked in by someone who loves you, with nowhere to be until tomorrow.",
-      "cover_url": "https://storage.ghost.io/c/18/d0/18d08e58-3b1b-4720-ae25-a31b44e69d4b/content/images/2026/09/bananago_20260918_142025.jpg",
+      "vibe_check": "A Friday afternoon playlist that shifts moods like weather — bubblegum one minute, heartbreak the next.",
+      "cover_url": "https://media.pitchfork.com/photos/6aac3b11ff2de3826267dfd6/master/pass/4cb0c34e-806e-4244-b644-8fdc611de06f.jpeg",
+      "embed_url": "https://teamdresch.bandcamp.com/album/furthermore"
+    },
+    {
+      "source": "music",
+      "source_name": "Consequence",
+      "title": "Every Song in Grand Theft Auto VI Revealed So Far",
+      "snippet": "Rockstar has already featured Tom Petty, Sexyy Red, Depeche Mode, Phil Collins, the Pointer Sisters, and more ahead of GTA VI's release. Every Song in Grand Theft Auto VI Revealed So Far Alex Krinsky",
+      "url": "https://consequence.net/2026/09/grand-theft-auto-6-every-song-so-far/",
+      "genre": "",
+      "vibe_check": "Windows down, wanted level rising, the radio somehow always playing exactly the right song.",
+      "cover_url": "https://consequence.net/wp-content/uploads/2026/09/grand-theft-auto-6-songs-so-far.jpeg?quality=80",
       "embed_url": null
     },
     {
       "source": "music",
       "source_name": "Consequence",
-      "title": "Orville Peck Says He Made Out With an Oakland Raiders Player",
-      "snippet": "The masked country singer says the mystery player was \"very thrilled\" to have the encounter referenced on his new album, Mule. Orville Peck Says He Made Out With an Oakland Raiders Player Alex Krinsky",
-      "url": "https://consequence.net/2026/09/orville-peck-raiders-player-ring-the-bell/",
+      "title": "Sammy Hagar Responds to Alex Van Halen’s “Complete Idiot” Comment: “What’s Your Problem?”",
+      "snippet": "Hagar expressed frustration and confusion at the ongoing beef. Sammy Hagar Responds to Alex Van Halen’s “Complete Idiot” Comment: “What’s Your Problem?” Langdon Hickman",
+      "url": "https://consequence.net/2026/09/sammy-hagar-alex-van-halen-idiot-response/",
       "genre": "",
-      "vibe_check": "Sequined boots, a raised eyebrow, and a scandalous secret whispered across a honky-tonk barstool.",
-      "cover_url": "https://consequence.net/wp-content/uploads/2026/09/Orville-Peck.jpeg?quality=80",
+      "vibe_check": "Two old rockers airing grievances in a parking lot while the rest of us watch awkwardly from the tour bus window.",
+      "cover_url": "https://consequence.net/wp-content/uploads/2024/12/Sammy-Hagar-Alex-Van-Halen.jpg?quality=80",
       "embed_url": null
-    },
-    {
-      "source": "music",
-      "source_name": "PopMatters",
-      "title": "Emma Ruth Rundle Releases a Brilliant Career-Defining Set",
-      "snippet": "This is the album Emma Ruth Rundle has long wanted and been destined to make. These Killing Times marks the actualization of a signature artist.",
-      "url": "https://www.popmatters.com/emma-ruth-rundle-these-killing",
-      "genre": "",
-      "vibe_check": "The emotional equivalent of standing in the ruins of something beautiful and finally understanding why it had to fall.",
-      "cover_url": "https://www.youtube.com/embed/RevPslL4QyQ",
-      "embed_url": "https://www.youtube.com/embed/RevPslL4QyQ"
     }
   ],
   "global_silver_linings": [
     {
       "source": "good_news",
       "source_name": "Good News Network",
-      "title": "Your Weekly Horoscope – ‘Free Will Astrology’ by Rob Brezsny",
-      "url": "https://www.goodnewsnetwork.org/horoscope-from-rob-brezsnys-free-will-astrology-9-19-2026/",
-      "snippet": "Our partner Rob Brezsny, whose latest book is Enlightenment for Rebels: Celebrating Our Wild and Sacred Earthly Selves, provides his weekly wisdom to enlighten our thinking and motivate our mood. Rob’s Free Will Astrology, is a syndicated weekly column appearing in over a hundred publications. He is also the author of Pronoia Is the Antidote for Paranoia: […]",
-      "cover_url": "https://www.goodnewsnetwork.org/wp-content/uploads/2020/10/Freewill-Astrology-horoscope-logo.jpg",
-      "reason": "A weekly reminder that many people find comfort and reflection in pausing to consider the bigger picture of their lives — whatever lens they use to do that is worth celebrating. Taking time to look inward is a quietly radical act in a busy world."
+      "title": "New York City is Putting ‘The Park’ Back in Park Avenue – And Adding a Protected Bike Lane (LOOK)",
+      "url": "https://www.goodnewsnetwork.org/new-york-city-is-putting-the-park-back-in-park-avenue/",
+      "snippet": "Until the 1920s Park Avenue in Manhattan actually park running through it. Now, New York City has unveiled a new plan for transforming Park Avenue back into its original natural character, adding trees, benches, and a protected bike lane. Mayor Mamdani and the NYC Department of Transportation are updating 11 blocks of the wide street, […]",
+      "cover_url": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/09/Park-Avenue-redesign-in-NYC-Credit-Starr-Whitehouse-Landscape-Architects-and-Planners.jpeg",
+      "reason": "New York City is reclaiming one of its most iconic streets for people and greenery, proving that even dense urban spaces can be reimagined to prioritise nature, safety, and community. It's a quiet but meaningful sign that cities are learning to breathe again."
     },
     {
       "source": "good_news",
       "source_name": "Upworthy",
-      "title": "A dying mother’s letter to her daughters about pain is a must-read for anyone facing uncertainty",
-      "url": "https://www.upworthy.com/a-dying-mothers-letter-to-her-daughters-about-pain-is-a-must-read-for-anyone-facing-uncertainty/",
-      "snippet": "\"Walk through the fire and you will emerge on the other end, whole and stronger. I promise.\"",
-      "cover_url": "https://www.upworthy.com/wp-content/uploads/sites/2/2026/09/mom-writing-letter-to-daughters.jpg",
-      "reason": "In her final days, this mother chose to leave her daughters a gift of hard-won wisdom rather than silence — a testament to how love finds ways to reach forward through time. Her words remind us that honest, tender guidance can outlast any one life."
+      "title": "Woman’s rare antique turned away from ‘Antique Roadshow’ for heart-wrenching reason",
+      "url": "https://www.upworthy.com/antiques-roadshow-refuses-bracelet-history-ex1/",
+      "snippet": "\"I just love you for bringing it in and thank you so much for making me so sad.\"",
+      "cover_url": "https://www.upworthy.com/wp-content/uploads/sites/2/2025/07/origin-94.jpg",
+      "reason": "Sometimes the most valuable things resist a price tag, and this story is a gentle reminder that the meaning held in an object can outweigh its market worth. It's a small but touching nudge to cherish what we inherit for reasons beyond the monetary."
     }
   ],
-  "discovery_articles": [
-    {
-      "source": "discovery",
-      "source_name": "Science News",
-      "title": "Surviving the summer",
-      "url": "https://www.sciencenews.org/article/surviving-summer-ed-note-october-2026",
-      "snippet": "Editor in Chief Nancy Shute discusses existential threats to humankind: extreme heat, never-ending drought and a plan to provide Earth with sunlight on demand.",
-      "category": "science",
-      "cover_url": "https://www.sciencenews.org/wp-content/uploads/sites/2/2025/01/webfallback_dark.jpg",
-      "ferns_note": "Somewhere between the droughts and the heat domes, scientists are quietly drafting blueprints to act as the sun's dimmer switch — which is either the most audacious idea humanity has ever had, or a very good sign we've run out of smaller ones. The existential stakes here aren't hypothetical; they're already showing up in your summer forecast."
-    }
-  ],
+  "discovery_articles": [],
   "featured_read": {
     "source": "reads",
-    "source_name": "The Atlantic",
-    "title": "College Sports Are Great",
-    "url": "https://www.theatlantic.com/ideas/2026/09/college-sports-defense-football/688708/?utm_source=feed",
-    "snippet": "The accomplishments of athletes are every bit as impressive and legitimate as those of dancers, debaters, and oboists.",
-    "cover_url": "https://cdn.theatlantic.com/thumbor/M7chjb9DZW0QxRBaEGTRGfRKHb4=/0x61:2876x1559/1200x625/media/img/mt/2026/09/2026_08_26_Football/original.jpg",
-    "blurb": "This essay makes a quietly radical case that the split-second precision of a point guard or a gymnast deserves the same cultural respect we extend to a violinist or a competitive debater. It asks why we've decided that only certain kinds of physical excellence count as serious."
+    "source_name": "Nautilus",
+    "title": "The “Most Complete” Mastodon Tooth Ever Found",
+    "url": "https://nautil.us/the-most-complete-mastodon-tooth-ever-found-1285135/",
+    "snippet": "Peering 10,000 years into the past",
+    "cover_url": "https://lede-admin.nautil.us/wp-content/uploads/sites/70/2026/09/01-tooth.jpg",
+    "blurb": "A single mastodon tooth becomes a portal into a world 10,000 years gone — this piece asks what one fragment of enamel can honestly tell us about a creature, and a moment, we will never fully recover. The answer is more than you'd expect, and stranger."
   },
   "reading_room": [
     {
       "source": "reads",
-      "source_name": "The Atlantic",
-      "title": "Emily Wilson Can’t Let <em>The Odyssey</em> Go",
-      "url": "https://www.theatlantic.com/books/2026/09/emily-wilson-odyssey-christopher-nolan-new-translation-q-and-a-atlantic-festival/688718/?utm_source=feed",
-      "snippet": "The translator spoke about her desire to retranslate the epic—and her harsh review of the recent film.",
-      "cover_url": "https://cdn.theatlantic.com/thumbor/P_skV5WCoaXyPJIxhkK9cW4S5xk=/0x82:3834x2079/1200x625/media/img/mt/2026/09/2026_09_18_TAF_Emily_Wilson_Gal_Beckerman/original.jpg",
-      "blurb": "Emily Wilson, the scholar who gave us the first female English translation of The Odyssey, sits down to explain why she still can't leave it alone — and why the recent film adaptation made her wince in very specific, very illuminating ways."
-    },
-    {
-      "source": "reads",
-      "source_name": "Asterisk",
-      "title": "How Long Until AI Doesn’t Need Humans?",
-      "url": "https://asteriskmag.com/issues/14/how-long-until-ai-doesn-t-need-humans",
-      "snippet": "She thinks it’s nearly imminent. He doesn’t.",
-      "cover_url": "https://asteriskmag.com/media/pages/issues/14/how-long-until-ai-doesn-t-need-humans/bf86e16ad9-1781034882/how-long-until-ai-doesn-t-need-humans-1600x900-crop-sharpen50.png",
-      "blurb": "Two thoughtful people who disagree about when AI will render human labor optional talk it through in real time, and the gap between their timelines turns out to be more unsettling than either position alone. A conversation that earns its anxiety."
-    },
-    {
-      "source": "reads",
-      "source_name": "Nautilus",
-      "title": "This Dolphin Steals from Fish for Its Meals",
-      "url": "https://nautil.us/this-dolphin-steals-from-fish-for-its-meals-1285147/",
-      "snippet": "Putting a dent in dolphins’ reputation as the “good guys of the sea”",
-      "cover_url": "https://lede-admin.nautil.us/wp-content/uploads/sites/70/2026/09/bubbles.jpg",
-      "blurb": "It turns out dolphins have been quietly running a kleptoparasitism racket — stealing fish caught in human nets — and marine biologists are only now reckoning with what it reveals about animal cunning and our own need for oceanic heroes."
-    },
-    {
-      "source": "reads",
       "source_name": "Longreads",
-      "title": "Murder-in-Law",
-      "url": "https://longreads.com/2026/09/18/murder-family-divorce/",
-      "snippet": "\"The twisted story of a domestic contract killing.\"",
-      "cover_url": "",
-      "blurb": "A domestic contract killing unravels in ways that implicate not just a marriage but an entire architecture of secrets, loyalty, and mundane cruelty — the kind of true-crime story that lingers because the motive is almost ordinary."
+      "title": "The Top 5 Longreads of the Week",
+      "url": "https://longreads.com/2026/09/18/top-5-625/",
+      "snippet": "Showcasing stories from J.B. MacKinnon, Daniel Kolitz, Daniel Shailer, Justin Neuman, and Hanif Abdurraqib.",
+      "cover_url": "https://i0.wp.com/longreads.com/wp-content/uploads/2026/09/T5-09-18-26-C.png?fit=2400%2C1400&quality=80&ssl=1",
+      "blurb": "Five writers, five rabbit holes — this week's selection from Longreads includes Hanif Abdurraqib, which is reason enough to clear your afternoon."
     },
     {
       "source": "reads",
       "source_name": "Literary Hub",
-      "title": "Lit Hub Weekly: September 14 – 18, 2026",
-      "url": "https://lithub.com/lit-hub-weekly-september-14-18-2026/",
-      "snippet": "Don’t have time to read all those fall reading lists? That’s okay. We read them for you.",
-      "cover_url": "https://s26162.pcdn.co/wp-content/uploads/2026/09/congressblackwritersartists.jpg",
-      "blurb": "Lit Hub distilled the season's avalanche of fall reading lists so you don't have to, and the result is less a roundup than a small argument about which books are actually earning their buzz right now."
+      "title": "Sally Rooney just defeated a data center.",
+      "url": "https://lithub.com/sally-rooney-just-defeated-a-data-center/",
+      "snippet": "Here’s a rare piece of heartening tech news to buoy you toward the weekend: A West of Ireland data center objected to by novelist Sally Rooney has just had its planning permission overturned on the grounds that it breaches Irish",
+      "cover_url": "https://s26162.pcdn.co/wp-content/uploads/2026/09/Sally-Rooney-data-center.png",
+      "blurb": "In a news cycle that rarely offers this, here is a genuinely satisfying story: a novelist objected to a data center being built near her home, and then — remarkably — won. The details of how are worth savoring."
+    },
+    {
+      "source": "reads",
+      "source_name": "The Atlantic",
+      "title": "The Data-Center Debate Is Divorced From the Facts",
+      "url": "https://www.theatlantic.com/ideas/2026/09/data-center-facts-effects/688670/?utm_source=feed",
+      "snippet": "All those scary numbers aren’t what they seem.",
+      "cover_url": "https://cdn.theatlantic.com/thumbor/aKYVoQbQseL_HNr_IAFWNRF7ghY=/0x0:2876x1498/1200x625/media/img/mt/2026/09/2026_09_15_AI_data_center_debate/original.jpg",
+      "blurb": "Before you accept the terrifying statistics about data centers at face value, this piece asks you to slow down and examine where those numbers actually come from — and whether the panic is as well-founded as it feels."
+    },
+    {
+      "source": "reads",
+      "source_name": "The Atlantic",
+      "title": "Hitler Could Have Been Stopped",
+      "url": "https://www.theatlantic.com/books/2026/09/the-lessons-of-hitlers-rise-for-the-trump-era/688687/?utm_source=feed",
+      "snippet": "Timothy W. Ryback explains the contemporary lessons of Hitler’s rise.",
+      "cover_url": "https://cdn.theatlantic.com/thumbor/IdZUotXFw6jnEgI_-jKLcPJLABs=/0x41:1917x1039/1200x625/media/img/mt/2026/09/TAF26_Tim_Rybeck/original.jpg",
+      "blurb": "Historian Timothy Ryback traces the specific, unhurried moments when Hitler's rise could have been interrupted by ordinary people making different choices — a question that is less about the past than it is an uncomfortable mirror for the present."
+    },
+    {
+      "source": "reads",
+      "source_name": "Nautilus",
+      "title": "This Stray Cat Turned Out to Be the First New Cat Species Discovered in Over a Century",
+      "url": "https://nautil.us/this-stray-cat-turned-out-to-be-the-first-new-cat-species-discovered-in-over-a-century-1285132/",
+      "snippet": "It was living on a diet of rice, noodles, and eggs",
+      "cover_url": "https://lede-admin.nautil.us/wp-content/uploads/sites/70/2026/09/Tilcayo_tiger_cat_full_body-copy.jpg",
+      "blurb": "A stray cat living on rice and noodles in a village turned out to be the first new felid species discovered in over a hundred years — this is the story of how something extraordinary hides in plain sight, and the patient science it takes to see it."
     }
   ],
   "garden_note": {
-    "note": "Early autumn is settling over Zürich with its particular amber hush — the dahlias are still putting on a show, but there's a new crispness to the evening air that quietly insists you fetch a cardigan. As dusk lingers until around 20:01, step outside and let the garden say its goodnight.",
+    "note": "Early autumn has a particular quality in Zürich — the Uetliberg forests are just beginning to bronze at the edges, and the morning air carries that first real bite of September cool. Step outside before the dew lifts and you'll find the garden holding its breath between summer's last warmth and the turning.",
     "in_season": [
-      "Dahlias in full late bloom",
-      "Apple and early pear harvest",
-      "Sowing lamb's lettuce (Feldsalat) for autumn",
-      "Raking the first fallen leaves from under fruit trees"
+      "Dahlias still in generous bloom — deadhead to extend the show",
+      "Apple and pear harvest underway; check windfalls daily",
+      "Kale and leeks coming into their prime for the kitchen",
+      "Sow winter spinach and lamb's lettuce before the month is out"
     ],
-    "sky_tonight": "The First Quarter moon rides high in the south after sunset — look for Saturn glowing steadily nearby in Aquarius, a warm golden point that won't flicker like a star.",
-    "sun_times": "The sun slips away at 19:32 tonight, with dusk stretching gently to 20:01.",
+    "sky_tonight": "The First Quarter Moon rides high in the south by nightfall — look for Saturn glowing steadily nearby in Aquarius, patient as ever.",
+    "sun_times": "First light creeps in at 06:39 this morning, with sunrise following at 07:08 and dusk settling softly around 19:59.",
     "moon_label": "First quarter",
-    "illum_pct": 55,
-    "sun_range": "07:07–19:32"
+    "illum_pct": 62,
+    "sun_range": "07:08–19:30"
   },
   "puzzle": {
-    "kind": "riddle",
+    "kind": "haiku riddle",
     "label": "Fern's Morning Riddle",
-    "prompt": "Poor people have it. Rich people need it. If you eat it you die. What is it?",
-    "answer": "Nothing",
-    "hint": "",
-    "source": "riddles.com",
-    "source_id": "Riddle-2347"
+    "prompt": "I blush before I fall\nAll summer I hid in green\nWind inherits me",
+    "answer": "A turning leaf (autumn leaf)",
+    "hint": "Think of what early autumn slowly reveals on the branches above you."
   },
   "previous_puzzle": {
-    "label": "Fern's Morning Anagram",
-    "prompt": "Unscramble REVHI — in early autumn, these creatures vanish into their winter quarters, and naturalists count the days until their return.",
-    "answer": "HIVE"
+    "label": "Fern's Morning Riddle",
+    "prompt": "Poor people have it. Rich people need it. If you eat it you die. What is it?",
+    "answer": "Nothing"
   },
   "larder": {
-    "news": [],
-    "recipe": {}
+    "news": [
+      {
+        "source": "food",
+        "source_name": "The Kitchn",
+        "title": "Oven-Baked Pork Chops",
+        "url": "https://www.thekitchn.com/oven-baked-pork-chops-recipe-23845456?utm_source=RSS&utm_medium=feed&utm_campaign=Category%2FChannel%3A+main",
+        "snippet": "The trick is to treat them right.",
+        "cover_url": "",
+        "blurb": "A timely reminder that the humble pork chop deserves a little respect — and the oven is its best advocate."
+      },
+      {
+        "source": "food",
+        "source_name": "The Guardian",
+        "title": "Kid, London W1: ‘Fat, richness, sharpness, all in perfect balance’ – restaurant review",
+        "url": "https://www.theguardian.com/food/2026/sep/20/kid-london-w1-restaurant-review-grace-dent",
+        "snippet": "Our main course arrived heavy and somewhat intimidating, and left picked completely clean Earlier this month, a kind-of Turkish ocakbaşı opened on a corner in London’s Soho. The brains behind Kid are chef Sertaç Dirik and restaurateur David Carter, and I say “kind-of” because, yes, while it has a Turkish-influenced menu – sucuk with grilled peach, pide , börek , hummus, içli köfte with aged beef – and the whiff of live fire, nothing either of them does is ever remotely straightforward, hence the buzz around their new place. Carter founded Smokestak a decade ago in Shoreditch, a wild, Americana-tinged barbecue joint where, somehow, he made brisket in buns and peach cobbler old fashioneds London’s hottest ticket.",
+        "cover_url": "https://i.guim.co.uk/img/media/581d7f37e90a409c91471bde7ea57ebec8603943/658_0_6355_5084/master/6355.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=84f15077ac83bd8f38cb6d87e7e4aa76",
+        "blurb": "A Turkish ocakbaşı landing in Soho with the kind of fat-rich, sharply balanced cooking that leaves a plate — and a critic — utterly undone is exactly the restaurant story worth reading this week."
+      },
+      {
+        "source": "food",
+        "source_name": "Saveur",
+        "title": "These Immersive Coffee Tours Follow the Beans From Tree to Cup",
+        "url": "https://www.saveur.com/culture/coffee-tours-colombia-guatemala-tanzania/",
+        "snippet": "Courtesy True Colombia Travel Guided experiences around the globe offer a chance to meet the makers behind your single-origin roast.",
+        "cover_url": "https://www.saveur.com/uploads/2026/09/20170709-CafeCoconda-026413x2-1.jpg?auto=webp",
+        "blurb": "If your morning cup already feels like a ritual, imagine tracing it all the way back to the tree — these immersive coffee tours are the grown-up version of following your passion to its very roots."
+      }
+    ],
+    "recipe": {
+      "source": "recipe",
+      "source_name": "101 Cookbooks",
+      "title": "Macro Bowls",
+      "url": "https://www.101cookbooks.com/macro-bowls/",
+      "snippet": "The macro bowls featured in Joe Yonan's Mastering the Art of Plant-Based Cooking - nutty brown rice, a rainbow of vegetables, and a miso-tahini dressing you'll want to put on everything.",
+      "is_recipe": true,
+      "cover_url": "https://images.101cookbooks.com/macro-bowls-recipe-h.jpg?w=680",
+      "blurb": "Nutty brown rice, a bright tumble of vegetables, and a miso-tahini dressing destined to become a permanent fixture in your fridge — this is the kind of nourishing, unfussy bowl that makes eating well feel genuinely lovely."
+    },
+    "seasonal_note": "Zürich's markets are flush with Zwetschgen right now — those deep-purple Italian prunes that locals fold into buttery Wähe tarts or simply poach with a little cinnamon and star anise for breakfast. Seek out a tray at Helvetiaplatz or the Bürkliplatz market before they vanish; a slow Tuesday morning spent pitting plums is its own small ritual."
   },
   "fern_data": {
-    "greeting": "I almost cut the dying mother's letter — it felt too raw for an evening edition. It stayed, and so did Colin Moulding's first solo release in decades, because some things are too quietly significant to shelve.",
-    "top_pick_title": "Tender Things, Held Carefully"
+    "greeting": "Still thinking about the mastodon tooth — 'most complete ever found' is the kind of phrase that stops you mid-sip. That's in here alongside the question of whether you can build a black hole purely from light, and the ancient British rituals that were, it turns out, far more deliberate than anyone wanted to believe.",
+    "top_pick_title": "Teeth, Light, & Old Dark Practices"
   }
 }
