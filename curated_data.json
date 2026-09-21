@@ -1,122 +1,89 @@
 {
-  "fetched_at": "2026-09-20T19:32:09.292935+02:00",
-  "is_am_email": false,
+  "fetched_at": "2026-09-21T11:07:46.262810+02:00",
+  "is_am_email": true,
   "audit_summary": {
-    "youtube_videos": 6,
-    "themes": 4,
-    "music_articles": 4,
-    "good_news_articles": 2,
-    "discovery_articles": 0,
+    "youtube_videos": 4,
+    "themes": 3,
+    "music_articles": 1,
+    "good_news_articles": 3,
+    "discovery_articles": 1,
     "featured_read": 1,
     "reading_room": 5,
     "garden": 1,
     "puzzle": 1,
-    "larder": 0
+    "larder": 4
   },
   "themes": [
     {
-      "name": "Reality Is Weirder Than You Think",
-      "emoji": "🌀",
-      "tagline": "From spinning particles to bent time — physicists keep discovering that the universe refuses to behave.",
+      "name": "Dead Stars & Deep Truths",
+      "emoji": "🌟",
+      "tagline": "The universe is stranger and more beautiful than anyone told you in school.",
       "items": [
         {
           "source": "youtube",
-          "video_id": "piC8T2HnzrU",
-          "title": "This Particle Spins at 300× the Speed of Light",
+          "video_id": "yNN9Cu7K-nk",
+          "title": "The Dead Star That Outshines 200,000 Suns",
           "channel_id": "UCIZ5ZOeiXYbmKTl_85ghNPw",
           "channel_title": "Physics Explained",
-          "published_at": "2025-07-26T19:00:47Z",
-          "url": "https://www.youtube.com/watch?v=piC8T2HnzrU",
-          "duration_seconds": 1636,
-          "view_count": "313075",
-          "description": "Go to https://groundnews.com/physics to stay fully informed about physics, other sciences, and more. Subscribe through my link to get 40% off the unlimited vantage plan, the same one I use, which breaks down to just $5/month with my discount.\n\nYou can help support this channel via the Physics Explained Patreon account: https://www.patreon.com/physicsexplained \n\nCan electrons really spin — or is that idea fundamentally flawed?\nIn this video, we break down a shocking paradox: if the electron were ",
-          "why_watch": "The headline sounds like clickbait but the physics here is legitimate: electron spin isn't actually rotation in any classical sense, and this video carefully unpacks what 'spin' really means as a quantum property — including why phase velocity can exceed light speed without violating relativity. At 27 minutes it earns its length by building intuition rather than just asserting conclusions."
+          "published_at": "2025-07-12T19:06:16Z",
+          "url": "https://www.youtube.com/watch?v=yNN9Cu7K-nk",
+          "duration_seconds": 2121,
+          "view_count": "154776",
+          "description": "Thanks to Brilliant for sponsoring this video! Try Brilliant free for 30 days and get 20% off an annual premium subscription by following the link 👉 https://brilliant.org/PhysicsExplained/\n\nYou can help support this channel via the Physics Explained Patreon:\nhttps://www.patreon.com/physicsexplained\n\nIn 1967, a 24-year-old graduate student detected something that would change astrophysics forever: the first pulsar. But while her discovery rewrote our understanding of dead stars, she was quietly l",
+          "why_watch": "This is the story of Jocelyn Bell Burnell, who discovered pulsars as a 24-year-old grad student in 1967 — one of the most consequential finds in modern astrophysics, and one of science's most notorious credit controversies. Physics Explained uses her discovery as a launchpad to explain how a dead star can outshine 200,000 suns, grounding the wild numbers in real physical mechanisms. If you've ever heard 'pulsar' and nodded vaguely, this is the video that makes it genuinely click."
         },
         {
           "source": "youtube",
-          "video_id": "OpOER8Eec2A",
-          "title": "I never understood why masses bend time...until now!",
+          "video_id": "05jFhuRs-w0",
+          "title": "I finally understood why gravity bends light even without mass! (My mind is blown)",
           "channel_id": "UCGfFUc6eWxfbtjYeun6r9xg",
           "channel_title": "FloatHeadPhysics",
-          "published_at": "2024-03-15T13:00:32Z",
-          "url": "https://www.youtube.com/watch?v=OpOER8Eec2A",
-          "duration_seconds": 1192,
-          "view_count": "969251",
-          "description": "Support me https://patreon.com/floatheadphysics to see how I learn relativity, get sneak peaks, and early video access. \n\nCool Physics Tees (Unisex): https://floatheadphysics.com/collections/all\n\nTo try everything Brilliant has to offer—free—for a full 30 days, visit  https://brilliant.org/FloatHeadPhysics . You’ll also get 20% off an annual premium subscription.\n\nIn this video, we will explore why the curvature of time, and not the space, produces the illusion of gravity. We will also understan",
-          "why_watch": "FloatHeadPhysics builds genuine intuition for why mass curves spacetime by walking through the equivalence principle step by step, using visuals that make the conceptual leap feel earned rather than hand-wavy. If you've read the standard 'bowling ball on a rubber sheet' explanation and always felt cheated by it, this is the follow-up you were looking for."
-        },
+          "published_at": "2024-03-08T13:00:01Z",
+          "url": "https://www.youtube.com/watch?v=05jFhuRs-w0",
+          "duration_seconds": 1055,
+          "view_count": "769832",
+          "description": "Support me https://patreon.com/floatheadphysics to see how I learn relativity, get sneak peaks, and early video access. \n\nIn this video, we rediscover Einstein's equivalence principle. It solves one of the biggest mysteries of Newtonian physics - why gravitational mass = inertial mass. But in doing so, Einstein completely reinvents the ideas of gravity. Starting with gravity being an illusion. A mere side effect of the 'ground' accelerating 'upwards'. \n\nBasket Ball Feather Video\nhttps://www.yout",
+          "why_watch": "FloatHeadPhysics takes Einstein's equivalence principle — the idea that gravitational and inertial mass being equal is not a coincidence but a deep clue about the nature of reality — and rebuilds it from scratch so you genuinely feel why it matters. The specific payoff is understanding how light bends near massive objects without invoking photon mass, which is one of those things that sounds paradoxical until the geometry clicks. The hand-drawn visual approach keeps abstract ideas tangible throughout."
+        }
+      ]
+    },
+    {
+      "name": "The Geometry of Everything",
+      "emoji": "🌀",
+      "tagline": "When math stops being numbers and starts being the shape of reality itself.",
+      "items": [
         {
           "source": "youtube",
-          "video_id": "PjT85AxTmI0",
-          "title": "The TRUE Cause of Gravity in General Relativity",
+          "video_id": "Dn0ZZRVuJcU",
+          "title": "The Meaning of the Metric Tensor",
           "channel_id": "UC3KV2kFy2YhjYvverIy2WnA",
           "channel_title": "Dialect",
-          "published_at": "2022-06-18T12:48:37Z",
-          "url": "https://www.youtube.com/watch?v=PjT85AxTmI0",
-          "duration_seconds": 1552,
-          "view_count": "616168",
-          "description": "Alternatively titled, \"Physics Myth-Busters: why time dilation does NOT cause gravity\" this video explores an explanation of General Relativity whose monumental erroneousness is commensurate only to its popularity. What is this explanation, why is it so wrong, and how did so many high-profile YouTubers get suckered into promoting it? Prepare for a heavy dose of critical thinking, as we attempt to sift facts from falsehood and approach a deeper, more meaningful understanding of the actual nature ",
-          "why_watch": "Dialect takes direct aim at the popular YouTube explanation that 'time dilation causes gravity,' arguing it's not just incomplete but actively misleading — and names specific high-profile creators who spread it. Whether or not you find the counter-argument fully convincing, the critical thinking about how physics gets simplified into misinformation is worth the 26 minutes on its own."
+          "published_at": "2022-05-07T14:07:02Z",
+          "url": "https://www.youtube.com/watch?v=Dn0ZZRVuJcU",
+          "duration_seconds": 1162,
+          "view_count": "277237",
+          "description": "In the follow-up to our prior video, Demystifying the Metric Tensor, we continue to explore the physical and conceptual intuition behind the complex mathematical object known as The Metric Tensor, whose crucial role in the General Relativity, requisite to understanding the theory, tends to be easily obscured by abstract ideas and mathematics.\n\nSupport us on Patreon! https://www.patreon.com/dialect_philosophy\n\nContents:\n\n00:00 - Introduction\n00:54 - Spacetime Cartography\n02:30 - Maps / Coordinate",
+          "why_watch": "Dialect follows up their introductory metric tensor video by focusing on what the object actually means physically, not just how to manipulate it mathematically — a distinction most GR resources blur past. The video builds careful intuition for how the metric encodes the geometry of curved spacetime and why that geometry is the gravitational field. If you've stalled on general relativity because the math felt disconnected from reality, this is a rare attempt to restore that connection."
         }
       ]
     },
     {
-      "name": "Rabbit Holes With a Philosophy Chaser",
-      "emoji": "🧪",
-      "tagline": "One diet soda warning label, one Vsauce spiral, and suddenly you're questioning the nature of existence itself.",
-      "items": [
-        {
-          "source": "youtube",
-          "video_id": "Fob38Jo9F_k",
-          "title": "The Ontological Status of Phenylalanine In Sugar Free Sodas",
-          "channel_id": "UC6nSFpj9HTCZ5t-N3Rm3-HA",
-          "channel_title": "Vsauce",
-          "published_at": "2026-09-20T16:14:03Z",
-          "url": "https://www.youtube.com/watch?v=Fob38Jo9F_k",
-          "duration_seconds": 146,
-          "view_count": "89439",
-          "description": "",
-          "why_watch": "A classic Vsauce detour into whether phenylalanine — that ingredient flagged on every diet soda can — actually 'exists' in any meaningful philosophical sense. At under two and a half minutes, it's a genuinely strange little question that will change how you read a nutrition label."
-        }
-      ]
-    },
-    {
-      "name": "Rise, Stumble, Repeat",
-      "emoji": "🍗",
-      "tagline": "The cautionary tale of how a chicken sandwich conquered the internet — and what happened when the hype had to pay the rent.",
-      "items": [
-        {
-          "source": "youtube",
-          "video_id": "qszacQhJuR4",
-          "title": "What Went Wrong For Popeyes...",
-          "channel_id": "UCNaq5Jh4SQ1oBAjhQ0KPhoA",
-          "channel_title": "Weird History Food",
-          "published_at": "2026-09-20T14:15:25Z",
-          "url": "https://www.youtube.com/watch?v=qszacQhJuR4",
-          "duration_seconds": 993,
-          "view_count": "12460",
-          "description": "Popeyes won the fast food chicken sandwich wars and became one of the biggest stories in the restaurant industry. So how did the brand go from viral sensation to closing locations, reporting declining sales, and struggling to keep its biggest fans happy?\n\nIn this episode of Weird History, we trace the rise and fall of Popeyes’ chicken sandwich phenomenon and what happened after the hype faded. From explosive social media success to franchise closures and declining performance, the story reveals ",
-          "why_watch": "Weird History Food traces how Popeyes turned a single chicken sandwich into a cultural moment, then maps exactly where the wheels came off — declining sales, store closures, and a fanbase that felt burned. It's a tight post-mortem on what happens when a brand's identity gets swallowed by its own hype cycle."
-        }
-      ]
-    },
-    {
-      "name": "Under the Hood",
+      "name": "Logic All the Way Down",
       "emoji": "⚡",
-      "tagline": "For the rare and beautiful mind that wants to know exactly why the op-amp breaks down at high frequencies.",
+      "tagline": "The elegant, no-nonsense world where everything reduces to ones, zeros, and clever gates.",
       "items": [
         {
           "source": "youtube",
-          "video_id": "bjErbEpGTzc",
-          "title": "Analog Comparator   high performance   Differential Amplifier",
+          "video_id": "yiO75h0rrp0",
+          "title": "Magnitude comparator",
           "channel_id": "UCFtCfZ4rtIZ7Hsq7ZNHoY1w",
           "channel_title": "Computer&Electronics",
-          "published_at": "2024-05-19T08:39:27Z",
-          "url": "https://www.youtube.com/watch?v=bjErbEpGTzc",
-          "duration_seconds": 793,
-          "view_count": "3831",
-          "description": "This video talks about analog comparators. Although the basic operational amplificator can be used as a voltage comparator in some less demanding low-frequency applications, we will discuss of a high-performance comparator where propagation delay and sensitivity are important. We will analyze each comparator stage in the clearest and simplest way possible.\nMaterial taken from the book of \"CMOS, circuit design, layout and simulation\" by J Baker, H. W. Li and D. E. Boyce\n\nbasics of current mirrors",
-          "why_watch": "A straightforward, circuit-level walkthrough of high-performance analog comparators — specifically why a basic op-amp breaks down at high frequencies and what design choices (propagation delay, sensitivity) matter when you build for speed. Best suited for electronics students or hobbyists who already know what an op-amp is and want to go one level deeper."
+          "published_at": "2024-05-11T09:24:42Z",
+          "url": "https://www.youtube.com/watch?v=yiO75h0rrp0",
+          "duration_seconds": 451,
+          "view_count": "1521",
+          "description": "Magnitude comparator is also called magnitude digital (or binary) comparator. It compares and indicates if the binary number P is equal to or greater than or less than the other binary number Q.\n\nbinary multiplier circuit :  https://youtu.be/I-Wu36SQJIs?si=YZKrY3rjmhyhKrxW\nBinary Operation:  https://www.youtube.com/playlist?list=PLnAxReCloSeTrpY-9q7ECY8ju8Fpi1mzP",
+          "why_watch": "A compact, no-frills walkthrough of how magnitude comparators work at the circuit level, covering the logic behind comparing two binary numbers for equality, greater-than, and less-than conditions. At under 8 minutes, it's a useful reference if you're studying digital electronics or building combinational logic circuits and want the concept explained without padding. Best suited for students who already have basic binary arithmetic under their belt."
         }
       ]
     }
@@ -124,158 +91,185 @@
   "morning_soundtrack": [
     {
       "source": "music",
-      "source_name": "NPR Music",
-      "title": "Billy Allen discusses recording a live album in Muscle Shoals, Alabama",
-      "snippet": "NPR's Debbie Elliott speaks to Billy Allen of Billy Allen + The Pollies about singing live and finding your voice on their new album, \"Live at Muscle Shoals Sound.\"",
-      "url": "https://www.npr.org/2026/09/20/nx-s1-5971215/billy-allen-discusses-recording-a-live-album-in-muscle-shoals-alabama",
-      "genre": "",
-      "vibe_check": "Worn wooden floors, amber studio light, and a voice finding its truest self in the room where soul was born.",
-      "cover_url": "https://media.npr.org/include/images/facebook-default-wide-s1400-c85.jpg",
-      "embed_url": null
-    },
-    {
-      "source": "music",
-      "source_name": "Aquarium Drunkard",
-      "title": "Radio Free Aquarium Drunkard :: September 2026",
-      "snippet": "Freeform transmissions from Radio Free Aquarium Drunkard on dublab. Airing every third Sunday of the month, RFAD on dublab features the pairing of Tyler Wilcox’s Doom and Gloom from the Tomb and Chad DePasquale’s New Happy Gathering. This month, Chad kicks it off with a roundup of recent 2026 digs.",
-      "url": "https://aquariumdrunkard.com/2026/09/20/radio-free-aquarium-drunkard-september-2026/",
-      "genre": "",
-      "vibe_check": "Late-night shortwave radio drifting through the static, equal parts haunted and quietly euphoric.",
-      "cover_url": "https://aquariumdrunkard.com/_newness/wp-content/uploads/2026/09/IMG_7373.jpg",
-      "embed_url": null
-    },
-    {
-      "source": "music",
-      "source_name": "Aquarium Drunkard",
-      "title": "Bandcamping :: Autumn 2026",
-      "snippet": "Are things feeling autumnal at long last? Not quite. But maybe this selection of recommended sounds, old and new, can help usher in the cooler, crisper season.",
-      "url": "https://aquariumdrunkard.com/2026/09/18/bandcamping-autumn-2026/",
-      "genre": "",
-      "vibe_check": "The musical equivalent of pulling on a flannel shirt before the leaves have fully committed to falling.",
-      "cover_url": "https://aquariumdrunkard.com/_newness/wp-content/uploads/2026/09/rez.jpg",
-      "embed_url": null
-    },
-    {
-      "source": "music",
       "source_name": "JazzTimes",
-      "title": "The Big Tree that Moved: A Celebration of the Life and Music of Sonny Rollins, Cathedral of Saint John the Divine",
-      "snippet": "O n September 19 the jazz community and members of the public gathered at the Cathedral of Saint John the Divine in New York to …",
-      "url": "https://www.jazztimes.com/reviews/live/the-big-tree-that-moved-a-celebration-of-the-life-and-music-of-sonny-rollins-cathedral-of-saint-john-the-divine/",
+      "title": "Touring the Japanese Jazz-Cumbia-Afrobeat-Folk Interiors of Your Mind with Minyo Crusaders",
+      "snippet": "I f you were to take the art of min’yō at face value, you would focus on its happy histories of Japanese folk singing, its …",
+      "url": "https://www.jazztimes.com/features/profiles/touring-the-japanese-jazz-cumbia-afrobeat-folk-interiors-of-your-mind-with-minyo-crusaders/",
       "genre": "",
-      "vibe_check": "Cathedral ceilings holding space for grief and reverence, where every note played feels like a bell still ringing after the hammer has lifted.",
-      "cover_url": "https://www.jazztimes.com/wp-content/uploads/2026/09/sonny-split-screen-scaled.jpg",
-      "embed_url": "https://www.youtube.com/embed/cdJSQF3AzX8"
+      "vibe_check": "Like wandering through a night market where every stall plays music from a different continent and somehow it all smells the same.",
+      "cover_url": "https://www.jazztimes.com/wp-content/uploads/2026/09/MINYOCRUSADERS_photo2026_01-scaled.jpg",
+      "embed_url": "https://www.youtube.com/embed/JXuTOBtF-c8"
     }
   ],
   "global_silver_linings": [
     {
       "source": "good_news",
       "source_name": "Good News Network",
-      "title": "Good News in History September 20",
-      "url": "https://www.goodnewsnetwork.org/events060920/",
-      "snippet": "46 years ago today, Blizzard of Ozz, the debut solo album of the great and lately deceased metal singer Ozzy Osbourne, was released to moderate reviews and success. However it grew to become a staple of the genre, and was ranked as the ninth-greatest heavy metal album of all time by Rolling Stone. It includes […]",
-      "cover_url": "https://www.goodnewsnetwork.org/wp-content/uploads/2024/09/Blizzard-of-Ozz-cover-art-fair-use.jpg",
-      "reason": "History is full of quiet turning points worth remembering — pausing to reflect on past moments of courage, discovery, and kindness reminds us that progress has always been possible, even in difficult times."
+      "title": "Couple Fosters 59 Dogs in Retirement: ‘We love to get them out of the kennels’",
+      "url": "https://www.goodnewsnetwork.org/couple-fosters-59-dogs-in-retirement-we-love-to-get-them-out-of-the-kennels/",
+      "snippet": "Meet the British couple who spent the last 15 years fostering 59 dogs—with no plans of stopping. While working from home and designing electronics, Nicole and Gary Wordsworth have been taking in pups from the Battersea Dogs Home in Buckinghamshire. Now retired, the two in their 60s opted for part-time pups in a fostering situation, […]",
+      "cover_url": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/09/Dog-foster-parents-w-husky-Credit-Battersea-Dogs-Home-SWNS-.jpeg",
+      "reason": "This retired couple proves that a quieter chapter of life can still overflow with purpose — 59 dogs have known safety and kindness because of them. It's a beautiful reminder that opening your home, even temporarily, creates ripples of good that are hard to measure."
     },
     {
       "source": "good_news",
       "source_name": "Upworthy",
-      "title": "A pilot gave this 5-year-old a training manual. Minutes later he spotted something adults miss.",
-      "url": "https://www.upworthy.com/pn-5-year-old-spots-discrepancy-southwest-training-manual-ex1/",
-      "snippet": "\"I discovered that two terrain monitors did not match. They did not match at all.\"",
-      "cover_url": "https://www.upworthy.com/wp-content/uploads/sites/2/2026/06/Preview-4.png",
-      "reason": "Children have a gift for noticing what grown-ups overlook, and this small moment between a pilot and a curious five-year-old is a beautiful reminder that nurturing young minds pays off in the most unexpected ways."
+      "title": "She bought the perfect wedding dress that went viral on TikTok, for $3.75",
+      "url": "https://www.upworthy.com/bride-finds-the-perfect-wedding-dress-for-less-than-four-dollars-ex1/",
+      "snippet": "Lynch is part of a growing crowd of newlyweds going against the regular wedding tradition of spending loads of money.",
+      "cover_url": "https://www.upworthy.com/wp-content/uploads/sites/2/2025/06/origin-192.jpg",
+      "reason": "One woman's thrifty find is a small but genuine nudge toward a world where joy doesn't have to come with a steep price tag, and where sustainable choices can feel just as special as splurging."
+    },
+    {
+      "source": "good_news",
+      "source_name": "The Optimist Daily",
+      "title": "Can dogs sniff out cancer? New AI study shows promise",
+      "url": "https://www.optimistdaily.com/2026/09/can-dogs-sniff-out-cancer-new-ai-study-shows-promise/",
+      "snippet": "BY THE OPTIMIST DAILY EDITORIAL TEAM A company in India is reporting more than 90 percent accuracy in detecting seven types of cancer from breath samples. The diagnostic engine is artificial intelligence, trained on data from dogs. The 15 dogs at Dognosis, a startup based near Bengaluru, are not making the call.",
+      "cover_url": "https://www.optimistdaily.com/wp-content/uploads/Depositphotos_363668952_S.jpg",
+      "reason": "Dogs have long shown an uncanny ability to detect illness, and pairing that natural gift with AI could open a non-invasive, low-cost path to earlier cancer diagnosis — the kind of breakthrough that starts with curiosity about the animals we already love."
     }
   ],
-  "discovery_articles": [],
+  "discovery_articles": [
+    {
+      "source": "discovery",
+      "source_name": "Smithsonian",
+      "title": "Before State Lines: Here Are Five Ways Montana Has Been Keeping Time for Ages",
+      "url": "https://www.smithsonianmag.com/sponsored/before-state-lines-here-are-five-ways-montana-has-been-keeping-time-for-ages-180989433/",
+      "snippet": "Travel across Montana and uncover the fossils, geology, and cultural traditions that shaped it",
+      "category": "history",
+      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/vjdYk8S0aInBG0gs9uzS_JhG8rM=/fit-in/1600x0/filters:focal(750x500:751x501)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/ab/2b/ab2b6a8d-2a2a-48be-b060-0e0470f4bbfb/260629_leslie_hittmeier_commerce_southeast-5192_3.jpg",
+      "ferns_note": "Long before any cartographer drew a line through the plains, Montana was already marking time in its own language — written in fossil beds, glacier scars, and ceremonies older than the state's name. There's something quietly humbling about standing on ground that has been a clock for millions of years."
+    }
+  ],
   "featured_read": {
     "source": "reads",
-    "source_name": "Literary Hub",
-    "title": "Lit Hub Daily: September 18, 2026",
-    "url": "https://lithub.com/lit-hub-daily-september-18-2026/",
-    "snippet": "When formal sex ed is insufficient, can romance novels pick up the slack? | Lit Hub Criticism Janet Manley interviews 2026 Astrid Lindgren Memorial Award Winner Jon Klassen: “I think having kids just really reaffirmed the validity of that time",
-    "cover_url": "https://s26162.pcdn.co/wp-content/uploads/2026/09/whatmasieknew.jpg",
-    "blurb": "A conversation with Jon Klassen about what happens when a picture-book artist becomes a parent — and finds that childhood, examined up close, only gets more serious and strange."
+    "source_name": "Nautilus",
+    "title": "“Ferritin Face” Is Trending—But Can Your Skin Really Reveal Low Iron?",
+    "url": "https://nautil.us/ferritin-face-is-trending-but-can-your-skin-really-reveal-low-iron-1285150/",
+    "snippet": "There’s a kernel of truth to it, but it’s not the whole story",
+    "cover_url": "https://lede-admin.nautil.us/wp-content/uploads/sites/70/2026/09/AdobeStock_492058866.jpeg",
+    "blurb": "TikTok has decided your under-eye circles are a mineral deficiency, and this piece does the quietly satisfying work of separating the grain of biological truth from a heap of wellness-culture chaff. Worth reading before you order another supplement."
   },
   "reading_room": [
     {
       "source": "reads",
-      "source_name": "The Atlantic",
-      "title": "Trump’s Monumental Obsession",
-      "url": "https://www.theatlantic.com/ideas/2026/09/trumps-arch-arsenal/688723/?utm_source=feed",
-      "snippet": "The president fantasizes about a capital city full of memorials—to himself.",
-      "cover_url": "https://cdn.theatlantic.com/thumbor/xRSRVdSFADl8SQBCdRhoy3ZQ48c=/0x47:2234x1211/1200x625/media/img/mt/2026/09/2026_09_20_Arch/original.jpg",
-      "blurb": "This piece traces the president's hunger for monuments not as vanity footnote but as the organizing logic of his political imagination — stone and bronze as a form of argument."
-    },
-    {
-      "source": "reads",
-      "source_name": "The Atlantic",
-      "title": "Pinballing",
-      "url": "https://www.theatlantic.com/books/2026/09/poem-jan-beatty-pinballing/688667/?utm_source=feed",
-      "snippet": "A poem",
-      "cover_url": "https://cdn.theatlantic.com/thumbor/0MEgmKkBd1Fr8jugEFHqc7fgylM=/0x1705:1717x2599/1200x625/media/img/mt/2026/09/2026_09_16_Pinballing_Poem/original.jpg",
-      "blurb": "A poem that moves the way its title promises — ricocheting between surfaces, never quite where you expect it to land."
-    },
-    {
-      "source": "reads",
-      "source_name": "Nautilus",
-      "title": "Is This Massive New Study on the Benefits of Whole Grains Part of the “War on Protein” RFK Jr. is Ending?",
-      "url": "https://nautil.us/is-this-massive-new-study-on-the-benefits-of-whole-grains-part-of-the-war-on-protein-rfk-jr-is-ending-1285119/",
-      "snippet": "When it comes to whole grains and health, a new analysis suggests the more the better",
-      "cover_url": "https://lede-admin.nautil.us/wp-content/uploads/sites/70/2026/09/AdobeStock_277415593.jpeg",
-      "blurb": "Behind a headline about whole grains lies a quieter question: who gets to decide what counts as good nutrition, and what happens when that authority becomes political?"
-    },
-    {
-      "source": "reads",
       "source_name": "Longreads",
-      "title": "Then They Came for the Ostriches",
-      "url": "https://longreads.com/2026/09/17/universal-ostrich-farms-protest-canada-cull-h5n1/",
-      "snippet": "\"Poultry and paranoia in the Great White North.\"",
-      "cover_url": "",
-      "blurb": "A dispatch from Canada's ostrich farms that uses poultry culls and bureaucratic overreach to ask something larger about whose livestock — and whose livelihood — the state deems worth saving."
+      "title": "The Longreads Questionnaire, Featuring Roberto José Andrade Franco",
+      "url": "https://longreads.com/2026/09/17/questionnaire-roberto-jose-andrade-franco/",
+      "snippet": "The ESPN writer tells us what feels like home, the best gift he’s ever received, and the Esquire read he can’t stop thinking about.",
+      "cover_url": "https://longreads.com/wp-content/uploads/2026/08/1.png",
+      "blurb": "Roberto José Andrade Franco answers the questions that reveal a writer's actual inner life — what feels like home, what he can't stop rereading — and his answers are warm and specific enough to make you feel like you've shared a long lunch. A small, generous portrait."
     },
     {
       "source": "reads",
       "source_name": "Literary Hub",
-      "title": "How Romance Novels Filled in the Gaps Left by Sex Ed",
-      "url": "https://lithub.com/how-romance-novels-filled-in-the-gaps-left-by-sex-ed/",
-      "snippet": "Chewed up gum, unraveled yarn, a flower stripped of its petals. Like so many in my generation, my introduction to sex was in pro-abstinence talks with my church youth group and in my sterile health class in Georgia, where my",
-      "cover_url": "https://s26162.pcdn.co/wp-content/uploads/2026/09/Untitled-design-2026-09-11T150559.000.png",
-      "blurb": "This essay excavates the specific, lasting damage of abstinence-only education — chewed gum as metaphor, romance novels as unlikely remediation — and asks what we owe the people who had to teach themselves."
+      "title": "“Teaching Speech,” a Poem by Laura Kolbe",
+      "url": "https://lithub.com/teaching-speech-a-poem-by-laura-kolbe/",
+      "snippet": "Saying yes to no and yes to yes to the baby boy so many times a day it’s like a people’s protest chant gone non- electric harboring a claim belonged to everyone who cares, we care, we crawl outside and",
+      "cover_url": "https://s26162.pcdn.co/wp-content/uploads/2026/09/daytime-moon.jpg",
+      "blurb": "Laura Kolbe's poem finds the political lodged inside the utterly domestic — a parent repeating yes and no to a baby until language itself starts to feel like collective action. Read it twice; it earns that."
+    },
+    {
+      "source": "reads",
+      "source_name": "The Atlantic",
+      "title": "Trump’s Attacks on the Media Are Self-Defeating",
+      "url": "https://www.theatlantic.com/ideas/2026/09/trump-press/688725/?utm_source=feed",
+      "snippet": "When the president asserts that all negative coverage is false, he seals his party off from necessary criticism.",
+      "cover_url": "https://cdn.theatlantic.com/thumbor/3cEpxygqIvucwuR72kqY6m7d6fg=/0x86:3834x2083/1200x625/media/img/mt/2026/09/2026_09_20_Trump_and_the_media/original.jpg",
+      "blurb": "The argument here is counterintuitive and uncomfortable: a leader who dismisses all critical coverage as fake doesn't silence the press, he just insulates his own side from the feedback loop that keeps any movement honest. Worth sitting with."
+    },
+    {
+      "source": "reads",
+      "source_name": "The Atlantic",
+      "title": "Why the Bomb Is Bad for Democracy",
+      "url": "https://www.theatlantic.com/books/2026/09/nuclear-weapons-and-secrecy-frenchman-flat-by-jon-else-book-review/688659/?utm_source=feed",
+      "snippet": "A famous documentarian’s new book suggests that secrecy is a major impediment to sensible nuclear policy.",
+      "cover_url": "https://cdn.theatlantic.com/thumbor/SXTgyZ_BOB674Ne5TCOnDX64zGI=/0x41:1927x1045/1200x625/media/img/mt/2026/09/IMG_2779/original.jpg",
+      "blurb": "A new book by a celebrated documentarian asks why nuclear policy — the one subject with the highest conceivable stakes — is also the one most deliberately shielded from democratic scrutiny, and what that secrecy has already cost us. Sobering, necessary company for a quiet hour."
+    },
+    {
+      "source": "reads",
+      "source_name": "Nautilus",
+      "title": "You Have Two Brains, Not One",
+      "url": "https://nautil.us/you-have-two-brains-not-one-1285111/",
+      "snippet": "Being of two minds may be more than just an idiom",
+      "cover_url": "https://lede-admin.nautil.us/wp-content/uploads/sites/70/2026/09/shutterstock_2370199377.jpg",
+      "blurb": "The enteric nervous system in your gut is complex enough that some scientists call it a second brain, and this piece takes that claim seriously enough to ask what it means for how we understand mind, mood, and the self. More unsettling — and more fascinating — than the idiom suggests."
     }
   ],
   "garden_note": {
-    "note": "The equinox is almost breathing down your neck, Zürich — this evening carries that particular early-autumn stillness where the air smells faintly of damp leaves and the last warmth clings to the stone walls just a little longer than it should. Savour it; the balance tips in days.",
+    "note": "There's a particular quality to September mornings in Zürich — that cool, still air carrying the faint sweetness of ripening quince and the first fallen walnut husks underfoot. Step out before the mist lifts from the Limmat valley; the garden is at its most quietly eloquent just now, balancing the last warmth against the slow turn toward amber.",
     "in_season": [
-      "Dahlias at their showy peak — cut generously to encourage a last flush",
-      "Quince ripening on the branch, turning from green to pale gold",
-      "Winter squash harvest — skin should resist a fingernail before storing",
-      "Sow hardy lamb's lettuce (Nüsslisalat) now for winter picking"
+      "Zucchini and late summer squash — harvest generously before the cold tips them",
+      "Michaelmas daisies opening in mauves and purples along the borders",
+      "Quince ripening on the tree — firm, fragrant, nearly ready to pick",
+      "Planting garlic cloves for next year's harvest"
     ],
-    "sky_tonight": "The first-quarter moon hangs in the south after dusk — look nearby for Saturn, a steady warm-golden glow just to its east in Aquarius.",
-    "sun_times": "First light crept in at 06:39 this morning, and the sun slipped away by 19:30 tonight, with dusk lingering softly until 19:59.",
-    "moon_label": "First quarter",
-    "illum_pct": 66,
-    "sun_range": "07:08–19:30"
+    "sky_tonight": "The waxing gibbous moon rises in the southeast mid-evening, bright enough to cast soft shadows — look for Jupiter climbing nearby in Taurus.",
+    "sun_times": "First light arrives at 06:40 this morning, with sunrise following at 07:09 — and the evening closes gently with dusk at 19:57.",
+    "moon_label": "Waxing gibbous",
+    "illum_pct": 72,
+    "sun_range": "07:09–19:27"
   },
   "puzzle": {
-    "kind": "anagram",
-    "label": "Fern's Morning Anagram",
-    "prompt": "Unscramble OSEOMCP — this person arranges silence and sound into something that outlives them.",
-    "answer": "COMPOSER",
-    "hint": "Bach, Beethoven, and Brahms all wore this title."
+    "kind": "riddle",
+    "label": "Fern's Morning Riddle",
+    "prompt": "What 4-letter word can be written forward, backward or upside down, and can still be read from left to right?",
+    "answer": "NOON",
+    "hint": "",
+    "source": "riddles.com",
+    "source_id": "Riddle-100"
   },
   "previous_puzzle": {
-    "label": "Fern's Morning Riddle",
-    "prompt": "I blush before I fall\nAll summer I hid in green\nWind inherits me",
-    "answer": "A turning leaf (autumn leaf)"
+    "label": "Fern's Morning Anagram",
+    "prompt": "Unscramble OSEOMCP — this person arranges silence and sound into something that outlives them.",
+    "answer": "COMPOSER"
   },
   "larder": {
-    "news": [],
-    "recipe": {}
+    "news": [
+      {
+        "source": "food",
+        "source_name": "The Kitchn",
+        "title": "When I Make This Caramel Apple Bark, Everyone Asks Me for the Recipe",
+        "url": "https://www.thekitchn.com/caramel-apple-bark-recipe-review-23845564?utm_source=RSS&utm_medium=feed&utm_campaign=Category%2FChannel%3A+main",
+        "snippet": "It's hard to stop eating.",
+        "cover_url": "https://cdn.apartmenttherapy.info/image/upload/f_auto,q_auto:eco,c_fill,g_auto,w_1500,ar_3:2/tk%2Fedit%2Frecipes%2F2026%2F2026-09%2Fcaramel-apple-bark%2Fcaramel-apple-bark-2",
+        "blurb": "A seasonal treat that turns simple pantry staples into something so dangerously snackable, you'll want to make a double batch before you even finish reading."
+      },
+      {
+        "source": "food",
+        "source_name": "The Guardian",
+        "title": "Tattie scones and scrambled eggs, toasted bannocks with honey butter and roast plums – Anna Higham’s big breakfast recipes",
+        "url": "https://www.theguardian.com/food/2026/sep/21/scottish-breakfast-recipes-tattie-scones-scrambled-egg-toasted-bannocks-honey-butter-roast-plums-anna-higham",
+        "snippet": "Scottish breakfasts are worth getting up for: think eggs and potato cakes in a freshly baked roll, or toasted barley bread laced with sticky plums and honey butter I’ve long wanted a space to cook the food that really excites me, and Clementine , which opens its doors in north London next month, is exactly that. These two recipes capture what the cafe is all about. This is food that feels both considered and completely unfussy: crisp morning rolls stuffed with folded scrambled eggs and tattie scones, and griddled barley bannocks served warm with salted honey butter and roast plums.",
+        "cover_url": "https://i.guim.co.uk/img/media/3e50403d9724b87774fa13d2ae410b98fd91ea83/221_105_4984_3985/master/4984.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=41d71a136e31cadaafc21e5875fb548e",
+        "blurb": "Scotland's breakfast table turns out to be a rather spectacular place, and Anna Higham's recipes — all tattie scones, honey butter, and roasted plums — make a compelling case for a very slow Saturday morning."
+      },
+      {
+        "source": "food",
+        "source_name": "Saveur",
+        "title": "The 15 Cookbooks We’re Most Looking Forward to This Fall",
+        "url": "https://www.saveur.com/shopping-reviews/best-cookbooks-fall-2026/",
+        "snippet": "Photo Illustration: Russ Smith From underrepresented cuisines to restaurant-world heavyweights, this season’s crop of new releases has something for everyone.",
+        "cover_url": "https://www.saveur.com/uploads/2026/09/fall-cookbooks-2026-scaled.jpg?auto=webp&width=1601&height=2000",
+        "blurb": "Consider this your autumn reading list sorted, with fifteen new cookbooks spanning underrepresented cuisines and culinary heavyweights to keep you very happily occupied through the colder months."
+      }
+    ],
+    "recipe": {
+      "source": "recipe",
+      "source_name": "David Lebovitz",
+      "title": "Miso walnut chocolate chip cookies",
+      "url": "https://www.davidlebovitz.com/miso-walnut-chocolate-chip-cookies/",
+      "snippet": "There are two things I need to tell you about these cookies. One is that they’re crazy-good. And the other is that they’re huge.",
+      "is_recipe": true,
+      "cover_url": "https://www.davidlebovitz.com/wp-content/uploads/2026/09/IMG_4552-scaled.jpg",
+      "blurb": "These generously sized miso walnut chocolate chip cookies bring a quiet depth of savory richness to every bite, making them the kind of effortless bake that turns an ordinary afternoon into something worth lingering over."
+    },
+    "seasonal_note": "Zürich's markets are piling high with Zwetschgen right now — those deep-violet Swiss plums that deserve nothing more than a slow Sunday Zwetschgenwähe, their jammy sweetness balanced by a crisp, buttery pastry shell. Seek them out at Helvetiaplatz or the Bürkliplatz market before the season slips away."
   },
   "fern_data": {
-    "greeting": "There's a particle in here spinning at three hundred times the speed of light — and that's not even today's strangest claim. The true cause of gravity, it turns out, has been quietly misunderstood, and Muscle Shoals is somehow involved in making sense of the evening.",
-    "top_pick_title": "Faster Than Sense Allows"
+    "greeting": "That particular early-autumn sharpness is in the air this morning — the kind that makes everything feel slightly more consequential. A dead star outshining 200,000 suns will do nothing to calm that feeling, but the Minyo Crusaders' jazz-cumbia-afrobeat detour absolutely will.",
+    "top_pick_title": "Light From Things Already Gone"
   }
 }
