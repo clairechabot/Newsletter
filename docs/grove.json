@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-21T21:39:13.421883+02:00",
+ "generated_at": "2026-09-22T10:44:00.428354+02:00",
  "moods": [
   "cozy",
   "curious",
@@ -43,6 +43,388 @@
   }
  ],
  "items": [
+  {
+   "section": "music",
+   "title": "Garth Brooks’ 2026 “Blame It All On My Roots” Tour: How to Get Tickets",
+   "note": "The smell of sawdust and stadium beer, 20,000 strangers singing every word like it's a hymn they were born knowing.",
+   "url": "https://consequence.net/2026/09/garth-brooks-2026-blame-it-all-on-my-roots-tour-how-to-get-tickets/",
+   "image": "https://consequence.net/wp-content/uploads/2026/08/Garth-Brooks-2026-Blame-it-all-on-my-roots-tour-How-to-Get-Tickets-How-to-Buy-Tickets.jpg?quality=80",
+   "source": "Consequence",
+   "genre": "",
+   "date": "2026-09-22",
+   "ampm": "morning",
+   "edition": "2026-09-22-morning.html",
+   "moods": [
+    "cozy",
+    "Cheer Up!"
+   ]
+  },
+  {
+   "section": "videos",
+   "title": "What happens if you take FLAT EARTH seriously!?",
+   "note": "Rather than just debunking flat earth claims, this video uses them as a springboard to stress-test real physics, asking what the evidence actually requires us to believe and why. It's a clever pedagogical move: working through a wrong model rigorously often clarifies why the right model works. At 32 minutes it earns its runtime by going deeper than the usual dismissals.",
+   "url": "https://www.youtube.com/watch?v=wdiPU5Q7tM0",
+   "image": "https://img.youtube.com/vi/wdiPU5Q7tM0/mqdefault.jpg",
+   "source": "Physics Explained",
+   "genre": "",
+   "date": "2026-09-22",
+   "ampm": "morning",
+   "edition": "2026-09-22-morning.html",
+   "moods": [
+    "curious",
+    "playful"
+   ]
+  },
+  {
+   "section": "videos",
+   "title": "I finally understood why Time is weird for Light (My mind is blown!)",
+   "note": "The standard answer, 'light doesn't experience time', turns out to be a lazy shorthand, and this video carefully unpacks why that framing breaks down under scrutiny. The creator uses spacetime intervals and the geometry of light's worldline to show what physics actually says, making this a good corrective for anyone who picked up the oversimplification from a pop-science source.",
+   "url": "https://www.youtube.com/watch?v=hi57CA3GZy4",
+   "image": "https://img.youtube.com/vi/hi57CA3GZy4/mqdefault.jpg",
+   "source": "FloatHeadPhysics",
+   "genre": "",
+   "date": "2026-09-22",
+   "ampm": "morning",
+   "edition": "2026-09-22-morning.html",
+   "moods": [
+    "curious",
+    "wonder"
+   ]
+  },
+  {
+   "section": "videos",
+   "title": "Demystifying The Metric Tensor in General Relativity",
+   "note": "The metric tensor is the gateway concept to General Relativity, but most treatments either drown you in index notation or stay so vague the math never connects to meaning. This video prioritizes the intuition first, what does the metric tensor actually measure and why does curved spacetime need it, making it a genuinely useful entry point before tackling a textbook.",
+   "url": "https://www.youtube.com/watch?v=Hf-BxbtCg_A",
+   "image": "https://img.youtube.com/vi/Hf-BxbtCg_A/mqdefault.jpg",
+   "source": "Dialect",
+   "genre": "",
+   "date": "2026-09-22",
+   "ampm": "morning",
+   "edition": "2026-09-22-morning.html",
+   "moods": [
+    "curious",
+    "Inspire"
+   ]
+  },
+  {
+   "section": "videos",
+   "title": "Binary adder - Carry Select Adder",
+   "note": "Carry Select Adders are a classic speed-vs-area tradeoff in processor design, and this short video gets straight to the mechanism without padding. If you've ever wondered how hardware arithmetic gets optimized beyond the obvious ripple-carry approach, this is a clean, efficient explainer to bookmark.",
+   "url": "https://www.youtube.com/watch?v=lARXWvhAeWY",
+   "image": "https://img.youtube.com/vi/lARXWvhAeWY/mqdefault.jpg",
+   "source": "Computer&Electronics",
+   "genre": "",
+   "date": "2026-09-22",
+   "ampm": "morning",
+   "edition": "2026-09-22-morning.html",
+   "moods": [
+    "curious"
+   ]
+  },
+  {
+   "section": "good_news",
+   "title": "Rural French Mayors Rally to Save Their Local Cafe-Bistro, and Help Reverse National Trend",
+   "note": "When local leaders band together to save a village café, they're protecting far more than a place to eat, they're preserving the communal heartbeat of rural life. It's a reminder that communities can push back against decline when people choose connection over convenience.",
+   "url": "https://www.goodnewsnetwork.org/rural-french-mayors-rally-to-save-their-local-cafe-bistro-and-help-reverse-national-trend/",
+   "image": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/09/Bistro-des-Philosophes-credit-Mali-Desha-Unsplash.jpg",
+   "source": "Good News Network",
+   "genre": "",
+   "date": "2026-09-22",
+   "ampm": "morning",
+   "edition": "2026-09-22-morning.html",
+   "moods": [
+    "Cheer Up!",
+    "cozy",
+    "Inspire"
+   ]
+  },
+  {
+   "section": "good_news",
+   "title": "Winners of Bird Photographer of the Year announced",
+   "note": "The Bird Photographer of the Year competition brings the world's most extraordinary avian moments into sharp focus, rekindling wonder at the biodiversity still thriving around us. Every winning image is quiet proof that there are people devoted to witnessing and honoring the natural world.",
+   "url": "https://www.positive.news/environment/winners-of-bird-photographer-of-the-year-announced/",
+   "image": "https://positivenews.kinsta.cloud/wp-content/uploads/2026/09/ADULT-OVERALL-WINNER-Sunball-Rocket-by-Henley-Spiers.jpg",
+   "source": "Positive News",
+   "genre": "",
+   "date": "2026-09-22",
+   "ampm": "morning",
+   "edition": "2026-09-22-morning.html",
+   "moods": [
+    "wonder",
+    "Cheer Up!"
+   ]
+  },
+  {
+   "section": "good_news",
+   "title": "Crayola has retired just 13 colors in 123 years. The first 8 led to protests.",
+   "note": "The fact that people cared enough about crayon colors to stage protests is a charming testament to how deeply small, creative joys become woven into childhood and memory. It's a lighthearted reminder that ordinary things can carry extraordinary meaning.",
+   "url": "https://www.upworthy.com/crayola-has-retired-just-13-colors-in-123-years-the-first-8-led-to-protests/",
+   "image": "https://www.upworthy.com/wp-content/uploads/sites/2/2026/09/kids-coloring-with-crayola-crayons.jpg",
+   "source": "Upworthy",
+   "genre": "",
+   "date": "2026-09-22",
+   "ampm": "morning",
+   "edition": "2026-09-22-morning.html",
+   "moods": [
+    "playful",
+    "Cheer Up!"
+   ]
+  },
+  {
+   "section": "good_news",
+   "title": "From fire starters to compost: what to do with dryer lint",
+   "note": "Dryer lint turning out to be genuinely useful, as a fire starter or compost additive, is the kind of small, satisfying discovery that makes sustainable living feel approachable rather than overwhelming. Waste that was already in your home becoming a resource is a quiet win worth celebrating.",
+   "url": "https://www.optimistdaily.com/2026/09/from-fire-starters-to-compost-what-to-do-with-dryer-lint/",
+   "image": "https://www.optimistdaily.com/wp-content/uploads/Depositphotos_845554684_S.jpg",
+   "source": "The Optimist Daily",
+   "genre": "",
+   "date": "2026-09-22",
+   "ampm": "morning",
+   "edition": "2026-09-22-morning.html",
+   "moods": [
+    "cozy",
+    "Crafty / Creative"
+   ]
+  },
+  {
+   "section": "discovery",
+   "title": "Benedictine Monastery Holy Trinity of Las Condes in Las Condes, Chile",
+   "note": "The architects didn't just build a church, they choreographed a pilgrimage, engineering the driveway so the Andes reveal themselves incrementally as you walk. It's sacred theater disguised as a parking approach.",
+   "url": "https://www.atlasobscura.com/places/benedictine-monastery-holy-trinity-of-las-condes",
+   "image": "https://img.atlasobscura.com/fBbdtNkDVXO0ENmAjkFgkqeLhYA2BPTIWgv9XIxox2Q/rt:fit/w:600/c:3578:2385:nowe:412:174/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy9hYjVk/NjgzZS01NWMxLTQz/NmQtOTlmYi00ZGEz/ZjU3Y2Q5ZGVjN2I3/OGNlZDM5ZTUzMDQz/YzFfMjAyNi0wOS0w/NC0xNi0yNy00OS05/MzguanBn.jpg",
+   "source": "Atlas Obscura",
+   "genre": "",
+   "date": "2026-09-22",
+   "ampm": "morning",
+   "edition": "2026-09-22-morning.html",
+   "moods": [
+    "wonder",
+    "curious"
+   ]
+  },
+  {
+   "section": "discovery",
+   "title": "A Rare Aztec Codex Detailing the Rise and Fall of Tenochtitlan Returns to Mexico for the First Time in Nearly Two Centuries",
+   "note": "This codex watched Tenochtitlan rise to glory and then collapse under conquest, and then spent nearly two centuries in European hands before coming home. Some objects carry grief the way wood carries rings.",
+   "url": "https://www.smithsonianmag.com/smart-news/a-rare-aztec-codex-detailing-the-rise-and-fall-of-tenochtitlan-returns-to-mexico-for-the-first-time-in-nearly-two-centuries-180989536/",
+   "image": "https://th-thumbnailer.cdn-si-edu.com/xtvPNBcmSANk_pkjHYkylNjUg8Q=/fit-in/1600x0/filters:focal(3791x2527:3792x2528)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/8e/4a/8e4a8cb8-d60b-463c-8d75-b5e275fcb008/gettyimages-2295171651_1.jpg",
+   "source": "Smithsonian",
+   "genre": "",
+   "date": "2026-09-22",
+   "ampm": "morning",
+   "edition": "2026-09-22-morning.html",
+   "moods": [
+    "wonder",
+    "curious"
+   ]
+  },
+  {
+   "section": "discovery",
+   "title": "Did Thomas Jefferson Father Sally Hemings' Children? After More Than a Decade of Research, the Answer Is Finally Firmly in Hand",
+   "note": "A single lock of hair, kept for over two hundred years, became the final thread in untangling one of American history's most charged and long-denied secrets. The dead, it turns out, are remarkably patient witnesses.",
+   "url": "https://www.smithsonianmag.com/smithsonian-institution/did-thomas-jefferson-father-sally-hemings-children-after-more-than-decade-research-answer-finally-firmly-hand-180989331/",
+   "image": "https://th-thumbnailer.cdn-si-edu.com/JQO2ig8JFBaV2-YVxVVMrgHjj10=/fit-in/1600x0/filters:focal(1697x1954:1698x1955)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/2e/67/2e67cdc1-8133-464c-ac76-db1b501455ba/opener.jpg",
+   "source": "Smithsonian",
+   "genre": "",
+   "date": "2026-09-22",
+   "ampm": "morning",
+   "edition": "2026-09-22-morning.html",
+   "moods": [
+    "curious"
+   ]
+  },
+  {
+   "section": "discovery",
+   "title": "A Cutting-Edge English Initiative Replaces Lawnmowers With Scythes to Restore Wildflowers and Save the Bees",
+   "note": "English Heritage is handing volunteers scythes, actual scythes, not as a heritage stunt, but because the old blade disturbs the soil less and lets wildflower seeds survive where a mower would mulch them into silence. Sometimes the ancient tool simply wins.",
+   "url": "https://www.smithsonianmag.com/smart-news/a-cutting-edge-english-project-replaces-lawnmowers-with-scythes-to-protect-wildflowers-and-save-the-bees-180989537/",
+   "image": "https://th-thumbnailer.cdn-si-edu.com/gyf3nDZkhMr55V9ZmR1EmSmbTUM=/fit-in/1600x0/filters:focal(4128x2752:4129x2753)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/b8/56/b856c57c-7aff-4096-b546-25ba8d8da052/dsc1535.jpeg",
+   "source": "Smithsonian",
+   "genre": "",
+   "date": "2026-09-22",
+   "ampm": "morning",
+   "edition": "2026-09-22-morning.html",
+   "moods": [
+    "curious",
+    "Inspire"
+   ]
+  },
+  {
+   "section": "discovery",
+   "title": "The Lucas Museum of Narrative Art, a New Endeavor From the Creator of 'Star Wars,' Is a Story in Itself",
+   "note": "Nearly twenty years of false starts, city fights, and redesigns before a single visitor walked through the door, George Lucas's museum is itself the kind of underdog narrative his films are famous for telling. Life imitating art, rather literally.",
+   "url": "https://www.smithsonianmag.com/travel/the-lucas-museum-of-narrative-art-a-new-endeavor-from-the-creator-of-star-wars-is-a-story-in-itself-180989533/",
+   "image": "https://th-thumbnailer.cdn-si-edu.com/t2cY4neyYnJsqee_FQhi-2EtV2M=/fit-in/1600x0/filters:focal(1000x748:1001x749)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/aa/6e/aa6eb370-de02-4281-ab12-eb8515815396/05_courtesy_lucas_museum_of_narrative_art_photo_by_huftoncrow.jpg",
+   "source": "Smithsonian",
+   "genre": "",
+   "date": "2026-09-22",
+   "ampm": "morning",
+   "edition": "2026-09-22-morning.html",
+   "moods": [
+    "Inspire",
+    "curious"
+   ]
+  },
+  {
+   "section": "discovery",
+   "title": "France Celebrates the Bicentennial of Photography with Traveling Themed Exhibitions",
+   "note": "Two hundred years ago, a person could live an entire life and never once see their own face accurately rendered, photography didn't just change art, it changed the very human experience of being seen. That's worth pausing on, even mid-scroll.",
+   "url": "https://www.thisiscolossal.com/2026/09/grandpalaisrmn-200-year-photography-exhibition/",
+   "image": "https://www.thisiscolossal.com/wp-content/uploads/2026/09/bicentennial-5.jpeg",
+   "source": "Colossal",
+   "genre": "",
+   "date": "2026-09-22",
+   "ampm": "morning",
+   "edition": "2026-09-22-morning.html",
+   "moods": [
+    "wonder",
+    "curious"
+   ]
+  },
+  {
+   "section": "featured_read",
+   "title": "What Were My Dreams Trying to Tell Me?",
+   "note": "When the language of psychology felt too clinical and religion felt too inherited, one writer went looking for a third vocabulary, one honest enough to hold what dreams actually do to us. A quiet reckoning with the parts of inner life that resist easy naming.",
+   "url": "https://www.theatlantic.com/magazine/2026/11/ayad-akhtar-dreams-meditation/688676/?utm_source=feed",
+   "image": "https://cdn.theatlantic.com/thumbor/ALO3QyOrU9kqdO8iEni8aBCLC08=/1x2168:2479x3459/1200x625/media/img/2026/09/Theatlantic_heleneblanc_Soul_1_3-1/original.jpg",
+   "source": "The Atlantic",
+   "genre": "",
+   "date": "2026-09-22",
+   "ampm": "morning",
+   "edition": "2026-09-22-morning.html",
+   "moods": [
+    "Calm Down",
+    "curious"
+   ]
+  },
+  {
+   "section": "reads",
+   "title": "He was probably right",
+   "note": "Cicero never claimed to know the truth, only to pursue the most probable version of it, and Massimo Pigliucci argues that two thousand years later, that intellectual humility is still the most rigorous stance available to us. A bracing corrective to our era's twin vices of certainty and cynicism.",
+   "url": "https://aeon.co/essays/a-good-sceptic-has-more-than-doubt-and-less-than-certainty",
+   "image": "https://images.aeonmedia.co/images/ab30ee1c-11a9-4d4d-a7a0-fd34b45891e5/esssay-gettyimages-527618704.jpg?width=1200&quality=75&format=jpeg",
+   "source": "Aeon",
+   "genre": "",
+   "date": "2026-09-22",
+   "ampm": "morning",
+   "edition": "2026-09-22-morning.html",
+   "moods": [
+    "curious",
+    "Inspire"
+   ]
+  },
+  {
+   "section": "reads",
+   "title": "50 Years Ago, NASA Unveiled its First Space Shuttle",
+   "note": "The story of how a coordinated letter-writing campaign by \"Star Trek\" fans strong-armed NASA into naming its first shuttle Enterprise is a delightful footnote about the moment popular culture realized it had actual political weight. Small history, enormous charm.",
+   "url": "https://nautil.us/50-years-ago-nasa-unveiled-its-first-space-shuttle-1285172/",
+   "image": "https://lede-admin.nautil.us/wp-content/uploads/sites/70/2026/09/02-crew.jpg",
+   "source": "Nautilus",
+   "genre": "",
+   "date": "2026-09-22",
+   "ampm": "morning",
+   "edition": "2026-09-22-morning.html",
+   "moods": [
+    "playful",
+    "curious"
+   ]
+  },
+  {
+   "section": "reads",
+   "title": "Lesser choices",
+   "note": "Through one woman's blindfolded memory of a clandestine procedure in Mexico City, this short film asks what it means to navigate your own body in a world that has decided it knows better. Spare, visceral, and impossible to dismiss.",
+   "url": "https://psyche.co/videos/an-intimate-account-of-illegal-abortion-in-1969-from-mother-to-daughter",
+   "image": "https://images.aeonmedia.co/images/ca7e6027-26f1-4e14-9769-96f70ca88743/lesser-choices-landscape-1-v2.jpg?top=265&left=320&cropWidth=1904&cropHeight=1071&width=1200&quality=75&format=jpeg",
+   "source": "Psyche",
+   "genre": "",
+   "date": "2026-09-22",
+   "ampm": "morning",
+   "edition": "2026-09-22-morning.html",
+   "moods": [
+    "curious"
+   ]
+  },
+  {
+   "section": "reads",
+   "title": "On “Derek,” Captain Ahab’s Evil Half Brother",
+   "note": "What if Ahab's obsession isn't unique, what if it's actually a family trait, and somewhere out there Derek is also ruining perfectly good whaling expeditions for entirely petty reasons? A genuinely funny meditation on literary villainy and the absurdity of the heroic grudge.",
+   "url": "https://www.theparisreview.org/blog/2026/09/21/on-derek-captain-ahabs-evil-half-brother/",
+   "image": "https://www.theparisreview.org/blog/wp-content/uploads/2026/09/6-grosset-derek-photo-rotated.jpg",
+   "source": "The Paris Review",
+   "genre": "",
+   "date": "2026-09-22",
+   "ampm": "morning",
+   "edition": "2026-09-22-morning.html",
+   "moods": [
+    "playful",
+    "curious"
+   ]
+  },
+  {
+   "section": "reads",
+   "title": "Tomato Cure",
+   "note": "There is a particular kind of healing that only arrives through repetitive, low-stakes physical work, weeding, harvesting, washing, and this essay follows a summer of tomatoes as a grief that couldn't be spoken is slowly, wordlessly composted. Set aside the full half-hour; you'll want to sit with the ending.",
+   "url": "https://longreads.com/2026/09/21/tomato-cure/",
+   "image": "",
+   "source": "Longreads",
+   "genre": "",
+   "date": "2026-09-22",
+   "ampm": "morning",
+   "edition": "2026-09-22-morning.html",
+   "moods": [
+    "cozy",
+    "Calm Down"
+   ]
+  },
+  {
+   "section": "food",
+   "title": "Pie Recipes: Favorite Sweet & Savory Pies",
+   "note": "Whether you're in the mood for something fruit-filled and sweet or warmly savoury, this beloved collection of classic pies, beautiful and fragrant straight from the oven, is exactly the kind of baking project a cosy afternoon was made for.",
+   "url": "https://www.101cookbooks.com/pie-recipes/",
+   "image": "https://images.101cookbooks.com/best-pie-recipes.jpg?w=680",
+   "source": "101 Cookbooks",
+   "genre": "",
+   "date": "2026-09-22",
+   "ampm": "morning",
+   "edition": "2026-09-22-morning.html",
+   "moods": [
+    "cozy",
+    "Crafty / Creative"
+   ]
+  },
+  {
+   "section": "food",
+   "title": "My Easy Trick for Making Roasted Broccoli Taste Ridiculously Good",
+   "note": "A clever weeknight trick that turns humble broccoli into something caramelised and genuinely crave-worthy, worth a read if you've ever sighed at a sad sheet pan of greens.",
+   "url": "https://www.thekitchn.com/cheddar-roasted-broccoli-23845373?utm_source=RSS&utm_medium=feed&utm_campaign=Category%2FChannel%3A+main",
+   "image": "",
+   "source": "The Kitchn",
+   "genre": "",
+   "date": "2026-09-22",
+   "ampm": "morning",
+   "edition": "2026-09-22-morning.html",
+   "moods": [
+    "cozy",
+    "Crafty / Creative"
+   ]
+  },
+  {
+   "section": "food",
+   "title": "Sumac roast chicken and bread bake: Sami Tamimi’s fattet musakhan with cucumber avocado salad – recipe",
+   "note": "Sami Tamimi's fattet musakhan is a gorgeous love letter to Palestinian cooking, and the sumac-roasted chicken alone is reason enough to bookmark this one immediately.",
+   "url": "https://www.theguardian.com/food/2026/sep/22/sumac-roast-chicken-creamy-yoghurt-fattet-musakhan-cucumber-avocado-salad-recipe-sami-tamimi",
+   "image": "https://i.guim.co.uk/img/media/5b54c3d1d5d3aa8f270136eec306e164c0c17102/0_1972_5102_4080/master/5102.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=b40a53b725d7f34ced6c94df36eb68a0",
+   "source": "The Guardian",
+   "genre": "",
+   "date": "2026-09-22",
+   "ampm": "morning",
+   "edition": "2026-09-22-morning.html",
+   "moods": [
+    "cozy",
+    "Romantic"
+   ]
+  },
   {
    "section": "music",
    "title": "Rhiannon Giddens' banjo connects her to her ancestors: 'The spirits come through'",

@@ -1,148 +1,82 @@
 {
-  "fetched_at": "2026-09-21T21:36:21.893334+02:00",
-  "is_am_email": false,
+  "fetched_at": "2026-09-22T10:40:01.470802+02:00",
+  "is_am_email": true,
   "audit_summary": {
-    "youtube_videos": 8,
-    "themes": 4,
-    "music_articles": 9,
-    "good_news_articles": 5,
-    "discovery_articles": 13,
+    "youtube_videos": 4,
+    "themes": 2,
+    "music_articles": 1,
+    "good_news_articles": 4,
+    "discovery_articles": 6,
     "featured_read": 1,
     "reading_room": 5,
     "garden": 1,
-    "puzzle": 1,
-    "larder": 0
+    "puzzle": 0,
+    "larder": 3
   },
   "themes": [
     {
-      "name": "Dirt Under Your Fingernails",
-      "emoji": "🌱",
-      "tagline": "One video, seven mistakes, and a healthier garden waiting on the other side.",
+      "name": "Mind-Bending Physics Hour",
+      "emoji": "🌌",
+      "tagline": "From flat earth thought experiments to the fabric of spacetime — buckle up, your intuitions won't survive.",
       "items": [
         {
           "source": "youtube",
-          "video_id": "sx8p1eVHRHQ",
-          "title": "90% of Grow Bag Gardeners Make These 7 Mistakes",
-          "channel_id": "UCSbyncU597LMwb3HhnAI_4w",
-          "channel_title": "Epic Gardening",
-          "published_at": "2026-09-21T19:24:55Z",
-          "url": "https://www.youtube.com/watch?v=sx8p1eVHRHQ",
-          "duration_seconds": 1549,
-          "view_count": "458",
-          "description": "Find FoxFarm Near You: https://foxfarm.com/find-a-dealer/\nJoin @jacquesinthegarden as he breaks down the biggest grow bag mistakes and how to avoid them. From choosing the right size to watering, feeding, and refreshing your soil, you’ll learn how to get healthier plants and better harvests.\n\nIN THIS VIDEO\n\n→ Epic Grow Bags - Lined: https://growepic.co/4ysCPSy\n\nSUPPORT EPIC GARDENING\n\n→ Shop: https://growepic.co/shop\n→ Seeds: https://growepic.co/botanicalinterests\n\nLEARN MORE\n\n→ All Our Channels",
-          "why_watch": "If your grow bag plants keep underperforming, this video diagnoses the likely culprits — wrong bag size, inconsistent watering, and neglected soil renewal among them. Jacques walks through each mistake with enough specificity that you'll recognize your own habits. Practical and unpadded at under 26 minutes."
-        }
-      ]
-    },
-    {
-      "name": "Secrets, Codes & Fog of War",
-      "emoji": "⚔️",
-      "tagline": "From medieval tower conspiracies to WWII torpedo runs — history at its most gripping and unresolved.",
-      "items": [
-        {
-          "source": "youtube",
-          "video_id": "uBpZc5B6R5o",
-          "title": "What Happened To The Princes In The Tower?",
-          "channel_id": "UCZwU2G-KVl-P-O-B35chZOQ",
-          "channel_title": "History Hit",
-          "published_at": "2026-09-21T18:00:30Z",
-          "url": "https://www.youtube.com/watch?v=uBpZc5B6R5o",
-          "duration_seconds": 3730,
-          "view_count": "1624",
-          "description": "Medieval historian Eleanor Janega debates one of history's biggest mysteries of all time. What happened to the Princes in the Tower?\n\nIn 1483, young Edward V and his brother Richard were awaiting Edward's coronation. But next thing we know, they vanished, and their uncle Richard III has taken the throne. So what happened?\n\nEleanor Janega guides Anthony through this episode, with a special guest appearance by Eleanor's 'Gone Medieval' co-host Matt Lewis! 'Gone Medieval' is History Hit's medieval ",
-          "why_watch": "Medieval historian Eleanor Janega doesn't just rehearse the usual Richard III suspicion — she actually debates the evidence, weighing competing theories with academic rigor in a conversational format. At an hour, it's a genuine deep dive rather than a surface retelling of one of history's most enduring cold cases."
-        },
-        {
-          "source": "youtube",
-          "video_id": "JsBZOcqZerk",
-          "title": "The Most Important Decryption Machine Ever Built",
-          "channel_id": "UCHnyfMqiRRG1u-2MsSQLbXA",
-          "channel_title": "Veritasium",
-          "published_at": "2026-09-21T17:49:57Z",
-          "url": "https://www.youtube.com/watch?v=JsBZOcqZerk",
-          "duration_seconds": 2862,
-          "view_count": "72830",
-          "description": "How was the \"unbreakable\" enigma cracked? Sponsored by Incogni - use code veritasium at https://incogni.com/veritasium to get an exclusive 60% off your annual subscription.\n\nIf you’re looking for a molecular modelling kit, try Snatoms, a kit I invented where the atoms snap together magnetically - https://ve42.co/SnatomsV \n\nFor the latest science news, and for an exclusive bonus Q&A with the director of this video, sign up to the Veritasium newsletter - https://ve42.co/Newsletter \n\nFor early acce",
-          "why_watch": "Veritasium goes beyond the familiar Turing-broke-Enigma story to explain the actual mechanical and mathematical logic behind the Bombe decryption machine — how its designers exploited the one flaw Enigma operators couldn't avoid. If you've seen the film but wondered how it really worked, this fills that gap precisely."
-        },
-        {
-          "source": "youtube",
-          "video_id": "wZIJnn54BuA",
-          "title": "John Bulkeley and the Devil Boats",
-          "channel_id": "UC4sEmXUuWIFlxRIFBRV6VXQ",
-          "channel_title": "The History Guy: History Deserves to Be Remembered",
-          "published_at": "2026-09-21T12:00:06Z",
-          "url": "https://www.youtube.com/watch?v=wZIJnn54BuA",
-          "duration_seconds": 1007,
-          "view_count": "26201",
-          "description": "In a time when the war news was almost universally disastrous for the US, the \"Devil Boats\" of John D Bulkeley's PT Squadron Three offered an important boost to American Morale. \n\nI've launched a trip to Rome for September 2027. If you are interested, check out my trip page for more details: https://trovatrip.com/trip/europe/italy/italy-with-lance-geiger-sep-2027?\n\nCheck out our new shop for fun The History Guy merchandise:\nhttps://thehistoryguy-shop.fourthwall.com/products/thg-history\n\nThis is ",
-          "why_watch": "In early 1942, when American war news was relentlessly grim, a small squadron of fast attack boats led by Lieutenant John Bulkeley became a rare source of genuine heroism — including evacuating MacArthur from the Philippines. History Guy tells the story with his usual restraint and affection for the genuinely forgotten, and it's over in under 17 minutes."
-        }
-      ]
-    },
-    {
-      "name": "Reality Has a Weird Shape",
-      "emoji": "🌀",
-      "tagline": "Neutron stars, spacetime geometry, and a spinning bucket that broke Newton's universe — buckle up.",
-      "items": [
-        {
-          "source": "youtube",
-          "video_id": "LEyS7-OK57I",
-          "title": "How Many Neutrons Can You Stack Before Reality Breaks?",
+          "video_id": "wdiPU5Q7tM0",
+          "title": "What happens if you take FLAT EARTH seriously!?",
           "channel_id": "UCIZ5ZOeiXYbmKTl_85ghNPw",
           "channel_title": "Physics Explained",
-          "published_at": "2025-07-05T19:00:30Z",
-          "url": "https://www.youtube.com/watch?v=LEyS7-OK57I",
-          "duration_seconds": 1859,
-          "view_count": "1757828",
-          "description": "Note: At 27:15–27:35, there's a segment with flashing lights (pulsar simulation). Just a heads-up for anyone who might be sensitive to that.\n\nYou can help support this channel via the Physics Explained Patreon:\nhttps://www.patreon.com/physicsexplained\n\nWhat happens if you keep adding neutrons—forever? Is there a limit? And what does quantum mechanics and relativity have to do with it?\n\nThis video explores the surprising physics of nuclear forces, quantum mechanics, and gravity to find out. We us",
-          "why_watch": "This video uses the deceptively simple question of \"what if you kept adding neutrons?\" to walk you through neutron stars, the Pauli exclusion principle, and the point where quantum mechanics and general relativity collide catastrophically. The 1.7 million views are earned — it builds genuine understanding rather than just awe."
+          "published_at": "2025-06-21T19:58:26Z",
+          "url": "https://www.youtube.com/watch?v=wdiPU5Q7tM0",
+          "duration_seconds": 1941,
+          "view_count": "560037",
+          "description": "Go to https://groundnews.com/physics to stay fully informed about physics, other sciences, and more. Subscribe through my link to get 40% off the unlimited vantage plan, the same one I use, which breaks down to just $5/month with my discount.\n\nYou can help support this channel via the Physics Explained Patreon account: https://www.patreon.com/physicsexplained \n\nWhat happens when you take the ancient shadow experiment that first measured the Earth — and push it to its limits? In this video, we br",
+          "why_watch": "Rather than just debunking flat earth claims, this video uses them as a springboard to stress-test real physics — asking what the evidence actually requires us to believe and why. It's a clever pedagogical move: working through a wrong model rigorously often clarifies why the right model works. At 32 minutes it earns its runtime by going deeper than the usual dismissals."
         },
         {
           "source": "youtube",
-          "video_id": "TJmgKdc7H34",
-          "title": "I wish I was taught Einstein's Special Relativity this way!",
+          "video_id": "hi57CA3GZy4",
+          "title": "I finally understood why Time is weird for Light (My mind is blown!)",
           "channel_id": "UCGfFUc6eWxfbtjYeun6r9xg",
           "channel_title": "FloatHeadPhysics",
-          "published_at": "2024-02-23T13:00:27Z",
-          "url": "https://www.youtube.com/watch?v=TJmgKdc7H34",
-          "duration_seconds": 1302,
-          "view_count": "694437",
-          "description": "Support me https://patreon.com/floatheadphysics to see how I learn relativity, get sneak peaks, and early video access. \n\nWe all travel through space time at speed of light. But, what does it really mean? How does it explain the consequences of special relativity - time dilation, length contraction, relativity of simultaneity, and more.\n\nChapters:\n00:00 Intro\n01:25 A 2D analogy\n04:15 How to validate? \n07:08 How Pythagorus helps\n08:40 How to piece a website (Ad)\n10:15 Speed in 4D spacetime\n13:30 ",
-          "why_watch": "The central insight here — that everything moves through spacetime at exactly the speed of light, trading spatial speed for time speed — reframes time dilation and length contraction as geometry rather than paradox. FloatHeadPhysics builds the idea carefully from a 2D analogy first, so the leap to four-dimensional spacetime feels natural rather than hand-wavy."
+          "published_at": "2024-02-16T13:00:39Z",
+          "url": "https://www.youtube.com/watch?v=hi57CA3GZy4",
+          "duration_seconds": 893,
+          "view_count": "347145",
+          "description": "Go to https://ground.news/floathead to stay fully informed and access reliable information. Subscribe through my link to get 30% off unlimited access this month only. \n\nDoes light (photon) experience time? The most common answer to this is, no. Light does not experience time. But, that's not accurate. So, in this video, let's explore what physics really has to say about this\n\nChapters\n00:00 Intro\n00:44 Visualising time dilation\n02:28 Time dilation at speed of light\n03:12 The problem with this lo",
+          "why_watch": "The standard answer — 'light doesn't experience time' — turns out to be a lazy shorthand, and this video carefully unpacks why that framing breaks down under scrutiny. The creator uses spacetime intervals and the geometry of light's worldline to show what physics actually says, making this a good corrective for anyone who picked up the oversimplification from a pop-science source."
         },
         {
           "source": "youtube",
-          "video_id": "Jz3mOlUOGoY",
-          "title": "Newton vs. Mach: The Bucket Experiment",
+          "video_id": "Hf-BxbtCg_A",
+          "title": "Demystifying The Metric Tensor in General Relativity",
           "channel_id": "UC3KV2kFy2YhjYvverIy2WnA",
           "channel_title": "Dialect",
-          "published_at": "2022-02-18T17:04:26Z",
-          "url": "https://www.youtube.com/watch?v=Jz3mOlUOGoY",
-          "duration_seconds": 1271,
-          "view_count": "289592",
-          "description": "What is the ultimate nature of motion? Two influential physicists famously debated this question, invoking a bucket-and-water thought experiment to do so -- but they arrived at starkly different conclusions. Can we determine which one of them was right? Join us on a journey that spans centuries of metaphysical thought, books worth of controversial literature, and twenty-minutes of bad attempts at animating water spinning in a bucket.\n\nContents:\n\n00:00 - Intro\n01:05 - Newton's Absolutes\n04:15 - T",
-          "why_watch": "Newton's rotating bucket thought experiment seems straightforward until Mach points out that it quietly assumes the entire universe is the reference frame — a challenge that Einstein took seriously enough to shape general relativity. Dialect unpacks this centuries-long disagreement with genuine philosophical precision, making it one of the more intellectually satisfying 21-minute detours in physics history."
+          "published_at": "2021-10-22T16:57:40Z",
+          "url": "https://www.youtube.com/watch?v=Hf-BxbtCg_A",
+          "duration_seconds": 869,
+          "view_count": "412671",
+          "description": "The path to understanding General Relativity starts at the Metric Tensor. But this mathematical tool is so deeply entrenched in esoteric symbolism and complex mathematics that its simplistic, intuitive purpose often goes neglected. Here we attempt to expose the basic principles behind the Metric Tensor -- and investigate how they tie into General Relativity -- in as simplistic a manner as possible. Do we succeed? Feel free to let us know in the comments!\n\nSupport us on Patreon! https://www.patre",
+          "why_watch": "The metric tensor is the gateway concept to General Relativity, but most treatments either drown you in index notation or stay so vague the math never connects to meaning. This video prioritizes the intuition first — what does the metric tensor actually measure and why does curved spacetime need it — making it a genuinely useful entry point before tackling a textbook."
         }
       ]
     },
     {
-      "name": "The Elegant Machine Room",
-      "emoji": "⚙️",
-      "tagline": "Before the math, there's a beautiful idea — and these videos make sure you see it first.",
+      "name": "Silicon Brains, Real Fast",
+      "emoji": "⚡",
+      "tagline": "How computers think faster than you can blink — no fluff, just elegant hardware logic.",
       "items": [
         {
           "source": "youtube",
-          "video_id": "bongv60GqIY",
-          "title": "Differential Amplifier - the real working",
+          "video_id": "lARXWvhAeWY",
+          "title": "Binary adder - Carry Select Adder",
           "channel_id": "UCFtCfZ4rtIZ7Hsq7ZNHoY1w",
           "channel_title": "Computer&Electronics",
-          "published_at": "2024-04-29T14:33:38Z",
-          "url": "https://www.youtube.com/watch?v=bongv60GqIY",
-          "duration_seconds": 722,
-          "view_count": "3989",
-          "description": "This video talks about differential amplifiers explained in a clear way. We see a qualitative explanation to see how this circuit can amplify differential inputs rejecting the common ones, and we see also the quantitative exposition to get the main relations of this configuration. We use mosfets or bjts indifferently because the basic working of the configuration is the same. \n\nCurrent Mirror: https://youtu.be/HNaR60rTXHY \nCommon Emitter configuration: https://youtu.be/48WL172xQBw\nuA741 Operatio",
-          "why_watch": "Most differential amplifier explanations jump straight to formulas; this one starts with a qualitative walkthrough of why the circuit rejects common-mode signals before the math appears, which makes the equations feel earned rather than imposed. Useful whether you're working with MOSFETs or BJTs, since the video treats their shared working principle as the actual lesson."
+          "published_at": "2024-04-18T13:11:03Z",
+          "url": "https://www.youtube.com/watch?v=lARXWvhAeWY",
+          "duration_seconds": 521,
+          "view_count": "6914",
+          "description": "This video is about the Carry Select Adder. It is an adder used in microprocessor when you want to sacrifice area to get an advantage in speed.\n\nCarry Skip Adder: https://youtu.be/WmIFFhJYzO0\n\nBinary Operations: https://www.youtube.com/playlist?list=PLnAxReCloSeTrpY-9q7ECY8ju8Fpi1mzP",
+          "why_watch": "Carry Select Adders are a classic speed-vs-area tradeoff in processor design, and this short video gets straight to the mechanism without padding. If you've ever wondered how hardware arithmetic gets optimized beyond the obvious ripple-carry approach, this is a clean, efficient explainer to bookmark."
         }
       ]
     }
@@ -150,373 +84,227 @@
   "morning_soundtrack": [
     {
       "source": "music",
-      "source_name": "NPR Music",
-      "title": "Rhiannon Giddens' banjo connects her to her ancestors: 'The spirits come through'",
-      "snippet": "A self-described \"folkie to the bone,\" Giddens sings and plays banjo and fiddle in this interview. Her latest album, Hope Is the Thing with Feathers , takes its name from an Emily Dickinson poem.",
-      "url": "https://www.npr.org/2026/09/21/nx-s1-5976700/rhiannon-giddens-hope-is-the-thing-with-wings",
-      "genre": "",
-      "vibe_check": "Like sitting on a porch at dusk while the past reaches through the floorboards to hold your hand.",
-      "cover_url": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/2447x1377+0+115/resize/1400/quality/85/format/png/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F06%2F95%2Fc60651764f2ab28900ea6f08ea25%2Fgiddens.png",
-      "embed_url": null
-    },
-    {
-      "source": "music",
-      "source_name": "Stereogum",
-      "title": "Claire Cronin – “Before The End Of Time”",
-      "snippet": "The LA-based writer and musician Claire Cronin's work is generally based around ideas of folk horror and spiritual dread. Her 2020 book Blue Light Of The Screen is about her obsession with horror movies, which also tends to come through in her music. But Cronin's latest song, is a gorgeous lullaby about how she'll miss the world once it ends.",
-      "url": "https://stereogum.com/2512125/claire-cronin-before-the-end-of-time/music/",
-      "genre": "",
-      "vibe_check": "A tender goodbye letter to existence, hummed softly before the lights go out for good.",
-      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/09/Claire-Cronin.jpeg?w=564",
-      "embed_url": "https://www.youtube.com/embed/V1dXZAfpk4Y"
-    },
-    {
-      "source": "music",
-      "source_name": "Stereogum",
-      "title": "Lydia Loveless Announces New EP Accolades, Shares New Version Of Title Track",
-      "snippet": "The Columbus country-rocker Lydia Loveless released their last album Nothing's Gonna Stand In My Way Again in 2023. Last year Loveless shared a series of one-off writing-challenge tracks on Bandcamp, including a very good song called \" Accolades .\" They've since taken down most of those Bandcamp tracks, \"Accolades\" included. Next month, Loveless will release a brand new EP that's called Accolades , and it's lead single is a brand-new version of the title track.",
-      "url": "https://stereogum.com/2512106/lydia-loveless-announces-new-ep-accolades-shares-new-version-of-title-track/news/",
-      "genre": "",
-      "vibe_check": "Bar-closing energy with a bruised heart and just enough swagger to drive home anyway.",
-      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/09/Lydia-Loveless-Accolades.jpeg?w=564",
-      "embed_url": "https://www.youtube.com/embed/nJeuSRg1LEs"
-    },
-    {
-      "source": "music",
-      "source_name": "No Depression",
-      "title": "FOUNDERS KEEPERS: Claire Kelly Leads an Impressive Batch of New Music from Americana Women",
-      "snippet": "You never know where you’ll find an artist who rocks your world. Last summer, a trip to the upper Midwest included the Mile of Music Fest in Appleton, Wis., where I saw several sets by Nashville singer-songwriter Claire Kelly and her red-hot backing band, which blew",
-      "url": "https://nodepression.org/founders-keepers-claire-kelly-leads-an-impressive-batch-of-new-music-from-americana-women/",
-      "genre": "",
-      "vibe_check": "The electric jolt of stumbling onto a great live act in a town you'd never planned to stop in.",
-      "cover_url": "https://storage.ghost.io/c/18/d0/18d08e58-3b1b-4720-ae25-a31b44e69d4b/content/images/2026/09/Claire-Kelly-photo-by-Peter-Blackstock.jpg",
-      "embed_url": "https://www.youtube.com/embed/rwmd-1Qe_NA"
-    },
-    {
-      "source": "music",
-      "source_name": "No Depression",
-      "title": "Rainy Day Parade: The Sad/Happy Story of Jill Sobule",
-      "snippet": "Editor's Note : David Hajdu has been awarded one of two No Depression Reporting Fellowships to write four in-depth features on a topic deeply impacting roots music today. His begins today with a multi-perspective profile of singer-songwriter Jill Sobule — part biography, part",
-      "url": "https://nodepression.org/rainy-day-parade-the-sad-happy-story-of-jill-sobule/",
-      "genre": "",
-      "vibe_check": "Crying and laughing at the same time in a kitchen that smells like coffee and old mail.",
-      "cover_url": "https://storage.ghost.io/c/18/d0/18d08e58-3b1b-4720-ae25-a31b44e69d4b/content/images/2026/09/Untitled-design--1-.png",
-      "embed_url": "https://www.youtube.com/embed/asJEMVGIshE"
-    },
-    {
-      "source": "music",
-      "source_name": "Aquarium Drunkard",
-      "title": "Maddy Prior & June Tabor’s Silly Sisters at 50",
-      "snippet": "Maddy Prior and June Tabor’s Silly Sisters is a magical hinge album, a meeting of two transcendent voices and a jolly band of British folk masters. Recorded in 1976 but somehow outside of time, its ancient songs, close harmonies, and loose, luminous performances summon something older than the British folk revival itself. Fifty years on, it remains a timeless gem hiding in plain sight: raw, sophisticated, mysterious, and still not quite given its due.",
-      "url": "https://aquariumdrunkard.com/2026/09/21/maddy-prior-june-tabors-silly-sisters-at-50/",
-      "genre": "",
-      "vibe_check": "Like finding a door in your house you never noticed before, and hearing something ancient breathing softly on the other side.",
-      "cover_url": "https://aquariumdrunkard.com/_newness/wp-content/uploads/2026/09/silly-sister-1976-copy.jpg",
-      "embed_url": null
-    },
-    {
-      "source": "music",
       "source_name": "Consequence",
-      "title": "Dirty Honey Announce New Album, Unveil Singles “Lights Out” and “Butterfly”: Stream",
-      "snippet": "The album Catch My Butterfly will be released on January 15th. Dirty Honey Announce New Album, Unveil Singles “Lights Out” and “Butterfly”: Stream Spencer Kaufman",
-      "url": "https://consequence.net/2026/09/dirty-honey-new-album-singles-lights-out-butterfly/",
+      "title": "Garth Brooks’ 2026 “Blame It All On My Roots” Tour: How to Get Tickets",
+      "snippet": "The tour finds Brooks reviving his in-the-round Drum Pod stage and performing multi-night stands at arenas around the country. Garth Brooks’ 2026 “Blame It All On My Roots” Tour: How to Get Tickets Paolo Ragusa",
+      "url": "https://consequence.net/2026/09/garth-brooks-2026-blame-it-all-on-my-roots-tour-how-to-get-tickets/",
       "genre": "",
-      "vibe_check": "Windows-down, volume-up rock that tastes like gasoline and lip gloss on a Friday night.",
-      "cover_url": "https://consequence.net/wp-content/uploads/2026/09/Dirty-Honey.jpg?quality=80",
-      "embed_url": "https://www.youtube.com/embed/Ot0qi5haHN0"
-    },
-    {
-      "source": "music",
-      "source_name": "PopMatters",
-      "title": "Why Deadhead Culture Is a Pure Strain of American Noir",
-      "snippet": "Yes, Deadheads came for the music, but also for the possibility of a life outside the bounds of straight society; something vaguely criminal and very American noir.",
-      "url": "https://www.popmatters.com/deadhead-culture-american-noir",
-      "genre": "",
-      "vibe_check": "Midnight on the highway with a trunk full of mysteries and no particular reason to go home.",
-      "cover_url": "https://www.youtube.com/embed/7R2_Pv_IfI4",
-      "embed_url": "https://www.youtube.com/embed/7R2_Pv_IfI4"
-    },
-    {
-      "source": "music",
-      "source_name": "PopMatters",
-      "title": "Rock Music Returns to Outside Lands 2026",
-      "snippet": "An exhilarating Friday featuring Wet Leg, Sierra Ferrell, Geese, Turnstile and Charli XCX brings rock back to San Francisco's Outside Lands Festival in a big way.",
-      "url": "https://www.popmatters.com/outside-lands-2026",
-      "genre": "",
-      "vibe_check": "The bristling, crowd-surge feeling of a festival day that starts at noon and somehow never peaks too early.",
-      "cover_url": "https://www.youtube.com/embed/Y7PeLt8dbHw",
-      "embed_url": "https://www.youtube.com/embed/Y7PeLt8dbHw"
+      "vibe_check": "The smell of sawdust and stadium beer, 20,000 strangers singing every word like it's a hymn they were born knowing.",
+      "cover_url": "https://consequence.net/wp-content/uploads/2026/08/Garth-Brooks-2026-Blame-it-all-on-my-roots-tour-How-to-Get-Tickets-How-to-Buy-Tickets.jpg?quality=80",
+      "embed_url": null
     }
   ],
   "global_silver_linings": [
     {
       "source": "good_news",
       "source_name": "Good News Network",
-      "title": "New AI Model Can Detect Heart Disease Markers in Simple Electrocardiogram Readings–a Breakthrough",
-      "url": "https://www.goodnewsnetwork.org/new-ai-model-can-detect-heart-disease-markers-in-simple-electrocardiogram-readings-a-breakthrough/",
-      "snippet": "Artificial intelligence has brought about a revolution in medical screening practices, with the technology able to make detections across hundreds of scans in seconds which can be forwarded to trained pairs of human eyes. Now from the UK comes another example in the form of heart disease diagnostics. Trained on millions of patients, a new […]",
-      "cover_url": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/09/echocardiogram-Getty-Images-for-Unsplash-.jpg",
-      "reason": "A new AI tool that can spot heart disease markers from a routine ECG means dangerous conditions could be caught far earlier, with equipment already found in most clinics. This kind of quiet, practical innovation has the potential to save countless lives without adding complexity or cost."
+      "title": "Rural French Mayors Rally to Save Their Local Cafe-Bistro, and Help Reverse National Trend",
+      "url": "https://www.goodnewsnetwork.org/rural-french-mayors-rally-to-save-their-local-cafe-bistro-and-help-reverse-national-trend/",
+      "snippet": "With the help of the mayor and local council, a small town in Burgundy has saved its local cafe-bistro, what’s been described as the “heart” of the rural French economy and society. Au Bon Accueil, located in the commune of Saint-Martin-sur-Ouanne, had closed recently for 8 months, giving a nasty shock to locals who realized […]",
+      "cover_url": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/09/Bistro-des-Philosophes-credit-Mali-Desha-Unsplash.jpg",
+      "reason": "When local leaders band together to save a village café, they're protecting far more than a place to eat — they're preserving the communal heartbeat of rural life. It's a reminder that communities can push back against decline when people choose connection over convenience."
     },
     {
       "source": "good_news",
       "source_name": "Positive News",
-      "title": "The race to get more young people in the UK into work, education or training",
-      "url": "https://www.positive.news/society/number-of-young-people-out-of-work-and-education-falls-below-one-million/",
-      "snippet": "The UK has one of the highest NEET rates for young adults in Europe. New figures offer some encouragement",
-      "cover_url": "https://www.positive.news/wp-content/uploads/2026/09/new-one.jpg",
-      "reason": "Communities across the UK are finding creative, human-centred ways to connect young people with meaningful opportunities in work, education, and training. Every young person brought into that fold represents not just a life changed, but a future strengthened."
+      "title": "Winners of Bird Photographer of the Year announced",
+      "url": "https://www.positive.news/environment/winners-of-bird-photographer-of-the-year-announced/",
+      "snippet": "The winners of Bird Photographer of the Year 2026 have been revealed",
+      "cover_url": "https://positivenews.kinsta.cloud/wp-content/uploads/2026/09/ADULT-OVERALL-WINNER-Sunball-Rocket-by-Henley-Spiers.jpg",
+      "reason": "The Bird Photographer of the Year competition brings the world's most extraordinary avian moments into sharp focus, rekindling wonder at the biodiversity still thriving around us. Every winning image is quiet proof that there are people devoted to witnessing and honoring the natural world."
     },
     {
       "source": "good_news",
       "source_name": "Upworthy",
-      "title": "12 photos of women before and after an orgasm shines a new light on women’s sexual wellness",
-      "url": "https://www.upworthy.com/12-photos-of-women-before-and-after-orgasms-ex1/",
-      "snippet": "\"We hope that everyone viewing this project will feel more confident about their bodies and sexuality.\"",
-      "cover_url": "https://www.upworthy.com/wp-content/uploads/sites/2/2026/01/marco-alberti-o-4.webp",
-      "reason": "Open, honest conversations about women's sexual wellness are slowly shedding stigma and helping people feel seen in their own experiences. Greater awareness and normalisation in this space is a genuine step toward better health and self-understanding for many."
-    },
-    {
-      "source": "good_news",
-      "source_name": "Reasons to be Cheerful",
-      "title": "Why Great Plains Ranchers Are Setting Fire to Their Own Land",
-      "url": "https://reasonstobecheerful.world/great-plains-ranchers-prescribed-burns/",
-      "snippet": "Smoke hangs thick over southern Oklahoma’s Arbuckle Mountains as flames lick through prairie grass toward a stand of eastern red cedar trees. To many, the scene would look like a disaster in the making. But to father-son ranchers Chuck and Seth Coffey, the fire is a blessing — it’s the...",
-      "cover_url": "https://reasonstobecheerful.world/wp-content/uploads/2026/09/seth-coffey-man-walking-in-burn.jpg",
-      "reason": "Great Plains ranchers are reviving the ancient practice of controlled burning to restore native grasslands, bringing back the biodiversity that industrial farming had quietly erased. It's a heartening example of land stewards working with nature rather than against it."
+      "title": "Crayola has retired just 13 colors in 123 years. The first 8 led to protests.",
+      "url": "https://www.upworthy.com/crayola-has-retired-just-13-colors-in-123-years-the-first-8-led-to-protests/",
+      "snippet": "Don't mess with people's childhoods, man.",
+      "cover_url": "https://www.upworthy.com/wp-content/uploads/sites/2/2026/09/kids-coloring-with-crayola-crayons.jpg",
+      "reason": "The fact that people cared enough about crayon colors to stage protests is a charming testament to how deeply small, creative joys become woven into childhood and memory. It's a lighthearted reminder that ordinary things can carry extraordinary meaning."
     },
     {
       "source": "good_news",
       "source_name": "The Optimist Daily",
-      "title": "How revisiting old memories can build real self-esteem",
-      "url": "https://www.optimistdaily.com/2026/09/how-revisiting-old-memories-can-build-real-self-esteem/",
-      "snippet": "BY THE OPTIMIST DAILY EDITORIAL TEAM Think about a memory that still makes you wince. Maybe it is the time you said something embarrassing in front of people you wanted to impress, or the moment you felt out of place while everyone around you seemed completely at ease. Most of us carry a few of […] The post How revisiting old memories can build real self-esteem first appeared on The Optimist Daily: Making Solutions the News .",
-      "cover_url": "https://www.optimistdaily.com/wp-content/uploads/Depositphotos_840178744_S.jpg",
-      "reason": "Research suggests that thoughtfully revisiting our own past — including the hard parts — can help us build a more grounded and honest sense of self-worth. It's a reminder that real confidence doesn't come from forgetting where we've been, but from making peace with it."
+      "title": "From fire starters to compost: what to do with dryer lint",
+      "url": "https://www.optimistdaily.com/2026/09/from-fire-starters-to-compost-what-to-do-with-dryer-lint/",
+      "snippet": "BY THE OPTIMIST DAILY EDITORIAL TEAM If you clean your dryer’s lint trap after every load, you end up with a soft little cloud of fiber in your hand pretty regularly. Most people drop it straight in the trash, and that is fair. But if you get in the habit of saving it in a […] The post From fire starters to compost: what to do with dryer lint first appeared on The Optimist Daily: Making Solutions the News .",
+      "cover_url": "https://www.optimistdaily.com/wp-content/uploads/Depositphotos_845554684_S.jpg",
+      "reason": "Dryer lint turning out to be genuinely useful — as a fire starter or compost additive — is the kind of small, satisfying discovery that makes sustainable living feel approachable rather than overwhelming. Waste that was already in your home becoming a resource is a quiet win worth celebrating."
     }
   ],
   "discovery_articles": [
     {
       "source": "discovery",
       "source_name": "Atlas Obscura",
-      "title": "Old Route 5 Stone Wall in Nova Scotia",
-      "url": "https://www.atlasobscura.com/places/old-route-5-stone-wall",
-      "snippet": "This is a hidden gem in Cape Breton, Nova Scotia where a waterfall flows through an old stone wall, and cascades over mossy rocks in a steep, mossy canyon surrounded by birch trees. The waterfall and two other creeks converge in this canyon, before disappearing through a large culvert at the bottom. It's worth it to visit in the rain, when more water is running - and the rain just adds to the ambience.",
+      "title": "Benedictine Monastery Holy Trinity of Las Condes in Las Condes, Chile",
+      "url": "https://www.atlasobscura.com/places/benedictine-monastery-holy-trinity-of-las-condes",
+      "snippet": "A beautifully designed modern church and monastery of the 1960s. The site has been considered a link from city to the mountains. Walking up the main driveway gradually exposes the Andes before revealing the church.",
       "category": "history",
-      "cover_url": "https://img.atlasobscura.com/oIVJOrszxSDhNjM_ihffLRrKDiFfQFVholiLI5aCt5A/rt:fit/w:600/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy85NzA4/NDIyNS0zM2EzLTQ5/OGYtOGI5Yy1kMjQ0/NTQ4M2EyOWY0NTMy/YmUxNmI2MjMyNmVk/NWZfc3RvbmUgd2Fs/bCAyLmpwZw.jpg",
-      "ferns_note": "A waterfall threading through a centuries-old stone wall, then vanishing into the earth through a culvert below — Cape Breton has somehow turned infrastructure into something genuinely haunting. Best appreciated, Fern suspects, in a light drizzle with no one else around."
-    },
-    {
-      "source": "discovery",
-      "source_name": "Atlas Obscura",
-      "title": "Puerta del Hospital de la Latina in Madrid, Spain",
-      "url": "https://www.atlasobscura.com/places/puerta-del-hospital-de-la-latina",
-      "snippet": "There is something delightfully disorienting about stumbling across a 500-year-old Gothic doorway in the grounds of Madrid’s School of Architecture. Surrounded by modern university buildings and the comings and goings of students, the ornate stone portal looks as though it has taken a wrong turn somewhere in the city. In fact, it has—but quite a long time ago.",
-      "category": "history",
-      "cover_url": "https://img.atlasobscura.com/eos0rUozMmuqpVSzB2TplniA5ZX219RWbIDiV6XzMXM/rt:fit/w:600/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy9hM2M2/MTY2Yi1mZWU4LTRk/OWQtOTBlOC0yM2I5/N2I1MjFiZGU5NDAz/OGU2MjI2OGI2NGE2/NmJfRTQyRUU4NEMt/NDFFNS00MDYxLThF/QzQtNzIzNTk2N0VG/NDdGXzRfNTAwNV9j/LmpwZWc.jpg",
-      "ferns_note": "This ornate Gothic doorway didn't always belong to a School of Architecture — it was relocated from a demolished 16th-century hospital, and has been quietly confusing passersby ever since. There's something almost poetic about a relic of mercy standing amid blueprints for the future."
-    },
-    {
-      "source": "discovery",
-      "source_name": "Atlas Obscura",
-      "title": "Roman Baths of Slovenia (Rimski Terma) in Slovenia",
-      "url": "https://www.atlasobscura.com/places/roman-baths-of-slovenia-rimski-terma",
-      "snippet": "In a valley surrounded by forested mountains is a mineral spring and baths in use since the Roman Empire. The baths were frequented by soldiers and royalty who wanted to take advantage of its purported healing properties. The land around the baths feature historical walking paths lined with trees donated to the area by high society visitors such by Victoria of Prussia who gifted a giant sequoia.",
-      "category": "history",
-      "cover_url": "https://img.atlasobscura.com/mjHmzm1sWsug6Y2fglHDuk212kh93Eo9lgoGfJ3zBnU/rt:fit/w:600/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy80MDA5/NWU1NC1iY2JkLTRl/YjMtYjgzYy1iZGZl/ZjFiZjA1OGNjYzNk/MWQwZmI1OTNjZmE1/ZmRfVklFVy5qcGc.jpg",
-      "ferns_note": "Roman soldiers soaked in these same mineral waters nearly two millennia ago, and somewhere nearby a giant sequoia planted by a Prussian princess is still quietly growing. History here isn't behind glass — it's rooted in the ground."
+      "cover_url": "https://img.atlasobscura.com/fBbdtNkDVXO0ENmAjkFgkqeLhYA2BPTIWgv9XIxox2Q/rt:fit/w:600/c:3578:2385:nowe:412:174/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy9hYjVk/NjgzZS01NWMxLTQz/NmQtOTlmYi00ZGEz/ZjU3Y2Q5ZGVjN2I3/OGNlZDM5ZTUzMDQz/YzFfMjAyNi0wOS0w/NC0xNi0yNy00OS05/MzguanBn.jpg",
+      "ferns_note": "The architects didn't just build a church — they choreographed a pilgrimage, engineering the driveway so the Andes reveal themselves incrementally as you walk. It's sacred theater disguised as a parking approach."
     },
     {
       "source": "discovery",
       "source_name": "Smithsonian",
-      "title": "Henry VIII Relied on This Courtier to Enforce His Orders During the English Reformation. Behind the Scenes, the Tudor Politician Defied His King by Secretly Saving a Catholic Text",
-      "url": "https://www.smithsonianmag.com/smart-news/henry-viii-relied-on-this-courtier-to-enforce-his-orders-during-the-english-reformation-behind-the-scenes-the-tudor-politician-defied-his-king-by-secretly-saving-a-catholic-text-180989541/",
-      "snippet": "A newly discovered fragment suggests that John Gage preserved a 15th-century religious manuscript, keeping it \"safe when he was meant to destroy books precisely like this one\"",
+      "title": "A Rare Aztec Codex Detailing the Rise and Fall of Tenochtitlan Returns to Mexico for the First Time in Nearly Two Centuries",
+      "url": "https://www.smithsonianmag.com/smart-news/a-rare-aztec-codex-detailing-the-rise-and-fall-of-tenochtitlan-returns-to-mexico-for-the-first-time-in-nearly-two-centuries-180989536/",
+      "snippet": "The artifact, among the most prized visual accounts of Aztec history, will be on display in Mexico City for three months",
       "category": "history",
-      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/RktCV6DfBAZUBtQ3A-EPDnFUBv4=/fit-in/1600x0/filters:focal(750x500:751x501)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/9a/87/9a87a020-0686-4a21-9b46-712a66884535/fix.png",
-      "ferns_note": "John Gage spent his career as Henry VIII's loyal enforcer during the book-burning fury of the Reformation — all while secretly slipping a Catholic manuscript out of harm's way. The double life of a dutiful destroyer who couldn't quite bring himself to destroy."
+      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/xtvPNBcmSANk_pkjHYkylNjUg8Q=/fit-in/1600x0/filters:focal(3791x2527:3792x2528)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/8e/4a/8e4a8cb8-d60b-463c-8d75-b5e275fcb008/gettyimages-2295171651_1.jpg",
+      "ferns_note": "This codex watched Tenochtitlan rise to glory and then collapse under conquest — and then spent nearly two centuries in European hands before coming home. Some objects carry grief the way wood carries rings."
     },
     {
       "source": "discovery",
       "source_name": "Smithsonian",
-      "title": "The Brain Shrinks as We Age and During Major Transitions. But Surprisingly, It Seems to Take a Break From Rewiring During Menopause",
-      "url": "https://www.smithsonianmag.com/smart-news/the-brain-shrinks-as-we-age-and-during-major-transitions-but-surprisingly-it-seems-to-take-a-break-from-rewiring-during-menopause-180989527/",
-      "snippet": "Puberty, pregnancy and menopause are the three major hormonal transitions for the female brain. Researchers already knew that during the first two, the organ fine-tunes itself in response to hormonal shifts, but they haven't been sure about the third",
+      "title": "Did Thomas Jefferson Father Sally Hemings' Children? After More Than a Decade of Research, the Answer Is Finally Firmly in Hand",
+      "url": "https://www.smithsonianmag.com/smithsonian-institution/did-thomas-jefferson-father-sally-hemings-children-after-more-than-decade-research-answer-finally-firmly-hand-180989331/",
+      "snippet": "A lock of hair, advances in genetic science and a community of descendants all contributed to solving an American mystery",
       "category": "history",
-      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/AHkh_NKQXuJPihovdT3hg7jv_Kw=/fit-in/1600x0/filters:focal(3000x2000:3001x2001)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/b1/75/b1753ed1-7500-46e3-8bd7-3c6c9bf0a99e/menopause-brain.jpg",
-      "ferns_note": "The brain apparently hits pause during menopause — unlike the intense rewiring it undergoes in puberty and pregnancy — which researchers find genuinely surprising rather than expected. It raises the quiet question of what, exactly, the brain is waiting for."
+      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/JQO2ig8JFBaV2-YVxVVMrgHjj10=/fit-in/1600x0/filters:focal(1697x1954:1698x1955)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/2e/67/2e67cdc1-8133-464c-ac76-db1b501455ba/opener.jpg",
+      "ferns_note": "A single lock of hair, kept for over two hundred years, became the final thread in untangling one of American history's most charged and long-denied secrets. The dead, it turns out, are remarkably patient witnesses."
     },
     {
       "source": "discovery",
       "source_name": "Smithsonian",
-      "title": "Archaeologists Are Reconstructing the Invisible Technologies of the Stone Age, From Rope to Thread and Twine",
-      "url": "https://www.smithsonianmag.com/science-nature/archaeologists-are-reconstructing-the-invisible-technologies-of-the-stone-age-from-rope-to-thread-and-twine-180989534/",
-      "snippet": "Largely missing from the archaeological record, fiber innovations played a huge role in the lives of early humans. Researchers are weaving together new insights from the traces they left behind",
+      "title": "A Cutting-Edge English Initiative Replaces Lawnmowers With Scythes to Restore Wildflowers and Save the Bees",
+      "url": "https://www.smithsonianmag.com/smart-news/a-cutting-edge-english-project-replaces-lawnmowers-with-scythes-to-protect-wildflowers-and-save-the-bees-180989537/",
+      "snippet": "English Heritage has recruited volunteers to mow meadows the old-fashioned way at some of its historic sites",
       "category": "history",
-      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/64adkh0lhgYznK0eFkQeYqrV8Ek=/fit-in/1600x0/filters:focal(600x317:601x318)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/2a/43/2a43872b-3e44-4548-8a9d-d5b7190a2469/soft-archaeology-1200x630.jpg",
-      "ferns_note": "Stone tools survive millennia; the ropes and nets that made them useful simply rot away, leaving us with a lopsided picture of early human ingenuity. Archaeologists are now reading the ghost impressions of fiber in clay and sediment to recover what time erased."
+      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/gyf3nDZkhMr55V9ZmR1EmSmbTUM=/fit-in/1600x0/filters:focal(4128x2752:4129x2753)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/b8/56/b856c57c-7aff-4096-b546-25ba8d8da052/dsc1535.jpeg",
+      "ferns_note": "English Heritage is handing volunteers scythes — actual scythes — not as a heritage stunt, but because the old blade disturbs the soil less and lets wildflower seeds survive where a mower would mulch them into silence. Sometimes the ancient tool simply wins."
     },
     {
       "source": "discovery",
       "source_name": "Smithsonian",
-      "title": "An Armadillo Found in Ohio Is the Latest Surprise in the Armored Animals' Expansion North. Where Are They Now, and What's Driving Their Movement?",
-      "url": "https://www.smithsonianmag.com/smart-news/an-armadillo-found-in-ohio-is-the-latest-surprise-in-the-armored-animals-expansion-north-where-are-they-now-and-whats-driving-their-movement-180989530/",
-      "snippet": "Typically spotted in the South and Southeast, the creatures have been reaching increasingly distant states like North Carolina, Virginia and Illinois as winters become milder",
+      "title": "The Lucas Museum of Narrative Art, a New Endeavor From the Creator of 'Star Wars,' Is a Story in Itself",
+      "url": "https://www.smithsonianmag.com/travel/the-lucas-museum-of-narrative-art-a-new-endeavor-from-the-creator-of-star-wars-is-a-story-in-itself-180989533/",
+      "snippet": "Almost two decades in the making, the institution centers on art that shapes our everyday lives and reveals the craft behind it",
       "category": "history",
-      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/CxvCmXGUw12PgmQyZiibz2DvNNE=/fit-in/1600x0/filters:focal(2304x1733:2305x1734)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/55/f9/55f9dd0a-70e3-47c4-9e67-314441e7d77e/nine-banded_armadillo_13594.jpg",
-      "ferns_note": "An armadillo turning up in Ohio is less a quirky headline and more a quiet dispatch from a warming continent — the armored little travelers are essentially mapping climate change one surprising sighting at a time. They've been moving north for decades; we're only just noticing."
-    },
-    {
-      "source": "discovery",
-      "source_name": "Science News",
-      "title": "First radio waves seen from an exoplanet hint at otherworldly auroras",
-      "url": "https://www.sciencenews.org/article/exoplanet-aurora-radio-waves",
-      "snippet": "The gas giant Beta Pictoris b, about 63 light-years away, has the mass of 10 Jupiters and a magnetic field thousands of times as strong as Earth’s.",
-      "category": "science",
-      "cover_url": "https://www.sciencenews.org/wp-content/uploads/sites/2/2026/09/091826_EC_exoplanet_main.jpg",
-      "ferns_note": "A planet ten times Jupiter's mass, 63 light-years away, may be putting on an aurora display powered by a magnetic field thousands of times stronger than Earth's — and we caught the faintest whisper of it in radio waves. Somewhere out there, the sky is lit up in ways we can barely imagine."
-    },
-    {
-      "source": "discovery",
-      "source_name": "Science News",
-      "title": "MRIs show brain changes linked to Alzheimer’s years in advance",
-      "url": "https://www.sciencenews.org/article/mri-brain-change-alzheimers-disease",
-      "snippet": "A thickening cortex, as shown in MRIs, preceded amyloid-beta accumulation, a known hallmark of Alzheimer’s disease, by up to seven years.",
-      "category": "science",
-      "cover_url": "https://www.sciencenews.org/wp-content/uploads/sites/2/2026/09/091126_SW_corticalthickness_main.jpg",
-      "ferns_note": "Long before the protein plaques of Alzheimer's appear, the brain's cortex quietly thickens — a change visible on MRI scans up to seven years in advance, like a structural warning no one knew to read. The disease, it turns out, announces itself far earlier than we thought."
-    },
-    {
-      "source": "discovery",
-      "source_name": "JSTOR Daily",
-      "title": "Ancient Rome’s Complicated Border",
-      "url": "https://daily.jstor.org/ancient-romes-complicated-border/",
-      "snippet": "What did Hadrian’s Wall actually do? Its history challenges the idea that walls simply separate one side from another.",
-      "category": "history",
-      "cover_url": "https://daily.jstor.org/wp-content/uploads/2026/09/ancient_romes_complicated_border_1050x700.jpg",
-      "ferns_note": "Hadrian's Wall was less a hard border than a porous checkpoint — Romans and locals traded, mingled, and moved through it regularly, which complicates every tidy narrative about separation and control. Walls, it seems, have always been more complicated than the people who build them intend."
-    },
-    {
-      "source": "discovery",
-      "source_name": "Quanta Magazine",
-      "title": "How Virus-like ‘Jumping Genes’ Became Our Partners in Evolution",
-      "url": "https://www.quantamagazine.org/how-virus-like-jumping-genes-became-our-partners-in-evolution-20260921/",
-      "snippet": "Half of our genome is made of transposons — snips of DNA that can move and copy themselves. But they’re more than parasites or genetic junk. The post How Virus-like ‘Jumping Genes’ Became Our Partners in Evolution first appeared on Quanta Magazine",
-      "category": "science",
-      "cover_url": "https://www.quantamagazine.org/wp-content/uploads/2026/09/OurViralGenome-crSamuelVelasco-Social.jpg",
-      "ferns_note": "Half of your DNA is made of ancient jumping genes — mobile snippets that once behaved like viruses and have since become deeply entangled with what makes us human. They're not junk; they've been quietly co-authoring us for millions of years."
+      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/t2cY4neyYnJsqee_FQhi-2EtV2M=/fit-in/1600x0/filters:focal(1000x748:1001x749)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/aa/6e/aa6eb370-de02-4281-ab12-eb8515815396/05_courtesy_lucas_museum_of_narrative_art_photo_by_huftoncrow.jpg",
+      "ferns_note": "Nearly twenty years of false starts, city fights, and redesigns before a single visitor walked through the door — George Lucas's museum is itself the kind of underdog narrative his films are famous for telling. Life imitating art, rather literally."
     },
     {
       "source": "discovery",
       "source_name": "Colossal",
-      "title": "Lush Mixed-Media Collages by Clotilde Jiménez Piece Together an Artist’s Lineage",
-      "url": "https://www.thisiscolossal.com/2026/09/clotilde-jimenez-paper-collage-chicago/",
-      "snippet": "Through vivid collages layering fragments of paper and fiber, Clotilde Jiménez echoes his own mélange of experiences and histories.",
+      "title": "France Celebrates the Bicentennial of Photography with Traveling Themed Exhibitions",
+      "url": "https://www.thisiscolossal.com/2026/09/grandpalaisrmn-200-year-photography-exhibition/",
+      "snippet": "In our era of digital screens and virtually endless images and videos, it's a challenge to imagine the time before photography existed.",
       "category": "history",
-      "cover_url": "https://www.thisiscolossal.com/wp-content/uploads/2026/09/jimenez-4.jpg",
-      "ferns_note": "Clotilde Jiménez builds his collages from paper and fiber the way memory actually works — layered, fragmentary, never quite resolved into a single clean image. The lineage he's tracing isn't a family tree so much as a texture."
-    },
-    {
-      "source": "discovery",
-      "source_name": "Colossal",
-      "title": "Classical Musicians Interpret Astronauts’ Footage of the Planet for Earth Music Theater",
-      "url": "https://www.thisiscolossal.com/2026/09/earth-music-theater-classical-music-space-photography-films/",
-      "snippet": "The multimedia project marries sonic experiences with incredible imagery captured from the International Space Station's orbit around Earth.",
-      "category": "history",
-      "cover_url": "https://www.thisiscolossal.com/wp-content/uploads/2026/09/emt-1.jpeg",
-      "ferns_note": "Classical musicians scored their compositions to footage of Earth captured from the ISS — and the result is less a nature documentary than a reckoning with scale, distance, and the strange intimacy of seeing home from outside it."
+      "cover_url": "https://www.thisiscolossal.com/wp-content/uploads/2026/09/bicentennial-5.jpeg",
+      "ferns_note": "Two hundred years ago, a person could live an entire life and never once see their own face accurately rendered — photography didn't just change art, it changed the very human experience of being seen. That's worth pausing on, even mid-scroll."
     }
   ],
   "featured_read": {
     "source": "reads",
-    "source_name": "Longreads",
-    "title": "On Not Being a Homeowner",
-    "url": "https://longreads.com/2026/09/21/homeownership-generational-wealth/",
-    "snippet": "\"Generational wealth shapes our futures and friendships, whether we talk about it or not.\"",
-    "cover_url": "",
-    "blurb": "This essay sits quietly with the unspoken arithmetic of inheritance — how the gap between owning and renting quietly redrafts your relationships, your options, and your sense of belonging in the world. If you've ever smiled through a conversation about property ladders while feeling the floor shift beneath you, this one was written for you."
+    "source_name": "The Atlantic",
+    "title": "What Were My Dreams Trying to Tell Me?",
+    "url": "https://www.theatlantic.com/magazine/2026/11/ayad-akhtar-dreams-meditation/688676/?utm_source=feed",
+    "snippet": "To make sense of my deepest experiences, I needed a new way of talking about the soul.",
+    "cover_url": "https://cdn.theatlantic.com/thumbor/ALO3QyOrU9kqdO8iEni8aBCLC08=/1x2168:2479x3459/1200x625/media/img/2026/09/Theatlantic_heleneblanc_Soul_1_3-1/original.jpg",
+    "blurb": "When the language of psychology felt too clinical and religion felt too inherited, one writer went looking for a third vocabulary — one honest enough to hold what dreams actually do to us. A quiet reckoning with the parts of inner life that resist easy naming."
   },
   "reading_room": [
     {
       "source": "reads",
-      "source_name": "Literary Hub",
-      "title": "Heather Cox Richardson has been awarded the inaugural Gitlin-Auster Defender of Democracy Award.",
-      "url": "https://lithub.com/heather-cox-richardson-has-been-awarded-the-inaugural-gitlin-auster-defender-of-democracy-award/",
-      "snippet": "Over the weekend, Writers for Democratic Action (WDA) awarded historian Heather Cox Richardson with its inaugural Gitlin-Auster Defender of Democracy Award, “established to honor a writer whose voice powerfully embodies the wisdom, courage, and steadfastness that marked the lives of",
-      "cover_url": "https://s26162.pcdn.co/wp-content/uploads/2026/09/HCRWDA.jpg",
-      "blurb": "Not an essay for this edition — this is an award announcement, and a brief one at that. No blurb generated."
-    },
-    {
-      "source": "reads",
-      "source_name": "The Atlantic",
-      "title": "In Defense of Guilt by Association",
-      "url": "https://www.theatlantic.com/ideas/2026/09/vance-sayed-piker-carlson-friendships/688657/?utm_source=feed",
-      "snippet": "The wisdom of judging politicians by the company they keep",
-      "cover_url": "https://cdn.theatlantic.com/thumbor/pt0BdSpNmjKAuQbdnDhvJcM7Lm0=/0x15:2000x1057/1200x625/media/img/mt/2026/09/2026_09_16_Kirchick_guilt_by_association_final/original.jpg",
-      "blurb": "Against the received wisdom that judging people by their associates is lazy thinking, this piece makes the uncomfortable case that it might actually be one of our sharper political tools — and that dismissing it flatters the wrong people."
-    },
-    {
-      "source": "reads",
-      "source_name": "The Atlantic",
-      "title": "The Confrontation That Broke New York",
-      "url": "https://www.theatlantic.com/books/2026/09/daniel-penny-jordan-neely-man-in-the-mirror-anand-giridharadas-book-review/688730/?utm_source=feed",
-      "snippet": "A new book sheds some light on the death of Jordan Neely and the trial that divided a post-pandemic city.",
-      "cover_url": "https://cdn.theatlantic.com/thumbor/X4KNjvHUIi37WIJeGo0YToYqr1M=/0x110:5165x2800/1200x625/media/img/mt/2026/09/What_Do_We_Do_About_the_Mentally_Ill/original.jpg",
-      "blurb": "The death of Jordan Neely and the trial that followed cracked New York open along fault lines that had been forming for years — this piece uses a new book to ask what a city owes its most vulnerable, and what we reveal about ourselves when the answer is contested in a courtroom."
-    },
-    {
-      "source": "reads",
       "source_name": "Aeon",
-      "title": "Sound guardians",
-      "url": "https://aeon.co/videos/indonesia-is-building-a-new-capital-city-whats-being-lost",
-      "snippet": "As Indonesia builds a new capital city, the race is on to preserve the sounds of the rainforest before they vanish forever - by Aeon Video Watch on Aeon",
-      "cover_url": "https://images.aeonmedia.co/images/350652a0-e6ac-4a1d-b013-736fa59eeda5/sound-guardians-landscape.jpg?width=1200&quality=75&format=jpeg",
-      "blurb": "Before Indonesia's new capital city erases the rainforest that stood in its place, a small group of sound recordists is racing to archive what no photograph can capture — the living acoustic world of a forest in its last years. It's an elegy made of frequencies."
+      "title": "He was probably right",
+      "url": "https://aeon.co/essays/a-good-sceptic-has-more-than-doubt-and-less-than-certainty",
+      "snippet": "Cicero’s life and thought are a testament to the idea of probabilia: we should be confident in our beliefs, but never certain - by Massimo Pigliucci Read on Aeon",
+      "cover_url": "https://images.aeonmedia.co/images/ab30ee1c-11a9-4d4d-a7a0-fd34b45891e5/esssay-gettyimages-527618704.jpg?width=1200&quality=75&format=jpeg",
+      "blurb": "Cicero never claimed to know the truth — only to pursue the most probable version of it — and Massimo Pigliucci argues that two thousand years later, that intellectual humility is still the most rigorous stance available to us. A bracing corrective to our era's twin vices of certainty and cynicism."
     },
     {
       "source": "reads",
       "source_name": "Nautilus",
-      "title": "Why it’s So Hard to Measure the Depth of the Ocean",
-      "url": "https://nautil.us/why-its-so-hard-to-measure-the-depth-of-the-ocean-1285163/",
-      "snippet": "There are a lot of variables",
-      "cover_url": "https://lede-admin.nautil.us/wp-content/uploads/sites/70/2026/09/Mariana-trench.jpg",
-      "blurb": "We've mapped the surface of Mars in finer detail than the floor of our own ocean — this piece dives into the surprisingly treacherous physics and politics of measuring a depth that refuses to hold still."
+      "title": "50 Years Ago, NASA Unveiled its First Space Shuttle",
+      "url": "https://nautil.us/50-years-ago-nasa-unveiled-its-first-space-shuttle-1285172/",
+      "snippet": "And “Star Trek” fans named it",
+      "cover_url": "https://lede-admin.nautil.us/wp-content/uploads/sites/70/2026/09/02-crew.jpg",
+      "blurb": "The story of how a coordinated letter-writing campaign by \"Star Trek\" fans strong-armed NASA into naming its first shuttle Enterprise is a delightful footnote about the moment popular culture realized it had actual political weight. Small history, enormous charm."
+    },
+    {
+      "source": "reads",
+      "source_name": "Psyche",
+      "title": "Lesser choices",
+      "url": "https://psyche.co/videos/an-intimate-account-of-illegal-abortion-in-1969-from-mother-to-daughter",
+      "snippet": "Estelle recalls being blindfolded and fearful in Mexico City – a timely vision of a world without abortion rights - Directed by Courtney Stephens Watch on Psyche",
+      "cover_url": "https://images.aeonmedia.co/images/ca7e6027-26f1-4e14-9769-96f70ca88743/lesser-choices-landscape-1-v2.jpg?top=265&left=320&cropWidth=1904&cropHeight=1071&width=1200&quality=75&format=jpeg",
+      "blurb": "Through one woman's blindfolded memory of a clandestine procedure in Mexico City, this short film asks what it means to navigate your own body in a world that has decided it knows better. Spare, visceral, and impossible to dismiss."
+    },
+    {
+      "source": "reads",
+      "source_name": "The Paris Review",
+      "title": "On “Derek,” Captain Ahab’s Evil Half Brother",
+      "url": "https://www.theparisreview.org/blog/2026/09/21/on-derek-captain-ahabs-evil-half-brother/",
+      "snippet": "“Your worst enemy ain’t Moby Dick, it’s your half brother, Derek.”",
+      "cover_url": "https://www.theparisreview.org/blog/wp-content/uploads/2026/09/6-grosset-derek-photo-rotated.jpg",
+      "blurb": "What if Ahab's obsession isn't unique — what if it's actually a family trait, and somewhere out there Derek is also ruining perfectly good whaling expeditions for entirely petty reasons? A genuinely funny meditation on literary villainy and the absurdity of the heroic grudge."
+    },
+    {
+      "source": "reads",
+      "source_name": "Longreads",
+      "title": "Tomato Cure",
+      "url": "https://longreads.com/2026/09/21/tomato-cure/",
+      "snippet": "\"The quiet medicine of small jobs, finished before dark.\"",
+      "cover_url": "",
+      "blurb": "There is a particular kind of healing that only arrives through repetitive, low-stakes physical work — weeding, harvesting, washing — and this essay follows a summer of tomatoes as a grief that couldn't be spoken is slowly, wordlessly composted. Set aside the full half-hour; you'll want to sit with the ending."
     }
   ],
   "garden_note": {
-    "note": "The equinox breathes down the neck of Zürich tonight — daylight and darkness balanced on a knife's edge, the linden leaves just beginning their slow, golden surrender. Step outside before the dusk closes in at 19:57 and catch that particular early-autumn stillness: cool air carrying the last warmth of the day like a letter you're not quite ready to put down.",
+    "note": "Zürich wakes this equinox morning with a certain golden-hour gravity — the year pivots on its heel today, and the garden knows it, leaves just beginning to bronze at their tips while the dahlias and late asters hold their colour with admirable stubbornness.",
     "in_season": [
-      "Dahlias still blooming — cut generously before the first frost threatens",
-      "Winter squash ripening on the vine; tap for a hollow sound before harvesting",
-      "Sow spinach and lamb's lettuce now for an autumn and winter crop",
-      "Rake early fallen leaves onto the compost or use as mulch around beds"
+      "Dahlias in full late-season bloom",
+      "Asters (Herbstastern) opening in violet and rose",
+      "Harvesting winter squash and pumpkins before the first frost",
+      "Planting garlic cloves and spring bulbs while the soil is still warm"
     ],
-    "sky_tonight": "The waxing gibbous moon rises in the east as darkness settles — bright enough to cast soft shadows in the garden, with Jupiter climbing steadily nearby in Gemini.",
-    "sun_times": "First light crept in at 06:40 this morning, and the sun slips away by 19:27 tonight, with dusk lingering gently until 19:57.",
+    "sky_tonight": "The waxing gibbous moon rises early and floods the garden with silver light by nightfall — look also for Saturn, well-placed in the southeast after dark.",
+    "sun_times": "First light arrives at 06:42, with sunrise at 07:11 — and on this equinox the sun sets at 19:25, dusk lingering until 19:54.",
     "moon_label": "Waxing gibbous",
-    "illum_pct": 76,
-    "sun_range": "07:09–19:27"
+    "illum_pct": 81,
+    "sun_range": "07:11–19:25"
   },
-  "puzzle": {
-    "kind": "trivia",
+  "puzzle": {},
+  "previous_puzzle": {
     "label": "The Evening Trivia",
     "prompt": "In what year was the video game company Electronic Arts founded?\n\n1981   ·   1982   ·   1999   ·   2005",
-    "answer": "1982",
-    "hint": "Category: History",
-    "source": "opentdb.com",
-    "source_id": "704241aa3e20"
-  },
-  "previous_puzzle": {
-    "label": "Fern's Morning Riddle",
-    "prompt": "What 4-letter word can be written forward, backward or upside down, and can still be read from left to right?",
-    "answer": "NOON"
+    "answer": "1982"
   },
   "larder": {
-    "news": [],
-    "recipe": {}
+    "news": [
+      {
+        "source": "food",
+        "source_name": "The Kitchn",
+        "title": "My Easy Trick for Making Roasted Broccoli Taste Ridiculously Good",
+        "url": "https://www.thekitchn.com/cheddar-roasted-broccoli-23845373?utm_source=RSS&utm_medium=feed&utm_campaign=Category%2FChannel%3A+main",
+        "snippet": "I make this version of roasted broccoli pretty much every week because it’s just that good. Florets get roasted on a preheated baking sheet until browned and caramelized. Then they’re buried under buttery panko and sharp cheddar and broiled until golden-brown and crisp.",
+        "cover_url": "",
+        "blurb": "A clever weeknight trick that turns humble broccoli into something caramelised and genuinely crave-worthy — worth a read if you've ever sighed at a sad sheet pan of greens."
+      },
+      {
+        "source": "food",
+        "source_name": "The Guardian",
+        "title": "Sumac roast chicken and bread bake: Sami Tamimi’s fattet musakhan with cucumber avocado salad – recipe",
+        "url": "https://www.theguardian.com/food/2026/sep/22/sumac-roast-chicken-creamy-yoghurt-fattet-musakhan-cucumber-avocado-salad-recipe-sami-tamimi",
+        "snippet": "A rich Levantine fusion dish of sumac-spiced roast chicken, onion and flatbread with tahini yoghurt, and a simple, textured salad Fattet musakhan , a celebration of two beloved Palestinian dishes, takes centre stage here, bringing together crisp bread, creamy yoghurt, sumac-spiced onions, tender chicken and fragrant olive oil in one rich and comforting dish. Alongside, the salad brings a welcome freshness, with crisp cucumber, creamy avocado and bright acidity cutting through the richness of the chicken. Together, they make a beautifully balanced meal, bringing the generous, communal spirit of Palestinian cooking to the table.",
+        "cover_url": "https://i.guim.co.uk/img/media/5b54c3d1d5d3aa8f270136eec306e164c0c17102/0_1972_5102_4080/master/5102.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=b40a53b725d7f34ced6c94df36eb68a0",
+        "blurb": "Sami Tamimi's fattet musakhan is a gorgeous love letter to Palestinian cooking, and the sumac-roasted chicken alone is reason enough to bookmark this one immediately."
+      }
+    ],
+    "recipe": {
+      "source": "recipe",
+      "source_name": "101 Cookbooks",
+      "title": "Pie Recipes: Favorite Sweet & Savory Pies",
+      "url": "https://www.101cookbooks.com/pie-recipes/",
+      "snippet": "A collection of my most loved pie recipes, the ones I can't stop baking. Sweet or savory, fruit-filled or hand-held, these pies come out of the oven beautiful and fragrant. Classic at heart, with just enough modern edge.",
+      "is_recipe": true,
+      "cover_url": "https://images.101cookbooks.com/best-pie-recipes.jpg?w=680",
+      "blurb": "Whether you're in the mood for something fruit-filled and sweet or warmly savoury, this beloved collection of classic pies — beautiful and fragrant straight from the oven — is exactly the kind of baking project a cosy afternoon was made for."
+    },
+    "seasonal_note": "Zürich's markets are heady with Berner Rosen and Gravensteiner apples right now — pick up a kilo from the Bürkliplatz stalls and slow-cook them into a chunky Apfelmus scented with a little cinnamon and lemon zest, the kind that makes the whole kitchen smell like a sensible kind of happiness."
   },
   "fern_data": {
-    "greeting": "The sky tonight is that specific bruised amber — not quite gold, already giving up. Which feels right for an edition that has neutron stacks pushing the edge of reality, and Rhiannon Giddens' banjo pulling spirits across centuries.",
-    "top_pick_title": "Buried Signals & Deep Time"
+    "greeting": "Crayola has retired just 13 colors in 123 years — and the first eight cuts caused actual protests. That small, stubborn fact belongs in the same edition as an Aztec codex returning to Mexico after nearly two centuries away.",
+    "top_pick_title": "Thirteen Colors & Two Centuries Gone"
   }
 }
