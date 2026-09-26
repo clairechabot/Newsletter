@@ -1,17 +1,17 @@
 {
-  "fetched_at": "2026-09-26T10:43:04.905475+02:00",
-  "is_am_email": true,
+  "fetched_at": "2026-09-26T19:49:14.310942+02:00",
+  "is_am_email": false,
   "audit_summary": {
-    "youtube_videos": 2,
+    "youtube_videos": 3,
     "themes": 1,
     "music_articles": 12,
-    "good_news_articles": 2,
-    "discovery_articles": 6,
+    "good_news_articles": 1,
+    "discovery_articles": 2,
     "featured_read": 1,
     "reading_room": 5,
     "garden": 0,
-    "puzzle": 1,
-    "larder": 4
+    "puzzle": 0,
+    "larder": 0
   },
   "themes": [
     {
@@ -21,27 +21,39 @@
       "items": [
         {
           "source": "youtube",
-          "video_id": "tENSaZBjnzo",
-          "title": "A BREAKDOWN of ALL True Events, Symbols, & the Ending of Unabomber EXPLAINED",
-          "channel_id": "UCXcTkcC_H4XeDGfJ7rQGJaw",
-          "channel_title": "Lucas Blue",
-          "published_at": "2026-09-26T01:27:43Z",
-          "url": "https://www.youtube.com/watch?v=tENSaZBjnzo",
-          "duration_seconds": 962,
-          "view_count": "1595",
-          "description": "In this Netflix Unabomber Explained / The Unabomber 2026 Ending Explained, True Story, and Real Events of Ted Kaczynski, I take a deep dive into the Unabomber movie, starring Jacob Tremblay, Russell Crowe, Annabelle Wallis, Shailene Woodley. Directed by Janus Metz Pedersen, the film is a perfect blend of period drama, crime, and psychological thriller, exploring themes of freedom, mental illness, and philosophy. I believe this film is excellent in capturing the major themes of ambition and obses"
+          "video_id": "mkA-AAJRIcM",
+          "title": "8 Crops You Should Plant in October ASAP",
+          "channel_id": "UCSbyncU597LMwb3HhnAI_4w",
+          "channel_title": "Epic Gardening",
+          "published_at": "2026-09-26T16:47:59Z",
+          "url": "https://www.youtube.com/watch?v=mkA-AAJRIcM",
+          "duration_seconds": 1719,
+          "view_count": "1857",
+          "description": "Find FoxFarm Products Near You: https://foxfarm.com/find-a-dealer/\nNot sure what to plant in October? From microgreens to garlic, join Jacques (@jacquesinthegarden), Scott (@GardenerScott), Meg (@meggrowsplants), Jamie https://www.instagram.com/thedesertratgardener, Gray (@urbangardeningwithgray), Kelsey https://www.instagram.com/sproutsnstories, Shannie (@TheFloridaFoodForest), and me for our top fall picks.\n\nIN THIS VIDEO\n→ Mellow Blend Microgreens Seeds: https://growepic.co/4ymaNIQ\n→ Jazzy Mi"
         },
         {
           "source": "youtube",
-          "video_id": "4yC7b6otcJ4",
-          "title": "PLL - Voltage Controlled Oscillator - Current starved VCO",
+          "video_id": "sulmBc7bWts",
+          "title": "It Walks By Night by Henry Kuttner",
+          "channel_id": "UCbFLHoeA-X5qRUDmb9tRRqA",
+          "channel_title": "Classic Masterworks",
+          "published_at": "2026-09-26T15:00:37Z",
+          "url": "https://www.youtube.com/watch?v=sulmBc7bWts",
+          "duration_seconds": 1016,
+          "view_count": "1",
+          "description": "Henry Kuttner, both independently and in collaboration with his wife, the great science fiction and fantasy writer C. L. Moore, was one of the  most important science fiction writers of the 1940s. More than almost any of his contemporaries, he pushed the genre beyond its technological concerns, using sociological and psychological insight to make science fiction a deeply human form of literature. His influence can be traced through the work of virtually every major science fiction writer who fol"
+        },
+        {
+          "source": "youtube",
+          "video_id": "2i467dKhOBE",
+          "title": "PLL - Phase and Frequency Detector",
           "channel_id": "UCFtCfZ4rtIZ7Hsq7ZNHoY1w",
           "channel_title": "Computer&Electronics",
-          "published_at": "2024-01-07T10:11:43Z",
-          "url": "https://www.youtube.com/watch?v=4yC7b6otcJ4",
-          "duration_seconds": 517,
-          "view_count": "15917",
-          "description": "This video explains the current-starved VCO working principle. It is a particular kind of voltage controlled oscillators widely used in Phase looked loop for their low chip area and the good tuneable frequency range. Material taken from the book “CMOS, Circuit design, layout and simulation” by J Baker, H. H. Li, D. E. Boyce\n\nbasics of Current Mirrors https://youtu.be/HNaR60rTXHY\nPhase detector https://youtu.be/2i467dKhOBE\nDifferential Amplifier - The real working: https://youtu.be/bongv60GqIY?si"
+          "published_at": "2023-12-26T06:25:25Z",
+          "url": "https://www.youtube.com/watch?v=2i467dKhOBE",
+          "duration_seconds": 340,
+          "view_count": "17804",
+          "description": "This video is about phase and frequency detector. These kind of circuits are used in Phase Looked Loop or PLL to detect the different phase or frequency between two input signals producing an error signal to lead the Voltage Controlled Oscillator or VCO.\n\nD Flip Flop https://youtu.be/G5kYyE-U4-M\nVolage Controlled Oscillator VCO https://youtu.be/4yC7b6otcJ4"
         }
       ]
     }
@@ -50,133 +62,133 @@
     {
       "source": "music",
       "source_name": "NPR Music",
-      "title": "Singer Tinashe is a 'Popstar' who enjoys exploring genres on her latest album",
-      "snippet": "The singer Tinashe has a new album out Friday. It's called Popstar.",
-      "url": "https://www.npr.org/2026/09/25/nx-s1-5936561/singer-tinashe-is-a-popstar-who-enjoys-exploring-genres-on-her-latest-album",
+      "title": "Tiny Desk Radio: Sheer Mag, Blood Orange, Turnstile",
+      "snippet": "A stage dive ... from the Tiny Desk? We feature Turnstile, plus sets from artists who have collaborated with the Baltimore hardcore band: Sheer Mag and Blood Orange.",
+      "url": "https://www.npr.org/2026/09/24/g-s1-144875/tiny-desk-radio-sheer-mag-blood-orange-turnstile",
       "genre": "",
       "vibe_check": "",
-      "cover_url": "https://media.npr.org/include/images/facebook-default-wide-s1400-c85.jpg",
-      "embed_url": null
+      "cover_url": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/2000x1125+0+0/resize/1400/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Fb1%2F76%2Fc61fd0ae42a5a882442f6c0f533f%2Fturnstile-9.jpeg",
+      "embed_url": "https://www.youtube.com/embed/eHMv0tUe5eE"
     },
     {
       "source": "music",
       "source_name": "NPR Music",
-      "title": "Woman who accused Jay-Z of sexual assault says her claims were false",
-      "snippet": "On Thursday, the woman identified as Jane Doe filed a declaration in Manhattan federal court stating that all of her original claims against the rapper were false.",
-      "url": "https://www.npr.org/2026/09/25/nx-s1-5981154/jay-z-sexual-assault-accuser-claims-false",
+      "title": "African pop was poised for a U.S. takeover. Can its stars finish the job?",
+      "snippet": "The dam appeared to break in 2024, as South African phenom Tyla made Grammy and chart history. But for a wide field of buzzed-about voices, the path to a crossover has narrowed.",
+      "url": "https://www.npr.org/2026/09/23/nx-s1-5931860/african-pop-tyla-ayra-starr-davido",
       "genre": "",
       "vibe_check": "",
-      "cover_url": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3501x1969+0+251/resize/1400/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F8a%2Fcf%2F8f56f4f7436bb5f144bbda8fe616%2Fgettyimages-1911124242.jpg",
-      "embed_url": null
+      "cover_url": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/2600x1463+0+0/resize/1400/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F3e%2F27%2F41685ead4f68a3a533ba1175c638%2Fafropop2c.jpg",
+      "embed_url": "https://www.youtube.com/embed/xiZUf98A1Ts"
     },
     {
       "source": "music",
-      "source_name": "NPR Music",
-      "title": "'Bad Boy For Life' investigates the culture that enabled Sean Combs' alleged abuse",
-      "snippet": "Rolling Stone reporter Cheyenne Roundtree says rumors of abuse followed the media mogul for years. Her book examines how Combs remained so powerful, despite decades of warning signs and allegations.",
-      "url": "https://www.npr.org/2026/09/24/nx-s1-5978799/sean-combs-bad-boy-for-life-cheyenne-roundtree",
+      "source_name": "Stereogum",
+      "title": "Quavo Announces QRÖMELIFE Tracklist With Tyler, The Creator, Justin Timberlake, Future, & More",
+      "snippet": "Quavo's new Pharrell-produced album QRÖMELIFE arrives next week. On Friday (Sept. 25), the Migos member announced the tracklist, which features guests like Tyler, The Creator, Justin Timberlake, Future, A$AP Rocky, Yung Miami, and more.",
+      "url": "https://stereogum.com/2512722/quavo-announces-qromelife-tracklist-with-tyler-the-creator-justin-timberlake-future-more/news/",
       "genre": "",
       "vibe_check": "",
-      "cover_url": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3000x1688+0+50/resize/1400/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F4b%2Fab%2F9766ba9748f68bae4b7861e5e61a%2Fgettyimages-108193696.jpg",
+      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/09/26UM1IM02290.rgb_.jpg?w=564",
       "embed_url": null
     },
     {
       "source": "music",
       "source_name": "Stereogum",
-      "title": "Pearl Jam Reveal New Drummer At Ohana Festival",
-      "snippet": "After a handful of songs at Ohana Fest on Friday night, the “Eddie Vedder And Friends” set turned into a full-on Pearl Jam performance. (They are still scheduled to headline on Sunday.) It was the band’s first show since drummer Matt Cameron left last summer after 27 years.",
-      "url": "https://stereogum.com/2512693/pearl-jam-reveal-new-drummer-at-ohana-festival/news/",
+      "title": "Danz CM Announces New Album The Interdimensional Extraterrestrial Time Travelers Society: Hear Two Tracks",
+      "snippet": "Danielle Johnson kicked off the year with the release of MYTHS , an ambient album made with vintage synths, recorded live at the Vintage Synthesizer Museum. She returned last month with two new tracks that previewed a new Danz CM era. Now, the 2010 Stereogum Artist To Watch is announcing her new LP, The Interdimensional Extraterrestrial Time Travelers Society .",
+      "url": "https://stereogum.com/2512712/danz-cm-announces-new-album-the-interdimensional-extraterrestrial-time-travelers-society-hear-two-tracks/music/",
       "genre": "",
       "vibe_check": "",
-      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/09/pearljam.png?w=564",
-      "embed_url": "https://www.youtube.com/embed/1USMm8ImCj4"
+      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/09/unnamed-2026-09-26T094705.018.jpg?w=564",
+      "embed_url": "https://www.youtube.com/embed/cqHdtVRI__E"
     },
     {
       "source": "music",
       "source_name": "Stereogum",
-      "title": "Brain Tourniquet Unleash Fearsome New Concept Album Sinking Deeper Into Madness",
-      "snippet": "My wife got back from work just now, walked into my office, and asked, \" What are you listening to?\" When I told her, she was like, \" Brain Tourniquet? Well, A for effort on the name.\" She's right. That name rules.",
-      "url": "https://stereogum.com/2512670/brain-tourniquet-unleash-fearsome-new-concept-album-sinking-deeper-into-madness/music/",
+      "title": "Sabrina Carpenter Cast As Ginger Rogers In Fred Astaire Biopic",
+      "snippet": "Before Sabrina Carpenter was a singer, she was an actress, best known for her role in the Disney sitcom Girl Meets World . Now, after dominating the pop world with Short N’ Sweet and Man's Best Friend , she's returning to the screen to play Ginger Rogers in the forthcoming Fred Astaire biopic.",
+      "url": "https://stereogum.com/2512705/sabrina-carpenter-cast-as-ginger-rogers-in-fred-astaire-biopic/news/",
       "genre": "",
       "vibe_check": "",
-      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/09/Brain-Tourniquet.jpg?w=564",
-      "embed_url": "https://ironlungrecords.bandcamp.com/album/an-expression-in-pain-lungs-221"
-    },
-    {
-      "source": "music",
-      "source_name": "Stereogum",
-      "title": "With No Rest For The Wicked, AZ Chike Wants A Classic Album. Does He Get It?",
-      "snippet": "For as long as it’s existed, prestige rap has been the most deceptive trapdoor in hip-hop. Rappers old enough to remember “Slow Jamz” and “Jesus Walks” decide they need a party anthem and a conscious rap song. People who thought good kid, m.A.A.d city was the best album of the 2010s suddenly realize that they can’t have a classic album without voicemail recordings from their aunty or a song where they’re “more vulnerable than ever.” If the church choir on his new album-opening song “Mercy” weren’t enough of an indication, a recent interview with Billboard makes it more than a little clear that AZ Chike was trying to make one of those albums.",
-      "url": "https://stereogum.com/2512602/with-no-rest-for-the-wicked-az-chike-wants-a-classic-album-does-he-get-it/columns/say-whats-real-the-month-in-rap/",
-      "genre": "",
-      "vibe_check": "",
-      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/09/Photo-Cred_-Ro.lexx_.jpg?w=564",
-      "embed_url": "https://www.youtube.com/embed/IUHv3aM3Ysw"
-    },
-    {
-      "source": "music",
-      "source_name": "Pitchfork",
-      "title": "Woman Who Accused Jay-Z of Rape Withdraws Allegations",
-      "snippet": "“Mr. Carter never engaged in any inappropriate conduct toward me whatsoever,” she wrote in a declaration",
-      "url": "https://pitchfork.com/story/woman-who-accused-jay-z-of-rape-withdraws-allegations/",
-      "genre": "",
-      "vibe_check": "",
-      "cover_url": "https://media.pitchfork.com/photos/6ab6b7fe43b1170d7975ab00/master/pass/GettyImages-1911124317.jpg",
+      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/09/sabrina-carpenter-ginger-rogers.jpeg?w=564",
       "embed_url": null
     },
     {
       "source": "music",
       "source_name": "Pitchfork",
-      "title": "All Things Go, CBGB, Global Citizen 2026 Festivals Canceled",
-      "snippet": "The New York City events were scrapped due to severe weather conditions",
-      "url": "https://pitchfork.com/story/all-things-go-festival-2026-canceled/",
+      "title": "11 New Albums You Should Listen to Now: Tinashe, Gilla Band, and More",
+      "snippet": "Stream new releases from Tinashe, Gilla Band, Julia Jacklin, and M83",
+      "url": "https://pitchfork.com/story/11-new-albums-you-should-listen-to-now-tinashe-gilla-band-and-more/",
       "genre": "",
       "vibe_check": "",
-      "cover_url": "https://media.pitchfork.com/photos/6ab40902ad1203b50827a88d/master/pass/GettyImages-2286099189.jpg",
+      "cover_url": "https://media.pitchfork.com/photos/6ab67c599bf6b62aec67711a/master/pass/Tinashe%20Popstar%20-%20General%20Press%20Photo%2001%20(1).jpg",
+      "embed_url": "https://www.youtube.com/embed/Uz3i_TkX3Nw"
+    },
+    {
+      "source": "music",
+      "source_name": "Pitchfork",
+      "title": "Brakence Returns With New Song “Ready or Not”",
+      "snippet": "It’s his first solo release since his 2022 album Hypochondriac",
+      "url": "https://pitchfork.com/story/brakence-returns-with-new-song-ready-or-not/",
+      "genre": "",
+      "vibe_check": "",
+      "cover_url": "https://media.pitchfork.com/photos/6ab5bb023e0766e51cb65a87/master/pass/GettyImages-1591466731.jpg",
       "embed_url": null
     },
     {
       "source": "music",
       "source_name": "Pitchfork",
-      "title": "Todd Rundgren: Taylor Swift Ruined Music",
-      "snippet": "In a recent interview, the rock legend said Swift “doesn’t do anything particularly great except grow hair. She’s not a great singer. She’s not a great songwriter.",
-      "url": "https://pitchfork.com/story/todd-rundgren-taylor-swift-ruined-music/",
+      "title": "Taylor Swift Releases Four New Songs",
+      "snippet": "The Life of a Showgirl: The Encore is here",
+      "url": "https://pitchfork.com/story/taylor-swift-releases-four-new-songs/",
       "genre": "",
       "vibe_check": "",
-      "cover_url": "https://media.pitchfork.com/photos/6ab699f03e0766e51cb65e0e/master/pass/MixCollage-25-Sep-2026-11-56-AM-9137.jpg",
+      "cover_url": "https://media.pitchfork.com/photos/6ab40ba6460d9566ff76ef22/master/pass/taylor-swift-new-song-video-patient-zero.jpg",
       "embed_url": null
     },
     {
       "source": "music",
       "source_name": "Consequence",
-      "title": "Drummer Abe Laboriel Jr. Joins Pearl Jam at Ohana Festival",
-      "snippet": "Laboriel made his debut with Pearl Jam during a surprise Friday night set. Drummer Abe Laboriel Jr. Joins Pearl Jam at Ohana Festival Spencer Kaufman",
-      "url": "https://consequence.net/2026/09/pearl-jam-new-drummer-ohana-festival/",
+      "title": "GWAR Classic Member Chuck Varga Dies After Battle With Cancer",
+      "snippet": "Varga helped shape GWAR’s visual universe through sculpture, character design, special effects, and his onstage role as Sexecutioner. GWAR Classic Member Chuck Varga Dies After Battle With Cancer Alex Krinsky",
+      "url": "https://consequence.net/2026/09/gwar-classic-member-chuck-varga-dies-after-battle-with-cancer/",
       "genre": "",
       "vibe_check": "",
-      "cover_url": "https://consequence.net/wp-content/uploads/2026/09/Pearl-Jam-Abe.jpeg?quality=80",
+      "cover_url": "https://consequence.net/wp-content/uploads/2026/09/Chuck-Varga-GWAR-dies.jpeg?quality=80",
       "embed_url": null
     },
     {
       "source": "music",
       "source_name": "Consequence",
-      "title": "Metallica Announce 2027 North American Tour Dates",
-      "snippet": "The massive 12-date outing features support from Limp Bizkit and Avatar. Metallica Announce 2027 North American Tour Dates Alex Young",
-      "url": "https://consequence.net/2026/09/metallica-2027-north-american-tour-dates/",
+      "title": "Margaret Qualley and Sabrina Carpenter Join Tom Holland in Fred Astaire Biopic",
+      "snippet": "Carpenter will star as Ginger Rogers, while Qualley will play Adele Astaire. Margaret Qualley and Sabrina Carpenter Join Tom Holland in Fred Astaire Biopic Eddie Fu",
+      "url": "https://consequence.net/2026/09/margaret-qualley-sabrina-carpenter-fred-astaire-biopic-tom-holland/",
       "genre": "",
       "vibe_check": "",
-      "cover_url": "https://consequence.net/wp-content/uploads/2026/07/Metallica.jpg?quality=80",
+      "cover_url": "https://consequence.net/wp-content/uploads/2026/09/Margaret-Qualley-Sabrina-Carpenter-Fred-Astaire-biopic-Tom-Holland.jpg?quality=80",
       "embed_url": null
     },
     {
       "source": "music",
       "source_name": "Consequence",
-      "title": "Olivia Rodrigo Kicks Off “Unraveled Tour”: See 26-Song Setlist + Video",
-      "snippet": "Rodrigo launched her new tour with a season-inspired set featuring songs from SOUR, GUTS, and her latest album. Olivia Rodrigo Kicks Off “Unraveled Tour”: See 26-Song Setlist + Video Paolo Ragusa",
-      "url": "https://consequence.net/2026/09/olivia-rodrigo-unraveled-tour-kickoff-setlist-video/",
+      "title": "Red Hot Chili Peppers’ Chad Smith Plays Through Black Sabbath’s “Fairies Wear Boots”: Watch",
+      "snippet": "The drummer plays the classic metal song and offers commentary on its simple groove-forward approach. Red Hot Chili Peppers’ Chad Smith Plays Through Black Sabbath’s “Fairies Wear Boots”: Watch Langdon Hickman",
+      "url": "https://consequence.net/2026/09/chad-smith-black-sabbath-fairies-wear-boots/",
       "genre": "",
       "vibe_check": "",
-      "cover_url": "https://consequence.net/wp-content/uploads/2026/09/Olivia-Rodrigo-2.jpeg?quality=80",
+      "cover_url": "https://consequence.net/wp-content/uploads/2026/09/Screenshot-38.png",
+      "embed_url": "https://www.youtube.com/embed/6KHLWlvUH1A"
+    },
+    {
+      "source": "music",
+      "source_name": "Nextbop",
+      "title": "No More Lines in the Sand",
+      "snippet": "",
+      "url": "https://nextbop.com/blog/nomorelinesinthesand",
+      "genre": "",
+      "vibe_check": "",
+      "cover_url": "https://i0.wp.com/nextbop.com/wp-content/uploads/2024/11/sand.jpg",
       "embed_url": null
     }
   ],
@@ -184,124 +196,80 @@
     {
       "source": "good_news",
       "source_name": "Upworthy",
-      "title": "A manager demanded a doctor’s note for a single sick day. It backfired immediately.",
-      "url": "https://www.upworthy.com/pn-manager-demands-doctors-note-loses-server-for-week/",
-      "snippet": "\"They know they can give me the one or two days I ask for or they can give me the week the doc gives me.\"",
-      "cover_url": "https://www.upworthy.com/wp-content/uploads/sites/2/2026/09/waiter-upset-work.png"
-    },
-    {
-      "source": "good_news",
-      "source_name": "The Optimist Daily",
-      "title": "How book clubs and bedtime stories protect and build healthier brains",
-      "url": "https://www.optimistdaily.com/2026/09/how-book-clubs-and-bedtime-stories-protect-and-build-healthier-brains/",
-      "snippet": "BY THE OPTIMIST DAILY EDITORIAL TEAM If the book on your nightstand has been gathering dust, here’s your reason to finally open it. A new review from Cambridge University researchers finds that reading for pleasure, whether that’s a worn paperback or the latest romantasy on your e-reader, is linked to better memory and attention, fewer […] The post How book clubs and bedtime stories protect and build healthier brains first appeared on The Optimist Daily: Making Solutions the News .",
-      "cover_url": "https://www.optimistdaily.com/wp-content/uploads/Depositphotos_796265520_S.jpg"
+      "title": "Divorced Tennessee woman on disability shows off adorable tiny home that costs just $450 a month",
+      "url": "https://www.upworthy.com/divorced-tennessee-woman-on-disability-shows-off-adorable-tiny-home-that-costs-just-450-a-month/",
+      "snippet": "Lisa Davis found a frugal way to have a place of her own.",
+      "cover_url": "https://www.upworthy.com/wp-content/uploads/sites/2/2026/09/tiny-home-tiny-house-single-woman.jpg"
     }
   ],
   "discovery_articles": [
     {
       "source": "discovery",
       "source_name": "Atlas Obscura",
-      "title": "First Bank of Murphy in Murphy, North Carolina",
-      "url": "https://www.atlasobscura.com/places/first-bank-of-murphy-fairycross-bottle-shop",
-      "snippet": "Welcome to one of Downtown Murphy’s oldest buildings and quite possibly one of its most colorful. This was once the Bank of Murphy, established on January 16, 1899. Today, it’s home to FairyCross Bottle Shop.",
+      "title": "Is Alton, Illinois America’s Most Haunted Small Town?",
+      "url": "https://www.atlasobscura.com/articles/podcast-alton-illinois-haunted-town",
+      "snippet": "Listen and subscribe on Apple Podcasts , Spotify , and all major podcast apps. Troy Taylor: There’s a story about a phantom riverboat that I always liked, about how if you heard the riverboat whistle blow on a foggy morning but you never saw the boat, that meant that someone who worked down on the docks was going to die within the next seven days. Amanda McGowan: A lot of old waterfront towns really play up the quaint and cutesy factor, you know, with a brunch cruise on a steamboat or something like that.",
       "category": "history",
-      "cover_url": "https://img.atlasobscura.com/ypY3cCuchZM-zUFWeoqiAhERD3YyxCvx_86NYOfami8/rt:fit/w:600/c:2048:1365:nowe:0:31/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy9mYmEz/MmYxNi0zYzQyLTQ1/OTUtOGMyYS0xMmZm/YzgyNzZmYTY0OGNj/Y2VmMGEzNGZjNGM4/ZTNfb3V0c2lkZS5q/cGc.jpg"
+      "cover_url": "https://img.atlasobscura.com/gu_iYDqVNxVCq2bsJA4IaUploqzuJeOBAmqkIbP0fLw/rt:fit/w:1200/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL2Fzc2V0/cy80OWRlNTdhMS1j/MGFhLTRmN2UtOTg0/OS1mMzFlZWFiNWUw/NDg1NDAxZDI5Yjhh/NzUxYjZhOTNfOTU2/NTMwZmNmNjcyNDA2/NmNlXzk1ZWU0MWE5/LTZhMTUtNDAwYy05/ZTU0LWY2ODgzYjY5/NDJmY19lNDVhZGY1/ZjZiYzBjNWMyYTMw/YTM5ODY4ZjQ0ZWFi/Ni5qcGc.jpg"
     },
     {
       "source": "discovery",
       "source_name": "Smithsonian",
-      "title": "Mysterious 'Anomalies' Have Been Detected Beyond King Tut's Tomb. Could They Be Secret Passageways Leading to the Long-Lost Remains of Queen Nefertiti?",
-      "url": "https://www.smithsonianmag.com/smart-news/mysterious-anomalies-have-been-detected-beyond-king-tuts-tomb-could-they-be-secret-passageways-leading-to-the-long-lost-remains-of-queen-nefertiti-180989576/",
-      "snippet": "Geophysical surveys provide new evidence for a theory that the Egyptian pharaoh was interred in the outer rooms of an existing burial complex. Researchers are trying to get approval to investigate for themselves",
+      "title": "These 15 Wonderful Photographs of Kenya’s World-Class Wildlife Will Have You Booking a Flight to the Savanna",
+      "url": "https://www.smithsonianmag.com/travel/these-15-wonderful-photographs-of-kenyas-world-class-wildlife-will-have-you-booking-a-flight-to-the-savanna-180989558/",
+      "snippet": "The East African nation is home to a number of conservation parks where its impressive animals roam free",
       "category": "history",
-      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/Vymh931iPGjOIYKgGWvHcpjmP8A=/fit-in/1600x0/filters:focal(750x500:751x501)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/67/cb/67cb50d9-fce7-4660-ab6d-568ffe85a9b0/tut.jpg"
-    },
-    {
-      "source": "discovery",
-      "source_name": "Smithsonian",
-      "title": "In a First, Sea Turtles Were Spotted Nesting on the U.S. West Coast. Scientists Say the 'Super' El Niño Could Have Brought Them There",
-      "url": "https://www.smithsonianmag.com/smart-news/in-a-first-sea-turtles-were-spotted-nesting-on-the-us-west-coast-scientists-say-the-super-el-nino-could-have-brought-them-there-180989574/",
-      "snippet": "Two olive ridley turtles were found laying eggs on beaches in Southern California in September. In the Pacific Ocean, these reptiles normally nest farther south, often in Mexico, Nicaragua, Costa Rica and Panama",
-      "category": "history",
-      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/v8prlZHGkAeGGcx5St2QuL6sZdo=/fit-in/1600x0/filters:focal(750x500:751x501)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/37/a2/37a2a3e3-0258-4b23-87cf-13af4e698411/smithsonian_feature_images_24.png"
-    },
-    {
-      "source": "discovery",
-      "source_name": "Smithsonian",
-      "title": "Seven Places in Europe That Legends Say Were Built by Giants, Devils or Dragons",
-      "url": "https://www.smithsonianmag.com/travel/seven-places-in-europe-that-legends-say-were-built-by-giants-devils-or-dragons-180989571/",
-      "snippet": "Bridges, mountains, caves and rock formations that seem impossible to explain become magnets for folklore",
-      "category": "history",
-      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/NyIQgwkSogmusBs9LeV535yWovY=/fit-in/1600x0/filters:focal(1061x707:1062x708)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/1c/49/1c4944f6-13da-4b90-aa38-5281c6ee90a7/gettyimages-1089423186.jpg"
-    },
-    {
-      "source": "discovery",
-      "source_name": "Smithsonian",
-      "title": "Two New Stick Insect Species Have Been Discovered in Australia—and Another One Was Hiding in Plain Sight",
-      "url": "https://www.smithsonianmag.com/smart-news/two-new-stick-insect-species-have-been-discovered-in-australiaand-another-one-was-hiding-in-plain-sight-180989575/",
-      "snippet": "The new discoveries emphasize that scientists have a lot left to learn about insect diversity, even in areas with many observations",
-      "category": "history",
-      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/TH-3h_VxRD04caFcORz1j5BG9FA=/fit-in/1600x0/filters:focal(992x661:993x662)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/50/e9/50e99089-da9f-4a3d-896e-28f2bd58ca21/aen70096-fig-0001-m.jpg"
-    },
-    {
-      "source": "discovery",
-      "source_name": "Colossal",
-      "title": "On Concrete Remnants of London’s Aylesbury Estate, Harriet Mena Hill Preserves a Community",
-      "url": "https://www.thisiscolossal.com/2026/09/harriet-mena-hill-aylesbury-estate-paintings/",
-      "snippet": "Harriet Mena Hill is devoted to documenting a community amid demolition.",
-      "category": "history",
-      "cover_url": "https://www.thisiscolossal.com/wp-content/uploads/2026/09/hill-9.jpg"
+      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/87Qz_rnoF9o42ld4e4UBb5xRato=/fit-in/1600x0/filters:focal(3000x2000:3001x2001)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/19/f4/19f41ac2-a70d-461a-b587-3cdb74126e46/15446ed4-34b1-4918-9691-f707d89bfd5b.jpg"
     }
   ],
   "featured_read": {
     "source": "reads",
-    "source_name": "The Atlantic",
-    "title": "The Two-Year Temper Tantrum to Come",
-    "url": "https://www.theatlantic.com/ideas/2026/09/trump-white-house-press-fight/688788/?utm_source=feed",
-    "snippet": "Trump’s recent kerfuffle with the press is a preview of his next era.",
-    "cover_url": ""
+    "source_name": "Nautilus",
+    "title": "A Blow‑by‑Blow Account of What Would Happen If the Yellowstone Supervolcano Erupted Now",
+    "url": "https://nautil.us/a-blow%e2%80%91by%e2%80%91blow-account-of-what-would-happen-if-the-yellowstone-supervolcano-erupted-now-1285322/",
+    "snippet": "Would it be the end of humanity?",
+    "cover_url": "https://lede-admin.nautil.us/wp-content/uploads/sites/70/2026/09/AdobeStock_177053942.jpeg"
   },
   "reading_room": [
     {
       "source": "reads",
-      "source_name": "The Atlantic",
-      "title": "What Annie Dillard Left Out",
-      "url": "https://www.theatlantic.com/newsletters/2026/09/books-briefing-what-annie-dillard-left-out/688786/?utm_source=feed",
-      "snippet": "Dillard understood that even in suburban landscapes, nature could be transcendent—but human relationships are largely absent from her writing.",
+      "source_name": "Longreads",
+      "title": "Annie Dillard and the Writing Life",
+      "url": "https://longreads.com/2026/09/22/annie-dillard-workshop-alexander-chee-wesleyan/",
+      "snippet": "\"Writers aren’t born, they’re made—from practice, reading, and a lot of caffeine. And sometimes tutelage.\"",
       "cover_url": ""
     },
     {
       "source": "reads",
-      "source_name": "Aeon",
-      "title": "Where a land ethic blooms",
-      "url": "https://aeon.co/essays/a-prairie-enthusiast-in-search-of-a-farming-land-ethic",
-      "snippet": "Caring for this planet entails decisions that are intimate, about our farms, our homes, our human and our wild neighbours - by Craig Maier Read on Aeon",
-      "cover_url": "https://images.aeonmedia.co/images/1cd4dc38-6c0f-44aa-85b0-49959f51226b/essay-grassland-ag-2.jpg?width=1200&quality=75&format=jpeg"
+      "source_name": "Literary Hub",
+      "title": "Lit Hub Weekly: September 21 – 25, 2026",
+      "url": "https://lithub.com/lit-hub-weekly-september-21-25-2026/",
+      "snippet": "During the season of big books, how do you choose one to read? With a flowchart, obviously. | Lit Hub Ed Simon explores the limits of language to understand why “pain makes poor poets out of all of us.” |",
+      "cover_url": "https://s26162.pcdn.co/wp-content/uploads/2026/09/HarrietMonroe.jpg"
+    },
+    {
+      "source": "reads",
+      "source_name": "The Atlantic",
+      "title": "Modern Media Weaken the Presidency",
+      "url": "https://www.theatlantic.com/ideas/2026/09/modern-media-presidential-power/688784/?utm_source=feed",
+      "snippet": "Structural forces in the news industry have made the effective exercise of presidential power more difficult.",
+      "cover_url": ""
+    },
+    {
+      "source": "reads",
+      "source_name": "The Atlantic",
+      "title": "The Novel That Looks Death in the Eye",
+      "url": "https://www.theatlantic.com/books/2026/09/emma-clines-anti-escapist-novel-switzy-book-review/688538/?utm_source=feed",
+      "snippet": "Emma Cline’s Switzy might not make readers happy, but it could strike them with moments of sublime clarity.",
+      "cover_url": ""
     },
     {
       "source": "reads",
       "source_name": "Nautilus",
-      "title": "Let’s Do Some Leaf-Peeping From Space",
-      "url": "https://nautil.us/lets-do-some-leaf-peeping-from-space-1285302/",
-      "snippet": "Fall foliage from hundreds of miles up",
-      "cover_url": "https://lede-admin.nautil.us/wp-content/uploads/sites/70/2026/09/elizabethtown_oli2_header.jpg"
-    },
-    {
-      "source": "reads",
-      "source_name": "Psyche",
-      "title": "The way we talk to bots matters even if they aren’t conscious",
-      "url": "https://psyche.co/ideas/the-way-we-talk-to-bots-matters-even-if-they-arent-conscious",
-      "snippet": "If more and more of our daily interactions are ungracious exchanges with machines, we should expect it to change us - by HennyGe Wichers Read on Psyche",
-      "cover_url": "https://images.aeonmedia.co/images/bed5ff0b-2b04-40df-933e-f482c2556bc5/sz-michael-kahn-a0gp_asy5vc-unsplash.jpg?top=125&left=0&cropWidth=2400&cropHeight=1350&width=1200&quality=75&format=jpeg"
-    },
-    {
-      "source": "reads",
-      "source_name": "Longreads",
-      "title": "Making Meaning, One Step at a Time: A Conversation with Earl Swift",
-      "url": "https://longreads.com/2026/09/24/proportionality-earl-swift/",
-      "snippet": "Strong pacing and flow gets your reader to the finish line. The author of Up On Cove Mountain explains why they’re so important.",
-      "cover_url": "https://i0.wp.com/longreads.com/wp-content/uploads/2026/09/CNFPod_Swift.png?fit=2400%2C1400&quality=80&ssl=1"
+      "title": "A Striking New Fish Species Discovered in Amazon",
+      "url": "https://nautil.us/a-striking-new-fish-species-discovered-in-amazon-1285318/",
+      "snippet": "And it’s already endangered",
+      "cover_url": "https://lede-admin.nautil.us/wp-content/uploads/sites/70/2026/09/01-new-fish.jpg"
     }
   ],
   "garden_note": {
@@ -313,65 +281,18 @@
     "moon_label": "Full moon",
     "illum_pct": 100
   },
-  "puzzle": {
-    "kind": "haiku riddle",
+  "puzzle": {},
+  "previous_puzzle": {
     "label": "The Morning Haiku",
     "prompt": "summer’s end\nthe river we always ____\ndown to its bones\n\n(Fill in the missing word.)",
-    "answer": "walked",
-    "hint": "",
-    "source": "tinywords.com",
-    "source_id": "https://tinywords.com/?p=50384",
-    "credit": "Haiku by Ben Oliver, via tinywords.com"
-  },
-  "previous_puzzle": {
-    "label": "Fern's Morning Riddle",
-    "prompt": "I was carried into a dark room and set on fire. I wept, and then my head was cut off. What am I?",
-    "answer": "A Candle"
+    "answer": "walked"
   },
   "larder": {
-    "news": [
-      {
-        "source": "food",
-        "source_name": "The Kitchn",
-        "title": "The Simple Trick for Reviving Bland Soup",
-        "url": "https://www.thekitchn.com/soup-seasoning-trick-23845486?utm_source=RSS&utm_medium=feed&utm_campaign=Category%2FChannel%3A+main",
-        "snippet": "It works for any recipe.",
-        "cover_url": "https://cdn.apartmenttherapy.info/image/upload/f_auto,q_auto:eco,c_fill,g_auto,w_1500,ar_3:2/k%2FPhoto%2FRecipes%2F2023-12-chicken-noodle-soup%2Fchicken-noodle-soup-530_3700f3_cropped",
-        "blurb": ""
-      },
-      {
-        "source": "food",
-        "source_name": "Eater",
-        "title": "Steal My Food Itinerary: 3 Days in Sifnos, Greece",
-        "url": "https://www.eater.com/dining-out/987536/steal-my-food-itinerary-3-days-in-sifnos-greece",
-        "snippet": "It felt like everyone I know traveled to Greece this summer. Friends chose Zakynthos, Crete, Naxos, Ikaria. I opted for Sifnos, one of the Cyclades’ most celebrated food destinations but still, thankfully, relatively under the radar internationally.",
-        "cover_url": "https://platform.eater.com/wp-content/uploads/sites/2/2026/09/A201650E-7D0C-497B-8DB8-9AC3783B4962_1_102_a.jpg?quality=90&strip=all&crop=0%2C15.102157186549%2C100%2C69.795685626902&w=1200",
-        "blurb": ""
-      },
-      {
-        "source": "food",
-        "source_name": "The Guardian",
-        "title": "Henry Harris’ vegetarian recipe for French onion and parsley soup",
-        "url": "https://www.theguardian.com/food/2026/sep/26/vegetarian-french-onion-and-parsley-soup-recipe-henry-harris",
-        "snippet": "A thick and creamy, flavourful onion soup topped with grated cheese and herbs When I was a child, my mother often made onions in white sauce to serve with roast lamb. I loved their thick, velvety texture and how they brought richness, sweetness and even more savouriness to a good Sunday lunch. A similarly thick tangle of onions features in the classic soupe à l’oignon gratinée, which can’t really be mimicked without a deep, dark, beefy stock, so rather than even try, it’s best to introduce another layer of flavour entirely.",
-        "cover_url": "https://i.guim.co.uk/img/media/3f80a86200e4111d4d8d0067dfa378b8f66d4fe9/0_1692_5214_4171/master/5214.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=28cbf63b4104509469ed4ceaaac7c4a1",
-        "blurb": ""
-      }
-    ],
-    "recipe": {
-      "source": "recipe",
-      "source_name": "Alexandra's Kitchen",
-      "title": "Simple Summery Frittata with Sweet Corn & Chorizo",
-      "url": "https://alexandracooks.com/2026/08/08/simple-summery-frittata-with-sweet-corn-chorizo/",
-      "snippet": "Simple Summery Frittata with Sweet Corn & Chorizo This simple summery frittata takes no time to assemble and makes a great make-ahead breakfast or quick weeknight meal. It is endlessly customizable, but pairs especially well with a simple homemade romesco sauce. In Serena Wolf’s third book, ​You Do You​, she writes: “There are few more versatile “anytime meals” than a loaded frittata.” I […] Read: Simple Summery Frittata with Sweet Corn & Chorizo",
-      "is_recipe": true,
-      "cover_url": "https://alexandracooks.com/wp-content/uploads/2026/08/platedfrittata_ak.jpg",
-      "blurb": ""
-    },
-    "seasonal_note": ""
+    "news": [],
+    "recipe": {}
   },
   "fern_data": {
-    "greeting": "Good morning! Fresh stories are waiting — let's dig in.",
+    "greeting": "The day is winding down. Let's close it with something worth reading.",
     "top_pick_title": ""
   }
 }
