@@ -22,6 +22,7 @@ from zoneinfo import ZoneInfo
 
 import re
 import hashlib
+import random
 from html import unescape as _html_unescape
 from langdetect import detect, LangDetectException
 import defusedxml.ElementTree as ET
@@ -70,13 +71,32 @@ YOUTUBE_CHANNEL_IDS: list[str] = [
     "UCFtCfZ4rtIZ7Hsq7ZNHoY1w",  # Computer & Electronics
     "UCIZ5ZOeiXYbmKTl_85ghNPw",  # Physics Explained
     "UCHnyfMqiRRG1u-2MsSQLbXA",  # Veritasium
+    "UCF0-84qhSDVOq8i2I3jDVcA",  # J. Draper
+    "UCrc2iv2-G1FZ3VscM3zu2jg",  # Lindsay Nikole
+    "UCvpQ-l09fCVxJd3urZbxzHg",  # The British Museum
+    "UCct9aR7HC79Cv2g-9oDOTLw",  # ReligionForBreakfast
 ]
+
+# Science / maths / electronics channels. They have deep, never-seen backlogs,
+# so without a cap they crowd out everything else; at most
+# MAX_STEM_VIDEOS_PER_EDITION of them per edition.
+STEM_CHANNEL_IDS = frozenset({
+    "UCYO_jab_esuFRV4b17AJtAw",  # 3Blue1Brown
+    "UCH4BNI0-FOK2dMXoFtViWHw",  # Be Smart
+    "UCGfFUc6eWxfbtjYeun6r9xg",  # FloatHeadPhysics
+    "UCFtCfZ4rtIZ7Hsq7ZNHoY1w",  # Computer & Electronics
+    "UCIZ5ZOeiXYbmKTl_85ghNPw",  # Physics Explained
+    "UCHnyfMqiRRG1u-2MsSQLbXA",  # Veritasium
+})
 
 HISTORY_FILE = Path(__file__).parent / "history.json"
 CLAUDE_MODEL = "claude-sonnet-4-6"    # matches curator.CLAUDE_MODEL
 YOUTUBE_VIDEOS_PER_CHANNEL = 1        # 1 per channel keeps the edition spread across many voices
-CHANNEL_SCAN_DEPTH = 50               # uploads scanned back per channel for unseen videos (mines backlog, not just recent)
-MAX_VIDEOS_PER_EDITION = 10           # newest-first cap across all curated channels
+CHANNEL_SCAN_DEPTH = 150              # uploads scanned back per channel for unseen videos (mines backlog, not just recent)
+MAX_VIDEOS_PER_EDITION = 10           # cap across all curated channels, filled by channel rotation
+MIN_VIDEOS_PER_EDITION = 4            # below this, channels still in cooldown may backfill
+CHANNEL_COOLDOWN_HOURS = 72           # a featured channel sits out ~6 editions before it is eligible again
+MAX_STEM_VIDEOS_PER_EDITION = 2       # cap on STEM_CHANNEL_IDS per edition
 YOUTUBE_MIN_DURATION_SECONDS = 121    # ≥ 2 min — removes the 0–2 min band where Shorts cluster
 
 # Content filter keywords, split into two tiers:
@@ -232,6 +252,16 @@ def load_history() -> tuple[set[str], set[str], set[str], set[str], set[str], se
     return set(), set(), set(), set(), set(), set()
 
 
+def load_channel_last_featured() -> dict[str, str]:
+    """channel_id -> ISO time that channel last had a video in an edition. Drives
+    the channel rotation in fetch_channel_videos."""
+    try:
+        data = json.loads(HISTORY_FILE.read_text(encoding="utf-8-sig"))
+        return dict(data.get("youtube_channel_last_featured") or {})
+    except (OSError, json.JSONDecodeError):
+        return {}
+
+
 def save_history(
     seen_ids: set[str],
     seen_good_news_urls: set[str],
@@ -246,6 +276,7 @@ def save_history(
     seen_trivia_ids: "list | None" = None,
     recent_greetings: "list | None" = None,
     seen_food_urls: "set | None" = None,
+    channel_last_featured: "dict | None" = None,
 ) -> None:
     """Persist seen video IDs and the Good News / Discovery / Reads / Music URLs.
 
@@ -282,6 +313,8 @@ def save_history(
         existing["recent_greetings"] = recent_greetings
     if seen_food_urls is not None:
         existing["food_urls"] = sorted(seen_food_urls)
+    if channel_last_featured is not None:
+        existing["youtube_channel_last_featured"] = dict(sorted(channel_last_featured.items()))
     HISTORY_FILE.write_text(
         json.dumps(existing, indent=2, ensure_ascii=False), encoding="utf-8"
     )
@@ -506,19 +539,67 @@ def _get_playlist_latest_ids(youtube, playlist_id: str, max_results: int = 5) ->
     return ids[:max_results]
 
 
+def _select_rotated(
+    candidates: list[dict],
+    channel_last_featured: dict[str, str],
+    max_videos: int,
+    now: "datetime.datetime | None" = None,
+) -> list[dict]:
+    """Pick up to `max_videos` candidates (one per channel), least-recently-
+    featured channel first, ties broken at random. Channels featured within
+    CHANNEL_COOLDOWN_HOURS sit out unless the edition would otherwise have fewer
+    than MIN_VIDEOS_PER_EDITION videos; STEM_CHANNEL_IDS are capped at
+    MAX_STEM_VIDEOS_PER_EDITION either way. Pure apart from the shuffle."""
+    now = now or datetime.datetime.now(UTC)
+    cutoff = (now - datetime.timedelta(hours=CHANNEL_COOLDOWN_HOURS)).isoformat(timespec="seconds")
+    pool = list(candidates)
+    random.shuffle(pool)
+    # Never-featured channels sort first ("" < any timestamp); stable sort keeps
+    # the shuffle as the tie-break.
+    pool.sort(key=lambda v: channel_last_featured.get(v["channel_id"], ""))
+
+    chosen: list[dict] = []
+    stem = 0
+
+    def _take(v: dict) -> None:
+        nonlocal stem
+        chosen.append(v)
+        stem += v["channel_id"] in STEM_CHANNEL_IDS
+
+    rested = [v for v in pool if channel_last_featured.get(v["channel_id"], "") < cutoff]
+    cooling = [v for v in pool if v not in rested]
+    for group, limit in ((rested, max_videos), (cooling, MIN_VIDEOS_PER_EDITION)):
+        for v in group:
+            if len(chosen) >= limit:
+                break
+            if v["channel_id"] in STEM_CHANNEL_IDS and stem >= MAX_STEM_VIDEOS_PER_EDITION:
+                continue
+            _take(v)
+
+    left = len(candidates) - len(chosen)
+    if left:
+        print(f"[YouTube] Rotation picked {len(chosen)} of {len(candidates)} candidates; "
+              f"{left} left unseen for a future edition.")
+    return chosen
+
+
 def fetch_channel_videos(
-    youtube, seen_ids: set[str], max_videos: int = MAX_VIDEOS_PER_EDITION
+    youtube,
+    seen_ids: set[str],
+    max_videos: int = MAX_VIDEOS_PER_EDITION,
+    channel_last_featured: "dict[str, str] | None" = None,
 ) -> list[dict]:
     """
     Scan the last CHANNEL_SCAN_DEPTH uploads of every channel for unseen videos,
-    accept up to YOUTUBE_VIDEOS_PER_CHANNEL per channel, then keep the
-    `max_videos` newest across all channels.
+    accept up to YOUTUBE_VIDEOS_PER_CHANNEL per channel, then pick up to
+    `max_videos` by channel rotation (see _select_rotated). Updates
+    `channel_last_featured` (channel_id -> ISO time) for the channels chosen.
 
     Seen-marking rules (so no eligible video is ever silently lost):
       - videos rejected for cause (Short/political/clickbait/non-English) are
         marked seen — they will never become eligible;
       - eligible videos NOT chosen this run (per-channel surplus or cut by the
-        newest-first cap) are left unseen and compete again next run;
+        rotation) are left unseen and compete again next run;
       - only the videos actually returned are marked seen.
 
     Quota cost breakdown (~45 channels):
@@ -530,6 +611,8 @@ def fetch_channel_videos(
     If a quota-exceeded error is hit at any stage, the function returns
     whatever has been collected so far rather than crashing the whole run.
     """
+    if channel_last_featured is None:
+        channel_last_featured = {}
     all_results: list[dict] = []
 
     try:
@@ -605,14 +688,13 @@ def fetch_channel_videos(
         else:
             print(f"::warning::YouTube detail fetch failed ({exc}) — using partial results.")
 
-    # Keep the newest `max_videos` across all channels; videos cut by the cap
-    # remain unseen and compete again next run.
-    all_results.sort(key=lambda v: v.get("published_at", ""), reverse=True)
-    if len(all_results) > max_videos:
-        print(f"[YouTube] Capping {len(all_results)} accepted videos to the {max_videos} newest.")
-        all_results = all_results[:max_videos]
+    # Rotate across channels instead of taking the newest: channels with a deep
+    # unseen backlog (or that post often) used to win every edition.
+    all_results = _select_rotated(all_results, channel_last_featured, max_videos)
+    now_iso = datetime.datetime.now(UTC).isoformat(timespec="seconds")
     for v in all_results:
         seen_ids.add(v["video_id"])
+        channel_last_featured[v["channel_id"]] = now_iso
 
     print(f"[YouTube] Collected {len(all_results)} channel videos.")
     return all_results
@@ -2015,8 +2097,10 @@ def main() -> dict:
     # --- YouTube ---
     # Every video comes from a hand-picked channel; the full cap is theirs.
     youtube = build_youtube_client()
+    channel_last_featured = load_channel_last_featured()
     youtube_results = fetch_channel_videos(
-        youtube, seen_ids, max_videos=MAX_VIDEOS_PER_EDITION
+        youtube, seen_ids, max_videos=MAX_VIDEOS_PER_EDITION,
+        channel_last_featured=channel_last_featured,
     )
 
     # --- Music (every run) ---
@@ -2169,7 +2253,8 @@ def main() -> dict:
                  seen_haiku_ids=updated_haiku_ids,
                  seen_trivia_ids=updated_trivia_ids,
                  recent_greetings=updated_greetings,
-                 seen_food_urls=seen_food_urls)
+                 seen_food_urls=seen_food_urls,
+                 channel_last_featured=channel_last_featured)
 
     curated_file = Path(__file__).parent / "curated_data.json"
     curated_file.write_text(json.dumps(curated, indent=2, ensure_ascii=False), encoding="utf-8")
