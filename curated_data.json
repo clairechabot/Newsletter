@@ -1,17 +1,17 @@
 {
-  "fetched_at": "2026-09-26T19:49:14.310942+02:00",
-  "is_am_email": false,
+  "fetched_at": "2026-09-27T11:23:13.179446+02:00",
+  "is_am_email": true,
   "audit_summary": {
-    "youtube_videos": 3,
+    "youtube_videos": 2,
     "themes": 1,
     "music_articles": 12,
-    "good_news_articles": 1,
-    "discovery_articles": 2,
+    "good_news_articles": 2,
+    "discovery_articles": 0,
     "featured_read": 1,
     "reading_room": 5,
     "garden": 0,
-    "puzzle": 0,
-    "larder": 0
+    "puzzle": 1,
+    "larder": 4
   },
   "themes": [
     {
@@ -21,39 +21,27 @@
       "items": [
         {
           "source": "youtube",
-          "video_id": "mkA-AAJRIcM",
-          "title": "8 Crops You Should Plant in October ASAP",
-          "channel_id": "UCSbyncU597LMwb3HhnAI_4w",
-          "channel_title": "Epic Gardening",
-          "published_at": "2026-09-26T16:47:59Z",
-          "url": "https://www.youtube.com/watch?v=mkA-AAJRIcM",
-          "duration_seconds": 1719,
-          "view_count": "1857",
-          "description": "Find FoxFarm Products Near You: https://foxfarm.com/find-a-dealer/\nNot sure what to plant in October? From microgreens to garlic, join Jacques (@jacquesinthegarden), Scott (@GardenerScott), Meg (@meggrowsplants), Jamie https://www.instagram.com/thedesertratgardener, Gray (@urbangardeningwithgray), Kelsey https://www.instagram.com/sproutsnstories, Shannie (@TheFloridaFoodForest), and me for our top fall picks.\n\nIN THIS VIDEO\n→ Mellow Blend Microgreens Seeds: https://growepic.co/4ymaNIQ\n→ Jazzy Mi"
+          "video_id": "6rTuHSfVedk",
+          "title": "The Gospels: Are They Historical?",
+          "channel_id": "UC2J29LPhS9vMiWyYEqBRB0w",
+          "channel_title": "The Ancients",
+          "published_at": "2026-09-27T06:00:31Z",
+          "url": "https://www.youtube.com/watch?v=6rTuHSfVedk",
+          "duration_seconds": 3573,
+          "view_count": "886",
+          "description": "How much can we really know about the historical Jesus? The Gospels of Matthew, Mark, Luke and John have shaped Christianity for nearly 2,000 years, but they were written decades after the events they describe. So how should we treat them as historical sources?\n\nTristan Hughes is joined by Professor Helen Bond to examine where the Gospels came from, who wrote them and how closely they reflect the world of first-century Judea. Were they based on eyewitness testimony and earlier traditions? And wh"
         },
         {
           "source": "youtube",
-          "video_id": "sulmBc7bWts",
-          "title": "It Walks By Night by Henry Kuttner",
-          "channel_id": "UCbFLHoeA-X5qRUDmb9tRRqA",
-          "channel_title": "Classic Masterworks",
-          "published_at": "2026-09-26T15:00:37Z",
-          "url": "https://www.youtube.com/watch?v=sulmBc7bWts",
-          "duration_seconds": 1016,
-          "view_count": "1",
-          "description": "Henry Kuttner, both independently and in collaboration with his wife, the great science fiction and fantasy writer C. L. Moore, was one of the  most important science fiction writers of the 1940s. More than almost any of his contemporaries, he pushed the genre beyond its technological concerns, using sociological and psychological insight to make science fiction a deeply human form of literature. His influence can be traced through the work of virtually every major science fiction writer who fol"
-        },
-        {
-          "source": "youtube",
-          "video_id": "2i467dKhOBE",
-          "title": "PLL - Phase and Frequency Detector",
+          "video_id": "G5kYyE-U4-M",
+          "title": "D Flip Flop and frequency divider",
           "channel_id": "UCFtCfZ4rtIZ7Hsq7ZNHoY1w",
           "channel_title": "Computer&Electronics",
-          "published_at": "2023-12-26T06:25:25Z",
-          "url": "https://www.youtube.com/watch?v=2i467dKhOBE",
-          "duration_seconds": 340,
-          "view_count": "17804",
-          "description": "This video is about phase and frequency detector. These kind of circuits are used in Phase Looked Loop or PLL to detect the different phase or frequency between two input signals producing an error signal to lead the Voltage Controlled Oscillator or VCO.\n\nD Flip Flop https://youtu.be/G5kYyE-U4-M\nVolage Controlled Oscillator VCO https://youtu.be/4yC7b6otcJ4"
+          "published_at": "2023-12-13T11:03:16Z",
+          "url": "https://www.youtube.com/watch?v=G5kYyE-U4-M",
+          "duration_seconds": 532,
+          "view_count": "4220",
+          "description": "In this video we see two kinds of Flip Flops and how they work. We see the level sensitive and the edge triggered flip flops. We see also how we can build a clock divider with an edge triggered flip flop.\nHow computer works - building Scott's CPU\nhttps://youtube.com/playlist?list=PLnAxReCloSeTJc8ZGogzjtCtXl_eE6yzA"
         }
       ]
     }
@@ -62,214 +50,203 @@
     {
       "source": "music",
       "source_name": "NPR Music",
-      "title": "Tiny Desk Radio: Sheer Mag, Blood Orange, Turnstile",
-      "snippet": "A stage dive ... from the Tiny Desk? We feature Turnstile, plus sets from artists who have collaborated with the Baltimore hardcore band: Sheer Mag and Blood Orange.",
-      "url": "https://www.npr.org/2026/09/24/g-s1-144875/tiny-desk-radio-sheer-mag-blood-orange-turnstile",
+      "title": "Angela Autumn brings a new sound to her Appalachian roots",
+      "snippet": "Singer songwriter Angela Autumn's music starts with her Appalachian roots and then takes some surprising turns. She talks about the experiences that inspired the songs on her new album, 'Believer'.",
+      "url": "https://www.npr.org/2026/09/26/nx-s1-5978944/angela-autumn-brings-a-new-sound-to-her-appalachian-roots",
       "genre": "",
       "vibe_check": "",
-      "cover_url": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/2000x1125+0+0/resize/1400/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Fb1%2F76%2Fc61fd0ae42a5a882442f6c0f533f%2Fturnstile-9.jpeg",
-      "embed_url": "https://www.youtube.com/embed/eHMv0tUe5eE"
-    },
-    {
-      "source": "music",
-      "source_name": "NPR Music",
-      "title": "African pop was poised for a U.S. takeover. Can its stars finish the job?",
-      "snippet": "The dam appeared to break in 2024, as South African phenom Tyla made Grammy and chart history. But for a wide field of buzzed-about voices, the path to a crossover has narrowed.",
-      "url": "https://www.npr.org/2026/09/23/nx-s1-5931860/african-pop-tyla-ayra-starr-davido",
-      "genre": "",
-      "vibe_check": "",
-      "cover_url": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/2600x1463+0+0/resize/1400/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F3e%2F27%2F41685ead4f68a3a533ba1175c638%2Fafropop2c.jpg",
-      "embed_url": "https://www.youtube.com/embed/xiZUf98A1Ts"
-    },
-    {
-      "source": "music",
-      "source_name": "Stereogum",
-      "title": "Quavo Announces QRÖMELIFE Tracklist With Tyler, The Creator, Justin Timberlake, Future, & More",
-      "snippet": "Quavo's new Pharrell-produced album QRÖMELIFE arrives next week. On Friday (Sept. 25), the Migos member announced the tracklist, which features guests like Tyler, The Creator, Justin Timberlake, Future, A$AP Rocky, Yung Miami, and more.",
-      "url": "https://stereogum.com/2512722/quavo-announces-qromelife-tracklist-with-tyler-the-creator-justin-timberlake-future-more/news/",
-      "genre": "",
-      "vibe_check": "",
-      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/09/26UM1IM02290.rgb_.jpg?w=564",
+      "cover_url": "https://media.npr.org/include/images/facebook-default-wide-s1400-c85.jpg",
       "embed_url": null
     },
     {
       "source": "music",
       "source_name": "Stereogum",
-      "title": "Danz CM Announces New Album The Interdimensional Extraterrestrial Time Travelers Society: Hear Two Tracks",
-      "snippet": "Danielle Johnson kicked off the year with the release of MYTHS , an ambient album made with vintage synths, recorded live at the Vintage Synthesizer Museum. She returned last month with two new tracks that previewed a new Danz CM era. Now, the 2010 Stereogum Artist To Watch is announcing her new LP, The Interdimensional Extraterrestrial Time Travelers Society .",
-      "url": "https://stereogum.com/2512712/danz-cm-announces-new-album-the-interdimensional-extraterrestrial-time-travelers-society-hear-two-tracks/music/",
+      "title": "brakence – “ready or noT”",
+      "snippet": "In 2022, brakence broke through with hypochondriac , a bizarro hyperpop-rap whirlwind of an album. The 24-year-old artist is back today with \"ready or noT,\" his first new music since then. It comes with an eccentric music video by fellow musician quadeca.",
+      "url": "https://stereogum.com/2512654/brakence-ready-or-not/music/",
       "genre": "",
       "vibe_check": "",
-      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/09/unnamed-2026-09-26T094705.018.jpg?w=564",
-      "embed_url": "https://www.youtube.com/embed/cqHdtVRI__E"
+      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/09/196874778012.jpg?w=564",
+      "embed_url": "https://www.youtube.com/embed/MM0yi-Op4h8"
     },
     {
       "source": "music",
       "source_name": "Stereogum",
-      "title": "Sabrina Carpenter Cast As Ginger Rogers In Fred Astaire Biopic",
-      "snippet": "Before Sabrina Carpenter was a singer, she was an actress, best known for her role in the Disney sitcom Girl Meets World . Now, after dominating the pop world with Short N’ Sweet and Man's Best Friend , she's returning to the screen to play Ginger Rogers in the forthcoming Fred Astaire biopic.",
-      "url": "https://stereogum.com/2512705/sabrina-carpenter-cast-as-ginger-rogers-in-fred-astaire-biopic/news/",
+      "title": "Ween Announce Boognish Provides, 14-CD Box Set Of Previously Unreleased Chocolate And Cheese Tour Shows",
+      "snippet": "Ween are opening the vaults with Boognish Provides , a new collection of seven previously unreleased concerts from their 1994-95 Chocolate And Cheese tour. Arriving next month via Rhino, the 14-CD box set and condensed 2-LP edition capture the band at a pivotal moment, shortly after they began touring with a full backing band featuring bassist Andrew Weiss and drummer Claude Coleman.",
+      "url": "https://stereogum.com/2512596/ween-announce-boognish-provides-14-cd-box-set-of-previously-unreleased-chocolate-and-cheese-tour-shows/news/",
       "genre": "",
       "vibe_check": "",
-      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/09/sabrina-carpenter-ginger-rogers.jpeg?w=564",
+      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/09/unnamed-2.png?w=564",
+      "embed_url": "https://www.youtube.com/embed/a_HIU-DRI7s"
+    },
+    {
+      "source": "music",
+      "source_name": "Stereogum",
+      "title": "Remi Wolf – “I Won’t Cry”",
+      "snippet": "Palo Alto singer Remi Wolf started off as a kind of alt-pop artist, but she seems to be inching ever-closer to actual pop music. Wolf's new album Mud comes out next month, and we've already posted the singles \" Twiggy \" and \" Bottle .\" Today, she shares \"I Won't Cry,\" a big, bruised old-school ballad with some country and some Southern rock in its DNA. It's got a big, melodramatic chorus, and she really sinks her teeth into it.",
+      "url": "https://stereogum.com/2512648/remi-wolf-i-wont-cry/music/",
+      "genre": "",
+      "vibe_check": "",
+      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/09/Remi-Wolf.jpeg?w=535",
+      "embed_url": "https://www.youtube.com/embed/3Hxmu5BGqtQ"
+    },
+    {
+      "source": "music",
+      "source_name": "Pitchfork",
+      "title": "Madonna and Charli XCX Unite for New Song “Danceteria Afterhours”",
+      "snippet": "Ahead of Madonna’s VMAs opening performance this weekend",
+      "url": "https://pitchfork.com/story/madonna-and-charli-xcx-unite-for-new-song-danceteria-afterhours/",
+      "genre": "",
+      "vibe_check": "",
+      "cover_url": "https://media.pitchfork.com/photos/6ab59f3f43b1170d7975a4b8/master/pass/madonnacharli.png",
       "embed_url": null
     },
     {
       "source": "music",
       "source_name": "Pitchfork",
-      "title": "11 New Albums You Should Listen to Now: Tinashe, Gilla Band, and More",
-      "snippet": "Stream new releases from Tinashe, Gilla Band, Julia Jacklin, and M83",
-      "url": "https://pitchfork.com/story/11-new-albums-you-should-listen-to-now-tinashe-gilla-band-and-more/",
+      "title": "B0YG1RL Announce Self-Titled Album",
+      "snippet": "The Miami-based duo’s fourth release of 2026 is out in October",
+      "url": "https://pitchfork.com/story/b0yg1rl-announce-self-titled-album/",
       "genre": "",
       "vibe_check": "",
-      "cover_url": "https://media.pitchfork.com/photos/6ab67c599bf6b62aec67711a/master/pass/Tinashe%20Popstar%20-%20General%20Press%20Photo%2001%20(1).jpg",
-      "embed_url": "https://www.youtube.com/embed/Uz3i_TkX3Nw"
-    },
-    {
-      "source": "music",
-      "source_name": "Pitchfork",
-      "title": "Brakence Returns With New Song “Ready or Not”",
-      "snippet": "It’s his first solo release since his 2022 album Hypochondriac",
-      "url": "https://pitchfork.com/story/brakence-returns-with-new-song-ready-or-not/",
-      "genre": "",
-      "vibe_check": "",
-      "cover_url": "https://media.pitchfork.com/photos/6ab5bb023e0766e51cb65a87/master/pass/GettyImages-1591466731.jpg",
+      "cover_url": "https://media.pitchfork.com/photos/6ab581dd4455ff5cbc739562/master/pass/unnamed%20(52).jpg",
       "embed_url": null
     },
     {
       "source": "music",
       "source_name": "Pitchfork",
-      "title": "Taylor Swift Releases Four New Songs",
-      "snippet": "The Life of a Showgirl: The Encore is here",
-      "url": "https://pitchfork.com/story/taylor-swift-releases-four-new-songs/",
+      "title": "How the Founder of Lady Gaga’s Biggest Fan Site Ended Up in Prison",
+      "snippet": "Gaga Daily’s Kirill Nguyen is free—and streaming Mayhem—after being detained for protesting the Belarusian government",
+      "url": "https://pitchfork.com/story/how-the-founder-of-lady-gaga-biggest-fan-site-ended-up-in-prison/",
       "genre": "",
       "vibe_check": "",
-      "cover_url": "https://media.pitchfork.com/photos/6ab40ba6460d9566ff76ef22/master/pass/taylor-swift-new-song-video-patient-zero.jpg",
+      "cover_url": "https://media.pitchfork.com/photos/6ab57fab681b9fa6ab87250b/master/pass/P4K26_GagaDaily_2x1.gif",
       "embed_url": null
     },
     {
       "source": "music",
       "source_name": "Consequence",
-      "title": "GWAR Classic Member Chuck Varga Dies After Battle With Cancer",
-      "snippet": "Varga helped shape GWAR’s visual universe through sculpture, character design, special effects, and his onstage role as Sexecutioner. GWAR Classic Member Chuck Varga Dies After Battle With Cancer Alex Krinsky",
-      "url": "https://consequence.net/2026/09/gwar-classic-member-chuck-varga-dies-after-battle-with-cancer/",
+      "title": "There Weren’t Many, But Here Were the Best Moments of SNL’s Season 52 Premiere",
+      "snippet": "Jalen Brunson hosted a mostly forgettable episode featuring a very pedestrian KATSEYE. There Weren’t Many, But Here Were the Best Moments of SNL’s Season 52 Premiere Alex Young",
+      "url": "https://consequence.net/2026/09/snl-season-52-premiere-best-moments/",
       "genre": "",
       "vibe_check": "",
-      "cover_url": "https://consequence.net/wp-content/uploads/2026/09/Chuck-Varga-GWAR-dies.jpeg?quality=80",
-      "embed_url": null
+      "cover_url": "https://consequence.net/wp-content/uploads/2026/09/Jalen-Brunson-SNL.jpeg?quality=80",
+      "embed_url": "https://www.youtube.com/embed/ukaOcpgVzrs"
     },
     {
       "source": "music",
       "source_name": "Consequence",
-      "title": "Margaret Qualley and Sabrina Carpenter Join Tom Holland in Fred Astaire Biopic",
-      "snippet": "Carpenter will star as Ginger Rogers, while Qualley will play Adele Astaire. Margaret Qualley and Sabrina Carpenter Join Tom Holland in Fred Astaire Biopic Eddie Fu",
-      "url": "https://consequence.net/2026/09/margaret-qualley-sabrina-carpenter-fred-astaire-biopic-tom-holland/",
+      "title": "Clutch Announce New Album Wasted Lands, Unveil Title Track: Stream",
+      "snippet": "Clutch's 14th studio album will be out January 22nd via Weathermaker Music. Clutch Announce New Album Wasted Lands, Unveil Title Track: Stream Langdon Hickman",
+      "url": "https://consequence.net/2026/09/clutch-wasted-lands-album-single/",
       "genre": "",
       "vibe_check": "",
-      "cover_url": "https://consequence.net/wp-content/uploads/2026/09/Margaret-Qualley-Sabrina-Carpenter-Fred-Astaire-biopic-Tom-Holland.jpg?quality=80",
-      "embed_url": null
+      "cover_url": "https://consequence.net/wp-content/uploads/2026/08/Clutch.jpg?quality=80",
+      "embed_url": "https://www.youtube.com/embed/Z4kgKBCIGFE"
     },
     {
       "source": "music",
       "source_name": "Consequence",
-      "title": "Red Hot Chili Peppers’ Chad Smith Plays Through Black Sabbath’s “Fairies Wear Boots”: Watch",
-      "snippet": "The drummer plays the classic metal song and offers commentary on its simple groove-forward approach. Red Hot Chili Peppers’ Chad Smith Plays Through Black Sabbath’s “Fairies Wear Boots”: Watch Langdon Hickman",
-      "url": "https://consequence.net/2026/09/chad-smith-black-sabbath-fairies-wear-boots/",
+      "title": "Jimmy Kimmel’s 2026 Brooklyn Takeover Features His Biggest Guestlist Yet",
+      "snippet": "Paul McCartney, Bruce Springsteen, Zohran Mamdani, Howard Stern, and more will appear during Kimmel's weeklong run in Brooklyn. Jimmy Kimmel’s 2026 Brooklyn Takeover Features His Biggest Guestlist Yet Alex Young",
+      "url": "https://consequence.net/2026/09/jimmy-kimmels-2026-brooklyn-episodes-lineup/",
       "genre": "",
       "vibe_check": "",
-      "cover_url": "https://consequence.net/wp-content/uploads/2026/09/Screenshot-38.png",
-      "embed_url": "https://www.youtube.com/embed/6KHLWlvUH1A"
+      "cover_url": "https://consequence.net/wp-content/uploads/2026/09/Jimmy-Kimmel.jpeg?quality=80",
+      "embed_url": null
     },
     {
       "source": "music",
-      "source_name": "Nextbop",
-      "title": "No More Lines in the Sand",
-      "snippet": "",
-      "url": "https://nextbop.com/blog/nomorelinesinthesand",
+      "source_name": "JazzTimes",
+      "title": "The Outpouring: Tenor Saxophonist-Composer Kevin Sun’s New Two-Volume Enterprise",
+      "snippet": "T he titles of tenor saxophonist Kevin Sun’s two new quartet releases, Kevin Sun I. and Kevin Sun II., seem to suggest he is making …",
+      "url": "https://www.jazztimes.com/features/profiles/the-outpouring-tenor-saxophonist-composer-kevin-suns-new-two-volume-enterprise/",
       "genre": "",
       "vibe_check": "",
-      "cover_url": "https://i0.wp.com/nextbop.com/wp-content/uploads/2024/11/sand.jpg",
+      "cover_url": "https://www.jazztimes.com/wp-content/uploads/2026/09/26343e9a-b38f-4815-988a-3f2f74292d4b-scaled.jpg",
+      "embed_url": "https://www.youtube.com/embed/jiPMUQ10Suw"
+    },
+    {
+      "source": "music",
+      "source_name": "PopMatters",
+      "title": "Get Rid of All the Pesky Humans: An AI Fantasy",
+      "snippet": "Echoing Hannah Arendt’s postwar warnings about the authoritarian impulse, Jill Lepore shows that an anti-humanist strain was threaded into the acceleration of technological advancements.",
+      "url": "https://www.popmatters.com/an-ai-fantasy-jill-lepore",
+      "genre": "",
+      "vibe_check": "",
+      "cover_url": "https://www.popmatters.com/wp-content/uploads/2026/09/AI-robot.webp",
       "embed_url": null
     }
   ],
   "global_silver_linings": [
     {
       "source": "good_news",
-      "source_name": "Upworthy",
-      "title": "Divorced Tennessee woman on disability shows off adorable tiny home that costs just $450 a month",
-      "url": "https://www.upworthy.com/divorced-tennessee-woman-on-disability-shows-off-adorable-tiny-home-that-costs-just-450-a-month/",
-      "snippet": "Lisa Davis found a frugal way to have a place of her own.",
-      "cover_url": "https://www.upworthy.com/wp-content/uploads/sites/2/2026/09/tiny-home-tiny-house-single-woman.jpg"
-    }
-  ],
-  "discovery_articles": [
-    {
-      "source": "discovery",
-      "source_name": "Atlas Obscura",
-      "title": "Is Alton, Illinois America’s Most Haunted Small Town?",
-      "url": "https://www.atlasobscura.com/articles/podcast-alton-illinois-haunted-town",
-      "snippet": "Listen and subscribe on Apple Podcasts , Spotify , and all major podcast apps. Troy Taylor: There’s a story about a phantom riverboat that I always liked, about how if you heard the riverboat whistle blow on a foggy morning but you never saw the boat, that meant that someone who worked down on the docks was going to die within the next seven days. Amanda McGowan: A lot of old waterfront towns really play up the quaint and cutesy factor, you know, with a brunch cruise on a steamboat or something like that.",
-      "category": "history",
-      "cover_url": "https://img.atlasobscura.com/gu_iYDqVNxVCq2bsJA4IaUploqzuJeOBAmqkIbP0fLw/rt:fit/w:1200/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL2Fzc2V0/cy80OWRlNTdhMS1j/MGFhLTRmN2UtOTg0/OS1mMzFlZWFiNWUw/NDg1NDAxZDI5Yjhh/NzUxYjZhOTNfOTU2/NTMwZmNmNjcyNDA2/NmNlXzk1ZWU0MWE5/LTZhMTUtNDAwYy05/ZTU0LWY2ODgzYjY5/NDJmY19lNDVhZGY1/ZjZiYzBjNWMyYTMw/YTM5ODY4ZjQ0ZWFi/Ni5qcGc.jpg"
+      "source_name": "Good News Network",
+      "title": "Good News in History September 27",
+      "url": "https://www.goodnewsnetwork.org/events060927/",
+      "snippet": "Happy 50th Birthday to Il Capitano—Francesco Totti. The most iconic Italian football forward of the 21st century, Totti spent a 25-year professional career in the red and orange on the AS Roma team—and is remembered as one of the greatest players of his generation. In 619 appearances for Roma he scored 250 goals, the second […]",
+      "cover_url": "https://www.goodnewsnetwork.org/wp-content/uploads/2022/09/Mural-graffiti-dedicated-to-Francesco-Totti-in-the-Rome-district-Monti-celebrating-the-victory-of-AS-Roma.jpg"
     },
     {
-      "source": "discovery",
-      "source_name": "Smithsonian",
-      "title": "These 15 Wonderful Photographs of Kenya’s World-Class Wildlife Will Have You Booking a Flight to the Savanna",
-      "url": "https://www.smithsonianmag.com/travel/these-15-wonderful-photographs-of-kenyas-world-class-wildlife-will-have-you-booking-a-flight-to-the-savanna-180989558/",
-      "snippet": "The East African nation is home to a number of conservation parks where its impressive animals roam free",
-      "category": "history",
-      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/87Qz_rnoF9o42ld4e4UBb5xRato=/fit-in/1600x0/filters:focal(3000x2000:3001x2001)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/19/f4/19f41ac2-a70d-461a-b587-3cdb74126e46/15446ed4-34b1-4918-9691-f707d89bfd5b.jpg"
+      "source": "good_news",
+      "source_name": "Upworthy",
+      "title": "People who ‘read’ others for a living share what they can pick up on about someone in 10 seconds",
+      "url": "https://www.upworthy.com/people-who-read-others-for-a-living-share-what-they-can-pick-up-on-about-someone-in-10-seconds/",
+      "snippet": "\"I'm a teacher. It is INCREDIBLY obvious which kids have unregulated Algorithm time and which do not.\"",
+      "cover_url": "https://www.upworthy.com/wp-content/uploads/sites/2/2026/09/a-bartender-being-observant.jpg"
     }
   ],
+  "discovery_articles": [],
   "featured_read": {
     "source": "reads",
-    "source_name": "Nautilus",
-    "title": "A Blow‑by‑Blow Account of What Would Happen If the Yellowstone Supervolcano Erupted Now",
-    "url": "https://nautil.us/a-blow%e2%80%91by%e2%80%91blow-account-of-what-would-happen-if-the-yellowstone-supervolcano-erupted-now-1285322/",
-    "snippet": "Would it be the end of humanity?",
-    "cover_url": "https://lede-admin.nautil.us/wp-content/uploads/sites/70/2026/09/AdobeStock_177053942.jpeg"
+    "source_name": "Literary Hub",
+    "title": "Booksellers are sounding the alarm over Trump’s anti-antifascist presidential memo.",
+    "url": "https://lithub.com/booksellers-are-sounding-the-alarm-over-trumps-anti-antifascist-presidential-memo/",
+    "snippet": "A group of concerned booksellers recently sent an open letter to the American Booksellers Association and the American Booksellers for Free Expression raising an “urgent concern” about the Trump administration’s NSPM-7 anti-antifascist memorandum. The presidential security memo issued last year",
+    "cover_url": "https://s26162.pcdn.co/wp-content/uploads/2026/09/trump-signing.jpg"
   },
   "reading_room": [
     {
       "source": "reads",
-      "source_name": "Longreads",
-      "title": "Annie Dillard and the Writing Life",
-      "url": "https://longreads.com/2026/09/22/annie-dillard-workshop-alexander-chee-wesleyan/",
-      "snippet": "\"Writers aren’t born, they’re made—from practice, reading, and a lot of caffeine. And sometimes tutelage.\"",
-      "cover_url": ""
-    },
-    {
-      "source": "reads",
-      "source_name": "Literary Hub",
-      "title": "Lit Hub Weekly: September 21 – 25, 2026",
-      "url": "https://lithub.com/lit-hub-weekly-september-21-25-2026/",
-      "snippet": "During the season of big books, how do you choose one to read? With a flowchart, obviously. | Lit Hub Ed Simon explores the limits of language to understand why “pain makes poor poets out of all of us.” |",
-      "cover_url": "https://s26162.pcdn.co/wp-content/uploads/2026/09/HarrietMonroe.jpg"
-    },
-    {
-      "source": "reads",
       "source_name": "The Atlantic",
-      "title": "Modern Media Weaken the Presidency",
-      "url": "https://www.theatlantic.com/ideas/2026/09/modern-media-presidential-power/688784/?utm_source=feed",
-      "snippet": "Structural forces in the news industry have made the effective exercise of presidential power more difficult.",
+      "title": "Lenders Don’t Trust the United States Anymore",
+      "url": "https://www.theatlantic.com/ideas/2026/09/trump-national-debt-interest-rates/688783/?utm_source=feed",
+      "snippet": "Blame Trump for rising borrowing costs.",
       "cover_url": ""
     },
     {
       "source": "reads",
       "source_name": "The Atlantic",
-      "title": "The Novel That Looks Death in the Eye",
-      "url": "https://www.theatlantic.com/books/2026/09/emma-clines-anti-escapist-novel-switzy-book-review/688538/?utm_source=feed",
-      "snippet": "Emma Cline’s Switzy might not make readers happy, but it could strike them with moments of sublime clarity.",
+      "title": "The Pacific Is a Mess of Hurricanes",
+      "url": "https://www.theatlantic.com/science/2026/09/pacific-hurricanes/688802/?utm_source=feed",
+      "snippet": "Hawaii is on its third close call this season.",
       "cover_url": ""
     },
     {
       "source": "reads",
       "source_name": "Nautilus",
-      "title": "A Striking New Fish Species Discovered in Amazon",
-      "url": "https://nautil.us/a-striking-new-fish-species-discovered-in-amazon-1285318/",
-      "snippet": "And it’s already endangered",
-      "cover_url": "https://lede-admin.nautil.us/wp-content/uploads/sites/70/2026/09/01-new-fish.jpg"
+      "title": "How Fast You Age During 40s May Predict Memory Lapses in Your 50s",
+      "url": "https://nautil.us/how-fast-you-age-during-40s-may-predict-memory-lapses-in-your-50s-1285315/",
+      "snippet": "As if middle-aged people don’t have enough to worry about",
+      "cover_url": "https://lede-admin.nautil.us/wp-content/uploads/sites/70/2026/09/shutterstock_2198250641.jpg"
+    },
+    {
+      "source": "reads",
+      "source_name": "Longreads",
+      "title": "The Incredible Journey of a Migratory Shorebird",
+      "url": "https://longreads.com/2026/09/22/migration-shorebird-flight/",
+      "snippet": "\"Godwits make the longest non-stop migration in the bird world. That might be the least of their marvels. Can they survive a changing planet?\"",
+      "cover_url": ""
+    },
+    {
+      "source": "reads",
+      "source_name": "Literary Hub",
+      "title": "Lit Hub Daily: September 25, 2026",
+      "url": "https://lithub.com/lit-hub-daily-september-25-2026/",
+      "snippet": "After 26 years, Cyberselfish, Paulina Borsook’s prophetic look at big tech, is more relevant than ever. | Lit Hub Technology “To win in significant ways, we will have to build and sustain movements, propelled by urgency, that move at a pace",
+      "cover_url": "https://s26162.pcdn.co/wp-content/uploads/2026/09/bellhooks.jpg"
     }
   ],
   "garden_note": {
@@ -279,20 +256,66 @@
     "sun_times": "",
     "sun_range": "",
     "moon_label": "Full moon",
-    "illum_pct": 100
+    "illum_pct": 99
   },
-  "puzzle": {},
+  "puzzle": {
+    "kind": "riddle",
+    "label": "Fern's Morning Riddle",
+    "prompt": "What is the next number in the sequence? 2, 3, 5, 9, 17, _",
+    "answer": "33. The pattern:  Double the previous number and subtract 1",
+    "hint": "",
+    "source": "riddles.com",
+    "source_id": "Riddle-1496"
+  },
   "previous_puzzle": {
     "label": "The Morning Haiku",
     "prompt": "summer’s end\nthe river we always ____\ndown to its bones\n\n(Fill in the missing word.)",
     "answer": "walked"
   },
   "larder": {
-    "news": [],
-    "recipe": {}
+    "news": [
+      {
+        "source": "food",
+        "source_name": "The Kitchn",
+        "title": "Apple Slab Pie",
+        "url": "https://www.thekitchn.com/apple-slab-pie-recipe-23846024?utm_source=RSS&utm_medium=feed&utm_campaign=Category%2FChannel%3A+main",
+        "snippet": "There’s almost nothing that signals fall to me like the smell of an apple pie baking in my kitchen. And when that’s happening there’s a high likelihood I’ll be gathering with friends and family in the near future because, well, pies are meant to be shared!While I love a traditional lattice-topped apple pie, I’ve found that a slab pie is the better, easier way to deliver classic apple pie flavors when you’re baking for a crowd.",
+        "cover_url": "https://cdn.apartmenttherapy.info/image/upload/f_auto,q_auto:eco,c_fill,g_auto,w_1500,ar_3:2/tk%2Fphoto%2F2026%2F09-2026%2F2026-09-apple-slab-pie%2Fapple-slab-pie-214",
+        "blurb": ""
+      },
+      {
+        "source": "food",
+        "source_name": "The Guardian",
+        "title": "Sebb’s, Glasgow G1: ‘A delicious bombardment of continents, cuisines and cultural trickledowns’ – restaurant review",
+        "url": "https://www.theguardian.com/food/2026/sep/27/sebbs-glasgow-g1-restaurant-review-grace-dent",
+        "snippet": "Little bits of loveliness from Sauchiehall Street to the Silk Road, from a chef who wants to deliver maximum joy Sebb’s is a basement restaurant on Miller Street in Glasgow with a door that’s perilously easy to miss, even though it’s bright red. The first time I tried to find it, I waltzed past and almost ended up in the pants department of TK Maxx. I was luckier the second time around, and soon found myself descending a set of stairs into a room with the distinct vibe of a beatnik diner inside a bowling alley: there’s no natural light, there are booths that are perfect for conspiring in, a DJ playing psychedelic rock and food served in brown paper bags.",
+        "cover_url": "https://i.guim.co.uk/img/media/137b21fbc441f6b9170a02f853f9f0b1ab609d62/69_0_5082_4065/master/5082.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=2971036112d15accd6aa102c4dd76c0b",
+        "blurb": ""
+      },
+      {
+        "source": "food",
+        "source_name": "Saveur",
+        "title": "Baltimore Yat Gaw Mein",
+        "url": "https://www.saveur.com/recipes/baltimore-yat-gaw-mein/",
+        "snippet": "Photo: Tristan deBrauwere • Food Styling: Thu Buser Also known as dirty yak, this stir-fried noodle dish with dark soy gravy is woven into the city’s culinary fabric.",
+        "cover_url": "https://www.saveur.com/uploads/2026/09/photo-tristan-debrauwere_food-styling-Thu-Buser_TD_AUG26RECIPES_10_SHOT_DIRTY_YAK_025-scaled.jpg?auto=webp&width=1600&height=2000",
+        "blurb": ""
+      }
+    ],
+    "recipe": {
+      "source": "recipe",
+      "source_name": "Alexandra's Kitchen",
+      "title": "Deliciously Chewy No-Bake Energy Bites",
+      "url": "https://alexandracooks.com/2026/07/19/deliciously-chewy-no-bake-energy-bites/",
+      "snippet": "Deliciously Chewy No-Bake Energy Bites Sweetened primarily with dates and a small amount of maple syrup, these no-bake energy bites are perfectly sweet and have the loveliest chewy texture. The recipe is inspired by the ones served at our favorite cafe, and I find them completely irresistible. Two to three times a year, I find myself in Skaneateles with one […] Read: Deliciously Chewy No-Bake Energy Bites",
+      "is_recipe": true,
+      "cover_url": "https://alexandracooks.com/wp-content/uploads/2026/07/energybites_1200.jpg",
+      "blurb": ""
+    },
+    "seasonal_note": ""
   },
   "fern_data": {
-    "greeting": "The day is winding down. Let's close it with something worth reading.",
+    "greeting": "Good morning! Fresh stories are waiting — let's dig in.",
     "top_pick_title": ""
   }
 }
