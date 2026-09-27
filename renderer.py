@@ -647,7 +647,28 @@ def _env_recipient_pairs() -> list[tuple[str, str]]:
         or os.environ.get("RECIPIENTS")
         or ""
     )
-    return [(n.strip(), e.strip()) for (n, e) in getaddresses([raw_to]) if e.strip()]
+    pairs = [(n.strip(), e.strip()) for (n, e) in getaddresses([raw_to]) if e.strip()]
+    return _drop_removed_readers(pairs)
+
+
+# Readers taken off EVERY edition (main and regional), by request. First names
+# only — this repo is public. Matched like WEEKLY_READERS (display name words and
+# email local-part words), so this holds even while they are still listed in the
+# EMAIL_TO* secrets. Remove them from those secrets too, then this can go.
+REMOVED_READERS = frozenset({"celina", "thomas"})
+
+
+def _drop_removed_readers(
+    pairs: "list[tuple[str, str]]",
+    removed: "frozenset[str] | set[str]" = REMOVED_READERS,
+) -> "list[tuple[str, str]]":
+    kept = []
+    for name, email in pairs:
+        if _recipient_tokens(name, email) & removed:
+            print(f"[render] Removed reader skipped: {name or email.split('@')[0]}")
+        else:
+            kept.append((name, email))
+    return kept
 
 
 # Readers who get the newsletter ONCE A WEEK (Sunday morning) instead of twice
@@ -727,7 +748,14 @@ def send_email(html_body: str, subject: str,
         raise SystemExit("ERROR: SMTP_PASS is empty. Check secrets!")
 
     if recipients is None:
-        recipients = [e for (_n, e) in _env_recipient_pairs()] or [smtp_user]
+        recipients = [e for (_n, e) in _env_recipient_pairs()]
+        if not recipients and any(os.environ.get(k) for k in
+                                  ("EMAIL_TO", "NEWSLETTER_RECIPIENTS", "RECIPIENTS")):
+            # Every listed reader was removed — send nothing rather than
+            # falling back to the sender's own inbox.
+            print("[SMTP] All recipients removed — nothing to send.")
+            return
+        recipients = recipients or [smtp_user]
     if not recipients:
         raise SystemExit("ERROR: No recipient. Set EMAIL_TO.")
 
