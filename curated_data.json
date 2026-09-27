@@ -1,9 +1,9 @@
 {
-  "fetched_at": "2026-09-27T11:23:13.179446+02:00",
-  "is_am_email": true,
+  "fetched_at": "2026-09-27T20:31:48.905043+02:00",
+  "is_am_email": false,
   "audit_summary": {
-    "youtube_videos": 2,
-    "themes": 1,
+    "youtube_videos": 0,
+    "themes": 0,
     "music_articles": 12,
     "good_news_articles": 2,
     "discovery_articles": 0,
@@ -11,242 +11,210 @@
     "reading_room": 5,
     "garden": 0,
     "puzzle": 1,
-    "larder": 4
+    "larder": 0
   },
-  "themes": [
-    {
-      "name": "This Week's Picks",
-      "emoji": "",
-      "tagline": "A curated mix of the best content.",
-      "items": [
-        {
-          "source": "youtube",
-          "video_id": "6rTuHSfVedk",
-          "title": "The Gospels: Are They Historical?",
-          "channel_id": "UC2J29LPhS9vMiWyYEqBRB0w",
-          "channel_title": "The Ancients",
-          "published_at": "2026-09-27T06:00:31Z",
-          "url": "https://www.youtube.com/watch?v=6rTuHSfVedk",
-          "duration_seconds": 3573,
-          "view_count": "886",
-          "description": "How much can we really know about the historical Jesus? The Gospels of Matthew, Mark, Luke and John have shaped Christianity for nearly 2,000 years, but they were written decades after the events they describe. So how should we treat them as historical sources?\n\nTristan Hughes is joined by Professor Helen Bond to examine where the Gospels came from, who wrote them and how closely they reflect the world of first-century Judea. Were they based on eyewitness testimony and earlier traditions? And wh"
-        },
-        {
-          "source": "youtube",
-          "video_id": "G5kYyE-U4-M",
-          "title": "D Flip Flop and frequency divider",
-          "channel_id": "UCFtCfZ4rtIZ7Hsq7ZNHoY1w",
-          "channel_title": "Computer&Electronics",
-          "published_at": "2023-12-13T11:03:16Z",
-          "url": "https://www.youtube.com/watch?v=G5kYyE-U4-M",
-          "duration_seconds": 532,
-          "view_count": "4220",
-          "description": "In this video we see two kinds of Flip Flops and how they work. We see the level sensitive and the edge triggered flip flops. We see also how we can build a clock divider with an edge triggered flip flop.\nHow computer works - building Scott's CPU\nhttps://youtube.com/playlist?list=PLnAxReCloSeTJc8ZGogzjtCtXl_eE6yzA"
-        }
-      ]
-    }
-  ],
+  "themes": [],
   "morning_soundtrack": [
     {
       "source": "music",
       "source_name": "NPR Music",
-      "title": "Angela Autumn brings a new sound to her Appalachian roots",
-      "snippet": "Singer songwriter Angela Autumn's music starts with her Appalachian roots and then takes some surprising turns. She talks about the experiences that inspired the songs on her new album, 'Believer'.",
-      "url": "https://www.npr.org/2026/09/26/nx-s1-5978944/angela-autumn-brings-a-new-sound-to-her-appalachian-roots",
+      "title": "Playing 'La Bamba' for an hour? Must be a Mexican fandango!",
+      "snippet": "A 300-year-old Mexican musical tradition is finding new life around the world — one sweaty, joyous, all-night fandango at a time.",
+      "url": "https://www.npr.org/2026/09/27/nx-s1-5973237/la-bamba-mexico-fandango",
       "genre": "",
       "vibe_check": "",
-      "cover_url": "https://media.npr.org/include/images/facebook-default-wide-s1400-c85.jpg",
+      "cover_url": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/4022x2262+0+209/resize/1400/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F7f%2F87%2F15ad2677400dad94ad2cadcd065e%2Ffandango-2.JPG",
       "embed_url": null
     },
     {
       "source": "music",
       "source_name": "Stereogum",
-      "title": "brakence – “ready or noT”",
-      "snippet": "In 2022, brakence broke through with hypochondriac , a bizarro hyperpop-rap whirlwind of an album. The 24-year-old artist is back today with \"ready or noT,\" his first new music since then. It comes with an eccentric music video by fellow musician quadeca.",
-      "url": "https://stereogum.com/2512654/brakence-ready-or-not/music/",
+      "title": "Feist Inducted Into Canadian Songwriters Hall Of Fame, Gets Covered By Jeff Tweedy, Finneas, & Charlotte Cornfield",
+      "snippet": "Last night, Leslie Feist, who has built a fantastic legacy as part of Broken Social Scene and with her solo music as Feist, was inducted into the Canadian Songwriters Hall Of Fame at Massey Hall in Toronto, ON, Canada. The night also honoured '80s rock band the Tragically Hip, Mike Reno and Paul Dean of rock band Loverboy, and pop singer-songwriter Roch Voisine.",
+      "url": "https://stereogum.com/2512782/feist-inducted-into-canadian-songwriters-hall-of-fame-gets-covered-by-jeff-tweedy-finneas-charlotte-cornfield/news/",
       "genre": "",
       "vibe_check": "",
-      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/09/196874778012.jpg?w=564",
-      "embed_url": "https://www.youtube.com/embed/MM0yi-Op4h8"
+      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/09/IMG_8614-1.jpg?w=564",
+      "embed_url": "https://www.youtube.com/embed/wTi6UYDpNh0"
     },
     {
       "source": "music",
       "source_name": "Stereogum",
-      "title": "Ween Announce Boognish Provides, 14-CD Box Set Of Previously Unreleased Chocolate And Cheese Tour Shows",
-      "snippet": "Ween are opening the vaults with Boognish Provides , a new collection of seven previously unreleased concerts from their 1994-95 Chocolate And Cheese tour. Arriving next month via Rhino, the 14-CD box set and condensed 2-LP edition capture the band at a pivotal moment, shortly after they began touring with a full backing band featuring bassist Andrew Weiss and drummer Claude Coleman.",
-      "url": "https://stereogum.com/2512596/ween-announce-boognish-provides-14-cd-box-set-of-previously-unreleased-chocolate-and-cheese-tour-shows/news/",
+      "title": "Rachel Chinouriri Performs And Oasis Are Revealed As Russian Psyop On SNL UK",
+      "snippet": "Last night, Sept. 27, Amelia Dimoldenberg hosted SNL UK and Rachel Chinouriri was the musical guest. Dimoldenberg, who recently announced that she was ending her show Chicken Shop Date , had some good laughs during her opening monologue, especially a dig at Ed Sheeran who she called \"the world famous red-headed puppet with a hand up his ass telling him what to say.\"",
+      "url": "https://stereogum.com/2512776/rachel-chinouriri-performs-and-oasis-are-revealed-as-russian-psyop-on-snl-uk/news/",
       "genre": "",
       "vibe_check": "",
-      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/09/unnamed-2.png?w=564",
+      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/09/Screenshot-2026-09-27-at-5.25.11-PM.png?w=564",
+      "embed_url": "https://www.youtube.com/embed/EsfqBP9gijY"
+    },
+    {
+      "source": "music",
+      "source_name": "Stereogum",
+      "title": "KATSEYE Perform On SNL Season Premiere, Appear In Dream Academy Parody",
+      "snippet": "Last night, Sept. 26, was the 52nd season premiere of SNL . King of New York Jalen Brunson hosted and KATSEYE was the musical guest, performing their songs \"Hootie Frutti\" and \"Animal.\" For the cold open, Ramy Youssef returned as Zohran Mamdani.",
+      "url": "https://stereogum.com/2512767/katseye-perform-on-snl-season-premiere-appear-in-dream-academy-parody/news/",
+      "genre": "",
+      "vibe_check": "",
+      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/09/Screenshot-2026-09-27-at-4.22.55-PM.png?w=564",
+      "embed_url": "https://www.youtube.com/embed/umq-jBC0Yy4"
+    },
+    {
+      "source": "music",
+      "source_name": "Pitchfork",
+      "title": "Sabrina Carpenter to Play Ginger Rogers in Fred Astaire Biopic",
+      "snippet": "She’ll star opposite Tom Holland and Margaret Qualley in the still-untitled Paul King film",
+      "url": "https://pitchfork.com/story/sabrina-carpenter-to-play-ginger-rogers-in-fred-astaire-biopic/",
+      "genre": "",
+      "vibe_check": "",
+      "cover_url": "https://media.pitchfork.com/photos/6ab9350e964279c0350fdc61/master/pass/MixCollage-27-Sep-2026-11-23-AM-1528.jpg",
+      "embed_url": null
+    },
+    {
+      "source": "music",
+      "source_name": "Pitchfork",
+      "title": "Here’s What Went Down at Olivia Rodrigo’s Unraveled Tour Opener",
+      "snippet": "A melting dress, a field of pink flowers, and some Sour throwbacks came together at the Hartford, Connecticut show",
+      "url": "https://pitchfork.com/story/heres-what-went-down-at-olivia-rodrigos-unraveled-tour-opener/",
+      "genre": "",
+      "vibe_check": "",
+      "cover_url": "https://media.pitchfork.com/photos/6ab922b4946704a17a363ca3/master/pass/CP_B5371.jpg",
+      "embed_url": null
+    },
+    {
+      "source": "music",
+      "source_name": "Pitchfork",
+      "title": "Sugababes Announce First Album as Original Trio in 26 Years",
+      "snippet": "After various lineup changes, the OG girl group have reunited for a self-titled record due out next year",
+      "url": "https://pitchfork.com/story/sugababes-announces-first-album-as-original-trio-in-26-years/",
+      "genre": "",
+      "vibe_check": "",
+      "cover_url": "https://media.pitchfork.com/photos/6ab55a683e0766e51cb656b5/master/pass/ALBUM.jpg",
+      "embed_url": null
+    },
+    {
+      "source": "music",
+      "source_name": "Consequence",
+      "title": "Jason Newsted Remembers Cliff Burton 40 Years After Legendary Metallica Bassist’s Passing",
+      "snippet": "Jason Newsted speaks of Cliff Burton's brilliance in this interview with Heavy Consequence. Jason Newsted Remembers Cliff Burton 40 Years After Legendary Metallica Bassist’s Passing Spencer Kaufman",
+      "url": "https://consequence.net/2026/09/jason-newsted-remembers-cliff-burton/",
+      "genre": "",
+      "vibe_check": "",
+      "cover_url": "https://consequence.net/wp-content/uploads/2026/09/Jason-Newsted-Cliff-Burton.jpg?quality=80",
+      "embed_url": null
+    },
+    {
+      "source": "music",
+      "source_name": "Consequence",
+      "title": "Ween Announce Live Boxset, Boognish Provides, From 1990s “Chocolate and Cheese” Tour",
+      "snippet": "The collection will feature entire sets of seven concerts on a 14xCD edition and selections from the shows on a 2xLP edition. Ween Announce Live Boxset, Boognish Provides, From 1990s “Chocolate and Cheese” Tour Travis Bland",
+      "url": "https://consequence.net/2026/09/ween-announce-boxset-boognish-provides/",
+      "genre": "",
+      "vibe_check": "",
+      "cover_url": "https://consequence.net/wp-content/uploads/2026/09/Boognish_Provides.jpeg?quality=80",
       "embed_url": "https://www.youtube.com/embed/a_HIU-DRI7s"
     },
     {
       "source": "music",
-      "source_name": "Stereogum",
-      "title": "Remi Wolf – “I Won’t Cry”",
-      "snippet": "Palo Alto singer Remi Wolf started off as a kind of alt-pop artist, but she seems to be inching ever-closer to actual pop music. Wolf's new album Mud comes out next month, and we've already posted the singles \" Twiggy \" and \" Bottle .\" Today, she shares \"I Won't Cry,\" a big, bruised old-school ballad with some country and some Southern rock in its DNA. It's got a big, melodramatic chorus, and she really sinks her teeth into it.",
-      "url": "https://stereogum.com/2512648/remi-wolf-i-wont-cry/music/",
-      "genre": "",
-      "vibe_check": "",
-      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/09/Remi-Wolf.jpeg?w=535",
-      "embed_url": "https://www.youtube.com/embed/3Hxmu5BGqtQ"
-    },
-    {
-      "source": "music",
-      "source_name": "Pitchfork",
-      "title": "Madonna and Charli XCX Unite for New Song “Danceteria Afterhours”",
-      "snippet": "Ahead of Madonna’s VMAs opening performance this weekend",
-      "url": "https://pitchfork.com/story/madonna-and-charli-xcx-unite-for-new-song-danceteria-afterhours/",
-      "genre": "",
-      "vibe_check": "",
-      "cover_url": "https://media.pitchfork.com/photos/6ab59f3f43b1170d7975a4b8/master/pass/madonnacharli.png",
-      "embed_url": null
-    },
-    {
-      "source": "music",
-      "source_name": "Pitchfork",
-      "title": "B0YG1RL Announce Self-Titled Album",
-      "snippet": "The Miami-based duo’s fourth release of 2026 is out in October",
-      "url": "https://pitchfork.com/story/b0yg1rl-announce-self-titled-album/",
-      "genre": "",
-      "vibe_check": "",
-      "cover_url": "https://media.pitchfork.com/photos/6ab581dd4455ff5cbc739562/master/pass/unnamed%20(52).jpg",
-      "embed_url": null
-    },
-    {
-      "source": "music",
-      "source_name": "Pitchfork",
-      "title": "How the Founder of Lady Gaga’s Biggest Fan Site Ended Up in Prison",
-      "snippet": "Gaga Daily’s Kirill Nguyen is free—and streaming Mayhem—after being detained for protesting the Belarusian government",
-      "url": "https://pitchfork.com/story/how-the-founder-of-lady-gaga-biggest-fan-site-ended-up-in-prison/",
-      "genre": "",
-      "vibe_check": "",
-      "cover_url": "https://media.pitchfork.com/photos/6ab57fab681b9fa6ab87250b/master/pass/P4K26_GagaDaily_2x1.gif",
-      "embed_url": null
-    },
-    {
-      "source": "music",
       "source_name": "Consequence",
-      "title": "There Weren’t Many, But Here Were the Best Moments of SNL’s Season 52 Premiere",
-      "snippet": "Jalen Brunson hosted a mostly forgettable episode featuring a very pedestrian KATSEYE. There Weren’t Many, But Here Were the Best Moments of SNL’s Season 52 Premiere Alex Young",
-      "url": "https://consequence.net/2026/09/snl-season-52-premiere-best-moments/",
+      "title": "Chris Hansen, Shockingly Enough, Didn’t Love Primetime",
+      "snippet": "\"I’m not sure what the point of it was,” was the To Catch a Predator host's first reaction. Chris Hansen, Shockingly Enough, Didn’t Love Primetime Liz Shannon Miller",
+      "url": "https://consequence.net/2026/09/primetime-chris-hansen-reaction/",
       "genre": "",
       "vibe_check": "",
-      "cover_url": "https://consequence.net/wp-content/uploads/2026/09/Jalen-Brunson-SNL.jpeg?quality=80",
-      "embed_url": "https://www.youtube.com/embed/ukaOcpgVzrs"
-    },
-    {
-      "source": "music",
-      "source_name": "Consequence",
-      "title": "Clutch Announce New Album Wasted Lands, Unveil Title Track: Stream",
-      "snippet": "Clutch's 14th studio album will be out January 22nd via Weathermaker Music. Clutch Announce New Album Wasted Lands, Unveil Title Track: Stream Langdon Hickman",
-      "url": "https://consequence.net/2026/09/clutch-wasted-lands-album-single/",
-      "genre": "",
-      "vibe_check": "",
-      "cover_url": "https://consequence.net/wp-content/uploads/2026/08/Clutch.jpg?quality=80",
-      "embed_url": "https://www.youtube.com/embed/Z4kgKBCIGFE"
-    },
-    {
-      "source": "music",
-      "source_name": "Consequence",
-      "title": "Jimmy Kimmel’s 2026 Brooklyn Takeover Features His Biggest Guestlist Yet",
-      "snippet": "Paul McCartney, Bruce Springsteen, Zohran Mamdani, Howard Stern, and more will appear during Kimmel's weeklong run in Brooklyn. Jimmy Kimmel’s 2026 Brooklyn Takeover Features His Biggest Guestlist Yet Alex Young",
-      "url": "https://consequence.net/2026/09/jimmy-kimmels-2026-brooklyn-episodes-lineup/",
-      "genre": "",
-      "vibe_check": "",
-      "cover_url": "https://consequence.net/wp-content/uploads/2026/09/Jimmy-Kimmel.jpeg?quality=80",
+      "cover_url": "https://consequence.net/wp-content/uploads/2026/09/chris-hansen-instagram-screenshot-primetime.jpg?quality=80",
       "embed_url": null
     },
     {
       "source": "music",
       "source_name": "JazzTimes",
-      "title": "The Outpouring: Tenor Saxophonist-Composer Kevin Sun’s New Two-Volume Enterprise",
-      "snippet": "T he titles of tenor saxophonist Kevin Sun’s two new quartet releases, Kevin Sun I. and Kevin Sun II., seem to suggest he is making …",
-      "url": "https://www.jazztimes.com/features/profiles/the-outpouring-tenor-saxophonist-composer-kevin-suns-new-two-volume-enterprise/",
+      "title": "The Good Bye of The Bad Plus: Reid Anderson, Dave King Plot Next Moves",
+      "snippet": "W ith their September 20 date at Tulsa’s LowDown, The Bad Plus truly began their march to finality, with a several-night last stand at The …",
+      "url": "https://www.jazztimes.com/features/profiles/the-good-bye-of-the-bad-plus-reid-anderson-dave-king-plot-next-moves/",
       "genre": "",
       "vibe_check": "",
-      "cover_url": "https://www.jazztimes.com/wp-content/uploads/2026/09/26343e9a-b38f-4815-988a-3f2f74292d4b-scaled.jpg",
-      "embed_url": "https://www.youtube.com/embed/jiPMUQ10Suw"
+      "cover_url": "https://www.jazztimes.com/wp-content/uploads/2026/09/The-Bad-Plus_Evelyn-Freja-_2.jpg",
+      "embed_url": "https://www.youtube.com/embed/B35Dj9g_5rA"
     },
     {
       "source": "music",
       "source_name": "PopMatters",
-      "title": "Get Rid of All the Pesky Humans: An AI Fantasy",
-      "snippet": "Echoing Hannah Arendt’s postwar warnings about the authoritarian impulse, Jill Lepore shows that an anti-humanist strain was threaded into the acceleration of technological advancements.",
-      "url": "https://www.popmatters.com/an-ai-fantasy-jill-lepore",
+      "title": "Holding Absence Virtualise Post-Hardcore on ‘Modern Life Is Lonely’",
+      "snippet": "On 'Modern Life Is Lonely', Holding Absence update post-hardcore closer to the broader hyperpop movement, yet every choice seems tailored to their roots.",
+      "url": "https://www.popmatters.com/holding-absence-modern-life",
       "genre": "",
       "vibe_check": "",
-      "cover_url": "https://www.popmatters.com/wp-content/uploads/2026/09/AI-robot.webp",
-      "embed_url": null
+      "cover_url": "https://www.youtube.com/embed/gXcapkDd_j4",
+      "embed_url": "https://www.youtube.com/embed/gXcapkDd_j4"
     }
   ],
   "global_silver_linings": [
     {
       "source": "good_news",
       "source_name": "Good News Network",
-      "title": "Good News in History September 27",
-      "url": "https://www.goodnewsnetwork.org/events060927/",
-      "snippet": "Happy 50th Birthday to Il Capitano—Francesco Totti. The most iconic Italian football forward of the 21st century, Totti spent a 25-year professional career in the red and orange on the AS Roma team—and is remembered as one of the greatest players of his generation. In 619 appearances for Roma he scored 250 goals, the second […]",
-      "cover_url": "https://www.goodnewsnetwork.org/wp-content/uploads/2022/09/Mural-graffiti-dedicated-to-Francesco-Totti-in-the-Rome-district-Monti-celebrating-the-victory-of-AS-Roma.jpg"
+      "title": "New York City Collects $131 Million From DoorDash for Delivery Workers Unfairly Paid After $13 Billion Profit",
+      "url": "https://www.goodnewsnetwork.org/nyc-collects-131-million-from-doordash-for-delivery-workers-unfairly-paid/",
+      "snippet": "The New York City Department of Consumer and Worker Protection (DCWP) announced a historic $131.5 million enforcement action against DoorDash for systematic violations of the local Delivery Worker Laws. The settlement will place more than $115 million directly into the pockets of delivery workers and pay for $16 million in civil penalties and costs. More […]",
+      "cover_url": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/09/DoorDash-workers-reimbursed-New-York-City-Mayors-office-released-.jpg"
     },
     {
       "source": "good_news",
       "source_name": "Upworthy",
-      "title": "People who ‘read’ others for a living share what they can pick up on about someone in 10 seconds",
-      "url": "https://www.upworthy.com/people-who-read-others-for-a-living-share-what-they-can-pick-up-on-about-someone-in-10-seconds/",
-      "snippet": "\"I'm a teacher. It is INCREDIBLY obvious which kids have unregulated Algorithm time and which do not.\"",
-      "cover_url": "https://www.upworthy.com/wp-content/uploads/sites/2/2026/09/a-bartender-being-observant.jpg"
+      "title": "They said there’s no English rhyme for “silver.” Eminem just obliterated the challenge.",
+      "url": "https://www.upworthy.com/eminem-rhymes-silver-challenge-ex1/",
+      "snippet": "Don't ever let them tell you anything is impossible.",
+      "cover_url": "https://www.upworthy.com/wp-content/uploads/sites/2/2025/08/origin-136.png"
     }
   ],
   "discovery_articles": [],
   "featured_read": {
     "source": "reads",
-    "source_name": "Literary Hub",
-    "title": "Booksellers are sounding the alarm over Trump’s anti-antifascist presidential memo.",
-    "url": "https://lithub.com/booksellers-are-sounding-the-alarm-over-trumps-anti-antifascist-presidential-memo/",
-    "snippet": "A group of concerned booksellers recently sent an open letter to the American Booksellers Association and the American Booksellers for Free Expression raising an “urgent concern” about the Trump administration’s NSPM-7 anti-antifascist memorandum. The presidential security memo issued last year",
-    "cover_url": "https://s26162.pcdn.co/wp-content/uploads/2026/09/trump-signing.jpg"
+    "source_name": "Nautilus",
+    "title": "How Gentle Tapping on the Shin Heals the Brain",
+    "url": "https://nautil.us/how-gentle-tapping-on-the-shin-heals-the-brain-1285299/",
+    "snippet": "The shin bone’s connected to the… brain?",
+    "cover_url": "https://lede-admin.nautil.us/wp-content/uploads/sites/70/2026/09/shutterstock_2512743977.jpg"
   },
   "reading_room": [
     {
       "source": "reads",
-      "source_name": "The Atlantic",
-      "title": "Lenders Don’t Trust the United States Anymore",
-      "url": "https://www.theatlantic.com/ideas/2026/09/trump-national-debt-interest-rates/688783/?utm_source=feed",
-      "snippet": "Blame Trump for rising borrowing costs.",
-      "cover_url": ""
-    },
-    {
-      "source": "reads",
-      "source_name": "The Atlantic",
-      "title": "The Pacific Is a Mess of Hurricanes",
-      "url": "https://www.theatlantic.com/science/2026/09/pacific-hurricanes/688802/?utm_source=feed",
-      "snippet": "Hawaii is on its third close call this season.",
-      "cover_url": ""
-    },
-    {
-      "source": "reads",
-      "source_name": "Nautilus",
-      "title": "How Fast You Age During 40s May Predict Memory Lapses in Your 50s",
-      "url": "https://nautil.us/how-fast-you-age-during-40s-may-predict-memory-lapses-in-your-50s-1285315/",
-      "snippet": "As if middle-aged people don’t have enough to worry about",
-      "cover_url": "https://lede-admin.nautil.us/wp-content/uploads/sites/70/2026/09/shutterstock_2198250641.jpg"
-    },
-    {
-      "source": "reads",
       "source_name": "Longreads",
-      "title": "The Incredible Journey of a Migratory Shorebird",
-      "url": "https://longreads.com/2026/09/22/migration-shorebird-flight/",
-      "snippet": "\"Godwits make the longest non-stop migration in the bird world. That might be the least of their marvels. Can they survive a changing planet?\"",
+      "title": "Where Cities and Oceans Meet",
+      "url": "https://longreads.com/2026/09/22/disappearing-new-orleans-water/",
+      "snippet": "\"In New Orleans, water is coming. What should we do with the time we have left?\"",
       "cover_url": ""
     },
     {
       "source": "reads",
       "source_name": "Literary Hub",
-      "title": "Lit Hub Daily: September 25, 2026",
-      "url": "https://lithub.com/lit-hub-daily-september-25-2026/",
-      "snippet": "After 26 years, Cyberselfish, Paulina Borsook’s prophetic look at big tech, is more relevant than ever. | Lit Hub Technology “To win in significant ways, we will have to build and sustain movements, propelled by urgency, that move at a pace",
-      "cover_url": "https://s26162.pcdn.co/wp-content/uploads/2026/09/bellhooks.jpg"
+      "title": "A Prophetic Classic About the Dangers of Tech is Back in Print",
+      "url": "https://lithub.com/a-prophetic-classic-about-the-dangers-of-tech-is-back-in-print/",
+      "snippet": "Paulina Borsook saw there was something rotten afoot in Silicon Valley in the 1990s, and in her book Cyberselfish: A Critical Romp through the Terribly Libertarian Culture of High Tech, she set out to document and understand a peculiar mindset",
+      "cover_url": "https://s26162.pcdn.co/wp-content/uploads/2026/09/right-sidebar-banner-images-7.png"
+    },
+    {
+      "source": "reads",
+      "source_name": "The Atlantic",
+      "title": "Why Empathy Is Now ‘Toxic,’ ‘Suicidal,’ and a ‘Sin’",
+      "url": "https://www.theatlantic.com/ideas/2026/09/maga-right-christianity-empathy-toxic/688755/?utm_source=feed",
+      "snippet": "According to Gad Saad and his powerful acolytes, compassion is a recipe for “the collective suicide of the West.”",
+      "cover_url": ""
+    },
+    {
+      "source": "reads",
+      "source_name": "The Atlantic",
+      "title": "Drawing the Birds Back Into the Sky",
+      "url": "https://www.theatlantic.com/books/2026/09/poem-trish-reeves-drawing-birds/688749/?utm_source=feed",
+      "snippet": "A poem",
+      "cover_url": ""
+    },
+    {
+      "source": "reads",
+      "source_name": "Nautilus",
+      "title": "How the Pro‑Nicotine “Wellness” Movement Rebranded an Addictive Drug",
+      "url": "https://nautil.us/how-the-pro%e2%80%91nicotine-wellness-movement-rebranded-an-addictive-drug-1285282/",
+      "snippet": "The movement is focused on the idea of “clean” nicotine use, such as pouches, which don’t contain tobacco",
+      "cover_url": "https://lede-admin.nautil.us/wp-content/uploads/sites/70/2026/09/AdobeStock_12194.jpeg"
     }
   ],
   "garden_note": {
@@ -259,63 +227,25 @@
     "illum_pct": 99
   },
   "puzzle": {
-    "kind": "riddle",
-    "label": "Fern's Morning Riddle",
-    "prompt": "What is the next number in the sequence? 2, 3, 5, 9, 17, _",
-    "answer": "33. The pattern:  Double the previous number and subtract 1",
-    "hint": "",
-    "source": "riddles.com",
-    "source_id": "Riddle-1496"
+    "kind": "trivia",
+    "label": "The Evening Trivia",
+    "prompt": "The following Spanish provinces are located in the northern area of Spain except:\n\nAsturias   ·   León   ·   Murcia   ·   Navarre",
+    "answer": "Murcia",
+    "hint": "Category: Geography",
+    "source": "opentdb.com",
+    "source_id": "3264e1b08809"
   },
   "previous_puzzle": {
-    "label": "The Morning Haiku",
-    "prompt": "summer’s end\nthe river we always ____\ndown to its bones\n\n(Fill in the missing word.)",
-    "answer": "walked"
+    "label": "Fern's Morning Riddle",
+    "prompt": "What is the next number in the sequence? 2, 3, 5, 9, 17, _",
+    "answer": "33. The pattern:  Double the previous number and subtract 1"
   },
   "larder": {
-    "news": [
-      {
-        "source": "food",
-        "source_name": "The Kitchn",
-        "title": "Apple Slab Pie",
-        "url": "https://www.thekitchn.com/apple-slab-pie-recipe-23846024?utm_source=RSS&utm_medium=feed&utm_campaign=Category%2FChannel%3A+main",
-        "snippet": "There’s almost nothing that signals fall to me like the smell of an apple pie baking in my kitchen. And when that’s happening there’s a high likelihood I’ll be gathering with friends and family in the near future because, well, pies are meant to be shared!While I love a traditional lattice-topped apple pie, I’ve found that a slab pie is the better, easier way to deliver classic apple pie flavors when you’re baking for a crowd.",
-        "cover_url": "https://cdn.apartmenttherapy.info/image/upload/f_auto,q_auto:eco,c_fill,g_auto,w_1500,ar_3:2/tk%2Fphoto%2F2026%2F09-2026%2F2026-09-apple-slab-pie%2Fapple-slab-pie-214",
-        "blurb": ""
-      },
-      {
-        "source": "food",
-        "source_name": "The Guardian",
-        "title": "Sebb’s, Glasgow G1: ‘A delicious bombardment of continents, cuisines and cultural trickledowns’ – restaurant review",
-        "url": "https://www.theguardian.com/food/2026/sep/27/sebbs-glasgow-g1-restaurant-review-grace-dent",
-        "snippet": "Little bits of loveliness from Sauchiehall Street to the Silk Road, from a chef who wants to deliver maximum joy Sebb’s is a basement restaurant on Miller Street in Glasgow with a door that’s perilously easy to miss, even though it’s bright red. The first time I tried to find it, I waltzed past and almost ended up in the pants department of TK Maxx. I was luckier the second time around, and soon found myself descending a set of stairs into a room with the distinct vibe of a beatnik diner inside a bowling alley: there’s no natural light, there are booths that are perfect for conspiring in, a DJ playing psychedelic rock and food served in brown paper bags.",
-        "cover_url": "https://i.guim.co.uk/img/media/137b21fbc441f6b9170a02f853f9f0b1ab609d62/69_0_5082_4065/master/5082.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=2971036112d15accd6aa102c4dd76c0b",
-        "blurb": ""
-      },
-      {
-        "source": "food",
-        "source_name": "Saveur",
-        "title": "Baltimore Yat Gaw Mein",
-        "url": "https://www.saveur.com/recipes/baltimore-yat-gaw-mein/",
-        "snippet": "Photo: Tristan deBrauwere • Food Styling: Thu Buser Also known as dirty yak, this stir-fried noodle dish with dark soy gravy is woven into the city’s culinary fabric.",
-        "cover_url": "https://www.saveur.com/uploads/2026/09/photo-tristan-debrauwere_food-styling-Thu-Buser_TD_AUG26RECIPES_10_SHOT_DIRTY_YAK_025-scaled.jpg?auto=webp&width=1600&height=2000",
-        "blurb": ""
-      }
-    ],
-    "recipe": {
-      "source": "recipe",
-      "source_name": "Alexandra's Kitchen",
-      "title": "Deliciously Chewy No-Bake Energy Bites",
-      "url": "https://alexandracooks.com/2026/07/19/deliciously-chewy-no-bake-energy-bites/",
-      "snippet": "Deliciously Chewy No-Bake Energy Bites Sweetened primarily with dates and a small amount of maple syrup, these no-bake energy bites are perfectly sweet and have the loveliest chewy texture. The recipe is inspired by the ones served at our favorite cafe, and I find them completely irresistible. Two to three times a year, I find myself in Skaneateles with one […] Read: Deliciously Chewy No-Bake Energy Bites",
-      "is_recipe": true,
-      "cover_url": "https://alexandracooks.com/wp-content/uploads/2026/07/energybites_1200.jpg",
-      "blurb": ""
-    },
-    "seasonal_note": ""
+    "news": [],
+    "recipe": {}
   },
   "fern_data": {
-    "greeting": "Good morning! Fresh stories are waiting — let's dig in.",
+    "greeting": "The day is winding down. Let's close it with something worth reading.",
     "top_pick_title": ""
   }
 }
