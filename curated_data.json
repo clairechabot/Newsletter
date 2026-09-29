@@ -1,402 +1,276 @@
 {
-  "fetched_at": "2026-09-28T22:37:25.167855+02:00",
-  "is_am_email": false,
+  "fetched_at": "2026-09-29T11:58:47.311378+02:00",
+  "is_am_email": true,
   "audit_summary": {
     "youtube_videos": 0,
     "themes": 0,
-    "music_articles": 10,
-    "good_news_articles": 3,
-    "discovery_articles": 15,
+    "music_articles": 6,
+    "good_news_articles": 4,
+    "discovery_articles": 2,
     "featured_read": 1,
     "reading_room": 5,
     "garden": 1,
     "puzzle": 1,
-    "larder": 0
+    "larder": 4
   },
   "themes": [],
   "morning_soundtrack": [
     {
       "source": "music",
       "source_name": "Stereogum",
-      "title": "Steve Lacy Kicks Off Oh Yeah? Tour With A Smiths Cover",
-      "snippet": "Slinky indie-soul adventurer and unlikely hitmaker Steve Lacy released his most recent album Oh yeah? over the summer, and he'll spend the fall touring across North America. On Sunday night, Lacy kicked off that tour at the Armory in Minneapolis.",
-      "url": "https://stereogum.com/2512947/steve-lacy-kicks-off-oh-yeah-tour-with-a-smiths-cover/news/",
+      "title": "Pearl Jam Share Statement About New Drummer At Ohana, Eddie Vedder Performs With Pixies, Bad Religion, Billy Strings, Stephen Wilson Jr., & More",
+      "snippet": "Over the weekend, Eddie Vedder's Friday set at California's Ohana Fest turned into a Pearl Jam performance with Abe Laboriel Jr. behind the drum kit and they played with him again last night. They were the band's first gigs since Matt Cameron left after 27 years .",
+      "url": "https://stereogum.com/2512932/pearl-jam-share-statement-about-new-drummer-at-ohana-eddie-vedder-performs-with-pixies-bad-religion-billy-strings-stephen-wilson-jr-more/news/",
       "genre": "",
-      "vibe_check": "The kind of night where a surprise cover makes the whole crowd lean in at once, warm lights and all.",
-      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/09/Steve-Lacy.jpg?w=564",
-      "embed_url": "https://www.youtube.com/embed/iWcQqWW3QCI"
+      "vibe_check": "The bittersweet electricity of watching a beloved band navigate an uncertain new chapter in real time, live under the California sun.",
+      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/09/GettyImages-1407583012.jpg?w=564",
+      "embed_url": "https://www.youtube.com/embed/KUiMxWwW8Bs"
     },
     {
       "source": "music",
       "source_name": "Stereogum",
-      "title": "Bono Explains Why U2 Wrote A Song About Rosalía",
-      "snippet": "Last week, U2 announced Carnaval de Luz , the followup to 2017's Songs Of Experience . There was some confusion when the tracklist included a song called \"The Mirror Maker (Rosalía),\" and now Bono is offering us insight into the track.",
-      "url": "https://stereogum.com/2512944/bono-explains-why-u2-wrote-a-song-about-rosalia/news/",
+      "title": "Smush Announce New Album i’ll always wish,,: Hear “milkweed butterfly”",
+      "snippet": "In February, Brooklyn-via-Vancouver group Smush made me understand Norah Jones and Owl City in a whole new way. Their covers EP Standards , which also featured takes on Big Rig, Hotline TNT, and Field Medic, breathed kinetic glitchy/shoegazey bliss into modern classics. Today, they're back with new original music: a spiky single, \"milkweed butterfly,\" that announces their sophomore album i’ll always wish,, coming early next year.",
+      "url": "https://stereogum.com/2512881/smush-announce-new-album-ill-always-wish-hear-milkweed-butterfly/music/",
       "genre": "",
-      "vibe_check": "Two eras of rock royalty colliding in a Madrid fever dream, equal parts curious and grandiose.",
-      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/09/u2-rosalia.jpeg?w=564",
-      "embed_url": "https://www.youtube.com/embed/t_k7--Po7YQ"
+      "vibe_check": "Like catching a firefly in a jar — delicate and luminous, but buzzing with something restless underneath.",
+      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/09/unnamed-13.jpg?w=564",
+      "embed_url": "https://www.youtube.com/embed/8kgcsEzTm1U"
     },
     {
       "source": "music",
-      "source_name": "Stereogum",
-      "title": "Stevie Wonder Shares Four Songs In The Key Of Life Outtakes For Today’s 50th Anniversary",
-      "snippet": "Stevie Wonder released his eternal double-album masterpiece Songs In The Key Of Life on Sep. 28, 1976. At the time.",
-      "url": "https://stereogum.com/2512942/stevie-wonder-shares-four-songs-in-the-key-of-life-outtakes-for-todays-50th-anniversary/music/",
+      "source_name": "Consequence",
+      "title": "Finally a Festival That Went Off Without a Hitch: Bourbon & Beyond 2026 Recap + Photo Gallery",
+      "snippet": "Acts like Foo Fighters, Queens of the Stone Age, Chris Stapleton, Mumford & Sons, Dave Matthews Bands, and Kacey Musgraves helped make the Louisville festival a wonderful, easy-going time. Finally a Festival That Went Off Without a Hitch: Bourbon & Beyond 2026 Recap + Photo Gallery Jonah Krueger",
+      "url": "https://consequence.net/2026/09/bourbon-and-beyond-2026-recap-photo-gallery/",
       "genre": "",
-      "vibe_check": "Like finding a love letter tucked inside a book you've owned for decades — familiar warmth with a sudden catch in the throat.",
-      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/09/Stevie.jpeg?w=564",
-      "embed_url": "https://www.youtube.com/embed/8Mxfk7YAPvk"
-    },
-    {
-      "source": "music",
-      "source_name": "Pitchfork",
-      "title": "Stevie Wonder Unvaults Four Songs in the Key of Life Tracks",
-      "snippet": "“We didn’t add these songs to the album, but they were part of what I was feeling and discovering as we made it,” says Wonder",
-      "url": "https://pitchfork.com/story/stevie-wonder-unvaults-four-songs-in-the-key-of-life-tracks/",
-      "genre": "",
-      "vibe_check": "Excavated sunlight from 1976, bottled and cracked open fifty years later still smelling like forever.",
-      "cover_url": "https://media.pitchfork.com/photos/6aba6f8fe0fbfe3cb27d4235/master/pass/stevie-wonder-songs-key-life-ep.jpg",
+      "vibe_check": "The relief of a deep exhale after a long week, cold bourbon in hand, watching the sunset over a crowd that just wants to have a good time.",
+      "cover_url": "https://consequence.net/wp-content/uploads/2026/09/BB-27-recap.jpg?quality=80",
       "embed_url": null
     },
     {
       "source": "music",
       "source_name": "Consequence",
-      "title": "Cheap Trick’s Rick Nielsen Auctioning 300 Items, Including Prized Guitars",
-      "snippet": "The sale is set to include everything from a stage-played 5-neck guitar to a 1955 Ford Thunderbird to a custom John Deere tractor. Cheap Trick’s Rick Nielsen Auctioning 300 Items, Including Prized Guitars Langdon Hickman",
-      "url": "https://consequence.net/2026/09/cheap-trick-rick-nielsen-juliens-auction/",
+      "title": "Michelle Branch Kicks Off Sold-Out “Everywhere and Back Again Tour” With Career-Spanning Set",
+      "snippet": "The show celebrated her 25 years in music with a set that leaned into her first two albums. Michelle Branch Kicks Off Sold-Out “Everywhere and Back Again Tour” With Career-Spanning Set Travis Bland",
+      "url": "https://consequence.net/2026/09/michelle-branch-kicks-off-everywhere-and-back-again-tour/",
       "genre": "",
-      "vibe_check": "The chaotic, joyful energy of a rock-and-roll garage sale where everything has a story and nothing is ordinary.",
-      "cover_url": "https://consequence.net/wp-content/uploads/2026/09/rick-nielsen-collection.png",
-      "embed_url": "https://www.youtube.com/embed/MmNyZNKPf9I"
+      "vibe_check": "The warm ache of singing every word to a song you forgot you still knew by heart.",
+      "cover_url": "https://consequence.net/wp-content/uploads/2026/09/Photo-Credit_Ariana-Trineer_DSCF0271.jpg?quality=80",
+      "embed_url": "https://www.youtube.com/embed/fUyj-8D9C7o"
     },
     {
       "source": "music",
       "source_name": "Consequence",
-      "title": "Sting Announces 2026 Fall North American Tour Dates",
-      "snippet": "The October and November run includes stops in Vancouver, St. Louis, Montreal, Tampa, and Brooklyn. Sting Announces 2026 Fall North American Tour Dates Eddie Fu",
-      "url": "https://consequence.net/2026/09/sting-2026-fall-tour-dates/",
+      "title": "John Mayer Announces 2027 Las Vegas Sphere Residency",
+      "snippet": "Each show will feature three different sets: solo, with a full band, and with the John Mayer Trio. John Mayer Announces 2027 Las Vegas Sphere Residency Eddie Fu",
+      "url": "https://consequence.net/2026/09/john-mayer-2027-sphere-las-vegas-residency/",
       "genre": "",
-      "vibe_check": "The measured anticipation of circling a date on a calendar and already knowing exactly how the bass line will feel in a half-empty arena.",
-      "cover_url": "https://consequence.net/wp-content/uploads/2026/03/sting-2026-fall-tour-dates.jpg?quality=80",
+      "vibe_check": "Polished, ambitious, and just a little too calculated — like a Vegas skyline at midnight, dazzling but never quite intimate.",
+      "cover_url": "https://consequence.net/wp-content/uploads/2026/09/John-Mayer-sphere-photo-by-Mark-Seliger.jpg?quality=80",
       "embed_url": null
     },
     {
       "source": "music",
-      "source_name": "Consequence",
-      "title": "U2 Plotting New Stadium Tour",
-      "snippet": "The band recently began rehearsals for their first tour since 2019. U2 Plotting New Stadium Tour Alex Young",
-      "url": "https://consequence.net/2026/09/u2-plotting-new-stadium-tour/",
+      "source_name": "Fretboard Journal",
+      "title": "Luthier on Luthier: Chris Holcomb",
+      "snippet": "Chris Holcomb specializes in making world-class resonator guitars in Santa Cruz, California. Chris built a guitar in his teens and has pursued the craft ever since. In episode 118, Chris tells us this wasn’t a straightforward path, but one of persistence and dedication that ultimately paid off as he achieved his goal of making The post Luthier on Luthier: Chris Holcomb first appeared on Fretboard Journal .",
+      "url": "https://www.fretboardjournal.com/podcasts/luthier-on-luthier-chris-holcomb/?utm_source=rss&utm_medium=rss&utm_campaign=luthier-on-luthier-chris-holcomb",
       "genre": "",
-      "vibe_check": "The low rumble of a stadium crowd before the lights go down — something enormous is waking back up.",
-      "cover_url": "https://consequence.net/wp-content/uploads/2026/09/U2-New-Album-Carnaval-De-Luz-New-Song-Silencio-Stream.jpg?quality=80",
+      "vibe_check": "The quiet satisfaction of sawdust on a workshop floor and a craftsman who chose the long, unhurried road to mastery.",
+      "cover_url": "https://images.fretboardjournal.com/wp-content/uploads/2026/09/28130713/chris-holcomb-scaled.jpg",
       "embed_url": null
-    },
-    {
-      "source": "music",
-      "source_name": "JazzTimes",
-      "title": "Sweeps Week: Top September Jazz Releases, Monday Mix Edition",
-      "snippet": "W e wrap September with another Sweeps Week, featuring top editorial picks of the month. Joe Block, There Is Always Hope (Blue Engine Records) Pianist, …",
-      "url": "https://www.jazztimes.com/reviews/albums/sweeps-week-top-september-jazz-releases-monday-mix-edition/",
-      "genre": "",
-      "vibe_check": "A late-September afternoon where the windows are open, the coffee is strong, and every track feels like a quiet revelation.",
-      "cover_url": "https://www.jazztimes.com/wp-content/uploads/2026/09/collage-monday-sept-26-scaled.jpg",
-      "embed_url": null
-    },
-    {
-      "source": "music",
-      "source_name": "PopMatters",
-      "title": "AmericanaFest 2026: The Sound of the Margins Goes Mainstream",
-      "snippet": "With more than 200 artists and 300 events across Nashville, AmericanaFest showcases a genre expanding its reach while holding fast to its outsider identity.",
-      "url": "https://www.popmatters.com/americanafest-2026",
-      "genre": "",
-      "vibe_check": "Dusty boots on a Nashville sidewalk at dusk, genre lines blurring into something that feels like home even if you've never been.",
-      "cover_url": "https://www.youtube.com/embed/PV9Q0iKMNf8",
-      "embed_url": "https://www.youtube.com/embed/PV9Q0iKMNf8"
-    },
-    {
-      "source": "music",
-      "source_name": "PopMatters",
-      "title": "Otis Shanty Bring Compelling Dream Pop into Focus",
-      "snippet": "Shadow of Doubt sees Otis Shanty continue to build on their sound with no compromise, plus another truckload of impeccable songs.",
-      "url": "https://www.popmatters.com/otis-shanty-shadow-of-doubt",
-      "genre": "",
-      "vibe_check": "Drifting through fog that never quite lifts, in the best possible way — hazily beautiful and stubbornly itself.",
-      "cover_url": "https://www.youtube.com/embed/LSg-VzvceRA",
-      "embed_url": "https://www.youtube.com/embed/LSg-VzvceRA"
     }
   ],
   "global_silver_linings": [
     {
       "source": "good_news",
       "source_name": "Good News Network",
-      "title": "Resilient French Farmers Use Warming Climate to Grow the Country’s Own Tropical Fruit",
-      "url": "https://www.goodnewsnetwork.org/resilient-french-farmers-use-warming-climate-to-grow-the-countrys-own-tropical-fruit/",
-      "snippet": "This is a typical image of the south of France; now the home to an assortment very a-typical European fruit: the banana, the papaya, and the mango. “I’m probably the only papaya grower in France!” says Dominique Berdin, laughing to the national station France24, when they visited her tropical fruit growing operation in the […]",
-      "cover_url": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/09/maxresdefault-2.jpg",
-      "reason": "French farmers are turning climate adversity into ingenuity, cultivating mangoes and avocados on home soil rather than importing them from afar. It's a quiet reminder that human adaptability can find opportunity even in difficult circumstances."
+      "title": "Good News in History September 29",
+      "url": "https://www.goodnewsnetwork.org/events060929/",
+      "snippet": "30 years ago today, the Nintendo 64 video game console was released in North America. Critically acclaimed as “quite simply, the fastest, most graceful game machine on the market”, the N64 was one of the first gaming consoles to have four controller ports and could handle a 4-player split-screen without significant slowdown. Named after its […]",
+      "cover_url": "https://www.goodnewsnetwork.org/wp-content/uploads/2020/09/Nintendo-64-gaming-console-public-domain.jpg",
+      "reason": "History is full of quiet turning points and unsung breakthroughs worth remembering — pausing to celebrate them reminds us that progress has always been possible, even in difficult times."
     },
     {
       "source": "good_news",
-      "source_name": "Upworthy",
-      "title": "Frugal shoppers share the 16 things they never buy anymore since becoming more mindful spenders",
-      "url": "https://www.upworthy.com/16-things-frugal-shoppers-never-buy-anymore-ex1/",
-      "snippet": "They re-evaluated their spending habits.",
-      "cover_url": "https://www.upworthy.com/wp-content/uploads/sites/2/2026/01/origin_deacdc.png",
-      "reason": "Everyday people reclaiming control over their spending habits shows that mindful living is catching on in practical, meaningful ways. Small personal shifts, multiplied across communities, add up to a genuinely different relationship with consumption."
+      "source_name": "Positive News",
+      "title": "‘The forest is life’: how Indigenous communities in Peru are preventing wildfires",
+      "url": "https://www.positive.news/environment/the-forest-is-life-how-indigenous-communities-in-peru-are-preventing-wildfires/",
+      "snippet": "Forest fires have ravaged Peru in recent years, but Indigenous communities are fighting back, protecting forests and reducing blazes",
+      "cover_url": "https://www.positive.news/wp-content/uploads/2026/09/RS2995_IMG_7832-1_lpr.jpg",
+      "reason": "Indigenous communities in Peru are drawing on generations of traditional knowledge to protect their forests from wildfires, proving that the people closest to the land are often its most effective guardians."
+    },
+    {
+      "source": "good_news",
+      "source_name": "Reasons to be Cheerful",
+      "title": "A Place to Sleep for Denver’s Homeless College Students",
+      "url": "https://reasonstobecheerful.world/home-for-denver-homeless-college-students/",
+      "snippet": "This story was originally published by Chalkbeat. Sign up for their newsletters at ckbe.at/newsletters. During her first semester at Chicago’s Malcolm X College, Nikya Harrell had had enough.",
+      "cover_url": "https://reasonstobecheerful.world/wp-content/uploads/2026/09/shutterstock_1440479351-scaled.jpg",
+      "reason": "A practical shelter solution for homeless college students in Denver shows that communities can find targeted, dignified ways to keep determined young people on their feet and in school."
     },
     {
       "source": "good_news",
       "source_name": "The Optimist Daily",
-      "title": "Athens’ former airport is becoming Europe’s largest coastal urban park",
-      "url": "https://www.optimistdaily.com/2026/09/athens-former-airport-is-becoming-europes-largest-coastal-urban-park/",
-      "snippet": "BY THE OPTIMIST DAILY EDITORIAL TEAM Two million square meters of former airport land in the southern suburbs of Athens are being converted into The Ellinikon Park. The park is designed to actively lower surrounding air temperatures, process 100 percent of its own rainfall on site, and keep more than 520 plant species alive through […] The post Athens’ former airport is becoming Europe’s largest coastal urban park first appeared on The Optimist Daily: Making Solutions the News .",
-      "cover_url": "https://www.optimistdaily.com/wp-content/uploads/Coastal-Front_1-scaled.jpg",
-      "reason": "Transforming a sprawling concrete airport into Europe's largest coastal urban park is a bold act of giving land back to nature and people alike. Athens is proving that cities can reimagine their own footprint and create breathing room for generations to come."
+      "title": "What Japan’s 107,677 centenarians reveal about diet, lifestyle, and aging",
+      "url": "https://www.optimistdaily.com/2026/09/what-japans-107677-centenarians-reveal-about-diet-lifestyle-and-aging/",
+      "snippet": "BY THE OPTIMIST DAILY EDITORIAL TEAM There are 107,677 people in Japan who are currently aged 100 or older, according to recently released health ministry figures. That puts Japan ahead of every other country for centenarian population, and it is the first time the country has crossed the 100,000 mark. The survey tracking this figure […] The post What Japan’s 107,677 centenarians reveal about diet, lifestyle, and aging first appeared on The Optimist Daily: Making Solutions the News .",
+      "cover_url": "https://www.optimistdaily.com/wp-content/uploads/Depositphotos_55757129_S.jpg",
+      "reason": "Japan's remarkable population of centenarians offers real, evidence-backed clues about how everyday choices — what we eat, how we move, how we connect — can add years of healthy, meaningful life."
     }
   ],
   "discovery_articles": [
     {
       "source": "discovery",
-      "source_name": "Atlas Obscura",
-      "title": "Wahpper: The World’s Largest Catfish in Wahpeton, North Dakota",
-      "url": "https://www.atlasobscura.com/places/wahpper-the-worlds-largest-catfish",
-      "snippet": "Where the Bois de Sioux and Otter Tail rivers merge in southeastern North Dakota, the Red River of the North begins its winding trek northward into Canada. The river is renowned across the continent as an angler’s mecca for trophy channel catfish—monsters that draw fishermen hoping to reel in record-breaking river beasts. In Wahpeton, however, the biggest catch in town isn't lurking beneath the murky current; it rests firmly on dry land.",
+      "source_name": "Smithsonian",
+      "title": "Meet the 'Fire Amoeba,' a Newfound Blobby Organism That's Defying Expectations About How Much Heat Complex Life Can Handle",
+      "url": "https://www.smithsonianmag.com/smart-news/meet-the-fire-amoeba-a-newfound-blobby-organism-thats-defying-expectations-about-how-much-heat-complex-life-can-handle-180989557/",
+      "snippet": "The newly described species, found in Northern California's Lassen Volcanic National Park, can still reproduce at 145 degrees Fahrenheit and move around at 147 degrees, according to a new study",
       "category": "history",
-      "cover_url": "https://img.atlasobscura.com/jrp7YieEzjA0VJdubrjSDESizQwz--9eJvSa31EVW4M/rt:fit/w:600/c:2372:1581:nowe:245:1195/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy81YTg4/MmEzZC00MjdhLTRj/NzktYjY5Yi00ZWJh/NDlmNGExOGNjZGUx/YTIyODYzMzcxZDAy/YzNfNDM1MC5qcGc.jpg",
-      "ferns_note": "Wahpeton's answer to its legendary catfish isn't a trophy mount on a wall — it's a giant roadside sculpture sitting proudly on dry land, which feels exactly right for a town that knows how to play up its obsessions. There's something deeply endearing about a community so devoted to a fish that it immortalizes one in concrete."
-    },
-    {
-      "source": "discovery",
-      "source_name": "Atlas Obscura",
-      "title": "Hood River Pumping Station and Pipeline Trail in Hood River, Oregon",
-      "url": "https://www.atlasobscura.com/places/hood-river-pumping-station-and-pipeline-trail",
-      "snippet": "This is a place with two unique and magical places to see. The first, the abandoned Hood River Pumping Station, is at the parking lot to the Hood River Pipeline Trail. It is a decommissioned hydroelectric facility that used to supply electricity to Hood River, Oregon from 1923 until 2006.",
-      "category": "history",
-      "cover_url": "https://img.atlasobscura.com/kXcw3qcN43125wOCr3YwRpT-beqAYIJKITE7ysQGZIw/rt:fit/w:600/c:600:400:nowe:0:163/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy9iMjJi/YzQ3YS1jNjBkLTQy/MzktODg3OS1mZWMz/ODQ4NzM1ZGExNGVh/NTA3OTRlNzllZDMy/YTZfQ2F0d2FsayBh/bG9uZyByaXZlci5q/cGVn.jpg",
-      "ferns_note": "Eight decades of powering a town, and now the Hood River Pumping Station sits quietly at a trailhead — a decommissioned relic you walk past on your way to somewhere else, which is perhaps the most poetic retirement a power plant could ask for."
-    },
-    {
-      "source": "discovery",
-      "source_name": "Atlas Obscura",
-      "title": "The Ivanhoe Clock in Leeds, England",
-      "url": "https://www.atlasobscura.com/places/the-ivanhoe-clock",
-      "snippet": "At one end of Thornton’s Arcade, beneath its elegant glass roof, four Victorian characters wait for their cue. When the clock strikes, Robin Hood, Friar Tuck, Richard the Lionheart, and Gurth the Swineherd spring into action, raising their fists to strike a bell. It is a wonderfully theatrical way to tell the time—and an unexpected spectacle in the middle of a shopping arcade.",
-      "category": "history",
-      "cover_url": "https://img.atlasobscura.com/k7jEqsVqy1kWuooGRbVncgfi4cIJhPl6F3OpCw4KVDc/rt:fit/w:600/c:2940:1960:nowe:734:1265/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy85NTVh/NmRhZC0xYzc0LTRi/OTItYWJjNC03ZTM4/MGE2MDAyOTkzZjJk/ZGNhNTVkZDliOWE4/MjNfSU1HXzUwMzMu/anBlZw.jpg",
-      "ferns_note": "Somewhere in Leeds, Robin Hood and Friar Tuck have been punching a bell every hour since the Victorian era, tucked inside a shopping arcade where most people are simply looking for lunch. It's the kind of absurd, wonderful secret a city keeps hiding in plain sight."
-    },
-    {
-      "source": "discovery",
-      "source_name": "Atlas Obscura",
-      "title": "Wild Bird Petroglyph in Phippsburg, Maine",
-      "url": "https://www.atlasobscura.com/places/wild-bird-petroglyph",
-      "snippet": "Inspired by the natural environment in Phippsburg, there are a series of petroglyphs in the deep woods near the Center Ponds Trailhead located at 125 Parker Head Road. This site has one of Kevin's largest collections of petroglyphs to date, with over ten different carvings displaying creatures and scenes that could take place in the area. Intended to reflect the environment surrounding the stones, the carvings, which are embellished by trails on the Phippsburg Land Trust, display an array of photorealistic images of remarkable life-sized birds native to the region.",
-      "category": "history",
-      "cover_url": "https://img.atlasobscura.com/w1iEA2Ft22WOWGQGC2oU70plEf5GmZ4fNBm1051BdS0/rt:fit/w:600/c:600:400:nowe:289:211/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy9iYWRj/YmI2OS01YWExLTQ1/MjMtYTM0YS02Y2Y1/NzkwYTkzMzNhNDg5/Y2MzZjg0ZDcxYWIz/NDJfQ2FyZGluYWxf/RGFya0JhY2tncm91/bmQuSlBH.jpg",
-      "ferns_note": "These aren't ancient carvings shrouded in mystery — they're the deliberate, ongoing work of a single artist named Kevin, quietly populating Maine's deep woods with life-sized birds for anyone curious enough to wander off the trail."
+      "cover_url": "https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/c7/9d/c79d90e8-831d-4825-8797-bbe79e8d3113/adobe_express_-_movies12_60c_normalmotility_switching_1080p_crop.gif",
+      "ferns_note": "A blobby single-celled creature thriving in near-boiling volcanic pools just quietly rewrote the rulebook on where complex life can survive. Everything we thought we knew about heat tolerance had, apparently, not yet met this particular amoeba."
     },
     {
       "source": "discovery",
       "source_name": "Smithsonian",
-      "title": "Satellite Images Reveal Greenland and Antarctica Have Lost More Than 12 Trillion Tons of Ice Over the Past 50 Years",
-      "url": "https://www.smithsonianmag.com/smart-news/satellite-images-reveal-greenland-and-antarctica-have-lost-more-than-12-trillion-tons-of-ice-over-the-past-50-years-180989567/",
-      "snippet": "Most of the frozen water has vanished because glaciers have been flowing faster into the ocean, rather than because of surface melting of ice sheets, according to a new study. Researchers estimate the ice loss has raised the global sea level by more than one inch",
+      "title": "Who Wrote Elizabeth I's Most Scathing Letters? New Research Suggests the Tudor Queen's Male Secretaries Revised Her Correspondence to Emphasize Her Temper",
+      "url": "https://www.smithsonianmag.com/history/who-wrote-elizabeth-is-most-scathing-letters-new-research-suggests-the-tudor-queens-male-secretaries-revised-her-correspondence-to-emphasize-her-temper-180989565/",
+      "snippet": "An analysis of more than 500 missives found that Elizabeth's advisers crafted and even intensified the expression of emotion in her messages to such figures as Mary, Queen of Scots, and James VI of Scotland",
       "category": "history",
-      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/mnEm-wsiWvPijbMWqgLoX0oVHd8=/fit-in/1600x0/filters:focal(1920x1280:1921x1281)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/65/46/6546972d-9d36-44fe-9cb3-35057327b071/024_aerial_view_of_jakobshavn_glacier_at_disko_bay_greenland_photo_by_giles_laurent.jpg",
-      "ferns_note": "The detail that stops you here isn't the staggering 12 trillion tons of ice lost — it's that most of it didn't melt, it walked: glaciers simply sliding faster into the sea, a slow and relentless departure rather than a dramatic thaw."
-    },
-    {
-      "source": "discovery",
-      "source_name": "Smithsonian",
-      "title": "Centuries Ago, Royals Dressed Up Their Dolls to Share the Latest Fashions. See How Barbies, Baby Dolls and Other Tiny Trendsetters Have Inspired Designers Ever Since",
-      "url": "https://www.smithsonianmag.com/smart-news/centuries-ago-royals-dressed-up-their-dolls-to-share-latest-fashions-see-how-barbies-baby-dolls-and-other-tiny-trendsetters-have-inspired-designers-ever-since-180989580/",
-      "snippet": "A new exhibition at the Museum at FIT in New York City showcases more than 170 objects that trace the often-unexpected relationship between dolls and fashion",
-      "category": "history",
-      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/0LycYHYe-1oT5OJNcPOBijVVUQg=/fit-in/1600x0/filters:focal(750x500:751x501)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/9f/05/9f05717c-beda-464e-bdb8-40eb41114db3/doll-dressing1.png",
-      "ferns_note": "Before Vogue, before runway shows, European royals were mailing elaborately dressed dolls across borders as living fashion dispatches — making Barbie less an invention than the latest chapter in a very old story about tiny clothes and big influence."
-    },
-    {
-      "source": "discovery",
-      "source_name": "Smithsonian",
-      "title": "This Massive, Deep-Sea Roly Poly Can Go Years Without Food Thanks to a Huge Stomach and a Stolen Gene, Study Suggests",
-      "url": "https://www.smithsonianmag.com/smart-news/this-massive-deep-sea-roly-poly-can-go-years-without-food-thanks-to-a-huge-stomach-and-a-stolen-gene-study-suggests-180989562/",
-      "snippet": "The ancestors of the giant isopod Bathynomus jamesi—a seafloor-dwelling creature that resembles a huge pill bug—acquired the snippet of DNA from bacteria more than 16 million years ago, according to a new study. The gene helps the animal slow its metabolism",
-      "category": "history",
-      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/m6p7UTSw6YAh0nkMd7XOl3EmVpI=/fit-in/1600x0/filters:focal(2448x1632:2449x1633)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/5c/44/5c444071-f699-425f-bd7f-a3a0d76e4647/w020260608495789892714.jpg",
-      "ferns_note": "The giant isopod — essentially a pill bug the size of a football lurking on the ocean floor — borrowed a metabolic gene from bacteria 16 million years ago and has been coasting on that evolutionary heist ever since, going years between meals with apparent indifference."
-    },
-    {
-      "source": "discovery",
-      "source_name": "Smithsonian",
-      "title": "Archaeologists Unearth the 2,400-Year-Old School Where Aristotle Taught Alexander to Be Great",
-      "url": "https://www.smithsonianmag.com/smart-news/archaeologists-unearth-the-2400-year-old-school-where-aristotle-taught-alexander-to-be-great-180989581/",
-      "snippet": "The latest excavation at Aristotle’s gymnasium in ancient Mieza has revealed ornate, mosaic-covered halls where researchers believe Alexander the Great learned his formative lessons",
-      "category": "history",
-      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/GiGvO6bI1UUIgUTeiZ36QQSy7QI=/fit-in/1600x0/filters:focal(680x427:681x428)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/b0/b2/b0b276d8-542c-4966-860c-f52c810907af/alexander_the_great_school_in_mieza.jpg",
-      "ferns_note": "The room where a teenage Alexander the Great sat and learned from Aristotle has been sitting under Greek soil for 2,400 years, and archaeologists are now walking its mosaic floors — the closest thing we'll get to eavesdropping on the most consequential tutoring sessions in history."
-    },
-    {
-      "source": "discovery",
-      "source_name": "Science News",
-      "title": "Magnetism may have helped kick-start our solar system",
-      "url": "https://www.sciencenews.org/article/magnetism-kick-start-our-solar-system",
-      "snippet": "Ancient meteorites reveal a powerful magnetic field that may have helped feed the growing sun.",
-      "category": "science",
-      "cover_url": "https://www.sciencenews.org/wp-content/uploads/sites/2/2026/09/092126_KK_sunmagnetism_main.jpg",
-      "ferns_note": "Ancient meteorites are now whispering about the magnetic field that helped feed our infant sun — meaning the origin story of our entire solar system may have been written, at least in part, by magnetism pulling matter inward like a slow, cosmic embrace."
-    },
-    {
-      "source": "discovery",
-      "source_name": "Science News",
-      "title": "Peru’s penguins are on the brink. A super El Niño could make it worse.",
-      "url": "https://www.sciencenews.org/article/desert-penguins-climate-el-nino",
-      "snippet": "Avian flu, overfishing, and a super El Niño have decimated Peru’s largest colony of Humboldt penguins. Scientists are holding out hope that their numbers will bounce back.",
-      "category": "science",
-      "cover_url": "https://www.sciencenews.org/wp-content/uploads/sites/2/2026/09/0926_as_penguins_main.jpg",
-      "ferns_note": "Peru's Humboldt penguins are caught in a brutal convergence — avian flu, overfished seas, and a supercharged El Niño — and the scientists monitoring them are doing something quietly heroic: choosing hope anyway, and counting birds."
-    },
-    {
-      "source": "discovery",
-      "source_name": "JSTOR Daily",
-      "title": "Beware of the Meeting Minutes",
-      "url": "https://daily.jstor.org/beware-of-the-meeting-minutes/",
-      "snippet": "What gets lost when spoken conversations become part of the historical record?",
-      "category": "history",
-      "cover_url": "https://daily.jstor.org/wp-content/uploads/2026/09/beware_of_the_meeting_minutes_1050x700.jpg",
-      "ferns_note": "Meeting minutes are supposed to preserve what was said, but the act of transcription is also an act of editing — meaning the historical record is, in part, a collection of what someone decided was worth writing down, and what they chose to let vanish."
-    },
-    {
-      "source": "discovery",
-      "source_name": "Quanta Magazine",
-      "title": "Mathematicians Harness Randomness To Crack a 55-Year-Old Conjecture",
-      "url": "https://www.quantamagazine.org/mathematicians-harness-randomness-to-crack-a-55-year-old-conjecture-20260928/",
-      "snippet": "After a long hiatus, the problem, which was likely inspired by juggling, has finally been resolved by a group of young mathematicians. The post Mathematicians Harness Randomness To Crack a 55-Year-Old Conjecture first appeared on Quanta Magazine",
-      "category": "science",
-      "cover_url": "https://www.quantamagazine.org/wp-content/uploads/2026/09/GrahamConjecture-crIrenePerez-Social.jpg",
-      "ferns_note": "A math conjecture likely inspired by juggling patterns sat unsolved for 55 years until a group of young mathematicians cracked it by deliberately injecting randomness — which feels like a very elegant way to say that sometimes chaos is the sharpest tool in the box."
-    },
-    {
-      "source": "discovery",
-      "source_name": "Colossal",
-      "title": "October 2026 Opportunities: Open Calls, Residencies, and Grants for Artists",
-      "url": "https://www.thisiscolossal.com/2026/09/october-2026-opportunities-for-artists/",
-      "snippet": "Don't be afraid to apply!",
-      "category": "history",
-      "cover_url": "https://www.thisiscolossal.com/wp-content/uploads/2021/02/agnetun-6.jpg",
-      "ferns_note": "A quiet, practical reminder that opportunity deadlines don't care about your self-doubt — and 'don't be afraid to apply' is, truly, the most useful curatorial advice anyone can offer an artist."
-    },
-    {
-      "source": "discovery",
-      "source_name": "Colossal",
-      "title": "A Giant Gold Coil by Plastique Fantastique Created a Loopy Portal on the High Line",
-      "url": "https://www.thisiscolossal.com/2026/09/auroboros-plastique-fantastique-high-line-inflatable-sculpture/",
-      "snippet": "Earlier this month, a monumental, metallic spiral appeared on Manhattan's High Line to coincide with New York Fashion Week.",
-      "category": "history",
-      "cover_url": "https://www.thisiscolossal.com/wp-content/uploads/2026/09/plastique-4.jpg",
-      "ferns_note": "During New York Fashion Week, while the industry was busy inside its tents, a giant golden coil quietly colonized the High Line — Plastique Fantastique's spiral arriving like a portal that didn't ask permission and didn't need to."
-    },
-    {
-      "source": "discovery",
-      "source_name": "Colossal",
-      "title": "At a ‘Molecular Level,’ Mu Pan Composes Meticulous Mandalas in Acrylic",
-      "url": "https://www.thisiscolossal.com/2026/09/mu-pan-acrylic-paintings-drawings-mandalas/",
-      "snippet": "The Brooklyn-based artist's solo show 'Micro MUniverse' runs through October 10 at Hashimoto Contemporary.",
-      "category": "history",
-      "cover_url": "https://www.thisiscolossal.com/wp-content/uploads/2026/09/pan-2.jpg",
-      "ferns_note": "Mu Pan's mandalas are built at a 'molecular level,' each one a meticulously painted universe so dense with detail that calling them acrylic paintings feels like calling a cathedral a building — technically true, entirely insufficient."
+      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/d5hXq7IqkVcRFN7KUNHUBbdUo4M=/fit-in/1600x0/filters:focal(750x500:751x501)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/41/c0/41c011a5-551b-4c52-a8c6-675129038507/elizabeth1illo.png",
+      "ferns_note": "The most feared pen in Tudor England may have belonged not to Elizabeth I, but to the men quietly sharpening her words behind closed doors. History remembered her fury; turns out, some of it was a committee effort."
     }
   ],
   "featured_read": {
     "source": "reads",
-    "source_name": "The Atlantic",
-    "title": "One Reason People Are Spending So Much Time Alone",
-    "url": "https://www.theatlantic.com/culture/2026/09/convenience-loneliness-bullard/688791/?utm_source=feed",
-    "snippet": "There is a social cost to many modern conveniences.",
-    "cover_url": "",
-    "blurb": "Every errand you outsource and every delivery you schedule quietly chips away at something harder to measure than time — this piece names that invisible tax with uncomfortable precision. It's the essay to read the next time you're tempted to skip the coffee shop in favor of your couch."
+    "source_name": "Literary Hub",
+    "title": "Hernan Diaz’s New Novel Isn’t a Dystopia—Trust Him",
+    "url": "https://lithub.com/hernan-diazs-new-novel-isnt-a-dystopia-trust-him/",
+    "snippet": "Pulitzer winner Hernan Diaz releases his first novel in four years this week, and he’s parrying a few questions about genre. “I take issue with the word dystopia,” he replies to an opening inquiry. “I don’t think Ply is a",
+    "cover_url": "https://s26162.pcdn.co/wp-content/uploads/2026/09/hernan-diaz.jpg",
+    "blurb": "Hernan Diaz resists the dystopia label for his new novel *Ply* with characteristic precision — and the distinction he's drawing turns out to matter enormously. A conversation about what fiction can do that genre can't."
   },
   "reading_room": [
     {
       "source": "reads",
+      "source_name": "The Atlantic",
+      "title": "How Biden Averted a War With Iran",
+      "url": "https://www.theatlantic.com/ideas/2026/09/israel-biden-gaza-hamas-netanyahu/688750/?utm_source=feed",
+      "snippet": "In April 2024, the U.S. military helped avoid a wider conflict in the Middle East by working with Israel to defeat an Iranian missile attack.",
+      "cover_url": "",
+      "blurb": "The spring 2024 Iranian missile barrage nearly rewrote the map of the Middle East, and this piece reconstructs the quiet, high-stakes hours in which it didn't. A rare look at diplomacy and deterrence working in real time."
+    },
+    {
+      "source": "reads",
+      "source_name": "The Atlantic",
+      "title": "The Edge of California Is Falling Into the Ocean",
+      "url": "https://www.theatlantic.com/science/2026/09/california-cost-falling-ocean/688759/?utm_source=feed",
+      "snippet": "Storms driven by El Niño are pulling chunks of coast away.",
+      "cover_url": "",
+      "blurb": "California's coastline isn't eroding — it's collapsing, in chunks, into the Pacific, and El Niño is only accelerating what was always coming. A grounded, unsettling account of land that has simply stopped holding on."
+    },
+    {
+      "source": "reads",
       "source_name": "Aeon",
-      "title": "Affect theory",
-      "url": "https://aeon.co/videos/beyond-the-mind-body-divide-on-the-affective-turn-in-the-humanities",
-      "snippet": "In the mid-1990s, thinkers pushed back against the idea we’re built by language, turning to feeling and the body instead - by Aeon Video Watch on Aeon",
-      "cover_url": "https://images.aeonmedia.co/images/a094cb1f-18b9-4c12-9b8e-db903de73d0c/affect-theory-landscape-1.jpg?width=1200&quality=75&format=jpeg",
-      "blurb": "What if language was never really running the show, and our feelings and bodies were the whole time? Affect theory traces the intellectual rebellion that shifted how we understand what it means to be human."
+      "title": "Paternity is poetical",
+      "url": "https://aeon.co/essays/when-a-man-becomes-a-father-and-a-poetic-revolution-follows",
+      "snippet": "The notion that fatherhood and creativity are at odds is plain wrong, as both poetry and neuroscience are showing us - by Daniel Swift Read on Aeon",
+      "cover_url": "https://images.aeonmedia.co/images/450d70f9-21a4-48dd-95c0-f372f4813999/essay-nn11536415.jpg?width=1200&quality=75&format=jpeg",
+      "blurb": "The old myth that fatherhood drains creative life turns out to be, on neuroscientific and poetic evidence alike, quietly backwards. Daniel Swift makes a case that parenthood doesn't interrupt the artistic mind — it reorganizes it."
     },
     {
       "source": "reads",
       "source_name": "Nautilus",
-      "title": "How Menopause Symptoms Could Predict Alzheimer’s Risk",
-      "url": "https://nautil.us/how-menopause-symptoms-could-predict-alzheimers-risk-1285356/",
-      "snippet": "It may explain why women develop the disease more than men",
-      "cover_url": "https://lede-admin.nautil.us/wp-content/uploads/sites/70/2026/09/shutterstock_2825376489.jpg",
-      "blurb": "A specific biological chapter that half the population will live through may be quietly writing the first lines of a cognitive story that unfolds decades later — and researchers are only now learning to read the signs. This one reframes menopause not as an ending but as a diagnostic window."
+      "title": "Frogs Wear Bacterial Armor to Defend Against Fungus",
+      "url": "https://nautil.us/frogs-wear-bacterial-armor-to-defend-against-fungus-1285363/",
+      "snippet": "It gives them a leg up in survival",
+      "cover_url": "https://lede-admin.nautil.us/wp-content/uploads/sites/70/2026/09/frogs-sized.jpg",
+      "blurb": "Some frogs have struck an evolutionary bargain with bacteria, wearing living microbial armor against a fungus that has driven dozens of amphibian species to extinction. A small, startling story about survival through symbiosis."
     },
     {
       "source": "reads",
       "source_name": "Psyche",
-      "title": "Can he teach the teachers?",
-      "url": "https://psyche.co/portraits/he-mapped-the-learning-brain-then-came-the-hard-part",
-      "snippet": "The neuroscientist Stanislas Dehaene wants to bring four decades of findings on how the brain learns into the classroom. But evidence alone can’t overcome the politics in education - by Nancy Averett Read on Psyche",
-      "cover_url": "https://images.aeonmedia.co/images/d424b674-1d9a-4d00-bdad-88d615695a19/sz-final-gettyimages-2216807773.jpg?top=235&left=0&cropWidth=2496&cropHeight=1404&width=1200&quality=75&format=jpeg",
-      "blurb": "Stanislas Dehaene has spent forty years mapping how the brain actually learns, and the science is solid — so why is it so difficult to get any of it into a classroom? This is a story about what happens when rigorous evidence meets the deeply human messiness of institutional change."
-    },
-    {
-      "source": "reads",
-      "source_name": "The Paris Review",
-      "title": "And Then Somebody Handed Me a Story: Gary Indiana, Unlocked",
-      "url": "https://www.theparisreview.org/blog/2026/09/28/and-then-somebody-handed-me-a-story-gary-indiana-unlocked/",
-      "snippet": "This week, we’ve unlocked Gary Indiana’s Art of Fiction from the archive.",
-      "cover_url": "https://www.theparisreview.org/blog/wp-content/uploads/2026/09/unnamed-file.png",
-      "blurb": "Gary Indiana — cult novelist, unclassifiable contrarian — opens up about the peculiar alchemy that turns a life of refusal into fiction. Consider this your invitation into the mind of a writer who has spent decades being exactly as difficult as necessary."
-    },
-    {
-      "source": "reads",
-      "source_name": "Longreads",
-      "title": "Oh, How Lucky We Are",
-      "url": "https://longreads.com/2026/09/28/ossabaw-bitter-southerner/",
-      "snippet": "\"Sandy West believed that embracing what we cannot understand is the pathway to enlightenment, and that time on her beloved Ossabaw was the best way to learn that lesson.\"",
-      "cover_url": "",
-      "blurb": "On a barrier island off Georgia, a woman named Sandy West quietly built a sanctuary around the conviction that mystery is something to move toward rather than solve. This essay asks what it means to be lucky enough to find a place — and a person — that teaches you to sit with not knowing."
+      "title": "The end of humanity",
+      "url": "https://psyche.co/videos/when-tech-titans-tell-us-to-adapt-or-die-we-neednt-listen",
+      "snippet": "Instead of accepting that humanity will soon be obsolete, we can build a better future with respect for human traditions - A film by Andreas Dürr and Jan-Marc Furer Watch on Psyche",
+      "cover_url": "https://images.aeonmedia.co/images/b9e1b5f4-1022-4b3e-b06e-05b066e961fd/the-end-of-humanity-landscape-5.jpg?top=0&left=0&cropWidth=2560&cropHeight=1440&width=1200&quality=75&format=jpeg",
+      "blurb": "Rather than treating human obsolescence as a foregone conclusion, this essay-film asks what it would actually mean to build a future that still has room for human tradition, ritual, and meaning. A necessary counterweight to the acceleration narrative."
     }
   ],
   "garden_note": {
-    "note": "The vineyard rows around Zürich are heavy with late-ripening Pinot Noir clusters right now, and the evening air carries that particular sweetness of fermenting leaves and cooling soil that only September delivers. Step outside before the dusk closes in — the garden is doing its quiet, amber best.",
+    "note": "There's a particular clarity to a Zürich morning at the end of September — the air carries that first real bite of alpine autumn, and the garden is doing that bittersweet thing of looking both spent and quietly magnificent at once. Step out before the mist lifts from the Limmat valley and you'll catch the asters still holding their violet crowns like they haven't heard the news.",
     "in_season": [
-      "Wine grapes (harvest underway in local vineyards)",
-      "Winter squash — cure on a sunny sill before storing",
-      "Michaelmas daisies in full violet bloom",
-      "Clear spent bean and courgette plants to make way for garlic planting"
+      "Asters in bloom",
+      "Quince ripening on the branch",
+      "Planting garlic cloves before the soil chills",
+      "Lifting dahlias after the first frost warning"
     ],
-    "sky_tonight": "A nearly full waning gibbous moon rises early and dominates the sky — look for the Great Square of Pegasus climbing in the east as darkness settles.",
-    "sun_times": "First light crept in at 06:50 this morning, and the sun slips away tonight at 19:13, with dusk lingering gently until 19:42.",
+    "sky_tonight": "The waning gibbous moon rises well after dark and floods the garden in silver — look for Jupiter burning steadily to the southeast as the evening deepens.",
+    "sun_times": "First light creeps in at 06:51, with sunrise at 07:20 — the mornings are noticeably shorter now, and the sun says its goodnight by 19:11.",
     "moon_label": "Waning gibbous",
-    "illum_pct": 94,
-    "sun_range": "07:19–19:13"
+    "illum_pct": 91,
+    "sun_range": "07:20–19:11"
   },
   "puzzle": {
-    "kind": "riddle",
-    "label": "Fern's Morning Riddle",
-    "prompt": "Forward I am heavy, but backward I am not.\r\nWhat am I?",
-    "answer": "The word Ton",
-    "hint": "",
-    "source": "riddles.com",
-    "source_id": "Riddle-758"
+    "kind": "haiku riddle",
+    "label": "The Morning Haiku",
+    "prompt": "late august sunlight\nfront row seats\nat our daughter’s ____\n\n(Fill in the missing word.)",
+    "answer": "wedding",
+    "hint": "a joyful celebration of love",
+    "source": "tinywords.com",
+    "source_id": "https://tinywords.com/?p=50610",
+    "credit": "Haiku by Nichael Cramer, via tinywords.com"
   },
   "previous_puzzle": {
-    "label": "Fern's Morning Anagram",
-    "prompt": "Unscramble VERRHI — in early autumn, salmon push against this on their way home.",
-    "answer": "RIVER"
+    "label": "Fern's Morning Riddle",
+    "prompt": "Forward I am heavy, but backward I am not.\r\nWhat am I?",
+    "answer": "The word Ton"
   },
   "larder": {
-    "news": [],
-    "recipe": {}
+    "news": [
+      {
+        "source": "food",
+        "source_name": "The Kitchn",
+        "title": "The Brilliant Grocery List Trick This Award-Winning Financial Expert Swears By",
+        "url": "https://www.thekitchn.com/the-budgetnista-grocery-shopping-budget-tips-23846985?utm_source=RSS&utm_medium=feed&utm_campaign=Category%2FChannel%3A+main",
+        "snippet": "The cost of groceries has been on the rise for years, and many of us are feeling the impact. The average American spends nearly 13% of their household budget on food (or roughly $10,169 per year), according to a report from CashNet USA. And within the past year, food prices jumped by 3.4 percent, according to the USDA.",
+        "cover_url": "",
+        "blurb": "A genuinely clever read for anyone who suspects their grocery habits are quietly bleeding the budget dry."
+      },
+      {
+        "source": "food",
+        "source_name": "The Guardian",
+        "title": "Sanjana Modha’s quick and easy recipe for baked beans butter masala | Quick and easy",
+        "url": "https://www.theguardian.com/food/2026/sep/28/quick-easy-baked-beans-butter-masala-recipe-sanjana-modha",
+        "snippet": "Transform two tins of baked beans into this creamy curry Masala baked beans, tadka baked beans, curried baked beans, spicy baked beans; all avatars of spice-laced baked beans are a mainstay of British Asian kitchens. We were raised on this stuff – use as a toastie filler, to smother jacket potatoes, or scoop them up with roti. Enter baked beans butter masala.",
+        "cover_url": "https://i.guim.co.uk/img/media/97d34ef853c44f588086e0cf0288b19eefa63c79/0_1772_4480_3584/master/4480.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=bdadabf76879891490fe4e0c88b9ad3f",
+        "blurb": "A delightful little trend dispatch on how two humble tins of baked beans have quietly become a canvas for beautiful, spice-forward British-Indian home cooking."
+      },
+      {
+        "source": "food",
+        "source_name": "Saveur",
+        "title": "A Chef’s Guide to the Best Restaurants in Asheville, North Carolina",
+        "url": "https://www.saveur.com/culture/best-restaurants-asheville-north-carolina/",
+        "snippet": "Rachael McIntosh Meherwan Irani, of Chai Pani and Spicewalla, shares his go-to places to eat and drink in his adopted hometown.",
+        "cover_url": "https://www.saveur.com/uploads/2026/09/photo-rachael-McIntosh_260910-Final-Edits-21-scaled.jpg?auto=webp&width=2000&height=1125",
+        "blurb": "Consider this your insider's pocket guide to one of America's most quietly exciting food cities, courtesy of someone who actually cooks there."
+      }
+    ],
+    "recipe": {
+      "source": "recipe",
+      "source_name": "Alexandra's Kitchen",
+      "title": "Perfectly Moist and Sweet Cornbread",
+      "url": "https://alexandracooks.com/2026/05/09/perfectly-moist-and-sweet-cornbread/",
+      "snippet": "Perfectly Moist and Sweet Cornbread Some cornbread is too dry. Some cornbread is too sweet. This cornbread is juuuuuust right!",
+      "is_recipe": true,
+      "cover_url": "https://alexandracooks.com/wp-content/uploads/2026/05/cornbreadplatter_alexandraskitchen.jpg",
+      "blurb": "This is the cornbread you'll want to pull from the oven on a cool evening — moist, gently sweet, and gloriously unfussy, the kind that makes a simple supper feel like a proper occasion."
+    },
+    "seasonal_note": "Zürich's markets are brimming with Zwetschgen right now — those deep-indigo Italian prunes that make the most fleeting, buttery Zwetschgenwähe of the year; seek them out at Helvetiaplatz before the weekend crowd strips the stalls bare. A slow Tuesday morning with a warm slice and a milchkaffee is, frankly, a form of Alpine self-care."
   },
   "fern_data": {
-    "greeting": "Stevie Wonder buried four songs for fifty years, and tonight they surface. That's enough — but there's also Aristotle's actual classroom, freshly dug out of the ground.",
-    "top_pick_title": "Unearthed, Unvaulted, Unhurried"
+    "greeting": "That particular early-autumn chill — the kind that bites the back of your hands but not yet your face — is a good companion for this morning's edition. Japan's 107,677 centenarians have thoughts on how to live in it longer, and Elizabeth I's secretaries have been caught sharpening her fury behind her back.",
+    "top_pick_title": "Long Lives & Sharper Edges"
   }
 }
