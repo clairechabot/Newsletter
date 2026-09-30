@@ -1,406 +1,362 @@
 {
-  "fetched_at": "2026-09-29T21:30:18.128279+02:00",
-  "is_am_email": false,
+  "fetched_at": "2026-09-30T11:50:29.866576+02:00",
+  "is_am_email": true,
   "audit_summary": {
     "youtube_videos": 0,
     "themes": 0,
     "music_articles": 12,
-    "good_news_articles": 3,
-    "discovery_articles": 14,
+    "good_news_articles": 4,
+    "discovery_articles": 5,
     "featured_read": 1,
     "reading_room": 5,
     "garden": 1,
-    "puzzle": 0,
-    "larder": 0
+    "puzzle": 1,
+    "larder": 3
   },
   "themes": [],
   "morning_soundtrack": [
     {
       "source": "music",
-      "source_name": "NPR Music",
-      "title": "Melissa Aldana with Gonzalo Rubalcaba: Tiny Desk Concert",
-      "snippet": "Tenor saxophonist Melissa Aldana and pianist Gonzalo Rubalcaba interpret the soul of the Latin American song book at El Tiny.",
-      "url": "https://www.npr.org/2026/09/29/g-s1-141836/melissa-aldana-gonzalo-rubalcaba-tiny-desk-concert",
+      "source_name": "Stereogum",
+      "title": "Victoryland – “The Ugliest Girl On The Beach”",
+      "snippet": "We here at Stereogum are big fans of Victoryland, the partnership of singer-songwriter Julian McCamman (ex- Blood ) and producer Dan Howard (also of the special new band Billboard Style). Also fans of Victoryland: Dead Oceans, one of the biggest and best labels in indie music, which has just added the band to their roster.",
+      "url": "https://stereogum.com/2512995/victoryland-the-ugliest-girl-on-the-beach/music/",
       "genre": "",
-      "vibe_check": "Late-night intimacy where every note feels like a secret shared between old friends in a candlelit room.",
-      "cover_url": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/2000x1125+0+0/resize/1400/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Fbd%2F17%2F8bcd9b61476ab420057af0f73b2f%2F20260731-melissaaldana-credit-zayrharodriguez-8.jpg",
+      "vibe_check": "Salt-stung and sun-bleached, like a lo-fi daydream drifting just past the shoreline.",
+      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/09/Victoryland-lead-press-photo.jpeg?w=564",
+      "embed_url": "https://www.youtube.com/embed/KDVLf3YTDkI"
+    },
+    {
+      "source": "music",
+      "source_name": "Stereogum",
+      "title": "Michael Shannon & Jason Narducy Announce Tour Covering R.E.M.’s Document For Its 40th Anniversary",
+      "snippet": "At this point, it's an annual tradition: The acclaimed, intense, Oscar-nominated actor Michael Shannon heads out on tour with his indie rocker buddy Jason Narducy, and they pay tribute to a different classic IRS Records-era R.E.M. album. Actual members of R.E.M. sometimes join them. A couple of times, this has led to unofficial R.E.M. reunions .",
+      "url": "https://stereogum.com/2512985/michael-shannon-jason-narducy-announce-tour-covering-r-e-m-s-document-for-its-40th-anniversary/news/",
+      "genre": "",
+      "vibe_check": "The warm, slightly surreal feeling of watching old friends argue passionately about a band you all loved before life got complicated.",
+      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/09/Michael-Shannon.jpeg?w=564",
       "embed_url": null
     },
     {
       "source": "music",
       "source_name": "Stereogum",
-      "title": "Rick Wakeman Performs For 150 Rescued Moon Bears In Vietnam",
-      "snippet": "Things are generally quite difficult for the Asiatic black bear, sometimes known as the moon bear. The moon bear's bile is used in some traditional Chinese medicines, and many of the animals are being held captive in Vietnam and China, keeping them in torturous conditions and extracting bile from their stomachs with needles. Fortunately, Vietnam recently banned the practice, and 150 rescued moon bears are being rehabilitated at a bear sanctuary enclosure in the country's Tam Dao national park.",
-      "url": "https://stereogum.com/2513033/rick-wakeman-performs-for-150-rescued-vietnamese-moon-bears/news/",
+      "title": "Album Of The Week: Greg Freeman All Set The Bone",
+      "snippet": "",
+      "url": "https://stereogum.com/2512728/album-of-the-week-greg-freeman-all-set-the-bone/reviews/album-of-the-week/",
       "genre": "",
-      "vibe_check": "Unexpectedly tender — the kind of moment that makes you believe music can reach even the most wounded souls in the world's quietest corners.",
-      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/09/rick.jpg?w=564",
-      "embed_url": "https://www.youtube.com/embed/0ZoHND9isbI"
-    },
-    {
-      "source": "music",
-      "source_name": "Stereogum",
-      "title": "Billy Joel Announces Turnstiles 50th Anniversary Edition With 54 Previously Unreleased Tracks",
-      "snippet": "Billy Joel was already on his way to stardom by the time he released Turnstiles , his fourth album. Turnstiles came out in May 1976 and included big songs like \"New York State Of Mind\" and \"Say Goodbye To Hollywood.\" The record pushed him along the way to making his real commercial breakthrough with The Stranger a year later. Now, there's a pretty successful Joel cover band called Turnstiles; who recently played some shows with Vampire Weekend.",
-      "url": "https://stereogum.com/2513027/billy-joel-announces-turnstiles-50th-anniversary-edition-with-54-previously-unreleased-tracks/music/",
-      "genre": "",
-      "vibe_check": "Nostalgic excavation for the diehards who still know every word, like finding an old ticket stub in a winter coat pocket.",
-      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/09/Billy-Joel.jpg?w=564",
-      "embed_url": "https://www.youtube.com/embed/wMwIP8OUPcc"
-    },
-    {
-      "source": "music",
-      "source_name": "Stereogum",
-      "title": "Mia Joy – “Comet” (Feat. Peel Dream Magazine)",
-      "snippet": "It's been too long since we've heard from Mia Joy, the Chicago musician whose dreamy debut album Spirit Tamer came out back in 2021. She followed that with the 2023 EP Celestial Mirror , and then nothing. Now, she's back with \"Comet,\" a lovely collaboration with fellow indie-pop auteur Peel Dream Magazine.",
-      "url": "https://stereogum.com/2513007/mia-joy-comet-feat-peel-dream-magazine/music/",
-      "genre": "",
-      "vibe_check": "Drifting and luminous, like watching a comet streak across a sky you forgot to stop and look at.",
-      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/09/Mia-Joy.jpg?w=564",
-      "embed_url": "https://www.youtube.com/embed/ZTW5e97aRdY"
-    },
-    {
-      "source": "music",
-      "source_name": "No Depression",
-      "title": "THROUGH THE LENS: Earl Scruggs and Bristol Rhythm & Roots 2026 Fests: “Eventually, It All Comes Back To The Roots.”",
-      "snippet": "This week the the column visits the heart of Appalachia with two roots music festivals: Earl Scruggs Music Festival (September 4-6, 2026, Mill Spring, North Carolina); and Bristol Rhythm & Roots Reunion (September 11-13, 2026, Bristol, Virginia/Tennessee). The settings, only 90 miles apart as the crow",
-      "url": "https://nodepression.org/through-the-lens-earl-scruggs-and-bristol-rhythm-roots-2026-fests-eventually-it-all-comes-back-to-the-roots/",
-      "genre": "",
-      "vibe_check": "Red clay roads and front porch twilight, where the roots go so deep they're practically geological.",
-      "cover_url": "https://storage.ghost.io/c/18/d0/18d08e58-3b1b-4720-ae25-a31b44e69d4b/content/images/2026/09/DelMcCoury_DSC2880A.jpg",
-      "embed_url": null
-    },
-    {
-      "source": "music",
-      "source_name": "No Depression",
-      "title": "Waylon Payne Mines Nashville’s Contradictions, Yet Honors Outlaw Roots on New Album ‘Wayward’",
-      "snippet": "On a recent Wednesday evening, Waylon Payne stood on the modest stage at East Nashville honky-tonk Skinny Dennis, backed by a four-piece band. Dressed in a rhinestone-dotted Western shirt and worn-in jeans, the Nashville-based singer-songwriter explained that the next song he was set to",
-      "url": "https://nodepression.org/waylon-payne-mines-nashvilles-contradictions-yet-honors-outlaw-roots-on-new-album-wayward/",
-      "genre": "",
-      "vibe_check": "Rhinestones and regret under a honky-tonk's flickering neon, where authenticity costs something and everyone in the room knows it.",
-      "cover_url": "https://storage.ghost.io/c/18/d0/18d08e58-3b1b-4720-ae25-a31b44e69d4b/content/images/2026/09/Untitled-design-2.png",
-      "embed_url": "https://www.youtube.com/embed/x9tM24VJgYY"
-    },
-    {
-      "source": "music",
-      "source_name": "No Depression",
-      "title": "SPOTLIGHT: Reflections On The Inevitable Folly Of Naming Things, Or Whatever [ESSAY]",
-      "snippet": "Editor's Note: Jude Brothers, whose new LP titled Dogwood Maiden Voyage r eleased September 25 via Gar Hole Records, is No Depression's Spotlight Artist for September 2026.",
-      "url": "https://nodepression.org/spotlight-reflections-on-the-inevitable-folly-of-naming-things-or-whatever-essay/",
-      "genre": "",
-      "vibe_check": "Dogwood-bloomed and quietly defiant, the sound of someone naming things they were told couldn't be named.",
-      "cover_url": "https://storage.ghost.io/c/18/d0/18d08e58-3b1b-4720-ae25-a31b44e69d4b/content/images/2026/09/Jude-Brothers-Spotlight-Photo.png",
-      "embed_url": null
+      "vibe_check": "The kind of record you find in a dusty crate and can't stop thinking about for weeks.",
+      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/07/Greg-Freeman-All-Set-The-Bone.jpeg?w=564",
+      "embed_url": "https://www.youtube.com/embed/SRyvQnUQFtk"
     },
     {
       "source": "music",
       "source_name": "Pitchfork",
-      "title": "Hear Another Father John Misty Single",
-      "snippet": "“The X-panded Universe” accompanies the news of a West Coast tour, Josh Tillman’s first without a full band in over a decade",
-      "url": "https://pitchfork.com/story/hear-another-father-john-misty-single/",
+      "title": "Klein Surprise Releases New Album My Own Fairytale",
+      "snippet": "The 12 ambient-classical songs are out now",
+      "url": "https://pitchfork.com/story/klein-surprise-releases-new-album-my-own-fairytale/",
       "genre": "",
-      "vibe_check": "Stripped-down existential wandering for a lone figure under West Coast streetlights, overly self-aware and somehow all the more affecting for it.",
-      "cover_url": "https://media.pitchfork.com/photos/6abbbeec7326f7eb48e6beb4/master/pass/Father-John-Misty.jpeg",
-      "embed_url": null
+      "vibe_check": "Drifting through an empty cathedral at dusk, half-dreaming and entirely untethered from the clock.",
+      "cover_url": "https://media.pitchfork.com/photos/6abaa803e0fbfe3cb27d4370/master/pass/unnamed%20(54).jpg",
+      "embed_url": "https://www.youtube.com/embed/4xt2nlBDCBU"
     },
     {
       "source": "music",
-      "source_name": "Pitchfork",
-      "title": "Kim Deal Has a Live Album on the Way",
-      "snippet": "Watch a trailer for Live at the Barbican’s accompanying concert film",
-      "url": "https://pitchfork.com/story/kim-deal-has-a-live-album-on-the-way/",
+      "source_name": "Aquarium Drunkard",
+      "title": "Future Sounds Of Jazz Vol. 16",
+      "snippet": "Future Sounds of Jazz Vol. 16 is both a forecast and a wormhole. Across two discs, Michael Reinboth and Michael Rütten move through jazz, dub, electronic music, improvisation, and psychedelia with the intuitive logic of a late-night DJ set. The result is a strange, elastic universe of DJ Oil, Bitchin Bajas, Booker Stardrum, Nico Zam, Ilhan Ersahin, and Momoko Gill—and a reminder that the future of jazz remains gloriously undefined.",
+      "url": "https://aquariumdrunkard.com/2026/09/29/future-sounds-of-jazz-vol-16/",
       "genre": "",
-      "vibe_check": "Raw and triumphant, like catching lightning in a bottle inside a beautiful old hall where the walls still hum afterward.",
-      "cover_url": "https://media.pitchfork.com/photos/6abbc165255c3d4832945797/master/pass/Kim-Deal-new-live-album.jpg",
-      "embed_url": null
-    },
-    {
-      "source": "music",
-      "source_name": "Pitchfork",
-      "title": "Ryley Walker Signs to AD 93 and Unveils First Song in Five Years",
-      "snippet": "“I was thinking of people in my hometown of Rockford, Illinois. Wearing SpongeBob pajama pants to a funeral-type heads.”",
-      "url": "https://pitchfork.com/story/ryley-walker-signs-to-ad93-and-unveils-first-song-in-five-years/",
-      "genre": "",
-      "vibe_check": "Midwest gothic resurrection music — the sound of someone crawling back from the margins in SpongeBob pajamas and meaning every word.",
-      "cover_url": "https://media.pitchfork.com/photos/6abbbe715d1654f4a04faca5/master/pass/unnamed-1.jpg",
+      "vibe_check": "The feeling of a city blurring past a taxi window at 2am, every genre bleeding into the next like neon on wet pavement.",
+      "cover_url": "https://aquariumdrunkard.com/_newness/wp-content/uploads/2026/08/future-sounds-jazz-16.jpg",
       "embed_url": null
     },
     {
       "source": "music",
       "source_name": "Consequence",
-      "title": "Daughtry Announce 2027 Leg of “20 Years Unplugged” US Tour",
-      "snippet": "Daughtry's second leg of their anniversary acoustic tour begins on January 23rd. Daughtry Announce 2027 Leg of “20 Years Unplugged” US Tour Langdon Hickman",
-      "url": "https://consequence.net/2026/09/daughtry-second-leg-20-years-unplugged-tour/",
+      "title": "Monsieur Periné Announce Split Weeks After Latest Latin Grammy Nomination: “We Need This Space”",
+      "snippet": "The Colombian group will wrap their current tour before stepping away after nearly 20 years together. Monsieur Periné Announce Split Weeks After Latest Latin Grammy Nomination: “We Need This Space” Pedro Camacho",
+      "url": "https://consequence.net/2026/09/monsieur-perine-announce-split/",
       "genre": "",
-      "vibe_check": "Arena-rock nostalgia stripped down to its bones, built for the faithful who still mouth every chorus in an empty parking lot.",
-      "cover_url": "https://consequence.net/wp-content/uploads/2026/06/Daughtry.jpg?quality=80",
+      "vibe_check": "A bittersweet last dance between two people who still love each other but know the music has to stop.",
+      "cover_url": "https://consequence.net/wp-content/uploads/2026/09/Monsieur-Perine-Announce-Split.jpg?quality=80",
       "embed_url": null
     },
     {
       "source": "music",
       "source_name": "Consequence",
-      "title": "Billy Joel Announces Massive Turnstiles 50th Anniversary Box Set with 54 Unreleased Tracks",
-      "snippet": "The set also includes an HD restoration of the Billy Joel Tonight concert film. Billy Joel Announces Massive Turnstiles 50th Anniversary Box Set with 54 Unreleased Tracks Eddie Fu",
-      "url": "https://consequence.net/2026/09/billy-joel-turnstiles-50th-anniversary-box-set/",
+      "title": "Fake Names (Refused, Bad Religion) Embrace Jangle Pop on “If You Could See Me Today”: Stream",
+      "snippet": "The new single from Fake Names is drawn from their upcoming record Punk Ruins, out October 23rd. Fake Names (Refused, Bad Religion) Embrace Jangle Pop on “If You Could See Me Today”: Stream Langdon Hickman",
+      "url": "https://consequence.net/2026/09/fake-names-if-you-could-see-me-today/",
       "genre": "",
-      "vibe_check": "The deep-dive completist's fever dream — a treasure chest for anyone who's ever wondered what the room sounded like before the legend knew he was one.",
-      "cover_url": "https://consequence.net/wp-content/uploads/2026/09/billy-joel-turnstiles-50th-anniversary-box-set.jpg?quality=80",
+      "vibe_check": "Leather jacket hung on a sun-drenched porch — punk bones beneath something surprisingly tender and bright.",
+      "cover_url": "https://consequence.net/wp-content/uploads/2026/09/fake-names-promo-photo.jpg?quality=80",
+      "embed_url": "https://www.youtube.com/embed/4hCtuW9nlMQ"
+    },
+    {
+      "source": "music",
+      "source_name": "Consequence",
+      "title": "Foo Fighters to Open for AC/DC at Rescheduled MetLife Show",
+      "snippet": "The second time the Foos have stepped in to support AC/DC on their North American tour. Foo Fighters to Open for AC/DC at Rescheduled MetLife Show Spencer Kaufman",
+      "url": "https://consequence.net/2026/09/foo-fighters-to-open-ac-dc-rescheduled-metlife-show/",
+      "genre": "",
+      "vibe_check": "Pure stadium adrenaline, the kind that rattles your chest before the first chord even lands.",
+      "cover_url": "https://consequence.net/wp-content/uploads/2026/08/ACDC-Foo-FIghters-2.jpg?quality=80",
       "embed_url": null
+    },
+    {
+      "source": "music",
+      "source_name": "JazzTimes",
+      "title": "Red Hook Records Marks Fifth Anniversary with Two Nights at Roulette",
+      "snippet": "R ed Hook Records is headquartered some 3,000 miles from Brooklyn, in County Cork, Ireland. But the label takes its name from the neighborhood where …",
+      "url": "https://www.jazztimes.com/reviews/live/red-hook-records-marks-fifth-anniversary-with-two-nights-at-roulette/",
+      "genre": "",
+      "vibe_check": "A transatlantic handshake between Irish mist and Brooklyn grit, intimate and quietly celebratory.",
+      "cover_url": "https://www.jazztimes.com/wp-content/uploads/2026/09/Amina-Claudine-Myers-by-Kijun-Lee-scaled.jpg",
+      "embed_url": null
+    },
+    {
+      "source": "music",
+      "source_name": "JazzTimes",
+      "title": "Sweeps Week: Top September Jazz Releases, Amorosi Edition",
+      "snippet": "H ere are A.D. Amorosi’s monthly picks, coming to you the last Tuesday of the month. Aquiestoy, Til We Dissolve (self-released) Seattle-based guitarist-composer-singer Carlos Snaider …",
+      "url": "https://www.jazztimes.com/reviews/albums/sweeps-week-top-september-jazz-releases-amorosi-edition-2/",
+      "genre": "",
+      "vibe_check": "A late-September playlist that smells like old vinyl and turning leaves, curated by someone who really means it.",
+      "cover_url": "https://www.jazztimes.com/wp-content/uploads/2026/09/collage-tues-sept-26-scaled.jpg",
+      "embed_url": "https://bennygreen.bandcamp.com/album/bennys-crib"
+    },
+    {
+      "source": "music",
+      "source_name": "PopMatters",
+      "title": "Rhiannon Giddens Champions Past and Present American Folklore",
+      "snippet": "Rhiannon Giddens summons brilliance and reimagines American folk music in her latest release Hope Is the Thing with Feathers .",
+      "url": "https://www.popmatters.com/rhiannon-giddens-hope-is-the-thing",
+      "genre": "",
+      "vibe_check": "Sitting barefoot on a porch at golden hour, feeling the deep roots of something ancient and alive beneath your feet.",
+      "cover_url": "https://www.youtube.com/embed/NEfmRXYCguc",
+      "embed_url": null
+    },
+    {
+      "source": "music",
+      "source_name": "PopMatters",
+      "title": "Nicole Atkins Welcomes the Pain and the Pop Grandeur on ‘Drama’",
+      "snippet": "Six years after her last LP, noir pop singer-songwriter Nicole Atkins returns with a resplendent record that turns isolation into theater.",
+      "url": "https://www.popmatters.com/nicole-atkins-drama",
+      "genre": "",
+      "vibe_check": "Heartbreak dressed in a sequined gown, crying mascara-streaked tears under a single dramatic spotlight.",
+      "cover_url": "https://www.youtube.com/embed/KMWIH6Zs9j4",
+      "embed_url": "https://www.youtube.com/embed/KMWIH6Zs9j4"
     }
   ],
   "global_silver_linings": [
     {
       "source": "good_news",
       "source_name": "Good News Network",
-      "title": "This Stone Wall Seems to Have Finally Settled Debate About The Town That Became Paris",
-      "url": "https://www.goodnewsnetwork.org/this-stone-wall-seems-to-have-finally-settled-debate-about-the-town-that-became-paris/",
-      "snippet": "Excavations in central Paris have turned up a stone wall that may have finally settled the debate regarding the true origins of the city. City officials described themselves as feeling “dizzy” looking down onto what is essentially Paris’ zero point in time, made all the more dramatic as it still bore the scars of Julius […]",
-      "cover_url": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/09/credit-Anastasia-Choquet-DRAC-Ile-de-France-released.jpg",
-      "reason": "A single ancient stone wall is rewriting the early history of Paris, reminding us that the earth still holds quiet answers to questions humans have debated for centuries. There's something deeply hopeful about the ground beneath our feet continuing to teach us."
+      "title": "Good News in History September 30",
+      "url": "https://www.goodnewsnetwork.org/events060930/",
+      "snippet": "163 years ago, George Bizet’s famous opera Les Pêcheurs de Perles, The Pearl Fishermen, debuted at the Théâtre Lyrique in Paris. Set in ancient times on the Island of Sri Lanka, it tells the story of how two men’s vow of eternal friendship is threatened by their love for the same woman, whose own dilemma […]",
+      "cover_url": "https://www.goodnewsnetwork.org/wp-content/uploads/2022/09/A-page-from-the-libretto-1886-of-The-Pearl-Fishermen-from-La-Scala-in-Milan-pub-domain.jpg",
+      "reason": "History is full of quiet turning points and forgotten kindnesses worth remembering — a daily reminder that progress has always been built by ordinary people doing extraordinary things. Looking back can be one of the best ways to find the courage to move forward."
     },
     {
       "source": "good_news",
       "source_name": "Upworthy",
-      "title": "Harvard-trained ‘friendship expert’ explains the four ‘styles’ of friendships: butterfly, wallflower, firefly, and evergreen",
-      "url": "https://www.upworthy.com/harvard-trained-friendship-expert-explains-the-four-styles-of-friendships-butterfly-wallflower-firefly-and-evergreen/",
-      "snippet": "Understanding your style can help strengthen your friendships.",
-      "cover_url": "https://www.upworthy.com/wp-content/uploads/sites/2/2026/09/friendship-types.jpg",
-      "reason": "Understanding the different ways people naturally connect means fewer of us need to feel like we're doing friendship 'wrong.' This kind of research gently validates the quieter, less visible ways love and loyalty show up in our lives."
+      "title": "Public speaking expert shows how the 3-part structure of Madonna’s VMA speech can be used by anyone",
+      "url": "https://www.upworthy.com/public-speaking-expert-shows-how-the-3-part-structure-of-madonnas-vma-speech-can-be-used-by-anyone/",
+      "snippet": "\"Open with a vulnerable story.\"",
+      "cover_url": "https://www.upworthy.com/wp-content/uploads/sites/2/2026/09/madonna.jpg",
+      "reason": "The ability to speak clearly and connect with an audience is a skill anyone can learn, and breaking it down into a simple structure puts that power within everyone's reach. Confident communication opens doors that talent alone often cannot."
+    },
+    {
+      "source": "good_news",
+      "source_name": "Reasons to be Cheerful",
+      "title": "What We’re Reading: Rat Rangers to the Rescue",
+      "url": "https://reasonstobecheerful.world/what-were-reading-rat-rangers-dc/",
+      "snippet": "Welcome back to our weekly behind-the-scenes glimpse at what’s getting our team talking. Tell us what you’ve been reading at info@reasonstobecheerful.world and we just might feature it here. Rat tales With the rat population growing in Washington, D.C., a group of residents is working to educate their neighbors about ways...",
+      "cover_url": "https://reasonstobecheerful.world/wp-content/uploads/2026/09/shutterstock_2082158647-scaled-e1790708016268.jpg",
+      "reason": "Rats are among the most misunderstood creatures on Earth, and stories of people working alongside them — whether in conservation or detection work — remind us that compassion and curiosity can reshape our relationship with even the most unlikely animals. It's a small but genuine sign that we're learning to see the world through a wider lens."
     },
     {
       "source": "good_news",
       "source_name": "The Optimist Daily",
-      "title": "Colorado’s largest wildlife overpass cut I-25 collisions by 91 percent",
-      "url": "https://www.optimistdaily.com/2026/09/colorados-largest-wildlife-overpass-cut-i-25-collisions-by-91-percent/",
-      "snippet": "BY THE OPTIMIST DAILY EDITORIAL TEAM Nine months in, North America’s largest wildlife overpass has cut vehicle collisions on a stretch of Interstate 25 in Colorado by 91 percent. Before it opened, that corridor was averaging roughly one deer hit per day during peak migration. The crossing, a 209-by-200-foot structure near the Greenland exit between […] The post Colorado’s largest wildlife overpass cut I-25 collisions by 91 percent first appeared on The Optimist Daily: Making Solutions the News .",
-      "cover_url": "https://www.optimistdaily.com/wp-content/uploads/Depositphotos_401827524_S.jpg",
-      "reason": "A 91% drop in wildlife collisions shows that when we deliberately make room for animals to move safely through our landscapes, nature responds quickly and dramatically. Colorado's overpass is a practical, replicable blueprint for coexisting with wildlife rather than just tolerating it."
+      "title": "Why noise is an underestimated health hazard and what to do about it",
+      "url": "https://www.optimistdaily.com/2026/09/why-noise-is-an-underestimated-health-hazard-and-what-to-do-about-it/",
+      "snippet": "BY THE OPTIMIST DAILY EDITORIAL TEAM Most of the damage noise does to your body is preventable, and the tools you need are either free or already in your pocket. The missing piece, for most people, is understanding what counts as too much. Noise is an environmental health hazard that rarely gets treated as one.",
+      "cover_url": "https://www.optimistdaily.com/wp-content/uploads/Depositphotos_787470858_S.jpg",
+      "reason": "Recognising noise pollution as a serious health issue is the first step toward quieter, calmer communities — and the fact that solutions already exist is genuinely encouraging. Advocating for stillness is, in its own way, an act of care for everyone around us."
     }
   ],
   "discovery_articles": [
     {
       "source": "discovery",
       "source_name": "Atlas Obscura",
-      "title": "Dr. Bhau Daji Lad Museum in Mumbai, India",
-      "url": "https://www.atlasobscura.com/places/dr-bhau-daji-lad-museum",
-      "snippet": "Within the premises of Veermata Jijabai Bhosale Udyan in Mumbai’s Byculla area stands an extremely stately turquoise building, reminiscent of old British mansions. It houses Dr. Bhau Daji Lad Museum, the oldest museum in the city. Established in 1857, it was formerly known as the Victoria and Albert Museum.",
+      "title": "23rd Street Mural in Austin, Texas",
+      "url": "https://www.atlasobscura.com/places/23rd-street-mural",
+      "snippet": "Painted in 1974 on the side of a building near the University of Texas campus, the 23rd Street Mural looks at first like a gloriously weird artifact from old Austin. Look closer and things get stranger. Its sprawling cast of characters, creatures and landmarks includes real people, legendary clubs, armadillos, political movements, underground comics, a health-care revolution, Willie Nelson, moon towers, peyote, and plenty of things that require some explaining.",
       "category": "history",
-      "cover_url": "https://img.atlasobscura.com/lobqeQ0UAVQ4A1aDqIigAQueVC4dF9QMfV642AvWLCw/rt:fit/w:600/c:868:579:nowe:109:124/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy82YmNi/ZTE0YS0xOTgyLTQ0/MGYtYmQ0Mi1lNmM0/YjRlYWYwZmUwZDAy/ZmQwYmZkNTZhZTA3/ZDJfSU1HXzIwMjUx/MjExXzE0MTAwMC5q/cGc.jpg",
-      "ferns_note": "Mumbai's oldest museum began its life under a very different crown — the Victoria and Albert Museum, founded in 1857 — before being renamed to honor a pioneering Indian physician and antiquarian. That turquoise building carries a quiet colonial ghost inside every exhibit case."
-    },
-    {
-      "source": "discovery",
-      "source_name": "Atlas Obscura",
-      "title": "Airpower Museum in Ottumwa, Iowa",
-      "url": "https://www.atlasobscura.com/places/airpower-museum",
-      "snippet": "The Airpower museum is nestled between crop fields in the middle of Iowa. It is located adjacent to the Antique Airfield property so general aviation pilots can land their planes right next to the museum for a visit if arriving via air is more your speed. The museum has a unique collection of aviation history throughout the years.",
-      "category": "history",
-      "cover_url": "https://img.atlasobscura.com/4ZBwolqPF0KqmUVM19vpUZLYqoKQFUftG8LcsgXgmQk/rt:fit/w:600/c:2860:1906:nowe:0:0/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy9jMDJk/MjJiYi02ZDZlLTRh/MmMtODc5ZC1mZDU4/OTAwODlkNWYzYmE0/ZmQzYjBlYjc3NjM2/ZjBfQWlyIFBvd2Vy/IE11c2V1bSBMb2dv/LmpwZw.jpg",
-      "ferns_note": "Most museums ask you to leave the car at home; this one will happily watch your biplane while you browse. There's something delightfully matter-of-fact about a museum where 'arriving by antique aircraft' is simply a listed option."
-    },
-    {
-      "source": "discovery",
-      "source_name": "Atlas Obscura",
-      "title": "Metro Argüelles Mosaic  in Madrid, Spain",
-      "url": "https://www.atlasobscura.com/places/metro-arguelles-mosaic",
-      "snippet": "Madrid’s Metro is more than a way to get around the city. Over the years, the network has continually sought to improve and embellish its stations, turning otherwise functional spaces into unexpected galleries. Among the tiled walls, historic details, and contemporary artworks, passengers can stumble upon small pieces of Madrid’s visual and cultural heritage while waiting for the next train.",
-      "category": "history",
-      "cover_url": "https://img.atlasobscura.com/hdrgftTC9jhht_jr4rLU3PCIuy9vnjp-B2cFTXkuhbA/rt:fit/w:600/c:3198:2132:nowe:224:548/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy83YzA1/ODJhMC1jZTc0LTQz/YTYtYjNkNi1iMjM0/NzdlZjU5NTA0MTM4/NmUyMjliMmVlMmU3/ODdfSU1HXzkwMDcu/anBlZw.jpg",
-      "ferns_note": "Madrid's metro stations have been quietly doubling as underground galleries for decades, hiding tilework and cultural artifacts in the margins of the daily commute. It's the rare city that trusts its history to the impatient and the rush-hour-harried."
+      "cover_url": "https://img.atlasobscura.com/BuOLTUhV2eSj1TMe1ZTYc2cSog4f_UK5aSdyiVWlghU/rt:fit/w:600/c:1443:962:nowe:36:41/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy81MTcz/NTYxNi1hNWYyLTRm/NjEtOTY1ZC1mYTdl/NjZjN2U1MGRiNjBm/NzEzMTZmNzVmMjJk/YzlfTXVyYWwgTm8g/SG90c3BvdHMucG5n.png",
+      "ferns_note": "What looks like a tie-dyed fever dream on a Austin brick wall is actually a dense, hand-painted encyclopedia of counterculture — the kind of mural where armadillos share space with healthcare revolutionaries and you keep finding new faces the longer you stare. It's less a painting than a neighborhood's subconscious, frozen in 1974."
     },
     {
       "source": "discovery",
       "source_name": "Smithsonian",
-      "title": "Two Heads Are Better Than One: Rare, Double-Headed Turtle Hatchling Discovered on Cape Cod",
-      "url": "https://www.smithsonianmag.com/smart-news/two-heads-are-better-than-one-rare-double-headed-turtle-hatchling-discovered-on-cape-cod-180989579/",
-      "snippet": "The tiny diamondback terrapin was brought to a wildlife center on September 17. At the time, the creature weighed about as much as a nickel",
+      "title": "MRI Scans Might Reveal Signs of Alzheimer's Disease Seven Years Before a Telltale Marker Appears in the Brain",
+      "url": "https://www.smithsonianmag.com/smart-news/mri-scans-might-reveal-signs-of-alzheimers-disease-seven-years-before-a-telltale-marker-appears-in-the-brain-180989570/",
+      "snippet": "Not all researchers are convinced that the brain changes detected via MRI are robust enough to become a diagnostic tool. But the findings could help researchers better understand the mechanisms that drive the neurodegenerative disease",
       "category": "history",
-      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/itFIcFx_4QLAeMzFD4chJj3W__A=/fit-in/1600x0/filters:focal(816x482:817x483)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/c1/32/c1323fed-f8b0-41ff-be13-e2a9fa983d82/813878266_1366770682282989_6709670340602065331_n.jpg",
-      "ferns_note": "A double-headed diamondback terrapin hatchling, weighing no more than a nickel, arrived on Cape Cod as if nature had decided to make a philosophical statement about duality in the smallest possible package. Two-headed animals are rare enough; finding one this newly born borders on mythological."
+      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/TC9iI804yVUzthqmyEEJRW4IUn4=/fit-in/1600x0/filters:focal(3680x2488:3681x2489)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/16/16/1616de65-269e-40a2-b249-780f47517d1d/mri-scan.jpg",
+      "ferns_note": "The quietly staggering implication here: Alzheimer's may be rewriting the brain's architecture nearly a decade before the disease announces itself through its usual calling cards. If the findings hold, the window for intervention could shift dramatically — and so could everything we think we know about when this disease actually begins."
     },
     {
       "source": "discovery",
       "source_name": "Smithsonian",
-      "title": "Anthropic Says Its A.I. Discovered a New Enzyme System That Resembles the Revolutionary Gene-Editing Tool CRISPR",
-      "url": "https://www.smithsonianmag.com/smart-news/anthropic-says-its-ai-discovered-a-new-enzyme-system-that-resembles-the-revolutionary-gene-editing-tool-crispr-180989578/",
-      "snippet": "Experts at the company don't know what the newfound system does, so its potential utility in biology—if any—remains unclear. But the work marks a major advancement because the A.I. made this discovery mostly on its own",
+      "title": "In One of Rome’s Most Famed and Neglected Villas, Centuries-Old Risqué Frescoes, Painted Over by Nuns, Have Reappeared",
+      "url": "https://www.smithsonianmag.com/smart-news/in-one-of-romes-most-famed-and-neglected-villas-centuries-old-risque-frescoes-painted-over-by-nuns-have-reappeared-180989585/",
+      "snippet": "Nearly a year into a $40 million restoration of the Villa Silvestri Rivaldi, conservators are rediscovering and reviving 16th-century art",
       "category": "history",
-      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/sMehw1vZKkay0rFu4tHEbB1hNFw=/fit-in/1600x0/filters:focal(1757x841:1758x842)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/a0/c7/a0c7f0f1-1d56-4cbe-9ac6-2aa724305fdd/screenshot_2026-09-28_at_125214.png",
-      "ferns_note": "An AI independently identified an entirely new enzyme system resembling CRISPR — and even its creators aren't yet sure what it does, which is somehow both thrilling and a little unsettling. We've reached the point where our tools are making discoveries that outpace our ability to interpret them."
+      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/G3adg3kHUEVR_eUihS7OtE7aw7Y=/fit-in/1600x0/filters:focal(600x400:601x401)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/9d/f7/9df77a95-aaf8-42d2-9516-c5a9713762d9/9-dicembre-villa-silvestri-rivaldi-rocca-giuli-baldassarre-15.jpg",
+      "ferns_note": "Somewhere between the 16th century and a convent's sense of propriety, a coat of whitewash buried frescoes that were apparently too risqué for holy women to live alongside — and now, after centuries of patient concealment, the paintings are simply reappearing. There's something delicious about the nuns losing this particular argument to time."
     },
     {
       "source": "discovery",
       "source_name": "Smithsonian",
-      "title": "The Milwaukee Art Museum Just Returned Two Ceramics Made by Enslaved Potter David Drake to His Descendants",
-      "url": "https://www.smithsonianmag.com/smart-news/the-milwaukee-art-museum-just-returned-two-ceramics-made-by-enslaved-potter-david-drake-to-his-descendants-180989586/",
-      "snippet": "The two vessels, one of them a signed 1855 jar, are the latest to be reinstituted to Drake’s family, who are on a mission to acquire the works of their ancestor",
+      "title": "Japan's Smallest and Least-Populated Major Island Is a World of Pilgrimages, Delicious Food and Plenty of Forest Bathing",
+      "url": "https://www.smithsonianmag.com/travel/japans-smallest-and-least-populated-major-island-is-a-world-of-pilgrimages-delicious-food-and-plenty-of-forest-bathing-180989590/",
+      "snippet": "Each year, more than 100,000 people hike at least part of a 750-mile route on Shikoku that connects 88 Buddhist temples and other sacred sites",
       "category": "history",
-      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/0ZH-takdHDdK1uHA4jXMaqJnrps=/fit-in/1600x0/filters:focal(1242x828:1243x829)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/44/0b/440b06cd-d76d-495e-bded-151b36f5202a/im048333_press.jpeg",
-      "ferns_note": "David Drake, an enslaved man in antebellum South Carolina, signed and dated his pottery at a time when teaching enslaved people to read or write was illegal — acts of quiet, defiant authorship fired into clay. That his descendants are now reclaiming those signed vessels feels like a long, slow justice finally taking shape."
+      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/ci6NJqI3MGsIAwt_geyOM6ApW2s=/fit-in/1600x0/filters:focal(512x346:513x347)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/61/62/6162a246-81b4-4202-b577-1b1e83b37132/gettyimages-1300063538.jpg",
+      "ferns_note": "Shikoku's 750-mile pilgrimage circuit is one of the world's great walks, yet it remains gloriously under-romanticized in the Western imagination — 88 temples, deep forest, and a tradition of *ohenro* walkers who are still offered food and shelter by strangers as a matter of spiritual custom. It's a reminder that some of the oldest forms of hospitality are also the most quietly radical."
     },
     {
       "source": "discovery",
       "source_name": "Smithsonian",
-      "title": "'The Icebergs' Is One of Frederic Edwin Church's Most Spectacular Paintings. For Decades, No One Knew Where It Was",
-      "url": "https://www.smithsonianmag.com/smithsonian-institution/the-icebergs-is-one-of-frederic-edwin-churchs-most-spectacular-paintings-for-decades-no-one-knew-where-it-was-180989587/",
-      "snippet": "In the 1970s, the administrator of a boys' home in England wound up finding the missing 19th-century piece and bringing it back into the spotlight",
+      "title": "In 1884, Gale-Force Winds Ran a Ship Aground Near Cape Cod. Now, the Nor’easter Lashing the East Coast May Have Uncovered Part of It",
+      "url": "https://www.smithsonianmag.com/smart-news/in-1884-gale-force-winds-ran-a-ship-aground-near-cape-code-now-the-noreaster-lashing-the-east-coast-may-have-uncovered-part-of-it-180989583/",
+      "snippet": "The wreckage could belong to the “Warren Sawyer,” a three-masted cargo schooner that foundered more than 140 years ago",
       "category": "history",
-      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/tY0JPt-WGi8CIb8QBOo3IabEBzY=/fit-in/1600x0/filters:focal(3240x1882:3241x1883)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/38/cf/38cfc143-3dc1-4e42-89ff-61695c526a18/197928_1.jpg",
-      "ferns_note": "One of the 19th century's most ambitious American landscape paintings spent decades simply... missing, until a boys' home administrator in England happened upon it in the 1970s. The painting had survived the Arctic; the paperwork, apparently, had not."
-    },
-    {
-      "source": "discovery",
-      "source_name": "Science News",
-      "title": "A medieval remedy could offer ideas for beating antibiotic resistance",
-      "url": "https://www.sciencenews.org/article/medieval-remedy-antibiotic-resistance",
-      "snippet": "The 10th century treatment called Bald’s eyesalve attacks microbes in multiple ways. Molecule mixtures from it may inspire modern medicine.",
-      "category": "science",
-      "cover_url": "https://www.sciencenews.org/wp-content/uploads/sites/2/2026/09/091726_HT_medievalmedicine_main.jpg",
-      "ferns_note": "A thousand-year-old Anglo-Saxon eyesalve recipe — garlic, leek, wine, and bile from a cow's stomach — has proven genuinely effective against antibiotic-resistant bacteria in modern lab tests. Medieval healers may not have known the word 'synergy,' but they appear to have understood the concept."
-    },
-    {
-      "source": "discovery",
-      "source_name": "Science News",
-      "title": "‘The Deep End’ podcast is back to explore what makes your voice yours",
-      "url": "https://www.sciencenews.org/article/the-deep-end-season-2-voice-identity",
-      "snippet": "Season 2 follows people losing their ability to speak — and the AI and brain implants helping them find their voices again.",
-      "category": "science",
-      "cover_url": "https://www.sciencenews.org/wp-content/uploads/sites/2/2026/09/092826_LS_TalkToMeTrailer_main.jpg",
-      "ferns_note": "Losing one's voice is often described as losing oneself — and the researchers and engineers quietly building brain implants and AI to give it back are engaged in something closer to identity restoration than medical treatment. The human story here is less about technology and more about what we grieve when silence is imposed on us."
-    },
-    {
-      "source": "discovery",
-      "source_name": "The Public Domain Review",
-      "title": "Anatomy Unzipped: John of Arderne’s Sweden Scroll (ca. 1425–35)",
-      "url": "https://publicdomainreview.org/collection/arderne-scroll",
-      "snippet": "Early surgical diagrams that present patients prying themselves open for our anatomical gaze.",
-      "category": "history",
-      "cover_url": "https://pdr-assets.b-cdn.net/collections/john-arderne-sweden-scroll/arderne-scroll-thumb.jpg",
-      "ferns_note": "In 15th-century surgical manuscripts, patients were illustrated actively peeling themselves open — cooperative, almost cheerful participants in their own anatomical display. It's a strange intimacy, that early medicine asked the body to be both subject and demonstrator."
-    },
-    {
-      "source": "discovery",
-      "source_name": "JSTOR Daily",
-      "title": "Can We Recover a Worldview Lost to Colonialism?",
-      "url": "https://daily.jstor.org/can-we-recover-a-worldview-lost-to-colonialism/",
-      "snippet": "Among the Ao Naga of northeast India, humans may have been just one kind of person in a world filled with spiritual beings.",
-      "category": "history",
-      "cover_url": "https://daily.jstor.org/wp-content/uploads/2026/09/can_we_recover_a_worldview_lost_to_colonialism_1050x700.jpg",
-      "ferns_note": "For the Ao Naga of northeast India, personhood was never exclusively human — rocks, forests, and spirits held their own social standing in a world structured around relationship rather than hierarchy. Colonialism didn't just erase a culture; it erased an entire cosmology."
-    },
-    {
-      "source": "discovery",
-      "source_name": "Colossal",
-      "title": "A Workforce of Creatures Chugs Along in Kate Renshaw-Lewis’ Hand-Drawn Film “Busy Bodies”",
-      "url": "https://www.thisiscolossal.com/2026/09/busy-bodies-kate-renshaw-lewis/",
-      "snippet": "How do we get rubber gloves and fish?",
-      "category": "history",
-      "cover_url": "https://www.thisiscolossal.com/wp-content/uploads/2026/09/busybodies-1.gif",
-      "ferns_note": "Kate Renshaw-Lewis answers the question 'how do we get rubber gloves and fish?' with a hand-drawn animated workforce of creatures industriously going about their business — which turns out to be the most charming possible way to interrogate supply chains. Capitalism, apparently, looks much better when staffed by small illustrated animals."
-    },
-    {
-      "source": "discovery",
-      "source_name": "Colossal",
-      "title": "Fantastical, Elemental Hybrids Persevere in Jon Ching’s Metaphysical Paintings",
-      "url": "https://www.thisiscolossal.com/2026/09/jon-ching-path-of-least-resistance-paintings/",
-      "snippet": "Inspired by his island upbringing on O’ahu, Hawai’i, Ching turns to nature as a boundless source of wonder and solace.",
-      "category": "history",
-      "cover_url": "https://www.thisiscolossal.com/wp-content/uploads/2026/09/ching-6.jpg",
-      "ferns_note": "Jon Ching's paintings merge elemental forms into creatures that feel less invented than remembered — hybrids that suggest nature itself is always quietly compositing new beings. Growing up on O'ahu clearly left him with the sense that the island was showing him something, not merely surrounding him."
-    },
-    {
-      "source": "discovery",
-      "source_name": "Colossal",
-      "title": "Niklas Roy Constructs a Functional Pendulum Clock Made Entirely of Trash",
-      "url": "https://www.thisiscolossal.com/2026/09/niklas-roy-glashutte-trash-clock-mechanical-sculpture/",
-      "snippet": "The Berlin-based artist and inventor is fascinated by the convergence of art, science, and technology.",
-      "category": "history",
-      "cover_url": "https://www.thisiscolossal.com/wp-content/uploads/2026/09/roy-3.jpg",
-      "ferns_note": "Niklas Roy built a fully functional pendulum clock out of nothing but discarded trash, which is either a meditation on time's indifference to materials or simply proof that a determined Berlin artist will not be stopped by a lack of supplies. Either way, it keeps perfect time."
+      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/cxBFN7KLZat4ff8xiAlCxJlH8-E=/fit-in/1600x0/filters:focal(2016x1517:2017x1518)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/74/af/74afbd73-0b7b-4181-b868-88e1e7bf6f15/8ff41a7a-5360-4471-81ba-786133bce5bc.jpg",
+      "ferns_note": "A nor'easter just did what 140 years of tides couldn't quite finish — strip away enough sand to reveal the bones of a three-masted schooner that went down in an 1884 gale and has been slowly surfacing ever since. The sea, it turns out, is an unreliable keeper of secrets."
     }
   ],
   "featured_read": {
     "source": "reads",
-    "source_name": "The Atlantic",
-    "title": "Why a Sea-Lion Epidemic Is a Bad Sign for Humans",
-    "url": "https://www.theatlantic.com/science/2026/09/sea-lion-avian-flu-synanthrope/688662/?utm_source=feed",
-    "snippet": "Animals that bridge the human world and the wild can be uniquely perilous to human health.",
+    "source_name": "Longreads",
+    "title": "You Should’ve Said Something",
+    "url": "https://longreads.com/2026/09/29/jury-duty-violence-trauma-loss/",
+    "snippet": "\"I had to do everything the jurors did—sit in every court session, examine each piece of evidence, look out from the jury box every day at a man accused of murder—but I wouldn’t participate in the deliberation unless two jurors dropped out.\"",
     "cover_url": "",
-    "blurb": "Sick sea lions washing ashore on California beaches turn out to be an eerily precise mirror for human health risks — this piece traces the unsettling logic of why creatures living at the edge of our world make the most dangerous disease bridges. It's a quiet argument that wildlife medicine is, inescapably, self-interest."
+    "blurb": "What does it mean to witness a murder trial in full — every grim detail, every human face — and yet be denied the final act of judgment? This essay sits with the strange, suspended guilt of the alternate juror."
   },
   "reading_room": [
     {
       "source": "reads",
+      "source_name": "Literary Hub",
+      "title": "The Real Technofascists of Silicon Valley: Why Big Tech Oligarchs Hate Democracy",
+      "url": "https://lithub.com/the-real-technofascists-of-silicon-valley-why-big-tech-oligarchs-hate-democracy/",
+      "snippet": "When I first started seeing coverage of what seemed like a deranged plan from the Trump administration to take over Greenland, I felt like I was losing my mind. Not because I didn’t understand the plot, but because none of",
+      "cover_url": "https://s26162.pcdn.co/wp-content/uploads/2026/09/silicon-valley.png",
+      "blurb": "The ambitions of Silicon Valley's most powerful men have outgrown mere disruption — this piece traces the ideological thread connecting tech oligarchy to a genuine contempt for democratic self-governance, and asks why we're so slow to name it."
+    },
+    {
+      "source": "reads",
+      "source_name": "Noema",
+      "title": "Noema’s AI Reading List",
+      "url": "https://www.noemamag.com/noemas-ai-reading-list",
+      "snippet": "",
+      "cover_url": "https://noemamag.imgix.net/2026/09/Screenshot-2026-09-22-at-4.21.03-PM-1.png?fit=crop&fm=png&h=628&ixlib=php-3.3.1&w=1200&wpsize=noema-social-facebook&s=30da4207eab0e10b39bb9151e1f857d4",
+      "blurb": "A reading list is only as good as its curation — but with no snippet to go on, this one stays behind the curtain for now."
+    },
+    {
+      "source": "reads",
       "source_name": "The Atlantic",
-      "title": "The Case for Sexual Fantasies, According to Gillian Anderson",
-      "url": "https://www.theatlantic.com/family/2026/09/gillian-anderson-more-book-sexual-fantasy/688735/?utm_source=feed",
-      "snippet": "The actor wants to show that women can learn from simply imagining.",
+      "title": "Why Did Wallace Shawn Liken Israelis to Nazis?",
+      "url": "https://www.theatlantic.com/ideas/2026/09/wallace-shawn-israel-palestine/688822/?utm_source=feed",
+      "snippet": "The people casually accusing Israel of genocide",
       "cover_url": "",
-      "blurb": "Gillian Anderson makes a surprisingly rigorous case that sexual fantasy isn't escapism but a form of self-knowledge — a way women rehearse desire on their own terms before the world gets a say. The question she's really asking is why we've treated the imagination as the least trustworthy room in the house."
+      "blurb": "Wallace Shawn's provocation opens onto a harder question: what do we owe the precision of language when the stakes are this high, and who gets to decide when a comparison crosses from critique into cruelty?"
     },
     {
       "source": "reads",
-      "source_name": "Aeon",
-      "title": "Don’t use the ‘C-word’",
-      "url": "https://aeon.co/essays/we-need-a-better-way-to-describe-what-is-often-called-cancer",
-      "snippet": "A cancer diagnosis carries with it fear and upheaval. For many patients the cellular changes do not warrant the label - by Matthew R Cooperberg Read on Aeon",
-      "cover_url": "https://images.aeonmedia.co/images/bb13393b-9cc9-458f-b788-d5a0dc4acb03/essay-final-c0508866-prostate_hyperplasia_lm.jpg?width=1200&quality=75&format=jpeg",
-      "blurb": "A urologist argues that slapping the word 'cancer' on slow-moving cellular changes that may never harm a patient isn't honesty — it's a linguistic catastrophe that drives people toward treatments worse than the disease. This one asks who the diagnosis is really for."
+      "source_name": "The Atlantic",
+      "title": "The Mysteries of Human Personality",
+      "url": "https://www.theatlantic.com/books/2026/09/robert-kolker-vanishing-family-dementia-book-review/688818/?utm_source=feed",
+      "snippet": "Robert Kolker’s latest book, The Vanishing Family , tracks the effects of inherited dementia and the many transformations that follow.",
+      "cover_url": "",
+      "blurb": "Robert Kolker follows a family undone by inherited dementia, asking what remains of a person — and of the people who love them — when memory and personality quietly dissolve."
     },
     {
       "source": "reads",
-      "source_name": "Nautilus",
-      "title": "Do Transplanted Hearts Assume the Age of Their New Host?",
-      "url": "https://nautil.us/do-transplanted-hearts-assume-the-age-of-their-new-host-1285381/",
-      "snippet": "Experiments in humans and mice suggest a way to make more organs available for transplant, but may squash a theory of rejuvenation",
-      "cover_url": "https://lede-admin.nautil.us/wp-content/uploads/sites/70/2026/09/shutterstock_2297622203.jpg",
-      "blurb": "When a young heart moves into an older body, does it age to match its new host — or does it hold its biological ground? The answer, emerging from transplant data and mouse experiments, quietly unsettles one of medicine's most hopeful theories about turning back the clock."
-    },
-    {
-      "source": "reads",
-      "source_name": "Psyche",
-      "title": "When you feel moral disgust, what’s the emotion telling you?",
-      "url": "https://psyche.co/ideas/when-you-feel-moral-disgust-whats-the-emotion-telling-you",
-      "snippet": "Some actions and words provoke instant revulsion. To know if we can trust that gut feeling, we should probe why we have it - by Brandon Yip Read on Psyche",
-      "cover_url": "https://images.aeonmedia.co/images/b492c86e-a58a-44e2-b7bc-e5d002b01225/sz-panos_00374310.jpg?top=130&left=0&cropWidth=2496&cropHeight=1404&width=1200&quality=75&format=jpeg",
-      "blurb": "Moral disgust arrives fast and feels ancient and authoritative, but Brandon Yip wants to know whether that gut wrench is a reliable compass or just a feeling dressed up in ethical clothing. The essay doesn't tell you what to be revolted by — it asks whether revulsion is ever actually telling you the truth."
-    },
-    {
-      "source": "reads",
-      "source_name": "The Paris Review",
-      "title": "Naked at Last: A Conversation with F. Keith Wahle",
-      "url": "https://www.theparisreview.org/blog/2026/09/29/naked-at-last-a-conversation-with-f-keith-wahle/",
-      "snippet": "“When I carried this in from the funeral home, I thought, This is the kind of bag that a magician would make live doves fly out of.”",
-      "cover_url": "https://www.theparisreview.org/blog/wp-content/uploads/2026/09/0-14.jpg",
-      "blurb": "F. Keith Wahle has spent decades washing and dressing the dead, and in this conversation he describes the work with a matter-of-factness that somehow makes mortality feel less like a wall and more like a room you might actually enter. The magician's bag line alone earns the half-hour."
+      "source_name": "Asterisk",
+      "title": "So You Think You Could Be An Electrician?",
+      "url": "https://asteriskmag.com/issues/15/so-you-think-you-could-be-an-electrician",
+      "snippet": "Funny how the people telling kids to get jobs in the trades tend to be white-collar.",
+      "cover_url": "https://asteriskmag.com/media/pages/issues/15/so-you-think-you-could-be-an-electrician/75a9ca6492-1790620578/blue-collar-jesse-smith-1600x900-crop-sharpen50.png",
+      "blurb": "The advice to \"learn a trade\" comes cheap from those who never will — this essay digs into what the skilled-trades pipeline actually looks like from the inside, and who bears the real cost of our romantic notions about it."
     }
   ],
   "garden_note": {
-    "note": "The days are tilting noticeably shorter now in Zürich, and this evening carries that particular early-autumn quality — cool at the edges, still golden in the middle. It's the kind of dusk that asks you to linger a little longer in the garden before retreating indoors to something warm.",
+    "note": "There's a particular quality to the light at this turning of the year in Zürich — slanted and golden even by mid-morning, catching the first blush of colour in the maples along the Limmat. Step out after 06:53 and you'll find the garden draped in that quiet, dew-heavy stillness that only early autumn delivers.",
     "in_season": [
-      "Dahlias at their peak before the first frost",
-      "Winter squash ready to cure on dry ground",
-      "Sow lamb's lettuce (Feldsalat) for autumn harvest",
-      "Rake fallen apple leaves to deter scab overwintering"
+      "Dahlias: still flowering gloriously — cut stems for a last vase before the first frost threatens",
+      "Quince: harvest time is here, the heavy yellow fruits ready to pull from the branch",
+      "Kale and leeks: thriving in the cooler air, sweeter now after the first chilly nights",
+      "Clearing spent summer beds and working in compost before the ground hardens"
     ],
-    "sky_tonight": "The bright waning gibbous moon rises well after dark — look east for Saturn glowing steadily in Aquarius nearby.",
-    "sun_times": "Dusk settles over the Limmat valley around 19:40 tonight, just over two hours after sunset at 19:11.",
+    "sky_tonight": "The waning gibbous moon rises well after midnight — look for Saturn in the south-eastern sky during the early evening hours, still shining steadily in Aquarius.",
+    "sun_times": "First light creeps in at 06:53 this morning, and the sun sets at 19:09 — savour those last warm hours in the garden.",
     "moon_label": "Waning gibbous",
-    "illum_pct": 89,
-    "sun_range": "07:20–19:11"
+    "illum_pct": 85,
+    "sun_range": "07:21–19:09"
   },
-  "puzzle": {},
+  "puzzle": {
+    "kind": "riddle",
+    "label": "Fern's Morning Riddle",
+    "prompt": "What has toes but no feet or legs?",
+    "answer": "Toma-toes",
+    "hint": "",
+    "source": "riddles.com",
+    "source_id": "Riddle-8536"
+  },
   "previous_puzzle": {
     "label": "The Morning Haiku",
     "prompt": "late august sunlight\nfront row seats\nat our daughter’s ____\n\n(Fill in the missing word.)",
     "answer": "wedding"
   },
   "larder": {
-    "news": [],
-    "recipe": {}
+    "news": [
+      {
+        "source": "food",
+        "source_name": "The Kitchn",
+        "title": "47 Easy Make-Ahead Thanksgiving Sides",
+        "url": "https://www.thekitchn.com/make-ahead-thanksgiving-sides-23846787?utm_source=RSS&utm_medium=feed&utm_campaign=Category%2FChannel%3A+main",
+        "snippet": "Despite your most careful planning (did you make a detailed timeline?), cooking Thanksgiving dinner can still feel a little stressful once the big day rolls around. It holds true whether you’re having a small Thanksgiving dinner or hosting the whole extended family. That’s why we love getting a jump-start with one or several make-ahead Thanksgiving sides.",
+        "cover_url": "",
+        "blurb": "A timely lifesaver for anyone who'd rather be sipping wine than sweating over stovetop timing on the big day."
+      },
+      {
+        "source": "food",
+        "source_name": "The Guardian",
+        "title": "Why are garlic presses so out of fashion? | Kitchen aide",
+        "url": "https://www.theguardian.com/food/2026/sep/29/stop-press-why-garlic-presses-so-out-of-fashion",
+        "snippet": "It’s the gadget people love to hate – but maybe it does have a place in the kitchen? Why are garlic presses suddenly a no-no? Recipes now stipulate grating instead, but who wants lumps of garlic in their dinner?",
+        "cover_url": "https://i.guim.co.uk/img/media/568b9bdcfea72245eb55ad35c5e5657bfd5f611a/0_0_2616_2093/master/2616.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=0c51aa0bcbdb22a170de2a09337fdb2c",
+        "blurb": "A delightfully nerdy dive into why the humble garlic press has become the kitchen drawer's most controversial resident."
+      }
+    ],
+    "recipe": {
+      "source": "recipe",
+      "source_name": "Alexandra's Kitchen",
+      "title": "Mother’s Day Gift Guide",
+      "url": "https://alexandracooks.com/2026/04/25/mothers-day-gift-guide-4/",
+      "snippet": "Mother’s Day Gift Guide Friends, hello! You know I love a gift guide, and I love hearing your ideas as well. Please share any thoughts/ideas in the comments below.",
+      "is_recipe": true,
+      "cover_url": "https://alexandracooks.com/wp-content/uploads/2026/04/mothersdaymontage.jpg",
+      "blurb": "A thoughtful Mother's Day gift guide from a trusted kitchen voice — the kind of read that makes you feel like you've already wrapped something lovely."
+    },
+    "seasonal_note": "Zürich's markets are piling high with Berner Rosen and Gravenstein apples right now — worth seeking out for a slow Saturday Apfelmus, simmered with a strip of lemon peel and nothing more. The nut vendors on Bürkliplatz are also beginning to show the first Baumnüsse of the season, best eaten fresh before they harden into their winter selves."
   },
   "fern_data": {
-    "greeting": "The sky has gone that particular bruised amber — the one that only lasts four minutes and makes you stop whatever you're doing. Tonight's edition has Rick Wakeman playing piano for 150 rescued moon bears in Vietnam, 54 unreleased Billy Joel tracks surfacing after half a century, and a medieval remedy quietly embarrassing modern antibiotics.",
-    "top_pick_title": "Amber Windows & Unlikely Audiences"
+    "greeting": "Roman nuns painted over centuries of risqué frescoes — and the frescoes won. This edition also has an MRI technique that may catch Alzheimer's seven years early, and Foo Fighters somehow opening for AC/DC.",
+    "top_pick_title": "Beneath the Whitewash"
   }
 }
