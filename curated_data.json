@@ -1,12 +1,12 @@
 {
-  "fetched_at": "2026-10-01T12:17:55.224191+02:00",
+  "fetched_at": "2026-10-01T21:38:33.013314+02:00",
   "is_am_email": false,
   "audit_summary": {
     "youtube_videos": 0,
     "themes": 0,
-    "music_articles": 10,
+    "music_articles": 12,
     "good_news_articles": 4,
-    "discovery_articles": 3,
+    "discovery_articles": 11,
     "featured_read": 1,
     "reading_room": 5,
     "garden": 1,
@@ -17,275 +17,377 @@
   "morning_soundtrack": [
     {
       "source": "music",
-      "source_name": "Stereogum",
-      "title": "Chastity Belt Announce New Album All My Friends: Hear Two Tracks",
-      "snippet": "Seattle indie rockers Chastity Belt have been making fuzzy, beatific music for 15 years now, and we gave Album Of The Week honors to their last LP, 2024's Live Laugh Love . A couple of weeks ago, Chastity Belt released two tracks , \"I Could Say Less\" and \"Pavement.\" As it turns out, both of those songs will appear on Chastity Belt's next album, the just-announced All My Friends . So will the band's two brand-new songs.",
-      "url": "https://stereogum.com/2513125/chastity-belt-announce-new-album-all-my-friends-hear-two-tracks/music/",
+      "source_name": "NPR Music",
+      "title": "Sheryl Crow says she's found 'great liberation' in not chasing the next hit",
+      "snippet": "After selling tens of millions of records worldwide, the singer-songwriter says she's finally aged out of pop music — and she's OK with that. Crow's latest album is Pick You Up.",
+      "url": "https://www.npr.org/2026/10/01/nx-s1-5984965/sheryl-crow-pick-you-up",
       "genre": "",
-      "vibe_check": "The sound of old friends sprawled across a living room floor, fuzzy and content and not quite ready to go home.",
-      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/09/Chastity-Belt-All-My-Friends.jpeg?w=564",
-      "embed_url": "https://www.youtube.com/embed/dgQmavZcKJg"
+      "vibe_check": "The quiet confidence of someone who stopped checking their phone for validation and finally started enjoying the view.",
+      "cover_url": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/5000x2812+0+159/resize/1400/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F13%2F6c%2F95a884574a5f85f7db0236b104b1%2Fgettyimages-2291214646.jpg",
+      "embed_url": "https://www.youtube.com/embed/FduirRR1fZk"
     },
     {
       "source": "music",
       "source_name": "Stereogum",
-      "title": "Fontaines D.C. – “Tongue”",
-      "snippet": "Fontaines D.C.'s upcoming Dopamine Chamber promises to be one of the biggest rock albums of the fall, and it could be something special. The band has been debuting new songs live lately, and we've already heard lead single \" Marianne .\" The record has the group's first-ever featured-guest collaborator: Rosalía, who shows up on the as-yet-unheard \"Where Is Gone?\" Today, Fontaines share the LP's second single, and it's a good one.",
-      "url": "https://stereogum.com/2513114/fontaines-d-c-tongue/music/",
+      "title": "Radio Free Alice – “Big Ideas” (Feat. Rachel Brown)",
+      "snippet": "Radio Free Alice are a Melbourne indie rock band with a sound that can make you feel instantly nostalgic. Depending on when you had your formative experiences, they might remind you of '00s blog-rock. '80s college rock, or any combination of those things.",
+      "url": "https://stereogum.com/2513307/radio-free-alice-big-ideas-feat-rachel-brown/music/",
       "genre": "",
-      "vibe_check": "The restless 3am energy of a city that's too loud to let you sleep and too alive to make you want to.",
-      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/09/Fontaines.jpg?w=564",
-      "embed_url": "https://www.youtube.com/embed/5OsIwKHppho"
+      "vibe_check": "The feeling of finding an old mixtape in a jacket pocket and realizing every song still hits exactly the same.",
+      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/10/Radio-Free-Alice.jpeg?w=564",
+      "embed_url": "https://www.youtube.com/embed/pMOne7uQlcQ"
     },
     {
       "source": "music",
       "source_name": "Stereogum",
-      "title": "Mogwai – “Underground” (Feat. Iggy Pop)",
-      "snippet": "Scottish post-rock warriors Mogwai have had a hell of a run over the past 30 years or so. Early next year, they'll release a career-spanning collection under the title Happy Tears . It's funny to think that Mogwai are the kind of band to put out a greatest-hits album, but it also makes its own kind of sense.",
-      "url": "https://stereogum.com/2513109/mogwai-underground-feat-iggy-pop/music/",
+      "title": "Courtney Marie Andrews, Cornelia Murr, Lola Kirke, & Katie Pearlman Debut New Supergroup Tommy",
+      "snippet": "There's a new supergroup in town. Courtney Marie Andrews, Cornelia Murr, Lola Kirke, and Katie Pearlman have joined forces to form Tommy, and they played their first show in Nashville earlier this week.",
+      "url": "https://stereogum.com/2513304/courtney-marie-andrews-cornelia-murr-lola-kirke-katie-pearlman-debut-new-supergroup-tommy/news/",
       "genre": "",
-      "vibe_check": "An aging leather jacket handed down to someone who still knows exactly how to wear it.",
-      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/09/Mogwai-Happy-Tears.jpeg?w=564",
-      "embed_url": "https://www.youtube.com/embed/agOOQ2wTS8I"
+      "vibe_check": "Four women sharing one microphone in a candlelit room, and somehow that's enough to fill the whole sky.",
+      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/10/812427573_18009210542974027_6520012988016340907_n.jpg?w=564",
+      "embed_url": null
+    },
+    {
+      "source": "music",
+      "source_name": "Stereogum",
+      "title": "Peter Gabriel Announces Details For His New Album o\\i",
+      "snippet": "Peter Gabriel kicked off the year with the announcement of his new album o\\i . However, this wasn't a normal album cycle; the legendary singer-songwriter has been releasing a single for every full moon. Each track has two mixes — a Bright-Side mixed by Mark 'Spike' Stent and the Dark-Side mix by Tchad Blake — alongside a chosen piece of visual art.",
+      "url": "https://stereogum.com/2513279/peter-gabriel-announces-details-for-his-new-album-oi/news/",
+      "genre": "",
+      "vibe_check": "Music that arrives on the full moon and asks you to sit with both your light and your shadow until dawn.",
+      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/10/PG24_PeterGabriel_OI_%403000pxls.jpg?w=564",
+      "embed_url": null
+    },
+    {
+      "source": "music",
+      "source_name": "No Depression",
+      "title": "ALBUM REVIEW: Libby Dale Makes Her Solo Debut With 'Freehand'",
+      "snippet": "Libby Dale can’t sleep. “Like fireflies / blinking luminescence in my eyes,” she sings. “The visions come / of things I need and things I’ve done wrong.” “These Old Nights,” from her solo debut Freehand , swings gracefully like ‘60s slow-dance",
+      "url": "https://nodepression.org/album-review-libby-dale-makes-her-solo-debut-with-freehand/",
+      "genre": "",
+      "vibe_check": "3 a.m. insomnia dressed in a chiffon skirt, swaying slowly to the hum of a memory you can't quite shake.",
+      "cover_url": "https://storage.ghost.io/c/18/d0/18d08e58-3b1b-4720-ae25-a31b44e69d4b/content/images/2026/10/Album-Cover.png",
+      "embed_url": null
     },
     {
       "source": "music",
       "source_name": "Pitchfork",
-      "title": "Mei Semones Announces Sophomore Album and North American Tour",
-      "snippet": "Howl marks the singer-songwriter’s first release under Verve/Interscope",
-      "url": "https://pitchfork.com/story/mei-semones-announces-sophomore-album-and-north-american-tour/",
+      "title": "Alexander Skarsgård Moves Like Jagger in New Rolling Stones Video",
+      "snippet": "Or at least he tries to",
+      "url": "https://pitchfork.com/story/alexander-skarsgard-moves-like-jagger-in-new-rolling-stones-video/",
       "genre": "",
-      "vibe_check": "Standing barefoot on a porch at dusk, something feral and tender rising in your chest.",
-      "cover_url": "https://media.pitchfork.com/photos/6abc07d3255c3d4832945bcf/master/pass/Photo%20Credit-Alec%20Hirata%20(1).jpg",
+      "vibe_check": "The charming, slightly awkward energy of someone trying to look effortlessly cool and knowing we're all in on the joke.",
+      "cover_url": "https://media.pitchfork.com/photos/6abe8ac0948de2fc99b1f7d7/master/pass/Screenshot%202026-10-01%20at%2012.17.45%E2%80%AFPM%20(2).png",
+      "embed_url": null
+    },
+    {
+      "source": "music",
+      "source_name": "Pitchfork",
+      "title": "Watch Audrey Hobert Twirl Her Way Through “Chateau” on Kimmel",
+      "snippet": "She’s back for more late night after her viral “Sue Me” performance",
+      "url": "https://pitchfork.com/story/watch-audrey-hobert-twirl-her-way-through-chateau-on-kimmel/",
+      "genre": "",
+      "vibe_check": "Dizzy, delighted, and spinning under late-night studio lights like the whole world is your living room.",
+      "cover_url": "https://media.pitchfork.com/photos/6abe6594d1d34111bf526f9d/master/pass/Audrey-Hobert-Kimmel.jpg",
       "embed_url": null
     },
     {
       "source": "music",
       "source_name": "Aquarium Drunkard",
-      "title": "Lee Ranaldo :: Guitar-Centric Film Soundtracks",
-      "snippet": "As a member of Sonic Youth, Drift, and his many other musical detours, Lee Ranaldo has treated the guitar as a pure sound source, creating dynamic new expressions in rock & roll and the avant-garde alike. But Ranaldo's new project, a soundtrack to director Joris Postema’s \"eco-doc\" The System, presents a new side of Lee, that of a filmic composer. To commemorate the album's release, Ranaldo sent over notes about nine other guitar-centric soundtracks that serve as conceptual inspirations for The System.",
-      "url": "https://aquariumdrunkard.com/2026/09/28/lee-ranaldo-guitar-centric-film-soundtracks/",
+      "title": "Andy Boay :: Doomed",
+      "snippet": "Andy Boay returns with an opus crafted with ecstatic care: a journey of reverbed vocals and guitar noodles, a lo-fi love letter, a bedroom SMiLE , and its own thing completely: Doomed . Doomed shares the same creative DNA as its brilliant predecessor, 2025’s You Took That Walk For The Two Of Us : another painstakingly crafted cassette recording, with tape manipulation galore and self-harmonies aplenty. The post Andy Boay :: Doomed first appeared on Aquarium Drunkard .",
+      "url": "https://aquariumdrunkard.com/2026/10/01/andy-boay-doomed/",
       "genre": "",
-      "vibe_check": "The hum of a projector in a dark room where the film and the forest outside the window feel like the same thing.",
-      "cover_url": "https://aquariumdrunkard.com/_newness/wp-content/uploads/2026/09/a3788598031_10.jpg",
+      "vibe_check": "Headphones on, lights off, disappearing into a handmade world of tape hiss and tender harmonies you weren't supposed to hear.",
+      "cover_url": "https://aquariumdrunkard.com/_newness/wp-content/uploads/2026/10/Andy-Boay-.jpg",
+      "embed_url": null
+    },
+    {
+      "source": "music",
+      "source_name": "Aquarium Drunkard",
+      "title": "Jeremy Cunningham :: Passing Fires",
+      "snippet": "Jeremy Cunningham makes music that seems to be perpetually slipping out of its own frame. On Passing Fires , the Chicago drummer moves from free-jazz and skronk to electronics, funk, post-rock and pop, assembling a cast of improvisers, producers and singers who keep the music in motion. There are moments of muscular rhythmic interplay, strange electronic textures, children’s voices, whispered vocals and unexpected turns.",
+      "url": "https://aquariumdrunkard.com/2026/10/01/jeremy-cunningham-passing-fires/",
+      "genre": "",
+      "vibe_check": "Like riding a city bus at midnight where every stop opens onto a completely different sonic neighborhood.",
+      "cover_url": "https://aquariumdrunkard.com/_newness/wp-content/uploads/2026/09/Jeremy-Cunningham.jpg",
       "embed_url": null
     },
     {
       "source": "music",
       "source_name": "Consequence",
-      "title": "Fontaines D.C. Release New Single “Tongue” from Upcoming Album Dopamine Chamber: Stream",
-      "snippet": "The Irish band's fifth studio record is set to release on October 16th. Fontaines D.C. Release New Single “Tongue” from Upcoming Album Dopamine Chamber: Stream Karan Singh",
-      "url": "https://consequence.net/2026/09/fontaines-dc-tongue-dopamine-chamber/",
+      "title": "Peter Gabriel Reveals Full Details, Release Date for New Album o/i",
+      "snippet": "Featuring 13 new songs, each with two distinct mixes, the follow-up to Gabriel's 2023 comeback album arrives on November 27th. Peter Gabriel Reveals Full Details, Release Date for New Album o/i Jonah Krueger",
+      "url": "https://consequence.net/2026/10/peter-gabriel-reveals-full-details-for-new-album-o-i/",
       "genre": "",
-      "vibe_check": "The restless 3am energy of a city that's too loud to let you sleep and too alive to make you want to.",
-      "cover_url": "https://consequence.net/wp-content/uploads/2026/09/Fontaines-D.C.-Tongue-New-Single-Dopamine-Chamber.jpg?quality=80",
-      "embed_url": null
+      "vibe_check": "The anticipation of watching the full moon rise, knowing something carefully built in the dark is finally about to be seen.",
+      "cover_url": "https://consequence.net/wp-content/uploads/2026/10/peter-gabriel-new-album.jpg?quality=80",
+      "embed_url": "https://www.youtube.com/embed/gzyvAcn90YQ"
     },
     {
       "source": "music",
       "source_name": "Consequence",
-      "title": "Mogwai Share New Iggy Pop Collaboration “Underground”: Stream",
-      "snippet": "The track is taken from Mogwai's new career-spanning compilation Happy Tears. Mogwai Share New Iggy Pop Collaboration “Underground”: Stream Karan Singh",
-      "url": "https://consequence.net/2026/09/mogwai-happy-tears-underground-iggy-pop-underground/",
+      "title": "Oh No, Alexander Skarsgård Forgot His Shirt in the Video for The Rolling Stones’ “Mr. Charm”: Watch",
+      "snippet": "What a shame. Oh No, Alexander Skarsgård Forgot His Shirt in the Video for The Rolling Stones’ “Mr. Charm”: Watch Liz Shannon Miller",
+      "url": "https://consequence.net/2026/10/rolling-stones-alexander-skarsgard-mr-charm-music-video/",
       "genre": "",
-      "vibe_check": "An aging leather jacket handed down to someone who still knows exactly how to wear it.",
-      "cover_url": "https://consequence.net/wp-content/uploads/2026/09/Iggy-Pop-and-Mogwai.jpeg?quality=80",
-      "embed_url": null
+      "vibe_check": "Glossy, tongue-in-cheek swagger that knows exactly how ridiculous it is and leans in anyway.",
+      "cover_url": "https://consequence.net/wp-content/uploads/2026/10/alexander-skarsgard-the-rolling-stones-mr-charm-music-video.jpg?quality=80",
+      "embed_url": "https://www.youtube.com/embed/3e5LxvRZjVw"
     },
     {
       "source": "music",
-      "source_name": "JazzTimes",
-      "title": "Coltrane 100 Live Celebration: Ascension. Adoration. Nothing but Net in Philadelphia.",
-      "snippet": "T hough he was in and out of the City of Brotherly Love until his passage from Earth’s plane in 1967, John Coltrane only really …",
-      "url": "https://www.jazztimes.com/reviews/live/coltrane-100-live-celebration-ascension-adoration-nothing-but-net-in-philadelphia/",
+      "source_name": "Consequence",
+      "title": "The Red Clay Strays Announce 2027 North American Tour",
+      "snippet": "The extensive US and Canada run arrives in support of the band's 2026 album Grateful. The Red Clay Strays Announce 2027 North American Tour Paolo Ragusa",
+      "url": "https://consequence.net/2026/10/the-red-clay-strays-2027-north-american-tour/",
       "genre": "",
-      "vibe_check": "A congregation leaning into sound the way light leans into a cathedral — reverent, overwhelming, and entirely present.",
-      "cover_url": "https://www.jazztimes.com/wp-content/uploads/2026/09/DSCF6568_HariAdivarekarPhoto.jpg",
+      "vibe_check": "Dusty Southern highways and stadium anticipation, the kind of gratitude that fills a room before the lights even go down.",
+      "cover_url": "https://consequence.net/wp-content/uploads/2026/10/The-Red-Clay-Strays-2027-North-American-Tour.jpg?quality=80",
       "embed_url": null
-    },
-    {
-      "source": "music",
-      "source_name": "JazzTimes",
-      "title": "Sweeps Week: Top September Jazz Releases, Henkin Edition",
-      "snippet": "H ere are Andrey Henkin’s monthly picks, coming to you the last Wednesday of the month. Michael Blake, Halloween Tales (Baby Tank) Saxophonist Michael Blake …",
-      "url": "https://www.jazztimes.com/reviews/albums/sweeps-week-top-september-jazz-releases-henkin-edition/",
-      "genre": "",
-      "vibe_check": "The satisfying rustle of dog-eared pages in a well-loved record shop, something new and right waiting just around the corner.",
-      "cover_url": "https://www.jazztimes.com/wp-content/uploads/2026/09/collage-weds-sept-26-scaled.jpg",
-      "embed_url": null
-    },
-    {
-      "source": "music",
-      "source_name": "PopMatters",
-      "title": "Patrick Shiroishi and Jason Nazary Make a Gorgeous Collaboration",
-      "snippet": "Patrick Shiroishi and Jason Nazary fuse experimental instrumentation and arrangements with jazz sensibilities on here i am no i .",
-      "url": "https://www.popmatters.com/patrick-shiroishi-here-i-am",
-      "genre": "",
-      "vibe_check": "The moment between sleep and waking when sound dissolves into pure feeling and nothing needs a name.",
-      "cover_url": "https://www.popmatters.com/wp-content/uploads/2026/09/Patrick-Shiroishi-Here-I-Am-No-I-social.webp",
-      "embed_url": "https://bandcamp.com/EmbeddedPlayer/album=58630065/size=large/bgcol=ffffff/linkcol=e99708/tracklist=false/artwork=small/transparent=true/"
     }
   ],
   "global_silver_linings": [
     {
       "source": "good_news",
       "source_name": "Good News Network",
-      "title": "Good News in History, October 1",
-      "url": "https://www.goodnewsnetwork.org/events061001/",
-      "snippet": "102 years ago today, former President Jimmy Carter was born The 39th president of the United States from 1977–1981, is one of the few American presidents to receive the Nobel Peace Prize (for his Camp David Accords). He is also the first American centenarian president, perhaps a result of him only serving a single term, […]",
-      "cover_url": "https://www.goodnewsnetwork.org/wp-content/uploads/2015/10/Jimmy-Carter-White-House-photo-cropped.jpg",
-      "reason": "History is full of quiet turning points worth remembering — pausing to mark them reminds us that progress, however slow, has always been possible. Looking back at what humans have overcome is a reliable antidote to despair."
-    },
-    {
-      "source": "good_news",
-      "source_name": "Positive News",
-      "title": "Why good leaders listen",
-      "url": "https://www.positive.news/lifestyle/why-good-leaders-listen/",
-      "snippet": "Listening is often overlooked as a leadership skill, but it can challenge assumptions and lead to better decisions, writes social innovator Ken Banks",
-      "cover_url": "https://www.positive.news/wp-content/uploads/2026/09/iStock-2226795526-copy.jpg",
-      "reason": "Genuine listening is one of the simplest and most powerful tools a leader can have, and the fact that we're studying and championing it suggests the culture of leadership is slowly maturing. Small shifts in how power is exercised can ripple outward in ways that touch many lives."
+      "title": "‘Flourishing’ Sycamore Gap Tree Has Ring of New Shoots Already 3-Feet Tall",
+      "url": "https://www.goodnewsnetwork.org/flourishing-sycamore-gap-tree-has-ring-of-new-shoots-already-3-feet-tall/",
+      "snippet": "3 years on from the illegal felling of Britain’s famous Sycamore Gap tree, new aerial images reveal how the stump is flourishing, and the basal sprouts that emerged are growing fast. For those who didn’t read or weren’t aware, one of the UK’s most famous trees—a 150-year-old sycamore growing in a gap along the Roman-era […]",
+      "cover_url": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/10/overlooking-the-sycamore-gap-stump-on-hadrians-wall.-credit-nt-images-annapurna-mellor.jpg",
+      "reason": "The beloved Sycamore Gap tree, felled by vandals in 2023, is already pushing back with vigorous new shoots three feet tall — a quiet, powerful reminder that nature's will to grow is remarkably hard to extinguish."
     },
     {
       "source": "good_news",
       "source_name": "Upworthy",
-      "title": "A case worker was told she couldn’t adopt a foster girl. She waited 6 years to make it happen.",
-      "url": "https://www.upworthy.com/can-you-be-adopted-as-an-adult-2-ex1/",
-      "snippet": "\"A family is made of love. Love knows No color or age.\"",
-      "cover_url": "https://www.upworthy.com/wp-content/uploads/sites/2/2026/01/origin_85a89e.jpg",
-      "reason": "One woman's six-year commitment to a child she believed in is a quiet testament to what stubborn, patient love can accomplish against bureaucratic odds. Stories like this remind us that for some people, doing right by a child is simply non-negotiable — and that persistence can win."
+      "title": "Studies reveal the 2 phases of life when parents are happiest, but not everyone agrees",
+      "url": "https://www.upworthy.com/studies-reveal-the-2-phases-of-life-when-parents-are-happiest/",
+      "snippet": "\"This cannot be right.\"",
+      "cover_url": "https://www.upworthy.com/wp-content/uploads/sites/2/2026/09/when-are-parents-happiest.png",
+      "reason": "Understanding when and why parents feel most fulfilled helps families and communities build better support at the moments it matters most, turning research into real comfort for real lives."
+    },
+    {
+      "source": "good_news",
+      "source_name": "Reasons to be Cheerful",
+      "title": "Reviving L.A.’s Burned Landscapes, One Seed Bomb at a Time",
+      "url": "https://reasonstobecheerful.world/california-fires-seed-bomb-project/",
+      "snippet": "If you’ve been through a wildfire, you may never forget the torrid heat, the acrid smell of smoke and the threatening sight of flames closing in. On January 7, 2025, the Goodyear family joined 200,000 other Angelenos in grabbing emergency items and fleeing from raging wildfires that would devastate 37,000...",
+      "cover_url": "https://reasonstobecheerful.world/wp-content/uploads/2026/09/seed-bomb-still-3.jpg",
+      "reason": "In the wake of devastating wildfires, community volunteers are hand-crafting seed bombs to coax native plants back into L.A.'s scorched hillsides — a grassroots act of restoration that puts healing literally into people's hands."
     },
     {
       "source": "good_news",
       "source_name": "The Optimist Daily",
-      "title": "The herbs and spices dietitians say support immune function",
-      "url": "https://www.optimistdaily.com/2026/10/the-herbs-and-spices-dietitians-say-support-immune-function/",
-      "snippet": "BY THE OPTIMIST DAILY EDITORIAL TEAM Every fall, the same conversation starts about how to stay well through cold and flu season. Most of the advice points to supplements: vitamin C, zinc, elderberry. Useful, but not the whole picture.",
-      "cover_url": "https://www.optimistdaily.com/wp-content/uploads/Depositphotos_814668808_S.jpg",
-      "reason": "The idea that everyday kitchen staples like thyme, ginger, or turmeric can genuinely support our health puts wellbeing within almost everyone's reach. It's grounding to be reminded that nature has been quietly offering us these tools all along."
+      "title": "How Argentina’s battery-powered Tren Solar is recharging an ancient Andean route",
+      "url": "https://www.optimistdaily.com/2026/10/how-argentinas-battery-powered-tren-solar-is-recharging-an-ancient-andean-route/",
+      "snippet": "BY THE OPTIMIST DAILY EDITORIAL TEAM There are places where the land itself seems to generate energy. The Quebrada de Humahuaca in Jujuy province, in Argentina’s far northwest, is one of them. At altitude, in clear desert air, the valley gets solar radiation that would be hard to match anywhere at lower elevation.",
+      "cover_url": "https://www.optimistdaily.com/wp-content/uploads/Tren_de_la_quebrada_01.jpg",
+      "reason": "Argentina's solar-charged Tren Solar is breathing new life into a historic Andean railway, connecting remote communities with clean energy while honoring a route that has linked cultures for centuries."
     }
   ],
   "discovery_articles": [
     {
       "source": "discovery",
       "source_name": "Atlas Obscura",
-      "title": "Queen’s Surf Beach in Honolulu, Hawaii",
-      "url": "https://www.atlasobscura.com/places/queens-surf-beach",
-      "snippet": "In the 1970s, Queen’s Surf Beach in Waikiki became a popular gathering and organizing space for members of Hawaiʻi’s diverse LGBTQ+ Māhū communities. It was a place where people could relax and be themselves in a society where sexual and gender diversity were just beginning to be openly discussed. Unlike most gay beaches of that era, it was highly visible to the public, emblematic of Hawaiʻi’s relatively accepting environment.",
+      "title": "Southwick House in England",
+      "url": "https://www.atlasobscura.com/places/southwick-house",
+      "snippet": "What an unusual place in a quaint English village!! Not to mention the yummy Tea House on the High Street in the village. Southwick House was the home to SHAEF (Supreme Headquarters Allied Expeditionary Force) in the lead up to D-Day.",
       "category": "history",
-      "cover_url": "https://img.atlasobscura.com/ocYTDAjiB6icsTqrl6qOGUEA7--Z2-8x90Yo5jP-cdg/rt:fit/w:600/c:770:513:nowe:30:42/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy9hZTgw/ZDMyYi0wOWYzLTRk/YjMtYWVmMi1kODAx/MjNkNDZmYzg5Y2Iy/OTFlY2I2MzgwMThj/NjNfUXVlZW5zIFN1/cmYgZ3JvdXAgY3Jv/cHBlZC5wbmc.png",
-      "ferns_note": "While most gay beaches of the 1970s existed on the margins, Queen's Surf sat in full public view — a quiet, sun-drenched act of visibility at a time when simply being seen was radical. There's something quietly powerful about a shoreline that asked nothing of its visitors except that they arrive as themselves."
+      "cover_url": "https://img.atlasobscura.com/s8rxpKJZ30YHMQ78Q-m-CknW8nj6hGuFIfPnNTgiff0/rt:fit/w:600/c:831:554:nowe:78:2/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy9iMTNl/NzE0OS01MmQwLTQw/ZDgtODQ0Yy05ZTFm/MWZmMTYxZTkxYWQ2/YzUxYjc4OWY3Mzlm/ZmJfU291dGh3aWNr/IEhvdXNlLmpwZw.jpg",
+      "ferns_note": "In a quiet Hampshire village with a tea house on the high street, Eisenhower and Churchill huddled over maps and made the call that changed the course of the war — the weight of D-Day still hums beneath those unassuming walls. There's something quietly staggering about a place that looks like a country weekend and held the fate of the world."
     },
     {
       "source": "discovery",
       "source_name": "Smithsonian",
-      "title": "An Enigmatic Chalk Drawing, Rediscovered in a Private Italian Collection, Has Been Identified as the Long-Lost Work of Édouard Manet",
-      "url": "https://www.smithsonianmag.com/smart-news/an-enigmatic-chalk-drawing-rediscovered-in-a-private-italian-collection-has-been-identified-as-the-long-lost-work-of-edouard-manet-180989593/",
-      "snippet": "The sketch of a young girl, in the red chalk characteristic of Manet’s 1860s life studies, is thought to be linked to several of the artist’s paintings",
+      "title": "The First Female Pharaoh? An Old Photo of Ancient Hieroglyphics Highlights the Status of One of Egypt’s Earliest Queens, Researchers Say",
+      "url": "https://www.smithsonianmag.com/smart-news/the-first-female-pharaoh-an-old-photo-of-ancient-hieroglyphics-highlights-the-status-of-one-of-egypts-earliest-queens-researchers-say-180989594/",
+      "snippet": "The black-and-white photograph of a long-lost artifact depicts four serekhs, symbols of Egyptian rulers, and two of them, a recent study suggests, are hers",
       "category": "history",
-      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/mp48KmB7Z6Kuwf3kacnwj-eYVxQ=/fit-in/1600x0/filters:focal(2048x1560:2049x1561)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/e7/8c/e78c0e4f-1a76-469c-89b6-0a1ded4191e9/the_old_musician_196310162.jpg",
-      "ferns_note": "A sketch sitting unrecognized in a private Italian collection, possibly for decades, turns out to be a missing thread connecting several of Manet's most studied paintings — which makes you wonder what else is quietly gathering dust behind closed doors. The girl in red chalk has been waiting a long time to be found."
+      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/u9BiJXYvy81-QYvH6HBqx7YTiLo=/fit-in/1600x0/filters:focal(668x331:669x332)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/99/82/99828cb4-f7ff-4b53-a540-5341c92c851d/was-there-really-a-fem.jpeg",
+      "ferns_note": "A faded black-and-white photograph of a vanished artifact may be the closest we'll ever get to proving a queen ruled Egypt at its very dawn — and it only took a century of the image sitting overlooked for someone to finally look closely enough. Two serekhs, two claims to power, one woman history nearly erased entirely."
     },
     {
       "source": "discovery",
       "source_name": "Smithsonian",
-      "title": "SpaceX's Giant Starship Rocket Reached Earth Orbit on Its First Try, but Engine Problems Forced It to Return to the Planet Early",
-      "url": "https://www.smithsonianmag.com/smart-news/spacexs-giant-starship-rocket-reached-earth-orbit-on-its-first-try-but-engine-problems-forced-it-to-return-to-the-planet-early-180989596/",
-      "snippet": "Two aerospace companies are competing to create the lunar lander NASA uses when it returns humans to the moon's surface. But to reach our lunar companion, a spacecraft will first have to get to Earth orbit",
+      "title": "Four Beluga Whales Died Weeks After Being Rescued From a Defunct Marine Park in Canada. Were the Animals Too Sick to Be Moved?",
+      "url": "https://www.smithsonianmag.com/smart-news/four-beluga-whales-died-weeks-after-being-rescued-from-a-defunct-marine-park-in-canada-were-the-animals-too-sick-to-be-moved-180989597/",
+      "snippet": "They were among 30 whales transferred from the facility over the summer. It had faced multiple allegations of animal neglect and cruelty before closing in 2024",
       "category": "history",
-      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/vgPxV17vnKdQ-Nc89i7TcrhwaSM=/fit-in/1600x0/filters:focal(750x500:751x501)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/42/e2/42e230fc-5bca-4f15-9cbe-706fc5bec804/smithsonian_feature_images_27.png",
-      "ferns_note": "Reaching Earth orbit on a rocket's first attempt is the kind of feat that would have made headlines as a triumph — except Starship had to cut the trip short, which somehow makes the achievement feel even more human. The moon is still waiting, and the race to reach it is running on equal parts engineering brilliance and controlled improvisation."
+      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/g9nFlFPoD9PYmBB_1rgwA5sTzuk=/fit-in/1600x0/filters:focal(723x434:724x435)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/4b/4e/4b4e381d-9c4e-49de-9c09-823656071a1a/dv6ax63eg14lc6fwdq1qgpwl9awd.jpg",
+      "ferns_note": "Thirty belugas rescued from a facility accused of years of neglect — and then four of them gone within weeks of what was supposed to be their salvation. The cruelest question here isn't about the park, but about whether rescue itself can arrive too late."
+    },
+    {
+      "source": "discovery",
+      "source_name": "Smithsonian",
+      "title": "The Marquis de Lafayette's Brother-in-Law Participated in Three Revolutionary Wars, Supporting American Independence but Brutally Suppressing an Uprising by Enslaved Africans in Haiti",
+      "url": "https://www.smithsonianmag.com/history/the-marquis-de-lafayettes-brother-in-law-participated-in-three-revolutionary-wars-supporting-american-independence-but-brutally-suppressing-an-uprising-by-enslaved-africans-in-haiti-180989582/",
+      "snippet": "Louis-Marie, Viscount de Noailles, served during the American, French and Haitian Revolutions. \"He fights wherever France fights, because he's a soldier and he believes in France,\" a historian says",
+      "category": "history",
+      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/C5fYwTVbwNQYg54UCCacYnXzI1k=/fit-in/1600x0/filters:focal(750x500:751x501)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/a7/48/a7487faf-ba59-41b8-8878-135d377c691d/noailles.png",
+      "ferns_note": "Louis-Marie de Noailles signed the document abolishing French feudalism one night, then spent years helping crush the Haitian Revolution — a biography so contradictory it reads less like a life than like an argument. He is a walking reminder that believing in liberty and believing in it for everyone were, for most of history, two very different things."
+    },
+    {
+      "source": "discovery",
+      "source_name": "Smithsonian",
+      "title": "In an Exciting but ‘Brutal’ Find, a 5,000-Year-Old Arrow Emerges From Norway’s Rapidly Melting Mountain Ice",
+      "url": "https://www.smithsonianmag.com/smart-news/in-an-exciting-but-brutal-find-a-5000-year-old-arrow-emerges-from-norways-rapidly-melting-mountain-ice-180989599/",
+      "snippet": "Archaeologists discovered 48 prehistoric arrows during a recent three-week expedition in the mountains of Jotunheimen",
+      "category": "history",
+      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/P1afvsWtEflPAmXjt1V_jC68910=/fit-in/1600x0/filters:focal(1408x919:1409x920)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/61/b3/61b30383-d8a0-4546-9327-35adb1b9a6c1/1_slate_arrowhead_approx_5000_years_old_photo_asa_romme-5de025acc680e9a2bff7cb922a2ab1fd.jpg",
+      "ferns_note": "A 5,000-year-old arrow emerging intact from melting Norwegian ice is a gift and a warning in the same breath — the glacier preserved it perfectly, and now the glacier is disappearing. Every find from these ice patches is also a countdown."
+    },
+    {
+      "source": "discovery",
+      "source_name": "Science News",
+      "title": "Here’s how brain-eating amoebas may infect people",
+      "url": "https://www.sciencenews.org/article/brain-eating-amoebas-naegleria-fowleri",
+      "snippet": "Naegleria amoebas’ exploration skills and crawling behaviors could help explain how the brain-eating variety travel into human brains.",
+      "category": "science",
+      "cover_url": "https://www.sciencenews.org/wp-content/uploads/sites/2/2026/09/092326_MR_amoeba_main_rev.jpg",
+      "ferns_note": "Naegleria fowleri doesn't seek out a brain so much as stumble into one — its ordinary habit of crawling and exploring, evolved for pond sediment, becomes catastrophic when it finds itself in a human nostril. It's terrifying precisely because there's no malice in it, just a single-celled organism doing what it has always done."
+    },
+    {
+      "source": "discovery",
+      "source_name": "Science News",
+      "title": "A video of a humpback whale and her dead calf reveals the animals’ bond",
+      "url": "https://www.sciencenews.org/article/video-humpback-whale-dead-calf-bond",
+      "snippet": "A female humpback whale may have spent days with her stillborn calf. This rare sighting may suggest that baleen whales experience grief.",
+      "category": "science",
+      "cover_url": "https://www.sciencenews.org/wp-content/uploads/sites/2/2026/09/092326_MH_whalecalf_main.jpg",
+      "ferns_note": "A mother humpback whale carrying her stillborn calf for what may have been days offers the rarest kind of evidence — not a data point, but a portrait of grief in a creature we once thought had none to feel. Baleen whales have never been studied this way before, which makes this sighting less an answer than a door swinging open."
+    },
+    {
+      "source": "discovery",
+      "source_name": "JSTOR Daily",
+      "title": "Reading for LGBTQ+ History Month",
+      "url": "https://daily.jstor.org/reading-for-lgbtq-pride-month/",
+      "snippet": "A collection of stories tracing how queer people have built communities, challenged norms, and preserved their histories.",
+      "category": "history",
+      "cover_url": "https://daily.jstor.org/wp-content/uploads/2026/10/gay_bars_and_gay_rights_alt_1050x700.jpg",
+      "ferns_note": "Queer history is so often a history of deliberate preservation against deliberate erasure — these stories matter not just for what they remember, but for the fact that someone fought to remember them at all. LGBTQ+ History Month is, at its core, an act of archival defiance."
+    },
+    {
+      "source": "discovery",
+      "source_name": "Quanta Magazine",
+      "title": "What Does the Fourth Dimension Actually Look Like?",
+      "url": "https://www.quantamagazine.org/what-does-the-fourth-dimension-actually-look-like-20261001/",
+      "snippet": "Maggie Miller explains why our intuition about three dimensions breaks down in four, and how she visualizes 4D spaces as a reel of three-dimensional snapshots. The post What Does the Fourth Dimension Actually Look Like? first appeared on Quanta Magazine",
+      "category": "science",
+      "cover_url": "https://www.quantamagazine.org/wp-content/uploads/2026/10/JOW-S5-E9-cr-Chanelle-Nibbelink-Social-LOGO.jpg",
+      "ferns_note": "Mathematician Maggie Miller's trick for grasping the fourth dimension — imagining it as a flip-book of 3D moments stacked through time — is the kind of mental reframe that makes the impossible feel almost holdable. The unsettling part is realizing our entire sense of space is just one page in a book we can't open."
+    },
+    {
+      "source": "discovery",
+      "source_name": "Colossal",
+      "title": "World of WearableArt’s ‘GLO!’ Is a Celebration of Culture, Nature, and Whimsy",
+      "url": "https://www.thisiscolossal.com/2026/10/world-of-wearableart-2026-glo-fashion-performance/",
+      "snippet": "The annual fashion-meets-performance competition is an international visual feast.",
+      "category": "history",
+      "cover_url": "https://www.thisiscolossal.com/wp-content/uploads/2026/09/wearableart-3-e1790859226557.jpg",
+      "ferns_note": "World of WearableArt began in a small New Zealand gallery and grew into one of the most gloriously unclassifiable spectacles on the planet — part runway, part theatre, part fever dream. 'GLO!' sounds less like a fashion show and more like a reminder that clothing, at its most alive, is costume for the soul."
+    },
+    {
+      "source": "discovery",
+      "source_name": "Colossal",
+      "title": "In Chicago, teamLab Expands Our Perceptions Through Boundary-Breaking Installations",
+      "url": "https://www.thisiscolossal.com/2026/10/teamlab-smart-museum-chicago-exhibition-digital-installations/",
+      "snippet": "teamLab consists of hundreds of collaborators who tap into the provocative intersection of art, science, and technology.",
+      "category": "history",
+      "cover_url": "https://www.thisiscolossal.com/wp-content/uploads/2026/09/teamlab.gif",
+      "ferns_note": "teamLab's installations don't just hang on walls — they respond to you, shift around you, dissolve the line between observer and artwork until you're not quite sure which one you are. In Chicago, they're offering something rarer than spectacle: the genuine sensation of being inside someone else's imagination."
     }
   ],
   "featured_read": {
     "source": "reads",
-    "source_name": "Nautilus",
-    "title": "This Cool Lava Planet Has an Atmosphere",
-    "url": "https://nautil.us/this-cool-lava-planet-has-an-atmosphere-1285436/",
-    "snippet": "It’s like a big baby Earth",
-    "cover_url": "https://lede-admin.nautil.us/wp-content/uploads/sites/70/2026/09/lava-planet-1380.jpg",
-    "blurb": "A newly discovered lava world is teaching scientists what early Earth may have looked like when it still had a second chance to become something livable. The question lurking beneath the molten surface: how fragile is the window in which a planet gets to breathe?"
+    "source_name": "The Atlantic",
+    "title": "Want to Reform Democracy? Start Here.",
+    "url": "https://www.theatlantic.com/ideas/2026/10/pardon-power-congres-expand/688836/?utm_source=feed",
+    "snippet": "A more constrained executive branch could begin to take shape with a smaller pardon power—and a bigger House of Representatives.",
+    "cover_url": "",
+    "blurb": "This piece cuts through the noise of 'fix democracy' rhetoric to argue two surprisingly specific, workable reforms: shrinking the pardon power and expanding the House. It's the rare political essay that trades in proposals instead of laments."
   },
   "reading_room": [
     {
       "source": "reads",
-      "source_name": "Psyche",
-      "title": "Why long-brewing physical and mental breakdowns feel so sudden",
-      "url": "https://psyche.co/ideas/why-long-brewing-physical-and-mental-breakdowns-feel-so-sudden",
-      "snippet": "As a neurosurgeon and a son, I’ve come to see the parallel processes underlying growing tumours and stressed-out minds - by Sasi S Senga Read on Psyche",
-      "cover_url": "https://images.aeonmedia.co/images/7fec3aaf-c6f3-4905-abda-0123fa6565d4/sz-brain-scan-tumor.jpg?top=109&left=0&cropWidth=2096&cropHeight=1179&width=1200&quality=75&format=jpeg",
-      "blurb": "A neurosurgeon who has mapped countless tumors inside other people's skulls watches his own mind strain under pressure—and realizes that collapse, whether cellular or psychological, almost never arrives without a long, quiet rehearsal. The parallel is not metaphor; he argues it's biology."
-    },
-    {
-      "source": "reads",
-      "source_name": "Longreads",
-      "title": "A Place Among the Fiddlers",
-      "url": "https://longreads.com/2026/10/01/galax-old-fiddlers-convention-music/",
-      "snippet": "In a southwest Virginia fairground, thousands of musicians gather every August to keep a centuries-old tradition from flickering out.",
-      "cover_url": "",
-      "blurb": "Every August in the Virginia hills, thousands of people who refuse to let old-time fiddle music die show up with their instruments and their stubbornness, turning a fairground into something between a vigil and a celebration. This piece asks what it actually costs a community to keep a sound alive."
-    },
-    {
-      "source": "reads",
       "source_name": "The Atlantic",
-      "title": "A Near-Disaster on Flydubai",
-      "url": "https://www.theatlantic.com/ideas/2026/09/flydubai-plane-attack-israel/688848/?utm_source=feed",
-      "snippet": "This unbelievable sequence of events has huge implications.",
+      "title": "A Dissatisfying Apocalypse",
+      "url": "https://www.theatlantic.com/books/2026/10/hernan-diaz-disappointing-dystopan-novel-ply-book-review/688843/?utm_source=feed",
+      "snippet": "Hernan Diaz’s new novel, Ply , fails to fulfill the promise of every great end-of-the-world novel.",
       "cover_url": "",
-      "blurb": "The chain of events aboard a single Flydubai flight reads like a thought experiment in how many small failures can stack before something catastrophic becomes almost inevitable—and what that means for every routine flight you've ever boarded without thinking twice."
-    },
-    {
-      "source": "reads",
-      "source_name": "The Atlantic",
-      "title": "The Growing Lawlessness in California’s Forests",
-      "url": "https://www.theatlantic.com/science/2026/09/frog-biologists-kidnapping-california-national-forest/688445/?utm_source=feed",
-      "snippet": "Two frog biologists were kidnapped in the woods. More bizarre situations may come.",
-      "cover_url": "",
-      "blurb": "When two wildlife biologists studying endangered frogs were kidnapped deep in a California forest, it exposed something quietly unraveling in the wild spaces Americans assume are governed by order. The frogs, it turns out, were the least strange thing in those woods."
+      "blurb": "Hernan Diaz won the Pulitzer, so when his new novel stumbles at the end of the world, the failure is worth examining closely — this review asks what, exactly, great apocalyptic fiction owes its readers and whether Ply delivers the reckoning we came for."
     },
     {
       "source": "reads",
       "source_name": "Aeon",
-      "title": "Green tree ants are famous in the tropics",
-      "url": "https://aeon.co/videos/green-tree-ants-have-been-successful-for-ages-enter-the-imposters",
-      "snippet": "In tropical forests ruled by aggressive ants, these species have adopted a ‘fake it till you make it’ survival strategy - by Aeon Video Watch on Aeon",
-      "cover_url": "https://images.aeonmedia.co/images/f4924920-abd2-4426-9711-66a5ce51c4a7/green-tree-ants-landscape-1.jpg?width=1200&quality=75&format=jpeg",
-      "blurb": "In tropical canopies policed by some of nature's most aggressive insects, a handful of smaller creatures have mastered the art of impersonation—mimicking the look, smell, and swagger of green tree ants well enough to live right beside them undetected. It's a story about survival through audacity rather than strength."
+      "title": "Reason is more than a tool",
+      "url": "https://aeon.co/essays/why-real-intelligence-is-something-more-than-optimisation",
+      "snippet": "If intelligence is merely optimisation then machines will outrun us. Kant tells us why human reason is so much more - by Sasha Mudd Read on Aeon",
+      "cover_url": "https://images.aeonmedia.co/images/73768d4d-af29-4f99-ab9e-8a2715230088/esssay-gettyimages-2278740190.jpg?width=1200&quality=75&format=jpeg",
+      "blurb": "As AI optimizes its way into every corner of our lives, philosopher Sasha Mudd reaches back to Kant to argue that human reason was never just a problem-solving engine — and that forgetting the difference may cost us something we can't get back."
+    },
+    {
+      "source": "reads",
+      "source_name": "Nautilus",
+      "title": "A Look at How Many Cancers Are Caused by Infections Worldwide",
+      "url": "https://nautil.us/a-look-at-how-many-cancers-are-caused-by-infections-worldwide-1285454/",
+      "snippet": "Nearly one in eight cancers are caused by a pathogen",
+      "cover_url": "https://lede-admin.nautil.us/wp-content/uploads/sites/70/2026/10/shutterstock_1697963422.jpg",
+      "blurb": "The quiet, unsettling truth at the center of this piece is that nearly one in eight cancers traces back to a pathogen — an infection — which reframes cancer less as fate and more as a public-health problem we're only beginning to take seriously."
+    },
+    {
+      "source": "reads",
+      "source_name": "The Paris Review",
+      "title": "Writers Whose Names You Don’t Know",
+      "url": "https://www.theparisreview.org/blog/2026/10/01/submitting-to-the-paris-review/",
+      "snippet": "Our submissions-reading process.",
+      "cover_url": "https://www.theparisreview.org/blog/wp-content/uploads/2026/09/tpr-slush-ad-2000px.jpg",
+      "blurb": "Behind every Paris Review rejection slip is a reader whose name you'll never know, and this essay pulls back the curtain on the people who decide what literature almost was. A meditation on taste, gatekeeping, and the strange intimacy of reading strangers."
+    },
+    {
+      "source": "reads",
+      "source_name": "Longreads",
+      "title": "The Work",
+      "url": "https://longreads.com/2026/10/01/independent-wrestling-pacific-northwest/",
+      "snippet": "\"One year spent on the independent professional wrestling circuit in the Pacific Northwest, where the only thing that’s faked is the outcome of the match.\"",
+      "cover_url": "",
+      "blurb": "A year inside the independent wrestling circuit of the Pacific Northwest reveals a world where bodies take every bit of punishment for real — only the winner is predetermined, which somehow makes the sacrifice stranger, not smaller."
     }
   ],
   "garden_note": {
-    "note": "October arrives in Zürich with that particular golden weight — the linden trees are letting go, and the air by evening carries the faint sweetness of windfall apples and damp earth. Step outside before the dew settles and listen: the garden is quieting itself down for the long rest ahead.",
+    "note": "October arrives in Zürich with that particular golden quietness — the Limmat mist settling low, the linden leaves beginning their slow amber confession. This is the hour to pull a cardigan close and watch the garden exhale after summer's long effort.",
     "in_season": [
-      "Quince — harvest before the first hard frost",
-      "Kale and late leeks still sweetening in the beds",
-      "Autumn crocuses (Colchicum) brightening the fading borders",
-      "Planting tulip and narcissus bulbs for spring"
+      "Quince ripening on the branch",
+      "Leeks ready for first harvest",
+      "Planting garlic cloves before the soil cools",
+      "Michaelmas daisies in lilac bloom"
     ],
-    "sky_tonight": "The waning gibbous moon rises well after dark — look for Jupiter shining steadily to the south, outshining everything nearby in the October sky.",
-    "sun_times": "Dusk settles gently over the Zürichsee at 19:36 tonight, with the last proper daylight gone not long after.",
+    "sky_tonight": "The waning gibbous moon rises late in the east — look for it well after dusk, keeping company with the stars of Gemini.",
+    "sun_times": "Dusk settled over the rooftops at 19:36 tonight, with sunset itself at 19:07 — a gentle reminder that the evenings are drawing in quickly now.",
     "moon_label": "Waning gibbous",
-    "illum_pct": 76,
+    "illum_pct": 72,
     "sun_range": "07:23–19:07"
   },
   "puzzle": {
     "kind": "riddle",
     "label": "Fern's Morning Riddle",
-    "prompt": "What do you call an out of work Ghost?",
-    "answer": "Lazy Bones",
+    "prompt": "The ages of a father and son add up to 66.  The father's age is the son's age reversed.  How old could they be?  (3 possible solutions).",
+    "answer": "51 and 15. 42 and 24. 60 and 06",
     "hint": "",
     "source": "riddles.com",
-    "source_id": "Riddle-3135"
+    "source_id": "Riddle-1046"
   },
   "previous_puzzle": {
-    "label": "The Evening Trivia",
-    "prompt": "Who was Donald Trump's first wife?\n\nIvana Zelníčková   ·   Marla Maples   ·   Melania Knauss   ·   Nancy Davis",
-    "answer": "Ivana Zelníčková"
+    "label": "Fern's Morning Riddle",
+    "prompt": "What do you call an out of work Ghost?",
+    "answer": "Lazy Bones"
   },
   "larder": {
     "news": [],
     "recipe": {}
   },
   "fern_data": {
-    "greeting": "Iggy Pop is lending his voice to a Mogwai drone, and somewhere across tonight's edition a caseworker just finished a six-year wait to adopt the girl she loved — two kinds of relentlessness, it turns out, that feel like the same thing.",
-    "top_pick_title": "Slow Burns & Long Games"
+    "greeting": "A 5,000-year-old arrow just thawed out of a Norwegian glacier — and Sheryl Crow has decided she's done chasing hits. Both of them, it turns out, are stories about what survives when you stop trying to hold on.",
+    "top_pick_title": "What the Thaw Gives Back"
   }
 }
