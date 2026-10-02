@@ -1,150 +1,128 @@
 {
-  "fetched_at": "2026-10-01T21:38:33.013314+02:00",
-  "is_am_email": false,
+  "fetched_at": "2026-10-02T11:55:06.741630+02:00",
+  "is_am_email": true,
   "audit_summary": {
     "youtube_videos": 0,
     "themes": 0,
-    "music_articles": 12,
-    "good_news_articles": 4,
-    "discovery_articles": 11,
+    "music_articles": 10,
+    "good_news_articles": 5,
+    "discovery_articles": 3,
     "featured_read": 1,
     "reading_room": 5,
     "garden": 1,
     "puzzle": 1,
-    "larder": 0
+    "larder": 4
   },
   "themes": [],
   "morning_soundtrack": [
     {
       "source": "music",
-      "source_name": "NPR Music",
-      "title": "Sheryl Crow says she's found 'great liberation' in not chasing the next hit",
-      "snippet": "After selling tens of millions of records worldwide, the singer-songwriter says she's finally aged out of pop music — and she's OK with that. Crow's latest album is Pick You Up.",
-      "url": "https://www.npr.org/2026/10/01/nx-s1-5984965/sheryl-crow-pick-you-up",
+      "source_name": "Stereogum",
+      "title": "St. Louis Man Discovers His Father Is Michael McDonald",
+      "snippet": "Imagine finding out, deep into middle age, that you're the son of the honey-gargling king of yacht rock. Michael Goessling, a St. Louis resident, recently had just such an experience when he found out that he's Michael McDonald's son. For his whole life, Goessling knew that he was adopted.",
+      "url": "https://stereogum.com/2513316/st-louis-man-discovers-his-father-is-michael-mcdonald/news/",
       "genre": "",
-      "vibe_check": "The quiet confidence of someone who stopped checking their phone for validation and finally started enjoying the view.",
-      "cover_url": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/5000x2812+0+159/resize/1400/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F13%2F6c%2F95a884574a5f85f7db0236b104b1%2Fgettyimages-2291214646.jpg",
-      "embed_url": "https://www.youtube.com/embed/FduirRR1fZk"
+      "vibe_check": "The surreal, warm disorientation of learning a fundamental truth about yourself over a glass of something smooth and buttery.",
+      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/10/Michael-McDonald.jpg?w=564",
+      "embed_url": "https://www.youtube.com/embed/jxzJk0SRY3I"
     },
     {
       "source": "music",
       "source_name": "Stereogum",
-      "title": "Radio Free Alice – “Big Ideas” (Feat. Rachel Brown)",
-      "snippet": "Radio Free Alice are a Melbourne indie rock band with a sound that can make you feel instantly nostalgic. Depending on when you had your formative experiences, they might remind you of '00s blog-rock. '80s college rock, or any combination of those things.",
-      "url": "https://stereogum.com/2513307/radio-free-alice-big-ideas-feat-rachel-brown/music/",
+      "title": "Hudson Freeman Announces New Album Doom Country: Hear “Fell Ass Backwards”",
+      "snippet": "Hudson Freeman came to my attention at the end of last year, when the Pitchfork critic-turned-music producer Nick Sylvester wrote about him in a Substack post called \" This is the song I shared most last year .\" Sylvester wrote about a \"demo\" version of Freeman's song \"If You Know Me\" that went viral on Instagram, which is less a demo than a lo-fi live performance video shot in a Southern Indiana cornfield. \"His guitar is hiked up high, and you can see the bottom three strings visibly vibrate when he strums them – perhaps because of some esoteric tuning, but either way it completes the hillbilly vibe,\" Sylvester wrote.",
+      "url": "https://stereogum.com/2513258/hudson-freeman-announces-new-album-doom-country-hear-fell-ass-backwards/music/",
       "genre": "",
-      "vibe_check": "The feeling of finding an old mixtape in a jacket pocket and realizing every song still hits exactly the same.",
-      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/10/Radio-Free-Alice.jpeg?w=564",
-      "embed_url": "https://www.youtube.com/embed/pMOne7uQlcQ"
+      "vibe_check": "Dust on your boots and ache in your chest, best heard through a screen door at dusk in a place with no cell service.",
+      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/10/unnamed-2026-10-01T113940.231.jpg?w=564",
+      "embed_url": "https://www.youtube.com/embed/liJdBwgpnMA"
     },
     {
       "source": "music",
       "source_name": "Stereogum",
-      "title": "Courtney Marie Andrews, Cornelia Murr, Lola Kirke, & Katie Pearlman Debut New Supergroup Tommy",
-      "snippet": "There's a new supergroup in town. Courtney Marie Andrews, Cornelia Murr, Lola Kirke, and Katie Pearlman have joined forces to form Tommy, and they played their first show in Nashville earlier this week.",
-      "url": "https://stereogum.com/2513304/courtney-marie-andrews-cornelia-murr-lola-kirke-katie-pearlman-debut-new-supergroup-tommy/news/",
+      "title": "Smashing Pumpkins Break Out Live Debuts And Rarities At Mellon Collie 30th Anniversary Tour Opener",
+      "snippet": "The Smashing Pumpkins' classic blockbuster double album Mellon Collie And The Infinite Sadness actually turned 30 last year, but the band is just now getting around to celebrating that anniversary on a new arena tour. Earlier this year, the band announced their Rats In A Cage Tour, advertising \"two unique sets celebrating Mellon Collie at 30 & nearly four decades of unruly hits & dark treasures.\" The tour kicked off in Columbus last night, and the world got to see what that means.",
+      "url": "https://stereogum.com/2513249/smashing-pumpkins-break-out-live-debuts-and-rarities-at-mellon-collie-30th-anniversary-tour-opener/news/",
       "genre": "",
-      "vibe_check": "Four women sharing one microphone in a candlelit room, and somehow that's enough to fill the whole sky.",
-      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/10/812427573_18009210542974027_6520012988016340907_n.jpg?w=564",
-      "embed_url": null
-    },
-    {
-      "source": "music",
-      "source_name": "Stereogum",
-      "title": "Peter Gabriel Announces Details For His New Album o\\i",
-      "snippet": "Peter Gabriel kicked off the year with the announcement of his new album o\\i . However, this wasn't a normal album cycle; the legendary singer-songwriter has been releasing a single for every full moon. Each track has two mixes — a Bright-Side mixed by Mark 'Spike' Stent and the Dark-Side mix by Tchad Blake — alongside a chosen piece of visual art.",
-      "url": "https://stereogum.com/2513279/peter-gabriel-announces-details-for-his-new-album-oi/news/",
-      "genre": "",
-      "vibe_check": "Music that arrives on the full moon and asks you to sit with both your light and your shadow until dawn.",
-      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/10/PG24_PeterGabriel_OI_%403000pxls.jpg?w=564",
-      "embed_url": null
-    },
-    {
-      "source": "music",
-      "source_name": "No Depression",
-      "title": "ALBUM REVIEW: Libby Dale Makes Her Solo Debut With 'Freehand'",
-      "snippet": "Libby Dale can’t sleep. “Like fireflies / blinking luminescence in my eyes,” she sings. “The visions come / of things I need and things I’ve done wrong.” “These Old Nights,” from her solo debut Freehand , swings gracefully like ‘60s slow-dance",
-      "url": "https://nodepression.org/album-review-libby-dale-makes-her-solo-debut-with-freehand/",
-      "genre": "",
-      "vibe_check": "3 a.m. insomnia dressed in a chiffon skirt, swaying slowly to the hum of a memory you can't quite shake.",
-      "cover_url": "https://storage.ghost.io/c/18/d0/18d08e58-3b1b-4720-ae25-a31b44e69d4b/content/images/2026/10/Album-Cover.png",
-      "embed_url": null
+      "vibe_check": "The electric rush of teenage nostalgia hitting your bloodstream like a freight train, thirty years late and completely on time.",
+      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/10/Smashing-Pumpkins.jpeg?w=564",
+      "embed_url": "https://www.youtube.com/embed/PqKsoEyTwUE"
     },
     {
       "source": "music",
       "source_name": "Pitchfork",
-      "title": "Alexander Skarsgård Moves Like Jagger in New Rolling Stones Video",
-      "snippet": "Or at least he tries to",
-      "url": "https://pitchfork.com/story/alexander-skarsgard-moves-like-jagger-in-new-rolling-stones-video/",
+      "title": "Talking Heads Set Fear of Music Super Deluxe Edition",
+      "snippet": "The 3xCD set will compile a remaster of the 1979 album, unearthed live recordings, studio outtakes, and more",
+      "url": "https://pitchfork.com/story/talking-heads-set-fear-of-music-super-deluxe-edition/",
       "genre": "",
-      "vibe_check": "The charming, slightly awkward energy of someone trying to look effortlessly cool and knowing we're all in on the joke.",
-      "cover_url": "https://media.pitchfork.com/photos/6abe8ac0948de2fc99b1f7d7/master/pass/Screenshot%202026-10-01%20at%2012.17.45%E2%80%AFPM%20(2).png",
-      "embed_url": null
-    },
-    {
-      "source": "music",
-      "source_name": "Pitchfork",
-      "title": "Watch Audrey Hobert Twirl Her Way Through “Chateau” on Kimmel",
-      "snippet": "She’s back for more late night after her viral “Sue Me” performance",
-      "url": "https://pitchfork.com/story/watch-audrey-hobert-twirl-her-way-through-chateau-on-kimmel/",
-      "genre": "",
-      "vibe_check": "Dizzy, delighted, and spinning under late-night studio lights like the whole world is your living room.",
-      "cover_url": "https://media.pitchfork.com/photos/6abe6594d1d34111bf526f9d/master/pass/Audrey-Hobert-Kimmel.jpg",
-      "embed_url": null
-    },
-    {
-      "source": "music",
-      "source_name": "Aquarium Drunkard",
-      "title": "Andy Boay :: Doomed",
-      "snippet": "Andy Boay returns with an opus crafted with ecstatic care: a journey of reverbed vocals and guitar noodles, a lo-fi love letter, a bedroom SMiLE , and its own thing completely: Doomed . Doomed shares the same creative DNA as its brilliant predecessor, 2025’s You Took That Walk For The Two Of Us : another painstakingly crafted cassette recording, with tape manipulation galore and self-harmonies aplenty. The post Andy Boay :: Doomed first appeared on Aquarium Drunkard .",
-      "url": "https://aquariumdrunkard.com/2026/10/01/andy-boay-doomed/",
-      "genre": "",
-      "vibe_check": "Headphones on, lights off, disappearing into a handmade world of tape hiss and tender harmonies you weren't supposed to hear.",
-      "cover_url": "https://aquariumdrunkard.com/_newness/wp-content/uploads/2026/10/Andy-Boay-.jpg",
-      "embed_url": null
-    },
-    {
-      "source": "music",
-      "source_name": "Aquarium Drunkard",
-      "title": "Jeremy Cunningham :: Passing Fires",
-      "snippet": "Jeremy Cunningham makes music that seems to be perpetually slipping out of its own frame. On Passing Fires , the Chicago drummer moves from free-jazz and skronk to electronics, funk, post-rock and pop, assembling a cast of improvisers, producers and singers who keep the music in motion. There are moments of muscular rhythmic interplay, strange electronic textures, children’s voices, whispered vocals and unexpected turns.",
-      "url": "https://aquariumdrunkard.com/2026/10/01/jeremy-cunningham-passing-fires/",
-      "genre": "",
-      "vibe_check": "Like riding a city bus at midnight where every stop opens onto a completely different sonic neighborhood.",
-      "cover_url": "https://aquariumdrunkard.com/_newness/wp-content/uploads/2026/09/Jeremy-Cunningham.jpg",
+      "vibe_check": "The careful, reverent thrill of an archaeologist brushing dirt off something that was already perfect.",
+      "cover_url": "https://media.pitchfork.com/photos/6abece53798b7e873471ad0b/master/pass/GettyImages-2224535718%20(1).jpg",
       "embed_url": null
     },
     {
       "source": "music",
       "source_name": "Consequence",
-      "title": "Peter Gabriel Reveals Full Details, Release Date for New Album o/i",
-      "snippet": "Featuring 13 new songs, each with two distinct mixes, the follow-up to Gabriel's 2023 comeback album arrives on November 27th. Peter Gabriel Reveals Full Details, Release Date for New Album o/i Jonah Krueger",
-      "url": "https://consequence.net/2026/10/peter-gabriel-reveals-full-details-for-new-album-o-i/",
+      "title": "St. Louis Man Discovers He’s the Biological Son of Yacht Rock Icon Michael McDonald",
+      "snippet": "The discovery arose after Goessling's half-brother, one he didn't know he had, took a 23andMe DNA test, and the two have since reunited. St. Louis Man Discovers He’s the Biological Son of Yacht Rock Icon Michael McDonald Jonah Krueger",
+      "url": "https://consequence.net/2026/10/st-louis-man-discovers-hes-the-son-of-yacht-rock-icon-michael-mcdonald/",
       "genre": "",
-      "vibe_check": "The anticipation of watching the full moon rise, knowing something carefully built in the dark is finally about to be seen.",
-      "cover_url": "https://consequence.net/wp-content/uploads/2026/10/peter-gabriel-new-album.jpg?quality=80",
-      "embed_url": "https://www.youtube.com/embed/gzyvAcn90YQ"
+      "vibe_check": "A DNA swab that somehow smells faintly of smooth R&B and the open ocean.",
+      "cover_url": "https://consequence.net/wp-content/uploads/2026/10/Michael-McDonald.jpeg?quality=80",
+      "embed_url": null
     },
     {
       "source": "music",
       "source_name": "Consequence",
-      "title": "Oh No, Alexander Skarsgård Forgot His Shirt in the Video for The Rolling Stones’ “Mr. Charm”: Watch",
-      "snippet": "What a shame. Oh No, Alexander Skarsgård Forgot His Shirt in the Video for The Rolling Stones’ “Mr. Charm”: Watch Liz Shannon Miller",
-      "url": "https://consequence.net/2026/10/rolling-stones-alexander-skarsgard-mr-charm-music-video/",
+      "title": "Noah Weiland Tapped as New Singer of LA Rock Band Zephyring",
+      "snippet": "Noah is the son of late Stone Temple Pilots singer Scott Weiland. Noah Weiland Tapped as New Singer of LA Rock Band Zephyring Spencer Kaufman",
+      "url": "https://consequence.net/2026/10/noah-weiland-new-singer-zephyring/",
       "genre": "",
-      "vibe_check": "Glossy, tongue-in-cheek swagger that knows exactly how ridiculous it is and leans in anyway.",
-      "cover_url": "https://consequence.net/wp-content/uploads/2026/10/alexander-skarsgard-the-rolling-stones-mr-charm-music-video.jpg?quality=80",
-      "embed_url": "https://www.youtube.com/embed/3e5LxvRZjVw"
+      "vibe_check": "The weight of a famous last name carried forward by younger hands still figuring out their grip.",
+      "cover_url": "https://consequence.net/wp-content/uploads/2026/10/Noah-Weiland.jpg?quality=80",
+      "embed_url": "https://www.youtube.com/embed/I-UD6znvLGg"
     },
     {
       "source": "music",
       "source_name": "Consequence",
-      "title": "The Red Clay Strays Announce 2027 North American Tour",
-      "snippet": "The extensive US and Canada run arrives in support of the band's 2026 album Grateful. The Red Clay Strays Announce 2027 North American Tour Paolo Ragusa",
-      "url": "https://consequence.net/2026/10/the-red-clay-strays-2027-north-american-tour/",
+      "title": "Talking Heads Announce Super Deluxe Edition of Fear of Music, Drop New Live Video of “Life During Wartime:” Watch",
+      "snippet": "Releasing alongside SiriusXM’s dedicated Talking Heads channel, the new package is set to drop on November 13th. Talking Heads Announce Super Deluxe Edition of Fear of Music, Drop New Live Video of “Life During Wartime:” Watch Jonah Krueger",
+      "url": "https://consequence.net/2026/10/talking-heads-announce-super-deluxe-edition-of-fear-of-music-drop-new-live-video-of-life-during-wartime-watch/",
       "genre": "",
-      "vibe_check": "Dusty Southern highways and stadium anticipation, the kind of gratitude that fills a room before the lights even go down.",
-      "cover_url": "https://consequence.net/wp-content/uploads/2026/10/The-Red-Clay-Strays-2027-North-American-Tour.jpg?quality=80",
+      "vibe_check": "The kinetic anxiety of 'Life During Wartime' reborn — no time for dancing, but you'll do it anyway.",
+      "cover_url": "https://consequence.net/wp-content/uploads/2026/10/talking-heads-fear-of-music.jpg?quality=80",
+      "embed_url": "https://www.youtube.com/embed/0zESxlIwuws"
+    },
+    {
+      "source": "music",
+      "source_name": "PopMatters",
+      "title": "Meshell Ndegeocello Offers Superb Soulful Duets of Classics",
+      "snippet": "Meshell Ndegeocello's Synonym is a superb modern soul album filled with sensual grooves, compelling vocals, and ingenious arrangements.",
+      "url": "https://www.popmatters.com/meshell-ndegeocello-synonym",
+      "genre": "",
+      "vibe_check": "Late-night silk and candlelight, the kind of album that makes the city outside your window feel like a jazz club.",
+      "cover_url": "https://www.youtube.com/embed/mCqbBfI-l1I",
+      "embed_url": "https://www.youtube.com/embed/mCqbBfI-l1I"
+    },
+    {
+      "source": "music",
+      "source_name": "PopMatters",
+      "title": "Penelope Isles’ New LP ‘3’ Is Both Comforting and Sad",
+      "snippet": "Penelope Isles' 3 is a sad album, something of a song cycle about heartbreak, reflection, and uncertainty. Yet it's usually more comforting than depressing.",
+      "url": "https://www.popmatters.com/penelope-isles-3-review",
+      "genre": "",
+      "vibe_check": "A soft blanket wrapped around a bruise — tender enough to make the hurt feel almost beautiful.",
+      "cover_url": "https://www.youtube.com/embed/4YNQ1ul8Dgo",
+      "embed_url": null
+    },
+    {
+      "source": "music",
+      "source_name": "Fretboard Journal",
+      "title": "Podcast 563: Frank Gross of Thunder Road Guitars",
+      "snippet": "Frank Gross, founder of West Seattle’s Thunder Road Guitars, joins us this week. Thunder Road is a unique brick-and-mortar success story. Thanks to some smart business moves (online and off), Thunder Road has thrived.",
+      "url": "https://www.fretboardjournal.com/podcasts/podcast-563-frank-gross-of-thunder-road-guitars/?utm_source=rss&utm_medium=rss&utm_campaign=podcast-563-frank-gross-of-thunder-road-guitars",
+      "genre": "",
+      "vibe_check": "The quiet satisfaction of running your hand along a perfectly finished neck in a shop that smells like wood shavings and history.",
+      "cover_url": "https://images.fretboardjournal.com/wp-content/uploads/2026/09/29103232/DSC_3337-scaled.jpg",
       "embed_url": null
     }
   ],
@@ -152,242 +130,210 @@
     {
       "source": "good_news",
       "source_name": "Good News Network",
-      "title": "‘Flourishing’ Sycamore Gap Tree Has Ring of New Shoots Already 3-Feet Tall",
-      "url": "https://www.goodnewsnetwork.org/flourishing-sycamore-gap-tree-has-ring-of-new-shoots-already-3-feet-tall/",
-      "snippet": "3 years on from the illegal felling of Britain’s famous Sycamore Gap tree, new aerial images reveal how the stump is flourishing, and the basal sprouts that emerged are growing fast. For those who didn’t read or weren’t aware, one of the UK’s most famous trees—a 150-year-old sycamore growing in a gap along the Roman-era […]",
-      "cover_url": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/10/overlooking-the-sycamore-gap-stump-on-hadrians-wall.-credit-nt-images-annapurna-mellor.jpg",
-      "reason": "The beloved Sycamore Gap tree, felled by vandals in 2023, is already pushing back with vigorous new shoots three feet tall — a quiet, powerful reminder that nature's will to grow is remarkably hard to extinguish."
+      "title": "Good News in History, October 2",
+      "url": "https://www.goodnewsnetwork.org/events061002/",
+      "snippet": "69 years ago today, a new island, or Ilha Novo, appeared on the edge of the westernmost island (Faial) in the Azores chain after the eruption of Capelinhos, or “little cape,” one of many submerged cone volcanoes in the area. The eruption caused no deaths, however it did wreck many houses and reduce the population […]",
+      "cover_url": "https://www.goodnewsnetwork.org/wp-content/uploads/2022/10/CapelinhosFaialAzores1.jpg",
+      "reason": "History is full of quiet turning points worth remembering — pausing to mark them reminds us that progress, however slow, has always been possible. Looking back at what humans have overcome is a genuine source of forward momentum."
+    },
+    {
+      "source": "good_news",
+      "source_name": "Positive News",
+      "title": "What went right this week: the good news that matters",
+      "url": "https://www.positive.news/society/democracy/good-news-stories-from-week-40-of-2026/",
+      "snippet": "The ‘alternative Nobel prize’, global progress against ageism, and a boost for gorillas, plus more",
+      "cover_url": "https://www.positive.news/wp-content/uploads/2026/10/RS24644_Timnit-Gebru-2026-right-livelihood-laureate-002.jpg",
+      "reason": "In a news cycle that often magnifies the worst, a weekly roundup of what went right is a small act of editorial courage that helps readers stay clear-eyed rather than overwhelmed. Good news isn't naive — it's necessary context."
     },
     {
       "source": "good_news",
       "source_name": "Upworthy",
-      "title": "Studies reveal the 2 phases of life when parents are happiest, but not everyone agrees",
-      "url": "https://www.upworthy.com/studies-reveal-the-2-phases-of-life-when-parents-are-happiest/",
-      "snippet": "\"This cannot be right.\"",
-      "cover_url": "https://www.upworthy.com/wp-content/uploads/sites/2/2026/09/when-are-parents-happiest.png",
-      "reason": "Understanding when and why parents feel most fulfilled helps families and communities build better support at the moments it matters most, turning research into real comfort for real lives."
+      "title": "Man nails the ‘absurd’ luxuries aging Gen Xers secretly want at this stage of life",
+      "url": "https://www.upworthy.com/man-nails-the-absurd-luxuries-aging-gen-xers-secretly-want-at-this-stage-of-life/",
+      "snippet": "Luxury cars and VIP passes? Nope. Give us high-density mattresses and concerts that start at 4:00 p.m.",
+      "cover_url": "https://www.upworthy.com/wp-content/uploads/sites/2/2026/09/man-yawning-on-couch.jpg",
+      "reason": "There's something quietly joyful about a generation raised on hustle finally giving themselves permission to want comfort, rest, and simplicity. It's a reminder that knowing what truly matters is its own kind of wisdom."
     },
     {
       "source": "good_news",
       "source_name": "Reasons to be Cheerful",
-      "title": "Reviving L.A.’s Burned Landscapes, One Seed Bomb at a Time",
-      "url": "https://reasonstobecheerful.world/california-fires-seed-bomb-project/",
-      "snippet": "If you’ve been through a wildfire, you may never forget the torrid heat, the acrid smell of smoke and the threatening sight of flames closing in. On January 7, 2025, the Goodyear family joined 200,000 other Angelenos in grabbing emergency items and fleeing from raging wildfires that would devastate 37,000...",
-      "cover_url": "https://reasonstobecheerful.world/wp-content/uploads/2026/09/seed-bomb-still-3.jpg",
-      "reason": "In the wake of devastating wildfires, community volunteers are hand-crafting seed bombs to coax native plants back into L.A.'s scorched hillsides — a grassroots act of restoration that puts healing literally into people's hands."
+      "title": "The Spark: The ‘Community Lighthouses’ Where Neighbors Help Neighbors",
+      "url": "https://reasonstobecheerful.world/the-spark-the-community-lighthouses/",
+      "snippet": "Welcome back to The Spark, our monthly celebration of how people just like you are creating positive change, one meaningful step at a time. The Spark is generously supported by Laura Rice. Sign up to Reasons to be Cheerful’s weekly newsletter here and you’ll get The Spark in your inbox at the...",
+      "cover_url": "https://reasonstobecheerful.world/wp-content/uploads/2026/09/First-Grace-UMC-2-scaled.jpg",
+      "reason": "When neighbours create informal spaces to look out for one another, it rebuilds the kind of trust that holds communities together from the inside out. These 'lighthouses' prove that meaningful support doesn't always require a government programme — sometimes it just needs a willing front door."
     },
     {
       "source": "good_news",
       "source_name": "The Optimist Daily",
-      "title": "How Argentina’s battery-powered Tren Solar is recharging an ancient Andean route",
-      "url": "https://www.optimistdaily.com/2026/10/how-argentinas-battery-powered-tren-solar-is-recharging-an-ancient-andean-route/",
-      "snippet": "BY THE OPTIMIST DAILY EDITORIAL TEAM There are places where the land itself seems to generate energy. The Quebrada de Humahuaca in Jujuy province, in Argentina’s far northwest, is one of them. At altitude, in clear desert air, the valley gets solar radiation that would be hard to match anywhere at lower elevation.",
-      "cover_url": "https://www.optimistdaily.com/wp-content/uploads/Tren_de_la_quebrada_01.jpg",
-      "reason": "Argentina's solar-charged Tren Solar is breathing new life into a historic Andean railway, connecting remote communities with clean energy while honoring a route that has linked cultures for centuries."
+      "title": "How a simple urine test could spare most women from invasive womb cancer procedures",
+      "url": "https://www.optimistdaily.com/2026/10/how-a-simple-urine-test-could-spare-most-women-from-invasive-womb-cancer-procedures/",
+      "snippet": "BY THE OPTIMIST DAILY EDITORIAL TEAM Researchers at the University of Manchester developed a non-invasive womb cancer test that correctly identified most cancers and returned a negative result for 93 percent of women who did not have the disease. The test uses urine and vaginal fluid samples, is inexpensive, and requires no internal examination. In a […] The post How a simple urine test could spare most women from invasive womb cancer procedures first appeared on The Optimist Daily: Making Solutions the News .",
+      "cover_url": "https://www.optimistdaily.com/wp-content/uploads/Depositphotos_43069909_S.jpg",
+      "reason": "A straightforward urine test that could replace invasive diagnostic procedures for womb cancer would be a quiet revolution for women's healthcare, sparing many from unnecessary physical and emotional strain. Early, accessible detection saves lives — and this kind of science is exactly the progress worth celebrating."
     }
   ],
   "discovery_articles": [
     {
       "source": "discovery",
       "source_name": "Atlas Obscura",
-      "title": "Southwick House in England",
-      "url": "https://www.atlasobscura.com/places/southwick-house",
-      "snippet": "What an unusual place in a quaint English village!! Not to mention the yummy Tea House on the High Street in the village. Southwick House was the home to SHAEF (Supreme Headquarters Allied Expeditionary Force) in the lead up to D-Day.",
+      "title": "18th Century Pirate’s Jolly Roger in Portsmouth, England",
+      "url": "https://www.atlasobscura.com/places/18th-century-pirates-jolly-roger",
+      "snippet": "The National Museum of the Royal Navy in Portsmouth displays a genuine Jolly Roger, captured from pirates off the North African coast in 1790 by Admiral Richard Curry. Surviving pirate flags are almost unheard of anywhere in the world, since they were cheap, disposable items never meant to outlast the voyage, let alone two and a half centuries. Only two or three historically authentic, preserved pirate flags are widely known to exist in the world today, including this example in Portsmouth.",
       "category": "history",
-      "cover_url": "https://img.atlasobscura.com/s8rxpKJZ30YHMQ78Q-m-CknW8nj6hGuFIfPnNTgiff0/rt:fit/w:600/c:831:554:nowe:78:2/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy9iMTNl/NzE0OS01MmQwLTQw/ZDgtODQ0Yy05ZTFm/MWZmMTYxZTkxYWQ2/YzUxYjc4OWY3Mzlm/ZmJfU291dGh3aWNr/IEhvdXNlLmpwZw.jpg",
-      "ferns_note": "In a quiet Hampshire village with a tea house on the high street, Eisenhower and Churchill huddled over maps and made the call that changed the course of the war — the weight of D-Day still hums beneath those unassuming walls. There's something quietly staggering about a place that looks like a country weekend and held the fate of the world."
+      "cover_url": "https://img.atlasobscura.com/lTCZvSRjdRqer9rfcgq_Prma5mZRAKeIdJttLRV4loQ/rt:fit/w:600/c:2045:1363:nowe:467:1270/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy8wM2Qw/ZGM0Zi1hNGEyLTQx/YWYtYTZiYi1kNTEw/NmJkYmM4Y2MxYzgw/ZjBkODkzODAwMTZh/NmRfSm9sbHlfUm9n/ZXJfYXRfUG9ydHNt/b3V0aF9IaXN0b3Jp/Y19Eb2NreWFyZC5q/cGc.jpg",
+      "ferns_note": "Of all the skull-and-crossbones flags ever unfurled to terrorize a ship's crew, fewer than three have survived the centuries — making this ragged cloth in Portsmouth one of the rarest artifacts of outlaw seafaring life in existence. Pirates treated their flags as disposable tools, not keepsakes, which is precisely what makes finding a real one feel faintly miraculous."
     },
     {
       "source": "discovery",
       "source_name": "Smithsonian",
-      "title": "The First Female Pharaoh? An Old Photo of Ancient Hieroglyphics Highlights the Status of One of Egypt’s Earliest Queens, Researchers Say",
-      "url": "https://www.smithsonianmag.com/smart-news/the-first-female-pharaoh-an-old-photo-of-ancient-hieroglyphics-highlights-the-status-of-one-of-egypts-earliest-queens-researchers-say-180989594/",
-      "snippet": "The black-and-white photograph of a long-lost artifact depicts four serekhs, symbols of Egyptian rulers, and two of them, a recent study suggests, are hers",
+      "title": "See the Hilarious Animal Shenanigans Captured in Photos and Videos Shortlisted for the 2026 Nikon Comedy Wildlife Awards",
+      "url": "https://www.smithsonianmag.com/smart-news/see-the-hilarious-animal-shenanigans-captured-in-photos-and-videos-shortlisted-for-the-2026-nikon-comedy-wildlife-awards-180989600/",
+      "snippet": "From a sneezing moose to a real-life angry bird, this year's competition received a whopping more than 10,000 entries from 112 countries",
       "category": "history",
-      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/u9BiJXYvy81-QYvH6HBqx7YTiLo=/fit-in/1600x0/filters:focal(668x331:669x332)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/99/82/99828cb4-f7ff-4b53-a540-5341c92c851d/was-there-really-a-fem.jpeg",
-      "ferns_note": "A faded black-and-white photograph of a vanished artifact may be the closest we'll ever get to proving a queen ruled Egypt at its very dawn — and it only took a century of the image sitting overlooked for someone to finally look closely enough. Two serekhs, two claims to power, one woman history nearly erased entirely."
+      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/HW-H5DEWz05iSCf06i_qBfGxOV0=/fit-in/1600x0/filters:focal(2659x1773:2660x1774)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/2c/1c/2c1cb4b9-d775-4091-b0ab-15c69ec5e325/natalie_veekmans_this_is_my_best_side.jpg",
+      "ferns_note": "Over 10,000 photographers across 112 countries apparently spent 2025 waiting, camera in hand, for a moose to sneeze — and honestly, that collective patience feels like its own quiet testament to how much joy animals give us when we're not trying to study them."
     },
     {
       "source": "discovery",
       "source_name": "Smithsonian",
-      "title": "Four Beluga Whales Died Weeks After Being Rescued From a Defunct Marine Park in Canada. Were the Animals Too Sick to Be Moved?",
-      "url": "https://www.smithsonianmag.com/smart-news/four-beluga-whales-died-weeks-after-being-rescued-from-a-defunct-marine-park-in-canada-were-the-animals-too-sick-to-be-moved-180989597/",
-      "snippet": "They were among 30 whales transferred from the facility over the summer. It had faced multiple allegations of animal neglect and cruelty before closing in 2024",
+      "title": "Meet This Year's Chonky Champion of Fat Bear Week: Backpack, a Laid-Back 20-Year-Old Male Who's a 'Stoic Presence on the River'",
+      "url": "https://www.smithsonianmag.com/smart-news/meet-this-years-chonky-champion-of-fat-bear-week-backpack-a-laid-back-20-year-old-male-whos-a-stoic-presence-on-the-river-180989595/",
+      "snippet": "The brown bear, who now weighs between 1,000 and 1,200 pounds after fattening up on salmon, earned his nickname as a cub. When he was little, he enjoyed riding on his mom's back as she swam across a river",
       "category": "history",
-      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/g9nFlFPoD9PYmBB_1rgwA5sTzuk=/fit-in/1600x0/filters:focal(723x434:724x435)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/4b/4e/4b4e381d-9c4e-49de-9c09-823656071a1a/dv6ax63eg14lc6fwdq1qgpwl9awd.jpg",
-      "ferns_note": "Thirty belugas rescued from a facility accused of years of neglect — and then four of them gone within weeks of what was supposed to be their salvation. The cruelest question here isn't about the park, but about whether rescue itself can arrive too late."
-    },
-    {
-      "source": "discovery",
-      "source_name": "Smithsonian",
-      "title": "The Marquis de Lafayette's Brother-in-Law Participated in Three Revolutionary Wars, Supporting American Independence but Brutally Suppressing an Uprising by Enslaved Africans in Haiti",
-      "url": "https://www.smithsonianmag.com/history/the-marquis-de-lafayettes-brother-in-law-participated-in-three-revolutionary-wars-supporting-american-independence-but-brutally-suppressing-an-uprising-by-enslaved-africans-in-haiti-180989582/",
-      "snippet": "Louis-Marie, Viscount de Noailles, served during the American, French and Haitian Revolutions. \"He fights wherever France fights, because he's a soldier and he believes in France,\" a historian says",
-      "category": "history",
-      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/C5fYwTVbwNQYg54UCCacYnXzI1k=/fit-in/1600x0/filters:focal(750x500:751x501)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/a7/48/a7487faf-ba59-41b8-8878-135d377c691d/noailles.png",
-      "ferns_note": "Louis-Marie de Noailles signed the document abolishing French feudalism one night, then spent years helping crush the Haitian Revolution — a biography so contradictory it reads less like a life than like an argument. He is a walking reminder that believing in liberty and believing in it for everyone were, for most of history, two very different things."
-    },
-    {
-      "source": "discovery",
-      "source_name": "Smithsonian",
-      "title": "In an Exciting but ‘Brutal’ Find, a 5,000-Year-Old Arrow Emerges From Norway’s Rapidly Melting Mountain Ice",
-      "url": "https://www.smithsonianmag.com/smart-news/in-an-exciting-but-brutal-find-a-5000-year-old-arrow-emerges-from-norways-rapidly-melting-mountain-ice-180989599/",
-      "snippet": "Archaeologists discovered 48 prehistoric arrows during a recent three-week expedition in the mountains of Jotunheimen",
-      "category": "history",
-      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/P1afvsWtEflPAmXjt1V_jC68910=/fit-in/1600x0/filters:focal(1408x919:1409x920)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/61/b3/61b30383-d8a0-4546-9327-35adb1b9a6c1/1_slate_arrowhead_approx_5000_years_old_photo_asa_romme-5de025acc680e9a2bff7cb922a2ab1fd.jpg",
-      "ferns_note": "A 5,000-year-old arrow emerging intact from melting Norwegian ice is a gift and a warning in the same breath — the glacier preserved it perfectly, and now the glacier is disappearing. Every find from these ice patches is also a countdown."
-    },
-    {
-      "source": "discovery",
-      "source_name": "Science News",
-      "title": "Here’s how brain-eating amoebas may infect people",
-      "url": "https://www.sciencenews.org/article/brain-eating-amoebas-naegleria-fowleri",
-      "snippet": "Naegleria amoebas’ exploration skills and crawling behaviors could help explain how the brain-eating variety travel into human brains.",
-      "category": "science",
-      "cover_url": "https://www.sciencenews.org/wp-content/uploads/sites/2/2026/09/092326_MR_amoeba_main_rev.jpg",
-      "ferns_note": "Naegleria fowleri doesn't seek out a brain so much as stumble into one — its ordinary habit of crawling and exploring, evolved for pond sediment, becomes catastrophic when it finds itself in a human nostril. It's terrifying precisely because there's no malice in it, just a single-celled organism doing what it has always done."
-    },
-    {
-      "source": "discovery",
-      "source_name": "Science News",
-      "title": "A video of a humpback whale and her dead calf reveals the animals’ bond",
-      "url": "https://www.sciencenews.org/article/video-humpback-whale-dead-calf-bond",
-      "snippet": "A female humpback whale may have spent days with her stillborn calf. This rare sighting may suggest that baleen whales experience grief.",
-      "category": "science",
-      "cover_url": "https://www.sciencenews.org/wp-content/uploads/sites/2/2026/09/092326_MH_whalecalf_main.jpg",
-      "ferns_note": "A mother humpback whale carrying her stillborn calf for what may have been days offers the rarest kind of evidence — not a data point, but a portrait of grief in a creature we once thought had none to feel. Baleen whales have never been studied this way before, which makes this sighting less an answer than a door swinging open."
-    },
-    {
-      "source": "discovery",
-      "source_name": "JSTOR Daily",
-      "title": "Reading for LGBTQ+ History Month",
-      "url": "https://daily.jstor.org/reading-for-lgbtq-pride-month/",
-      "snippet": "A collection of stories tracing how queer people have built communities, challenged norms, and preserved their histories.",
-      "category": "history",
-      "cover_url": "https://daily.jstor.org/wp-content/uploads/2026/10/gay_bars_and_gay_rights_alt_1050x700.jpg",
-      "ferns_note": "Queer history is so often a history of deliberate preservation against deliberate erasure — these stories matter not just for what they remember, but for the fact that someone fought to remember them at all. LGBTQ+ History Month is, at its core, an act of archival defiance."
-    },
-    {
-      "source": "discovery",
-      "source_name": "Quanta Magazine",
-      "title": "What Does the Fourth Dimension Actually Look Like?",
-      "url": "https://www.quantamagazine.org/what-does-the-fourth-dimension-actually-look-like-20261001/",
-      "snippet": "Maggie Miller explains why our intuition about three dimensions breaks down in four, and how she visualizes 4D spaces as a reel of three-dimensional snapshots. The post What Does the Fourth Dimension Actually Look Like? first appeared on Quanta Magazine",
-      "category": "science",
-      "cover_url": "https://www.quantamagazine.org/wp-content/uploads/2026/10/JOW-S5-E9-cr-Chanelle-Nibbelink-Social-LOGO.jpg",
-      "ferns_note": "Mathematician Maggie Miller's trick for grasping the fourth dimension — imagining it as a flip-book of 3D moments stacked through time — is the kind of mental reframe that makes the impossible feel almost holdable. The unsettling part is realizing our entire sense of space is just one page in a book we can't open."
-    },
-    {
-      "source": "discovery",
-      "source_name": "Colossal",
-      "title": "World of WearableArt’s ‘GLO!’ Is a Celebration of Culture, Nature, and Whimsy",
-      "url": "https://www.thisiscolossal.com/2026/10/world-of-wearableart-2026-glo-fashion-performance/",
-      "snippet": "The annual fashion-meets-performance competition is an international visual feast.",
-      "category": "history",
-      "cover_url": "https://www.thisiscolossal.com/wp-content/uploads/2026/09/wearableart-3-e1790859226557.jpg",
-      "ferns_note": "World of WearableArt began in a small New Zealand gallery and grew into one of the most gloriously unclassifiable spectacles on the planet — part runway, part theatre, part fever dream. 'GLO!' sounds less like a fashion show and more like a reminder that clothing, at its most alive, is costume for the soul."
-    },
-    {
-      "source": "discovery",
-      "source_name": "Colossal",
-      "title": "In Chicago, teamLab Expands Our Perceptions Through Boundary-Breaking Installations",
-      "url": "https://www.thisiscolossal.com/2026/10/teamlab-smart-museum-chicago-exhibition-digital-installations/",
-      "snippet": "teamLab consists of hundreds of collaborators who tap into the provocative intersection of art, science, and technology.",
-      "category": "history",
-      "cover_url": "https://www.thisiscolossal.com/wp-content/uploads/2026/09/teamlab.gif",
-      "ferns_note": "teamLab's installations don't just hang on walls — they respond to you, shift around you, dissolve the line between observer and artwork until you're not quite sure which one you are. In Chicago, they're offering something rarer than spectacle: the genuine sensation of being inside someone else's imagination."
+      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/UUYNkYcbBhJre5wy-Ld4Dr_1ASw=/fit-in/1600x0/filters:focal(1993x896:1994x897)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/af/1f/af1ff794-b3a7-4998-8921-a616fc02e7af/89_backpack_fat_982026_courtesy_exploreorg.png",
+      "ferns_note": "Backpack earned his name as a cub by literally hitching rides on his mother's back during river crossings, and now — twenty years and over a thousand pounds later — he's Fat Bear Week champion, which is perhaps the most wholesome origin story in competitive sports."
     }
   ],
   "featured_read": {
     "source": "reads",
-    "source_name": "The Atlantic",
-    "title": "Want to Reform Democracy? Start Here.",
-    "url": "https://www.theatlantic.com/ideas/2026/10/pardon-power-congres-expand/688836/?utm_source=feed",
-    "snippet": "A more constrained executive branch could begin to take shape with a smaller pardon power—and a bigger House of Representatives.",
-    "cover_url": "",
-    "blurb": "This piece cuts through the noise of 'fix democracy' rhetoric to argue two surprisingly specific, workable reforms: shrinking the pardon power and expanding the House. It's the rare political essay that trades in proposals instead of laments."
+    "source_name": "Nautilus",
+    "title": "Don’t Miss Saturn in All its Glory This Weekend",
+    "url": "https://nautil.us/dont-miss-saturn-in-all-its-glory-this-weekend-1285461/",
+    "snippet": "And the Orionids later in the month",
+    "cover_url": "https://lede-admin.nautil.us/wp-content/uploads/sites/70/2026/10/Saturn_from_Cassini_Orbiter_2004-10-06.jpg",
+    "blurb": "A gentle nudge to step outside this weekend and let Saturn — rings and all — remind you that the sky is doing something remarkable whether you look up or not. Pair it with the Orionids and you have a month's worth of reasons to stay up past your bedtime."
   },
   "reading_room": [
     {
       "source": "reads",
-      "source_name": "The Atlantic",
-      "title": "A Dissatisfying Apocalypse",
-      "url": "https://www.theatlantic.com/books/2026/10/hernan-diaz-disappointing-dystopan-novel-ply-book-review/688843/?utm_source=feed",
-      "snippet": "Hernan Diaz’s new novel, Ply , fails to fulfill the promise of every great end-of-the-world novel.",
+      "source_name": "Longreads",
+      "title": "Journalist Evan Gershkovich: My 491 Days as Putin’s Political Prisoner",
+      "url": "https://longreads.com/2026/10/01/journalist-putins-political-prisoner/",
+      "snippet": "\"Evan Gershkovich, a Wall Street Journal reporter in Russia, thought he was meeting a source. Instead he was arrested for spying.\"",
       "cover_url": "",
-      "blurb": "Hernan Diaz won the Pulitzer, so when his new novel stumbles at the end of the world, the failure is worth examining closely — this review asks what, exactly, great apocalyptic fiction owes its readers and whether Ply delivers the reckoning we came for."
+      "blurb": "Evan Gershkovich walked into what he thought was a routine reporter's meeting and didn't walk out for 491 days — this is his account of what it costs, hour by hour, to be used as a geopolitical chess piece. Read it for the specificity of what confinement does to a mind that makes its living on curiosity."
     },
     {
       "source": "reads",
-      "source_name": "Aeon",
-      "title": "Reason is more than a tool",
-      "url": "https://aeon.co/essays/why-real-intelligence-is-something-more-than-optimisation",
-      "snippet": "If intelligence is merely optimisation then machines will outrun us. Kant tells us why human reason is so much more - by Sasha Mudd Read on Aeon",
-      "cover_url": "https://images.aeonmedia.co/images/73768d4d-af29-4f99-ab9e-8a2715230088/esssay-gettyimages-2278740190.jpg?width=1200&quality=75&format=jpeg",
-      "blurb": "As AI optimizes its way into every corner of our lives, philosopher Sasha Mudd reaches back to Kant to argue that human reason was never just a problem-solving engine — and that forgetting the difference may cost us something we can't get back."
+      "source_name": "Noema",
+      "title": "The AIs Are Not Going Rogue",
+      "url": "https://www.noemamag.com/the-ais-are-not-going-rogue",
+      "snippet": "",
+      "cover_url": "https://noemamag.imgix.net/2026/09/Jerry-Lee-Bosmans-for-Noema.jpg?fit=crop&fm=pjpg&h=628&ixlib=php-3.3.1&w=1200&wpsize=noema-social-facebook&s=ddc67e5d5e0f5dd773de4720c1320c76",
+      "blurb": "Against a tide of doomsday narratives, this essay quietly asks who actually controls AI behavior and why 'going rogue' may be the wrong fear entirely. It's the kind of argument that doesn't raise its voice and is more unsettling for it."
+    },
+    {
+      "source": "reads",
+      "source_name": "The Atlantic",
+      "title": "A Terrible Way to Die, a Terrifying Way to Survive",
+      "url": "https://www.theatlantic.com/ideas/2026/10/christa-pike-tennessee-lethal-injection/688859/?utm_source=feed",
+      "snippet": "America’s experiment with lethal injection has failed.",
+      "cover_url": "",
+      "blurb": "Lethal injection was sold to America as a humane resolution to a brutal problem, and this investigation traces exactly how that promise unraveled — needle by needle, execution by execution. It's a piece that refuses to let clinical language do the moral laundering it was designed to do."
+    },
+    {
+      "source": "reads",
+      "source_name": "The Atlantic",
+      "title": "This El Niño Will Be Unlike Any in the Past Eight Decades",
+      "url": "https://www.theatlantic.com/science/2026/08/el-nino-effects/688429/?utm_source=feed",
+      "snippet": "Die-offs and floods have started already, a prelude to supercharged storms and droughts.",
+      "cover_url": "",
+      "blurb": "This El Niño isn't just another weather cycle — it's arriving into an atmosphere already running a fever, and the die-offs and floods already underway are the opening act. A sober, well-reported map of what 'supercharged' actually looks like on the ground."
     },
     {
       "source": "reads",
       "source_name": "Nautilus",
-      "title": "A Look at How Many Cancers Are Caused by Infections Worldwide",
-      "url": "https://nautil.us/a-look-at-how-many-cancers-are-caused-by-infections-worldwide-1285454/",
-      "snippet": "Nearly one in eight cancers are caused by a pathogen",
-      "cover_url": "https://lede-admin.nautil.us/wp-content/uploads/sites/70/2026/10/shutterstock_1697963422.jpg",
-      "blurb": "The quiet, unsettling truth at the center of this piece is that nearly one in eight cancers traces back to a pathogen — an infection — which reframes cancer less as fate and more as a public-health problem we're only beginning to take seriously."
-    },
-    {
-      "source": "reads",
-      "source_name": "The Paris Review",
-      "title": "Writers Whose Names You Don’t Know",
-      "url": "https://www.theparisreview.org/blog/2026/10/01/submitting-to-the-paris-review/",
-      "snippet": "Our submissions-reading process.",
-      "cover_url": "https://www.theparisreview.org/blog/wp-content/uploads/2026/09/tpr-slush-ad-2000px.jpg",
-      "blurb": "Behind every Paris Review rejection slip is a reader whose name you'll never know, and this essay pulls back the curtain on the people who decide what literature almost was. A meditation on taste, gatekeeping, and the strange intimacy of reading strangers."
-    },
-    {
-      "source": "reads",
-      "source_name": "Longreads",
-      "title": "The Work",
-      "url": "https://longreads.com/2026/10/01/independent-wrestling-pacific-northwest/",
-      "snippet": "\"One year spent on the independent professional wrestling circuit in the Pacific Northwest, where the only thing that’s faked is the outcome of the match.\"",
-      "cover_url": "",
-      "blurb": "A year inside the independent wrestling circuit of the Pacific Northwest reveals a world where bodies take every bit of punishment for real — only the winner is predetermined, which somehow makes the sacrifice stranger, not smaller."
+      "title": "Ancient Pocket Change Reveals Special Status of Rome’s “Little Englanders”",
+      "url": "https://nautil.us/ancient-pocket-change-reveals-special-status-of-romes-little-englanders-1285457/",
+      "snippet": "These pilgrims didn’t have to secure travel money",
+      "cover_url": "https://lede-admin.nautil.us/wp-content/uploads/sites/70/2026/10/Header.jpg",
+      "blurb": "A small coin in a pilgrim's pocket turns out to be evidence of an extraordinary medieval exemption — and this piece uses that pocket change to open up a surprisingly rich story about identity, belonging, and Rome's complicated relationship with its English faithful."
     }
   ],
   "garden_note": {
-    "note": "October arrives in Zürich with that particular golden quietness — the Limmat mist settling low, the linden leaves beginning their slow amber confession. This is the hour to pull a cardigan close and watch the garden exhale after summer's long effort.",
+    "note": "First light creeps over the Zürichberg just before seven this morning, gilding the turning beeches and releasing that particular damp-leaf scent that only mid-autumn knows how to brew. The garden is asking you, gently but firmly, to start putting things to bed.",
     "in_season": [
-      "Quince ripening on the branch",
-      "Leeks ready for first harvest",
-      "Planting garlic cloves before the soil cools",
-      "Michaelmas daisies in lilac bloom"
+      "Asters still flowering — leave them for the last bees",
+      "Winter squash: harvest before the first proper frost arrives",
+      "Garlic planting time — get the cloves in while the soil holds warmth",
+      "Rake and compost fallen apple and pear leaves"
     ],
-    "sky_tonight": "The waning gibbous moon rises late in the east — look for it well after dusk, keeping company with the stars of Gemini.",
-    "sun_times": "Dusk settled over the rooftops at 19:36 tonight, with sunset itself at 19:07 — a gentle reminder that the evenings are drawing in quickly now.",
-    "moon_label": "Waning gibbous",
-    "illum_pct": 72,
-    "sun_range": "07:23–19:07"
+    "sky_tonight": "The Last Quarter Moon rises well after midnight, leaving the early evening sky dark enough to trace Pegasus climbing high in the south.",
+    "sun_times": "First light arrives at 06:55, with sunrise at 07:24 and the sun setting at 19:05 this evening.",
+    "moon_label": "Last quarter",
+    "illum_pct": 67,
+    "sun_range": "07:24–19:05"
   },
   "puzzle": {
-    "kind": "riddle",
-    "label": "Fern's Morning Riddle",
-    "prompt": "The ages of a father and son add up to 66.  The father's age is the son's age reversed.  How old could they be?  (3 possible solutions).",
-    "answer": "51 and 15. 42 and 24. 60 and 06",
-    "hint": "",
-    "source": "riddles.com",
-    "source_id": "Riddle-1046"
+    "kind": "haiku riddle",
+    "label": "The Morning Haiku",
+    "prompt": "pre-migration\na ____ lifts its voice\none note higher\n\n(Fill in the missing word.)",
+    "answer": "wren",
+    "hint": "a small, energetic brown bird known for its surprisingly loud song",
+    "source": "tinywords.com",
+    "source_id": "https://tinywords.com/?p=50501",
+    "credit": "Haiku by Marianne Paul, via tinywords.com"
   },
   "previous_puzzle": {
     "label": "Fern's Morning Riddle",
-    "prompt": "What do you call an out of work Ghost?",
-    "answer": "Lazy Bones"
+    "prompt": "The ages of a father and son add up to 66.  The father's age is the son's age reversed.  How old could they be?  (3 possible solutions).",
+    "answer": "51 and 15. 42 and 24. 60 and 06"
   },
   "larder": {
-    "news": [],
-    "recipe": {}
+    "news": [
+      {
+        "source": "food",
+        "source_name": "The Kitchn",
+        "title": "I’m Adding This Early Prime Day Deal to My Cart — This Air Fryer Is Great for Family Meals!",
+        "url": "https://www.thekitchn.com/nuwave-brio-plus-air-fryer-amazon-big-deal-days-2026-23847432?utm_source=RSS&utm_medium=feed&utm_campaign=Category%2FChannel%3A+main",
+        "snippet": "There are 100 preset recipe buttons!",
+        "cover_url": "https://cdn.apartmenttherapy.info/image/upload/f_auto,q_auto:eco,c_fill,g_auto,w_1500,ar_3:2/k%2FPhoto%2FRecipes%2F2020-02-Air-Fryer-Steak%2Fair-fryer-steak-rotated",
+        "blurb": "A solid deal worth a glance if you've been on the fence about an air fryer that does the thinking — 100 preset buttons means weeknight dinners have very few excuses left."
+      },
+      {
+        "source": "food",
+        "source_name": "Eater",
+        "title": "The 38 Best Restaurants in Mexico City, According to a Local Culinary Guide",
+        "url": "https://www.eater.com/maps/best-mexico-city-restaurants-38",
+        "snippet": "The largest city in North America, Mexico City is a unique, elastic, ever-changing patchwork of food traditions. As a native of the city and a food writer covering the scene for the past 14 years, I’m still amazed by CDMX’s captivating energy and scale. Since Eater first started reporting on Mexico City’s dining scene in […]",
+        "cover_url": "https://platform.eater.com/wp-content/uploads/sites/2/2026/09/Los-pacientes-cocina-89.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
+        "blurb": "A deeply knowledgeable local guide to one of the world's most thrillingly layered food cities — consider it essential reading before any Mexico City trip, or simply a delicious armchair journey."
+      },
+      {
+        "source": "food",
+        "source_name": "The Guardian",
+        "title": "Helen Goh’s recipe for flourless walnut, date and espresso cake | The sweet spot",
+        "url": "https://www.theguardian.com/food/2026/oct/02/flourless-walnut-date-espresso-cake-helen-goh-recipe",
+        "snippet": "With a deep, caramel richness and a bitter undertone, this cake is an excellent addition to your home baking roster There’s enough dark chocolate in this gluten-free cake to put it firmly in chocolate cake territory, but the hero flavour comes from the sweet, creamy nuttiness of walnuts, so it’s important to use very fresh ones, because stale walnuts can quickly turn bitter. The dates bring a deep, caramel richness, while the espresso pulls everything back from being overly sweet. Despite all that richness, the cake is wonderfully light in texture.",
+        "cover_url": "https://i.guim.co.uk/img/media/8a36cbd87d0a8d4ccebe62a73c155944207afb65/501_1343_3875_3097/master/3875.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=07af3f1b261e38ea63cb2812c232f5f9",
+        "blurb": "Helen Goh's flourless walnut, date and espresso cake sounds like the kind of recipe that earns a permanent spot in your rotation — dark, complex, and just the right amount of indulgent."
+      }
+    ],
+    "recipe": {
+      "source": "recipe",
+      "source_name": "Alexandra's Kitchen",
+      "title": "Homemade Chimichurri",
+      "url": "https://alexandracooks.com/2026/03/21/homemade-chimichurri/",
+      "snippet": "Homemade Chimichurri Herby and bright, chimichurri is an uncooked sauce originating from Argentina and Uruguay, typically served with grilled meat, fish, and vegetables. It takes no time to stir together and makes everything on your plate taste better! According to a Gourmet magazine article from 2006, Chimichurri is the national condiment of both Argentina and Uruguay, and […] Read: Homemade Chimichurri",
+      "is_recipe": true,
+      "cover_url": "https://alexandracooks.com/wp-content/uploads/2026/03/chimichurri_1200_alexandraskitchen.jpg",
+      "blurb": "This homemade chimichurri is exactly what your summer grilling has been quietly waiting for — bright, herby, and stirred together in minutes to make everything it touches taste more alive."
+    },
+    "seasonal_note": "Zürich's markets are piled high with Berner Rosen and Boskoop apples right now — pick up a few and simmer them slowly with a knob of butter and a whisper of cinnamon for a Apfelmus that turns even a quiet Tuesday breakfast into something worth waking up for."
   },
   "fern_data": {
-    "greeting": "A 5,000-year-old arrow just thawed out of a Norwegian glacier — and Sheryl Crow has decided she's done chasing hits. Both of them, it turns out, are stories about what survives when you stop trying to hold on.",
-    "top_pick_title": "What the Thaw Gives Back"
+    "greeting": "If a man in St. Louis can spend decades not knowing he's Michael McDonald's son, what else are we carrying around without a clue? This morning also has Talking Heads dusting off *Fear of Music* for a super deluxe treatment, and Fat Bear Week's reigning champion — a 20-year-old named Backpack who has, apparently, figured something out.",
+    "top_pick_title": "Blood, Bears & B-Sides"
   }
 }
