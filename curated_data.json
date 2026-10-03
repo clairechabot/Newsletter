@@ -1,352 +1,187 @@
 {
-  "fetched_at": "2026-10-03T11:17:11.190667+02:00",
-  "is_am_email": true,
+  "fetched_at": "2026-10-03T20:02:11.247686+02:00",
+  "is_am_email": false,
   "audit_summary": {
     "youtube_videos": 0,
     "themes": 0,
-    "music_articles": 11,
+    "music_articles": 5,
     "good_news_articles": 2,
-    "discovery_articles": 6,
+    "discovery_articles": 0,
     "featured_read": 1,
     "reading_room": 5,
     "garden": 1,
     "puzzle": 1,
-    "larder": 4
+    "larder": 0
   },
   "themes": [],
   "morning_soundtrack": [
     {
       "source": "music",
-      "source_name": "Stereogum",
-      "title": "Bonnie “Prince” Billy & Linus Announce Jules de Corte Tribute Album, Share Three Songs",
-      "snippet": "Up until this very afternoon, I'd never heard of Jules de Corte, a blind Dutch singer-songwriter who won some European prizes in the '60s and who died in 1996 at the age of 71. I'd also never heard of the improvisational Belgian quartet Linus. I had, however, heard of beloved roots-music weirdo Bonnie \"Prince\" Billy, so the news that he's making a Jules de Corte tribute album with Linus demanded further investigation.",
-      "url": "https://stereogum.com/2513488/bonnie-prince-billy-linus-announce-jules-de-corte-tribute-album-share-three-songs/music/",
+      "source_name": "NPR Music",
+      "title": "The record-breaking, genre-melting, career-redefining evolution of Miranda Lambert",
+      "snippet": "Lambert started out as a scrappy country singer with a me-against-the-world attitude. How did she end up making lush disco songs and writing one of the biggest pop hits of the year?",
+      "url": "https://www.npr.org/2026/10/03/nx-s1-5943132/miranda-lambert-crisco-choosin-texas-interview",
       "genre": "",
-      "vibe_check": "The musical equivalent of stumbling into a dusty foreign-language record shop and leaving two hours later with something you never knew you needed.",
-      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/10/Bonnie-Prince-Billy.jpg?w=564",
-      "embed_url": "https://bonnieprincebilly.bandcamp.com/album/ghosts-of-american-psychonauts"
+      "vibe_check": "The sound of a woman kicking off her boots, trading rhinestones for sequins, and daring you to say something about it.",
+      "cover_url": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/8192x4608+0+500/resize/1400/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F99%2F30%2F498ccd1a4aaeb734053563fca006%2Fshot-009-miranda-lambert-crisco-0769-1-press-dsp-profile-credit-robert-ascroft-low-res.jpg",
+      "embed_url": "https://www.youtube.com/embed/Xh02S1MZ8b0"
     },
     {
       "source": "music",
       "source_name": "Stereogum",
-      "title": "Shane Parish Surprise Releases New Album Dental Work To Pay For His Dental Work",
-      "snippet": "Six-string master Shane Parish has been in these (web)pages a fair amount in recent years, both for acoustic ventures like translating Autechre and Aphex Twin songs to guitar and electric pursuits like the Bill Orcutt Guitar Quartet . We also caught up with him last month at Philadelphia's Making Time ∞ festival , where it seems he was dealing with some health concerns. As a result, there's a new surprise Shane Parish album out today.",
-      "url": "https://stereogum.com/2513487/shane-parish-surprise-releases-new-album-dental-work-to-pay-for-his-dental-work/music/",
+      "title": "Dave Grohl Joins AC/DC For “Highway To Hell” In New Jersey",
+      "snippet": "On Friday (Oct. 2) in New Jersey, Foo Fighters filled in for the Pretty Reckless for a second time on AC/DC's Power Up tour. When the Australian rock legends played their hit \"Highway To Hell,\" they brought out Dave Grohl for help.",
+      "url": "https://stereogum.com/2513505/dave-grohl-joins-ac-dc-for-highway-to-hell-in-new-jersey/news/",
       "genre": "",
-      "vibe_check": "The scrappy, bittersweet sound of turning a bad situation into something quietly brilliant — art made out of necessity, with teeth.",
-      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/10/Dental-Work.jpg?w=564",
-      "embed_url": "https://shaneparish.bandcamp.com/album/dental-work"
+      "vibe_check": "The kind of moment that makes grown adults lose their minds and throw their fists in the air without a single apology.",
+      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/10/GettyImages-2293589795.jpg?w=564",
+      "embed_url": "https://www.youtube.com/embed/QP7f0-Nm0pM"
     },
     {
       "source": "music",
-      "source_name": "Stereogum",
-      "title": "Alex Lahey Shares Previously Unreleased Songs On Garage Sale [Vol. 1] EP",
-      "snippet": "In 2023, Alexa Lahey released her latest album The Answer Is Always Yes . Since then, the Australian singer-songwriter has shared a deluxe version , as well as some songs and collaborations , including one with Tegan And Sara . Now, she's back with the Garage Sale [Vol. 1] EP.",
-      "url": "https://stereogum.com/2513470/alex-lahey-shares-previously-unreleased-songs-on-garage-sale-vol-1-ep/music/",
+      "source_name": "Consequence",
+      "title": "AC/DC and Foo Fighters Deliver Epic Night of Rock ‘n’ Roll at MetLife Stadium: Review, Photos, Video + Setlists",
+      "snippet": "The two Rock & Roll Hall of Fame acts joined forces for an unforgettable show in New Jersey. AC/DC and Foo Fighters Deliver Epic Night of Rock ‘n’ Roll at MetLife Stadium: Review, Photos, Video + Setlists Spencer Kaufman",
+      "url": "https://consequence.net/2026/10/ac-dc-and-foo-fighters-metlife-stadium-review-photos-video-setlists/",
       "genre": "",
-      "vibe_check": "Like flipping through a cardboard box of unlabeled cassettes at a yard sale and finding a hidden gem between the couch cushions.",
-      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/10/a2957501120_1x1_700.jpeg?w=564",
-      "embed_url": "https://alexlahey.bandcamp.com/album/dont-wanna-know-rock-roll-queen"
-    },
-    {
-      "source": "music",
-      "source_name": "No Depression",
-      "title": "BONUS TRACKS: 39 Bob Dylan CDs, New Anti-ICE Compilation, and More Roots Music News",
-      "snippet": "Columbia Records and Legacy Recordings announced a massive new Bob Dylan box set titled T he Rolling Thunder Revue: The 1976 Live Recordings due out November 6. Distributed via 39 CDs, the 371 tracks that have never been head on recordings before from 19 shows, mostly across the southern states.",
-      "url": "https://nodepression.org/bonus-tracks-39-bob-dylan-cds-new-anti-ice-compilation-and-more-roots-music-news/",
-      "genre": "",
-      "vibe_check": "The thrill of cracking open a time capsule — road dust, cigarette smoke, and 39 discs worth of American myth spilling out all at once.",
-      "cover_url": "https://storage.ghost.io/c/18/d0/18d08e58-3b1b-4720-ae25-a31b44e69d4b/content/images/2026/10/Photo-by-Jerry-Aronson_1976_Rolling_Thunder_Revue_dylan108.jpeg",
-      "embed_url": "https://www.youtube.com/embed/KaysSBf55Bo"
-    },
-    {
-      "source": "music",
-      "source_name": "Pitchfork",
-      "title": "David Sylvian Sets New Album The Distance Between the Killer and the Killing",
-      "snippet": "His first proper new LP since 2009 compiles improvisational sessions recorded between 2012 and 2025 into one 46-minute instrumental",
-      "url": "https://pitchfork.com/story/david-sylvian-sets-new-album-the-distance-between-the-killer-and-the-killing/",
-      "genre": "",
-      "vibe_check": "The sound of a long silence finally broken — hushed, searching, and heavy with everything left unsaid across sixteen years.",
-      "cover_url": "https://media.pitchfork.com/photos/6abd0b935999d94899180b47/master/pass/ds%20studio.jpg",
+      "vibe_check": "Stadium concrete vibrating under your feet while 80,000 strangers become your closest friends for exactly three hours.",
+      "cover_url": "https://consequence.net/wp-content/uploads/2026/10/ACDC-Foo-Fighters.jpg?quality=80",
       "embed_url": null
     },
     {
       "source": "music",
       "source_name": "Consequence",
-      "title": "Zach Bryan Wears “Free Palestine” Shirt During Show at Gillette Stadium",
-      "snippet": "The fashion statement came weeks after Bob Kraft led a campaign to get Macklemore kicked off Ed Sheeran's tour. Zach Bryan Wears “Free Palestine” Shirt During Show at Gillette Stadium Alex Young",
-      "url": "https://consequence.net/2026/10/zach-bryan-free-palestine-shirt-gillette-stadium/",
+      "title": "The Strokes’ Homecoming Concert in NYC with Beach House, TV on the Radio, and Fcukers Was Indie Music Heaven: Recap + Videos",
+      "snippet": "With a special introduction from AOC and Bernie Sanders, the show brought together multiple eras of indie rock. The Strokes’ Homecoming Concert in NYC with Beach House, TV on the Radio, and Fcukers Was Indie Music Heaven: Recap + Videos Paolo Ragusa",
+      "url": "https://consequence.net/2026/10/the-strokes-nyc-beach-house-tv-on-the-radio-recap/",
       "genre": "",
-      "vibe_check": "A stadium full of charged air and held breath, where a T-shirt suddenly carries more weight than the setlist.",
-      "cover_url": "https://consequence.net/wp-content/uploads/2026/10/Zach-Bryan-Palestine.jpeg?quality=80",
+      "vibe_check": "Like finding every dog-eared page of your college music diary brought to life on a single sweaty, euphoric New York night.",
+      "cover_url": "https://consequence.net/wp-content/uploads/2026/10/The-Strokes-NYC-Concert-Recap-Beach-House-Tv-on-the-Radio-1.jpg?quality=80",
       "embed_url": null
     },
     {
       "source": "music",
       "source_name": "Consequence",
-      "title": "Dave Grohl Lives Out Boyhood Dream by Joining AC/DC for “Highway to Hell”",
-      "snippet": "Grohl's Foo Fighters served as the surprise opener for AC/DC's show at MetLife Stadium. Dave Grohl Lives Out Boyhood Dream by Joining AC/DC for “Highway to Hell” Alex Young",
-      "url": "https://consequence.net/2026/10/dave-grohl-acdc-highway-to-hell/",
+      "title": "Cameron Winter at Carnegie Hall Is a Brilliant Portrait of an Artist Frozen in Time: Review",
+      "snippet": "The Paul Thomas Anderson-directed concert film captures the young songwriter in action with patient, hypnotic focus. Cameron Winter at Carnegie Hall Is a Brilliant Portrait of an Artist Frozen in Time: Review Paolo Ragusa",
+      "url": "https://consequence.net/2026/10/cameron-winter-at-carnegie-hall-review/",
       "genre": "",
-      "vibe_check": "Pure fist-pumping, chest-swelling catharsis — the moment a kid's bedroom poster becomes a sweaty, roaring reality.",
-      "cover_url": "https://consequence.net/wp-content/uploads/2026/10/Dave-ACDC.jpeg?quality=80",
+      "vibe_check": "Still and reverent, like watching someone write in a journal through a rain-streaked window — beautiful precisely because they don't know you're there.",
+      "cover_url": "https://consequence.net/wp-content/uploads/2026/09/Geese-Kickoff-2026-North-American-Tour-Nashville-Ryman-Setlist-Video.jpg?quality=80",
       "embed_url": null
-    },
-    {
-      "source": "music",
-      "source_name": "Consequence",
-      "title": "AOC and Bernie Sanders Introduce The Strokes Prior to NYC Show",
-      "snippet": "\"The greatest city in the world is now welcoming the greatest rock band of our generation.\" AOC and Bernie Sanders Introduce The Strokes Prior to NYC Show Alex Young",
-      "url": "https://consequence.net/2026/10/aoc-and-bernie-sanders-introduce-the-strokes-prior-to-nyc-show/",
-      "genre": "",
-      "vibe_check": "The electric crackle of a city that still believes, against all odds, in the union of rock and roll and righteous anger.",
-      "cover_url": "https://consequence.net/wp-content/uploads/2026/10/The-Strokes-and-Bernie.jpeg?quality=80",
-      "embed_url": null
-    },
-    {
-      "source": "music",
-      "source_name": "PopMatters",
-      "title": "The Album Leaf’s Ambient Music Finds Its Perfect Voice",
-      "snippet": "After 25 years of creating enthralling ambient instrumental music, the Album Leaf has found singers who understand how to speak its language.",
-      "url": "https://www.popmatters.com/the-album-leaf-body-of-voices",
-      "genre": "",
-      "vibe_check": "Like stepping into a fog-softened morning where, for once, every sound feels like it was placed there just for you.",
-      "cover_url": "https://www.youtube.com/embed/Uo4929h7znI",
-      "embed_url": "https://www.youtube.com/embed/Uo4929h7znI"
-    },
-    {
-      "source": "music",
-      "source_name": "PopMatters",
-      "title": "Midori Hirano Draws Inspiration from a Classic Icelandic Film",
-      "snippet": "Midori Hirano's The Juniper Tree is fascinated by humans' place in the natural world. She has successfully found a sonic outlet for this sense of wonder",
-      "url": "https://www.popmatters.com/midori-hirano-juniper-tree",
-      "genre": "",
-      "vibe_check": "Standing barefoot in a Nordic forest at dusk, feeling simultaneously very small and quietly held by something ancient.",
-      "cover_url": "https://www.popmatters.com/wp-content/uploads/2026/10/Midori-Hirano-The-Juniper-Tree-social.webp",
-      "embed_url": "https://bandcamp.com/EmbeddedPlayer/album=821607835/size=large/bgcol=ffffff/linkcol=e99708/tracklist=false/artwork=small/transparent=true/"
-    },
-    {
-      "source": "music",
-      "source_name": "PopMatters",
-      "title": "Carly Rae Jepsen Finds Life’s Balance on ‘Day and Night’",
-      "snippet": "On Day and Night , Carly Rae Jepsen blends funk, synths, and acoustics for an eclectic but cohesive collection of tunes about love, loss, and settling down.",
-      "url": "https://www.popmatters.com/carly-rae-jepsen-day-night",
-      "genre": "",
-      "vibe_check": "Catching the last warm light of an afternoon that somehow contains both heartbreak and the very real possibility of dancing through it.",
-      "cover_url": "https://www.youtube.com/embed/m2bgsLp943A",
-      "embed_url": "https://www.youtube.com/embed/m2bgsLp943A"
     }
   ],
   "global_silver_linings": [
     {
       "source": "good_news",
       "source_name": "Good News Network",
-      "title": "UK’s National Museums to Continue 25-Year Policy of Free Entry for Foreign Visitors",
-      "url": "https://www.goodnewsnetwork.org/uks-national-museums-to-continue-25-year-policy-of-free-entry-for-foreign-visitors/",
-      "snippet": "After months of discussions between UK ministries, the tourism sector, and London’s museums, the government has decided that the country’s national museums will remain free to international visitors. These 14 institutions include such renowned museums as the National Gallery, the British Museum, and the Natural History Museum among others, which together attract tens of millions […]",
-      "cover_url": "https://www.goodnewsnetwork.org/wp-content/uploads/2024/06/The-British-Museum-credit-Luke-Massey-the-Greater-London-National-Park-City-Initiative.jpg",
-      "reason": "Britain's commitment to keeping its national museums free for all visitors — regardless of where they're from — is a quiet but powerful statement that culture and history belong to everyone. After 25 years, this policy continues to put human connection above profit."
+      "title": "Fan ‘Storms Out’ as Team Loses on TV, Only to Become Hero for Woman Stuck in Mud Chest-high",
+      "url": "https://www.goodnewsnetwork.org/fan-storms-out-as-team-loses-and-finds-woman-stuck-in-mud/",
+      "snippet": "Just after Alastair Cass stormed out of his house because his football team lost he become a hero for a woman in dire need of a win—to save her life. The 40-year-old left home in “frustration” after his beloved Arsenal team was hammered by Brighton 3-0. When he got outside, he heard a woman’s cries […]",
+      "cover_url": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/10/mudhole-rescue-by-Alastair-Cass-via-SWNS.jpeg",
+      "reason": "A moment of frustration turned into an act of genuine courage, reminding us that everyday heroes often show up in the most unexpected circumstances. Sometimes the best thing a bad game can do is send someone outside at exactly the right moment."
     },
     {
       "source": "good_news",
       "source_name": "Upworthy",
-      "title": "Want your home to be ‘the house’ for your teens? Mom shares her 4 secret tricks.",
-      "url": "https://www.upworthy.com/moms-4-secrets-tricks-to-create-safe-spot-for-teens-ex1/",
-      "snippet": "There are so many benefits to being \"the house\" for your teens. Here's how to do it.",
-      "cover_url": "https://www.upworthy.com/wp-content/uploads/sites/2/2025/07/origin-238.png",
-      "reason": "A parent sharing hard-won wisdom on how to create a welcoming home for teenagers is a small but meaningful reminder that community can start right at your own front door. When young people have a safe place to gather, good things tend to follow."
+      "title": "Florida zoo captures adorable moment when a newborn baby sloth meets his dad",
+      "url": "https://www.upworthy.com/newborn-baby-sloth-at-florida-zoo-ex1/",
+      "snippet": "If you thought adults sloths were cute, wait 'til you see this baby.",
+      "cover_url": "https://www.upworthy.com/wp-content/uploads/sites/2/2025/04/origin-184.png",
+      "reason": "A baby sloth meeting his father for the first time is a tender reminder that new life and family bonds exist in all corners of the animal kingdom. Conservation efforts at zoos make moments like this possible, and that's worth celebrating."
     }
   ],
-  "discovery_articles": [
-    {
-      "source": "discovery",
-      "source_name": "Atlas Obscura",
-      "title": "Queer Arts Featured in San Francisco, California",
-      "url": "https://www.atlasobscura.com/places/queer-arts-featured",
-      "snippet": "The storefront where Harvey Milk sold film and strategized his historic run for San Francisco supervisor has found a fitting second act. Today it's home to Queer Arts Featured, better known as Queer AF: part gallery, part boutique, and part community gathering space for queer artists who are tired of waiting for someone else's invitation. Rather than freezing the space as a shrine, the founders keep it buzzing with rotating exhibitions, open mics, gender-affirming clothing swaps, and craft nights.",
-      "category": "history",
-      "cover_url": "https://img.atlasobscura.com/zOFKJVYe20ZOiACaTESwf2SWScDsn-Wj31Fn6TXyjFM/rt:fit/w:600/c:2451:1634:nowe:447:70/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy9mZTk4/YzVlZS1lYWE5LTQx/MDctYmViZS1jYmYw/YmY4MTU1YmU4Yjlh/NzQ4MDNjZWNiZGIy/YTRfSU1HXzY0NDQu/anBn.jpg",
-      "ferns_note": "Harvey Milk's old camera shop could have become a museum frozen in amber, but instead it kept his spirit — restless, practical, political — fully alive. There's something quietly radical about a space that honors a legacy by refusing to be precious about it."
-    },
-    {
-      "source": "discovery",
-      "source_name": "Atlas Obscura",
-      "title": "The Abandoned Monorail of Melaka in Melaka, Malaysia",
-      "url": "https://www.atlasobscura.com/places/the-abandoned-monorail-of-melaka",
-      "snippet": "Several monorail systems were built in Malaysia in the 2000s, and while quite a few no longer exist, the one in Kuala Lumpur still runs and is popular. In 2008 in Melaka, the decision was made to build a monorail system as part of a development called 'The Shore', which was a residential, shopping, and commercial complex on the banks of the Melaka river, which includes the city's tallest building. Construction began in 2008 and finished in 2010 at a cost of RM16.5 million (roughly £3m or $4.1m).",
-      "category": "history",
-      "cover_url": "https://img.atlasobscura.com/SNmOnGpQFiLrlMGcjQ4GzuvoyMBCd-zt9-rXmdc7zEw/rt:fit/w:600/c:1864:1243:nowe:19:293/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy8wOTk4/MjNhMi05ZWEyLTRl/MTktYjNjMi0zYjhm/NDhkZGViMTM0ZDUz/ODA2OWI0NDk2ODcx/M2RfNTMxOTk1Nzgz/XzEwMjMzOTU4MzEw/Njc0MjI5XzI2NDM0/MTIwNjk4MjE0Mzkz/NjRfbi5qcGc.jpg",
-      "ferns_note": "Built for RM16.5 million and retired almost immediately, Melaka's monorail stands as a monument to the particular hubris of optimistic development projections. It's the ghost of a commute that never happened, haunting the skyline of a city that simply moved on without it."
-    },
-    {
-      "source": "discovery",
-      "source_name": "Smithsonian",
-      "title": "Google Wants to Send Data Centers to Space—and Just Launched an Experimental Satellite to Test Whether Its Ambitious Plan Will Work",
-      "url": "https://www.smithsonianmag.com/smart-news/google-wants-to-send-data-centers-to-space-and-just-launched-a-satellite-to-test-whether-its-ambitious-plan-will-work-180989613/",
-      "snippet": "The tech giant aims to use the near-constant sunlight available in low-Earth orbit to power data centers. The experimental satellite, launched October 1, holds four computer chips that can run Google’s Gemini A.I. for 15 minutes at a time",
-      "category": "history",
-      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/vgy0ifDxHVZO5G7nCDDW6YNYnGQ=/fit-in/1600x0/filters:focal(300x200:301x201)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/1a/e7/1ae729d1-7a37-4650-b971-dfdb66c8f7a8/eo_pe_iss062e117852_sm.webp",
-      "ferns_note": "The quiet strangeness here is that four computer chips are currently orbiting Earth, running an AI for fifteen minutes at a stretch like a very expensive thought experiment. We've gone from server farms to server satellites, and somehow that happened between lunch and dinner."
-    },
-    {
-      "source": "discovery",
-      "source_name": "Smithsonian",
-      "title": "Scientists Discover Two New Species of Sea Spider in the Pacific Northwest—and They Look Like They Came Straight Out of a Horror Movie",
-      "url": "https://www.smithsonianmag.com/smart-news/scientists-discover-two-new-species-of-sea-spider-in-the-pacific-northwest-and-they-look-like-they-came-straight-out-of-a-horror-movie-180989598/",
-      "snippet": "You don't need to worry about the critters coming after you, since they're only a fraction of an inch across. They join the roughly 1,400 known species of ocean-dwelling spiders",
-      "category": "history",
-      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/Bem-bwa3DYJPqpGN8Ns0d7AQOaE=/fit-in/1600x0/filters:focal(714x442:715x443)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/5d/f0/5df01996-69ff-4ddb-b8c2-8a8f5ad91c9b/callipallene_pilosuspedes_credit-_cormac_toler-scott.jpg",
-      "ferns_note": "Sea spiders already number 1,400 known species, living their horror-movie lives largely unnoticed in the deep — and we're still finding new ones, fraction-of-an-inch at a time. The ocean's capacity for quietly keeping secrets continues to be genuinely unsettling."
-    },
-    {
-      "source": "discovery",
-      "source_name": "Smithsonian",
-      "title": "An Arson Investigation Is Underway After a Suspected ‘Senseless Act of Vandalism’ Destroys a Newly Installed Benjamin Harrison Statue",
-      "url": "https://www.smithsonianmag.com/smart-news/an-arson-investigation-is-underway-after-a-suspected-sensless-act-of-vandalism-destroys-a-newly-installed-benjamin-harrison-statue-180989605/",
-      "snippet": "The 3D-printed piece was created by students and faculty at Indiana University Indianapolis and had been installed on September 16",
-      "category": "history",
-      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/UAY9qlp9k-zo6gLNS-Lnkfn-q8o=/fit-in/1600x0/filters:focal(2054x787:2055x788)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/4b/ac/4bac34af-7823-43b6-9eff-f3ef6a0674d9/img_2967.jpeg",
-      "ferns_note": "Benjamin Harrison is arguably America's most overlooked president, so there's a grim irony in the fact that the moment someone finally made a statue for him, it was set on fire within weeks. Some obscurities, it seems, are fiercely defended."
-    },
-    {
-      "source": "discovery",
-      "source_name": "Smithsonian",
-      "title": "A New Exhibition Spotlights 4,500 Years of Broken, Shot-Up and Degraded Artworks to Explore the ‘Power of the Fragment’",
-      "url": "https://www.smithsonianmag.com/smart-news/a-new-exhibition-spotlights-4500-years-of-broken-shot-up-and-degraded-artworks-to-explore-the-power-of-the-fragment-180989602/",
-      "snippet": "The show, on view in Florence and coming to D.C. next year, examines the history and impact of destroyed sculptures throughout time and across cultures",
-      "category": "history",
-      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/pAvIYXDVJC2w843eGREnU6UQoEg=/fit-in/1600x0/filters:focal(4752x3168:4753x3169)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/9a/86/9a86f67c-8741-4374-8c74-7a17aee632c9/0003dsb09891_photoelabialkowskaoknostudio.jpeg",
-      "ferns_note": "A broken sculpture isn't a failure of preservation — it's often the most honest record of everything history has felt strongly enough to attack. This exhibition makes the radical argument that a chipped nose or a toppled torso tells us more than any intact masterpiece ever could."
-    }
-  ],
+  "discovery_articles": [],
   "featured_read": {
     "source": "reads",
-    "source_name": "Nautilus",
-    "title": "Your Immune System Ages in Two Big Bursts",
-    "url": "https://nautil.us/your-immune-system-ages-in-two-big-bursts-1285487/",
-    "snippet": "Your 40s and 60s are periods of intense remodeling",
-    "cover_url": "https://lede-admin.nautil.us/wp-content/uploads/sites/70/2026/10/shutterstock_1927921475.jpg",
-    "blurb": "It turns out your immune system doesn't age gradually — it lurches through two dramatic renovations, one in your forties and one in your sixties, which reframes a lot of what we think we know about midlife health. This piece makes those invisible upheavals feel suddenly, urgently legible."
+    "source_name": "Literary Hub",
+    "title": "Lit Hub Weekly: September 28 – October 3, 2026",
+    "url": "https://lithub.com/lit-hub-weekly-september-28-october-3-2026/",
+    "snippet": "“Chalk it up to stubbornness. McGuane is as committed to his vision as his characters are to theirs.” Why Thomas McGuane is writing the most vital literature of the Trump Era.​| Lit Hub Politics Jason Bell recounts the secret three-man",
+    "cover_url": "https://s26162.pcdn.co/wp-content/uploads/2026/10/ThomasWolfe.jpg",
+    "blurb": "Thomas McGuane has spent decades writing characters too ornery to compromise, and this essay argues that stubbornness, right now, is exactly the literary virtue America needs. A case for why one aging novelist's refusal to soften might be the most honest response to the present moment."
   },
   "reading_room": [
     {
       "source": "reads",
-      "source_name": "Psyche",
-      "title": "Journaling to remember",
-      "url": "https://psyche.co/notes-to-self/remembering-the-ephemera-of-my-life-gives-it-meaning",
-      "snippet": "By cataloguing the ephemera that slip between the headlines of my days, future me has a ready reckoner of my life - by Anandi Mishra Read on Psyche",
-      "cover_url": "https://images.aeonmedia.co/images/3fc1daf0-40b1-4a5f-a839-bd73f54de722/sz-marcos-paulo-prado-tcyw6im5uug-unsplash.jpg?top=133&left=0&cropWidth=2544&cropHeight=1431&width=1200&quality=75&format=jpeg",
-      "blurb": "Anandi Mishra makes a quiet case for recording not the big moments but the small atmospheric ones — the receipts, the offhand remarks, the particular light — as the truest archive of a life. It's a gentle argument for paying better attention to your own days before they dissolve."
-    },
-    {
-      "source": "reads",
-      "source_name": "The Paris Review",
-      "title": "On Children’s Books: Faith Ringgold’s The Invisible Princess",
-      "url": "https://www.theparisreview.org/blog/2026/10/02/the-invisible-princess-faith-ringgold/",
-      "snippet": "Asha Futterman, whose poem “Study of Children” appears in our new Fall issue, on the unsettling harmony of Faith Ringgold’s 1998 fairy tale.",
-      "cover_url": "https://www.theparisreview.org/blog/wp-content/uploads/2026/09/image-0268-scaled-e1790865214432.jpeg",
-      "blurb": "Faith Ringgold's 1998 fairy tale holds a harmony that Asha Futterman calls unsettling, and this essay earns that word by sitting with what children's books can carry that adult literature rarely dares. A small book, it turns out, can hold enormous weight."
-    },
-    {
-      "source": "reads",
-      "source_name": "Longreads",
-      "title": "Behind His Great Novels, an Unbearable Family Secret",
-      "url": "https://longreads.com/2026/10/02/sebastian-barry-writer-family-abuse-ireland/",
-      "snippet": "\"The Irish author Sebastian Barry has made a career of mining his family history. But he kept one story buried.\"",
+      "source_name": "The Atlantic",
+      "title": "The Mainstreaming of Anti-Indian Bigotry",
+      "url": "https://www.theatlantic.com/ideas/2026/10/french-rufo-meritocracy-race/688870/?utm_source=feed",
+      "snippet": "A Republican schism over a social-media post by a Texas politician revealed that the party’s defense of a color-blind meritocracy has its limits.",
       "cover_url": "",
-      "blurb": "Sebastian Barry has spent decades excavating his family's hidden histories in fiction, but one story he couldn't bring himself to touch — until now. This Longreads piece follows the unbearable thing he kept buried and what it cost him to finally surface it."
-    },
-    {
-      "source": "reads",
-      "source_name": "Literary Hub",
-      "title": "Audible has a creepy new feature that lets you talk to characters in books.",
-      "url": "https://lithub.com/audible-has-a-creepy-new-feature-that-lets-you-talk-to-characters-in-books/",
-      "snippet": "Ever wanted to crack the creme bruleé of Mr. Darcy’s stoicism? Or give Humbert Humbert a piece of your mind? If so, you’re in luck.",
-      "cover_url": "https://s26162.pcdn.co/wp-content/uploads/2026/10/Untitled-design-57.png",
-      "blurb": "Audible's new feature lets you hold actual conversations with literary characters, which sounds whimsical until you sit with what it means to make Humbert Humbert interactive and monetizable. This piece asks the quietly troubling question of what we lose when fiction learns to talk back."
+      "blurb": "A single social-media post by a Texas politician cracked open a fault line in the Republican Party's cherished 'color-blind meritocracy' argument—and what spilled out was uglier than the usual talking points. This piece traces exactly where that myth breaks down, and for whom."
     },
     {
       "source": "reads",
       "source_name": "The Atlantic",
-      "title": "Why Americans Stopped Throwing Dinner Parties",
-      "url": "https://www.theatlantic.com/ideas/2026/10/americans-socialization-dinner-decline-hosting/688846/?utm_source=feed",
-      "snippet": "The share of adults who say they regularly have friends over has declined dramatically since 1975.",
+      "title": "What Vienna Lost When It Lost Its Jews",
+      "url": "https://www.theatlantic.com/books/2026/10/city-without-jews-douglas-smith-book-review-vienna/688855/?utm_source=feed",
+      "snippet": "Douglas Smith’s The City Without Jews revisits the decimation of a robust community—and the city that betrayed it.",
       "cover_url": "",
-      "blurb": "The American dinner party didn't just fall out of fashion — it collapsed, and this Atlantic essay traces the social, architectural, and psychological reasons we stopped inviting people over for an evening and never quite started again. It reads less like a trend piece and more like a quiet eulogy for a particular kind of intimacy."
+      "blurb": "Vienna was remade into one of modernity's great cultural capitals partly by its Jewish community—and then it watched, and often helped, as that community was erased. Douglas Smith's history asks the quietly devastating question of what a city owes the people it betrayed."
+    },
+    {
+      "source": "reads",
+      "source_name": "Nautilus",
+      "title": "How Sugar from Outer Space Became One of the Backbones of Life on Earth",
+      "url": "https://nautil.us/how-sugar-from-outer-space-became-one-of-the-backbones-of-life-on-earth-1285504/",
+      "snippet": "Is there life elsewhere, or is Earth unique in the universe? This is one of humanity’s great unanswered questions. One way to approach this mystery is to investigate how life began here on Earth.",
+      "cover_url": "https://lede-admin.nautil.us/wp-content/uploads/sites/70/2026/10/AdobeStock_667666331.jpeg",
+      "blurb": "Ribose, a sugar essential to RNA, has been found in meteorites—meaning the raw ingredients of life may have rained down on early Earth from space, which reframes the question of life's origins from 'how did it start here?' to 'how far does it travel?' A genuinely mind-rearranging piece of science writing."
+    },
+    {
+      "source": "reads",
+      "source_name": "Longreads",
+      "title": "What It Feels Like at Cornell Right Now",
+      "url": "https://longreads.com/2026/10/02/cornell-rape-culture-lawsuit/",
+      "snippet": "\"I began to do what I do — reading and writing and thinking about misogyny—because of my dismay at how girls and women are treated on campus, and at other college campuses across America.\"",
+      "cover_url": "",
+      "blurb": "A scholar of misogyny turned her attention to her own campus and found the patterns she'd spent a career studying playing out in real time among her students. This is an essay about what it costs to keep looking clearly at something that never seems to change."
+    },
+    {
+      "source": "reads",
+      "source_name": "Literary Hub",
+      "title": "Here’s what’s making us happy  this  week.",
+      "url": "https://lithub.com/heres-whats-making-us-happy-this-week-oct226/",
+      "snippet": "This week, your friendly neighborhood Lit Hub staff is feasting on a narrative diet—but not in the stacks you’d expect. October brings fresh appreciation for the time-bound object. I’m talking about the kind of art you can imbibe on your",
+      "cover_url": "https://s26162.pcdn.co/wp-content/uploads/2026/10/Untitled-design-56.png",
+      "blurb": "The Lit Hub staff makes a gentle argument for the time-bound art object—the thing you have to show up for before it's gone—as a quiet antidote to the everything-forever nature of modern consumption. Consider it an invitation to pay attention differently this October."
     }
   ],
   "garden_note": {
-    "note": "First light nudges over the Zürichberg just before seven, catching the last of the dahlias in that amber-edged way only October knows how to manage — drink it in before the mist decides otherwise. The garden is easing into its quieter self now, and there's a particular satisfaction in working alongside it rather than against it.",
+    "note": "Mid-October settles over Zürich with the quiet authority of a well-read librarian — the linden and beech are turning amber along the Limmat, and the evening air carries that particular sharpness that makes you want to linger just a little longer before heading indoors.",
     "in_season": [
-      "Dahlias — cut the last blooms before the first hard frost claims them",
-      "Quince — harvest when fully golden and fragrant on the branch",
-      "Plant tulip and allium bulbs while the soil still holds warmth",
-      "Rake and compost fallen leaves before they mat the lawn"
+      "Quince — harvest before the first hard frost",
+      "Leeks and chard — still giving generously in the kitchen beds",
+      "Winter pansies — plant out now for colour through the cold months",
+      "Raking and composting fallen leaves"
     ],
-    "sky_tonight": "The last-quarter moon rises around midnight in Cancer — look east in the small hours for its cool, half-lit face.",
-    "sun_times": "First light arrives at 06:57 this morning, with the sun rising at 07:26 and setting at 19:03.",
+    "sky_tonight": "The last quarter moon rises around midnight, so the early evening is delightfully dark — look south for the Great Square of Pegasus riding high above the rooftops.",
+    "sun_times": "Dusk settles softly at 19:32 tonight, with the sun having slipped away at 19:03.",
     "moon_label": "Last quarter",
-    "illum_pct": 57,
+    "illum_pct": 53,
     "sun_range": "07:26–19:03"
   },
   "puzzle": {
-    "kind": "riddle",
-    "label": "Fern's Morning Riddle",
-    "prompt": "What do witches ask for when they stop at a hotel?",
-    "answer": "Broom Service or A broom with a view",
-    "hint": "",
-    "source": "riddles.com",
-    "source_id": "Riddle-1956"
+    "kind": "trivia",
+    "label": "The Evening Trivia",
+    "prompt": "In which country's version of Half-Life are the HECU Marines replaced with robots?\n\nChina   ·   France   ·   Germany   ·   Japan",
+    "answer": "Germany",
+    "hint": "Category: Entertainment: Video Games",
+    "source": "opentdb.com",
+    "source_id": "009a9ecce048"
   },
   "previous_puzzle": {
-    "label": "Fern's Morning Anagram",
-    "prompt": "Unscramble TOLMEB — in the forest this month, leaves wear it like a last confession before they fall.",
-    "answer": "MOTTLE"
+    "label": "Fern's Morning Riddle",
+    "prompt": "What do witches ask for when they stop at a hotel?",
+    "answer": "Broom Service or A broom with a view"
   },
   "larder": {
-    "news": [
-      {
-        "source": "food",
-        "source_name": "The Kitchn",
-        "title": "45 Best Thanksgiving Side Dishes That Travel Exceptionally Well",
-        "url": "https://www.thekitchn.com/thanksgiving-sides-travel-23847708?utm_source=RSS&utm_medium=feed&utm_campaign=Category%2FChannel%3A+main",
-        "snippet": "If your Thanksgiving involves hopping on the train or settling in for an hour-long car ride, fret not — there are plenty of cold side dishes that can stand up to the journey. If you need to bring a cold side that can be prepared in advance and ready to hit the table as is, we have plenty of options that travel well. From crunchy slaws and nutty grains to hearty roasted salads (including Jennifer Garner’s exclusive recipe!",
-        "cover_url": "",
-        "blurb": "A thoughtful guide for the holiday cook who also happens to be a passenger — because nobody should have to choose between a beautiful side dish and a comfortable commute."
-      },
-      {
-        "source": "food",
-        "source_name": "Eater",
-        "title": "The Best Food Advent Calendars of 2026 (Yes, They’re Already Here)",
-        "url": "https://www.eater.com/23943616/best-advent-calendars-to-buy-now-2026-chocolate-tea-jam",
-        "snippet": "During the holiday season, most of us are so focused on buying gifts for other people that we don’t spend enough time treating ourselves. An advent calendar is an especially festive way to surprise yourself with something nice each of the anticipatory days leading up to Christmas, and it’s even better when you get to […]",
-        "cover_url": "https://platform.eater.com/wp-content/uploads/sites/2/2025/10/Advent-Calendar-2026-.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
-        "blurb": "Advent calendars filled with actual food rather than waxy chocolate are proof that the season's best gift is, and always has been, the one you quietly keep for yourself."
-      },
-      {
-        "source": "food",
-        "source_name": "The Guardian",
-        "title": "Henry Harris’s recipe for vegetarian endive au gratin",
-        "url": "https://www.theguardian.com/food/2026/oct/03/vegetarian-endive-au-gratin-recipe-henry-harris",
-        "snippet": "A worthy, meat-free version of the best comfort dish ever, this French classic is best served with a chilled red and a crisp salad This is the best comfort dish on planet Earth. Cauliflower cheese held that title when I was a child, but I still remember the first time I ate this gratin, made by Simon Hopkinson at his restaurant Hilaire in London, and wanting to take it away and eat it in a quiet corner. Endive when braised well retains a gentle bitterness that contrasts beautifully with a cheese-heavy bechamel.",
-        "cover_url": "https://i.guim.co.uk/img/media/32512d26dc227ffec4b563c4a274ad52887bb877/24_89_4980_3985/master/4980.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=2fc7f4d6f75f2945cb8851e0c0f0b8a1",
-        "blurb": "A French classic gone gloriously meat-free — Henry Harris's endive au gratin makes a compelling case that the best comfort dish on earth might just be wearing a new hat."
-      }
-    ],
-    "recipe": {
-      "source": "recipe",
-      "source_name": "Alexandra's Kitchen",
-      "title": "Thin & Crispy (3-Minute) Chicken Cutlets",
-      "url": "https://alexandracooks.com/2026/03/06/thin-crispy-3-minute-chicken-cutlets/",
-      "snippet": "Thin & Crispy (3-Minute) Chicken Cutlets If you hate the typical three-step breading station required to make chicken cutlets, this recipe is for you. If you hate pounding chicken breasts, this recipe is also for you. Read on to learn the secret to making thin, crispy, and completely delicious chicken cutlets — the easy way!",
-      "is_recipe": true,
-      "cover_url": "https://alexandracooks.com/wp-content/uploads/2026/03/chickencutletsonplate_1200_alexandraskitchen.jpg",
-      "blurb": "Golden, shatteringly crisp, and on the table in three minutes flat, these chicken cutlets are the weeknight hero that asks almost nothing of you and delivers everything in return."
-    },
-    "seasonal_note": "Zürich's Saturday markets at Bürkliplatz are brimming with Berner Rose and Gravenstein apples right now — pick up a bagful and let them slowly collapse into a Apfelmus on the back of the stove, filling your kitchen with that particular cinnamon-and-clove warmth that only mid-October can justify."
+    "news": [],
+    "recipe": {}
   },
   "fern_data": {
-    "greeting": "Wednesday has that particular quality of not quite being anything yet. Today's edition leans into the unresolved: Shane Parish sold an album to pay for dental work, David Sylvian named his new record after the gap between a killer and a killing, and your immune system, it turns out, ages in sudden lurches rather than quietly.",
-    "top_pick_title": "Fractures & Frequencies"
+    "greeting": "Something about tonight feels like an exhale. Dave Grohl walked onstage with AC/DC in New Jersey and apparently no one was ready for it — and Miranda Lambert has been quietly rewriting who she is for years, which turns out to be the more radical act.",
+    "top_pick_title": "The Exhale at the End of It"
   }
 }
