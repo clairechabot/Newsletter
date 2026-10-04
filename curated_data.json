@@ -1,62 +1,150 @@
 {
-  "fetched_at": "2026-10-04T11:56:54.254886+02:00",
-  "is_am_email": true,
+  "fetched_at": "2026-10-04T20:13:39.116617+02:00",
+  "is_am_email": false,
   "audit_summary": {
     "youtube_videos": 0,
     "themes": 0,
-    "music_articles": 4,
+    "music_articles": 12,
     "good_news_articles": 2,
     "discovery_articles": 0,
     "featured_read": 1,
     "reading_room": 5,
     "garden": 1,
-    "puzzle": 0,
-    "larder": 4
+    "puzzle": 1,
+    "larder": 0
   },
   "themes": [],
   "morning_soundtrack": [
     {
       "source": "music",
       "source_name": "NPR Music",
-      "title": "Medium Build's Nick Carpenter on growing up and finding his way back to fun",
-      "snippet": "Nick Carpenter, who makes music as Medium Build, talks about his new album \"King of Having Fun\" and finding moments that make him feel like a kid again.",
-      "url": "https://www.npr.org/2026/10/03/nx-s1-5986021/medium-builds-nick-carpenter-on-growing-up-and-finding-his-way-back-to-fun",
+      "title": "Discursive Verses: when pulling rank goes wrong",
+      "snippet": "NPR Music culture critic and reporter Rodney Carmichael ruminates on the latest in rap culture. This week: a hip-hop divorce, an OutKast lawsuit and the state of rap music on the charts.",
+      "url": "https://www.npr.org/2026/10/02/nx-s1-5987979/the-week-in-hip-hop-remy-ma-outkast-billboard",
       "genre": "",
-      "vibe_check": "Like rediscovering a childhood playlist on a long drive home — nostalgic, a little messy, and unexpectedly freeing.",
-      "cover_url": "https://media.npr.org/include/images/facebook-default-wide-s1400-c85.jpg",
+      "vibe_check": "The kind of barbershop debate that gets loud after midnight, where everyone has receipts and nobody's backing down.",
+      "cover_url": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/4000x2250+0+261/resize/1400/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Fc6%2F15%2Fdc85961c4d1fb08c10d60817946a%2Fgettyimages-1251827914.jpg",
+      "embed_url": "https://www.youtube.com/embed/xluDXfpjqQM"
+    },
+    {
+      "source": "music",
+      "source_name": "NPR Music",
+      "title": "Panteón Rococó: Tiny Desk Concert",
+      "snippet": "For over three decades, Panteón Rococó has been at the forefront of Mexican ska. The band's skankin' grooves slide easily between cumbia and Afro-Caribbean rhythms.",
+      "url": "https://www.npr.org/2026/10/01/g-s1-132180/panteon-rococo-tiny-desk-concert",
+      "genre": "",
+      "vibe_check": "The feeling of a block party spilling into the street, where your feet start moving before your brain catches up.",
+      "cover_url": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/2000x1125+0+0/resize/1400/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F14%2F58%2F2019dd944f4898eba223aeaa1d54%2Fpanteon-rococo.jpg",
+      "embed_url": null
+    },
+    {
+      "source": "music",
+      "source_name": "NPR Music",
+      "title": "How Kenny Mason learned to follow his inner visions",
+      "snippet": "Even among ATLiens, Kenny Mason is an outlier. As he faced a creative crisis — and commercial pressures — the rap-rock iconoclast realized that he feels most comfortable on the fringes.",
+      "url": "https://www.npr.org/2026/09/29/nx-s1-5984647/kenny-mason-bulldawg-interview",
+      "genre": "",
+      "vibe_check": "Late-night studio isolation that slowly transforms into something rawer and more honest than anything commercial pressure could have produced.",
+      "cover_url": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/2000x1125+0+220/resize/1400/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F08%2F6e%2F45630a834bbaa80a86fcbe9d2186%2Fdsc01674.jpg",
+      "embed_url": "https://www.youtube.com/embed/5ndu85mDDpo"
+    },
+    {
+      "source": "music",
+      "source_name": "Stereogum",
+      "title": "Turnstile Make SNL Debut, Taylor Swift Cameos",
+      "snippet": "Saturday Night Live went hardcore. Last night's episode was hosted by Dakota Johnson with musical guest Turnstile. As pointed out in the episode promos, Turnstile are the first hardcore band to play Saturday Night Live since the infamous Fear performance 45 years ago this month.",
+      "url": "https://stereogum.com/2513538/turnstile-make-snl-debut-taylor-swift-cameos/news/",
+      "genre": "",
+      "vibe_check": "The electric charge of watching something genuinely dangerous crash through a velvet-rope institution and refuse to apologize.",
+      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/10/turnstile-taylor-swift.png?w=564",
+      "embed_url": "https://www.youtube.com/embed/-YRIY3qrW94"
+    },
+    {
+      "source": "music",
+      "source_name": "Stereogum",
+      "title": "Mike Patton Performs With Mariachi Gama 1000 For Mondo Cane’s Mexico Debut",
+      "snippet": "Mike Patton brought Mondo Cane — his project covering Italian pop songs from the ’50s and ’60s — to Mexico for the first time Thursday (Oct. 1) as part of Festival Internacional Cervantino’s Circuito CDMX-INBAL.",
+      "url": "https://stereogum.com/2513514/mike-patton-performs-with-mariachi-gama-1000-for-mondo-canes-mexico-debut/news/",
+      "genre": "",
+      "vibe_check": "Cinematic and surreal, like stumbling into a moonlit piazza where the past and the bizarre are slow-dancing together.",
+      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/10/Screenshot-2026-10-03-at-11.29.36-AM.png?w=564",
+      "embed_url": "https://www.youtube.com/embed/x3p-0I6Ohu0"
+    },
+    {
+      "source": "music",
+      "source_name": "Stereogum",
+      "title": "Troye Sivan Joins Charli XCX To Perform Two Of His New Songs At ACL",
+      "snippet": "Charli XCX headlined the first night of Austin City Limits on Friday (Oct. 2), and as usual, she brought a surprise. After co-headlining The Sweat Tour with Troye Sivan last year, the British pop star brought out the Australian singer, who releases his new album She's The Best next week.",
+      "url": "https://stereogum.com/2513510/troye-sivan-joins-charli-xcx-to-perform-two-of-his-new-songs-at-acl/news/",
+      "genre": "",
+      "vibe_check": "Festival-crowd euphoria distilled into a single moment, the kind of surprise that makes strangers grab each other by the shoulders.",
+      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/10/GettyImages-2297469461.jpg?w=564",
+      "embed_url": null
+    },
+    {
+      "source": "music",
+      "source_name": "No Depression",
+      "title": "A Postcard From The Heists",
+      "snippet": "",
+      "url": "https://nodepression.org/a-postcard-from-the-heists/",
+      "genre": "",
+      "vibe_check": "A sun-bleached memory written on the back of something you found in a jacket pocket from three summers ago.",
+      "cover_url": "https://storage.ghost.io/c/18/d0/18d08e58-3b1b-4720-ae25-a31b44e69d4b/content/images/2026/09/A-Postcard-From-The-Heists.jpg",
+      "embed_url": null
+    },
+    {
+      "source": "music",
+      "source_name": "Pitchfork",
+      "title": "Turnstile and Taylor Swift Shared the SNL Stage Last Night",
+      "snippet": "The Baltimore hardcore band were last night’s musical guest, and Swift made a surprise appearance during host Dakota Johnson’s monologue",
+      "url": "https://pitchfork.com/story/turnstile-and-taylor-swift-both-dropped-by-snl-last-night/",
+      "genre": "",
+      "vibe_check": "The delicious cultural whiplash of two universes colliding on live television in front of a bewildered nation.",
+      "cover_url": "https://media.pitchfork.com/photos/6ac27ccad1a25331377860e8/master/pass/MixCollage-04-Oct-2026-12-18-PM-8856.jpg",
+      "embed_url": null
+    },
+    {
+      "source": "music",
+      "source_name": "Pitchfork",
+      "title": "Fontaines D.C. Plot 2027 North American Tour",
+      "snippet": "The Irish band is headed to arenas across the pond with Iceage and Westside Cowboy",
+      "url": "https://pitchfork.com/story/fontaines-dc-plot-2027-north-american-tour/",
+      "genre": "",
+      "vibe_check": "The slow-building anticipation of a long road trip toward something brooding and unmissable on the horizon.",
+      "cover_url": "https://media.pitchfork.com/photos/6abfebdcaa7b55cc47e790eb/master/pass/fontaines-dc-north-american-tour-2027.jpg",
+      "embed_url": null
+    },
+    {
+      "source": "music",
+      "source_name": "Pitchfork",
+      "title": "Watch Metallica Spawn a Monster for Their Sphere Residency Opener",
+      "snippet": "An array of ostentatious 3D graphics, including a giant Cthulhu, accompanied the band’s debut at the Las Vegas venue",
+      "url": "https://pitchfork.com/story/watch-metallica-spawn-a-monster-for-their-sphere-residency-opener/",
+      "genre": "",
+      "vibe_check": "Sensory overload as spectacle — the feeling of standing too close to something enormous and luminous and slightly terrifying.",
+      "cover_url": "https://media.pitchfork.com/photos/6abfc0d4fc08fb249685229c/master/pass/metallica-sphere-opener-footage.jpeg",
+      "embed_url": null
+    },
+    {
+      "source": "music",
+      "source_name": "Aquarium Drunkard",
+      "title": "The Sagegazers :: A Mixtape",
+      "snippet": "The Sagegazers is an ongoing project devoted to the strange and beautiful world of privately released ambient, electronic, and New Age cassette music of the 1980s and ’90s. Working from a collection of rare and often nearly undocumented recordings, the project uncovers a forgotten culture of synthesizers, home studios, spirituality, landscape, and imagination. This mix offers a journey through that world, bringing together 15 recordings that reveal the remarkable breadth, intimacy, and imagination of this largely unmapped musical culture.",
+      "url": "https://aquariumdrunkard.com/2026/10/02/the-sagegazers-a-mixtape/",
+      "genre": "",
+      "vibe_check": "The hushed wonder of finding a handwritten cassette label in a thrift store bin that opens into an entire forgotten interior world.",
+      "cover_url": "https://aquariumdrunkard.com/_newness/wp-content/uploads/2026/10/Sagegazers-Logo.jpg",
       "embed_url": null
     },
     {
       "source": "music",
       "source_name": "Consequence",
-      "title": "Bruce Springsteen Leads All-Star Jam Session to Close Power to the People Fest",
-      "snippet": "Dave Grohl, Dave Matthews, Joan Baez, and the rest of the day's performers took the stage over the course of the eight-song set. Bruce Springsteen Leads All-Star Jam Session to Close Power to the People Fest Alex Young",
-      "url": "https://consequence.net/2026/10/bruce-springsteen-leads-all-star-jam-session-to-close-power-to-the-people-fest/",
+      "title": "Metallica Bring Completely Different Show to Night Two at Sphere: Photos, Video + Setlist",
+      "snippet": "The 16-song setlist featured no repeats from night one. Metallica Bring Completely Different Show to Night Two at Sphere: Photos, Video + Setlist Spencer Kaufman",
+      "url": "https://consequence.net/2026/10/metallica-night-two-sphere-photos-video-setlist/",
       "genre": "",
-      "vibe_check": "The electric, communal warmth of a campfire singalong scaled up to stadium-sized righteousness.",
-      "cover_url": "https://consequence.net/wp-content/uploads/2026/10/Power-to-the-People.jpeg?quality=80",
-      "embed_url": null
-    },
-    {
-      "source": "music",
-      "source_name": "Consequence",
-      "title": "Dave Grohl Dedicates “My Hero” to “New Friend Jack” at Power to the People",
-      "snippet": "Dave Grohl also paid tribute to his late mother during Foo Fighters' set. Dave Grohl Dedicates “My Hero” to “New Friend Jack” at Power to the People Alex Young",
-      "url": "https://consequence.net/2026/10/dave-grohl-jack-smith-my-hero/",
-      "genre": "",
-      "vibe_check": "A lump-in-your-throat moment wrapped in distorted guitars — grief and gratitude sharing the same three chords.",
-      "cover_url": "https://consequence.net/wp-content/uploads/2026/10/Dave-Grohl.jpeg?quality=80",
-      "embed_url": "https://www.youtube.com/embed/rchC5D3ynMg"
-    },
-    {
-      "source": "music",
-      "source_name": "Consequence",
-      "title": "Jack Black, DMC, Tom Morello, Cypress Hill, Scott Ian, and Chuck D Perform “Walk This Way” at Power to the People Fest",
-      "snippet": "The all-star performance took place at Morello's Power to the People fest on Saturday. Jack Black, DMC, Tom Morello, Cypress Hill, Scott Ian, and Chuck D Perform “Walk This Way” at Power to the People Fest Spencer Kaufman",
-      "url": "https://consequence.net/2026/10/jack-black-dmc-tom-morello-more-walk-this-way-power-to-the-people/",
-      "genre": "",
-      "vibe_check": "Pure, unhinged chaos energy — the kind of sweaty, grinning spectacle that makes you forget adults are supposed to have dignity.",
-      "cover_url": "https://consequence.net/wp-content/uploads/2026/10/DMC-and-Jack-Black.jpg?quality=80",
+      "vibe_check": "The relentless forward momentum of a band with nothing to prove and everything to detonate, night after unyielding night.",
+      "cover_url": "https://consequence.net/wp-content/uploads/2026/10/Metallica-Night-2-Sphere-featured.jpg?quality=80",
       "embed_url": null
     }
   ],
@@ -64,143 +152,113 @@
     {
       "source": "good_news",
       "source_name": "Good News Network",
-      "title": "Good News in History, October 4",
-      "url": "https://www.goodnewsnetwork.org/events061004/",
-      "snippet": "22 years ago today, SpaceShipOne, funded by Microsoft’s Paul Allen, became the first private manned spacecraft to fly into sub-orbital space. That same year, its innovative design won the $10 million Ansari X Prize. Piloted and returned to Earth by Mike Melvill, he became the first-ever licensed US commercial astronaut.",
-      "cover_url": "https://www.goodnewsnetwork.org/wp-content/uploads/2018/10/SpaceShipOne-after-first-private-space-launch-2004-cc-D-Ramey-Logan.jpg",
-      "reason": "History is full of quietly remarkable moments worth remembering, and pausing to reflect on the good that has come before reminds us that progress is real and cumulative. Each October 4th milestone is a thread in a longer story of human resilience and kindness."
+      "title": "Rare 1-in-100M ‘Ghost Lobster’ Goes to School to Help Scientists Crack Genetic Mystery–in Time for Halloween",
+      "url": "https://www.goodnewsnetwork.org/100m-ghost-lobster-goes-to-college/",
+      "snippet": "A ‘ghost’ lobster so rare that the odds of finding one are 1 in 100 million is going to school, and its new home is Maine’s Marine Science Center—arriving just in time for Halloween. The rare white crustacean was welcomed to the University of New England after being donated by the Maine State Aquarium in […]",
+      "cover_url": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/10/Casper-the-white-lobster-at-University-of-New-England-Arthur-P-Girard-Marine-Science-Center-released.jpg",
+      "reason": "A hauntingly rare ghost lobster — its pale coloration thought to occur in roughly one in a hundred million — is giving scientists a precious opportunity to study the genetics behind colour variation in marine life. Every time an extraordinary creature like this is studied rather than lost, we learn a little more about the quiet wonders hiding in our oceans."
     },
     {
       "source": "good_news",
       "source_name": "Upworthy",
-      "title": "The 13 signs that someone is ‘dangerously good’ at reading people",
-      "url": "https://www.upworthy.com/the-13-signs-that-someone-can-read-people-well-ex1/",
-      "snippet": "\"You feel comfortable talking to them, and you find yourself sharing things with them that you don’t typically share.\"",
-      "cover_url": "https://www.upworthy.com/wp-content/uploads/sites/2/2025/10/origin_8a421e.png",
-      "reason": "Deep empathy and the ability to truly understand others are skills that strengthen relationships and build kinder communities. Recognising and nurturing these traits in ourselves and those around us is a small but meaningful step toward a more connected world."
+      "title": "Dad shares the unique 7-point checklist his kids must finish before they get screen time",
+      "url": "https://www.upworthy.com/dads-screen-time-for-kids-7-point-check-list-ex1/",
+      "snippet": "For this dad, screen time is earned.",
+      "cover_url": "https://www.upworthy.com/wp-content/uploads/sites/2/2026/03/Chores.png",
+      "reason": "One father's thoughtful checklist is a small but real reminder that plenty of parents are putting genuine care into raising curious, balanced kids in a screen-saturated world. It's the kind of everyday intention that rarely makes headlines but shapes families for the better."
     }
   ],
   "discovery_articles": [],
   "featured_read": {
     "source": "reads",
-    "source_name": "Nautilus",
-    "title": "Do Calorie‑Restricted Diets Work?",
-    "url": "https://nautil.us/do-calorie%e2%80%91restricted-diets-work-1285497/",
-    "snippet": "Or will I just re‑gain the weight?",
-    "cover_url": "https://lede-admin.nautil.us/wp-content/uploads/sites/70/2026/10/AdobeStock_272820709.jpeg",
-    "blurb": "Science keeps promising that eating less will reset your body for good — this piece quietly interrogates why that promise keeps slipping through our fingers. A rigorous, honest look at what calorie restriction actually does (and doesn't do) once the study ends."
+    "source_name": "Longreads",
+    "title": "I Lost Myself When I Lost Hong Kong",
+    "url": "https://longreads.com/2026/10/01/expat-nostalgia-love-loss/",
+    "snippet": "\"If returning to America was like getting on a lifeboat, why did I feel like I was drowning?\"",
+    "cover_url": "",
+    "blurb": "A writer who fled Hong Kong for the safety of America discovers that displacement doesn't end at the border — it follows you into the life you thought you were escaping toward. This is a quiet, searching essay about what it means to lose a home that was itself already disappearing."
   },
   "reading_room": [
     {
       "source": "reads",
-      "source_name": "Longreads",
-      "title": "The Top 5 Longreads of the Week",
-      "url": "https://longreads.com/2026/10/02/top-5-627/",
-      "snippet": "Recommending notable stories from Caitlin Dickerson, Marci Wilding, Tiffany Huang, Nick Paumgarten, and Chabeli Carrazana.",
-      "cover_url": "https://i0.wp.com/longreads.com/wp-content/uploads/2026/10/GettyImages-936384492-scaled.jpg?fit=2560%2C1709&ssl=1",
-      "blurb": "Five writers doing their best work this week, gathered in one place — the kind of list worth bookmarking before the weekend arrives and you suddenly have an hour to yourself."
-    },
-    {
-      "source": "reads",
       "source_name": "Literary Hub",
-      "title": "10 Great Nonfiction Titles to Enjoy in October",
-      "url": "https://lithub.com/10-great-nonfiction-titles-to-enjoy-in-october/",
-      "snippet": "Next month offers an incredible selection of nonfiction, including work by David Treuer, Wendy S. Walters, Thomas Frank, and more. Shop the List on Bookshop.org * Savage Mind, David Treuer David Treuer is a true triple threat as a writer:",
-      "cover_url": "https://s26162.pcdn.co/wp-content/uploads/2026/10/nonfiction-october.jpg",
-      "blurb": "October's nonfiction slate, anchored by David Treuer's singular voice, makes a case that autumn is genuinely the best season to sit down with a book that wants to change your mind about something."
+      "title": "Lit Hub Daily: October 2, 2026",
+      "url": "https://lithub.com/lit-hub-daily-october-2-2026/",
+      "snippet": "Assal Rad examines the parallels between the American media’s treatment of the invasion of Iraq and the genocide in Gaza. | Lit Hub Politics These five books are essential reading on women in the early Civil Rights Movement. | Lit",
+      "cover_url": "https://s26162.pcdn.co/wp-content/uploads/2026/10/WallaceStevens.jpg",
+      "blurb": "Assal Rad traces the specific rhetorical machinery American media reaches for again and again — from Baghdad to Gaza — asking what it means when the same language of omission returns on schedule. Sharp, necessary, and not comfortable to sit with."
     },
     {
       "source": "reads",
       "source_name": "The Atlantic",
-      "title": "Eric Schmitt’s Very Bad Day at Work",
-      "url": "https://www.theatlantic.com/ideas/2026/09/maga-senate-hearing-eric-schmitt/688839/?utm_source=feed",
-      "snippet": "For MAGA politicians, there’s no such thing as a gaffe.",
+      "title": "Only Trump Gets to Criticize the Supreme Court",
+      "url": "https://www.theatlantic.com/ideas/2026/09/trump-supreme-court-justices/688830/?utm_source=feed",
+      "snippet": "“These are not the people I interviewed to serve.”",
       "cover_url": "",
-      "blurb": "A close read of one senator's stumble reveals something unsettling about the new rules of political accountability — or the quiet disappearance of them."
+      "blurb": "When only one man in American public life is permitted to criticize the Supreme Court without consequence, something has shifted in the architecture of power — this piece names exactly what that something is. A precise, unsettling diagnosis of deference dressed up as principle."
     },
     {
       "source": "reads",
       "source_name": "The Atlantic",
-      "title": "The Best Seller That’s Nearly Impossible to Finish Reading",
-      "url": "https://www.theatlantic.com/books/2026/10/mrbeast-james-patterson-book/688862/?utm_source=feed",
-      "snippet": "James Patterson and MrBeast wrote a book in hopes of reaching young people.",
+      "title": "Puffins",
+      "url": "https://www.theatlantic.com/magazine/2026/11/ange-mlinko-puffins/688694/?utm_source=feed",
+      "snippet": "A poem",
       "cover_url": "",
-      "blurb": "Two of the most algorithmically successful humans alive tried to write a book together for teenagers, and the result raises a sharp question: what happens when reach becomes the only measure of worth in storytelling?"
+      "blurb": "A poem about puffins, which is to say: a poem about something else entirely — set aside five unhurried minutes and let it land."
     },
     {
       "source": "reads",
       "source_name": "Nautilus",
-      "title": "“Floating Scarecrow” Demonstrates the Enduring Power of Eyes in the Natural World",
-      "url": "https://nautil.us/floating-scarecrow-demonstrates-the-enduring-power-of-eyes-in-the-natural-world-1285493/",
-      "snippet": "No one likes being watched",
-      "cover_url": "https://lede-admin.nautil.us/wp-content/uploads/sites/70/2026/10/FISHTEK-LEB-stills-1-1.jpg",
-      "blurb": "Eyes painted on a buoy are enough to send seabirds veering off course — this essay follows that eerie fact into a deeper reckoning with how profoundly the feeling of being watched shapes behavior across the animal kingdom."
+      "title": "Was There Really a Female King in Ancient Egypt 5,000 Years Ago?",
+      "url": "https://nautil.us/was-there-really-a-female-king-in-ancient-egypt-5000-years-ago-1285520/",
+      "snippet": "A new study says yes",
+      "cover_url": "",
+      "blurb": "A new study raises the possibility that Egypt's earliest dynastic rulers may have included a woman — and the real story is how much that possibility has been buried, doubted, and rediscovered across centuries of archaeology. History as an argument about who gets to exist in it."
+    },
+    {
+      "source": "reads",
+      "source_name": "Longreads",
+      "title": "Hockey Dads and Hockey Sons",
+      "url": "https://longreads.com/2026/09/30/ice-hockey-kids-violence-parenting/",
+      "snippet": "\"Parenting is a practice. You learn from your mistakes and then repeat them anyway.\"",
+      "cover_url": "",
+      "blurb": "A son who grew up in the cold rink-air of his father's ambitions sits down to write about hockey, and ends up writing about the strange, recurring tenderness of failing the people you love most. The line about repeating your mistakes anyway will stay with you longer than the game."
     }
   ],
   "garden_note": {
-    "note": "There's a particular quality to a mid-autumn Zürich morning — the light arrives at 06:58 already golden and a little apologetic, slanting low through trees that are quietly deciding which shade of amber to wear this week. Pull on a layer before you head out; the garden is damp with dew and perfectly, crisply itself.",
+    "note": "The chestnuts are thudding down along the Zürichberg paths tonight, and the maples are beginning their slow amber confession — mid-October is nearly upon us, and the garden knows it before we do.",
     "in_season": [
-      "Pumpkins & winter squash — harvest before the first hard frost settles in",
-      "Radicchio and chicory — bitter leaves at their best in the cooling air",
-      "Cyclamen coum — tucking cheerful pink into shadier beds",
-      "Raking and composting fallen leaves — the most satisfying autumn ritual"
+      "Sweet chestnuts ripening and ready to gather",
+      "Late kale and leeks standing sturdy in the vegetable bed",
+      "Japanese anemones still nodding their last pale blooms",
+      "Planting spring-flowering bulbs: tulips, narcissi, alliums"
     ],
-    "sky_tonight": "The last-quarter moon rises well after midnight, leaving the early evening sky pleasingly dark — a fine moment to find the Pleiades climbing the eastern sky.",
-    "sun_times": "First light creeps in at 06:58, and the sun sets tonight at 19:01, with dusk lingering until 19:30.",
+    "sky_tonight": "The Last Quarter Moon rises late in the east — look also for the Pleiades climbing high after dark, a sure sign of deep autumn overhead.",
+    "sun_times": "Dusk settles gently over Zürich by 19:30 tonight, with the sun already gone since 19:01.",
     "moon_label": "Last quarter",
-    "illum_pct": 46,
+    "illum_pct": 42,
     "sun_range": "07:27–19:01"
   },
-  "puzzle": {},
+  "puzzle": {
+    "kind": "riddle",
+    "label": "Fern's Morning Riddle",
+    "prompt": "How do monsters like their eggs?",
+    "answer": "Terri-Fried",
+    "hint": "",
+    "source": "riddles.com",
+    "source_id": "Riddle-1584"
+  },
   "previous_puzzle": {
     "label": "The Evening Trivia",
     "prompt": "In which country's version of Half-Life are the HECU Marines replaced with robots?\n\nChina   ·   France   ·   Germany   ·   Japan",
     "answer": "Germany"
   },
   "larder": {
-    "news": [
-      {
-        "source": "food",
-        "source_name": "The Kitchn",
-        "title": "I Brewed 140 Cups of Coffee to Find Out If the Fellow Aiden Coffee Maker Is Worth the Hype (It Is!)",
-        "url": "https://www.thekitchn.com/fellow-aiden-coffee-maker-review-23847774?utm_source=RSS&utm_medium=feed&utm_campaign=Category%2FChannel%3A+main",
-        "snippet": "Easy to use for novices but with precision controls for at-home baristas.",
-        "cover_url": "https://cdn.apartmenttherapy.info/image/upload/f_auto,q_auto:eco,c_fill,g_auto,w_1500,ar_3:2/shopping%2Ftk%2F2026%2F2026-10%2Ffellow-aiden-precision-coffee-maker%2Faiden-precision-coffee-maker-6",
-        "blurb": "140 cups of coffee is a sacrifice we can all respect, and the verdict on the Fellow Aiden makes this a genuinely worthwhile read for anyone whose morning ritual deserves an upgrade."
-      },
-      {
-        "source": "food",
-        "source_name": "Eater",
-        "title": "The Hottest New Food Show Is a ‘Making the Restaurant’ Series",
-        "url": "https://www.eater.com/pre-shift/989802/restaurant-behind-the-scenes-series-pre-shift",
-        "snippet": "This excerpt was originally published in Pre Shift, our newsletter for the hospitality industry. Subscribe for more first-person accounts, advice, and interviews. This is the final installment of our series Getting on the Map, presented by Apple Maps, where we shared how some of the most creative bars and restaurants are marketing themselves to stand […]",
-        "cover_url": "https://platform.eater.com/wp-content/uploads/sites/2/2026/09/Pre-Shift-Apple-Ads-3.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
-        "blurb": "If you've ever wondered what really happens behind the swinging kitchen door, this behind-the-scenes restaurant series promises the kind of drama and craft that makes food television worth watching again."
-      },
-      {
-        "source": "food",
-        "source_name": "The Guardian",
-        "title": "Cocktail of the. week: Palé Hall’s Have your cake and drink it – recipe | The good mixer",
-        "url": "https://www.theguardian.com/food/2026/oct/02/have-your-cake-and-drink-it-cocktail-recipe-pale-hall-bala",
-        "snippet": "A warming, comforting, spiced drink that’s ideal for autumn, and pairs brilliantly with a slice of carrot cake The move into autumn proper leads our taste buds to crave warmth and comfort in equal measure. And what could be more warming and comforting than a spiced vodka and citrus cocktail spiced with nut liqueur? Slice of carrot cake optional.",
-        "cover_url": "https://i.guim.co.uk/img/media/58971115389014079009fa35a21eae78d70ff188/730_1076_1891_1513/master/1891.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=2bb637df0d723998f9623455e6b9a65b",
-        "blurb": "A spiced cocktail designed to keep company with carrot cake is exactly the sort of autumnal indulgence that makes the season's chill feel like a gift rather than a grievance."
-      }
-    ],
-    "recipe": {
-      "source": "recipe",
-      "source_name": "Smitten Kitchen",
-      "title": "simple chicken tacos",
-      "url": "https://smittenkitchen.com/2026/09/simple-chicken-tacos/",
-      "snippet": "Twenty years ago, I started this website because I wanted a place to share recipes I was excited about, as it’s practically coded into my DNA to be an unfettered yap about the things I love. [ This is me. ] The larger context was that upon reaching so-called adulthood, I’d found that while I knew how to cook, there were still so many things I hadn’t figured out, such as: how to turn a can of tomatoes into not just an okay pasta sauce, but a spectacular one ; how to make really good meatballs ; perfect hummus ; and a crumb cake I’d want to make forever.",
-      "is_recipe": true,
-      "cover_url": "",
-      "blurb": "These simple chicken tacos from Smitten Kitchen are the kind of weeknight salvation you'll want in your back pocket — unfussy, satisfying, and the sort of thing that earns a permanent spot in the rotation from the very first bite."
-    },
-    "seasonal_note": "Zürich's markets are piled with Berner Rosen and Maigold apples right now, and there's no better mid-autumn morning ritual than picking up a bag on your way home from the Helvetiaplatz market, then slow-cooking them into a rough Apfelmus to spoon over your Haferbrei while the city's chestnuts roast somewhere just around the corner."
+    "news": [],
+    "recipe": {}
   },
   "fern_data": {
-    "greeting": "On October 4, 1957, Sputnik beeped its way into orbit — a small fact worth holding while you read about Bruce Springsteen closing out a festival with an all-star jam, and a calorie-restriction study that quietly upends what most of us think we know about eating less.",
-    "top_pick_title": "Signals From the Noise"
+    "greeting": "Turnstile made their SNL debut last night — and Taylor Swift walked out with them, because apparently that's just a thing that happens now. Tonight's edition also has Mike Patton performing with a mariachi orchestra in Mexico, which is an image worth sitting with.",
+    "top_pick_title": "Strange Guests, Stranger Stages"
   }
 }
