@@ -1,150 +1,62 @@
 {
-  "fetched_at": "2026-10-04T20:13:39.116617+02:00",
+  "fetched_at": "2026-10-05T12:39:32.216302+02:00",
   "is_am_email": false,
   "audit_summary": {
     "youtube_videos": 0,
     "themes": 0,
-    "music_articles": 12,
-    "good_news_articles": 2,
+    "music_articles": 4,
+    "good_news_articles": 5,
     "discovery_articles": 0,
     "featured_read": 1,
     "reading_room": 5,
     "garden": 1,
-    "puzzle": 1,
+    "puzzle": 0,
     "larder": 0
   },
   "themes": [],
   "morning_soundtrack": [
     {
       "source": "music",
-      "source_name": "NPR Music",
-      "title": "Discursive Verses: when pulling rank goes wrong",
-      "snippet": "NPR Music culture critic and reporter Rodney Carmichael ruminates on the latest in rap culture. This week: a hip-hop divorce, an OutKast lawsuit and the state of rap music on the charts.",
-      "url": "https://www.npr.org/2026/10/02/nx-s1-5987979/the-week-in-hip-hop-remy-ma-outkast-billboard",
-      "genre": "",
-      "vibe_check": "The kind of barbershop debate that gets loud after midnight, where everyone has receipts and nobody's backing down.",
-      "cover_url": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/4000x2250+0+261/resize/1400/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Fc6%2F15%2Fdc85961c4d1fb08c10d60817946a%2Fgettyimages-1251827914.jpg",
-      "embed_url": "https://www.youtube.com/embed/xluDXfpjqQM"
-    },
-    {
-      "source": "music",
-      "source_name": "NPR Music",
-      "title": "Panteón Rococó: Tiny Desk Concert",
-      "snippet": "For over three decades, Panteón Rococó has been at the forefront of Mexican ska. The band's skankin' grooves slide easily between cumbia and Afro-Caribbean rhythms.",
-      "url": "https://www.npr.org/2026/10/01/g-s1-132180/panteon-rococo-tiny-desk-concert",
-      "genre": "",
-      "vibe_check": "The feeling of a block party spilling into the street, where your feet start moving before your brain catches up.",
-      "cover_url": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/2000x1125+0+0/resize/1400/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F14%2F58%2F2019dd944f4898eba223aeaa1d54%2Fpanteon-rococo.jpg",
-      "embed_url": null
-    },
-    {
-      "source": "music",
-      "source_name": "NPR Music",
-      "title": "How Kenny Mason learned to follow his inner visions",
-      "snippet": "Even among ATLiens, Kenny Mason is an outlier. As he faced a creative crisis — and commercial pressures — the rap-rock iconoclast realized that he feels most comfortable on the fringes.",
-      "url": "https://www.npr.org/2026/09/29/nx-s1-5984647/kenny-mason-bulldawg-interview",
-      "genre": "",
-      "vibe_check": "Late-night studio isolation that slowly transforms into something rawer and more honest than anything commercial pressure could have produced.",
-      "cover_url": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/2000x1125+0+220/resize/1400/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F08%2F6e%2F45630a834bbaa80a86fcbe9d2186%2Fdsc01674.jpg",
-      "embed_url": "https://www.youtube.com/embed/5ndu85mDDpo"
-    },
-    {
-      "source": "music",
       "source_name": "Stereogum",
-      "title": "Turnstile Make SNL Debut, Taylor Swift Cameos",
-      "snippet": "Saturday Night Live went hardcore. Last night's episode was hosted by Dakota Johnson with musical guest Turnstile. As pointed out in the episode promos, Turnstile are the first hardcore band to play Saturday Night Live since the infamous Fear performance 45 years ago this month.",
-      "url": "https://stereogum.com/2513538/turnstile-make-snl-debut-taylor-swift-cameos/news/",
+      "title": "Zach Bryan Wears “Free Palestine” Shirt At Robert Kraft’s Gillette Stadium",
+      "snippet": "Last month, Macklemore was kicked off Ed Sheeran's tour after Robert Kraft, the owner of Massachusetts' Gillette Stadium, was unhappy with the rapper's pro-Palestine activism during his performances. Sheeran has subsequently faced lots of backlash for his persistent refusal to take a stance on genocide, whereas Macklemore announced a Free Palestine Tou that sold out. On Friday (Oct.",
+      "url": "https://stereogum.com/2513501/zach-bryan-wears-free-palestine-shirt-at-robert-krafts-gillette-stadium/news/",
       "genre": "",
-      "vibe_check": "The electric charge of watching something genuinely dangerous crash through a velvet-rope institution and refuse to apologize.",
-      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/10/turnstile-taylor-swift.png?w=564",
-      "embed_url": "https://www.youtube.com/embed/-YRIY3qrW94"
-    },
-    {
-      "source": "music",
-      "source_name": "Stereogum",
-      "title": "Mike Patton Performs With Mariachi Gama 1000 For Mondo Cane’s Mexico Debut",
-      "snippet": "Mike Patton brought Mondo Cane — his project covering Italian pop songs from the ’50s and ’60s — to Mexico for the first time Thursday (Oct. 1) as part of Festival Internacional Cervantino’s Circuito CDMX-INBAL.",
-      "url": "https://stereogum.com/2513514/mike-patton-performs-with-mariachi-gama-1000-for-mondo-canes-mexico-debut/news/",
-      "genre": "",
-      "vibe_check": "Cinematic and surreal, like stumbling into a moonlit piazza where the past and the bizarre are slow-dancing together.",
-      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/10/Screenshot-2026-10-03-at-11.29.36-AM.png?w=564",
-      "embed_url": "https://www.youtube.com/embed/x3p-0I6Ohu0"
-    },
-    {
-      "source": "music",
-      "source_name": "Stereogum",
-      "title": "Troye Sivan Joins Charli XCX To Perform Two Of His New Songs At ACL",
-      "snippet": "Charli XCX headlined the first night of Austin City Limits on Friday (Oct. 2), and as usual, she brought a surprise. After co-headlining The Sweat Tour with Troye Sivan last year, the British pop star brought out the Australian singer, who releases his new album She's The Best next week.",
-      "url": "https://stereogum.com/2513510/troye-sivan-joins-charli-xcx-to-perform-two-of-his-new-songs-at-acl/news/",
-      "genre": "",
-      "vibe_check": "Festival-crowd euphoria distilled into a single moment, the kind of surprise that makes strangers grab each other by the shoulders.",
-      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/10/GettyImages-2297469461.jpg?w=564",
-      "embed_url": null
-    },
-    {
-      "source": "music",
-      "source_name": "No Depression",
-      "title": "A Postcard From The Heists",
-      "snippet": "",
-      "url": "https://nodepression.org/a-postcard-from-the-heists/",
-      "genre": "",
-      "vibe_check": "A sun-bleached memory written on the back of something you found in a jacket pocket from three summers ago.",
-      "cover_url": "https://storage.ghost.io/c/18/d0/18d08e58-3b1b-4720-ae25-a31b44e69d4b/content/images/2026/09/A-Postcard-From-The-Heists.jpg",
-      "embed_url": null
-    },
-    {
-      "source": "music",
-      "source_name": "Pitchfork",
-      "title": "Turnstile and Taylor Swift Shared the SNL Stage Last Night",
-      "snippet": "The Baltimore hardcore band were last night’s musical guest, and Swift made a surprise appearance during host Dakota Johnson’s monologue",
-      "url": "https://pitchfork.com/story/turnstile-and-taylor-swift-both-dropped-by-snl-last-night/",
-      "genre": "",
-      "vibe_check": "The delicious cultural whiplash of two universes colliding on live television in front of a bewildered nation.",
-      "cover_url": "https://media.pitchfork.com/photos/6ac27ccad1a25331377860e8/master/pass/MixCollage-04-Oct-2026-12-18-PM-8856.jpg",
-      "embed_url": null
-    },
-    {
-      "source": "music",
-      "source_name": "Pitchfork",
-      "title": "Fontaines D.C. Plot 2027 North American Tour",
-      "snippet": "The Irish band is headed to arenas across the pond with Iceage and Westside Cowboy",
-      "url": "https://pitchfork.com/story/fontaines-dc-plot-2027-north-american-tour/",
-      "genre": "",
-      "vibe_check": "The slow-building anticipation of a long road trip toward something brooding and unmissable on the horizon.",
-      "cover_url": "https://media.pitchfork.com/photos/6abfebdcaa7b55cc47e790eb/master/pass/fontaines-dc-north-american-tour-2027.jpg",
-      "embed_url": null
-    },
-    {
-      "source": "music",
-      "source_name": "Pitchfork",
-      "title": "Watch Metallica Spawn a Monster for Their Sphere Residency Opener",
-      "snippet": "An array of ostentatious 3D graphics, including a giant Cthulhu, accompanied the band’s debut at the Las Vegas venue",
-      "url": "https://pitchfork.com/story/watch-metallica-spawn-a-monster-for-their-sphere-residency-opener/",
-      "genre": "",
-      "vibe_check": "Sensory overload as spectacle — the feeling of standing too close to something enormous and luminous and slightly terrifying.",
-      "cover_url": "https://media.pitchfork.com/photos/6abfc0d4fc08fb249685229c/master/pass/metallica-sphere-opener-footage.jpeg",
-      "embed_url": null
-    },
-    {
-      "source": "music",
-      "source_name": "Aquarium Drunkard",
-      "title": "The Sagegazers :: A Mixtape",
-      "snippet": "The Sagegazers is an ongoing project devoted to the strange and beautiful world of privately released ambient, electronic, and New Age cassette music of the 1980s and ’90s. Working from a collection of rare and often nearly undocumented recordings, the project uncovers a forgotten culture of synthesizers, home studios, spirituality, landscape, and imagination. This mix offers a journey through that world, bringing together 15 recordings that reveal the remarkable breadth, intimacy, and imagination of this largely unmapped musical culture.",
-      "url": "https://aquariumdrunkard.com/2026/10/02/the-sagegazers-a-mixtape/",
-      "genre": "",
-      "vibe_check": "The hushed wonder of finding a handwritten cassette label in a thrift store bin that opens into an entire forgotten interior world.",
-      "cover_url": "https://aquariumdrunkard.com/_newness/wp-content/uploads/2026/10/Sagegazers-Logo.jpg",
+      "vibe_check": "The kind of defiant, fist-in-the-air moment that ripples through a stadium crowd long after the last chord fades.",
+      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/10/zb-copy.png?w=564",
       "embed_url": null
     },
     {
       "source": "music",
       "source_name": "Consequence",
-      "title": "Metallica Bring Completely Different Show to Night Two at Sphere: Photos, Video + Setlist",
-      "snippet": "The 16-song setlist featured no repeats from night one. Metallica Bring Completely Different Show to Night Two at Sphere: Photos, Video + Setlist Spencer Kaufman",
-      "url": "https://consequence.net/2026/10/metallica-night-two-sphere-photos-video-setlist/",
+      "title": "Taylor Momsen, Mike McCready & Matt Cameron Play Suns of Soundgarden Set at Power to the People Fest",
+      "snippet": "The special tribute set featured performances of \"Loud Love,\" \"Outshined,\" and \"Spoonman.\" Taylor Momsen, Mike McCready & Matt Cameron Play Suns of Soundgarden Set at Power to the People Fest Alex Young",
+      "url": "https://consequence.net/2026/10/soundgarden-power-to-the-people-fest/",
       "genre": "",
-      "vibe_check": "The relentless forward momentum of a band with nothing to prove and everything to detonate, night after unyielding night.",
-      "cover_url": "https://consequence.net/wp-content/uploads/2026/10/Metallica-Night-2-Sphere-featured.jpg?quality=80",
+      "vibe_check": "A bittersweet resurrection of grunge's cathedral sound, like finding an old flannel shirt that still smells like someone you miss.",
+      "cover_url": "https://consequence.net/wp-content/uploads/2026/10/Soundgarden.jpeg?quality=80",
+      "embed_url": null
+    },
+    {
+      "source": "music",
+      "source_name": "Consequence",
+      "title": "Serj Tankian Covers Audioslave’s “Like a Stone” with Tom Morello at Power to the People Fest",
+      "snippet": "The two also teamed up to perform their collaborative single \"Adjourn It.\" Serj Tankian Covers Audioslave’s “Like a Stone” with Tom Morello at Power to the People Fest Alex Young",
+      "url": "https://consequence.net/2026/10/serj-tankian-audioslave-like-a-stone-tom-morello-power-to-the-people-fest/",
+      "genre": "",
+      "vibe_check": "Two heavy-music titans colliding in a moment that feels less like a concert and more like a thunderstorm shaking the walls.",
+      "cover_url": "https://consequence.net/wp-content/uploads/2026/10/Serj-Tankian-and-Tom-Morello.jpeg?quality=80",
+      "embed_url": null
+    },
+    {
+      "source": "music",
+      "source_name": "JazzTimes",
+      "title": "A 60th Anniversary Look at Zappa’s Jazz-Jammed Invention of Freak Out-edness",
+      "snippet": "W hen this autumn’s 60th anniversary deluxe edition of Frank Zappa and his Mothers of Invention’s debut album, Freak Out!, was announced with its remastered …",
+      "url": "https://www.jazztimes.com/reviews/albums/a-new-look-at-zappas-jazz-jammed-invention-of-freak-out-edness/",
+      "genre": "",
+      "vibe_check": "The sonic equivalent of cracking open a yellowed art school zine and realizing it was way ahead of its time.",
+      "cover_url": "https://www.jazztimes.com/wp-content/uploads/2026/10/mail.jpeg",
       "embed_url": null
     }
   ],
@@ -152,113 +64,132 @@
     {
       "source": "good_news",
       "source_name": "Good News Network",
-      "title": "Rare 1-in-100M ‘Ghost Lobster’ Goes to School to Help Scientists Crack Genetic Mystery–in Time for Halloween",
-      "url": "https://www.goodnewsnetwork.org/100m-ghost-lobster-goes-to-college/",
-      "snippet": "A ‘ghost’ lobster so rare that the odds of finding one are 1 in 100 million is going to school, and its new home is Maine’s Marine Science Center—arriving just in time for Halloween. The rare white crustacean was welcomed to the University of New England after being donated by the Maine State Aquarium in […]",
-      "cover_url": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/10/Casper-the-white-lobster-at-University-of-New-England-Arthur-P-Girard-Marine-Science-Center-released.jpg",
-      "reason": "A hauntingly rare ghost lobster — its pale coloration thought to occur in roughly one in a hundred million — is giving scientists a precious opportunity to study the genetics behind colour variation in marine life. Every time an extraordinary creature like this is studied rather than lost, we learn a little more about the quiet wonders hiding in our oceans."
+      "title": "Good News in History, October 5",
+      "url": "https://www.goodnewsnetwork.org/events061005/",
+      "snippet": "20 years ago today, the 60-year-old rock star Jon Bon Jovi, who’s sold 100 million records, launched a charity foundation to combat poverty issues like food and housing to ease economic despair. One of the flagship initiatives is his “JBJ Soul Kitchen” where guests pay what they want to eat well along the East Coast. […]",
+      "cover_url": "https://www.goodnewsnetwork.org/wp-content/uploads/2020/01/Jon-Bon-Jovi-JBJ-Soul-Kitchen-Instagram.jpg",
+      "reason": "History is full of quiet turning points and unsung breakthroughs worth remembering — pausing to mark them reminds us that progress has always been possible, even in difficult times."
+    },
+    {
+      "source": "good_news",
+      "source_name": "Positive News",
+      "title": "Meet the 14-year-old uncovering London’s lost history",
+      "url": "https://www.positive.news/environment/meet-the-14-year-old-uncovering-londons-lost-history/",
+      "snippet": "Seasoned mudlark Emmylou Vaxby has spent nearly a decade searching the Thames foreshore for fragments of the city’s past",
+      "cover_url": "https://www.positive.news/wp-content/uploads/2026/09/IMG_4220-copy.jpg",
+      "reason": "A teenager diving into London's buried past shows that curiosity and dedication to place aren't fading with younger generations — if anything, they're finding fresh hands to carry them forward."
     },
     {
       "source": "good_news",
       "source_name": "Upworthy",
-      "title": "Dad shares the unique 7-point checklist his kids must finish before they get screen time",
-      "url": "https://www.upworthy.com/dads-screen-time-for-kids-7-point-check-list-ex1/",
-      "snippet": "For this dad, screen time is earned.",
-      "cover_url": "https://www.upworthy.com/wp-content/uploads/sites/2/2026/03/Chores.png",
-      "reason": "One father's thoughtful checklist is a small but real reminder that plenty of parents are putting genuine care into raising curious, balanced kids in a screen-saturated world. It's the kind of everyday intention that rarely makes headlines but shapes families for the better."
+      "title": "Young people recreate the iconic ‘Peanuts’ dance, bringing wholesome joy to all ages",
+      "url": "https://www.upworthy.com/charlie-brown-dance-tiktok-reaction-ex1/",
+      "snippet": "\"This deserves a Nobel Peace Prize.\"",
+      "cover_url": "https://www.upworthy.com/wp-content/uploads/sites/2/2025/12/origin_60943c.jpg",
+      "reason": "When young people reach back to embrace something as warmly silly as the Peanuts dance, it's a small but genuine sign that joy travels across generations without needing much translation."
+    },
+    {
+      "source": "good_news",
+      "source_name": "Reasons to be Cheerful",
+      "title": "The Hospital That Silenced the Machines",
+      "url": "https://reasonstobecheerful.world/the-hospital-that-silenced-the-machines/",
+      "snippet": "Beep. Beep. Beep.",
+      "cover_url": "https://reasonstobecheerful.world/wp-content/uploads/2026/10/shutterstock_2714031703-scaled.jpg",
+      "reason": "Replacing the relentless beeping of hospital equipment with calmer, more human-centered design is a meaningful step toward healing environments that treat the whole person, not just the condition."
+    },
+    {
+      "source": "good_news",
+      "source_name": "The Optimist Daily",
+      "title": "Wisconsin’s first certified Shinrin-yoku trail is open to everyone",
+      "url": "https://www.optimistdaily.com/2026/10/wisconsins-first-certified-shinrin-yoku-trail-is-open-to-everyone/",
+      "snippet": "BY THE OPTIMIST DAILY EDITORIAL TEAM Think about the last time you went for a walk in the woods. Were you listening to a podcast? Checking your step count?",
+      "cover_url": "https://www.optimistdaily.com/wp-content/uploads/Depositphotos_80631962_S.jpg",
+      "reason": "Wisconsin's first certified forest-bathing trail makes the restorative practice of Shinrin-yoku — proven to lower stress and lift mood — freely accessible to anyone who can walk among trees, no membership required."
     }
   ],
   "discovery_articles": [],
   "featured_read": {
     "source": "reads",
-    "source_name": "Longreads",
-    "title": "I Lost Myself When I Lost Hong Kong",
-    "url": "https://longreads.com/2026/10/01/expat-nostalgia-love-loss/",
-    "snippet": "\"If returning to America was like getting on a lifeboat, why did I feel like I was drowning?\"",
+    "source_name": "The Atlantic",
+    "title": "An <em>SNL</em> Sketch That Understands How the Internet Shapes Our Reality",
+    "url": "https://www.theatlantic.com/culture/2026/10/saturday-night-live-get-ready-with-me/688883/?utm_source=feed",
+    "snippet": "Sometimes your favorite influencer is really weird, and your friends just don’t get it.",
     "cover_url": "",
-    "blurb": "A writer who fled Hong Kong for the safety of America discovers that displacement doesn't end at the border — it follows you into the life you thought you were escaping toward. This is a quiet, searching essay about what it means to lose a home that was itself already disappearing."
+    "blurb": "This piece uses a single SNL sketch as a lens to examine something genuinely unsettling: how the internet creates pockets of reality so personal and specific that even people who love you can't follow you inside them."
   },
   "reading_room": [
     {
       "source": "reads",
-      "source_name": "Literary Hub",
-      "title": "Lit Hub Daily: October 2, 2026",
-      "url": "https://lithub.com/lit-hub-daily-october-2-2026/",
-      "snippet": "Assal Rad examines the parallels between the American media’s treatment of the invasion of Iraq and the genocide in Gaza. | Lit Hub Politics These five books are essential reading on women in the early Civil Rights Movement. | Lit",
-      "cover_url": "https://s26162.pcdn.co/wp-content/uploads/2026/10/WallaceStevens.jpg",
-      "blurb": "Assal Rad traces the specific rhetorical machinery American media reaches for again and again — from Baghdad to Gaza — asking what it means when the same language of omission returns on schedule. Sharp, necessary, and not comfortable to sit with."
-    },
-    {
-      "source": "reads",
-      "source_name": "The Atlantic",
-      "title": "Only Trump Gets to Criticize the Supreme Court",
-      "url": "https://www.theatlantic.com/ideas/2026/09/trump-supreme-court-justices/688830/?utm_source=feed",
-      "snippet": "“These are not the people I interviewed to serve.”",
-      "cover_url": "",
-      "blurb": "When only one man in American public life is permitted to criticize the Supreme Court without consequence, something has shifted in the architecture of power — this piece names exactly what that something is. A precise, unsettling diagnosis of deference dressed up as principle."
-    },
-    {
-      "source": "reads",
-      "source_name": "The Atlantic",
-      "title": "Puffins",
-      "url": "https://www.theatlantic.com/magazine/2026/11/ange-mlinko-puffins/688694/?utm_source=feed",
-      "snippet": "A poem",
-      "cover_url": "",
-      "blurb": "A poem about puffins, which is to say: a poem about something else entirely — set aside five unhurried minutes and let it land."
+      "source_name": "Aeon",
+      "title": "All-around junior male",
+      "url": "https://aeon.co/videos/a-traditional-inuit-game-of-balance-and-strength-stylishly-captured",
+      "snippet": "A ball suspended in mid-air meets an athlete’s determination: in the one-foot high kick, competitors must defy gravity - by Aeon Video Watch on Aeon",
+      "cover_url": "https://images.aeonmedia.co/images/98d1c630-57c6-439a-903e-98d4dc7d739a/all-around-junior-male-landscape-1.jpg?width=1200&quality=75&format=jpeg",
+      "blurb": "The one-foot high kick is an Alaskan Native sport that asks a human body to do something almost absurd — this short film makes you feel every inch of that suspended, straining moment between earth and air."
     },
     {
       "source": "reads",
       "source_name": "Nautilus",
-      "title": "Was There Really a Female King in Ancient Egypt 5,000 Years Ago?",
-      "url": "https://nautil.us/was-there-really-a-female-king-in-ancient-egypt-5000-years-ago-1285520/",
-      "snippet": "A new study says yes",
-      "cover_url": "",
-      "blurb": "A new study raises the possibility that Egypt's earliest dynastic rulers may have included a woman — and the real story is how much that possibility has been buried, doubted, and rediscovered across centuries of archaeology. History as an argument about who gets to exist in it."
+      "title": "Coral Reef-Like Rock Layers on Mars Reveal Ancient Climate Secrets",
+      "url": "https://nautil.us/coral-reef-like-rock-layers-on-mars-reveal-ancient-climate-secrets-1285515/",
+      "snippet": "A landscape painted by rocks, wind, and water",
+      "cover_url": "https://lede-admin.nautil.us/wp-content/uploads/sites/70/2026/10/01-coral.jpg",
+      "blurb": "Coral-like rock formations on Mars are rewriting what we thought we knew about the planet's ancient climate, and this piece makes the detective work of reading a landscape feel as gripping as any thriller."
+    },
+    {
+      "source": "reads",
+      "source_name": "Psyche",
+      "title": "S P A C E S",
+      "url": "https://psyche.co/videos/whats-it-like-to-remember-your-past-but-forget-your-present",
+      "snippet": "A filmmaker tries to reconstruct her brother’s faltering experience of time: adrift and without continuity - Directed by Nora Štrbová Watch on Psyche",
+      "cover_url": "https://images.aeonmedia.co/images/98a57c72-d34f-4913-a09e-dcec2fb42457/spaces-landscape-1.jpg?top=0&left=0&cropWidth=2560&cropHeight=1440&width=1200&quality=75&format=jpeg",
+      "blurb": "A filmmaker tries to reconstruct her brother's fractured sense of time — adrift, looping, without continuity — and in doing so quietly asks what it means to lose your footing inside the ordinary flow of a day."
     },
     {
       "source": "reads",
       "source_name": "Longreads",
-      "title": "Hockey Dads and Hockey Sons",
-      "url": "https://longreads.com/2026/09/30/ice-hockey-kids-violence-parenting/",
-      "snippet": "\"Parenting is a practice. You learn from your mistakes and then repeat them anyway.\"",
+      "title": "The Babies Left Behind in America",
+      "url": "https://longreads.com/2026/09/30/the-babies-left-behind-in-america/",
+      "snippet": "\"The United States is deporting parents without their children, creating a whole new family-separation crisis.\"",
       "cover_url": "",
-      "blurb": "A son who grew up in the cold rink-air of his father's ambitions sits down to write about hockey, and ends up writing about the strange, recurring tenderness of failing the people you love most. The line about repeating your mistakes anyway will stay with you longer than the game."
+      "blurb": "Children are being left in the United States while their parents are deported, and this piece refuses to let that bureaucratic abstraction stay abstract — it stays close to the specific, unbearable weight of a family split at a border."
+    },
+    {
+      "source": "reads",
+      "source_name": "Literary Hub",
+      "title": "Lit Hub Daily: October 5, 2026",
+      "url": "https://lithub.com/lit-hub-daily-october-5-2026/",
+      "snippet": "How British media legitimized J.K. Rowling’s transphobia “We are rendered hostile abstractions in a contradictory narrative: Trans people are not real, only our violence is real.” | Lit Hub Politics Samantha’s all grown up, and American Girl books are entering",
+      "cover_url": "https://s26162.pcdn.co/wp-content/uploads/2026/10/DenisDiderot.jpg",
+      "blurb": "This essay on how British media laundered J.K. Rowling's transphobia into mainstream respectability names the mechanism precisely: not hatred made loud, but harm made reasonable, one editorial framing at a time."
     }
   ],
   "garden_note": {
-    "note": "The chestnuts are thudding down along the Zürichberg paths tonight, and the maples are beginning their slow amber confession — mid-October is nearly upon us, and the garden knows it before we do.",
+    "note": "Mid-autumn in Zürich has that particular quality of golden reluctance — the light lingers just long enough at dusk to gild the last dahlias before the chill reasserts itself. This is the week to tuck tender bulbs indoors and let the garden exhale.",
     "in_season": [
-      "Sweet chestnuts ripening and ready to gather",
-      "Late kale and leeks standing sturdy in the vegetable bed",
-      "Japanese anemones still nodding their last pale blooms",
-      "Planting spring-flowering bulbs: tulips, narcissi, alliums"
+      "Dahlias — lift tubers before the first hard frost",
+      "Quince — harvest the fragrant yellow fruits now",
+      "Kale and leeks — fully in their element as nights cool",
+      "Fallen leaf composting — rake and pile while they're still workable"
     ],
-    "sky_tonight": "The Last Quarter Moon rises late in the east — look also for the Pleiades climbing high after dark, a sure sign of deep autumn overhead.",
-    "sun_times": "Dusk settles gently over Zürich by 19:30 tonight, with the sun already gone since 19:01.",
+    "sky_tonight": "The Last Quarter moon rises around midnight, leaving the early evening sky beautifully dark — a fine time to trace the Square of Pegasus climbing in the southeast.",
+    "sun_times": "The sun sets at 18:59 tonight, with dusk settling over the rooftops by 19:28.",
     "moon_label": "Last quarter",
-    "illum_pct": 42,
-    "sun_range": "07:27–19:01"
+    "illum_pct": 35,
+    "sun_range": "07:28–18:59"
   },
-  "puzzle": {
-    "kind": "riddle",
+  "puzzle": {},
+  "previous_puzzle": {
     "label": "Fern's Morning Riddle",
     "prompt": "How do monsters like their eggs?",
-    "answer": "Terri-Fried",
-    "hint": "",
-    "source": "riddles.com",
-    "source_id": "Riddle-1584"
-  },
-  "previous_puzzle": {
-    "label": "The Evening Trivia",
-    "prompt": "In which country's version of Half-Life are the HECU Marines replaced with robots?\n\nChina   ·   France   ·   Germany   ·   Japan",
-    "answer": "Germany"
+    "answer": "Terri-Fried"
   },
   "larder": {
     "news": [],
     "recipe": {}
   },
   "fern_data": {
-    "greeting": "Turnstile made their SNL debut last night — and Taylor Swift walked out with them, because apparently that's just a thing that happens now. Tonight's edition also has Mike Patton performing with a mariachi orchestra in Mexico, which is an image worth sitting with.",
-    "top_pick_title": "Strange Guests, Stranger Stages"
+    "greeting": "I reconsidered whether the Zach Bryan story belonged here — and then I thought about a 14-year-old digging up lost London, and a hospital that turned off every beeping machine, and decided the whole edition is actually about what happens when someone refuses the easier path.",
+    "top_pick_title": "The Refusals"
   }
 }
