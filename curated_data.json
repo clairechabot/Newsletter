@@ -1,12 +1,12 @@
 {
-  "fetched_at": "2026-10-06T12:32:47.768848+02:00",
+  "fetched_at": "2026-10-06T21:36:44.354116+02:00",
   "is_am_email": false,
   "audit_summary": {
     "youtube_videos": 0,
     "themes": 0,
-    "music_articles": 8,
-    "good_news_articles": 4,
-    "discovery_articles": 4,
+    "music_articles": 12,
+    "good_news_articles": 3,
+    "discovery_articles": 14,
     "featured_read": 1,
     "reading_room": 5,
     "garden": 1,
@@ -18,89 +18,133 @@
     {
       "source": "music",
       "source_name": "NPR Music",
-      "title": "How these suburban a cappella singers became improbable social media stars",
-      "snippet": "The Tonics, an amateur a cappella group of middle-aged men in suburban Philadelphia, have built a mass social media following by posting videos of their rehearsals in each other's kitchens.",
-      "url": "https://www.npr.org/2026/10/02/nx-s1-5954537/the-tonics-suburban-a-cappella-singers-are-improbable-social-media-stars-instagram",
+      "title": "Tim Bernardes: Tiny Desk Concert",
+      "snippet": "The Brazilian singer-songwriter sits easily in the poetry of the cosmos and his country, but communicates every emotion with tangible complexity.",
+      "url": "https://www.npr.org/2026/10/06/g-s1-141837/tim-bernardes-tiny-desk-concert",
       "genre": "",
-      "vibe_check": "The wholesome comfort of men harmonizing over someone's kitchen island, proving joy doesn't need a stage.",
-      "cover_url": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/4000x2250+0+209/resize/1400/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Fc7%2F1d%2F96c09945415d9232e2b7ed99fbf2%2Fthetonics-041.jpg",
+      "vibe_check": "Like sitting barefoot on warm earth at dusk, watching the stars appear one by one while your chest quietly aches with something you can't name.",
+      "cover_url": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/9500x5344+4+0/resize/1400/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F24%2F6c%2Fefdeb49044ff87f24c385e6b383a%2Fbernardes-egillis-2.jpg",
+      "embed_url": "https://www.youtube.com/embed/d25O8USd35Y"
+    },
+    {
+      "source": "music",
+      "source_name": "Stereogum",
+      "title": "Council (Gabriel Kahane & Pekka Kuusisto) Announce Debut Album This Day, Every Day: Hear Two Songs",
+      "snippet": "The Portland-based singer-songwriter and composer Gabriel Kahane already graced us with one ambitious album this year: Elevator Songs , a theatrical, high-concept collaboration with the vocal group Roomful Of Teeth. Today he announces another collaborative LP, this time with Finland's Pekka Kuusisto under the band name Council.",
+      "url": "https://stereogum.com/2513756/council-gabriel-kahane-pekka-kuusisto-announce-debut-album-this-day-every-day-hear-two-songs/music/",
+      "genre": "",
+      "vibe_check": "The kind of music that makes you feel like you're reading a handwritten letter found tucked inside a library book, full of ideas too careful and considered for the modern world.",
+      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/10/a2567924258_10.jpg?w=564",
+      "embed_url": "https://wearecouncil.bandcamp.com/album/this-day-every-day"
+    },
+    {
+      "source": "music",
+      "source_name": "Stereogum",
+      "title": "Shane Butler (Quilt, Olden Yolk) Announces Debut Solo Album Heavy Debt: Hear “Ringfinger”",
+      "snippet": "Shane Butler is a member of the great New England psych/folk/pop/rock band Quilt, which technically still exists per Wikipedia but hasn't released any music in a decade. After Quilt's most recent album Plaza dropped in 2016, Butler teamed with Caity Shaffer in the similarly oriented duo Olden Yolk. Now, after a seven-year absence, he's back under his own name.",
+      "url": "https://stereogum.com/2513722/shane-butler-quilt-olden-yolk-announces-debut-solo-album-heavy-debt-hear-ringfinger/music/",
+      "genre": "",
+      "vibe_check": "Hazy afternoon light through overgrown windows, the feeling of returning to a town you'd almost convinced yourself you'd forgotten.",
+      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/10/unnamed-2026-10-06T112239.812.jpg?w=564",
+      "embed_url": "https://www.youtube.com/embed/RkQX_1x_fjw"
+    },
+    {
+      "source": "music",
+      "source_name": "Stereogum",
+      "title": "Album Of The Week: Cameron Winter Live At Carnegie Hall",
+      "snippet": "",
+      "url": "https://stereogum.com/2513341/album-of-the-week-cameron-winter-live-at-carnegie-hall/reviews/album-of-the-week/",
+      "genre": "",
+      "vibe_check": "The electric hush of a vast, half-empty hall where something uncomfortably brilliant is unfolding in real time.",
+      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/08/Cameron-Winter-Live-At-Carnegie-Hall.jpeg?w=564",
       "embed_url": null
     },
     {
       "source": "music",
-      "source_name": "Stereogum",
-      "title": "Knifeplay Announce New Album What Is Truth?: Hear “Love Song”",
-      "snippet": "I've been waiting nearly half a decade for this day. Knifeplay, the dreamy, dreary, deeply dramatic Philadelphia Band To Watch , released their breakthrough sophomore album Animal Drowning way back in 2022. Since then, the TJ Strohmer-led combo has toured intermittently, updated their ephemeral Christmas EP annually, and released the stunning Live In Seattle , a six-song collection featuring several unreleased epics begging for a studio treatment.",
-      "url": "https://stereogum.com/2513593/knifeplay-announce-new-album-what-is-truth-hear-love-song/music/",
+      "source_name": "No Depression",
+      "title": "THROUGH THE LENS: California’s Ohana Festival 2026 — “Music & Memories Stay With You Long After the Tide Goes Out”",
+      "snippet": "This week the column travels to the Ohana Festival (September 25-27, 2026) at Doheny State Beach in Dana Point, California. Pearl Jam’s Eddie Vedder founded the fest in 2016, which is still held at Doheny Beach where Vedder, a surfing enthusiast, rode his first wave. Proceeds from",
+      "url": "https://nodepression.org/through-the-lens-californias-ohana-festival-2026-music-memories-stay-with-you-long-after-the-tide-goes-out/",
       "genre": "",
-      "vibe_check": "Like falling asleep in the middle of a feeling you can't quite name and not wanting to wake up.",
-      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/10/Knifeplay-What-Is-Truth_-_-Album-Art.jpg?w=564",
-      "embed_url": "https://www.youtube.com/embed/HbK0QG_dtV0"
+      "vibe_check": "Salt air and sunburnt shoulders, the bittersweet ache of a summer that already belongs to memory.",
+      "cover_url": "https://storage.ghost.io/c/18/d0/18d08e58-3b1b-4720-ae25-a31b44e69d4b/content/images/2026/10/StephenWilsonJr_LizaOrozco_1.jpg",
+      "embed_url": null
     },
     {
       "source": "music",
-      "source_name": "Stereogum",
-      "title": "Primavera Sound 2027 Lineup Has Phoebe Bridgers, Fontaines D.C., Doechii, More",
-      "snippet": "Barcelona's Primavera Sound Festival , generally known as the most consistent large-scale music festival on the planet, has unveiled the lineup for its 2027 edition. Next year's festival goes down June 3-5 at Parc del Fòrum, and the top three headliners listed on this year's poster are Doechii, Phoebe Bridgers, and Fontaines D.C. — three names that seem considerably lighter than what Primavera has booked over the last few years.",
-      "url": "https://stereogum.com/2513570/primavera-sound-2027-lineup-has-phoebe-bridgers-fontaines-d-c-doechii-more/news/",
+      "source_name": "No Depression",
+      "title": "ALBUM REVIEW: The Talking Hearts’ ‘Memory Lane’ Puts a Breezy Spin on Bad Behavior",
+      "snippet": "Toxic lovers. Phony friends. Unreliable narrators.",
+      "url": "https://nodepression.org/album-review-the-talking-hearts-memory-lane-puts-a-breezy-spin-on-bad-behavior/",
       "genre": "",
-      "vibe_check": "The electric anticipation of booking flights to Barcelona at midnight with a glass of wine already poured.",
-      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/10/Primavera.jpeg?w=564",
+      "vibe_check": "A daiquiri with a razor blade in it — sweet, sharp, and absolutely unapologetic about the damage.",
+      "cover_url": "https://storage.ghost.io/c/18/d0/18d08e58-3b1b-4720-ae25-a31b44e69d4b/content/images/2026/10/TH---Memory-Lane---front-cover.png",
       "embed_url": null
     },
     {
       "source": "music",
       "source_name": "Pitchfork",
-      "title": "L7 Reunite With Former Bassist on New Song “Loma Linda”",
-      "snippet": "Janis Tanaka will replace the late Jennifer Finch on the feminist grunge icons’ imminent Last Hurrah Tour",
-      "url": "https://pitchfork.com/story/l7-reunite-with-former-bassist-on-new-song-loma-linda/",
+      "title": "The Comet Is Coming Unearth Archival Songs for Channel the Spirits Reissue",
+      "snippet": "Listen to “Late Night Party Jam 2,” recorded during Shabaka and the band’s influential Total Refreshment Centre residency",
+      "url": "https://pitchfork.com/story/the-comet-is-coming-unearth-archival-songs-for-channel-the-spirits-reissue/",
       "genre": "",
-      "vibe_check": "A defiant, bittersweet send-off — loud guitars and grief dressed up as a goodbye tour.",
-      "cover_url": "https://media.pitchfork.com/photos/6ac3d215acd1c0f2702dd8b4/master/pass/L7.jpeg",
-      "embed_url": "https://www.youtube.com/embed/DcjS7Wl_UwU"
+      "vibe_check": "Basement fluorescents flickering over a dancefloor at 2 a.m., where the saxophone feels like a premonition.",
+      "cover_url": "https://media.pitchfork.com/photos/6ac528021a19a6d40f363f15/master/pass/comet-is-coming-reissue.jpg",
+      "embed_url": null
     },
     {
       "source": "music",
-      "source_name": "Pitchfork",
-      "title": "Phoebe Bridgers, Massive Attack, Caroline Polachek to Headline Primavera 2027",
-      "snippet": "Pavement, Robyn, Turnstile, Skrillex, Doechii, Fontaines D.C., FKA twigs, and Hayley Williams are also among the acts",
-      "url": "https://pitchfork.com/story/phoebe-bridgers-massive-attack-caroline-polachek-to-headline-primavera-2027/",
+      "source_name": "Aquarium Drunkard",
+      "title": "Antonio Adolfo :: S/T 1972",
+      "snippet": "Antonio Adolfo hated his 1972 solo debut. Intensely. He banned it from his official discography and denounced it whenever it resurfaced online.",
+      "url": "https://aquariumdrunkard.com/2026/10/06/antonio-adolfo-s-t-1972/",
       "genre": "",
-      "vibe_check": "The feeling of a festival wristband already on your wrist even though it's two years away.",
-      "cover_url": "https://media.pitchfork.com/photos/6ac3abbdb491e38e68769911/master/pass/primavera-2027-lineup.jpeg",
+      "vibe_check": "The strange thrill of discovering something its own creator buried — a ghost that insists on haunting you anyway.",
+      "cover_url": "https://aquariumdrunkard.com/_newness/wp-content/uploads/2026/10/antonio-1972.jpg",
+      "embed_url": null
+    },
+    {
+      "source": "music",
+      "source_name": "Aquarium Drunkard",
+      "title": "Jess Williamson :: A Mile South of Heaven",
+      "snippet": "Jess Williamson's Shooter Jennings-produced sixth solo album, A Mile South of Heaven , is a desert curiosity shop’s worth of inspirations: Williamson pulls storytelling techniques from Lucinda Williams’ gravel-road realism, a dash of Leonard Cohen’s everyday spirituality, and the vocal delivery of so many worn-leather country starlets. The post Jess Williamson :: A Mile South of Heaven first appeared on Aquarium Drunkard .",
+      "url": "https://aquariumdrunkard.com/2026/10/06/jess-williamson-a-mile-south-of-heaven/",
+      "genre": "",
+      "vibe_check": "Driving a two-lane highway through scrubland at magic hour, the kind of lonesome that feels more like freedom than loss.",
+      "cover_url": "https://aquariumdrunkard.com/_newness/wp-content/uploads/2026/10/a4062823859_10-copy.jpg",
       "embed_url": null
     },
     {
       "source": "music",
       "source_name": "Consequence",
-      "title": "Aerosmith Tease Imminent Return to the Stage",
-      "snippet": "The rock legends appear to be playing a couple shows at the Hollywood Bowl. Aerosmith Tease Imminent Return to the Stage Spencer Kaufman",
-      "url": "https://consequence.net/2026/10/aerosmith-tease-imminent-return-to-stage/",
+      "title": "Record Store Day Black Friday 2026: The 18 Must-Have Releases",
+      "snippet": "This year's offering includes titles from Noah Kahan, Billy Joel, Bruce Springsteen, Prince, and more. Record Store Day Black Friday 2026: The 18 Must-Have Releases Consequence Staff",
+      "url": "https://consequence.net/2026/10/record-store-day-2026-black-friday-releases/",
       "genre": "",
-      "vibe_check": "The stubborn, leather-jacketed energy of a legend refusing to take the hint from time.",
-      "cover_url": "https://consequence.net/wp-content/uploads/2023/09/Steven-Tyler.jpg?quality=80",
+      "vibe_check": "The giddy, slightly manic energy of flipping through crates at 8 a.m. before anyone else gets there.",
+      "cover_url": "https://consequence.net/wp-content/uploads/2026/10/Record-Store-Day-Black-Friday.jpeg?quality=80",
       "embed_url": null
     },
     {
       "source": "music",
       "source_name": "Consequence",
-      "title": "Sass Jordan, Rock Singer Who Helped Launch Taylor Hawkins’ Career, Dead at 65",
-      "snippet": "Her rock hits included with \"Make You a Believer,\" \"You Don't Have to Remind Me,\" and \"High Road Easy\" Sass Jordan, Rock Singer Who Helped Launch Taylor Hawkins’ Career, Dead at 65 Spencer Kaufman",
-      "url": "https://consequence.net/2026/10/sass-jordan-rock-singer-dead/",
+      "title": "Josh Homme Announces Star-Studded Benefit Concert with Weird Al, Beck, Jack Black, and More",
+      "snippet": "Billed as \"Joshua Homme and Friends,\" the show will also feature St. Vincent, Norah Jones, Chad Smith, Andrew Watt, and others. Josh Homme Announces Star-Studded Benefit Concert with Weird Al, Beck, Jack Black, and More Paolo Ragusa",
+      "url": "https://consequence.net/2026/10/josh-homme-benefit-concert-la-weird-al-beck-jack-black/",
       "genre": "",
-      "vibe_check": "A quiet moment with the volume turned down — the bittersweet ache of a voice that shaped others now going silent.",
-      "cover_url": "https://consequence.net/wp-content/uploads/2026/10/Sass-Jordan.jpg?quality=80",
-      "embed_url": "https://www.youtube.com/embed/KL7Z4RIosrI"
+      "vibe_check": "The chaotic warmth of a backyard barbecue where somehow everyone you admire showed up and nobody's being precious about it.",
+      "cover_url": "https://consequence.net/wp-content/uploads/2026/10/Josh-Homme-and-friends-Benefit-Concert-Los-Angeles-Weird-Al-Jack-Black.jpg?quality=80",
+      "embed_url": null
     },
     {
       "source": "music",
-      "source_name": "Consequence",
-      "title": "Lola Young Announces “Everything Begins” 2027 North American Tour",
-      "snippet": "The 17-date tour of the US and Canada kicks off in spring 2027. Lola Young Announces “Everything Begins” 2027 North American Tour Paolo Ragusa",
-      "url": "https://consequence.net/2026/10/lola-young-2027-north-american-tour/",
+      "source_name": "JazzTimes",
+      "title": "From Paris and New York, Live, with Love: Thelonious Monk Birthday Month",
+      "snippet": "J ust because we’re deep in autumn’s serenade for John Coltrane’s 100th birthday doesn’t mean we can’t break off some love and respect for Thelonious …",
+      "url": "https://www.jazztimes.com/blog/from-paris-and-new-york-live-with-love-thelonious-monk-birthday-month/",
       "genre": "",
-      "vibe_check": "Fresh-start energy for a new year, like rolling the windows down on the first warm day of spring.",
-      "cover_url": "https://consequence.net/wp-content/uploads/2026/10/Lola-Young-2027-North-American-Tour.jpg?quality=80",
+      "vibe_check": "A candlelit corner booth in a jazz club where the ghosts of October linger, and the piano is still speaking in riddles.",
+      "cover_url": "https://www.jazztimes.com/wp-content/uploads/2026/10/Thelonious_Monk_Mintons_Playhouse_New_York_N.Y._ca._Sept._1947_William_P._Gottlieb_06221-1953x2048-1.jpg",
       "embed_url": null
     }
   ],
@@ -108,172 +152,263 @@
     {
       "source": "good_news",
       "source_name": "Good News Network",
-      "title": "Good News in History, October 6",
-      "url": "https://www.goodnewsnetwork.org/events061006/",
-      "snippet": "115 years ago today, Beatrix de Rijk became the first female licensed Dutch aircraft pilot. This pioneering aviator was born in Surabaya, modern-day Indonesia in the Dutch East Indies, to a Javan mother and a Dutch father. In the Netherlands, she was the first Dutch woman to drive a German automobile, but she found the […]",
-      "cover_url": "https://www.goodnewsnetwork.org/wp-content/uploads/2022/10/Beatrix-de-Rijk-—-pub-domain.jpg",
-      "reason": "History is full of quiet turning points worth remembering, and pausing to mark them reminds us that progress — however slow — is real and cumulative."
-    },
-    {
-      "source": "good_news",
-      "source_name": "Positive News",
-      "title": "The women putting community at the heart of elephant conservation",
-      "url": "https://www.positive.news/environment/the-women-putting-community-at-the-heart-of-elephant-conservation/",
-      "snippet": "Across Africa, women are challenging old assumptions about who conservation is for – and who gets to lead it",
-      "cover_url": "https://positivenews.kinsta.cloud/wp-content/uploads/2026/09/SharedLand_Story02b_WebHeader_1800x1080.jpg",
-      "reason": "When local women are placed at the centre of conservation efforts, both elephants and communities thrive — this approach is proving that protecting wildlife works best when it's rooted in the lives of the people who share the land."
+      "title": "Oldest Man in Oregon Credits Clean Diet and “Good Mind” for Reaching 108-years Young",
+      "url": "https://www.goodnewsnetwork.org/oldest-man-in-oregon-credits-clean-diet-and-good-mind-for-reaching-108-years-young/",
+      "snippet": "A man who’s believed to be the oldest individual in the state of Oregon recently rung in 108-years-young with a cake and some words of wisdom. “You don’t know what it’s like to be 100-plus. I’ve found out and I like it!” the Birthday Boy said beneath 3 large blue balloons forming 108, with […]",
+      "cover_url": "https://www.goodnewsnetwork.org/wp-content/uploads/2026/10/maxresdefault-2.jpg",
+      "reason": "At 108, Oregon's oldest man is a living reminder that longevity often comes down to simple, sustainable choices — nourishing food and a peaceful mind — rather than anything out of reach. His story offers a quietly radical model for how any of us might approach the decades ahead."
     },
     {
       "source": "good_news",
       "source_name": "Upworthy",
-      "title": "Kansas inmates raised over $4,000 of their own money to pay down a school district’s lunch debt",
-      "url": "https://www.upworthy.com/pn-inmates-raise-money-school-lunch-debt/",
-      "snippet": "Inmates pooled $3,810 from their own accounts, while prison staff added the rest to clear most of the balance.",
-      "cover_url": "https://www.upworthy.com/wp-content/uploads/sites/2/2026/10/students-school-lunch.png",
-      "reason": "Kansas inmates dipped into their own limited funds so that children they'll never meet could eat without worry — a quiet, generous act that says something profound about our shared instinct to look after one another."
+      "title": "Man uses ‘garbage’ shoes to explain troubling economic trend for middle-class Americans",
+      "url": "https://www.upworthy.com/fast-fashion-garbage-shoes-trend-ex1/",
+      "snippet": "\"These shoes are just the tip of the iceberg.\"",
+      "cover_url": "https://www.upworthy.com/wp-content/uploads/sites/2/2025/07/origin-179.png",
+      "reason": "While this headline points to a real economic strain, awareness is the first step toward meaningful change, and more Americans are finding community in honest conversations about financial pressure."
     },
     {
       "source": "good_news",
       "source_name": "The Optimist Daily",
-      "title": "Social physiology: the hidden health cost of eating alone, according to science",
-      "url": "https://www.optimistdaily.com/2026/10/social-physiology-the-hidden-health-cost-of-eating-alone-according-to-science/",
-      "snippet": "BY THE OPTIMIST DAILY EDITORIAL TEAM A study published in Science Advances found that eating the same meal with a close companion produces measurably better blood sugar control than eating it alone. In experiments with 108 participants, researchers at the Hebrew University of Jerusalem measured glycemic response after eating roughly 100 grams of white-wheat bread […] The post Social physiology: the hidden health cost of eating alone, according to science first appeared on The Optimist Daily: Making Solutions the News .",
-      "cover_url": "https://www.optimistdaily.com/wp-content/uploads/Depositphotos_625473724_S.jpg",
-      "reason": "Science is confirming what our grandparents always knew: sharing a meal matters deeply to our wellbeing, giving us a meaningful reason to be more intentional about gathering around the table together."
+      "title": "6 things that will bring more birds to your backyard this autumn",
+      "url": "https://www.optimistdaily.com/2026/10/6-things-that-will-bring-more-birds-to-your-backyard-this-autumn/",
+      "snippet": "BY THE OPTIMIST DAILY EDITORIAL TEAM If you’ve ever caught a flash of movement in the branches in early October – something small and unfamiliar, not the usual backyard regulars – there’s a good chance it was a migrating bird passing through and looking for somewhere to stop. Tens of millions travel through the country […] The post 6 things that will bring more birds to your backyard this autumn first appeared on The Optimist Daily: Making Solutions the News .",
+      "cover_url": "https://www.optimistdaily.com/wp-content/uploads/Depositphotos_757307428_S.jpg",
+      "reason": "Small, intentional choices in your own backyard can help support wild bird populations facing habitat loss — and these six tips make it easy to turn any outdoor space into a genuine refuge this autumn."
     }
   ],
   "discovery_articles": [
     {
       "source": "discovery",
       "source_name": "Atlas Obscura",
-      "title": "Gravesite of Justice Willam Cushing in Scituate, Massachusetts",
-      "url": "https://www.atlasobscura.com/places/gravesite-of-justice-willam-cushing",
-      "snippet": "South of the town of Scituate (pronounced /SIT-you-it/), roughly a mile and a half from the Atlantic coast of Massachusetts, nestled in the second-smallest state park in Massachusetts, at the end of a secluded but luxurious residential street, is the gravesite of one of the founders of the United States, Justice William Cushing. You could drive by the entrance a hundred times and miss it each time. But this scenic little forested spot offers great scenery, a view of a secluded salt marsh, and the opportunity to pay respect to one of the people who helped build the republic as it is today.",
+      "title": "Tomb of Mem de Sá in Salvador, Brazil",
+      "url": "https://www.atlasobscura.com/places/catedral-basilica-de-salvador-tomb-of-mem-de-sa",
+      "snippet": "Located in the heart of Salvador’s historic center, the Catedral Basílica de Salvador stands in the famous Terreiro de Jesus, surrounded by some of the city’s oldest streets and churches. Its richly decorated Baroque interior, covered in intricate carvings, gold details, paintings, and religious artwork, makes it one of the most impressive historic churches in Bahia. What makes the cathedral particularly fascinating is the connection between its beauty and Salvador’s darker colonial history.",
       "category": "history",
-      "cover_url": "https://img.atlasobscura.com/pXbWbQ4pUjvtbOOjc8te5SEf-Bw0zdNFSKolk-EKX2c/rt:fit/w:600/c:1836:1224:nowe:0:27/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy8yODIy/NTUwZi1hZjc2LTQ2/N2UtOGJkNi00MzI3/ZDBjNDkwMGNkMmM2/MDBkMTg1NTNjYmNh/MzBfSU1HXzQ3NjUu/anBlZw.jpg",
-      "ferns_note": "One of the six original Supreme Court Justices — a man who swore in George Washington — lies in a park so discreet you could miss it a hundred times on a residential street in coastal Massachusetts. There's something quietly radical about a founder of the republic resting in near-total obscurity, half a mile from a salt marsh."
+      "cover_url": "https://img.atlasobscura.com/gWWOqSw68-uHU2GhNKSxHq8ujKaD4QMRPHOZng6Q2aE/rt:fit/w:600/c:960:640:nowe:0:181/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy8xMzY2/ZjQxNC0yNGU2LTQ0/MDMtYThiYi00ZWVj/ZjIwZjJiMjU1NThj/YzE3MTczZDFhZDRk/NmNfZGFkMGI0YTUt/OWM2Ni00NzU2LTk2/MWYtNjJlM2FmYzNj/MGVkLmpwZw.jpg",
+      "ferns_note": "The gilded splendor of Salvador's cathedral was built on the labor of enslaved people — its beauty and its brutality are inseparable, carved into the same walls. Mem de Sá, the colonial governor entombed within, oversaw some of the most violent suppression of Indigenous resistance in Brazilian history."
+    },
+    {
+      "source": "discovery",
+      "source_name": "Atlas Obscura",
+      "title": "Round Barn Capital of the World in Rochester, Indiana",
+      "url": "https://www.atlasobscura.com/places/round-barn-capital-of-the-world",
+      "snippet": "Your typical barn employs a rectangular shape, with various styles of roofing. However, rectangular barns use material inefficiently; a round design allows a larger area to be enclosed by the same amount of siding. By the early 20th century, round barns were faster, cheaper, and easier to build than rectangular barns, while land-grant colleges like Purdue University heralded them as the future of agriculture.",
+      "category": "history",
+      "cover_url": "https://img.atlasobscura.com/LX3XeUtQoNiCQgeDn3tRrHUHpvOyXisof8C49tlc6qQ/rt:fit/w:600/c:4695:3130:nowe:761:957/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy81NDIw/ZmQ0Ny1kNDMzLTQ0/NTAtODFlYS1mNjJh/YjE1MjI4ZWZmMTgz/M2YyODBlYmE1NDgw/MTRfSU1HXzE5Nzcu/SlBFRw.jpg",
+      "ferns_note": "Round barns were once championed by agricultural colleges as a revolutionary leap forward — and then, almost entirely forgotten within a generation. Rochester, Indiana quietly became their unlikely capital and keeper, home to more surviving round barns than anywhere else on earth."
+    },
+    {
+      "source": "discovery",
+      "source_name": "Atlas Obscura",
+      "title": "Susannah Place in The Rocks, Australia",
+      "url": "https://www.atlasobscura.com/places/susannah-place",
+      "snippet": "Located in The Rocks, Sydney's oldest neighborhood, the four humble terrace houses that make up Susannah Place were built in 1844 by Irish immigrants. For over 150 years, the row housed more than 100 working class families ranging from the families of Greek shopkeepers to Norwegian sailors. Having survived a bubonic plague outbreak, the resulting slum clearances, and the threat of gentrification, Susannah Place remained intact and relatively unchanged.",
+      "category": "history",
+      "cover_url": "https://img.atlasobscura.com/zwZuTMeVKnti3EKKWPaX7-W64AlzRaLEaZTTpw3HxKc/rt:fit/w:600/c:1600:1066:nowe:0:0/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy8zNWJm/MzNjMS0wYzlhLTQ2/OTEtYTkyYy03OWIy/MjU4YTA1ZGU5Yjlh/MmYwZGMzY2RmNjli/ZmVfMTAwMDA5NDAz/Mi5qcGc.jpg",
+      "ferns_note": "Susannah Place survived a bubonic plague, demolition threats, and the slow erasure of gentrification — 150 years of working-class life pressed into four modest terrace houses that the city kept trying to forget. It's one of the rare places where ordinary people's history refused to be tidied away."
     },
     {
       "source": "discovery",
       "source_name": "Smithsonian",
-      "title": "Remarkable Fossil of a Feathered, Winged Dinosaur Further Hints That Flight Evolved Multiple Times Among the 'Terrible Lizards'",
-      "url": "https://www.smithsonianmag.com/smart-news/remarkable-fossil-of-a-feathered-winged-dinosaur-further-hints-that-flight-evolved-multiple-times-among-the-terrible-lizards-180989612/",
-      "snippet": "The fossil belonged to a category of dinosaurs called microraptors, which were bird-like but not ancestors of modern-day avians. A new study found that this group of ancient predators evolved similar anatomical adaptations to birds, but developed them in a different order",
+      "title": "New Research Shows That These Ancient Egyptian Servants May Have Been Brutally Sacrificed and Buried Alongside Their Pharaohs",
+      "url": "https://www.smithsonianmag.com/smart-news/new-research-shows-that-these-ancient-egyptian-servants-may-have-been-brutally-sacrificed-and-buried-alongside-their-pharaohs-180989619/",
+      "snippet": "Forensic research has identified deliberate and fatal wounds on skulls from simple grave sites near First Dynasty royal tombs in Upper Egypt",
       "category": "history",
-      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/ur3N4lDRjHqnoOgJy9eL9ZSF3fE=/fit-in/1600x0/filters:focal(750x500:751x501)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/e5/8b/e58bb7f0-27ac-4493-905d-6f2484c70402/microraptor-main.png",
-      "ferns_note": "Microraptors didn't just stumble toward flight — they independently evolved the same anatomical toolkit as birds, just in a different sequence, suggesting the sky was something life kept *reinventing* ways to reach. The idea that flight is less a singular miracle than a recurring temptation of evolution is genuinely haunting."
+      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/zXKjJq8UmVC4U1cmOihEkOX_uok=/fit-in/1600x0/filters:focal(2560x1707:2561x1708)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/8a/df/8adfb3b5-7323-48e8-b709-f6ad9a2de189/cc0wg6.jpg",
+      "ferns_note": "Forensic analysis of skulls buried near Egypt's earliest royal tombs has found deliberate, fatal blows — suggesting that retainer sacrifice, long debated by scholars, may have been a grim reality of the First Dynasty court. The servants didn't follow their pharaohs into the afterlife; they were sent."
     },
     {
       "source": "discovery",
       "source_name": "Smithsonian",
-      "title": "See the Impressive Winning Images of Adorable, Somber and Commanding Canines From the 2026 Dog Photography Awards",
-      "url": "https://www.smithsonianmag.com/smart-news/see-the-impressive-winning-images-of-adorable-somber-and-commanding-canines-from-the-2026-dog-photography-awards-180989609/",
-      "snippet": "Posing pit bulls, stoic galgos and frisbee-chasing Aussies feature among the annual competition’s prize winners",
+      "title": "This Lollipop Could Help Blind Women Independently Detect Pregnancy",
+      "url": "https://www.smithsonianmag.com/innovation/this-lollipop-could-help-blind-women-independently-detect-pregnancy-180989608/",
+      "snippet": "Design student Sneha Rao is developing Tact, an edible pregnancy test that allows people with vision impairment to feel its results on their tongues",
       "category": "history",
-      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/YR5yDVNO-R6LuLEHiWJu_6hgmLs=/fit-in/1600x0/filters:focal(1024x683:1025x684)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/5d/d1/5dd170ef-4aad-4dd8-ab4a-575e7c4a9d04/4431hr.jpg",
-      "ferns_note": "A stoic galgo mid-portrait and a pit bull holding a pose — the 2026 Dog Photography Awards are proof that the right lens can make a dog look like they have more gravitas than most people in any given room. Worth a quiet scroll."
+      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/bd29fmv3pCabwfRkrarnvoWeX0g=/fit-in/1600x0/filters:focal(960x549:961x550)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/94/be/94be7181-550d-4831-ac94-9672b56da5e3/formimagining_copy.jpg",
+      "ferns_note": "A pregnancy test you dissolve on your tongue — Sneha Rao's edible Tact device reads results through texture felt against the palate, opening up a deeply personal moment of discovery to those who've long been excluded from it. It's one of those designs that makes you wonder why it took this long."
     },
     {
       "source": "discovery",
       "source_name": "Smithsonian",
-      "title": "The Roman City of Claudivium Disappeared From Historical Records Almost 2,000 Years Ago. It May Have Been Hiding in Austria",
-      "url": "https://www.smithsonianmag.com/smart-news/the-roman-city-of-claudivium-disappeared-from-historical-records-almost-2000-years-ago-it-may-have-been-hiding-in-austria-180989614/",
-      "snippet": "Archaeologists have discovered a previously unknown settlement on the banks of the Danube River",
+      "title": "This Brain Implant Allows People With Paralysis to Speak and Gesture at the Same Time Via a Mind-Controlled Virtual Avatar",
+      "url": "https://www.smithsonianmag.com/smart-news/this-brain-implant-allows-people-with-paralysis-to-speak-and-gesture-at-the-same-time-via-a-mind-controlled-virtual-avatar-180989604/",
+      "snippet": "The experimental technology is still in the early stage and was fully tested in just two participants. But it could one day help people with motor problems communicate with more nuance or help them control robotic prosthetic limbs",
       "category": "history",
-      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/omP8IHfMDSY-Ry39vGUDEnSyzVg=/fit-in/1600x0/filters:focal(2040x1166:2041x1167)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/05/50/05506f1a-a31d-4286-a6a8-318d9e0505b3/3_stein_magnetik_geosphere.jpg",
-      "ferns_note": "A Roman city name-dropped in ancient records and then simply — gone — for two millennia, only to quietly resurface on the banks of the Danube in modern Austria. The Romans built an empire; history buried one of its chapters so thoroughly it took until now to find the page."
+      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/juM0HETM5vjRJUlYGLnYZStfms8=/fit-in/1600x0/filters:focal(960x544:961x545)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/3d/0b/3d0b0830-44fd-4131-b9c8-34e31c737957/brain-implant.png",
+      "ferns_note": "The breakthrough here isn't just speech — it's that a mind-controlled avatar can now speak and gesture simultaneously, restoring something closer to the full texture of human communication for people with paralysis. Language was never only words, and this technology is finally catching up to that truth."
+    },
+    {
+      "source": "discovery",
+      "source_name": "Smithsonian",
+      "title": "A Diver Volunteered to Clean Up Trash From a Wisconsin Lake. He Discovered a 1,000-Year-Old Dugout Canoe at the Bottom Instead",
+      "url": "https://www.smithsonianmag.com/smart-news/a-diver-volunteered-to-clean-up-trash-from-a-wisconsin-lake-he-discovered-a-1000-year-old-dugout-canoe-at-the-bottom-instead-180989622/",
+      "snippet": "Indigenous communities near present-day Milwaukee hand-carved the white-oak vessel before shaping it with fire between roughly 992 and 1049 C.E.",
+      "category": "history",
+      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/g5n1aUGp6DvMgf6IFhcvqSevYRM=/fit-in/1600x0/filters:focal(2784x2439:2785x2440)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/43/d4/43d47cc6-e2ca-450a-b773-59115bd9f37c/dugout-canoe.png",
+      "ferns_note": "A volunteer diver armed with trash bags pulled a thousand-year-old hand-carved canoe from the bottom of a Wisconsin lake — a vessel shaped by Indigenous hands with both tools and fire, and preserved by the cold dark water for a millennium. The lake had been keeping a secret the whole time."
+    },
+    {
+      "source": "discovery",
+      "source_name": "Science News",
+      "title": "‘A Mother’s Brain’ explores the neuroscience of motherhood",
+      "url": "https://www.sciencenews.org/article/mommy-brain-neuroscience-book",
+      "snippet": "Neuroscientist Susana Carmona’s book guides readers through a new mom’s changing brain.",
+      "category": "science",
+      "cover_url": "https://www.sciencenews.org/wp-content/uploads/sites/2/2026/09/092126_LS_motherbrain_bookreview.jpg",
+      "ferns_note": "Neuroscientist Susana Carmona's research reveals that pregnancy physically reshapes the maternal brain in ways that persist for years — changes so consistent they can be used to identify whether someone has been pregnant at all. Motherhood, it turns out, is written into the brain's very architecture."
+    },
+    {
+      "source": "discovery",
+      "source_name": "Science News",
+      "title": "The world’s loudest bird could drown out a rock concert",
+      "url": "https://www.sciencenews.org/article/worlds-loudest-bird-jackhammer-volume",
+      "snippet": "Bigger bodies and wider beaks help birds like the bare-throated bellbird belt out calls louder than a jackhammer, but why such volume evolved remains unclear.",
+      "category": "science",
+      "cover_url": "https://www.sciencenews.org/wp-content/uploads/sites/2/2026/10/100126_ED_loudest-birds_main.jpg",
+      "ferns_note": "The bare-throated bellbird produces a call louder than a jackhammer — and its fellow birds stand nearby apparently unbothered, raising the delightful question of what exactly counts as too loud in the animal kingdom. Evolution handed this bird a weapon it may not entirely need."
+    },
+    {
+      "source": "discovery",
+      "source_name": "Science News",
+      "title": "Your voice is more than sound. It’s part of who you are",
+      "url": "https://www.sciencenews.org/article/deep-end-voice-more-sound-identity",
+      "snippet": "The human brain is built to hear voices. Speaking connects us to other people — and ourselves. What do our voices reveal about ourselves?",
+      "category": "science",
+      "cover_url": "https://www.sciencenews.org/wp-content/uploads/sites/2/2026/09/093026_LS_TDEEpisode1_main.jpg",
+      "ferns_note": "The human brain has dedicated neural machinery for recognizing voices — circuitry so specialized it operates separately from general sound processing, as if the brain always knew that a voice was never just noise. What we hear in someone's voice, it turns out, is rarely wrong."
+    },
+    {
+      "source": "discovery",
+      "source_name": "The Public Domain Review",
+      "title": "The Alchemical Transformations of the Mutus Liber (1677)",
+      "url": "https://publicdomainreview.org/collection/mutus-liber",
+      "snippet": "Carl Jung’s copy of the “mute book”, a wordless, visual manual, charting the “humid way” of forging the Philosopher’s Stone.",
+      "category": "history",
+      "cover_url": "https://pdr-assets.b-cdn.net/collections/mutus-liber/1350361-original-edit-thumb.jpeg",
+      "ferns_note": "The Mutus Liber is an entirely wordless 17th-century manual for making the Philosopher's Stone — its instructions conveyed purely through cryptic engravings, as if the secret was too dangerous to write down. Carl Jung owned a copy, which feels exactly right."
+    },
+    {
+      "source": "discovery",
+      "source_name": "JSTOR Daily",
+      "title": "Inventing Pad Thai",
+      "url": "https://daily.jstor.org/inventing-pad-thai/",
+      "snippet": "A government campaign transformed a Chinese-inspired noodle dish into a symbol of Thailand's national identity.",
+      "category": "history",
+      "cover_url": "https://daily.jstor.org/wp-content/uploads/2026/10/inventing_pad_thai_1050x700.jpg",
+      "ferns_note": "Pad Thai isn't an ancient culinary tradition — it was invented by a government propaganda campaign in the 1930s to forge a unified national identity and reduce rice consumption during a shortage. The dish most tourists associate with the soul of Thailand was essentially a political project."
+    },
+    {
+      "source": "discovery",
+      "source_name": "Colossal",
+      "title": "Photographer Elizaveta Porodina Turns Her Luminous Lens to Insects",
+      "url": "https://www.thisiscolossal.com/2026/10/elizaveta-porodina-photos-found-dreams/",
+      "snippet": "A radiant series of portraits highlights beetles, butterflies, and mantises in Elizaveta Porodina's signature ethereal style and saturated color.",
+      "category": "history",
+      "cover_url": "https://www.thisiscolossal.com/wp-content/uploads/2026/10/porodina-6.jpg",
+      "ferns_note": "Elizaveta Porodina turns her lens — usually trained on the surreal and the human — toward beetles and mantises with the same hypnotic intensity she brings to portraiture, and the result is unsettling in the best way. It turns out insects have been waiting for this kind of attention all along."
+    },
+    {
+      "source": "discovery",
+      "source_name": "Colossal",
+      "title": "Amok Island’s Geometric Murals Teem with Vibrant Local Flora and Fauna",
+      "url": "https://www.thisiscolossal.com/2026/10/amok-island-geometric-nature-murals/",
+      "snippet": "The Fremantle-based artist shines a light on the continued importance of conservation.",
+      "category": "history",
+      "cover_url": "https://www.thisiscolossal.com/wp-content/uploads/2026/10/amok-8.jpeg",
+      "ferns_note": "Amok Island's sprawling geometric murals map the biodiversity of Fremantle's local ecosystems with the precision of a naturalist and the warmth of someone genuinely alarmed by what's disappearing. Conservation art rarely feels this urgent without raising its voice."
     }
   ],
   "featured_read": {
     "source": "reads",
-    "source_name": "The Atlantic",
-    "title": "AI’s Real Gift to Science",
-    "url": "https://www.theatlantic.com/science/2026/10/anthropic-artificial-intelligence-science-biology/688878/?utm_source=feed",
-    "snippet": "Advanced models can help researchers sort through mountains of biological data.",
-    "cover_url": "",
-    "blurb": "AI's most quietly revolutionary contribution to science isn't generating answers — it's finally making the right questions findable inside mountains of biological noise. This piece traces exactly how that shift is reshaping research from the inside out."
+    "source_name": "Psyche",
+    "title": "What does it really take to be a resilient mother?",
+    "url": "https://psyche.co/ideas/what-does-it-really-take-to-be-a-resilient-mother",
+    "snippet": "New motherhood is hard – and a mother’s ability to cope depends on multiple kinds of strength, both internal and external - by Sarah Emmerson Read on Psyche",
+    "cover_url": "https://images.aeonmedia.co/images/93c51433-8536-498b-ba2e-e261146cf00a/sz-gettyimages-1483348870.jpg?top=125&left=0&cropWidth=2400&cropHeight=1350&width=1200&quality=75&format=jpeg",
+    "blurb": "Sarah Emmerson quietly dismantles the myth that resilience is simply a matter of inner grit, tracing instead the web of internal and external resources that actually hold a new mother together. If you've ever wondered why 'just be strong' feels like such a hollow instruction, this is the essay that answers it."
   },
   "reading_room": [
     {
       "source": "reads",
-      "source_name": "The Atlantic",
-      "title": "Movies Are Undeniably Back",
-      "url": "https://www.theatlantic.com/newsletters/2026/10/video-village-weekly-movies-newsletter/688875/?utm_source=feed",
-      "snippet": "Introducing a new newsletter that brings readers together to share in their passion for film",
-      "cover_url": "",
-      "blurb": "A newsletter launch piece that doubles as a love letter to the collective ritual of watching films — worth a glance if only to remember why you fell for cinema in the first place."
-    },
-    {
-      "source": "reads",
-      "source_name": "Aeon",
-      "title": "How to assemble science",
-      "url": "https://aeon.co/essays/the-life-saving-scientific-knowledge-hiding-in-plain-sight",
-      "snippet": "Humanity produces a staggering amount of new knowledge every day. The question is how to make sense of it all - by Helen Pearson Read on Aeon",
-      "cover_url": "https://images.aeonmedia.co/images/12748f11-e0ce-47d8-8b35-d2d1018380bc/essay-2016-10-10t000000z_1858079971_d1aeugejeiaa_rtrmadp_3_health-cancer-immunotherapy.jpg?width=1200&quality=75&format=jpeg",
-      "blurb": "Humanity now produces more new knowledge each day than any single mind could absorb in a lifetime — so Helen Pearson asks the quietly urgent question: who, or what, is responsible for assembling it into something we can actually use?"
-    },
-    {
-      "source": "reads",
-      "source_name": "Nautilus",
-      "title": "Fat Cells May Retain a Memory of Obesity",
-      "url": "https://nautil.us/fat-cells-may-retain-a-memory-of-obesity-1285557/",
-      "snippet": "Which could be why weight regain is so common",
-      "cover_url": "https://lede-admin.nautil.us/wp-content/uploads/sites/70/2026/10/shutterstock_2286858577.jpg",
-      "blurb": "Your fat cells, it turns out, may carry a biological memory of past obesity — a discovery that reframes weight regain not as a failure of willpower but as the body stubbornly rereading its own history."
-    },
-    {
-      "source": "reads",
-      "source_name": "Psyche",
-      "title": "A psychological guide to climbing out of debt",
-      "url": "https://psyche.co/guides/a-psychological-guide-to-climbing-out-of-debt",
-      "snippet": "Debt is as much an emotional challenge as a financial one. Follow this therapist’s advice to create a plan that works - by Vicky Reynal Read on Psyche",
-      "cover_url": "https://images.aeonmedia.co/images/8e55a13e-1426-425d-b027-effc86a923fd/debt-nn11433187.jpg?top=1094&left=0&cropWidth=4992&cropHeight=2808&width=1200&quality=75&format=jpeg",
-      "blurb": "A therapist argues that debt lives in the body and the psyche long before it appears on a spreadsheet, and that getting out of it requires addressing the shame and avoidance as much as the numbers."
+      "source_name": "The Paris Review",
+      "title": "A Battle We Had to Win: Yan Lianke on Matchmaking",
+      "url": "https://www.theparisreview.org/blog/2026/10/06/yan-lianke-memoir-the-women-matchmaking/",
+      "snippet": "“A girl who worked in a Luoyang department store was willing to marry me—I had only to say the word.”",
+      "cover_url": "https://www.theparisreview.org/blog/wp-content/uploads/2026/09/03-1000px-e1789672088236.png",
+      "blurb": "Yan Lianke uses a single, almost-taken marriage proposal as a keyhole into the absurdities of love and social ambition in Maoist China — where finding a wife was, quietly, a battle with history itself. It's the kind of personal essay that makes the vast feel intimate."
     },
     {
       "source": "reads",
       "source_name": "Longreads",
-      "title": "The Unforeseen Something",
-      "url": "https://longreads.com/2026/10/06/rare-disease-c3g-iowa/",
-      "snippet": "When a little girl in Iowa was diagnosed with a rare incurable disease, her parents and their community came together to help her. They wound up making medical history.",
+      "title": "Orange Era",
+      "url": "https://longreads.com/2026/10/06/orange-warning-crisis-climate-covid-wildfire/",
+      "snippet": "\"First it was a fire, then it was a color, and before too long it became a regime unto itself.\"",
       "cover_url": "",
-      "blurb": "A family in Iowa, a devastating diagnosis, and a community that refused to accept 'incurable' — this is the rare kind of story where the medicine and the love are genuinely impossible to separate."
+      "blurb": "This essay tracks how wildfire smoke transformed from a seasonal emergency into a permanent atmospheric condition — and, more unsettlingly, into an aesthetic we've started to normalize. It asks what it means when catastrophe stops feeling like an interruption and starts feeling like weather."
+    },
+    {
+      "source": "reads",
+      "source_name": "Literary Hub",
+      "title": "Here are the 2026 National Book Awards finalists.",
+      "url": "https://lithub.com/here-are-the-2026-national-book-awards-finalists/",
+      "snippet": "Today, the National Book Foundation announced the finalists in all five categories—Fiction, Nonfiction, Poetry, Translated Literature, and Young People’s Literature—for the 2026 National Book Awards. The winners will be announced at the 77th National Book Awards Ceremony & Benefit Dinner",
+      "cover_url": "https://s26162.pcdn.co/wp-content/uploads/2026/10/nationalbookawards.jpg",
+      "blurb": null
+    },
+    {
+      "source": "reads",
+      "source_name": "Noema",
+      "title": "Americans Are Losing The Long Game",
+      "url": "https://www.noemamag.com/americans-are-losing-the-long-game",
+      "snippet": "",
+      "cover_url": "https://noemamag.imgix.net/2026/10/Revised-1.png?fit=crop&fm=png&h=628&ixlib=php-3.3.1&rect=0%2C516%2C946%2C495&w=1200&wpsize=noema-social-facebook&s=3a174227bf206498cbdec2a0fa3fe5ed",
+      "blurb": null
+    },
+    {
+      "source": "reads",
+      "source_name": "The Atlantic",
+      "title": "Churches Are Finally Making the Moral Case Against Sports Betting",
+      "url": "https://www.theatlantic.com/ideas/2026/10/gambling-betting-religious-leaders/688893/?utm_source=feed",
+      "snippet": "The Church of Jesus Christ of Latter-day Saints is the most recent faith community to come out strongly against online gambling.",
+      "cover_url": "",
+      "blurb": null
     }
   ],
   "garden_note": {
-    "note": "The maples along the Limmat are putting on their amber show now, and the garden is easing into that lovely, slightly melancholy rhythm of mid-autumn — dahlias still bravely lit, but the cold is making its intentions known after dark. A good evening to bring in the last of the squash and pour yourself something warm.",
+    "note": "October is settling in with quiet authority over Zürich — the linden avenues along the Limmat are turning amber and the garden is giving its last generous exhale before the cold arrives. This is the hour to linger outside with a wool layer and watch the hills dissolve into blue dusk.",
     "in_season": [
-      "Dahlias (last blooms before frost)",
-      "Winter squash and pumpkins — harvest now",
-      "Planting tulip and narcissus bulbs for spring",
-      "Clearing spent annuals and mulching beds"
+      "Quince — harvest now before the first hard frost nips them",
+      "Kale and chard — sweetening beautifully after cool nights",
+      "Autumn asters still in bloom at the borders",
+      "Planting garlic cloves for next summer's harvest"
     ],
-    "sky_tonight": "With only a thin waning crescent moon rising well after midnight, the sky over Zürich will be beautifully dark — ideal for tracing the great square of Pegasus rising high in the east.",
-    "sun_times": "Dusk settled in around 19:26 tonight, with sunset at 18:57 — the evenings are shortening noticeably now.",
+    "sky_tonight": "A slim waning crescent moon rises in the small hours — leaving the early evening sky reassuringly dark; look south for the Pegasus square riding high above the Zürichberg.",
+    "sun_times": "Dusk settles over the city at 19:26 tonight, with sunset itself at 18:57 — the evenings are pulling in fast now.",
     "moon_label": "Waning crescent",
-    "illum_pct": 25,
+    "illum_pct": 22,
     "sun_range": "07:30–18:57"
   },
   "puzzle": {
     "kind": "trivia",
     "label": "The Evening Trivia",
-    "prompt": "Pokémon Go is a location-based augmented reality game developed and published by which company?\n\nNiantic   ·   Rovio   ·   Supercell   ·   Zynga",
-    "answer": "Niantic",
-    "hint": "Category: Entertainment: Video Games",
+    "prompt": "The Quadrangularis Reversum is best described as which of the following?\n\nA building in Oxford University   ·   A chess move   ·   A geometric theorem   ·   A percussion instrument",
+    "answer": "A percussion instrument",
+    "hint": "Category: General Knowledge",
     "source": "opentdb.com",
-    "source_id": "32201c59df5a"
+    "source_id": "c27e7cacbb4f"
   },
   "previous_puzzle": {
-    "label": "Fern's Morning Anagram",
-    "prompt": "Unscramble CAVEHORN — once a staple of the symphony orchestra, this instrument's mellow voice curves through the concert hall like autumn itself.",
-    "answer": "FRENCH HORN"
+    "label": "The Evening Trivia",
+    "prompt": "Pokémon Go is a location-based augmented reality game developed and published by which company?\n\nNiantic   ·   Rovio   ·   Supercell   ·   Zynga",
+    "answer": "Niantic"
   },
   "larder": {
     "news": [],
     "recipe": {}
   },
   "fern_data": {
-    "greeting": "Kansas inmates quietly pooled their own money to erase a school district's lunch debt — and somewhere in tonight's edition, a winged dinosaur is making paleontologists rethink flight from the beginning. Pull up a chair.",
-    "top_pick_title": "Debts Paid, Skies Reconsidered"
+    "greeting": "The canoe was already down there, waiting — a thousand years patient under a Wisconsin lake while a diver arrived thinking he was just picking up litter. Tonight also has Gabriel Kahane and a Finnish violinist making something that sounds like two people finishing each other's sentences across an ocean.",
+    "top_pick_title": "Depth & Discovery"
   }
 }
