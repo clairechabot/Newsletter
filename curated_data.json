@@ -1,289 +1,425 @@
 {
-  "fetched_at": "2026-10-08T12:45:32.748708+02:00",
+  "fetched_at": "2026-10-08T22:00:31.302088+02:00",
   "is_am_email": false,
   "audit_summary": {
     "youtube_videos": 0,
     "themes": 0,
-    "music_articles": 10,
+    "music_articles": 12,
     "good_news_articles": 4,
-    "discovery_articles": 3,
+    "discovery_articles": 15,
     "featured_read": 1,
     "reading_room": 5,
     "garden": 1,
-    "puzzle": 1,
+    "puzzle": 0,
     "larder": 0
   },
   "themes": [],
   "morning_soundtrack": [
     {
       "source": "music",
-      "source_name": "Stereogum",
-      "title": "Jess Williamson – “Hum Of The City”",
-      "snippet": "Jess Williamson has a voice . The Texan singer-songwriter is capable of a doing incredible things with a full-body gut wail that contains just a hint of high-lonesome yip. This isn't exactly news if you've ever spent any time listening to her, but it really comes through on her new song \"Hum Of The City.\"",
-      "url": "https://stereogum.com/2513860/jess-williamson-hum-of-the-city/music/",
+      "source_name": "NPR Music",
+      "title": "Tiny Desk Radio: Luiza Brina, Silvia Pérez Cruz, Mon Laferte",
+      "snippet": "We make the case to expand the canon for the New Wave of Latin Jazz. Look for Tiny Desk Radio on your local NPR station.",
+      "url": "https://www.npr.org/2026/10/08/g-s1-146957/tiny-desk-radio-luiza-brina-silvia-perez-cruz-mon-laferte",
       "genre": "",
-      "vibe_check": "The kind of voice that stops you mid-step on a dusty back road and makes you forget where you were going.",
-      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/10/Jess-Williamson.jpeg?w=564",
-      "embed_url": "https://www.youtube.com/embed/bmu2JzQWEvk"
+      "vibe_check": "Like discovering a late-night café in a city you've never been to, where the music rewires something quietly inside you.",
+      "cover_url": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/2000x1125+0+0/resize/1400/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F37%2Fb6%2F76fad03049e7843686a99747def6%2F20260727-monlaferte-credit-zayrharodriguez-3.jpg",
+      "embed_url": "https://www.youtube.com/embed/oZxDV3qwyKs"
+    },
+    {
+      "source": "music",
+      "source_name": "NPR Music",
+      "title": "Los Texmaniacs: Tiny Desk Concert",
+      "snippet": "Los Texmaniacs' accordion-driven music is a living history lesson, which just so happens to be perfect for twirling on the dance floor.",
+      "url": "https://www.npr.org/2026/10/08/g-s1-141839/los-texmaniacs-tiny-desk-concert",
+      "genre": "",
+      "vibe_check": "Boots-on-hardwood energy that makes your feet move before your brain has a chance to object.",
+      "cover_url": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/2000x1125+0+0/resize/1400/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F22%2F5d%2F7ec182aa41138ecfb506b095423a%2F20260828-lostexmaniacs-credit-zayrharodriguez-7.jpg",
+      "embed_url": null
     },
     {
       "source": "music",
       "source_name": "Stereogum",
-      "title": "Watch American Football Play Acoustic Cure Cover On SiriusXMU",
-      "snippet": "Reunited Midwest emo pioneers American Football have influenced a great many bands over the years. They've been back together since 2014, though they haven't always had an easy time with it , and young artists like Hayley Williams and Turnstile's Brendan Yates have lined up to work with them. While they're out there promoting their fourth album , American Football recently did an in-studio session for SiriusXMU and covered one of their own great influences, the Cure.",
-      "url": "https://stereogum.com/2513846/watch-american-football-play-acoustic-cure-cover-on-siriusxmu/news/",
+      "title": "Steve Martin, Alison Brown, Del McCoury, & Dan Tyminski Cover Lil Nas X’s “Old Town Road”",
+      "snippet": "Last year comedy legend Steve Martin teamed with his fellow banjo player Alison Brown on an album called Safe, Sensible And Sane . They're continuing to work together, and today they've brought some more bluegrass titans into their midst to cover... Lil Nas X?",
+      "url": "https://stereogum.com/2513990/steve-martin-alison-brown-del-mccoury-dan-tyminski-cover-lil-nas-xs-old-town-road/news/",
       "genre": "",
-      "vibe_check": "Like finding an old mixtape in a shoebox — two beloved eras of heartache folding into each other with quiet reverence.",
-      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/10/American-Football.jpeg?w=564",
-      "embed_url": "https://www.youtube.com/embed/-rQ_5upE-Ao"
+      "vibe_check": "The delightful chaos of a barn dance where someone accidentally put a trap banger on the playlist and everyone just leaned in.",
+      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/10/ezgif-3c2e56b64bb9839d.jpg?w=564",
+      "embed_url": "https://www.youtube.com/embed/a_GCX5IoCds"
     },
     {
       "source": "music",
       "source_name": "Stereogum",
-      "title": "Star Moles Signs With Dead Oceans, Shares New Song “Born Again”",
-      "snippet": "Right now, the indie rock world is in the process of discovering Emily Moales, the prolific Philly-based New Hampshire native who records extremely cool DIY music under the name Star Moles. The Star Moles discography is deep , with dozens of releases going back nearly a decade, but the recent album Highway To Hell , one of our favorites of the year , is where most of us got on board. Jeff Tweedy covered her .",
-      "url": "https://stereogum.com/2513837/star-moles-signs-with-dead-oceans-shares-new-song-born-again/music/",
+      "title": "Ex:Re – “Sleep”",
+      "snippet": "At the end of this month, Elena Tonra who leads the indie-folk trio Daughter, is dropping a new album under another project Ex:Re, titled Save As . She's already released the lead track \"Radio Station,\" and earlier this week, she shared the follow-up single \"Sleep.\"",
+      "url": "https://stereogum.com/2513964/exre-sleep/music/",
       "genre": "",
-      "vibe_check": "The thrill of stumbling onto a secret that the rest of the world is just now catching up to.",
-      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/10/Star-Moles.jpeg?w=564",
-      "embed_url": "https://www.youtube.com/embed/0E8_CvN1BgE"
+      "vibe_check": "The sound of lying very still at 3am, watching the ceiling and deciding not to cry — yet.",
+      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/10/Ex_Re-by-El-Hardwick-_Sleep_-Photo.jpg?w=564",
+      "embed_url": "https://www.youtube.com/embed/7mmYqGZslwc"
+    },
+    {
+      "source": "music",
+      "source_name": "Stereogum",
+      "title": "Classic Traffic – “Ghost’s Host”",
+      "snippet": "\"Ghost's Host\": That's not a song title that I ever want to try to say out loud. It would be a disaster. Those words would trip all over themselves coming out of my mouth.",
+      "url": "https://stereogum.com/2513958/classic-traffic-ghosts-host/music/",
+      "genre": "",
+      "vibe_check": "Murky and atmospheric, like stumbling through a fog that feels somehow intentional.",
+      "cover_url": "https://lede-admin.stereogum.com/wp-content/uploads/sites/64/2026/10/Classic-Traffic.jpeg?w=564",
+      "embed_url": "https://www.youtube.com/embed/VFFbukZx3nM"
+    },
+    {
+      "source": "music",
+      "source_name": "No Depression",
+      "title": "Emotional and Geographic Changes Helped Margo Cilker Make New LP ‘Little White Cross’",
+      "snippet": "There comes a time in the journey of many singer-songwriters when they find themselves drawn to Texas. “Choosin’ Texas,” this is not. It’s chasing the ghosts of its famous (and sometimes infamous) songwriters — Guy Clark, Townes Van Zandt, Joe Ely, Doug Sahm, and",
+      "url": "https://nodepression.org/emotional-and-geographic-changes-helped-margo-cilker-make-new-lp-little-white-cross/",
+      "genre": "",
+      "vibe_check": "Dust on the dashboard, a long highway west, and the ache of chasing someone else's legend into the Texas heat.",
+      "cover_url": "https://storage.ghost.io/c/18/d0/18d08e58-3b1b-4720-ae25-a31b44e69d4b/content/images/2026/10/unnamed-1.jpg",
+      "embed_url": null
+    },
+    {
+      "source": "music",
+      "source_name": "No Depression",
+      "title": "ALBUM REVIEW: Brody Price Sings of the Bottle and the Damage Done on Sobriety Record 'Leaf Miner’s Daughter'",
+      "snippet": "“Nightmares” is a tender and small song on a turbulent record. “I watched the monsters drag their shadows / across the street and straight inside,” Brody Price sings over fingerpicked guitar. It’s the midway point of the Dallas songwriter’s new Leaf Miner’",
+      "url": "https://nodepression.org/album-review-brody-price-leaf-miners-daughter/",
+      "genre": "",
+      "vibe_check": "The quiet, shaky-handed courage of the morning after you finally put the bottle down for good.",
+      "cover_url": "https://storage.ghost.io/c/18/d0/18d08e58-3b1b-4720-ae25-a31b44e69d4b/content/images/2026/10/Brody-Price---Leaf-Miner-s-Daughter-3000x3000.jpg",
+      "embed_url": null
     },
     {
       "source": "music",
       "source_name": "Pitchfork",
-      "title": "Star Moles Signs to Dead Oceans, Readies 2027 Tour",
-      "snippet": "Emily Moales will play U.S. headlining shows behind Highway to Hell in January",
-      "url": "https://pitchfork.com/story/star-moles-signs-to-dead-oceans-readies-2027-tour/",
+      "title": "Loretta Lynn’s Van Lear Rose Is Returning to Streaming",
+      "snippet": "Third Man will reissue Lynn’s 2004 comeback album, which was mysteriously pulled from DSPs in 2021",
+      "url": "https://pitchfork.com/story/loretta-lynns-van-lear-rose-is-returning-to-streaming/",
       "genre": "",
-      "vibe_check": "The buzz of an underdog finally getting her moment, crackling like a venue's PA system warming up before the doors open.",
-      "cover_url": "https://media.pitchfork.com/photos/6ac551396617aad99cf83512/master/pass/Star-Moles.jpeg",
+      "vibe_check": "Coal-dust tough and honey-sweet, the sound of a woman who's already outlasted every room she's walked into.",
+      "cover_url": "https://media.pitchfork.com/photos/6ac7c686d1e096c849ba8c1b/master/pass/Loretta-Lynn-Jack-White.jpeg",
+      "embed_url": null
+    },
+    {
+      "source": "music",
+      "source_name": "Pitchfork",
+      "title": "Watch Audrey Hobert Talk to a Redwood Tree in New “Phoebe” Video",
+      "snippet": "The Friends-inspired Who’s the Clown? track gets its own visual",
+      "url": "https://pitchfork.com/story/audrey-hobert-phoebe-video/",
+      "genre": "",
+      "vibe_check": "Whimsical and tender, like writing a letter to a tree and meaning every word.",
+      "cover_url": "https://media.pitchfork.com/photos/6ac7d03fe70174fa0df5021b/master/pass/Screenshot%202026-10-08%20at%201.13.35%E2%80%AFPM.png",
+      "embed_url": null
+    },
+    {
+      "source": "music",
+      "source_name": "Pitchfork",
+      "title": "Björk Announces New Orchestral Live Album",
+      "snippet": "Drawn from her 2021 performances adapting songs, primarily from Medúlla, for an ensemble including a 50-person choir",
+      "url": "https://pitchfork.com/story/bjork-announces-new-orchestral-live-album/",
+      "genre": "",
+      "vibe_check": "The feeling of standing inside a cathedral built from breath and bone, where the walls themselves are vibrating.",
+      "cover_url": "https://media.pitchfork.com/photos/6ac7b8273d647beb70177987/master/pass/bjork-live-album.jpg",
+      "embed_url": null
+    },
+    {
+      "source": "music",
+      "source_name": "Aquarium Drunkard",
+      "title": "Hawkwind: Do Not Panic (BBC Documentary)",
+      "snippet": "A proper trip inside the Hawkwind mothership. This 2007 BBC documentary traces the band’s journey from the Ladbroke Grove underground through Space Ritual, Lemmy’s tenure, and their collision of rock, psychedelia, science fiction, and counterculture. Featuring interviews with Lemmy, Nik Turner, Michael Moorcock, Stacia and other Hawkwind alumni, it’s a window into a band where free festivals, naked dancers, cosmic poetry, motorways, and very loud amplifiers all somehow occupied the same universe.",
+      "url": "https://aquariumdrunkard.com/2026/10/08/hawkwind-do-not-panic-bbc-documentary/",
+      "genre": "",
+      "vibe_check": "A contact high from a motorway ritual — loud, cosmic, and smelling faintly of commune campfire smoke.",
+      "cover_url": "https://aquariumdrunkard.com/_newness/wp-content/uploads/2025/10/stacia.jpg",
       "embed_url": null
     },
     {
       "source": "music",
       "source_name": "Consequence",
-      "title": "John Mayer Announces 2027 Las Vegas Sphere Residency [Updated]",
-      "snippet": "Each show will feature three different sets: solo, with a full band, and with the John Mayer Trio. John Mayer Announces 2027 Las Vegas Sphere Residency [Updated] Eddie Fu",
-      "url": "https://consequence.net/2026/10/john-mayer-2027-sphere-las-vegas-residency/",
+      "title": "Billy Bragg and Wilco to Release Expanded Box Set of Woody Guthrie Project Mermaid Avenue",
+      "snippet": "Out December 11th, the new set features 16 previously unreleased recordings and is available in digital and physical formats. Billy Bragg and Wilco to Release Expanded Box Set of Woody Guthrie Project Mermaid Avenue Jonah Krueger",
+      "url": "https://consequence.net/2026/10/billy-bragg-wilco-expanded-edition-of-woody-guthrie-project-mermaid-avenue/",
       "genre": "",
-      "vibe_check": "Slick, polished spectacle designed to wash over you like casino air conditioning — impressive, climate-controlled, and entirely intentional.",
-      "cover_url": "https://consequence.net/wp-content/uploads/2026/09/John-Mayer-sphere-photo-by-Mark-Seliger.jpg?quality=80",
-      "embed_url": null
-    },
-    {
-      "source": "music",
-      "source_name": "JazzTimes",
-      "title": "The Monkathon: Miles Okazaki Revisits the Complete Thelonious Monk for Solo Guitar in Five-Hour Movie",
-      "snippet": "M iles Okazaki was 12 or 13 when he first heard Thelonious Monk, and the youngster was immediately struck by how the pianist disrupted convention. …",
-      "url": "https://www.jazztimes.com/features/profiles/the-monkathon-miles-okazaki-revisits-the-complete-thelonious-monk-for-solo-guitar-in-five-hour-movie/",
-      "genre": "",
-      "vibe_check": "Five hours of controlled eccentricity that rewards the patient listener like a long meditation finally breaking open.",
-      "cover_url": "https://www.jazztimes.com/wp-content/uploads/2026/10/okazaki-miles-monkathon.jpg",
-      "embed_url": null
-    },
-    {
-      "source": "music",
-      "source_name": "PopMatters",
-      "title": "Greg Freeman Is Ready to Inspire His Devotees",
-      "snippet": "A contender for album of the year, Greg Freeman's All Set the Bone is an intense, stylistically varied testament to our grim reality, with lasting appeal.",
-      "url": "https://www.popmatters.com/greg-freeman-all-set-the-bone",
-      "genre": "",
-      "vibe_check": "Music that sits with you the way a late-night conversation about everything wrong with the world somehow leaves you feeling less alone.",
-      "cover_url": "https://www.youtube.com/embed/5Xkh-Q1v_N4",
-      "embed_url": "https://www.youtube.com/embed/5Xkh-Q1v_N4"
-    },
-    {
-      "source": "music",
-      "source_name": "PopMatters",
-      "title": "Niagara Moon Is in a Lush Mood on ‘Cool Warm Night’",
-      "snippet": "For anyone already enthralled by the cosmopolitan vibe of Niagara Moon's music, Cool Warm Night , the sixth and latest one, is the best one yet.",
-      "url": "https://www.popmatters.com/niagara-moon-cool-warm-night",
-      "genre": "",
-      "vibe_check": "Silk curtains billowing in a hotel window at midnight, somewhere in a city that still knows how to dress for dinner.",
-      "cover_url": "https://www.popmatters.com/wp-content/uploads/2026/10/Niagara-Moon-Cool-Warm-Night-social.webp",
-      "embed_url": "https://bandcamp.com/EmbeddedPlayer/album=3587504967/size=large/bgcol=ffffff/linkcol=e99708/tracklist=false/artwork=small/transparent=true/"
-    },
-    {
-      "source": "music",
-      "source_name": "PopMatters",
-      "title": "Ayanna Witter-Johnson Brilliantly Re-Contextualises Jazz",
-      "snippet": "Art needs new, refined voices to add a different dimension to the project as a whole. Ayanna Witter-Johnson is one such formidable bastion.",
-      "url": "https://www.popmatters.com/ayanna-witter-johnson-new-roots",
-      "genre": "",
-      "vibe_check": "Jazz seen through a prism — familiar light refracted into colors you didn't know were hiding there.",
-      "cover_url": "https://www.youtube.com/embed/Jt8RAfjbo6Q",
-      "embed_url": "https://www.youtube.com/embed/Jt8RAfjbo6Q"
-    },
-    {
-      "source": "music",
-      "source_name": "Fretboard Journal",
-      "title": "Podcast 564: John Leventhal",
-      "snippet": "The great John Leventhal joins us once again to talk about the making of his new solo album, National Drift. https://www.instagram.com/johnleventhal/ We talk about his recording process for the album, how the songs came to be, the guitars he’s currently loving, the perils of compression, and so much more. Above photo: Rosanne Cash Subscribe The post Podcast 564: John Leventhal first appeared on Fretboard Journal .",
-      "url": "https://www.fretboardjournal.com/podcasts/podcast-564-john-leventhal/?utm_source=rss&utm_medium=rss&utm_campaign=podcast-564-john-leventhal",
-      "genre": "",
-      "vibe_check": "The warm, unhurried satisfaction of watching a master craftsman explain exactly why the details no one else notices matter most.",
-      "cover_url": "https://www.fretboardjournal.com/wp-content/uploads/2026/10/credit-Rosanne-Cash-scaled.jpg",
-      "embed_url": "https://www.youtube.com/embed/M-1JbpOEwVY"
+      "vibe_check": "Uncorked American mythology, the kind that sounds better with age and an extra record sleeve to hold all the overflow.",
+      "cover_url": "https://consequence.net/wp-content/uploads/2026/10/billy-bragg-wilco-mermaid-ave.jpg?quality=80",
+      "embed_url": "https://www.youtube.com/embed/S1u-FlJcDLU"
     }
   ],
   "global_silver_linings": [
     {
       "source": "good_news",
       "source_name": "Good News Network",
-      "title": "Good News in History, October 8",
-      "url": "https://www.goodnewsnetwork.org/events061008/",
-      "snippet": "81 years ago toady, the microwave oven was patented by Percy Spencer. The self-taught engineer from Howland, Maine, employed by Raytheon at the time, noticed that microwaves from an active radar set he was working on started to melt a Mr. Goodbar candy bar he had in his pocket. The first food deliberately cooked with […]",
-      "cover_url": "https://www.goodnewsnetwork.org/wp-content/uploads/2022/10/Jo-Lizzy-CC-2.0-e1694081991377.jpg",
-      "reason": "History is full of quiet turning points and acts of courage worth remembering — pausing to mark them reminds us that progress has always been possible, even in difficult times."
+      "title": "Nearly 200-year-old Tortoise Becomes First to Contribute Extraordinary Epigenome to Aging Research",
+      "url": "https://www.goodnewsnetwork.org/nearly-200-year-old-tortoise-becomes-first-to-contribute-extraordinary-epigenome-to-aging-research/",
+      "snippet": "A giant tortoise called Jonathan reinforces what we know from humans about healthy aging, say scientists, only the difference is that Jon is almost 200. Researchers have been conducting genetic tests on Jonathan who, at an estimated 194-years-old, is believed to be the world’s oldest living land animal. They say their findings suggest that it’s […]",
+      "cover_url": "https://www.goodnewsnetwork.org/wp-content/uploads/2022/12/Jonathan-oldest-tortoise-by-St-Helena-Tourism.jpg",
+      "reason": "Jonathan the tortoise, nearly two centuries old, is now helping scientists map the epigenetic secrets of exceptional longevity — a reminder that one remarkable animal's life could reshape how we understand aging for generations to come."
+    },
+    {
+      "source": "good_news",
+      "source_name": "Positive News",
+      "title": "Prince William launches kit to help communities prepare for emergencies",
+      "url": "https://www.positive.news/society/prince-william-launches-kit-to-help-communities-prepare-for-emergencies/",
+      "snippet": "The free, how-to resource shows people how to build resilience in their communities",
+      "cover_url": "https://www.positive.news/wp-content/uploads/2026/10/55573230610_ccd534dc38_k-e1791457252615.jpg",
+      "reason": "Practical, community-level emergency preparedness tools mean more neighbourhoods can look after their own when it matters most — quiet, unglamorous resilience-building of the best kind."
     },
     {
       "source": "good_news",
       "source_name": "Upworthy",
-      "title": "‘Are you alright, boys?’: Single woman calls out men for not asking any questions on dates",
-      "url": "https://www.upworthy.com/are-you-alright-boys-single-woman-calls-out-men-for-not-asking-any-questions-on-dates/",
-      "snippet": "Here's an easy, research-based method to be absolutely charming on your first date.",
-      "cover_url": "https://www.upworthy.com/wp-content/uploads/sites/2/2026/10/bored-woman-on-a-date.jpg",
-      "reason": "A candid, good-humoured conversation about emotional reciprocity is sparking real reflection on how we show up for one another — small shifts in awareness like this are how social norms quietly improve."
-    },
-    {
-      "source": "good_news",
-      "source_name": "Reasons to be Cheerful",
-      "title": "How NYC Students Saved School Lunch",
-      "url": "https://reasonstobecheerful.world/how-nyc-students-saved-school-lunch/",
-      "snippet": "There were three clear reasons why Leslie Gomez Rivera avoided the cafeteria at her high school in Brooklyn: She didn’t like the food, the room felt hectic and there was a stigma attached to eating school meals. She preferred the library, where she could talk with friends, although sometimes that...",
-      "cover_url": "https://reasonstobecheerful.world/wp-content/uploads/2026/10/shutterstock_1488137138-scaled.jpg",
-      "reason": "When students are given a genuine voice in decisions that affect their lives, they step up with creativity and purpose — this story is a reminder that young people can reshape institutions from the inside out."
+      "title": "Pet owners share what it’s really like living with the ‘least popular’ dog breed in America",
+      "url": "https://www.upworthy.com/english-foxhound-least-popular-dog-breed-america-ex1/",
+      "snippet": "They say the English Foxhound isn't a great family dog. Some owners disagree.",
+      "cover_url": "https://www.upworthy.com/wp-content/uploads/sites/2/2025/11/origin_62535d.png",
+      "reason": "Real stories from owners of overlooked dogs are a gentle nudge to reconsider what we assume about animals — and a reminder that the bonds formed with so-called 'difficult' breeds are often the most devoted."
     },
     {
       "source": "good_news",
       "source_name": "The Optimist Daily",
-      "title": "Berlin mapped 900,000 street trees. Now 12,000 people water them.",
-      "url": "https://www.optimistdaily.com/2026/10/berlin-mapped-900000-street-trees-now-12000-people-water-them/",
-      "snippet": "BY THE OPTIMIST DAILY EDITORIAL TEAM Amanda Gläser-Bligh named her street tree Linda. Linda is a linden, eight years old, growing outside Gläser-Bligh’s apartment building in Charlottenburg, and once a week during Berlin’s hot months, Gläser-Bligh makes a couple of trips up and down the stairs with a watering can until she has carried 20 […] The post Berlin mapped 900,000 street trees. Now 12,000 people water them.",
-      "cover_url": "https://www.optimistdaily.com/wp-content/uploads/Depositphotos_199512700_S.jpg",
-      "reason": "Berlin's street-tree map turned urban nature into a shared responsibility, and 12,000 volunteers answered the call — proof that when people can see a need clearly, community care follows naturally."
+      "title": "London’s Oxford Street gets fully pedestrianized this month: here’s what that means",
+      "url": "https://www.optimistdaily.com/2026/10/londons-oxford-street-gets-fully-pedestrianized-this-month-heres-what-that-means/",
+      "snippet": "BY THE OPTIMIST DAILY EDITORIAL TEAM Oxford Street, one of the busiest shopping streets in the world, goes traffic-free on October 26. London Mayor Sadiq Khan announced the closure of the stretch from Orchard Street to Great Portland Street, nearly a kilometer (just under half a mile) through the heart of the West End, to […] The post London’s Oxford Street gets fully pedestrianized this month: here’s what that means first appeared on The Optimist Daily: Making Solutions the News .",
+      "cover_url": "https://www.optimistdaily.com/wp-content/uploads/Depositphotos_29807437_S.jpg",
+      "reason": "Returning one of Europe's busiest shopping streets to pedestrians is a bold, hopeful experiment in reclaiming city space for people, air quality, and community life over car traffic."
     }
   ],
   "discovery_articles": [
     {
       "source": "discovery",
-      "source_name": "Smithsonian",
-      "title": "Researchers May Have Directly Glimpsed an Exoplanet’s Magnetic Field for the First Time, Building Hope of Peering Deeper Into Faraway Worlds",
-      "url": "https://www.smithsonianmag.com/smart-news/researchers-may-have-directly-glimpsed-an-exoplanets-magnetic-field-for-the-first-time-building-hope-of-peering-deeper-into-faraway-worlds-180989633/",
-      "snippet": "Radio signals emanating from Beta Pictoris b suggest that this young and massive exoplanet has a strong magnetic field and intense auroral show",
+      "source_name": "Atlas Obscura",
+      "title": "The Reading Room in Chattanooga, Tennessee",
+      "url": "https://www.atlasobscura.com/places/the-reading-room",
+      "snippet": "Is there a better pairing than a good book and a great drink? You can find both at this cozy bar on the east side of Chattanooga. But the books lining the walls of the Reading Room are not just decoration.",
       "category": "history",
-      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/KQLlCOsh-ykw7foTVjRXAjdhWsQ=/fit-in/1600x0/filters:focal(1920x1088:1921x1089)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/1a/ea/1aead3d9-9466-45ac-a8bb-112bea0fccfe/full-res-for-display-3840x2160.jpg",
-      "ferns_note": "A planet 63 light-years away may be throwing auroral light shows that dwarf anything our own skies have ever conjured — and we're picking up the radio whispers of it here on Earth. It's the closest we've come to eavesdropping on another world's invisible shield."
+      "cover_url": "https://img.atlasobscura.com/Mh-2nNcarqfhi8sAI8ZI26saii1Oe1jLlllBpQFQXVc/rt:fit/w:600/c:1898:1265:nowe:0:96/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy9mMmU0/MzgzY2E2MWNlMTA4/NmRfcnIxN18xLTIz/NDMuanBn.jpg",
+      "ferns_note": "The books at the Reading Room aren't just atmosphere — they're actually meant to be read, borrowed, and argued over between sips, making it a living library as much as a bar. It's the kind of place that makes you believe good ideas are still born over drinks."
+    },
+    {
+      "source": "discovery",
+      "source_name": "Atlas Obscura",
+      "title": "It All Comes Together in Chattanooga",
+      "url": "https://www.atlasobscura.com/articles/it-all-comes-together-in-chattanooga",
+      "snippet": "Chattanooga may be best known for its natural beauty, surrounded by mountains, valleys, and the Tennessee River. This charming Appalachian city is also home to annual music festivals like the IBMA World of Bluegrass and the 3 Sisters Bluegrass Festival . The streets and venues fill with musicians and fans dedicated to upholding the traditions of bluegrass music.",
+      "category": "history",
+      "cover_url": "https://img.atlasobscura.com/0p1ZQZBIScY-LZK4duHbPypoD4JpH8v6UdX35taJKug/rt:fit/w:1200/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL2Fzc2V0/cy8wZDY4Y2I4ODE2/ZTZhNDg2MjRfQ2hh/dHRhbm9vZ2EtV2hp/c2tleS1KdW5lLTIw/MTgtRklOQUxTLTEy/LmpwZw.jpg",
+      "ferns_note": "Chattanooga sits at a rare cultural crossroads where ancient Appalachian mountain geography and the living folk tradition of bluegrass seem to reinforce each other — the landscape itself feels like it's tuned to the music. It's one of those places that earns its reputation quietly, without trying."
+    },
+    {
+      "source": "discovery",
+      "source_name": "Atlas Obscura",
+      "title": "Eastern California Museum in Independence, California",
+      "url": "https://www.atlasobscura.com/places/eastern-california-museum",
+      "snippet": "100 years ago, if you lived long enough in the rural American West, it was entirely reasonable, that at some point, you might find yourself with a ever shrinking amount of teeth and a surplus of coyotes. Such was the position George Washington Hancock found himself in the early part of the twentieth century in Independence, California. In desperate need of dentures and lacking the funds for professional pair from a dentist, George decided to take matters into his own hands.",
+      "category": "history",
+      "cover_url": "https://img.atlasobscura.com/5QXdsUJyO7_4t1q6EGAYmdpKI-QFY50ZC-1ZMCXohGw/rt:fit/w:600/c:5190:3460:nowe:74:0/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy82MDc5/ZjNlMy1lMzgwLTRi/ZmYtODU1NC05Y2Jm/MTRkYWYwZWNhYWU5/OWI2ZmMxYjIwNjY1/ODlfRUNNX0FPLTEu/anBn.jpg",
+      "ferns_note": "George Washington Hancock, facing toothlessness and a coyote surplus in the California high desert, apparently decided the solution to one problem might solve the other — and fashioned himself a set of dentures accordingly. Rural ingenuity has rarely been so grimly poetic."
+    },
+    {
+      "source": "discovery",
+      "source_name": "Atlas Obscura",
+      "title": "Jason Miller Statue in Scranton, Pennsylvania",
+      "url": "https://www.atlasobscura.com/places/jason-miller-statue",
+      "snippet": "In 2009 Jason Miller, who played Father Karras in The Exorcist and won a Pulitzer Prize for writing That Championship Season, was immortalized forever with his bronze statue in Scranton Courthouse Square. Miller was also in such notable films as Rudy, Toy Soldiers, Light of Day, and The Best Little Girl In The World. He will always be remembered as the tormented young priest in The Exorcist film starring Linda Blair.",
+      "category": "history",
+      "cover_url": "https://img.atlasobscura.com/tOKuw7bAjFJnFmw-xmRx69prSXT8quk1hwuQee_-OKo/rt:fit/w:600/c:3272:2181:nowe:1167:279/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy80NGJh/NzdhYS0yN2NhLTRj/ZDMtYmE0Ni1lMGM4/YzkwN2NkNzk4YmFk/ODk5ZTUxODA2MTI5/YjdfSU1HXzE2MTcu/anBlZw.jpg",
+      "ferns_note": "It's a quietly remarkable thing that Scranton chose to memorialize Jason Miller not just as Father Karras but as a Pulitzer Prize-winning playwright — a reminder that the man behind the possessed priest was, in his own way, haunted by genuine literary ambition. The bronze captures a local son the town clearly understood better than Hollywood did."
     },
     {
       "source": "discovery",
       "source_name": "Smithsonian",
-      "title": "Like a Mythical Phoenix, This Planet May Have Risen From the Ashes of a Dead Star",
-      "url": "https://www.smithsonianmag.com/smart-news/like-a-mythical-phoenix-this-planet-may-have-risen-from-the-ashes-of-a-dead-star-180989628/",
-      "snippet": "The “second-generation” world, predicted from telescope data, could be the first known planet of its kind, and it may shed light on the future of our own solar system",
+      "title": "Canadian Poet Anne Carson Brings Ancient Wisdom to Modern Audiences. Now, She's a Nobel Laureate in Literature",
+      "url": "https://www.smithsonianmag.com/smart-news/canadian-poet-anne-carson-brings-ancient-wisdom-to-modern-audiences-now-shes-a-nobel-laureate-in-literature-180989655/",
+      "snippet": "The 76-year-old poet, translator and essayist is renowned for her \"bold and inventive\" approach to blending poetry, prose and everything in between, leading to what the Swedish Academy calls \"new forms for contemporary literature\"",
       "category": "history",
-      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/FOjLJShiY0YMOHbUQYJZUYIh5DU=/fit-in/1600x0/filters:focal(640x451:641x452)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/00/48/004859f6-803c-4e8c-a05f-e3e91071fd36/second-generation-planet-artwork-credit-dr-snehalata-sahu_university-of-warwick.webp",
-      "ferns_note": "This planet is theorized to have coalesced from the wreckage of a star that died and then exploded — meaning it was, in a sense, born twice. It's an uncomfortable mirror for our own solar system's eventual fate, dressed up as a cosmic curiosity."
+      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/48rkJg2KmjZgoRdZt-S-LkHXMJk=/fit-in/1600x0/filters:focal(3153x1424:3154x1425)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/0f/73/0f73ec3d-c197-40ef-87b4-f79a097a5919/gettyimages-2298578783.jpg",
+      "ferns_note": "Anne Carson spent decades dissolving the walls between ancient Greek scholarship and contemporary feeling, and the Nobel committee's recognition at 76 suggests the literary world finally caught up with what classicists quietly knew all along. She is, in the best sense, untranslatable."
+    },
+    {
+      "source": "discovery",
+      "source_name": "Smithsonian",
+      "title": "Hundreds of British College Students Clashed With Wooden Swords in a 1966 Re-enactment of the Battle of Hastings. Watch the Rediscovered 'Time Capsule' of Lost Footage",
+      "url": "https://www.smithsonianmag.com/smart-news/hundreds-of-british-college-students-clashed-with-wooden-swords-in-a-1966-re-enactment-of-the-battle-of-hastings-watch-the-rediscovered-time-capsule-of-lost-footage-180989635/",
+      "snippet": "A local videographer shot 300 reels of color film during the re-enactment, which shows \"soldiers on foot getting remarkably close to horses\" and \"a rather relaxed attitude towards health and safety.\" The event sparked an annual tradition that continues to this day",
+      "category": "history",
+      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/Q0IOVXI0ifzxuszqTbcqSoA1n3w=/fit-in/1600x0/filters:focal(1900x1267:1901x1268)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/7b/84/7b840680-9e03-472b-b6a8-1f13793fdeef/5454.jpeg",
+      "ferns_note": "Three hundred reels of color film shot during a 1966 student battle re-enactment — featuring undergraduates getting uncomfortably close to live horses with wooden swords — sat undiscovered long enough to become a genuine time capsule of a more charmingly reckless era. The fact that it sparked an annual tradition still running today makes it somehow even more wonderfully absurd."
+    },
+    {
+      "source": "discovery",
+      "source_name": "Smithsonian",
+      "title": "J.M.W. Turner Painted This Breathtaking Roman Landscape Nearly 200 Years Ago. If You Look Closely, You Can Still See His Fingerprints",
+      "url": "https://www.smithsonianmag.com/smart-news/jmw-turner-painted-this-breathtaking-roman-landscape-nearly-200-years-ago-if-you-look-closely-you-can-still-see-his-fingerprints-180989659/",
+      "snippet": "The Romantic painter completed \"Rome, From Mount Aventine\" in the 1830s. It became his most expensive artwork in 2014, and it's expected to sell for another record-breaking sum in December",
+      "category": "history",
+      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/ytKPpz_2djd2Ej8Vfx9ZhVndXP4=/fit-in/1600x0/filters:focal(1024x756:1025x757)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/07/62/07625028-14a0-4437-a78e-d2d14b703eec/turner.jpeg",
+      "ferns_note": "Nearly two centuries after Turner pressed his fingers into the wet paint of a Roman panorama, those fingerprints remain — a ghostly, intimate signature hidden inside one of his most monumental canvases. It's the kind of detail that collapses the distance between a museum wall and a man."
+    },
+    {
+      "source": "discovery",
+      "source_name": "Smithsonian",
+      "title": "Margaret Hamilton, a Pioneering Software Engineer Who Made the First Human Moon Landing Possible, Dies at 90",
+      "url": "https://www.smithsonianmag.com/smart-news/margaret-hamilton-a-pioneering-software-engineer-who-made-the-first-human-moon-landing-possible-dies-at-90-180989653/",
+      "snippet": "Hamilton popularized the term \"software engineer\" and created computer programs that could anticipate problems. She received a Presidential Medal of Freedom and was inducted into the National Aviation Hall of Fame",
+      "category": "history",
+      "cover_url": "https://th-thumbnailer.cdn-si-edu.com/9_euY7NV3VxGglomMkd2xF8qWIg=/fit-in/1600x0/filters:focal(1249x999:1250x1000)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/47/6c/476cf6cb-0e5c-425d-8341-b400a8b8fd1f/margaret_hamilton_in_action.jpg",
+      "ferns_note": "Margaret Hamilton didn't just write the code that landed humans on the moon — she coined the very term 'software engineer' at a time when programming was still considered clerical work, quietly naming an entire profession into existence. She leaves behind a legacy written in both language and the stars."
+    },
+    {
+      "source": "discovery",
+      "source_name": "Science News",
+      "title": "Kilauea’s display is revealing why volcanoes spew like a fountain show",
+      "url": "https://www.sciencenews.org/article/kilauea-why-volcanoes-spew-fountains",
+      "snippet": "Scientists are using a variety of methods to study why Kilauea has repeatedly spewed lava fountains since late 2024. They may have ruled out one theory.",
+      "category": "science",
+      "cover_url": "https://www.sciencenews.org/wp-content/uploads/sites/2/2026/10/100826_CG_lavafountains_social_ae86ac.jpg",
+      "ferns_note": "Kīlauea's repeated lava fountain shows since late 2024 are so consistent and rhythmic that scientists are treating them less like eruptions and more like a geological metronome worth decoding — and ruling out a leading theory only deepens the mystery. The volcano, it turns out, is asking questions we don't yet have the language to answer."
+    },
+    {
+      "source": "discovery",
+      "source_name": "Science News",
+      "title": "An experimental drug kills fat cells, rather than shrinking them",
+      "url": "https://www.sciencenews.org/article/experimental-drug-kills-fat-cells",
+      "snippet": "Participants in two small trials lost dangerous fat around their internal organs. This fat is linked to health issues like diabetes and heart problems.",
+      "category": "science",
+      "cover_url": "https://www.sciencenews.org/wp-content/uploads/sites/2/2026/10/100626_TS_fatmelting_main.jpg",
+      "ferns_note": "Rather than coaxing fat cells to shrink — the mechanism behind most weight-loss drugs — this experimental compound simply kills the most dangerous ones outright, targeting the visceral fat packed around organs where it does the most quiet harm. It's a radical shift in thinking about what we're actually trying to treat."
     },
     {
       "source": "discovery",
       "source_name": "Science News",
       "title": "Gene therapy and special goggles give some blind people limited sight",
-      "url": "https://www.sciencenews.org/article/gene-therapy-cells-light-blind-vision",
+      "url": "https://www.sciencenews.org/article/cells-detect-light-blind-vision",
       "snippet": "Optogenetics, recognized by the 2026 medicine Nobel, makes cells respond to light, including eye cells that normally relay signals to the brain.",
       "category": "science",
       "cover_url": "https://www.sciencenews.org/wp-content/uploads/sites/2/2026/10/100726_NB_optgenetics_main.jpg",
-      "ferns_note": "Researchers reprogrammed eye cells that had never been meant to sense light, then handed someone a pair of goggles — and shapes began to emerge from the dark for the first time in years. The Nobel committee called it; the patients experienced it as something closer to a quiet miracle."
+      "ferns_note": "Optogenetics works by engineering cells to respond to light, and applying it to the eye means essentially rewiring the visual system to find a new path to perception — goggles included as a kind of external translator for a brain learning to see again. It's one of those scientific moments that reads more like a philosophical proposition than a clinical trial."
+    },
+    {
+      "source": "discovery",
+      "source_name": "JSTOR Daily",
+      "title": "Celebrating Indigenous Peoples and Cultures",
+      "url": "https://daily.jstor.org/celebrating-indigenous-culture-indigenous-peoples-history/",
+      "snippet": "Discover scholarship that challenges myths and explores the histories, cultures, and enduring contributions of Indigenous peoples.",
+      "category": "history",
+      "cover_url": "https://daily.jstor.org/wp-content/uploads/2016/10/dakota_access_protestors_1050x700.jpg",
+      "ferns_note": "The most powerful scholarship here tends to do one quiet, radical thing: replace the static, curated image of Indigenous peoples with the living, contested, ongoing reality of cultures that never stopped evolving. It's an invitation to unlearn as much as to learn."
+    },
+    {
+      "source": "discovery",
+      "source_name": "JSTOR Daily",
+      "title": "Why King Arthur Still Shapes Pop Culture",
+      "url": "https://daily.jstor.org/why-king-arthur-still-shapes-pop-culture/",
+      "snippet": "Eight centuries after the legends took shape, Arthur's world continues to inspire filmmakers, musicians, advertisers, and ideologues.",
+      "category": "history",
+      "cover_url": "https://daily.jstor.org/wp-content/uploads/2026/10/why_king_arthur_still_shapes_pop_culture_1050x700.jpg",
+      "ferns_note": "What's strangest about Arthur's endurance isn't the romance or the swords — it's that ideologues across centuries keep finding in him exactly the king they need, reshaping the legend to justify whatever power they're already reaching for. He is less a story than a mirror."
+    },
+    {
+      "source": "discovery",
+      "source_name": "Colossal",
+      "title": "Woo Jin Joo Conjures Mythic Tales from Uncanny Sculptures of Fiber and Found Objects",
+      "url": "https://www.thisiscolossal.com/2026/10/woo-jin-joo-mixed-media-sculptures/",
+      "snippet": "Stumbling upon a battered end table or lost mitten is an opportunity for magic in Woo Jin Joo’s mind.",
+      "category": "history",
+      "cover_url": "https://www.thisiscolossal.com/wp-content/uploads/2026/10/joo-8.jpg",
+      "ferns_note": "Woo Jin Joo sees a battered end table or a lost mitten not as debris but as a character waiting for its myth — and the resulting fiber sculptures carry the eerie weight of objects that have clearly survived something. Her work makes the overlooked feel genuinely haunted."
+    },
+    {
+      "source": "discovery",
+      "source_name": "Colossal",
+      "title": "Psychedelic Paintings by Rafael Silveira Explore a World of ‘Visual Synonymies’",
+      "url": "https://www.thisiscolossal.com/2026/10/rafael-silveira-paintings-surreal-popsicledelic-trip/",
+      "snippet": "Silveira juxtaposes objects and organisms in unlikely scenarios to challenge how we perceive the world around us.",
+      "category": "history",
+      "cover_url": "https://www.thisiscolossal.com/wp-content/uploads/2026/10/silveira-6.jpg",
+      "ferns_note": "Rafael Silveira's 'visual synonymies' place wildly unlike things side by side until the eye starts accepting the comparison as logical — a slow, psychedelic argument that perception is more negotiable than we assume. It's the kind of painting that changes what you see on the walk home."
     }
   ],
   "featured_read": {
     "source": "reads",
-    "source_name": "The Atlantic",
-    "title": "Three Years After October 7, I Moved Back to Nahal Oz",
-    "url": "https://www.theatlantic.com/ideas/2026/10/nahal-oz-israel-elections-netanyahu/688902/?utm_source=feed",
-    "snippet": "But if Israel’s election doesn’t bring change, I don’t see a future for my family here.",
-    "cover_url": "",
-    "blurb": "A mother weighs whether to rebuild her life in the Israeli kibbutz scarred by October 7, holding two impossible things at once: the pull of home and the math of survival. It's a dispatch about grief, politics, and the specific courage it takes to stay."
+    "source_name": "Aeon",
+    "title": "The ghetto on the lagoon",
+    "url": "https://aeon.co/essays/the-making-of-the-ghetto-on-a-venetian-island-in-1516",
+    "snippet": "Sixteenth-century Venice wanted to expel its Jews but couldn’t do without them. Its compromise was the world’s first ghetto - by Alexander Lee Read on Aeon",
+    "cover_url": "https://images.aeonmedia.co/images/9e1491df-adef-47da-93f6-0ee37b65cbd5/essay-final-r94951.jpg?width=1200&quality=75&format=jpeg",
+    "blurb": "Venice in the 1500s was caught in an impossible bind: it despised its Jewish residents and desperately needed them, so it invented a new kind of geography — the ghetto — as a way of having both feelings at once. Alexander Lee traces how one city's moral cowardice accidentally shaped the architecture of exclusion for centuries to come."
   },
   "reading_room": [
     {
       "source": "reads",
-      "source_name": "The Atlantic",
-      "title": "Something Like People",
-      "url": "https://www.theatlantic.com/books/2026/10/poem-alexandra-petri-something-like-people/688908/?utm_source=feed",
-      "snippet": "A poem",
-      "cover_url": "",
-      "blurb": "A poem worth sitting with slowly, the kind that earns its title by the last line."
-    },
-    {
-      "source": "reads",
-      "source_name": "Aeon",
-      "title": "Evolution of Manhattan",
-      "url": "https://aeon.co/videos/manhattans-evolution-over-centuries-captured-via-meticulous-animation",
-      "snippet": "From Lenape land to sprawling metropolis, this detailed timelapse animation captures the making of Manhattan - by Aeon Video Watch on Aeon",
-      "cover_url": "https://images.aeonmedia.co/images/9b83d6d1-0bee-45e5-a3e2-a1ec08edfbde/evolution-of-manhattan-landscape-1.jpg?width=1200&quality=75&format=jpeg",
-      "blurb": "Four centuries of erasure, ambition, and accident compressed into a single animation — a reminder that every street grid on Manhattan was once a decision someone made, and before that, a life someone lived."
-    },
-    {
-      "source": "reads",
       "source_name": "Nautilus",
-      "title": "Meet the New Otterlike Predator That Scurried Alongside Dinosaurs",
-      "url": "https://nautil.us/meet-the-new-otterlike-predator-that-scurried-alongside-dinosaurs-1285635/",
-      "snippet": "Its unique throat paved the way for our big brains",
-      "cover_url": "https://lede-admin.nautil.us/wp-content/uploads/sites/70/2026/10/Martin-FossilindreiBildern-klein-1.jpg",
-      "blurb": "A tiny, otter-like creature that slipped through the age of dinosaurs turns out to hold a clue to how mammals grew the brains we're using right now to read this sentence. The evolutionary leap runs straight through its throat."
+      "title": "A Recipe for Stopping AI from Going Rogue",
+      "url": "https://nautil.us/a-recipe-for-stopping-ai-from-going-rogue-1285647/",
+      "snippet": "This formula aims to prevent LLMs from doing things that endanger humans",
+      "cover_url": "https://lede-admin.nautil.us/wp-content/uploads/sites/70/2026/10/shutterstock_2362076895.jpg",
+      "blurb": "The question isn't whether AI can go rogue — it's whether we can write the mathematical equivalent of a conscience before it does. Nautilus examines the researchers trying to bake alignment into large language models before the window to do so quietly closes."
     },
     {
       "source": "reads",
-      "source_name": "Psyche",
-      "title": "Tuesdays with the guys",
-      "url": "https://psyche.co/turning-points/tragedy-called-for-a-radical-change-in-my-male-friendships",
-      "snippet": "In the wake of an unexpected tragedy, I decided to rethink my male friendships - by Rajeev Balasubramanyam Read on Psyche",
-      "cover_url": "https://images.aeonmedia.co/images/d6e3b6dd-0b25-4923-bd58-bdfa527e0b57/sz-this-gettyimages-1347323895.jpg?top=151&left=0&cropWidth=2896&cropHeight=1629&width=1200&quality=75&format=jpeg",
-      "blurb": "After an unexpected death forces him to look honestly at his male friendships, Rajeev Balasubramanyam asks what men actually owe each other — and what goes quietly unspoken until it's too late. A quiet reckoning with the shape of modern male intimacy."
+      "source_name": "The Paris Review",
+      "title": "Anne Carson Wins the Nobel Prize in Literature",
+      "url": "https://www.theparisreview.org/blog/2026/10/08/anne-carson-nobel-prize/",
+      "snippet": "This week, we’ve unlocked all of Carson’s work from our archive.",
+      "cover_url": "https://www.theparisreview.org/blog/wp-content/uploads/2026/10/anneforpodcastupload1.png",
+      "blurb": "Anne Carson has spent decades writing poetry that treats grief, translation, and classical antiquity as the same wound seen from different angles — and now The Paris Review has unlocked everything. A Nobel Prize is a fine excuse to finally sit with her work."
     },
     {
       "source": "reads",
-      "source_name": "Longreads",
-      "title": "She Died at the San Diego Border. A Surveillance Camera Was in Plain Sight.",
-      "url": "https://longreads.com/2026/10/07/surveillance-technology-us-border-migrant-deaths/",
-      "snippet": "\"In Southern California’s Otay Mountain Wilderness, the federal surveillance network seems unavoidable. But year after year, migrant deaths persist.\"",
+      "source_name": "Literary Hub",
+      "title": "Taiwan Travelogue translator Lin King is calling out publishing’s “relay translation” practices.",
+      "url": "https://lithub.com/taiwan-travelogue-translator-lin-king-is-calling-out-publishings-relay-translation-practices/",
+      "snippet": "Translator and writer Lin King released a statement on Instagram on Tuesday laying out her claim of copyright infringement of her Booker-Prize-winning English translation of Taiwan Travelogue by Yáng Shuāng-Zǐ, originally written in Mandarin and titled Táiwān Màn Yóu Lù",
+      "cover_url": "https://s26162.pcdn.co/wp-content/uploads/2026/10/taiwan-travelogue.jpg",
+      "blurb": "Lin King's statement about her Booker-winning translation of Taiwan Travelogue being used without proper credit tears open a quiet scandal in literary publishing: the way 'relay translation' lets the industry profit from a translator's craft while obscuring who actually did the work. It's a story about language, labor, and who gets to claim a book."
+    },
+    {
+      "source": "reads",
+      "source_name": "Noema",
+      "title": "Does Claude Feel The Whip?",
+      "url": "https://www.noemamag.com/does-claude-feel-the-whip",
+      "snippet": "",
+      "cover_url": "https://noemamag.imgix.net/2026/10/AI_Whip_FN_altcolor.jpg?fit=crop&fm=pjpg&h=628&ixlib=php-3.3.1&w=1200&wpsize=noema-social-facebook&s=ee63fc65e3079fc101ea9f0d1a438af5",
+      "blurb": "The title asks, without flinching, whether the AI systems we reward and punish through training might experience something we're not comfortable calling suffering. Whatever your answer, the question is now impossible to fully put down."
+    },
+    {
+      "source": "reads",
+      "source_name": "The Atlantic",
+      "title": "What I Saw at New York’s Anti-Israel October 7 Rallies",
+      "url": "https://www.theatlantic.com/ideas/2026/10/october-7-new-york-israel-mamdani/688932/?utm_source=feed",
+      "snippet": "Some protesters observed the attack’s anniversary by implicitly saluting Hamas. A fringe of that fringe took aim at the mayor.",
       "cover_url": "",
-      "blurb": "Cameras cover every ridge of the Otay Mountain Wilderness, yet people keep dying there unseen — this piece sits with the bitter paradox of a surveillance state that watches everything and prevents nothing. A devastating look at what it means to be monitored but not protected."
+      "blurb": "On the first anniversary of October 7th, a reporter moved through New York's protest crowds trying to map exactly where grief and solidarity end and something darker begins — a granular, uncomfortable dispatch from the contested moral geography of public mourning."
     }
   ],
   "garden_note": {
-    "note": "October has settled properly over Zürich now — the linden and maple along the Limmat are letting go of their gold, and the evenings carry that particular damp-leaf sweetness that only mid-autumn delivers. Step outside before the dusk fades at 19:22 and let the garden's quieting-down do its work on you.",
+    "note": "The garden is letting go gracefully tonight — dahlias darkening at the edges, hornbeam hedges turning a quiet amber, and the first proper chill settling into the Zürich valley as dusk folds in around 19:22. This is the week to lift dahlia tubers before a hard frost catches you off guard.",
     "in_season": [
-      "Quince — ready to harvest before the first hard frost",
-      "Kale and leeks — sweetening in the cooler nights",
-      "Autumn crocuses (Colchicum) — their last pale cups in the borders",
-      "Planting garlic cloves for next summer"
+      "Dahlias (lift and store tubers)",
+      "Swiss chard (still harvesting, very cold-hardy)",
+      "Quince (ripe and ready to pick)",
+      "Rake and compost fallen leaves"
     ],
-    "sky_tonight": "With only a sliver of waning crescent moon tonight, the darkness is generous — look south-east for the great square of Pegasus riding high, a reliable autumn signpost.",
-    "sun_times": "Last light drains away by 18:53 this evening, with dusk lingering until around 19:22 — just enough time for a final round of the garden.",
+    "sky_tonight": "With only a 7% crescent moon, the sky is gloriously dark — a fine night to trace the Square of Pegasus rising in the south-east after nightfall.",
+    "sun_times": "Sunset tonight at 18:53, with dusk lingering until around 19:22.",
     "moon_label": "Waning crescent",
-    "illum_pct": 9,
+    "illum_pct": 7,
     "sun_range": "07:32–18:53"
   },
-  "puzzle": {
-    "kind": "anagram",
+  "puzzle": {},
+  "previous_puzzle": {
     "label": "Fern's Morning Anagram",
     "prompt": "Unscramble DARNOTES — in October, bare branches become a kind of instrument for this.",
-    "answer": "RESONATED",
-    "hint": "Think of how sound travels through hollow wood on a still autumn evening."
-  },
-  "previous_puzzle": {
-    "label": "Fern's Morning Riddle",
-    "prompt": "Find the four digit number in which the first digit is one fourth of the last digit, the second digit is 6 times the first digit, and the third digit is the second digit plus 3. What is it?",
-    "answer": "1694"
+    "answer": "RESONATED"
   },
   "larder": {
     "news": [],
     "recipe": {}
   },
   "fern_data": {
-    "greeting": "Miles Okazaki spent five hours playing every Thelonious Monk composition on solo guitar — a fact worth sitting with before you close your eyes tonight. Also here: Berlin's 12,000 volunteer tree-waterers, quietly keeping something alive.",
-    "top_pick_title": "Five Hours, One Guitar, Twelve Thousand Hands"
+    "greeting": "There's a gene therapy tonight that gives blind people limited sight through special goggles — sit with that one before sleep. Also: J.M.W. Turner's fingerprints are still visible in a painting he made two centuries ago, which feels like the same kind of miracle.",
+    "top_pick_title": "Fingerprints & First Light"
   }
 }
