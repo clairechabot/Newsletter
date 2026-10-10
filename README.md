@@ -108,7 +108,9 @@ ALLOW_NO_EMAIL=1 python renderer.py
 
 ## Automation
 
-`.github/workflows/daily_digest.yml` runs on a cron schedule (`0 5` and `0 16` UTC),
+`.github/workflows/daily_digest.yml` has no cron of its own (GitHub's cron queue was
+starting it 4-7h late). Two Claude routines dispatch it via `workflow_dispatch` at
+06:54 and 17:24 Europe/Zurich, so the email lands around 07:00 and 17:30. The workflow
 installs deps, runs `fetcher.py` then `renderer.py`, uploads the email artifact,
 publishes `docs/index.html` to the public edition repo (`canopy-edition`), and commits
 the updated `history.json`, `docs/index.html`, `docs/archive.html`, and the dated
