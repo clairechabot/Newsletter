@@ -6,16 +6,12 @@ name: North Carolina Edition
 # The Larder's seasonal food note, and the local sun times, then emails it to the
 # EMAIL_TO_NC list at local morning/evening. No web publish, no history.
 #
-# Timing: GitHub delays scheduled crons, so these fire early to land near the
-# target. 07:00 EDT (UTC-4 summer) = 11:00 UTC → fire 09:23 UTC; 19:00 EDT =
-# 23:00 UTC → fire 21:23 UTC. Both slots fire well AFTER the primary edition of
-# the same half-day has committed curated_data.json (main runs 03:23 / 14:23 UTC;
-# content lands ~06:15 / ~15:55 UTC). Fixed-UTC cron means winter (EST) arrives ~1h earlier.
+# Timing: no `schedule:` on purpose. GitHub's cron queue was starting this
+# job hours late. Instead it is triggered via workflow_dispatch:
+#   dispatched by Claude routines at 06:58 and 18:58 America/New_York (≈07:00 / 19:00 local).
+# It can also be run by hand from the Actions tab.
 
 on:
-  schedule:
-    - cron: "23 9 * * *"    # ≈ 07:00 US Eastern (morning)
-    - cron: "23 21 * * *"   # ≈ 19:00 US Eastern (evening)
   workflow_dispatch:
 
 jobs:

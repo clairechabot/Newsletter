@@ -110,7 +110,9 @@ ALLOW_NO_EMAIL=1 python renderer.py
 
 `.github/workflows/daily_digest.yml` has no cron of its own (GitHub's cron queue was
 starting it 4-7h late). Two Claude routines dispatch it via `workflow_dispatch` at
-06:54 and 17:24 Europe/Zurich, so the email lands around 07:00 and 17:30. The workflow
+06:54 and 17:24 Europe/Zurich, so the email lands around 07:00 and 17:30. The regional
+re-send workflows (Zug, Nova Scotia, North Carolina, Berlin, Ramsau) are dispatched the same
+way, in each region's local time, after the primary edition has committed. The workflow
 installs deps, runs `fetcher.py` then `renderer.py`, uploads the email artifact,
 publishes `docs/index.html` to the public edition repo (`canopy-edition`), and commits
 the updated `history.json`, `docs/index.html`, `docs/archive.html`, and the dated
