@@ -7,13 +7,12 @@ name: Berlin Edition
 # re-localizes "From the Garden", The Larder's seasonal food note, and the local
 # sun times, then emails the EMAIL_TO_BERLIN list. No web publish, no history writes.
 #
-# Timing: Berlin shares the Zürich source's time zone, and the morning content isn't
-# committed until ~06:15 UTC (~08:15 Berlin). So Sunday's send fires 06:23 UTC —
-# just after the content is ready — landing ~08:30–10:00 local.
+# Timing: no `schedule:` on purpose. GitHub's cron queue was starting this
+# job hours late. Instead it is triggered via workflow_dispatch:
+#   dispatched on Sundays at 07:12 Europe/Zurich by the Zurich-morning Claude routine, after the primary edition has committed.
+# It can also be run by hand from the Actions tab.
 
 on:
-  schedule:
-    - cron: "23 6 * * 0"    # Sunday morning — just after the day's content commits
   workflow_dispatch:
 
 jobs:

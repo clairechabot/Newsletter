@@ -6,16 +6,12 @@ name: Nova Scotia Edition
 # "From the Garden" to Nova Scotia, and emails it to the EMAIL_TO_NS list at
 # local morning/evening. No web publish, no history writes.
 #
-# Timing: GitHub delays scheduled crons, so these fire early to land near the
-# target. 07:00 ADT (UTC-3 summer) ≈ 10:00 UTC → fire 08:23 UTC; 19:00 ADT ≈
-# 22:00 UTC → fire 20:23 UTC. Fixed-UTC cron means winter (AST, UTC-4) arrives
-# ~1h earlier. Both slots fire AFTER the primary edition of the same half-day
-# has committed curated_data.json (main runs 03:23 / 14:23 UTC).
+# Timing: no `schedule:` on purpose. GitHub's cron queue was starting this
+# job hours late. Instead it is triggered via workflow_dispatch:
+#   dispatched by Claude routines at 06:58 and 18:58 America/Halifax (≈07:00 / 19:00 local).
+# It can also be run by hand from the Actions tab.
 
 on:
-  schedule:
-    - cron: "23 8 * * *"    # ≈ 07:00 Atlantic (morning)
-    - cron: "23 20 * * *"   # ≈ 19:00 Atlantic (evening)
   workflow_dispatch:
 
 jobs:

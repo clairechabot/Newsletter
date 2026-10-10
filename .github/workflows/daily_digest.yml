@@ -1,15 +1,13 @@
 name: Daily Newsletter Digest
 
 on:
-  schedule:
-    # GitHub delays on-the-hour crons heavily (often 1-3h), so these fire early
-    # at an off-hour minute and let the delay land the email near the target:
-    # morning target ≤07:30 Zurich, evening target ≤18:00 Zurich.
-    # 05:23 Zurich summer (CEST = UTC+2) → 03:23 UTC. Winter (CET) runs 1h earlier.
-    - cron: "23 3 * * *"
-    # 16:23 Zurich summer (CEST = UTC+2) → 14:23 UTC.
-    - cron: "23 14 * * *"
-  # Allow manual trigger from the Actions tab
+  # No `schedule:` here on purpose. GitHub's cron queue was starting this job
+  # 4-7h late (03:23 UTC cron → 08:43-10:45 UTC runs). Instead, two Claude
+  # routines dispatch this workflow on time via workflow_dispatch, in
+  # Europe/Zurich local time (so DST is handled):
+  #   morning  06:54 Zurich → email lands ≈07:00
+  #   evening  17:24 Zurich → email lands ≈17:30
+  # The run itself takes ~5 min. Can also be triggered by hand from the Actions tab.
   workflow_dispatch:
 
 jobs:

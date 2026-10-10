@@ -8,15 +8,12 @@ name: Zug Edition
 # notes, and emails the EMAIL_TO_ZUG list. No local news block (no fresh English
 # feed). No web publish, no history writes.
 #
-# Timing: same time zone as the source, whose content commits ~06:15 UTC (~08:15
-# local), so the morning fires 06:23 UTC and lands ~08:30–10:00 local (a true 07:00
-# isn't possible with the re-send model). Evening: 19:00 CEST = 17:00 UTC → fire
-# 16:23 UTC, after the ~15:55 UTC evening commit. Winter (CET) arrives ~1h earlier.
+# Timing: no `schedule:` on purpose. GitHub's cron queue was starting this
+# job hours late. Instead it is triggered via workflow_dispatch:
+#   dispatched by Claude routines at 07:12 and 18:55 Europe/Zurich, after the primary edition has committed.
+# It can also be run by hand from the Actions tab.
 
 on:
-  schedule:
-    - cron: "23 6 * * *"    # morning — just after the day's content commits
-    - cron: "23 16 * * *"   # ≈ 19:00 Zug (evening)
   workflow_dispatch:
 
 jobs:

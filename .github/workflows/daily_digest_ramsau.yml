@@ -10,13 +10,12 @@ name: Ramsau am Dachstein Edition
 # FERN_TONE keeps Fern drier for this reader (feedback: openings too sweet, too much
 # Dachstein-praise) — it only affects the pieces this re-send regenerates.
 #
-# Timing: same time zone as the Zürich source, whose morning content commits
-# ~06:15 UTC (~08:15 local), so Sunday's send fires 06:23 UTC and lands
-# ~08:30–10:00 local (a true 07:00 isn't possible with the re-send model).
+# Timing: no `schedule:` on purpose. GitHub's cron queue was starting this
+# job hours late. Instead it is triggered via workflow_dispatch:
+#   dispatched on Sundays at 07:12 Europe/Zurich by the Zurich-morning Claude routine, after the primary edition has committed.
+# It can also be run by hand from the Actions tab.
 
 on:
-  schedule:
-    - cron: "23 6 * * 0"    # Sunday morning — just after the day's content commits
   workflow_dispatch:
 
 jobs:
