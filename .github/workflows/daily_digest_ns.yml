@@ -1,14 +1,15 @@
 name: Nova Scotia Edition
 
-# Regional re-send of the primary Curated Canopy for readers in the Annapolis
-# Valley, Nova Scotia (Atlantic Time). It does NOT re-fetch or re-curate — it
-# reuses the primary edition's committed curated_data.json, re-localizes only
-# "From the Garden" to Nova Scotia, and emails it to the EMAIL_TO_NS list at
-# local morning/evening. No web publish, no history writes.
+# WEEKLY regional re-send of the primary Curated Canopy for readers in the
+# Annapolis Valley, Nova Scotia (Atlantic Time). Per the readers' request this
+# edition goes out ONCE A WEEK — Sunday morning — rather than twice daily. It
+# does NOT re-fetch or re-curate — it reuses the primary edition's committed
+# curated_data.json, re-localizes only "From the Garden" to Nova Scotia, and
+# emails it to the EMAIL_TO_NS list. No web publish, no history writes.
 #
 # Timing: no `schedule:` on purpose. GitHub's cron queue was starting this
 # job hours late. Instead it is triggered via workflow_dispatch:
-#   dispatched by Claude routines at 06:58 and 18:58 America/Halifax (≈07:00 / 19:00 local).
+#   dispatched on Sundays at 06:58 America/Halifax (≈07:00 local) by a Claude routine.
 # It can also be run by hand from the Actions tab.
 
 on:
@@ -16,7 +17,7 @@ on:
 
 jobs:
   ns-edition:
-    name: Nova Scotia re-send
+    name: Nova Scotia weekly re-send
     runs-on: ubuntu-latest
     env:
       TZ: America/Halifax
